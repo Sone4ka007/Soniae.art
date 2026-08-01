@@ -65,8 +65,45 @@
     ]
   },
   {
-    "id": "route",
+    "id": "cats",
     "number": "01",
+    "title": "Котики",
+    "year": "2026",
+    "description": "",
+    "works": [
+      {
+        "id": "cats-02",
+        "title": "ГорстьКотов",
+        "series": "Котики",
+        "seriesId": "cats",
+        "year": "2026",
+        "materials": "чернила, карандаш",
+        "size": "А2",
+        "image": "assets/site_optimized_for_github (1)/cats-handful.svg",
+        "featured": true,
+        "status": "not_for_sale",
+        "price": "",
+        "description": ""
+      },
+      {
+        "id": "cats-01",
+        "title": "Котик",
+        "series": "Котики",
+        "seriesId": "cats",
+        "year": "2026",
+        "materials": "чернила, карандаш",
+        "size": "А2",
+        "image": "assets/site_optimized_for_github (1)/cat.svg",
+        "featured": false,
+        "status": "not_for_sale",
+        "price": "",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "id": "route",
+    "number": "02",
     "title": "Творческий маршрут",
     "year": "2026",
     "description": "Серия о московских зданиях как точках личного маршрута.",
@@ -159,7 +196,7 @@
   },
   {
     "id": "white-on-black",
-    "number": "02",
+    "number": "03",
     "title": "Белым по чёрному",
     "year": "2026",
     "description": "",
@@ -224,7 +261,7 @@
   },
   {
     "id": "black-on-white",
-    "number": "03",
+    "number": "04",
     "title": "Чёрным по белому",
     "year": "2026",
     "description": "",
@@ -331,7 +368,7 @@
   },
   {
     "id": "paradox-city",
-    "number": "04",
+    "number": "05",
     "title": "Парадоксальный город",
     "year": "2026",
     "description": "",
@@ -438,7 +475,7 @@
   },
   {
     "id": "supermetal",
-    "number": "05",
+    "number": "06",
     "title": "Суперметалл",
     "year": "2026",
     "description": "",

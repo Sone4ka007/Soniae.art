@@ -4,20 +4,7 @@ const dimg=dialog.querySelector('img');
 const dtitle=dialog.querySelector('strong');
 const dmeta=dialog.querySelector('span');
 
-const chunkSets={
-  'cats-02':[
-    'assets/site_optimized_for_github (1)/cats-handful.part1.txt',
-    'assets/site_optimized_for_github (1)/cats-handful.part2.txt',
-    'assets/site_optimized_for_github (1)/cats-handful.part3.txt',
-    'assets/site_optimized_for_github (1)/cats-handful.part4.txt'
-  ],
-  'cats-01':[
-    'assets/site_optimized_for_github (1)/cat.part1.txt',
-    'assets/site_optimized_for_github (1)/cat.part2.txt',
-    'assets/site_optimized_for_github (1)/cat.part3.txt',
-    'assets/site_optimized_for_github (1)/cat.part4.txt'
-  ]
-};
+const chunkSets={};
 const imageCache=new Map();
 
 const loadChunkedImage=id=>{

@@ -1,4 +1,4 @@
-import { publicStore, json, cleanText, isArtworkId } from '../lib/wg.mjs';
+import { publicStore, json, cleanText, cleanNumber, isArtworkId } from '../lib/wg.mjs';
 
 export default async (request) => {
   if (request.method !== 'POST') return json({ ok: false, error: 'POST only' }, 405);
@@ -12,15 +12,19 @@ export default async (request) => {
     if (!isArtworkId(artworkId)) return json({ ok: false, error: 'Invalid artwork ID' }, 400);
 
     const locationLabel = cleanText(body.locationLabel, 160);
-    const osmRef = cleanText(body.osmRef, 40).toUpperCase();
-    if (!locationLabel || !/^[NWR]\d+$/.test(osmRef)) return json({ ok: false, error: 'Choose a mapped public place' }, 400);
+    const lat = cleanNumber(body.lat, -85, 85);
+    const lon = cleanNumber(body.lon, -180, 180);
+    if (!locationLabel || lat === null || lon === null) {
+      return json({ ok: false, error: 'Choose a public place on the map and name it' }, 400);
+    }
 
     const id = crypto.randomUUID();
     const stop = {
       id,
       artworkId,
       locationLabel,
-      osmRef,
+      lat: Math.round(lat * 100000) / 100000,
+      lon: Math.round(lon * 100000) / 100000,
       note: cleanText(body.note, 500),
       photoLink: cleanText(body.photoLink, 300),
       createdAt: new Date().toISOString(),

@@ -2,6 +2,7 @@ import { getStore } from '@netlify/blobs';
 
 export const submissionsStore = () => getStore({ name: 'wg-submissions', consistency: 'strong' });
 export const publicStore = () => getStore({ name: 'wg-public', consistency: 'strong' });
+export const photosStore = () => getStore({ name: 'wg-photos', consistency: 'strong' });
 
 export function env(name) {
   return globalThis.Netlify?.env?.get?.(name) ?? process.env[name];
@@ -35,4 +36,8 @@ export function cleanNumber(value, min, max) {
 
 export function isArtworkId(value) {
   return /^SWG-\d{3,5}$/.test(String(value || ''));
+}
+
+export function isPhotoKey(value) {
+  return /^SWG-\d{3,5}\/[a-f0-9-]{20,}\.jpg$/i.test(String(value || ''));
 }

@@ -5,13 +5,18 @@ export default async (request) => {
   const body = await request.json();
   const artworkId = String(body.artworkId || '').toUpperCase();
   if (!isArtworkId(artworkId)) return json({ ok: false, error: 'Invalid artwork ID' }, 400);
-  const locationLabel = cleanText(body.locationLabel, 120);
-  if (!locationLabel) return json({ ok: false, error: 'Location is required' }, 400);
+
+  const locationLabel = cleanText(body.locationLabel, 160);
+  const osmRef = cleanText(body.osmRef, 40).toUpperCase();
+  if (!locationLabel || !/^[NWR]\d+$/.test(osmRef)) return json({ ok: false, error: 'Choose a mapped public place' }, 400);
+
   const id = crypto.randomUUID();
   await submissionsStore().setJSON(`submission/${id}`, {
     id,
     artworkId,
     locationLabel,
+    osmRef,
+    note: cleanText(body.note, 500),
     createdAt: new Date().toISOString(),
     status: 'pending'
   });

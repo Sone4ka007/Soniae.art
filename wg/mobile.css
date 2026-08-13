@@ -1,0 +1,2 @@
+@media(max-width:760px){#wg-map,.scheme-map{overflow:hidden}.scheme-map svg{width:100%;min-width:0!important;min-height:320px}.wg-paste-row{display:grid!important;grid-template-columns:1fr}.wg-btn{min-height:46px}.wg-section__head h2{line-height:1.05}}
+.wg-btn--secondary{background:#fff;color:#111}.wg-paste-state{font-size:12px;color:#666;min-height:18px}.wg-paste-state.is-ok{color:#111;font-weight:700}.wg-paste-row{display:flex;gap:8px;align-items:stretch}

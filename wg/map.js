@@ -1,200 +1,36 @@
 (() => {
-  const TILE = 256;
-  const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
-
-  function project(lat, lon, zoom) {
-    const scale = TILE * Math.pow(2, zoom);
-    const x = (lon + 180) / 360 * scale;
-    const s = Math.sin(clamp(lat, -85.05112878, 85.05112878) * Math.PI / 180);
-    const y = (0.5 - Math.log((1 + s) / (1 - s)) / (4 * Math.PI)) * scale;
-    return { x, y };
-  }
-
-  function unproject(x, y, zoom) {
-    const scale = TILE * Math.pow(2, zoom);
-    const lon = x / scale * 360 - 180;
-    const n = Math.PI - 2 * Math.PI * y / scale;
-    const lat = 180 / Math.PI * Math.atan(0.5 * (Math.exp(n) - Math.exp(-n)));
-    return { lat, lon };
-  }
-
-  class WalkingMap {
-    constructor(el, options = {}) {
-      this.el = el;
-      this.center = options.center || [55.751244, 37.618423];
-      this.zoom = options.zoom || 4;
-      this.minZoom = 1;
-      this.maxZoom = 18;
-      this.routes = [];
-      this.dragged = false;
-      this._build();
-      this._events();
-      this.render();
-      this.ro = new ResizeObserver(() => this.render());
-      this.ro.observe(this.el);
-    }
-
-    _build() {
-      this.el.classList.add('swg-map');
-      this.tileLayer = document.createElement('div');
-      this.tileLayer.className = 'swg-map__tiles';
-      this.overlay = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-      this.overlay.classList.add('swg-map__overlay');
-      this.markerLayer = document.createElement('div');
-      this.markerLayer.className = 'swg-map__markers';
-      this.controls = document.createElement('div');
-      this.controls.className = 'swg-map__controls';
-      const plus = document.createElement('button');
-      plus.type = 'button'; plus.textContent = '+'; plus.setAttribute('aria-label', 'Zoom in');
-      const minus = document.createElement('button');
-      minus.type = 'button'; minus.textContent = '−'; minus.setAttribute('aria-label', 'Zoom out');
-      plus.addEventListener('click', (e) => { e.stopPropagation(); this.setZoom(this.zoom + 1); });
-      minus.addEventListener('click', (e) => { e.stopPropagation(); this.setZoom(this.zoom - 1); });
-      this.controls.append(plus, minus);
-      this.attrib = document.createElement('a');
-      this.attrib.className = 'swg-map__attrib';
-      this.attrib.href = 'https://www.openstreetmap.org/copyright';
-      this.attrib.target = '_blank';
-      this.attrib.rel = 'noopener';
-      this.attrib.textContent = '© OpenStreetMap contributors';
-      this.el.append(this.tileLayer, this.overlay, this.markerLayer, this.controls, this.attrib);
-    }
-
-    _events() {
-      let start = null;
-      this.el.addEventListener('pointerdown', (e) => {
-        if (e.target.closest('button,a')) return;
-        this.el.setPointerCapture?.(e.pointerId);
-        const p = project(this.center[0], this.center[1], this.zoom);
-        start = { x: e.clientX, y: e.clientY, cx: p.x, cy: p.y };
-        this.dragged = false;
-        this.el.classList.add('is-dragging');
+  const NS='http://www.w3.org/2000/svg';
+  const short=s=>{const p=String(s||'').split(',').map(x=>x.trim()).filter(Boolean);return (p[0]||'').slice(0,28)};
+  class SchematicMap{
+    constructor(el){this.el=el;this.routes=[];this.ro=new ResizeObserver(()=>this.render());this.ro.observe(el)}
+    setRoutes(routes){this.routes=routes||[];this.render()}
+    render(){
+      const all=this.routes.flatMap(r=>(r.points||[]).filter(p=>Number.isFinite(p.lat)&&Number.isFinite(p.lon)));
+      this.el.innerHTML='';this.el.classList.add('scheme-map');
+      if(!all.length){this.el.innerHTML='<div class="scheme-empty">Маршрут появится здесь после первой остановки.</div>';return}
+      const w=Math.max(320,this.el.clientWidth||900),h=Math.max(380,this.el.clientHeight||560),pad=72;
+      let minLon=Math.min(...all.map(p=>p.lon)),maxLon=Math.max(...all.map(p=>p.lon)),minLat=Math.min(...all.map(p=>p.lat)),maxLat=Math.max(...all.map(p=>p.lat));
+      if(maxLon-minLon<.12){minLon-=.06;maxLon+=.06}if(maxLat-minLat<.08){minLat-=.04;maxLat+=.04}
+      const pos=p=>({x:pad+(p.lon-minLon)/(maxLon-minLon)*(w-pad*2),y:pad+(maxLat-p.lat)/(maxLat-minLat)*(h-pad*2)});
+      const svg=document.createElementNS(NS,'svg');svg.setAttribute('viewBox',`0 0 ${w} ${h}`);svg.setAttribute('role','img');svg.setAttribute('aria-label','Схематичная карта маршрутов выставки');
+      for(let x=pad;x<w-pad;x+=120){const l=document.createElementNS(NS,'line');l.setAttribute('x1',x);l.setAttribute('x2',x);l.setAttribute('y1',28);l.setAttribute('y2',h-28);l.setAttribute('class','scheme-grid');svg.appendChild(l)}
+      for(let y=pad;y<h-pad;y+=100){const l=document.createElementNS(NS,'line');l.setAttribute('x1',28);l.setAttribute('x2',w-28);l.setAttribute('y1',y);l.setAttribute('y2',y);l.setAttribute('class','scheme-grid');svg.appendChild(l)}
+      this.routes.forEach((route,ri)=>{
+        const pts=(route.points||[]).filter(p=>Number.isFinite(p.lat)&&Number.isFinite(p.lon));if(!pts.length)return;
+        const xy=pts.map(pos);
+        if(xy.length>1){const line=document.createElementNS(NS,'polyline');line.setAttribute('points',xy.map(p=>`${p.x},${p.y}`).join(' '));line.setAttribute('class',`scheme-route scheme-route--${ri%4}`);svg.appendChild(line)}
+        pts.forEach((p,i)=>{
+          const q=xy[i],g=document.createElementNS(NS,'g');g.setAttribute('class','scheme-stop');
+          const c=document.createElementNS(NS,'circle');c.setAttribute('cx',q.x);c.setAttribute('cy',q.y);c.setAttribute('r',16);c.setAttribute('class','scheme-dot');g.appendChild(c);
+          const n=document.createElementNS(NS,'text');n.setAttribute('x',q.x);n.setAttribute('y',q.y+4);n.setAttribute('text-anchor','middle');n.setAttribute('class','scheme-num');n.textContent=p.markerLabel||String(i+1);g.appendChild(n);
+          const label=document.createElementNS(NS,'text');label.setAttribute('x',q.x+23);label.setAttribute('y',q.y-8);label.setAttribute('class','scheme-label');label.textContent=short(p.locationLabel);g.appendChild(label);
+          const date=document.createElementNS(NS,'text');date.setAttribute('x',q.x+23);date.setAttribute('y',q.y+10);date.setAttribute('class','scheme-date');date.textContent=p.createdAt?new Date(p.createdAt).toLocaleDateString('ru-RU'):'';g.appendChild(date);
+          if(route.href){g.style.cursor='pointer';g.addEventListener('click',()=>location.href=route.href)}
+          svg.appendChild(g)
+        })
       });
-      this.el.addEventListener('pointermove', (e) => {
-        if (!start) return;
-        const dx = e.clientX - start.x;
-        const dy = e.clientY - start.y;
-        if (Math.abs(dx) + Math.abs(dy) > 4) this.dragged = true;
-        const c = unproject(start.cx - dx, start.cy - dy, this.zoom);
-        this.center = [clamp(c.lat, -85, 85), c.lon];
-        this.render();
-      });
-      const stop = () => { start = null; this.el.classList.remove('is-dragging'); };
-      this.el.addEventListener('pointerup', stop);
-      this.el.addEventListener('pointercancel', stop);
-      this.el.addEventListener('wheel', (e) => {
-        e.preventDefault();
-        this.setZoom(this.zoom + (e.deltaY < 0 ? 1 : -1));
-      }, { passive: false });
-    }
-
-    setZoom(z) {
-      this.zoom = clamp(Math.round(z), this.minZoom, this.maxZoom);
-      this.render();
-    }
-
-    setRoutes(routes) {
-      this.routes = routes || [];
-      this.render();
-    }
-
-    fitPoints(points, padding = 70) {
-      const valid = (points || []).filter(p => Number.isFinite(p.lat) && Number.isFinite(p.lon));
-      if (!valid.length) return;
-      if (valid.length === 1) {
-        this.center = [valid[0].lat, valid[0].lon];
-        this.zoom = 13;
-        this.render();
-        return;
-      }
-      const w = Math.max(200, this.el.clientWidth - padding * 2);
-      const h = Math.max(160, this.el.clientHeight - padding * 2);
-      let chosen = 1;
-      for (let z = 18; z >= 1; z--) {
-        const ps = valid.map(p => project(p.lat, p.lon, z));
-        const xs = ps.map(p => p.x), ys = ps.map(p => p.y);
-        if (Math.max(...xs) - Math.min(...xs) <= w && Math.max(...ys) - Math.min(...ys) <= h) { chosen = z; break; }
-      }
-      const ps = valid.map(p => project(p.lat, p.lon, chosen));
-      const xs = ps.map(p => p.x), ys = ps.map(p => p.y);
-      const c = unproject((Math.min(...xs) + Math.max(...xs)) / 2, (Math.min(...ys) + Math.max(...ys)) / 2, chosen);
-      this.center = [c.lat, c.lon];
-      this.zoom = chosen;
-      this.render();
-    }
-
-    render() {
-      this.renderTiles();
-      this.renderOverlay();
-      this.renderMarkers();
-    }
-
-    renderTiles() {
-      const w = this.el.clientWidth || 800, h = this.el.clientHeight || 500;
-      const cp = project(this.center[0], this.center[1], this.zoom);
-      const minX = Math.floor((cp.x - w / 2) / TILE), maxX = Math.floor((cp.x + w / 2) / TILE);
-      const minY = Math.floor((cp.y - h / 2) / TILE), maxY = Math.floor((cp.y + h / 2) / TILE);
-      const n = Math.pow(2, this.zoom);
-      this.tileLayer.innerHTML = '';
-      for (let ty = minY; ty <= maxY; ty++) {
-        if (ty < 0 || ty >= n) continue;
-        for (let tx = minX; tx <= maxX; tx++) {
-          const wrapped = ((tx % n) + n) % n;
-          const img = document.createElement('img');
-          img.alt = '';
-          img.draggable = false;
-          img.loading = 'lazy';
-          img.src = `https://tile.openstreetmap.org/${this.zoom}/${wrapped}/${ty}.png`;
-          img.style.left = `${tx * TILE - cp.x + w / 2}px`;
-          img.style.top = `${ty * TILE - cp.y + h / 2}px`;
-          this.tileLayer.appendChild(img);
-        }
-      }
-    }
-
-    screenPoint(lat, lon) {
-      const w = this.el.clientWidth || 800, h = this.el.clientHeight || 500;
-      const cp = project(this.center[0], this.center[1], this.zoom);
-      const p = project(lat, lon, this.zoom);
-      let dx = p.x - cp.x;
-      const world = TILE * Math.pow(2, this.zoom);
-      if (dx > world / 2) dx -= world;
-      if (dx < -world / 2) dx += world;
-      return { x: w / 2 + dx, y: h / 2 + (p.y - cp.y) };
-    }
-
-    renderOverlay() {
-      const w = this.el.clientWidth || 800, h = this.el.clientHeight || 500;
-      this.overlay.setAttribute('viewBox', `0 0 ${w} ${h}`);
-      this.overlay.innerHTML = '';
-      this.routes.forEach((route, ri) => {
-        const points = (route.points || []).filter(p => Number.isFinite(p.lat) && Number.isFinite(p.lon)).map(p => this.screenPoint(p.lat, p.lon));
-        if (points.length > 1) {
-          const poly = document.createElementNS('http://www.w3.org/2000/svg', 'polyline');
-          poly.setAttribute('points', points.map(p => `${p.x},${p.y}`).join(' '));
-          poly.setAttribute('class', `swg-route swg-route--${ri % 4}`);
-          this.overlay.appendChild(poly);
-        }
-      });
-    }
-
-    renderMarkers() {
-      this.markerLayer.innerHTML = '';
-      this.routes.forEach((route) => {
-        (route.points || []).filter(p => Number.isFinite(p.lat) && Number.isFinite(p.lon)).forEach((p, index) => {
-          const pos = this.screenPoint(p.lat, p.lon);
-          const marker = document.createElement(route.href ? 'a' : 'div');
-          marker.className = 'swg-marker';
-          marker.style.left = `${pos.x}px`;
-          marker.style.top = `${pos.y}px`;
-          marker.textContent = p.markerLabel || String(index + 1);
-          marker.title = p.title || route.title || '';
-          if (route.href) marker.href = route.href;
-          this.markerLayer.appendChild(marker);
-        });
-      });
+      this.el.appendChild(svg)
     }
   }
-
-  window.WalkingMap = WalkingMap;
+  window.SchematicMap=SchematicMap;
 })();

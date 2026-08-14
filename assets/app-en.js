@@ -8,13 +8,13 @@ const chunkSets={};
 const imageCache=new Map();
 
 const seriesTranslations={
-  'duck-stories':{title:'Duck Stories',description:''},
-  'cats':{title:'Cats',description:''},
-  'route':{title:'Creative Route',description:'A series about Moscow buildings as points along a personal route through the city.'},
-  'white-on-black':{title:'White on Black',description:''},
-  'black-on-white':{title:'Black on White',description:''},
-  'paradox-city':{title:'Paradoxical City',description:''},
-  'supermetal':{title:'Supermetal',description:''}
+  'duck-stories':{title:'Duck Stories',description:'Spanish slugs once appeared in my parents’ garden. They tried to get rid of them for years without much success, and eventually decided on a more radical solution: a flock of Indian Runner ducks, a breed known for its distinctive upright posture.\n\nThe ducks are incredibly funny. They live closely together, do everything as a group, and when startled, they run off without paying much attention to where they are going. They are, however, very good at dealing with slugs.'},
+  'cats':{title:'Cats',description:'The Cats series grew out of an experiment with ink. When applied to wet paper, ink spreads unpredictably and becomes difficult to control. What was supposed to become a herd of piebald horses first turned into a cheetah, Cat, and the next attempt became an entire Handful of Cats.\n\nI still haven’t given up on making a painting with horses, so the cat series will most likely continue to grow.'},
+  'route':{title:'Creative Route',description:'The works in the Creative Route series were created specifically for an exhibition of the same name in Moscow. I really enjoyed working with stencils and treating the buildings almost like portraits. At the same time, small signs of life begin to appear in their windows.\n\nThe series won the Creative Route competition.'},
+  'white-on-black':{title:'White on Black',description:'The White on Black series began after a series of plein-air sessions with Dima Gorelyshev. I enjoyed this way of drawing so much that for several days afterwards I worked almost exclusively in this technique.\n\nHere I present the works I consider the most successful results of that experiment.'},
+  'black-on-white':{title:'Black on White',description:'After working on black paper, returning to white paper felt unexpectedly intense. I rediscovered the pleasure of the contrast between black ink and a white sheet.\n\nI am particularly drawn to trees that resemble contour maps. Some of the works in this series were created in Dima Gorelyshev’s graphic workshop, as part of an exercise in constructing a landscape from different collected artefacts and treasures.'},
+  'paradox-city':{title:'Paradoxical City',description:'Paradoxical City is a series made on paper tinted with gouache. In this city, something is always slightly wrong, although it is not always noticeable at first glance.'},
+  'supermetal':{title:'Supermetal',description:'This series emerged from a plein-air session with Alyosha Geld at the Supermetal space. Here, I think, I used coloured paper as an independent material for the first time, experimenting with composition and colour and taking enormous pleasure in the process itself.'}
 };
 
 const workTitles={

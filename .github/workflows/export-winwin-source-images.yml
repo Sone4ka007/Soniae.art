@@ -1,0 +1,30 @@
+name: Export WIN-WIN source images
+
+on:
+  push:
+    paths:
+      - '.github/workflows/export-winwin-source-images.yml'
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Collect source images
+        run: |
+          mkdir -p winwin-source-images
+          cp assets/site_optimized_for_github\ \(1\)/cat.png winwin-source-images/
+          cp assets/site_optimized_for_github\ \(1\)/cats-handful.png winwin-source-images/
+          cp assets/site_optimized_for_github\ \(1\)/paradox-*.jpg winwin-source-images/
+          cp assets/site_optimized_for_github\ \(1\)/duck-*.jpg winwin-source-images/
+          cp assets/site_optimized_for_github\ \(1\)/blackwhite-*.jpg winwin-source-images/
+          cp assets/site_optimized_for_github\ \(1\)/whiteblack-*.jpg winwin-source-images/
+
+      - name: Upload source images
+        uses: actions/upload-artifact@v4
+        with:
+          name: winwin-source-images
+          path: winwin-source-images
+          retention-days: 1

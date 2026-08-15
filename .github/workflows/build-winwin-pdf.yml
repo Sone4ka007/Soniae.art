@@ -1,0 +1,65 @@
+name: Build WIN-WIN works PDF
+
+on:
+  push:
+    paths:
+      - '.github/workflows/build-winwin-pdf.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install pypdf
+        run: pip install pypdf
+
+      - name: Build selected works PDF
+        shell: python
+        run: |
+          from pypdf import PdfReader, PdfWriter
+
+          source = 'assets/Соня_Енокаева_портфолио_2026.pdf'
+          output = 'assets/winwin-works-2026.pdf'
+
+          # WIN-WIN selection, in this order:
+          # Котики, Парадоксальный город, Утиные истории, Чёрным по белому.
+          # Page numbers refer to the current full portfolio PDF.
+          selected_pages = [
+              10, 11,                         # Котики — 2 работы
+              31, 32, 33, 34, 35, 36,        # Парадоксальный город — 6 работ
+              5, 6, 7, 8,                    # Утиные истории — 4 работы
+              25, 26, 27, 28, 29             # Чёрным по белому — 5 работ
+          ]
+
+          reader = PdfReader(source)
+          writer = PdfWriter()
+
+          for page_number in selected_pages:
+              writer.add_page(reader.pages[page_number - 1])
+
+          with open(output, 'wb') as f:
+              writer.write(f)
+
+          print(f'Created {output}: {len(selected_pages)} pages')
+
+      - name: Commit generated PDF
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/winwin-works-2026.pdf
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Add WIN-WIN 2026 selected works PDF"
+            git push
+          fi

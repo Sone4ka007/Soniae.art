@@ -3,6 +3,11 @@
   functions = "netlify/functions"
 
 [[redirects]]
+  from = "/1"
+  to = "/wg/001/"
+  status = 302
+
+[[redirects]]
   from = "/wg/*"
   to = "/wg/index.html"
   status = 200

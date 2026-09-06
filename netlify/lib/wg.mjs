@@ -9,7 +9,7 @@ export function env(name) {
 }
 
 export function getAdminSecret() {
-  return env('WG_ADMIN_SECRET') || env('TELEGRAM_SETUP_SECRET') || '';
+  return env('WG_ADMIN_SECRET') || '';
 }
 
 export function json(data, status = 200, extraHeaders = {}) {

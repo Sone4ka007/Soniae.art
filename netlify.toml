@@ -3,8 +3,113 @@
   functions = "netlify/functions"
 
 [[redirects]]
+  from = "/wg/admin"
+  to = "/wg/admin/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/wg/admin/"
+  to = "/wg/admin/index.html"
+  status = 200
+
+[[redirects]]
   from = "/1"
   to = "/wg/001/"
+  status = 302
+
+[[redirects]]
+  from = "/2"
+  to = "/wg/002/"
+  status = 302
+
+[[redirects]]
+  from = "/3"
+  to = "/wg/003/"
+  status = 302
+
+[[redirects]]
+  from = "/4"
+  to = "/wg/004/"
+  status = 302
+
+[[redirects]]
+  from = "/5"
+  to = "/wg/005/"
+  status = 302
+
+[[redirects]]
+  from = "/6"
+  to = "/wg/006/"
+  status = 302
+
+[[redirects]]
+  from = "/7"
+  to = "/wg/007/"
+  status = 302
+
+[[redirects]]
+  from = "/8"
+  to = "/wg/008/"
+  status = 302
+
+[[redirects]]
+  from = "/9"
+  to = "/wg/009/"
+  status = 302
+
+[[redirects]]
+  from = "/10"
+  to = "/wg/010/"
+  status = 302
+
+[[redirects]]
+  from = "/11"
+  to = "/wg/011/"
+  status = 302
+
+[[redirects]]
+  from = "/12"
+  to = "/wg/012/"
+  status = 302
+
+[[redirects]]
+  from = "/13"
+  to = "/wg/013/"
+  status = 302
+
+[[redirects]]
+  from = "/14"
+  to = "/wg/014/"
+  status = 302
+
+[[redirects]]
+  from = "/15"
+  to = "/wg/015/"
+  status = 302
+
+[[redirects]]
+  from = "/16"
+  to = "/wg/016/"
+  status = 302
+
+[[redirects]]
+  from = "/17"
+  to = "/wg/017/"
+  status = 302
+
+[[redirects]]
+  from = "/18"
+  to = "/wg/018/"
+  status = 302
+
+[[redirects]]
+  from = "/19"
+  to = "/wg/019/"
+  status = 302
+
+[[redirects]]
+  from = "/20"
+  to = "/wg/020/"
   status = 302
 
 [[redirects]]

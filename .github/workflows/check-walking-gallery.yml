@@ -1,0 +1,40 @@
+name: Check Walking Gallery
+
+on:
+  pull_request:
+    paths:
+      - 'wg/**'
+      - 'content/walking-gallery*.json'
+      - 'worker/walking-gallery/**'
+      - '1/**'
+      - '.github/workflows/check-walking-gallery.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Check browser JavaScript
+        run: |
+          node --check wg/app.js
+          node --check wg/map.js
+          node --check wg/photo-upload.js
+
+      - name: Check Worker JavaScript
+        run: node --input-type=module --check < worker/walking-gallery/src/index.js
+
+      - name: Check JSON data
+        run: |
+          node -e "const fs=require('fs'); JSON.parse(fs.readFileSync('content/walking-gallery.json','utf8')); JSON.parse(fs.readFileSync('content/walking-gallery-stops.json','utf8'));"
+
+      - name: Check GitHub Pages routes
+        run: |
+          test -f wg/index.html
+          test -f wg/001/index.html
+          test -f 1/index.html

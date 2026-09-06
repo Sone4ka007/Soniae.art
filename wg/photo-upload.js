@@ -1,24 +1,56 @@
 (() => {
+  const MAX_EDGE = 1600;
+  const MAX_BYTES = 3 * 1024 * 1024;
+
+  async function drawable(file) {
+    if ('createImageBitmap' in window) {
+      try {
+        const bitmap = await createImageBitmap(file, { imageOrientation: 'from-image' });
+        return { image: bitmap, width: bitmap.width, height: bitmap.height, close: () => bitmap.close?.() };
+      } catch {}
+    }
+
+    const url = URL.createObjectURL(file);
+    const image = await new Promise((resolve, reject) => {
+      const img = new Image();
+      img.onload = () => resolve(img);
+      img.onerror = () => reject(new Error('Could not read image'));
+      img.src = url;
+    });
+    return { image, width: image.naturalWidth, height: image.naturalHeight, close: () => URL.revokeObjectURL(url) };
+  }
+
   async function compress(file) {
-    const bitmap = await createImageBitmap(file, { imageOrientation: 'from-image' });
-    const max = 1600;
-    const scale = Math.min(1, max / Math.max(bitmap.width, bitmap.height));
-    const width = Math.max(1, Math.round(bitmap.width * scale));
-    const height = Math.max(1, Math.round(bitmap.height * scale));
+    if (!file || !String(file.type || '').startsWith('image/')) throw new Error('Выберите изображение');
+    const source = await drawable(file);
+    const scale = Math.min(1, MAX_EDGE / Math.max(source.width, source.height));
+    const width = Math.max(1, Math.round(source.width * scale));
+    const height = Math.max(1, Math.round(source.height * scale));
     const canvas = document.createElement('canvas');
     canvas.width = width;
     canvas.height = height;
     const ctx = canvas.getContext('2d', { alpha: false });
     ctx.fillStyle = '#fff';
     ctx.fillRect(0, 0, width, height);
-    ctx.drawImage(bitmap, 0, 0, width, height);
-    bitmap.close?.();
-    return new Promise((resolve, reject) => canvas.toBlob(blob => blob ? resolve(blob) : reject(new Error('Could not prepare photo')), 'image/jpeg', 0.82));
+    ctx.drawImage(source.image, 0, 0, width, height);
+    source.close();
+
+    const qualities = [0.84, 0.76, 0.68];
+    let blob = null;
+    for (const quality of qualities) {
+      blob = await new Promise((resolve, reject) => canvas.toBlob(
+        result => result ? resolve(result) : reject(new Error('Could not prepare photo')),
+        'image/jpeg',
+        quality
+      ));
+      if (blob.size <= MAX_BYTES) break;
+    }
+    if (!blob || blob.size > MAX_BYTES) throw new Error('Фото слишком большое после сжатия');
+    return blob;
   }
 
   async function upload(file, artworkId) {
     const blob = await compress(file);
-    if (blob.size > 3 * 1024 * 1024) throw new Error('Фото слишком большое после сжатия');
     const response = await fetch('/.netlify/functions/wg-upload-photo?artworkId=' + encodeURIComponent(artworkId), {
       method: 'POST',
       headers: { 'content-type': 'image/jpeg' },

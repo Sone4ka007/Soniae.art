@@ -20,7 +20,7 @@
     return { image, width: image.naturalWidth, height: image.naturalHeight, close: () => URL.revokeObjectURL(url) };
   }
 
-  async function compress(file) {
+  async function prepare(file) {
     if (!file || !String(file.type || '').startsWith('image/')) throw new Error('Выберите изображение');
     const source = await drawable(file);
     const scale = Math.min(1, MAX_EDGE / Math.max(source.width, source.height));
@@ -49,17 +49,5 @@
     return blob;
   }
 
-  async function upload(file, artworkId) {
-    const blob = await compress(file);
-    const response = await fetch('/.netlify/functions/wg-upload-photo?artworkId=' + encodeURIComponent(artworkId), {
-      method: 'POST',
-      headers: { 'content-type': 'image/jpeg' },
-      body: blob
-    });
-    const data = await response.json();
-    if (!response.ok || !data.ok) throw new Error(data.error || 'Не удалось загрузить фото');
-    return data;
-  }
-
-  window.WGPhotos = { upload };
+  window.WGPhotos = { prepare };
 })();

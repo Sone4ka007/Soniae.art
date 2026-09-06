@@ -3,12 +3,15 @@
     "nameRu": "Шагающая галерея Сони",
     "nameEn": "Sonya's Walking Gallery",
     "instagram": "https://www.instagram.com/sonyae_wg/",
-    "instagramHandle": "@sonyae_wg"
+    "instagramHandle": "@sonyae_wg",
+    "shortBase": "https://sonyae.art",
+    "moderation": true
   },
   "artworks": [
     {
       "id": "SWG-001",
       "slug": "001",
+      "short": "1",
       "titleRu": "Работа 001",
       "titleEn": "Artwork 001",
       "image": null,

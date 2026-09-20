@@ -313,50 +313,79 @@ def extract_zotov(html, src):
     soup = BeautifulSoup(html, "html.parser")
     out, seen = [], set()
     today = date.today()
+    lines=[clean(x) for x in soup.get_text("\n",strip=True).splitlines() if clean(x)]
     date_re = re.compile(r"(?<!\d)(\d{1,2})[.](\d{1,2})[.](\d{2})\s*/\s*(\d{1,2}:\d{2})")
-    for node in soup.find_all(string=date_re):
-        cur = node.parent
-        chosen = None
-        for _ in range(5):
-            if cur is None: break
-            txt = clean(cur.get_text(" ",strip=True))
-            if len(txt) <= 700 and date_re.search(txt):
-                chosen = cur
-            cur = cur.parent
-        if chosen is None:
-            continue
-        txt = clean(chosen.get_text(" ",strip=True))
-        m = date_re.search(txt)
+    for i,line in enumerate(lines):
+        m=date_re.search(line)
         if not m:
             continue
-        dt = parse_date(m.group(0),True)
-        if not dt or dt < today:
+        dt=parse_date(m.group(0),True)
+        if not dt or dt<today:
             continue
-        rest = txt[m.end():].strip()
-        rest = re.sub(r"^(?:Купить билет|Зарегистрироваться|Регистрация)\s*", "", rest, flags=re.I)
-        cat = ""
+        rest=line[m.end():].strip()
+        tail=[rest] if rest else []
+        for j in range(i+1,min(i+5,len(lines))):
+            t=lines[j]
+            if date_re.search(t): break
+            if t.lower() in SKIP_TITLES or t.lower() in {"событий нет","сегодня","завтра"}: continue
+            tail.append(t)
+            if len(" ".join(tail))>220: break
+        text=" ".join(tail).strip()
+        text=re.sub(r"^(?:Купить билет|Зарегистрироваться|Регистрация)\s*","",text,flags=re.I)
+        cat=""
         for typ in sorted(EVENT_TYPES,key=len,reverse=True):
-            if rest.lower().startswith(typ):
-                cat=typ; rest=rest[len(typ):].strip(); break
-        title = re.split(r"\s+(?:Купить билет|Зарегистрироваться|Регистрация)\b",rest,maxsplit=1,flags=re.I)[0].strip()
+            if text.lower().startswith(typ):
+                cat=typ; text=text[len(typ):].strip(); break
+        title=re.split(r"\s+(?:Купить билет|Зарегистрироваться|Регистрация|Событий нет)\b",text,maxsplit=1,flags=re.I)[0].strip()
         if len(title)<8 or title.lower() in SKIP_TITLES:
             continue
         key=(dt.isoformat(),title)
         if key in seen: continue
         seen.add(key)
-        link=src["url"]
-        # Prefer a specific internal event link from the same card when available.
-        for a in chosen.find_all("a",href=True):
-            href=urljoin(src["url"],a.get("href",""))
-            if urlparse(href).netloc.endswith("centrezotov.ru") and href!=src["url"]:
-                label=clean(a.get_text(" ",strip=True))
-                if title[:18].lower() in label.lower() or label.lower() not in SKIP_TITLES:
-                    link=href; break
-        price,price_text=parse_price(txt)
-        out.append(make_event(src,dt.isoformat(),m.group(4),title,link,"",
-                              price=price,price_text=price_text,
-                              registration=bool(re.search(r"регистрац",txt,re.I)) or None,
-                              categories=[cat] if cat else []))
+        out.append(make_event(src,dt.isoformat(),m.group(4),title,src["url"],"",
+                              registration=None,categories=[cat] if cat else []))
+    return out
+
+
+def extract_mamm(html, src):
+    soup=BeautifulSoup(html,"html.parser")
+    out=[]; seen=set(); today=date.today()
+    for a in soup.find_all("a",href=True):
+        href=a.get("href","")
+        if "/events/detail/" not in href:
+            continue
+        title=clean(a.get_text(" ",strip=True))
+        if len(title)<8 or title.lower() in SKIP_TITLES:
+            continue
+        full=urljoin(src["url"],href)
+        if full in seen:
+            continue
+        seen.add(full)
+        try:
+            detail=fetch(full)
+        except Exception:
+            continue
+        dsoup=BeautifulSoup(detail,"html.parser")
+        dtext=clean(dsoup.get_text(" ",strip=True))
+        dt=parse_date(dtext,require_year=True)
+        if not dt or dt<today:
+            continue
+        h=dsoup.find(["h1","h2"])
+        if h:
+            htitle=clean(h.get_text(" ",strip=True))
+            if len(htitle)>=8:
+                title=htitle
+        tm=parse_time(dtext[:1200])
+        price,price_text=parse_price(dtext)
+        reg=bool(re.search(r"регистрац|купить билет",dtext,re.I)) or None
+        desc=""
+        ps=dsoup.find_all("p")
+        if ps:
+            desc=clean(" ".join(clean(p.get_text(" ",strip=True)) for p in ps[:3]))
+            if len(desc)>650:
+                desc=desc[:647].rstrip()+"..."
+        out.append(make_event(src,dt.isoformat(),tm,title,full,desc,
+                              price=price,price_text=price_text,registration=reg))
     return out
 
 def extract_ges2(src, days=14):
@@ -435,6 +464,8 @@ def main():
                 candidates.extend(extract_event_links(html,src))
             elif adapter=="zotov":
                 candidates.extend(extract_zotov(html,src))
+            elif adapter=="mamm":
+                candidates.extend(extract_mamm(html,src))
 
         for n in candidates:
             if n["id"] not in existing:

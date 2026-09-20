@@ -30,11 +30,6 @@ jobs:
         run: python scripts/events/collect_jsonld.py
       - name: Apply validation and editorial rules
         run: python scripts/events/validate_events.py
-      - name: Optional Sheet moderation import
-        if: ${{ vars.EVENTS_SHEET_CSV_URL != '' }}
-        env:
-          EVENTS_SHEET_CSV_URL: ${{ vars.EVENTS_SHEET_CSV_URL }}
-        run: python scripts/events/import_sheet.py
       - name: Commit database changes
         run: |
           if ! git diff --quiet -- content/events.json; then

@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import json,re,urllib.request
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import date,datetime,timezone,timedelta
 from pathlib import Path
 
@@ -33,51 +34,60 @@ def classify_price(e):
         return "paid"
     return "unknown"
 
+def inspect_url(url):
+    try:
+        html=fetch(url)
+        text=re.sub(r"<[^>]+>"," ",html)
+        text=re.sub(r"\s+"," ",text).lower()
+        availability="unknown"
+        if any(re.search(p,text,re.I) for p in SOLD_OUT):
+            availability="sold_out"
+        elif any(re.search(p,text,re.I) for p in AVAILABLE):
+            availability="available"
+        has_reg=any(re.search(p,text,re.I) for p in REG_HINTS)
+        has_ticket=any(re.search(p,text,re.I) for p in TICKET_HINTS)
+        return availability,has_reg,has_ticket
+    except Exception:
+        return "unknown",False,False
+
 def main():
     db=json.loads(DB.read_text("utf-8"))
     today=date.today()
     horizon=today+timedelta(days=30)
     kept=[]
+
     for e in db.get("events",[]):
         try:
             d=date.fromisoformat(e.get("date",""))
         except Exception:
             kept.append(e); continue
-        if d < today or d > horizon:
-            continue
+        if today <= d <= horizon:
+            e["price_type"]=classify_price(e)
+            kept.append(e)
 
-        e["price_type"]=classify_price(e)
-        e["availability"]="unknown"
-        e["availability_checked_at"]=datetime.now(timezone.utc).date().isoformat()
+    urls=sorted({str(e.get("url","")) for e in kept if str(e.get("url","")).startswith("http")})
+    results={}
+    with ThreadPoolExecutor(max_workers=12) as pool:
+        futures={pool.submit(inspect_url,u):u for u in urls}
+        for fut in as_completed(futures):
+            results[futures[fut]]=fut.result()
 
+    checked=datetime.now(timezone.utc).date().isoformat()
+    for e in kept:
         url=str(e.get("url",""))
-        if not url.startswith("http"):
-            kept.append(e); continue
-
-        try:
-            html=fetch(url)
-            text=re.sub(r"<[^>]+>"," ",html)
-            text=re.sub(r"\s+"," ",text).lower()
-        except Exception:
-            kept.append(e); continue
-
-        if any(re.search(p,text,re.I) for p in SOLD_OUT):
-            e["availability"]="sold_out"
-        elif any(re.search(p,text,re.I) for p in AVAILABLE):
-            e["availability"]="available"
-
+        availability,has_reg,has_ticket=results.get(url,("unknown",False,False))
+        e["availability"]=availability
+        e["availability_checked_at"]=checked
         if e.get("registration") is None:
-            if any(re.search(p,text,re.I) for p in REG_HINTS):
+            if has_reg:
                 e["registration"]=True
-            elif any(re.search(p,text,re.I) for p in TICKET_HINTS):
+            elif has_ticket:
                 e["registration"]=False
 
-        kept.append(e)
-
     db["events"]=sorted(kept,key=lambda e:(e.get("date",""),e.get("time",""),e.get("price_type",""),e.get("title","")))
-    db["updated_at"]=datetime.now(timezone.utc).date().isoformat()
+    db["updated_at"]=checked
     DB.write_text(json.dumps(db,ensure_ascii=False,indent=2)+"\n","utf-8")
-    print(f"Availability checked; kept {len(kept)} events in 30-day horizon")
+    print(f"Availability checked for {len(urls)} unique pages; kept {len(kept)} events in 30-day horizon")
 
 if __name__=="__main__":
     main()

@@ -20,6 +20,10 @@ on:
   schedule:
     - cron: "15 5 * * *"
 
+concurrency:
+  group: events-pipeline-main
+  cancel-in-progress: true
+
 permissions:
   contents: write
 

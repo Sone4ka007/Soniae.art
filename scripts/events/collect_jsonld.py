@@ -304,40 +304,96 @@ def extract_rusimp(html, src):
     return out
 
 def extract_zotov(html, src):
-    soup = BeautifulSoup(html, "html.parser")
-    out, seen = [], set()
-    today = date.today()
-    lines=[clean(x) for x in soup.get_text("\n",strip=True).splitlines() if clean(x)]
-    date_re = re.compile(r"(?<!\d)(\d{1,2})[.](\d{1,2})[.](\d{2})\s*/\s*(\d{1,2}:\d{2})")
-    for i,line in enumerate(lines):
-        m=date_re.search(line)
-        if not m:
-            continue
-        dt=parse_date(m.group(0),True)
-        if not dt or dt<today:
-            continue
-        rest=line[m.end():].strip()
-        tail=[rest] if rest else []
-        for j in range(i+1,min(i+5,len(lines))):
-            t=lines[j]
-            if date_re.search(t): break
-            if t.lower() in SKIP_TITLES or t.lower() in {"событий нет","сегодня","завтра"}: continue
-            tail.append(t)
-            if len(" ".join(tail))>220: break
-        text=" ".join(tail).strip()
-        text=re.sub(r"^(?:Купить билет|Зарегистрироваться|Регистрация)\s*","",text,flags=re.I)
-        cat=""
-        for typ in sorted(EVENT_TYPES,key=len,reverse=True):
-            if text.lower().startswith(typ):
-                cat=typ; text=text[len(typ):].strip(); break
-        title=re.split(r"\s+(?:Купить билет|Зарегистрироваться|Регистрация|Событий нет)\b",text,maxsplit=1,flags=re.I)[0].strip()
-        if len(title)<8 or title.lower() in SKIP_TITLES:
-            continue
-        key=(dt.isoformat(),title)
-        if key in seen: continue
+    soup=BeautifulSoup(html,"html.parser")
+    out=[]; seen=set(); today=date.today()
+    category_names=sorted(EVENT_TYPES + ["инклюзивное событие","детям","новинки проката","снова в кино","кино крохам"], key=len, reverse=True)
+
+    def add_one(dt, tm, cat, title, full, raw):
+        if not dt or dt < today or len(title)<4:
+            return
+        key=(dt.isoformat(),full,title,tm)
+        if key in seen:
+            return
         seen.add(key)
-        out.append(make_event(src,dt.isoformat(),m.group(4),title,src["url"],"",
-                              registration=None,categories=[cat] if cat else []))
+        price,price_text=parse_price(raw)
+        reg=bool(re.search(r"зарегистр",raw,re.I)) or None
+        out.append(make_event(src,dt.isoformat(),tm,title,full,"",
+                              price=price,price_text=price_text,registration=reg,
+                              categories=[cat] if cat else []))
+
+    for a in soup.find_all("a",href=True):
+        raw=clean(a.get_text(" ",strip=True))
+        if not raw or len(raw)<8:
+            continue
+        full=urljoin(src["url"],a.get("href",""))
+        if urlparse(full).netloc and not urlparse(full).netloc.endswith("centrezotov.ru"):
+            # Ticket links are not event cards.
+            continue
+
+        # Standard cards: 24.09.26 / 19:30 Лекция Название
+        m=re.match(r"^(\d{1,2}\.\d{1,2}\.\d{2,4})\s*/\s*(\d{1,2}:\d{2})\s+(.+)$",raw)
+        if m:
+            dt=parse_date(m.group(1),True)
+            rest=m.group(3).strip()
+            cat=""
+            for name in category_names:
+                if rest.lower().startswith(name):
+                    cat=name
+                    rest=rest[len(name):].strip()
+                    break
+            add_one(dt,m.group(2),cat,rest,full,raw)
+            continue
+
+        # Start-date cards: "с 24.09.26 Новинки проката ..."
+        m=re.match(r"^с\s+(\d{1,2}\.\d{1,2}\.\d{2,4})\s+(.+)$",raw,re.I)
+        if m:
+            dt=parse_date(m.group(1),True)
+            rest=m.group(2).strip()
+            cat=""
+            for name in category_names:
+                if rest.lower().startswith(name):
+                    cat=name
+                    rest=rest[len(name):].strip()
+                    break
+            add_one(dt,"",cat,rest,full,raw)
+            continue
+
+        # Date-range cards: exhibitions/excursions.
+        m=re.match(r"^(\d{1,2}\.\d{1,2}\.\d{2,4})\s*[-–—]\s*(\d{1,2}\.\d{1,2}\.\d{2,4})\s+(.+)$",raw)
+        if m:
+            start_dt=parse_date(m.group(1),True)
+            end_dt=parse_date(m.group(2),True)
+            if end_dt and end_dt >= today:
+                rest=m.group(3).strip()
+                cat=""
+                for name in category_names:
+                    if rest.lower().startswith(name):
+                        cat=name
+                        rest=rest[len(name):].strip()
+                        break
+                # Use today for currently-running programs so they remain visible,
+                # but preserve the range in price_text/description is unnecessary.
+                event_dt=max(start_dt,today) if start_dt else today
+                add_one(event_dt,"",cat,rest,full,raw)
+            continue
+
+        # Recurring cards such as 05.09, 12.09, 19.09, 26.09 / 15:00 ...
+        m=re.match(r"^((?:\d{1,2}\.\d{1,2}(?:\s*,\s*)?)+)\s*/\s*(\d{1,2}:\d{2})\s+(.+)$",raw)
+        if m:
+            rest=m.group(3).strip()
+            cat=""
+            for name in category_names:
+                if rest.lower().startswith(name):
+                    cat=name
+                    rest=rest[len(name):].strip()
+                    break
+            for dm in re.findall(r"(\d{1,2})\.(\d{1,2})",m.group(1)):
+                try:
+                    dt=date(today.year,int(dm[1]),int(dm[0]))
+                except ValueError:
+                    continue
+                add_one(dt,m.group(2),cat,rest,full,raw)
+
     return out
 
 

@@ -4,13 +4,22 @@
       "name": "Музей русского импрессионизма",
       "city": "moscow",
       "url": "https://www.rusimp.su/calendar",
-      "venue": "Музей русского импрессионизма"
+      "venue": "Музей русского импрессионизма",
+      "adapter": "rusimp"
     },
     {
       "name": "Школа дизайна НИУ ВШЭ",
       "city": "moscow",
       "url": "https://design.hse.ru/events",
-      "venue": "Школа дизайна НИУ ВШЭ"
+      "venue": "Школа дизайна НИУ ВШЭ",
+      "adapter": "hse"
+    },
+    {
+      "name": "Школа дизайна НИУ ВШЭ — открытые лекции",
+      "city": "moscow",
+      "url": "https://design.hse.ru/openlectures",
+      "venue": "Школа дизайна НИУ ВШЭ",
+      "adapter": "hse"
     }
   ]
 }

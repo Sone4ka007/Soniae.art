@@ -1,6 +1,11 @@
 name: Events pipeline
 
 on:
+  push:
+    paths:
+      - 'events/sources.json'
+      - 'scripts/events/**'
+      - '.github/workflows/events-pipeline.yml'
   workflow_dispatch:
     inputs:
       week_start:

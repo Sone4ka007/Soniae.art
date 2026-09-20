@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup
 ROOT = Path(__file__).resolve().parents[2]
 SOURCES = ROOT / "events/sources.json"
 DB = ROOT / "content/events.json"
-UA = "Mozilla/5.0 SonyaeEventsBot/1.2 (+https://sonyae.art/events/)"
+UA = "Mozilla/5.0 SonyaeEventsBot/1.3 (+https://sonyae.art/events/)"
 
 MONTHS = {
     "января":1,"янв":1,"февраля":2,"фев":2,"марта":3,"мар":3,

@@ -5,7 +5,9 @@
   const cityButtons = [...document.querySelectorAll('[data-city]')];
   const priceButtons = [...document.querySelectorAll('[data-price]')];
   const categorySelect = document.getElementById('category-filter');
-  const state = { city: 'all', price: 'all', category: 'all' };
+  const registrationButtons = [...document.querySelectorAll('[data-registration]')];
+  const availabilityButtons = [...document.querySelectorAll('[data-availability]')];
+  const state = { city: 'all', price: 'all', category: 'all', registration: 'all', availability: 'all' };
   const cityNames = { moscow: 'МОСКВА', spb: 'ПЕТЕРБУРГ' };
   const categoryNames = {
     lecture:'ЛЕКЦИЯ', exhibition:'ВЫСТАВКА', tour:'ЭКСКУРСИЯ',
@@ -28,17 +30,31 @@
   function isVisible(e) {
     if (e.status !== 'approved') return false;
     if (!e.date || e.date < todayIso()) return false;
+    const max = new Date(); max.setDate(max.getDate()+30);
+    const maxIso = `${max.getFullYear()}-${String(max.getMonth()+1).padStart(2,'0')}-${String(max.getDate()).padStart(2,'0')}`;
+    if (e.date > maxIso) return false;
     if (state.city !== 'all' && e.city !== state.city) return false;
-    if (state.price === 'free' && Number(e.price) !== 0) return false;
-    if (state.price === 'paid' && Number(e.price) === 0) return false;
+    const ptype = e.price_type || (Number(e.price) === 0 ? 'free' : (e.price ? 'paid' : 'unknown'));
+    if (state.price === 'free' && ptype !== 'free') return false;
+    if (state.price === 'paid' && ptype !== 'paid') return false;
+    if (state.registration === 'yes' && e.registration !== true) return false;
+    if (state.registration === 'no' && e.registration !== false) return false;
+    if (state.availability !== 'all' && e.availability !== state.availability) return false;
     if (state.category !== 'all' && !(e.categories || []).includes(state.category)) return false;
     return true;
   }
 
   function priceLabel(e) {
-    if (Number(e.price) === 0) return 'БЕСПЛАТНО';
+    if (e.price_type === 'free' || Number(e.price) === 0) return 'БЕСПЛАТНО';
     if (e.price_text) return esc(e.price_text);
-    return `${esc(e.price)} ₽`;
+    if (e.price !== null && e.price !== undefined && e.price !== '') return `${esc(e.price)} ₽`;
+    return 'ЦЕНА НЕ УКАЗАНА';
+  }
+
+  function availabilityLabel(e) {
+    if (e.availability === 'available') return 'ЕСТЬ МЕСТА / БИЛЕТЫ';
+    if (e.availability === 'sold_out') return 'МЕСТ НЕТ / ЗАПИСЬ ЗАКРЫТА';
+    return 'ДОСТУПНОСТЬ НЕ ПРОВЕРЕНА';
   }
 
   function render() {
@@ -74,7 +90,9 @@
               <p>${esc(e.address || '')}</p>
               <p>${esc(cityNames[e.city] || e.city || '')}</p>
               <div class="event-price ${Number(e.price) === 0 ? 'free' : ''}">${priceLabel(e)}</div>
-              ${e.registration ? '<p>НУЖНА РЕГИСТРАЦИЯ</p>' : ''}
+              ${e.registration === true ? '<p>НУЖНА РЕГИСТРАЦИЯ</p>' : e.registration === false ? '<p>БЕЗ РЕГИСТРАЦИИ</p>' : ''}
+              <p>${availabilityLabel(e)}</p>
+              ${e.availability_checked_at ? `<div class="event-check">МЕСТА ПРОВЕРЕНЫ: ${esc(e.availability_checked_at)}</div>` : ''}
               ${e.checked_at ? `<div class="event-check">ПРОВЕРЕНО: ${esc(e.checked_at)}</div>` : ''}
             </div>
             <a class="event-link" href="${esc(e.url)}" target="_blank" rel="noopener">ИСТОЧНИК ↗</a>
@@ -93,6 +111,12 @@
   }));
   priceButtons.forEach(btn => btn.addEventListener('click', () => {
     state.price = btn.dataset.price; activate(priceButtons, btn); render();
+  }));
+  registrationButtons.forEach(btn => btn.addEventListener('click', () => {
+    state.registration = btn.dataset.registration; activate(registrationButtons, btn); render();
+  }));
+  availabilityButtons.forEach(btn => btn.addEventListener('click', () => {
+    state.availability = btn.dataset.availability; activate(availabilityButtons, btn); render();
   }));
   categorySelect.addEventListener('change', () => { state.category = categorySelect.value; render(); });
 

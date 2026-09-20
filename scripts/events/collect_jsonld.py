@@ -77,7 +77,7 @@ def parse_date(text, require_year=True, default_year=None):
         return None
 
 def parse_time(text):
-    m = re.search(r"(?<!\d)([01]?\d|2[0-3])[:.](\d{2})(?!\d)", clean(text))
+    m = re.search(r"(?<!\d)([01]?\d|2[0-3]):(\d{2})(?!\d)", clean(text))
     return f"{int(m.group(1)):02d}:{m.group(2)}" if m else ""
 
 def parse_price(text):
@@ -200,48 +200,42 @@ def normalize_anchor_title(a, block_text=""):
     return clean(title)
 
 def extract_event_links(html, src):
-    soup = BeautifulSoup(html, "html.parser")
-    out, seen = [], set()
-    today = date.today()
-    patterns = src.get("href_contains") or ["/events/"]
-    for a in soup.find_all("a", href=True):
-        href = a.get("href","")
-        full = urljoin(src["url"], href)
-        if not any(p in full for p in patterns):
+    soup=BeautifulSoup(html,"html.parser")
+    out=[]; seen_urls=set(); today=date.today()
+    patterns=src.get("href_contains") or ["/events/"]
+    urls=[]
+    for a in soup.find_all("a",href=True):
+        full=urljoin(src["url"],a.get("href",""))
+        if any(p in full for p in patterns) and full not in seen_urls:
+            seen_urls.add(full); urls.append(full)
+    for full in urls[:120]:
+        try:
+            detail=fetch(full)
+        except Exception:
             continue
-        title = normalize_anchor_title(a)
-        block, txt, dt = nearest_dated_block(a, require_year=True, limit=2800)
-        if block is not None and (title.startswith("#") or title.lower() in EVENT_TYPES):
-            # Some cards link the category tag to the event URL. Recover the real title
-            # from the same card instead of storing "#концерт" / "Экскурсия".
-            candidates=[]
-            for el in block.find_all(["h2","h3","h4","h5","a","span","p"]):
-                t=clean(el.get_text(" ",strip=True))
-                if len(t)<8 or t.startswith("#") or t.lower() in SKIP_TITLES or t.lower() in EVENT_TYPES:
-                    continue
-                if parse_date(t,True) or re.fullmatch(r"\\d{1,2}:\\d{2}(?:\\s*[–-]\\s*\\d{1,2}:\\d{2})?",t):
-                    continue
-                if t in {src.get("venue",""),"Корпус на Кадашёвской набережной","Инженерный корпус","Новая Третьяковка"}:
-                    continue
-                candidates.append(t)
-            if candidates:
-                title=max(candidates,key=len)
-        if len(title) < 8 or title.lower() in SKIP_TITLES or title.startswith("#"):
+        dsoup=BeautifulSoup(detail,"html.parser")
+        dtext=clean(dsoup.get_text(" ",strip=True))
+        dt=parse_date(dtext,require_year=True)
+        if not dt or dt<today:
             continue
-        if not dt or dt < today:
+        title=""
+        for h in dsoup.find_all(["h1","h2","h3"]):
+            t=clean(h.get_text(" ",strip=True))
+            if len(t)>=8 and not t.startswith("#") and t.lower() not in SKIP_TITLES and t.lower() not in EVENT_TYPES:
+                title=t; break
+        if not title:
             continue
-        key = (dt.isoformat(), full, title)
-        if key in seen:
-            continue
-        seen.add(key)
-        price, price_text = parse_price(txt)
-        reg = bool(re.search(r"регистрац|зарегистр", txt, re.I)) or None
-        cat = event_category(txt)
-        desc = txt.replace(title, "", 1).strip()
-        if len(desc) > 650:
-            desc = desc[:647].rstrip() + "..."
-        out.append(make_event(src, dt.isoformat(), parse_time(txt), title, full, desc,
-                              price=price, price_text=price_text, registration=reg,
+        tm=parse_time(dtext[:1800])
+        price,price_text=parse_price(dtext)
+        reg=bool(re.search(r"регистрац|зарегистр|купить билет",dtext,re.I)) or None
+        cat=event_category(dtext[:1800])
+        desc=""
+        ps=dsoup.find_all("p")
+        if ps:
+            desc=clean(" ".join(clean(p.get_text(" ",strip=True)) for p in ps[:4]))
+            if len(desc)>650: desc=desc[:647].rstrip()+"..."
+        out.append(make_event(src,dt.isoformat(),tm,title,full,desc,
+                              price=price,price_text=price_text,registration=reg,
                               categories=[cat] if cat else []))
     return out
 
@@ -421,7 +415,16 @@ def extract_ges2(src, days=14):
                 continue
             if not (event_category(txt) or parse_time(txt)):
                 continue
-            # Remove duplicated event type around titles used by this site.
+            cat=event_category(txt)
+            title=re.sub(r"^\d{1,2}:\d{2}\s*[–-]\s*\d{1,2}:\d{2}\s*","",title)
+            if cat:
+                parts=[clean(x) for x in re.split(re.escape(cat),title,flags=re.I) if clean(x)]
+                if parts:
+                    title=min(parts,key=len)
+            words=title.split()
+            for n in range(2,len(words)//2+1):
+                if words[:n]==words[n:2*n] and len(words)==2*n:
+                    title=" ".join(words[:n]); break
             for typ in sorted(EVENT_TYPES,key=len,reverse=True):
                 title=re.sub(rf"^{re.escape(typ)}\s*", "", title, flags=re.I)
                 title=re.sub(rf"\s*{re.escape(typ)}$", "", title, flags=re.I)

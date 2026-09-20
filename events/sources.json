@@ -26,42 +26,54 @@
       "city": "moscow",
       "url": "https://centrezotov.ru/program/",
       "venue": "Центр Зотов",
-      "adapter": "generic_cards"
+      "adapter": "zotov"
     },
     {
       "name": "Музей современного искусства «Гараж»",
       "city": "moscow",
       "url": "https://garagemca.org/calendar?event_kind=events",
       "venue": "Музей «Гараж»",
-      "adapter": "generic_cards"
+      "adapter": "event_links",
+      "href_contains": [
+        "/event/"
+      ]
     },
     {
       "name": "Дом культуры «ГЭС-2»",
       "city": "moscow",
       "url": "https://ges-2.org/calendar",
       "venue": "ГЭС-2",
-      "adapter": "generic_cards"
+      "adapter": "ges2"
     },
     {
       "name": "Третьяковская галерея — события",
       "city": "moscow",
       "url": "https://www.tretyakovgallery.ru/tickets/events/",
       "venue": "Третьяковская галерея",
-      "adapter": "generic_cards"
+      "adapter": "event_links",
+      "href_contains": [
+        "/events/o/"
+      ]
     },
     {
       "name": "Центр Вознесенского",
       "city": "moscow",
       "url": "https://www.voznesenskycenter.ru/",
       "venue": "Центр Вознесенского",
-      "adapter": "generic_cards"
+      "adapter": "event_links",
+      "href_contains": [
+        "/events/"
+      ]
     },
     {
       "name": "Еврейский музей и центр толерантности",
       "city": "moscow",
       "url": "https://www.jewish-museum.ru/",
       "venue": "Еврейский музей и центр толерантности",
-      "adapter": "generic_cards"
+      "adapter": "event_links",
+      "href_contains": [
+        "/events/"
+      ]
     }
   ]
 }

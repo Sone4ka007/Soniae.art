@@ -92,6 +92,17 @@ def parse_ru_date(text, require_year=True, default_year=None):
     try: return date(y,MONTHS[m.group(2)],int(m.group(1)))
     except ValueError: return None
 
+def parse_any_date(text):
+    text=clean(text).lower().replace("ё","е")
+    d=parse_ru_date(text,True)
+    if d: return d
+    m=re.search(r"(?<!\\d)(\\d{1,2})[./](\\d{1,2})[./](\\d{2,4})(?!\\d)",text)
+    if m:
+        y=int(m.group(3)); y += 2000 if y < 100 else 0
+        try: return date(y,int(m.group(2)),int(m.group(1)))
+        except ValueError: return None
+    return None
+
 def parse_time(text):
     m=re.search(r"(?<!\d)([01]?\d|2[0-3])[:.](\d{2})(?!\d)",clean(text))
     return f"{int(m.group(1)):02d}:{m.group(2)}" if m else ""
@@ -118,6 +129,45 @@ def nearest_block_with_date(anchor, require_year):
             best=node
             break
     return best
+
+def extract_generic_cards(html, src):
+    soup=BeautifulSoup(html,"html.parser")
+    out=[]; seen=set(); today=date.today()
+    skip={"купить билет","зарегистрироваться","подать заявку","подробнее","все события","архив","читать далее"}
+    for a in soup.find_all("a",href=True):
+        title=clean(a.get_text(" ",strip=True))
+        if len(title)<8 or title.lower() in skip:
+            continue
+        node=a; block=None; dt=None
+        for _ in range(7):
+            node=getattr(node,"parent",None)
+            if node is None: break
+            txt=clean(node.get_text(" ",strip=True))
+            if len(txt)>3000: break
+            dt=parse_any_date(txt)
+            if dt:
+                block=node; break
+        if not block or not dt or dt<today:
+            continue
+        txt=clean(block.get_text(" ",strip=True))
+        url=urljoin(src["url"],a.get("href",""))
+        if url==src["url"] and title.lower() in skip: continue
+        key=(dt.isoformat(),url,title)
+        if key in seen: continue
+        seen.add(key)
+        tm=parse_time(txt)
+        registration=bool(re.search(r"регистрац|зарегистр",txt,re.I)) or None
+        free=bool(re.search(r"бесплат|вход\\s+свобод",txt,re.I))
+        price=None; price_text="Бесплатно" if free else ""
+        pm=re.search(r"(?<!\\d)(\\d[\\d \\u00a0]{1,7})\\s*[₽р](?:уб)?",txt,re.I)
+        if pm and not free:
+            try: price=int(re.sub(r"\\D","",pm.group(1)))
+            except Exception: pass
+        desc=txt.replace(title,"",1).strip()
+        if len(desc)>650: desc=desc[:647].rstrip()+"..."
+        out.append(make_event(src,dt.isoformat(),tm,title,src.get("venue",""),"",0 if free else price,
+                              price_text,registration,[],desc,url,"new",""))
+    return out
 
 def extract_hse(html, src):
     soup=BeautifulSoup(html,"html.parser")
@@ -204,6 +254,8 @@ def main():
             candidates.extend(extract_hse(html,src))
         elif adapter=="rusimp":
             candidates.extend(extract_rusimp(html,src))
+        elif adapter=="generic_cards":
+            candidates.extend(extract_generic_cards(html,src))
 
         for n in candidates:
             if n["id"] not in existing:

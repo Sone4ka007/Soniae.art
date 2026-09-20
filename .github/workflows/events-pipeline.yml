@@ -39,6 +39,8 @@ jobs:
         run: pip install beautifulsoup4 google-api-python-client google-auth
       - name: Collect structured events from official sources
         run: python scripts/events/collect_jsonld.py
+      - name: Check ticket and registration availability
+        run: python scripts/events/check_availability.py
       - name: Apply validation and editorial rules
         run: python scripts/events/validate_events.py
       - name: Commit database changes

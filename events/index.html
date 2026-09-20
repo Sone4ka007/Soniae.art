@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>События для художников — Соня Енокаева</title>
+  <meta name="description" content="Агрегатор лекций, выставок, экскурсий, воркшопов и других событий для художников.">
+  <link rel="canonical" href="https://sonyae.art/events/">
+  <link rel="stylesheet" href="/assets/style.css">
+  <link rel="stylesheet" href="/assets/events.css">
+</head>
+<body>
+<header class="top">
+  <a class="logo" href="/">СОНЯ ЕНОКАЕВА</a>
+  <button class="menu-button" aria-expanded="false">МЕНЮ</button>
+  <nav>
+    <a href="/#works">РАБОТЫ</a>
+    <a href="/journal/">JOURNAL</a>
+    <a href="/events/" aria-current="page">СОБЫТИЯ</a>
+    <a href="/#about">О СЕБЕ</a>
+    <a href="/#cv">CV</a>
+    <a href="/#contact">КОНТАКТЫ</a>
+  </nav>
+</header>
+
+<main class="events-page">
+  <section class="events-hero">
+    <div class="events-kicker">СОБЫТИЯ ДЛЯ ХУДОЖНИКОВ</div>
+    <h1>КУДА<br>СХОДИТЬ</h1>
+    <p>Лекции, выставки, экскурсии, artist talks, фотография, архитектура и воркшопы. Только события, прошедшие редакторскую проверку.</p>
+  </section>
+
+  <section class="events-toolbar" aria-label="Фильтры">
+    <div class="filter-group">
+      <button class="filter active" data-city="all">ВСЕ ГОРОДА</button>
+      <button class="filter" data-city="moscow">МОСКВА</button>
+      <button class="filter" data-city="spb">ПЕТЕРБУРГ</button>
+    </div>
+    <div class="filter-group">
+      <button class="filter active" data-price="all">ВСЕ</button>
+      <button class="filter" data-price="free">БЕСПЛАТНО</button>
+      <button class="filter" data-price="paid">ПЛАТНО</button>
+    </div>
+    <select id="category-filter" aria-label="Категория">
+      <option value="all">ВСЕ КАТЕГОРИИ</option>
+      <option value="lecture">ЛЕКЦИИ</option>
+      <option value="exhibition">ВЫСТАВКИ</option>
+      <option value="tour">ЭКСКУРСИИ</option>
+      <option value="workshop">ВОРКШОПЫ</option>
+      <option value="artist-talk">ARTIST TALKS</option>
+      <option value="photo">ФОТОГРАФИЯ</option>
+      <option value="architecture">АРХИТЕКТУРА</option>
+      <option value="market">АРТ-РЫНОК</option>
+    </select>
+  </section>
+
+  <section class="events-status">
+    <span id="events-count">0 СОБЫТИЙ</span>
+    <span id="events-range">АКТУАЛЬНО</span>
+  </section>
+
+  <section id="events-list" class="events-list" aria-live="polite"></section>
+
+  <section class="events-empty" id="events-empty" hidden>
+    <p>Сейчас по выбранным фильтрам событий нет.</p>
+  </section>
+</main>
+
+<footer>
+  <span>© 2026 СОНЯ ЕНОКАЕВА</span>
+  <a href="#">НАВЕРХ ↑</a>
+</footer>
+
+<script src="/assets/events.js"></script>
+</body>
+</html>

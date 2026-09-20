@@ -16,7 +16,11 @@ AVAILABLE=[
     r"купить билет",r"купить билеты",r"зарегистрироваться",r"регистрация открыта",
     r"осталось \d+ мест",r"есть места",r"выбрать билет",r"оформить билет"
 ]
-REG_HINTS=[r"регистрац",r"зарегистр",r"по предварительной записи",r"по записи"]
+REG_HINTS=[
+    r"зарегистрироваться",r"регистрация открыта",r"регистрация закрыта",
+    r"регистрация обязательна",r"требуется регистрация",r"по предварительной регистрации",
+    r"по предварительной записи",r"вход по регистрации"
+]
 TICKET_HINTS=[r"билет",r"₽",r"руб"]
 
 def fetch(url):
@@ -46,9 +50,15 @@ def inspect_url(url):
             availability="available"
         has_reg=any(re.search(p,text,re.I) for p in REG_HINTS)
         has_ticket=any(re.search(p,text,re.I) for p in TICKET_HINTS)
-        return availability,has_reg,has_ticket
+        if re.search(r"\bбесплат(?:но|ный|ная|ное)|вход\s+свобод",text,re.I):
+            page_price="free"
+        elif re.search(r"\b\d[\d\s\u00a0]{0,7}\s*(?:₽|руб(?:\.|лей|ля)?)",text,re.I):
+            page_price="paid"
+        else:
+            page_price="unknown"
+        return availability,has_reg,has_ticket,page_price
     except Exception:
-        return "unknown",False,False
+        return "unknown",False,False,"unknown"
 
 def main():
     db=json.loads(DB.read_text("utf-8"))
@@ -75,14 +85,17 @@ def main():
     checked=datetime.now(timezone.utc).date().isoformat()
     for e in kept:
         url=str(e.get("url",""))
-        availability,has_reg,has_ticket=results.get(url,("unknown",False,False))
+        availability,has_reg,has_ticket,page_price=results.get(url,("unknown",False,False,"unknown"))
         e["availability"]=availability
         e["availability_checked_at"]=checked
-        if e.get("registration") is None:
-            if has_reg:
-                e["registration"]=True
-            elif has_ticket:
-                e["registration"]=False
+        if e.get("price_type") in (None,"","unknown") and page_price!="unknown":
+            e["price_type"]=page_price
+        if has_reg:
+            e["registration"]=True
+        elif has_ticket:
+            e["registration"]=False
+        else:
+            e["registration"]=None
 
     db["events"]=sorted(kept,key=lambda e:(e.get("date",""),e.get("time",""),e.get("price_type",""),e.get("title","")))
     db["updated_at"]=checked

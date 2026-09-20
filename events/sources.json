@@ -20,6 +20,48 @@
       "url": "https://design.hse.ru/openlectures",
       "venue": "Школа дизайна НИУ ВШЭ",
       "adapter": "hse"
+    },
+    {
+      "name": "Центр Зотов",
+      "city": "moscow",
+      "url": "https://centrezotov.ru/program/",
+      "venue": "Центр Зотов",
+      "adapter": "generic_cards"
+    },
+    {
+      "name": "Музей современного искусства «Гараж»",
+      "city": "moscow",
+      "url": "https://garagemca.org/calendar?event_kind=events",
+      "venue": "Музей «Гараж»",
+      "adapter": "generic_cards"
+    },
+    {
+      "name": "Дом культуры «ГЭС-2»",
+      "city": "moscow",
+      "url": "https://ges-2.org/calendar",
+      "venue": "ГЭС-2",
+      "adapter": "generic_cards"
+    },
+    {
+      "name": "Третьяковская галерея — события",
+      "city": "moscow",
+      "url": "https://www.tretyakovgallery.ru/tickets/events/",
+      "venue": "Третьяковская галерея",
+      "adapter": "generic_cards"
+    },
+    {
+      "name": "Центр Вознесенского",
+      "city": "moscow",
+      "url": "https://www.voznesenskycenter.ru/",
+      "venue": "Центр Вознесенского",
+      "adapter": "generic_cards"
+    },
+    {
+      "name": "Еврейский музей и центр толерантности",
+      "city": "moscow",
+      "url": "https://www.jewish-museum.ru/",
+      "venue": "Еврейский музей и центр толерантности",
+      "adapter": "generic_cards"
     }
   ]
 }

@@ -1,0 +1,48 @@
+name: Events sheet sync
+
+on:
+  workflow_dispatch:
+    inputs:
+      direction:
+        description: "push = GitHub → Sheet, pull = Sheet → GitHub"
+        required: true
+        default: "pull"
+        type: choice
+        options: [pull, push]
+  schedule:
+    - cron: "0 6 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install google-api-python-client google-auth
+      - name: Pull editor changes
+        if: github.event_name == 'schedule' || inputs.direction == 'pull'
+        env:
+          EVENTS_SHEET_ID: ${{ vars.EVENTS_SHEET_ID }}
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+        run: python scripts/events/pull_sheet.py
+      - name: Commit editor changes
+        if: github.event_name == 'schedule' || inputs.direction == 'pull'
+        run: |
+          if ! git diff --quiet -- content/events.json; then
+            git config user.name "sonyae-events-bot"
+            git config user.email "actions@users.noreply.github.com"
+            git add content/events.json
+            git commit -m "Sync event moderation from Google Sheet"
+            git push
+          fi
+      - name: Push database to Sheet
+        if: inputs.direction == 'push'
+        env:
+          EVENTS_SHEET_ID: ${{ vars.EVENTS_SHEET_ID }}
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+        run: python scripts/events/push_sheet.py

@@ -63,7 +63,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": null,
       "categories": [],
       "description": "",
       "url": "https://ges-2.org/alexandra-sukhareva-beginnings",
@@ -71,7 +71,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -86,7 +86,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": null,
       "categories": [
         "выставка"
       ],
@@ -96,7 +96,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -111,7 +111,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": null,
       "categories": [
         "выставка"
       ],
@@ -121,7 +121,55 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-20"
+    },
+    {
+      "id": "moscow-2026-09-20-00df913bfb",
+      "status": "new",
+      "city": "moscow",
+      "date": "2026-09-20",
+      "time": "11:30",
+      "title": "Практика Семейная йога",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [],
+      "description": "",
+      "url": "https://ges-2.org/family-yoga",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-20",
+      "price_type": "free",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-20"
+    },
+    {
+      "id": "moscow-2026-09-20-008f85bac0",
+      "status": "new",
+      "city": "moscow",
+      "date": "2026-09-20",
+      "time": "11:30",
+      "title": "Я беру с собой в поход",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "игра"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/i-m-taking-it-on-my-hike",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-20",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -151,54 +199,6 @@
       "availability_checked_at": "2026-09-20"
     },
     {
-      "id": "moscow-2026-09-20-00df913bfb",
-      "status": "new",
-      "city": "moscow",
-      "date": "2026-09-20",
-      "time": "11:30",
-      "title": "Практика Семейная йога",
-      "venue": "ГЭС-2",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": true,
-      "categories": [],
-      "description": "",
-      "url": "https://ges-2.org/family-yoga",
-      "source": "Дом культуры «ГЭС-2»",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "unknown",
-      "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
-    },
-    {
-      "id": "moscow-2026-09-20-008f85bac0",
-      "status": "new",
-      "city": "moscow",
-      "date": "2026-09-20",
-      "time": "11:30",
-      "title": "Я беру с собой в поход",
-      "venue": "ГЭС-2",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": true,
-      "categories": [
-        "игра"
-      ],
-      "description": "",
-      "url": "https://ges-2.org/i-m-taking-it-on-my-hike",
-      "source": "Дом культуры «ГЭС-2»",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "unknown",
-      "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
-    },
-    {
       "id": "moscow-2026-09-20-ead587df73",
       "status": "new",
       "city": "moscow",
@@ -209,7 +209,7 @@
       "address": "",
       "price": 0,
       "price_text": "Бесплатно",
-      "registration": true,
+      "registration": false,
       "categories": [
         "лекция"
       ],
@@ -234,7 +234,7 @@
       "address": "",
       "price": 0,
       "price_text": "Бесплатно",
-      "registration": true,
+      "registration": false,
       "categories": [
         "лекция"
       ],
@@ -259,7 +259,7 @@
       "address": "",
       "price": 0,
       "price_text": "Бесплатно",
-      "registration": true,
+      "registration": false,
       "categories": [
         "лекция"
       ],
@@ -284,7 +284,7 @@
       "address": "",
       "price": 2000,
       "price_text": "",
-      "registration": true,
+      "registration": false,
       "categories": [
         "лекция"
       ],
@@ -309,7 +309,7 @@
       "address": "",
       "price": 1700,
       "price_text": "",
-      "registration": true,
+      "registration": false,
       "categories": [
         "лекция"
       ],
@@ -359,7 +359,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": null,
       "categories": [
         "медиаторский тур"
       ],
@@ -369,7 +369,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -384,7 +384,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": false,
       "categories": [
         "мастер-класс"
       ],
@@ -394,7 +394,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -417,7 +417,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "available",
       "availability_checked_at": "2026-09-20"
     },
@@ -432,7 +432,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": false,
       "categories": [
         "медиаторский тур"
       ],
@@ -442,7 +442,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -457,7 +457,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": null,
       "categories": [
         "медиаторский тур"
       ],
@@ -467,7 +467,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -482,7 +482,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": null,
       "categories": [],
       "description": "",
       "url": "https://ges-2.org/projects/ges-2-board-games-club",
@@ -490,7 +490,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -530,7 +530,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": null,
       "categories": [
         "лаборатория"
       ],
@@ -540,7 +540,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -570,6 +570,29 @@
       "availability_checked_at": "2026-09-20"
     },
     {
+      "id": "moscow-2026-09-20-f8243a315b",
+      "status": "new",
+      "city": "moscow",
+      "date": "2026-09-20",
+      "time": "15:30",
+      "title": "Ателье. Самостоятельная работа",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [],
+      "description": "",
+      "url": "https://ges-2.org/atelier",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-20",
+      "price_type": "free",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-20"
+    },
+    {
       "id": "moscow-2026-09-20-50dd1442d1",
       "status": "check",
       "city": "moscow",
@@ -588,31 +611,8 @@
       "checked_at": "",
       "review_reason": "year_not_explicit_on_primary_listing",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
-    },
-    {
-      "id": "moscow-2026-09-20-f8243a315b",
-      "status": "new",
-      "city": "moscow",
-      "date": "2026-09-20",
-      "time": "15:30",
-      "title": "Ателье. Самостоятельная работа",
-      "venue": "ГЭС-2",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": true,
-      "categories": [],
-      "description": "",
-      "url": "https://ges-2.org/atelier",
-      "source": "Дом культуры «ГЭС-2»",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "unknown",
-      "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
     {
@@ -626,7 +626,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": null,
       "categories": [
         "кинопоказ"
       ],
@@ -636,7 +636,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -661,7 +661,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "available",
       "availability_checked_at": "2026-09-20"
     },
@@ -726,7 +726,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": null,
       "categories": [
         "кинопоказ"
       ],
@@ -736,7 +736,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -751,7 +751,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": null,
       "categories": [],
       "description": "",
       "url": "https://ges-2.org/alexandra-sukhareva-beginnings",
@@ -759,7 +759,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -774,7 +774,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": null,
       "categories": [
         "выставка"
       ],
@@ -784,7 +784,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -809,7 +809,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "available",
       "availability_checked_at": "2026-09-20"
     },
@@ -832,7 +832,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "available",
       "availability_checked_at": "2026-09-20"
     },
@@ -857,7 +857,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "available",
       "availability_checked_at": "2026-09-20"
     },
@@ -872,7 +872,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": false,
       "categories": [
         "медиаторский тур"
       ],
@@ -882,7 +882,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -897,7 +897,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": false,
       "categories": [
         "медиаторский тур"
       ],
@@ -907,7 +907,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -932,7 +932,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "available",
       "availability_checked_at": "2026-09-20"
     },
@@ -947,7 +947,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": false,
       "categories": [
         "кинопоказ"
       ],
@@ -957,7 +957,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -972,7 +972,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": null,
       "categories": [],
       "description": "",
       "url": "https://ges-2.org/alexandra-sukhareva-beginnings",
@@ -980,7 +980,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -995,7 +995,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": null,
       "categories": [
         "выставка"
       ],
@@ -1005,7 +1005,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -1020,7 +1020,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": false,
       "categories": [
         "мастер-класс"
       ],
@@ -1030,7 +1030,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -1045,7 +1045,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": null,
       "categories": [
         "игра"
       ],
@@ -1055,7 +1055,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -1070,7 +1070,7 @@
       "address": "",
       "price": 0,
       "price_text": "Бесплатно",
-      "registration": true,
+      "registration": false,
       "categories": [
         "лекция"
       ],
@@ -1120,7 +1120,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": false,
       "categories": [
         "лекция"
       ],
@@ -1145,7 +1145,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": false,
       "categories": [],
       "description": "",
       "url": "https://ges-2.org/atelier",
@@ -1153,7 +1153,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -1178,7 +1178,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "available",
       "availability_checked_at": "2026-09-20"
     },
@@ -1201,7 +1201,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "available",
       "availability_checked_at": "2026-09-20"
     },
@@ -1216,7 +1216,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": false,
       "categories": [
         "медиаторский тур"
       ],
@@ -1226,7 +1226,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -1251,7 +1251,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "available",
       "availability_checked_at": "2026-09-20"
     },
@@ -1276,7 +1276,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "available",
       "availability_checked_at": "2026-09-20"
     },
@@ -1291,7 +1291,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": false,
       "categories": [],
       "description": "",
       "url": "https://ges-2.org/a-and-b-were-sitting-on-a-pipe",
@@ -1299,7 +1299,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -1314,7 +1314,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": null,
       "categories": [
         "медиаторский тур"
       ],
@@ -1324,7 +1324,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -1339,7 +1339,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": false,
       "categories": [
         "кинопоказ"
       ],
@@ -1349,7 +1349,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -1414,7 +1414,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": null,
       "categories": [],
       "description": "",
       "url": "https://ges-2.org/alexandra-sukhareva-beginnings",
@@ -1422,7 +1422,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -1437,7 +1437,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": null,
       "categories": [
         "выставка"
       ],
@@ -1447,7 +1447,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -1462,7 +1462,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": false,
       "categories": [
         "мастер-класс"
       ],
@@ -1472,7 +1472,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -1487,7 +1487,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": null,
       "categories": [],
       "description": "",
       "url": "https://ges-2.org/the-city-i-made-up",
@@ -1495,7 +1495,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -1510,7 +1510,7 @@
       "address": "",
       "price": 0,
       "price_text": "Бесплатно",
-      "registration": true,
+      "registration": false,
       "categories": [
         "лекция"
       ],
@@ -1535,7 +1535,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": false,
       "categories": [],
       "description": "",
       "url": "https://ges-2.org/atelier",
@@ -1543,7 +1543,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -1566,7 +1566,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "available",
       "availability_checked_at": "2026-09-20"
     },
@@ -1591,7 +1591,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "available",
       "availability_checked_at": "2026-09-20"
     },
@@ -1606,7 +1606,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": false,
       "categories": [
         "медиаторский тур"
       ],
@@ -1616,7 +1616,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -1641,7 +1641,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "available",
       "availability_checked_at": "2026-09-20"
     },
@@ -1656,7 +1656,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": false,
       "categories": [
         "медиаторский тур"
       ],
@@ -1666,7 +1666,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -1681,7 +1681,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": null,
       "categories": [],
       "description": "",
       "url": "https://ges-2.org/how-to-control-chaos",
@@ -1689,7 +1689,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -1714,7 +1714,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "available",
       "availability_checked_at": "2026-09-20"
     },
@@ -1729,7 +1729,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": false,
       "categories": [
         "концерт"
       ],
@@ -1739,8 +1739,33 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "available",
+      "availability_checked_at": "2026-09-20"
+    },
+    {
+      "id": "moscow-2026-09-23-262c783235",
+      "status": "new",
+      "city": "moscow",
+      "date": "2026-09-23",
+      "time": "19:00",
+      "title": "альбома «Устье»",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "презентация"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/presentation-of-the-album-estuary",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-20",
+      "price_type": "free",
+      "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
     {
@@ -1769,27 +1794,27 @@
       "availability_checked_at": "2026-09-20"
     },
     {
-      "id": "moscow-2026-09-23-262c783235",
+      "id": "moscow-2026-09-23-d234fed707",
       "status": "new",
       "city": "moscow",
       "date": "2026-09-23",
-      "time": "19:00",
-      "title": "альбома «Устье»",
+      "time": "19:30",
+      "title": "Расскажи матери. Фестиваль коллективных фильмов",
       "venue": "ГЭС-2",
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": false,
       "categories": [
-        "презентация"
+        "кинопоказ"
       ],
       "description": "",
-      "url": "https://ges-2.org/presentation-of-the-album-estuary",
+      "url": "https://ges-2.org/report-to-mother",
       "source": "Дом культуры «ГЭС-2»",
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -1816,31 +1841,6 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
-    },
-    {
-      "id": "moscow-2026-09-23-d234fed707",
-      "status": "new",
-      "city": "moscow",
-      "date": "2026-09-23",
-      "time": "19:30",
-      "title": "Расскажи матери. Фестиваль коллективных фильмов",
-      "venue": "ГЭС-2",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": true,
-      "categories": [
-        "кинопоказ"
-      ],
-      "description": "",
-      "url": "https://ges-2.org/report-to-mother",
-      "source": "Дом культуры «ГЭС-2»",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "unknown",
-      "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
     {
@@ -1929,7 +1929,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": null,
       "categories": [],
       "description": "",
       "url": "https://ges-2.org/alexandra-sukhareva-beginnings",
@@ -1937,7 +1937,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -1952,7 +1952,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": null,
       "categories": [
         "выставка"
       ],
@@ -1962,7 +1962,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -1977,7 +1977,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": null,
       "categories": [
         "игра"
       ],
@@ -1987,7 +1987,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -2002,7 +2002,7 @@
       "address": "",
       "price": 0,
       "price_text": "Бесплатно",
-      "registration": true,
+      "registration": false,
       "categories": [
         "лекция"
       ],
@@ -2027,7 +2027,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": false,
       "categories": [],
       "description": "",
       "url": "https://ges-2.org/atelier",
@@ -2035,7 +2035,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -2058,7 +2058,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "available",
       "availability_checked_at": "2026-09-20"
     },
@@ -2083,7 +2083,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "available",
       "availability_checked_at": "2026-09-20"
     },
@@ -2098,7 +2098,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": false,
       "categories": [
         "медиаторский тур"
       ],
@@ -2108,7 +2108,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -2133,7 +2133,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "available",
       "availability_checked_at": "2026-09-20"
     },
@@ -2148,7 +2148,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": false,
       "categories": [
         "кинопоказ"
       ],
@@ -2158,7 +2158,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -2173,7 +2173,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": null,
       "categories": [
         "медиаторский тур"
       ],
@@ -2183,7 +2183,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -2198,7 +2198,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": false,
       "categories": [
         "лекция"
       ],
@@ -2208,7 +2208,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "available",
       "availability_checked_at": "2026-09-20"
     },
@@ -2233,7 +2233,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "available",
       "availability_checked_at": "2026-09-20"
     },
@@ -2248,7 +2248,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": false,
       "categories": [
         "лекция"
       ],
@@ -2258,8 +2258,33 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "available",
+      "availability_checked_at": "2026-09-20"
+    },
+    {
+      "id": "moscow-2026-09-24-b8287cb33b",
+      "status": "new",
+      "city": "moscow",
+      "date": "2026-09-24",
+      "time": "19:30",
+      "title": "и обсуждение Ночные уборщицы. Фестиваль коллективных фильмов",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "кинопоказ"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/nightcleaners",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-20",
+      "price_type": "free",
+      "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
     {
@@ -2288,54 +2313,6 @@
       "availability_checked_at": "2026-09-20"
     },
     {
-      "id": "moscow-2026-09-24-b8287cb33b",
-      "status": "new",
-      "city": "moscow",
-      "date": "2026-09-24",
-      "time": "19:30",
-      "title": "и обсуждение Ночные уборщицы. Фестиваль коллективных фильмов",
-      "venue": "ГЭС-2",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": true,
-      "categories": [
-        "кинопоказ"
-      ],
-      "description": "",
-      "url": "https://ges-2.org/nightcleaners",
-      "source": "Дом культуры «ГЭС-2»",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "unknown",
-      "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
-    },
-    {
-      "id": "moscow-2026-09-25-44d6d71884",
-      "status": "new",
-      "city": "moscow",
-      "date": "2026-09-25",
-      "time": "",
-      "title": "«Путь молодого автора: от комикса к бренду»: старт нового цикла лекций Фестиваля Рассказывая Истории",
-      "venue": "Школа дизайна НИУ ВШЭ",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": true,
-      "categories": [],
-      "description": "Фестиваль Рассказывая Истории 2026 прошёл 23 мая, объединив более 130 спикеров и тысячи гостей. Но диалог о будущем креативных индустрий не прекращается. Мы запускаем новый цикл открытых лекций, который станет мостом к фестивалю 2027 года. Первой встречей сезона станет паблик-ток о том, как авторская идея превращается в узнаваемый бренд и часть современной культуры. 25 сентября 2026",
-      "url": "https://design.hse.ru/news/7109",
-      "source": "Школа дизайна НИУ ВШЭ",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "unknown",
-      "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
-    },
-    {
       "id": "moscow-2026-09-25-544123cac3",
       "status": "new",
       "city": "moscow",
@@ -2356,8 +2333,31 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "available",
+      "availability_checked_at": "2026-09-20"
+    },
+    {
+      "id": "moscow-2026-09-25-44d6d71884",
+      "status": "new",
+      "city": "moscow",
+      "date": "2026-09-25",
+      "time": "",
+      "title": "«Путь молодого автора: от комикса к бренду»: старт нового цикла лекций Фестиваля Рассказывая Истории",
+      "venue": "Школа дизайна НИУ ВШЭ",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "Фестиваль Рассказывая Истории 2026 прошёл 23 мая, объединив более 130 спикеров и тысячи гостей. Но диалог о будущем креативных индустрий не прекращается. Мы запускаем новый цикл открытых лекций, который станет мостом к фестивалю 2027 года. Первой встречей сезона станет паблик-ток о том, как авторская идея превращается в узнаваемый бренд и часть современной культуры. 25 сентября 2026",
+      "url": "https://design.hse.ru/news/7109",
+      "source": "Школа дизайна НИУ ВШЭ",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-20",
+      "price_type": "unknown",
+      "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
     {
@@ -2371,7 +2371,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": null,
       "categories": [],
       "description": "",
       "url": "https://ges-2.org/alexandra-sukhareva-beginnings",
@@ -2379,7 +2379,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -2394,7 +2394,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": null,
       "categories": [
         "выставка"
       ],
@@ -2404,7 +2404,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -2419,7 +2419,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": false,
       "categories": [
         "мастер-класс"
       ],
@@ -2429,7 +2429,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -2444,7 +2444,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": null,
       "categories": [
         "игра"
       ],
@@ -2454,7 +2454,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -2469,7 +2469,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": false,
       "categories": [],
       "description": "",
       "url": "https://ges-2.org/atelier",
@@ -2477,7 +2477,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -2502,7 +2502,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "available",
       "availability_checked_at": "2026-09-20"
     },
@@ -2517,7 +2517,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": false,
       "categories": [
         "медиаторский тур"
       ],
@@ -2527,7 +2527,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -2542,7 +2542,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": false,
       "categories": [
         "кинопоказ"
       ],
@@ -2552,7 +2552,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -2567,7 +2567,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": false,
       "categories": [
         "медиаторский тур"
       ],
@@ -2577,7 +2577,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -2602,7 +2602,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "available",
       "availability_checked_at": "2026-09-20"
     },
@@ -2640,7 +2640,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": false,
       "categories": [
         "медиаторский тур"
       ],
@@ -2650,7 +2650,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -2665,7 +2665,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": null,
       "categories": [
         "медиаторский тур"
       ],
@@ -2675,7 +2675,32 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-20"
+    },
+    {
+      "id": "moscow-2026-09-25-6a4b9536e4",
+      "status": "new",
+      "city": "moscow",
+      "date": "2026-09-25",
+      "time": "19:30",
+      "title": "и обсуждение Иди Арнольд — неудачница. Фестиваль коллективных фильмов",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "кинопоказ"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/edie-arnold-is-a-loser",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-20",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -2705,31 +2730,6 @@
       "availability_checked_at": "2026-09-20"
     },
     {
-      "id": "moscow-2026-09-25-6a4b9536e4",
-      "status": "new",
-      "city": "moscow",
-      "date": "2026-09-25",
-      "time": "19:30",
-      "title": "и обсуждение Иди Арнольд — неудачница. Фестиваль коллективных фильмов",
-      "venue": "ГЭС-2",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": true,
-      "categories": [
-        "кинопоказ"
-      ],
-      "description": "",
-      "url": "https://ges-2.org/edie-arnold-is-a-loser",
-      "source": "Дом культуры «ГЭС-2»",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "unknown",
-      "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
-    },
-    {
       "id": "moscow-2026-09-26-6c590d946b",
       "status": "new",
       "city": "moscow",
@@ -2740,7 +2740,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": null,
       "categories": [],
       "description": "",
       "url": "https://ges-2.org/alexandra-sukhareva-beginnings",
@@ -2748,7 +2748,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -2763,7 +2763,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": null,
       "categories": [
         "выставка"
       ],
@@ -2773,7 +2773,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -2788,7 +2788,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": false,
       "categories": [
         "публичная программа"
       ],
@@ -2798,8 +2798,31 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "available",
+      "availability_checked_at": "2026-09-20"
+    },
+    {
+      "id": "moscow-2026-09-26-a85661752b",
+      "status": "new",
+      "city": "moscow",
+      "date": "2026-09-26",
+      "time": "11:30",
+      "title": "Спектакль Жу-жа",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [],
+      "description": "",
+      "url": "https://ges-2.org/bzzz-bzzz",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-20",
+      "price_type": "free",
+      "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
     {
@@ -2828,29 +2851,6 @@
       "availability_checked_at": "2026-09-20"
     },
     {
-      "id": "moscow-2026-09-26-a85661752b",
-      "status": "new",
-      "city": "moscow",
-      "date": "2026-09-26",
-      "time": "11:30",
-      "title": "Спектакль Жу-жа",
-      "venue": "ГЭС-2",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": true,
-      "categories": [],
-      "description": "",
-      "url": "https://ges-2.org/bzzz-bzzz",
-      "source": "Дом культуры «ГЭС-2»",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "unknown",
-      "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
-    },
-    {
       "id": "moscow-2026-09-26-e9d5bc835b",
       "status": "new",
       "city": "moscow",
@@ -2861,7 +2861,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": null,
       "categories": [
         "мастер-класс"
       ],
@@ -2871,7 +2871,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -2886,7 +2886,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": null,
       "categories": [],
       "description": "",
       "url": "https://ges-2.org/the-cube-moscow-hanoi-landscapes-of-optimism",
@@ -2894,7 +2894,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -2919,7 +2919,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "available",
       "availability_checked_at": "2026-09-20"
     },
@@ -2934,7 +2934,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": null,
       "categories": [
         "медиаторский тур"
       ],
@@ -2944,7 +2944,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -2959,7 +2959,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": false,
       "categories": [],
       "description": "",
       "url": "https://ges-2.org/atelier",
@@ -2967,7 +2967,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -3007,7 +3007,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": false,
       "categories": [
         "медиаторский тур"
       ],
@@ -3017,7 +3017,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -3042,7 +3042,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "available",
       "availability_checked_at": "2026-09-20"
     },
@@ -3057,7 +3057,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": false,
       "categories": [
         "кинопоказ"
       ],
@@ -3067,33 +3067,8 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
-    },
-    {
-      "id": "moscow-2026-09-26-5765c5b822",
-      "status": "new",
-      "city": "moscow",
-      "date": "2026-09-26",
-      "time": "15:00",
-      "title": "Дизайн сумки-шоппера. Младшая группа",
-      "venue": "Центр Зотов",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [
-        "детям"
-      ],
-      "description": "",
-      "url": "https://centrezotov.ru/events/art-klub-dlya-detej-i-podrostkov/dizajn-sumki-shoppera-mladshaya-gruppa-2/",
-      "source": "Центр Зотов",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "unknown",
-      "availability": "available",
       "availability_checked_at": "2026-09-20"
     },
     {
@@ -3107,7 +3082,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": null,
       "categories": [
         "лаборатория"
       ],
@@ -3117,7 +3092,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -3139,6 +3114,56 @@
       "description": "",
       "url": "https://ges-2.org/voice-radiation",
       "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-20",
+      "price_type": "free",
+      "availability": "available",
+      "availability_checked_at": "2026-09-20"
+    },
+    {
+      "id": "moscow-2026-09-26-5234ff6c37",
+      "status": "new",
+      "city": "moscow",
+      "date": "2026-09-26",
+      "time": "15:00",
+      "title": "Хочу в Рощу! Дневник юного натуралиста",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "медиаторский тур"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/i-want-to-go-to-the-forest",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-20",
+      "price_type": "free",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-20"
+    },
+    {
+      "id": "moscow-2026-09-26-5765c5b822",
+      "status": "new",
+      "city": "moscow",
+      "date": "2026-09-26",
+      "time": "15:00",
+      "title": "Дизайн сумки-шоппера. Младшая группа",
+      "venue": "Центр Зотов",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "детям"
+      ],
+      "description": "",
+      "url": "https://centrezotov.ru/events/art-klub-dlya-detej-i-podrostkov/dizajn-sumki-shoppera-mladshaya-gruppa-2/",
+      "source": "Центр Зотов",
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
@@ -3172,31 +3197,6 @@
       "availability_checked_at": "2026-09-20"
     },
     {
-      "id": "moscow-2026-09-26-5234ff6c37",
-      "status": "new",
-      "city": "moscow",
-      "date": "2026-09-26",
-      "time": "15:00",
-      "title": "Хочу в Рощу! Дневник юного натуралиста",
-      "venue": "ГЭС-2",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": true,
-      "categories": [
-        "медиаторский тур"
-      ],
-      "description": "",
-      "url": "https://ges-2.org/i-want-to-go-to-the-forest",
-      "source": "Дом культуры «ГЭС-2»",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "unknown",
-      "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
-    },
-    {
       "id": "moscow-2026-09-26-6523bff9f3",
       "status": "new",
       "city": "moscow",
@@ -3207,7 +3207,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": null,
       "categories": [],
       "description": "",
       "url": "https://ges-2.org/the-science-of-genres",
@@ -3215,7 +3215,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -3240,7 +3240,32 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
+      "availability": "available",
+      "availability_checked_at": "2026-09-20"
+    },
+    {
+      "id": "moscow-2026-09-26-6de6981347",
+      "status": "new",
+      "city": "moscow",
+      "date": "2026-09-26",
+      "time": "17:00",
+      "title": "Контуры моды",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": true,
+      "categories": [
+        "медиаторский тур"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/fashion-contours",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-20",
+      "price_type": "free",
       "availability": "available",
       "availability_checked_at": "2026-09-20"
     },
@@ -3270,31 +3295,6 @@
       "availability_checked_at": "2026-09-20"
     },
     {
-      "id": "moscow-2026-09-26-6de6981347",
-      "status": "new",
-      "city": "moscow",
-      "date": "2026-09-26",
-      "time": "17:00",
-      "title": "Контуры моды",
-      "venue": "ГЭС-2",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": true,
-      "categories": [
-        "медиаторский тур"
-      ],
-      "description": "",
-      "url": "https://ges-2.org/fashion-contours",
-      "source": "Дом культуры «ГЭС-2»",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "unknown",
-      "availability": "available",
-      "availability_checked_at": "2026-09-20"
-    },
-    {
       "id": "moscow-2026-09-26-98f4534d25",
       "status": "new",
       "city": "moscow",
@@ -3315,7 +3315,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "available",
       "availability_checked_at": "2026-09-20"
     },
@@ -3340,7 +3340,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "available",
       "availability_checked_at": "2026-09-20"
     },
@@ -3355,7 +3355,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": false,
       "categories": [
         "кинопоказ"
       ],
@@ -3365,7 +3365,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -3380,7 +3380,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": false,
       "categories": [],
       "description": "В последние выходные сентября празднуем день рождения Музея русского импрессионизма вместе с вами",
       "url": "https://www.rusimp.su/events/prazdnuem-den-rozhdeniya-muzeya",
@@ -3388,7 +3388,7 @@
       "checked_at": "",
       "review_reason": "year_not_explicit_on_primary_listing",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "available",
       "availability_checked_at": "2026-09-20"
     },
@@ -3403,7 +3403,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": null,
       "categories": [],
       "description": "",
       "url": "https://ges-2.org/alexandra-sukhareva-beginnings",
@@ -3411,7 +3411,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -3426,7 +3426,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": null,
       "categories": [
         "выставка"
       ],
@@ -3436,7 +3436,55 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-20"
+    },
+    {
+      "id": "moscow-2026-09-27-39e0b35117",
+      "status": "new",
+      "city": "moscow",
+      "date": "2026-09-27",
+      "time": "11:30",
+      "title": "Почва для размышлений",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "игра"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/ground-for-thought",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-20",
+      "price_type": "free",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-20"
+    },
+    {
+      "id": "moscow-2026-09-27-00df913bfb",
+      "status": "new",
+      "city": "moscow",
+      "date": "2026-09-27",
+      "time": "11:30",
+      "title": "Практика Семейная йога",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [],
+      "description": "",
+      "url": "https://ges-2.org/family-yoga",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-20",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -3463,54 +3511,6 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
-    },
-    {
-      "id": "moscow-2026-09-27-39e0b35117",
-      "status": "new",
-      "city": "moscow",
-      "date": "2026-09-27",
-      "time": "11:30",
-      "title": "Почва для размышлений",
-      "venue": "ГЭС-2",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": true,
-      "categories": [
-        "игра"
-      ],
-      "description": "",
-      "url": "https://ges-2.org/ground-for-thought",
-      "source": "Дом культуры «ГЭС-2»",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "unknown",
-      "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
-    },
-    {
-      "id": "moscow-2026-09-27-00df913bfb",
-      "status": "new",
-      "city": "moscow",
-      "date": "2026-09-27",
-      "time": "11:30",
-      "title": "Практика Семейная йога",
-      "venue": "ГЭС-2",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": true,
-      "categories": [],
-      "description": "",
-      "url": "https://ges-2.org/family-yoga",
-      "source": "Дом культуры «ГЭС-2»",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "unknown",
-      "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
     {
@@ -3574,7 +3574,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": null,
       "categories": [
         "медиаторский тур"
       ],
@@ -3584,7 +3584,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -3599,7 +3599,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": false,
       "categories": [],
       "description": "",
       "url": "https://ges-2.org/atelier",
@@ -3607,7 +3607,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -3622,7 +3622,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": false,
       "categories": [
         "медиаторский тур"
       ],
@@ -3632,7 +3632,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -3647,7 +3647,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": null,
       "categories": [
         "медиаторский тур"
       ],
@@ -3657,7 +3657,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -3682,8 +3682,33 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "available",
+      "availability_checked_at": "2026-09-20"
+    },
+    {
+      "id": "moscow-2026-09-27-599ec023be",
+      "status": "new",
+      "city": "moscow",
+      "date": "2026-09-27",
+      "time": "16:00",
+      "title": "и обсуждение Погоня за тенью. Фестиваль коллективных фильмов",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "кинопоказ"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/shadowbox",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-20",
+      "price_type": "free",
+      "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
     {
@@ -3712,31 +3737,6 @@
       "availability_checked_at": "2026-09-20"
     },
     {
-      "id": "moscow-2026-09-27-599ec023be",
-      "status": "new",
-      "city": "moscow",
-      "date": "2026-09-27",
-      "time": "16:00",
-      "title": "и обсуждение Погоня за тенью. Фестиваль коллективных фильмов",
-      "venue": "ГЭС-2",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": true,
-      "categories": [
-        "кинопоказ"
-      ],
-      "description": "",
-      "url": "https://ges-2.org/shadowbox",
-      "source": "Дом культуры «ГЭС-2»",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "unknown",
-      "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
-    },
-    {
       "id": "moscow-2026-09-27-d5623dd3d1",
       "status": "new",
       "city": "moscow",
@@ -3757,7 +3757,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "available",
       "availability_checked_at": "2026-09-20"
     },
@@ -3772,7 +3772,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": null,
       "categories": [
         "медиаторский тур"
       ],
@@ -3782,7 +3782,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -3797,7 +3797,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": false,
       "categories": [
         "кинопоказ"
       ],
@@ -3807,7 +3807,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -3822,7 +3822,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": null,
       "categories": [],
       "description": "",
       "url": "https://ges-2.org/alexandra-sukhareva-beginnings",
@@ -3830,7 +3830,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -3845,7 +3845,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": null,
       "categories": [
         "выставка"
       ],
@@ -3855,7 +3855,32 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-20"
+    },
+    {
+      "id": "moscow-2026-09-28-b6849502a8",
+      "status": "new",
+      "city": "moscow",
+      "date": "2026-09-28",
+      "time": "12:00",
+      "title": "в «Сводах»",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/vaults-masterclass-in-manual-optical-black-and-white-photo-printing",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-20",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -3870,7 +3895,7 @@
       "address": "",
       "price": 350,
       "price_text": "",
-      "registration": true,
+      "registration": false,
       "categories": [
         "лекция"
       ],
@@ -3895,7 +3920,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": false,
       "categories": [
         "лекция"
       ],
@@ -3910,31 +3935,6 @@
       "availability_checked_at": "2026-09-20"
     },
     {
-      "id": "moscow-2026-09-28-b6849502a8",
-      "status": "new",
-      "city": "moscow",
-      "date": "2026-09-28",
-      "time": "12:00",
-      "title": "в «Сводах»",
-      "venue": "ГЭС-2",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": true,
-      "categories": [
-        "мастер-класс"
-      ],
-      "description": "",
-      "url": "https://ges-2.org/vaults-masterclass-in-manual-optical-black-and-white-photo-printing",
-      "source": "Дом культуры «ГЭС-2»",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "unknown",
-      "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
-    },
-    {
       "id": "moscow-2026-09-28-f8243a315b",
       "status": "new",
       "city": "moscow",
@@ -3945,7 +3945,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": false,
       "categories": [],
       "description": "",
       "url": "https://ges-2.org/atelier",
@@ -3953,7 +3953,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -3968,7 +3968,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": false,
       "categories": [
         "медиаторский тур"
       ],
@@ -3978,7 +3978,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -3993,7 +3993,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": false,
       "categories": [
         "кинопоказ"
       ],
@@ -4003,7 +4003,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -4018,7 +4018,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": null,
       "categories": [],
       "description": "",
       "url": "https://ges-2.org/alexandra-sukhareva-beginnings",
@@ -4026,7 +4026,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -4041,7 +4041,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": null,
       "categories": [
         "выставка"
       ],
@@ -4051,7 +4051,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -4066,7 +4066,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": false,
       "categories": [
         "мастер-класс"
       ],
@@ -4076,7 +4076,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -4091,7 +4091,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": null,
       "categories": [
         "игра"
       ],
@@ -4101,7 +4101,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -4116,7 +4116,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": false,
       "categories": [],
       "description": "",
       "url": "https://ges-2.org/atelier",
@@ -4124,7 +4124,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -4139,7 +4139,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": false,
       "categories": [
         "медиаторский тур"
       ],
@@ -4149,7 +4149,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -4164,7 +4164,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": false,
       "categories": [],
       "description": "",
       "url": "https://ges-2.org/a-and-b-were-sitting-on-a-pipe",
@@ -4172,7 +4172,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -4187,7 +4187,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": false,
       "categories": [
         "кинопоказ"
       ],
@@ -4197,7 +4197,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -4220,7 +4220,7 @@
       "checked_at": "",
       "review_reason": "year_not_explicit_on_primary_listing",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "available",
       "availability_checked_at": "2026-09-20"
     },
@@ -4235,7 +4235,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": null,
       "categories": [],
       "description": "",
       "url": "https://ges-2.org/alexandra-sukhareva-beginnings",
@@ -4243,7 +4243,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -4258,7 +4258,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": false,
       "categories": [
         "мастер-класс"
       ],
@@ -4268,7 +4268,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -4283,7 +4283,7 @@
       "address": "",
       "price": 0,
       "price_text": "Бесплатно",
-      "registration": true,
+      "registration": false,
       "categories": [
         "лекция"
       ],
@@ -4308,7 +4308,7 @@
       "address": "",
       "price": 350,
       "price_text": "",
-      "registration": true,
+      "registration": false,
       "categories": [
         "лекция"
       ],
@@ -4333,7 +4333,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": false,
       "categories": [],
       "description": "",
       "url": "https://ges-2.org/atelier",
@@ -4341,7 +4341,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -4356,7 +4356,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": null,
       "categories": [],
       "description": "",
       "url": "https://ges-2.org/how-to-control-chaos",
@@ -4364,7 +4364,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -4379,7 +4379,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": false,
       "categories": [
         "медиаторский тур"
       ],
@@ -4389,7 +4389,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -4404,7 +4404,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": null,
       "categories": [],
       "description": "",
       "url": "https://ges-2.org/eccentrics-of-the-city-of-leningrad",
@@ -4412,7 +4412,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -4427,7 +4427,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": false,
       "categories": [
         "кинопоказ"
       ],
@@ -4437,7 +4437,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -4452,7 +4452,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": false,
       "categories": [
         "лекция"
       ],
@@ -4462,7 +4462,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "available",
       "availability_checked_at": "2026-09-20"
     },
@@ -4485,7 +4485,7 @@
       "checked_at": "",
       "review_reason": "year_not_explicit_on_primary_listing",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "paid",
       "availability": "available",
       "availability_checked_at": "2026-09-20"
     },
@@ -4508,7 +4508,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "available",
       "availability_checked_at": "2026-09-20"
     },
@@ -4523,7 +4523,7 @@
       "address": "",
       "price": 0,
       "price_text": "Бесплатно",
-      "registration": true,
+      "registration": false,
       "categories": [
         "лекция"
       ],
@@ -4548,7 +4548,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": false,
       "categories": [
         "концерт"
       ],
@@ -4558,7 +4558,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "available",
       "availability_checked_at": "2026-09-20"
     },
@@ -4573,7 +4573,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": false,
       "categories": [],
       "description": "14 октября Школа дизайна НИУ ВШЭ проведёт МАСШТАБ — самую большую онлайн-конференцию о дизайн-образовании и карьере в креативных индустриях. Дизайнеры и эксперты из Apple, Adidas, Яндекса и других крупных российских и международных компаний расскажут о своём профессиональном опыте, обсудят навыки ближайшего будущего и возможности построения карьеры в России и за рубежом. 14 октября 2026",
       "url": "https://design.hse.ru/news/7173",
@@ -4581,7 +4581,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     },
@@ -4604,7 +4604,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "paid",
       "availability": "unknown",
       "availability_checked_at": "2026-09-20"
     }

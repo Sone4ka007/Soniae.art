@@ -41,6 +41,16 @@
       <button class="filter" data-price="free">БЕСПЛАТНО</button>
       <button class="filter" data-price="paid">ПЛАТНО</button>
     </div>
+    <div class="filter-group">
+      <button class="filter active" data-registration="all">ЛЮБАЯ ЗАПИСЬ</button>
+      <button class="filter" data-registration="yes">НУЖНА РЕГИСТРАЦИЯ</button>
+      <button class="filter" data-registration="no">БЕЗ РЕГИСТРАЦИИ</button>
+    </div>
+    <div class="filter-group">
+      <button class="filter active" data-availability="all">ЛЮБАЯ ДОСТУПНОСТЬ</button>
+      <button class="filter" data-availability="available">ЕСТЬ МЕСТА</button>
+      <button class="filter" data-availability="sold_out">МЕСТ НЕТ</button>
+    </div>
     <select id="category-filter" aria-label="Категория">
       <option value="all">ВСЕ КАТЕГОРИИ</option>
       <option value="lecture">ЛЕКЦИИ</option>
@@ -56,7 +66,7 @@
 
   <section class="events-status">
     <span id="events-count">0 СОБЫТИЙ</span>
-    <span id="events-range">АКТУАЛЬНО</span>
+    <span id="events-range">30 ДНЕЙ ВПЕРЁД</span>
   </section>
 
   <section id="events-list" class="events-list" aria-live="polite"></section>

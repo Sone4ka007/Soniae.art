@@ -210,9 +210,24 @@ def extract_event_links(html, src):
         if not any(p in full for p in patterns):
             continue
         title = normalize_anchor_title(a)
-        if len(title) < 8 or title.lower() in SKIP_TITLES:
-            continue
         block, txt, dt = nearest_dated_block(a, require_year=True, limit=2800)
+        if block is not None and (title.startswith("#") or title.lower() in EVENT_TYPES):
+            # Some cards link the category tag to the event URL. Recover the real title
+            # from the same card instead of storing "#концерт" / "Экскурсия".
+            candidates=[]
+            for el in block.find_all(["h2","h3","h4","h5","a","span","p"]):
+                t=clean(el.get_text(" ",strip=True))
+                if len(t)<8 or t.startswith("#") or t.lower() in SKIP_TITLES or t.lower() in EVENT_TYPES:
+                    continue
+                if parse_date(t,True) or re.fullmatch(r"\\d{1,2}:\\d{2}(?:\\s*[–-]\\s*\\d{1,2}:\\d{2})?",t):
+                    continue
+                if t in {src.get("venue",""),"Корпус на Кадашёвской набережной","Инженерный корпус","Новая Третьяковка"}:
+                    continue
+                candidates.append(t)
+            if candidates:
+                title=max(candidates,key=len)
+        if len(title) < 8 or title.lower() in SKIP_TITLES or title.startswith("#"):
+            continue
         if not dt or dt < today:
             continue
         key = (dt.isoformat(), full, title)

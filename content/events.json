@@ -4,7 +4,7 @@
   "events": [
     {
       "id": "moscow-2026-09-21-dedf98c398",
-      "status": "new",
+      "status": "approved",
       "city": "moscow",
       "date": "2026-09-21",
       "time": "",
@@ -27,7 +27,8 @@
       "availability": "available",
       "availability_checked_at": "2026-09-21",
       "kind": "exhibition",
-      "editor_note": ""
+      "editor_note": "",
+      "reviewed_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-21-6e9b4343b7",
@@ -1144,7 +1145,7 @@
     },
     {
       "id": "moscow-2026-09-23-f2139d382a",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-09-23",
@@ -1166,7 +1167,9 @@
       "discovered_at": "2026-09-21",
       "price_type": "free",
       "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "editor_note": "",
+      "reviewed_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-23-8ce86966a0",
@@ -1220,7 +1223,8 @@
       "availability": "available",
       "availability_checked_at": "2026-09-21",
       "kind": "event",
-      "editor_note": ""
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-09-23-262c783235",
@@ -2976,7 +2980,7 @@
       "checked_at": "",
       "review_reason": "year_not_explicit_on_primary_listing",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "paid",
       "availability": "available",
       "availability_checked_at": "2026-09-21",
       "kind": "event",
@@ -3942,6 +3946,31 @@
       "editor_note": ""
     },
     {
+      "id": "moscow-2026-09-30-c9241e0c3a",
+      "status": "check",
+      "city": "moscow",
+      "date": "2026-09-30",
+      "time": "",
+      "title": "Танцевальная лаборатория, доступная для незрячих посетителей",
+      "venue": "Музей русского импрессионизма",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [],
+      "description": "Купить Подробнее Подробнее",
+      "url": "https://www.rusimp.su/events/performativno-tancevalnye-klassy-po-motivam-vystavki-shkola-zvancevoy-laboratoriya-modernizma",
+      "source": "Музей русского импрессионизма",
+      "checked_at": "",
+      "review_reason": "year_not_explicit_on_primary_listing",
+      "discovered_at": "2026-09-20",
+      "price_type": "paid",
+      "availability": "available",
+      "availability_checked_at": "2026-09-21",
+      "kind": "event",
+      "editor_note": ""
+    },
+    {
       "id": "international-2026-09-30-95506fe023",
       "status": "check",
       "kind": "open_call",
@@ -3993,31 +4022,6 @@
       "price_type": "unknown",
       "availability": "unknown",
       "availability_checked_at": "2026-09-21",
-      "editor_note": ""
-    },
-    {
-      "id": "moscow-2026-09-30-c9241e0c3a",
-      "status": "check",
-      "city": "moscow",
-      "date": "2026-09-30",
-      "time": "",
-      "title": "Танцевальная лаборатория, доступная для незрячих посетителей",
-      "venue": "Музей русского импрессионизма",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [],
-      "description": "Купить Подробнее Подробнее",
-      "url": "https://www.rusimp.su/events/performativno-tancevalnye-klassy-po-motivam-vystavki-shkola-zvancevoy-laboratoriya-modernizma",
-      "source": "Музей русского импрессионизма",
-      "checked_at": "",
-      "review_reason": "year_not_explicit_on_primary_listing",
-      "discovered_at": "2026-09-20",
-      "price_type": "unknown",
-      "availability": "available",
-      "availability_checked_at": "2026-09-21",
-      "kind": "event",
       "editor_note": ""
     },
     {

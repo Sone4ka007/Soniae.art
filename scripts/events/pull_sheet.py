@@ -8,7 +8,7 @@ ROOT=Path(__file__).resolve().parents[2]
 DB=ROOT/"content/events.json"
 SHEET_ID=os.environ["EVENTS_SHEET_ID"]
 CREDS=json.loads(os.environ["GOOGLE_SERVICE_ACCOUNT_JSON"])
-RANGE="Events!A:V"
+RANGE="Events!A:W"
 
 def service():
     scopes=["https://www.googleapis.com/auth/spreadsheets.readonly"]
@@ -28,7 +28,7 @@ def main():
     rows=[dict(zip(headers,row+[""]*(len(headers)-len(row)))) for row in data[1:]]
     db=json.loads(DB.read_text("utf-8"))
     byid={e.get("id"):e for e in db.get("events",[]) if e.get("id")}
-    editable={"status","editor_note","checked_at","review_reason","price_text","price_type","registration","availability","categories"}
+    editable={"status","editor_note","checked_at","review_reason","price_text","price_type","registration","availability","categories","kind"}
     for row in rows:
         rid=row.get("id","").strip()
         if not rid or rid not in byid: continue

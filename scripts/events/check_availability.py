@@ -50,15 +50,21 @@ def inspect_url(url):
             availability="available"
         has_reg=any(re.search(p,text,re.I) for p in REG_HINTS)
         has_ticket=any(re.search(p,text,re.I) for p in TICKET_HINTS)
-        if re.search(r"\bбесплат(?:но|ный|ная|ное)|вход\s+свобод",text,re.I):
-            page_price="free"
-        elif re.search(r"\b\d[\d\s\u00a0]{0,7}\s*(?:₽|руб(?:\.|лей|ля)?)",text,re.I):
+        explicit_free=bool(re.search(
+            r"(?:вход\s+свобод(?:ный|ен)|участие\s+бесплатн(?:ое|о)|бесплатн(?:ый|ая|ое)\s+вход|"
+            r"бесплатно\s+(?:по|при)\s+(?:предварительной\s+)?регистрации)",
+            text,re.I))
+        numeric_paid=bool(re.search(r"\b\d[\d\s\u00a0]{0,7}\s*(?:₽|руб(?:\.|лей|ля)?)",text,re.I))
+        buy_ticket=bool(re.search(r"купить\s+(?:билет|билеты)|приобрести\s+(?:билет|билеты)",text,re.I))
+        if numeric_paid:
             page_price="paid"
+        elif explicit_free:
+            page_price="free"
         else:
             page_price="unknown"
-        return availability,has_reg,has_ticket,page_price
+        return availability,has_reg,has_ticket,page_price,buy_ticket,explicit_free
     except Exception:
-        return "unknown",False,False,"unknown"
+        return "unknown",False,False,"unknown",False,False
 
 def main():
     db=json.loads(DB.read_text("utf-8"))
@@ -85,11 +91,19 @@ def main():
     checked=datetime.now(timezone.utc).date().isoformat()
     for e in kept:
         url=str(e.get("url",""))
-        availability,has_reg,has_ticket,page_price=results.get(url,("unknown",False,False,"unknown"))
+        availability,has_reg,has_ticket,page_price,buy_ticket,explicit_free=results.get(
+            url,("unknown",False,False,"unknown",False,False))
         e["availability"]=availability
         e["availability_checked_at"]=checked
-        if e.get("price_type") in (None,"","unknown") and page_price!="unknown":
+
+        # Recompute price conservatively from the live event page.
+        # Never keep a stale "free" classification when the page asks to buy a ticket.
+        if page_price in ("free","paid"):
             e["price_type"]=page_price
+        elif buy_ticket and not explicit_free:
+            e["price_type"]="unknown"
+        elif e.get("price_type") not in ("free","paid"):
+            e["price_type"]="unknown"
         if has_reg:
             e["registration"]=True
         elif has_ticket:

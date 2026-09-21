@@ -19,6 +19,7 @@ FAMILY_CHILDREN=(
 )
 AGE_CHILD_RE=re.compile(r"\b(?:для\s+детей\s*)?(?:от\s*)?(?:[3-9]|1[0-7])\s*(?:[-–—]\s*(?:[3-9]|1[0-7]))?\s*лет\b")
 AGE_RANGE_RE=re.compile(r"(?<!\d)(\d{1,2})\s*[-–—]\s*(\d{1,2})\s*(?:лет|года?)\b",re.I)
+AGE_CONTEXT_RE=re.compile(r"(?:возраст|дети|подростки)[^\d]{0,20}(\d{1,2})\s*[-–—]\s*(\d{1,2})",re.I)
 
 OPEN_CALL_HINTS=(
     "open call","open-call","опен колл","опен-колл","конкурс","прием заявок",
@@ -40,7 +41,7 @@ def main():
     for e in db.get("events",[]):
         blob=" ".join([
             str(e.get("title","")),str(e.get("description","")),str(e.get("venue","")),
-            str(e.get("source","")),str(e.get("url","")),
+            str(e.get("source","")),str(e.get("url","")),str(e.get("audience_text","")),
             " ".join(str(x) for x in (e.get("categories") or []))
         ]).lower()
         if e.get("kind") not in ("event","exhibition","open_call"):
@@ -68,7 +69,7 @@ def main():
             e["status"]="rejected"; e["review_reason"]="excluded_person"; changed+=1; continue
         if editable_status and any(x in blob for x in PLEIN) and not any(x in blob for x in GELD):
             e["status"]="rejected"; e["review_reason"]="excluded_plein_air"; changed+=1; continue
-        age_range=AGE_RANGE_RE.search(blob)
+        age_range=AGE_RANGE_RE.search(blob) or AGE_CONTEXT_RE.search(blob)
         youth_range=bool(age_range and int(age_range.group(1)) < 18)
         if editable_status and (
             any(x in blob for x in FAMILY_CHILDREN) or AGE_CHILD_RE.search(blob) or youth_range

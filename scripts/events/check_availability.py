@@ -104,7 +104,8 @@ def inspect_url(url):
             bool(re.search(r"кинопоказ|кинотеатр|фестиваль коллективных фильмов",text,re.I)) and
             has_ticket
         )
-        if numeric_paid or ticket_required or ges2_film:
+        zotov_ticket=("centrezotov.ru" in url.lower() and buy_ticket and not explicit_free)
+        if numeric_paid or ticket_required or ges2_film or zotov_ticket:
             page_price="paid"
         elif explicit_free:
             page_price="free"

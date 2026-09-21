@@ -38,7 +38,7 @@ def main():
         for k in editable:
             if k not in row: continue
             v=row[k]
-            if k in ("kind","categories","description","url","source","venue","address","price","price_type","availability") and str(v).strip()=="":
+            if k in ("status","kind","categories","description","url","source","venue","address","price","price_type","availability") and str(v).strip()=="":
                 continue
             if k=="registration": v=parse_bool(v)
             elif k=="categories": v=[x.strip() for x in str(v).split(",") if x.strip()]

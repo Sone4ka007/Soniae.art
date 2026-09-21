@@ -13,7 +13,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": false,
+      "registration": null,
       "categories": [
         "выставка"
       ],
@@ -24,8 +24,9 @@
       "review_reason": "",
       "discovered_at": "2026-09-21",
       "price_type": "unknown",
-      "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-21-6e9b4343b7",
@@ -38,7 +39,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": false,
+      "registration": null,
       "categories": [
         "экскурсия"
       ],
@@ -49,8 +50,9 @@
       "review_reason": "",
       "discovered_at": "2026-09-21",
       "price_type": "unknown",
-      "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-21-6c590d946b",
@@ -73,7 +75,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-21-a7dd453c9e",
@@ -98,7 +101,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-21-98f4534d25",
@@ -123,7 +127,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-21-b0a577f9c8",
@@ -146,7 +151,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-21-d5623dd3d1",
@@ -171,7 +177,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-21-b68397e5ea",
@@ -196,7 +203,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-21-49536c3df4",
@@ -221,7 +229,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-21-6de6981347",
@@ -246,7 +255,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-21-1868b29f14",
@@ -271,7 +281,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-22-6c590d946b",
@@ -294,7 +305,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-22-a7dd453c9e",
@@ -319,7 +331,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-22-b6849502a8",
@@ -344,7 +357,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-22-1ad5cc054d",
@@ -369,7 +383,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-22-e059473ac6",
@@ -382,7 +397,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": null,
       "categories": [
         "инклюзивное событие"
       ],
@@ -393,8 +408,9 @@
       "review_reason": "",
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
-      "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-22-d68166d4a6",
@@ -419,7 +435,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-22-9f703f36f1",
@@ -444,7 +461,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-22-f8243a315b",
@@ -467,7 +485,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-22-98f4534d25",
@@ -492,7 +511,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-22-b0a577f9c8",
@@ -515,7 +535,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-22-49536c3df4",
@@ -540,7 +561,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-22-bfbb52e90f",
@@ -565,7 +587,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-22-d5623dd3d1",
@@ -590,7 +613,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-22-7b25a8552d",
@@ -613,7 +637,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-22-088dbe346f",
@@ -638,7 +663,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-22-beac1ca1b2",
@@ -663,7 +689,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-22-66aeb6d7f9",
@@ -676,7 +703,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -687,8 +714,9 @@
       "review_reason": "",
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
-      "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-23-a460454ac2",
@@ -701,7 +729,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": false,
+      "registration": null,
       "categories": [
         "новинки проката"
       ],
@@ -712,8 +740,9 @@
       "review_reason": "",
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
-      "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-23-6c590d946b",
@@ -736,7 +765,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-23-a7dd453c9e",
@@ -761,7 +791,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-23-b6849502a8",
@@ -786,7 +817,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-23-c3c03c7184",
@@ -809,7 +841,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-23-95a53fda5e",
@@ -834,7 +867,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-23-f8243a315b",
@@ -857,7 +891,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-23-b0a577f9c8",
@@ -880,7 +915,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-23-d5623dd3d1",
@@ -905,7 +941,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-23-49536c3df4",
@@ -930,7 +967,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-23-98f4534d25",
@@ -955,7 +993,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-23-b68397e5ea",
@@ -980,7 +1019,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-23-6d04f355f9",
@@ -1003,7 +1043,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-23-6de6981347",
@@ -1028,7 +1069,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-23-8ce86966a0",
@@ -1053,7 +1095,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-23-871bc9f917",
@@ -1066,7 +1109,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": false,
+      "registration": null,
       "categories": [
         "спецпоказ"
       ],
@@ -1077,8 +1120,9 @@
       "review_reason": "",
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
-      "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-23-262c783235",
@@ -1103,7 +1147,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-23-941e83b687",
@@ -1116,7 +1161,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": null,
       "categories": [
         "диалог"
       ],
@@ -1127,8 +1172,9 @@
       "review_reason": "",
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
-      "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-23-d234fed707",
@@ -1153,7 +1199,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-24-871cc42752",
@@ -1166,7 +1213,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": false,
+      "registration": null,
       "categories": [
         "кино крохам"
       ],
@@ -1177,8 +1224,9 @@
       "review_reason": "",
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
-      "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-24-a71fc601ca",
@@ -1191,7 +1239,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": false,
+      "registration": null,
       "categories": [
         "новинки проката"
       ],
@@ -1202,8 +1250,9 @@
       "review_reason": "",
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
-      "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-24-1738ddf153",
@@ -1216,7 +1265,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": false,
+      "registration": null,
       "categories": [
         "новинки проката"
       ],
@@ -1227,8 +1276,9 @@
       "review_reason": "",
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
-      "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-24-6c590d946b",
@@ -1251,7 +1301,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-24-a7dd453c9e",
@@ -1276,7 +1327,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-24-6d8f1e6c5b",
@@ -1301,7 +1353,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-24-5c248a4939",
@@ -1326,7 +1379,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-24-f8243a315b",
@@ -1349,7 +1403,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-24-b0a577f9c8",
@@ -1372,7 +1427,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-24-98f4534d25",
@@ -1397,7 +1453,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-24-49536c3df4",
@@ -1422,7 +1479,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-24-bfbb52e90f",
@@ -1447,7 +1505,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-24-638a5b2462",
@@ -1472,7 +1531,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-24-088dbe346f",
@@ -1497,7 +1557,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-24-8f96d65fb8",
@@ -1522,7 +1583,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-24-29688d075d",
@@ -1547,7 +1609,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-24-d5623dd3d1",
@@ -1572,7 +1635,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-24-5da09dd28f",
@@ -1585,7 +1649,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -1596,8 +1660,9 @@
       "review_reason": "",
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
-      "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-24-b8287cb33b",
@@ -1622,7 +1687,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-25-544123cac3",
@@ -1647,7 +1713,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-25-44d6d71884",
@@ -1670,7 +1737,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-25-6c590d946b",
@@ -1693,7 +1761,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-25-a7dd453c9e",
@@ -1718,7 +1787,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-25-b6849502a8",
@@ -1743,7 +1813,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-25-b904ea1219",
@@ -1768,7 +1839,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-25-f8243a315b",
@@ -1791,7 +1863,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-25-98f4534d25",
@@ -1816,7 +1889,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-25-49536c3df4",
@@ -1841,7 +1915,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-25-3ef80dda1a",
@@ -1866,7 +1941,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-25-00c85a88e1",
@@ -1891,7 +1967,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-25-d5623dd3d1",
@@ -1916,7 +1993,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-25-ebd40e5da6",
@@ -1938,8 +2016,9 @@
       "review_reason": "year_not_explicit_on_primary_listing",
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
-      "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability": "sold_out",
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-25-b84b8776e1",
@@ -1964,7 +2043,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-25-2e4868afed",
@@ -1989,7 +2069,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-25-fe7411574e",
@@ -2002,7 +2083,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": false,
+      "registration": null,
       "categories": [
         "концерт"
       ],
@@ -2013,8 +2094,9 @@
       "review_reason": "",
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
-      "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-25-6a4b9536e4",
@@ -2039,7 +2121,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-26-6c590d946b",
@@ -2062,7 +2145,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-26-a7dd453c9e",
@@ -2087,7 +2171,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-26-64aa698d00",
@@ -2112,11 +2197,12 @@
       "discovered_at": "2026-09-20",
       "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-26-c9da658187",
-      "status": "new",
+      "status": "rejected",
       "city": "moscow",
       "date": "2026-09-26",
       "time": "11:30",
@@ -2125,7 +2211,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": false,
+      "registration": null,
       "categories": [
         "мастер-класс"
       ],
@@ -2133,11 +2219,12 @@
       "url": "https://centrezotov.ru/events/art-studiya-dlya-detej-5-6-let/sinesteziya-vasilij-kandinskij-zanyatie-dlya-detej-5-6-let/",
       "source": "Центр Зотов",
       "checked_at": "",
-      "review_reason": "",
+      "review_reason": "excluded_family_children",
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
-      "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-26-a85661752b",
@@ -2160,7 +2247,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-26-e9d5bc835b",
@@ -2185,7 +2273,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-26-ac72328fe4",
@@ -2208,11 +2297,12 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-26-7d7476e729",
-      "status": "new",
+      "status": "rejected",
       "city": "moscow",
       "date": "2026-09-26",
       "time": "12:00",
@@ -2229,11 +2319,12 @@
       "url": "https://ges-2.org/saturday-games",
       "source": "Дом культуры «ГЭС-2»",
       "checked_at": "",
-      "review_reason": "",
+      "review_reason": "excluded_family_children",
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-26-e37ff84921",
@@ -2258,7 +2349,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-26-f8243a315b",
@@ -2281,7 +2373,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-26-a9cb5c29e5",
@@ -2294,7 +2387,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": null,
       "categories": [
         "воркшоп"
       ],
@@ -2305,8 +2398,9 @@
       "review_reason": "",
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
-      "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-26-49536c3df4",
@@ -2331,11 +2425,12 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-26-7a4e3eba13",
-      "status": "new",
+      "status": "rejected",
       "city": "moscow",
       "date": "2026-09-26",
       "time": "14:00",
@@ -2352,11 +2447,12 @@
       "url": "https://ges-2.org/saturday-games",
       "source": "Дом культуры «ГЭС-2»",
       "checked_at": "",
-      "review_reason": "",
+      "review_reason": "excluded_family_children",
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-26-b2ea5dda72",
@@ -2381,7 +2477,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-26-2d76447a27",
@@ -2406,7 +2503,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-26-5765c5b822",
@@ -2419,7 +2517,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": false,
+      "registration": null,
       "categories": [
         "детям"
       ],
@@ -2430,8 +2528,9 @@
       "review_reason": "",
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
-      "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-26-e0d50e68a0",
@@ -2456,7 +2555,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-26-7d1e168ef9",
@@ -2469,7 +2569,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": false,
+      "registration": null,
       "categories": [
         "спецпоказ"
       ],
@@ -2480,8 +2580,9 @@
       "review_reason": "",
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
-      "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-26-5234ff6c37",
@@ -2506,7 +2607,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-26-6523bff9f3",
@@ -2529,11 +2631,12 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-26-3228c9644f",
-      "status": "new",
+      "status": "rejected",
       "city": "moscow",
       "date": "2026-09-26",
       "time": "16:30",
@@ -2550,11 +2653,12 @@
       "url": "https://ges-2.org/saturday-games",
       "source": "Дом культуры «ГЭС-2»",
       "checked_at": "",
-      "review_reason": "",
+      "review_reason": "excluded_family_children",
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-26-39f6ae3369",
@@ -2567,7 +2671,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": false,
+      "registration": null,
       "categories": [
         "мастер-класс"
       ],
@@ -2578,8 +2682,9 @@
       "review_reason": "",
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
-      "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-26-6de6981347",
@@ -2604,7 +2709,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-26-98f4534d25",
@@ -2629,7 +2735,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-26-d5623dd3d1",
@@ -2654,7 +2761,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-26-ea3bd1e745",
@@ -2679,7 +2787,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-27-ba096a6320",
@@ -2701,8 +2810,9 @@
       "review_reason": "year_not_explicit_on_primary_listing",
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
-      "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability": "sold_out",
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-27-6c590d946b",
@@ -2725,7 +2835,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-27-a7dd453c9e",
@@ -2750,11 +2861,12 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-27-9153dd8bbf",
-      "status": "new",
+      "status": "rejected",
       "city": "moscow",
       "date": "2026-09-27",
       "time": "11:30",
@@ -2763,7 +2875,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": false,
+      "registration": null,
       "categories": [
         "детям"
       ],
@@ -2771,11 +2883,12 @@
       "url": "https://centrezotov.ru/events/tvorcheskaya-laboratoriya-dlya-samyh-malenkih-dlya-detej-3-4-let/bumazhnye-yozhiki-zanyatie-detej-3-4-let/",
       "source": "Центр Зотов",
       "checked_at": "",
-      "review_reason": "",
+      "review_reason": "excluded_family_children",
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
-      "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-27-39e0b35117",
@@ -2800,11 +2913,12 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-27-00df913bfb",
-      "status": "new",
+      "status": "rejected",
       "city": "moscow",
       "date": "2026-09-27",
       "time": "11:30",
@@ -2819,11 +2933,12 @@
       "url": "https://ges-2.org/family-yoga",
       "source": "Дом культуры «ГЭС-2»",
       "checked_at": "",
-      "review_reason": "",
+      "review_reason": "excluded_family_children",
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-27-a4e875c14e",
@@ -2836,7 +2951,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": false,
+      "registration": null,
       "categories": [
         "экскурсия"
       ],
@@ -2847,8 +2962,9 @@
       "review_reason": "",
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
-      "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-27-368f303916",
@@ -2861,7 +2977,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": null,
       "categories": [
         "мастер-класс"
       ],
@@ -2872,8 +2988,9 @@
       "review_reason": "",
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
-      "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-27-e37ff84921",
@@ -2898,7 +3015,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-27-f8243a315b",
@@ -2921,7 +3039,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-27-49536c3df4",
@@ -2946,11 +3065,12 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-27-c939da139e",
-      "status": "new",
+      "status": "rejected",
       "city": "moscow",
       "date": "2026-09-27",
       "time": "14:00",
@@ -2967,11 +3087,12 @@
       "url": "https://ges-2.org/mediation/tour/how-does-ges-2-sound-family-tour",
       "source": "Дом культуры «ГЭС-2»",
       "checked_at": "",
-      "review_reason": "",
+      "review_reason": "excluded_family_children",
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-27-98f4534d25",
@@ -2996,7 +3117,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-27-b062c1b704",
@@ -3009,7 +3131,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": true,
+      "registration": null,
       "categories": [
         "спецпоказ"
       ],
@@ -3020,8 +3142,9 @@
       "review_reason": "",
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
-      "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-27-599ec023be",
@@ -3046,7 +3169,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-27-d5623dd3d1",
@@ -3071,7 +3195,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-27-088dbe346f",
@@ -3096,7 +3221,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-27-06d3220065",
@@ -3121,7 +3247,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-28-6c590d946b",
@@ -3144,7 +3271,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-28-a7dd453c9e",
@@ -3169,7 +3297,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-28-4a355bdda9",
@@ -3194,7 +3323,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-28-797dbf3fdd",
@@ -3219,7 +3349,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-28-b6849502a8",
@@ -3244,7 +3375,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-28-f8243a315b",
@@ -3267,7 +3399,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-28-49536c3df4",
@@ -3292,7 +3425,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-28-93a8954838",
@@ -3317,7 +3451,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-29-b6849502a8",
@@ -3342,7 +3477,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "paid",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-29-6c590d946b",
@@ -3365,7 +3501,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-29-a7dd453c9e",
@@ -3390,7 +3527,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-29-1ad5cc054d",
@@ -3415,7 +3553,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-29-0bf6486c05",
@@ -3438,7 +3577,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-29-49536c3df4",
@@ -3463,7 +3603,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-29-7b25a8552d",
@@ -3486,7 +3627,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-29-7ad1005e5b",
@@ -3511,6 +3653,59 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
+    },
+    {
+      "id": "international-2026-09-30-473710d327",
+      "status": "check",
+      "kind": "open_call",
+      "city": "international",
+      "date": "2026-09-30",
+      "time": "",
+      "title": "More details",
+      "venue": "CuratorSpace",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "open-call"
+      ],
+      "description": "Protest for Change Exhibition Callout Report this? Deadline: 30/09/2026 City: Leeds | Region: West Yorkshire | Country: United Kingdom | Studio Greenly Do you make work about protest in any form? Whether it's environmental, political, ethical, economic, social and historical issues or civil and human rights, we're looking for visual artists to exhibit their work at our upcoming exhibition.",
+      "url": "https://www.curatorspace.com/opportunities/detail/protest-for-change/11131",
+      "source": "CuratorSpace — opportunities",
+      "checked_at": "",
+      "review_reason": "discovery_source_needs_primary_verification",
+      "discovered_at": "2026-09-21",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21"
+    },
+    {
+      "id": "international-2026-09-30-95506fe023",
+      "status": "check",
+      "kind": "open_call",
+      "city": "international",
+      "date": "2026-09-30",
+      "time": "",
+      "title": "Protest for Change Exhibition Callout",
+      "venue": "CuratorSpace",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "open-call"
+      ],
+      "description": "Report this? Deadline: 30/09/2026 City: Leeds | Region: West Yorkshire | Country: United Kingdom | Studio Greenly Do you make work about protest in any form? Whether it's environmental, political, ethical, economic, social and historical issues or civil and human rights, we're looking for visual artists to exhibit their work at our upcoming exhibition. More details",
+      "url": "https://www.curatorspace.com/opportunities/detail/protest-for-change/11131",
+      "source": "CuratorSpace — opportunities",
+      "checked_at": "",
+      "review_reason": "discovery_source_needs_primary_verification",
+      "discovered_at": "2026-09-21",
+      "price_type": "unknown",
+      "availability": "unknown",
       "availability_checked_at": "2026-09-21"
     },
     {
@@ -3533,8 +3728,9 @@
       "review_reason": "year_not_explicit_on_primary_listing",
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
-      "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability": "sold_out",
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-30-6c590d946b",
@@ -3557,7 +3753,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-30-b6849502a8",
@@ -3582,7 +3779,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-30-47a0fc16a5",
@@ -3607,7 +3805,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "free",
       "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-30-4719b75fe3",
@@ -3632,7 +3831,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-30-0bf6486c05",
@@ -3655,7 +3855,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-30-6d04f355f9",
@@ -3678,7 +3879,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-30-49536c3df4",
@@ -3703,7 +3905,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-30-dd011f058a",
@@ -3726,7 +3929,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-09-30-f4943d0461",
@@ -3751,7 +3955,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-10-02-398c972a62",
@@ -3776,6 +3981,59 @@
       "discovered_at": "2026-09-20",
       "price_type": "paid",
       "availability": "available",
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
+    },
+    {
+      "id": "international-2026-10-04-473710d327",
+      "status": "check",
+      "kind": "open_call",
+      "city": "international",
+      "date": "2026-10-04",
+      "time": "",
+      "title": "More details",
+      "venue": "CuratorSpace",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "open-call"
+      ],
+      "description": "Open Call: Shaping the View — Paris, October, 2026 | All media welcome Report this? Deadline: 04/10/2026 City: Paris | Country: France | Zhen Yi Gallery SHAPING THE VIEW explores the conditions that influence how we see, interpret and experience artworks. The way we see an image, object or space is never entirely neutral. What we notice, understand or overlook can be influenced by framing, perspective, context, technology, distance, attention, expectation, environment and our own position.",
+      "url": "https://www.curatorspace.com/opportunities/detail/shaping-the-view/11139",
+      "source": "CuratorSpace — opportunities",
+      "checked_at": "",
+      "review_reason": "discovery_source_needs_primary_verification",
+      "discovered_at": "2026-09-21",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21"
+    },
+    {
+      "id": "international-2026-10-04-84a4739092",
+      "status": "check",
+      "kind": "open_call",
+      "city": "international",
+      "date": "2026-10-04",
+      "time": "",
+      "title": "Open Call: Shaping the View — Paris, October, 2026 | All media welcome",
+      "venue": "CuratorSpace",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "open-call"
+      ],
+      "description": "Report this? Deadline: 04/10/2026 City: Paris | Country: France | Zhen Yi Gallery SHAPING THE VIEW explores the conditions that influence how we see, interpret and experience artworks. The way we see an image, object or space is never entirely neutral. What we notice, understand or overlook can be influenced by framing, perspective, context, technology, distance, attention, expectation, environment and our own position. More details",
+      "url": "https://www.curatorspace.com/opportunities/detail/shaping-the-view/11139",
+      "source": "CuratorSpace — opportunities",
+      "checked_at": "",
+      "review_reason": "discovery_source_needs_primary_verification",
+      "discovered_at": "2026-09-21",
+      "price_type": "unknown",
+      "availability": "unknown",
       "availability_checked_at": "2026-09-21"
     },
     {
@@ -3798,8 +4056,9 @@
       "review_reason": "year_not_explicit_on_primary_listing",
       "discovered_at": "2026-09-20",
       "price_type": "paid",
-      "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability": "sold_out",
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-10-05-dba338c92d",
@@ -3822,7 +4081,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-10-08-e986b2b5f1",
@@ -3847,6 +4107,85 @@
       "discovered_at": "2026-09-20",
       "price_type": "free",
       "availability": "available",
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
+    },
+    {
+      "id": "international-2026-10-09-d9c90482f9",
+      "status": "check",
+      "kind": "open_call",
+      "city": "international",
+      "date": "2026-10-09",
+      "time": "",
+      "title": "Golden Hour 2027, International Photography Exhibition",
+      "venue": "CuratorSpace",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "open-call"
+      ],
+      "description": "Report this? Deadline: 09/10/2026 City: Glasgow | Country: United Kingdom | The Glasgow Gallery of Photography Call for entries for an International Photography Exhibition. This month-long exhibition will be a photography exhibition with the theme Golden Hour. Free to submit and open to everyone. More details",
+      "url": "https://www.curatorspace.com/opportunities/detail/golden-hour--international-photography-exhibition/11142",
+      "source": "CuratorSpace — opportunities",
+      "checked_at": "",
+      "review_reason": "discovery_source_needs_primary_verification",
+      "discovered_at": "2026-09-21",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21"
+    },
+    {
+      "id": "international-2026-10-09-473710d327",
+      "status": "check",
+      "kind": "open_call",
+      "city": "international",
+      "date": "2026-10-09",
+      "time": "",
+      "title": "More details",
+      "venue": "CuratorSpace",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "open-call"
+      ],
+      "description": "Golden Hour 2027, International Photography Exhibition Report this? Deadline: 09/10/2026 City: Glasgow | Country: United Kingdom | The Glasgow Gallery of Photography Call for entries for an International Photography Exhibition. This month-long exhibition will be a photography exhibition with the theme Golden Hour. Free to submit and open to everyone.",
+      "url": "https://www.curatorspace.com/opportunities/detail/golden-hour--international-photography-exhibition/11142",
+      "source": "CuratorSpace — opportunities",
+      "checked_at": "",
+      "review_reason": "discovery_source_needs_primary_verification",
+      "discovered_at": "2026-09-21",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21"
+    },
+    {
+      "id": "international-2026-10-09-6478491cfd",
+      "status": "check",
+      "kind": "open_call",
+      "city": "international",
+      "date": "2026-10-09",
+      "time": "",
+      "title": "Wildlife 2027, International Photography Exhibition",
+      "venue": "CuratorSpace",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "open-call"
+      ],
+      "description": "Report this? Deadline: 09/10/2026 City: Glasgow | Country: United Kingdom | The Glasgow Gallery of Photography Call for entries for an International Photography Exhibition. This month-long exhibition will be a photography exhibition with the theme Wildlife. Free to submit and open to everyone. More details",
+      "url": "https://www.curatorspace.com/opportunities/detail/wildlife--international-photography-exhibition/11141",
+      "source": "CuratorSpace — opportunities",
+      "checked_at": "",
+      "review_reason": "discovery_source_needs_primary_verification",
+      "discovered_at": "2026-09-21",
+      "price_type": "unknown",
+      "availability": "unknown",
       "availability_checked_at": "2026-09-21"
     },
     {
@@ -3872,7 +4211,8 @@
       "discovered_at": "2026-09-20",
       "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
     },
     {
       "id": "moscow-2026-10-14-1b4d82cf46",
@@ -3895,6 +4235,59 @@
       "discovered_at": "2026-09-20",
       "price_type": "free",
       "availability": "unknown",
+      "availability_checked_at": "2026-09-21",
+      "kind": "event"
+    },
+    {
+      "id": "international-2026-10-15-473710d327",
+      "status": "check",
+      "kind": "open_call",
+      "city": "international",
+      "date": "2026-10-15",
+      "time": "",
+      "title": "More details",
+      "venue": "CuratorSpace",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "open-call"
+      ],
+      "description": "Home Report this? Deadline: 15/10/2026 City: Tbilisi | Country: Georgia | Collect Art For this open call, we invite artists to explore the theme of Home. Home is more than a physical place. It can be a house, a room, a city, a landscape, a memory, a person, or an inner space we carry within ourselves. It can represent belonging and comfort, but also distance, displacement, longing, change, and the search for identity.",
+      "url": "https://www.curatorspace.com/opportunities/detail/home/11126",
+      "source": "CuratorSpace — opportunities",
+      "checked_at": "",
+      "review_reason": "discovery_source_needs_primary_verification",
+      "discovered_at": "2026-09-21",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21"
+    },
+    {
+      "id": "international-2026-10-15-f870805025",
+      "status": "check",
+      "kind": "open_call",
+      "city": "international",
+      "date": "2026-10-15",
+      "time": "",
+      "title": "Street Photography",
+      "venue": "CuratorSpace",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "open-call"
+      ],
+      "description": "Report this? Deadline: 15/10/2026 City: Tbilisi | Country: Georgia | Collect Art Collect Art invites photographers to submit their work for a special edition of our magazine and accompanying online exhibition with a theme of 'Street Photography'. The street is an ever-changing stage where ordinary moments become extraordinary stories. Every city, neighbourhood, corner, and passing encounter holds its own rhythm, revealing fragments of everyday life, human relationships, movement, solitude, coincidence, and unexpected beauty. More details",
+      "url": "https://www.curatorspace.com/opportunities/detail/street-photography/11127",
+      "source": "CuratorSpace — opportunities",
+      "checked_at": "",
+      "review_reason": "discovery_source_needs_primary_verification",
+      "discovered_at": "2026-09-21",
+      "price_type": "unknown",
+      "availability": "unknown",
       "availability_checked_at": "2026-09-21"
     },
     {
@@ -3909,7 +4302,9 @@
       "price": null,
       "price_text": "",
       "registration": false,
-      "categories": [],
+      "categories": [
+        "open-call"
+      ],
       "description": "Школа дизайна НИУ ВШЭ и каршеринг Ситидрайв объявляют конкурс «Запусти искру в мегаполис». Участникам предлагают разработать айдентику нового экспериментального направления каршеринга — Ситика, рассчитанного на тех, кто воспринимает город как пространство для движения, самовыражения и новых сценариев. Лучшие проекты Ситидрайв разместит на автомобилях каршеринга и выпустит на улицы города! Подать проект можно до 16 октября 2026 года. 16 октября 2026",
       "url": "https://design.hse.ru/news/7111",
       "source": "Школа дизайна НИУ ВШЭ",
@@ -3917,6 +4312,190 @@
       "review_reason": "",
       "discovered_at": "2026-09-20",
       "price_type": "paid",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21",
+      "kind": "open_call"
+    },
+    {
+      "id": "moscow-2026-10-24-3569cdc778",
+      "status": "new",
+      "kind": "open_call",
+      "city": "moscow",
+      "date": "2026-10-24",
+      "time": "12:00",
+      "title": "Лаборатория по созданию иллюстрированного зина",
+      "venue": "Музей «Гараж»",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": false,
+      "categories": [
+        "публичная программа",
+        "open-call"
+      ],
+      "description": "В рамках проекта «Пространство печати» Музей современного искусства «Гараж» проводит лабораторию-интенсив по созданию иллюстрированного зина и объявляет прием заявок на участие. Зин — это малотиражное издание, для создания которого не нужен сложный издательский процесс. Вместе с ведущей, художницей Натальей Успенской, участники познакомятся с историей зинов, а на практических занятиях определят тему и формат будущего издания, продумают его структуру и последовательность страниц, будут работать с рисунком и найденными изображениями. Отдельное внимание будет уделено ручному спуску полос без использования программ для верстки — подготовленные...",
+      "url": "https://garagemca.org/event/laboratory-for-creating-an-illustrated-zine",
+      "source": "Музей современного искусства «Гараж»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-21",
+      "price_type": "unknown",
+      "availability": "available",
+      "availability_checked_at": "2026-09-21"
+    },
+    {
+      "id": "international-2026-10-27-473710d327",
+      "status": "check",
+      "kind": "open_call",
+      "city": "international",
+      "date": "2026-10-27",
+      "time": "",
+      "title": "More details",
+      "venue": "CuratorSpace",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "open-call"
+      ],
+      "description": "One Colour Challenge Report this? Deadline: 27/10/2026 City: Tbilisi | Country: Georgia | Collect Art Collect Art is thrilled to announce a new international open call, inviting artists to explore the radical power of limitation: ONE COLOUR CHALLENGE.",
+      "url": "https://www.curatorspace.com/opportunities/detail/one-colour-challenge/11153",
+      "source": "CuratorSpace — opportunities",
+      "checked_at": "",
+      "review_reason": "discovery_source_needs_primary_verification",
+      "discovered_at": "2026-09-21",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21"
+    },
+    {
+      "id": "international-2026-10-27-385dd4bc2d",
+      "status": "check",
+      "kind": "open_call",
+      "city": "international",
+      "date": "2026-10-27",
+      "time": "",
+      "title": "One Colour Challenge",
+      "venue": "CuratorSpace",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "open-call"
+      ],
+      "description": "Report this? Deadline: 27/10/2026 City: Tbilisi | Country: Georgia | Collect Art Collect Art is thrilled to announce a new international open call, inviting artists to explore the radical power of limitation: ONE COLOUR CHALLENGE. More details",
+      "url": "https://www.curatorspace.com/opportunities/detail/one-colour-challenge/11153",
+      "source": "CuratorSpace — opportunities",
+      "checked_at": "",
+      "review_reason": "discovery_source_needs_primary_verification",
+      "discovered_at": "2026-09-21",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21"
+    },
+    {
+      "id": "international-2026-10-29-473710d327",
+      "status": "check",
+      "kind": "open_call",
+      "city": "international",
+      "date": "2026-10-29",
+      "time": "",
+      "title": "More details",
+      "venue": "CuratorSpace",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "open-call"
+      ],
+      "description": "Solitude Report this? Deadline: 29/10/2026 City: Tbilisi | Country: Georgia | Collect Art Collect Art is delighted to present the open call for the upcoming curated online exhibition and special edition: SOLITUDE ​",
+      "url": "https://www.curatorspace.com/opportunities/detail/solitude/11152",
+      "source": "CuratorSpace — opportunities",
+      "checked_at": "",
+      "review_reason": "discovery_source_needs_primary_verification",
+      "discovered_at": "2026-09-21",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21"
+    },
+    {
+      "id": "international-2026-10-29-0fc9b199ee",
+      "status": "check",
+      "kind": "open_call",
+      "city": "international",
+      "date": "2026-10-29",
+      "time": "",
+      "title": "Solitude",
+      "venue": "CuratorSpace",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "open-call"
+      ],
+      "description": "Report this? Deadline: 29/10/2026 City: Tbilisi | Country: Georgia | Collect Art Collect Art is delighted to present the open call for the upcoming curated online exhibition and special edition: SOLITUDE ​ More details",
+      "url": "https://www.curatorspace.com/opportunities/detail/solitude/11152",
+      "source": "CuratorSpace — opportunities",
+      "checked_at": "",
+      "review_reason": "discovery_source_needs_primary_verification",
+      "discovered_at": "2026-09-21",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21"
+    },
+    {
+      "id": "international-2026-11-20-e51b07d15a",
+      "status": "check",
+      "kind": "open_call",
+      "city": "international",
+      "date": "2026-11-20",
+      "time": "",
+      "title": "International Photography Open Call: Lumen",
+      "venue": "CuratorSpace",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "open-call"
+      ],
+      "description": "Report this? Deadline: 20/11/2026 City: Kamnik | Country: Slovenia | 13 b Call for entries! 13b is looking for photography submissions for their international exhibition ‘Lumen’. This is a great opportunity to expand your network and get greater exposure by exhibiting your work in front of an international audience. More details",
+      "url": "https://www.curatorspace.com/opportunities/detail/international-photography-open-call-lumen/11149",
+      "source": "CuratorSpace — opportunities",
+      "checked_at": "",
+      "review_reason": "discovery_source_needs_primary_verification",
+      "discovered_at": "2026-09-21",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21"
+    },
+    {
+      "id": "international-2026-11-20-473710d327",
+      "status": "check",
+      "kind": "open_call",
+      "city": "international",
+      "date": "2026-11-20",
+      "time": "",
+      "title": "More details",
+      "venue": "CuratorSpace",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "open-call"
+      ],
+      "description": "International Photography Open Call: Lumen Report this? Deadline: 20/11/2026 City: Kamnik | Country: Slovenia | 13 b Call for entries! 13b is looking for photography submissions for their international exhibition ‘Lumen’. This is a great opportunity to expand your network and get greater exposure by exhibiting your work in front of an international audience.",
+      "url": "https://www.curatorspace.com/opportunities/detail/international-photography-open-call-lumen/11149",
+      "source": "CuratorSpace — opportunities",
+      "checked_at": "",
+      "review_reason": "discovery_source_needs_primary_verification",
+      "discovered_at": "2026-09-21",
+      "price_type": "unknown",
       "availability": "unknown",
       "availability_checked_at": "2026-09-21"
     }

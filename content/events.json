@@ -4336,7 +4336,8 @@
       "discovered_at": "2026-09-21",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "editor_note": ""
     },
     {
       "id": "moscow-2026-09-30-47a0fc16a5",
@@ -4368,7 +4369,7 @@
     },
     {
       "id": "moscow-2026-09-30-4719b75fe3",
-      "status": "new",
+      "status": "approved",
       "city": "moscow",
       "date": "2026-09-30",
       "time": "12:00",
@@ -4391,7 +4392,8 @@
       "availability": "available",
       "availability_checked_at": "2026-09-21",
       "kind": "event",
-      "editor_note": ""
+      "editor_note": "",
+      "reviewed_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-30-0bf6486c05",

@@ -13,7 +13,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "выставка"
       ],
@@ -24,7 +24,7 @@
       "review_reason": "",
       "discovered_at": "2026-09-21",
       "price_type": "unknown",
-      "availability": "unknown",
+      "availability": "available",
       "availability_checked_at": "2026-09-21",
       "kind": "event"
     },
@@ -39,7 +39,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "экскурсия"
       ],
@@ -50,7 +50,7 @@
       "review_reason": "",
       "discovered_at": "2026-09-21",
       "price_type": "unknown",
-      "availability": "unknown",
+      "availability": "available",
       "availability_checked_at": "2026-09-21",
       "kind": "event"
     },
@@ -397,7 +397,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": true,
       "categories": [
         "инклюзивное событие"
       ],
@@ -408,7 +408,7 @@
       "review_reason": "",
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
-      "availability": "unknown",
+      "availability": "available",
       "availability_checked_at": "2026-09-21",
       "kind": "event"
     },
@@ -703,7 +703,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": true,
       "categories": [
         "лекция"
       ],
@@ -714,9 +714,35 @@
       "review_reason": "",
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
-      "availability": "unknown",
+      "availability": "available",
       "availability_checked_at": "2026-09-21",
       "kind": "event"
+    },
+    {
+      "id": "russia-2026-09-23-8c2cb584f6",
+      "status": "check",
+      "kind": "open_call",
+      "city": "russia",
+      "date": "2026-09-23",
+      "time": "",
+      "title": "Опен-колл маркета искусства «Лампа × Ашан»",
+      "venue": "Ewert",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "open-call"
+      ],
+      "description": "→ продажа работ, ярмарка художественные объединения, художники Приём заявок до 23 сентября 2026",
+      "url": "https://ewert.ru/competitions/open-koll-marketa-iskusstva-lampa-x-ashan/",
+      "source": "Ewert — возможности для художников",
+      "checked_at": "",
+      "review_reason": "discovery_source_needs_primary_verification",
+      "discovered_at": "2026-09-21",
+      "price_type": "paid",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-23-a460454ac2",
@@ -729,7 +755,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "новинки проката"
       ],
@@ -740,7 +766,7 @@
       "review_reason": "",
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
-      "availability": "unknown",
+      "availability": "available",
       "availability_checked_at": "2026-09-21",
       "kind": "event"
     },
@@ -1109,7 +1135,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "спецпоказ"
       ],
@@ -1120,7 +1146,7 @@
       "review_reason": "",
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
-      "availability": "unknown",
+      "availability": "available",
       "availability_checked_at": "2026-09-21",
       "kind": "event"
     },
@@ -1161,7 +1187,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": true,
       "categories": [
         "диалог"
       ],
@@ -1172,7 +1198,7 @@
       "review_reason": "",
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
-      "availability": "unknown",
+      "availability": "available",
       "availability_checked_at": "2026-09-21",
       "kind": "event"
     },
@@ -1213,7 +1239,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "кино крохам"
       ],
@@ -1224,7 +1250,7 @@
       "review_reason": "",
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
-      "availability": "unknown",
+      "availability": "available",
       "availability_checked_at": "2026-09-21",
       "kind": "event"
     },
@@ -1239,7 +1265,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "новинки проката"
       ],
@@ -1250,7 +1276,7 @@
       "review_reason": "",
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
-      "availability": "unknown",
+      "availability": "available",
       "availability_checked_at": "2026-09-21",
       "kind": "event"
     },
@@ -1265,7 +1291,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "новинки проката"
       ],
@@ -1276,7 +1302,7 @@
       "review_reason": "",
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
-      "availability": "unknown",
+      "availability": "available",
       "availability_checked_at": "2026-09-21",
       "kind": "event"
     },
@@ -1649,7 +1675,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": true,
       "categories": [
         "лекция"
       ],
@@ -1660,7 +1686,7 @@
       "review_reason": "",
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
-      "availability": "unknown",
+      "availability": "available",
       "availability_checked_at": "2026-09-21",
       "kind": "event"
     },
@@ -2083,7 +2109,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "концерт"
       ],
@@ -2094,7 +2120,7 @@
       "review_reason": "",
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
-      "availability": "unknown",
+      "availability": "available",
       "availability_checked_at": "2026-09-21",
       "kind": "event"
     },
@@ -2211,7 +2237,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "мастер-класс"
       ],
@@ -2222,7 +2248,7 @@
       "review_reason": "excluded_family_children",
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
-      "availability": "unknown",
+      "availability": "available",
       "availability_checked_at": "2026-09-21",
       "kind": "event"
     },
@@ -2387,7 +2413,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": true,
       "categories": [
         "воркшоп"
       ],
@@ -2398,7 +2424,7 @@
       "review_reason": "",
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
-      "availability": "unknown",
+      "availability": "available",
       "availability_checked_at": "2026-09-21",
       "kind": "event"
     },
@@ -2517,7 +2543,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "детям"
       ],
@@ -2528,7 +2554,7 @@
       "review_reason": "",
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
-      "availability": "unknown",
+      "availability": "available",
       "availability_checked_at": "2026-09-21",
       "kind": "event"
     },
@@ -2569,7 +2595,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "спецпоказ"
       ],
@@ -2580,7 +2606,7 @@
       "review_reason": "",
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
-      "availability": "unknown",
+      "availability": "available",
       "availability_checked_at": "2026-09-21",
       "kind": "event"
     },
@@ -2671,7 +2697,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "мастер-класс"
       ],
@@ -2682,7 +2708,7 @@
       "review_reason": "",
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
-      "availability": "unknown",
+      "availability": "available",
       "availability_checked_at": "2026-09-21",
       "kind": "event"
     },
@@ -2815,6 +2841,58 @@
       "kind": "event"
     },
     {
+      "id": "russia-2026-09-27-b9d54438b4",
+      "status": "check",
+      "kind": "open_call",
+      "city": "russia",
+      "date": "2026-09-27",
+      "time": "",
+      "title": "Индивидуальная резиденция в Переделкино (осень 2026, второй поток)",
+      "venue": "Ewert",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "open-call"
+      ],
+      "description": "→ резиденция иллюстраторы, исследователи, кураторы, музыканты, переводчики, писатели, режиссёры, сценаристы, художники Приём заявок до 27 сентября 2026",
+      "url": "https://ewert.ru/competitions/individualnaya-rezidencziya-v-dome-tvorchestva-peredelkino-osen-2026-vtoroj-potok/",
+      "source": "Ewert — возможности для художников",
+      "checked_at": "",
+      "review_reason": "discovery_source_needs_primary_verification",
+      "discovered_at": "2026-09-21",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21"
+    },
+    {
+      "id": "russia-2026-09-27-b5017b3dcc",
+      "status": "check",
+      "kind": "open_call",
+      "city": "russia",
+      "date": "2026-09-27",
+      "time": "",
+      "title": "Опен-колл осеннего маркета Soulmate × «Место быть»",
+      "venue": "Ewert",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "open-call"
+      ],
+      "description": "→ продажа работ, ярмарка художники Приём заявок до 27 сентября 2026",
+      "url": "https://ewert.ru/competitions/open-koll-osennego-marketa-soulmate-x-mesto-byt/",
+      "source": "Ewert — возможности для художников",
+      "checked_at": "",
+      "review_reason": "discovery_source_needs_primary_verification",
+      "discovered_at": "2026-09-21",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21"
+    },
+    {
       "id": "moscow-2026-09-27-6c590d946b",
       "status": "new",
       "city": "moscow",
@@ -2875,7 +2953,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "детям"
       ],
@@ -2886,7 +2964,7 @@
       "review_reason": "excluded_family_children",
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
-      "availability": "unknown",
+      "availability": "available",
       "availability_checked_at": "2026-09-21",
       "kind": "event"
     },
@@ -2951,7 +3029,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "экскурсия"
       ],
@@ -2962,7 +3040,7 @@
       "review_reason": "",
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
-      "availability": "unknown",
+      "availability": "available",
       "availability_checked_at": "2026-09-21",
       "kind": "event"
     },
@@ -2977,7 +3055,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": true,
       "categories": [
         "мастер-класс"
       ],
@@ -2988,7 +3066,7 @@
       "review_reason": "",
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
-      "availability": "unknown",
+      "availability": "available",
       "availability_checked_at": "2026-09-21",
       "kind": "event"
     },
@@ -3131,7 +3209,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": true,
       "categories": [
         "спецпоказ"
       ],
@@ -3142,7 +3220,7 @@
       "review_reason": "",
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
-      "availability": "unknown",
+      "availability": "available",
       "availability_checked_at": "2026-09-21",
       "kind": "event"
     },
@@ -3657,6 +3735,32 @@
       "kind": "event"
     },
     {
+      "id": "russia-2026-09-30-e956420137",
+      "status": "check",
+      "kind": "open_call",
+      "city": "russia",
+      "date": "2026-09-30",
+      "time": "",
+      "title": "Опен-колл триеннале «Мифологема» в Галерее МИФ",
+      "venue": "Ewert",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "open-call"
+      ],
+      "description": "→ выставка, производственный бюджет художественные объединения, художники Приём заявок до 30 сентября 2026",
+      "url": "https://ewert.ru/competitions/open-call-mifologema-triennale-myth/",
+      "source": "Ewert — возможности для художников",
+      "checked_at": "",
+      "review_reason": "discovery_source_needs_primary_verification",
+      "discovered_at": "2026-09-21",
+      "price_type": "free",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21"
+    },
+    {
       "id": "international-2026-09-30-95506fe023",
       "status": "check",
       "kind": "open_call",
@@ -3675,6 +3779,32 @@
       "description": "Report this? Deadline: 30/09/2026 City: Leeds | Region: West Yorkshire | Country: United Kingdom | Studio Greenly Do you make work about protest in any form? Whether it's environmental, political, ethical, economic, social and historical issues or civil and human rights, we're looking for visual artists to exhibit their work at our upcoming exhibition. More details",
       "url": "https://www.curatorspace.com/opportunities/detail/protest-for-change/11131",
       "source": "CuratorSpace — opportunities",
+      "checked_at": "",
+      "review_reason": "discovery_source_needs_primary_verification",
+      "discovered_at": "2026-09-21",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21"
+    },
+    {
+      "id": "russia-2026-09-30-4b27786e48",
+      "status": "check",
+      "kind": "open_call",
+      "city": "russia",
+      "date": "2026-09-30",
+      "time": "",
+      "title": "Конференция «Турчинские сессии» в ММОМА",
+      "venue": "Ewert",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "open-call"
+      ],
+      "description": "→ конференция аспиранты, искусствоведы, исследователи, кураторы, магистранты, студенты, художники Приём заявок до 30 сентября 2026",
+      "url": "https://ewert.ru/competitions/konferencziya-turchinskie-sessii-v-mmoma/",
+      "source": "Ewert — возможности для художников",
       "checked_at": "",
       "review_reason": "discovery_source_needs_primary_verification",
       "discovered_at": "2026-09-21",
@@ -3933,6 +4063,32 @@
       "kind": "event"
     },
     {
+      "id": "russia-2026-10-01-a1718c2a07",
+      "status": "check",
+      "kind": "open_call",
+      "city": "russia",
+      "date": "2026-10-01",
+      "time": "",
+      "title": "Опен-колл выставочной программы Галереи А—Б на 2027 год",
+      "venue": "Ewert",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "open-call"
+      ],
+      "description": "→ выставка кураторы, художественные объединения, художники Приём заявок до 1 октября 2026",
+      "url": "https://ewert.ru/competitions/open-call-galereya-a-b-2027/",
+      "source": "Ewert — возможности для художников",
+      "checked_at": "",
+      "review_reason": "discovery_source_needs_primary_verification",
+      "discovered_at": "2026-09-21",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21"
+    },
+    {
       "id": "moscow-2026-10-02-398c972a62",
       "status": "new",
       "city": "moscow",
@@ -4161,6 +4317,58 @@
       "kind": "event"
     },
     {
+      "id": "russia-2026-10-14-4fc7e7dd9f",
+      "status": "check",
+      "kind": "open_call",
+      "city": "russia",
+      "date": "2026-10-14",
+      "time": "",
+      "title": "13-й сезон арт-резиденции MaxArt совместно с музеем PERMM (Пермь)",
+      "venue": "Ewert",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "open-call"
+      ],
+      "description": "→ выставка, грант, резиденция художественные объединения, художники Приём заявок до 14 октября 2026",
+      "url": "https://ewert.ru/competitions/13-j-sezon-art-rezidenczii-maxart-sovmestno-s-muzeem-permm-perm/",
+      "source": "Ewert — возможности для художников",
+      "checked_at": "",
+      "review_reason": "discovery_source_needs_primary_verification",
+      "discovered_at": "2026-09-21",
+      "price_type": "paid",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21"
+    },
+    {
+      "id": "international-2026-10-15-473710d327",
+      "status": "check",
+      "kind": "open_call",
+      "city": "international",
+      "date": "2026-10-15",
+      "time": "",
+      "title": "More details",
+      "venue": "CuratorSpace",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "open-call"
+      ],
+      "description": "Home Report this? Deadline: 15/10/2026 City: Tbilisi | Country: Georgia | Collect Art For this open call, we invite artists to explore the theme of Home. Home is more than a physical place. It can be a house, a room, a city, a landscape, a memory, a person, or an inner space we carry within ourselves. It can represent belonging and comfort, but also distance, displacement, longing, change, and the search for identity.",
+      "url": "https://www.curatorspace.com/opportunities/detail/home/11126",
+      "source": "CuratorSpace — opportunities",
+      "checked_at": "",
+      "review_reason": "discovery_source_needs_primary_verification",
+      "discovered_at": "2026-09-21",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21"
+    },
+    {
       "id": "international-2026-10-15-f870805025",
       "status": "check",
       "kind": "open_call",
@@ -4211,32 +4419,6 @@
       "availability": "unknown",
       "availability_checked_at": "2026-09-21",
       "kind": "open_call"
-    },
-    {
-      "id": "moscow-2026-10-24-3569cdc778",
-      "status": "new",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-10-24",
-      "time": "12:00",
-      "title": "Лаборатория по созданию иллюстрированного зина",
-      "venue": "Музей «Гараж»",
-      "address": "",
-      "price": 0,
-      "price_text": "Бесплатно",
-      "registration": false,
-      "categories": [
-        "публичная программа"
-      ],
-      "description": "В рамках проекта «Пространство печати» Музей современного искусства «Гараж» проводит лабораторию-интенсив по созданию иллюстрированного зина и объявляет прием заявок на участие. Зин — это малотиражное издание, для создания которого не нужен сложный издательский процесс. Вместе с ведущей, художницей Натальей Успенской, участники познакомятся с историей зинов, а на практических занятиях определят тему и формат будущего издания, продумают его структуру и последовательность страниц, будут работать с рисунком и найденными изображениями. Отдельное внимание будет уделено ручному спуску полос без использования программ для верстки — подготовленные...",
-      "url": "https://garagemca.org/event/laboratory-for-creating-an-illustrated-zine",
-      "source": "Музей современного искусства «Гараж»",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-21",
-      "price_type": "unknown",
-      "availability": "available",
-      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "international-2026-10-27-385dd4bc2d",
@@ -4309,6 +4491,32 @@
       "description": "Report this? Deadline: 20/11/2026 City: Kamnik | Country: Slovenia | 13 b Call for entries! 13b is looking for photography submissions for their international exhibition ‘Lumen’. This is a great opportunity to expand your network and get greater exposure by exhibiting your work in front of an international audience. More details",
       "url": "https://www.curatorspace.com/opportunities/detail/international-photography-open-call-lumen/11149",
       "source": "CuratorSpace — opportunities",
+      "checked_at": "",
+      "review_reason": "discovery_source_needs_primary_verification",
+      "discovered_at": "2026-09-21",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21"
+    },
+    {
+      "id": "russia-2026-12-13-3a942b4abf",
+      "status": "check",
+      "kind": "open_call",
+      "city": "russia",
+      "date": "2026-12-13",
+      "time": "",
+      "title": "Десятый цикл Программы художественных резиденций «ГЭС-2»",
+      "venue": "Ewert",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "open-call"
+      ],
+      "description": "→ гонорар, производственный бюджет, резиденция архитекторы, музыканты, режиссёры, саунд-артисты, хореографы, художники Приём заявок до 13 декабря 2026",
+      "url": "https://ewert.ru/competitions/desyatyj-czikl-programmy-hudozhestvennyh-rezidenczij-ges-2/",
+      "source": "Ewert — возможности для художников",
       "checked_at": "",
       "review_reason": "discovery_source_needs_primary_verification",
       "discovered_at": "2026-09-21",

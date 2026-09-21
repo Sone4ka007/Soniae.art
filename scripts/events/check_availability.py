@@ -28,6 +28,33 @@ OPEN_CALL_HINTS=(
     "deadline","call for artists","call for entries","прием работ","приём работ"
 )
 
+RU_MONTHS={
+    "янв":1,"января":1,"фев":2,"февраля":2,"мар":3,"марта":3,"апр":4,"апреля":4,
+    "мая":5,"май":5,"июн":6,"июня":6,"июл":7,"июля":7,"авг":8,"августа":8,
+    "сен":9,"сент":9,"сентября":9,"окт":10,"октября":10,"ноя":11,"ноября":11,
+    "дек":12,"декабря":12
+}
+
+def parse_run_range(text):
+    m=re.search(r"(?<!\d)(\d{1,2})\.(\d{1,2})\.(\d{2,4})\s*[-–—]\s*(\d{1,2})\.(\d{1,2})\.(\d{2,4})(?!\d)",text)
+    if m:
+        y1=int(m.group(3)); y2=int(m.group(6))
+        if y1<100: y1+=2000
+        if y2<100: y2+=2000
+        try:
+            return date(y1,int(m.group(2)),int(m.group(1))).isoformat(), date(y2,int(m.group(5)),int(m.group(4))).isoformat()
+        except ValueError:
+            pass
+    month_pat="|".join(sorted(RU_MONTHS,key=len,reverse=True))
+    m=re.search(rf"(?<!\d)(\d{{1,2}})\s*[-–—]\s*(\d{{1,2}})\s+({month_pat})\.?\s+(20\d{{2}})",text,re.I)
+    if m:
+        mon=RU_MONTHS[m.group(3).lower()]
+        try:
+            return date(int(m.group(4)),mon,int(m.group(1))).isoformat(), date(int(m.group(4)),mon,int(m.group(2))).isoformat()
+        except ValueError:
+            pass
+    return None,None
+
 def fetch(url):
     req=urllib.request.Request(url,headers={"User-Agent":UA})
     with urllib.request.urlopen(req,timeout=20) as r:
@@ -48,6 +75,7 @@ def inspect_url(url):
         html=fetch(url)
         text=re.sub(r"<[^>]+>"," ",html)
         text=re.sub(r"\s+"," ",text).lower()
+        run_start,run_end=parse_run_range(text)
         availability="unknown"
         has_active_action=any(re.search(p,text,re.I) for p in AVAILABLE)
         hard_sold_out=any(re.search(p,text,re.I) for p in (
@@ -77,9 +105,9 @@ def inspect_url(url):
             page_price="free"
         else:
             page_price="unknown"
-        return availability,has_reg,has_ticket,page_price,buy_ticket,explicit_free
+        return availability,has_reg,has_ticket,page_price,buy_ticket,explicit_free,run_start,run_end
     except Exception:
-        return "unknown",False,False,"unknown",False,False
+        return "unknown",False,False,"unknown",False,False,None,None
 
 def main():
     db=json.loads(DB.read_text("utf-8"))
@@ -94,7 +122,8 @@ def main():
             e["kind"]="open_call"
         elif e.get("kind") != "open_call" and (
             "выставка" in title_blob or "exhibition" in title_blob or
-            any(str(x).lower() in ("выставка","exhibition") for x in (e.get("categories") or []))
+            "инсталляц" in title_blob or "installation" in title_blob or
+            any(str(x).lower() in ("выставка","exhibition","инсталляция","installation") for x in (e.get("categories") or []))
         ):
             e["kind"]="exhibition"
         try:
@@ -116,10 +145,13 @@ def main():
     checked=datetime.now(timezone.utc).date().isoformat()
     for e in kept:
         url=str(e.get("url",""))
-        availability,has_reg,has_ticket,page_price,buy_ticket,explicit_free=results.get(
-            url,("unknown",False,False,"unknown",False,False))
+        availability,has_reg,has_ticket,page_price,buy_ticket,explicit_free,run_start,run_end=results.get(
+            url,("unknown",False,False,"unknown",False,False,None,None))
         e["availability"]=availability
         e["availability_checked_at"]=checked
+        if e.get("kind")=="exhibition" and run_start and run_end:
+            e["start_date"]=run_start
+            e["end_date"]=run_end
 
         # Recompute price conservatively from the live event page.
         # Never keep a stale "free" classification when the page asks to buy a ticket.

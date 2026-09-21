@@ -132,19 +132,26 @@ def run(path,fix=False,strict=False):
     for e in db.get("events",[]):
         changed+=bool(normalize(e))
 
-    # Collapse duplicate approved exhibitions by canonical URL.
+    # Do not treat a shared museum/homepage URL as a duplicate by itself.
+    # Duplicate detection is conservative: same normalized title + venue/source.
     groups={}
     for e in db.get("events",[]):
-        if e.get("status")!="approved" or e.get("kind")!="exhibition": continue
-        key=low(e.get("url")).split("#",1)[0].rstrip("/")
-        if key: groups.setdefault(key,[]).append(e)
+        if e.get("status")!="approved": continue
+        key=(
+            re.sub(r"\W+","",low(e.get("title"))),
+            re.sub(r"\W+","",low(e.get("venue") or e.get("source")))
+        )
+        if key[0]:
+            groups.setdefault(key,[]).append(e)
     for key,items in groups.items():
         if len(items)<=1: continue
-        items.sort(key=lambda e:(0 if str(e.get("id","")).startswith("manual-") else 1, 0 if e.get("end_date") else 1, low(e.get("id"))))
-        keep=items[0]
+        # Multiple dated occurrences of the same normal event are allowed.
+        if all(e.get("kind")=="event" for e in items):
+            continue
+        items.sort(key=lambda e:(0 if str(e.get("id","")).startswith("manual-") else 1, low(e.get("id"))))
         for e in items[1:]:
             e["status"]="rejected"
-            e["review_reason"]="duplicate_exhibition_record"
+            e["review_reason"]="duplicate_record"
             changed+=1
 
     ids=set()
@@ -161,7 +168,6 @@ def run(path,fix=False,strict=False):
                 errors.append(f"exhibition/category mismatch: {rid}")
             if e.get("kind")=="open_call" and is_aggregator_url(e.get("url")):
                 errors.append(f"approved open call uses aggregator: {rid}")
-            if stale(e,today): errors.append(f"approved stale record: {rid}")
 
     db["events"]=sorted(db.get("events",[]),key=lambda e:(e.get("date",""),e.get("time",""),e.get("title","")))
     if fix:

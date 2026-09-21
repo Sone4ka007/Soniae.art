@@ -19,8 +19,8 @@ AGE_CHILD_RE=re.compile(r"\b(?:для\s+детей\s*)?(?:от\s*)?(?:[3-9]|1[0-
 
 OPEN_CALL_HINTS=(
     "open call","open-call","опен колл","опен-колл","конкурс","прием заявок",
-    "приём заявок","подать заявку","подать проект","заявки принимаются","дедлайн",
-    "deadline","call for artists","call for entries","прием работ","приём работ"
+    "приём заявок","заявки принимаются","дедлайн","deadline",
+    "call for artists","call for entries","прием работ","приём работ"
 )
 
 def main():
@@ -30,7 +30,8 @@ def main():
         blob=" ".join(str(e.get(k,"")) for k in ("title","description","venue","source")).lower()
         if e.get("kind") not in ("event","open_call"):
             e["kind"]="event"
-        if any(x in blob for x in OPEN_CALL_HINTS):
+        title_blob=str(e.get("title","")).lower()
+        if any(x in title_blob for x in OPEN_CALL_HINTS):
             e["kind"]="open_call"
             cats=e.get("categories") or []
             if "open-call" not in cats:

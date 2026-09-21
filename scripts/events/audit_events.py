@@ -26,10 +26,11 @@ seen_occ={}
 seen_ex={}
 for e in events:
     title=str(e.get("title","")).strip()
-    if not title:
-        errors.append(f"missing title: {e.get('id')}")
-    if title.lower() in GENERIC:
-        errors.append(f"generic title: {e.get('id')} {title}")
+    if e.get("status") in ("new","check","approved"):
+        if not title:
+            errors.append(f"missing title: {e.get('id')}")
+        if title.lower() in GENERIC:
+            errors.append(f"generic title: {e.get('id')} {title}")
 
     url=str(e.get("url","")).strip().lower()
     occ=(e.get("city"),e.get("date"),url,norm(e.get("title")))

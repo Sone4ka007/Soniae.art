@@ -16,10 +16,58 @@ def service():
     creds=Credentials.from_service_account_info(CREDS,scopes=scopes)
     return build("sheets","v4",credentials=creds,cache_discovery=False)
 
+def parse_bool(v):
+    if isinstance(v,bool): return v
+    s=str(v).strip().lower()
+    if not s: return None
+    if s in ("true","1","yes","да"): return True
+    if s in ("false","0","no","нет"): return False
+    return None
+
+def preserve_editor_fields(api, db):
+    # Merge the live Sheet back into the DB immediately before overwriting it.
+    # This makes editor decisions durable even if they are made during a pipeline run.
+    current=api.get(spreadsheetId=SHEET_ID,range=RANGE).execute().get("values",[])
+    if not current:
+        return 0
+    headers=current[0]
+    byid={e.get("id"):e for e in db.get("events",[]) if e.get("id")}
+    editable={"status","editor_note","checked_at","review_reason","price_text","registration","categories"}
+    merged=0
+    for row in current[1:]:
+        obj=dict(zip(headers,row+[""]*(len(headers)-len(row))))
+        rid=str(obj.get("id","")).strip()
+        if not rid or rid not in byid:
+            continue
+        e=byid[rid]
+        for k in editable:
+            if k not in obj:
+                continue
+            v=obj[k]
+            if k=="registration":
+                v=parse_bool(v)
+            elif k=="categories":
+                v=[x.strip() for x in str(v).split(",") if x.strip()]
+            if v not in ("",None) or k in {"registration","editor_note","review_reason"}:
+                e[k]=v
+        merged+=1
+    return merged
+
 def main():
     db=json.loads(DB.read_text("utf-8"))
+    svc=service()
+    api=svc.spreadsheets().values()
+    merged=preserve_editor_fields(api,db)
+    db["events"]=sorted(db.get("events",[]),key=lambda e:(e.get("date",""),e.get("time",""),e.get("title","")))
+    DB.write_text(json.dumps(db,ensure_ascii=False,indent=2)+"\n","utf-8")
+
     rows=[HEADERS]
+    import datetime as _dt
     for e in db.get("events",[]):
+        try:
+            days=(_dt.date.fromisoformat(e.get("date",""))-_dt.date.today()).days
+        except Exception:
+            days=""
         rows.append([
             e.get("id",""),e.get("status","new"),e.get("city",""),e.get("date",""),e.get("time",""),
             e.get("title",""),e.get("venue",""),e.get("address",""),e.get("price",""),
@@ -28,14 +76,13 @@ def main():
             e.get("availability","unknown"),e.get("availability_checked_at",""),
             ",".join(e.get("categories",[])) if isinstance(e.get("categories"),list) else e.get("categories",""),
             e.get("description",""),e.get("url",""),e.get("source",""),e.get("checked_at",""),
-            e.get("review_reason",""),e.get("editor_note",""),
-            ( __import__("datetime").date.fromisoformat(e.get("date","")) - __import__("datetime").date.today() ).days if e.get("date") else ""
+            e.get("review_reason",""),e.get("editor_note",""),days
         ])
-    api=service().spreadsheets().values()
+
     api.clear(spreadsheetId=SHEET_ID,range=RANGE,body={}).execute()
     api.update(spreadsheetId=SHEET_ID,range="Events!A1",valueInputOption="RAW",body={"values":rows}).execute()
 
-    meta=service().spreadsheets().get(spreadsheetId=SHEET_ID,fields="sheets(properties(sheetId,title))").execute()
+    meta=svc.spreadsheets().get(spreadsheetId=SHEET_ID,fields="sheets(properties(sheetId,title))").execute()
     sheet_id=next(s["properties"]["sheetId"] for s in meta["sheets"] if s["properties"]["title"]=="Events")
     requests=[
       {"setBasicFilter":{"filter":{"range":{"sheetId":sheet_id,"startRowIndex":0,"startColumnIndex":0,"endColumnIndex":22}}}},
@@ -50,7 +97,7 @@ def main():
       {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":12,"endColumnIndex":13},
         "rule":{"condition":{"type":"ONE_OF_LIST","values":[{"userEnteredValue":x} for x in ["available","sold_out","unknown"]]},"strict":True,"showCustomUi":True}}}
     ]
-    service().spreadsheets().batchUpdate(spreadsheetId=SHEET_ID,body={"requests":requests}).execute()
-    print(f"Pushed {len(rows)-1} events to Google Sheet")
+    svc.spreadsheets().batchUpdate(spreadsheetId=SHEET_ID,body={"requests":requests}).execute()
+    print(f"Preserved editor fields for {merged} rows; pushed {len(rows)-1} events to Google Sheet")
 
 if __name__=="__main__": main()

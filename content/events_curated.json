@@ -465,10 +465,10 @@
       "review_reason": ""
     },
     {
-      "status": "approved",
-      "editor_note": "Добавлено как крупное профильное событие; официальный источник проверен",
+      "status": "check",
+      "editor_note": "Добавлено в подборку как кандидат; требуется ручной апрув.",
       "checked_at": "2026-09-21",
-      "reviewed_at": "2026-09-21",
+      "reviewed_at": "",
       "availability": "unknown",
       "availability_checked_at": "",
       "registration": true,
@@ -492,13 +492,13 @@
       "url": "https://homefest.ru/",
       "source": "HomeFest — официальный сайт",
       "discovered_at": "2026-09-21",
-      "review_reason": ""
+      "review_reason": "manual_approval_required"
     },
     {
-      "status": "approved",
-      "editor_note": "Добавлено как крупное профильное событие; официальный источник проверен",
+      "status": "check",
+      "editor_note": "Добавлено в подборку как кандидат; требуется ручной апрув.",
       "checked_at": "2026-09-21",
-      "reviewed_at": "2026-09-21",
+      "reviewed_at": "",
       "availability": "unknown",
       "availability_checked_at": "",
       "registration": true,
@@ -522,7 +522,7 @@
       "url": "https://www.forumdesign.ru/saint-petersburg/",
       "source": "Российские дни дизайна и архитектуры — официальный сайт",
       "discovered_at": "2026-09-21",
-      "review_reason": ""
+      "review_reason": "manual_approval_required"
     },
     {
       "status": "approved",
@@ -583,10 +583,10 @@
       "review_reason": ""
     },
     {
-      "status": "approved",
-      "editor_note": "Добавлено как крупный фестиваль медиаискусства; официальный источник проверен",
+      "status": "check",
+      "editor_note": "Добавлено в подборку как кандидат; требуется ручной апрув.",
       "checked_at": "2026-09-21",
-      "reviewed_at": "2026-09-21",
+      "reviewed_at": "",
       "availability": "unknown",
       "availability_checked_at": "",
       "registration": null,
@@ -610,7 +610,7 @@
       "url": "https://digitalrain.art/",
       "source": "Digital Rain — официальный сайт",
       "discovered_at": "2026-09-21",
-      "review_reason": ""
+      "review_reason": "manual_approval_required"
     },
     {
       "status": "approved",

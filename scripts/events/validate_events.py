@@ -67,6 +67,11 @@ RECURRING_LOW_VALUE=(
 )
 
 
+HARD_DROP_URLS={
+    "https://ges-2.org/concert-hall",
+    "https://ges-2.org/programme",
+}
+
 def main():
     db=json.loads(DB.read_text("utf-8")); changed=0
     seen={}
@@ -177,6 +182,9 @@ def main():
         output.append(rep)
 
     db["events"]=sorted(output,key=lambda e:(e.get("date",""),e.get("time",""),e.get("title","")))
+    before_drop=len(db.get("events",[]))
+    db["events"]=[e for e in db.get("events",[]) if str(e.get("url","")).strip().lower() not in HARD_DROP_URLS]
+    hard_dropped=before_drop-len(db["events"])
     DB.write_text(json.dumps(db,ensure_ascii=False,indent=2)+"\n","utf-8")
     print(f"Validation changes: {changed}; exhibitions collapsed: {sum(max(0,len(v)-1) for v in grouped.values())}")
 if __name__=="__main__": main()

@@ -382,19 +382,41 @@
       "high_free_yield": true
     },
     {
-      "name": "Санкт-Петербургская государственная библиотека для слепых и техническая афиша",
+      "name": "Санкт-Петербургская государственная театральная библиотека — афиша",
       "city": "spb",
       "url": "https://sptl.spb.ru/afisha",
-      "venue": "Санкт-Петербургская государственная библиотека",
+      "venue": "Санкт-Петербургская государственная театральная библиотека",
       "adapter": "event_links",
       "href_contains": [
         "/afisha/",
-        "/events/",
-        "/event/"
+        "/event/",
+        "/events/"
       ],
       "max_detail_pages": 100,
       "detail_workers": 8,
-      "source_group": "library"
+      "source_group": "library",
+      "high_free_yield": true
+    },
+    {
+      "name": "Санкт-Петербургская государственная театральная библиотека — выставки",
+      "city": "spb",
+      "url": "https://sptl.spb.ru/afisha/exhibition",
+      "venue": "Санкт-Петербургская государственная театральная библиотека",
+      "adapter": "event_links",
+      "href_contains": [
+        "/afisha/exhibition/",
+        "/afisha/"
+      ],
+      "exclude_paths": [
+        "/afisha/exhibition",
+        "/afisha/exhibition/"
+      ],
+      "kind": "exhibition",
+      "max_detail_pages": 80,
+      "detail_workers": 8,
+      "source_group": "library",
+      "high_free_yield": true,
+      "default_price_type": "free"
     }
   ]
 }

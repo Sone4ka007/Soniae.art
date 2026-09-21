@@ -125,6 +125,60 @@
       "href_contains": [
         "/opportunity/"
       ]
+    },
+    {
+      "name": "ММОМА — события",
+      "city": "moscow",
+      "url": "https://mmoma.ru/visit/events",
+      "venue": "ММОМА",
+      "adapter": "event_links",
+      "href_contains": [
+        "/visit/events/"
+      ],
+      "max_detail_pages": 40,
+      "detail_workers": 8
+    },
+    {
+      "name": "ММОМА — выставки",
+      "city": "moscow",
+      "url": "https://mmoma.ru/",
+      "venue": "ММОМА",
+      "adapter": "event_links",
+      "href_contains": [
+        "/visit/gallery/"
+      ],
+      "kind": "exhibition",
+      "max_detail_pages": 40,
+      "detail_workers": 8
+    },
+    {
+      "name": "ЦСИ Винзавод",
+      "city": "moscow",
+      "url": "https://www.winzavod.ru/calendar/",
+      "venue": "ЦСИ Винзавод",
+      "adapter": "event_links",
+      "href_contains": [
+        "/calendar/"
+      ],
+      "exclude_paths": [
+        "/calendar/",
+        "/calendar/tour/",
+        "/calendar/play/"
+      ],
+      "max_detail_pages": 40,
+      "detail_workers": 8
+    },
+    {
+      "name": "ГМИИ им. А.С. Пушкина",
+      "city": "moscow",
+      "url": "https://pushkinmuseum.art/events/blocks/events_list.php",
+      "venue": "ГМИИ им. А.С. Пушкина",
+      "adapter": "event_links",
+      "href_contains": [
+        "/events/archive/2026/"
+      ],
+      "max_detail_pages": 40,
+      "detail_workers": 8
     }
   ]
 }

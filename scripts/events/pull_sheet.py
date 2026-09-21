@@ -29,7 +29,7 @@ def main():
     rows=[dict(zip(headers,row+[""]*(len(headers)-len(row)))) for row in data[1:]]
     db=json.loads(DB.read_text("utf-8"))
     byid={e.get("id"):e for e in db.get("events",[]) if e.get("id")}
-    editable={"status","editor_note","checked_at","review_reason","price_text","price_type","registration","availability","categories","kind"}
+    editable={"status","editor_note","checked_at","review_reason","price_text","price_type","registration","availability","categories","kind","description","url","source","venue","address","price"}
     for row in rows:
         rid=row.get("id","").strip()
         if not rid or rid not in byid: continue
@@ -38,7 +38,7 @@ def main():
         for k in editable:
             if k not in row: continue
             v=row[k]
-            if k in ("kind","categories") and str(v).strip()=="":
+            if k in ("status","kind","categories","description","url","source","venue","address","price","price_type","availability") and str(v).strip()=="":
                 continue
             if k=="registration": v=parse_bool(v)
             elif k=="categories": v=[x.strip() for x in str(v).split(",") if x.strip()]

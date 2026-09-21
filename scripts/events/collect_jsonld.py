@@ -519,9 +519,20 @@ def extract_ges2(src, days=14):
         try:
             detail_html=fetch(full)
             ds=BeautifulSoup(detail_html,"html.parser")
-            h=ds.find(["h1","h2"])
+            h=ds.find("h1") or ds.find("h2")
             info["title"]=clean(h.get_text(" ",strip=True)) if h else ""
-            info["text"]=clean(ds.get_text(" ",strip=True))
+            chunks=[]
+            if h:
+                total=0
+                for s in h.find_all_next(string=True):
+                    t=clean(s)
+                    if not t or t==info["title"]:
+                        continue
+                    chunks.append(t)
+                    total+=len(t)
+                    if total>=2500:
+                        break
+            info["text"]=clean(" ".join(chunks))
             info["cat"]=event_category(info["text"]) or ""
         except Exception as e:
             print(f"WARN {src['name']} detail {full}: {e}",file=sys.stderr)
@@ -585,7 +596,8 @@ def main():
     db=load_json(DB,{"schema_version":1,"events":[]})
     existing={e.get("id"):e for e in db.get("events",[])}
     occurrence_index={
-        (e.get("city"),e.get("date"),str(e.get("url","")).strip().lower()):e.get("id")
+        (e.get("city"),e.get("date"),str(e.get("url","")).strip().lower(),
+         re.sub(r"\W+","",str(e.get("title","")).lower())):e.get("id")
         for e in db.get("events",[]) if e.get("id") and e.get("url")
     }
     found=0
@@ -615,7 +627,8 @@ def main():
                 candidates.extend(extract_open_call_listing(html,src))
 
         for n in candidates:
-            occ=(n.get("city"),n.get("date"),str(n.get("url","")).strip().lower())
+            occ=(n.get("city"),n.get("date"),str(n.get("url","")).strip().lower(),
+                 re.sub(r"\W+","",str(n.get("title","")).lower()))
             old_id=occurrence_index.get(occ)
             if old_id and old_id in existing:
                 old=existing[old_id]

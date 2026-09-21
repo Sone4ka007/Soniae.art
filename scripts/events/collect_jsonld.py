@@ -693,12 +693,21 @@ def extract_open_call_listing(html, src):
 
         detail_text=""
         detail_title=""
+        primary_url=""
         try:
             detail_html=fetch(full)
             detail_soup=BeautifulSoup(detail_html,"html.parser")
             h=detail_soup.find("h1") or detail_soup.find("h2")
             detail_title=clean(h.get_text(" ",strip=True)) if h else ""
             detail_text=clean(detail_soup.get_text(" ",strip=True))
+            if "ewert.ru" in urlparse(full).netloc.lower():
+                for link in detail_soup.find_all("a",href=True):
+                    label=clean(link.get_text(" ",strip=True)).lower()
+                    href=urljoin(full,link.get("href",""))
+                    host=urlparse(href).netloc.lower()
+                    if ("перейти к конкурсу" in label and host and "ewert.ru" not in host):
+                        primary_url=href
+                        break
         except Exception as e:
             print(f"WARN open call detail {full}: {e}",file=sys.stderr)
 
@@ -713,14 +722,15 @@ def extract_open_call_listing(html, src):
         if not title or title.lower() in SKIP_TITLES or len(title)<6:
             continue
 
-        key=(dt.isoformat(),full,title)
+        event_url=primary_url or full
+        key=(dt.isoformat(),event_url,title)
         if key in seen: continue
         seen.add(key)
 
         desc=open_call_summary(detail_soup if detail_text else None,title,txt)
         price,price_text=parse_price(detail_text or txt)
         out.append(make_event(
-            src,dt.isoformat(),"",title,full,desc,
+            src,dt.isoformat(),"",title,event_url,desc,
             venue=src.get("venue",""),price=price,price_text=price_text,registration=None,
             categories=["open-call"],status="check",
             reason="discovery_source_needs_primary_verification"

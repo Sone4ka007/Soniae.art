@@ -3,36 +3,6 @@
   "updated_at": "2026-09-21",
   "events": [
     {
-      "id": "moscow-2026-09-21-6c590d946b",
-      "status": "approved",
-      "city": "moscow",
-      "date": "2026-09-21",
-      "time": "",
-      "title": "Александра Сухарева. Начала",
-      "venue": "ГЭС-2",
-      "address": "",
-      "price": 0,
-      "price_text": "Бесплатно по регистрации",
-      "registration": true,
-      "categories": [
-        "выставка"
-      ],
-      "description": "Инсталляция Александры Сухаревой — два покрытых кристаллами холста, которые постепенно меняются под воздействием света, влажности и температуры.",
-      "url": "https://ges-2.org/alexandra-sukhareva-beginnings",
-      "source": "Дом культуры «ГЭС-2»",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "free",
-      "availability": "available",
-      "availability_checked_at": "2026-09-21",
-      "kind": "exhibition",
-      "editor_note": "",
-      "reviewed_at": "2026-09-21",
-      "start_date": "",
-      "end_date": ""
-    },
-    {
       "id": "moscow-2026-09-21-291f764fba",
       "status": "new",
       "kind": "event",
@@ -56,7 +26,8 @@
       "discovered_at": "2026-09-21",
       "price_type": "paid",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "editor_note": ""
     },
     {
       "id": "moscow-2026-09-21-87163ce62b",
@@ -82,37 +53,8 @@
       "discovered_at": "2026-09-21",
       "price_type": "paid",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
-    },
-    {
-      "id": "moscow-2026-09-21-a7dd453c9e",
-      "status": "approved",
-      "city": "moscow",
-      "date": "2026-09-21",
-      "time": "",
-      "title": "Формы касаний. Все люди красивые",
-      "venue": "ГЭС-2",
-      "address": "",
-      "price": 0,
-      "price_text": "Бесплатно по регистрации",
-      "registration": true,
-      "categories": [
-        "выставка"
-      ],
-      "description": "Финальный показ работ третьего сезона лаборатории «Формы касаний» — о настроениях, чувствах и способах выражать их через голос, текстиль, керамику и другие медиумы.",
-      "url": "https://ges-2.org/forms-of-touch-all-people-are-beautiful",
-      "source": "Дом культуры «ГЭС-2»",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "free",
-      "availability": "available",
       "availability_checked_at": "2026-09-21",
-      "kind": "exhibition",
-      "editor_note": "",
-      "reviewed_at": "2026-09-21",
-      "start_date": "2026-09-16",
-      "end_date": "2026-09-29"
+      "editor_note": ""
     },
     {
       "id": "moscow-2026-09-21-dedf98c398",
@@ -171,6 +113,66 @@
       "kind": "event",
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "moscow-2026-09-21-6c590d946b",
+      "status": "approved",
+      "city": "moscow",
+      "date": "2026-09-21",
+      "time": "11:00",
+      "title": "Александра Сухарева. Начала",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "Бесплатно по регистрации",
+      "registration": true,
+      "categories": [
+        "выставка"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/alexandra-sukhareva-beginnings",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-20",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21",
+      "kind": "event",
+      "editor_note": "",
+      "reviewed_at": "2026-09-21",
+      "start_date": "",
+      "end_date": ""
+    },
+    {
+      "id": "moscow-2026-09-21-a7dd453c9e",
+      "status": "approved",
+      "city": "moscow",
+      "date": "2026-09-21",
+      "time": "11:00",
+      "title": "Формы касаний. Все люди красивые",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "Бесплатно по регистрации",
+      "registration": true,
+      "categories": [
+        "выставка"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/forms-of-touch-all-people-are-beautiful",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-20",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21",
+      "kind": "event",
+      "editor_note": "",
+      "reviewed_at": "2026-09-21",
+      "start_date": "2026-09-16",
+      "end_date": "2026-09-29"
     },
     {
       "id": "moscow-2026-09-21-98f4534d25",
@@ -385,7 +387,8 @@
       "discovered_at": "2026-09-21",
       "price_type": "paid",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "editor_note": ""
     },
     {
       "id": "moscow-2026-09-22-87163ce62b",
@@ -411,7 +414,36 @@
       "discovered_at": "2026-09-21",
       "price_type": "paid",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "editor_note": ""
+    },
+    {
+      "id": "moscow-2026-09-22-b6849502a8",
+      "status": "rejected",
+      "city": "moscow",
+      "date": "2026-09-22",
+      "time": "11:00",
+      "title": "Мастер-класс по пошиву лонгслива или футболки",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": false,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/masterclass-in-sewing-a-longsleeve-or-t-shirt",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-20",
+      "price_type": "paid",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21",
+      "kind": "event",
+      "editor_note": "",
+      "reviewed_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-22-6c590d946b",
@@ -442,32 +474,30 @@
       "reviewed_at": "2026-09-21"
     },
     {
-      "id": "moscow-2026-09-22-b6849502a8",
-      "status": "rejected",
+      "id": "moscow-2026-09-22-a7dd453c9e",
+      "status": "new",
+      "kind": "event",
       "city": "moscow",
       "date": "2026-09-22",
       "time": "11:00",
-      "title": "Мастер-класс по пошиву лонгслива или футболки",
+      "title": "Формы касаний. Все люди красивые",
       "venue": "ГЭС-2",
       "address": "",
-      "price": 0,
-      "price_text": "Бесплатно",
-      "registration": false,
+      "price": null,
+      "price_text": "",
+      "registration": null,
       "categories": [
-        "мастер-класс"
+        "семинар"
       ],
       "description": "",
-      "url": "https://ges-2.org/masterclass-in-sewing-a-longsleeve-or-t-shirt",
+      "url": "https://ges-2.org/forms-of-touch-all-people-are-beautiful",
       "source": "Дом культуры «ГЭС-2»",
       "checked_at": "",
       "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "paid",
+      "discovered_at": "2026-09-21",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21",
-      "kind": "event",
-      "editor_note": "",
-      "reviewed_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-22-1ad5cc054d",
@@ -904,11 +934,12 @@
       "discovered_at": "2026-09-21",
       "price_type": "paid",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "editor_note": ""
     },
     {
       "id": "russia-2026-09-23-8c2cb584f6",
-      "status": "check",
+      "status": "approved",
       "kind": "open_call",
       "city": "russia",
       "date": "2026-09-23",
@@ -926,12 +957,13 @@
       "url": "https://ewert.ru/competitions/open-koll-marketa-iskusstva-lampa-x-ashan/",
       "source": "Ewert — возможности для художников",
       "checked_at": "",
-      "review_reason": "paid_market_fee_exception_review",
+      "review_reason": "discovery_source_needs_primary_verification",
       "discovered_at": "2026-09-21",
       "price_type": "paid",
       "availability": "unknown",
       "availability_checked_at": "2026-09-21",
-      "editor_note": ""
+      "editor_note": "",
+      "reviewed_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-23-87163ce62b",
@@ -957,7 +989,36 @@
       "discovered_at": "2026-09-21",
       "price_type": "paid",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "editor_note": ""
+    },
+    {
+      "id": "moscow-2026-09-23-b6849502a8",
+      "status": "rejected",
+      "city": "moscow",
+      "date": "2026-09-23",
+      "time": "11:00",
+      "title": "Мастер-класс по шелкографии",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/vaults-masterclass-in-silkscreen-printing",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-20",
+      "price_type": "paid",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21",
+      "kind": "event",
+      "editor_note": "",
+      "reviewed_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-23-6c590d946b",
@@ -988,32 +1049,30 @@
       "reviewed_at": "2026-09-21"
     },
     {
-      "id": "moscow-2026-09-23-b6849502a8",
-      "status": "rejected",
+      "id": "moscow-2026-09-23-a7dd453c9e",
+      "status": "new",
+      "kind": "event",
       "city": "moscow",
       "date": "2026-09-23",
       "time": "11:00",
-      "title": "Мастер-класс по шелкографии",
+      "title": "Формы касаний. Все люди красивые",
       "venue": "ГЭС-2",
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": false,
+      "registration": null,
       "categories": [
-        "мастер-класс"
+        "семинар"
       ],
       "description": "",
-      "url": "https://ges-2.org/vaults-masterclass-in-silkscreen-printing",
+      "url": "https://ges-2.org/forms-of-touch-all-people-are-beautiful",
       "source": "Дом культуры «ГЭС-2»",
       "checked_at": "",
       "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "paid",
+      "discovered_at": "2026-09-21",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21",
-      "kind": "event",
-      "editor_note": "",
-      "reviewed_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-23-c3c03c7184",
@@ -1310,63 +1369,8 @@
       "discovered_at": "2026-09-21",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
-    },
-    {
-      "id": "moscow-2026-09-23-8ce86966a0",
-      "status": "rejected",
-      "city": "moscow",
-      "date": "2026-09-23",
-      "time": "19:00",
-      "title": "Вокальный вечер. Хибла Герзмава и ее класс",
-      "venue": "Третьяковская галерея",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [
-        "концерт"
-      ],
-      "description": "18 : дней 21 : час",
-      "url": "https://www.tretyakovgallery.ru/events/o/vokalnyy-vecher-khibla-gerzmava-i-ee-klass/",
-      "source": "Третьяковская галерея — события",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "paid",
-      "availability": "available",
       "availability_checked_at": "2026-09-21",
-      "kind": "event",
-      "editor_note": "",
-      "reviewed_at": "2026-09-21"
-    },
-    {
-      "id": "moscow-2026-09-23-262c783235",
-      "status": "approved",
-      "city": "moscow",
-      "date": "2026-09-23",
-      "time": "19:00",
-      "title": "Презентация альбома «Устье»",
-      "venue": "ГЭС-2",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": true,
-      "categories": [
-        "презентация"
-      ],
-      "description": "",
-      "url": "https://ges-2.org/presentation-of-the-album-estuary",
-      "source": "Дом культуры «ГЭС-2»",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "unknown",
-      "availability": "unknown",
-      "availability_checked_at": "2026-09-21",
-      "kind": "event",
-      "editor_note": "",
-      "reviewed_at": "2026-09-21"
+      "editor_note": ""
     },
     {
       "id": "moscow-2026-09-23-f2139d382a",
@@ -1397,6 +1401,34 @@
       "reviewed_at": "2026-09-21"
     },
     {
+      "id": "moscow-2026-09-23-8ce86966a0",
+      "status": "rejected",
+      "city": "moscow",
+      "date": "2026-09-23",
+      "time": "19:00",
+      "title": "Вокальный вечер. Хибла Герзмава и ее класс",
+      "venue": "Третьяковская галерея",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "концерт"
+      ],
+      "description": "18 : дней 21 : час",
+      "url": "https://www.tretyakovgallery.ru/events/o/vokalnyy-vecher-khibla-gerzmava-i-ee-klass/",
+      "source": "Третьяковская галерея — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-20",
+      "price_type": "paid",
+      "availability": "available",
+      "availability_checked_at": "2026-09-21",
+      "kind": "event",
+      "editor_note": "",
+      "reviewed_at": "2026-09-21"
+    },
+    {
       "id": "moscow-2026-09-23-871bc9f917",
       "status": "rejected",
       "city": "moscow",
@@ -1422,6 +1454,34 @@
       "availability_checked_at": "2026-09-21",
       "kind": "event",
       "editor_note": ""
+    },
+    {
+      "id": "moscow-2026-09-23-262c783235",
+      "status": "approved",
+      "city": "moscow",
+      "date": "2026-09-23",
+      "time": "19:00",
+      "title": "Презентация альбома «Устье»",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": true,
+      "categories": [
+        "презентация"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/presentation-of-the-album-estuary",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-20",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21",
+      "kind": "event",
+      "editor_note": "",
+      "reviewed_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-23-941e83b687",
@@ -1559,7 +1619,8 @@
       "discovered_at": "2026-09-21",
       "price_type": "paid",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "editor_note": ""
     },
     {
       "id": "moscow-2026-09-24-87163ce62b",
@@ -1585,7 +1646,8 @@
       "discovered_at": "2026-09-21",
       "price_type": "paid",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "editor_note": ""
     },
     {
       "id": "moscow-2026-09-24-1738ddf153",
@@ -1642,6 +1704,32 @@
       "kind": "event",
       "editor_note": "",
       "reviewed_at": "2026-09-21"
+    },
+    {
+      "id": "moscow-2026-09-24-a7dd453c9e",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-09-24",
+      "time": "11:00",
+      "title": "Формы касаний. Все люди красивые",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "семинар"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/forms-of-touch-all-people-are-beautiful",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-21",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-24-6d8f1e6c5b",
@@ -2024,31 +2112,6 @@
       "reviewed_at": "2026-09-21"
     },
     {
-      "id": "moscow-2026-09-25-44d6d71884",
-      "status": "approved",
-      "city": "moscow",
-      "date": "2026-09-25",
-      "time": "",
-      "title": "«Путь молодого автора: от комикса к бренду»: старт нового цикла лекций Фестиваля Рассказывая Истории",
-      "venue": "Школа дизайна НИУ ВШЭ",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [],
-      "description": "Фестиваль Рассказывая Истории 2026 прошёл 23 мая, объединив более 130 спикеров и тысячи гостей. Но диалог о будущем креативных индустрий не прекращается. Мы запускаем новый цикл открытых лекций, который станет мостом к фестивалю 2027 года. Первой встречей сезона станет паблик-ток о том, как авторская идея превращается в узнаваемый бренд и часть современной культуры. 25 сентября 2026",
-      "url": "https://design.hse.ru/news/7109",
-      "source": "Школа дизайна НИУ ВШЭ",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "unknown",
-      "availability": "unknown",
-      "availability_checked_at": "2026-09-21",
-      "kind": "event",
-      "editor_note": ""
-    },
-    {
       "id": "moscow-2026-09-25-291f764fba",
       "status": "new",
       "kind": "event",
@@ -2072,7 +2135,8 @@
       "discovered_at": "2026-09-21",
       "price_type": "paid",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "editor_note": ""
     },
     {
       "id": "moscow-2026-09-25-87163ce62b",
@@ -2098,7 +2162,8 @@
       "discovered_at": "2026-09-21",
       "price_type": "paid",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "editor_note": ""
     },
     {
       "id": "moscow-2026-09-25-544123cac3",
@@ -2125,6 +2190,59 @@
       "availability": "available",
       "availability_checked_at": "2026-09-21",
       "kind": "open_call",
+      "editor_note": "",
+      "reviewed_at": "2026-09-21"
+    },
+    {
+      "id": "moscow-2026-09-25-44d6d71884",
+      "status": "approved",
+      "city": "moscow",
+      "date": "2026-09-25",
+      "time": "",
+      "title": "«Путь молодого автора: от комикса к бренду»: старт нового цикла лекций Фестиваля Рассказывая Истории",
+      "venue": "Школа дизайна НИУ ВШЭ",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [],
+      "description": "Фестиваль Рассказывая Истории 2026 прошёл 23 мая, объединив более 130 спикеров и тысячи гостей. Но диалог о будущем креативных индустрий не прекращается. Мы запускаем новый цикл открытых лекций, который станет мостом к фестивалю 2027 года. Первой встречей сезона станет паблик-ток о том, как авторская идея превращается в узнаваемый бренд и часть современной культуры. 25 сентября 2026",
+      "url": "https://design.hse.ru/news/7109",
+      "source": "Школа дизайна НИУ ВШЭ",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-20",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21",
+      "kind": "event",
+      "editor_note": ""
+    },
+    {
+      "id": "moscow-2026-09-25-b6849502a8",
+      "status": "rejected",
+      "city": "moscow",
+      "date": "2026-09-25",
+      "time": "11:00",
+      "title": "Мастер-класс по столярному делу. Настольное зеркало",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/masterclass-in-carpentry-desk-mirror",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-20",
+      "price_type": "paid",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21",
+      "kind": "event",
       "editor_note": "",
       "reviewed_at": "2026-09-21"
     },
@@ -2157,32 +2275,30 @@
       "reviewed_at": "2026-09-21"
     },
     {
-      "id": "moscow-2026-09-25-b6849502a8",
-      "status": "rejected",
+      "id": "moscow-2026-09-25-a7dd453c9e",
+      "status": "new",
+      "kind": "event",
       "city": "moscow",
       "date": "2026-09-25",
       "time": "11:00",
-      "title": "Мастер-класс по столярному делу. Настольное зеркало",
+      "title": "Формы касаний. Все люди красивые",
       "venue": "ГЭС-2",
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": false,
+      "registration": null,
       "categories": [
-        "мастер-класс"
+        "семинар"
       ],
       "description": "",
-      "url": "https://ges-2.org/masterclass-in-carpentry-desk-mirror",
+      "url": "https://ges-2.org/forms-of-touch-all-people-are-beautiful",
       "source": "Дом культуры «ГЭС-2»",
       "checked_at": "",
       "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "paid",
+      "discovered_at": "2026-09-21",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21",
-      "kind": "event",
-      "editor_note": "",
-      "reviewed_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-25-b904ea1219",
@@ -2316,7 +2432,8 @@
       "discovered_at": "2026-09-21",
       "price_type": "paid",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "editor_note": ""
     },
     {
       "id": "moscow-2026-09-25-3ef80dda1a",
@@ -2559,7 +2676,8 @@
       "discovered_at": "2026-09-21",
       "price_type": "paid",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "editor_note": ""
     },
     {
       "id": "moscow-2026-09-26-87163ce62b",
@@ -2585,7 +2703,8 @@
       "discovered_at": "2026-09-21",
       "price_type": "paid",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "editor_note": ""
     },
     {
       "id": "moscow-2026-09-26-6c590d946b",
@@ -2614,6 +2733,32 @@
       "kind": "event",
       "editor_note": "",
       "reviewed_at": "2026-09-21"
+    },
+    {
+      "id": "moscow-2026-09-26-a7dd453c9e",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-09-26",
+      "time": "11:00",
+      "title": "Формы касаний. Все люди красивые",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "семинар"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/forms-of-touch-all-people-are-beautiful",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-21",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-26-64aa698d00",
@@ -2698,62 +2843,6 @@
       "reviewed_at": "2026-09-21"
     },
     {
-      "id": "moscow-2026-09-26-e9d5bc835b",
-      "status": "rejected",
-      "city": "moscow",
-      "date": "2026-09-26",
-      "time": "12:00",
-      "title": "(Не)забытые растения",
-      "venue": "ГЭС-2",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [
-        "мастер-класс"
-      ],
-      "description": "",
-      "url": "https://ges-2.org/un-forgotten-plants",
-      "source": "Дом культуры «ГЭС-2»",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "unknown",
-      "availability": "unknown",
-      "availability_checked_at": "2026-09-21",
-      "kind": "event",
-      "editor_note": "",
-      "reviewed_at": "2026-09-21"
-    },
-    {
-      "id": "moscow-2026-09-26-ac72328fe4",
-      "status": "rejected",
-      "city": "moscow",
-      "date": "2026-09-26",
-      "time": "12:00",
-      "title": "Мастерская «Куб». «Москва — Ханой. Ландшафты оптимизма»",
-      "venue": "ГЭС-2",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [
-        "мастер-класс"
-      ],
-      "description": "",
-      "url": "https://ges-2.org/the-cube-moscow-hanoi-landscapes-of-optimism",
-      "source": "Дом культуры «ГЭС-2»",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "unknown",
-      "availability": "unknown",
-      "availability_checked_at": "2026-09-21",
-      "kind": "event",
-      "editor_note": "",
-      "reviewed_at": "2026-09-21"
-    },
-    {
       "id": "moscow-2026-09-26-7d7476e729",
       "status": "rejected",
       "city": "moscow",
@@ -2808,6 +2897,90 @@
       "kind": "event",
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "moscow-2026-09-26-7a4e3eba13",
+      "status": "rejected",
+      "city": "moscow",
+      "date": "2026-09-26",
+      "time": "12:00",
+      "title": "Субботние игры на Платформах",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": true,
+      "categories": [
+        "игра"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/saturday-games",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-20",
+      "price_type": "paid",
+      "availability": "available",
+      "availability_checked_at": "2026-09-21",
+      "kind": "event",
+      "editor_note": "",
+      "reviewed_at": ""
+    },
+    {
+      "id": "moscow-2026-09-26-e9d5bc835b",
+      "status": "rejected",
+      "city": "moscow",
+      "date": "2026-09-26",
+      "time": "12:00",
+      "title": "(Не)забытые растения",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/un-forgotten-plants",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-20",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21",
+      "kind": "event",
+      "editor_note": "",
+      "reviewed_at": "2026-09-21"
+    },
+    {
+      "id": "moscow-2026-09-26-ac72328fe4",
+      "status": "rejected",
+      "city": "moscow",
+      "date": "2026-09-26",
+      "time": "12:00",
+      "title": "Мастерская «Куб». «Москва — Ханой. Ландшафты оптимизма»",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/the-cube-moscow-hanoi-landscapes-of-optimism",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-20",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21",
+      "kind": "event",
+      "editor_note": "",
+      "reviewed_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-26-e37ff84921",
@@ -2946,32 +3119,31 @@
       "reviewed_at": "2026-09-21"
     },
     {
-      "id": "moscow-2026-09-26-7a4e3eba13",
+      "id": "moscow-2026-09-26-5234ff6c37",
       "status": "rejected",
       "city": "moscow",
       "date": "2026-09-26",
-      "time": "14:00",
-      "title": "Станции головоломок и настолок для детей и взрослых. Субботние игры на Платформах",
+      "time": "15:00",
+      "title": "Хочу в Рощу! Дневник юного натуралиста",
       "venue": "ГЭС-2",
       "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": true,
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": false,
       "categories": [
-        "игра"
+        "медиаторский тур"
       ],
       "description": "",
-      "url": "https://ges-2.org/saturday-games",
+      "url": "https://ges-2.org/i-want-to-go-to-the-forest",
       "source": "Дом культуры «ГЭС-2»",
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "paid",
-      "availability": "available",
+      "price_type": "free",
+      "availability": "unknown",
       "availability_checked_at": "2026-09-21",
       "kind": "event",
-      "editor_note": "",
-      "reviewed_at": ""
+      "editor_note": ""
     },
     {
       "id": "moscow-2026-09-26-5765c5b822",
@@ -2999,34 +3171,6 @@
       "availability_checked_at": "2026-09-21",
       "kind": "event",
       "editor_note": ""
-    },
-    {
-      "id": "moscow-2026-09-26-e0d50e68a0",
-      "status": "rejected",
-      "city": "moscow",
-      "date": "2026-09-26",
-      "time": "15:00",
-      "title": "Домашний театр",
-      "venue": "ГЭС-2",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [
-        "лаборатория"
-      ],
-      "description": "",
-      "url": "https://ges-2.org/home-theatre",
-      "source": "Дом культуры «ГЭС-2»",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "unknown",
-      "availability": "unknown",
-      "availability_checked_at": "2026-09-21",
-      "kind": "event",
-      "editor_note": "",
-      "reviewed_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-26-2d76447a27",
@@ -3085,31 +3229,32 @@
       "reviewed_at": "2026-09-21"
     },
     {
-      "id": "moscow-2026-09-26-5234ff6c37",
+      "id": "moscow-2026-09-26-e0d50e68a0",
       "status": "rejected",
       "city": "moscow",
       "date": "2026-09-26",
       "time": "15:00",
-      "title": "Хочу в Рощу! Дневник юного натуралиста",
+      "title": "Домашний театр",
       "venue": "ГЭС-2",
       "address": "",
-      "price": 0,
-      "price_text": "Бесплатно",
+      "price": null,
+      "price_text": "",
       "registration": false,
       "categories": [
-        "медиаторский тур"
+        "лаборатория"
       ],
       "description": "",
-      "url": "https://ges-2.org/i-want-to-go-to-the-forest",
+      "url": "https://ges-2.org/home-theatre",
       "source": "Дом культуры «ГЭС-2»",
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
       "availability_checked_at": "2026-09-21",
       "kind": "event",
-      "editor_note": ""
+      "editor_note": "",
+      "reviewed_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-26-6523bff9f3",
@@ -3302,33 +3447,6 @@
       "editor_note": ""
     },
     {
-      "id": "russia-2026-09-27-b9d54438b4",
-      "status": "check",
-      "kind": "open_call",
-      "city": "russia",
-      "date": "2026-09-27",
-      "time": "",
-      "title": "Индивидуальная резиденция в Переделкино (осень 2026, второй поток)",
-      "venue": "Ewert",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [
-        "open-call"
-      ],
-      "description": "→ резиденция иллюстраторы, исследователи, кураторы, музыканты, переводчики, писатели, режиссёры, сценаристы, художники Приём заявок до 27 сентября 2026",
-      "url": "https://ewert.ru/competitions/individualnaya-rezidencziya-v-dome-tvorchestva-peredelkino-osen-2026-vtoroj-potok/",
-      "source": "Ewert — возможности для художников",
-      "checked_at": "",
-      "review_reason": "discovery_source_needs_primary_verification",
-      "discovered_at": "2026-09-21",
-      "price_type": "unknown",
-      "availability": "unknown",
-      "availability_checked_at": "2026-09-21",
-      "editor_note": ""
-    },
-    {
       "id": "moscow-2026-09-27-291f764fba",
       "status": "new",
       "kind": "event",
@@ -3351,32 +3469,6 @@
       "review_reason": "",
       "discovered_at": "2026-09-21",
       "price_type": "paid",
-      "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
-    },
-    {
-      "id": "russia-2026-09-27-b5017b3dcc",
-      "status": "check",
-      "kind": "open_call",
-      "city": "russia",
-      "date": "2026-09-27",
-      "time": "",
-      "title": "Опен-колл осеннего маркета Soulmate × «Место быть»",
-      "venue": "Ewert",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [
-        "open-call"
-      ],
-      "description": "→ продажа работ, ярмарка художники Приём заявок до 27 сентября 2026",
-      "url": "https://ewert.ru/competitions/open-koll-osennego-marketa-soulmate-x-mesto-byt/",
-      "source": "Ewert — возможности для художников",
-      "checked_at": "",
-      "review_reason": "discovery_source_needs_primary_verification",
-      "discovered_at": "2026-09-21",
-      "price_type": "unknown",
       "availability": "unknown",
       "availability_checked_at": "2026-09-21",
       "editor_note": ""
@@ -3405,7 +3497,64 @@
       "discovered_at": "2026-09-21",
       "price_type": "paid",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "editor_note": ""
+    },
+    {
+      "id": "russia-2026-09-27-b9d54438b4",
+      "status": "approved",
+      "kind": "open_call",
+      "city": "russia",
+      "date": "2026-09-27",
+      "time": "",
+      "title": "Индивидуальная резиденция в Переделкино (осень 2026, второй поток)",
+      "venue": "Ewert",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "open-call"
+      ],
+      "description": "→ резиденция иллюстраторы, исследователи, кураторы, музыканты, переводчики, писатели, режиссёры, сценаристы, художники Приём заявок до 27 сентября 2026",
+      "url": "https://ewert.ru/competitions/individualnaya-rezidencziya-v-dome-tvorchestva-peredelkino-osen-2026-vtoroj-potok/",
+      "source": "Ewert — возможности для художников",
+      "checked_at": "",
+      "review_reason": "discovery_source_needs_primary_verification",
+      "discovered_at": "2026-09-21",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21",
+      "editor_note": "",
+      "reviewed_at": "2026-09-21"
+    },
+    {
+      "id": "russia-2026-09-27-b5017b3dcc",
+      "status": "approved",
+      "kind": "open_call",
+      "city": "russia",
+      "date": "2026-09-27",
+      "time": "",
+      "title": "Опен-колл осеннего маркета Soulmate × «Место быть»",
+      "venue": "Ewert",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "open-call"
+      ],
+      "description": "→ продажа работ, ярмарка художники Приём заявок до 27 сентября 2026",
+      "url": "https://ewert.ru/competitions/open-koll-osennego-marketa-soulmate-x-mesto-byt/",
+      "source": "Ewert — возможности для художников",
+      "checked_at": "",
+      "review_reason": "discovery_source_needs_primary_verification",
+      "discovered_at": "2026-09-21",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21",
+      "editor_note": "",
+      "reviewed_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-27-6c590d946b",
@@ -3436,6 +3585,32 @@
       "reviewed_at": "2026-09-21"
     },
     {
+      "id": "moscow-2026-09-27-a7dd453c9e",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-09-27",
+      "time": "11:00",
+      "title": "Формы касаний. Все люди красивые",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "семинар"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/forms-of-touch-all-people-are-beautiful",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-21",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21"
+    },
+    {
       "id": "moscow-2026-09-27-9153dd8bbf",
       "status": "rejected",
       "city": "moscow",
@@ -3458,6 +3633,34 @@
       "discovered_at": "2026-09-20",
       "price_type": "paid",
       "availability": "available",
+      "availability_checked_at": "2026-09-21",
+      "kind": "event",
+      "editor_note": "",
+      "reviewed_at": ""
+    },
+    {
+      "id": "moscow-2026-09-27-00df913bfb",
+      "status": "rejected",
+      "city": "moscow",
+      "date": "2026-09-27",
+      "time": "11:30",
+      "title": "Семейная йога",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "концерт"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/family-yoga",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-20",
+      "price_type": "paid",
+      "availability": "unknown",
       "availability_checked_at": "2026-09-21",
       "kind": "event",
       "editor_note": "",
@@ -3490,34 +3693,6 @@
       "kind": "event",
       "editor_note": "",
       "reviewed_at": "2026-09-21"
-    },
-    {
-      "id": "moscow-2026-09-27-00df913bfb",
-      "status": "rejected",
-      "city": "moscow",
-      "date": "2026-09-27",
-      "time": "11:30",
-      "title": "Семейная йога",
-      "venue": "ГЭС-2",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [
-        "концерт"
-      ],
-      "description": "",
-      "url": "https://ges-2.org/family-yoga",
-      "source": "Дом культуры «ГЭС-2»",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "paid",
-      "availability": "unknown",
-      "availability_checked_at": "2026-09-21",
-      "kind": "event",
-      "editor_note": "",
-      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-09-27-a4e875c14e",
@@ -3628,33 +3803,6 @@
       "reviewed_at": "2026-09-21"
     },
     {
-      "id": "moscow-2026-09-27-49536c3df4",
-      "status": "rejected",
-      "city": "moscow",
-      "date": "2026-09-27",
-      "time": "14:00",
-      "title": "Индивидуальный медиаторский тур",
-      "venue": "ГЭС-2",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [
-        "медиаторский тур"
-      ],
-      "description": "",
-      "url": "https://ges-2.org/mediation/tour/mediated-tours-for-organised-groups",
-      "source": "Дом культуры «ГЭС-2»",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "paid",
-      "availability": "unknown",
-      "availability_checked_at": "2026-09-21",
-      "kind": "event",
-      "editor_note": ""
-    },
-    {
       "id": "moscow-2026-09-27-c939da139e",
       "status": "rejected",
       "city": "moscow",
@@ -3681,6 +3829,33 @@
       "kind": "event",
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "moscow-2026-09-27-49536c3df4",
+      "status": "rejected",
+      "city": "moscow",
+      "date": "2026-09-27",
+      "time": "14:00",
+      "title": "Индивидуальный медиаторский тур",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "медиаторский тур"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/mediation/tour/mediated-tours-for-organised-groups",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-20",
+      "price_type": "paid",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21",
+      "kind": "event",
+      "editor_note": ""
     },
     {
       "id": "moscow-2026-09-27-98f4534d25",
@@ -3871,7 +4046,8 @@
       "discovered_at": "2026-09-21",
       "price_type": "paid",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "editor_note": ""
     },
     {
       "id": "moscow-2026-09-28-87163ce62b",
@@ -3897,7 +4073,8 @@
       "discovered_at": "2026-09-21",
       "price_type": "paid",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "editor_note": ""
     },
     {
       "id": "moscow-2026-09-28-6c590d946b",
@@ -3928,32 +4105,30 @@
       "reviewed_at": "2026-09-21"
     },
     {
-      "id": "moscow-2026-09-28-4a355bdda9",
-      "status": "approved",
+      "id": "moscow-2026-09-28-a7dd453c9e",
+      "status": "new",
+      "kind": "event",
       "city": "moscow",
       "date": "2026-09-28",
-      "time": "12:00",
-      "title": "Лекция «Из романтизма в вечность: внутренний диалог Шопена»",
-      "venue": "Еврейский музей и центр толерантности",
+      "time": "11:00",
+      "title": "Формы касаний. Все люди красивые",
+      "venue": "ГЭС-2",
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": false,
+      "registration": null,
       "categories": [
-        "лекция"
+        "семинар"
       ],
-      "description": "Четвёртая встреча цикла «Психология гения: музыка как отражение личности» — о Фридерике Шопене и о том, как музыка становится исповедью, для которой не нужны слова. Программа 28 сентября 2026 (19:00) Добавить в календарь",
-      "url": "https://www.jewish-museum.ru/events/lektsiya-iz-romantizma-v-vechnost-vnutrenniy-dialog-shopena/",
-      "source": "Еврейский музей и центр толерантности",
+      "description": "",
+      "url": "https://ges-2.org/forms-of-touch-all-people-are-beautiful",
+      "source": "Дом культуры «ГЭС-2»",
       "checked_at": "",
       "review_reason": "",
-      "discovered_at": "2026-09-20",
+      "discovered_at": "2026-09-21",
       "price_type": "unknown",
-      "availability": "available",
-      "availability_checked_at": "2026-09-21",
-      "kind": "event",
-      "editor_note": "",
-      "reviewed_at": "2026-09-21"
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-28-b6849502a8",
@@ -3978,6 +4153,34 @@
       "discovered_at": "2026-09-20",
       "price_type": "paid",
       "availability": "unknown",
+      "availability_checked_at": "2026-09-21",
+      "kind": "event",
+      "editor_note": "",
+      "reviewed_at": "2026-09-21"
+    },
+    {
+      "id": "moscow-2026-09-28-4a355bdda9",
+      "status": "approved",
+      "city": "moscow",
+      "date": "2026-09-28",
+      "time": "12:00",
+      "title": "Лекция «Из романтизма в вечность: внутренний диалог Шопена»",
+      "venue": "Еврейский музей и центр толерантности",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Четвёртая встреча цикла «Психология гения: музыка как отражение личности» — о Фридерике Шопене и о том, как музыка становится исповедью, для которой не нужны слова. Программа 28 сентября 2026 (19:00) Добавить в календарь",
+      "url": "https://www.jewish-museum.ru/events/lektsiya-iz-romantizma-v-vechnost-vnutrenniy-dialog-shopena/",
+      "source": "Еврейский музей и центр толерантности",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-20",
+      "price_type": "unknown",
+      "availability": "available",
       "availability_checked_at": "2026-09-21",
       "kind": "event",
       "editor_note": "",
@@ -4116,7 +4319,8 @@
       "discovered_at": "2026-09-21",
       "price_type": "paid",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "editor_note": ""
     },
     {
       "id": "moscow-2026-09-29-87163ce62b",
@@ -4142,35 +4346,8 @@
       "discovered_at": "2026-09-21",
       "price_type": "paid",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
-    },
-    {
-      "id": "moscow-2026-09-29-6c590d946b",
-      "status": "rejected",
-      "city": "moscow",
-      "date": "2026-09-29",
-      "time": "11:00",
-      "title": "Александра Сухарева. Начала",
-      "venue": "ГЭС-2",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [
-        "концерт"
-      ],
-      "description": "",
-      "url": "https://ges-2.org/alexandra-sukhareva-beginnings",
-      "source": "Дом культуры «ГЭС-2»",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "unknown",
-      "availability": "unknown",
       "availability_checked_at": "2026-09-21",
-      "kind": "event",
-      "editor_note": "",
-      "reviewed_at": "2026-09-21"
+      "editor_note": ""
     },
     {
       "id": "moscow-2026-09-29-b6849502a8",
@@ -4222,6 +4399,61 @@
       "review_reason": "",
       "discovered_at": "2026-09-21",
       "price_type": "paid",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21",
+      "editor_note": ""
+    },
+    {
+      "id": "moscow-2026-09-29-6c590d946b",
+      "status": "rejected",
+      "city": "moscow",
+      "date": "2026-09-29",
+      "time": "11:00",
+      "title": "Александра Сухарева. Начала",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "концерт"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/alexandra-sukhareva-beginnings",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-20",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21",
+      "kind": "event",
+      "editor_note": "",
+      "reviewed_at": "2026-09-21"
+    },
+    {
+      "id": "moscow-2026-09-29-a7dd453c9e",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-09-29",
+      "time": "11:00",
+      "title": "Формы касаний. Все люди красивые",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "семинар"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/forms-of-touch-all-people-are-beautiful",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-21",
+      "price_type": "unknown",
       "availability": "unknown",
       "availability_checked_at": "2026-09-21"
     },
@@ -4359,40 +4591,13 @@
       "editor_note": ""
     },
     {
-      "id": "international-2026-09-30-95506fe023",
-      "status": "check",
-      "kind": "open_call",
-      "city": "international",
-      "date": "2026-09-30",
-      "time": "",
-      "title": "Protest for Change Exhibition Callout",
-      "venue": "CuratorSpace",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [
-        "open-call"
-      ],
-      "description": "Report this? Deadline: 30/09/2026 City: Leeds | Region: West Yorkshire | Country: United Kingdom | Studio Greenly Do you make work about protest in any form? Whether it's environmental, political, ethical, economic, social and historical issues or civil and human rights, we're looking for visual artists to exhibit their work at our upcoming exhibition. More details",
-      "url": "https://www.curatorspace.com/opportunities/detail/protest-for-change/11131",
-      "source": "CuratorSpace — opportunities",
-      "checked_at": "",
-      "review_reason": "discovery_source_needs_primary_verification",
-      "discovered_at": "2026-09-21",
-      "price_type": "unknown",
-      "availability": "unknown",
-      "availability_checked_at": "2026-09-21",
-      "editor_note": ""
-    },
-    {
-      "id": "russia-2026-09-30-4b27786e48",
-      "status": "check",
+      "id": "russia-2026-09-30-e956420137",
+      "status": "approved",
       "kind": "open_call",
       "city": "russia",
       "date": "2026-09-30",
       "time": "",
-      "title": "Конференция «Турчинские сессии» в ММОМА",
+      "title": "Опен-колл триеннале «Мифологема» в Галерее МИФ",
       "venue": "Ewert",
       "address": "",
       "price": null,
@@ -4401,16 +4606,17 @@
       "categories": [
         "open-call"
       ],
-      "description": "→ конференция аспиранты, искусствоведы, исследователи, кураторы, магистранты, студенты, художники Приём заявок до 30 сентября 2026",
-      "url": "https://ewert.ru/competitions/konferencziya-turchinskie-sessii-v-mmoma/",
+      "description": "→ выставка, производственный бюджет художественные объединения, художники Приём заявок до 30 сентября 2026",
+      "url": "https://ewert.ru/competitions/open-call-mifologema-triennale-myth/",
       "source": "Ewert — возможности для художников",
       "checked_at": "",
       "review_reason": "discovery_source_needs_primary_verification",
       "discovered_at": "2026-09-21",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-21",
-      "editor_note": ""
+      "editor_note": "",
+      "reviewed_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-30-291f764fba",
@@ -4435,32 +4641,6 @@
       "review_reason": "",
       "discovered_at": "2026-09-21",
       "price_type": "paid",
-      "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
-    },
-    {
-      "id": "russia-2026-09-30-e956420137",
-      "status": "check",
-      "kind": "open_call",
-      "city": "russia",
-      "date": "2026-09-30",
-      "time": "",
-      "title": "Опен-колл триеннале «Мифологема» в Галерее МИФ",
-      "venue": "Ewert",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [
-        "open-call"
-      ],
-      "description": "→ выставка, производственный бюджет художественные объединения, художники Приём заявок до 30 сентября 2026",
-      "url": "https://ewert.ru/competitions/open-call-mifologema-triennale-myth/",
-      "source": "Ewert — возможности для художников",
-      "checked_at": "",
-      "review_reason": "discovery_source_needs_primary_verification",
-      "discovered_at": "2026-09-21",
-      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-21",
       "editor_note": ""
@@ -4489,7 +4669,8 @@
       "discovered_at": "2026-09-21",
       "price_type": "paid",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "editor_note": ""
     },
     {
       "id": "moscow-2026-09-30-c9241e0c3a",
@@ -4512,6 +4693,89 @@
       "discovered_at": "2026-09-20",
       "price_type": "paid",
       "availability": "available",
+      "availability_checked_at": "2026-09-21",
+      "kind": "event",
+      "editor_note": ""
+    },
+    {
+      "id": "international-2026-09-30-95506fe023",
+      "status": "rejected",
+      "kind": "open_call",
+      "city": "international",
+      "date": "2026-09-30",
+      "time": "",
+      "title": "Protest for Change Exhibition Callout",
+      "venue": "CuratorSpace",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "open-call"
+      ],
+      "description": "Report this? Deadline: 30/09/2026 City: Leeds | Region: West Yorkshire | Country: United Kingdom | Studio Greenly Do you make work about protest in any form? Whether it's environmental, political, ethical, economic, social and historical issues or civil and human rights, we're looking for visual artists to exhibit their work at our upcoming exhibition. More details",
+      "url": "https://www.curatorspace.com/opportunities/detail/protest-for-change/11131",
+      "source": "CuratorSpace — opportunities",
+      "checked_at": "",
+      "review_reason": "discovery_source_needs_primary_verification",
+      "discovered_at": "2026-09-21",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21",
+      "editor_note": "",
+      "reviewed_at": "2026-09-21"
+    },
+    {
+      "id": "russia-2026-09-30-4b27786e48",
+      "status": "approved",
+      "kind": "open_call",
+      "city": "russia",
+      "date": "2026-09-30",
+      "time": "",
+      "title": "Конференция «Турчинские сессии» в ММОМА",
+      "venue": "Ewert",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "open-call"
+      ],
+      "description": "→ конференция аспиранты, искусствоведы, исследователи, кураторы, магистранты, студенты, художники Приём заявок до 30 сентября 2026",
+      "url": "https://ewert.ru/competitions/konferencziya-turchinskie-sessii-v-mmoma/",
+      "source": "Ewert — возможности для художников",
+      "checked_at": "",
+      "review_reason": "discovery_source_needs_primary_verification",
+      "discovered_at": "2026-09-21",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21",
+      "editor_note": "",
+      "reviewed_at": "2026-09-21"
+    },
+    {
+      "id": "moscow-2026-09-30-b6849502a8",
+      "status": "new",
+      "city": "moscow",
+      "date": "2026-09-30",
+      "time": "11:00",
+      "title": "Мастер-класс по шелкографии",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/vaults-masterclass-in-silkscreen-printing",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-20",
+      "price_type": "paid",
+      "availability": "unknown",
       "availability_checked_at": "2026-09-21",
       "kind": "event",
       "editor_note": ""
@@ -4544,31 +4808,32 @@
       "editor_note": ""
     },
     {
-      "id": "moscow-2026-09-30-b6849502a8",
-      "status": "new",
+      "id": "moscow-2026-09-30-47a0fc16a5",
+      "status": "approved",
       "city": "moscow",
       "date": "2026-09-30",
-      "time": "11:00",
-      "title": "Мастер-класс по шелкографии",
-      "venue": "ГЭС-2",
+      "time": "12:00",
+      "title": "С чего начинаются комиксы? Правила раскадровки",
+      "venue": "Еврейский музей и центр толерантности",
       "address": "",
-      "price": null,
-      "price_text": "",
+      "price": 0,
+      "price_text": "Бесплатно",
       "registration": false,
       "categories": [
-        "мастер-класс"
+        "лекция"
       ],
-      "description": "",
-      "url": "https://ges-2.org/vaults-masterclass-in-silkscreen-printing",
-      "source": "Дом культуры «ГЭС-2»",
+      "description": "Бесплатно Мастер-класс по раскадровке для участников 14–22 лет, которые уже создают комиксы или только хотят попробовать себя в этом У каждого комикса есть сценарий. Но дальше возникает задача: как превратить текст в историю, которую рассказывают не только слова, но и изображения, кадры и их последовательность? Как сделать так, чтобы комикс был понятен, чтобы читатель не запутался в кадрах, чтобы возникло то самое чудо, благодаря которому история как будто оживает в голове читателя?",
+      "url": "https://www.jewish-museum.ru/events/s-chego-nachinayutsya-komiksy-pravila-raskadrovki/",
+      "source": "Еврейский музей и центр толерантности",
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "paid",
-      "availability": "unknown",
+      "price_type": "free",
+      "availability": "available",
       "availability_checked_at": "2026-09-21",
       "kind": "event",
-      "editor_note": ""
+      "editor_note": "",
+      "reviewed_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-30-4719b75fe3",
@@ -4592,33 +4857,6 @@
       "review_reason": "",
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
-      "availability": "available",
-      "availability_checked_at": "2026-09-21",
-      "kind": "event",
-      "editor_note": ""
-    },
-    {
-      "id": "moscow-2026-09-30-47a0fc16a5",
-      "status": "new",
-      "city": "moscow",
-      "date": "2026-09-30",
-      "time": "12:00",
-      "title": "С чего начинаются комиксы? Правила раскадровки",
-      "venue": "Еврейский музей и центр толерантности",
-      "address": "",
-      "price": 0,
-      "price_text": "Бесплатно",
-      "registration": false,
-      "categories": [
-        "лекция"
-      ],
-      "description": "Бесплатно Мастер-класс по раскадровке для участников 14–22 лет, которые уже создают комиксы или только хотят попробовать себя в этом У каждого комикса есть сценарий. Но дальше возникает задача: как превратить текст в историю, которую рассказывают не только слова, но и изображения, кадры и их последовательность? Как сделать так, чтобы комикс был понятен, чтобы читатель не запутался в кадрах, чтобы возникло то самое чудо, благодаря которому история как будто оживает в голове читателя?",
-      "url": "https://www.jewish-museum.ru/events/s-chego-nachinayutsya-komiksy-pravila-raskadrovki/",
-      "source": "Еврейский музей и центр толерантности",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "free",
       "availability": "available",
       "availability_checked_at": "2026-09-21",
       "kind": "event",
@@ -4759,7 +4997,7 @@
     },
     {
       "id": "russia-2026-10-01-a1718c2a07",
-      "status": "check",
+      "status": "approved",
       "kind": "open_call",
       "city": "russia",
       "date": "2026-10-01",
@@ -4782,11 +5020,12 @@
       "price_type": "unknown",
       "availability": "unknown",
       "availability_checked_at": "2026-09-21",
-      "editor_note": ""
+      "editor_note": "",
+      "reviewed_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-10-02-398c972a62",
-      "status": "new",
+      "status": "approved",
       "city": "moscow",
       "date": "2026-10-02",
       "time": "18:00",
@@ -4809,11 +5048,12 @@
       "availability": "available",
       "availability_checked_at": "2026-09-21",
       "kind": "event",
-      "editor_note": ""
+      "editor_note": "",
+      "reviewed_at": "2026-09-21"
     },
     {
       "id": "international-2026-10-04-84a4739092",
-      "status": "check",
+      "status": "rejected",
       "kind": "open_call",
       "city": "international",
       "date": "2026-10-04",
@@ -4836,7 +5076,8 @@
       "price_type": "unknown",
       "availability": "unknown",
       "availability_checked_at": "2026-09-21",
-      "editor_note": ""
+      "editor_note": "",
+      "reviewed_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-10-04-4ad69d5bbb",
@@ -4890,7 +5131,7 @@
     },
     {
       "id": "moscow-2026-10-08-e986b2b5f1",
-      "status": "new",
+      "status": "approved",
       "city": "moscow",
       "date": "2026-10-08",
       "time": "12:00",
@@ -4913,11 +5154,12 @@
       "availability": "available",
       "availability_checked_at": "2026-09-21",
       "kind": "event",
-      "editor_note": ""
+      "editor_note": "",
+      "reviewed_at": "2026-09-21"
     },
     {
       "id": "international-2026-10-09-d9c90482f9",
-      "status": "check",
+      "status": "rejected",
       "kind": "open_call",
       "city": "international",
       "date": "2026-10-09",
@@ -4940,7 +5182,8 @@
       "price_type": "unknown",
       "availability": "unknown",
       "availability_checked_at": "2026-09-21",
-      "editor_note": ""
+      "editor_note": "",
+      "reviewed_at": "2026-09-21"
     },
     {
       "id": "international-2026-10-09-6478491cfd",
@@ -5080,6 +5323,32 @@
       "reviewed_at": "2026-09-21"
     },
     {
+      "id": "moscow-2026-10-14-1b4d82cf46",
+      "status": "approved",
+      "city": "moscow",
+      "date": "2026-10-14",
+      "time": "",
+      "title": "МАСШТАБ: конференция Школы дизайна о карьере в креативных индустриях",
+      "venue": "Школа дизайна НИУ ВШЭ",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [],
+      "description": "14 октября Школа дизайна НИУ ВШЭ проведёт МАСШТАБ — самую большую онлайн-конференцию о дизайн-образовании и карьере в креативных индустриях. Дизайнеры и эксперты из Apple, Adidas, Яндекса и других крупных российских и международных компаний расскажут о своём профессиональном опыте, обсудят навыки ближайшего будущего и возможности построения карьеры в России и за рубежом. 14 октября 2026",
+      "url": "https://design.hse.ru/news/7173",
+      "source": "Школа дизайна НИУ ВШЭ",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-20",
+      "price_type": "free",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21",
+      "kind": "event",
+      "editor_note": "",
+      "reviewed_at": "2026-09-21"
+    },
+    {
       "id": "russia-2026-10-14-4fc7e7dd9f",
       "status": "rejected",
       "kind": "open_call",
@@ -5104,31 +5373,6 @@
       "price_type": "paid",
       "availability": "unknown",
       "availability_checked_at": "2026-09-21",
-      "editor_note": ""
-    },
-    {
-      "id": "moscow-2026-10-14-1b4d82cf46",
-      "status": "new",
-      "city": "moscow",
-      "date": "2026-10-14",
-      "time": "",
-      "title": "МАСШТАБ: конференция Школы дизайна о карьере в креативных индустриях",
-      "venue": "Школа дизайна НИУ ВШЭ",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [],
-      "description": "14 октября Школа дизайна НИУ ВШЭ проведёт МАСШТАБ — самую большую онлайн-конференцию о дизайн-образовании и карьере в креативных индустриях. Дизайнеры и эксперты из Apple, Adidas, Яндекса и других крупных российских и международных компаний расскажут о своём профессиональном опыте, обсудят навыки ближайшего будущего и возможности построения карьеры в России и за рубежом. 14 октября 2026",
-      "url": "https://design.hse.ru/news/7173",
-      "source": "Школа дизайна НИУ ВШЭ",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "free",
-      "availability": "unknown",
-      "availability_checked_at": "2026-09-21",
-      "kind": "event",
       "editor_note": ""
     },
     {

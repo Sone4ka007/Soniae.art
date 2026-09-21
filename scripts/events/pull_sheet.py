@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import json, os
+from datetime import date
 from pathlib import Path
 from google.oauth2.service_account import Credentials
 from googleapiclient.discovery import build
@@ -8,7 +9,7 @@ ROOT=Path(__file__).resolve().parents[2]
 DB=ROOT/"content/events.json"
 SHEET_ID=os.environ["EVENTS_SHEET_ID"]
 CREDS=json.loads(os.environ["GOOGLE_SERVICE_ACCOUNT_JSON"])
-RANGE="Events!A:W"
+RANGE="Events!A:Y"
 
 def service():
     scopes=["https://www.googleapis.com/auth/spreadsheets.readonly"]
@@ -33,12 +34,19 @@ def main():
         rid=row.get("id","").strip()
         if not rid or rid not in byid: continue
         e=byid[rid]
+        old_status=e.get("status","")
         for k in editable:
             if k not in row: continue
             v=row[k]
             if k=="registration": v=parse_bool(v)
             elif k=="categories": v=[x.strip() for x in str(v).split(",") if x.strip()]
             e[k]=v
+        new_status=e.get("status","")
+        if new_status != old_status:
+            if new_status in ("approved","rejected"):
+                e["reviewed_at"]=date.today().isoformat()
+            elif new_status in ("new","check"):
+                e["reviewed_at"]=""
     db["events"]=sorted(byid.values(),key=lambda e:(e.get("date",""),e.get("time",""),e.get("title","")))
     DB.write_text(json.dumps(db,ensure_ascii=False,indent=2)+"\n","utf-8")
     print(f"Pulled editor fields for {len(rows)} rows")

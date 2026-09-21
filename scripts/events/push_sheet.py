@@ -91,7 +91,8 @@ def main():
             days=""
         rows.append([
             e.get("id",""),e.get("status","new"),e.get("title",""),
-            e.get("start_date") or e.get("date",""),e.get("end_date",""),e.get("time",""),
+            (e.get("start_date","") if e.get("kind")=="exhibition" else e.get("date","")),
+            e.get("end_date",""),e.get("time",""),
             e.get("venue",""),e.get("city",""),e.get("kind","event"),e.get("price_type","unknown"),
             e.get("price_text",""),
             bool(e.get("registration")) if e.get("registration") is not None else "",

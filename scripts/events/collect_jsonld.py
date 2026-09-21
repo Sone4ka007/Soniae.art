@@ -254,8 +254,9 @@ def normalize_anchor_title(a, block_text=""):
 
 def extract_split_program_events(dsoup, src, full, page_text, page_year):
     marker=None
+    heading=clean(src.get("program_heading") or "ПРОГРАММА МЕРОПРИЯТИЙ").lower()
     for h in dsoup.find_all(["h2","h3"]):
-        if "программа мероприятий" in clean(h.get_text(" ",strip=True)).lower():
+        if heading in clean(h.get_text(" ",strip=True)).lower():
             marker=h
             break
     if not marker:

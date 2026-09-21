@@ -10,6 +10,13 @@ SOURCES = ROOT / "events/sources.json"
 DB = ROOT / "content/events.json"
 UA = "Mozilla/5.0 SonyaeEventsBot/1.3 (+https://sonyae.art/events/)"
 
+EN_MONTHS = {
+    "january":1,"jan":1,"february":2,"feb":2,"march":3,"mar":3,"april":4,"apr":4,
+    "may":5,"june":6,"jun":6,"july":7,"jul":7,"august":8,"aug":8,
+    "september":9,"sep":9,"sept":9,"october":10,"oct":10,"november":11,"nov":11,
+    "december":12,"dec":12
+}
+
 MONTHS = {
     "января":1,"янв":1,"февраля":2,"фев":2,"марта":3,"мар":3,
     "апреля":4,"апр":4,"мая":5,"май":5,"июня":6,"июн":6,
@@ -75,6 +82,22 @@ def parse_date(text, require_year=True, default_year=None):
         return date(y, MONTHS[m.group(2)], int(m.group(1)))
     except ValueError:
         return None
+
+def parse_deadline(text):
+    d=parse_date(text,require_year=True)
+    if d:
+        return d
+    t=clean(text).lower().replace(",", " ")
+    month_pat="|".join(sorted(EN_MONTHS,key=len,reverse=True))
+    m=re.search(rf"(?<!\\d)(\\d{{1,2}})\\s+({month_pat})\\.?\\s+(20\\d{{2}})",t,re.I)
+    if not m:
+        m=re.search(rf"({month_pat})\\.?\\s+(\\d{{1,2}})\\s+(20\\d{{2}})",t,re.I)
+        if m:
+            try: return date(int(m.group(3)),EN_MONTHS[m.group(1).lower()],int(m.group(2)))
+            except ValueError: return None
+        return None
+    try: return date(int(m.group(3)),EN_MONTHS[m.group(2).lower()],int(m.group(1)))
+    except ValueError: return None
 
 def parse_time(text):
     m = re.search(r"(?<!\d)([01]?\d|2[0-3]):(\d{2})(?!\d)", clean(text))
@@ -439,6 +462,50 @@ def extract_mamm(html, src):
                               price=price,price_text=price_text,registration=reg))
     return out
 
+def extract_open_call_listing(html, src):
+    soup=BeautifulSoup(html,"html.parser")
+    out=[]; seen=set(); today=date.today()
+    patterns=src.get("href_contains") or []
+    deadline_words=("deadline","прием заявок до","приём заявок до","прием работ до","приём работ до")
+    for a in soup.find_all("a",href=True):
+        full=urljoin(src["url"],a.get("href",""))
+        if patterns and not any(p in full for p in patterns):
+            continue
+        node=a; block=None; txt=""
+        for _ in range(7):
+            node=getattr(node,"parent",None)
+            if node is None: break
+            txt=clean(node.get_text(" ",strip=True))
+            if len(txt)>2600: break
+            low=txt.lower()
+            if any(w in low for w in deadline_words) and parse_deadline(txt):
+                block=node; break
+        if block is None:
+            continue
+        dt=parse_deadline(txt)
+        if not dt or dt<today:
+            continue
+        title=normalize_anchor_title(a)
+        if not title or title.lower() in SKIP_TITLES or len(title)<6:
+            for h in block.find_all(["h2","h3","h4"]):
+                t=clean(h.get_text(" ",strip=True))
+                if len(t)>=6:
+                    title=t; break
+        if not title or len(title)<6:
+            continue
+        key=(dt.isoformat(),full,title)
+        if key in seen: continue
+        seen.add(key)
+        desc=txt.replace(title,"",1).strip()
+        if len(desc)>650: desc=desc[:647].rstrip()+"..."
+        out.append(make_event(
+            src,dt.isoformat(),"",title,full,desc,
+            venue=src.get("venue",""),price=None,price_text="",registration=None,
+            categories=["open-call"],status="check",
+            reason="discovery_source_needs_primary_verification"
+        ))
+    return out
+
 def extract_ges2(src, days=14):
     out, seen = [], set()
     today = date.today()
@@ -526,6 +593,8 @@ def main():
                 candidates.extend(extract_zotov(html,src))
             elif adapter=="mamm":
                 candidates.extend(extract_mamm(html,src))
+            elif adapter=="open_call_listing":
+                candidates.extend(extract_open_call_listing(html,src))
 
         for n in candidates:
             if n["id"] not in existing:

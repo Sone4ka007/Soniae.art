@@ -31,7 +31,7 @@ for e in events:
         errors.append(f"generic title: {e.get('id')} {title}")
 
     url=str(e.get("url","")).strip().lower()
-    occ=(e.get("city"),e.get("date"),url)
+    occ=(e.get("city"),e.get("date"),url,norm(e.get("title")))
     if url and occ in seen_occ:
         errors.append(f"duplicate occurrence: {seen_occ[occ]} / {e.get('id')}")
     elif url:

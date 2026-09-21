@@ -21,8 +21,8 @@ on:
     - cron: "15 5 * * *"
 
 concurrency:
-  group: events-pipeline-main
-  cancel-in-progress: true
+  group: events-data-sync
+  cancel-in-progress: false
 
 permissions:
   contents: write
@@ -37,6 +37,11 @@ jobs:
           python-version: "3.12"
       - name: Install collector and Google dependencies
         run: pip install beautifulsoup4 google-api-python-client google-auth
+      - name: Pull editor decisions before collection
+        env:
+          EVENTS_SHEET_ID: ${{ vars.EVENTS_SHEET_ID }}
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+        run: python scripts/events/pull_sheet.py
       - name: Collect structured events from official sources
         run: python scripts/events/collect_jsonld.py
       - name: Check ticket and registration availability

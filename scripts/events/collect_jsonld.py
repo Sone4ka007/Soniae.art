@@ -42,7 +42,8 @@ SKIP_TITLES = {
     "купить билет","купить билеты","зарегистрироваться","регистрация","подать заявку",
     "подробнее","все события","смотреть все","архив","читать далее","показать ещё",
     "показать еще","единый билет","следующий день","предыдущий день",
-    "more details","see more","learn more","условия участия"
+    "more details","see more","learn more","условия участия",
+    "будущие выставки","текущие выставки","выставки"
 }
 
 def load_json(path, default):
@@ -382,6 +383,29 @@ def extract_event_links(html, src):
         reg=bool(re.search(r"регистрац|зарегистр|купить билет",dtext,re.I)) or None
         cat=event_category(dtext[:1800])
         desc=""
+        # Russian Museum exhibition pages have a reliable "О выставке" section.
+        # Prefer it over generic paragraph scraping, which otherwise reaches the legal footer.
+        if "rusmuseum.ru" in urlparse(full).netloc.lower() and is_exhibition:
+            about=None
+            for h in dsoup.find_all(["h2","h3"]):
+                if clean(h.get_text(" ",strip=True)).lower()=="о выставке":
+                    about=h
+                    break
+            if about:
+                parts=[]
+                for node in about.find_all_next():
+                    if node is about:
+                        continue
+                    if getattr(node,"name",None) in ("h2","h3"):
+                        break
+                    if getattr(node,"name",None)=="p":
+                        t=clean(node.get_text(" ",strip=True))
+                        if len(t)>=40 and t.lower()!="читать далее":
+                            parts.append(t)
+                            if len(parts)>=2 or len(" ".join(parts))>=420:
+                                break
+                if parts:
+                    desc=clean(" ".join(parts))
         hard_boilerplate=(
             "сегодня выставки и галереи закрыты",
             "магазины и кафе работают в обычном режиме",
@@ -389,7 +413,11 @@ def extract_event_links(html, src):
         )
         start_node=dsoup.find("h1") or dsoup.find("h2") or dsoup
         parts=[]
-        for p in start_node.find_all_next("p"):
+        if not desc:
+            paragraph_nodes=start_node.find_all_next("p")
+        else:
+            paragraph_nodes=[]
+        for p in paragraph_nodes:
             t=clean(p.get_text(" ",strip=True))
             t=re.sub(r"(?:Доступно по Пушкинской карте\s*Узнать больше\s*)+","",t,flags=re.I)
             t=re.sub(r"\bУзнать больше\b","",t,flags=re.I)

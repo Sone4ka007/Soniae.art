@@ -22,6 +22,11 @@ REG_HINTS=[
     r"по предварительной записи",r"вход по регистрации"
 ]
 TICKET_HINTS=[r"билет",r"₽",r"руб"]
+OPEN_CALL_HINTS=(
+    "open call","open-call","опен колл","опен-колл","конкурс","прием заявок",
+    "приём заявок","подать заявку","подать проект","заявки принимаются","дедлайн",
+    "deadline","call for artists","call for entries","прием работ","приём работ"
+)
 
 def fetch(url):
     req=urllib.request.Request(url,headers={"User-Agent":UA})
@@ -69,14 +74,19 @@ def inspect_url(url):
 def main():
     db=json.loads(DB.read_text("utf-8"))
     today=date.today()
-    horizon=today+timedelta(days=30)
     kept=[]
 
     for e in db.get("events",[]):
+        blob=" ".join(str(e.get(k,"")) for k in ("title","description","source")).lower()
+        if e.get("kind") not in ("event","open_call"):
+            e["kind"]="event"
+        if any(x in blob for x in OPEN_CALL_HINTS):
+            e["kind"]="open_call"
         try:
             d=date.fromisoformat(e.get("date",""))
         except Exception:
             kept.append(e); continue
+        horizon=today+timedelta(days=90 if e.get("kind")=="open_call" else 30)
         if today <= d <= horizon:
             e["price_type"]=classify_price(e)
             kept.append(e)
@@ -114,7 +124,7 @@ def main():
     db["events"]=sorted(kept,key=lambda e:(e.get("date",""),e.get("time",""),e.get("price_type",""),e.get("title","")))
     db["updated_at"]=checked
     DB.write_text(json.dumps(db,ensure_ascii=False,indent=2)+"\n","utf-8")
-    print(f"Availability checked for {len(urls)} unique pages; kept {len(kept)} events in 30-day horizon")
+    print(f"Availability checked for {len(urls)} unique pages; kept {len(kept)} records in event/open-call horizons")
 
 if __name__=="__main__":
     main()

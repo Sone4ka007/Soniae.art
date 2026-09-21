@@ -36,8 +36,8 @@
     const maxIso = `${max.getFullYear()}-${String(max.getMonth()+1).padStart(2,'0')}-${String(max.getDate()).padStart(2,'0')}`;
     if (state.kind === 'exhibition') {
       const start = e.start_date || e.date;
-      const end = e.end_date || e.date;
-      if (!start || !end || end < today || start > maxIso) return false;
+      const end = e.end_date || '9999-12-31';
+      if (!start || end < today || start > maxIso) return false;
     } else {
       if (!e.date || e.date < today || e.date > maxIso) return false;
     }
@@ -66,7 +66,7 @@
   }
 
   function render() {
-    let visible = events.filter(isVisible).sort((a,b) => ((a.start_date||a.date||'')+(a.time||'')).localeCompare((b.start_date||b.date||'')+(b.time||'')));
+    let visible = events.filter(isVisible).sort((a,b) => (a.date+a.time).localeCompare(b.date+b.time));
     if (state.kind === 'exhibition') {
       const unique = new Map();
       visible.forEach(e => {
@@ -86,27 +86,29 @@
     empty.hidden = visible.length !== 0;
     list.innerHTML = '';
 
-    const groups = visible.reduce((acc,e) => {
-      const key = state.kind === 'exhibition' ? (e.start_date || e.date) : e.date;
-      (acc[key] ||= []).push(e);
-      return acc;
-    }, {});
+    const groups = state.kind === 'exhibition'
+      ? { exhibitions: visible }
+      : visible.reduce((acc,e) => {
+          (acc[e.date] ||= []).push(e);
+          return acc;
+        }, {});
 
     Object.entries(groups).forEach(([date, items]) => {
-      const d = localDate(date);
+      const d = date === 'exhibitions' ? null : localDate(date);
       const section = document.createElement('section');
       section.className = 'event-day';
       section.innerHTML = `
+        ${state.kind === 'exhibition' ? '' : `
         <div class="event-day-title">
           <span>${String(d.getDate()).padStart(2,'0')}.${String(d.getMonth()+1).padStart(2,'0')}</span>
-          <h2>${state.kind === 'open_call' ? 'ДЕДЛАЙН · ' : state.kind === 'exhibition' ? 'НАЧАЛО · ' : weekdays[d.getDay()] + ' · '}${d.getDate()} ${months[d.getMonth()]}</h2>
-        </div>
+          <h2>${state.kind === 'open_call' ? 'ДЕДЛАЙН · ' : weekdays[d.getDay()] + ' · '}${d.getDate()} ${months[d.getMonth()]}</h2>
+        </div>`}
         ${items.map(e => `
           <article class="event-card">
-            <div class="event-time">${state.kind === 'open_call' ? 'OPEN CALL' : state.kind === 'exhibition' ? 'ВЫСТАВКА' : esc(e.time || '—')}</div>
+            <div class="event-time">${state.kind === 'open_call' ? 'OPEN CALL' : state.kind === 'exhibition' ? '' : esc(e.time || '—')}</div>
             <div class="event-main">
               <h3>${esc(e.title)}</h3>
-              ${state.kind === 'exhibition' && e.end_date ? `<p><strong>${esc(e.start_date || e.date)} — ${esc(e.end_date)}</strong></p>` : ''}
+              ${state.kind === 'exhibition' && (e.start_date || e.end_date) ? `<p class="event-period">${esc(e.start_date || 'сейчас')}${e.end_date ? ' — ' + esc(e.end_date) : ''}</p>` : ''}
               <p>${esc(e.description || '')}</p>
               <div class="event-tags">${(e.categories || []).map(c => `<span class="event-tag">${esc(categoryNames[c] || c)}</span>`).join('')}</div>
             </div>
@@ -114,7 +116,7 @@
               <p><strong>${esc(e.venue || '')}</strong></p>
               <p>${esc(e.address || '')}</p>
               <p>${esc(cityNames[e.city] || e.city || '')}</p>
-              <div class="event-price ${Number(e.price) === 0 ? 'free' : ''}">${priceLabel(e)}</div>
+              <div class="event-price ${e.price_type === 'free' ? 'free' : ''}">${priceLabel(e)}</div>
               ${e.registration === true ? '<p>НУЖНА РЕГИСТРАЦИЯ</p>' : e.registration === false ? '<p>БЕЗ РЕГИСТРАЦИИ</p>' : ''}
               <p>${availabilityLabel(e)}</p>
               ${e.availability_checked_at ? `<div class="event-check">МЕСТА ПРОВЕРЕНЫ: ${esc(e.availability_checked_at)}</div>` : ''}

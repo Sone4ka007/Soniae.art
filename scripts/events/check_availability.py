@@ -94,7 +94,8 @@ def main():
             e["kind"]="open_call"
         elif e.get("kind") != "open_call" and (
             "выставка" in title_blob or "exhibition" in title_blob or
-            any(str(x).lower() in ("выставка","exhibition") for x in (e.get("categories") or []))
+            "инсталляц" in title_blob or "installation" in title_blob or
+            any(str(x).lower() in ("выставка","exhibition","инсталляция","installation") for x in (e.get("categories") or []))
         ):
             e["kind"]="exhibition"
         try:

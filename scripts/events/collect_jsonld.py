@@ -277,7 +277,9 @@ def extract_event_links(html, src):
         dsoup=BeautifulSoup(detail,"html.parser")
         dtext=clean(dsoup.get_text(" ",strip=True))
         start_dt=end_dt=None
-        if src.get("kind")=="exhibition":
+        path_low=urlparse(full).path.lower()
+        is_exhibition=(src.get("kind")=="exhibition" or "/exhibitions/" in path_low or "/exhibition/" in path_low)
+        if is_exhibition:
             start_dt,end_dt=parse_exhibition_range(dtext)
             dt=start_dt or parse_date(dtext,require_year=True)
             if not dt or (end_dt and end_dt<today):
@@ -355,7 +357,11 @@ def extract_event_links(html, src):
         ev=make_event(src,dt.isoformat(),tm,title,full,desc,
                       price=price,price_text=price_text,registration=reg,
                       categories=[cat] if cat else [])
-        if src.get("kind")=="exhibition":
+        if is_exhibition:
+            ev["kind"]="exhibition"
+            ev["categories"]=[c for c in ev.get("categories",[]) if c not in ("лекция","концерт","встреча","событие","программа")]
+            if "выставка" not in ev["categories"]:
+                ev["categories"].append("выставка")
             if start_dt: ev["start_date"]=start_dt.isoformat()
             if end_dt: ev["end_date"]=end_dt.isoformat()
         return ev

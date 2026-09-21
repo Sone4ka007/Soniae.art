@@ -8,6 +8,15 @@ EXCLUDE=("алим велитов","alim velitov")
 PLEIN=("пленэр","пленер","plein air","plein-air")
 GELD=("алексей гельд","лёша гельд","леша гельд","alexey geld")
 
+FAMILY_CHILDREN=(
+    "для детей","детский","детская","детские","семейный","семейная","семейное",
+    "для всей семьи","для семей","семейная программа","семейный тур",
+    "детям","подростков","для подростков","школьников","для школьников",
+    "малышей","для самых маленьких","родителей с детьми","взрослых и детей",
+    "мама и малыш","папа и малыш","семейная йога"
+)
+AGE_CHILD_RE=re.compile(r"\b(?:для\s+детей\s*)?(?:от\s*)?(?:[3-9]|1[0-7])\s*(?:[-–—]\s*(?:[3-9]|1[0-7]))?\s*лет\b")
+
 def main():
     db=json.loads(DB.read_text("utf-8")); changed=0
     seen={}
@@ -24,6 +33,10 @@ def main():
             e["status"]="rejected"; e["review_reason"]="excluded_person"; changed+=1; continue
         if any(x in blob for x in PLEIN) and not any(x in blob for x in GELD):
             e["status"]="rejected"; e["review_reason"]="excluded_plein_air"; changed+=1; continue
+        if e.get("status") in ("new","check") and (
+            any(x in blob for x in FAMILY_CHILDREN) or AGE_CHILD_RE.search(blob)
+        ):
+            e["status"]="rejected"; e["review_reason"]="excluded_family_children"; changed+=1; continue
         if problems and e.get("status")=="new":
             e["status"]="check"; e["review_reason"]=", ".join(problems); changed+=1
     DB.write_text(json.dumps(db,ensure_ascii=False,indent=2)+"\n","utf-8")

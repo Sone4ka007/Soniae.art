@@ -22,6 +22,12 @@
 
   const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const localDate = iso => new Date(iso + 'T00:00:00');
+  function formatDateRu(iso) {
+    if (!iso) return '';
+    const d = localDate(iso);
+    const names = ['января','февраля','марта','апреля','мая','июня','июля','августа','сентября','октября','ноября','декабря'];
+    return `${d.getDate()} ${names[d.getMonth()]} ${d.getFullYear()}`;
+  }
   const todayIso = () => {
     const d = new Date();
     const y = d.getFullYear(), m = String(d.getMonth()+1).padStart(2,'0'), day = String(d.getDate()).padStart(2,'0');
@@ -84,9 +90,9 @@
       empty.hidden = visible.length !== 0;
       list.innerHTML = visible.map(e => {
         let period = 'ИДЁТ СЕЙЧАС · ДАТА ОКОНЧАНИЯ НЕ УКАЗАНА';
-        if (e.start_date && e.end_date) period = `${esc(e.start_date)} — ${esc(e.end_date)}`;
-        else if (e.start_date) period = `С ${esc(e.start_date)}`;
-        else if (e.end_date) period = `ДО ${esc(e.end_date)}`;
+        if (e.start_date && e.end_date) period = `${formatDateRu(e.start_date)} — ${formatDateRu(e.end_date)}`;
+        else if (e.start_date) period = `С ${formatDateRu(e.start_date)}`;
+        else if (e.end_date) period = `ДО ${formatDateRu(e.end_date)}`;
         return `
           <article class="event-card exhibition-card">
             <div class="event-main">

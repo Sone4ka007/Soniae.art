@@ -69,6 +69,16 @@
     return 'ЦЕНА НЕ УКАЗАНА';
   }
 
+  function shortDescription(value, max = 420) {
+    const text = String(value || '').replace(/\s+/g, ' ').trim();
+    if (text.length <= max) return text;
+    const cut = text.slice(0, max);
+    const sentence = Math.max(cut.lastIndexOf('. '), cut.lastIndexOf('! '), cut.lastIndexOf('? '));
+    const word = cut.lastIndexOf(' ');
+    const end = sentence > max * 0.55 ? sentence + 1 : word;
+    return cut.slice(0, end > 0 ? end : max).trim() + '…';
+  }
+
   function availabilityLabel(e) {
     if (e.availability === 'available') return 'ЕСТЬ МЕСТА / БИЛЕТЫ';
     if (e.availability === 'sold_out') return 'МЕСТ НЕТ / ЗАПИСЬ ЗАКРЫТА';
@@ -102,7 +112,7 @@
             <div class="event-main">
               <h3>${esc(e.title)}</h3>
               <p class="event-period">${period}</p>
-              <p>${esc(e.description || '')}</p>
+              <p>${esc(shortDescription(e.description))}</p>
               <div class="event-tags">${(e.categories || []).map(c => `<span class="event-tag">${esc(categoryNames[c] || c)}</span>`).join('')}</div>
             </div>
             <div class="event-meta">
@@ -150,7 +160,7 @@
             <div class="event-time">${state.kind === 'open_call' ? 'OPEN CALL' : esc(e.time || '—')}</div>
             <div class="event-main">
               <h3>${esc(e.title)}</h3>
-              <p>${esc(e.description || '')}</p>
+              <p>${esc(shortDescription(e.description))}</p>
               <div class="event-tags">${(e.categories || []).map(c => `<span class="event-tag">${esc(categoryNames[c] || c)}</span>`).join('')}</div>
             </div>
             <div class="event-meta">

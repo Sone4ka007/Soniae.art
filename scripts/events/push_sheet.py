@@ -32,7 +32,7 @@ def preserve_editor_fields(api, db):
         return 0
     headers=current[0]
     byid={e.get("id"):e for e in db.get("events",[]) if e.get("id")}
-    editable={"status","editor_note","checked_at","review_reason","price_text","registration","categories","kind"}
+    editable={"editor_note","checked_at","review_reason","price_text","registration","categories"}
     merged=0
     for row in current[1:]:
         obj=dict(zip(headers,row+[""]*(len(headers)-len(row))))
@@ -41,6 +41,9 @@ def preserve_editor_fields(api, db):
             continue
         e=byid[rid]
         old_status=e.get("status","")
+        live_status=str(obj.get("status","")).strip()
+        if live_status in ("approved","rejected"):
+            e["status"]=live_status
         for k in editable:
             if k not in obj:
                 continue

@@ -32,7 +32,7 @@
     if (e.status !== 'approved') return false;
     if ((e.kind || 'event') !== state.kind) return false;
     if (!e.date || e.date < todayIso()) return false;
-    const max = new Date(); max.setDate(max.getDate() + (state.kind === 'open_call' ? 90 : 30));
+    const max = new Date(); max.setDate(max.getDate() + (state.kind === 'event' ? 30 : 90));
     const maxIso = `${max.getFullYear()}-${String(max.getMonth()+1).padStart(2,'0')}-${String(max.getDate()).padStart(2,'0')}`;
     if (e.date > maxIso) return false;
     if (state.city !== 'all' && e.city !== state.city) return false;
@@ -60,8 +60,17 @@
   }
 
   function render() {
-    const visible = events.filter(isVisible).sort((a,b) => (a.date+a.time).localeCompare(b.date+b.time));
-    if (state.kind === 'open_call') {
+    let visible = events.filter(isVisible).sort((a,b) => (a.date+a.time).localeCompare(b.date+b.time));
+    if (state.kind === 'exhibition') {
+      const unique = new Map();
+      visible.forEach(e => {
+        const key = `${(e.title||'').toLowerCase()}|${(e.venue||'').toLowerCase()}`;
+        if (!unique.has(key)) unique.set(key,e);
+      });
+      visible = [...unique.values()];
+      count.textContent = `${visible.length} ${visible.length === 1 ? 'ВЫСТАВКА' : 'ВЫСТАВОК'}`;
+      document.getElementById('events-range').textContent = 'ВЫСТАВКИ · 90 ДНЕЙ';
+    } else if (state.kind === 'open_call') {
       count.textContent = `${visible.length} OPEN CALLS`;
       document.getElementById('events-range').textContent = 'ДЕДЛАЙНЫ · 90 ДНЕЙ';
     } else {
@@ -87,7 +96,7 @@
         </div>
         ${items.map(e => `
           <article class="event-card">
-            <div class="event-time">${state.kind === 'open_call' ? 'OPEN CALL' : esc(e.time || '—')}</div>
+            <div class="event-time">${state.kind === 'open_call' ? 'OPEN CALL' : state.kind === 'exhibition' ? 'ВЫСТАВКА' : esc(e.time || '—')}</div>
             <div class="event-main">
               <h3>${esc(e.title)}</h3>
               <p>${esc(e.description || '')}</p>

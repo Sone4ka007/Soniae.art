@@ -28,6 +28,11 @@ jobs:
           python-version: "3.12"
       - name: Install dependencies
         run: pip install beautifulsoup4 google-api-python-client google-auth
+      - name: Pull current editor decisions
+        env:
+          EVENTS_SHEET_ID: ${{ vars.EVENTS_SHEET_ID }}
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+        run: python scripts/events/pull_sheet.py
       - name: Collect current source data
         run: python scripts/events/collect_jsonld.py
       - name: Check ticket and registration availability

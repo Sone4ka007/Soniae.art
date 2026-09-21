@@ -227,6 +227,94 @@
       "kind": "exhibition",
       "max_detail_pages": 40,
       "detail_workers": 8
+    },
+    {
+      "name": "Третьяковская галерея — выставки",
+      "city": "moscow",
+      "url": "https://www.tretyakovgallery.ru/tickets/exhibitions/",
+      "venue": "Третьяковская галерея",
+      "adapter": "event_links",
+      "href_contains": [
+        "/exhibitions/o/",
+        "/exhibition/",
+        "/tickets/exhibitions/"
+      ],
+      "exclude_paths": [
+        "/tickets/exhibitions/"
+      ],
+      "kind": "exhibition",
+      "max_detail_pages": 100,
+      "detail_workers": 8
+    },
+    {
+      "name": "Государственный Эрмитаж — выставки и события",
+      "city": "spb",
+      "url": "https://www.hermitagemuseum.org/what-s-on",
+      "venue": "Государственный Эрмитаж",
+      "adapter": "event_links",
+      "href_contains": [
+        "/what-s-on/",
+        "/exhibitions/",
+        "/events/"
+      ],
+      "exclude_paths": [
+        "/what-s-on"
+      ],
+      "max_detail_pages": 120,
+      "detail_workers": 8
+    },
+    {
+      "name": "Русский музей — выставки",
+      "city": "spb",
+      "url": "https://rusmuseum.ru/exhibitions/current/",
+      "venue": "Русский музей",
+      "adapter": "event_links",
+      "href_contains": [
+        "/exhibitions/current/",
+        "/exhibitions/"
+      ],
+      "exclude_paths": [
+        "/exhibitions/current/",
+        "/exhibitions/",
+        "/exhibitions/archive/"
+      ],
+      "kind": "exhibition",
+      "max_detail_pages": 100,
+      "detail_workers": 8
+    },
+    {
+      "name": "Русский музей — события и программы",
+      "city": "spb",
+      "url": "https://rusmuseum.ru/news",
+      "venue": "Русский музей",
+      "adapter": "event_links",
+      "href_contains": [
+        "/news/",
+        "/events/"
+      ],
+      "exclude_paths": [
+        "/news",
+        "/news/"
+      ],
+      "max_detail_pages": 80,
+      "detail_workers": 8
+    },
+    {
+      "name": "Русский музей — лекторий",
+      "city": "spb",
+      "url": "https://rusmuseum.ru/pages/lecture/",
+      "venue": "Лекторий Русского музея",
+      "adapter": "event_links",
+      "href_contains": [
+        "/pages/lecture/",
+        "/events/",
+        "/news/"
+      ],
+      "exclude_paths": [
+        "/pages/lecture/"
+      ],
+      "max_detail_pages": 60,
+      "detail_workers": 8
     }
   ]
 }

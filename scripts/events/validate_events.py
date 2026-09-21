@@ -34,6 +34,14 @@ TOUR_KEEP=(
     "artist led","artist tour","авторская экскурсия"
 )
 EXHIBITION_HINTS=("выставка","exhibition","инсталляц","installation")
+GENERIC_JUNK=(
+    "подпишитесь и получайте новости","условия участия","подробнее","more details",
+    "see more","learn more"
+)
+RECURRING_LOW_VALUE=(
+    "ателье. самостоятельная работа",
+)
+
 
 def main():
     db=json.loads(DB.read_text("utf-8")); changed=0
@@ -65,6 +73,11 @@ def main():
         if key in seen: problems.append("possible_duplicate")
         else: seen[key]=e.get("id")
         editable_status=e.get("status") in ("new","check")
+        if editable_status and (
+            any(x in title_blob for x in GENERIC_JUNK) or
+            any(x in title_blob for x in RECURRING_LOW_VALUE)
+        ):
+            e["status"]="rejected"; e["review_reason"]="excluded_generic_or_recurring"; changed+=1; continue
         if editable_status and any(x in blob for x in EXCLUDE):
             e["status"]="rejected"; e["review_reason"]="excluded_person"; changed+=1; continue
         if editable_status and any(x in blob for x in PLEIN) and not any(x in blob for x in GELD):

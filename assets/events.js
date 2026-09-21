@@ -31,10 +31,16 @@
   function isVisible(e) {
     if (e.status !== 'approved') return false;
     if ((e.kind || 'event') !== state.kind) return false;
-    if (!e.date || e.date < todayIso()) return false;
+    const today = todayIso();
     const max = new Date(); max.setDate(max.getDate() + (state.kind === 'event' ? 30 : 90));
     const maxIso = `${max.getFullYear()}-${String(max.getMonth()+1).padStart(2,'0')}-${String(max.getDate()).padStart(2,'0')}`;
-    if (e.date > maxIso) return false;
+    if (state.kind === 'exhibition') {
+      const start = e.start_date || e.date;
+      const end = e.end_date || e.date;
+      if (!start || !end || end < today || start > maxIso) return false;
+    } else {
+      if (!e.date || e.date < today || e.date > maxIso) return false;
+    }
     if (state.city !== 'all' && e.city !== state.city) return false;
     const ptype = e.price_type || (Number(e.price) === 0 ? 'free' : (e.price ? 'paid' : 'unknown'));
     if (state.price === 'free' && ptype !== 'free') return false;
@@ -81,7 +87,7 @@
     list.innerHTML = '';
 
     const groups = visible.reduce((acc,e) => {
-      const key = e.start_date || e.date;
+      const key = state.kind === 'exhibition' ? (e.start_date || e.date) : e.date;
       (acc[key] ||= []).push(e);
       return acc;
     }, {});

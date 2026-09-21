@@ -9,7 +9,7 @@ DB=ROOT/"content/events.json"
 SHEET_ID=os.environ["EVENTS_SHEET_ID"]
 CREDS=json.loads(os.environ["GOOGLE_SERVICE_ACCOUNT_JSON"])
 RANGE="Events!A:Y"
-HEADERS=["id","status","city","date","time","title","venue","address","price","price_text","price_type","registration","availability","availability_checked_at","categories","description","url","source","checked_at","review_reason","editor_note","days_ahead","kind","discovered_at","reviewed_at"]
+HEADERS=["id","status","title","date","time","venue","city","kind","price_type","price_text","registration","availability","availability_checked_at","categories","description","url","source","review_reason","editor_note","discovered_at","reviewed_at","address","price","checked_at","days_ahead"]
 
 def service():
     scopes=["https://www.googleapis.com/auth/spreadsheets"]
@@ -90,15 +90,15 @@ def main():
         except Exception:
             days=""
         rows.append([
-            e.get("id",""),e.get("status","new"),e.get("city",""),e.get("date",""),e.get("time",""),
-            e.get("title",""),e.get("venue",""),e.get("address",""),e.get("price",""),
-            e.get("price_text",""),e.get("price_type","unknown"),
+            e.get("id",""),e.get("status","new"),e.get("title",""),e.get("date",""),e.get("time",""),
+            e.get("venue",""),e.get("city",""),e.get("kind","event"),e.get("price_type","unknown"),
+            e.get("price_text",""),
             bool(e.get("registration")) if e.get("registration") is not None else "",
             e.get("availability","unknown"),e.get("availability_checked_at",""),
             ",".join(e.get("categories",[])) if isinstance(e.get("categories"),list) else e.get("categories",""),
-            e.get("description",""),e.get("url",""),e.get("source",""),e.get("checked_at",""),
-            e.get("review_reason",""),e.get("editor_note",""),days,e.get("kind","event"),
-            e.get("discovered_at",""),e.get("reviewed_at","")
+            e.get("description",""),e.get("url",""),e.get("source",""),e.get("review_reason",""),
+            e.get("editor_note",""),e.get("discovered_at",""),e.get("reviewed_at",""),
+            e.get("address",""),e.get("price",""),e.get("checked_at",""),days
         ])
 
     api.clear(spreadsheetId=SHEET_ID,range=RANGE,body={}).execute()
@@ -110,16 +110,16 @@ def main():
       {"setBasicFilter":{"filter":{"range":{"sheetId":sheet_id,"startRowIndex":0,"startColumnIndex":0,"endColumnIndex":25}}}},
       {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":1,"endColumnIndex":2},
         "rule":{"condition":{"type":"ONE_OF_LIST","values":[{"userEnteredValue":x} for x in ["new","check","approved","rejected"]]},"strict":True,"showCustomUi":True}}},
-      {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":2,"endColumnIndex":3},
+      {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":6,"endColumnIndex":7},
         "rule":{"condition":{"type":"ONE_OF_LIST","values":[{"userEnteredValue":x} for x in ["moscow","spb","russia","international"]]},"strict":True,"showCustomUi":True}}},
-      {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":10,"endColumnIndex":11},
+      {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":7,"endColumnIndex":8},
+        "rule":{"condition":{"type":"ONE_OF_LIST","values":[{"userEnteredValue":x} for x in ["event","exhibition","open_call"]]},"strict":True,"showCustomUi":True}}},
+      {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":8,"endColumnIndex":9},
         "rule":{"condition":{"type":"ONE_OF_LIST","values":[{"userEnteredValue":x} for x in ["free","paid","unknown"]]},"strict":True,"showCustomUi":True}}},
-      {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":11,"endColumnIndex":12},
+      {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":10,"endColumnIndex":11},
         "rule":{"condition":{"type":"BOOLEAN"},"strict":True,"showCustomUi":True}}},
-      {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":12,"endColumnIndex":13},
-        "rule":{"condition":{"type":"ONE_OF_LIST","values":[{"userEnteredValue":x} for x in ["available","sold_out","unknown"]]},"strict":True,"showCustomUi":True}}},
-      {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":22,"endColumnIndex":23},
-        "rule":{"condition":{"type":"ONE_OF_LIST","values":[{"userEnteredValue":x} for x in ["event","exhibition","open_call"]]},"strict":True,"showCustomUi":True}}}
+      {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":11,"endColumnIndex":12},
+        "rule":{"condition":{"type":"ONE_OF_LIST","values":[{"userEnteredValue":x} for x in ["available","sold_out","unknown"]]},"strict":True,"showCustomUi":True}}}
     ]
     svc.spreadsheets().batchUpdate(spreadsheetId=SHEET_ID,body={"requests":requests}).execute()
     print(f"Preserved editor fields for {merged} rows; pushed {len(rows)-1} events to Google Sheet")

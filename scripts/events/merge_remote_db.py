@@ -10,6 +10,11 @@ generated=json.loads(generated_path.read_text("utf-8"))
 remote=json.loads(remote_path.read_text("utf-8"))
 remote_by_id={e.get("id"):e for e in remote.get("events",[]) if e.get("id")}
 
+manual_remote=[
+    e for e in remote.get("events",[])
+    if str(e.get("id","")).startswith("manual-")
+]
+
 preserve_fields={
     "status","editor_note","checked_at","reviewed_at",
     "price_text","registration","categories"
@@ -28,6 +33,14 @@ for e in generated.get("events",[]):
                 e[k]=old[k]
     merged.append(e)
 
-generated["events"]=merged
+existing_ids={e.get("id") for e in merged if e.get("id")}
+for e in manual_remote:
+    if e.get("id") not in existing_ids:
+        merged.append(e)
+
+generated["events"]=sorted(
+    merged,
+    key=lambda e:(e.get("date",""),e.get("time",""),e.get("title",""))
+)
 out_path.write_text(json.dumps(generated,ensure_ascii=False,indent=2)+"\n","utf-8")
-print(f"Merged {len(merged)} generated records with latest remote editor state")
+print(f"Merged {len(merged)} generated records with latest remote editor state; preserved {len(manual_remote)} manual records")

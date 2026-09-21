@@ -3928,7 +3928,9 @@
       "discovered_at": "2026-09-21",
       "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-09-27-d5623dd3d1",
@@ -4969,17 +4971,18 @@
       "categories": [
         "open-call"
       ],
-      "description": "Московская галерея набирает групповые проекты в программу следующего года — от сырой концепции до готовой экспозиции.…",
+      "description": "Московская галерея набирает групповые проекты в программу следующего года — от сырой концепции до готовой экспозиции. Отдельным потоком принимают предложения для параллельной программы: лекции, дискуссии, мастер-классы, перформансы.",
       "url": "https://ewert.ru/competitions/open-call-galereya-a-b-2027/",
-      "source": "Ewert — возможности для художников",
+      "source": "",
       "checked_at": "",
-      "review_reason": "discovery_source_needs_primary_verification",
+      "review_reason": "primary_source_not_found",
       "discovered_at": "2026-09-21",
       "price_type": "unknown",
       "availability": "unknown",
       "availability_checked_at": "2026-09-21",
       "editor_note": "",
-      "reviewed_at": "2026-09-21"
+      "reviewed_at": "2026-09-21",
+      "discovery_source": "Ewert — возможности для художников"
     },
     {
       "id": "moscow-2026-10-01-d97b8ab71d",
@@ -5832,15 +5835,16 @@
       ],
       "description": "Call for entries! 13b is looking for photography submissions for their international exhibition ‘Lumen’. This is a great opportunity to expand your network and get greater exposure by exhibiting your work in front of an international audience.",
       "url": "https://www.curatorspace.com/opportunities/detail/international-photography-open-call-lumen/11149",
-      "source": "CuratorSpace — opportunities",
+      "source": "",
       "checked_at": "",
-      "review_reason": "discovery_source_needs_primary_verification",
+      "review_reason": "primary_source_not_found",
       "discovered_at": "2026-09-21",
       "price_type": "unknown",
       "availability": "unknown",
       "availability_checked_at": "2026-09-21",
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "",
+      "discovery_source": "CuratorSpace — opportunities"
     },
     {
       "id": "international-2026-11-25-41e93ee2bb",

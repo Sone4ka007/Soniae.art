@@ -467,7 +467,7 @@
     },
     {
       "id": "discovery-a50b414511704d",
-      "status": "check",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-09-21",
@@ -494,11 +494,11 @@
       "review_reason": "special_event_discovery",
       "editor_note": "Обнаружено мониторингом ежегодных фестивалей/дизайн-событий; требуется редакторская проверка.",
       "discovered_at": "2026-09-21",
-      "reviewed_at": ""
+      "reviewed_at": "2026-09-21"
     },
     {
       "id": "discovery-d3a42fdfb45e5f",
-      "status": "check",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-09-21",
@@ -525,7 +525,7 @@
       "review_reason": "special_event_discovery",
       "editor_note": "Обнаружено мониторингом ежегодных фестивалей/дизайн-событий; требуется редакторская проверка.",
       "discovered_at": "2026-09-21",
-      "reviewed_at": ""
+      "reviewed_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-21-dedf98c398",
@@ -5840,13 +5840,40 @@
       "url": "https://rosphoto.org/events/kulturnyj-assamblyazh-dni-vengerskoj-kultury-v-rosfoto-2/",
       "source": "РОСФОТО",
       "checked_at": "",
-      "review_reason": "programme_container_split_into_events",
+      "review_reason": "",
       "discovered_at": "2026-09-21",
       "price_type": "paid",
       "availability": "available",
       "availability_checked_at": "2026-09-21",
       "editor_note": "Общий заголовок программы заменён отдельными событиями.",
       "reviewed_at": ""
+    },
+    {
+      "id": "spb-2026-09-30-1384a0ebb0",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-09-30",
+      "time": "19:00",
+      "title": "Лекция «Фотография в венгерской литературе. Архив „Фортепан“»",
+      "venue": "РОСФОТО",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Вход на все мероприятия программы осуществляется по билету на выставку. Унгарист, переводчик и преподаватель Оксана Якименко и координатор культурных программ Института Листа Наталия Дьяченко расскажут о венгерском цифровом архиве личных фотографий «Фортепан» и одноименном поэтическом сборнике венгерской писательницы, поэтессы и переводчицы Жужи Раковски.",
+      "url": "https://rosphoto.org/events/kulturnyj-assamblyazh-dni-vengerskoj-kultury-v-rosfoto-2/",
+      "source": "РОСФОТО",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-21",
+      "price_type": "paid",
+      "availability": "available",
+      "availability_checked_at": "2026-09-21",
+      "editor_note": "Общий заголовок программы заменён отдельными событиями."
     },
     {
       "id": "moscow-2026-09-30-f4943d0461",
@@ -6298,8 +6325,35 @@
       "start_date": "2026-10-10"
     },
     {
+      "id": "spb-2026-10-10-15a78c4a65",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-10",
+      "time": "17:00",
+      "title": "Кураторская экскурсия от Оксаны Якименко «Йожеф Кадар: фотография и художественный эксперимент»",
+      "venue": "РОСФОТО",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Вход на все мероприятия программы осуществляется по билету на выставку. Унгарист, переводчик и преподаватель Оксана Якименко и координатор культурных программ Института Листа Наталия Дьяченко расскажут о венгерском цифровом архиве личных фотографий «Фортепан» и одноименном поэтическом сборнике венгерской писательницы, поэтессы и переводчицы Жужи Раковски.",
+      "url": "https://rosphoto.org/events/kulturnyj-assamblyazh-dni-vengerskoj-kultury-v-rosfoto-2/",
+      "source": "РОСФОТО",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-21",
+      "price_type": "paid",
+      "availability": "available",
+      "availability_checked_at": "2026-09-21",
+      "editor_note": "Общий заголовок программы заменён отдельными событиями."
+    },
+    {
       "id": "spb-2026-10-11-e965a222c0",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-11",
@@ -6323,7 +6377,7 @@
       "availability": "unknown",
       "availability_checked_at": "2026-09-21",
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-10-11-963ff028e2",

@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-20",
+  "updated_at": "2026-09-21",
   "events": [
     {
-      "id": "moscow-2026-09-20-dedf98c398",
+      "id": "moscow-2026-09-21-dedf98c398",
       "status": "new",
       "city": "moscow",
-      "date": "2026-09-20",
+      "date": "2026-09-21",
       "time": "",
       "title": "Хлеб",
       "venue": "Центр Зотов",
@@ -22,16 +22,16 @@
       "source": "Центр Зотов",
       "checked_at": "",
       "review_reason": "",
-      "discovered_at": "2026-09-20",
+      "discovered_at": "2026-09-21",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
-      "id": "moscow-2026-09-20-6e9b4343b7",
+      "id": "moscow-2026-09-21-6e9b4343b7",
       "status": "new",
       "city": "moscow",
-      "date": "2026-09-20",
+      "date": "2026-09-21",
       "time": "",
       "title": "Экскурсия по выставке «Хлеб»",
       "venue": "Центр Зотов",
@@ -47,698 +47,10 @@
       "source": "Центр Зотов",
       "checked_at": "",
       "review_reason": "",
-      "discovered_at": "2026-09-20",
+      "discovered_at": "2026-09-21",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
-    },
-    {
-      "id": "moscow-2026-09-20-6c590d946b",
-      "status": "new",
-      "city": "moscow",
-      "date": "2026-09-20",
-      "time": "11:00",
-      "title": "Инсталляция Александра Сухарева. Начала",
-      "venue": "ГЭС-2",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": null,
-      "categories": [],
-      "description": "",
-      "url": "https://ges-2.org/alexandra-sukhareva-beginnings",
-      "source": "Дом культуры «ГЭС-2»",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "free",
-      "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
-    },
-    {
-      "id": "moscow-2026-09-20-f018d9ac75",
-      "status": "new",
-      "city": "moscow",
-      "date": "2026-09-20",
-      "time": "11:00",
-      "title": "Москва — Ханой. Ландшафты оптимизма",
-      "venue": "ГЭС-2",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": null,
-      "categories": [
-        "выставка"
-      ],
-      "description": "",
-      "url": "https://ges-2.org/projects/moscow-hanoi-landscapes-of-optimism",
-      "source": "Дом культуры «ГЭС-2»",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "free",
-      "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
-    },
-    {
-      "id": "moscow-2026-09-20-a7dd453c9e",
-      "status": "new",
-      "city": "moscow",
-      "date": "2026-09-20",
-      "time": "11:00",
-      "title": "Формы касаний. Все люди красивые",
-      "venue": "ГЭС-2",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": null,
-      "categories": [
-        "выставка"
-      ],
-      "description": "",
-      "url": "https://ges-2.org/forms-of-touch-all-people-are-beautiful",
-      "source": "Дом культуры «ГЭС-2»",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "free",
-      "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
-    },
-    {
-      "id": "moscow-2026-09-20-00df913bfb",
-      "status": "new",
-      "city": "moscow",
-      "date": "2026-09-20",
-      "time": "11:30",
-      "title": "Практика Семейная йога",
-      "venue": "ГЭС-2",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [],
-      "description": "",
-      "url": "https://ges-2.org/family-yoga",
-      "source": "Дом культуры «ГЭС-2»",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "free",
-      "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
-    },
-    {
-      "id": "moscow-2026-09-20-008f85bac0",
-      "status": "new",
-      "city": "moscow",
-      "date": "2026-09-20",
-      "time": "11:30",
-      "title": "Я беру с собой в поход",
-      "venue": "ГЭС-2",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": null,
-      "categories": [
-        "игра"
-      ],
-      "description": "",
-      "url": "https://ges-2.org/i-m-taking-it-on-my-hike",
-      "source": "Дом культуры «ГЭС-2»",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "free",
-      "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
-    },
-    {
-      "id": "moscow-2026-09-20-4b8e8bd2b2",
-      "status": "new",
-      "city": "moscow",
-      "date": "2026-09-20",
-      "time": "11:30",
-      "title": "Лесная корона. Занятие детей 3-4 лет",
-      "venue": "Центр Зотов",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [
-        "детям"
-      ],
-      "description": "",
-      "url": "https://centrezotov.ru/events/tvorcheskaya-laboratoriya-dlya-samyh-malenkih-dlya-detej-3-4-let/lesnaya-korona-zanyatie-detej-3-4-let/",
-      "source": "Центр Зотов",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "unknown",
-      "availability": "available",
-      "availability_checked_at": "2026-09-20"
-    },
-    {
-      "id": "moscow-2026-09-20-ead587df73",
-      "status": "new",
-      "city": "moscow",
-      "date": "2026-09-20",
-      "time": "12:00",
-      "title": "Открытый воркшоп «Сила ветра»",
-      "venue": "Еврейский музей и центр толерантности",
-      "address": "",
-      "price": 0,
-      "price_text": "Бесплатно",
-      "registration": false,
-      "categories": [
-        "лекция"
-      ],
-      "description": "Бесплатно Совместный проект онлайн галереи современного искусства «Объединение» и Детского центра Еврейского музея и центра толерантности. Присоединяйтесь к открытому воркшопу с Тимой Илларионовым и узнай силу природы и ветра! Будем создавать мобили, которые движутся от воздуха. Исследуем баланс и движение, опираясь на работы Александра Колдера. Формы его работ напоминают листья, лепестки, животных , планеты. Ветер становится буквально соавтором произведения. Также мы обратимся и к другим художникам, представителям кинетического искусства - Джорджу Рики, Науму Габору. Они рассматривали тему повторения, случайности, траектории, ритма в свои...",
-      "url": "https://www.jewish-museum.ru/events/otkrytyy-vorkshop-sila-vetra/",
-      "source": "Еврейский музей и центр толерантности",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "free",
-      "availability": "available",
-      "availability_checked_at": "2026-09-20"
-    },
-    {
-      "id": "moscow-2026-09-20-a6802e6795",
-      "status": "new",
-      "city": "moscow",
-      "date": "2026-09-20",
-      "time": "12:00",
-      "title": "Открытый воркшоп «Сила природного рисунка»",
-      "venue": "Еврейский музей и центр толерантности",
-      "address": "",
-      "price": 0,
-      "price_text": "Бесплатно",
-      "registration": false,
-      "categories": [
-        "лекция"
-      ],
-      "description": "Бесплатно Совместный проект онлайн галереи современного искусства «Объединение» и Детского центра Еврейского музея и центра толерантности. Будем играть и пачкать руки вместе с художницей Кристиной Павловой, исследуя природные материалы! Мы будем мять, придавать форму и лепить текстурированные поверхности, вдохновленные узорами, встречающимися в природе. Присоединяйтесь, чтобы всмотреться в рисунок и шероховатости коры, структуру ствола или контур листьев. Вместе с ребятами изучим работы художницы Люси Уильямс, которая культивирует внутренние возможности и свойства материала, собранного в дикой природе. Возьмем в руки лупы и приглядимся к с...",
-      "url": "https://www.jewish-museum.ru/events/otkrytyy-vorkshop-sila-prirodnogo-risunka/",
-      "source": "Еврейский музей и центр толерантности",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "free",
-      "availability": "available",
-      "availability_checked_at": "2026-09-20"
-    },
-    {
-      "id": "moscow-2026-09-20-9f703f36f1",
-      "status": "new",
-      "city": "moscow",
-      "date": "2026-09-20",
-      "time": "12:00",
-      "title": "ПОДПИШИТЕСЬ И ПОЛУЧАЙТЕ НОВОСТИ МУЗЕЯ ПЕРВЫМИ",
-      "venue": "Еврейский музей и центр толерантности",
-      "address": "",
-      "price": 0,
-      "price_text": "Бесплатно",
-      "registration": false,
-      "categories": [
-        "лекция"
-      ],
-      "description": "",
-      "url": "https://www.jewish-museum.ru/events/",
-      "source": "Еврейский музей и центр толерантности",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "free",
-      "availability": "available",
-      "availability_checked_at": "2026-09-20"
-    },
-    {
-      "id": "moscow-2026-09-20-a17440d0e1",
-      "status": "new",
-      "city": "moscow",
-      "date": "2026-09-20",
-      "time": "12:00",
-      "title": "Путешествие по накрытым столам: праздничная трапеза",
-      "venue": "Еврейский музей и центр толерантности",
-      "address": "",
-      "price": 2000,
-      "price_text": "",
-      "registration": false,
-      "categories": [
-        "лекция"
-      ],
-      "description": "2 000 ₽ - билет на программу От цимеса и латкес до сладкого тейглаха — на новой встрече цикла мы исследуем гастрономические традиции осенних еврейских праздников и вместе приготовим праздничную трапезу Осенний месяц Тишрей открывает еврейский год целой чередой праздников, сменяющих друг друга. У каждого из них — своя гастрономическая традиция, особый праздничный стол. Путешествуя по праздничным столам, от Рош-а-Шана – еврейского Нового года – до Суккота, мы проследим удивительный путь рецептов: как блюда, придуманные в еврейских местечках Европы, трансформировались, адаптируясь к израильским реалиям, и как они звучат на наших современных к...",
-      "url": "https://www.jewish-museum.ru/events/puteshestvie-po-nakrytym-stolam-prazdnichnaya-trapeza-/",
-      "source": "Еврейский музей и центр толерантности",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "paid",
-      "availability": "available",
-      "availability_checked_at": "2026-09-20"
-    },
-    {
-      "id": "moscow-2026-09-20-d4f6927bd5",
-      "status": "new",
-      "city": "moscow",
-      "date": "2026-09-20",
-      "time": "12:00",
-      "title": "Экскурсия “Маршрут построен: от Бахметьевского гаража к Еврейскому музею” x Глазами инженера",
-      "venue": "Еврейский музей и центр толерантности",
-      "address": "",
-      "price": 1700,
-      "price_text": "",
-      "registration": false,
-      "categories": [
-        "лекция"
-      ],
-      "description": "1 700 ₽ - билет на экскурсию Еврейский музей и центр толерантности совместно с компанией «Глазами инженера» приглашают на экскурсию по Бахметьевскому автобусному гаражу — шедевру авангарда в архитектуре В середине 1920-х годов на улицах Москвы появились регулярные автобусные маршруты, а вместе с ними возникла необходимость в новых гаражах для быстро растущего городского транспорта. Одним из самых необычных сооружений этого времени стал Бахметьевский автобусный гараж — шедевр советского авангарда, созданный архитектором Константином Мельниковым и инженером Владимиром Шуховым. На совместной экскурсии с компанией «Глазами инженера» мы исследу...",
-      "url": "https://www.jewish-museum.ru/events/ekskursiya-marshrut-postroen-ot-bakhmetevskogo-garazha-k-evreyskomu-muzeyu-x-glazami-inzhenera-/",
-      "source": "Еврейский музей и центр толерантности",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "paid",
-      "availability": "available",
-      "availability_checked_at": "2026-09-20"
-    },
-    {
-      "id": "moscow-2026-09-20-45b98fc0b5",
-      "status": "new",
-      "city": "moscow",
-      "date": "2026-09-20",
-      "time": "12:00",
-      "title": "Рамо в движении. Мастер-класс по пластике и танцу",
-      "venue": "Центр Зотов",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": true,
-      "categories": [
-        "мастер-класс"
-      ],
-      "description": "",
-      "url": "https://centrezotov.ru/events/ramo-v-dvizhenii-master-klass-po-plastike-i-tanczu/",
-      "source": "Центр Зотов",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "unknown",
-      "availability": "available",
-      "availability_checked_at": "2026-09-20"
-    },
-    {
-      "id": "moscow-2026-09-20-e37ff84921",
-      "status": "new",
-      "city": "moscow",
-      "date": "2026-09-20",
-      "time": "12:30",
-      "title": "Вне стен: прогулка по Музеону",
-      "venue": "ГЭС-2",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": null,
-      "categories": [
-        "медиаторский тур"
-      ],
-      "description": "",
-      "url": "https://ges-2.org/outside-the-walls-a-walk-in-muzeon-park",
-      "source": "Дом культуры «ГЭС-2»",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "free",
-      "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
-    },
-    {
-      "id": "moscow-2026-09-20-49d1531b78",
-      "status": "new",
-      "city": "moscow",
-      "date": "2026-09-20",
-      "time": "13:00",
-      "title": "Картинки на завтрак, обед и ужин",
-      "venue": "ГЭС-2",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [
-        "мастер-класс"
-      ],
-      "description": "",
-      "url": "https://ges-2.org/pictures-for-breakfast-lunch-and-dinner",
-      "source": "Дом культуры «ГЭС-2»",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "free",
-      "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
-    },
-    {
-      "id": "moscow-2026-09-20-b0a577f9c8",
-      "status": "new",
-      "city": "moscow",
-      "date": "2026-09-20",
-      "time": "13:00",
-      "title": "Ниже травы. Игровая",
-      "venue": "ГЭС-2",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": true,
-      "categories": [],
-      "description": "",
-      "url": "https://ges-2.org/below-the-grass-playground",
-      "source": "Дом культуры «ГЭС-2»",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "free",
-      "availability": "available",
-      "availability_checked_at": "2026-09-20"
-    },
-    {
-      "id": "moscow-2026-09-20-49536c3df4",
-      "status": "new",
-      "city": "moscow",
-      "date": "2026-09-20",
-      "time": "14:00",
-      "title": "Индивидуальный",
-      "venue": "ГЭС-2",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [
-        "медиаторский тур"
-      ],
-      "description": "",
-      "url": "https://ges-2.org/mediation/tour/mediated-tours-for-organised-groups",
-      "source": "Дом культуры «ГЭС-2»",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "free",
-      "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
-    },
-    {
-      "id": "moscow-2026-09-20-c939da139e",
-      "status": "new",
-      "city": "moscow",
-      "date": "2026-09-20",
-      "time": "14:00",
-      "title": "Как звучит «ГЭС-2»? Семейный тур",
-      "venue": "ГЭС-2",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": null,
-      "categories": [
-        "медиаторский тур"
-      ],
-      "description": "",
-      "url": "https://ges-2.org/mediation/tour/how-does-ges-2-sound-family-tour",
-      "source": "Дом культуры «ГЭС-2»",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "free",
-      "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
-    },
-    {
-      "id": "moscow-2026-09-20-288bf4ea95",
-      "status": "new",
-      "city": "moscow",
-      "date": "2026-09-20",
-      "time": "14:00",
-      "title": "Кружок Клуб настольных игр «ГЭС-2»",
-      "venue": "ГЭС-2",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": null,
-      "categories": [],
-      "description": "",
-      "url": "https://ges-2.org/projects/ges-2-board-games-club",
-      "source": "Дом культуры «ГЭС-2»",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "free",
-      "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
-    },
-    {
-      "id": "moscow-2026-09-20-a52d761917",
-      "status": "new",
-      "city": "moscow",
-      "date": "2026-09-20",
-      "time": "14:30",
-      "title": "Двадцать лет со Смешариками",
-      "venue": "Центр Зотов",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [
-        "фестиваль"
-      ],
-      "description": "",
-      "url": "https://centrezotov.ru/events/beat-weekend-2026/dvadczat-let-so-smesharikami/",
-      "source": "Центр Зотов",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "unknown",
-      "availability": "available",
-      "availability_checked_at": "2026-09-20"
-    },
-    {
-      "id": "moscow-2026-09-20-dc07f0121e",
-      "status": "new",
-      "city": "moscow",
-      "date": "2026-09-20",
-      "time": "15:00",
-      "title": "Под ногами мягкий пол",
-      "venue": "ГЭС-2",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": null,
-      "categories": [
-        "лаборатория"
-      ],
-      "description": "",
-      "url": "https://ges-2.org/soft-floor-beneath-your-feet",
-      "source": "Дом культуры «ГЭС-2»",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "free",
-      "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
-    },
-    {
-      "id": "moscow-2026-09-20-1facd894b1",
-      "status": "new",
-      "city": "moscow",
-      "date": "2026-09-20",
-      "time": "15:00",
-      "title": "Эпоха Рамо",
-      "venue": "Центр Зотов",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": true,
-      "categories": [
-        "диалог"
-      ],
-      "description": "",
-      "url": "https://centrezotov.ru/events/epoha-ramo/",
-      "source": "Центр Зотов",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "unknown",
-      "availability": "available",
-      "availability_checked_at": "2026-09-20"
-    },
-    {
-      "id": "moscow-2026-09-20-f8243a315b",
-      "status": "new",
-      "city": "moscow",
-      "date": "2026-09-20",
-      "time": "15:30",
-      "title": "Ателье. Самостоятельная работа",
-      "venue": "ГЭС-2",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [],
-      "description": "",
-      "url": "https://ges-2.org/atelier",
-      "source": "Дом культуры «ГЭС-2»",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "free",
-      "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
-    },
-    {
-      "id": "moscow-2026-09-20-50dd1442d1",
-      "status": "check",
-      "city": "moscow",
-      "date": "2026-09-20",
-      "time": "15:30",
-      "title": "«Рисуем всей семьей». Мастер-класс для взрослых и детей от 8 лет",
-      "venue": "Музей русского импрессионизма",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [],
-      "description": "Купить Подробнее Подробнее",
-      "url": "https://www.rusimp.su/events/risuem-vsey-semey-master-klass-dlya-vzroslyh-i-detey-ot-8-let",
-      "source": "Музей русского импрессионизма",
-      "checked_at": "",
-      "review_reason": "year_not_explicit_on_primary_listing",
-      "discovered_at": "2026-09-20",
-      "price_type": "paid",
-      "availability": "available",
-      "availability_checked_at": "2026-09-20"
-    },
-    {
-      "id": "moscow-2026-09-20-23277ddb4c",
-      "status": "new",
-      "city": "moscow",
-      "date": "2026-09-20",
-      "time": "16:00",
-      "title": "Андеграунд. Фестиваль коллективных фильмов",
-      "venue": "ГЭС-2",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": null,
-      "categories": [
-        "кинопоказ"
-      ],
-      "description": "",
-      "url": "https://ges-2.org/underground-film",
-      "source": "Дом культуры «ГЭС-2»",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "free",
-      "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
-    },
-    {
-      "id": "moscow-2026-09-20-98f4534d25",
-      "status": "new",
-      "city": "moscow",
-      "date": "2026-09-20",
-      "time": "16:00",
-      "title": "Знакомство с Домом культуры «ГЭС-2»",
-      "venue": "ГЭС-2",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": true,
-      "categories": [
-        "медиаторский тур"
-      ],
-      "description": "",
-      "url": "https://ges-2.org/mediation/tour/meet-ges-2-house-of-culture",
-      "source": "Дом культуры «ГЭС-2»",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "free",
-      "availability": "available",
-      "availability_checked_at": "2026-09-20"
-    },
-    {
-      "id": "moscow-2026-09-20-50142bac20",
-      "status": "new",
-      "city": "moscow",
-      "date": "2026-09-20",
-      "time": "16:30",
-      "title": "Бег — это свобода / Free to Run",
-      "venue": "Центр Зотов",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [
-        "фестиваль"
-      ],
-      "description": "",
-      "url": "https://centrezotov.ru/events/beat-weekend-2026/beg-eto-svoboda-free-to-run/",
-      "source": "Центр Зотов",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "unknown",
-      "availability": "available",
-      "availability_checked_at": "2026-09-20"
-    },
-    {
-      "id": "moscow-2026-09-20-2d988be5a2",
-      "status": "new",
-      "city": "moscow",
-      "date": "2026-09-20",
-      "time": "18:30",
-      "title": "Биостанция Анива: дело длинной",
-      "venue": "Центр Зотов",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [
-        "фестиваль"
-      ],
-      "description": "",
-      "url": "https://centrezotov.ru/events/beat-weekend-2026/biostancziya-aniva-delo-dlinnoj/",
-      "source": "Центр Зотов",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "unknown",
-      "availability": "available",
-      "availability_checked_at": "2026-09-20"
-    },
-    {
-      "id": "moscow-2026-09-20-f186c0c5fb",
-      "status": "new",
-      "city": "moscow",
-      "date": "2026-09-20",
-      "time": "19:00",
-      "title": "Не спать, пока. Фестиваль коллективных фильмов",
-      "venue": "ГЭС-2",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": null,
-      "categories": [
-        "кинопоказ"
-      ],
-      "description": "",
-      "url": "https://ges-2.org/no-sleep-till",
-      "source": "Дом культуры «ГЭС-2»",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "free",
-      "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-21-6c590d946b",
@@ -759,9 +71,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-21-a7dd453c9e",
@@ -784,9 +96,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-21-98f4534d25",
@@ -809,9 +121,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-21-b0a577f9c8",
@@ -832,9 +144,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-21-d5623dd3d1",
@@ -857,9 +169,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-21-b68397e5ea",
@@ -882,9 +194,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-21-49536c3df4",
@@ -907,9 +219,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-21-6de6981347",
@@ -932,9 +244,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-21-1868b29f14",
@@ -957,9 +269,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-22-6c590d946b",
@@ -980,9 +292,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-22-a7dd453c9e",
@@ -1005,9 +317,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-22-b6849502a8",
@@ -1030,9 +342,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-22-1ad5cc054d",
@@ -1055,34 +367,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
-    },
-    {
-      "id": "moscow-2026-09-22-9f703f36f1",
-      "status": "new",
-      "city": "moscow",
-      "date": "2026-09-22",
-      "time": "12:00",
-      "title": "ПОДПИШИТЕСЬ И ПОЛУЧАЙТЕ НОВОСТИ МУЗЕЯ ПЕРВЫМИ",
-      "venue": "Еврейский музей и центр толерантности",
-      "address": "",
-      "price": 0,
-      "price_text": "Бесплатно",
-      "registration": false,
-      "categories": [
-        "лекция"
-      ],
-      "description": "",
-      "url": "https://www.jewish-museum.ru/events/",
-      "source": "Еврейский музей и центр толерантности",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "free",
-      "availability": "available",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-22-e059473ac6",
@@ -1107,7 +394,7 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-22-d68166d4a6",
@@ -1132,7 +419,32 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
+    },
+    {
+      "id": "moscow-2026-09-22-9f703f36f1",
+      "status": "new",
+      "city": "moscow",
+      "date": "2026-09-22",
+      "time": "12:00",
+      "title": "ПОДПИШИТЕСЬ И ПОЛУЧАЙТЕ НОВОСТИ МУЗЕЯ ПЕРВЫМИ",
+      "venue": "Еврейский музей и центр толерантности",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "",
+      "url": "https://www.jewish-museum.ru/events/",
+      "source": "Еврейский музей и центр толерантности",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-20",
+      "price_type": "unknown",
+      "availability": "available",
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-22-f8243a315b",
@@ -1153,9 +465,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-22-98f4534d25",
@@ -1178,9 +490,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-22-b0a577f9c8",
@@ -1201,9 +513,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-22-49536c3df4",
@@ -1226,9 +538,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-22-bfbb52e90f",
@@ -1251,9 +563,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-22-d5623dd3d1",
@@ -1276,9 +588,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-22-7b25a8552d",
@@ -1299,9 +611,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-22-088dbe346f",
@@ -1324,9 +636,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-22-beac1ca1b2",
@@ -1349,9 +661,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-22-66aeb6d7f9",
@@ -1376,7 +688,7 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-23-a460454ac2",
@@ -1401,7 +713,7 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-23-6c590d946b",
@@ -1422,9 +734,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-23-a7dd453c9e",
@@ -1447,9 +759,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-23-b6849502a8",
@@ -1472,9 +784,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-23-c3c03c7184",
@@ -1495,9 +807,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-23-95a53fda5e",
@@ -1520,9 +832,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-23-f8243a315b",
@@ -1543,9 +855,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-23-b0a577f9c8",
@@ -1566,9 +878,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-23-d5623dd3d1",
@@ -1591,9 +903,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-23-49536c3df4",
@@ -1616,9 +928,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-23-98f4534d25",
@@ -1641,9 +953,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-23-b68397e5ea",
@@ -1666,9 +978,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-23-6d04f355f9",
@@ -1689,9 +1001,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-23-6de6981347",
@@ -1714,9 +1026,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-23-8ce86966a0",
@@ -1739,34 +1051,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
-    },
-    {
-      "id": "moscow-2026-09-23-262c783235",
-      "status": "new",
-      "city": "moscow",
-      "date": "2026-09-23",
-      "time": "19:00",
-      "title": "альбома «Устье»",
-      "venue": "ГЭС-2",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": null,
-      "categories": [
-        "презентация"
-      ],
-      "description": "",
-      "url": "https://ges-2.org/presentation-of-the-album-estuary",
-      "source": "Дом культуры «ГЭС-2»",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "free",
-      "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-23-871bc9f917",
@@ -1791,32 +1078,32 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
-      "id": "moscow-2026-09-23-d234fed707",
+      "id": "moscow-2026-09-23-262c783235",
       "status": "new",
       "city": "moscow",
       "date": "2026-09-23",
-      "time": "19:30",
-      "title": "Расскажи матери. Фестиваль коллективных фильмов",
+      "time": "19:00",
+      "title": "альбома «Устье»",
       "venue": "ГЭС-2",
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": false,
+      "registration": null,
       "categories": [
-        "кинопоказ"
+        "презентация"
       ],
       "description": "",
-      "url": "https://ges-2.org/report-to-mother",
+      "url": "https://ges-2.org/presentation-of-the-album-estuary",
       "source": "Дом культуры «ГЭС-2»",
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-23-941e83b687",
@@ -1841,7 +1128,32 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
+    },
+    {
+      "id": "moscow-2026-09-23-d234fed707",
+      "status": "new",
+      "city": "moscow",
+      "date": "2026-09-23",
+      "time": "19:30",
+      "title": "Расскажи матери. Фестиваль коллективных фильмов",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "кинопоказ"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/report-to-mother",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-20",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-24-871cc42752",
@@ -1866,7 +1178,7 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-24-a71fc601ca",
@@ -1891,7 +1203,7 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-24-1738ddf153",
@@ -1916,7 +1228,7 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-24-6c590d946b",
@@ -1937,9 +1249,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-24-a7dd453c9e",
@@ -1962,9 +1274,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-24-6d8f1e6c5b",
@@ -1987,9 +1299,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-24-5c248a4939",
@@ -2012,9 +1324,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-24-f8243a315b",
@@ -2035,9 +1347,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-24-b0a577f9c8",
@@ -2058,9 +1370,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-24-98f4534d25",
@@ -2083,9 +1395,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-24-49536c3df4",
@@ -2108,9 +1420,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-24-bfbb52e90f",
@@ -2133,9 +1445,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-24-638a5b2462",
@@ -2158,9 +1470,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-24-088dbe346f",
@@ -2183,9 +1495,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-24-8f96d65fb8",
@@ -2208,34 +1520,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
-    },
-    {
-      "id": "moscow-2026-09-24-d5623dd3d1",
-      "status": "new",
-      "city": "moscow",
-      "date": "2026-09-24",
-      "time": "19:00",
-      "title": "ГЭС-2 / «ГЭС-2»: архитектурный тур",
-      "venue": "ГЭС-2",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": true,
-      "categories": [
-        "медиаторский тур"
-      ],
-      "description": "",
-      "url": "https://ges-2.org/ges-2-ges-2-house-of-culture-architectural-tour",
-      "source": "Дом культуры «ГЭС-2»",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "free",
-      "availability": "available",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-24-29688d075d",
@@ -2258,34 +1545,34 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
-      "id": "moscow-2026-09-24-b8287cb33b",
+      "id": "moscow-2026-09-24-d5623dd3d1",
       "status": "new",
       "city": "moscow",
       "date": "2026-09-24",
-      "time": "19:30",
-      "title": "и обсуждение Ночные уборщицы. Фестиваль коллективных фильмов",
+      "time": "19:00",
+      "title": "ГЭС-2 / «ГЭС-2»: архитектурный тур",
       "venue": "ГЭС-2",
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": false,
+      "registration": true,
       "categories": [
-        "кинопоказ"
+        "медиаторский тур"
       ],
       "description": "",
-      "url": "https://ges-2.org/nightcleaners",
+      "url": "https://ges-2.org/ges-2-ges-2-house-of-culture-architectural-tour",
       "source": "Дом культуры «ГЭС-2»",
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
-      "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "price_type": "unknown",
+      "availability": "available",
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-24-5da09dd28f",
@@ -2310,7 +1597,32 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
+    },
+    {
+      "id": "moscow-2026-09-24-b8287cb33b",
+      "status": "new",
+      "city": "moscow",
+      "date": "2026-09-24",
+      "time": "19:30",
+      "title": "и обсуждение Ночные уборщицы. Фестиваль коллективных фильмов",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "кинопоказ"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/nightcleaners",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-20",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-25-544123cac3",
@@ -2333,9 +1645,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-25-44d6d71884",
@@ -2358,7 +1670,7 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-25-6c590d946b",
@@ -2379,9 +1691,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-25-a7dd453c9e",
@@ -2404,9 +1716,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-25-b6849502a8",
@@ -2429,9 +1741,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-25-b904ea1219",
@@ -2454,9 +1766,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-25-f8243a315b",
@@ -2477,9 +1789,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-25-98f4534d25",
@@ -2502,9 +1814,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-25-49536c3df4",
@@ -2527,9 +1839,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-25-3ef80dda1a",
@@ -2552,9 +1864,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-25-00c85a88e1",
@@ -2577,9 +1889,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-25-d5623dd3d1",
@@ -2602,9 +1914,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-25-ebd40e5da6",
@@ -2627,7 +1939,7 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-25-b84b8776e1",
@@ -2650,9 +1962,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-25-2e4868afed",
@@ -2675,34 +1987,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
-    },
-    {
-      "id": "moscow-2026-09-25-6a4b9536e4",
-      "status": "new",
-      "city": "moscow",
-      "date": "2026-09-25",
-      "time": "19:30",
-      "title": "и обсуждение Иди Арнольд — неудачница. Фестиваль коллективных фильмов",
-      "venue": "ГЭС-2",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [
-        "кинопоказ"
-      ],
-      "description": "",
-      "url": "https://ges-2.org/edie-arnold-is-a-loser",
-      "source": "Дом культуры «ГЭС-2»",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "free",
-      "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-25-fe7411574e",
@@ -2727,7 +2014,32 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
+    },
+    {
+      "id": "moscow-2026-09-25-6a4b9536e4",
+      "status": "new",
+      "city": "moscow",
+      "date": "2026-09-25",
+      "time": "19:30",
+      "title": "и обсуждение Иди Арнольд — неудачница. Фестиваль коллективных фильмов",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "кинопоказ"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/edie-arnold-is-a-loser",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-20",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-26-6c590d946b",
@@ -2748,9 +2060,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-26-a7dd453c9e",
@@ -2773,9 +2085,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-26-64aa698d00",
@@ -2798,32 +2110,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
-    },
-    {
-      "id": "moscow-2026-09-26-a85661752b",
-      "status": "new",
-      "city": "moscow",
-      "date": "2026-09-26",
-      "time": "11:30",
-      "title": "Спектакль Жу-жа",
-      "venue": "ГЭС-2",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [],
-      "description": "",
-      "url": "https://ges-2.org/bzzz-bzzz",
-      "source": "Дом культуры «ГЭС-2»",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "free",
-      "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-26-c9da658187",
@@ -2848,7 +2137,30 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
+    },
+    {
+      "id": "moscow-2026-09-26-a85661752b",
+      "status": "new",
+      "city": "moscow",
+      "date": "2026-09-26",
+      "time": "11:30",
+      "title": "Спектакль Жу-жа",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [],
+      "description": "",
+      "url": "https://ges-2.org/bzzz-bzzz",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-20",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-26-e9d5bc835b",
@@ -2871,9 +2183,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-26-ac72328fe4",
@@ -2894,9 +2206,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-26-7d7476e729",
@@ -2919,9 +2231,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-26-e37ff84921",
@@ -2944,9 +2256,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-26-f8243a315b",
@@ -2967,9 +2279,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-26-a9cb5c29e5",
@@ -2994,7 +2306,7 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-26-49536c3df4",
@@ -3017,9 +2329,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-26-7a4e3eba13",
@@ -3042,9 +2354,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-26-b2ea5dda72",
@@ -3067,34 +2379,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
-    },
-    {
-      "id": "moscow-2026-09-26-e0d50e68a0",
-      "status": "new",
-      "city": "moscow",
-      "date": "2026-09-26",
-      "time": "15:00",
-      "title": "Домашний театр",
-      "venue": "ГЭС-2",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": null,
-      "categories": [
-        "лаборатория"
-      ],
-      "description": "",
-      "url": "https://ges-2.org/home-theatre",
-      "source": "Дом культуры «ГЭС-2»",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "free",
-      "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-26-2d76447a27",
@@ -3117,34 +2404,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
-    },
-    {
-      "id": "moscow-2026-09-26-5234ff6c37",
-      "status": "new",
-      "city": "moscow",
-      "date": "2026-09-26",
-      "time": "15:00",
-      "title": "Хочу в Рощу! Дневник юного натуралиста",
-      "venue": "ГЭС-2",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": null,
-      "categories": [
-        "медиаторский тур"
-      ],
-      "description": "",
-      "url": "https://ges-2.org/i-want-to-go-to-the-forest",
-      "source": "Дом культуры «ГЭС-2»",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "free",
-      "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-26-5765c5b822",
@@ -3169,7 +2431,32 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
+    },
+    {
+      "id": "moscow-2026-09-26-e0d50e68a0",
+      "status": "new",
+      "city": "moscow",
+      "date": "2026-09-26",
+      "time": "15:00",
+      "title": "Домашний театр",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лаборатория"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/home-theatre",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-20",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-26-7d1e168ef9",
@@ -3194,7 +2481,32 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
+    },
+    {
+      "id": "moscow-2026-09-26-5234ff6c37",
+      "status": "new",
+      "city": "moscow",
+      "date": "2026-09-26",
+      "time": "15:00",
+      "title": "Хочу в Рощу! Дневник юного натуралиста",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "медиаторский тур"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/i-want-to-go-to-the-forest",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-20",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-26-6523bff9f3",
@@ -3215,9 +2527,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-26-3228c9644f",
@@ -3240,34 +2552,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
-    },
-    {
-      "id": "moscow-2026-09-26-6de6981347",
-      "status": "new",
-      "city": "moscow",
-      "date": "2026-09-26",
-      "time": "17:00",
-      "title": "Контуры моды",
-      "venue": "ГЭС-2",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": true,
-      "categories": [
-        "медиаторский тур"
-      ],
-      "description": "",
-      "url": "https://ges-2.org/fashion-contours",
-      "source": "Дом культуры «ГЭС-2»",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "free",
-      "availability": "available",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-26-39f6ae3369",
@@ -3292,7 +2579,32 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
+    },
+    {
+      "id": "moscow-2026-09-26-6de6981347",
+      "status": "new",
+      "city": "moscow",
+      "date": "2026-09-26",
+      "time": "17:00",
+      "title": "Контуры моды",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": true,
+      "categories": [
+        "медиаторский тур"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/fashion-contours",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-20",
+      "price_type": "unknown",
+      "availability": "available",
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-26-98f4534d25",
@@ -3315,9 +2627,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-26-d5623dd3d1",
@@ -3340,9 +2652,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-26-ea3bd1e745",
@@ -3365,9 +2677,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-27-ba096a6320",
@@ -3388,9 +2700,9 @@
       "checked_at": "",
       "review_reason": "year_not_explicit_on_primary_listing",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-27-6c590d946b",
@@ -3411,9 +2723,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-27-a7dd453c9e",
@@ -3436,57 +2748,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
-    },
-    {
-      "id": "moscow-2026-09-27-39e0b35117",
-      "status": "new",
-      "city": "moscow",
-      "date": "2026-09-27",
-      "time": "11:30",
-      "title": "Почва для размышлений",
-      "venue": "ГЭС-2",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": null,
-      "categories": [
-        "игра"
-      ],
-      "description": "",
-      "url": "https://ges-2.org/ground-for-thought",
-      "source": "Дом культуры «ГЭС-2»",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "free",
-      "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
-    },
-    {
-      "id": "moscow-2026-09-27-00df913bfb",
-      "status": "new",
-      "city": "moscow",
-      "date": "2026-09-27",
-      "time": "11:30",
-      "title": "Практика Семейная йога",
-      "venue": "ГЭС-2",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [],
-      "description": "",
-      "url": "https://ges-2.org/family-yoga",
-      "source": "Дом культуры «ГЭС-2»",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "free",
-      "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-27-9153dd8bbf",
@@ -3511,7 +2775,55 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
+    },
+    {
+      "id": "moscow-2026-09-27-39e0b35117",
+      "status": "new",
+      "city": "moscow",
+      "date": "2026-09-27",
+      "time": "11:30",
+      "title": "Почва для размышлений",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "игра"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/ground-for-thought",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-20",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21"
+    },
+    {
+      "id": "moscow-2026-09-27-00df913bfb",
+      "status": "new",
+      "city": "moscow",
+      "date": "2026-09-27",
+      "time": "11:30",
+      "title": "Практика Семейная йога",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [],
+      "description": "",
+      "url": "https://ges-2.org/family-yoga",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-20",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-27-a4e875c14e",
@@ -3536,7 +2848,7 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-27-368f303916",
@@ -3561,7 +2873,7 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-27-e37ff84921",
@@ -3584,9 +2896,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-27-f8243a315b",
@@ -3607,9 +2919,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-27-49536c3df4",
@@ -3632,9 +2944,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-27-c939da139e",
@@ -3657,9 +2969,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-27-98f4534d25",
@@ -3682,34 +2994,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
-    },
-    {
-      "id": "moscow-2026-09-27-599ec023be",
-      "status": "new",
-      "city": "moscow",
-      "date": "2026-09-27",
-      "time": "16:00",
-      "title": "и обсуждение Погоня за тенью. Фестиваль коллективных фильмов",
-      "venue": "ГЭС-2",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [
-        "кинопоказ"
-      ],
-      "description": "",
-      "url": "https://ges-2.org/shadowbox",
-      "source": "Дом культуры «ГЭС-2»",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "free",
-      "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-27-b062c1b704",
@@ -3734,7 +3021,32 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
+    },
+    {
+      "id": "moscow-2026-09-27-599ec023be",
+      "status": "new",
+      "city": "moscow",
+      "date": "2026-09-27",
+      "time": "16:00",
+      "title": "и обсуждение Погоня за тенью. Фестиваль коллективных фильмов",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "кинопоказ"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/shadowbox",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-20",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-27-d5623dd3d1",
@@ -3757,9 +3069,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-27-088dbe346f",
@@ -3782,9 +3094,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-27-06d3220065",
@@ -3807,9 +3119,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-28-6c590d946b",
@@ -3830,9 +3142,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-28-a7dd453c9e",
@@ -3855,59 +3167,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
-    },
-    {
-      "id": "moscow-2026-09-28-b6849502a8",
-      "status": "new",
-      "city": "moscow",
-      "date": "2026-09-28",
-      "time": "12:00",
-      "title": "в «Сводах»",
-      "venue": "ГЭС-2",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [
-        "мастер-класс"
-      ],
-      "description": "",
-      "url": "https://ges-2.org/vaults-masterclass-in-manual-optical-black-and-white-photo-printing",
-      "source": "Дом культуры «ГЭС-2»",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "free",
-      "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
-    },
-    {
-      "id": "moscow-2026-09-28-797dbf3fdd",
-      "status": "new",
-      "city": "moscow",
-      "date": "2026-09-28",
-      "time": "12:00",
-      "title": "Пианистка: кинопоказ и вступительная лекция",
-      "venue": "Еврейский музей и центр толерантности",
-      "address": "",
-      "price": 350,
-      "price_text": "",
-      "registration": false,
-      "categories": [
-        "лекция"
-      ],
-      "description": "350 ₽ - Полный 250 ₽ - Льготный Смотрим фильм-фаворит в Каннах 2001 года, драму Михаэля Ханеке про любовь и садомазохизм * билеты на кинопоказ можно пробрести только онлайн Режиссер: Михаэль Ханеке Страна: Франция, Австрия, Германия Год: 2001 Хронометраж: 2 часа 11 минут Эрика - профессор Венской консерватории. Но сама она далека от гармонии небесных сфер. Женщина всё ещё спит в одной кровати со старенькой матерью, тайно посещает порномагазины и под кроватью держит набор садомазохистских инструментов. Когда же в неё влюбляется один из учеников, она шокирует его своими желаниями. «Пианистка» — самый знаменитый фильм Михаэля Ханеке, подаривш...",
-      "url": "https://www.jewish-museum.ru/events/pianistka-kinopokaz-i-lektsiya/",
-      "source": "Еврейский музей и центр толерантности",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "paid",
-      "availability": "available",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-28-4a355bdda9",
@@ -3932,7 +3194,57 @@
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
+    },
+    {
+      "id": "moscow-2026-09-28-797dbf3fdd",
+      "status": "new",
+      "city": "moscow",
+      "date": "2026-09-28",
+      "time": "12:00",
+      "title": "Пианистка: кинопоказ и вступительная лекция",
+      "venue": "Еврейский музей и центр толерантности",
+      "address": "",
+      "price": 350,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "350 ₽ - Полный 250 ₽ - Льготный Смотрим фильм-фаворит в Каннах 2001 года, драму Михаэля Ханеке про любовь и садомазохизм * билеты на кинопоказ можно пробрести только онлайн Режиссер: Михаэль Ханеке Страна: Франция, Австрия, Германия Год: 2001 Хронометраж: 2 часа 11 минут Эрика - профессор Венской консерватории. Но сама она далека от гармонии небесных сфер. Женщина всё ещё спит в одной кровати со старенькой матерью, тайно посещает порномагазины и под кроватью держит набор садомазохистских инструментов. Когда же в неё влюбляется один из учеников, она шокирует его своими желаниями. «Пианистка» — самый знаменитый фильм Михаэля Ханеке, подаривш...",
+      "url": "https://www.jewish-museum.ru/events/pianistka-kinopokaz-i-lektsiya/",
+      "source": "Еврейский музей и центр толерантности",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-20",
+      "price_type": "unknown",
+      "availability": "available",
+      "availability_checked_at": "2026-09-21"
+    },
+    {
+      "id": "moscow-2026-09-28-b6849502a8",
+      "status": "new",
+      "city": "moscow",
+      "date": "2026-09-28",
+      "time": "12:00",
+      "title": "в «Сводах»",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/vaults-masterclass-in-manual-optical-black-and-white-photo-printing",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-20",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-28-f8243a315b",
@@ -3953,9 +3265,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-28-49536c3df4",
@@ -3978,9 +3290,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-28-93a8954838",
@@ -4003,57 +3315,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
-    },
-    {
-      "id": "moscow-2026-09-29-6c590d946b",
-      "status": "new",
-      "city": "moscow",
-      "date": "2026-09-29",
-      "time": "11:00",
-      "title": "Инсталляция Александра Сухарева. Начала",
-      "venue": "ГЭС-2",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": null,
-      "categories": [],
-      "description": "",
-      "url": "https://ges-2.org/alexandra-sukhareva-beginnings",
-      "source": "Дом культуры «ГЭС-2»",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "free",
-      "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
-    },
-    {
-      "id": "moscow-2026-09-29-a7dd453c9e",
-      "status": "new",
-      "city": "moscow",
-      "date": "2026-09-29",
-      "time": "11:00",
-      "title": "Формы касаний. Все люди красивые",
-      "venue": "ГЭС-2",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": null,
-      "categories": [
-        "выставка"
-      ],
-      "description": "",
-      "url": "https://ges-2.org/forms-of-touch-all-people-are-beautiful",
-      "source": "Дом культуры «ГЭС-2»",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-20",
-      "price_type": "free",
-      "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-29-b6849502a8",
@@ -4076,9 +3340,57 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "paid",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
+    },
+    {
+      "id": "moscow-2026-09-29-6c590d946b",
+      "status": "new",
+      "city": "moscow",
+      "date": "2026-09-29",
+      "time": "11:00",
+      "title": "Инсталляция Александра Сухарева. Начала",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "",
+      "url": "https://ges-2.org/alexandra-sukhareva-beginnings",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-20",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21"
+    },
+    {
+      "id": "moscow-2026-09-29-a7dd453c9e",
+      "status": "new",
+      "city": "moscow",
+      "date": "2026-09-29",
+      "time": "11:00",
+      "title": "Формы касаний. Все люди красивые",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "выставка"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/forms-of-touch-all-people-are-beautiful",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-20",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-29-1ad5cc054d",
@@ -4101,9 +3413,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-29-0bf6486c05",
@@ -4124,9 +3436,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-29-49536c3df4",
@@ -4149,9 +3461,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-29-7b25a8552d",
@@ -4172,9 +3484,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-29-7ad1005e5b",
@@ -4197,9 +3509,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-30-c9241e0c3a",
@@ -4220,9 +3532,9 @@
       "checked_at": "",
       "review_reason": "year_not_explicit_on_primary_listing",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-30-6c590d946b",
@@ -4243,9 +3555,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-30-b6849502a8",
@@ -4268,9 +3580,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-30-47a0fc16a5",
@@ -4295,7 +3607,7 @@
       "discovered_at": "2026-09-20",
       "price_type": "free",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-30-4719b75fe3",
@@ -4318,9 +3630,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "paid",
+      "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-30-0bf6486c05",
@@ -4341,9 +3653,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-30-6d04f355f9",
@@ -4364,9 +3676,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-30-49536c3df4",
@@ -4389,9 +3701,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-30-dd011f058a",
@@ -4412,9 +3724,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-30-f4943d0461",
@@ -4437,9 +3749,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-10-02-398c972a62",
@@ -4462,9 +3774,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-10-04-4ad69d5bbb",
@@ -4487,7 +3799,7 @@
       "discovered_at": "2026-09-20",
       "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-10-05-dba338c92d",
@@ -4508,9 +3820,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-10-08-e986b2b5f1",
@@ -4535,7 +3847,7 @@
       "discovered_at": "2026-09-20",
       "price_type": "free",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-10-09-d06bdbac9d",
@@ -4558,9 +3870,9 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "free",
+      "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-10-14-1b4d82cf46",
@@ -4583,7 +3895,7 @@
       "discovered_at": "2026-09-20",
       "price_type": "free",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-10-16-b6a9240955",
@@ -4606,7 +3918,7 @@
       "discovered_at": "2026-09-20",
       "price_type": "paid",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-20"
+      "availability_checked_at": "2026-09-21"
     }
   ]
 }

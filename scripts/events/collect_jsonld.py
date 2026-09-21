@@ -486,18 +486,21 @@ def extract_open_call_listing(html, src):
         dt=parse_deadline(txt)
         if not dt or dt<today:
             continue
+
+        detail_text=""
+        detail_title=""
+        try:
+            detail_html=fetch(full)
+            detail_soup=BeautifulSoup(detail_html,"html.parser")
+            h=detail_soup.find("h1") or detail_soup.find("h2")
+            detail_title=clean(h.get_text(" ",strip=True)) if h else ""
+            detail_text=clean(detail_soup.get_text(" ",strip=True))
+        except Exception as e:
+            print(f"WARN open call detail {full}: {e}",file=sys.stderr)
+
         title=normalize_anchor_title(a)
         if not title or title.lower() in SKIP_TITLES or len(title)<6:
-            title=""
-            try:
-                detail_html=fetch(full)
-                detail_soup=BeautifulSoup(detail_html,"html.parser")
-                h=detail_soup.find("h1") or detail_soup.find("h2")
-                candidate=clean(h.get_text(" ",strip=True)) if h else ""
-                if candidate and candidate.lower() not in SKIP_TITLES and len(candidate)>=6:
-                    title=candidate
-            except Exception:
-                pass
+            title=detail_title
             if not title:
                 for h in block.find_all(["h2","h3","h4"]):
                     t=clean(h.get_text(" ",strip=True))
@@ -505,14 +508,18 @@ def extract_open_call_listing(html, src):
                         title=t; break
         if not title or title.lower() in SKIP_TITLES or len(title)<6:
             continue
+
         key=(dt.isoformat(),full,title)
         if key in seen: continue
         seen.add(key)
-        desc=txt.replace(title,"",1).strip()
-        if len(desc)>650: desc=desc[:647].rstrip()+"..."
+
+        desc=(detail_text or txt).replace(title,"",1).strip()
+        if len(desc)>3000:
+            desc=desc[:2997].rstrip()+"..."
+        price,price_text=parse_price(detail_text or txt)
         out.append(make_event(
             src,dt.isoformat(),"",title,full,desc,
-            venue=src.get("venue",""),price=None,price_text="",registration=None,
+            venue=src.get("venue",""),price=price,price_text=price_text,registration=None,
             categories=["open-call"],status="check",
             reason="discovery_source_needs_primary_verification"
         ))

@@ -97,6 +97,7 @@ def make_event(src, dt, tm, title, url, description="", venue="", address="", pr
     return {
         "id": stable_id(src["city"], dt, title),
         "status": status,
+        "kind": src.get("kind","event"),
         "city": src["city"],
         "date": dt,
         "time": tm,

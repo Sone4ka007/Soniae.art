@@ -56,6 +56,11 @@ TOUR_KEEP=(
 )
 EXHIBITION_HINTS=("выставка","exhibition")
 
+HARD_DROP_URLS={
+    "https://ges-2.org/concert-hall",
+    "https://ges-2.org/programme",
+}
+
 def main():
     db=json.loads(DB.read_text("utf-8")); changed=0
     seen={}
@@ -114,6 +119,9 @@ def main():
                 e["status"]="rejected"; e["review_reason"]="excluded_paid_open_call"; changed+=1; continue
         if problems and e.get("status")=="new":
             e["status"]="check"; e["review_reason"]=", ".join(problems); changed+=1
+    before_drop=len(db.get("events",[]))
+    db["events"]=[e for e in db.get("events",[]) if str(e.get("url","")).strip().lower() not in HARD_DROP_URLS]
+    hard_dropped=before_drop-len(db["events"])
     DB.write_text(json.dumps(db,ensure_ascii=False,indent=2)+"\n","utf-8")
-    print(f"Validation changes: {changed}")
+    print(f"Validation changes: {changed}; hard-dropped: {hard_dropped}")
 if __name__=="__main__": main()

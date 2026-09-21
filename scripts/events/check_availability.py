@@ -77,16 +77,21 @@ def main():
     kept=[]
 
     for e in db.get("events",[]):
-        if e.get("kind") not in ("event","open_call"):
+        if e.get("kind") not in ("event","exhibition","open_call"):
             e["kind"]="event"
         title_blob=str(e.get("title","")).lower()
         if any(x in title_blob for x in OPEN_CALL_HINTS):
             e["kind"]="open_call"
+        elif e.get("kind") != "open_call" and (
+            "выставка" in title_blob or "exhibition" in title_blob or
+            any(str(x).lower() in ("выставка","exhibition") for x in (e.get("categories") or []))
+        ):
+            e["kind"]="exhibition"
         try:
             d=date.fromisoformat(e.get("date",""))
         except Exception:
             kept.append(e); continue
-        horizon=today+timedelta(days=90 if e.get("kind")=="open_call" else 30)
+        horizon=today+timedelta(days=90 if e.get("kind") in ("open_call","exhibition") else 30)
         if today <= d <= horizon:
             e["price_type"]=classify_price(e)
             kept.append(e)

@@ -95,10 +95,18 @@ def main():
         items=sorted(items,key=lambda x:x.get("date",""))
         rep=items[0]
         dates=[x.get("date") for x in items if re.fullmatch(r"20\d\d-\d\d-\d\d",str(x.get("date","")))]
+        explicit_starts=[x.get("start_date") for x in items if re.fullmatch(r"20\d\d-\d\d-\d\d",str(x.get("start_date","")))]
+        explicit_ends=[x.get("end_date") for x in items if re.fullmatch(r"20\d\d-\d\d-\d\d",str(x.get("end_date","")))]
+        if explicit_starts:
+            rep["start_date"]=min(explicit_starts)
+        else:
+            rep.pop("start_date",None)
+        if explicit_ends:
+            rep["end_date"]=max(explicit_ends)
+        else:
+            rep.pop("end_date",None)
         if dates:
-            rep["start_date"]=min(dates)
-            rep["end_date"]=max(dates)
-            rep["date"]=rep["start_date"]
+            rep["date"]=min(dates)
         rep["time"]=""
         # Preserve explicit editor decisions across duplicate occurrences.
         if any(x.get("status")=="approved" for x in items):

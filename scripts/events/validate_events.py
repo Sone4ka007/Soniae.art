@@ -5,6 +5,9 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[2]; DB=ROOT/"content/events.json"
 
 EXCLUDE=("алим велитов","alim velitov")
+STALE_EXACT_TITLES=(
+    "специальный показ с the blueprint. сделано в милане: история армани и итальянской моды",
+)
 PLEIN=("пленэр","пленер","plein air","plein-air")
 GELD=("алексей гельд","лёша гельд","леша гельд","alexey geld")
 
@@ -61,6 +64,8 @@ def main():
         if key in seen: problems.append("possible_duplicate")
         else: seen[key]=e.get("id")
         editable_status=e.get("status") in ("new","check")
+        if editable_status and title_blob in STALE_EXACT_TITLES:
+            e["status"]="rejected"; e["review_reason"]="excluded_stale_event"; changed+=1; continue
         if editable_status and any(x in blob for x in EXCLUDE):
             e["status"]="rejected"; e["review_reason"]="excluded_person"; changed+=1; continue
         if editable_status and any(x in blob for x in PLEIN) and not any(x in blob for x in GELD):

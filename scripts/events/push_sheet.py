@@ -8,8 +8,8 @@ ROOT=Path(__file__).resolve().parents[2]
 DB=ROOT/"content/events.json"
 SHEET_ID=os.environ["EVENTS_SHEET_ID"]
 CREDS=json.loads(os.environ["GOOGLE_SERVICE_ACCOUNT_JSON"])
-RANGE="Events!A:V"
-HEADERS=["id","status","city","date","time","title","venue","address","price","price_text","price_type","registration","availability","availability_checked_at","categories","description","url","source","checked_at","review_reason","editor_note","days_ahead"]
+RANGE="Events!A:W"
+HEADERS=["id","status","city","date","time","title","venue","address","price","price_text","price_type","registration","availability","availability_checked_at","categories","description","url","source","checked_at","review_reason","editor_note","days_ahead","kind"]
 
 def service():
     scopes=["https://www.googleapis.com/auth/spreadsheets"]
@@ -76,7 +76,7 @@ def main():
             e.get("availability","unknown"),e.get("availability_checked_at",""),
             ",".join(e.get("categories",[])) if isinstance(e.get("categories"),list) else e.get("categories",""),
             e.get("description",""),e.get("url",""),e.get("source",""),e.get("checked_at",""),
-            e.get("review_reason",""),e.get("editor_note",""),days
+            e.get("review_reason",""),e.get("editor_note",""),days,e.get("kind","event")
         ])
 
     api.clear(spreadsheetId=SHEET_ID,range=RANGE,body={}).execute()
@@ -85,7 +85,7 @@ def main():
     meta=svc.spreadsheets().get(spreadsheetId=SHEET_ID,fields="sheets(properties(sheetId,title))").execute()
     sheet_id=next(s["properties"]["sheetId"] for s in meta["sheets"] if s["properties"]["title"]=="Events")
     requests=[
-      {"setBasicFilter":{"filter":{"range":{"sheetId":sheet_id,"startRowIndex":0,"startColumnIndex":0,"endColumnIndex":22}}}},
+      {"setBasicFilter":{"filter":{"range":{"sheetId":sheet_id,"startRowIndex":0,"startColumnIndex":0,"endColumnIndex":23}}}},
       {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":1,"endColumnIndex":2},
         "rule":{"condition":{"type":"ONE_OF_LIST","values":[{"userEnteredValue":x} for x in ["new","check","approved","rejected"]]},"strict":True,"showCustomUi":True}}},
       {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":2,"endColumnIndex":3},

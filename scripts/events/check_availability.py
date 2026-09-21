@@ -49,10 +49,17 @@ def inspect_url(url):
         text=re.sub(r"<[^>]+>"," ",html)
         text=re.sub(r"\s+"," ",text).lower()
         availability="unknown"
-        if any(re.search(p,text,re.I) for p in SOLD_OUT):
-            availability="sold_out"
-        elif any(re.search(p,text,re.I) for p in AVAILABLE):
+        has_active_action=any(re.search(p,text,re.I) for p in AVAILABLE)
+        hard_sold_out=any(re.search(p,text,re.I) for p in (
+            r"билетов нет",r"мест нет",r"sold\s*out",r"распродано",r"места закончились"
+        ))
+        soft_closed=any(re.search(p,text,re.I) for p in (
+            r"регистрация закрыта",r"регистрац(?:ия|ию) завершен",r"набор закрыт"
+        ))
+        if has_active_action:
             availability="available"
+        elif hard_sold_out or soft_closed:
+            availability="sold_out"
         has_reg=any(re.search(p,text,re.I) for p in REG_HINTS)
         has_ticket=any(re.search(p,text,re.I) for p in TICKET_HINTS)
         explicit_free=bool(re.search(

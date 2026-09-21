@@ -33,7 +33,7 @@ SKIP_TITLES = {
     "купить билет","купить билеты","зарегистрироваться","регистрация","подать заявку",
     "подробнее","все события","смотреть все","архив","читать далее","показать ещё",
     "показать еще","единый билет","следующий день","предыдущий день",
-    "more details","see more","learn more"
+    "more details","see more","learn more","условия участия"
 }
 
 def load_json(path, default):
@@ -248,6 +248,16 @@ def extract_event_links(html, src):
             t=clean(h.get_text(" ",strip=True))
             if len(t)>=8 and not t.startswith("#") and t.lower() not in SKIP_TITLES and t.lower() not in EVENT_TYPES:
                 title=t; break
+        if not title:
+            meta=dsoup.find("meta",attrs={"property":"og:title"}) or dsoup.find("meta",attrs={"name":"twitter:title"})
+            candidate=clean(meta.get("content","")) if meta else ""
+            if candidate and candidate.lower() not in SKIP_TITLES:
+                title=candidate
+        if not title and dsoup.title:
+            candidate=clean(dsoup.title.get_text(" ",strip=True))
+            candidate=re.sub(r"\s*[|—-]\s*Музей.*$","",candidate,flags=re.I)
+            if candidate and candidate.lower() not in SKIP_TITLES:
+                title=candidate
         if not title:
             continue
         tm=parse_time(dtext[:1800])

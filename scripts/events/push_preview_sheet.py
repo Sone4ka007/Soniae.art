@@ -17,10 +17,43 @@ def service():
     return build("sheets","v4",credentials=creds,cache_discovery=False)
 
 def main():
+    svc=service()
+    sheets=svc.spreadsheets()
+
+    # GES-2 frequently exposes the same programme page on many calendar dates.
+    # If an editor has already made a final decision for that page in Events,
+    # do not send the same URL back to Preview v2 for another date.
+    decided_ges2_urls=set()
+    live=sheets.values().get(spreadsheetId=SHEET_ID,range="Events!A:Z").execute().get("values",[])
+    if live:
+        headers=live[0]
+        for raw in live[1:]:
+            row=dict(zip(headers,raw+[""]*(len(headers)-len(raw))))
+            status=str(row.get("status","")).strip().lower()
+            url=str(row.get("url","")).strip().lower()
+            source=str(row.get("source","")).lower()
+            venue=str(row.get("venue","")).lower()
+            if status in ("approved","rejected") and url and (
+                "гэс-2" in source or "гэс-2" in venue or "ges-2.org" in url
+            ):
+                decided_ges2_urls.add(url)
+
     db=json.loads(DB.read_text("utf-8"))
     priority={"new":0,"check":1,"approved":2,"rejected":3}
+    actionable=[]
+    for e in db.get("events",[]):
+        if e.get("status") not in ("new","check"):
+            continue
+        url=str(e.get("url","")).strip().lower()
+        source=str(e.get("source","")).lower()
+        venue=str(e.get("venue","")).lower()
+        is_ges2=("гэс-2" in source or "гэс-2" in venue or "ges-2.org" in url)
+        if is_ges2 and url in decided_ges2_urls:
+            continue
+        actionable.append(e)
+
     events=sorted(
-        [e for e in db.get("events",[]) if e.get("status") in ("new","check")],
+        actionable,
         key=lambda e:(
             priority.get(e.get("status","new"),9),
             e.get("start_date") or e.get("date",""),
@@ -46,8 +79,6 @@ def main():
             e.get("review_reason",""),
         ])
 
-    svc=service()
-    sheets=svc.spreadsheets()
     meta=sheets.get(spreadsheetId=SHEET_ID,fields="sheets(properties(sheetId,title))").execute()
     match=[s for s in meta["sheets"] if s["properties"]["title"]==SHEET_TITLE]
     if not match:

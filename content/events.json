@@ -11,9 +11,9 @@
       "title": "Инсталляция Александра Сухарева. Начала",
       "venue": "ГЭС-2",
       "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": null,
+      "price": 0,
+      "price_text": "Бесплатно по регистрации",
+      "registration": true,
       "categories": [
         "выставка"
       ],
@@ -23,12 +23,14 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-21",
       "kind": "exhibition",
       "editor_note": "",
-      "reviewed_at": "2026-09-21"
+      "reviewed_at": "2026-09-21",
+      "start_date": "",
+      "end_date": ""
     },
     {
       "id": "moscow-2026-09-21-a7dd453c9e",
@@ -39,9 +41,9 @@
       "title": "Формы касаний. Все люди красивые",
       "venue": "ГЭС-2",
       "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": null,
+      "price": 0,
+      "price_text": "Бесплатно по регистрации",
+      "registration": true,
       "categories": [
         "выставка"
       ],
@@ -51,7 +53,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-21",
       "kind": "exhibition",
@@ -69,7 +71,7 @@
       "venue": "Центр Зотов",
       "address": "",
       "price": null,
-      "price_text": "",
+      "price_text": "По билету",
       "registration": false,
       "categories": [
         "выставка"
@@ -80,7 +82,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-21",
-      "price_type": "unknown",
+      "price_type": "paid",
       "availability": "available",
       "availability_checked_at": "2026-09-21",
       "kind": "exhibition",
@@ -1695,11 +1697,11 @@
       "city": "moscow",
       "date": "2026-09-25",
       "time": "",
-      "title": "УСЛОВИЯ УЧАСТИЯ",
+      "title": "Прием заявок на участие в онлайн-лаборатории программы «Новые медиа» Музея «Гараж» 2026 года",
       "venue": "Музей «Гараж»",
       "address": "",
-      "price": null,
-      "price_text": "",
+      "price": 0,
+      "price_text": "Бесплатно",
       "registration": true,
       "categories": [
         "лаборатория"
@@ -1710,10 +1712,10 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-09-20",
-      "price_type": "paid",
+      "price_type": "free",
       "availability": "available",
       "availability_checked_at": "2026-09-21",
-      "kind": "event",
+      "kind": "open_call",
       "editor_note": ""
     },
     {

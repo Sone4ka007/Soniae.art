@@ -12,7 +12,8 @@ CHILD=(
     "игровая","детский клуб","семейная мастерская","семейная лаборатория",
     "дети и подростки"
 )
-AGE=re.compile(r"(?:возраст|дети|подростки)?[^\d]{0,20}(\d{1,2})\s*[-–—]\s*(\d{1,2})(?:\s*(?:лет|года?))?",re.I)
+AGE_YEARS=re.compile(r"(?<!\d)(\d{1,2})\s*[-–—]\s*(\d{1,2})\s*(?:лет|года?)\b",re.I)
+AGE_CONTEXT=re.compile(r"(?:возраст|дети|подростки)[^\d]{0,20}(\d{1,2})\s*[-–—]\s*(\d{1,2})",re.I)
 
 def norm(s):
     return re.sub(r"\W+","",str(s or "").lower().replace("ё","е"))
@@ -50,7 +51,7 @@ for e in events:
             str(e.get("audience_text","")),
             " ".join(str(x) for x in (e.get("categories") or []))
         ]).lower()
-        m=AGE.search(blob)
+        m=AGE_YEARS.search(blob) or AGE_CONTEXT.search(blob)
         youth=bool(m and int(m.group(1))<18)
         if any(x in blob for x in CHILD) or youth:
             errors.append(f"child candidate not rejected: {e.get('id')} {title}")

@@ -532,6 +532,31 @@ def extract_mamm(html, src):
                               price=price,price_text=price_text,registration=reg))
     return out
 
+def open_call_summary(soup, title, fallback=""):
+    text=clean(soup.get_text(" ",strip=True)) if soup else clean(fallback)
+    # Ewert pages contain a concise editorial lead between the arrow and "О конкурсе".
+    m=re.search(r"↓\s*(.+?)\s+О конкурсе\b",text,re.I)
+    if m:
+        summary=clean(m.group(1))
+        if len(summary)>=60:
+            return summary[:520].rstrip()
+    # Prefer an actual content paragraph over navigation/breadcrumb text.
+    if soup:
+        for p in soup.find_all("p"):
+            t=clean(p.get_text(" ",strip=True))
+            low=t.lower()
+            if (len(t)>=80 and title.lower() not in low and
+                not any(x in low for x in ("перейти к содержимому","политика конфиденциальности",
+                                           "подписаться","все конкурсы","афиша на почту"))):
+                return t[:520].rstrip()
+        meta=soup.find("meta",attrs={"name":"description"}) or soup.find("meta",attrs={"property":"og:description"})
+        if meta:
+            t=clean(meta.get("content",""))
+            if len(t)>=60:
+                return t[:520].rstrip()
+    t=clean(fallback)
+    return t[:520].rstrip()
+
 def extract_open_call_listing(html, src):
     soup=BeautifulSoup(html,"html.parser")
     out=[]; seen=set(); today=date.today()
@@ -582,9 +607,7 @@ def extract_open_call_listing(html, src):
         if key in seen: continue
         seen.add(key)
 
-        desc=(detail_text or txt).replace(title,"",1).strip()
-        if len(desc)>3000:
-            desc=desc[:2997].rstrip()+"..."
+        desc=open_call_summary(detail_soup if detail_text else None,title,txt)
         price,price_text=parse_price(detail_text or txt)
         out.append(make_event(
             src,dt.isoformat(),"",title,full,desc,

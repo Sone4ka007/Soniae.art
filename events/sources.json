@@ -134,7 +134,9 @@
       "adapter": "event_links",
       "href_contains": [
         "/visit/events/"
-      ]
+      ],
+      "max_detail_pages": 40,
+      "detail_workers": 8
     },
     {
       "name": "ММОМА — выставки",
@@ -145,7 +147,9 @@
       "href_contains": [
         "/visit/gallery/"
       ],
-      "kind": "exhibition"
+      "kind": "exhibition",
+      "max_detail_pages": 40,
+      "detail_workers": 8
     },
     {
       "name": "ЦСИ Винзавод",
@@ -160,7 +164,9 @@
         "/calendar/",
         "/calendar/tour/",
         "/calendar/play/"
-      ]
+      ],
+      "max_detail_pages": 40,
+      "detail_workers": 8
     },
     {
       "name": "ГМИИ им. А.С. Пушкина",
@@ -170,7 +176,9 @@
       "adapter": "event_links",
       "href_contains": [
         "/events/archive/2026/"
-      ]
+      ],
+      "max_detail_pages": 40,
+      "detail_workers": 8
     }
   ]
 }

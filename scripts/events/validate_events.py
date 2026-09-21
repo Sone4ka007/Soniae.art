@@ -88,6 +88,11 @@ def main():
         editable_status=e.get("status") in ("new","check")
         if editable_status and title_blob in STALE_EXACT_TITLES:
             e["status"]="rejected"; e["review_reason"]="excluded_stale_event"; changed+=1; continue
+        if editable_status and (
+            ("гэс-2" in blob or "ges-2.org" in blob) and
+            any(x in blob for x in GES2_MASTERCLASS_HINTS)
+        ):
+            e["status"]="rejected"; e["review_reason"]="excluded_ges2_masterclass"; changed+=1; continue
         if editable_status and any(x in blob for x in EXCLUDE):
             e["status"]="rejected"; e["review_reason"]="excluded_person"; changed+=1; continue
         if editable_status and any(x in blob for x in PLEIN) and not any(x in blob for x in GELD):

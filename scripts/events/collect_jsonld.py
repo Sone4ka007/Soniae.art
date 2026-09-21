@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import hashlib, json, re, sys, urllib.request
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from urllib.parse import urljoin, urlparse
@@ -264,11 +265,15 @@ def extract_event_links(html, src):
             continue
         if any(p in full for p in patterns) and full not in seen_urls:
             seen_urls.add(full); urls.append(full)
-    for full in urls[:120]:
+
+    max_pages=int(src.get("max_detail_pages",60))
+    urls=urls[:max_pages]
+
+    def parse_detail(full):
         try:
             detail=fetch(full)
         except Exception:
-            continue
+            return None
         dsoup=BeautifulSoup(detail,"html.parser")
         dtext=clean(dsoup.get_text(" ",strip=True))
         start_dt=end_dt=None
@@ -276,11 +281,11 @@ def extract_event_links(html, src):
             start_dt,end_dt=parse_exhibition_range(dtext)
             dt=start_dt or parse_date(dtext,require_year=True)
             if not dt or (end_dt and end_dt<today):
-                continue
+                return None
         else:
             dt=parse_date(dtext,require_year=True)
             if not dt or dt<today:
-                continue
+                return None
         title=""
         for h in dsoup.find_all(["h1","h2","h3"]):
             t=clean(h.get_text(" ",strip=True))
@@ -297,7 +302,7 @@ def extract_event_links(html, src):
             if candidate and candidate.lower() not in SKIP_TITLES:
                 title=candidate
         if not title:
-            continue
+            return None
         tm=parse_time(dtext[:1800])
         price,price_text=parse_price(dtext)
         reg=bool(re.search(r"регистрац|зарегистр|купить билет",dtext,re.I)) or None
@@ -313,7 +318,19 @@ def extract_event_links(html, src):
         if src.get("kind")=="exhibition":
             if start_dt: ev["start_date"]=start_dt.isoformat()
             if end_dt: ev["end_date"]=end_dt.isoformat()
-        out.append(ev)
+        return ev
+
+    workers=max(1,min(int(src.get("detail_workers",8)),12))
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        futures={pool.submit(parse_detail,full):full for full in urls}
+        for future in as_completed(futures):
+            try:
+                ev=future.result()
+            except Exception as e:
+                print(f"WARN {src['name']} detail {futures[future]}: {e}",file=sys.stderr)
+                continue
+            if ev:
+                out.append(ev)
     return out
 
 def extract_hse(html, src):

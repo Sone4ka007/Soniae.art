@@ -67,6 +67,20 @@ def fetch(url):
     with urllib.request.urlopen(req, timeout=30) as r:
         return r.read().decode("utf-8", "replace")
 
+def fetch_browser(url):
+    headers={
+        "User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+        "Accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+        "Accept-Language":"ru-RU,ru;q=0.9,en;q=0.7",
+        "Cache-Control":"no-cache",
+        "Pragma":"no-cache",
+        "Upgrade-Insecure-Requests":"1",
+        "Referer":"https://mosmuseum.ru/",
+    }
+    req=urllib.request.Request(url,headers=headers)
+    with urllib.request.urlopen(req,timeout=30) as r:
+        return r.read().decode("utf-8","replace")
+
 def parse_date(text, require_year=True, default_year=None):
     t = clean(text).lower().replace("ё","е")
     m = re.search(r"(?<!\d)(\d{1,2})[./](\d{1,2})[./](\d{2,4})(?!\d)", t)
@@ -127,6 +141,24 @@ def parse_exhibition_range(text):
         except ValueError:
             pass
     return None,None
+
+def parse_ru_range_no_year(text, default_year=None):
+    t=clean(text).lower().replace("ё","е")
+    y=int(default_year or date.today().year)
+    month_pat="|".join(sorted(MONTHS,key=len,reverse=True))
+    m=re.search(rf"(?<!\\d)(\\d{{1,2}})\\s+({month_pat})\\.?\\s*[-–—]\\s*(\\d{{1,2}})\\s+({month_pat})\\.?(?:\\s+(20\\d{{2}}))?",t)
+    if not m:
+        return None,None
+    end_y=int(m.group(5)) if m.group(5) else y
+    start_y=end_y
+    try:
+        start=date(start_y,MONTHS[m.group(2)],int(m.group(1)))
+        end=date(end_y,MONTHS[m.group(4)],int(m.group(3)))
+        if end < start:
+            end=date(end_y+1,MONTHS[m.group(4)],int(m.group(3)))
+        return start,end
+    except ValueError:
+        return None,None
 
 def parse_time(text):
     m = re.search(r"(?<!\d)([01]?\d|2[0-3]):(\d{2})(?!\d)", clean(text))
@@ -331,6 +363,84 @@ def extract_event_links(html, src):
                 continue
             if ev:
                 out.append(ev)
+    return out
+
+def extract_mosmuseum(html, src):
+    soup=BeautifulSoup(html,"html.parser")
+    out=[]; seen=set(); today=date.today()
+    paths=("/lectures/p/","/events/p/","/exhibitions/p/","/excursions/p/","/performances/p/")
+    venues=("Музей Москвы","Музей археологии Москвы","Музей истории Лефортово",
+            "Центр Гиляровского","Садовое кольцо","Музей Зеленограда",
+            "Гербовый зал города Москвы","Библиотека Добролюбова","в городе")
+    for a in soup.find_all("a",href=True):
+        full=urljoin(src["url"],a.get("href",""))
+        path=urlparse(full).path
+        if not any(p in path for p in paths):
+            continue
+        block=a
+        txt=clean(a.get_text(" ",strip=True))
+        for _ in range(6):
+            parent=getattr(block,"parent",None)
+            if parent is None:
+                break
+            ptxt=clean(parent.get_text(" ",strip=True))
+            if 20 <= len(ptxt) <= 1200:
+                txt=ptxt
+                block=parent
+                if re.search(r"\\d{1,2}\\s+[А-Яа-яЁё]{3,12}",txt):
+                    break
+            else:
+                break
+        title=normalize_anchor_title(a,txt)
+        if len(title)<5 or title.lower() in SKIP_TITLES:
+            continue
+        kind="exhibition" if "/exhibitions/p/" in path else "event"
+        start=end=None
+        if kind=="exhibition":
+            start,end=parse_ru_range_no_year(txt,today.year)
+            if not start:
+                start=parse_date(txt,require_year=False,default_year=today.year)
+            if end and end < today:
+                continue
+            dt=start
+        else:
+            dt=parse_date(txt,require_year=False,default_year=today.year)
+            if dt and dt < today:
+                # Around New Year, a January card on a December page belongs to next year.
+                if today.month==12 and dt.month<=2:
+                    try: dt=date(today.year+1,dt.month,dt.day)
+                    except ValueError: pass
+                else:
+                    continue
+        if not dt:
+            continue
+        venue=src.get("venue","")
+        low=txt.lower()
+        for v in venues:
+            if v.lower() in low:
+                venue=v
+                break
+        cat=""
+        if "/lectures/p/" in path: cat="лекция"
+        elif "/excursions/p/" in path: cat="экскурсия"
+        elif "/performances/p/" in path: cat="спектакль"
+        elif kind=="exhibition": cat="выставка"
+        else: cat=event_category(txt)
+        key=(kind,dt.isoformat(),full)
+        if key in seen:
+            continue
+        seen.add(key)
+        price,price_text=parse_price(txt)
+        reg=bool(re.search(r"регистрац|зарегистр|купить билет",txt,re.I)) or None
+        ev=make_event(src,dt.isoformat(),parse_time(txt),title,full,"",
+                      venue=venue,price=price,price_text=price_text,
+                      registration=reg,categories=[cat] if cat else [])
+        ev["kind"]=kind
+        if kind=="exhibition":
+            if start: ev["start_date"]=start.isoformat()
+            if end: ev["end_date"]=end.isoformat()
+        ev["audience_text"]=txt[:2500]
+        out.append(ev)
     return out
 
 def extract_hse(html, src):
@@ -695,12 +805,14 @@ def main():
             candidates=extract_ges2(src)
         else:
             try:
-                html=fetch(src["url"])
+                html=fetch_browser(src["url"]) if adapter=="mosmuseum" else fetch(src["url"])
             except Exception as e:
                 print(f"WARN {src['name']}: {e}",file=sys.stderr)
                 continue
             candidates.extend(extract_jsonld(html,src))
-            if adapter=="hse":
+            if adapter=="mosmuseum":
+                candidates.extend(extract_mosmuseum(html,src))
+            elif adapter=="hse":
                 candidates.extend(extract_hse(html,src))
             elif adapter=="rusimp":
                 candidates.extend(extract_rusimp(html,src))

@@ -108,6 +108,25 @@ def parse_deadline(text):
     try: return date(int(m.group(3)),EN_MONTHS[m.group(2).lower()],int(m.group(1)))
     except ValueError: return None
 
+def parse_exhibition_range(text):
+    t=clean(text).lower().replace("ё","е")
+    # 24.04-04.11.2026 / 24.04 — 04.11.2026
+    m=re.search(r"(?<!\d)(\d{1,2})[./](\d{1,2})\s*[-–—]\s*(\d{1,2})[./](\d{1,2})[./](20\d{2})(?!\d)",t)
+    if m:
+        try:
+            y=int(m.group(5))
+            return date(y,int(m.group(2)),int(m.group(1))), date(y,int(m.group(4)),int(m.group(3)))
+        except ValueError:
+            pass
+    # 09.09.2026-25.10.2026
+    m=re.search(r"(?<!\d)(\d{1,2})[./](\d{1,2})[./](20\d{2})\s*[-–—]\s*(\d{1,2})[./](\d{1,2})[./](20\d{2})(?!\d)",t)
+    if m:
+        try:
+            return date(int(m.group(3)),int(m.group(2)),int(m.group(1))), date(int(m.group(6)),int(m.group(5)),int(m.group(4)))
+        except ValueError:
+            pass
+    return None,None
+
 def parse_time(text):
     m = re.search(r"(?<!\d)([01]?\d|2[0-3]):(\d{2})(?!\d)", clean(text))
     return f"{int(m.group(1)):02d}:{m.group(2)}" if m else ""
@@ -236,9 +255,13 @@ def extract_event_links(html, src):
     soup=BeautifulSoup(html,"html.parser")
     out=[]; seen_urls=set(); today=date.today()
     patterns=src.get("href_contains") or ["/events/"]
+    exclude_paths=set(src.get("exclude_paths") or [])
     urls=[]
     for a in soup.find_all("a",href=True):
         full=urljoin(src["url"],a.get("href",""))
+        parsed=urlparse(full)
+        if parsed.path in exclude_paths:
+            continue
         if any(p in full for p in patterns) and full not in seen_urls:
             seen_urls.add(full); urls.append(full)
     for full in urls[:120]:
@@ -248,9 +271,16 @@ def extract_event_links(html, src):
             continue
         dsoup=BeautifulSoup(detail,"html.parser")
         dtext=clean(dsoup.get_text(" ",strip=True))
-        dt=parse_date(dtext,require_year=True)
-        if not dt or dt<today:
-            continue
+        start_dt=end_dt=None
+        if src.get("kind")=="exhibition":
+            start_dt,end_dt=parse_exhibition_range(dtext)
+            dt=start_dt or parse_date(dtext,require_year=True)
+            if not dt or (end_dt and end_dt<today):
+                continue
+        else:
+            dt=parse_date(dtext,require_year=True)
+            if not dt or dt<today:
+                continue
         title=""
         for h in dsoup.find_all(["h1","h2","h3"]):
             t=clean(h.get_text(" ",strip=True))
@@ -277,9 +307,13 @@ def extract_event_links(html, src):
         if ps:
             desc=clean(" ".join(clean(p.get_text(" ",strip=True)) for p in ps[:4]))
             if len(desc)>650: desc=desc[:647].rstrip()+"..."
-        out.append(make_event(src,dt.isoformat(),tm,title,full,desc,
-                              price=price,price_text=price_text,registration=reg,
-                              categories=[cat] if cat else []))
+        ev=make_event(src,dt.isoformat(),tm,title,full,desc,
+                      price=price,price_text=price_text,registration=reg,
+                      categories=[cat] if cat else [])
+        if src.get("kind")=="exhibition":
+            if start_dt: ev["start_date"]=start_dt.isoformat()
+            if end_dt: ev["end_date"]=end_dt.isoformat()
+        out.append(ev)
     return out
 
 def extract_hse(html, src):

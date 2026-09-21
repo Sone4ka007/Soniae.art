@@ -179,6 +179,52 @@
       ],
       "max_detail_pages": 40,
       "detail_workers": 8
+    },
+    {
+      "name": "РОСФОТО",
+      "city": "spb",
+      "url": "https://rosphoto.org/events/",
+      "venue": "РОСФОТО",
+      "adapter": "event_links",
+      "href_contains": [
+        "/events/"
+      ],
+      "exclude_paths": [
+        "/events/"
+      ],
+      "max_detail_pages": 80,
+      "detail_workers": 8
+    },
+    {
+      "name": "Музей искусства Санкт-Петербурга XX–XXI веков — события",
+      "city": "spb",
+      "url": "https://mispxx-xxi.ru/about/afisha/",
+      "venue": "Музей искусства Санкт-Петербурга XX–XXI веков",
+      "adapter": "event_links",
+      "href_contains": [
+        "/education/"
+      ],
+      "max_detail_pages": 60,
+      "detail_workers": 8
+    },
+    {
+      "name": "Музей искусства Санкт-Петербурга XX–XXI веков — выставки",
+      "city": "spb",
+      "url": "https://mispxx-xxi.ru/exhibitions/",
+      "venue": "Музей искусства Санкт-Петербурга XX–XXI веков",
+      "adapter": "event_links",
+      "href_contains": [
+        "/exhibitions/"
+      ],
+      "exclude_paths": [
+        "/exhibitions/",
+        "/exhibitions/current/",
+        "/exhibitions/future/",
+        "/exhibitions/archive/"
+      ],
+      "kind": "exhibition",
+      "max_detail_pages": 40,
+      "detail_workers": 8
     }
   ]
 }

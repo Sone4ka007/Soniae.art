@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import hashlib, json, re, sys, urllib.request
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from urllib.parse import urljoin, urlparse
@@ -107,6 +108,25 @@ def parse_deadline(text):
         return None
     try: return date(int(m.group(3)),EN_MONTHS[m.group(2).lower()],int(m.group(1)))
     except ValueError: return None
+
+def parse_exhibition_range(text):
+    t=clean(text).lower().replace("ё","е")
+    # 24.04-04.11.2026 / 24.04 — 04.11.2026
+    m=re.search(r"(?<!\d)(\d{1,2})[./](\d{1,2})\s*[-–—]\s*(\d{1,2})[./](\d{1,2})[./](20\d{2})(?!\d)",t)
+    if m:
+        try:
+            y=int(m.group(5))
+            return date(y,int(m.group(2)),int(m.group(1))), date(y,int(m.group(4)),int(m.group(3)))
+        except ValueError:
+            pass
+    # 09.09.2026-25.10.2026
+    m=re.search(r"(?<!\d)(\d{1,2})[./](\d{1,2})[./](20\d{2})\s*[-–—]\s*(\d{1,2})[./](\d{1,2})[./](20\d{2})(?!\d)",t)
+    if m:
+        try:
+            return date(int(m.group(3)),int(m.group(2)),int(m.group(1))), date(int(m.group(6)),int(m.group(5)),int(m.group(4)))
+        except ValueError:
+            pass
+    return None,None
 
 def parse_time(text):
     m = re.search(r"(?<!\d)([01]?\d|2[0-3]):(\d{2})(?!\d)", clean(text))
@@ -236,21 +256,36 @@ def extract_event_links(html, src):
     soup=BeautifulSoup(html,"html.parser")
     out=[]; seen_urls=set(); today=date.today()
     patterns=src.get("href_contains") or ["/events/"]
+    exclude_paths=set(src.get("exclude_paths") or [])
     urls=[]
     for a in soup.find_all("a",href=True):
         full=urljoin(src["url"],a.get("href",""))
+        parsed=urlparse(full)
+        if parsed.path in exclude_paths:
+            continue
         if any(p in full for p in patterns) and full not in seen_urls:
             seen_urls.add(full); urls.append(full)
-    for full in urls[:120]:
+
+    max_pages=int(src.get("max_detail_pages",60))
+    urls=urls[:max_pages]
+
+    def parse_detail(full):
         try:
             detail=fetch(full)
         except Exception:
-            continue
+            return None
         dsoup=BeautifulSoup(detail,"html.parser")
         dtext=clean(dsoup.get_text(" ",strip=True))
-        dt=parse_date(dtext,require_year=True)
-        if not dt or dt<today:
-            continue
+        start_dt=end_dt=None
+        if src.get("kind")=="exhibition":
+            start_dt,end_dt=parse_exhibition_range(dtext)
+            dt=start_dt or parse_date(dtext,require_year=True)
+            if not dt or (end_dt and end_dt<today):
+                return None
+        else:
+            dt=parse_date(dtext,require_year=True)
+            if not dt or dt<today:
+                return None
         title=""
         for h in dsoup.find_all(["h1","h2","h3"]):
             t=clean(h.get_text(" ",strip=True))
@@ -267,7 +302,7 @@ def extract_event_links(html, src):
             if candidate and candidate.lower() not in SKIP_TITLES:
                 title=candidate
         if not title:
-            continue
+            return None
         tm=parse_time(dtext[:1800])
         price,price_text=parse_price(dtext)
         reg=bool(re.search(r"регистрац|зарегистр|купить билет",dtext,re.I)) or None
@@ -277,9 +312,25 @@ def extract_event_links(html, src):
         if ps:
             desc=clean(" ".join(clean(p.get_text(" ",strip=True)) for p in ps[:4]))
             if len(desc)>650: desc=desc[:647].rstrip()+"..."
-        out.append(make_event(src,dt.isoformat(),tm,title,full,desc,
-                              price=price,price_text=price_text,registration=reg,
-                              categories=[cat] if cat else []))
+        ev=make_event(src,dt.isoformat(),tm,title,full,desc,
+                      price=price,price_text=price_text,registration=reg,
+                      categories=[cat] if cat else [])
+        if src.get("kind")=="exhibition":
+            if start_dt: ev["start_date"]=start_dt.isoformat()
+            if end_dt: ev["end_date"]=end_dt.isoformat()
+        return ev
+
+    workers=max(1,min(int(src.get("detail_workers",8)),12))
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        futures={pool.submit(parse_detail,full):full for full in urls}
+        for future in as_completed(futures):
+            try:
+                ev=future.result()
+            except Exception as e:
+                print(f"WARN {src['name']} detail {futures[future]}: {e}",file=sys.stderr)
+                continue
+            if ev:
+                out.append(ev)
     return out
 
 def extract_hse(html, src):
@@ -599,6 +650,7 @@ def extract_ges2(src, days=14):
                 continue
             if parsed.path in GES2_NON_EVENT_PATHS or "/calendar" in parsed.path or parsed.path in {"/",""}:
                 continue
+
             li=a.find_parent("li")
             txt=clean(li.get_text(" ",strip=True)) if li else card_title
             if len(txt)>1200:
@@ -610,18 +662,19 @@ def extract_ges2(src, days=14):
             title=detail["title"] or card_title
             if title.lower() in SKIP_TITLES or title.lower() in GES2_NON_EVENT_TITLES or len(title)<8:
                 continue
+
             cat=detail["cat"] or event_category(txt)
-            key=(dt.isoformat(),full,title)
+            key=(dt.isoformat(),full)
             if key in seen:
                 continue
             seen.add(key)
 
-            detail_text=detail["text"] or txt
-            price,price_text=parse_price(detail_text)
-            reg=bool(re.search(r"регистрац|зарегистр",detail_text,re.I)) or None
+            price,price_text=parse_price(detail["text"] or txt)
+            reg=bool(re.search(r"регистрац|зарегистр",detail["text"] or txt,re.I)) or None
             ev=make_event(src,dt.isoformat(),parse_time(txt),title,full,"",
                           price=price,price_text=price_text,registration=reg,
                           categories=[cat] if cat else [])
+            ev["audience_text"]=(detail["text"] or "")[:2500]
             out.append(ev)
     return out
 
@@ -629,10 +682,10 @@ def main():
     cfg=load_json(SOURCES,{"sources":[]})
     db=load_json(DB,{"schema_version":1,"events":[]})
     existing={e.get("id"):e for e in db.get("events",[])}
-    ges2_occurrence={
-        (e.get("city"),e.get("date"),str(e.get("url","")).strip().lower()):e.get("id")
-        for e in db.get("events",[])
-        if e.get("id") and "ges-2.org" in str(e.get("url","")).lower()
+    occurrence_index={
+        (e.get("city"),e.get("date"),str(e.get("url","")).strip().lower(),
+         re.sub(r"\W+","",str(e.get("title","")).lower())):e.get("id")
+        for e in db.get("events",[]) if e.get("id") and e.get("url")
     }
     found=0
     for src in cfg.get("sources",[]):
@@ -661,25 +714,24 @@ def main():
                 candidates.extend(extract_open_call_listing(html,src))
 
         for n in candidates:
-            if adapter=="ges2":
-                occ=(n.get("city"),n.get("date"),str(n.get("url","")).strip().lower())
-                old_id=ges2_occurrence.get(occ)
-                if old_id and old_id in existing:
-                    old=existing[old_id]
-                    keep={
-                        "status":old.get("status"),
-                        "editor_note":old.get("editor_note",""),
-                        "reviewed_at":old.get("reviewed_at",""),
-                        "discovered_at":old.get("discovered_at") or n.get("discovered_at")
-                    }
-                    old.update(n)
-                    old["id"]=old_id
-                    for k,v in keep.items():
-                        if v not in (None,""):
-                            old[k]=v
-                    continue
-            if n["id"] not in existing:
+            occ=(n.get("city"),n.get("date"),str(n.get("url","")).strip().lower(),
+                 re.sub(r"\W+","",str(n.get("title","")).lower()))
+            old_id=occurrence_index.get(occ)
+            if old_id and old_id in existing:
+                old=existing[old_id]
+                final_status=old.get("status") if old.get("status") in ("approved","rejected") else n.get("status","new")
+                editor_note=old.get("editor_note","")
+                reviewed_at=old.get("reviewed_at","")
+                discovered_at=old.get("discovered_at") or n.get("discovered_at")
+                old.update(n)
+                old["id"]=old_id
+                old["status"]=final_status
+                old["editor_note"]=editor_note
+                old["reviewed_at"]=reviewed_at
+                old["discovered_at"]=discovered_at
+            elif n["id"] not in existing:
                 existing[n["id"]]=n
+                occurrence_index[occ]=n["id"]
                 found+=1
 
     db["updated_at"]=datetime.now(timezone.utc).date().isoformat()

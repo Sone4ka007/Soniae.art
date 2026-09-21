@@ -67,8 +67,11 @@ def inspect_url(url):
             r"бесплатно\s+(?:по|при)\s+(?:предварительной\s+)?регистрации)",
             text,re.I))
         numeric_paid=bool(re.search(r"\b\d[\d\s\u00a0]{0,7}\s*(?:₽|руб(?:\.|лей|ля)?)",text,re.I))
+        ticket_required=bool(re.search(
+            r"(?:по|по\s+входному)\s+билету|вход\s+по\s+билету|требуется\s+билет|билет\s+в\s+музей",
+            text,re.I))
         buy_ticket=bool(re.search(r"купить\s+(?:билет|билеты)|приобрести\s+(?:билет|билеты)",text,re.I))
-        if numeric_paid:
+        if numeric_paid or ticket_required:
             page_price="paid"
         elif explicit_free:
             page_price="free"

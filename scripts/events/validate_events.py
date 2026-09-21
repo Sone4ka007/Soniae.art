@@ -8,6 +8,11 @@ EXCLUDE=("алим велитов","alim velitov")
 PLEIN=("пленэр","пленер","plein air","plein-air")
 GELD=("алексей гельд","лёша гельд","леша гельд","alexey geld")
 
+KNOWN_CHILD_EVENT_HINTS=(
+    "а и б сидели на трубе",
+    "a-and-b-were-sitting-on-a-pipe"
+)
+
 FAMILY_CHILDREN=(
     "для детей","детский","детская","детские","семейный","семейная","семейное",
     "для всей семьи","для семей","семейная программа","семейный тур",
@@ -105,6 +110,7 @@ def main():
         age_range=AGE_RANGE_RE.search(blob) or AGE_CONTEXT_RE.search(blob)
         youth_range=bool(age_range and int(age_range.group(1)) < 18)
         if editable_status and (
+            any(x in blob for x in KNOWN_CHILD_EVENT_HINTS) or
             any(x in blob for x in FAMILY_CHILDREN) or AGE_CHILD_RE.search(blob) or youth_range
         ):
             e["status"]="rejected"; e["review_reason"]="excluded_family_children"; changed+=1; continue

@@ -38,6 +38,7 @@ GENERIC_JUNK=(
     "подпишитесь и получайте новости","условия участия","подробнее","more details",
     "see more","learn more"
 )
+BAD_TITLE_HINTS=("в «сводах»","в "сводах"","in the vaults")
 RECURRING_LOW_VALUE=(
     "ателье. самостоятельная работа",
 )
@@ -73,6 +74,8 @@ def main():
         if key in seen: problems.append("possible_duplicate")
         else: seen[key]=e.get("id")
         editable_status=e.get("status") in ("new","check")
+        if editable_status and any(x in title_blob for x in BAD_TITLE_HINTS):
+            e["status"]="check"; e["review_reason"]="bad_title_needs_detail"; changed+=1; continue
         if editable_status and (
             any(x in title_blob for x in GENERIC_JUNK) or
             any(x in title_blob for x in RECURRING_LOW_VALUE)

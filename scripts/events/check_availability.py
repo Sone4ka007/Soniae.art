@@ -131,7 +131,16 @@ def main():
         except Exception:
             kept.append(e); continue
         horizon=today+timedelta(days=90 if e.get("kind") in ("open_call","exhibition") else 30)
-        if today <= d <= horizon:
+        if e.get("kind")=="exhibition" and e.get("end_date"):
+            try:
+                end_d=date.fromisoformat(e.get("end_date"))
+                start_d=date.fromisoformat(e.get("start_date") or e.get("date"))
+                in_horizon=(end_d >= today and start_d <= horizon)
+            except Exception:
+                in_horizon=(today <= d <= horizon)
+        else:
+            in_horizon=(today <= d <= horizon)
+        if in_horizon:
             e["price_type"]=classify_price(e)
             kept.append(e)
 

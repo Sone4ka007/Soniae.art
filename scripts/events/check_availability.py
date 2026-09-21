@@ -77,10 +77,10 @@ def main():
     kept=[]
 
     for e in db.get("events",[]):
-        blob=" ".join(str(e.get(k,"")) for k in ("title","description","source")).lower()
         if e.get("kind") not in ("event","open_call"):
             e["kind"]="event"
-        if any(x in blob for x in OPEN_CALL_HINTS):
+        title_blob=str(e.get("title","")).lower()
+        if any(x in title_blob for x in OPEN_CALL_HINTS):
             e["kind"]="open_call"
         try:
             d=date.fromisoformat(e.get("date",""))

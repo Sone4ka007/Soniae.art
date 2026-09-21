@@ -277,7 +277,9 @@ def extract_event_links(html, src):
         dsoup=BeautifulSoup(detail,"html.parser")
         dtext=clean(dsoup.get_text(" ",strip=True))
         start_dt=end_dt=None
-        if src.get("kind")=="exhibition":
+        path_low=urlparse(full).path.lower()
+        is_exhibition=(src.get("kind")=="exhibition" or "/exhibitions/" in path_low or "/exhibition/" in path_low)
+        if is_exhibition:
             start_dt,end_dt=parse_exhibition_range(dtext)
             dt=start_dt or parse_date(dtext,require_year=True)
             if not dt or (end_dt and end_dt<today):
@@ -308,23 +310,22 @@ def extract_event_links(html, src):
         reg=bool(re.search(r"регистрац|зарегистр|купить билет",dtext,re.I)) or None
         cat=event_category(dtext[:1800])
         desc=""
-        boilerplate=(
+        hard_boilerplate=(
             "сегодня выставки и галереи закрыты",
             "магазины и кафе работают в обычном режиме",
-            "режим работы",
-            "купить билет",
-            "бесплатно",
-            "доступно по пушкинской карте",
-            "узнать больше"
+            "режим работы"
         )
         start_node=dsoup.find("h1") or dsoup.find("h2") or dsoup
         parts=[]
         for p in start_node.find_all_next("p"):
             t=clean(p.get_text(" ",strip=True))
+            t=re.sub(r"(?:Доступно по Пушкинской карте\s*Узнать больше\s*)+","",t,flags=re.I)
+            t=re.sub(r"\bУзнать больше\b","",t,flags=re.I)
+            t=clean(t)
             low=t.lower()
             if len(t)<55:
                 continue
-            if any(x in low for x in boilerplate):
+            if any(x in low for x in hard_boilerplate):
                 continue
             if title.lower() in low and len(t)<len(title)+80:
                 continue
@@ -355,7 +356,11 @@ def extract_event_links(html, src):
         ev=make_event(src,dt.isoformat(),tm,title,full,desc,
                       price=price,price_text=price_text,registration=reg,
                       categories=[cat] if cat else [])
-        if src.get("kind")=="exhibition":
+        if is_exhibition:
+            ev["kind"]="exhibition"
+            ev["categories"]=[c for c in ev.get("categories",[]) if c not in ("лекция","концерт","встреча","событие","программа")]
+            if "выставка" not in ev["categories"]:
+                ev["categories"].append("выставка")
             if start_dt: ev["start_date"]=start_dt.isoformat()
             if end_dt: ev["end_date"]=end_dt.isoformat()
         return ev

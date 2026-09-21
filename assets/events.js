@@ -53,7 +53,7 @@
   }
 
   function priceLabel(e) {
-    if (e.price_type === 'free' || Number(e.price) === 0) return 'БЕСПЛАТНО';
+    if (e.price_type === 'free' || (e.price !== null && e.price !== undefined && e.price !== '' && Number(e.price) === 0)) return 'БЕСПЛАТНО';
     if (e.price_text) return esc(e.price_text);
     if (e.price !== null && e.price !== undefined && e.price !== '') return `${esc(e.price)} ₽`;
     return 'ЦЕНА НЕ УКАЗАНА';

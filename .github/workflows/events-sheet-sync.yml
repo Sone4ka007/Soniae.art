@@ -12,6 +12,10 @@ on:
   schedule:
     - cron: "*/15 * * * *"
 
+concurrency:
+  group: events-data-sync
+  cancel-in-progress: false
+
 permissions:
   contents: write
 

@@ -35,7 +35,11 @@ def main():
     db=json.loads(DB.read_text("utf-8")); changed=0
     seen={}
     for e in db.get("events",[]):
-        blob=" ".join(str(e.get(k,"")) for k in ("title","description","venue","source")).lower()
+        blob=" ".join([
+            str(e.get("title","")),str(e.get("description","")),str(e.get("venue","")),
+            str(e.get("source","")),str(e.get("url","")),
+            " ".join(str(x) for x in (e.get("categories") or []))
+        ]).lower()
         if e.get("kind") not in ("event","exhibition","open_call"):
             e["kind"]="event"
         title_blob=str(e.get("title","")).lower()

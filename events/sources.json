@@ -276,7 +276,9 @@
       "exclude_paths": [
         "/exhibitions/current/",
         "/exhibitions/",
-        "/exhibitions/archive/"
+        "/exhibitions/archive/",
+        "/exhibitions/coming/",
+        "/exhibitions/future/"
       ],
       "kind": "exhibition",
       "max_detail_pages": 100,

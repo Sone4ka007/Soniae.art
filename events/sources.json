@@ -185,16 +185,7 @@
       "city": "moscow",
       "url": "https://mosmuseum.ru/events/",
       "venue": "Музей Москвы",
-      "adapter": "event_links",
-      "href_contains": [
-        "/lectures/p/",
-        "/events/p/",
-        "/exhibitions/p/",
-        "/excursions/p/",
-        "/performances/p/"
-      ],
-      "max_detail_pages": 40,
-      "detail_workers": 8
+      "adapter": "mosmuseum"
     }
   ]
 }

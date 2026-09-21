@@ -23,6 +23,8 @@ jobs:
           python-version: "3.12"
       - name: Compile event scripts
         run: python -m py_compile scripts/events/*.py
+      - name: Run event regression tests
+        run: python -m unittest discover -s tests/events -p 'test_*.py'
       - name: Validate and normalize database
         run: python scripts/events/quality_gate.py content/events.json --fix --strict
       - name: Require normalized database in git

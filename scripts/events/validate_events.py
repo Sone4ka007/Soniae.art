@@ -61,6 +61,8 @@ HARD_DROP_URLS={
     "https://ges-2.org/programme",
 }
 
+GES2_MASTERCLASS_HINTS=("мастер-класс","мастер класс","workshop","воркшоп")
+
 def main():
     db=json.loads(DB.read_text("utf-8")); changed=0
     seen={}

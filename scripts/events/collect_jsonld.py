@@ -313,7 +313,9 @@ def extract_event_links(html, src):
             "магазины и кафе работают в обычном режиме",
             "режим работы",
             "купить билет",
-            "бесплатно"
+            "бесплатно",
+            "доступно по пушкинской карте",
+            "узнать больше"
         )
         start_node=dsoup.find("h1") or dsoup.find("h2") or dsoup
         parts=[]
@@ -331,7 +333,25 @@ def extract_event_links(html, src):
                 break
         if parts:
             desc=clean(" ".join(parts))
-            if len(desc)>650: desc=desc[:647].rstrip()+"..."
+            desc=re.sub(r"(?:Доступно по Пушкинской карте\s*Узнать больше\s*)+","",desc,flags=re.I)
+            # Keep exhibition copy concise: up to 3 complete sentences / about 360 chars.
+            sentences=re.split(r"(?<=[.!?])\s+",desc)
+            picked=[]
+            total=0
+            for sent in sentences:
+                sent=clean(sent)
+                if len(sent)<25:
+                    continue
+                if total+len(sent)>380 and picked:
+                    break
+                picked.append(sent)
+                total+=len(sent)+1
+                if len(picked)>=3:
+                    break
+            if picked:
+                desc=" ".join(picked)
+            elif len(desc)>380:
+                desc=desc[:377].rsplit(" ",1)[0]+"..."
         ev=make_event(src,dt.isoformat(),tm,title,full,desc,
                       price=price,price_text=price_text,registration=reg,
                       categories=[cat] if cat else [])

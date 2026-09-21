@@ -179,6 +179,31 @@
       ],
       "max_detail_pages": 40,
       "detail_workers": 8
+    },
+    {
+      "name": "Музей Москвы — события",
+      "city": "moscow",
+      "url": "https://mosmuseum.ru/events/",
+      "venue": "Музей Москвы",
+      "adapter": "event_links",
+      "href_contains": [
+        "/events/p/"
+      ],
+      "max_detail_pages": 60,
+      "detail_workers": 8
+    },
+    {
+      "name": "Музей Москвы — выставки",
+      "city": "moscow",
+      "url": "https://mosmuseum.ru/events/",
+      "venue": "Музей Москвы",
+      "adapter": "event_links",
+      "href_contains": [
+        "/exhibitions/p/"
+      ],
+      "kind": "exhibition",
+      "max_detail_pages": 60,
+      "detail_workers": 8
     }
   ]
 }

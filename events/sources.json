@@ -315,6 +315,108 @@
       ],
       "max_detail_pages": 60,
       "detail_workers": 8
+    },
+    {
+      "name": "Библиотека им. Н. А. Некрасова",
+      "city": "moscow",
+      "url": "https://biblioteka.nekrasovka.ru/",
+      "venue": "Библиотека им. Н. А. Некрасова",
+      "adapter": "event_links",
+      "href_contains": [
+        "/events/",
+        "/event/",
+        "/projects/",
+        "/lectures/"
+      ],
+      "max_detail_pages": 100,
+      "detail_workers": 8,
+      "source_group": "library",
+      "high_free_yield": true
+    },
+    {
+      "name": "Библиотека иностранной литературы — мероприятия",
+      "city": "moscow",
+      "url": "https://libfl.ru/ru/events",
+      "venue": "Библиотека иностранной литературы",
+      "adapter": "event_links",
+      "href_contains": [
+        "/ru/event/"
+      ],
+      "max_detail_pages": 120,
+      "detail_workers": 8,
+      "source_group": "library",
+      "high_free_yield": true
+    },
+    {
+      "name": "Российская государственная библиотека — афиша",
+      "city": "moscow",
+      "url": "https://www.rsl.ru/ru/events/afisha/",
+      "venue": "Российская государственная библиотека",
+      "adapter": "event_links",
+      "href_contains": [
+        "/events/"
+      ],
+      "exclude_paths": [
+        "/ru/events/afisha/",
+        "/events/"
+      ],
+      "max_detail_pages": 140,
+      "detail_workers": 10,
+      "source_group": "library",
+      "high_free_yield": true
+    },
+    {
+      "name": "Российская национальная библиотека — афиша",
+      "city": "spb",
+      "url": "https://nlr.ru/nlr_visit/RA593/afisha-rnb?date_from=2026-01-01&date_to=2026-12-31&sel_type=all",
+      "venue": "Российская национальная библиотека",
+      "adapter": "event_links",
+      "href_contains": [
+        "/nlr_visit/",
+        "/event/",
+        "/events/"
+      ],
+      "max_detail_pages": 120,
+      "detail_workers": 8,
+      "source_group": "library",
+      "high_free_yield": true
+    },
+    {
+      "name": "Санкт-Петербургская государственная театральная библиотека — афиша",
+      "city": "spb",
+      "url": "https://sptl.spb.ru/afisha",
+      "venue": "Санкт-Петербургская государственная театральная библиотека",
+      "adapter": "event_links",
+      "href_contains": [
+        "/afisha/",
+        "/event/",
+        "/events/"
+      ],
+      "max_detail_pages": 100,
+      "detail_workers": 8,
+      "source_group": "library",
+      "high_free_yield": true
+    },
+    {
+      "name": "Санкт-Петербургская государственная театральная библиотека — выставки",
+      "city": "spb",
+      "url": "https://sptl.spb.ru/afisha/exhibition",
+      "venue": "Санкт-Петербургская государственная театральная библиотека",
+      "adapter": "event_links",
+      "href_contains": [
+        "/afisha/exhibition/",
+        "/afisha/"
+      ],
+      "exclude_paths": [
+        "/afisha/exhibition",
+        "/afisha/exhibition/"
+      ],
+      "kind": "exhibition",
+      "max_detail_pages": 80,
+      "detail_workers": 8,
+      "source_group": "library",
+      "high_free_yield": true,
+      "default_price_type": "free"
     }
   ]
 }

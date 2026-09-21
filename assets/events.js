@@ -66,49 +66,80 @@
   }
 
   function render() {
-    let visible = events.filter(isVisible).sort((a,b) => (a.date+a.time).localeCompare(b.date+b.time));
+    let visible = events.filter(isVisible).sort((a,b) => {
+      const ad = a.start_date || a.date || '';
+      const bd = b.start_date || b.date || '';
+      return ad.localeCompare(bd) || String(a.title||'').localeCompare(String(b.title||''));
+    });
+
     if (state.kind === 'exhibition') {
       const unique = new Map();
       visible.forEach(e => {
-        const key = `${(e.title||'').toLowerCase()}|${(e.venue||'').toLowerCase()}`;
+        const key = (e.url || `${(e.title||'').toLowerCase()}|${(e.venue||'').toLowerCase()}`).toLowerCase();
         if (!unique.has(key)) unique.set(key,e);
       });
       visible = [...unique.values()];
-      count.textContent = `${visible.length} ${visible.length === 1 ? 'ВЫСТАВКА' : 'ВЫСТАВОК'}`;
-      document.getElementById('events-range').textContent = 'ВЫСТАВКИ · 90 ДНЕЙ';
-    } else if (state.kind === 'open_call') {
+      count.textContent = `${visible.length} ${visible.length === 1 ? 'ВЫСТАВКА' : 'ВЫСТАВКИ'}`;
+      document.getElementById('events-range').textContent = 'ТЕКУЩИЕ ВЫСТАВКИ';
+      empty.hidden = visible.length !== 0;
+      list.innerHTML = visible.map(e => {
+        let period = 'ИДЁТ СЕЙЧАС · ДАТА ОКОНЧАНИЯ НЕ УКАЗАНА';
+        if (e.start_date && e.end_date) period = `${esc(e.start_date)} — ${esc(e.end_date)}`;
+        else if (e.start_date) period = `С ${esc(e.start_date)}`;
+        else if (e.end_date) period = `ДО ${esc(e.end_date)}`;
+        return `
+          <article class="event-card exhibition-card">
+            <div class="event-main">
+              <h3>${esc(e.title)}</h3>
+              <p class="event-period">${period}</p>
+              <p>${esc(e.description || '')}</p>
+              <div class="event-tags">${(e.categories || []).map(c => `<span class="event-tag">${esc(categoryNames[c] || c)}</span>`).join('')}</div>
+            </div>
+            <div class="event-meta">
+              <p><strong>${esc(e.venue || '')}</strong></p>
+              <p>${esc(e.address || '')}</p>
+              <p>${esc(cityNames[e.city] || e.city || '')}</p>
+              <div class="event-price ${e.price_type === 'free' ? 'free' : ''}">${priceLabel(e)}</div>
+              ${e.registration === true ? '<p>НУЖНА РЕГИСТРАЦИЯ</p>' : e.registration === false ? '<p>БЕЗ РЕГИСТРАЦИИ</p>' : ''}
+              <p>${availabilityLabel(e)}</p>
+              ${e.availability_checked_at ? `<div class="event-check">МЕСТА ПРОВЕРЕНЫ: ${esc(e.availability_checked_at)}</div>` : ''}
+            </div>
+            <a class="event-link" href="${esc(e.url)}" target="_blank" rel="noopener">ИСТОЧНИК ↗</a>
+          </article>`;
+      }).join('');
+      return;
+    }
+
+    if (state.kind === 'open_call') {
       count.textContent = `${visible.length} OPEN CALLS`;
       document.getElementById('events-range').textContent = 'ДЕДЛАЙНЫ · 90 ДНЕЙ';
     } else {
       count.textContent = `${visible.length} ${visible.length === 1 ? 'СОБЫТИЕ' : visible.length > 1 && visible.length < 5 ? 'СОБЫТИЯ' : 'СОБЫТИЙ'}`;
       document.getElementById('events-range').textContent = '30 ДНЕЙ ВПЕРЁД';
     }
+
     empty.hidden = visible.length !== 0;
     list.innerHTML = '';
 
-    const groups = state.kind === 'exhibition'
-      ? { exhibitions: visible }
-      : visible.reduce((acc,e) => {
-          (acc[e.date] ||= []).push(e);
-          return acc;
-        }, {});
+    const groups = visible.reduce((acc,e) => {
+      (acc[e.date] ||= []).push(e);
+      return acc;
+    }, {});
 
     Object.entries(groups).forEach(([date, items]) => {
-      const d = date === 'exhibitions' ? null : localDate(date);
+      const d = localDate(date);
       const section = document.createElement('section');
       section.className = 'event-day';
       section.innerHTML = `
-        ${state.kind === 'exhibition' ? '' : `
         <div class="event-day-title">
           <span>${String(d.getDate()).padStart(2,'0')}.${String(d.getMonth()+1).padStart(2,'0')}</span>
           <h2>${state.kind === 'open_call' ? 'ДЕДЛАЙН · ' : weekdays[d.getDay()] + ' · '}${d.getDate()} ${months[d.getMonth()]}</h2>
-        </div>`}
+        </div>
         ${items.map(e => `
           <article class="event-card">
-            <div class="event-time">${state.kind === 'open_call' ? 'OPEN CALL' : state.kind === 'exhibition' ? '' : esc(e.time || '—')}</div>
+            <div class="event-time">${state.kind === 'open_call' ? 'OPEN CALL' : esc(e.time || '—')}</div>
             <div class="event-main">
               <h3>${esc(e.title)}</h3>
-              ${state.kind === 'exhibition' && (e.start_date || e.end_date) ? `<p class="event-period">${esc(e.start_date || 'сейчас')}${e.end_date ? ' — ' + esc(e.end_date) : ''}</p>` : ''}
               <p>${esc(e.description || '')}</p>
               <div class="event-tags">${(e.categories || []).map(c => `<span class="event-tag">${esc(categoryNames[c] || c)}</span>`).join('')}</div>
             </div>

@@ -81,6 +81,50 @@
       "url": "https://mamm-mdf.ru/events/",
       "venue": "Мультимедиа Арт Музей, Москва",
       "adapter": "mamm"
+    },
+    {
+      "name": "Ewert — возможности для художников",
+      "city": "russia",
+      "url": "https://ewert.ru/opportunities/",
+      "venue": "Ewert",
+      "adapter": "open_call_listing",
+      "kind": "open_call",
+      "href_contains": [
+        "/opportunities/"
+      ]
+    },
+    {
+      "name": "CuratorSpace — opportunities",
+      "city": "international",
+      "url": "https://www.curatorspace.com/opportunities?orderBy=latest&search=1",
+      "venue": "CuratorSpace",
+      "adapter": "open_call_listing",
+      "kind": "open_call",
+      "href_contains": [
+        "/opportunities/detail/"
+      ]
+    },
+    {
+      "name": "On the Move — open calls",
+      "city": "international",
+      "url": "https://www.on-the-move.org/news",
+      "venue": "On the Move",
+      "adapter": "open_call_listing",
+      "kind": "open_call",
+      "href_contains": [
+        "/news/"
+      ]
+    },
+    {
+      "name": "ArtConnect — calls for artists",
+      "city": "international",
+      "url": "https://www.artconnect.com/opportunities/opencalls",
+      "venue": "ArtConnect",
+      "adapter": "open_call_listing",
+      "kind": "open_call",
+      "href_contains": [
+        "/opportunity/"
+      ]
     }
   ]
 }

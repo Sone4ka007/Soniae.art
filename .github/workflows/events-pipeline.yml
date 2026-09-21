@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - 'events/sources.json'
+      - 'content/events_curated.json'
       - 'scripts/events/**'
       - '.github/workflows/events-pipeline.yml'
   workflow_dispatch:

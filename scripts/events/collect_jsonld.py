@@ -488,11 +488,22 @@ def extract_open_call_listing(html, src):
             continue
         title=normalize_anchor_title(a)
         if not title or title.lower() in SKIP_TITLES or len(title)<6:
-            for h in block.find_all(["h2","h3","h4"]):
-                t=clean(h.get_text(" ",strip=True))
-                if len(t)>=6:
-                    title=t; break
-        if not title or len(title)<6:
+            title=""
+            try:
+                detail_html=fetch(full)
+                detail_soup=BeautifulSoup(detail_html,"html.parser")
+                h=detail_soup.find("h1") or detail_soup.find("h2")
+                candidate=clean(h.get_text(" ",strip=True)) if h else ""
+                if candidate and candidate.lower() not in SKIP_TITLES and len(candidate)>=6:
+                    title=candidate
+            except Exception:
+                pass
+            if not title:
+                for h in block.find_all(["h2","h3","h4"]):
+                    t=clean(h.get_text(" ",strip=True))
+                    if t.lower() not in SKIP_TITLES and len(t)>=6:
+                        title=t; break
+        if not title or title.lower() in SKIP_TITLES or len(title)<6:
             continue
         key=(dt.isoformat(),full,title)
         if key in seen: continue

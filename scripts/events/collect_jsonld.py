@@ -252,6 +252,72 @@ def normalize_anchor_title(a, block_text=""):
         title = re.sub(rf"\s+{re.escape(typ)}\s*$", "", title, flags=re.I)
     return clean(title)
 
+def extract_split_program_events(dsoup, src, full, page_text, page_year):
+    marker=None
+    for h in dsoup.find_all(["h2","h3"]):
+        if "программа мероприятий" in clean(h.get_text(" ",strip=True)).lower():
+            marker=h
+            break
+    if not marker:
+        return []
+
+    out=[]
+    for h in marker.find_all_next(["h2","h3"]):
+        title=clean(h.get_text(" ",strip=True))
+        low=title.lower()
+        if low in {"программа мероприятий","связанные события"}:
+            if low=="связанные события":
+                break
+            continue
+        if len(title)<8:
+            continue
+
+        prev=[]
+        node=h
+        for _ in range(18):
+            node=node.previous_element
+            if node is None or node is marker:
+                break
+            if isinstance(node,str):
+                t=clean(node)
+                if t:
+                    prev.append(t)
+                    probe=clean(" ".join(reversed(prev)))
+                    dt=parse_date(probe,require_year=False,default_year=page_year)
+                    if dt:
+                        tm=parse_time(probe)
+                        break
+        else:
+            dt=None; tm=None
+        if not dt:
+            probe=clean(" ".join(reversed(prev)))
+            dt=parse_date(probe,require_year=False,default_year=page_year)
+            tm=parse_time(probe)
+        if not dt or dt < date.today():
+            continue
+
+        parts=[]
+        for sib in h.find_all_next():
+            if sib is h:
+                continue
+            if getattr(sib,"name",None) in ("h2","h3"):
+                break
+            if getattr(sib,"name",None)=="p":
+                t=clean(sib.get_text(" ",strip=True))
+                if len(t)>=35:
+                    parts.append(t)
+                    if len(parts)>=2:
+                        break
+        desc=clean(" ".join(parts))
+        price,price_text=parse_price(page_text)
+        reg=bool(re.search(r"регистрац|зарегистр|купить билет",page_text,re.I)) or None
+        cat=event_category(title+" "+desc)
+        ev=make_event(src,dt.isoformat(),tm,title,full,desc,
+                      price=price,price_text=price_text,registration=reg,
+                      categories=[cat] if cat else [])
+        out.append(ev)
+    return out
+
 def extract_event_links(html, src):
     soup=BeautifulSoup(html,"html.parser")
     out=[]; seen_urls=set(); today=date.today()
@@ -276,6 +342,11 @@ def extract_event_links(html, src):
             return None
         dsoup=BeautifulSoup(detail,"html.parser")
         dtext=clean(dsoup.get_text(" ",strip=True))
+        if src.get("split_programs"):
+            page_date=parse_date(dtext,require_year=True)
+            split=extract_split_program_events(dsoup,src,full,dtext,(page_date or today).year)
+            if split:
+                return split
         start_dt=end_dt=None
         path_low=urlparse(full).path.lower()
         is_exhibition=(src.get("kind")=="exhibition" or "/exhibitions/" in path_low or "/exhibition/" in path_low)
@@ -375,7 +446,10 @@ def extract_event_links(html, src):
                 print(f"WARN {src['name']} detail {futures[future]}: {e}",file=sys.stderr)
                 continue
             if ev:
-                out.append(ev)
+                if isinstance(ev,list):
+                    out.extend(ev)
+                else:
+                    out.append(ev)
     return out
 
 def extract_hse(html, src):

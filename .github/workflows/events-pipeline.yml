@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - 'events/sources.json'
+      - 'events/discovery_sources.json'
       - 'content/events_curated.json'
       - 'scripts/events/**'
       - '.github/workflows/events-pipeline.yml'
@@ -47,6 +48,8 @@ jobs:
         run: python scripts/events/pull_sheet.py
       - name: Collect structured events from official sources
         run: python scripts/events/collect_jsonld.py
+      - name: Discover recurring festivals and design events
+        run: python scripts/events/discover_special_events.py
       - name: Check ticket and registration availability
         run: python scripts/events/check_availability.py
       - name: Apply validation and editorial rules

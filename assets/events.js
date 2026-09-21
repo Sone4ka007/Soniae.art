@@ -9,7 +9,7 @@
   const availabilityButtons = [...document.querySelectorAll('[data-availability]')];
   const kindButtons = [...document.querySelectorAll('[data-kind]')];
   const state = { kind: 'event', city: 'all', price: 'all', category: 'all', registration: 'all', availability: 'all' };
-  const cityNames = { moscow: 'МОСКВА', spb: 'ПЕТЕРБУРГ' };
+  const cityNames = { moscow: 'МОСКВА', spb: 'ПЕТЕРБУРГ', russia: 'РОССИЯ', international: 'МЕЖДУНАРОДНЫЙ' };
   const categoryNames = {
     lecture:'ЛЕКЦИЯ', exhibition:'ВЫСТАВКА', tour:'ЭКСКУРСИЯ',
     workshop:'ВОРКШОП', 'artist-talk':'ARTIST TALK', photo:'ФОТОГРАФИЯ',

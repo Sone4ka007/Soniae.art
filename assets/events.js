@@ -7,7 +7,8 @@
   const categorySelect = document.getElementById('category-filter');
   const registrationButtons = [...document.querySelectorAll('[data-registration]')];
   const availabilityButtons = [...document.querySelectorAll('[data-availability]')];
-  const state = { city: 'all', price: 'all', category: 'all', registration: 'all', availability: 'all' };
+  const kindButtons = [...document.querySelectorAll('[data-kind]')];
+  const state = { kind: 'event', city: 'all', price: 'all', category: 'all', registration: 'all', availability: 'all' };
   const cityNames = { moscow: 'МОСКВА', spb: 'ПЕТЕРБУРГ' };
   const categoryNames = {
     lecture:'ЛЕКЦИЯ', exhibition:'ВЫСТАВКА', tour:'ЭКСКУРСИЯ',
@@ -29,8 +30,9 @@
 
   function isVisible(e) {
     if (e.status !== 'approved') return false;
+    if ((e.kind || 'event') !== state.kind) return false;
     if (!e.date || e.date < todayIso()) return false;
-    const max = new Date(); max.setDate(max.getDate()+30);
+    const max = new Date(); max.setDate(max.getDate() + (state.kind === 'open_call' ? 90 : 30));
     const maxIso = `${max.getFullYear()}-${String(max.getMonth()+1).padStart(2,'0')}-${String(max.getDate()).padStart(2,'0')}`;
     if (e.date > maxIso) return false;
     if (state.city !== 'all' && e.city !== state.city) return false;
@@ -59,7 +61,13 @@
 
   function render() {
     const visible = events.filter(isVisible).sort((a,b) => (a.date+a.time).localeCompare(b.date+b.time));
-    count.textContent = `${visible.length} ${visible.length === 1 ? 'СОБЫТИЕ' : visible.length > 1 && visible.length < 5 ? 'СОБЫТИЯ' : 'СОБЫТИЙ'}`;
+    if (state.kind === 'open_call') {
+      count.textContent = `${visible.length} OPEN CALLS`;
+      document.getElementById('events-range').textContent = 'ДЕДЛАЙНЫ · 90 ДНЕЙ';
+    } else {
+      count.textContent = `${visible.length} ${visible.length === 1 ? 'СОБЫТИЕ' : visible.length > 1 && visible.length < 5 ? 'СОБЫТИЯ' : 'СОБЫТИЙ'}`;
+      document.getElementById('events-range').textContent = '30 ДНЕЙ ВПЕРЁД';
+    }
     empty.hidden = visible.length !== 0;
     list.innerHTML = '';
 
@@ -75,11 +83,11 @@
       section.innerHTML = `
         <div class="event-day-title">
           <span>${String(d.getDate()).padStart(2,'0')}.${String(d.getMonth()+1).padStart(2,'0')}</span>
-          <h2>${weekdays[d.getDay()]} · ${d.getDate()} ${months[d.getMonth()]}</h2>
+          <h2>${state.kind === 'open_call' ? 'ДЕДЛАЙН · ' : weekdays[d.getDay()] + ' · '}${d.getDate()} ${months[d.getMonth()]}</h2>
         </div>
         ${items.map(e => `
           <article class="event-card">
-            <div class="event-time">${esc(e.time || '—')}</div>
+            <div class="event-time">${state.kind === 'open_call' ? 'OPEN CALL' : esc(e.time || '—')}</div>
             <div class="event-main">
               <h3>${esc(e.title)}</h3>
               <p>${esc(e.description || '')}</p>
@@ -106,6 +114,9 @@
     buttons.forEach(b => b.classList.toggle('active', b === clicked));
   }
 
+  kindButtons.forEach(btn => btn.addEventListener('click', () => {
+    state.kind = btn.dataset.kind; activate(kindButtons, btn); render();
+  }));
   cityButtons.forEach(btn => btn.addEventListener('click', () => {
     state.city = btn.dataset.city; activate(cityButtons, btn); render();
   }));

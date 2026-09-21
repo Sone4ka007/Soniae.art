@@ -26,6 +26,23 @@ OPEN_CALL_HINTS=(
     "call for artists","call for entries","прием работ","приём работ"
 )
 
+PAY_TO_PLAY_HINTS=(
+    "application fee","submission fee","entry fee","participation fee","exhibition fee",
+    "registration fee","artist fee","selected artists pay","selected artist pays",
+    "fee after selection","pay after selection","upon selection",
+    "взнос за участие","регистрационный взнос","вступительный взнос",
+    "оплата участия","платное участие","после отбора необходимо оплатить",
+    "после отбора нужно оплатить","участники оплачивают","отобранные участники оплачивают"
+)
+MARKET_FEE_HINTS=(
+    "маркет","ярмарка","art fair","art market","market",
+    "стенд","место участника","место на маркете","table fee","booth fee","stand fee"
+)
+PRESTIGE_HINTS=(
+    "biennale","biennial","биеннале","triennale","triennial","триеннале",
+    "prize","award","премия","international competition","международный конкурс"
+)
+
 TOUR_HINTS=("экскурси","медиац","медиаторск","tour")
 TOUR_KEEP=(
     "кураторск","с куратором","куратор провед","кураторская экскурсия",
@@ -77,6 +94,14 @@ def main():
         if editable_status and e.get("kind")=="event" and any(x in blob for x in TOUR_HINTS):
             if not any(x in blob for x in TOUR_KEEP):
                 e["status"]="rejected"; e["review_reason"]="excluded_tour_mediation"; changed+=1; continue
+        if editable_status and e.get("kind")=="open_call":
+            paid_call=(e.get("price_type")=="paid" or any(x in blob for x in PAY_TO_PLAY_HINTS))
+            if paid_call:
+                if any(x in blob for x in MARKET_FEE_HINTS):
+                    e["status"]="check"; e["review_reason"]="paid_market_fee_exception_review"; changed+=1; continue
+                if any(x in blob for x in PRESTIGE_HINTS):
+                    e["status"]="check"; e["review_reason"]="paid_prestigious_call_exception_review"; changed+=1; continue
+                e["status"]="rejected"; e["review_reason"]="excluded_paid_open_call"; changed+=1; continue
         if problems and e.get("status")=="new":
             e["status"]="check"; e["review_reason"]=", ".join(problems); changed+=1
     DB.write_text(json.dumps(db,ensure_ascii=False,indent=2)+"\n","utf-8")

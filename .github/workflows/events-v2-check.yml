@@ -1,0 +1,34 @@
+name: Events v2 quality check
+
+on:
+  push:
+    branches: [events-v2]
+    paths:
+      - "content/events.json"
+      - "events/sources.json"
+      - "scripts/events/**"
+      - ".github/workflows/events-v2-check.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: pip install beautifulsoup4
+      - name: Collect current source data
+        run: python scripts/events/collect_jsonld.py
+      - name: Check ticket and registration availability
+        run: python scripts/events/check_availability.py
+      - name: Apply editorial rules
+        run: python scripts/events/validate_events.py
+      - name: Run data quality audit
+        run: python scripts/events/audit_events.py

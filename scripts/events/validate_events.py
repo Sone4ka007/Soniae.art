@@ -82,9 +82,16 @@ def main():
                 e["categories"]=list(cats)+["open-call"]
         elif e.get("kind") != "open_call" and (
             any(x in title_blob for x in EXHIBITION_HINTS) or
-            any(str(x).lower() in ("выставка","exhibition") for x in (e.get("categories") or []))
+            any(str(x).lower() in ("выставка","exhibition") for x in (e.get("categories") or [])) or
+            (
+                ("гэс-2" in blob or "ges-2.org" in blob) and
+                re.search(r"тип:\s*(?:выставка|инсталляция)\b", str(e.get("audience_text","")), re.I)
+            )
         ):
             e["kind"]="exhibition"
+            cats=e.get("categories") or []
+            if not any(str(x).lower() in ("выставка","exhibition") for x in cats):
+                e["categories"]=list(cats)+["выставка"]
         key=(e.get("date"),re.sub(r"\W+","",e.get("title","").lower()))
         problems=[]
         if not re.fullmatch(r"20\d\d-\d\d-\d\d",e.get("date","")): problems.append("invalid_date")

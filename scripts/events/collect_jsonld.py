@@ -29,6 +29,14 @@ EVENT_TYPES = [
     "публичная программа","медиаторский тур","игра","лаборатория","семинар",
     "творческое занятие","событие","программа","опен-колл","выставка"
 ]
+GES2_NON_EVENT_PATHS = {
+    "/concert-hall","/programme","/program","/calendar","/about","/contacts",
+    "/visit","/building","/residencies","/shop","/cafe"
+}
+GES2_NON_EVENT_TITLES = {
+    "концертный зал","программа","programme","program"
+}
+
 SKIP_TITLES = {
     "купить билет","купить билеты","зарегистрироваться","регистрация","подать заявку",
     "подробнее","все события","смотреть все","архив","читать далее","показать ещё",
@@ -589,7 +597,7 @@ def extract_ges2(src, days=14):
             parsed=urlparse(full)
             if parsed.netloc not in {"ges-2.org","www.ges-2.org"}:
                 continue
-            if "/calendar" in parsed.path or parsed.path in {"/",""}:
+            if parsed.path in GES2_NON_EVENT_PATHS or "/calendar" in parsed.path or parsed.path in {"/",""}:
                 continue
             li=a.find_parent("li")
             txt=clean(li.get_text(" ",strip=True)) if li else card_title
@@ -600,7 +608,7 @@ def extract_ges2(src, days=14):
 
             detail=detail_info(full)
             title=detail["title"] or card_title
-            if title.lower() in SKIP_TITLES or len(title)<8:
+            if title.lower() in SKIP_TITLES or title.lower() in GES2_NON_EVENT_TITLES or len(title)<8:
                 continue
             cat=detail["cat"] or event_category(txt)
             key=(dt.isoformat(),full,title)

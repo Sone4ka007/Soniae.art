@@ -10,7 +10,7 @@ on:
         type: choice
         options: [pull, push]
   schedule:
-    - cron: "0 6 * * *"
+    - cron: "*/15 * * * *"
 
 permissions:
   contents: write

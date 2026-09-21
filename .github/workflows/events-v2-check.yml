@@ -27,7 +27,7 @@ jobs:
         with:
           python-version: "3.12"
       - name: Install dependencies
-        run: pip install beautifulsoup4
+        run: pip install beautifulsoup4 google-api-python-client google-auth
       - name: Collect current source data
         run: python scripts/events/collect_jsonld.py
       - name: Check ticket and registration availability

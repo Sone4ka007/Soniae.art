@@ -20,7 +20,7 @@ def main():
     db=json.loads(DB.read_text("utf-8"))
     priority={"new":0,"check":1,"approved":2,"rejected":3}
     events=sorted(
-        db.get("events",[]),
+        [e for e in db.get("events",[]) if e.get("status") in ("new","check")],
         key=lambda e:(
             priority.get(e.get("status","new"),9),
             e.get("start_date") or e.get("date",""),
@@ -72,7 +72,7 @@ def main():
       {"updateDimensionProperties":{"range":{"sheetId":sheet_id,"dimension":"COLUMNS","startIndex":12,"endIndex":13},"properties":{"pixelSize":220},"fields":"pixelSize"}},
     ]
     sheets.batchUpdate(spreadsheetId=SHEET_ID,body={"requests":reqs}).execute()
-    print(f"Pushed {len(events)} cleaned records to {SHEET_TITLE}")
+    print(f"Pushed {len(events)} actionable new/check records to {SHEET_TITLE}")
 
 if __name__=="__main__":
     main()

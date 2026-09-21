@@ -99,7 +99,12 @@ def inspect_url(url):
             r"(?:по|по\s+входному)\s+билету|вход\s+по\s+билету|требуется\s+билет|билет\s+в\s+музей",
             text,re.I))
         buy_ticket=bool(re.search(r"купить\s+(?:билет|билеты)|приобрести\s+(?:билет|билеты)",text,re.I))
-        if numeric_paid or ticket_required:
+        ges2_film=(
+            "ges-2.org" in url.lower() and
+            bool(re.search(r"кинопоказ|кинотеатр|фестиваль коллективных фильмов",text,re.I)) and
+            has_ticket
+        )
+        if numeric_paid or ticket_required or ges2_film:
             page_price="paid"
         elif explicit_free:
             page_price="free"

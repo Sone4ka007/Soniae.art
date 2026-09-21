@@ -557,6 +557,76 @@ def open_call_summary(soup, title, fallback=""):
     t=clean(fallback)
     return t[:520].rstrip()
 
+def public_source_name(url, soup=None):
+    if soup:
+        meta=soup.find("meta",attrs={"property":"og:site_name"}) or soup.find("meta",attrs={"name":"application-name"})
+        if meta:
+            name=clean(meta.get("content",""))
+            if name and len(name)<=100:
+                return name
+        for raw in soup.find_all("script",attrs={"type":"application/ld+json"}):
+            try:
+                data=json.loads(raw.get_text() or "{}")
+            except Exception:
+                continue
+            items=data if isinstance(data,list) else [data]
+            for item in items:
+                if not isinstance(item,dict):
+                    continue
+                org=item.get("organizer") or item.get("publisher")
+                if isinstance(org,dict):
+                    name=clean(org.get("name",""))
+                    if name and len(name)<=100:
+                        return name
+    host=urlparse(url).netloc.lower().split(":")[0]
+    host=re.sub(r"^www\.","",host)
+    return host or "Первоисточник"
+
+def find_primary_open_call_url(detail_soup, listing_url):
+    if not detail_soup:
+        return ""
+    listing_host=urlparse(listing_url).netloc.lower().replace("www.","")
+    ignored_hosts=("facebook.com","instagram.com","vk.com","t.me","telegram.me","youtube.com","youtu.be")
+    preferred=[]
+    fallback=[]
+    for link in detail_soup.find_all("a",href=True):
+        href=urljoin(listing_url,link.get("href",""))
+        parsed=urlparse(href)
+        if parsed.scheme not in ("http","https") or not parsed.netloc:
+            continue
+        host=parsed.netloc.lower().replace("www.","")
+        if host==listing_host or host.endswith("."+listing_host):
+            continue
+        if any(host==x or host.endswith("."+x) for x in ignored_hosts):
+            continue
+        label=clean(link.get_text(" ",strip=True)).lower()
+        score=0
+        if any(x in label for x in (
+            "перейти к конкурсу","сайт конкурса","официальный сайт","первоисточник",
+            "official website","project website","open call website","more information"
+        )):
+            score+=20
+        if any(x in label for x in ("website","сайт","подробнее","details")):
+            score+=8
+        if any(x in label for x in ("apply","подать заявку","application","submit")):
+            score+=3
+        item=(score,href)
+        if score:
+            preferred.append(item)
+        else:
+            fallback.append(item)
+    if preferred:
+        preferred.sort(key=lambda x:x[0],reverse=True)
+        return preferred[0][1]
+    # A single external link on an aggregator detail page is usually the project source.
+    unique=[]
+    seen=set()
+    for _,href in fallback:
+        key=href.split("#",1)[0]
+        if key not in seen:
+            seen.add(key); unique.append(href)
+    return unique[0] if len(unique)==1 else ""
+
 def extract_open_call_listing(html, src):
     soup=BeautifulSoup(html,"html.parser")
     out=[]; seen=set(); today=date.today()
@@ -590,14 +660,7 @@ def extract_open_call_listing(html, src):
             h=detail_soup.find("h1") or detail_soup.find("h2")
             detail_title=clean(h.get_text(" ",strip=True)) if h else ""
             detail_text=clean(detail_soup.get_text(" ",strip=True))
-            if "ewert.ru" in urlparse(full).netloc.lower():
-                for link in detail_soup.find_all("a",href=True):
-                    label=clean(link.get_text(" ",strip=True)).lower()
-                    href=urljoin(full,link.get("href",""))
-                    host=urlparse(href).netloc.lower()
-                    if ("перейти к конкурсу" in label and host and "ewert.ru" not in host):
-                        primary_url=href
-                        break
+            primary_url=find_primary_open_call_url(detail_soup,full)
         except Exception as e:
             print(f"WARN open call detail {full}: {e}",file=sys.stderr)
 
@@ -613,18 +676,34 @@ def extract_open_call_listing(html, src):
             continue
 
         event_url=primary_url or full
+        primary_soup=None
+        source_name=""
+        if primary_url:
+            try:
+                primary_html=fetch(primary_url)
+                primary_soup=BeautifulSoup(primary_html,"html.parser")
+            except Exception as e:
+                print(f"WARN primary open call source {primary_url}: {e}",file=sys.stderr)
+            source_name=public_source_name(primary_url,primary_soup)
         key=(dt.isoformat(),event_url,title)
         if key in seen: continue
         seen.add(key)
 
         desc=open_call_summary(detail_soup if detail_text else None,title,txt)
         price,price_text=parse_price(detail_text or txt)
-        out.append(make_event(
+        ev=make_event(
             src,dt.isoformat(),"",title,event_url,desc,
-            venue=src.get("venue",""),price=price,price_text=price_text,registration=None,
+            venue=source_name if primary_url else "",price=price,price_text=price_text,registration=None,
             categories=["open-call"],status="check",
-            reason="discovery_source_needs_primary_verification"
-        ))
+            reason="" if primary_url else "primary_source_not_found"
+        )
+        ev["discovery_source"]=src["name"]
+        if primary_url:
+            ev["source"]=source_name
+        else:
+            # Never expose the aggregator as the public source.
+            ev["source"]=""
+        out.append(ev)
     return out
 
 def extract_ges2(src, days=14):

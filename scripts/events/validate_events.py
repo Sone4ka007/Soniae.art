@@ -43,9 +43,17 @@ MARKET_FEE_HINTS=(
     "маркет","ярмарка","art fair","art market","market",
     "стенд","место участника","место на маркете","table fee","booth fee","stand fee"
 )
-PRESTIGE_HINTS=(
-    "biennale","biennial","биеннале","triennale","triennial","триеннале",
-    "prize","award","премия","international competition","международный конкурс"
+# Paid calls are exceptional only when the exact programme is explicitly trusted.
+# Generic words such as "international competition", "award" or "biennale" are not
+# evidence of authority on their own.
+PRESTIGE_WHITELIST_HINTS=(
+    "tokyo biennale",
+    "токийская биеннале",
+    "la biennale di venezia",
+    "venice biennale",
+    "prix ars electronica",
+    "sony world photography awards",
+    "world press photo",
 )
 
 TOUR_HINTS=("экскурси","медиац","медиаторск","tour")
@@ -112,7 +120,9 @@ def main():
         if editable_status and any(x in blob for x in PLEIN) and not any(x in blob for x in GELD):
             e["status"]="rejected"; e["review_reason"]="excluded_plein_air"; changed+=1; continue
         if editable_status and (
-            any(x in blob for x in FAMILY_CHILDREN) or AGE_CHILD_RE.search(blob)
+            any(x in blob for x in FAMILY_CHILDREN) or
+            any(x in blob for x in KNOWN_CHILD_EVENT_HINTS) or
+            AGE_CHILD_RE.search(blob)
         ):
             e["status"]="rejected"; e["review_reason"]="excluded_family_children"; changed+=1; continue
         if editable_status and e.get("kind")=="event" and any(x in blob for x in TOUR_HINTS):
@@ -123,7 +133,7 @@ def main():
             if paid_call:
                 if any(x in blob for x in MARKET_FEE_HINTS):
                     e["status"]="check"; e["review_reason"]="paid_market_fee_exception_review"; changed+=1; continue
-                if any(x in blob for x in PRESTIGE_HINTS):
+                if any(x in blob for x in PRESTIGE_WHITELIST_HINTS):
                     e["status"]="check"; e["review_reason"]="paid_prestigious_call_exception_review"; changed+=1; continue
                 e["status"]="rejected"; e["review_reason"]="excluded_paid_open_call"; changed+=1; continue
         if problems and e.get("status")=="new":

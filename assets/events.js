@@ -95,7 +95,14 @@
     if (state.kind === 'exhibition') {
       const unique = new Map();
       visible.forEach(e => {
-        const key = (e.url || `${(e.title||'').toLowerCase()}|${(e.venue||'').toLowerCase()}`).toLowerCase();
+        // Different exhibitions often share one museum landing page.
+        // Prefer the stable record id; only fall back to exhibition identity fields.
+        const key = e.id || [
+          (e.title || '').trim().toLowerCase(),
+          (e.venue || '').trim().toLowerCase(),
+          e.start_date || e.date || '',
+          e.end_date || ''
+        ].join('|');
         if (!unique.has(key)) unique.set(key,e);
       });
       visible = [...unique.values()];

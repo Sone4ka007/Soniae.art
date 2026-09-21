@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-import json, sys
+import json, re, sys
 from datetime import date, timedelta
 from pathlib import Path
+from urllib.parse import urlsplit, urlunsplit
 
 generated_path=Path(sys.argv[1])
 remote_path=Path(sys.argv[2])
@@ -15,6 +16,48 @@ curated=json.loads(curated_path.read_text("utf-8")) if curated_path.exists() els
 
 remote_by_id={e.get("id"):e for e in remote.get("events",[]) if e.get("id")}
 curated_by_id={e.get("id"):e for e in curated.get("events",[]) if e.get("id")}
+
+def norm(v):
+    return re.sub(r"\W+","",str(v or "").lower())
+
+def canonical_url(v):
+    try:
+        p=urlsplit(str(v or "").strip())
+        if not p.scheme or not p.netloc:
+            return ""
+        return urlunsplit((p.scheme.lower(),p.netloc.lower(),p.path.rstrip("/"),"",""))
+    except Exception:
+        return ""
+
+def unique_map(events, key_fn):
+    grouped={}
+    for item in events:
+        key=key_fn(item)
+        if key:
+            grouped.setdefault(key,[]).append(item)
+    return {k:items[0] for k,items in grouped.items() if len(items)==1}
+
+# Secondary identities protect editorial decisions when a source slightly changes
+# a title/date and therefore produces a new generated id. Shared museum landing
+# pages are deliberately ignored unless they identify exactly one remote record.
+remote_by_unique_url=unique_map(remote.get("events",[]), lambda e: canonical_url(e.get("url")))
+remote_by_unique_title_venue=unique_map(
+    remote.get("events",[]),
+    lambda e: (norm(e.get("title")), norm(e.get("venue") or e.get("source")))
+        if norm(e.get("title")) and norm(e.get("venue") or e.get("source")) else None
+)
+
+def find_remote_match(e):
+    rid=e.get("id")
+    if rid and rid in remote_by_id:
+        return remote_by_id[rid]
+    u=canonical_url(e.get("url"))
+    if u and u in remote_by_unique_url:
+        return remote_by_unique_url[u]
+    key=(norm(e.get("title")), norm(e.get("venue") or e.get("source")))
+    if all(key) and key in remote_by_unique_title_venue:
+        return remote_by_unique_title_venue[key]
+    return None
 
 FINAL_PRESERVE_FIELDS={
     "status","kind","categories","editor_note","checked_at","reviewed_at",
@@ -40,7 +83,7 @@ merged=[]
 seen=set()
 for e in generated.get("events",[]):
     rid=e.get("id")
-    old=remote_by_id.get(rid)
+    old=find_remote_match(e)
     if old:
         # Final editorial decisions are the source of truth for public-facing fields.
         if old.get("status") in ("approved","rejected"):

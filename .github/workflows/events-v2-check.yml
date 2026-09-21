@@ -10,6 +10,10 @@ on:
       - ".github/workflows/events-v2-check.yml"
   workflow_dispatch:
 
+concurrency:
+  group: events-v2-quality
+  cancel-in-progress: true
+
 permissions:
   contents: read
 

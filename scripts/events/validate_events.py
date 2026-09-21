@@ -17,11 +17,24 @@ FAMILY_CHILDREN=(
 )
 AGE_CHILD_RE=re.compile(r"\b(?:для\s+детей\s*)?(?:от\s*)?(?:[3-9]|1[0-7])\s*(?:[-–—]\s*(?:[3-9]|1[0-7]))?\s*лет\b")
 
+OPEN_CALL_HINTS=(
+    "open call","open-call","опен колл","опен-колл","конкурс","прием заявок",
+    "приём заявок","подать заявку","подать проект","заявки принимаются","дедлайн",
+    "deadline","call for artists","call for entries","прием работ","приём работ"
+)
+
 def main():
     db=json.loads(DB.read_text("utf-8")); changed=0
     seen={}
     for e in db.get("events",[]):
         blob=" ".join(str(e.get(k,"")) for k in ("title","description","venue","source")).lower()
+        if e.get("kind") not in ("event","open_call"):
+            e["kind"]="event"
+        if any(x in blob for x in OPEN_CALL_HINTS):
+            e["kind"]="open_call"
+            cats=e.get("categories") or []
+            if "open-call" not in cats:
+                e["categories"]=list(cats)+["open-call"]
         key=(e.get("date"),re.sub(r"\W+","",e.get("title","").lower()))
         problems=[]
         if not re.fullmatch(r"20\d\d-\d\d-\d\d",e.get("date","")): problems.append("invalid_date")

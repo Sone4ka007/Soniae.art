@@ -8,8 +8,8 @@ ROOT=Path(__file__).resolve().parents[2]
 DB=ROOT/"content/events.json"
 SHEET_ID=os.environ["EVENTS_SHEET_ID"]
 CREDS=json.loads(os.environ["GOOGLE_SERVICE_ACCOUNT_JSON"])
-RANGE="Events!A:W"
-HEADERS=["id","status","city","date","time","title","venue","address","price","price_text","price_type","registration","availability","availability_checked_at","categories","description","url","source","checked_at","review_reason","editor_note","days_ahead","kind"]
+RANGE="Events!A:Y"
+HEADERS=["id","status","city","date","time","title","venue","address","price","price_text","price_type","registration","availability","availability_checked_at","categories","description","url","source","checked_at","review_reason","editor_note","days_ahead","kind","discovered_at","reviewed_at"]
 
 def service():
     scopes=["https://www.googleapis.com/auth/spreadsheets"]
@@ -32,7 +32,7 @@ def preserve_editor_fields(api, db):
         return 0
     headers=current[0]
     byid={e.get("id"):e for e in db.get("events",[]) if e.get("id")}
-    editable={"status","editor_note","checked_at","review_reason","price_text","registration","categories"}
+    editable={"status","editor_note","checked_at","review_reason","price_text","registration","categories","kind"}
     merged=0
     for row in current[1:]:
         obj=dict(zip(headers,row+[""]*(len(headers)-len(row))))
@@ -40,6 +40,7 @@ def preserve_editor_fields(api, db):
         if not rid or rid not in byid:
             continue
         e=byid[rid]
+        old_status=e.get("status","")
         for k in editable:
             if k not in obj:
                 continue
@@ -50,6 +51,12 @@ def preserve_editor_fields(api, db):
                 v=[x.strip() for x in str(v).split(",") if x.strip()]
             if v not in ("",None) or k in {"registration","editor_note","review_reason"}:
                 e[k]=v
+        if e.get("status","") != old_status:
+            if e.get("status") in ("approved","rejected"):
+                import datetime as _dt
+                e["reviewed_at"]=_dt.date.today().isoformat()
+            elif e.get("status") in ("new","check"):
+                e["reviewed_at"]=""
         merged+=1
     return merged
 
@@ -63,7 +70,18 @@ def main():
 
     rows=[HEADERS]
     import datetime as _dt
-    for e in db.get("events",[]):
+    priority={"new":0,"check":1,"approved":2,"rejected":3}
+    sheet_events=sorted(
+        db.get("events",[]),
+        key=lambda e:(
+            priority.get(e.get("status","new"),9),
+            -(int(str(e.get("discovered_at","1900-01-01")).replace("-","")) if str(e.get("discovered_at","")).replace("-","").isdigit() else 0),
+            e.get("date",""),
+            e.get("time",""),
+            e.get("title","")
+        )
+    )
+    for e in sheet_events:
         try:
             days=(_dt.date.fromisoformat(e.get("date",""))-_dt.date.today()).days
         except Exception:
@@ -76,7 +94,8 @@ def main():
             e.get("availability","unknown"),e.get("availability_checked_at",""),
             ",".join(e.get("categories",[])) if isinstance(e.get("categories"),list) else e.get("categories",""),
             e.get("description",""),e.get("url",""),e.get("source",""),e.get("checked_at",""),
-            e.get("review_reason",""),e.get("editor_note",""),days,e.get("kind","event")
+            e.get("review_reason",""),e.get("editor_note",""),days,e.get("kind","event"),
+            e.get("discovered_at",""),e.get("reviewed_at","")
         ])
 
     api.clear(spreadsheetId=SHEET_ID,range=RANGE,body={}).execute()
@@ -85,17 +104,19 @@ def main():
     meta=svc.spreadsheets().get(spreadsheetId=SHEET_ID,fields="sheets(properties(sheetId,title))").execute()
     sheet_id=next(s["properties"]["sheetId"] for s in meta["sheets"] if s["properties"]["title"]=="Events")
     requests=[
-      {"setBasicFilter":{"filter":{"range":{"sheetId":sheet_id,"startRowIndex":0,"startColumnIndex":0,"endColumnIndex":23}}}},
+      {"setBasicFilter":{"filter":{"range":{"sheetId":sheet_id,"startRowIndex":0,"startColumnIndex":0,"endColumnIndex":25}}}},
       {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":1,"endColumnIndex":2},
         "rule":{"condition":{"type":"ONE_OF_LIST","values":[{"userEnteredValue":x} for x in ["new","check","approved","rejected"]]},"strict":True,"showCustomUi":True}}},
       {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":2,"endColumnIndex":3},
-        "rule":{"condition":{"type":"ONE_OF_LIST","values":[{"userEnteredValue":x} for x in ["moscow","spb"]]},"strict":True,"showCustomUi":True}}},
+        "rule":{"condition":{"type":"ONE_OF_LIST","values":[{"userEnteredValue":x} for x in ["moscow","spb","russia","international"]]},"strict":True,"showCustomUi":True}}},
       {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":10,"endColumnIndex":11},
         "rule":{"condition":{"type":"ONE_OF_LIST","values":[{"userEnteredValue":x} for x in ["free","paid","unknown"]]},"strict":True,"showCustomUi":True}}},
       {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":11,"endColumnIndex":12},
         "rule":{"condition":{"type":"BOOLEAN"},"strict":True,"showCustomUi":True}}},
       {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":12,"endColumnIndex":13},
-        "rule":{"condition":{"type":"ONE_OF_LIST","values":[{"userEnteredValue":x} for x in ["available","sold_out","unknown"]]},"strict":True,"showCustomUi":True}}}
+        "rule":{"condition":{"type":"ONE_OF_LIST","values":[{"userEnteredValue":x} for x in ["available","sold_out","unknown"]]},"strict":True,"showCustomUi":True}}},
+      {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":22,"endColumnIndex":23},
+        "rule":{"condition":{"type":"ONE_OF_LIST","values":[{"userEnteredValue":x} for x in ["event","exhibition","open_call"]]},"strict":True,"showCustomUi":True}}}
     ]
     svc.spreadsheets().batchUpdate(spreadsheetId=SHEET_ID,body={"requests":requests}).execute()
     print(f"Preserved editor fields for {merged} rows; pushed {len(rows)-1} events to Google Sheet")

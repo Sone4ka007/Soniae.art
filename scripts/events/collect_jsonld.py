@@ -308,9 +308,29 @@ def extract_event_links(html, src):
         reg=bool(re.search(r"регистрац|зарегистр|купить билет",dtext,re.I)) or None
         cat=event_category(dtext[:1800])
         desc=""
-        ps=dsoup.find_all("p")
-        if ps:
-            desc=clean(" ".join(clean(p.get_text(" ",strip=True)) for p in ps[:4]))
+        boilerplate=(
+            "сегодня выставки и галереи закрыты",
+            "магазины и кафе работают в обычном режиме",
+            "режим работы",
+            "купить билет",
+            "бесплатно"
+        )
+        start_node=dsoup.find("h1") or dsoup.find("h2") or dsoup
+        parts=[]
+        for p in start_node.find_all_next("p"):
+            t=clean(p.get_text(" ",strip=True))
+            low=t.lower()
+            if len(t)<55:
+                continue
+            if any(x in low for x in boilerplate):
+                continue
+            if title.lower() in low and len(t)<len(title)+80:
+                continue
+            parts.append(t)
+            if len(" ".join(parts))>=650 or len(parts)>=3:
+                break
+        if parts:
+            desc=clean(" ".join(parts))
             if len(desc)>650: desc=desc[:647].rstrip()+"..."
         ev=make_event(src,dt.isoformat(),tm,title,full,desc,
                       price=price,price_text=price_text,registration=reg,

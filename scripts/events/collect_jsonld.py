@@ -510,6 +510,24 @@ def extract_open_call_listing(html, src):
 def extract_ges2(src, days=14):
     out, seen = [], set()
     today = date.today()
+    detail_cache={}
+
+    def detail_info(full):
+        if full in detail_cache:
+            return detail_cache[full]
+        info={"title":"","text":"","cat":""}
+        try:
+            detail_html=fetch(full)
+            ds=BeautifulSoup(detail_html,"html.parser")
+            h=ds.find(["h1","h2"])
+            info["title"]=clean(h.get_text(" ",strip=True)) if h else ""
+            info["text"]=clean(ds.get_text(" ",strip=True))
+            info["cat"]=event_category(info["text"]) or ""
+        except Exception as e:
+            print(f"WARN {src['name']} detail {full}: {e}",file=sys.stderr)
+        detail_cache[full]=info
+        return info
+
     for offset in range(days):
         dt = today + timedelta(days=offset)
         url = src["url"] + ("&" if "?" in src["url"] else "?") + f"date={dt.isoformat()}"
@@ -520,13 +538,13 @@ def extract_ges2(src, days=14):
             continue
         soup = BeautifulSoup(html,"html.parser")
         bodytxt = clean(soup.get_text(" ",strip=True))
-        # Do not trust a date query if the page did not render the requested day/month/year.
         month_names = [k for k,v in MONTHS.items() if v==dt.month and len(k)>3]
         if str(dt.year) not in bodytxt or not any(re.search(rf"\b{dt.day}\s+{re.escape(m)}\b",bodytxt,re.I) for m in month_names):
             continue
+
         for a in soup.find_all("a",href=True):
-            title = normalize_anchor_title(a)
-            if len(title)<8 or title.lower() in SKIP_TITLES:
+            card_title = normalize_anchor_title(a)
+            if len(card_title)<8 or card_title.lower() in SKIP_TITLES:
                 continue
             full=urljoin(src["url"],a.get("href",""))
             parsed=urlparse(full)
@@ -534,43 +552,42 @@ def extract_ges2(src, days=14):
                 continue
             if "/calendar" in parsed.path or parsed.path in {"/",""}:
                 continue
+
             li=a.find_parent("li")
-            txt=clean(li.get_text(" ",strip=True)) if li else title
+            txt=clean(li.get_text(" ",strip=True)) if li else card_title
             if len(txt)>1200:
                 continue
             if not (event_category(txt) or parse_time(txt)):
                 continue
-            cat=event_category(txt)
-            title=re.sub(r"^\d{1,2}:\d{2}\s*[–-]\s*\d{1,2}:\d{2}\s*","",title)
-            if cat:
-                parts=[clean(x) for x in re.split(re.escape(cat),title,flags=re.I) if clean(x)]
-                if parts:
-                    title=min(parts,key=len)
-            words=title.split()
-            for n in range(2,len(words)//2+1):
-                if words[:n]==words[n:2*n] and len(words)==2*n:
-                    title=" ".join(words[:n]); break
-            for typ in sorted(EVENT_TYPES,key=len,reverse=True):
-                title=re.sub(rf"^{re.escape(typ)}\s*", "", title, flags=re.I)
-                title=re.sub(rf"\s*{re.escape(typ)}$", "", title, flags=re.I)
-            title=clean(title)
-            if len(title)<8:
+
+            detail=detail_info(full)
+            title=detail["title"] or card_title
+            if title.lower() in SKIP_TITLES or len(title)<8:
                 continue
-            key=(dt.isoformat(),full,title)
-            if key in seen: continue
+
+            cat=detail["cat"] or event_category(txt)
+            key=(dt.isoformat(),full)
+            if key in seen:
+                continue
             seen.add(key)
-            price,price_text=parse_price(txt)
-            reg=bool(re.search(r"регистрац",txt,re.I)) or None
-            cat=event_category(txt)
-            out.append(make_event(src,dt.isoformat(),parse_time(txt),title,full,"",
-                                  price=price,price_text=price_text,registration=reg,
-                                  categories=[cat] if cat else []))
+
+            price,price_text=parse_price(detail["text"] or txt)
+            reg=bool(re.search(r"регистрац|зарегистр",detail["text"] or txt,re.I)) or None
+            ev=make_event(src,dt.isoformat(),parse_time(txt),title,full,"",
+                          price=price,price_text=price_text,registration=reg,
+                          categories=[cat] if cat else [])
+            ev["audience_text"]=(detail["text"] or "")[:2500]
+            out.append(ev)
     return out
 
 def main():
     cfg=load_json(SOURCES,{"sources":[]})
     db=load_json(DB,{"schema_version":1,"events":[]})
     existing={e.get("id"):e for e in db.get("events",[])}
+    occurrence_index={
+        (e.get("city"),e.get("date"),str(e.get("url","")).strip().lower()):e.get("id")
+        for e in db.get("events",[]) if e.get("id") and e.get("url")
+    }
     found=0
     for src in cfg.get("sources",[]):
         adapter=src.get("adapter","")
@@ -598,8 +615,23 @@ def main():
                 candidates.extend(extract_open_call_listing(html,src))
 
         for n in candidates:
-            if n["id"] not in existing:
+            occ=(n.get("city"),n.get("date"),str(n.get("url","")).strip().lower())
+            old_id=occurrence_index.get(occ)
+            if old_id and old_id in existing:
+                old=existing[old_id]
+                final_status=old.get("status") if old.get("status") in ("approved","rejected") else n.get("status","new")
+                editor_note=old.get("editor_note","")
+                reviewed_at=old.get("reviewed_at","")
+                discovered_at=old.get("discovered_at") or n.get("discovered_at")
+                old.update(n)
+                old["id"]=old_id
+                old["status"]=final_status
+                old["editor_note"]=editor_note
+                old["reviewed_at"]=reviewed_at
+                old["discovered_at"]=discovered_at
+            elif n["id"] not in existing:
                 existing[n["id"]]=n
+                occurrence_index[occ]=n["id"]
                 found+=1
 
     db["updated_at"]=datetime.now(timezone.utc).date().isoformat()

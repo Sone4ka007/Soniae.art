@@ -2733,7 +2733,7 @@
     },
     {
       "id": "spb-2026-09-25-cacd31624b",
-      "status": "new",
+      "status": "check",
       "kind": "exhibition",
       "city": "spb",
       "date": "2026-09-25",
@@ -2751,7 +2751,7 @@
       "url": "https://rusmuseum.ru/exhibitions/coming/vsevolod-voinov-khudozhnik-muzeyshchik-kritik/",
       "source": "Русский музей — выставки",
       "checked_at": "",
-      "review_reason": "",
+      "review_reason": "manual_approval_required",
       "discovered_at": "2026-09-21",
       "price_type": "free",
       "availability": "unknown",
@@ -5758,7 +5758,7 @@
       "editor_note": "Общий заголовок программы заменён отдельными событиями."
     },
     {
-      "status": "approved",
+      "status": "check",
       "kind": "event",
       "city": "spb",
       "venue": "РОСФОТО",
@@ -5772,10 +5772,10 @@
       "url": "https://rosphoto.org/events/kulturnyj-assamblyazh-dni-vengerskoj-kultury-v-rosfoto-2/",
       "source": "РОСФОТО",
       "checked_at": "",
-      "review_reason": "",
+      "review_reason": "manual_approval_required",
       "editor_note": "Отдельный пункт программы «Культурный ассамбляж»; требуется ручной апрув.",
       "discovered_at": "2026-09-22",
-      "reviewed_at": "2026-09-21",
+      "reviewed_at": "",
       "id": "manual-spb-2026-09-30-rosphoto-fortepan",
       "date": "2026-09-30",
       "time": "19:00",
@@ -6236,7 +6236,7 @@
       "start_date": "2026-10-10"
     },
     {
-      "status": "approved",
+      "status": "check",
       "kind": "event",
       "city": "spb",
       "venue": "РОСФОТО",
@@ -6253,7 +6253,7 @@
       "review_reason": "manual_approval_required",
       "editor_note": "Отдельный пункт программы «Культурный ассамбляж»; требуется ручной апрув.",
       "discovered_at": "2026-09-22",
-      "reviewed_at": "2026-09-21",
+      "reviewed_at": "",
       "id": "manual-spb-2026-10-10-rosphoto-kadar",
       "date": "2026-10-10",
       "time": "17:00",
@@ -6294,7 +6294,7 @@
     },
     {
       "id": "spb-2026-10-11-e965a222c0",
-      "status": "approved",
+      "status": "check",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-11",
@@ -6312,13 +6312,13 @@
       "url": "https://rosphoto.org/events/pustaya-scena/",
       "source": "РОСФОТО",
       "checked_at": "",
-      "review_reason": "",
+      "review_reason": "manual_approval_required",
       "discovered_at": "2026-09-21",
       "price_type": "paid",
       "availability": "unknown",
       "availability_checked_at": "2026-09-22",
       "editor_note": "",
-      "reviewed_at": "2026-09-21"
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-11-963ff028e2",
@@ -6801,7 +6801,7 @@
       "start_date": "2026-10-18"
     },
     {
-      "status": "approved",
+      "status": "check",
       "kind": "event",
       "city": "spb",
       "venue": "РОСФОТО",
@@ -6818,7 +6818,7 @@
       "review_reason": "manual_approval_required",
       "editor_note": "Отдельный пункт программы «Культурный ассамбляж»; требуется ручной апрув.",
       "discovered_at": "2026-09-22",
-      "reviewed_at": "2026-09-21",
+      "reviewed_at": "",
       "id": "manual-spb-2026-10-21-rosphoto-hungarian-cinema",
       "date": "2026-10-21",
       "time": "19:00",

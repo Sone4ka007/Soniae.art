@@ -4673,7 +4673,7 @@
     },
     {
       "id": "moscow-2026-09-27-7de1fd645e",
-      "status": "approved",
+      "status": "check",
       "kind": "event",
       "city": "moscow",
       "date": "2026-09-27",
@@ -4691,13 +4691,13 @@
       "url": "https://centrezotov.ru/events/eho-koroche/",
       "source": "Центр Зотов",
       "checked_at": "",
-      "review_reason": "",
+      "review_reason": "manual_approval_required",
       "discovered_at": "2026-09-21",
       "price_type": "paid",
       "availability": "available",
       "availability_checked_at": "2026-09-22",
       "editor_note": "",
-      "reviewed_at": "2026-09-21"
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-09-27-d5623dd3d1",

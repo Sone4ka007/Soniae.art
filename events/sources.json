@@ -249,7 +249,7 @@
     {
       "name": "Государственный Эрмитаж — выставки и события",
       "city": "spb",
-      "url": "https://www.hermitagemuseum.org/what-s-on",
+      "url": "https://hermitagemuseum.org/what-s-on",
       "venue": "Государственный Эрмитаж",
       "adapter": "event_links",
       "href_contains": [
@@ -616,6 +616,33 @@
         "/afisha/"
       ],
       "max_detail_pages": 120,
+      "detail_workers": 8,
+      "source_group": "museum"
+    },
+    {
+      "name": "Музей Москвы — события",
+      "city": "moscow",
+      "url": "https://mosmuseum.ru/events/",
+      "venue": "Музей Москвы",
+      "adapter": "event_links",
+      "href_contains": [
+        "/events/p/"
+      ],
+      "max_detail_pages": 60,
+      "detail_workers": 8,
+      "source_group": "museum"
+    },
+    {
+      "name": "Музей Москвы — выставки",
+      "city": "moscow",
+      "url": "https://mosmuseum.ru/events/",
+      "venue": "Музей Москвы",
+      "adapter": "event_links",
+      "href_contains": [
+        "/exhibitions/p/"
+      ],
+      "kind": "exhibition",
+      "max_detail_pages": 60,
       "detail_workers": 8,
       "source_group": "museum"
     }

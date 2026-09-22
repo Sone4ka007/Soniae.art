@@ -669,7 +669,8 @@
       "availability_checked_at": "2026-09-22",
       "start_date": "2026-09-03",
       "end_date": "2027-01-17",
-      "reviewed_at": "2026-09-21"
+      "reviewed_at": "2026-09-21",
+      "editor_note": ""
     },
     {
       "id": "moscow-2026-09-22-6e9b4343b7",
@@ -691,11 +692,13 @@
       "url": "https://centrezotov.ru/events/hleb/ekskursiya-po-vystavke-hleb/",
       "source": "Центр Зотов",
       "checked_at": "",
-      "review_reason": "excluded_tour_mediation",
+      "review_reason": "",
       "discovered_at": "2026-09-22",
       "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-09-22"
+      "availability_checked_at": "2026-09-22",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-09-22-6c590d946b",
@@ -2476,7 +2479,7 @@
     },
     {
       "id": "moscow-2026-09-24-8f96d65fb8",
-      "status": "check",
+      "status": "new",
       "city": "moscow",
       "date": "2026-09-24",
       "time": "18:00",
@@ -2493,7 +2496,7 @@
       "url": "https://www.tretyakovgallery.ru/events/o/lektsiya-tsvetovodstvo-russkikh-usadeb-i-landshaftnyy-dizayn/",
       "source": "Третьяковская галерея — события",
       "checked_at": "",
-      "review_reason": "manual_approval_required",
+      "review_reason": "",
       "discovered_at": "2026-09-20",
       "price_type": "paid",
       "availability": "available",
@@ -2533,7 +2536,7 @@
     },
     {
       "id": "moscow-2026-09-24-29688d075d",
-      "status": "check",
+      "status": "new",
       "city": "moscow",
       "date": "2026-09-24",
       "time": "19:00",
@@ -2550,7 +2553,7 @@
       "url": "https://www.tretyakovgallery.ru/events/o/lektsiya-kartinnaya-galereya-rumyantsevskogo-muzeya-istoriya-i-sudba/",
       "source": "Третьяковская галерея — события",
       "checked_at": "",
-      "review_reason": "manual_approval_required",
+      "review_reason": "",
       "discovered_at": "2026-09-20",
       "price_type": "paid",
       "availability": "available",
@@ -2589,7 +2592,7 @@
     },
     {
       "id": "moscow-2026-09-24-5da09dd28f",
-      "status": "check",
+      "status": "new",
       "city": "moscow",
       "date": "2026-09-24",
       "time": "19:30",
@@ -2606,7 +2609,7 @@
       "url": "https://centrezotov.ru/events/lektorij-obyasnyaya-xx-vek/boris-ignatovich-fotografiya-%e2%80%94-eto-sintez/",
       "source": "Центр Зотов",
       "checked_at": "",
-      "review_reason": "manual_approval_required",
+      "review_reason": "",
       "discovered_at": "2026-09-20",
       "price_type": "paid",
       "availability": "available",
@@ -2676,7 +2679,7 @@
     },
     {
       "id": "moscow-2026-09-25-44d6d71884",
-      "status": "check",
+      "status": "new",
       "city": "moscow",
       "date": "2026-09-25",
       "time": "",
@@ -2691,7 +2694,7 @@
       "url": "https://design.hse.ru/news/7109",
       "source": "Школа дизайна НИУ ВШЭ — открытые лекции",
       "checked_at": "",
-      "review_reason": "manual_approval_required",
+      "review_reason": "",
       "discovered_at": "2026-09-20",
       "price_type": "unknown",
       "availability": "unknown",
@@ -4673,7 +4676,7 @@
     },
     {
       "id": "moscow-2026-09-27-7de1fd645e",
-      "status": "check",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-09-27",
@@ -4691,13 +4694,13 @@
       "url": "https://centrezotov.ru/events/eho-koroche/",
       "source": "Центр Зотов",
       "checked_at": "",
-      "review_reason": "manual_approval_required",
+      "review_reason": "",
       "discovered_at": "2026-09-21",
       "price_type": "paid",
       "availability": "available",
       "availability_checked_at": "2026-09-22",
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-09-21"
     },
     {
       "id": "moscow-2026-09-27-d5623dd3d1",
@@ -6039,7 +6042,7 @@
     },
     {
       "id": "moscow-2026-10-05-dba338c92d",
-      "status": "check",
+      "status": "new",
       "city": "moscow",
       "date": "2026-10-05",
       "time": "",
@@ -6054,7 +6057,7 @@
       "url": "https://design.hse.ru/news/7183",
       "source": "Школа дизайна НИУ ВШЭ",
       "checked_at": "",
-      "review_reason": "manual_approval_required",
+      "review_reason": "",
       "discovered_at": "2026-09-20",
       "price_type": "paid",
       "availability": "available",
@@ -6626,7 +6629,7 @@
     },
     {
       "id": "moscow-2026-10-16-b6a9240955",
-      "status": "check",
+      "status": "rejected",
       "city": "moscow",
       "date": "2026-10-16",
       "time": "",
@@ -6643,7 +6646,7 @@
       "url": "https://design.hse.ru/news/7111",
       "source": "Школа дизайна НИУ ВШЭ",
       "checked_at": "",
-      "review_reason": "manual_approval_required",
+      "review_reason": "excluded_paid_open_call",
       "discovered_at": "2026-09-20",
       "price_type": "paid",
       "availability": "unknown",
@@ -6963,7 +6966,9 @@
       "discovered_at": "2026-09-22",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-09-22"
+      "availability_checked_at": "2026-09-22",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-11-20-e51b07d15a",

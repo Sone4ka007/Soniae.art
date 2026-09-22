@@ -8,8 +8,8 @@ ROOT=Path(__file__).resolve().parents[2]
 DB=ROOT/"content/events.json"
 SHEET_ID=os.environ["EVENTS_SHEET_ID"]
 CREDS=json.loads(os.environ["GOOGLE_SERVICE_ACCOUNT_JSON"])
-RANGE="Events!A:Y"
-HEADERS=["id","status","title","date","time","venue","city","kind","price_type","price_text","registration","availability","availability_checked_at","categories","description","url","source","review_reason","editor_note","discovered_at","reviewed_at","address","price","checked_at","days_ahead"]
+RANGE="Events!A:Z"
+HEADERS=["id","status","title","date","time","venue","city","kind","price_type","price_text","registration","availability","availability_checked_at","categories","description","url","source","review_reason","editor_note","discovered_at","reviewed_at","address","price","checked_at","days_ahead","synced_status"]
 
 def service():
     scopes=["https://www.googleapis.com/auth/spreadsheets"]
@@ -48,7 +48,8 @@ def preserve_editor_fields(api, db):
         e=byid[rid]
         old_status=e.get("status","")
         live_status=str(obj.get("status","")).strip()
-        if live_status in ("approved","rejected"):
+        synced_status=str(obj.get("synced_status","")).strip()
+        if synced_status and live_status!=synced_status and live_status in ("new","check","approved","rejected"):
             e["status"]=live_status
         for k in editable:
             if k not in obj:
@@ -107,7 +108,7 @@ def main():
             ",".join(e.get("categories",[])) if isinstance(e.get("categories"),list) else e.get("categories",""),
             e.get("description",""),e.get("url",""),e.get("source",""),e.get("review_reason",""),
             e.get("editor_note",""),e.get("discovered_at",""),e.get("reviewed_at",""),
-            e.get("address",""),e.get("price",""),e.get("checked_at",""),days
+            e.get("address",""),e.get("price",""),e.get("checked_at",""),days,e.get("status","new")
         ])
 
     api.clear(spreadsheetId=SHEET_ID,range=RANGE,body={}).execute()

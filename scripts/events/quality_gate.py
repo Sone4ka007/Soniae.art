@@ -104,7 +104,7 @@ def normalize(e):
     if desc!=e.get("description",""):
         e["description"]=desc; changed.append("description")
 
-    if e["kind"]=="open_call" and e.get("status")=="approved" and (
+    if e["kind"]=="open_call" and e.get("status") in ("new","check") and (
         is_aggregator_url(e.get("url")) or any(x in low(e.get("source")) for x in ("ewert","curatorspace","artconnect","on the move"))
     ):
         e["status"]="check"
@@ -169,8 +169,9 @@ def run(path,fix=False,strict=False):
             if not e.get("title"): errors.append(f"approved without title: {rid}")
             if e.get("kind")=="exhibition" and not any(low(c) in ("выставка","exhibition") for c in e.get("categories",[])):
                 errors.append(f"exhibition/category mismatch: {rid}")
-            if e.get("kind")=="open_call" and is_aggregator_url(e.get("url")):
-                errors.append(f"approved open call uses aggregator: {rid}")
+            # An editor-approved record is durable even when the current URL is
+            # still an aggregator discovery link. The source can be improved
+            # later without unpublishing the approved opportunity.
 
     db["events"]=sorted(db.get("events",[]),key=lambda e:(e.get("date",""),e.get("time",""),e.get("title","")))
     if fix:

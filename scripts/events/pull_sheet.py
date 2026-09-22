@@ -9,7 +9,7 @@ ROOT=Path(__file__).resolve().parents[2]
 DB=ROOT/"content/events.json"
 SHEET_ID=os.environ["EVENTS_SHEET_ID"]
 CREDS=json.loads(os.environ["GOOGLE_SERVICE_ACCOUNT_JSON"])
-RANGE="Events!A:Z"
+RANGE="Events!A:AB"
 
 def service():
     scopes=["https://www.googleapis.com/auth/spreadsheets.readonly"]
@@ -31,7 +31,7 @@ def main():
     byid={e.get("id"):e for e in db.get("events",[]) if e.get("id")}
     # The moderation Sheet is not a second content database.
     # Only explicit editorial decisions may flow back into GitHub.
-    editable={"status","editor_note","checked_at","review_reason"}
+    editable={"status","editor_note","checked_at","review_reason","url","source"}
     for row in rows:
         rid=row.get("id","").strip()
         if not rid or rid not in byid: continue
@@ -50,6 +50,15 @@ def main():
                     continue
                 if live_status not in ("new","check","approved","rejected"):
                     continue
+            elif k in ("url","source"):
+                baseline_key="synced_"+k
+                live_value=str(v).strip()
+                synced_value=str(row.get(baseline_key,"")).strip()
+                # Import source edits only when the editor changed the live cell
+                # since the bot last wrote it. Empty cells are ignored.
+                if not live_value or live_value==synced_value:
+                    continue
+                v=live_value
             e[k]=v
         new_status=e.get("status","")
         if new_status != old_status:

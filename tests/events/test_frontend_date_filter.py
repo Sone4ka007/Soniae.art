@@ -29,5 +29,15 @@ class EventDateFilterFrontendTests(unittest.TestCase):
         self.assertIn("setDateRange(from, to, '', 'range')",js)
         self.assertIn("setDateRange(dateDay.value, dateDay.value, '', 'day')",js)
 
+    def test_multiday_events_intersect_selected_range(self):
+        js=(ROOT/"assets/events.js").read_text("utf-8")
+        self.assertIn("const end = e.end_date || e.date;",js)
+        self.assertIn("end < rangeFrom || start > rangeTo",js)
+
+    def test_multiday_event_range_is_rendered(self):
+        js=(ROOT/"assets/events.js").read_text("utf-8")
+        self.assertIn("function formatEventRange(e)",js)
+        self.assertIn('class="event-period"',js)
+
 if __name__=="__main__":
     unittest.main()

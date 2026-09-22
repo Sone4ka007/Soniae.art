@@ -9,7 +9,7 @@ DB=ROOT/"content/events.json"
 SHEET_ID=os.environ["EVENTS_SHEET_ID"]
 CREDS=json.loads(os.environ["GOOGLE_SERVICE_ACCOUNT_JSON"])
 RANGE="Events!A:AB"
-HEADERS=["id","status","title","date","time","venue","city","kind","price_type","price_text","registration","availability","availability_checked_at","categories","description","url","source","review_reason","editor_note","discovered_at","reviewed_at","address","price","checked_at","days_ahead","synced_status","synced_url","synced_source"]
+HEADERS=["title","status","date","time","venue","city","kind","categories","description","url","source","address","price_type","price_text","registration","availability","availability_checked_at","review_reason","editor_note","discovered_at","reviewed_at","price","checked_at","days_ahead","id","synced_status","synced_url","synced_source"]
 
 def service():
     scopes=["https://www.googleapis.com/auth/spreadsheets"]
@@ -106,38 +106,42 @@ def main():
         except Exception:
             days=""
         rows.append([
-            e.get("id",""),e.get("status","new"),e.get("title",""),e.get("date",""),e.get("time",""),
-            e.get("venue",""),e.get("city",""),e.get("kind","event"),e.get("price_type","unknown"),
-            e.get("price_text",""),
+            e.get("title",""),e.get("status","new"),e.get("date",""),e.get("time",""),e.get("venue",""),
+            e.get("city",""),e.get("kind","event"),
+            ",".join(e.get("categories",[])) if isinstance(e.get("categories"),list) else e.get("categories",""),
+            e.get("description",""),e.get("url",""),e.get("source",""),e.get("address",""),
+            e.get("price_type","unknown"),e.get("price_text",""),
             bool(e.get("registration")) if e.get("registration") is not None else "",
             e.get("availability","unknown"),e.get("availability_checked_at",""),
-            ",".join(e.get("categories",[])) if isinstance(e.get("categories"),list) else e.get("categories",""),
-            e.get("description",""),e.get("url",""),e.get("source",""),e.get("review_reason",""),
-            e.get("editor_note",""),e.get("discovered_at",""),e.get("reviewed_at",""),
-            e.get("address",""),e.get("price",""),e.get("checked_at",""),days,e.get("status","new"),
+            e.get("review_reason",""),e.get("editor_note",""),e.get("discovered_at",""),e.get("reviewed_at",""),
+            e.get("price",""),e.get("checked_at",""),days,e.get("id",""),e.get("status","new"),
             e.get("url",""),e.get("source","")
         ])
 
     api.clear(spreadsheetId=SHEET_ID,range=RANGE,body={}).execute()
     api.update(spreadsheetId=SHEET_ID,range="Events!A1",valueInputOption="RAW",body={"values":rows}).execute()
 
-    meta=svc.spreadsheets().get(spreadsheetId=SHEET_ID,fields="sheets(properties(sheetId,title))").execute()
+    meta=svc.spreadsheets().get(spreadsheetId=SHEET_ID,fields="sheets(properties(sheetId,title,gridProperties(rowCount,columnCount)))").execute()
     sheet_id=next(s["properties"]["sheetId"] for s in meta["sheets"] if s["properties"]["title"]=="Events")
+    # Reset data validation across the editable grid first. This removes stale
+    # dropdown rules left behind when columns are reordered, then reapplies
+    # validation only to controlled fields.
     requests=[
-      {"setBasicFilter":{"filter":{"range":{"sheetId":sheet_id,"startRowIndex":0,"startColumnIndex":0,"endColumnIndex":25}}}},
+      {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":0,"endColumnIndex":28}}},
+      {"setBasicFilter":{"filter":{"range":{"sheetId":sheet_id,"startRowIndex":0,"startColumnIndex":0,"endColumnIndex":28}}}},
       {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":1,"endColumnIndex":2},
         "rule":{"condition":{"type":"ONE_OF_LIST","values":[{"userEnteredValue":x} for x in ["new","check","approved","rejected"]]},"strict":True,"showCustomUi":True}}},
-      {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":6,"endColumnIndex":7},
+      {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":5,"endColumnIndex":6},
         "rule":{"condition":{"type":"ONE_OF_LIST","values":[{"userEnteredValue":x} for x in ["moscow","spb","russia","international"]]},"strict":True,"showCustomUi":True}}},
-      {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":7,"endColumnIndex":8},
+      {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":6,"endColumnIndex":7},
         "rule":{"condition":{"type":"ONE_OF_LIST","values":[{"userEnteredValue":x} for x in ["event","exhibition","open_call"]]},"strict":True,"showCustomUi":True}}},
-      {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":8,"endColumnIndex":9},
+      {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":12,"endColumnIndex":13},
         "rule":{"condition":{"type":"ONE_OF_LIST","values":[{"userEnteredValue":x} for x in ["free","paid","unknown"]]},"strict":True,"showCustomUi":True}}},
-      {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":10,"endColumnIndex":11},
+      {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":14,"endColumnIndex":15},
         "rule":{"condition":{"type":"BOOLEAN"},"strict":True,"showCustomUi":True}}},
-      {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":11,"endColumnIndex":12},
-        "rule":{"condition":{"type":"ONE_OF_LIST","values":[{"userEnteredValue":x} for x in ["available","sold_out","unknown"]]},"strict":True,"showCustomUi":True}}},
-      {"updateDimensionProperties":{"range":{"sheetId":sheet_id,"dimension":"COLUMNS","startIndex":25,"endIndex":28},
+      {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":15,"endColumnIndex":16},
+        "rule":{"condition":{"type":"ONE_OF_LIST","values":[{"userEnteredValue":x} for x in ["available","sold_out","postponed","cancelled","unknown"]]},"strict":True,"showCustomUi":True}}},
+      {"updateDimensionProperties":{"range":{"sheetId":sheet_id,"dimension":"COLUMNS","startIndex":24,"endIndex":28},
         "properties":{"hiddenByUser":True},"fields":"hiddenByUser"}}
     ]
     svc.spreadsheets().batchUpdate(spreadsheetId=SHEET_ID,body={"requests":requests}).execute()

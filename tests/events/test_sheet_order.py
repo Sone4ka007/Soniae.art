@@ -22,12 +22,12 @@ class SheetOrderRegressionTests(unittest.TestCase):
         push=(ROOT/"scripts/events/push_sheet.py").read_text("utf-8")
         self.assertIn('synced_status=str(row.get("synced_status","")).strip()',pull)
         self.assertIn("live_status==synced_status",pull)
-        self.assertIn('"synced_status"]',push)
+        self.assertIn('"synced_status","synced_url","synced_source"]',push)
         self.assertIn('e.get("status","new")',push)
 
-    def test_baseline_column_is_hidden(self):
+    def test_baseline_columns_are_hidden(self):
         source=(ROOT/"scripts/events/push_sheet.py").read_text("utf-8")
-        self.assertIn('"startIndex":25,"endIndex":26',source)
+        self.assertIn('"startIndex":25,"endIndex":28',source)
         self.assertIn('"hiddenByUser":True',source)
 
 if __name__=="__main__":

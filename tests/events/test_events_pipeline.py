@@ -85,11 +85,26 @@ class ValidationRulesTests(unittest.TestCase):
 
 
 class QualityGateTests(unittest.TestCase):
-    def test_approved_aggregator_open_call_returns_to_check(self):
+    def test_approved_aggregator_open_call_stays_approved(self):
         mod = load_module("quality_gate_test", "scripts/events/quality_gate.py")
         event = {
             "id": "call-1",
             "status": "approved",
+            "kind": "open_call",
+            "title": "Open Call",
+            "venue": "Organizer",
+            "categories": ["open-call"],
+            "url": "https://www.curatorspace.com/opportunities/detail/test",
+            "source": "CuratorSpace — opportunities",
+        }
+        mod.normalize(event)
+        self.assertEqual(event["status"], "approved")
+
+    def test_unreviewed_aggregator_open_call_returns_to_check(self):
+        mod = load_module("quality_gate_test", "scripts/events/quality_gate.py")
+        event = {
+            "id": "call-2",
+            "status": "new",
             "kind": "open_call",
             "title": "Open Call",
             "venue": "Organizer",

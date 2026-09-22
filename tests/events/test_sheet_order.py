@@ -25,10 +25,23 @@ class SheetOrderRegressionTests(unittest.TestCase):
         self.assertIn('"synced_status","synced_url","synced_source"]',push)
         self.assertIn('e.get("status","new")',push)
 
-    def test_baseline_columns_are_hidden(self):
+    def test_sheet_is_title_first_and_service_columns_are_hidden(self):
         source=(ROOT/"scripts/events/push_sheet.py").read_text("utf-8")
-        self.assertIn('"startIndex":25,"endIndex":28',source)
+        self.assertIn('HEADERS=["title","status","date","time","venue","city","kind"',source)
+        self.assertIn('"id","synced_status","synced_url","synced_source"]',source)
+        self.assertIn('"startIndex":24,"endIndex":28',source)
         self.assertIn('"hiddenByUser":True',source)
+
+    def test_stale_validation_is_cleared_before_dropdowns_are_reapplied(self):
+        source=(ROOT/"scripts/events/push_sheet.py").read_text("utf-8")
+        self.assertIn('"startColumnIndex":0,"endColumnIndex":28}}}',source)
+        self.assertIn('["available","sold_out","postponed","cancelled","unknown"]',source)
+
+    def test_sync_reads_columns_by_header_name_not_fixed_position(self):
+        pull=(ROOT/"scripts/events/pull_sheet.py").read_text("utf-8")
+        push=(ROOT/"scripts/events/push_sheet.py").read_text("utf-8")
+        self.assertIn("dict(zip(headers",pull)
+        self.assertIn("dict(zip(headers",push)
 
 if __name__=="__main__":
     unittest.main()

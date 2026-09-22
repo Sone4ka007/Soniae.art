@@ -553,7 +553,7 @@
       "availability": "available",
       "availability_checked_at": "2026-09-21",
       "start_date": "2026-09-21",
-      "editor_note": "Новость об открытии заменена отдельной записью выставки «Пелагея Шурига. 1900–1980».",
+      "editor_note": "",
       "reviewed_at": ""
     },
     {
@@ -575,7 +575,7 @@
       "url": "https://centrezotov.ru/events/hleb/",
       "source": "Центр Зотов",
       "checked_at": "",
-      "review_reason": "",
+      "review_reason": "excluded_paid_open_call",
       "discovered_at": "2026-09-21",
       "price_type": "paid",
       "availability": "available",
@@ -1294,7 +1294,7 @@
       "url": "https://ges-2.org/a-and-b-were-sitting-on-a-pipe",
       "source": "Дом культуры «ГЭС-2»",
       "checked_at": "",
-      "review_reason": "",
+      "review_reason": "excluded_family_children",
       "discovered_at": "2026-09-20",
       "price_type": "paid",
       "availability": "unknown",
@@ -1420,10 +1420,10 @@
       "reviewed_at": "2026-09-21"
     },
     {
-      "status": "check",
-      "editor_note": "Добавлено в подборку как кандидат; требуется ручной апрув.",
+      "status": "approved",
+      "editor_note": "Добавлено как крупное профильное событие; официальный источник проверен",
       "checked_at": "2026-09-21",
-      "reviewed_at": "",
+      "reviewed_at": "2026-09-22",
       "availability": "unknown",
       "availability_checked_at": "",
       "registration": true,
@@ -1447,7 +1447,7 @@
       "url": "https://homefest.ru/",
       "source": "HomeFest — официальный сайт",
       "discovered_at": "2026-09-21",
-      "review_reason": "manual_approval_required",
+      "review_reason": "",
       "start_date": "2026-09-23"
     },
     {
@@ -1564,10 +1564,10 @@
       "reviewed_at": "2026-09-21"
     },
     {
-      "status": "check",
-      "editor_note": "Добавлено в подборку как кандидат; требуется ручной апрув.",
+      "status": "approved",
+      "editor_note": "Добавлено как крупное профильное событие; официальный источник проверен",
       "checked_at": "2026-09-21",
-      "reviewed_at": "",
+      "reviewed_at": "2026-09-22",
       "availability": "unknown",
       "availability_checked_at": "",
       "registration": true,
@@ -1591,7 +1591,7 @@
       "url": "https://www.forumdesign.ru/saint-petersburg/",
       "source": "Российские дни дизайна и архитектуры — официальный сайт",
       "discovered_at": "2026-09-21",
-      "review_reason": "manual_approval_required"
+      "review_reason": ""
     },
     {
       "id": "moscow-2026-09-23-6c590d946b",
@@ -2072,7 +2072,7 @@
       "url": "https://garagemca.org/event/superreality-dream-delusion-and-mysticism-in-the-life-of-a-soviet-man-danila-lyukshin-nadezhda-plungyan-and-oleg-gorelov-open-doors-to-foreign-and-otherworldly-cultures-of-the-1920s-and-1980s",
       "source": "Музей современного искусства «Гараж»",
       "checked_at": "",
-      "review_reason": "",
+      "review_reason": "excluded_paid_open_call",
       "discovered_at": "2026-09-21",
       "price_type": "free",
       "availability": "available",
@@ -2331,7 +2331,7 @@
       "url": "https://rosphoto.org/posetitelyam/events/7/",
       "source": "РОСФОТО",
       "checked_at": "",
-      "review_reason": "",
+      "review_reason": "excluded_tour_mediation",
       "discovered_at": "2026-09-21",
       "price_type": "unknown",
       "availability": "unknown",
@@ -2815,7 +2815,7 @@
       "url": "https://rosphoto.org/events/ekskursiya-po-domu-35-na-bolshoj-morskoj-ulice-2024/",
       "source": "РОСФОТО",
       "checked_at": "",
-      "review_reason": "",
+      "review_reason": "excluded_tour_mediation",
       "discovered_at": "2026-09-21",
       "price_type": "paid",
       "availability": "available",
@@ -2881,10 +2881,10 @@
       "audience_text": "› Программа Проект : Фестиваль коллективных фильмов Дата: 24 сен 2026, 19:30–22:15 Билеты Возраст: от 18 Тип: Кинопоказ и обсуждение Место: Кинотеатр Доступность  Возрастные ограничения 18+ Триумф экспериментального кино как способа говорить о неравенстве. Показ в ретроспективной программе Фестиваля коллективных фильмов . Nightcleaners 1975, Berwick Street Film Collective Великобритания 95 мин., англ. с рус. субт. документальный T Вечерами лондонские офисы пустеют — но не полностью: клерков и служащих сменяют ночные уборщицы. Их реальность — монотонная, низкооплачиваемая работа и высокомерие начальства. В 1970 году женщины — а уборкой офисов тогда занимались исключительно они — начинают попытки создать собственный профсоюз под руководством активистки и художницы Мэри Келли. После показа состоится обсуждение с киноведом Евгением Майзелем. Кадр из фильма «Ночные уборщицы », 1975 Это самый важный политический фильм, когда-либо снятый в Великобритании. — Клэр Джонстон, Jump Cut Фильм вышедших из левого движения 1960-х режиссеров, которые основали объединение Berwick Street Film Collective , стремится не просто показать труд и жизнь своих героинь, а сломать классовые барьеры самой их репрезентации. Именно поэтому вскоре после начала съемок в состав этого изменившего ландшафт британского независимого кино коллектива вошла и сама Мэри Келли. Сократив дистанцию между собой и уборщицами лондонских офисов, BSFC идут дальше, добиваясь того же от зрителей. Для этого они радикально отказались от конвенций документалистики, избегая и мнимой объективности, и комфортных рамок реализма. Мэри Келли, Марк Карлин, Джеймс Скотт и Хамфри Тревелян используют рассинхрон звука и изображения, фрагментацию повествования, ситуативные уходы в абстракцию. Режиссеры BSFC никогда не дают зрителю раствориться в своем фильме, подталкивают к его аналитическому просмотру, не позволяют забыть, что перед ним не слепок жизни, а кино во всех противоречиях этого медиума. Они словно напоминают: полностью понять долю героинь «Ночных уборщиц» нам не дано. Но это не отменяет ни сочувствия, ни солидарности — напротив, делает их более подлинными. Мировая премьера фильма состоялась на Эдинбургском кинофестивале (1975). {\"grid\":{\"width\":963,\"column_width\":89,\"columns_n\":9,\"gutter\":20,\"margin\":0,\"line\":10},\"palette\":\"default\",\"responsive_mode\":true,\"responsive_min_width\":512,\"responsive_max_width\":1100,\"colorchanger_fullscreen\":false,\"colorchanger_overflow\":true,\"page_cropping\":false,\"global_google_analy"
     },
     {
-      "status": "check",
-      "editor_note": "Добавлено в подборку как кандидат; требуется ручной апрув.",
+      "status": "approved",
+      "editor_note": "Добавлено как крупный фестиваль медиаискусства; официальный источник проверен",
       "checked_at": "2026-09-21",
-      "reviewed_at": "",
+      "reviewed_at": "2026-09-22",
       "availability": "unknown",
       "availability_checked_at": "",
       "registration": null,
@@ -2908,7 +2908,7 @@
       "url": "https://digitalrain.art/",
       "source": "Digital Rain — официальный сайт",
       "discovered_at": "2026-09-21",
-      "review_reason": "manual_approval_required"
+      "review_reason": ""
     },
     {
       "id": "moscow-2026-09-25-44d6d71884",
@@ -2962,7 +2962,7 @@
       "availability": "available",
       "availability_checked_at": "2026-09-21",
       "start_date": "2026-09-25",
-      "editor_note": "Служебная страница раздела «Будущие выставки», не отдельная выставка."
+      "editor_note": ""
     },
     {
       "id": "spb-2026-09-25-cacd31624b",
@@ -2991,7 +2991,7 @@
       "availability_checked_at": "2026-09-21",
       "start_date": "2026-09-25",
       "end_date": "2027-01-18",
-      "editor_note": "Описание очищено: взят смысловой блок «О выставке», юридический футер удалён.",
+      "editor_note": "",
       "reviewed_at": ""
     },
     {
@@ -3985,7 +3985,7 @@
       "url": "https://ges-2.org/cdmp-mediated-tours-in-russian-sign-language",
       "source": "Дом культуры «ГЭС-2»",
       "checked_at": "",
-      "review_reason": "",
+      "review_reason": "excluded_tour_mediation",
       "discovered_at": "2026-09-21",
       "audience_text": "› Сообщества › Глухие и звонкие Дата: 26– 27 сен 2026 Возраст: от 12 Тип: Публичная программа Место: Площадь Доступность  Возрастные ограничения 12+ Медиаторские туры, которые проводят выпускники курса глухих музейных специалистов. Программа  {\"points\":[{\"id\":4,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":6,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.4,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":5,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} T С октября 2025 года по август 2026 года в Москве проходил курс подготовки глухих музейных специалистов . Программа была организована Третьяковской галереей, Домом культуры « ГЭС-2 », Пушкинским музеем, Музеем современного искусства «Гараж», Музеем криптографии, Центром «Зотов», Еврейским музеем и центром толерантности и Музеем русского импрессионизма. Чтобы зарегистрироваться на тур, напишите* нам в «Телеграм» @ges2access ваши имя и фамилию, а также укажите дату и время выбранного тура. Фото: Анна Завозяева В течение года участники знакомились с современными музейными практиками, изучали особенности работы с аудиторией и развивали навыки, необходимые для работы в культурных институциях. Также двое выпускников курса проходили стажировку в отделе медиации Дома культуры, и теперь они проведут открытые медиаторские туры по « ГЭС-2 ». Программа Дом культуры « ГЭС-2 » и искусство глухих Когда: 26 сен, 14:00–16:00, 17:00–20:00 Как дома культуры, музеи и другие культурные институции связаны с жизнью общества и его взглядами? Как идея « ГЭС-2 » связана с представленностью разного опыта? Какое место в нем может занимать искусство глухих? На медиаторском туре мы прогуляемся по открытым пространствам « ГЭС-2 » и поговорим о двух больших темах: истории и современности этого места и искусстве глухих. В первой части тура участники узнают, как промышленное здание начала XX века превратилось в дом культуры, почему оно называется именно так и чем отличается от музея. Во второй части встречи мы обратимся к визуальному искусству глухих и направлению De’VIA ( Deaf View / Image Art , англ. «Искусство, посвященное образу глухих»). Посмотрим на художественные работы и обсудим, как опыт глухоты, тишины и визуального восприятия мира отражается в искусстве, а также чем такое искусство отличается от искусства слышащих. Ведущий Митя Сорокин",
       "price_type": "unknown",
@@ -4014,7 +4014,7 @@
       "url": "https://rosphoto.org/events/peshehodnaya-ekskursiya-magiya-kadra-steklyannye-kryshi-i-lica-epohi-fotograficheskie-atele-bolshoj-morskoj-i-ee-okrestnostej/",
       "source": "РОСФОТО",
       "checked_at": "",
-      "review_reason": "",
+      "review_reason": "excluded_tour_mediation",
       "discovered_at": "2026-09-21",
       "price_type": "paid",
       "availability": "available",
@@ -4451,7 +4451,7 @@
     },
     {
       "id": "russia-2026-09-27-b5017b3dcc",
-      "status": "check",
+      "status": "approved",
       "kind": "open_call",
       "city": "russia",
       "date": "2026-09-27",
@@ -4469,13 +4469,13 @@
       "url": "https://ewert.ru/competitions/open-koll-osennego-marketa-soulmate-x-mesto-byt/",
       "source": "Ewert — возможности для художников",
       "checked_at": "",
-      "review_reason": "primary_source_required",
+      "review_reason": "discovery_source_needs_primary_verification",
       "discovered_at": "2026-09-21",
       "price_type": "unknown",
       "availability": "unknown",
       "availability_checked_at": "2026-09-21",
       "editor_note": "",
-      "reviewed_at": "2026-09-21"
+      "reviewed_at": "2026-09-22"
     },
     {
       "id": "moscow-2026-09-27-6c590d946b",
@@ -4754,7 +4754,7 @@
       "url": "https://ges-2.org/cdmp-mediated-tours-in-russian-sign-language",
       "source": "Дом культуры «ГЭС-2»",
       "checked_at": "",
-      "review_reason": "",
+      "review_reason": "excluded_tour_mediation",
       "discovered_at": "2026-09-21",
       "audience_text": "› Сообщества › Глухие и звонкие Дата: 26– 27 сен 2026 Возраст: от 12 Тип: Публичная программа Место: Площадь Доступность  Возрастные ограничения 12+ Медиаторские туры, которые проводят выпускники курса глухих музейных специалистов. Программа  {\"points\":[{\"id\":4,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":6,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.4,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":5,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} T С октября 2025 года по август 2026 года в Москве проходил курс подготовки глухих музейных специалистов . Программа была организована Третьяковской галереей, Домом культуры « ГЭС-2 », Пушкинским музеем, Музеем современного искусства «Гараж», Музеем криптографии, Центром «Зотов», Еврейским музеем и центром толерантности и Музеем русского импрессионизма. Чтобы зарегистрироваться на тур, напишите* нам в «Телеграм» @ges2access ваши имя и фамилию, а также укажите дату и время выбранного тура. Фото: Анна Завозяева В течение года участники знакомились с современными музейными практиками, изучали особенности работы с аудиторией и развивали навыки, необходимые для работы в культурных институциях. Также двое выпускников курса проходили стажировку в отделе медиации Дома культуры, и теперь они проведут открытые медиаторские туры по « ГЭС-2 ». Программа Дом культуры « ГЭС-2 » и искусство глухих Когда: 26 сен, 14:00–16:00, 17:00–20:00 Как дома культуры, музеи и другие культурные институции связаны с жизнью общества и его взглядами? Как идея « ГЭС-2 » связана с представленностью разного опыта? Какое место в нем может занимать искусство глухих? На медиаторском туре мы прогуляемся по открытым пространствам « ГЭС-2 » и поговорим о двух больших темах: истории и современности этого места и искусстве глухих. В первой части тура участники узнают, как промышленное здание начала XX века превратилось в дом культуры, почему оно называется именно так и чем отличается от музея. Во второй части встречи мы обратимся к визуальному искусству глухих и направлению De’VIA ( Deaf View / Image Art , англ. «Искусство, посвященное образу глухих»). Посмотрим на художественные работы и обсудим, как опыт глухоты, тишины и визуального восприятия мира отражается в искусстве, а также чем такое искусство отличается от искусства слышащих. Ведущий Митя Сорокин",
       "price_type": "unknown",
@@ -5502,7 +5502,7 @@
       "url": "https://rosphoto.org/events/kreativnyi-fotoklub-dlya-podrostkov/",
       "source": "РОСФОТО",
       "checked_at": "",
-      "review_reason": "",
+      "review_reason": "excluded_family_children",
       "discovered_at": "2026-09-21",
       "price_type": "paid",
       "availability": "available",
@@ -5529,7 +5529,7 @@
       "url": "https://ges-2.org/a-and-b-were-sitting-on-a-pipe",
       "source": "Дом культуры «ГЭС-2»",
       "checked_at": "",
-      "review_reason": "",
+      "review_reason": "excluded_family_children",
       "discovered_at": "2026-09-20",
       "price_type": "paid",
       "availability": "unknown",
@@ -5598,7 +5598,7 @@
     },
     {
       "id": "russia-2026-09-30-4b27786e48",
-      "status": "check",
+      "status": "approved",
       "kind": "open_call",
       "city": "russia",
       "date": "2026-09-30",
@@ -5616,17 +5616,17 @@
       "url": "https://ewert.ru/competitions/konferencziya-turchinskie-sessii-v-mmoma/",
       "source": "Ewert — возможности для художников",
       "checked_at": "",
-      "review_reason": "primary_source_required",
+      "review_reason": "discovery_source_needs_primary_verification",
       "discovered_at": "2026-09-21",
       "price_type": "unknown",
       "availability": "unknown",
       "availability_checked_at": "2026-09-21",
       "editor_note": "",
-      "reviewed_at": "2026-09-21"
+      "reviewed_at": "2026-09-22"
     },
     {
       "id": "russia-2026-09-30-e956420137",
-      "status": "check",
+      "status": "approved",
       "kind": "open_call",
       "city": "russia",
       "date": "2026-09-30",
@@ -5644,13 +5644,13 @@
       "url": "https://ewert.ru/competitions/open-call-mifologema-triennale-myth/",
       "source": "Ewert — возможности для художников",
       "checked_at": "",
-      "review_reason": "primary_source_required",
+      "review_reason": "discovery_source_needs_primary_verification",
       "discovered_at": "2026-09-21",
       "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-09-21",
       "editor_note": "",
-      "reviewed_at": "2026-09-21"
+      "reviewed_at": "2026-09-22"
     },
     {
       "id": "moscow-2026-09-30-c9241e0c3a",
@@ -5669,7 +5669,7 @@
       "url": "https://www.rusimp.su/events/performativno-tancevalnye-klassy-po-motivam-vystavki-shkola-zvancevoy-laboratoriya-modernizma",
       "source": "Музей русского импрессионизма",
       "checked_at": "",
-      "review_reason": "year_not_explicit_on_primary_listing",
+      "review_reason": "excluded_paid_open_call",
       "discovered_at": "2026-09-20",
       "price_type": "paid",
       "availability": "available",
@@ -5960,7 +5960,7 @@
       "price_type": "paid",
       "availability": "available",
       "availability_checked_at": "2026-09-21",
-      "editor_note": "Общий заголовок программы заменён отдельными событиями.",
+      "editor_note": "",
       "reviewed_at": ""
     },
     {
@@ -6005,7 +6005,7 @@
       "url": "https://rosphoto.org/events/kulturnyj-assamblyazh-dni-vengerskoj-kultury-v-rosfoto-2/",
       "source": "РОСФОТО",
       "checked_at": "",
-      "review_reason": "",
+      "review_reason": "manual_approval_required",
       "editor_note": "Отдельный пункт программы «Культурный ассамбляж»; требуется ручной апрув.",
       "discovered_at": "2026-09-22",
       "reviewed_at": "2026-09-21",
@@ -6107,7 +6107,7 @@
     },
     {
       "id": "russia-2026-10-01-a1718c2a07",
-      "status": "check",
+      "status": "approved",
       "kind": "open_call",
       "city": "russia",
       "date": "2026-10-01",
@@ -6125,13 +6125,13 @@
       "url": "https://ewert.ru/competitions/open-call-galereya-a-b-2027/",
       "source": "Ewert — возможности для художников",
       "checked_at": "",
-      "review_reason": "primary_source_required",
+      "review_reason": "discovery_source_needs_primary_verification",
       "discovered_at": "2026-09-21",
       "price_type": "unknown",
       "availability": "unknown",
       "availability_checked_at": "2026-09-21",
       "editor_note": "",
-      "reviewed_at": "2026-09-21"
+      "reviewed_at": "2026-09-22"
     },
     {
       "id": "moscow-2026-10-01-d97b8ab71d",
@@ -6264,7 +6264,7 @@
       "url": "https://www.rusimp.su/events/chemu-hudozhniki-uchili-hudozhnikov-vstrecha-s-kuratorom-vystavki-shkola-zvancevoy",
       "source": "Музей русского импрессионизма",
       "checked_at": "",
-      "review_reason": "year_not_explicit_on_primary_listing",
+      "review_reason": "excluded_paid_open_call",
       "discovered_at": "2026-09-20",
       "price_type": "paid",
       "availability": "available",
@@ -6857,7 +6857,8 @@
       "discovered_at": "2026-09-21",
       "price_type": "free",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-21"
+      "availability_checked_at": "2026-09-21",
+      "editor_note": ""
     },
     {
       "id": "moscow-2026-10-16-b6a9240955",

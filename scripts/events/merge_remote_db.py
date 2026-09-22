@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 import json, re, sys
-from datetime import date, timedelta
 from pathlib import Path
 from urllib.parse import urlsplit, urlunsplit
 
@@ -65,52 +64,55 @@ FINAL_PRESERVE_FIELDS={
     "venue","address","start_date","end_date"
 }
 
-def still_relevant(e):
-    today=date.today()
-    try:
-        if e.get("kind")=="exhibition":
-            end=e.get("end_date")
-            if end:
-                return date.fromisoformat(end)>=today
-            start=e.get("start_date") or e.get("date")
-            return not start or date.fromisoformat(start)>=today-timedelta(days=365)
-        d=e.get("date")
-        return not d or date.fromisoformat(d)>=today
-    except Exception:
-        return True
-
 merged=[]
 seen=set()
-for e in generated.get("events",[]):
-    rid=e.get("id")
-    old=find_remote_match(e)
-    if old:
-        # Final editorial decisions are the source of truth for public-facing fields.
-        if old.get("status") in ("approved","rejected"):
-            for k in FINAL_PRESERVE_FIELDS:
-                if k in old and old.get(k) not in ("",None,[]):
-                    e[k]=old[k]
-        else:
+for generated_event in generated.get("events",[]):
+    rid=generated_event.get("id")
+    old=find_remote_match(generated_event)
+
+    # Reviewed records are editorially locked. Once the editor has approved or
+    # rejected an item, automated collection, curated seed data, and source
+    # changes must not rewrite that record. The only way to change it is through
+    # an explicit editor action in the moderation Sheet.
+    if old and old.get("status") in ("approved","rejected"):
+        e=dict(old)
+    else:
+        e=dict(generated_event)
+        if old:
             for k in ("editor_note","checked_at","reviewed_at","price_text","price_type","registration","categories","kind"):
                 if k in old and old.get(k) not in ("",None,[]):
                     e[k]=old[k]
-    if rid and rid in curated_by_id:
-        e.update(curated_by_id[rid])
+        if rid and rid in curated_by_id:
+            e.update(curated_by_id[rid])
+
     merged.append(e)
-    if rid: seen.add(rid)
+    final_id=e.get("id")
+    if final_id:
+        seen.add(final_id)
 
-# Curated entries are durable independent records.
-for e in curated.get("events",[]):
-    rid=e.get("id")
-    if rid and rid not in seen:
-        merged.append(e); seen.add(rid)
+# Curated entries are durable independent records, but a reviewed remote record
+# with the same id wins over stale curated seed data.
+for curated_event in curated.get("events",[]):
+    rid=curated_event.get("id")
+    if not rid or rid in seen:
+        continue
+    old=remote_by_id.get(rid)
+    if old and old.get("status") in ("approved","rejected"):
+        merged.append(dict(old))
+    else:
+        merged.append(dict(curated_event))
+    seen.add(rid)
 
-# A temporary source failure must not erase reviewed future records.
+# Reviewed records are durable even if a source temporarily disappears or an
+# event is now in the past. The frontend date filters decide whether to display
+# them; the collector is not allowed to delete editorial decisions.
 for e in remote.get("events",[]):
     rid=e.get("id")
-    if not rid or rid in seen: continue
-    if e.get("status") in ("approved","rejected") and still_relevant(e):
-        merged.append(e); seen.add(rid)
+    if not rid or rid in seen:
+        continue
+    if e.get("status") in ("approved","rejected"):
+        merged.append(dict(e))
+        seen.add(rid)
 
 generated["events"]=sorted(
     merged,
@@ -119,5 +121,5 @@ generated["events"]=sorted(
 out_path.write_text(json.dumps(generated,ensure_ascii=False,indent=2)+"\n","utf-8")
 print(
     f"Merged {len(merged)} records; curated={len(curated.get('events',[]))}; "
-    f"preserved reviewed={sum(1 for e in remote.get('events',[]) if e.get('status') in ('approved','rejected') and still_relevant(e))}"
+    f"preserved reviewed={sum(1 for e in remote.get('events',[]) if e.get('status') in ('approved','rejected'))}"
 )

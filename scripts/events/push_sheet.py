@@ -8,8 +8,8 @@ ROOT=Path(__file__).resolve().parents[2]
 DB=ROOT/"content/events.json"
 SHEET_ID=os.environ["EVENTS_SHEET_ID"]
 CREDS=json.loads(os.environ["GOOGLE_SERVICE_ACCOUNT_JSON"])
-RANGE="Events!A:Y"
-HEADERS=["id","status","title","date","time","venue","city","kind","price_type","price_text","registration","availability","availability_checked_at","categories","description","url","source","review_reason","editor_note","discovered_at","reviewed_at","address","price","checked_at","days_ahead"]
+RANGE="Events!A:Z"
+HEADERS=["id","status","title","date","time","venue","city","kind","price_type","price_text","registration","availability","availability_checked_at","categories","description","url","source","review_reason","editor_note","discovered_at","reviewed_at","address","price","checked_at","days_ahead","synced_status"]
 
 def service():
     scopes=["https://www.googleapis.com/auth/spreadsheets"]
@@ -26,25 +26,30 @@ def parse_bool(v):
 
 def preserve_editor_fields(api, db):
     # Merge the live Sheet back into the DB immediately before overwriting it.
-    # This makes editor decisions durable even if they are made during a pipeline run.
+    # Also remember the live row order so a push cannot move rows while the
+    # editor is actively moderating them.
     current=api.get(spreadsheetId=SHEET_ID,range=RANGE).execute().get("values",[])
     if not current:
-        return 0
+        return 0, {}
     headers=current[0]
     byid={e.get("id"):e for e in db.get("events",[]) if e.get("id")}
+    current_order={}
     # Preserve only moderation decisions made in the live Sheet.
     # Public event content is owned by the repository/curated layer.
     editable={"editor_note","checked_at","review_reason"}
     merged=0
-    for row in current[1:]:
+    for idx,row in enumerate(current[1:],start=1):
         obj=dict(zip(headers,row+[""]*(len(headers)-len(row))))
         rid=str(obj.get("id","")).strip()
+        if rid and rid not in current_order:
+            current_order[rid]=idx
         if not rid or rid not in byid:
             continue
         e=byid[rid]
         old_status=e.get("status","")
         live_status=str(obj.get("status","")).strip()
-        if live_status in ("approved","rejected"):
+        synced_status=str(obj.get("synced_status","")).strip()
+        if synced_status and live_status!=synced_status and live_status in ("new","check","approved","rejected"):
             e["status"]=live_status
         for k in editable:
             if k not in obj:
@@ -59,29 +64,36 @@ def preserve_editor_fields(api, db):
             elif e.get("status") in ("new","check"):
                 e["reviewed_at"]=""
         merged+=1
-    return merged
+    return merged, current_order
 
 def main():
     db=json.loads(DB.read_text("utf-8"))
     svc=service()
     api=svc.spreadsheets().values()
-    merged=preserve_editor_fields(api,db)
+    merged,current_order=preserve_editor_fields(api,db)
     db["events"]=sorted(db.get("events",[]),key=lambda e:(e.get("date",""),e.get("time",""),e.get("title","")))
     DB.write_text(json.dumps(db,ensure_ascii=False,indent=2)+"\n","utf-8")
 
     rows=[HEADERS]
     import datetime as _dt
     priority={"new":0,"check":1,"approved":2,"rejected":3}
-    sheet_events=sorted(
-        db.get("events",[]),
-        key=lambda e:(
-            priority.get(e.get("status","new"),9),
-            -(int(str(e.get("discovered_at","1900-01-01")).replace("-","")) if str(e.get("discovered_at","")).replace("-","").isdigit() else 0),
-            e.get("date",""),
-            e.get("time",""),
-            e.get("title","")
-        )
-    )
+    existing=[]
+    fresh=[]
+    for e in db.get("events",[]):
+        rid=e.get("id","")
+        (existing if rid in current_order else fresh).append(e)
+
+    # Existing rows keep their exact live Sheet order, regardless of status edits.
+    existing.sort(key=lambda e:current_order.get(e.get("id",""),10**9))
+    # Only genuinely new rows are ordered by moderation priority and recency.
+    fresh.sort(key=lambda e:(
+        priority.get(e.get("status","new"),9),
+        -(int(str(e.get("discovered_at","1900-01-01")).replace("-","")) if str(e.get("discovered_at","")).replace("-","").isdigit() else 0),
+        e.get("date",""),
+        e.get("time",""),
+        e.get("title","")
+    ))
+    sheet_events=existing+fresh
     for e in sheet_events:
         try:
             days=(_dt.date.fromisoformat(e.get("date",""))-_dt.date.today()).days
@@ -96,7 +108,7 @@ def main():
             ",".join(e.get("categories",[])) if isinstance(e.get("categories"),list) else e.get("categories",""),
             e.get("description",""),e.get("url",""),e.get("source",""),e.get("review_reason",""),
             e.get("editor_note",""),e.get("discovered_at",""),e.get("reviewed_at",""),
-            e.get("address",""),e.get("price",""),e.get("checked_at",""),days
+            e.get("address",""),e.get("price",""),e.get("checked_at",""),days,e.get("status","new")
         ])
 
     api.clear(spreadsheetId=SHEET_ID,range=RANGE,body={}).execute()
@@ -117,7 +129,9 @@ def main():
       {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":10,"endColumnIndex":11},
         "rule":{"condition":{"type":"BOOLEAN"},"strict":True,"showCustomUi":True}}},
       {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":11,"endColumnIndex":12},
-        "rule":{"condition":{"type":"ONE_OF_LIST","values":[{"userEnteredValue":x} for x in ["available","sold_out","unknown"]]},"strict":True,"showCustomUi":True}}}
+        "rule":{"condition":{"type":"ONE_OF_LIST","values":[{"userEnteredValue":x} for x in ["available","sold_out","unknown"]]},"strict":True,"showCustomUi":True}}},
+      {"updateDimensionProperties":{"range":{"sheetId":sheet_id,"dimension":"COLUMNS","startIndex":25,"endIndex":26},
+        "properties":{"hiddenByUser":True},"fields":"hiddenByUser"}}
     ]
     svc.spreadsheets().batchUpdate(spreadsheetId=SHEET_ID,body={"requests":requests}).execute()
     print(f"Preserved editor fields for {merged} rows; pushed {len(rows)-1} events to Google Sheet")

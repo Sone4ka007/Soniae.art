@@ -9,7 +9,7 @@ ROOT=Path(__file__).resolve().parents[2]
 DB=ROOT/"content/events.json"
 SHEET_ID=os.environ["EVENTS_SHEET_ID"]
 CREDS=json.loads(os.environ["GOOGLE_SERVICE_ACCOUNT_JSON"])
-RANGE="Events!A:Y"
+RANGE="Events!A:Z"
 
 def service():
     scopes=["https://www.googleapis.com/auth/spreadsheets.readonly"]
@@ -40,8 +40,16 @@ def main():
         for k in editable:
             if k not in row: continue
             v=row[k]
-            if k=="status" and str(v).strip()=="":
-                continue
+            if k=="status":
+                live_status=str(v).strip()
+                synced_status=str(row.get("synced_status","")).strip()
+                # A status is an editor decision only when it differs from the
+                # baseline last written by the bot. This prevents bot-written
+                # statuses from being re-imported as human approvals.
+                if not synced_status or live_status==synced_status:
+                    continue
+                if live_status not in ("new","check","approved","rejected"):
+                    continue
             e[k]=v
         new_status=e.get("status","")
         if new_status != old_status:

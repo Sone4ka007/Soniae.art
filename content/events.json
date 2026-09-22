@@ -146,35 +146,6 @@
       "review_reason": ""
     },
     {
-      "status": "rejected",
-      "editor_note": "Добавлено по подборке пользователя; первоисточник проверен",
-      "checked_at": "2026-09-21",
-      "reviewed_at": "2026-09-21",
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "registration": null,
-      "price": null,
-      "price_text": "",
-      "price_type": "unknown",
-      "id": "moscow-2026-10-11-4482b16200",
-      "kind": "exhibition",
-      "city": "moscow",
-      "date": "2026-06-05",
-      "start_date": "2026-06-05",
-      "end_date": "2026-10-11",
-      "title": "Полёты над временем. Пьеса о Штеренбергах",
-      "venue": "Музейный центр «Масловка. Городок художников»",
-      "address": "Верхняя Масловка, 3",
-      "categories": [
-        "выставка"
-      ],
-      "description": "Выставка задумана как визуальная пьеса о нескольких поколениях художественной династии Штеренбергов. Через их работы проект прослеживает историю от раннего советского модернизма до современности.",
-      "url": "https://maslovka.org/exhibitions/polety-nad-vremenem-pesa-o-shterenbergakh/",
-      "source": "Масловка. Городок художников",
-      "discovered_at": "2026-09-21",
-      "review_reason": "duplicate_record"
-    },
-    {
       "status": "approved",
       "editor_note": "Добавлено по подборке пользователя; первоисточник проверен",
       "checked_at": "2026-09-21",
@@ -202,6 +173,35 @@
       "source": "Масловка. Городок художников",
       "discovered_at": "2026-09-21",
       "review_reason": ""
+    },
+    {
+      "status": "rejected",
+      "editor_note": "Добавлено по подборке пользователя; первоисточник проверен",
+      "checked_at": "2026-09-21",
+      "reviewed_at": "2026-09-21",
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "registration": null,
+      "price": null,
+      "price_text": "",
+      "price_type": "unknown",
+      "id": "moscow-2026-10-11-4482b16200",
+      "kind": "exhibition",
+      "city": "moscow",
+      "date": "2026-06-05",
+      "start_date": "2026-06-05",
+      "end_date": "2026-10-11",
+      "title": "Полёты над временем. Пьеса о Штеренбергах",
+      "venue": "Музейный центр «Масловка. Городок художников»",
+      "address": "Верхняя Масловка, 3",
+      "categories": [
+        "выставка"
+      ],
+      "description": "Выставка задумана как визуальная пьеса о нескольких поколениях художественной династии Штеренбергов. Через их работы проект прослеживает историю от раннего советского модернизма до современности.",
+      "url": "https://maslovka.org/exhibitions/polety-nad-vremenem-pesa-o-shterenbergakh/",
+      "source": "Масловка. Городок художников",
+      "discovered_at": "2026-09-21",
+      "review_reason": "duplicate_record"
     },
     {
       "status": "approved",
@@ -932,6 +932,32 @@
       "reviewed_at": "2026-09-21"
     },
     {
+      "id": "moscow-2026-09-22-1405247759",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-09-22",
+      "time": "12:00",
+      "title": "Студия «Шерлоковедение»",
+      "venue": "Еврейский музей и центр толерантности",
+      "address": "",
+      "price": 1100,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "В сентябре узнаем, кто такой Шерлок Холмс и в чём секрет его знаменитого дедуктивного метода. Ребята станут настоящими исследователями: научимся ориентироваться на местности — не только по карте и компасу, но и по солнцу! Удивимся, как сама природа даёт сыщику подсказки: по тени, мху на деревьях, расположению звёзд.",
+      "url": "https://www.jewish-museum.ru/events/studiya-sherlokovedenie/",
+      "source": "Еврейский музей и центр толерантности",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-22",
+      "price_type": "paid",
+      "availability": "available",
+      "availability_checked_at": "2026-09-22"
+    },
+    {
       "id": "moscow-2026-09-22-f8243a315b",
       "status": "rejected",
       "city": "moscow",
@@ -1509,7 +1535,7 @@
     },
     {
       "id": "moscow-2026-09-23-b82c25d302",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-09-23",
@@ -1531,7 +1557,9 @@
       "discovered_at": "2026-09-22",
       "price_type": "free",
       "availability": "available",
-      "availability_checked_at": "2026-09-22"
+      "availability_checked_at": "2026-09-22",
+      "editor_note": "",
+      "reviewed_at": "2026-09-22"
     },
     {
       "id": "moscow-2026-09-23-95a53fda5e",
@@ -1560,6 +1588,32 @@
       "kind": "event",
       "editor_note": "",
       "reviewed_at": "2026-09-21"
+    },
+    {
+      "id": "moscow-2026-09-23-30cdfdde0f",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-09-23",
+      "time": "12:00",
+      "title": "Клуб английского языка «От Биг-Бена до Букингема: по страницам английской литературы»",
+      "venue": "Еврейский музей и центр толерантности",
+      "address": "",
+      "price": 4000,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "4 000 ₽ - Абонемент (4 занятия) 1 100 ₽ - Разовое занятие Программа 23 сентября 2026 (16:00-17:00) 30 сентября 2026 (16:00-17:00) 07 октября 2026 (16:00-17:00) 14 октября 2026 (16:00-17:00) 21 октября 2026 (16:00-17:00) 28 октября 2026 (16:00-17:00)",
+      "url": "https://www.jewish-museum.ru/events/klub-angliyskogo-yazyka-ot-big-bena-do-bukingema-po-stranitsam-angliyskoy-literatury/",
+      "source": "Еврейский музей и центр толерантности",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-22",
+      "price_type": "paid",
+      "availability": "available",
+      "availability_checked_at": "2026-09-22"
     },
     {
       "id": "moscow-2026-09-23-f8243a315b",
@@ -2162,6 +2216,34 @@
       "reviewed_at": ""
     },
     {
+      "id": "spb-2026-09-29-3497c8964e",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-09-24",
+      "time": "",
+      "title": "События и выставки",
+      "venue": "РОСФОТО",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "Выставка начнет работу в четверг, 24.09.2026 Публичная программа Нажимая \"Отправить\", я подтверждаю свое согласие на обработку моих персональных данных, указанных в форме This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply. Правила использования материалов и изображений, размещённых на сайте РОСФОТО",
+      "url": "https://rosphoto.org/posetitelyam/events/7/",
+      "source": "РОСФОТО",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-21",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-22",
+      "editor_note": "",
+      "reviewed_at": ""
+    },
+    {
       "id": "moscow-2026-09-24-1738ddf153",
       "status": "rejected",
       "city": "moscow",
@@ -2359,6 +2441,32 @@
       "kind": "event",
       "editor_note": "",
       "reviewed_at": "2026-09-21"
+    },
+    {
+      "id": "moscow-2026-09-24-5bf68881ae",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-09-24",
+      "time": "12:00",
+      "title": "Сокровища и чудовища древнего мира",
+      "venue": "Еврейский музей и центр толерантности",
+      "address": "",
+      "price": 1100,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "1 100 ₽ - разовое занятие 4 000 ₽ - абонемент на четыре занятия Сентябрь посвятим таинственной Египетской цивилизации: три занятия с мастер-классами для детей 5 – 7 лет, где дети познакомятся с древней историей Египта! 1 октября | Звериные суперсилы: как египтяне выбирали богов?",
+      "url": "https://www.jewish-museum.ru/events/sokrovishcha-i-chudovishcha-drevnego-mira/",
+      "source": "Еврейский музей и центр толерантности",
+      "checked_at": "",
+      "review_reason": "excluded_family_children",
+      "discovered_at": "2026-09-22",
+      "price_type": "paid",
+      "availability": "available",
+      "availability_checked_at": "2026-09-22"
     },
     {
       "id": "moscow-2026-09-24-f8243a315b",
@@ -3047,6 +3155,34 @@
       "audience_text": "› Дети и подростки Проект : По правилам и без Дата: 4 сен– 27 ноя 2026 Регистрация Возраст: 0-3 Тип: Игра Место: Платформы , Классы Возрастные ограничения 0+ Тринадцать игровых встреч для малышей и их родителей. Ждем родителей и детей от 0 до 3,5 года. Занятия проходят каждую пятницу с 4 сентября по 27 ноября, с 11:15 до 12:15. Обратите внимание: 2 октября занятия не будет. Количество мест ограничено. Каждому ребенку нужна регистрация. Сопровождающему взрослому достаточно регистрации на вход в Дом культуры. T Малыши играют с самого рождения! Через игру ребенок познает мир, выстраивает связь с близким взрослым, учится чувствовать и исследовать. В игре развиваются движения, речь и множество первичных навыков, таких значимых в начале жизни. Иллюстрация: Поля Плавинская Программа следует концепции «Бейби Сенсори» — международной методике гармоничного развития. На встречах мы обсуждаем, как взрослому мягко вести игру, какие форматы подходят детям разного возраста и какие умения формируются в процессе. Мы поговорим о том, как игры помогают ребенку лучше подготовиться к детскому саду, к учебе и новым открытиям. Узнаем, почему мамино пение поддерживает речевое и музыкальное развитие, как прыжки, ползание и прогулки по сенсорным дорожкам укрепляют уверенность и почему так важна совместная игра. Встречи помогут родителям качественно провести время с малышом. Незаметно и легко дети будут развивать ключевые навыки, а взрослые пополнят арсенал идей для игр дома. К каждому занятию мы подготовим карточку-памятку с активностями и их значением. Все фото: Вадим Штэйн Ведущие Аня Великанова — нейропсихолог. В настоящее время учится на клинического психолога в Сеченовском университете и ведет частную психологическую практику. Класс-лидер в АНО «Первые годы». Более 5 лет работает с детьми и подростками. Соня Маркова — психолог-педагог, детский психолог, ABA-специалист. Окончила МПГУ по направлению «психолог-педагог», получила повышение квалификации на обучении по детской психологии, обучение по 1-й ступени ABA-терапии. Педагог в благотворительном фонде для подростков с РАС. Проходила практику в школе приемных родителей в Институте развития семейного устройства. Класс-лидер в АНО «Первые годы». Ассистент Мария Меркулова {\"grid\":{\"width\":963,\"column_width\":89,\"columns_n\":9,\"gutter\":20,\"margin\":0,\"line\":10},\"palette\":\"default\",\"responsive_mode\":true,\"responsive_min_width\":512,\"responsive_max_width\":1100,\"colorchanger_fullscreen\":false,\"colorchanger_overflow\":true,\"page_cropping\":"
     },
     {
+      "id": "moscow-2026-09-25-c5a3d6b56e",
+      "status": "new",
+      "kind": "exhibition",
+      "city": "moscow",
+      "date": "2026-09-25",
+      "time": "12:00",
+      "title": "Стежки, крючки и красная нить",
+      "venue": "ММОМА",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "выставка"
+      ],
+      "description": "Выставка «Стежки, крючки и красная нить» представляет собой кураторскую рефлексию на тему одежды и всего, что с ней связано, в искусстве ХХ — начала XXI века на основе произведений из фондов ММОМА. Каждое слово в названии выставки может быть прочитано в прямом и переносном смысле.",
+      "url": "https://mmoma.ru/visit/gallery/stitches_hooks_red_thread",
+      "source": "ММОМА — выставки",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-22",
+      "start_date": "2026-09-25",
+      "end_date": "2026-11-15",
+      "price_type": "unknown",
+      "availability": "available",
+      "availability_checked_at": "2026-09-22"
+    },
+    {
       "id": "moscow-2026-09-25-f8243a315b",
       "status": "rejected",
       "city": "moscow",
@@ -3589,7 +3725,7 @@
     },
     {
       "id": "moscow-2026-09-26-b82c25d302",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-09-26",
@@ -3611,7 +3747,9 @@
       "discovered_at": "2026-09-22",
       "price_type": "free",
       "availability": "available",
-      "availability_checked_at": "2026-09-22"
+      "availability_checked_at": "2026-09-22",
+      "editor_note": "",
+      "reviewed_at": "2026-09-22"
     },
     {
       "id": "moscow-2026-09-26-ac72328fe4",
@@ -4121,7 +4259,9 @@
       "discovered_at": "2026-09-22",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-22"
+      "availability_checked_at": "2026-09-22",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-09-26-39f6ae3369",
@@ -4525,7 +4665,7 @@
     },
     {
       "id": "moscow-2026-09-27-b82c25d302",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-09-27",
@@ -4547,7 +4687,9 @@
       "discovered_at": "2026-09-22",
       "price_type": "free",
       "availability": "available",
-      "availability_checked_at": "2026-09-22"
+      "availability_checked_at": "2026-09-22",
+      "editor_note": "",
+      "reviewed_at": "2026-09-22"
     },
     {
       "id": "moscow-2026-09-27-a4e875c14e",
@@ -4914,7 +5056,9 @@
       "discovered_at": "2026-09-22",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-22"
+      "availability_checked_at": "2026-09-22",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-09-27-088dbe346f",
@@ -5033,6 +5177,32 @@
       "reviewed_at": "2026-09-21",
       "audience_text": "› Практики › инклюзивные Проект : Формы касаний. Третий сезон Регистрация на вход Дата: 16– 29 сен 2026 Возраст: от 12 Тип: Выставка Место: Платформы Доступность  Возрастные ограничения 12+ Финальный показ работ третьего сезона лаборатории « Формы касаний ». T Участники лаборатории изучали свое настроение и чувства и искали способы их выражения. Как мы относимся к различным событиям, происходящим в течение дня, и как они влияют на наше восприятие окружающего мира? Как можно передать тревогу с помощью звука? Какие цвета больше всего подходят для разных состояний? На теоретических семинарах художники придумывали концепции произведений, а затем реализовывали их в мастерских. Отдельным медиумом в этом сезоне стал голос — способ взаимодействия с собственными чувствами. Участники создали партитуры на основе голоса, а затем представили их визуально в едином текстильном полотне. Керамические работы, наоборот, раскрывают образы внутреннего мира художников, который является частью персональной идентичности, ее точкой опоры. Мы не указываем имена и фамилии участников проекта из соображений защиты их персональных данных. Публикация подобной информации возможна только с согласия законных представителей. Поскольку такое согласие есть не у всех участников, было принято решение не указывать фамилии вообще. 20, 26 и 27 сентября выставку можно посетить в ходе медиаторского тура с художником . Начало туров в 15:00. Регистрация {\"points\":[{\"id\":1,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":3,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.4,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":2,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} {\"grid\":{\"width\":963,\"column_width\":89,\"columns_n\":9,\"gutter\":20,\"margin\":0,\"line\":10},\"palette\":\"default\",\"responsive_mode\":true,\"responsive_min_width\":512,\"responsive_max_width\":1100,\"colorchanger_fullscreen\":false,\"colorchanger_overflow\":true,\"page_cropping\":false,\"global_google_analytics_id\":\"\",\"global_yandex_metrika_id\":\"\",\"article_mode\":{\"mode\":\"page\",\"transition_type\":\"slide\",\"transition_direction\":\"horizontal\",\"transition_look\":\"belt\",\"slides_form\":{}},\"default_font\":{\"css\":\".editor {font-family: Diagramatika Text; font-size: 20px; font-weight: 400; line-height: 20px;}\"},\"smooth_scroll\":false} Доступность [] Пространство доступно для посети",
       "start_date": "2026-09-28"
+    },
+    {
+      "id": "moscow-2026-09-28-c3cb427dd4",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-09-28",
+      "time": "12:00",
+      "title": "Арт-территория «Контур»",
+      "venue": "Еврейский музей и центр толерантности",
+      "address": "",
+      "price": 1100,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "1 100 ₽ - разовый билет 4 000 ₽ - абонемент на 4 занятия Отправимся в путешествие по главным эпохам и направлениям европейского искусства: от Возрождения до искусства XX века. Будем рисовать музыку, собирать картины из геометрических фигур, придумывать несуществующих животных, искать цвета настроения и создавать собственный художественный язык.",
+      "url": "https://www.jewish-museum.ru/events/art-territoriya-kontur-/",
+      "source": "Еврейский музей и центр толерантности",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-22",
+      "price_type": "paid",
+      "availability": "available",
+      "availability_checked_at": "2026-09-22"
     },
     {
       "id": "moscow-2026-09-28-4a355bdda9",
@@ -5521,6 +5691,30 @@
       "audience_text": "› Программа Проект : Фестиваль коллективных фильмов Дата: 29 сен 2026, 19:30–21:05 Билеты Возраст: от 18 Тип: Кинопоказ Место: Кинотеатр Доступность  Возрастные ограничения 18+ Время, место и субкультура соединяются в панк-гимны непокорности судьбе на окраинах большого города. Российская премьера в ретроспективной программе Фестиваля коллективных фильмов . Nadie es inocente 1986, Сара Минтер | Sarah Minter Мексика 57 мин., исп. с рус. субт. документальный Sábado de mierda 1988, Грегорио Роша | Gregorio Rocha Мексика 25 мин., исп. с рус. субт. В ролях: Пабло Подридо, Кара, Охитас, Рафа Панк T «Мир прогнил, и я не лучше», — вопит один из подростков, прыгающих по капотам ржавых машин. Он и его товарищи при полном панковском параде: цепи и кожанки, хайры и нашивки. Трудно поспорить с его кличем, глядя на реальность этих пацанов: гигантская окраина Мехико Сьюдад-Несауалькойотль (или просто Неса) больше похожа не на жилой район, а на помойку. Банда местных панков, называющая себя El Mierdas Punk , стремится хотя бы собственным внешним видом выплеснуть эту грязь на благопристойный центр мегаполиса. Были бы еще песо до него доехать… Кадры из фильмов «Невинных нет», 1986, «Дерьмовая суббота» , 1988 Взятые вместе, эти два фильма позволяют воссоздать замечательную встречу двух художников, решивших снять независимое кино, и группы нищих подростков, противостоящих миру, где им нет места. — Уилл Ноа, The Criterion Current В 1982 году паре молодых киношников, Саре Минтер и Грегорио Роше, понадобилось починить протекшую трубу, и на вызов приехали два юных панка, гремящих железом. Обалдев от их внешности и манер, Минтер и Роша взяли камеры и последовали за новыми знакомыми в их естественную среду обитания — депрессивную, пышущую одновременно витальностью и фатализмом. Они задержались там на годы, чтобы запечатлеть нехитрые (но какие же киногеничные!) злоключения и проступки панков Несы и взамен впустить их в свой творческий мир. В результате El Mierdas Punk значатся сценаристами «Дерьмовой субботы», а лидеры группировки Пабло Подридо и Рафа Панк — еще и ассистентами продюсера. Это сотворчество породило два уникальных фильма — видеослепок странной реальности Несы «Невинных нет» и снятый на пленку помоечный квазидокументальный сай-фай «Дерьмовая суббота», порой отдающий «Безумным Максом». {\"grid\":{\"width\":963,\"column_width\":89,\"columns_n\":9,\"gutter\":20,\"margin\":0,\"line\":10},\"palette\":\"default\",\"responsive_mode\":true,\"responsive_min_width\":512,\"responsive_max_width\":1100,\"co"
     },
     {
+      "id": "spb-2026-09-30-e1357b4494",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-09-30",
+      "time": "",
+      "title": "Event calendar",
+      "venue": "РОСФОТО",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "By clicking \"Submit\" I agree to the collection and usage of my personal information in the form above This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply. Правила использования материалов и изображений, размещённых на сайте РОСФОТО Tel: +7 (812) 500 7000 Fax: +7 (812) 314 6184 e-mail: office@rosphoto.org",
+      "url": "https://rosphoto.org/en/events/",
+      "source": "РОСФОТО",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-22",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-22"
+    },
+    {
       "id": "international-2026-09-30-95506fe023",
       "status": "rejected",
       "kind": "open_call",
@@ -5749,7 +5943,7 @@
     },
     {
       "id": "moscow-2026-09-30-b82c25d302",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-09-30",
@@ -5771,7 +5965,9 @@
       "discovered_at": "2026-09-22",
       "price_type": "free",
       "availability": "available",
-      "availability_checked_at": "2026-09-22"
+      "availability_checked_at": "2026-09-22",
+      "editor_note": "",
+      "reviewed_at": "2026-09-22"
     },
     {
       "id": "moscow-2026-09-30-4719b75fe3",
@@ -6191,7 +6387,9 @@
       "price_type": "unknown",
       "availability": "unknown",
       "availability_checked_at": "2026-09-22",
-      "start_date": "2026-10-02"
+      "start_date": "2026-10-02",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-02-398c972a62",
@@ -6223,7 +6421,7 @@
     },
     {
       "id": "moscow-2026-10-03-b82c25d302",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-03",
@@ -6245,7 +6443,9 @@
       "discovered_at": "2026-09-22",
       "price_type": "free",
       "availability": "available",
-      "availability_checked_at": "2026-09-22"
+      "availability_checked_at": "2026-09-22",
+      "editor_note": "",
+      "reviewed_at": "2026-09-22"
     },
     {
       "id": "international-2026-10-04-84a4739092",
@@ -6306,7 +6506,7 @@
     },
     {
       "id": "moscow-2026-10-04-b82c25d302",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-04",
@@ -6328,7 +6528,9 @@
       "discovered_at": "2026-09-22",
       "price_type": "free",
       "availability": "available",
-      "availability_checked_at": "2026-09-22"
+      "availability_checked_at": "2026-09-22",
+      "editor_note": "",
+      "reviewed_at": "2026-09-22"
     },
     {
       "id": "moscow-2026-10-04-4ad69d5bbb",
@@ -6409,6 +6611,34 @@
       "kind": "event",
       "editor_note": "",
       "reviewed_at": "2026-09-21"
+    },
+    {
+      "id": "moscow-2026-10-08-20c10d6735",
+      "status": "new",
+      "kind": "exhibition",
+      "city": "moscow",
+      "date": "2026-10-08",
+      "time": "14:00",
+      "title": "Марина Спивак | Вадим Сидур. Мальчики",
+      "venue": "ММОМА",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "выставка"
+      ],
+      "description": "Музей Вадима Сидура и Московский музей современного искусства представляют выставку «Марина Спивак | Вадим Сидур. Проект выстраивает диалог Марины Спивак с художественным наследием Вадима Сидура, в центре которого — образ мальчика как источника творческого движения, меры честности с собой и камертона внутренней свободы.",
+      "url": "https://mmoma.ru/visit/gallery/sidur_spivak",
+      "source": "ММОМА — выставки",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-22",
+      "start_date": "2026-10-08",
+      "end_date": "2027-03-28",
+      "price_type": "unknown",
+      "availability": "available",
+      "availability_checked_at": "2026-09-22"
     },
     {
       "id": "international-2026-10-09-d9c90482f9",

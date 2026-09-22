@@ -97,6 +97,10 @@
       const start = e.start_date || e.date;
       const end = e.end_date || '9999-12-31';
       if (!start || end < rangeFrom || start > rangeTo) return false;
+    } else if (state.kind === 'event') {
+      const start = e.start_date || e.date;
+      const end = e.end_date || e.date;
+      if (!start || !end || end < rangeFrom || start > rangeTo) return false;
     } else {
       if (!e.date || e.date < rangeFrom || e.date > rangeTo) return false;
     }
@@ -109,6 +113,21 @@
     if (state.availability !== 'all' && e.availability !== state.availability) return false;
     if (state.category !== 'all' && !(e.categories || []).includes(state.category)) return false;
     return true;
+  }
+
+  function formatEventRange(e) {
+    const start = e.start_date || e.date;
+    const end = e.end_date || '';
+    if (!start || !end || start === end) return '';
+    const a = localDate(start);
+    const b = localDate(end);
+    if (a.getFullYear() === b.getFullYear() && a.getMonth() === b.getMonth()) {
+      return `${a.getDate()}–${b.getDate()} ${months[a.getMonth()].toLowerCase()} ${a.getFullYear()}`;
+    }
+    if (a.getFullYear() === b.getFullYear()) {
+      return `${a.getDate()} ${months[a.getMonth()].toLowerCase()} — ${b.getDate()} ${months[b.getMonth()].toLowerCase()} ${a.getFullYear()}`;
+    }
+    return `${formatDateRu(start)} — ${formatDateRu(end)}`;
   }
 
   function priceLabel(e) {
@@ -216,6 +235,7 @@
             <div class="event-time">${state.kind === 'open_call' ? 'OPEN CALL' : esc(e.time || '—')}</div>
             <div class="event-main">
               <h3>${esc(e.title)}</h3>
+              ${formatEventRange(e) ? `<p class="event-period">${esc(formatEventRange(e))}</p>` : ''}
               <p>${esc(shortDescription(e.description))}</p>
               <div class="event-tags">${(e.categories || []).map(c => `<span class="event-tag">${esc(categoryNames[c] || c)}</span>`).join('')}</div>
             </div>

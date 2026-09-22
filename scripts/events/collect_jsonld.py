@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import hashlib, json, re, sys, urllib.request
+import hashlib, json, re, sys, time, urllib.request
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
@@ -65,8 +65,16 @@ def stable_id(city, dt, title):
 
 def fetch(url):
     req = urllib.request.Request(url, headers={"User-Agent": UA})
-    with urllib.request.urlopen(req, timeout=30) as r:
-        return r.read().decode("utf-8", "replace")
+    last_error = None
+    for attempt in range(3):
+        try:
+            with urllib.request.urlopen(req, timeout=30) as r:
+                return r.read().decode("utf-8", "replace")
+        except Exception as exc:
+            last_error = exc
+            if attempt < 2:
+                time.sleep(1.5 * (attempt + 1))
+    raise last_error
 
 def parse_date(text, require_year=True, default_year=None):
     t = clean(text).lower().replace("ё","е")

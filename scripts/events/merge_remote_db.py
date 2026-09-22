@@ -76,6 +76,10 @@ for generated_event in generated.get("events",[]):
     # an explicit editor action in the moderation Sheet.
     if old and old.get("status") in ("approved","rejected"):
         e=dict(old)
+        # Keep the generated identity when a source legitimately changes the
+        # technical id, while preserving every editorial/public field.
+        if rid:
+            e["id"]=rid
     else:
         e=dict(generated_event)
         if old:

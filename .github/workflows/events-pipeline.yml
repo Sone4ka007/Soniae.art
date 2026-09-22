@@ -22,7 +22,7 @@ on:
         default: "moscow"
         type: string
   schedule:
-    - cron: "15 5 * * *"
+    - cron: "30 3 * * *"
 
 concurrency:
   group: events-data-sync

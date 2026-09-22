@@ -170,10 +170,11 @@ class EditorialDurabilityTests(unittest.TestCase):
         self.assertIn("const key = e.id || [", js)
         self.assertNotIn("const key = (e.url ||", js)
 
-    def test_sheet_pull_is_decision_only(self):
+    def test_sheet_pull_accepts_only_guarded_editor_content_fields(self):
         src = (ROOT/"scripts/events/pull_sheet.py").read_text("utf-8")
-        self.assertIn('editable={"status","editor_note","checked_at","review_reason"}', src)
-        self.assertNotIn('"description","url","source","venue","address","price"', src)
+        self.assertIn('editable={"status","editor_note","checked_at","review_reason","url","source"}', src)
+        self.assertIn('baseline_key="synced_"+k', src)
+        self.assertNotIn('"description","venue","address","price"', src)
 
 
 if __name__ == "__main__":

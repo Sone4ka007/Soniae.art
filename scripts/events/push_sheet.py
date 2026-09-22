@@ -8,8 +8,8 @@ ROOT=Path(__file__).resolve().parents[2]
 DB=ROOT/"content/events.json"
 SHEET_ID=os.environ["EVENTS_SHEET_ID"]
 CREDS=json.loads(os.environ["GOOGLE_SERVICE_ACCOUNT_JSON"])
-RANGE="Events!A:Z"
-HEADERS=["id","status","title","date","time","venue","city","kind","price_type","price_text","registration","availability","availability_checked_at","categories","description","url","source","review_reason","editor_note","discovered_at","reviewed_at","address","price","checked_at","days_ahead","synced_status"]
+RANGE="Events!A:AB"
+HEADERS=["id","status","title","date","time","venue","city","kind","price_type","price_text","registration","availability","availability_checked_at","categories","description","url","source","review_reason","editor_note","discovered_at","reviewed_at","address","price","checked_at","days_ahead","synced_status","synced_url","synced_source"]
 
 def service():
     scopes=["https://www.googleapis.com/auth/spreadsheets"]
@@ -36,7 +36,7 @@ def preserve_editor_fields(api, db):
     current_order={}
     # Preserve only moderation decisions made in the live Sheet.
     # Public event content is owned by the repository/curated layer.
-    editable={"editor_note","checked_at","review_reason"}
+    editable={"editor_note","checked_at","review_reason","url","source"}
     merged=0
     for idx,row in enumerate(current[1:],start=1):
         obj=dict(zip(headers,row+[""]*(len(headers)-len(row))))
@@ -55,6 +55,12 @@ def preserve_editor_fields(api, db):
             if k not in obj:
                 continue
             v=obj[k]
+            if k in ("url","source"):
+                live_value=str(v).strip()
+                synced_value=str(obj.get("synced_"+k,"")).strip()
+                if live_value and live_value!=synced_value:
+                    e[k]=live_value
+                continue
             if v not in ("",None) or k in {"editor_note","review_reason"}:
                 e[k]=v
         if e.get("status","") != old_status:
@@ -108,7 +114,8 @@ def main():
             ",".join(e.get("categories",[])) if isinstance(e.get("categories"),list) else e.get("categories",""),
             e.get("description",""),e.get("url",""),e.get("source",""),e.get("review_reason",""),
             e.get("editor_note",""),e.get("discovered_at",""),e.get("reviewed_at",""),
-            e.get("address",""),e.get("price",""),e.get("checked_at",""),days,e.get("status","new")
+            e.get("address",""),e.get("price",""),e.get("checked_at",""),days,e.get("status","new"),
+            e.get("url",""),e.get("source","")
         ])
 
     api.clear(spreadsheetId=SHEET_ID,range=RANGE,body={}).execute()
@@ -130,7 +137,7 @@ def main():
         "rule":{"condition":{"type":"BOOLEAN"},"strict":True,"showCustomUi":True}}},
       {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":11,"endColumnIndex":12},
         "rule":{"condition":{"type":"ONE_OF_LIST","values":[{"userEnteredValue":x} for x in ["available","sold_out","unknown"]]},"strict":True,"showCustomUi":True}}},
-      {"updateDimensionProperties":{"range":{"sheetId":sheet_id,"dimension":"COLUMNS","startIndex":25,"endIndex":26},
+      {"updateDimensionProperties":{"range":{"sheetId":sheet_id,"dimension":"COLUMNS","startIndex":25,"endIndex":28},
         "properties":{"hiddenByUser":True},"fields":"hiddenByUser"}}
     ]
     svc.spreadsheets().batchUpdate(spreadsheetId=SHEET_ID,body={"requests":requests}).execute()

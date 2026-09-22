@@ -23,5 +23,11 @@ class EventDateFilterFrontendTests(unittest.TestCase):
         self.assertIn("function mondayOfWeek(d)",js)
         self.assertIn("sunday.setDate(sunday.getDate() + 6)",js)
 
+    def test_manual_range_does_not_collapse_into_day_mode(self):
+        js=(ROOT/"assets/events.js").read_text("utf-8")
+        self.assertIn("if (!from || !to)",js)
+        self.assertIn("setDateRange(from, to, '', 'range')",js)
+        self.assertIn("setDateRange(dateDay.value, dateDay.value, '', 'day')",js)
+
 if __name__=="__main__":
     unittest.main()

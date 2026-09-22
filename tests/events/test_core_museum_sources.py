@@ -19,8 +19,15 @@ class CoreMuseumSourceTests(unittest.TestCase):
     def test_hermitage_is_saint_petersburg_official_source(self):
         s=self.by_name["Государственный Эрмитаж — выставки и события"]
         self.assertEqual(s["city"],"spb")
-        self.assertIn("hermitagemuseum.org",s["url"])
+        self.assertEqual(s["url"],"https://hermitagemuseum.org/what-s-on")
         self.assertEqual(s["adapter"],"event_links")
+
+    def test_museum_of_moscow_has_events_and_exhibitions(self):
+        events=self.by_name["Музей Москвы — события"]
+        exhibitions=self.by_name["Музей Москвы — выставки"]
+        self.assertEqual(events["city"],"moscow")
+        self.assertEqual(exhibitions["kind"],"exhibition")
+        self.assertIn("mosmuseum.ru",events["url"])
 
     def test_russian_museum_has_exhibitions_and_events(self):
         exhibition=self.by_name["Русский музей — выставки"]

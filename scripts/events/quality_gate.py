@@ -10,6 +10,7 @@ BOILERPLATE=(
     "магазины и кафе работают в обычном режиме",
     "доступно по пушкинской карте",
     "узнать больше",
+    "русский музей является обладателем исключительных прав",
 )
 EVENT_ONLY_CATS={
     "лекция","концерт","встреча","экскурсия","воркшоп","мастер-класс",
@@ -29,6 +30,8 @@ def clean_description(text, kind):
     s=re.sub(r"\s+"," ",str(text or "")).strip()
     s=re.sub(r"(?:Доступно по Пушкинской карте\s*Узнать больше\s*)+","",s,flags=re.I)
     if any(x in s.lower() for x in BOILERPLATE[:2]) and len(s)<260:
+        return ""
+    if "русский музей является обладателем исключительных прав" in s.lower():
         return ""
     if kind=="exhibition" and len(s)>420:
         cut=s[:420]

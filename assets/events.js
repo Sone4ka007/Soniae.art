@@ -8,7 +8,16 @@
   const registrationButtons = [...document.querySelectorAll('[data-registration]')];
   const availabilityButtons = [...document.querySelectorAll('[data-availability]')];
   const kindButtons = [...document.querySelectorAll('[data-kind]')];
-  const state = { kind: 'event', city: 'all', price: 'all', category: 'all', registration: 'all', availability: 'all' };
+  const datePresetButtons = [...document.querySelectorAll('[data-date-preset]')];
+  const dateDay = document.getElementById('date-day');
+  const dateFrom = document.getElementById('date-from');
+  const dateTo = document.getElementById('date-to');
+  const dateReset = document.getElementById('date-reset');
+  const state = {
+    kind: 'event', city: 'all', price: 'all', category: 'all',
+    registration: 'all', availability: 'all',
+    dateFrom: '', dateTo: '', datePreset: ''
+  };
   const cityNames = { moscow: 'МОСКВА', spb: 'ПЕТЕРБУРГ', russia: 'РОССИЯ', international: 'МЕЖДУНАРОДНЫЙ' };
   const categoryNames = {
     lecture:'ЛЕКЦИЯ', exhibition:'ВЫСТАВКА', tour:'ЭКСКУРСИЯ',
@@ -34,24 +43,56 @@
     const names = ['января','февраля','марта','апреля','мая','июня','июля','августа','сентября','октября','ноября','декабря'];
     return `${d.getDate()} ${names[d.getMonth()]} ${d.getFullYear()}`;
   }
-  const todayIso = () => {
-    const d = new Date();
+  const isoFromDate = d => {
     const y = d.getFullYear(), m = String(d.getMonth()+1).padStart(2,'0'), day = String(d.getDate()).padStart(2,'0');
     return `${y}-${m}-${day}`;
   };
+  const todayIso = () => isoFromDate(new Date());
+
+  function mondayOfWeek(d) {
+    const out = new Date(d.getFullYear(), d.getMonth(), d.getDate());
+    const day = out.getDay() || 7;
+    out.setDate(out.getDate() - day + 1);
+    return out;
+  }
+
+  function setDateRange(from, to, preset = '') {
+    state.dateFrom = from || '';
+    state.dateTo = to || from || '';
+    state.datePreset = preset;
+    if (dateDay) dateDay.value = (from && from === to) ? from : '';
+    if (dateFrom) dateFrom.value = (from && from !== to) ? from : '';
+    if (dateTo) dateTo.value = (from && from !== to) ? to : '';
+    datePresetButtons.forEach(btn => btn.classList.toggle('active', btn.dataset.datePreset === preset));
+  }
+
+  function customDateRange() {
+    if (!state.dateFrom) return null;
+    return { from: state.dateFrom, to: state.dateTo || state.dateFrom };
+  }
+
+  function dateRangeLabel() {
+    const range = customDateRange();
+    if (!range) return state.kind === 'exhibition' ? 'ТЕКУЩИЕ ВЫСТАВКИ' : (state.kind === 'open_call' ? 'ДЕДЛАЙНЫ · 90 ДНЕЙ' : '30 ДНЕЙ ВПЕРЁД');
+    if (range.from === range.to) return formatDateRu(range.from).toUpperCase();
+    return `${formatDateRu(range.from).toUpperCase()} — ${formatDateRu(range.to).toUpperCase()}`;
+  }
 
   function isVisible(e) {
     if (e.status !== 'approved') return false;
     if ((e.kind || 'event') !== state.kind) return false;
+    const custom = customDateRange();
     const today = todayIso();
     const max = new Date(); max.setDate(max.getDate() + (state.kind === 'event' ? 30 : 90));
-    const maxIso = `${max.getFullYear()}-${String(max.getMonth()+1).padStart(2,'0')}-${String(max.getDate()).padStart(2,'0')}`;
+    const defaultTo = isoFromDate(max);
+    const rangeFrom = custom ? custom.from : today;
+    const rangeTo = custom ? custom.to : defaultTo;
     if (state.kind === 'exhibition') {
       const start = e.start_date || e.date;
       const end = e.end_date || '9999-12-31';
-      if (!start || end < today || start > maxIso) return false;
+      if (!start || end < rangeFrom || start > rangeTo) return false;
     } else {
-      if (!e.date || e.date < today || e.date > maxIso) return false;
+      if (!e.date || e.date < rangeFrom || e.date > rangeTo) return false;
     }
     if (state.city !== 'all' && e.city !== state.city) return false;
     const ptype = e.price_type || (Number(e.price) === 0 ? 'free' : (e.price ? 'paid' : 'unknown'));
@@ -109,7 +150,7 @@
       });
       visible = [...unique.values()];
       count.textContent = `${visible.length} ${visible.length === 1 ? 'ВЫСТАВКА' : 'ВЫСТАВКИ'}`;
-      document.getElementById('events-range').textContent = 'ТЕКУЩИЕ ВЫСТАВКИ';
+      document.getElementById('events-range').textContent = dateRangeLabel();
       empty.hidden = visible.length !== 0;
       list.innerHTML = visible.map(e => {
         let period = 'ИДЁТ СЕЙЧАС · ДАТА ОКОНЧАНИЯ НЕ УКАЗАНА';
@@ -141,10 +182,10 @@
 
     if (state.kind === 'open_call') {
       count.textContent = `${visible.length} OPEN CALLS`;
-      document.getElementById('events-range').textContent = 'ДЕДЛАЙНЫ · 90 ДНЕЙ';
+      document.getElementById('events-range').textContent = dateRangeLabel();
     } else {
       count.textContent = `${visible.length} ${visible.length === 1 ? 'СОБЫТИЕ' : visible.length > 1 && visible.length < 5 ? 'СОБЫТИЯ' : 'СОБЫТИЙ'}`;
-      document.getElementById('events-range').textContent = '30 ДНЕЙ ВПЕРЁД';
+      document.getElementById('events-range').textContent = dateRangeLabel();
     }
 
     empty.hidden = visible.length !== 0;
@@ -209,6 +250,48 @@
     state.availability = btn.dataset.availability; activate(availabilityButtons, btn); render();
   }));
   categorySelect.addEventListener('change', () => { state.category = categorySelect.value; render(); });
+
+  datePresetButtons.forEach(btn => btn.addEventListener('click', () => {
+    const now = new Date();
+    const preset = btn.dataset.datePreset;
+    if (preset === 'today') {
+      const iso = isoFromDate(now);
+      setDateRange(iso, iso, 'today');
+    } else {
+      const monday = mondayOfWeek(now);
+      if (preset === 'next-week') monday.setDate(monday.getDate() + 7);
+      const sunday = new Date(monday);
+      sunday.setDate(sunday.getDate() + 6);
+      setDateRange(isoFromDate(monday), isoFromDate(sunday), preset);
+    }
+    render();
+  }));
+
+  dateDay?.addEventListener('change', () => {
+    if (dateDay.value) setDateRange(dateDay.value, dateDay.value, '');
+    else setDateRange('', '', '');
+    render();
+  });
+
+  const applyManualRange = () => {
+    let from = dateFrom?.value || '';
+    let to = dateTo?.value || '';
+    if (!from && !to) {
+      setDateRange('', '', '');
+    } else {
+      if (!from) from = to;
+      if (!to) to = from;
+      if (from > to) [from, to] = [to, from];
+      setDateRange(from, to, '');
+    }
+    render();
+  };
+  dateFrom?.addEventListener('change', applyManualRange);
+  dateTo?.addEventListener('change', applyManualRange);
+  dateReset?.addEventListener('click', () => {
+    setDateRange('', '', '');
+    render();
+  });
 
   fetch('/content/events.json', { cache: 'no-store' })
     .then(r => { if (!r.ok) throw new Error('events.json'); return r.json(); })

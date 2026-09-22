@@ -59,6 +59,29 @@
       <button class="filter" data-availability="available">ЕСТЬ МЕСТА</button>
       <button class="filter" data-availability="sold_out">МЕСТ НЕТ</button>
     </div>
+    <div class="date-filter" aria-label="Дата">
+      <div class="date-filter-quick">
+        <button class="filter" type="button" data-date-preset="today">СЕГОДНЯ</button>
+        <button class="filter" type="button" data-date-preset="week">ЭТА НЕДЕЛЯ</button>
+        <button class="filter" type="button" data-date-preset="next-week">СЛЕД. НЕДЕЛЯ</button>
+      </div>
+      <div class="date-filter-calendar">
+        <label class="date-field">
+          <span>ДЕНЬ</span>
+          <input id="date-day" type="date" aria-label="Выбрать день">
+        </label>
+        <span class="date-or">ИЛИ</span>
+        <label class="date-field">
+          <span>С</span>
+          <input id="date-from" type="date" aria-label="Дата начала">
+        </label>
+        <label class="date-field">
+          <span>ПО</span>
+          <input id="date-to" type="date" aria-label="Дата окончания">
+        </label>
+        <button class="filter date-reset" type="button" id="date-reset">СБРОСИТЬ ДАТУ</button>
+      </div>
+    </div>
     <select id="category-filter" aria-label="Категория">
       <option value="all">ВСЕ КАТЕГОРИИ</option>
       <option value="лекция">ЛЕКЦИИ</option>

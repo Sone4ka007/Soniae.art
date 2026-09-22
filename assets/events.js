@@ -56,13 +56,19 @@
     return out;
   }
 
-  function setDateRange(from, to, preset = '') {
+  function setDateRange(from, to, preset = '', mode = 'range') {
     state.dateFrom = from || '';
     state.dateTo = to || from || '';
     state.datePreset = preset;
-    if (dateDay) dateDay.value = (from && from === to) ? from : '';
-    if (dateFrom) dateFrom.value = (from && from !== to) ? from : '';
-    if (dateTo) dateTo.value = (from && from !== to) ? to : '';
+    if (mode === 'day') {
+      if (dateDay) dateDay.value = from || '';
+      if (dateFrom) dateFrom.value = '';
+      if (dateTo) dateTo.value = '';
+    } else {
+      if (dateDay) dateDay.value = '';
+      if (dateFrom) dateFrom.value = from || '';
+      if (dateTo) dateTo.value = to || '';
+    }
     datePresetButtons.forEach(btn => btn.classList.toggle('active', btn.dataset.datePreset === preset));
   }
 
@@ -256,7 +262,7 @@
     const preset = btn.dataset.datePreset;
     if (preset === 'today') {
       const iso = isoFromDate(now);
-      setDateRange(iso, iso, 'today');
+      setDateRange(iso, iso, 'today', 'day');
     } else {
       const monday = mondayOfWeek(now);
       if (preset === 'next-week') monday.setDate(monday.getDate() + 7);
@@ -268,28 +274,39 @@
   }));
 
   dateDay?.addEventListener('change', () => {
-    if (dateDay.value) setDateRange(dateDay.value, dateDay.value, '');
-    else setDateRange('', '', '');
+    if (dateDay.value) setDateRange(dateDay.value, dateDay.value, '', 'day');
+    else setDateRange('', '', '', 'day');
     render();
   });
 
   const applyManualRange = () => {
     let from = dateFrom?.value || '';
     let to = dateTo?.value || '';
-    if (!from && !to) {
-      setDateRange('', '', '');
-    } else {
-      if (!from) from = to;
-      if (!to) to = from;
-      if (from > to) [from, to] = [to, from];
-      setDateRange(from, to, '');
+
+    datePresetButtons.forEach(btn => btn.classList.remove('active'));
+    if (dateDay) dateDay.value = '';
+
+    // Keep a partially entered range visible without collapsing it into "ДЕНЬ".
+    if (!from || !to) {
+      state.dateFrom = '';
+      state.dateTo = '';
+      state.datePreset = '';
+      render();
+      return;
     }
+
+    if (from > to) {
+      [from, to] = [to, from];
+      dateFrom.value = from;
+      dateTo.value = to;
+    }
+    setDateRange(from, to, '', 'range');
     render();
   };
   dateFrom?.addEventListener('change', applyManualRange);
   dateTo?.addEventListener('change', applyManualRange);
   dateReset?.addEventListener('click', () => {
-    setDateRange('', '', '');
+    setDateRange('', '', '', 'range');
     render();
   });
 

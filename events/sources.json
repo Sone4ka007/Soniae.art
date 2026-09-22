@@ -419,6 +419,205 @@
       "source_group": "library",
       "high_free_yield": true,
       "default_price_type": "free"
+    },
+    {
+      "name": "Музей AZ — выставки и события",
+      "city": "moscow",
+      "url": "https://museum-az.com/az-show/",
+      "venue": "Музей AZ",
+      "adapter": "event_links",
+      "href_contains": [
+        "/az-show/",
+        "/event/",
+        "/events/",
+        "/exhibition/",
+        "/exhibitions/"
+      ],
+      "max_detail_pages": 100,
+      "detail_workers": 8,
+      "source_group": "museum"
+    },
+    {
+      "name": "AZART — выставки",
+      "city": "moscow",
+      "url": "https://azart.moscow/exhibitions/",
+      "venue": "ЦСИ AZ/ART",
+      "adapter": "event_links",
+      "href_contains": [
+        "/exhibitions/"
+      ],
+      "exclude_paths": [
+        "/exhibitions/"
+      ],
+      "kind": "exhibition",
+      "max_detail_pages": 100,
+      "detail_workers": 8,
+      "source_group": "museum"
+    },
+    {
+      "name": "AZART — события",
+      "city": "moscow",
+      "url": "https://azart.moscow/events/",
+      "venue": "ЦСИ AZ/ART",
+      "adapter": "event_links",
+      "href_contains": [
+        "/events/"
+      ],
+      "exclude_paths": [
+        "/events/"
+      ],
+      "max_detail_pages": 100,
+      "detail_workers": 8,
+      "source_group": "museum"
+    },
+    {
+      "name": "Фонд Ruarts — проекты",
+      "city": "moscow",
+      "url": "https://ruarts.foundation/ru/projects/",
+      "venue": "Фонд Ruarts",
+      "adapter": "event_links",
+      "href_contains": [
+        "/ru/projects/"
+      ],
+      "exclude_paths": [
+        "/ru/projects/"
+      ],
+      "kind": "exhibition",
+      "max_detail_pages": 120,
+      "detail_workers": 8,
+      "source_group": "art_institution"
+    },
+    {
+      "name": "Фонд Ruarts — события",
+      "city": "moscow",
+      "url": "https://ruarts.foundation/ru/events/",
+      "venue": "Фонд Ruarts",
+      "adapter": "event_links",
+      "href_contains": [
+        "/ru/events/"
+      ],
+      "exclude_paths": [
+        "/ru/events/"
+      ],
+      "max_detail_pages": 120,
+      "detail_workers": 8,
+      "source_group": "art_institution"
+    },
+    {
+      "name": "Масловка — выставки",
+      "city": "moscow",
+      "url": "https://maslovka.org/exhibitions-active/",
+      "venue": "Музейный центр «Масловка. Городок художников»",
+      "adapter": "event_links",
+      "href_contains": [
+        "/exhibitions/",
+        "/exhibition/"
+      ],
+      "exclude_paths": [
+        "/exhibitions-active/",
+        "/exhibitions-past/"
+      ],
+      "kind": "exhibition",
+      "max_detail_pages": 80,
+      "detail_workers": 8,
+      "source_group": "museum"
+    },
+    {
+      "name": "Масловка — события",
+      "city": "moscow",
+      "url": "https://maslovka.org/",
+      "venue": "Музейный центр «Масловка. Городок художников»",
+      "adapter": "event_links",
+      "href_contains": [
+        "/events/",
+        "/event/"
+      ],
+      "max_detail_pages": 80,
+      "detail_workers": 8,
+      "source_group": "museum"
+    },
+    {
+      "name": "Музей архитектуры им. Щусева — выставки",
+      "city": "moscow",
+      "url": "https://muar.ru/",
+      "venue": "Музей архитектуры им. А. В. Щусева",
+      "adapter": "event_links",
+      "href_contains": [
+        "/exhibitions/"
+      ],
+      "kind": "exhibition",
+      "max_detail_pages": 120,
+      "detail_workers": 8,
+      "source_group": "museum"
+    },
+    {
+      "name": "Музей архитектуры им. Щусева — мероприятия",
+      "city": "moscow",
+      "url": "https://muar.ru/",
+      "venue": "Музей архитектуры им. А. В. Щусева",
+      "adapter": "event_links",
+      "href_contains": [
+        "/events/",
+        "/lectures/",
+        "/meropriyatiya/"
+      ],
+      "max_detail_pages": 120,
+      "detail_workers": 8,
+      "source_group": "museum"
+    },
+    {
+      "name": "Музей транспорта Москвы — выставки",
+      "city": "moscow",
+      "url": "https://mtmuseum.ru/exhibitions",
+      "venue": "Музей Транспорта Москвы",
+      "adapter": "event_links",
+      "href_contains": [
+        "/exhibitions/",
+        "/exhibition/",
+        "/projects/"
+      ],
+      "exclude_paths": [
+        "/exhibitions",
+        "/exhibitions/"
+      ],
+      "kind": "exhibition",
+      "max_detail_pages": 120,
+      "detail_workers": 8,
+      "source_group": "museum"
+    },
+    {
+      "name": "Музей транспорта Москвы — афиша",
+      "city": "moscow",
+      "url": "https://mtmuseum.ru/affiche/",
+      "venue": "Музей Транспорта Москвы",
+      "adapter": "event_links",
+      "href_contains": [
+        "/affiche/",
+        "/events/",
+        "/event/"
+      ],
+      "exclude_paths": [
+        "/affiche/"
+      ],
+      "max_detail_pages": 120,
+      "detail_workers": 8,
+      "source_group": "museum"
+    },
+    {
+      "name": "Музей ЗИЛАРТ",
+      "city": "moscow",
+      "url": "https://zilartmuseum.ru/",
+      "venue": "Музей «ЗИЛАРТ»",
+      "adapter": "event_links",
+      "href_contains": [
+        "/exhibitions/",
+        "/events/",
+        "/event/",
+        "/afisha/"
+      ],
+      "max_detail_pages": 120,
+      "detail_workers": 8,
+      "source_group": "museum"
     }
   ]
 }

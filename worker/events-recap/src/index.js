@@ -22,11 +22,16 @@ async function telegramWebhook(request, env) {
   if (!post) return new Response('OK');
 
   const chatId = String(post.chat?.id || '');
-  if (!env.TELEGRAM_RECAP_CHAT_ID || chatId !== String(env.TELEGRAM_RECAP_CHAT_ID)) {
+  const text = String(post.text || post.caption || '').trim();
+
+  if (text === '/id') {
+    await tg(env, 'sendMessage', { chat_id: chatId, text: `Chat ID: ${chatId}` });
     return new Response('OK');
   }
 
-  const text = String(post.text || post.caption || '').trim();
+  if (!env.TELEGRAM_RECAP_CHAT_ID || chatId !== String(env.TELEGRAM_RECAP_CHAT_ID)) {
+    return new Response('OK');
+  }
 
   if (text.startsWith('/event ')) {
     const query = text.slice(7).trim();

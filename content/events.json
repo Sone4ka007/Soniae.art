@@ -3979,13 +3979,15 @@
       "city": "moscow",
       "date": "2026-09-24",
       "time": "19:00",
-      "title": "Новость-молния!",
+      "title": "Мастер-класс ведёт художница и иллюстратор из Москвы",
       "venue": "",
       "address": "",
       "price": null,
       "price_text": "",
       "registration": null,
-      "categories": [],
+      "categories": [
+        "мастер-класс"
+      ],
       "description": "Не смогли упустить такой шанс, Объявляем спонтанный сеанс рисования Три часа будем наблюдать за посетителями книжного магазина, выискивать характерных персонажей и превращать случайных людей в героев собственных рисунков. Будем учиться отсекать лишнее, замечать главное и утрировать характер — так, чтобы из нескольких линий вдруг получался узнаваемый персонаж. И, конечно, будут задания на раскрепощение — чтобы перестать бояться белого листа, быстрее включаться в рисование и позволить себе рисовать смелее.",
       "url": "https://ticketscloud.com/v1/widgets/common?token=eyJhbGciOiJIUzI1NiIsImlzcyI6InRpY2tldHNjbG91ZC5ydSIsInR5cCI6IkpXVCJ9.eyJwIjoiNjljNGYxOWQ1MWQxZDFlMTcxMDk1NzJmIn0.dHqIVUIbdpeGEePZIOWBvPFs10hEC-601iFn3bfsjS8&amp;lang=ru&amp;event=6ab1280172c829017b9dba98&amp;s=1",
       "source": "Соня Go — события",
@@ -5007,19 +5009,19 @@
     },
     {
       "id": "moscow-2026-09-25-1071002c2a",
-      "status": "check",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-09-25",
       "time": "19:00",
-      "title": "Почему интересно: разбор полного пути графической истории после создания страниц — издательство, первые читатели, развитие персонажей и мира, мерч, выставки, фестивали. Это практически готовый кейс для silent book / комикса / собственной визуальной серии. �",
+      "title": "Путь молодого автора: от комикса к бренду",
       "venue": "",
       "address": "",
       "price": 0,
       "price_text": "Бесплатно",
       "registration": null,
       "categories": [],
-      "description": "Нетворкинг: высокий — руководитель программы современной графики и комикса, издатель и практикующий иллюстратор в небольшой образовательной среде. «Путь молодого автора: от комикса к бренду» — официальный анонс⁠� Можно пойти ради нетворкинга",
+      "description": "",
       "url": "http://design.hse.ru/",
       "source": "Соня Go — события",
       "checked_at": "",
@@ -5035,7 +5037,7 @@
       "editor_note": "",
       "instagram_include": false,
       "social_priority": null,
-      "reviewed_at": ""
+      "reviewed_at": "2026-09-23"
     },
     {
       "id": "moscow-2026-09-25-2e4868afed",
@@ -9191,7 +9193,7 @@
     },
     {
       "id": "moscow-2026-10-02-fa0dd49ab0",
-      "status": "approved",
+      "status": "rejected",
       "kind": "open_call",
       "city": "moscow",
       "date": "2026-10-02",
@@ -9210,7 +9212,7 @@
       "url": "https://garagemca.org/event/5df89fae-0b13-4094-bac2-6abf62bc1258",
       "source": "Музей современного искусства «Гараж»",
       "checked_at": "",
-      "review_reason": "",
+      "review_reason": "duplicate_record",
       "discovered_at": "2026-09-23",
       "price_type": "unknown",
       "availability": "unknown",
@@ -9495,7 +9497,7 @@
     },
     {
       "id": "moscow-2026-10-08-3b5ef7ce81",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-08",
@@ -9522,7 +9524,8 @@
       "social_title": "",
       "social_description": "",
       "instagram_image": "",
-      "telegram_include": false
+      "telegram_include": false,
+      "reviewed_at": "2026-09-23"
     },
     {
       "id": "moscow-2026-10-08-20c10d6735",
@@ -9733,7 +9736,7 @@
     },
     {
       "id": "moscow-2026-10-10-dd6da5e86a",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-10",
@@ -9760,7 +9763,8 @@
       "social_title": "",
       "social_description": "",
       "instagram_image": "",
-      "telegram_include": false
+      "telegram_include": false,
+      "reviewed_at": "2026-09-23"
     },
     {
       "status": "approved",
@@ -10446,7 +10450,7 @@
     },
     {
       "id": "moscow-2026-10-17-c61e2a3d84",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-17",
@@ -10475,7 +10479,8 @@
       "social_title": "",
       "social_description": "",
       "instagram_image": "",
-      "telegram_include": false
+      "telegram_include": false,
+      "reviewed_at": "2026-09-23"
     },
     {
       "id": "moscow-2026-10-18-186e62963f",
@@ -10514,7 +10519,7 @@
     },
     {
       "id": "moscow-2026-10-18-c148333a16",
-      "status": "new",
+      "status": "approved",
       "kind": "exhibition",
       "city": "moscow",
       "date": "2026-10-18",
@@ -10544,7 +10549,8 @@
       "social_title": "",
       "social_description": "",
       "instagram_image": "",
-      "telegram_include": false
+      "telegram_include": false,
+      "reviewed_at": "2026-09-23"
     },
     {
       "id": "moscow-2026-10-18-3d441d0794",

@@ -372,14 +372,7 @@
       "city": "spb",
       "url": "https://nlr.ru/nlr_visit/RA593/afisha-rnb?date_from=2026-01-01&date_to=2026-12-31&sel_type=all",
       "venue": "Российская национальная библиотека",
-      "adapter": "event_links",
-      "href_contains": [
-        "/nlr_visit/",
-        "/event/",
-        "/events/"
-      ],
-      "max_detail_pages": 120,
-      "detail_workers": 8,
+      "adapter": "rnb",
       "source_group": "library",
       "high_free_yield": true
     },

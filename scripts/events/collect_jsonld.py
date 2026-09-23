@@ -182,16 +182,51 @@ def parse_time(text):
     m = re.search(r"(?<!\d)([01]?\d|2[0-3]):(\d{2})(?!\d)", clean(text))
     return f"{int(m.group(1)):02d}:{m.group(2)}" if m else ""
 
+def parse_ru_date_range(text, default_year=None):
+    t=clean(text).lower().replace("ё","е")
+    month_pat="|".join(sorted(MONTHS,key=len,reverse=True))
+    # 10 октября — 11 октября 2026 / 01 сентября — 11 октября 2026
+    m=re.search(rf"(?<!\d)(\d{{1,2}})\s+({month_pat})\s*[-–—]\s*(\d{{1,2}})\s+({month_pat})\.?\s*(20\d{{2}})?",t,re.I)
+    if m:
+        end_year=int(m.group(5) or default_year or date.today().year)
+        sm=MONTHS[m.group(2)]; em=MONTHS[m.group(4)]
+        start_year=end_year-1 if sm>em else end_year
+        try:
+            return date(start_year,sm,int(m.group(1))),date(end_year,em,int(m.group(3)))
+        except ValueError:
+            pass
+    # 10–11 октября 2026
+    m=re.search(rf"(?<!\d)(\d{{1,2}})\s*[-–—]\s*(\d{{1,2}})\s+({month_pat})\.?\s*(20\d{{2}})?",t,re.I)
+    if m:
+        y=int(m.group(4) or default_year or date.today().year)
+        try:
+            return date(y,MONTHS[m.group(3)],int(m.group(1))),date(y,MONTHS[m.group(3)],int(m.group(2)))
+        except ValueError:
+            pass
+    return None,None
+
+def event_context(text,title,limit=1800):
+    t=clean(text)
+    needle=clean(title)
+    if needle:
+        i=t.lower().find(needle.lower())
+        if i>=0:
+            return t[i:i+limit]
+    return t[:limit]
+
 def parse_price(text):
     t = clean(text)
-    if re.search(r"бесплат|вход\s+свобод", t, re.I):
-        return 0, "Бесплатно"
+    # Explicit money always wins over generic "Бесплатные" navigation/filter
+    # text that may also be present on the same page.
     m = re.search(r"(?<!\d)(\d[\d\s\u00a0]{0,7})\s*₽", t)
     if m:
         try:
-            return int(re.sub(r"\D","",m.group(1))), ""
+            value=int(re.sub(r"\D","",m.group(1)))
+            return value, f"{value} ₽"
         except Exception:
             pass
+    if re.search(r"бесплат|вход\s+свобод", t, re.I):
+        return 0, "Бесплатно"
     return None, ""
 
 def make_event(src, dt, tm, title, url, description="", venue="", address="", price=None,
@@ -400,21 +435,25 @@ def extract_event_links(html, src):
                 return split
         start_dt=end_dt=None
         path_low=urlparse(full).path.lower()
+        host=urlparse(full).netloc.lower()
+        is_az=("museum-az.com" in host)
+        is_winzavod=("winzavod.ru" in host)
         is_exhibition=(src.get("kind")=="exhibition" or "/exhibitions/" in path_low or "/exhibition/" in path_low)
-        if is_exhibition:
-            start_dt,end_dt=parse_exhibition_range(dtext)
-            dt=start_dt or parse_date(dtext,require_year=True)
-            if not dt or (end_dt and end_dt<today):
-                return None
-        else:
-            dt=parse_date(dtext,require_year=True)
-            if not dt or dt<today:
-                return None
+
         title=""
-        for h in dsoup.find_all(["h1","h2","h3"]):
-            t=clean(h.get_text(" ",strip=True))
-            if len(t)>=8 and not t.startswith("#") and t.lower() not in SKIP_TITLES and t.lower() not in EVENT_TYPES:
-                title=t; break
+        # AZ pages contain a persistent exhibition heading before the actual
+        # event. Their OpenGraph title is the event title and is more reliable.
+        if is_az:
+            meta=dsoup.find("meta",attrs={"property":"og:title"}) or dsoup.find("meta",attrs={"name":"twitter:title"})
+            candidate=clean(meta.get("content","")) if meta else ""
+            candidate=re.sub(r"\s*[|—-]\s*Музей\s*AZ.*$","",candidate,flags=re.I)
+            if candidate and candidate.lower() not in SKIP_TITLES:
+                title=candidate
+        if not title:
+            for h in dsoup.find_all(["h1","h2","h3"]):
+                t=clean(h.get_text(" ",strip=True))
+                if len(t)>=8 and not t.startswith("#") and t.lower() not in SKIP_TITLES and t.lower() not in EVENT_TYPES:
+                    title=t; break
         if not title:
             meta=dsoup.find("meta",attrs={"property":"og:title"}) or dsoup.find("meta",attrs={"name":"twitter:title"})
             candidate=clean(meta.get("content","")) if meta else ""
@@ -427,10 +466,36 @@ def extract_event_links(html, src):
                 title=candidate
         if not title:
             return None
-        tm=parse_time(dtext[:1800])
-        price,price_text=parse_price(dtext)
-        reg=bool(re.search(r"регистрац|зарегистр|купить билет",dtext,re.I)) or None
-        cat=event_category(dtext[:1800])
+
+        context=event_context(dtext,title,2200)
+        if is_winzavod:
+            start_dt,end_dt=parse_ru_date_range(context,today.year)
+            if not start_dt:
+                start_dt,end_dt=parse_exhibition_range(context)
+            dt=start_dt or parse_date(context,require_year=False,default_year=today.year)
+        elif is_az:
+            start_dt,end_dt=parse_ru_date_range(context,today.year)
+            dt=start_dt or parse_date(context,require_year=False,default_year=today.year)
+        elif is_exhibition:
+            start_dt,end_dt=parse_exhibition_range(dtext)
+            dt=start_dt or parse_date(dtext,require_year=True)
+        else:
+            dt=parse_date(dtext,require_year=True)
+
+        if not dt:
+            return None
+        if end_dt:
+            if end_dt<today:
+                return None
+        elif not is_exhibition and dt<today:
+            return None
+        elif is_exhibition and dt<today-timedelta(days=365):
+            return None
+
+        tm=parse_time(context[:700])
+        price,price_text=parse_price(context[:1200] if (is_az or is_winzavod) else dtext)
+        reg=bool(re.search(r"регистрац|зарегистр|купить билет",context[:1400] if (is_az or is_winzavod) else dtext,re.I)) or None
+        cat=event_category(context[:1800])
         desc=""
         # Russian Museum exhibition pages have a reliable "О выставке" section.
         # Prefer it over generic paragraph scraping, which otherwise reaches the legal footer.
@@ -505,6 +570,10 @@ def extract_event_links(html, src):
         ev=make_event(src,dt.isoformat(),tm,title,full,desc,
                       price=price,price_text=price_text,registration=reg,
                       categories=[cat] if cat else [])
+        if start_dt:
+            ev["start_date"]=start_dt.isoformat()
+        if end_dt:
+            ev["end_date"]=end_dt.isoformat()
         if is_exhibition:
             ev["kind"]="exhibition"
             ev["categories"]=[c for c in ev.get("categories",[]) if c not in ("лекция","концерт","встреча","событие","программа")]

@@ -671,6 +671,14 @@
       "detail_workers": 8,
       "source_group": "city_culture_portal",
       "high_free_yield": true
+    },
+    {
+      "name": "Школа дизайна НИУ ВШЭ — новости и события",
+      "city": "moscow",
+      "url": "https://design.hse.ru/newspaper",
+      "venue": "Школа дизайна НИУ ВШЭ",
+      "adapter": "hse",
+      "source_group": "university"
     }
   ]
 }

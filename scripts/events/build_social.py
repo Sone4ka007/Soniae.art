@@ -1,26 +1,51 @@
 #!/usr/bin/env python3
-import argparse, html, json
+import argparse, html, json, math
 from datetime import date, datetime, timedelta
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 DB = ROOT / "content/events.json"
 OUT = ROOT / "dist/events-weekly/social"
-MONTHS = ["января","февраля","марта","апреля","мая","июня","июля","августа","сентября","октября","ноября","декабря"]
 
-CSS = """
+MONTHS = ["ЯНВАРЯ","ФЕВРАЛЯ","МАРТА","АПРЕЛЯ","МАЯ","ИЮНЯ","ИЮЛЯ","АВГУСТА","СЕНТЯБРЯ","ОКТЯБРЯ","НОЯБРЯ","ДЕКАБРЯ"]
+MONTHS_LOW = ["января","февраля","марта","апреля","мая","июня","июля","августа","сентября","октября","ноября","декабря"]
+DAYS_SHORT = ["ПН","ВТ","СР","ЧТ","ПТ","СБ","ВС"]
+DAYS_FULL = ["ПОНЕДЕЛЬНИК","ВТОРНИК","СРЕДА","ЧЕТВЕРГ","ПЯТНИЦА","СУББОТА","ВОСКРЕСЕНЬЕ"]
+
+CSS = r"""
 *{box-sizing:border-box}
-body{margin:0;background:#fff;color:#0b0b0b;font-family:Arial Narrow,Arial,Helvetica,sans-serif}
-.slide{width:1080px;height:1350px;padding:72px;display:flex;flex-direction:column;overflow:hidden;background:#fff}
-.eyebrow{font-size:26px;font-weight:800;letter-spacing:1.2px;border-bottom:4px solid #111;padding-bottom:18px}
-.cover h1{font-size:128px;line-height:.82;letter-spacing:-5px;margin:110px 0 28px;font-weight:900}
-.cover .range{font-size:34px;font-weight:800}
-.event .meta{font-size:30px;font-weight:900;margin-top:56px}
-.event h1{font-size:82px;line-height:.95;letter-spacing:-2.5px;margin:28px 0 26px;font-weight:900}
-.event .venue{font-size:30px;font-weight:800;margin-bottom:30px}
-.event .desc{font-size:34px;line-height:1.18;max-width:890px}
-.event .footer{margin-top:auto;border-top:4px solid #111;padding-top:22px;display:flex;justify-content:space-between;gap:28px;font-size:25px;font-weight:800}
-.badge{display:inline-block;background:#111;color:#fff;padding:8px 12px;margin-right:12px}
+html,body{margin:0;padding:0;background:#fff;color:#080808}
+body{font-family:"Arial Narrow","Roboto Condensed","Liberation Sans Narrow",Arial,sans-serif}
+.page{width:1080px;height:1350px;background:#fff;padding:44px 48px 34px;overflow:hidden;position:relative}
+.topline{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:3px solid #111;padding-bottom:12px;font-size:25px;font-weight:700;letter-spacing:4px;text-transform:uppercase}
+.day-title{font-family:Impact,"Arial Narrow",sans-serif;font-size:146px;line-height:.86;letter-spacing:-4px;font-weight:900;margin:28px 0 24px;text-transform:uppercase;white-space:nowrap}
+.event-list{border-top:0 solid #111}
+.event-row{display:grid;grid-template-columns:205px 1px 1fr;gap:24px;border-bottom:2px solid #111;padding:19px 0 18px;min-height:157px}
+.event-time{font-family:Impact,"Arial Narrow",sans-serif;font-size:55px;line-height:.95;letter-spacing:-1px;padding-top:1px}
+.event-rule{background:#111;width:1px}
+.event-title{font-size:39px;line-height:.98;font-weight:900;margin:0 0 6px}
+.event-meta{font-size:28px;line-height:1.05;margin:0 0 10px}
+.badge{display:inline-block;background:#ececec;padding:7px 18px 6px;font-size:24px;line-height:1;font-weight:500}
+.badge.alert{background:#111;color:#fff}
+.footer{position:absolute;left:48px;right:48px;bottom:13px;border-top:2px solid #111;text-align:center;padding-top:8px;font-size:16px;letter-spacing:3px;text-transform:uppercase}
+
+.summary{padding-top:26px}
+.summary-title{font-family:Impact,"Arial Narrow",sans-serif;font-size:86px;line-height:.9;text-align:center;letter-spacing:-2px;font-weight:900;text-transform:uppercase;margin:0}
+.summary-range{text-align:center;font-size:27px;letter-spacing:8px;margin:10px 0 18px}
+.summary-grid{display:grid;border-top:3px solid #111;border-left:2px solid #111;height:1085px}
+.summary-col{border-right:2px solid #111;min-width:0;overflow:hidden}
+.summary-head{background:#111;color:#fff;font-family:Impact,"Arial Narrow",sans-serif;text-align:center;font-size:32px;line-height:1;padding:12px 4px 10px;letter-spacing:1px}
+.summary-item{padding:13px 12px 12px;border-bottom:1.5px solid #111}
+.summary-time{font-size:22px;line-height:1;font-weight:900;margin-bottom:4px}
+.summary-event-title{font-size:23px;line-height:.98;font-weight:900;margin-bottom:5px}
+.summary-venue{font-size:18px;line-height:1.05;margin-bottom:7px}
+.summary-badge{display:inline-block;background:#ececec;padding:5px 9px 4px;font-size:16px;line-height:1}
+.summary-footer{position:absolute;left:48px;right:48px;bottom:11px;text-align:center;font-size:16px;letter-spacing:3px}
+
+.pdf-doc{margin:0;padding:0}
+.pdf-page{page-break-after:always;break-after:page}
+.pdf-page:last-child{page-break-after:auto;break-after:auto}
+@page{size:1080px 1350px;margin:0}
 """
 
 def monday(d):
@@ -55,12 +80,14 @@ def is_free(e):
 
 def price_text(e):
     if is_free(e):
-        return "БЕСПЛАТНО"
+        return "бесплатно"
     if str(e.get("price_text") or "").strip():
         return str(e["price_text"]).strip()
     if e.get("price") not in (None, ""):
         return f'{e["price"]} ₽'
-    return "ЦЕНА НА САЙТЕ"
+    if e.get("registration"):
+        return "по рег."
+    return "билет"
 
 def status_label(e):
     status = str(e.get("availability") or "").lower()
@@ -72,171 +99,194 @@ def status_label(e):
         return "МЕСТ НЕТ"
     return ""
 
-def fmt_date(iso):
-    try:
-        d = date.fromisoformat(iso)
-        return f"{d.day} {MONTHS[d.month-1]}"
-    except Exception:
-        return iso or ""
-
 def city_label(city):
+    return {"moscow":"МОСКВЕ","spb":"ПЕТЕРБУРГЕ","russia":"РОССИИ","international":"МИРЕ"}.get(city, str(city).upper())
+
+def city_plain(city):
     return {"moscow":"Москва","spb":"Петербург","russia":"Россия","international":"Международные"}.get(city, city)
 
-def telegram_item(e, deadline=False):
+def day_items(events, d):
+    iso=d.isoformat()
+    return [e for e in events if str(e.get("date","")) == iso]
+
+def safe_time(e):
+    return html.escape(str(e.get("time") or "по\nпрограмме")).replace("\n","<br>")
+
+def event_meta(e):
+    venue=str(e.get("venue") or e.get("source") or "").strip()
+    desc=social_text(e,"social_description","description")
+    if desc:
+        # Keep the event card editorial and compact: venue first, then a short descriptor.
+        short=desc.split(". ")[0].strip()
+        if len(short)>105:
+            short=short[:102].rsplit(" ",1)[0]+"…"
+        if venue and short and venue.lower() not in short.lower():
+            return f"{venue} · {short}"
+        return short or venue
+    return venue
+
+def day_page(d, items, page_no, total_pages, city, continuation=0):
+    date_title=f"{DAYS_SHORT[d.weekday()]} {d.day} {MONTHS[d.month-1]}"
+    if continuation:
+        date_title += f" · {continuation+1}"
+    rows=[]
+    for e in items:
+        title=html.escape(social_text(e,"social_title","title"))
+        meta=html.escape(event_meta(e))
+        badge=status_label(e)
+        badge_text=badge or price_text(e)
+        badge_class="badge alert" if badge else "badge"
+        rows.append(f"""
+<div class="event-row">
+  <div class="event-time">{safe_time(e)}</div>
+  <div class="event-rule"></div>
+  <div>
+    <div class="event-title">{title}</div>
+    <div class="event-meta">{meta}</div>
+    <span class="{badge_class}">{html.escape(badge_text)}</span>
+  </div>
+</div>""")
+    return f"""<section class="page pdf-page">
+  <div class="topline"><span>КУДА СХОДИТЬ ХУДОЖНИКУ В {city_label(city)}</span><span>{page_no}/{total_pages}</span></div>
+  <div class="day-title">{date_title}</div>
+  <div class="event-list">{''.join(rows)}</div>
+  <div class="footer">СОНЯ ЕНОКАЕВА · t.me/sonnya_ee · sonyae.art</div>
+</section>"""
+
+def summary_page(days, by_day, start, end, city, page_no, total_pages):
+    visible=[d for d in days if by_day.get(d.isoformat())]
+    if not visible:
+        visible=days
+    cols=[]
+    for d in visible:
+        items=by_day.get(d.isoformat(),[])
+        blocks=[]
+        for e in items[:7]:
+            title=html.escape(social_text(e,"social_title","title"))
+            venue=html.escape(str(e.get("venue") or e.get("source") or ""))
+            badge=status_label(e) or price_text(e)
+            blocks.append(f"""<div class="summary-item">
+  <div class="summary-time">{safe_time(e)}</div>
+  <div class="summary-event-title">{title}</div>
+  <div class="summary-venue">{venue}</div>
+  <span class="summary-badge">{html.escape(badge)}</span>
+</div>""")
+        cols.append(f"""<div class="summary-col">
+  <div class="summary-head">{DAYS_SHORT[d.weekday()]} {d.day}</div>
+  {''.join(blocks)}
+</div>""")
+    range_text=f"{start.day}–{end.day} {MONTHS_LOW[end.month-1]} {end.year}"
+    return f"""<section class="page summary pdf-page">
+  <h1 class="summary-title">КУДА СХОДИТЬ ХУДОЖНИКУ В {city_label(city)}</h1>
+  <div class="summary-range">{range_text}</div>
+  <div class="summary-grid" style="grid-template-columns:repeat({max(1,len(visible))},1fr)">{''.join(cols)}</div>
+  <div class="summary-footer">Составитель: Соня Енокаева · t.me/sonnya_ee · sonyae.art · {page_no}/{total_pages}</div>
+</section>"""
+
+def telegram_item(e):
     title = social_text(e, "social_title", "title")
     desc = social_text(e, "social_description", "description")
-    when = fmt_date(e.get("date",""))
-    if e.get("time") and not deadline:
-        when += f", {e['time']}"
     parts = []
-    flag = status_label(e)
+    flag=status_label(e)
     if flag:
         parts.append(f"⚠️ {flag}")
-    parts.append(f"{when} — {title}" if when else title)
-    place = str(e.get("venue") or e.get("source") or "").strip()
-    meta = " · ".join(x for x in [place, price_text(e) if not deadline else ""] if x)
-    if meta:
-        parts.append(meta)
+    parts.append(f"{e.get('time') or 'по программе'} — {title}")
+    place=str(e.get("venue") or e.get("source") or "").strip()
+    if place:
+        parts.append(f"{place} · {price_text(e)}")
     if desc:
         parts.append(desc)
     if e.get("url"):
         parts.append(str(e["url"]))
     return "\n".join(parts)
 
-def write_collection(path, heading, items, deadline=False):
-    lines = [heading, ""]
-    for e in items:
-        lines.extend([telegram_item(e, deadline=deadline), ""])
-    if not items:
-        lines.append("На этот период подходящих событий нет.")
-    path.write_text("\n".join(lines).rstrip() + "\n", "utf-8")
-
-def event_slide(e, index, total):
-    title = html.escape(social_text(e, "social_title", "title"))
-    desc = html.escape(social_text(e, "social_description", "description"))
-    venue = html.escape(str(e.get("venue") or e.get("source") or ""))
-    date_text = html.escape(fmt_date(e.get("date","")) + (f" · {e.get('time')}" if e.get("time") else ""))
-    badge = status_label(e)
-    badge_html = f'<span class="badge">{html.escape(badge)}</span>' if badge else ""
-    image_note = html.escape(str(e.get("instagram_image") or ""))
-    image_meta = f'<span>IMAGE: {image_note}</span>' if image_note else "<span>sonyae.art/events</span>"
-    return f"""<!doctype html><meta charset="utf-8"><style>{CSS}</style>
-<main class="slide event">
-  <div class="eyebrow">СОНЯ ЕНОКАЕВА · СОБЫТИЯ ДЛЯ ХУДОЖНИКОВ · {index}/{total}</div>
-  <div class="meta">{badge_html}{date_text}</div>
-  <h1>{title}</h1>
-  <div class="venue">{venue}</div>
-  <div class="desc">{desc}</div>
-  <div class="footer"><span>{html.escape(price_text(e))}</span>{image_meta}</div>
-</main>"""
-
 def main():
-    ap = argparse.ArgumentParser()
+    ap=argparse.ArgumentParser()
     ap.add_argument("--week-start")
-    ap.add_argument("--city", default="moscow")
-    ap.add_argument("--instagram-limit", type=int, default=9)
-    args = ap.parse_args()
+    ap.add_argument("--city",default="moscow")
+    ap.add_argument("--events-per-day-page",type=int,default=5)
+    args=ap.parse_args()
 
-    start = datetime.strptime(args.week_start, "%Y-%m-%d").date() if args.week_start else monday(date.today() + timedelta(days=7))
-    end = start + timedelta(days=6)
+    start=datetime.strptime(args.week_start,"%Y-%m-%d").date() if args.week_start else monday(date.today()+timedelta(days=7))
+    end=start+timedelta(days=6)
+    days=[start+timedelta(days=i) for i in range(7)]
 
-    db = json.loads(DB.read_text("utf-8"))
-    approved = [e for e in db.get("events", []) if e.get("status") == "approved"]
+    db=json.loads(DB.read_text("utf-8"))
+    approved=[e for e in db.get("events",[]) if e.get("status")=="approved" and e.get("city")==args.city]
+    weekly=[e for e in approved if start.isoformat()<=str(e.get("date",""))<=end.isoformat()]
+    weekly.sort(key=lambda e:(e.get("date",""),e.get("time",""),e.get("title","")))
 
-    weekly = [
-        e for e in approved
-        if e.get("city") == args.city
-        and start.isoformat() <= str(e.get("date","")) <= end.isoformat()
-    ]
-    weekly.sort(key=lambda e:(e.get("date",""), e.get("time",""), e.get("title","")))
+    tg_week=[e for e in weekly if parse_bool(e.get("telegram_include")) is not False]
+    ig_week=[e for e in weekly if parse_bool(e.get("instagram_include")) is not False]
 
-    tg_week = [e for e in weekly if parse_bool(e.get("telegram_include")) is not False]
-    tg_free = [e for e in tg_week if is_free(e)]
-    open_calls = [
-        e for e in approved
-        if e.get("kind") == "open_call"
-        and start.isoformat() <= str(e.get("date","")) <= end.isoformat()
-        and parse_bool(e.get("telegram_include")) is not False
-    ]
-    open_calls.sort(key=lambda e:(e.get("date",""), -social_priority(e), e.get("title","")))
-    ending = [
-        e for e in approved
-        if e.get("city") == args.city
-        and e.get("kind") == "exhibition"
-        and start.isoformat() <= str(e.get("end_date","")) <= end.isoformat()
-        and parse_bool(e.get("telegram_include")) is not False
-    ]
-    ending.sort(key=lambda e:(e.get("end_date",""), -social_priority(e), e.get("title","")))
-
-    OUT.mkdir(parents=True, exist_ok=True)
-    label = city_label(args.city)
-    range_text = f"{start.day}–{end.day} {MONTHS[end.month-1]} {end.year}"
-
-    write_collection(OUT / "telegram-week.txt", f"КУДА СХОДИТЬ ХУДОЖНИКУ\n{label} · {range_text}", tg_week)
-    write_collection(OUT / "telegram-free.txt", f"БЕСПЛАТНО НА ЭТОЙ НЕДЕЛЕ\n{label} · {range_text}", tg_free)
-    write_collection(OUT / "telegram-open-calls.txt", f"ОПЕН-КОЛЛЫ · ДЕДЛАЙНЫ {range_text}", open_calls, deadline=True)
-
-    ending_copy = []
-    for e in ending:
-        x = dict(e)
-        x["date"] = e.get("end_date")
-        ending_copy.append(x)
-    write_collection(OUT / "telegram-ending-soon.txt", f"ПОСЛЕДНИЙ ШАНС УВИДЕТЬ\n{label} · {range_text}", ending_copy)
-
-    candidates = [e for e in weekly if parse_bool(e.get("instagram_include")) is not False]
-    candidates.sort(key=lambda e:(
-        0 if parse_bool(e.get("instagram_include")) is True else 1,
-        -social_priority(e),
-        0 if is_free(e) else 1,
-        e.get("date",""),
-        e.get("time",""),
-        e.get("title","")
-    ))
-    selected = candidates[:max(1, args.instagram_limit)]
-
-    insta = OUT / "instagram"
+    OUT.mkdir(parents=True,exist_ok=True)
+    insta=OUT/"instagram"
     insta.mkdir(exist_ok=True)
-    cover = f"""<!doctype html><meta charset="utf-8"><style>{CSS}</style>
-<main class="slide cover">
-  <div class="eyebrow">СОНЯ ЕНОКАЕВА · {html.escape(label.upper())}</div>
-  <h1>КУДА<br>СХОДИТЬ<br>ХУДОЖНИКУ</h1>
-  <div class="range">{html.escape(range_text)}</div>
-</main>"""
-    (insta / "00-cover.html").write_text(cover, "utf-8")
-    total = len(selected) + 1
-    for i, e in enumerate(selected, 1):
-        (insta / f"{i:02d}-{e.get('id','event')}.html").write_text(event_slide(e, i+1, total), "utf-8")
 
-    caption = [
-        f"Куда сходить художнику · {label} · {range_text}",
-        "",
-        "Сохраняйте подборку. Полный календарь — на sonyae.art/events.",
-    ]
-    (OUT / "instagram-caption.txt").write_text("\n".join(caption) + "\n", "utf-8")
-    (OUT / "instagram.json").write_text(json.dumps({
-        "week_start": start.isoformat(),
-        "week_end": end.isoformat(),
-        "city": args.city,
-        "selected": [
-            {
-                "id": e.get("id"),
-                "title": social_text(e, "social_title", "title"),
-                "description": social_text(e, "social_description", "description"),
-                "date": e.get("date"),
-                "time": e.get("time"),
-                "venue": e.get("venue"),
-                "url": e.get("url"),
-                "instagram_image": e.get("instagram_image"),
-                "social_priority": social_priority(e),
-            }
-            for e in selected
-        ]
-    }, ensure_ascii=False, indent=2) + "\n", "utf-8")
+    # Instagram uses the summary table first, followed by one or more pages per day.
+    by_day={d.isoformat():day_items(ig_week,d) for d in days}
+    chunks=[]
+    for d in days:
+        items=by_day[d.isoformat()]
+        if not items:
+            continue
+        for offset in range(0,len(items),args.events_per_day_page):
+            chunks.append((d,items[offset:offset+args.events_per_day_page],offset//args.events_per_day_page))
 
-    print(
-        f"Built social package: weekly={len(tg_week)}, free={len(tg_free)}, "
-        f"open_calls={len(open_calls)}, ending={len(ending)}, instagram={len(selected)}"
+    total_pages=1+len(chunks)
+    summary=summary_page(days,by_day,start,end,args.city,1,total_pages)
+    summary_doc=f'<!doctype html><meta charset="utf-8"><style>{CSS}</style>{summary}'
+    (insta/"00-summary.html").write_text(summary_doc,"utf-8")
+
+    pdf_pages=[summary]
+    for idx,(d,items,continuation) in enumerate(chunks,start=2):
+        page=day_page(d,items,idx,total_pages,args.city,continuation)
+        pdf_pages.append(page)
+        (insta/f"{idx-1:02d}-{d.isoformat()}-{continuation+1}.html").write_text(
+            f'<!doctype html><meta charset="utf-8"><style>{CSS}</style>{page}',
+            "utf-8"
+        )
+
+    telegram_pdf=f'<!doctype html><meta charset="utf-8"><style>{CSS}</style><body class="pdf-doc">{"".join(pdf_pages)}</body>'
+    (OUT/"telegram-week.html").write_text(telegram_pdf,"utf-8")
+
+    # Keep a plain-text Telegram fallback.
+    lines=[f"КУДА СХОДИТЬ ХУДОЖНИКУ · {city_plain(args.city)} · {start.day}–{end.day} {MONTHS_LOW[end.month-1]} {end.year}",""]
+    for d in days:
+        items=day_items(tg_week,d)
+        if not items:
+            continue
+        lines.append(f"{DAYS_FULL[d.weekday()].title()} · {d.day} {MONTHS_LOW[d.month-1]}")
+        for e in items:
+            lines.extend([telegram_item(e),""])
+    (OUT/"telegram-week.txt").write_text("\n".join(lines).rstrip()+"\n","utf-8")
+
+    # Additional text selections remain useful for channel posts.
+    free=[e for e in tg_week if is_free(e)]
+    (OUT/"telegram-free.txt").write_text(
+        "\n\n".join(telegram_item(e) for e in free).strip()+"\n" if free else "На этой неделе бесплатных событий нет.\n",
+        "utf-8"
     )
 
-if __name__ == "__main__":
+    caption=[
+        f"Куда сходить художнику · {city_plain(args.city)} · {start.day}–{end.day} {MONTHS_LOW[end.month-1]} {end.year}",
+        "",
+        "Сводная таблица — на первом слайде, дальше расписание по дням.",
+        "Полный календарь — sonyae.art/events.",
+    ]
+    (OUT/"instagram-caption.txt").write_text("\n".join(caption)+"\n","utf-8")
+
+    manifest={
+        "week_start":start.isoformat(),
+        "week_end":end.isoformat(),
+        "city":args.city,
+        "instagram_pages":total_pages,
+        "telegram_pdf":"telegram-week.pdf",
+        "instagram_first_slide":"instagram/00-summary.png",
+        "events":len(ig_week),
+    }
+    (OUT/"social-manifest.json").write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+"\n","utf-8")
+    print(f"Built editorial social package: events={len(ig_week)}, pages={total_pages}")
+
+if __name__=="__main__":
     main()

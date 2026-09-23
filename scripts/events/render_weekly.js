@@ -32,5 +32,18 @@ async function renderDirectory(page, dir) {
   await renderDirectory(page, path.join(out,'carousel'));
   await renderDirectory(page, path.join(out,'social','instagram'));
 
+  const telegramHtml=path.join(out,'social','telegram-week.html');
+  if (fs.existsSync(telegramHtml)) {
+    await page.goto('file://'+telegramHtml,{waitUntil:'networkidle'});
+    await page.pdf({
+      path:path.join(out,'social','telegram-week.pdf'),
+      width:'1080px',
+      height:'1350px',
+      printBackground:true,
+      preferCSSPageSize:true,
+      margin:{top:'0',right:'0',bottom:'0',left:'0'}
+    });
+  }
+
   await browser.close();
 })();

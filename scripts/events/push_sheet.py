@@ -8,8 +8,8 @@ ROOT=Path(__file__).resolve().parents[2]
 DB=ROOT/"content/events.json"
 SHEET_ID=os.environ["EVENTS_SHEET_ID"]
 CREDS=json.loads(os.environ["GOOGLE_SERVICE_ACCOUNT_JSON"])
-RANGE="Events!A:AB"
-HEADERS=["title","status","date","time","venue","city","kind","categories","description","url","source","address","price_type","price_text","registration","availability","availability_checked_at","review_reason","editor_note","discovered_at","reviewed_at","price","checked_at","days_ahead","id","synced_status","synced_url","synced_source"]
+RANGE="Events!A:AH"
+HEADERS=["title","status","date","time","venue","city","kind","categories","description","url","source","address","price_type","price_text","registration","availability","availability_checked_at","review_reason","editor_note","discovered_at","reviewed_at","price","checked_at","days_ahead","id","synced_status","synced_url","synced_source","social_priority","social_title","social_description","telegram_include","instagram_include","instagram_image"]
 
 def service():
     scopes=["https://www.googleapis.com/auth/spreadsheets"]
@@ -36,7 +36,11 @@ def preserve_editor_fields(api, db):
     current_order={}
     # Preserve only moderation decisions made in the live Sheet.
     # Public event content is owned by the repository/curated layer.
-    editable={"editor_note","checked_at","review_reason","url","source"}
+    editable={
+        "editor_note","checked_at","review_reason","url","source",
+        "social_priority","social_title","social_description",
+        "telegram_include","instagram_include","instagram_image"
+    }
     merged=0
     for idx,row in enumerate(current[1:],start=1):
         obj=dict(zip(headers,row+[""]*(len(headers)-len(row))))
@@ -55,6 +59,16 @@ def preserve_editor_fields(api, db):
             if k not in obj:
                 continue
             v=obj[k]
+            if k in ("telegram_include","instagram_include"):
+                e[k]=parse_bool(v)
+                continue
+            if k=="social_priority":
+                s=str(v).strip()
+                e[k]=int(s) if s.isdigit() else None
+                continue
+            if k in ("social_title","social_description","instagram_image"):
+                e[k]=str(v).strip()
+                continue
             if k in ("url","source"):
                 live_value=str(v).strip()
                 synced_value=str(obj.get("synced_"+k,"")).strip()
@@ -115,7 +129,11 @@ def main():
             e.get("availability","unknown"),e.get("availability_checked_at",""),
             e.get("review_reason",""),e.get("editor_note",""),e.get("discovered_at",""),e.get("reviewed_at",""),
             e.get("price",""),e.get("checked_at",""),days,e.get("id",""),e.get("status","new"),
-            e.get("url",""),e.get("source","")
+            e.get("url",""),e.get("source",""),
+            e.get("social_priority",""),e.get("social_title",""),e.get("social_description",""),
+            e.get("telegram_include","") if e.get("telegram_include") is not None else "",
+            e.get("instagram_include","") if e.get("instagram_include") is not None else "",
+            e.get("instagram_image","")
         ])
 
     api.clear(spreadsheetId=SHEET_ID,range=RANGE,body={}).execute()
@@ -127,7 +145,7 @@ def main():
     # dropdown rules left behind when columns are reordered, then reapplies
     # validation only to controlled fields.
     requests=[
-      {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":0,"endColumnIndex":28}}},
+      {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":0,"endColumnIndex":34}}},
       {"setBasicFilter":{"filter":{"range":{"sheetId":sheet_id,"startRowIndex":0,"startColumnIndex":0,"endColumnIndex":28}}}},
       {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":1,"endColumnIndex":2},
         "rule":{"condition":{"type":"ONE_OF_LIST","values":[{"userEnteredValue":x} for x in ["new","check","approved","rejected"]]},"strict":True,"showCustomUi":True}}},
@@ -141,6 +159,10 @@ def main():
         "rule":{"condition":{"type":"BOOLEAN"},"strict":True,"showCustomUi":True}}},
       {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":15,"endColumnIndex":16},
         "rule":{"condition":{"type":"ONE_OF_LIST","values":[{"userEnteredValue":x} for x in ["available","sold_out","postponed","cancelled","unknown"]]},"strict":True,"showCustomUi":True}}},
+      {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":31,"endColumnIndex":33},
+        "rule":{"condition":{"type":"BOOLEAN"},"strict":True,"showCustomUi":True}}},
+      {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":28,"endColumnIndex":29},
+        "rule":{"condition":{"type":"NUMBER_BETWEEN","values":[{"userEnteredValue":"0"},{"userEnteredValue":"5"}]},"strict":True,"showCustomUi":True}}},
       {"updateDimensionProperties":{"range":{"sheetId":sheet_id,"dimension":"COLUMNS","startIndex":24,"endIndex":28},
         "properties":{"hiddenByUser":True},"fields":"hiddenByUser"}}
     ]

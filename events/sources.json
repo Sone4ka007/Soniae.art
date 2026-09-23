@@ -647,6 +647,15 @@
       "adapter": "telegram_digest",
       "source_group": "museum",
       "official_fallback_for": "Музей Москвы"
+    },
+    {
+      "name": "Соня Go — события",
+      "city": "moscow",
+      "url": "https://t.me/s/sonnya_go",
+      "venue": "",
+      "adapter": "telegram_channel_events",
+      "source_group": "curated_telegram",
+      "kind": "event"
     }
   ]
 }

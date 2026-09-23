@@ -648,6 +648,58 @@ def extract_telegram_digest(html, src):
             out.append(ev)
     return out
 
+def extract_rnb(html, src):
+    soup=BeautifulSoup(html,"html.parser")
+    lines=[clean(x) for x in soup.get_text("\n",strip=True).split("\n")]
+    lines=[x for x in lines if x]
+    out=[]; today=date.today(); i=0
+    month_pat="|".join(sorted(MONTHS,key=len,reverse=True))
+    date_re=re.compile(rf"^(\d{{1,2}})\s+({month_pat})\s+(20\d{{2}})$",re.I)
+    while i < len(lines):
+        m=date_re.match(lines[i].lower().replace("ё","е"))
+        if not m:
+            i+=1; continue
+        try:
+            dt=date(int(m.group(3)),MONTHS[m.group(2)],int(m.group(1)))
+        except Exception:
+            i+=1; continue
+        j=i+1
+        block=[]
+        while j < len(lines) and not date_re.match(lines[j].lower().replace("ё","е")):
+            block.append(lines[j]); j+=1
+        i=j
+        if dt < today:
+            continue
+        tm=""
+        for x in block[:8]:
+            if re.fullmatch(r"\d{1,2}:\d{2}",x):
+                tm=x.zfill(5); break
+        meaningful=[x for x in block if not re.fullmatch(r"\d{1,2}:\d{2}",x)
+                    and not re.fullmatch(r"\d{1,2}\+",x)
+                    and x.lower() not in {"понедельник","вторник","среда","четверг","пятница","суббота","воскресенье","image"}]
+        title=""
+        for x in meaningful[:12]:
+            lowx=x.lower()
+            if any(k in lowx for k in ("лекция","концерт","встреча","семинар","тренинг","квиз","мастер","х/ф","спектакль","выставк","лекторий")):
+                title=x; break
+        if not title and meaningful:
+            title=meaningful[0]
+        if not title or title.lower()=="афиша мероприятий рнб":
+            continue
+        raw=" ".join(block)
+        price,price_text=parse_price(raw)
+        reg=bool(re.search(r"регистрац",raw,re.I)) or None
+        cat=event_category(title+" "+raw[:500])
+        desc=""
+        for x in meaningful:
+            if x==title: continue
+            if len(x)>=35 and not x.lower().startswith(("теги:","справки","вход ")):
+                desc=x; break
+        out.append(make_event(src,dt.isoformat(),tm,title,src["url"],desc,
+                              price=price,price_text=price_text,registration=reg,
+                              categories=[cat] if cat else []))
+    return out
+
 def extract_zotov(html, src):
     soup=BeautifulSoup(html,"html.parser")
     out=[]; seen=set(); today=date.today()
@@ -1001,6 +1053,8 @@ def main():
                 candidates.extend(extract_hse(html,src))
             elif adapter=="rusimp":
                 candidates.extend(extract_rusimp(html,src))
+            elif adapter=="rnb":
+                candidates.extend(extract_rnb(html,src))
             elif adapter=="event_links":
                 candidates.extend(extract_event_links(html,src))
             elif adapter=="zotov":

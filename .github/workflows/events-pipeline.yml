@@ -100,7 +100,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: ${{ github.ref_name }}
+          # collect may push a fresher events database during this same run.
+          # The weekly job is read-only, so always render from the latest main.
+          ref: main
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -108,10 +110,19 @@ jobs:
         with:
           node-version: "22"
       - name: Build source layouts
+        env:
+          WEEK_START: ${{ inputs.week_start }}
+          CITY: ${{ inputs.city }}
         run: |
-          git pull --ff-only
-          python scripts/events/build_weekly.py ${{ inputs.week_start && format('--week-start {0}', inputs.week_start) || '' }} --city "${{ inputs.city }}"
-          python scripts/events/build_social.py ${{ inputs.week_start && format('--week-start {0}', inputs.week_start) || '' }} --city "${{ inputs.city }}"
+          set -euo pipefail
+          city="${CITY:-moscow}"
+          if [ -n "${WEEK_START:-}" ]; then
+            args=(--week-start "$WEEK_START" --city "$city")
+          else
+            args=(--city "$city")
+          fi
+          python scripts/events/build_weekly.py "${args[@]}"
+          python scripts/events/build_social.py "${args[@]}"
       - name: Install renderer
         run: |
           npm install --no-save playwright

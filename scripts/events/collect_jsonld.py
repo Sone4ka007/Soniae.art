@@ -673,32 +673,66 @@ def extract_telegram_channel_events(html, src):
 
         post=msg.get("data-post","")
         post_url=f"https://t.me/{post}" if post else src["url"]
-        links=[]
+        link_candidates=[]
         for a in text_node.find_all("a",href=True):
             full=urljoin(src["url"],a.get("href",""))
             host=urlparse(full).netloc.lower()
-            if host and host not in {"t.me","telegram.me"} and full not in links:
-                links.append(full)
-        event_url=links[0] if links else post_url
+            if not host or host in {"t.me","telegram.me"}:
+                continue
+            label=clean(a.get_text(" ",strip=True))
+            path=urlparse(full).path or "/"
+            score=0
+            low_label=label.lower()
+            if "официаль" in low_label and "анонс" in low_label:
+                score+=100
+            if "регистрац" in low_label:
+                score+=90
+            if any(x in low_label for x in ("подробнее","событие","лекция","выставка","встреча","паблик-ток")):
+                score+=50
+            if path not in ("","/"):
+                score+=30
+            if len(path.strip("/").split("/"))>=2:
+                score+=20
+            link_candidates.append((score,full,label))
+        link_candidates.sort(key=lambda x:(-x[0],x[1]))
+        event_url=link_candidates[0][1] if link_candidates else post_url
 
-        lines=[clean(x) for x in raw.split("\n") if clean(x)]
+        lines=[clean(x).replace("�","") for x in raw.split("\n") if clean(x)]
         title=""
-        for line in lines[:12]:
-            l=line.lower()
-            if re.fullmatch(r"\d{1,2}:\d{2}",line):
-                continue
-            if parse_date(line,require_year=False,default_year=today.year):
-                continue
-            if line.startswith(("http://","https://","#","📍","🕒","⏰","📅")):
-                continue
-            if re.match(r"^(место|где|когда|дата|время)\s*[:—–-]",l):
-                continue
-            if len(line)>=6 and any(t in l for t in EVENT_TYPES):
-                title=line
+        editorial_prefixes=(
+            "почему интересно","нетворкинг","почему стоит","зачем идти",
+            "можно пойти","мой комментарий","комментарий"
+        )
+
+        # Sonya Go posts often contain the real event title as a quoted linked
+        # phrase followed by "официальный анонс". Prefer that over editorial notes.
+        for line in lines:
+            m=re.search(r"[«\"]([^»\"]{6,220})[»\"]\s*[—–-]?\s*(?:официальн(?:ый|ая)\s+анонс|анонс|регистрац)",line,re.I)
+            if m:
+                title=clean(m.group(1))
                 break
+
         if not title:
-            for line in lines[:12]:
+            for line in lines[:16]:
                 l=line.lower()
+                if any(l.startswith(p) for p in editorial_prefixes):
+                    continue
+                if re.fullmatch(r"\d{1,2}:\d{2}",line):
+                    continue
+                if parse_date(line,require_year=False,default_year=today.year):
+                    continue
+                if line.startswith(("http://","https://","#","📍","🕒","⏰","📅")):
+                    continue
+                if re.match(r"^(место|где|когда|дата|время)\s*[:—–-]",l):
+                    continue
+                if len(line)>=6 and any(t in l for t in EVENT_TYPES):
+                    title=line
+                    break
+        if not title:
+            for line in lines[:16]:
+                l=line.lower()
+                if any(l.startswith(p) for p in editorial_prefixes):
+                    continue
                 if re.fullmatch(r"\d{1,2}:\d{2}",line):
                     continue
                 if parse_date(line,require_year=False,default_year=today.year):
@@ -723,7 +757,12 @@ def extract_telegram_channel_events(html, src):
 
         desc_parts=[]
         for line in lines:
+            l=line.lower()
             if line==title:
+                continue
+            if any(l.startswith(p) for p in editorial_prefixes):
+                continue
+            if "официальный анонс" in l or "можно пойти" in l:
                 continue
             if line.startswith(("http://","https://")):
                 continue
@@ -731,7 +770,7 @@ def extract_telegram_channel_events(html, src):
                 desc_parts.append(line)
             if len(" ".join(desc_parts))>=500:
                 break
-        desc=clean(" ".join(desc_parts))[:600]
+        desc=clean(" ".join(desc_parts)).replace("�","")[:600]
 
         price,price_text=parse_price(raw)
         reg=bool(re.search(r"регистрац|зарегистр",raw,re.I)) or None
@@ -1140,6 +1179,10 @@ def main():
          re.sub(r"\W+","",str(e.get("title","")).lower())):e.get("id")
         for e in db.get("events",[]) if e.get("id") and e.get("url")
     }
+    url_date_index={
+        (e.get("city"),e.get("date"),str(e.get("url","")).strip().lower()):e.get("id")
+        for e in db.get("events",[]) if e.get("id") and e.get("url")
+    }
     found=0
     for src in cfg.get("sources",[]):
         adapter=src.get("adapter","")
@@ -1176,6 +1219,13 @@ def main():
             occ=(n.get("city"),n.get("date"),str(n.get("url","")).strip().lower(),
                  re.sub(r"\W+","",str(n.get("title","")).lower()))
             old_id=occurrence_index.get(occ)
+            # A specific official event URL on the same date is a stronger
+            # duplicate signal than slightly different editorial titles.
+            # Do not use this shortcut for a source's shared listing URL.
+            n_url=str(n.get("url","")).strip().lower()
+            src_url=str(src.get("url","")).strip().lower()
+            if not old_id and n_url and n_url != src_url:
+                old_id=url_date_index.get((n.get("city"),n.get("date"),n_url))
             if old_id and old_id in existing:
                 old=existing[old_id]
                 final_status=old.get("status") if old.get("status") in ("approved","rejected") else n.get("status","new")
@@ -1191,6 +1241,8 @@ def main():
             elif n["id"] not in existing:
                 existing[n["id"]]=n
                 occurrence_index[occ]=n["id"]
+                if n_url:
+                    url_date_index[(n.get("city"),n.get("date"),n_url)]=n["id"]
                 found+=1
 
     db["updated_at"]=datetime.now(timezone.utc).date().isoformat()

@@ -679,6 +679,15 @@
       "venue": "Школа дизайна НИУ ВШЭ",
       "adapter": "hse",
       "source_group": "university"
+    },
+    {
+      "name": "Школа дизайна НИУ ВШЭ — отдельные регистрационные страницы",
+      "city": "moscow",
+      "url": "https://design.hse.ru/info/lecture_drive",
+      "venue": "Школа дизайна НИУ ВШЭ",
+      "adapter": "single_event_page",
+      "kind": "event",
+      "source_group": "university"
     }
   ]
 }

@@ -1179,6 +1179,10 @@ def main():
          re.sub(r"\W+","",str(e.get("title","")).lower())):e.get("id")
         for e in db.get("events",[]) if e.get("id") and e.get("url")
     }
+    url_date_index={
+        (e.get("city"),e.get("date"),str(e.get("url","")).strip().lower()):e.get("id")
+        for e in db.get("events",[]) if e.get("id") and e.get("url")
+    }
     found=0
     for src in cfg.get("sources",[]):
         adapter=src.get("adapter","")
@@ -1215,6 +1219,13 @@ def main():
             occ=(n.get("city"),n.get("date"),str(n.get("url","")).strip().lower(),
                  re.sub(r"\W+","",str(n.get("title","")).lower()))
             old_id=occurrence_index.get(occ)
+            # A specific official event URL on the same date is a stronger
+            # duplicate signal than slightly different editorial titles.
+            # Do not use this shortcut for a source's shared listing URL.
+            n_url=str(n.get("url","")).strip().lower()
+            src_url=str(src.get("url","")).strip().lower()
+            if not old_id and n_url and n_url != src_url:
+                old_id=url_date_index.get((n.get("city"),n.get("date"),n_url))
             if old_id and old_id in existing:
                 old=existing[old_id]
                 final_status=old.get("status") if old.get("status") in ("approved","rejected") else n.get("status","new")
@@ -1230,6 +1241,8 @@ def main():
             elif n["id"] not in existing:
                 existing[n["id"]]=n
                 occurrence_index[occ]=n["id"]
+                if n_url:
+                    url_date_index[(n.get("city"),n.get("date"),n_url)]=n["id"]
                 found+=1
 
     db["updated_at"]=datetime.now(timezone.utc).date().isoformat()

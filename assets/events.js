@@ -86,7 +86,10 @@
 
   function isVisible(e) {
     if (e.status !== 'approved') return false;
-    if ((e.kind || 'event') !== state.kind) return false;
+    const normalizedKind = (e.kind === 'exhibition' || (e.categories || []).includes('выставка'))
+      ? 'exhibition'
+      : (e.kind || 'event');
+    if (normalizedKind !== state.kind) return false;
     const custom = customDateRange();
     const today = todayIso();
     const max = new Date(); max.setDate(max.getDate() + (state.kind === 'event' ? 30 : 90));
@@ -330,7 +333,7 @@
     render();
   });
 
-  fetch('/content/events.json', { cache: 'no-store' })
+  fetch('/content/events.json?v=' + Date.now(), { cache: 'no-store' })
     .then(r => { if (!r.ok) throw new Error('events.json'); return r.json(); })
     .then(data => { events = Array.isArray(data) ? data : (data.events || []); render(); })
     .catch(() => {

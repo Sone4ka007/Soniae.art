@@ -1252,6 +1252,11 @@ def main():
         (e.get("city"),e.get("date"),str(e.get("url","")).strip().lower()):e.get("id")
         for e in db.get("events",[]) if e.get("id") and e.get("url")
     }
+    url_title_index={
+        (e.get("city"),str(e.get("url","")).strip().lower(),
+         re.sub(r"\W+","",str(e.get("title","")).lower())):e.get("id")
+        for e in db.get("events",[]) if e.get("id") and e.get("url") and e.get("title")
+    }
     found=0
     for src in cfg.get("sources",[]):
         adapter=src.get("adapter","")
@@ -1295,6 +1300,15 @@ def main():
             src_url=str(src.get("url","")).strip().lower()
             if not old_id and n_url and n_url != src_url:
                 old_id=url_date_index.get((n.get("city"),n.get("date"),n_url))
+            host=urlparse(n_url).netloc.lower() if n_url else ""
+            # Winzavod and AZ previously stored the wrong end-date/opening-time
+            # from page chrome. Match their existing approved records by stable
+            # detail URL + title so a corrected scrape repairs facts instead of
+            # creating a duplicate candidate.
+            if not old_id and n_url and any(h in host for h in ("winzavod.ru","museum-az.com")):
+                old_id=url_title_index.get((
+                    n.get("city"),n_url,re.sub(r"\W+","",str(n.get("title","")).lower())
+                ))
             if old_id and old_id in existing:
                 old=existing[old_id]
                 final_status=old.get("status") if old.get("status") in ("approved","rejected") else n.get("status","new")
@@ -1312,6 +1326,7 @@ def main():
                 occurrence_index[occ]=n["id"]
                 if n_url:
                     url_date_index[(n.get("city"),n.get("date"),n_url)]=n["id"]
+                    url_title_index[(n.get("city"),n_url,re.sub(r"\W+","",str(n.get("title","")).lower()))]=n["id"]
                 found+=1
 
     db["updated_at"]=datetime.now(timezone.utc).date().isoformat()

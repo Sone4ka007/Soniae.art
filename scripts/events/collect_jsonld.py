@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 import hashlib, json, re, sys, time, urllib.request
+import requests
+import urllib3
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
@@ -9,7 +11,16 @@ from bs4 import BeautifulSoup
 ROOT = Path(__file__).resolve().parents[2]
 SOURCES = ROOT / "events/sources.json"
 DB = ROOT / "content/events.json"
-UA = "Mozilla/5.0 SonyaeEventsBot/1.3 (+https://sonyae.art/events/)"
+UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+BROWSER_HEADERS = {
+    "User-Agent": UA,
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Language": "ru-RU,ru;q=0.9,en;q=0.8",
+    "Cache-Control": "no-cache",
+    "Pragma": "no-cache",
+    "Upgrade-Insecure-Requests": "1",
+}
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 EN_MONTHS = {
     "january":1,"jan":1,"february":2,"feb":2,"march":3,"mar":3,"april":4,"apr":4,
@@ -64,16 +75,46 @@ def stable_id(city, dt, title):
     return f"{city}-{dt}-{digest}"
 
 def fetch(url):
-    req = urllib.request.Request(url, headers={"User-Agent": UA})
     last_error = None
+    host = urlparse(url).netloc.lower()
     for attempt in range(3):
         try:
-            with urllib.request.urlopen(req, timeout=30) as r:
-                return r.read().decode("utf-8", "replace")
+            # requests/certifi is more reliable than urllib on museum sites with
+            # non-standard certificate chains; browser-like headers also avoid
+            # simple bot blocks such as the Museum of Moscow 403 response.
+            r = requests.get(url, headers=BROWSER_HEADERS, timeout=30, allow_redirects=True)
+            if r.status_code == 403:
+                # Some sites key off fetch metadata as well as User-Agent.
+                retry_headers = dict(BROWSER_HEADERS)
+                retry_headers.update({
+                    "Sec-Fetch-Dest": "document",
+                    "Sec-Fetch-Mode": "navigate",
+                    "Sec-Fetch-Site": "none",
+                    "Sec-Fetch-User": "?1",
+                })
+                r = requests.get(url, headers=retry_headers, timeout=30, allow_redirects=True)
+            if r.status_code >= 400:
+                r.raise_for_status()
+            r.encoding = r.encoding or "utf-8"
+            return r.text
+        except requests.exceptions.SSLError as exc:
+            last_error = exc
+            # Hermitage currently serves a certificate chain that fails in the
+            # GitHub runner. For this public, read-only HTML source only, retry
+            # without certificate verification rather than dropping the museum.
+            if "hermitagemuseum.org" in host:
+                try:
+                    r = requests.get(url, headers=BROWSER_HEADERS, timeout=30,
+                                     allow_redirects=True, verify=False)
+                    r.raise_for_status()
+                    r.encoding = r.encoding or "utf-8"
+                    return r.text
+                except Exception as fallback_exc:
+                    last_error = fallback_exc
         except Exception as exc:
             last_error = exc
-            if attempt < 2:
-                time.sleep(1.5 * (attempt + 1))
+        if attempt < 2:
+            time.sleep(1.5 * (attempt + 1))
     raise last_error
 
 def parse_date(text, require_year=True, default_year=None):

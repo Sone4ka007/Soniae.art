@@ -70,6 +70,16 @@ HARD_DROP_URLS={
 }
 
 GES2_MASTERCLASS_HINTS=("мастер-класс","мастер класс","workshop","воркшоп")
+GES2_LOW_VALUE_HINTS=(
+    "ниже травы. игровая",
+    "ателье. самостоятельная работа",
+    "индивидуальный медиаторский тур",
+    "знакомство с домом культуры «гэс-2»",
+    "знакомство с домом культуры \"гэс-2\"",
+    "семейная йога",
+    "лесные человечки",
+    "почва для размышлений",
+)
 
 def main():
     db=json.loads(DB.read_text("utf-8")); changed=0
@@ -115,6 +125,11 @@ def main():
             any(x in blob for x in GES2_MASTERCLASS_HINTS)
         ):
             e["status"]="rejected"; e["review_reason"]="excluded_ges2_masterclass"; changed+=1; continue
+        if editable_status and (
+            ("гэс-2" in blob or "ges-2.org" in blob) and
+            any(x in title_blob for x in GES2_LOW_VALUE_HINTS)
+        ):
+            e["status"]="rejected"; e["review_reason"]="excluded_ges2_low_value"; changed+=1; continue
         if editable_status and any(x in blob for x in EXCLUDE):
             e["status"]="rejected"; e["review_reason"]="excluded_person"; changed+=1; continue
         if editable_status and any(x in blob for x in PLEIN) and not any(x in blob for x in GELD):

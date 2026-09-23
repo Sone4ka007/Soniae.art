@@ -1604,7 +1604,8 @@
       "social_priority": null,
       "instagram_include": false,
       "social_description": "",
-      "instagram_image": ""
+      "instagram_image": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-09-23-9670141385",
@@ -1635,7 +1636,8 @@
       "social_priority": null,
       "instagram_include": false,
       "social_description": "",
-      "instagram_image": ""
+      "instagram_image": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-09-23-5bd9c4f4d0",
@@ -1700,7 +1702,8 @@
       "social_priority": null,
       "instagram_include": false,
       "social_description": "",
-      "instagram_image": ""
+      "instagram_image": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-09-23-6f18fbecc7",
@@ -1734,7 +1737,8 @@
       "social_priority": null,
       "instagram_include": false,
       "social_description": "",
-      "instagram_image": ""
+      "instagram_image": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-09-23-a460454ac2",
@@ -1904,7 +1908,8 @@
       "social_priority": null,
       "instagram_include": false,
       "social_description": "",
-      "instagram_image": ""
+      "instagram_image": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-09-23-dbf318b22d",
@@ -1942,7 +1947,7 @@
     },
     {
       "id": "spb-2026-09-23-4e1f443b8c",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-09-23",
@@ -1966,7 +1971,7 @@
       "availability": "unknown",
       "availability_checked_at": "2026-09-23",
       "editor_note": "",
-      "reviewed_at": "",
+      "reviewed_at": "2026-09-23",
       "social_title": "",
       "social_priority": null,
       "social_description": "",
@@ -2037,7 +2042,8 @@
       "social_priority": null,
       "instagram_include": false,
       "social_description": "",
-      "instagram_image": ""
+      "instagram_image": "",
+      "reviewed_at": ""
     },
     {
       "status": "approved",
@@ -2110,7 +2116,7 @@
     },
     {
       "id": "moscow-2026-09-23-dedf98c398",
-      "status": "new",
+      "status": "rejected",
       "kind": "exhibition",
       "city": "moscow",
       "date": "2026-09-23",
@@ -2135,7 +2141,7 @@
       "availability_checked_at": "2026-09-23",
       "start_date": "2026-09-23",
       "editor_note": "",
-      "reviewed_at": "",
+      "reviewed_at": "2026-09-23",
       "social_title": "",
       "social_priority": null,
       "social_description": "",
@@ -2172,7 +2178,8 @@
       "social_priority": null,
       "instagram_include": false,
       "social_description": "",
-      "instagram_image": ""
+      "instagram_image": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-09-23-6c590d946b",
@@ -2347,7 +2354,8 @@
       "social_priority": null,
       "instagram_include": false,
       "social_description": "",
-      "instagram_image": ""
+      "instagram_image": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-09-23-b82c25d302",
@@ -2419,7 +2427,7 @@
     },
     {
       "id": "moscow-2026-09-23-30cdfdde0f",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-09-23",
@@ -2443,7 +2451,7 @@
       "availability": "available",
       "availability_checked_at": "2026-09-23",
       "editor_note": "",
-      "reviewed_at": "",
+      "reviewed_at": "2026-09-23",
       "social_title": "",
       "social_priority": null,
       "social_description": "",
@@ -2796,7 +2804,7 @@
     },
     {
       "id": "spb-2026-09-23-00b6e43ac5",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-09-23",
@@ -2820,7 +2828,7 @@
       "availability": "unknown",
       "availability_checked_at": "2026-09-23",
       "editor_note": "",
-      "reviewed_at": "",
+      "reviewed_at": "2026-09-23",
       "social_title": "",
       "social_priority": null,
       "social_description": "",
@@ -2864,6 +2872,40 @@
     },
     {
       "id": "moscow-2026-09-23-8ce86966a0",
+      "status": "rejected",
+      "city": "moscow",
+      "date": "2026-09-23",
+      "time": "19:00",
+      "title": "Вокальный вечер. Хибла Герзмава и ее класс",
+      "venue": "Третьяковская галерея",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "концерт"
+      ],
+      "description": "18 : дней 21 : час",
+      "url": "https://www.tretyakovgallery.ru/events/o/vokalnyy-vecher-khibla-gerzmava-i-ee-klass/",
+      "source": "Третьяковская галерея — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-20",
+      "price_type": "paid",
+      "availability": "available",
+      "availability_checked_at": "2026-09-22",
+      "kind": "event",
+      "editor_note": "",
+      "reviewed_at": "2026-09-21",
+      "social_priority": null,
+      "instagram_image": "",
+      "social_description": "",
+      "social_title": "",
+      "instagram_include": false,
+      "telegram_include": false
+    },
+    {
+      "id": "moscow-2026-10-09-8ce86966a0",
       "status": "rejected",
       "city": "moscow",
       "date": "2026-09-23",
@@ -4519,7 +4561,7 @@
     },
     {
       "id": "moscow-2026-09-25-c5a3d6b56e",
-      "status": "new",
+      "status": "approved",
       "kind": "exhibition",
       "city": "moscow",
       "date": "2026-09-25",
@@ -4545,7 +4587,7 @@
       "availability": "available",
       "availability_checked_at": "2026-09-23",
       "editor_note": "",
-      "reviewed_at": "",
+      "reviewed_at": "2026-09-23",
       "social_title": "",
       "social_priority": null,
       "social_description": "",
@@ -5582,7 +5624,7 @@
     },
     {
       "id": "moscow-2026-09-26-4c1829ed46",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-09-26",
@@ -5604,7 +5646,7 @@
       "availability": "available",
       "availability_checked_at": "2026-09-23",
       "editor_note": "",
-      "reviewed_at": "",
+      "reviewed_at": "2026-09-23",
       "social_title": "",
       "social_priority": null,
       "social_description": "",
@@ -7160,7 +7202,8 @@
       "social_priority": null,
       "instagram_include": false,
       "social_description": "",
-      "instagram_image": ""
+      "instagram_image": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-09-28-6c590d946b",
@@ -7236,7 +7279,7 @@
     },
     {
       "id": "moscow-2026-09-28-c3cb427dd4",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-09-28",
@@ -7260,7 +7303,7 @@
       "availability": "available",
       "availability_checked_at": "2026-09-23",
       "editor_note": "",
-      "reviewed_at": "",
+      "reviewed_at": "2026-09-23",
       "social_title": "",
       "social_priority": null,
       "social_description": "",
@@ -7720,7 +7763,7 @@
     },
     {
       "id": "moscow-2026-09-29-24d8bbb55d",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-09-29",
@@ -7744,7 +7787,7 @@
       "availability": "available",
       "availability_checked_at": "2026-09-23",
       "editor_note": "",
-      "reviewed_at": "",
+      "reviewed_at": "2026-09-23",
       "social_title": "",
       "social_priority": null,
       "social_description": "",
@@ -8026,7 +8069,7 @@
     },
     {
       "id": "spb-2026-09-30-e1357b4494",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-09-30",
@@ -8048,7 +8091,7 @@
       "availability": "unknown",
       "availability_checked_at": "2026-09-23",
       "editor_note": "",
-      "reviewed_at": "",
+      "reviewed_at": "2026-09-23",
       "social_title": "",
       "social_priority": null,
       "social_description": "",
@@ -8499,7 +8542,8 @@
       "social_priority": null,
       "instagram_include": false,
       "social_description": "",
-      "instagram_image": ""
+      "instagram_image": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-09-30-47a0fc16a5",
@@ -9012,7 +9056,7 @@
     },
     {
       "id": "moscow-2026-10-01-584026898c",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-01",
@@ -9036,7 +9080,7 @@
       "availability": "available",
       "availability_checked_at": "2026-09-23",
       "editor_note": "",
-      "reviewed_at": "",
+      "reviewed_at": "2026-09-23",
       "social_title": "",
       "social_priority": null,
       "social_description": "",
@@ -9046,7 +9090,7 @@
     },
     {
       "id": "moscow-2026-10-01-e4086c1453",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-01",
@@ -9070,7 +9114,7 @@
       "availability": "available",
       "availability_checked_at": "2026-09-23",
       "editor_note": "",
-      "reviewed_at": "",
+      "reviewed_at": "2026-09-23",
       "social_title": "",
       "social_priority": null,
       "social_description": "",
@@ -9177,7 +9221,8 @@
       "social_priority": null,
       "instagram_include": false,
       "social_description": "",
-      "instagram_image": ""
+      "instagram_image": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-02-398c972a62",
@@ -9449,8 +9494,32 @@
       "telegram_include": false
     },
     {
-      "id": "moscow-2026-10-08-20c10d6735",
+      "id": "moscow-2026-10-08-3b5ef7ce81",
       "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-08",
+      "time": "12:00",
+      "title": "Узнайте, как рождается фарфор. Открытый мастер-класс в Школе дизайна",
+      "venue": "Школа дизайна НИУ ВШЭ",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": true,
+      "categories": [],
+      "description": "8 октября Школа дизайна приглашает всех желающих — студентов, преподавателей и гостей — на открытый мастер-класс в мастерскую фарфора Ивана Грабовенко. С 12:00 до 18:00 в аудитории 111 на Малой Пионерской, 12 вы сможете своими глазами увидеть полный цикл создания фарфорового изделия и задать свои вопросы. 08 октября 2026",
+      "url": "https://design.hse.ru/news/7206",
+      "source": "Школа дизайна НИУ ВШЭ",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-23",
+      "price_type": "unknown",
+      "availability": "available",
+      "availability_checked_at": "2026-09-23"
+    },
+    {
+      "id": "moscow-2026-10-08-20c10d6735",
+      "status": "rejected",
       "kind": "exhibition",
       "city": "moscow",
       "date": "2026-10-08",
@@ -9476,7 +9545,7 @@
       "availability": "available",
       "availability_checked_at": "2026-09-23",
       "editor_note": "",
-      "reviewed_at": "",
+      "reviewed_at": "2026-09-23",
       "social_title": "",
       "social_priority": null,
       "social_description": "",
@@ -9654,6 +9723,30 @@
       "social_title": "",
       "instagram_include": false,
       "telegram_include": false
+    },
+    {
+      "id": "moscow-2026-10-10-dd6da5e86a",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-10",
+      "time": "15:00",
+      "title": "Моя родная Москва",
+      "venue": "Третьяковская галерея",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": true,
+      "categories": [],
+      "description": "Мы обрабатываем файлы cookie, чтобы улучшить работу сайта. Оставаясь на сайте, вы соглашаетесь с пользовательским соглашением . Вы можете запретить сохранение cookies в настройках браузера.",
+      "url": "https://www.tretyakovgallery.ru/events/o/moya-rodnaya-moskva/",
+      "source": "Третьяковская галерея — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-23",
+      "price_type": "paid",
+      "availability": "available",
+      "availability_checked_at": "2026-09-23"
     },
     {
       "status": "approved",
@@ -9930,7 +10023,7 @@
     },
     {
       "id": "moscow-2026-10-11-27fdea2a10",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-11",
@@ -9960,7 +10053,7 @@
       "instagram_include": false,
       "telegram_include": false,
       "instagram_image": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-09-23"
     },
     {
       "id": "moscow-2026-10-13-e564364609",
@@ -10338,6 +10431,32 @@
       "telegram_include": false
     },
     {
+      "id": "moscow-2026-10-17-c61e2a3d84",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-17",
+      "time": "14:00",
+      "title": "Осенний концерт в музее Аполлинария Васнецова",
+      "venue": "Третьяковская галерея",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": true,
+      "categories": [
+        "концерт"
+      ],
+      "description": "Мы обрабатываем файлы cookie, чтобы улучшить работу сайта. Оставаясь на сайте, вы соглашаетесь с пользовательским соглашением . Вы можете запретить сохранение cookies в настройках браузера.",
+      "url": "https://www.tretyakovgallery.ru/events/o/osenniy-kontsert-v-muzee-apollinariya-vasnetsova-22-10-22/",
+      "source": "Третьяковская галерея — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-23",
+      "price_type": "paid",
+      "availability": "available",
+      "availability_checked_at": "2026-09-23"
+    },
+    {
       "id": "moscow-2026-10-18-186e62963f",
       "status": "approved",
       "kind": "exhibition",
@@ -10371,6 +10490,33 @@
       "social_title": "",
       "instagram_include": false,
       "telegram_include": false
+    },
+    {
+      "id": "moscow-2026-10-18-c148333a16",
+      "status": "new",
+      "kind": "exhibition",
+      "city": "moscow",
+      "date": "2026-10-18",
+      "time": "10:00",
+      "title": "Коллективная выставка Арт-шаффл 42.0",
+      "venue": "ЦСИ Винзавод",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": false,
+      "categories": [
+        "выставка"
+      ],
+      "description": "",
+      "url": "https://www.winzavod.ru/calendar/exhibitions/art-shaffl-42-0/",
+      "source": "ЦСИ Винзавод",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-23",
+      "price_type": "free",
+      "availability": "available",
+      "availability_checked_at": "2026-09-23",
+      "start_date": "2026-10-18"
     },
     {
       "id": "moscow-2026-10-18-3d441d0794",
@@ -10409,7 +10555,7 @@
     },
     {
       "id": "moscow-2026-10-18-9f703f36f1",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-18",
@@ -10433,7 +10579,7 @@
       "availability": "available",
       "availability_checked_at": "2026-09-23",
       "editor_note": "",
-      "reviewed_at": "",
+      "reviewed_at": "2026-09-23",
       "social_title": "",
       "social_priority": null,
       "social_description": "",
@@ -10779,7 +10925,8 @@
       "social_priority": null,
       "instagram_include": false,
       "social_description": "",
-      "instagram_image": ""
+      "instagram_image": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-15-fa0fd7ca12",

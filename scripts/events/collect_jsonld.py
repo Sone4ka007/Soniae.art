@@ -653,8 +653,14 @@ def extract_zotov(html, src):
     out=[]; seen=set(); today=date.today()
     category_names=sorted(EVENT_TYPES + ["инклюзивное событие","детям","новинки проката","снова в кино","кино крохам"], key=len, reverse=True)
 
-    def add_one(dt, tm, cat, title, full, raw):
-        if not dt or dt < today or len(title)<4:
+    def add_one(dt, tm, cat, title, full, raw, end_dt=None):
+        if not dt or len(title)<4:
+            return
+        is_exhibition=(cat=="выставка" or "/exhib" in urlparse(full).path.lower())
+        if is_exhibition:
+            if end_dt and end_dt < today:
+                return
+        elif dt < today:
             return
         key=(dt.isoformat(),full,title,tm)
         if key in seen:
@@ -662,9 +668,15 @@ def extract_zotov(html, src):
         seen.add(key)
         price,price_text=parse_price(raw)
         reg=bool(re.search(r"зарегистр",raw,re.I)) or None
-        out.append(make_event(src,dt.isoformat(),tm,title,full,"",
-                              price=price,price_text=price_text,registration=reg,
-                              categories=[cat] if cat else []))
+        ev=make_event(src,dt.isoformat(),tm,title,full,"",
+                      price=price,price_text=price_text,registration=reg,
+                      categories=[cat] if cat else [])
+        if is_exhibition:
+            ev["kind"]="exhibition"
+            ev["start_date"]=dt.isoformat()
+            if end_dt:
+                ev["end_date"]=end_dt.isoformat()
+        out.append(ev)
 
     for a in soup.find_all("a",href=True):
         raw=clean(a.get_text(" ",strip=True))
@@ -716,10 +728,11 @@ def extract_zotov(html, src):
                         cat=name
                         rest=rest[len(name):].strip()
                         break
-                # Use today for currently-running programs so they remain visible,
-                # but preserve the range in price_text/description is unnecessary.
-                event_dt=max(start_dt,today) if start_dt else today
-                add_one(event_dt,"",cat,rest,full,raw)
+                # Keep the real exhibition/program start date stable. Using
+                # "today" here generated a fresh ID every day for long-running
+                # exhibitions such as Zotov's "Хлеб".
+                event_dt=start_dt or today
+                add_one(event_dt,"",cat,rest,full,raw,end_dt=end_dt)
             continue
 
         # Recurring cards such as 05.09, 12.09, 19.09, 26.09 / 15:00 ...

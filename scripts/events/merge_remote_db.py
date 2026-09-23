@@ -83,7 +83,7 @@ for generated_event in generated.get("events",[]):
     else:
         e=dict(generated_event)
         if old:
-            for k in ("editor_note","checked_at","reviewed_at","price_text","price_type","registration","categories","kind"):
+            for k in ("editor_note","checked_at","reviewed_at","price_text","price_type","registration","categories","kind","social_priority","social_title","social_description","telegram_include","instagram_include","instagram_image"):
                 if k in old and old.get(k) not in ("",None,[]):
                     e[k]=old[k]
         if rid and rid in curated_by_id:

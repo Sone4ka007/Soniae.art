@@ -47,38 +47,6 @@
     const today = todayIso();
     const max = new Date(); max.setDate(max.getDate() + (state.kind === 'event' ? 30 : 90));
     const maxIso = `${max.getFullYear()}-${String(max.getMonth()+1).padStart(2,'0')}-${String(max.getDate()).padStart(2,'0')}`;
-    if (state.kind === 'recap') {
-      visible.sort((a,b) => String(b.date || b.start_date || '').localeCompare(String(a.date || a.start_date || '')));
-      count.textContent = `${visible.length} ${visible.length === 1 ? 'ПОСЕЩЕНИЕ' : 'ПОСЕЩЕНИЙ'}`;
-      document.getElementById('events-range').textContent = 'АРХИВ ПОСЕЩЁННЫХ СОБЫТИЙ';
-      empty.hidden = visible.length !== 0;
-      list.innerHTML = visible.map(e => {
-        const photos = splitUrls(e.recap_photo_urls).map(safeUrl).filter(Boolean);
-        const links = splitUrls(e.recap_links).map(safeUrl).filter(Boolean);
-        const press = safeUrl(e.recap_press_release_url);
-        const eventUrl = safeUrl(e.url);
-        const when = formatDateRu(e.date || e.start_date || '');
-        return `
-          <article class="event-card recap-card">
-            <div class="recap-head">
-              <div class="recap-date">${esc(when)}</div>
-              <h3>${esc(e.recap_title || e.title)}</h3>
-              <p class="recap-event-name">${esc(e.title)}</p>
-              <p class="recap-place">${esc(e.venue || '')}${e.city ? ' · ' + esc(cityNames[e.city] || e.city) : ''}</p>
-            </div>
-            <div class="recap-body">
-              ${e.recap_notes ? `<p class="recap-notes">${esc(e.recap_notes)}</p>` : ''}
-              ${photos.length ? `<div class="recap-photos">${photos.map((url,i) => `<a href="${url}" target="_blank" rel="noopener"><img src="${url}" loading="lazy" alt="${esc(e.title)} · фото ${i+1}"></a>`).join('')}</div>` : ''}
-              <div class="recap-links">
-                ${press ? `<a href="${press}" target="_blank" rel="noopener">ПРЕСС-РЕЛИЗ ↗</a>` : ''}
-                ${links.map((url,i) => `<a href="${url}" target="_blank" rel="noopener">МАТЕРИАЛ ${i+1} ↗</a>`).join('')}
-                ${eventUrl ? `<a href="${eventUrl}" target="_blank" rel="noopener">ИСХОДНОЕ СОБЫТИЕ ↗</a>` : ''}
-              </div>
-            </div>
-          </article>`;
-      }).join('');
-      return;
-    }
 
     if (state.kind === 'exhibition') {
       const start = e.start_date || e.date;
@@ -127,6 +95,39 @@
       const bd = b.start_date || b.date || '';
       return ad.localeCompare(bd) || String(a.title||'').localeCompare(String(b.title||''));
     });
+
+    if (state.kind === 'recap') {
+      visible.sort((a,b) => String(b.date || b.start_date || '').localeCompare(String(a.date || a.start_date || '')));
+      count.textContent = `${visible.length} ${visible.length === 1 ? 'ПОСЕЩЕНИЕ' : 'ПОСЕЩЕНИЙ'}`;
+      document.getElementById('events-range').textContent = 'АРХИВ ПОСЕЩЁННЫХ СОБЫТИЙ';
+      empty.hidden = visible.length !== 0;
+      list.innerHTML = visible.map(e => {
+        const photos = splitUrls(e.recap_photo_urls).map(safeUrl).filter(Boolean);
+        const links = splitUrls(e.recap_links).map(safeUrl).filter(Boolean);
+        const press = safeUrl(e.recap_press_release_url);
+        const eventUrl = safeUrl(e.url);
+        const when = formatDateRu(e.date || e.start_date || '');
+        return `
+          <article class="event-card recap-card">
+            <div class="recap-head">
+              <div class="recap-date">${esc(when)}</div>
+              <h3>${esc(e.recap_title || e.title)}</h3>
+              <p class="recap-event-name">${esc(e.title)}</p>
+              <p class="recap-place">${esc(e.venue || '')}${e.city ? ' · ' + esc(cityNames[e.city] || e.city) : ''}</p>
+            </div>
+            <div class="recap-body">
+              ${e.recap_notes ? `<p class="recap-notes">${esc(e.recap_notes)}</p>` : ''}
+              ${photos.length ? `<div class="recap-photos">${photos.map((url,i) => `<a href="${url}" target="_blank" rel="noopener"><img src="${url}" loading="lazy" alt="${esc(e.title)} · фото ${i+1}"></a>`).join('')}</div>` : ''}
+              <div class="recap-links">
+                ${press ? `<a href="${press}" target="_blank" rel="noopener">ПРЕСС-РЕЛИЗ ↗</a>` : ''}
+                ${links.map((url,i) => `<a href="${url}" target="_blank" rel="noopener">МАТЕРИАЛ ${i+1} ↗</a>`).join('')}
+                ${eventUrl ? `<a href="${eventUrl}" target="_blank" rel="noopener">ИСХОДНОЕ СОБЫТИЕ ↗</a>` : ''}
+              </div>
+            </div>
+          </article>`;
+      }).join('');
+      return;
+    }
 
     if (state.kind === 'exhibition') {
       const unique = new Map();

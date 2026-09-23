@@ -172,7 +172,8 @@ class EditorialDurabilityTests(unittest.TestCase):
 
     def test_sheet_pull_accepts_only_guarded_editor_content_fields(self):
         src = (ROOT/"scripts/events/pull_sheet.py").read_text("utf-8")
-        self.assertIn('editable={"status","editor_note","checked_at","review_reason","url","source"}', src)
+        self.assertIn('"status","editor_note","checked_at","review_reason","url","source"', src)
+        self.assertIn('"social_priority","social_title","social_description"', src)
         self.assertIn('baseline_key="synced_"+k', src)
         self.assertNotIn('"description","venue","address","price"', src)
 

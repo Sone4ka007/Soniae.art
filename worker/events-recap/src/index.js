@@ -172,13 +172,17 @@ async function finalize(env, chatId, publish) {
     }
   }
 
+  const previousNotes = String(event.recap_notes || '').trim();
+  const previousLinks = splitLines(event.recap_links);
+  const previousPhotos = splitLines(event.recap_photo_urls);
+
   event.attended = true;
   event.recap_status = publish ? 'published' : 'draft';
   event.recap_title = event.recap_title || event.title;
-  event.recap_notes = session.notes.join('\n\n').trim();
-  event.recap_links = [...new Set([...(session.links || []), ...documentUrls])].join('\n');
-  event.recap_photo_urls = photoUrls.join('\n');
-  if (pdfUrl) event.recap_press_release_url = pdfUrl;
+  event.recap_notes = [previousNotes, session.notes.join('\n\n').trim()].filter(Boolean).join('\n\n');
+  event.recap_links = [...new Set([...previousLinks, ...(session.links || []), ...documentUrls])].join('\n');
+  event.recap_photo_urls = [...new Set([...previousPhotos, ...photoUrls])].join('\n');
+  if (pdfUrl && !event.recap_press_release_url) event.recap_press_release_url = pdfUrl;
   event.recap_updated_at = new Date().toISOString().slice(0, 10);
 
   const updated = Array.isArray(db) ? events : { ...db, events };
@@ -203,6 +207,9 @@ const normalize = value => String(value || '').toLowerCase().replace(/ё/g, 'е'
 
 function extractUrls(text) {
   return String(text || '').match(/https?:\/\/[^\s<>"']+/g) || [];
+}
+function splitLines(value) {
+  return String(value || '').split(/\n+/).map(x => x.trim()).filter(Boolean);
 }
 
 function cleanFileName(name) {

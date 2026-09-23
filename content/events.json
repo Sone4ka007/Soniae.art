@@ -495,6 +495,35 @@
       "review_reason": ""
     },
     {
+      "id": "spb-2026-09-23-be2f28b6b4",
+      "status": "rejected",
+      "kind": "exhibition",
+      "city": "spb",
+      "date": "2026-09-21",
+      "time": "",
+      "title": "В Михайловском (Инженерном) замке Русского музея открылась выставка Пелагеи Шуриги",
+      "venue": "Лекторий Русского музея",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": false,
+      "categories": [
+        "выставка"
+      ],
+      "description": "Масштабная экспозиция произведений самобытной ленинградской художницы Пелагеи Шуриги представила около 130 объектов скульптуры, графики и декоративно-прикладного искусства, представляющие ретроспективу творчества художницы.",
+      "url": "https://rusmuseum.ru/news/",
+      "source": "Русский музей — лекторий",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-21",
+      "price_type": "free",
+      "availability": "available",
+      "availability_checked_at": "2026-09-21",
+      "start_date": "2026-09-21",
+      "editor_note": "",
+      "reviewed_at": ""
+    },
+    {
       "id": "spb-2026-09-21-7ddfa51671",
       "status": "rejected",
       "kind": "exhibition",
@@ -6592,6 +6621,32 @@
       "availability_checked_at": "2026-09-22",
       "editor_note": "",
       "reviewed_at": "2026-09-22"
+    },
+    {
+      "id": "spb-2026-09-30-3497c8964e",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-09-30",
+      "time": "",
+      "title": "События и выставки",
+      "venue": "РОСФОТО",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "Выставка начнет работу в четверг, 24.09.2026 Публичная программа Нажимая \"Отправить\", я подтверждаю свое согласие на обработку моих персональных данных, указанных в форме This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply. Правила использования материалов и изображений, размещённых на сайте РОСФОТО",
+      "url": "https://rosphoto.org/posetitelyam/events/7/",
+      "source": "РОСФОТО",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-09-23",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-23"
     },
     {
       "id": "moscow-2026-09-30-c9241e0c3a",

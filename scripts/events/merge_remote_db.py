@@ -12,7 +12,9 @@ remote_by_id={e.get("id"):e for e in remote.get("events",[]) if e.get("id")}
 
 preserve_fields={
     "status","editor_note","checked_at","reviewed_at",
-    "price_text","registration","categories"
+    "price_text","registration","categories",
+    "attended","recap_status","recap_title","recap_notes","recap_press_release_url",
+    "recap_links","recap_photo_urls","recap_updated_at"
 }
 
 merged=[]

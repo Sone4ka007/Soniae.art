@@ -1023,7 +1023,7 @@ def main():
     db["updated_at"]=datetime.now(timezone.utc).date().isoformat()
     db["events"]=sorted(existing.values(),key=lambda e:(e.get("date",""),e.get("time",""),e.get("title","")))
     DB.write_text(json.dumps(db,ensure_ascii=False,indent=2)+"\n","utf-8")
-    print(f"Added {found} new events; total {len(db['events'])}")
+    print(f"Collector found {found} raw new candidates before validation; temporary total {len(db['events'])}")
 
 if __name__=="__main__":
     main()

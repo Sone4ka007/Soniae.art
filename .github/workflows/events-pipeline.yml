@@ -22,7 +22,9 @@ on:
         default: "moscow"
         type: string
   schedule:
-    - cron: "30 3 * * *"
+    # Moscow time: 06:30, 12:30 and 18:30. Multiple daily passes make
+    # source updates visible sooner and reduce reliance on one delayed cron.
+    - cron: "30 3,9,15 * * *"
 
 concurrency:
   group: events-data-sync
@@ -40,7 +42,7 @@ jobs:
         with:
           python-version: "3.12"
       - name: Install collector and Google dependencies
-        run: pip install beautifulsoup4 google-api-python-client google-auth
+        run: pip install beautifulsoup4 requests certifi google-api-python-client google-auth
       - name: Pull editor decisions before collection
         env:
           EVENTS_SHEET_ID: ${{ vars.EVENTS_SHEET_ID }}

@@ -52,6 +52,11 @@ jobs:
         run: python scripts/events/collect_jsonld.py
       - name: Discover recurring festivals and design events
         run: python scripts/events/discover_special_events.py
+      - name: Collect open calls from Sonya Telegram chat
+        env:
+          TELEGRAM_OPEN_CALLS_BOT_TOKEN: ${{ secrets.TELEGRAM_OPEN_CALLS_BOT_TOKEN }}
+          TELEGRAM_OPEN_CALLS_CHAT_ID: ${{ vars.TELEGRAM_OPEN_CALLS_CHAT_ID }}
+        run: python scripts/events/collect_telegram_open_calls.py
       - name: Check ticket and registration availability
         run: python scripts/events/check_availability.py
       - name: Apply validation and editorial rules

@@ -102,6 +102,7 @@ jobs:
         run: |
           git pull --ff-only
           python scripts/events/build_weekly.py ${{ inputs.week_start && format('--week-start {0}', inputs.week_start) || '' }} --city "${{ inputs.city }}"
+          python scripts/events/build_social.py ${{ inputs.week_start && format('--week-start {0}', inputs.week_start) || '' }} --city "${{ inputs.city }}"
       - name: Install renderer
         run: |
           npm install --no-save playwright

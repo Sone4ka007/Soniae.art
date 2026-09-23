@@ -9,7 +9,7 @@ ROOT=Path(__file__).resolve().parents[2]
 DB=ROOT/"content/events.json"
 SHEET_ID=os.environ["EVENTS_SHEET_ID"]
 CREDS=json.loads(os.environ["GOOGLE_SERVICE_ACCOUNT_JSON"])
-RANGE="Events!A:Z"
+RANGE="Events!A:AH"
 
 def service():
     scopes=["https://www.googleapis.com/auth/spreadsheets.readonly"]
@@ -29,7 +29,7 @@ def main():
     rows=[dict(zip(headers,row+[""]*(len(headers)-len(row)))) for row in data[1:]]
     db=json.loads(DB.read_text("utf-8"))
     byid={e.get("id"):e for e in db.get("events",[]) if e.get("id")}
-    editable={"status","editor_note","checked_at","review_reason","price_text","price_type","registration","availability","categories","kind"}
+    editable={"status","editor_note","checked_at","review_reason","price_text","price_type","registration","availability","categories","kind","attended","recap_status","recap_title","recap_notes","recap_press_release_url","recap_links","recap_photo_urls"}
     for row in rows:
         rid=row.get("id","").strip()
         if not rid or rid not in byid: continue
@@ -38,9 +38,11 @@ def main():
         for k in editable:
             if k not in row: continue
             v=row[k]
-            if k=="registration": v=parse_bool(v)
+            if k in ("registration","attended"): v=parse_bool(v)
             elif k=="categories": v=[x.strip() for x in str(v).split(",") if x.strip()]
             e[k]=v
+        if any(str(row.get(k,"")).strip() for k in ("attended","recap_status","recap_title","recap_notes","recap_press_release_url","recap_links","recap_photo_urls")):
+            e["recap_updated_at"]=date.today().isoformat()
         new_status=e.get("status","")
         if new_status != old_status:
             if new_status in ("approved","rejected"):

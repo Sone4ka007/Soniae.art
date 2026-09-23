@@ -648,6 +648,110 @@ def extract_telegram_digest(html, src):
             out.append(ev)
     return out
 
+def extract_telegram_channel_events(html, src):
+    soup=BeautifulSoup(html,"html.parser")
+    out=[]; seen=set(); today=date.today()
+    for msg in soup.select(".tgme_widget_message"):
+        text_node=msg.select_one(".tgme_widget_message_text")
+        if not text_node:
+            continue
+        raw=text_node.get_text("\n",strip=True)
+        low=raw.lower()
+        if re.search(r"open\s*call|опен[- ]?колл|при[её]м заявок|дедлайн|deadline",low,re.I):
+            continue
+
+        dt=parse_date(raw,require_year=False,default_year=today.year)
+        if not dt:
+            continue
+        if dt < today - timedelta(days=60):
+            try:
+                dt=date(dt.year+1,dt.month,dt.day)
+            except ValueError:
+                continue
+        if dt < today:
+            continue
+
+        post=msg.get("data-post","")
+        post_url=f"https://t.me/{post}" if post else src["url"]
+        links=[]
+        for a in text_node.find_all("a",href=True):
+            full=urljoin(src["url"],a.get("href",""))
+            host=urlparse(full).netloc.lower()
+            if host and host not in {"t.me","telegram.me"} and full not in links:
+                links.append(full)
+        event_url=links[0] if links else post_url
+
+        lines=[clean(x) for x in raw.split("\n") if clean(x)]
+        title=""
+        for line in lines[:12]:
+            l=line.lower()
+            if re.fullmatch(r"\d{1,2}:\d{2}",line):
+                continue
+            if parse_date(line,require_year=False,default_year=today.year):
+                continue
+            if line.startswith(("http://","https://","#","📍","🕒","⏰","📅")):
+                continue
+            if re.match(r"^(место|где|когда|дата|время)\s*[:—–-]",l):
+                continue
+            if len(line)>=6 and any(t in l for t in EVENT_TYPES):
+                title=line
+                break
+        if not title:
+            for line in lines[:12]:
+                l=line.lower()
+                if re.fullmatch(r"\d{1,2}:\d{2}",line):
+                    continue
+                if parse_date(line,require_year=False,default_year=today.year):
+                    continue
+                if line.startswith(("http://","https://","#","📍","🕒","⏰","📅")):
+                    continue
+                if re.match(r"^(место|где|когда|дата|время)\s*[:—–-]",l):
+                    continue
+                if len(line)>=6:
+                    title=line
+                    break
+        if not title:
+            continue
+
+        venue=""
+        for line in lines:
+            vm=re.match(r"^(?:📍\s*)?(?:место|где)\s*[:—–-]\s*(.+)$",line,re.I)
+            if vm:
+                venue=clean(vm.group(1)); break
+            if line.startswith("📍"):
+                venue=clean(line.lstrip("📍 ").strip()); break
+
+        desc_parts=[]
+        for line in lines:
+            if line==title:
+                continue
+            if line.startswith(("http://","https://")):
+                continue
+            if len(line)>=25 and not parse_date(line,require_year=False,default_year=today.year):
+                desc_parts.append(line)
+            if len(" ".join(desc_parts))>=500:
+                break
+        desc=clean(" ".join(desc_parts))[:600]
+
+        price,price_text=parse_price(raw)
+        reg=bool(re.search(r"регистрац|зарегистр",raw,re.I)) or None
+        cat=event_category(title+" "+raw[:600])
+        tm=parse_time(raw)
+        key=(dt.isoformat(),tm,title.lower(),event_url)
+        if key in seen:
+            continue
+        seen.add(key)
+
+        ev=make_event(
+            src,dt.isoformat(),tm,title,event_url,desc,
+            venue=venue,price=price,price_text=price_text,registration=reg,
+            categories=[cat] if cat else [],
+            status="check",reason="curated_telegram_source"
+        )
+        ev["kind"]="event"
+        out.append(ev)
+    return out
+
 def extract_rnb(html, src):
     soup=BeautifulSoup(html,"html.parser")
     lines=[clean(x) for x in soup.get_text("\n",strip=True).split("\n")]
@@ -1065,6 +1169,8 @@ def main():
                 candidates.extend(extract_open_call_listing(html,src))
             elif adapter=="telegram_digest":
                 candidates.extend(extract_telegram_digest(html,src))
+            elif adapter=="telegram_channel_events":
+                candidates.extend(extract_telegram_channel_events(html,src))
 
         for n in candidates:
             occ=(n.get("city"),n.get("date"),str(n.get("url","")).strip().lower(),

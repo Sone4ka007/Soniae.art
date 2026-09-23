@@ -656,6 +656,21 @@
       "adapter": "telegram_channel_events",
       "source_group": "curated_telegram",
       "kind": "event"
+    },
+    {
+      "name": "Петербургский дневник культуры — анонсы",
+      "city": "spb",
+      "url": "https://spbcult.ru/news/anonsy/",
+      "venue": "",
+      "adapter": "event_links",
+      "href_contains": [
+        "/news/anonsy/",
+        "/news/anons/"
+      ],
+      "max_detail_pages": 80,
+      "detail_workers": 8,
+      "source_group": "city_culture_portal",
+      "high_free_yield": true
     }
   ]
 }

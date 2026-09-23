@@ -8,8 +8,8 @@ ROOT=Path(__file__).resolve().parents[2]
 DB=ROOT/"content/events.json"
 SHEET_ID=os.environ["EVENTS_SHEET_ID"]
 CREDS=json.loads(os.environ["GOOGLE_SERVICE_ACCOUNT_JSON"])
-RANGE="Events!A:Z"
-HEADERS=["id","status","title","start_date","end_date","time","venue","city","kind","price_type","price_text","registration","availability","availability_checked_at","categories","description","url","source","review_reason","editor_note","discovered_at","reviewed_at","address","price","checked_at","days_ahead"]
+RANGE="Events!A:AH"
+HEADERS=["id","status","title","start_date","end_date","time","venue","city","kind","price_type","price_text","registration","availability","availability_checked_at","categories","description","url","source","review_reason","editor_note","discovered_at","reviewed_at","address","price","checked_at","days_ahead","attended","recap_status","recap_title","recap_notes","recap_press_release_url","recap_links","recap_photo_urls","recap_updated_at"]
 
 def service():
     scopes=["https://www.googleapis.com/auth/spreadsheets"]
@@ -32,7 +32,7 @@ def preserve_editor_fields(api, db):
         return 0
     headers=current[0]
     byid={e.get("id"):e for e in db.get("events",[]) if e.get("id")}
-    editable={"editor_note","checked_at","review_reason","price_text","registration","categories"}
+    editable={"editor_note","checked_at","review_reason","price_text","registration","categories","attended","recap_status","recap_title","recap_notes","recap_press_release_url","recap_links","recap_photo_urls","recap_updated_at"}
     merged=0
     for row in current[1:]:
         obj=dict(zip(headers,row+[""]*(len(headers)-len(row))))
@@ -48,7 +48,7 @@ def preserve_editor_fields(api, db):
             if k not in obj:
                 continue
             v=obj[k]
-            if k=="registration":
+            if k in ("registration","attended"):
                 v=parse_bool(v)
             elif k=="categories":
                 v=[x.strip() for x in str(v).split(",") if x.strip()]
@@ -100,7 +100,10 @@ def main():
             ",".join(e.get("categories",[])) if isinstance(e.get("categories"),list) else e.get("categories",""),
             e.get("description",""),e.get("url",""),e.get("source",""),e.get("review_reason",""),
             e.get("editor_note",""),e.get("discovered_at",""),e.get("reviewed_at",""),
-            e.get("address",""),e.get("price",""),e.get("checked_at",""),days
+            e.get("address",""),e.get("price",""),e.get("checked_at",""),days,
+            bool(e.get("attended")) if e.get("attended") is not None else "",
+            e.get("recap_status",""),e.get("recap_title",""),e.get("recap_notes",""),
+            e.get("recap_press_release_url",""),e.get("recap_links",""),e.get("recap_photo_urls",""),e.get("recap_updated_at","")
         ])
 
     api.clear(spreadsheetId=SHEET_ID,range=RANGE,body={}).execute()
@@ -109,7 +112,7 @@ def main():
     meta=svc.spreadsheets().get(spreadsheetId=SHEET_ID,fields="sheets(properties(sheetId,title))").execute()
     sheet_id=next(s["properties"]["sheetId"] for s in meta["sheets"] if s["properties"]["title"]=="Events")
     requests=[
-      {"setBasicFilter":{"filter":{"range":{"sheetId":sheet_id,"startRowIndex":0,"startColumnIndex":0,"endColumnIndex":26}}}},
+      {"setBasicFilter":{"filter":{"range":{"sheetId":sheet_id,"startRowIndex":0,"startColumnIndex":0,"endColumnIndex":34}}}},
       {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":1,"endColumnIndex":2},
         "rule":{"condition":{"type":"ONE_OF_LIST","values":[{"userEnteredValue":x} for x in ["new","check","approved","rejected"]]},"strict":True,"showCustomUi":True}}},
       {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":7,"endColumnIndex":8},
@@ -121,7 +124,11 @@ def main():
       {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":11,"endColumnIndex":12},
         "rule":{"condition":{"type":"BOOLEAN"},"strict":True,"showCustomUi":True}}},
       {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":12,"endColumnIndex":13},
-        "rule":{"condition":{"type":"ONE_OF_LIST","values":[{"userEnteredValue":x} for x in ["available","sold_out","unknown"]]},"strict":True,"showCustomUi":True}}}
+        "rule":{"condition":{"type":"ONE_OF_LIST","values":[{"userEnteredValue":x} for x in ["available","sold_out","unknown"]]},"strict":True,"showCustomUi":True}}},
+      {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":26,"endColumnIndex":27},
+        "rule":{"condition":{"type":"BOOLEAN"},"strict":True,"showCustomUi":True}}},
+      {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":27,"endColumnIndex":28},
+        "rule":{"condition":{"type":"ONE_OF_LIST","values":[{"userEnteredValue":x} for x in ["draft","published"]]},"strict":True,"showCustomUi":True}}}
     ]
     svc.spreadsheets().batchUpdate(spreadsheetId=SHEET_ID,body={"requests":requests}).execute()
     print(f"Preserved editor fields for {merged} rows; pushed {len(rows)-1} events to Google Sheet")

@@ -631,6 +631,55 @@ def extract_event_links(html, src):
                     out.append(ev)
     return out
 
+def extract_single_event_page(html, src):
+    soup=BeautifulSoup(html,"html.parser")
+    text=clean(soup.get_text(" ",strip=True))
+    today=date.today()
+    dt=parse_date(text,require_year=False,default_year=today.year)
+    if not dt:
+        return []
+    if dt < today - timedelta(days=60):
+        try:
+            dt=date(dt.year+1,dt.month,dt.day)
+        except ValueError:
+            return []
+    if dt < today:
+        return []
+
+    title=""
+    h=soup.find("h1") or soup.find("h2")
+    if h:
+        title=clean(h.get_text(" ",strip=True))
+    if not title:
+        meta=soup.find("meta",attrs={"property":"og:title"}) or soup.find("meta",attrs={"name":"twitter:title"})
+        if meta:
+            title=clean(meta.get("content",""))
+    if not title:
+        return []
+
+    tm=parse_time(text[:2200])
+    price,price_text=parse_price(text[:2600])
+    reg=bool(re.search(r"регистрац|зарегистр",text,re.I)) or None
+    venue=src.get("venue","")
+    address=""
+    am=re.search(r"(?:адрес|место)\s*[:—–-]?\s*([^.!?]{6,180})",text,re.I)
+    if am:
+        address=clean(am.group(1))
+    cat=event_category(title+" "+text[:1200])
+    desc=""
+    for p in soup.find_all("p"):
+        t=clean(p.get_text(" ",strip=True))
+        if len(t)>=70 and title.lower() not in t.lower():
+            desc=t
+            break
+    ev=make_event(
+        src,dt.isoformat(),tm,title,src["url"],desc,
+        venue=venue,address=address,price=price,price_text=price_text,
+        registration=reg,categories=[cat] if cat else [],
+        status="check",reason="standalone_primary_event_page"
+    )
+    return [ev]
+
 def extract_hse(html, src):
     soup = BeautifulSoup(html, "html.parser")
     out, seen = [], set()

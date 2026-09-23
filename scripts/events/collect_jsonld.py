@@ -522,9 +522,41 @@ def extract_event_links(html, src):
                     desc=clean(" ".join(parts))
         hard_boilerplate=(
             "сегодня выставки и галереи закрыты",
+            "сегодня выставки, галереи, магазины и кафе работают",
             "магазины и кафе работают в обычном режиме",
             "режим работы"
         )
+
+        if is_winzavod:
+            # The site repeats global opening-hours/navigation text before the
+            # actual exhibition copy. Anchor on a heading equal to the title
+            # and take the first substantive paragraphs after it.
+            anchor=None
+            for h in dsoup.find_all(["h1","h2","h3","h4"]):
+                if clean(h.get_text(" ",strip=True)).lower()==title.lower():
+                    anchor=h
+                    break
+            if anchor:
+                win_parts=[]
+                for node in anchor.find_all_next():
+                    if getattr(node,"name",None) in ("h1","h2") and node is not anchor:
+                        label=clean(node.get_text(" ",strip=True)).lower()
+                        if label in ("похожие события","информационные партнеры галереи"):
+                            break
+                    if getattr(node,"name",None)=="p":
+                        t=clean(node.get_text(" ",strip=True))
+                        low=t.lower()
+                        if len(t)<45:
+                            continue
+                        if any(x in low for x in hard_boilerplate):
+                            continue
+                        if "бесплатно"==low or "купить билет" in low:
+                            continue
+                        win_parts.append(t)
+                        if len(" ".join(win_parts))>=420 or len(win_parts)>=2:
+                            break
+                if win_parts:
+                    desc=clean(" ".join(win_parts))
         start_node=dsoup.find("h1") or dsoup.find("h2") or dsoup
         parts=[]
         if not desc:

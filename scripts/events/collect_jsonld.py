@@ -594,6 +594,60 @@ def extract_rusimp(html, src):
                               status=status,reason=reason))
     return out
 
+def extract_telegram_digest(html, src):
+    soup=BeautifulSoup(html,"html.parser")
+    out=[]; seen=set(); today=date.today()
+    for msg in soup.select(".tgme_widget_message"):
+        text_node=msg.select_one(".tgme_widget_message_text")
+        if not text_node:
+            continue
+        raw=text_node.get_text("\n",strip=True)
+        if "Дайджест событий" not in raw:
+            continue
+        post=msg.get("data-post","")
+        post_url=f"https://t.me/{post}" if post else src["url"]
+        current_date=None
+        for line in [clean(x) for x in raw.split("\n") if clean(x)]:
+            dm=re.match(r"^[➖\-–—]?\s*(\d{1,2})\s+([а-яё]+)",line,re.I)
+            if dm:
+                month=MONTHS.get(dm.group(2).lower().replace("ё","е"))
+                if month:
+                    year=today.year
+                    try:
+                        current_date=date(year,month,int(dm.group(1)))
+                        if current_date < today - timedelta(days=60):
+                            current_date=date(year+1,month,int(dm.group(1)))
+                    except ValueError:
+                        current_date=None
+                continue
+            if not current_date or current_date < today:
+                continue
+            em=re.match(r"^(\d{1,2}:\d{2})(?:\s*[–—-]\s*\d{1,2}:\d{2})?\s+(.+)$",line)
+            if not em:
+                continue
+            tm=em.group(1)
+            body=clean(em.group(2))
+            venue=src.get("venue","")
+            vm=re.search(r"\(([^()]{3,80})\)\s*$",body)
+            if vm:
+                venue=clean(vm.group(1))
+                body=clean(body[:vm.start()])
+            title=body
+            if len(title)<6:
+                continue
+            key=(current_date.isoformat(),tm,title.lower(),venue.lower())
+            if key in seen:
+                continue
+            seen.add(key)
+            cat=event_category(title)
+            ev=make_event(
+                src,current_date.isoformat(),tm,title,post_url,"",
+                venue=venue,categories=[cat] if cat else [],
+                status="check",reason="official_telegram_fallback_needs_primary_event_link"
+            )
+            out.append(ev)
+    return out
+
 def extract_zotov(html, src):
     soup=BeautifulSoup(html,"html.parser")
     out=[]; seen=set(); today=date.today()
@@ -942,6 +996,8 @@ def main():
                 candidates.extend(extract_mamm(html,src))
             elif adapter=="open_call_listing":
                 candidates.extend(extract_open_call_listing(html,src))
+            elif adapter=="telegram_digest":
+                candidates.extend(extract_telegram_digest(html,src))
 
         for n in candidates:
             occ=(n.get("city"),n.get("date"),str(n.get("url","")).strip().lower(),

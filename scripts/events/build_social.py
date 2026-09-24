@@ -183,6 +183,63 @@ def summary_page(days, by_day, start, end, city, page_no, total_pages):
   <div class="summary-footer">Составитель: Соня Енокаева · t.me/sonnya_ee · sonyae.art · {page_no}/{total_pages}</div>
 </section>"""
 
+
+TELEGRAM_CSS = r"""
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:#fff;color:#090909}
+body{font-family:Arial,Helvetica,sans-serif}
+.tg-sheet{width:1080px;padding:48px 54px 44px;background:#fff}
+.tg-title{font-family:Impact,"Arial Narrow",sans-serif;font-size:86px;line-height:.88;
+  font-weight:900;text-transform:uppercase;letter-spacing:-1px;margin:0 0 10px}
+.tg-range{font-size:25px;letter-spacing:7px;text-transform:uppercase;margin:0 0 30px}
+.tg-columns{display:grid;grid-template-columns:190px 1fr 205px;gap:18px;
+  border-top:3px solid #111;border-bottom:2px solid #111;padding:10px 12px;
+  font-size:18px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase}
+.tg-day{background:#111;color:#fff;padding:12px 14px 10px;font-size:23px;
+  font-weight:900;letter-spacing:1px;text-transform:uppercase;margin-top:8px}
+.tg-row{display:grid;grid-template-columns:190px 1fr 205px;gap:18px;
+  border-bottom:1.5px solid #111;padding:14px 12px 15px;break-inside:avoid}
+.tg-time{font-size:24px;line-height:1.08;font-weight:800}
+.tg-name{font-size:25px;line-height:1.05;font-weight:900;margin-bottom:6px}
+.tg-desc{font-size:18px;line-height:1.2}
+.tg-price{font-size:18px;line-height:1.15;font-weight:700}
+.tg-link{display:block;margin-top:7px;font-size:16px;line-height:1.15;
+  color:#111;text-decoration:underline;overflow-wrap:anywhere}
+.tg-footer{border-top:2px solid #111;margin-top:24px;padding-top:10px;
+  font-size:15px;letter-spacing:2px;text-transform:uppercase}
+@page{margin:0}
+"""
+
+def telegram_pdf_html(events, days, start, end, city):
+    range_text=f"{start.day}–{end.day} {MONTHS_LOW[end.month-1]} {end.year}"
+    parts=[
+        '<main class="tg-sheet">',
+        f'<h1 class="tg-title">КУДА СХОДИТЬ ХУДОЖНИКУ В {city_label(city)}</h1>',
+        f'<div class="tg-range">{html.escape(range_text)}</div>',
+        '<div class="tg-columns"><div>ДАТА / ВРЕМЯ</div><div>НАЗВАНИЕ / КРАТКО</div><div>ЦЕНА / ССЫЛКА</div></div>'
+    ]
+    for d in days:
+        items=day_items(events,d)
+        if not items:
+            continue
+        parts.append(f'<div class="tg-day">{DAYS_FULL[d.weekday()]} · {d.day} {MONTHS[d.month-1]}</div>')
+        for e in items:
+            title=html.escape(social_text(e,"social_title","title"))
+            desc=html.escape(event_meta(e))
+            time=html.escape(str(e.get("time") or "по программе"))
+            p=html.escape(status_label(e) or price_text(e))
+            url=str(e.get("url") or "").strip()
+            link=f'<a class="tg-link" href="{html.escape(url, quote=True)}">ссылка на событие</a>' if url else ""
+            parts.append(
+                '<div class="tg-row">'
+                f'<div class="tg-time">{time}</div>'
+                f'<div><div class="tg-name">{title}</div><div class="tg-desc">{desc}</div></div>'
+                f'<div class="tg-price">{p}{link}</div>'
+                '</div>'
+            )
+    parts.append('<div class="tg-footer">Составила: Соня Енокаева · Telegram · Instagram · sonyae.art</div></main>')
+    return '<!doctype html><meta charset="utf-8"><style>'+TELEGRAM_CSS+'</style>'+''.join(parts)
+
 def telegram_item(e):
     title = social_text(e, "social_title", "title")
     desc = social_text(e, "social_description", "description")
@@ -212,12 +269,24 @@ def main():
     days=[start+timedelta(days=i) for i in range(7)]
 
     db=json.loads(DB.read_text("utf-8"))
-    approved=[e for e in db.get("events",[]) if e.get("status")=="approved" and e.get("city")==args.city]
+    # Social schedules are built from the site's EVENTS section only.
+    # Exhibitions and open calls have their own sections and must never leak
+    # into weekly event posts.
+    approved=[
+        e for e in db.get("events",[])
+        if e.get("status")=="approved"
+        and e.get("city")==args.city
+        and e.get("kind")=="event"
+    ]
     weekly=[e for e in approved if start.isoformat()<=str(e.get("date",""))<=end.isoformat()]
     weekly.sort(key=lambda e:(e.get("date",""),e.get("time",""),e.get("title","")))
 
-    tg_week=[e for e in weekly if parse_bool(e.get("telegram_include")) is not False]
-    ig_week=[e for e in weekly if parse_bool(e.get("instagram_include")) is not False]
+    # The old Sheet initialized include flags to false for almost every row,
+    # which made an otherwise valid weekly package blank. Approved events are
+    # included by default; the editorial include flags can be reintroduced
+    # later as opt-in overrides once the Sheet defaults are migrated.
+    tg_week=list(weekly)
+    ig_week=list(weekly)
 
     OUT.mkdir(parents=True,exist_ok=True)
     insta=OUT/"instagram"
@@ -247,7 +316,9 @@ def main():
             "utf-8"
         )
 
-    telegram_pdf=f'<!doctype html><meta charset="utf-8"><style>{CSS}</style><body class="pdf-doc">{"".join(pdf_pages)}</body>'
+    # Telegram gets its own long, phone-friendly table, matching the established
+    # editorial PDF rather than reusing Instagram slides.
+    telegram_pdf=telegram_pdf_html(tg_week,days,start,end,args.city)
     (OUT/"telegram-week.html").write_text(telegram_pdf,"utf-8")
 
     # Keep a plain-text Telegram fallback.

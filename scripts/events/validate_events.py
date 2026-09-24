@@ -35,6 +35,8 @@ PAY_TO_PLAY_HINTS=(
     "application fee","submission fee","entry fee","participation fee","exhibition fee",
     "registration fee","artist fee","selected artists pay","selected artist pays",
     "fee after selection","pay after selection","upon selection",
+    "fee for successful artists","fee for successful artist",
+    "successful artists pay","successful artist pays",
     "взнос за участие","регистрационный взнос","вступительный взнос",
     "оплата участия","платное участие","после отбора необходимо оплатить",
     "после отбора нужно оплатить","участники оплачивают","отобранные участники оплачивают"
@@ -88,6 +90,7 @@ def main():
         blob=" ".join([
             str(e.get("title","")),str(e.get("description","")),str(e.get("venue","")),
             str(e.get("source","")),str(e.get("url","")),
+            str(e.get("price_text","")),str(e.get("audience_text","")),
             " ".join(str(x) for x in (e.get("categories") or []))
         ]).lower()
         if e.get("kind") not in ("event","exhibition","open_call"):

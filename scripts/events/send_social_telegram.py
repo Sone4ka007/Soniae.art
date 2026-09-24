@@ -30,7 +30,7 @@ def send_photo(token, chat_id, path, caption=""):
 def main():
     ap=argparse.ArgumentParser()
     ap.add_argument("--city",required=True)
-    ap.add_argument("--week-start",required=True)
+    ap.add_argument("--week-start")
     args=ap.parse_args()
 
     token=os.environ["SOCIAL_TELEGRAM_BOT_TOKEN"]

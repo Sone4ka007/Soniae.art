@@ -25,6 +25,8 @@ on:
     # Moscow time: 06:30, 12:30 and 18:30. Multiple daily passes make
     # source updates visible sooner and reduce reliance on one delayed cron.
     - cron: "30 3,9,15 * * *"
+    # Sunday 19:00 Moscow: build next week's social packages.
+    - cron: "0 16 * * 0"
 
 concurrency:
   group: events-data-sync
@@ -133,4 +135,48 @@ jobs:
         with:
           name: events-${{ inputs.city }}-${{ inputs.week_start || 'next-week' }}
           path: dist/events-weekly/
+          retention-days: 30
+
+
+  social-weekly:
+    if: github.event_name == 'schedule' && github.event.schedule == '0 16 * * 0'
+    needs: collect
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        city: [moscow, spb]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Build social package
+        run: |
+          python scripts/events/build_social.py --city "${{ matrix.city }}"
+      - name: Install renderer
+        run: |
+          npm install --no-save playwright
+          npx playwright install --with-deps chromium
+      - name: Render social files
+        run: node scripts/events/render_weekly.js
+      - name: Send package to Materials channel
+        env:
+          SOCIAL_TELEGRAM_BOT_TOKEN: ${{ secrets.SOCIAL_TELEGRAM_BOT_TOKEN }}
+          SOCIAL_TELEGRAM_CHAT_ID: ${{ vars.SOCIAL_TELEGRAM_CHAT_ID }}
+        run: |
+          if [ -n "${SOCIAL_TELEGRAM_BOT_TOKEN:-}" ] && [ -n "${SOCIAL_TELEGRAM_CHAT_ID:-}" ]; then
+            python scripts/events/send_social_telegram.py --city "${{ matrix.city }}"
+          else
+            echo "Telegram delivery is not configured; package will remain as an artifact."
+          fi
+      - uses: actions/upload-artifact@v4
+        with:
+          name: social-${{ matrix.city }}-next-week
+          path: dist/events-weekly/social/
           retention-days: 30

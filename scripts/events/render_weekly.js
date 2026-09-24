@@ -35,12 +35,15 @@ async function renderDirectory(page, dir) {
   const telegramHtml=path.join(out,'social','telegram-week.html');
   if (fs.existsSync(telegramHtml)) {
     await page.goto('file://'+telegramHtml,{waitUntil:'networkidle'});
+    const height = await page.evaluate(() => Math.max(
+      document.documentElement.scrollHeight,
+      document.body ? document.body.scrollHeight : 0
+    ));
     await page.pdf({
       path:path.join(out,'social','telegram-week.pdf'),
       width:'1080px',
-      height:'1350px',
+      height:Math.max(1350,height)+'px',
       printBackground:true,
-      preferCSSPageSize:true,
       margin:{top:'0',right:'0',bottom:'0',left:'0'}
     });
   }

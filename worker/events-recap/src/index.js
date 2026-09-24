@@ -29,6 +29,12 @@ async function telegramWebhook(request, env) {
     return new Response('OK');
   }
 
+  // Automated weekly social packages are delivered into the same private
+  // channel, but must never be appended to an active event recap.
+  if (text.startsWith('#SOCIAL_PACKAGE')) {
+    return new Response('OK');
+  }
+
   if (!env.TELEGRAM_RECAP_CHAT_ID || chatId !== String(env.TELEGRAM_RECAP_CHAT_ID)) {
     return new Response('OK');
   }

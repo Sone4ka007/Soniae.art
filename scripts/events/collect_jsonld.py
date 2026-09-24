@@ -1228,12 +1228,17 @@ def extract_open_call_listing(html, src):
 
         desc=open_call_summary(detail_soup if detail_text else None,title,txt)
         price,price_text=parse_price(detail_text or txt)
-        out.append(make_event(
+        ev=make_event(
             src,dt.isoformat(),"",title,event_url,desc,
             venue=src.get("venue",""),price=price,price_text=price_text,registration=None,
             categories=["open-call"],status="check",
             reason="discovery_source_needs_primary_verification"
-        ))
+        )
+        # Keep the full opportunity page text for validation. CuratorSpace and
+        # similar aggregators often put application/selection fees below the
+        # short summary, so the fee would otherwise be invisible to the filter.
+        ev["audience_text"]=(detail_text or txt)[:12000]
+        out.append(ev)
     return out
 
 def extract_ges2(src, days=14):

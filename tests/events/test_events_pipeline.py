@@ -72,6 +72,20 @@ class ValidationRulesTests(unittest.TestCase):
         self.assertEqual(out["status"], "rejected")
         self.assertEqual(out["review_reason"], "excluded_paid_open_call")
 
+    def test_curatorspace_fee_below_summary_is_rejected(self):
+        out = self.run_validate(self.base_event(
+            kind="open_call",
+            title="Affordable Art Open Call",
+            description="All artwork must be affordable and priced below £100.",
+            audience_text="Entry Fee £5 submission fee for up to 3 pieces of work. £15 fee for successful artists.",
+            source="CuratorSpace — opportunities",
+            url="https://www.curatorspace.com/opportunities/detail/test",
+            categories=["open-call"],
+            price_type="unknown",
+        ))
+        self.assertEqual(out["status"], "rejected")
+        self.assertEqual(out["review_reason"], "excluded_paid_open_call")
+
     def test_whitelisted_paid_major_call_requires_review(self):
         out = self.run_validate(self.base_event(
             kind="open_call",

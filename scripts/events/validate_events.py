@@ -72,6 +72,9 @@ HARD_DROP_URLS={
 }
 
 GES2_MASTERCLASS_HINTS=("мастер-класс","мастер класс","workshop","воркшоп")
+GES2_FILM_HINTS=("кинопоказ","показ фильма","кинотеатр","screening","film")
+GES2_FILM_FESTIVAL_HINTS=("кинофестиваль","фестиваль кино","фестиваль фильмов","film festival","фестиваля фильмов")
+
 GES2_LOW_VALUE_HINTS=(
     "ниже травы. игровая",
     "ателье. самостоятельная работа",
@@ -133,6 +136,12 @@ def main():
             any(x in title_blob for x in GES2_LOW_VALUE_HINTS)
         ):
             e["status"]="rejected"; e["review_reason"]="excluded_ges2_low_value"; changed+=1; continue
+        if editable_status and e.get("kind")=="event" and (
+            ("гэс-2" in blob or "ges-2.org" in blob) and
+            any(x in blob for x in GES2_FILM_HINTS) and
+            not any(x in blob for x in GES2_FILM_FESTIVAL_HINTS)
+        ):
+            e["status"]="rejected"; e["review_reason"]="excluded_ges2_nonfestival_screening"; changed+=1; continue
         if editable_status and any(x in blob for x in EXCLUDE):
             e["status"]="rejected"; e["review_reason"]="excluded_person"; changed+=1; continue
         if editable_status and any(x in blob for x in PLEIN) and not any(x in blob for x in GELD):

@@ -821,13 +821,9 @@
       "city": "moscow",
       "url": "https://design-mate.ru/go/events/",
       "venue": "",
-      "adapter": "event_links",
+      "adapter": "design_mate",
       "href_contains": [
         "/go/"
-      ],
-      "exclude_paths": [
-        "/go/",
-        "/go/events/"
       ],
       "max_detail_pages": 140,
       "detail_workers": 10,

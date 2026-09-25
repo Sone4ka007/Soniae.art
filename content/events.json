@@ -4585,7 +4585,7 @@
     },
     {
       "id": "spb-2026-09-25-691c717896",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-09-25",
@@ -4607,7 +4607,15 @@
       "discovered_at": "2026-09-25",
       "price_type": "free",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-25"
+      "availability_checked_at": "2026-09-25",
+      "editor_note": "",
+      "telegram_include": false,
+      "instagram_image": "",
+      "social_title": "",
+      "social_description": "",
+      "instagram_include": false,
+      "social_priority": null,
+      "reviewed_at": "2026-09-25"
     },
     {
       "id": "spb-2026-09-25-17b28b720c",
@@ -4634,11 +4642,18 @@
       "price_type": "unknown",
       "availability": "unknown",
       "availability_checked_at": "2026-09-25",
-      "start_date": "2026-09-25"
+      "start_date": "2026-09-25",
+      "editor_note": "",
+      "telegram_include": false,
+      "instagram_image": "",
+      "social_title": "",
+      "social_description": "",
+      "instagram_include": false,
+      "social_priority": null
     },
     {
       "id": "spb-2026-09-25-fb533fe83a",
-      "status": "new",
+      "status": "approved",
       "kind": "exhibition",
       "city": "spb",
       "date": "2026-09-25",
@@ -4661,11 +4676,19 @@
       "price_type": "free",
       "availability": "available",
       "availability_checked_at": "2026-09-25",
-      "start_date": "2026-09-25"
+      "start_date": "2026-09-25",
+      "editor_note": "",
+      "telegram_include": false,
+      "instagram_image": "",
+      "social_title": "",
+      "social_description": "",
+      "instagram_include": false,
+      "social_priority": null,
+      "reviewed_at": "2026-09-25"
     },
     {
       "id": "spb-2026-09-25-9be4edafe9",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-09-25",
@@ -4685,7 +4708,15 @@
       "discovered_at": "2026-09-25",
       "price_type": "free",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-25"
+      "availability_checked_at": "2026-09-25",
+      "editor_note": "",
+      "telegram_include": false,
+      "instagram_image": "",
+      "social_title": "",
+      "social_description": "",
+      "instagram_include": false,
+      "social_priority": null,
+      "reviewed_at": "2026-09-25"
     },
     {
       "id": "spb-2026-09-25-69feab4a96",
@@ -5132,7 +5163,7 @@
     },
     {
       "id": "spb-2026-09-25-89dd119f75",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-09-25",
@@ -5154,7 +5185,15 @@
       "discovered_at": "2026-09-25",
       "price_type": "free",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-25"
+      "availability_checked_at": "2026-09-25",
+      "editor_note": "",
+      "telegram_include": false,
+      "instagram_image": "",
+      "social_title": "",
+      "social_description": "",
+      "instagram_include": false,
+      "social_priority": null,
+      "reviewed_at": "2026-09-25"
     },
     {
       "status": "approved",
@@ -7217,7 +7256,7 @@
     },
     {
       "id": "moscow-2026-09-26-60cd9aafa5",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-09-26",
@@ -7237,7 +7276,15 @@
       "discovered_at": "2026-09-25",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-25"
+      "availability_checked_at": "2026-09-25",
+      "editor_note": "",
+      "telegram_include": false,
+      "instagram_image": "",
+      "social_title": "",
+      "social_description": "",
+      "instagram_include": false,
+      "social_priority": null,
+      "reviewed_at": "2026-09-25"
     },
     {
       "id": "moscow-2026-09-26-d5623dd3d1",
@@ -12017,7 +12064,7 @@
     },
     {
       "id": "moscow-2026-10-07-233e77b0e3",
-      "status": "check",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-07",
@@ -12047,7 +12094,8 @@
       "social_priority": null,
       "social_title": "",
       "instagram_image": "",
-      "editor_note": ""
+      "editor_note": "",
+      "reviewed_at": "2026-09-25"
     },
     {
       "id": "moscow-2026-10-08-e986b2b5f1",
@@ -12697,7 +12745,7 @@
     },
     {
       "id": "spb-2026-10-11-20744129e7",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-11",
@@ -12727,7 +12775,7 @@
       "social_priority": null,
       "social_title": "",
       "instagram_image": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-09-25"
     },
     {
       "id": "moscow-2026-10-13-e564364609",
@@ -12855,7 +12903,14 @@
       "audience_text": "Opportunity details | INSTINCT – International Virtual Exhibition | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register INSTINCT – International Virtual Exhibition Deadline: 15/10/2026 Simona Rossi Report this? Description Opportunity FAQs Make a submission Contact curator Instinct is an international virtual exhibition by DiversaMente Arte exploring the many forms through which instinct can emerge in contemporary art. Artists are invited to present one work that evokes instinct through subject, form, gesture, emotion, symbolism or visual language.Instinct is an international virtual exhibition by DiversaMente Arte dedicated to the many ways in which instinct can be expressed through contemporary art. Artists may present one work that evokes the concept of instinct through subject, form, gesture, emotion, symbolism or visual language. Figurative, abstract and experimental approaches are equally welcome. The exhibition will be hosted on Kunstmatrix and will be accessible online from 17 to 31 October 2026. Each participating artist will be represented by one artwork accompanied by the artist’s name, title, medium, dimensions and year of creation. Participation includes the presentation of the artwork in the virtual exhibition, promotion through the DiversaMente Arte social and web network, an official Certificate of Participation and inclusion in the official exhibition video, which will remain permanently available on the DiversaMente Arte YouTube channel. Previous virtual exhibition projects have achieved significant online attendance, including more than 1,300 visitors on Arte - Galleria. Three participating artists will be identified by the Board of DiversaMente Arte for special recognition. Each will receive a dedicated article on the official DiversaMente Arte blog and a Certificate of Merit. Sales: Artworks may be purchased through DiversaMente Arte contacts. DiversaMente Arte does not retain any commission on sales. Only any applicable Stripe transaction or processing fees may apply. Participation fee: €55 per artist. Deadline for participation: 15 October 2026. Participation is confirmed upon completion of the submission and payment of the participation fee. Promotion: The exhibition will be promoted through DiversaMente Arte’s social and web network, with a combined following of nearly 15,000 and over 29,000 social media views in the last 30 days. The official DiversaMente Arte blog has recorded over 2,000 visits. The exhibition will be hosted on Kunstmatrix, and the official exhibition video will remain permanently available on YouTube. About the curator: DiversaMente Arte is an independent cultural and curatorial organisation founded and directed by Dr Simona Rossi, psychologist, art historian, curator and cultural heritage manager. DiversaMente Arte has established experience in organising physical and virtual exhibitions, artist promotion, cultural projects, awards and editorial initiatives, with previous exhibitions hosted through specialised digital exhibition platforms including Kunstmatrix and Arte - Galleria. DiversaMente Arte promotes its projects through an active network across Instagram, Facebook, YouTube and its official blog, generating regular visibility and engagement for exhibitions and participating artists. Make a submission Contact the curator Who is eligible for this opportunity? Artists from any country working in contemporary visual art are eligible to participate. When is the deadline? 15 October 2026. How many works can I submit? One artwork per artist. How much does it cost? The participation fee is €55 per artist. Are there payments to artists? No. Three participating artists will receive a dedicated article on the official DiversaMente Arte blog. Is there a private view / opening? No. The exhibition is entirely online. What are the exhibition opening hours? The virtual exhibition will be accessible online 24 hours a day from 17 to 31 October 2026. What publicity will be provided as part of the opportunity? The exhibition will be promoted through DiversaMente Arte’s social and web network, which has a combined following of nearly 15,000 and has generated over 29,000 social media views in the last 30 days. The official DiversaMente Arte blog has recorded over 2,000 visits. The exhibition will be hosted on Kunstmatrix, and the official exhibition video will remain permanently available on YouTube. You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Advertisement Other opportunities Shadows & Monsters Collect Art invites artists worldwide to submit their work for our upcoming curated exhibition... Art Commission - Summer 2027 Beverley Art Gallery is inviting proposals for a 2027 Summer commission that transforms the... Open Call: Festive Contemporary Craft & Design Exhibition Bridgwater Arts Centre is seeking applications from talented designer-makers across the South... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-09-25"
+      "availability_checked_at": "2026-09-25",
+      "editor_note": "",
+      "telegram_include": false,
+      "instagram_image": "",
+      "social_title": "",
+      "social_description": "",
+      "instagram_include": false,
+      "social_priority": null
     },
     {
       "id": "international-2026-10-15-473710d327",
@@ -13581,7 +13636,7 @@
     },
     {
       "id": "moscow-2026-10-27-cafd74563f",
-      "status": "check",
+      "status": "approved",
       "kind": "exhibition",
       "city": "moscow",
       "date": "2026-10-27",
@@ -13596,7 +13651,7 @@
         "выставка"
       ],
       "description": "На протяжении 30 лет существования выставка прошла долгий путь и стала точкой сбора профессионалов из разных сфер. Здесь вовлеченные дизайнеры, архитекторы, урбанисты, проектировщики, инженеры, электромонтажники и интеграторы активно взаимодействуют с брендами и делятся накопленными знаниями.",
-      "url": "https://design-mate.ru/go/events/Interlight Smart City Home 2026",
+      "url": "https://interlight-building.ru/",
       "source": "Design Mate — календарь",
       "checked_at": "",
       "review_reason": "discovery_source_needs_primary_verification",
@@ -13611,7 +13666,8 @@
       "instagram_image": "",
       "instagram_include": false,
       "telegram_include": false,
-      "editor_note": ""
+      "editor_note": "",
+      "reviewed_at": "2026-09-25"
     },
     {
       "id": "international-2026-10-29-0fc9b199ee",

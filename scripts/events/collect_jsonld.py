@@ -1166,6 +1166,90 @@ def open_call_summary(soup, title, fallback=""):
     t=clean(fallback)
     return t[:520].rstrip()
 
+
+def extract_design_mate(html, src):
+    soup=BeautifulSoup(html,"html.parser")
+    out=[]; seen=set(); today=date.today()
+
+    urls=[]
+    for a in soup.find_all("a",href=True):
+        full=urljoin(src["url"],a.get("href",""))
+        parsed=urlparse(full)
+        if "design-mate.ru" not in parsed.netloc.lower():
+            continue
+        if "/go/" not in parsed.path or parsed.path.rstrip("/") in ("/go","/go/events"):
+            continue
+        if full in seen:
+            continue
+        seen.add(full); urls.append(full)
+
+    for full in urls[:180]:
+        try:
+            detail=fetch(full)
+        except Exception as e:
+            print(f"WARN Design Mate detail {full}: {e}",file=sys.stderr)
+            continue
+        dsoup=BeautifulSoup(detail,"html.parser")
+
+        # Design Mate detail pages have the actual event name in H1.
+        h1=dsoup.find("h1")
+        title=clean(h1.get_text(" ",strip=True)) if h1 else ""
+        if not title or title.lower() in SKIP_TITLES or len(title)<4:
+            meta=dsoup.find("meta",attrs={"property":"og:title"}) or dsoup.find("meta",attrs={"name":"twitter:title"})
+            title=clean(meta.get("content","")) if meta else ""
+            title=re.sub(r"\s*[|—-]\s*Пойти\s+design mate.*$","",title,flags=re.I)
+        if not title or title.lower() in SKIP_TITLES or len(title)<4:
+            continue
+
+        # Keep this source Moscow-only. Design Mate mixes Moscow, Russia and
+        # international events on the same listing page.
+        dtext=clean(dsoup.get_text(" ",strip=True))
+        prefix=dtext[:1200]
+        if not re.search(r"\bМосква\b",prefix,re.I):
+            continue
+
+        start_dt,end_dt=parse_ru_date_range(prefix,today.year)
+        if not start_dt:
+            start_dt,end_dt=parse_exhibition_range(prefix)
+        dt=start_dt or parse_date(prefix,require_year=True)
+        if not dt:
+            continue
+        if end_dt and end_dt < today:
+            continue
+        if not end_dt and dt < today:
+            continue
+
+        tm=parse_time(prefix)
+        price,price_text=parse_price(prefix)
+        reg=bool(re.search(r"регистрац|зарегистр",prefix,re.I)) or None
+
+        # Venue sits between the city and the date on Design Mate pages.
+        venue=""
+        m=re.search(r"Москва\s+(.+?)\s+\d{1,2}\s+[а-яё]+\s+20\d{2}\s*г?\.",prefix,re.I)
+        if m:
+            venue=clean(m.group(1))
+
+        desc=""
+        if h1:
+            for p in h1.find_all_next("p"):
+                t=clean(p.get_text(" ",strip=True))
+                if len(t)>=60 and "design mate" not in t.lower():
+                    desc=t[:650].rstrip()
+                    break
+
+        cat=event_category(title+" "+desc)
+        ev=make_event(
+            src,dt.isoformat(),tm,title,full,desc,
+            venue=venue,price=price,price_text=price_text,registration=reg,
+            categories=[cat] if cat else [],status="check",
+            reason="discovery_source_needs_primary_verification"
+        )
+        if end_dt:
+            ev["start_date"]=dt.isoformat()
+            ev["end_date"]=end_dt.isoformat()
+        out.append(ev)
+    return out
+
 def extract_open_call_listing(html, src):
     soup=BeautifulSoup(html,"html.parser")
     out=[]; seen=set(); today=date.today()
@@ -1368,6 +1452,8 @@ def main():
                 candidates.extend(extract_zotov(html,src))
             elif adapter=="mamm":
                 candidates.extend(extract_mamm(html,src))
+            elif adapter=="design_mate":
+                candidates.extend(extract_design_mate(html,src))
             elif adapter=="open_call_listing":
                 candidates.extend(extract_open_call_listing(html,src))
             elif adapter=="telegram_digest":

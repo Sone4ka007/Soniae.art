@@ -753,6 +753,85 @@
       "detail_workers": 8,
       "source_group": "art_institution",
       "high_free_yield": true
+    },
+    {
+      "name": "Российская государственная библиотека для молодёжи — афиша",
+      "city": "moscow",
+      "url": "https://rgub.ru/schedule/index.php",
+      "venue": "РГБМ",
+      "adapter": "event_links",
+      "href_contains": [
+        "/schedule/item.php?new_id=",
+        "schedule/item.php?new_id="
+      ],
+      "max_detail_pages": 160,
+      "detail_workers": 10,
+      "source_group": "library",
+      "high_free_yield": true
+    },
+    {
+      "name": "Британская высшая школа дизайна — события",
+      "city": "moscow",
+      "url": "https://britishdesign.ru/",
+      "venue": "Британская высшая школа дизайна",
+      "adapter": "event_links",
+      "href_contains": [
+        "/about/events/"
+      ],
+      "max_detail_pages": 120,
+      "detail_workers": 10,
+      "source_group": "design_school",
+      "high_free_yield": true
+    },
+    {
+      "name": "Музей криптографии — события",
+      "city": "moscow",
+      "url": "https://cryptography-museum.ru/events",
+      "venue": "Музей криптографии",
+      "adapter": "event_links",
+      "href_contains": [
+        "/events/"
+      ],
+      "exclude_paths": [
+        "/events",
+        "/events/"
+      ],
+      "max_detail_pages": 100,
+      "detail_workers": 8,
+      "source_group": "museum"
+    },
+    {
+      "name": "Archi.ru — события и лекции",
+      "city": "moscow",
+      "url": "https://archi.ru/events",
+      "venue": "",
+      "adapter": "event_links",
+      "href_contains": [
+        "/events/"
+      ],
+      "exclude_paths": [
+        "/events"
+      ],
+      "max_detail_pages": 160,
+      "detail_workers": 10,
+      "source_group": "discovery_aggregator"
+    },
+    {
+      "name": "Design Mate — календарь",
+      "city": "moscow",
+      "url": "https://design-mate.ru/go/events/",
+      "venue": "",
+      "adapter": "event_links",
+      "href_contains": [
+        "/go/"
+      ],
+      "exclude_paths": [
+        "/go/",
+        "/go/events/"
+      ],
+      "max_detail_pages": 140,
+      "detail_workers": 10,
+      "source_group": "discovery_aggregator"
     }
   ]
 }

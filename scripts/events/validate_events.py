@@ -99,6 +99,9 @@ def main():
         if e.get("kind") not in ("event","exhibition","open_call"):
             e["kind"]="event"
         title_blob=str(e.get("title","")).lower()
+        category_blob=" ".join(str(x) for x in (e.get("categories") or [])).lower()
+        filter_blob=(title_blob+" "+category_blob).strip()
+        audience_blob=str(e.get("audience_text","")).lower()
         if any(x in title_blob for x in OPEN_CALL_HINTS):
             e["kind"]="open_call"
             cats=e.get("categories") or []
@@ -144,16 +147,16 @@ def main():
             e["status"]="rejected"; e["review_reason"]="excluded_ges2_nonfestival_screening"; changed+=1; continue
         if editable_status and any(x in blob for x in EXCLUDE):
             e["status"]="rejected"; e["review_reason"]="excluded_person"; changed+=1; continue
-        if editable_status and any(x in blob for x in PLEIN) and not any(x in blob for x in GELD):
+        if editable_status and any(x in filter_blob for x in PLEIN) and not any(x in blob for x in GELD):
             e["status"]="rejected"; e["review_reason"]="excluded_plein_air"; changed+=1; continue
         if editable_status and (
-            any(x in blob for x in FAMILY_CHILDREN) or
-            any(x in blob for x in KNOWN_CHILD_EVENT_HINTS) or
-            AGE_CHILD_RE.search(blob)
+            any(x in filter_blob for x in FAMILY_CHILDREN) or
+            any(x in title_blob for x in KNOWN_CHILD_EVENT_HINTS) or
+            AGE_CHILD_RE.search(filter_blob+" "+audience_blob[:1200])
         ):
             e["status"]="rejected"; e["review_reason"]="excluded_family_children"; changed+=1; continue
-        if editable_status and e.get("kind")=="event" and any(x in blob for x in TOUR_HINTS):
-            if not any(x in blob for x in TOUR_KEEP):
+        if editable_status and e.get("kind")=="event" and any(x in filter_blob for x in TOUR_HINTS):
+            if not any(x in (filter_blob+" "+audience_blob[:1200]) for x in TOUR_KEEP):
                 e["status"]="rejected"; e["review_reason"]="excluded_tour_mediation"; changed+=1; continue
         if editable_status and e.get("kind")=="open_call":
             paid_call=(e.get("price_type")=="paid" or any(x in blob for x in PAY_TO_PLAY_HINTS))

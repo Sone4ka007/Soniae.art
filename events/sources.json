@@ -688,6 +688,71 @@
       "adapter": "single_event_page",
       "kind": "event",
       "source_group": "university"
+    },
+    {
+      "name": "Дом русского зарубежья — афиша",
+      "city": "moscow",
+      "url": "https://www.domrz.ru/event/",
+      "venue": "Дом русского зарубежья им. А. Солженицына",
+      "adapter": "event_links",
+      "href_contains": [
+        "/event/"
+      ],
+      "exclude_paths": [
+        "/event/"
+      ],
+      "max_detail_pages": 120,
+      "detail_workers": 8,
+      "source_group": "museum"
+    },
+    {
+      "name": "КУБ — события",
+      "city": "moscow",
+      "url": "https://cube.moscow/events/",
+      "venue": "КУБ",
+      "adapter": "event_links",
+      "href_contains": [
+        "/events/"
+      ],
+      "exclude_paths": [
+        "/events/"
+      ],
+      "max_detail_pages": 100,
+      "detail_workers": 8,
+      "source_group": "art_institution"
+    },
+    {
+      "name": "ARTPLAY — события",
+      "city": "moscow",
+      "url": "https://artplay.ru/events",
+      "venue": "ARTPLAY",
+      "adapter": "event_links",
+      "href_contains": [
+        "/events/"
+      ],
+      "exclude_paths": [
+        "/events",
+        "/events/",
+        "/events-archive",
+        "/events-schedule"
+      ],
+      "max_detail_pages": 120,
+      "detail_workers": 8,
+      "source_group": "art_institution"
+    },
+    {
+      "name": "Российская академия художеств — события",
+      "city": "moscow",
+      "url": "https://rah.ru/events/news/",
+      "venue": "Российская академия художеств",
+      "adapter": "event_links",
+      "href_contains": [
+        "/events/detail.php"
+      ],
+      "max_detail_pages": 120,
+      "detail_workers": 8,
+      "source_group": "art_institution",
+      "high_free_yield": true
     }
   ]
 }

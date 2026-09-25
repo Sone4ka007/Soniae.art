@@ -1201,17 +1201,31 @@ def extract_design_mate(html, src):
         if not title or title.lower() in SKIP_TITLES or len(title)<4:
             continue
 
-        # Keep this source Moscow-only. Design Mate mixes Moscow, Russia and
-        # international events on the same listing page.
+        # Design Mate mixes Moscow, regional and international events on one
+        # listing. Read location/date only from the local block immediately
+        # surrounding this page's H1; the page header itself contains cards
+        # from many other cities and previously caused false "Moscow" matches.
         dtext=clean(dsoup.get_text(" ",strip=True))
-        prefix=dtext[:1200]
-        if not re.search(r"\bМосква\b",prefix,re.I):
+        prev_parts=[]
+        if h1:
+            node=h1.previous_element
+            total=0
+            while node is not None and total < 700:
+                if isinstance(node,str):
+                    t=clean(node)
+                    if t:
+                        prev_parts.append(t); total+=len(t)
+                node=getattr(node,"previous_element",None)
+        before=clean(" ".join(reversed(prev_parts)))
+        local_context=clean(before[-700:]+" "+title+" "+event_context(dtext,title,1200))
+
+        if not re.search(r"(^|\s)Москва(?:\s|$)",before[-500:],re.I):
             continue
 
-        start_dt,end_dt=parse_ru_date_range(prefix,today.year)
+        start_dt,end_dt=parse_ru_date_range(local_context,today.year)
         if not start_dt:
-            start_dt,end_dt=parse_exhibition_range(prefix)
-        dt=start_dt or parse_date(prefix,require_year=True)
+            start_dt,end_dt=parse_exhibition_range(local_context)
+        dt=start_dt or parse_date(local_context,require_year=True)
         if not dt:
             continue
         if end_dt and end_dt < today:
@@ -1219,13 +1233,12 @@ def extract_design_mate(html, src):
         if not end_dt and dt < today:
             continue
 
-        tm=parse_time(prefix)
-        price,price_text=parse_price(prefix)
-        reg=bool(re.search(r"регистрац|зарегистр",prefix,re.I)) or None
+        tm=parse_time(local_context)
+        price,price_text=parse_price(local_context)
+        reg=bool(re.search(r"регистрац|зарегистр",local_context,re.I)) or None
 
-        # Venue sits between the city and the date on Design Mate pages.
         venue=""
-        m=re.search(r"Москва\s+(.+?)\s+\d{1,2}\s+[а-яё]+\s+20\d{2}\s*г?\.",prefix,re.I)
+        m=re.search(r"Москва\s+(.+?)\s+\d{1,2}\s+[а-яё]+\s+20\d{2}\s*г?\.",before[-700:],re.I)
         if m:
             venue=clean(m.group(1))
 
@@ -1412,20 +1425,27 @@ def extract_ges2(src, days=14):
 def main():
     cfg=load_json(SOURCES,{"sources":[]})
     db=load_json(DB,{"schema_version":1,"events":[]})
-    existing={e.get("id"):e for e in db.get("events",[])}
+    # Design Mate used to be parsed by the generic link adapter, which
+    # produced wrong repeated titles and misclassified non-Moscow events.
+    # Rebuild this discovery source from scratch on every run.
+    current_events=[
+        e for e in db.get("events",[])
+        if str(e.get("source") or "") != "Design Mate — календарь"
+    ]
+    existing={e.get("id"):e for e in current_events}
     occurrence_index={
         (e.get("city"),e.get("date"),str(e.get("url","")).strip().lower(),
          re.sub(r"\W+","",str(e.get("title","")).lower())):e.get("id")
-        for e in db.get("events",[]) if e.get("id") and e.get("url")
+        for e in current_events if e.get("id") and e.get("url")
     }
     url_date_index={
         (e.get("city"),e.get("date"),str(e.get("url","")).strip().lower()):e.get("id")
-        for e in db.get("events",[]) if e.get("id") and e.get("url")
+        for e in current_events if e.get("id") and e.get("url")
     }
     url_title_index={
         (e.get("city"),str(e.get("url","")).strip().lower(),
          re.sub(r"\W+","",str(e.get("title","")).lower())):e.get("id")
-        for e in db.get("events",[]) if e.get("id") and e.get("url") and e.get("title")
+        for e in current_events if e.get("id") and e.get("url") and e.get("title")
     }
     found=0
     for src in cfg.get("sources",[]):

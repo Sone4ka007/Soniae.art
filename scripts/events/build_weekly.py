@@ -33,7 +33,15 @@ def main():
     start=datetime.strptime(args.week_start,"%Y-%m-%d").date() if args.week_start else monday(date.today()+timedelta(days=7))
     end=start+timedelta(days=6)
     db=json.loads(DB.read_text("utf-8"))
-    events=[e for e in db.get("events",[]) if e.get("status")=="approved" and e.get("city")==args.city and e.get("kind")=="event" and start.isoformat()<=e.get("date","")<=end.isoformat()]
+    def is_film(e):
+        blob=" ".join([
+            str(e.get("title") or ""),
+            " ".join(str(x) for x in (e.get("categories") or [])),
+            str(e.get("description") or "")
+        ]).lower()
+        return any(x in blob for x in ("кинопоказ","спецпоказ","показ фильма","документальный фильм","кино"))
+
+    events=[e for e in db.get("events",[]) if e.get("status")=="approved" and e.get("city")==args.city and e.get("kind")=="event" and not is_film(e) and start.isoformat()<=e.get("date","")<=end.isoformat()]
     events.sort(key=lambda e:(e.get("date",""),e.get("time",""),e.get("title","")))
     OUT.mkdir(parents=True,exist_ok=True)
     city="Москва" if args.city=="moscow" else "Петербург"

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-25",
+  "updated_at": "2026-09-26",
   "events": [
     {
       "status": "approved",
@@ -4618,40 +4618,6 @@
       "reviewed_at": "2026-09-25"
     },
     {
-      "id": "spb-2026-09-25-17b28b720c",
-      "status": "new",
-      "kind": "exhibition",
-      "city": "spb",
-      "date": "2026-09-25",
-      "time": "",
-      "title": "В Музее городской скульптуры покажут динамику цвета",
-      "venue": "",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [
-        "выставка"
-      ],
-      "description": "В Новом выставочном зале Государственного музея городской скульптуры пройдёт юбилейная выставка-ретроспектива работ известного петербургского живописца, графика и мастера декоративно-прикладного искусства Ирины Касперской «Цветодинамика в пространствах и временах».",
-      "url": "https://spbcult.ru/news/anonsy/v-muzee-gorodskoy-skulptury-pokazhut-dinamiku-tsveta/",
-      "source": "Петербургский дневник культуры — анонсы",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-25",
-      "price_type": "unknown",
-      "availability": "unknown",
-      "availability_checked_at": "2026-09-25",
-      "start_date": "2026-09-25",
-      "editor_note": "",
-      "telegram_include": false,
-      "instagram_image": "",
-      "social_title": "",
-      "social_description": "",
-      "instagram_include": false,
-      "social_priority": null
-    },
-    {
       "id": "spb-2026-09-25-fb533fe83a",
       "status": "approved",
       "kind": "exhibition",
@@ -6157,6 +6123,30 @@
       "instagram_image": ""
     },
     {
+      "id": "spb-2026-09-26-4e1f443b8c",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-09-26",
+      "time": "",
+      "title": "О событии",
+      "venue": "Государственный Эрмитаж",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "© 1998–2026 Государственный Эрмитаж. Все права защищены © 1998–2026 Государственный Эрмитаж.",
+      "url": "https://hermitagemuseum.org/what-s-on/afisha_mincult/?lng=ru",
+      "source": "Государственный Эрмитаж — выставки и события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-26",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-26"
+    },
+    {
       "id": "moscow-2026-09-26-84b65b4d8b",
       "status": "rejected",
       "kind": "event",
@@ -6838,6 +6828,32 @@
       "social_title": "",
       "instagram_include": false,
       "telegram_include": false
+    },
+    {
+      "id": "moscow-2026-09-26-a6c5a31ae8",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-09-26",
+      "time": "14:00",
+      "title": "Лекция Ольги Пановой «Рок-поэзия на частоте 1980-х»",
+      "venue": "Музей «Гараж»",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": true,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Филолог и историк литературы Ольга Панова рассмотрит творчество крупнейших рок-поэтов и обсудит с аудиторией, с помощью каких приемов и техник устроены их тексты. Она проследит развитие отечественной рок-поэзии с середины 1960-х до середины 1990-х годов, сосредоточив основное внимание на 1980-х — периоде ее становления как самостоятельного направления.",
+      "url": "https://garagemca.org/event/olga-panova-s-lecture-rock-poetry-on-the-1980s-wavelength",
+      "source": "Музей современного искусства «Гараж»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-26",
+      "price_type": "free",
+      "availability": "available",
+      "availability_checked_at": "2026-09-26"
     },
     {
       "id": "spb-2026-09-26-cb6e1990e3",
@@ -8971,6 +8987,32 @@
       "telegram_include": false
     },
     {
+      "id": "moscow-2026-09-29-71206f9056",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-09-29",
+      "time": "",
+      "title": "«“Вопрос все тот же: быть или не быть?”: Шекспир здесь и сейчас» Беседа переводчика Г.Кружкова с поэтом и книжным обозревателем Д.Гасиным о переводах У.Шекспира",
+      "venue": "Дом русского зарубежья им. А. Солженицына",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": true,
+      "categories": [
+        "встреча"
+      ],
+      "description": "Встреча состоится в книжном магазине «Русское зарубежье». 29 сентября 2026 года в 19 часов приглашаем на беседу переводчика Г.Кружкова с поэтом и книжным обозревателем Д.Гасиным о переводах У.Шекспира. Сколько переводов Шекспира нам нужно и как оставаться современным, не превращая текст Шекспира в пародию или в капустник?",
+      "url": "https://www.domrz.ru/event/70380_vopros_vse_tot_zhe_byt_ili_ne_byt_shekspir_zdes_i_seychas_beseda_perevodchika_g_kruzhkova_s_poetom_/",
+      "source": "Дом русского зарубежья — афиша",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-26",
+      "price_type": "free",
+      "availability": "available",
+      "availability_checked_at": "2026-09-26"
+    },
+    {
       "id": "moscow-2026-09-29-e7982b72fb",
       "status": "rejected",
       "kind": "event",
@@ -9894,6 +9936,32 @@
       "telegram_include": false
     },
     {
+      "id": "moscow-2026-09-30-d7ea94f453",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-09-30",
+      "time": "",
+      "title": "Бесплатная лекция-экскурсия «“Голое поле” — русское воинство в Галлиполийском лагере в 1920–1921 годах»",
+      "venue": "Дом русского зарубежья им. А. Солженицына",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": true,
+      "categories": [
+        "лекция"
+      ],
+      "description": "30 сентября 2025 года в 14 часов приглашаем на бесплатную лекцию-экскурсию «“Голое поле” — русское воинство в Галлиполийском лагере в 1920–1921 годах». В ноябре 1920 года 126 судов ушли из Крыма, увозя Русскую армию и мирных беженцев. Около 145 тысяч человек вынуждены были покинуть родину после поражения в Гражданской войне.",
+      "url": "https://www.domrz.ru/event/70070_besplatnaya_lektsiya_ekskursiya_goloe_pole_russkoe_voinstvo_v_gallipoliyskom_lagere_v_1920_1921_goda/",
+      "source": "Дом русского зарубежья — афиша",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-09-26",
+      "price_type": "free",
+      "availability": "available",
+      "availability_checked_at": "2026-09-26"
+    },
+    {
       "id": "spb-2026-09-30-974950f8ab",
       "status": "approved",
       "kind": "exhibition",
@@ -10031,6 +10099,32 @@
       "telegram_include": false
     },
     {
+      "id": "moscow-2026-09-30-5ba49b0ba7",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-09-30",
+      "time": "",
+      "title": "Показ документального фильма «Люди дела. Сезон 2»",
+      "venue": "Дом русского зарубежья им. А. Солженицына",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": true,
+      "categories": [
+        "кинопоказ"
+      ],
+      "description": "30 сентября 2026 года в 19 часов совместно с киностудией «Русский путь», киноклубом «Русский путь», при поддержке Министерства культуры России, Союза кинематографистов России, Союза писателей России в рамках Российской национальной премии в области неигрового кино «Золотая свеча» приглашаем на показ документального фильма «Люди дела.",
+      "url": "https://www.domrz.ru/event/70381_pokaz_dokumentalnogo_filma_lyudi_dela_sezon_2/",
+      "source": "Дом русского зарубежья — афиша",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-26",
+      "price_type": "free",
+      "availability": "available",
+      "availability_checked_at": "2026-09-26"
+    },
+    {
       "id": "spb-2026-09-30-3497c8964e",
       "status": "rejected",
       "kind": "event",
@@ -10094,6 +10188,32 @@
       "social_title": "",
       "instagram_include": false,
       "telegram_include": false
+    },
+    {
+      "id": "moscow-2026-09-30-280353f23f",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-09-30",
+      "time": "",
+      "title": "Тематическая экскурсия «Мост. Страницы истории Дома русского зарубежья»",
+      "venue": "Дом русского зарубежья им. А. Солженицына",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": true,
+      "categories": [
+        "лекция"
+      ],
+      "description": "30 сентября 2026 года в 16 часов приглашаем на тематическую экскурсию «Мост. Страницы истории Дома русского зарубежья». Больше четверти века в Москве, на Таганке, существует дом, где можно познакомиться с культурным и историческим наследием русского зарубежья.",
+      "url": "https://www.domrz.ru/event/70032_tematicheskaya_ekskursiya_most_stranitsy_istorii_doma_russkogo_zarubezhya/",
+      "source": "Дом русского зарубежья — афиша",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-09-26",
+      "price_type": "paid",
+      "availability": "available",
+      "availability_checked_at": "2026-09-26"
     },
     {
       "id": "moscow-2026-09-30-132af53a4c",
@@ -11017,6 +11137,32 @@
       "social_description": "",
       "telegram_include": false,
       "reviewed_at": "2026-09-25"
+    },
+    {
+      "id": "moscow-2026-10-01-c679802da4",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-01",
+      "time": "",
+      "title": "Международная научно-просветительская конференция «Некрополи русского зарубежья: история, культура, память»",
+      "venue": "Дом русского зарубежья им. А. Солженицына",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": true,
+      "categories": [
+        "конференция"
+      ],
+      "description": "1–2 октября 2026 года приглашаем на международную научно-просветительскую конференцию «Некрополи русского зарубежья: история, культура, память», организованную при содействии Министерства иностранных дел Российской Федерации, Федерального агентства по делам Содружества Независимых Государств, соотечественников, проживающих за рубежом, и по международному гуманитарному сотрудничеству, Российского исторического общества и при поддержке Департамента культуры города Москвы и Фонда наследия русского зарубежья.",
+      "url": "https://www.domrz.ru/event/68987_mezhdunarodnaya_nauchno_prosvetitelskaya_konferentsiya_nekropoli_russkogo_zarubezhya_istoriya_kultur/",
+      "source": "Дом русского зарубежья — афиша",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-26",
+      "price_type": "unknown",
+      "availability": "available",
+      "availability_checked_at": "2026-09-26"
     },
     {
       "id": "moscow-2026-10-01-8775cab252",

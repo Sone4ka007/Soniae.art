@@ -272,11 +272,20 @@ def main():
     # Social schedules are built from the site's EVENTS section only.
     # Exhibitions and open calls have their own sections and must never leak
     # into weekly event posts.
+    def is_film(e):
+        blob=" ".join([
+            str(e.get("title") or ""),
+            " ".join(str(x) for x in (e.get("categories") or [])),
+            str(e.get("description") or "")
+        ]).lower()
+        return any(x in blob for x in ("кинопоказ","спецпоказ","показ фильма","документальный фильм","кино"))
+
     approved=[
         e for e in db.get("events",[])
         if e.get("status")=="approved"
         and e.get("city")==args.city
         and e.get("kind")=="event"
+        and not is_film(e)
     ]
     weekly=[e for e in approved if start.isoformat()<=str(e.get("date",""))<=end.isoformat()]
     weekly.sort(key=lambda e:(e.get("date",""),e.get("time",""),e.get("title","")))

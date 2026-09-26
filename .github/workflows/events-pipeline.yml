@@ -22,8 +22,8 @@ on:
         default: "moscow"
         type: string
   schedule:
-    # Manual retrigger marker: 2026-09-26
-    Moscow time: 06:30, 12:30 and 18:30. Multiple daily passes make
+    # Manual retrigger marker: 2026-09-26T10:37+03:00
+    # Moscow time: 06:30, 12:30 and 18:30. Multiple daily passes make
     # source updates visible sooner and reduce reliance on one delayed cron.
     - cron: "30 3,9,15 * * *"
     # Sunday 19:00 Moscow: build next week's social packages.

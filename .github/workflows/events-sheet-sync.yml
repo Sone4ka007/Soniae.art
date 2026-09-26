@@ -1,6 +1,11 @@
 name: Events sheet sync
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'content/events.json'
+      - '.github/workflows/events-sheet-sync.yml'
   workflow_dispatch:
     inputs:
       direction:
@@ -45,13 +50,13 @@ jobs:
             git push
           fi
       - name: Push database to Sheet
-        if: inputs.direction == 'push'
+        if: github.event_name == 'push' || inputs.direction == 'push'
         env:
           EVENTS_SHEET_ID: ${{ vars.EVENTS_SHEET_ID }}
           GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
         run: python scripts/events/push_sheet.py
       - name: Persist editor changes captured during push
-        if: inputs.direction == 'push'
+        if: github.event_name == 'push' || inputs.direction == 'push'
         run: |
           if ! git diff --quiet -- content/events.json; then
             git config user.name "sonyae-events-bot"

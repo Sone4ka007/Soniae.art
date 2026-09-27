@@ -70,14 +70,16 @@ for generated_event in generated.get("events",[]):
     rid=generated_event.get("id")
     old=find_remote_match(generated_event)
 
-    # Reviewed records are editorially locked. Once the editor has approved or
-    # rejected an item, automated collection, curated seed data, and source
-    # changes must not rewrite that record. The only way to change it is through
-    # an explicit editor action in the moderation Sheet.
+    # Reviewed records keep editorial decisions, but verified factual fields
+    # must still be allowed to refresh from official sources. Otherwise fixes to
+    # time/date and confirmed availability changes are silently reverted here.
     if old and old.get("status") in ("approved","rejected"):
         e=dict(old)
+        for k in ("date","time","start_date","end_date","availability","availability_checked_at"):
+            if k in generated_event and generated_event.get(k) not in (None,""):
+                e[k]=generated_event[k]
         # Keep the generated identity when a source legitimately changes the
-        # technical id, while preserving every editorial/public field.
+        # technical id, while preserving moderation/editorial fields.
         if rid:
             e["id"]=rid
     else:

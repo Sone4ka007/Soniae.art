@@ -21,7 +21,8 @@ FAMILY_CHILDREN=(
     "для всей семьи","для семей","семейная программа","семейный тур",
     "детям","подростков","для подростков","школьников","для школьников",
     "малышей","для самых маленьких","родителей с детьми","взрослых и детей",
-    "мама и малыш","папа и малыш","семейная йога"
+    "мама и малыш","папа и малыш","семейная йога",
+    "младшая группа","старшая группа","детская группа","подростковая группа"
 )
 AGE_CHILD_RE=re.compile(r"\b(?:для\s+детей\s*)?(?:от\s*)?(?:[3-9]|1[0-7])\s*(?:[-–—]\s*(?:[3-9]|1[0-7]))?\s*лет\b")
 
@@ -74,6 +75,11 @@ HARD_DROP_URLS={
 GES2_MASTERCLASS_HINTS=("мастер-класс","мастер класс","workshop","воркшоп")
 GES2_FILM_HINTS=("кинопоказ","показ фильма","кинотеатр","screening","film")
 GES2_FILM_FESTIVAL_HINTS=("кинофестиваль","фестиваль кино","фестиваль фильмов","film festival","фестиваля фильмов")
+
+ZOTOV_CHILD_COURSE_HINTS=(
+    "предметный дизайн. керамика и гипс",
+    "предметный дизайн керамика и гипс",
+)
 
 GES2_LOW_VALUE_HINTS=(
     "ниже травы. игровая",
@@ -152,6 +158,10 @@ def main():
         if editable_status and (
             any(x in filter_blob for x in FAMILY_CHILDREN) or
             any(x in title_blob for x in KNOWN_CHILD_EVENT_HINTS) or
+            (
+                ("центр зотов" in blob or "centrezotov.ru" in blob) and
+                any(x in title_blob for x in ZOTOV_CHILD_COURSE_HINTS)
+            ) or
             AGE_CHILD_RE.search(filter_blob+" "+audience_blob[:1200])
         ):
             e["status"]="rejected"; e["review_reason"]="excluded_family_children"; changed+=1; continue
@@ -169,7 +179,14 @@ def main():
         if problems and e.get("status")=="new":
             e["status"]="check"; e["review_reason"]=", ".join(problems); changed+=1
     before_drop=len(db.get("events",[]))
-    db["events"]=[e for e in db.get("events",[]) if str(e.get("url","")).strip().lower() not in HARD_DROP_URLS]
+    db["events"]=[
+        e for e in db.get("events",[])
+        if str(e.get("url","")).strip().lower() not in HARD_DROP_URLS
+        and not (
+            e.get("status")=="rejected" and
+            e.get("review_reason")=="excluded_family_children"
+        )
+    ]
     hard_dropped=before_drop-len(db["events"])
     DB.write_text(json.dumps(db,ensure_ascii=False,indent=2)+"\n","utf-8")
     print(f"Validation changes: {changed}; hard-dropped: {hard_dropped}")

@@ -53,7 +53,7 @@ SKIP_TITLES = {
     "купить билет","купить билеты","зарегистрироваться","регистрация","подать заявку",
     "подробнее","все события","смотреть все","архив","читать далее","показать ещё",
     "показать еще","единый билет","следующий день","предыдущий день",
-    "more details","see more","learn more","условия участия",
+    "more details","see more","learn more","условия участия","о событии","об этом событии",
     "будущие выставки","текущие выставки","выставки"
 }
 
@@ -478,12 +478,15 @@ def extract_event_links(html, src):
         is_exhibition=(src.get("kind")=="exhibition" or "/exhibitions/" in path_low or "/exhibition/" in path_low)
 
         title=""
-        # AZ pages contain a persistent exhibition heading before the actual
-        # event. Their OpenGraph title is the event title and is more reliable.
-        if is_az:
+        # AZ and Hermitage pages can put generic internal headings such as
+        # "О событии" before the actual event title. OpenGraph is more reliable.
+        if is_az or "hermitagemuseum.org" in host:
             meta=dsoup.find("meta",attrs={"property":"og:title"}) or dsoup.find("meta",attrs={"name":"twitter:title"})
             candidate=clean(meta.get("content","")) if meta else ""
-            candidate=re.sub(r"\s*[|—-]\s*Музей\s*AZ.*$","",candidate,flags=re.I)
+            if is_az:
+                candidate=re.sub(r"\s*[|—-]\s*Музей\s*AZ.*$","",candidate,flags=re.I)
+            else:
+                candidate=re.sub(r"\s*[|—-]\s*(?:Государственный\s+)?Эрмитаж.*$","",candidate,flags=re.I)
             if candidate and candidate.lower() not in SKIP_TITLES:
                 title=candidate
         if not title:

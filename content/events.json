@@ -7423,6 +7423,38 @@
       "telegram_include": false
     },
     {
+      "id": "spb-2026-09-27-4e1f443b8c",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-09-27",
+      "time": "",
+      "title": "Государственный Эрмитаж",
+      "venue": "Государственный Эрмитаж",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "",
+      "url": "https://hermitagemuseum.org/what-s-on/afisha_mincult/?lng=ru",
+      "source": "Государственный Эрмитаж — выставки и события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-27",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-27",
+      "editor_note": "",
+      "telegram_include": false,
+      "instagram_image": "",
+      "social_title": "",
+      "instagram_include": false,
+      "social_priority": null,
+      "social_description": "",
+      "reviewed_at": "2026-09-27"
+    },
+    {
       "id": "moscow-2026-09-27-ba096a6320",
       "status": "approved",
       "city": "moscow",
@@ -7487,38 +7519,6 @@
       "social_title": "",
       "instagram_include": false,
       "telegram_include": false
-    },
-    {
-      "id": "spb-2026-09-27-4e1f443b8c",
-      "status": "new",
-      "kind": "event",
-      "city": "spb",
-      "date": "2026-09-27",
-      "time": "",
-      "title": "О событии",
-      "venue": "Государственный Эрмитаж",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": null,
-      "categories": [],
-      "description": "© 1998–2026 Государственный Эрмитаж. Все права защищены © 1998–2026 Государственный Эрмитаж.",
-      "url": "https://hermitagemuseum.org/what-s-on/afisha_mincult/?lng=ru",
-      "source": "Государственный Эрмитаж — выставки и события",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-27",
-      "price_type": "unknown",
-      "availability": "unknown",
-      "availability_checked_at": "2026-09-27",
-      "editor_note": "",
-      "telegram_include": false,
-      "instagram_image": "",
-      "social_title": "",
-      "instagram_include": false,
-      "social_priority": null,
-      "social_description": "",
-      "reviewed_at": ""
     },
     {
       "id": "russia-2026-09-27-b5017b3dcc",
@@ -12295,7 +12295,7 @@
     },
     {
       "id": "moscow-2026-10-03-e25cf1c326",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-03",
@@ -12325,11 +12325,11 @@
       "instagram_include": false,
       "social_priority": null,
       "social_description": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-09-27"
     },
     {
       "id": "moscow-2026-10-03-6355ebfb04",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-03",
@@ -12359,7 +12359,7 @@
       "instagram_include": false,
       "social_priority": null,
       "social_description": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-09-27"
     },
     {
       "status": "approved",
@@ -13467,7 +13467,7 @@
     },
     {
       "id": "moscow-2026-10-10-75bf9747df",
-      "status": "new",
+      "status": "rejected",
       "kind": "exhibition",
       "city": "moscow",
       "date": "2026-10-10",
@@ -13498,11 +13498,12 @@
       "social_description": "",
       "social_priority": null,
       "instagram_include": false,
-      "instagram_image": ""
+      "instagram_image": "",
+      "reviewed_at": "2026-09-27"
     },
     {
       "id": "moscow-2026-10-10-3f5f8756eb",
-      "status": "new",
+      "status": "approved",
       "kind": "exhibition",
       "city": "moscow",
       "date": "2026-10-10",
@@ -13534,7 +13535,7 @@
       "instagram_include": false,
       "social_priority": null,
       "social_description": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-09-27"
     },
     {
       "id": "moscow-2026-10-10-55d6b4377e",
@@ -13777,7 +13778,7 @@
     },
     {
       "id": "moscow-2026-10-10-e25cf1c326",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-10",
@@ -13807,7 +13808,7 @@
       "instagram_include": false,
       "social_priority": null,
       "social_description": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-09-27"
     },
     {
       "status": "approved",
@@ -13880,7 +13881,7 @@
     },
     {
       "id": "moscow-2026-10-10-6355ebfb04",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-10",
@@ -13910,11 +13911,11 @@
       "instagram_include": false,
       "social_priority": null,
       "social_description": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-09-27"
     },
     {
       "id": "moscow-2026-10-10-5554a42377",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-10",
@@ -13945,7 +13946,7 @@
       "instagram_include": false,
       "social_priority": null,
       "social_description": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-09-27"
     },
     {
       "id": "spb-2026-10-11-20744129e7",
@@ -14191,7 +14192,7 @@
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-11",
-      "time": "12:00",
+      "time": "12:30",
       "title": "Спектакль «Приключения маленького Бобо» от Театра Таратумб",
       "venue": "Еврейский музей и центр толерантности",
       "address": "",
@@ -14700,7 +14701,7 @@
     },
     {
       "id": "moscow-2026-10-17-e25cf1c326",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-17",
@@ -14730,11 +14731,11 @@
       "instagram_include": false,
       "social_priority": null,
       "social_description": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-09-27"
     },
     {
       "id": "moscow-2026-10-17-6355ebfb04",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-17",
@@ -14764,7 +14765,7 @@
       "instagram_include": false,
       "social_priority": null,
       "social_description": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-09-27"
     },
     {
       "id": "moscow-2026-10-18-9f703f36f1",
@@ -15113,7 +15114,7 @@
     },
     {
       "id": "moscow-2026-10-24-e25cf1c326",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-24",
@@ -15143,11 +15144,11 @@
       "instagram_include": false,
       "social_priority": null,
       "social_description": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-09-27"
     },
     {
       "id": "moscow-2026-10-24-6355ebfb04",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-24",
@@ -15177,7 +15178,7 @@
       "instagram_include": false,
       "social_priority": null,
       "social_description": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-09-27"
     },
     {
       "id": "international-2026-10-27-385dd4bc2d",

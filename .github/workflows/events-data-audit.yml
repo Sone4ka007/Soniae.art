@@ -2,6 +2,11 @@ name: Events published-data audit
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/events/audit_published_data.py'
+      - '.github/workflows/events-data-audit.yml'
   schedule:
     # 08:15 and 17:15 Moscow time. Runs independently from collection.
     - cron: "15 5,14 * * *"

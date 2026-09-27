@@ -179,8 +179,31 @@ def parse_exhibition_range(text):
     return None,None
 
 def parse_time(text):
-    m = re.search(r"(?<!\d)([01]?\d|2[0-3]):(\d{2})(?!\d)", clean(text))
+    m = re.search(r"(?<!\\d)([01]?\\d|2[0-3]):(\\d{2})(?!\\d)", clean(text))
     return f"{int(m.group(1)):02d}:{m.group(2)}" if m else ""
+
+def parse_event_page_time(text, host=""):
+    t=clean(text)
+    if "jewish-museum.ru" in (host or "").lower():
+        # Event pages also contain museum opening hours (12:00–22:00 etc.).
+        # Prefer the date+time metadata attached to the event itself.
+        m=re.search(
+            r"\.\s*\\d{1,2}\.\\d{1,2}\.20\\d{2}"
+            r"(?:\s*[-–—]\s*\\d{1,2}\.\\d{1,2}\.20\\d{2})?"
+            r"\s*,?\s*([01]?\\d|2[0-3])[:.]([0-5]\\d)",
+            t
+        )
+        if m:
+            return f"{int(m.group(1)):02d}:{m.group(2)}"
+        # Some pages use dotted times only in the Program section,
+        # for example "(19.00-21.00)".
+        m=re.search(
+            r"Программа.{0,1200}?\\(\s*([01]?\\d|2[0-3])[:.]([0-5]\\d)",
+            t, re.I
+        )
+        if m:
+            return f"{int(m.group(1)):02d}:{m.group(2)}"
+    return parse_time(t)
 
 def parse_ru_date_range(text, default_year=None):
     t=clean(text).lower().replace("ё","е")
@@ -492,7 +515,7 @@ def extract_event_links(html, src):
         elif is_exhibition and dt<today-timedelta(days=365):
             return None
 
-        tm=parse_time(context[:700])
+        tm=parse_event_page_time(dtext if "jewish-museum.ru" in host else context[:700],host)
         price,price_text=parse_price(context[:1200] if (is_az or is_winzavod) else dtext)
         reg=bool(re.search(r"регистрац|зарегистр|купить билет",context[:1400] if (is_az or is_winzavod) else dtext,re.I)) or None
         cat=event_category(context[:1800])

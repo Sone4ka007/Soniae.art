@@ -179,30 +179,44 @@ def parse_exhibition_range(text):
     return None,None
 
 def parse_time(text):
-    m = re.search(r"(?<!\\d)([01]?\\d|2[0-3]):(\\d{2})(?!\\d)", clean(text))
+    m = re.search(r"(?<!\d)([01]?\d|2[0-3]):(\d{2})(?!\d)", clean(text))
     return f"{int(m.group(1)):02d}:{m.group(2)}" if m else ""
 
 def parse_event_page_time(text, host=""):
     t=clean(text)
-    if "jewish-museum.ru" in (host or "").lower():
-        # Event pages also contain museum opening hours (12:00–22:00 etc.).
-        # Prefer the date+time metadata attached to the event itself.
-        m=re.search(
-            r"\.\s*\\d{1,2}\.\\d{1,2}\.20\\d{2}"
-            r"(?:\s*[-–—]\s*\\d{1,2}\.\\d{1,2}\.20\\d{2})?"
-            r"\s*,?\s*([01]?\\d|2[0-3])[:.]([0-5]\\d)",
-            t
-        )
+
+    # Explicit event labels beat generic museum opening hours.
+    m=re.search(
+        r"(?:время|начало(?:\s+мероприятия)?|начало\s+в)\s*[:—–-]?\s*"
+        r"([01]?\d|2[0-3])[:.]([0-5]\d)",
+        t, re.I
+    )
+    if m:
+        return f"{int(m.group(1)):02d}:{m.group(2)}"
+
+    # Prefer a clock value attached to an event date. This works for both
+    # 30.09.2026, 19:00 and 30 сентября 2026 19.00.
+    patterns=[
+        r"\d{1,2}[./]\d{1,2}(?:[./]\d{2,4})?\s*(?:г\.)?\s*[,/|]?\s*"
+        r"([01]?\d|2[0-3])[:.]([0-5]\d)",
+        r"\d{1,2}\s+[а-яё]{3,10}(?:\s+20\d{2})?\s*(?:г\.)?\s*[,/|]?\s*"
+        r"([01]?\d|2[0-3])[:.]([0-5]\d)"
+    ]
+    for pattern in patterns:
+        m=re.search(pattern,t,re.I)
         if m:
             return f"{int(m.group(1)):02d}:{m.group(2)}"
-        # Some pages use dotted times only in the Program section,
-        # for example "(19.00-21.00)".
+
+    if "jewish-museum.ru" in (host or "").lower():
+        # Some Jewish Museum pages put the start only in the Program section,
+        # while the page also contains the museum's opening hours.
         m=re.search(
-            r"Программа.{0,1200}?\\(\s*([01]?\\d|2[0-3])[:.]([0-5]\\d)",
+            r"Программа.{0,1200}?\(\s*([01]?\d|2[0-3])[:.]([0-5]\d)",
             t, re.I
         )
         if m:
             return f"{int(m.group(1)):02d}:{m.group(2)}"
+
     return parse_time(t)
 
 def parse_ru_date_range(text, default_year=None):
@@ -515,7 +529,7 @@ def extract_event_links(html, src):
         elif is_exhibition and dt<today-timedelta(days=365):
             return None
 
-        tm=parse_event_page_time(dtext if "jewish-museum.ru" in host else context[:700],host)
+        tm=parse_event_page_time(context[:900] if "jewish-museum.ru" not in host else dtext,host)
         price,price_text=parse_price(context[:1200] if (is_az or is_winzavod) else dtext)
         reg=bool(re.search(r"регистрац|зарегистр|купить билет",context[:1400] if (is_az or is_winzavod) else dtext,re.I)) or None
         cat=event_category(context[:1800])
@@ -680,7 +694,7 @@ def extract_single_event_page(html, src):
     if not title:
         return []
 
-    tm=parse_time(text[:2200])
+    tm=parse_event_page_time(text[:2200],urlparse(src["url"]).netloc.lower())
     price,price_text=parse_price(text[:2600])
     reg=bool(re.search(r"регистрац|зарегистр",text,re.I)) or None
     venue=src.get("venue","")
@@ -723,7 +737,7 @@ def extract_hse(html, src):
         reg = bool(re.search(r"регистрац",txt,re.I)) or None
         desc = txt.replace(title,"",1).strip()
         if len(desc)>650: desc=desc[:647].rstrip()+"..."
-        out.append(make_event(src,dt.isoformat(),parse_time(txt),title,full,desc,
+        out.append(make_event(src,dt.isoformat(),parse_event_page_time(txt,urlparse(full).netloc.lower()),title,full,desc,
                               price=price,price_text=price_text,registration=reg))
     return out
 
@@ -761,7 +775,7 @@ def extract_rusimp(html, src):
         price,price_text=parse_price(txt)
         status="new" if explicit_year else "check"
         reason="" if explicit_year else "year_not_explicit_on_primary_listing"
-        out.append(make_event(src,dt.isoformat(),parse_time(txt),title,full,"",
+        out.append(make_event(src,dt.isoformat(),parse_event_page_time(txt,urlparse(full).netloc.lower()),title,full,"",
                               price=price,price_text=price_text,
                               registration=bool(re.search(r"регистрац",txt,re.I)) or None,
                               status=status,reason=reason))
@@ -1151,7 +1165,7 @@ def extract_mamm(html, src):
             htitle=clean(h.get_text(" ",strip=True))
             if len(htitle)>=8:
                 title=htitle
-        tm=parse_time(dtext[:1200])
+        tm=parse_event_page_time(dtext[:1600],urlparse(full).netloc.lower())
         price,price_text=parse_price(dtext)
         reg=bool(re.search(r"регистрац|купить билет",dtext,re.I)) or None
         desc=""
@@ -1256,7 +1270,7 @@ def extract_design_mate(html, src):
         if not end_dt and dt < today:
             continue
 
-        tm=parse_time(local_context)
+        tm=parse_event_page_time(local_context,urlparse(full).netloc.lower())
         price,price_text=parse_price(local_context)
         reg=bool(re.search(r"регистрац|зарегистр",local_context,re.I)) or None
 

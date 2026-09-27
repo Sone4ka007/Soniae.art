@@ -1,0 +1,59 @@
+name: Events published-data audit
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 08:15 and 17:15 Moscow time. Runs independently from collection.
+    - cron: "15 5,14 * * *"
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: events-published-data-audit
+  cancel-in-progress: true
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Audit published data and primary sources
+        id: audit
+        continue-on-error: true
+        run: python scripts/events/audit_published_data.py
+      - name: Upload audit report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: events-data-audit
+          path: dist/events-audit/
+          retention-days: 30
+      - name: Open or update audit issue when problems exist
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python - <<'PY'
+          import json, pathlib, subprocess
+          p=pathlib.Path("dist/events-audit/report.json")
+          if not p.exists(): raise SystemExit(0)
+          r=json.loads(p.read_text("utf-8"))
+          issues=r.get("issues",[])
+          if not issues: raise SystemExit(0)
+          title="Events data audit: discrepancies found"
+          body=pathlib.Path("dist/events-audit/report.md").read_text("utf-8")
+          q=subprocess.run(["gh","issue","list","--state","open","--search",title+" in:title","--json","number,title"],capture_output=True,text=True,check=True)
+          found=[x for x in json.loads(q.stdout) if x.get("title")==title]
+          if found:
+              subprocess.run(["gh","issue","comment",str(found[0]["number"]),"--body",body],check=True)
+          else:
+              subprocess.run(["gh","issue","create","--title",title,"--body",body],check=True)
+          PY
+      - name: Fail only on critical discrepancies
+        if: steps.audit.outcome == 'failure'
+        run: exit 1

@@ -107,8 +107,19 @@ def main():
             d=date.fromisoformat(e.get("date",""))
         except Exception:
             kept.append(e); continue
-        horizon=today+timedelta(days=90 if e.get("kind") in ("open_call","exhibition") else 30)
-        if today <= d <= horizon:
+        kind=e.get("kind")
+        horizon=today+timedelta(days=90 if kind in ("open_call","exhibition") else 30)
+        # Exhibitions are active by their end date, not only by opening date.
+        # An exhibition opened last month must not disappear while it is still running.
+        if kind=="exhibition":
+            try:
+                end_d=date.fromisoformat(e.get("end_date") or e.get("date",""))
+            except Exception:
+                end_d=d
+            in_horizon=(end_d >= today and d <= horizon)
+        else:
+            in_horizon=(today <= d <= horizon)
+        if in_horizon:
             e["price_type"]=classify_price(e)
             kept.append(e)
 

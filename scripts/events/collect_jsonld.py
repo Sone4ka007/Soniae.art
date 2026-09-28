@@ -1521,6 +1521,7 @@ def main():
             elif adapter=="telegram_channel_events":
                 candidates.extend(extract_telegram_channel_events(html,src))
 
+        source_added=0
         for n in candidates:
             occ=(n.get("city"),n.get("date"),str(n.get("url","")).strip().lower(),
                  re.sub(r"\W+","",str(n.get("title","")).lower()))
@@ -1560,6 +1561,8 @@ def main():
                     url_date_index[(n.get("city"),n.get("date"),n_url)]=n["id"]
                     url_title_index[(n.get("city"),n_url,re.sub(r"\W+","",str(n.get("title","")).lower()))]=n["id"]
                 found+=1
+                source_added+=1
+        print(f"SOURCE {src['name']}: candidates={len(candidates)} new={source_added}")
 
     db["updated_at"]=datetime.now(timezone.utc).date().isoformat()
     db["events"]=sorted(existing.values(),key=lambda e:(e.get("date",""),e.get("time",""),e.get("title","")))

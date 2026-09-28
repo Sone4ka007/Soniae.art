@@ -43,7 +43,7 @@ def main():
     meta=svc.spreadsheets().get(spreadsheetId=SHEET_ID,fields="sheets(properties(sheetId,title))").execute()
     sheets={s["properties"]["title"]:s["properties"]["sheetId"] for s in meta.get("sheets",[])}
     if TAB not in sheets:
-        resp=svc.spreadsheets().batchUpdate(spreadsheetId=SHEET_ID,body={"requests":[{"addSheet":{"properties":{"title":TAB,"frozenRowCount":1}}}]}).execute()
+        resp=svc.spreadsheets().batchUpdate(spreadsheetId=SHEET_ID,body={"requests":[{"addSheet":{"properties":{"title":TAB,"gridProperties":{"frozenRowCount":1}}}}]}).execute()
         sheet_id=resp["replies"][0]["addSheet"]["properties"]["sheetId"]
     else: sheet_id=sheets[TAB]
 

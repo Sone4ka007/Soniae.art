@@ -725,6 +725,37 @@
       "review_reason": ""
     },
     {
+      "status": "check",
+      "editor_note": "Разделено из анонса Соня Go; первоисточник проверен",
+      "checked_at": "2026-09-29",
+      "reviewed_at": "",
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "registration": null,
+      "price": null,
+      "price_text": "",
+      "price_type": "unknown",
+      "id": "manual-spb-2026-book-as-art-biennale",
+      "kind": "exhibition",
+      "city": "spb",
+      "date": "2026-10-01",
+      "start_date": "2026-10-01",
+      "end_date": "2026-12-13",
+      "title": "V Биеннале книжной графики и иллюстрации «Книга как искусство»",
+      "venue": "Общественный форум Главного штаба Государственного Эрмитажа",
+      "address": "Дворцовая площадь, 6/8",
+      "categories": [
+        "выставка",
+        "книжная графика",
+        "иллюстрация"
+      ],
+      "description": "Юбилейная V Биеннале книжной графики и иллюстрации. В Главном штабе представлены работы 90 художников и иллюстраторов из России и других стран.",
+      "url": "https://www.pushkinlib.spb.ru/vystavki-/biennale2026/",
+      "source": "СЦДБ им. А.С. Пушкина / Государственный Эрмитаж",
+      "discovered_at": "2026-09-29",
+      "review_reason": "split_from_multi_event_telegram_post"
+    },
+    {
       "status": "approved",
       "editor_note": "Добавлено по свежему анонсу; первоисточник проверен",
       "checked_at": "2026-09-26",

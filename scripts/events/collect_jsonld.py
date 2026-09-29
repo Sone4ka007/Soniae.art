@@ -847,6 +847,10 @@ def extract_telegram_channel_events(html, src):
             continue
         raw=text_node.get_text("\n",strip=True)
         low=raw.lower()
+        if "эрмитаж" in low or "биеннале" in low:
+            print("SONYA_GO_RAW_BEGIN", file=sys.stderr)
+            print(raw[:12000], file=sys.stderr)
+            print("SONYA_GO_RAW_END", file=sys.stderr)
         if re.search(r"open\s*call|опен[- ]?колл|при[её]м заявок|дедлайн|deadline",low,re.I):
             continue
 

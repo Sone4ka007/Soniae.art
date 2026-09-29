@@ -982,6 +982,13 @@ def extract_telegram_channel_events(html, src):
             status="check",reason="curated_telegram_source"
         )
         ev["kind"]="event"
+        # Curated Telegram posts can cover both Moscow and St Petersburg.
+        # Do not inherit Moscow blindly from the source configuration.
+        city_blob=(raw+" "+venue).lower()
+        if any(x in city_blob for x in ("санкт-петербург","петербург","эрмитаж","главного штаба","главный штаб","севкабель","новая голландия")):
+            ev["city"]="spb"
+        elif any(x in city_blob for x in ("москва","московск")):
+            ev["city"]="moscow"
         out.append(ev)
     return out
 

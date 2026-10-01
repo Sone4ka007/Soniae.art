@@ -805,7 +805,7 @@
       "review_reason": "",
       "discovered_at": "2026-09-21",
       "price_type": "free",
-      "availability": "unknown",
+      "availability": "available",
       "availability_checked_at": "2026-10-01",
       "editor_note": "",
       "reviewed_at": "2026-09-21",
@@ -12578,7 +12578,34 @@
       "editor_note": "",
       "instagram_image": "",
       "social_priority": null,
-      "telegram_include": false
+      "telegram_include": false,
+      "reviewed_at": ""
+    },
+    {
+      "id": "spb-2026-10-01-e27d4bad8b",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-01",
+      "time": "",
+      "title": "«Музыка радости» русских и зарубежных композиторов прозвучит в БКЗ «Октябрьский»",
+      "venue": "",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": false,
+      "categories": [
+        "концерт"
+      ],
+      "description": "3 октября в БКЗ «Октябрьский» состоится социальный концерт большого проекта «Музыка радости» Санкт-Петербургского государственного симфонического оркестра «Классика» и его художественного руководителя – заслуженного артиста России Александра Канторова. Правообладатель фото: Пресс-служба Санкт-Петербургского государственного симфонического оркестра «Классика».",
+      "url": "https://spbcult.ru/news/anonsy/muzyka-radosti-russkikh-i-zarubezhnykh-kompozitorov-prozvuchit-v-bkz-oktyabrskiy/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-01",
+      "price_type": "free",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-01"
     },
     {
       "id": "spb-2026-10-01-804fc2654f",
@@ -12590,8 +12617,8 @@
       "title": "«Петербургские дожди» накроют город",
       "venue": "",
       "address": "",
-      "price": null,
-      "price_text": "",
+      "price": 0,
+      "price_text": "Бесплатно",
       "registration": false,
       "categories": [
         "концерт"
@@ -12602,7 +12629,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-10-01",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-10-01",
       "social_title": "",
@@ -12611,7 +12638,39 @@
       "editor_note": "",
       "instagram_image": "",
       "social_priority": null,
-      "telegram_include": false
+      "telegram_include": false,
+      "reviewed_at": ""
+    },
+    {
+      "id": "discovery-6d493870217a79",
+      "status": "check",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-01",
+      "start_date": "2026-10-01",
+      "end_date": "",
+      "time": "",
+      "title": "АРХ Москва",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "price_type": "unknown",
+      "registration": null,
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-01",
+      "categories": [
+        "фестиваль",
+        "архитектура"
+      ],
+      "description": "",
+      "url": "https://archmoscow.ru/",
+      "source": "АРХ Москва — официальный сайт",
+      "checked_at": "",
+      "review_reason": "special_event_discovery",
+      "editor_note": "Обнаружено мониторингом ежегодных фестивалей/дизайн-событий; требуется редакторская проверка.",
+      "discovered_at": "2026-10-01",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-01-efc9a0249c",
@@ -12654,11 +12713,11 @@
       "city": "spb",
       "date": "2026-10-01",
       "time": "",
-      "title": "В «Авроре» покажут премьеру фильма о Тринадцатой симфонии Шостаковича",
+      "title": "В «Авроре» можно увидеть премьеру фильма о Тринадцатой симфонии Шостаковича",
       "venue": "",
       "address": "",
-      "price": null,
-      "price_text": "",
+      "price": 0,
+      "price_text": "Бесплатно",
       "registration": false,
       "categories": [],
       "description": "5 октября в «Авроре» состоится премьера документального фильма «DSCH. Симфония под номером 13». Это — не просто хроника создания и исполнения этого произведения, а попытка увидеть в Шостаковиче не только великого композитора, но и человека — трагически сложного, наделённого огромной творческой мощью, но при этом удивительно ранимого, человечного и благородного.",
@@ -12667,7 +12726,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-10-01",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-10-01",
       "social_title": "",
@@ -12676,7 +12735,8 @@
       "editor_note": "",
       "instagram_image": "",
       "social_priority": null,
-      "telegram_include": false
+      "telegram_include": false,
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-10-01-6867d6f64b",
@@ -12688,8 +12748,8 @@
       "title": "В «Санктъ-Петербургъ Опера» «Тоска» прозвучит под управлением сербского дирижера Деяна Савича",
       "venue": "",
       "address": "",
-      "price": null,
-      "price_text": "",
+      "price": 0,
+      "price_text": "Бесплатно",
       "registration": false,
       "categories": [
         "концерт"
@@ -12700,7 +12760,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-10-01",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-10-01",
       "social_title": "",
@@ -12709,7 +12769,8 @@
       "editor_note": "",
       "instagram_image": "",
       "social_priority": null,
-      "telegram_include": false
+      "telegram_include": false,
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-10-01-79e9402d74",
@@ -12721,8 +12782,8 @@
       "title": "В Доме книги проведут «День Капеллы»",
       "venue": "",
       "address": "",
-      "price": null,
-      "price_text": "",
+      "price": 0,
+      "price_text": "Бесплатно",
       "registration": false,
       "categories": [
         "концерт"
@@ -12733,7 +12794,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-10-01",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-10-01",
       "social_title": "",
@@ -12742,7 +12803,61 @@
       "editor_note": "",
       "instagram_image": "",
       "social_priority": null,
-      "telegram_include": false
+      "telegram_include": false,
+      "reviewed_at": ""
+    },
+    {
+      "id": "spb-2026-10-01-62c5a99151",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-01",
+      "time": "",
+      "title": "В октябре Филармония представит первый концерт абонемента «Рыцарь виолончели»",
+      "venue": "",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": false,
+      "categories": [
+        "концерт"
+      ],
+      "description": "Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами! Также вы можете отправить статью в социальной сети или мессенджере Если у вас есть чем поделиться с нашими читателями, вы можете предложить свою статью.",
+      "url": "https://spbcult.ru/news/anonsy/v-oktyabre-filarmoniya-predstavit-pervyy-kontsert-abonementa-rytsar-violoncheli/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-01",
+      "price_type": "free",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-01"
+    },
+    {
+      "id": "spb-2026-10-01-d63f5fd040",
+      "status": "new",
+      "kind": "exhibition",
+      "city": "spb",
+      "date": "2026-10-01",
+      "time": "",
+      "title": "Выездные выставки",
+      "venue": "Русский музей",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": false,
+      "categories": [
+        "выставка"
+      ],
+      "description": "Русский музей открыл масштабную выставку «Абстракция в России. ХХ век» в Шэньчжэньском международном художественном музее в Китае. В экспозицию вошли порядка 70 произведений из собрания Русского музея, охватывающих целый век живописной истории.",
+      "url": "https://rusmuseum.ru/exhibitions/traveling-expo/",
+      "source": "Русский музей — выставки",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-01",
+      "price_type": "free",
+      "availability": "available",
+      "availability_checked_at": "2026-10-01",
+      "start_date": "2026-10-01"
     },
     {
       "id": "spb-2026-10-01-5995f84169",
@@ -12773,7 +12888,8 @@
       "editor_note": "",
       "instagram_image": "",
       "social_priority": null,
-      "telegram_include": false
+      "telegram_include": false,
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-01-2ef587f54f",
@@ -12912,6 +13028,59 @@
       "telegram_include": false
     },
     {
+      "id": "spb-2026-10-01-56f5be1f06",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-01",
+      "time": "",
+      "title": "Проект «Поэзия с тремя неизвестными» представит мультимедийный спектакль «Высоцкий. Космос»",
+      "venue": "",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": false,
+      "categories": [
+        "концерт"
+      ],
+      "description": "Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами! Также вы можете отправить статью в социальной сети или мессенджере Если у вас есть чем поделиться с нашими читателями, вы можете предложить свою статью.",
+      "url": "https://spbcult.ru/news/anonsy/proekt-poeziya-s-tremya-neizvestnymi-predstavit-multimediynyy-spektakl-vysotskiy-kosmos/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-01",
+      "price_type": "free",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-01"
+    },
+    {
+      "id": "spb-2026-10-01-bf1e79eb64",
+      "status": "new",
+      "kind": "exhibition",
+      "city": "spb",
+      "date": "2026-10-01",
+      "time": "",
+      "title": "Работы юных творцов экспонируют в залах Санкт-Петербургского союза художников",
+      "venue": "",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": false,
+      "categories": [
+        "выставка"
+      ],
+      "description": "2 октября в Большом зале Санкт-Петербургского союза художников состоится торжественное открытие региональной выставки-конкурса детского художественного творчества «Юный художник». Выставка продолжает более чем тридцатилетнюю традицию проведения ежегодных осенних тематических экспозиций детского творчества в залах СПбСХ.",
+      "url": "https://spbcult.ru/news/anonsy/detskoe-tvorchestvo-eksponiruyut-v-zalakh-sankt-peterburgskogo-soyuza-khudozhnikov/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-01",
+      "price_type": "free",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-01",
+      "start_date": "2026-10-01"
+    },
+    {
       "id": "moscow-2026-10-01-9e178ff26b",
       "status": "rejected",
       "kind": "event",
@@ -13012,6 +13181,33 @@
       "instagram_image": "",
       "telegram_include": false,
       "reviewed_at": "2026-09-29"
+    },
+    {
+      "id": "spb-2026-10-01-794f82b152",
+      "status": "new",
+      "kind": "exhibition",
+      "city": "spb",
+      "date": "2026-10-01",
+      "time": "00:20",
+      "title": "Молодёжный совет Русского музея принял участие в акции ко Дню пожилого человека",
+      "venue": "Лекторий Русского музея",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": false,
+      "categories": [
+        "выставка"
+      ],
+      "description": "В ГБДОУ детский сад №143 Невского района Санкт-Петербурга прошла трогательная социальная акция под названием «Подари частичку доброты». Представители Молодёжного совета Русского музея вместе с воспитанниками и педагогами детского сада подготовили душевные подарки для старшего поколения.",
+      "url": "https://rusmuseum.ru/news/",
+      "source": "Русский музей — лекторий",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-01",
+      "price_type": "free",
+      "availability": "available",
+      "availability_checked_at": "2026-10-01",
+      "start_date": "2026-10-01"
     },
     {
       "id": "moscow-2026-10-01-5d95849603",
@@ -13210,7 +13406,8 @@
       "editor_note": "",
       "instagram_image": "",
       "social_priority": null,
-      "telegram_include": false
+      "telegram_include": false,
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-01-22ed2ad64f",
@@ -13451,7 +13648,8 @@
       "editor_note": "",
       "instagram_image": "",
       "social_priority": null,
-      "telegram_include": false
+      "telegram_include": false,
+      "reviewed_at": ""
     },
     {
       "id": "manual-moscow-2026-10-01-zotov-ass",
@@ -13726,7 +13924,8 @@
       "editor_note": "",
       "instagram_image": "",
       "social_priority": null,
-      "telegram_include": false
+      "telegram_include": false,
+      "reviewed_at": ""
     },
     {
       "status": "approved",
@@ -14031,7 +14230,8 @@
       "editor_note": "",
       "instagram_image": "",
       "social_priority": null,
-      "telegram_include": false
+      "telegram_include": false,
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-03-e25cf1c326",
@@ -14131,7 +14331,8 @@
       "editor_note": "",
       "instagram_image": "",
       "social_priority": null,
-      "telegram_include": false
+      "telegram_include": false,
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-03-6355ebfb04",
@@ -14884,7 +15085,8 @@
       "editor_note": "",
       "instagram_image": "",
       "social_priority": null,
-      "telegram_include": false
+      "telegram_include": false,
+      "reviewed_at": ""
     },
     {
       "id": "manual-moscow-2026-10-04-rusimp-zvantseva-curator",
@@ -15090,7 +15292,8 @@
       "editor_note": "",
       "instagram_image": "",
       "social_priority": null,
-      "telegram_include": false
+      "telegram_include": false,
+      "reviewed_at": ""
     },
     {
       "id": "russia-2026-10-06-b564240054",
@@ -15158,7 +15361,9 @@
       "editor_note": "",
       "instagram_image": "",
       "social_priority": null,
-      "telegram_include": false
+      "telegram_include": false,
+      "reviewed_at": "",
+      "start_date": "2026-10-06"
     },
     {
       "id": "moscow-2026-10-06-781c85084b",
@@ -15260,7 +15465,8 @@
       "editor_note": "",
       "instagram_image": "",
       "social_priority": null,
-      "telegram_include": false
+      "telegram_include": false,
+      "reviewed_at": ""
     },
     {
       "status": "approved",
@@ -15329,7 +15535,60 @@
       "editor_note": "",
       "instagram_image": "",
       "social_priority": null,
-      "telegram_include": false
+      "telegram_include": false,
+      "reviewed_at": ""
+    },
+    {
+      "id": "spb-2026-10-08-d2a3bac1f0",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-08",
+      "time": "00:20",
+      "title": "Архитектурная мастерская «От района до детали»",
+      "venue": "РОСФОТО",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "12+ 8 октября — 19 ноября Каждый четверг 18:00–20:00 6 занятий РОСФОТО приглашает подростков на серию архитектурных мастер-классов, где участники смогут посмотреть на привычный город глазами архитектора и дизайнера.",
+      "url": "https://rosphoto.org/events/arhitekturnaya-masterskaya-ot-rajona-do-detali/",
+      "source": "РОСФОТО",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-01",
+      "price_type": "paid",
+      "availability": "available",
+      "availability_checked_at": "2026-10-01"
+    },
+    {
+      "id": "moscow-2026-10-08-7161905f1d",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-08",
+      "time": "00:20",
+      "title": "Дом, полный книг: экскурсия по Библиотеке музея",
+      "venue": "Еврейский музей и центр толерантности",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Библиотека музея возвращается с еженедельными экскурсиями по книжным фондам! Программа 08 октября 2026 (18:00) 15 октября 2026 (18:00) 22 октября 2026 (18:00) 25 октября 2026 (14:00) 29 октября 2026 (18:00)",
+      "url": "https://www.jewish-museum.ru/events/dom-polnyy-knig-ekskursiya-po-biblioteke-muzeya1/",
+      "source": "Еврейский музей и центр толерантности",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-01",
+      "price_type": "unknown",
+      "availability": "available",
+      "availability_checked_at": "2026-10-01"
     },
     {
       "id": "moscow-2026-10-08-e986b2b5f1",
@@ -15534,7 +15793,8 @@
       "editor_note": "",
       "instagram_image": "",
       "social_priority": null,
-      "telegram_include": false
+      "telegram_include": false,
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-08-f8072f8992",
@@ -15806,7 +16066,8 @@
       "editor_note": "",
       "instagram_image": "",
       "social_priority": null,
-      "telegram_include": false
+      "telegram_include": false,
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-09-a51a3fb80e",
@@ -15841,6 +16102,30 @@
       "social_title": "",
       "instagram_include": false,
       "telegram_include": false
+    },
+    {
+      "id": "moscow-2026-10-09-107a2873a9",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-09",
+      "time": "19:00",
+      "title": "«Скиллы архитектора»: лекция о будущем профессии, софте и ИИ",
+      "venue": "Школа дизайна НИУ ВШЭ",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": true,
+      "categories": [],
+      "description": "9 октября 2026 года в 19:00 в Школе дизайна НИУ ВШЭ пройдет Архитектурный лекторий. На камерной встрече «Скиллы архитектора» эксперты обсудят актуальные компетенции современных проектировщиков и то, как технологии меняют правила игры в профессии. 09 октября 2026",
+      "url": "https://design.hse.ru/news/7248",
+      "source": "Школа дизайна НИУ ВШЭ",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-01",
+      "price_type": "unknown",
+      "availability": "available",
+      "availability_checked_at": "2026-10-01"
     },
     {
       "id": "moscow-2026-10-09-d06bdbac9d",
@@ -15909,6 +16194,32 @@
       "social_title": "",
       "social_description": "",
       "reviewed_at": "2026-09-29"
+    },
+    {
+      "id": "spb-2026-10-10-09ca26027f",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-10",
+      "time": "00:20",
+      "title": "Экскурсия по выставке «Валентин Серов. Кино — метафора реальности»",
+      "venue": "РОСФОТО",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "Выставочный проект посвящен наследию Валентина Петровича Серова (1947–1988) — фотографа, чья жизнь и творчество были неразрывно связаны с кинематографом и художественной жизнью Москвы 1970–1980-х годов. В ходе экскурсии поговорим об эволюции фотоязыка Серова — от репортажа к художественной фотографии.",
+      "url": "https://rosphoto.org/events/ekskursiya-po-vystavke-valentin-serov-kino-metafora-realnosti/",
+      "source": "РОСФОТО",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-01",
+      "price_type": "paid",
+      "availability": "available",
+      "availability_checked_at": "2026-10-01"
     },
     {
       "id": "moscow-2026-10-10-e3aefd4737",
@@ -16118,6 +16429,33 @@
       "telegram_include": false
     },
     {
+      "id": "moscow-2026-10-10-98f4534d25",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-10",
+      "time": "12:00",
+      "title": "Знакомство с Домом культуры «ГЭС-2»",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": true,
+      "categories": [
+        "диалог"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/mediation/tour/meet-ges-2-house-of-culture",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "excluded_ges2_low_value",
+      "discovered_at": "2026-10-01",
+      "audience_text": "› Медиация › Туры Регистрация Билеты на индивидуальный медиаторский тур Дата: с 7 мар 2022 Регистрация Билеты на индивидуальный медиаторский тур Возраст: от 12 Тип: Медиаторский тур Место: ГЭС-2 Возрастные ограничения 12+ Тур об устройстве культурной институции, текущих программах и о том, как здание городской электростанции на Болотной набережной превратилось в Дом культуры. Что такое «Индивидуальный медиаторский тур»?  {\"points\":[{\"id\":4,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":6,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.4,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":5,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} T Медиаторский тур «Знакомство с Домом культуры „ ГЭС-2 “» регулярно проводится с переводом на русский жестовый язык — на нем мы ждем слышащих, глухих и слабослышащих посетителей. Слышащие посетители могут зарегистрироваться через сайт. Глухие и слабослышащие посетители — оставить заявку на участие* по адресу access@ges-2.org или телефону +7 (963) 996 3687 (СМС, WhatsApp , Telegram ). * Сообщая нам свои личные данные, вы даете согласие на их обработку в соответствии с нашей Политикой в отношении обработки и защиты персональных данных . Фото: Иван Ерофеев Прогулка строится вокруг событий в истории ГЭС-2 , ее трансформации в культурную институцию и городское пространство, где в центре всех событий — творческое взаимодействие профессионалов и энтузиастов. Участники тура узнают об актуальных программах, миссии и ценностях Дома культуры, а также о проектах фонда V–A–C , предшествующих открытию « ГЭС-2 ». Мы обсудим архитектуру бывшей электростанции, принципы реконструкции, идейные сходства « ГЭС-2 » с народными домами и домами культуры 1920-х годов, а заодно — главные пространства Дома культуры и то, чем можно в них заняться людям разных возрастов и интересов. Прогулка охватывает все многообразие произвольных маршрутов: медиатор и участники выбирают точки и темы беседы в свободном и равном диалоге, делая акцент на тех или иных подробностях в зависимости от интересов группы. В турах с 16 по 29 сентября на Левой платформе мы также посмотрим и обсудим финальный показ работ третьего сезона лаборатории « Формы касаний ». Эти произведения сделали художники, которые постоянно проживают в социальных домах. Если вы хотите подробнее узнать об архитект",
+      "price_type": "paid",
+      "availability": "available",
+      "availability_checked_at": "2026-10-01"
+    },
+    {
       "id": "moscow-2026-10-10-8c1680b942",
       "status": "rejected",
       "kind": "event",
@@ -16183,7 +16521,35 @@
       "editor_note": "",
       "instagram_image": "",
       "social_priority": null,
-      "telegram_include": false
+      "telegram_include": false,
+      "reviewed_at": ""
+    },
+    {
+      "id": "moscow-2026-10-10-d5623dd3d1",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-10",
+      "time": "14:00",
+      "title": "ГЭС-2 / «ГЭС-2»: архитектурный тур",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": true,
+      "categories": [
+        "медиаторский тур"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/ges-2-ges-2-house-of-culture-architectural-tour",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-01",
+      "audience_text": "› Медиация › Туры Регистрация Билеты на индивидуальный медиаторский тур Дата: с 1 мая 2025 Регистрация Билеты на индивидуальный медиаторский тур Возраст: от 16 Тип: Медиаторский тур Место: Площадь Доступность  Возрастные ограничения 16+ Два облика здания и путь трансформации из электростанции в Дом культуры через призму истории и теории архитектуры, инженерии и геймдизайна. Что такое «Индивидуальный медиаторский тур»?  {\"points\":[{\"id\":4,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":6,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.4,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":5,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} T Здание бывшей электростанции ГЭС-2 существует уже более ста лет. Оригинальный замысел, разработанный архитектором Василием Башкировым, инженером-электротехником Михаилом Поливановым и инженером Николаем Сушкиным воплотился во множестве узнаваемых элементов: центральном нефе с металлическими фермами, шатровой башне, украшениях фасада в неорусском стиле и других. Вплоть до признания объектом культурного наследия регионального значения (2009), здание меняло свой облик: модернизировалось, лишалось навершия башни, обрастало более поздними пристройками, образуя масштабный ансамбль, который, тем не менее, оставался незаметным для горожан. Если вы впервые собираетесь в « ГЭС-2 » и хотите подробнее обсудить устройство культурной институции и текущие программы, приглашаем вас на тур « Знакомство с Домом культуры „ ГЭС-2 “ ». Тур регулярно проходит с переводом на русский жестовый язык. Глухие и слабослышащие люди могут зарегистрироваться, написав на почту access@ges-2.org или номер +7 (963) 996 3687 ( SMS , WhatsApp , Telegram )*. Слышащим посетителям необходимо выбрать билеты на тур, воспользовавшись кнопкой «Регистрация». Именно эту проблему стремился решить Ренцо Пьяно — автор проекта реконструкции « ГЭС-2 », основатель стиля хай-тек в архитектуре и градостроительстве, лауреат Притцкеровской премии и сенатор Итальянской Республики. Следуя принципу genius loci (лат. «гений места») архитектор вернул зданию наиболее приближенный к оригиналу вид, а также расширил идеи предшественников, дополнив их высокотехнологичными решениями в современных конструкциях, материалах и ландшафтных работах. Благодаря Ренцо Пьяно мы можем исследовать архитектуру в ее",
+      "price_type": "paid",
+      "availability": "available",
+      "availability_checked_at": "2026-10-01"
     },
     {
       "id": "moscow-2026-10-10-422be2d050",
@@ -16290,6 +16656,41 @@
       "telegram_include": false
     },
     {
+      "id": "moscow-2026-10-10-00c85a88e1",
+      "status": "rejected",
+      "city": "moscow",
+      "date": "2026-10-10",
+      "time": "15:00",
+      "title": "Кто ты будешь такой",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "медиаторский тур"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/who-you-re-going-to-be",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-20",
+      "price_type": "paid",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-01",
+      "kind": "event",
+      "editor_note": "",
+      "audience_text": "› Медиация › Туры Регистрация Билеты на индивидуальный медиаторский тур Дата: с 5 апр 2026 Регистрация Билеты на индивидуальный медиаторский тур Возраст: от 8 Тип: Медиаторский тур Место: ГЭС-2 Возрастные ограничения 6+ Медиаторский тур для детей и подростков расскажет об устройстве Дома культуры « ГЭС-2 » и познакомит с профессиями в сфере искусства. Что такое «Индивидуальный медиаторский тур»?  {\"points\":[{\"id\":4,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":6,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.4,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":5,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} T Каждый день в « ГЭС-2 » проходят концерты и мастер-классы, кинопоказы и спектакли, лекции и выставки. Чтобы организовать все это, нужно, чтобы объединилось очень много людей самых разных профессий. Среди них — кураторы, звукорежиссеры, продюсеры, архитекторы, научные консультанты, технические специалисты. И это лишь часть большого списка! Фото: Аня Тодич А еще Дому культуры нужны профессионалы, благодаря которым сюда ежедневно могут приходить тысячи гостей, — это сотрудники по работе с посетителями, охранники, уборщики. Они делают пространство безопасным и удобным для всех. Во время тура мы обсудим, кто и как работает над нашими событиями, примерим на себя роли разных сотрудников « ГЭС-2 » и создадим собственный выставочный проект. Официальный партнер направления медиации Дома культуры « ГЭС-2 » Авторы тура Мария Колпакова, Алина Мирошник — медиаторы Дома культуры « ГЭС-2 ». {\"width\":963,\"column_width\":89,\"columns_n\":9,\"gutter\":20,\"margin\":0,\"line\":10} default true 512 1100 false true false {\"mode\":\"page\",\"transition_type\":\"slide\",\"transition_direction\":\"horizontal\",\"transition_look\":\"belt\",\"slides_form\":{}} {\"css\":\".editor {font-family: Diagramatika Text; font-size: 20px; font-weight: 400; line-height: 20px;}\"} ГЭС-2 Посещение [+] План здания Правила посещения Ателье Игровая Кинотеатр Концертный зал Библиотека Малые своды Магазин Ресторан и кафе Парковка Вокруг Доступность Как нас найти Календарь Программа Направления [+] Практики Медиация Дети и подростки Сообщества Школы Университеты Города Возможности [+] Своды Студии Резиденции Гранты Исследования Издательство  О нас [+] Дом культуры История и архитектура Посещение [+] Календарь Программа Направления [+",
+      "reviewed_at": "",
+      "social_priority": null,
+      "instagram_image": "",
+      "social_description": "",
+      "social_title": "",
+      "instagram_include": false,
+      "telegram_include": false
+    },
+    {
       "id": "moscow-2026-10-10-dd6da5e86a",
       "status": "approved",
       "kind": "event",
@@ -16354,6 +16755,33 @@
       "social_priority": null,
       "social_description": "",
       "reviewed_at": "2026-09-27"
+    },
+    {
+      "id": "moscow-2026-10-10-6de6981347",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-10",
+      "time": "17:00",
+      "title": "Контуры моды",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": true,
+      "categories": [
+        "медиаторский тур"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/fashion-contours",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-01",
+      "audience_text": "› Медиация › Туры Регистрация Билеты на индивидуальный медиаторский тур Дата: с 6 авг 2025 Регистрация Билеты на индивидуальный медиаторский тур Возраст: от 16 Тип: Медиаторский тур Место: Площадь Доступность  Возрастные ограничения 16+ Участники тура, созданного совместно с брендом LIMÉ , проследят взаимосвязь моды с повседневностью и искусством, используя ассоциативные карты, отсылающие к творчеству известных дизайнеров. Что такое «Индивидуальный медиаторский тур»?  {\"points\":[{\"id\":4,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":6,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.4,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":5,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} T Одежда — это больше чем ткань и крой. Подобно художественному произведению искусства, это зашифрованное послание, где каждый шов или принт рассказывает историю. Почему сегодня мы выбираем oversize , а завтра — обтягивающие силуэты? Как подиумные образы становятся частью нашего гардероба, а уличная мода проникает в музеи? Тур регулярно проходит с переводом на русский жестовый язык. Глухие и слабослышащие люди могут зарегистрироваться, написав на почту access@ges-2.org или номер +7 (963) 996 3687 (SMS, WhatsApp, Telegram)*. Слышащих посетителей просим воспользоваться кнопкой «Регистрация». Иллюстрация: Маша Титова На медиаторском туре мы обратимся к специально созданным ассоциативным картам, которые помогут увидеть неочевидные связи между искусством, модой и повседневностью. Мы рассмотрим культовые показы, расшифруем фирменные паттерны брендов и проследим, как социальные изменения обусловливают тренды. Объединив изучение моды, выставочных проектов и пространства Дома культуры « ГЭС-2 », мы попробуем взглянуть на знакомые вещи по-новому. Официальный партнер направления медиации Дома культуры « ГЭС-2 » Авторы Анастасия Горбунова, Даша Горячева, Ника Карпенко, Карина Чернышова Художник-иллюстратор Маша Титова * Сообщая нам свои личные данные, вы даете согласие на их обработку в соответствии с нашей Политикой в отношении обработки и защиты персональных данных. Дизайнер Мария Виноградова {\"grid\":{\"width\":963,\"column_width\":89,\"columns_n\":9,\"gutter\":20,\"margin\":0,\"line\":10},\"palette\":\"default\",\"responsive_mode\":true,\"responsive_min_width\":512,\"responsive_max_width\":1100,\"colorchanger_fullscreen",
+      "price_type": "paid",
+      "availability": "available",
+      "availability_checked_at": "2026-10-01"
     },
     {
       "status": "approved",
@@ -16585,7 +17013,7 @@
       "discovered_at": "2026-09-23",
       "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-09-29",
+      "availability_checked_at": "2026-10-01",
       "social_priority": null,
       "instagram_image": "",
       "social_description": "",
@@ -16684,7 +17112,7 @@
       "review_reason": "",
       "discovered_at": "2026-09-21",
       "price_type": "free",
-      "availability": "unknown",
+      "availability": "available",
       "availability_checked_at": "2026-10-01",
       "editor_note": "",
       "reviewed_at": "2026-09-21",
@@ -16836,6 +17264,33 @@
       "social_title": "",
       "instagram_include": false,
       "telegram_include": false
+    },
+    {
+      "id": "moscow-2026-10-11-98f4534d25",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-11",
+      "time": "12:00",
+      "title": "Знакомство с Домом культуры «ГЭС-2»",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": true,
+      "categories": [
+        "диалог"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/mediation/tour/meet-ges-2-house-of-culture",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "excluded_ges2_low_value",
+      "discovered_at": "2026-10-01",
+      "audience_text": "› Медиация › Туры Регистрация Билеты на индивидуальный медиаторский тур Дата: с 7 мар 2022 Регистрация Билеты на индивидуальный медиаторский тур Возраст: от 12 Тип: Медиаторский тур Место: ГЭС-2 Возрастные ограничения 12+ Тур об устройстве культурной институции, текущих программах и о том, как здание городской электростанции на Болотной набережной превратилось в Дом культуры. Что такое «Индивидуальный медиаторский тур»?  {\"points\":[{\"id\":4,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":6,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.4,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":5,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} T Медиаторский тур «Знакомство с Домом культуры „ ГЭС-2 “» регулярно проводится с переводом на русский жестовый язык — на нем мы ждем слышащих, глухих и слабослышащих посетителей. Слышащие посетители могут зарегистрироваться через сайт. Глухие и слабослышащие посетители — оставить заявку на участие* по адресу access@ges-2.org или телефону +7 (963) 996 3687 (СМС, WhatsApp , Telegram ). * Сообщая нам свои личные данные, вы даете согласие на их обработку в соответствии с нашей Политикой в отношении обработки и защиты персональных данных . Фото: Иван Ерофеев Прогулка строится вокруг событий в истории ГЭС-2 , ее трансформации в культурную институцию и городское пространство, где в центре всех событий — творческое взаимодействие профессионалов и энтузиастов. Участники тура узнают об актуальных программах, миссии и ценностях Дома культуры, а также о проектах фонда V–A–C , предшествующих открытию « ГЭС-2 ». Мы обсудим архитектуру бывшей электростанции, принципы реконструкции, идейные сходства « ГЭС-2 » с народными домами и домами культуры 1920-х годов, а заодно — главные пространства Дома культуры и то, чем можно в них заняться людям разных возрастов и интересов. Прогулка охватывает все многообразие произвольных маршрутов: медиатор и участники выбирают точки и темы беседы в свободном и равном диалоге, делая акцент на тех или иных подробностях в зависимости от интересов группы. В турах с 16 по 29 сентября на Левой платформе мы также посмотрим и обсудим финальный показ работ третьего сезона лаборатории « Формы касаний ». Эти произведения сделали художники, которые постоянно проживают в социальных домах. Если вы хотите подробнее узнать об архитект",
+      "price_type": "paid",
+      "availability": "available",
+      "availability_checked_at": "2026-10-01"
     },
     {
       "id": "moscow-2026-10-11-dcf675c7e8",
@@ -17008,6 +17463,33 @@
       "reviewed_at": "2026-09-23"
     },
     {
+      "id": "moscow-2026-10-11-d5623dd3d1",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-11",
+      "time": "14:00",
+      "title": "ГЭС-2 / «ГЭС-2»: архитектурный тур",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": true,
+      "categories": [
+        "медиаторский тур"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/ges-2-ges-2-house-of-culture-architectural-tour",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-01",
+      "audience_text": "› Медиация › Туры Регистрация Билеты на индивидуальный медиаторский тур Дата: с 1 мая 2025 Регистрация Билеты на индивидуальный медиаторский тур Возраст: от 16 Тип: Медиаторский тур Место: Площадь Доступность  Возрастные ограничения 16+ Два облика здания и путь трансформации из электростанции в Дом культуры через призму истории и теории архитектуры, инженерии и геймдизайна. Что такое «Индивидуальный медиаторский тур»?  {\"points\":[{\"id\":4,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":6,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.4,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":5,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} T Здание бывшей электростанции ГЭС-2 существует уже более ста лет. Оригинальный замысел, разработанный архитектором Василием Башкировым, инженером-электротехником Михаилом Поливановым и инженером Николаем Сушкиным воплотился во множестве узнаваемых элементов: центральном нефе с металлическими фермами, шатровой башне, украшениях фасада в неорусском стиле и других. Вплоть до признания объектом культурного наследия регионального значения (2009), здание меняло свой облик: модернизировалось, лишалось навершия башни, обрастало более поздними пристройками, образуя масштабный ансамбль, который, тем не менее, оставался незаметным для горожан. Если вы впервые собираетесь в « ГЭС-2 » и хотите подробнее обсудить устройство культурной институции и текущие программы, приглашаем вас на тур « Знакомство с Домом культуры „ ГЭС-2 “ ». Тур регулярно проходит с переводом на русский жестовый язык. Глухие и слабослышащие люди могут зарегистрироваться, написав на почту access@ges-2.org или номер +7 (963) 996 3687 ( SMS , WhatsApp , Telegram )*. Слышащим посетителям необходимо выбрать билеты на тур, воспользовавшись кнопкой «Регистрация». Именно эту проблему стремился решить Ренцо Пьяно — автор проекта реконструкции « ГЭС-2 », основатель стиля хай-тек в архитектуре и градостроительстве, лауреат Притцкеровской премии и сенатор Итальянской Республики. Следуя принципу genius loci (лат. «гений места») архитектор вернул зданию наиболее приближенный к оригиналу вид, а также расширил идеи предшественников, дополнив их высокотехнологичными решениями в современных конструкциях, материалах и ландшафтных работах. Благодаря Ренцо Пьяно мы можем исследовать архитектуру в ее",
+      "price_type": "paid",
+      "availability": "available",
+      "availability_checked_at": "2026-10-01"
+    },
+    {
       "id": "moscow-2026-10-11-422be2d050",
       "status": "rejected",
       "kind": "event",
@@ -17042,6 +17524,33 @@
       "telegram_include": false
     },
     {
+      "id": "moscow-2026-10-11-869e6a8711",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-11",
+      "time": "15:00",
+      "title": "Как приручить «ГЭС-2»? Медиаторский тур-знакомство для семей с детьми",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/how-to-tame-ges-2",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "excluded_ges2_masterclass",
+      "discovered_at": "2026-10-01",
+      "audience_text": "› Медиация › Туры Дата: с 21 мар 2026 Регистрация Возраст: от 7 Тип: Медиаторский тур Место: Площадь Возрастные ограничения 6+ Исследуем все уголки « ГЭС-2 », пользуясь специальной игровой картой. Авторы тура Дарья Горячева, Ника Карпенко, Анастасия Стреблянская — медиаторы Дома культуры « ГЭС-2 ». T Во время семейного тура посетители вместе с медиатором будут изучать устройство Дома культуры, гуляя по разным частям здания, иногда не самым очевидным. Мы будем внимательно смотреть и слушать, а потом обсуждать увиденное. А чтобы зафиксировать наблюдения и открытия, участники будут работать с картой-схемой. Она поможет ориентироваться в пространстве бывшей электростанции, на ней можно будет отметить найденные места и проложить собственные маршруты. После события карты пригодятся, чтобы продолжить путешествия по « ГЭС-2 » во время следующих посещений — вместе с друзьями и родителями. Фото: Аня Тодич В ходе прогулки мы попробуем по-новому взглянуть на знакомые места: заметить то, что обычно остается в стороне, и представить, какие истории могут скрываться за стенами, лестницами и коридорами. В конце встречи мы пофантазируем о том, что выбрать на роль символа Дома культуры: сказочное существо, герб или, возможно, новую художественную работу. Официальный партнер направления медиации Дома культуры « ГЭС-2 » {\"width\":963,\"column_width\":89,\"columns_n\":9,\"gutter\":20,\"margin\":0,\"line\":10} default true 512 1100 false true false {\"mode\":\"page\",\"transition_type\":\"slide\",\"transition_direction\":\"horizontal\",\"transition_look\":\"belt\",\"slides_form\":{}} {\"css\":\".editor {font-family: Diagramatika Text; font-size: 20px; font-weight: 400; line-height: 20px;}\"} ГЭС-2 Посещение [+] План здания Правила посещения Ателье Игровая Кинотеатр Концертный зал Библиотека Малые своды Магазин Ресторан и кафе Парковка Вокруг Доступность Как нас найти Календарь Программа Направления [+] Практики Медиация Дети и подростки Сообщества Школы Университеты Города Возможности [+] Своды Студии Резиденции Гранты Исследования Издательство  О нас [+] Дом культуры История и архитектура Посещение [+] Календарь Программа Направления [+] Возможности [+] Исследования Издательство О нас [+] Болотная набережная, 15 , Москва Болотная набережная, 15 Москва +7 (495) 990 0000 v - a-c@v - a-c.org  V–A–C Доступность Пресс-офис Вакансии Контакты VK Telegram Youtube  V–A–C Доступность Пресс-офис Вакансии Контакты VK Telegram Youtube Пользовательское соглашение Политика обработки персональных данных Правила посещения П",
+      "price_type": "free",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-01"
+    },
+    {
       "id": "moscow-2026-10-11-5120dd5b06",
       "status": "rejected",
       "kind": "event",
@@ -17074,6 +17583,33 @@
       "reviewed_at": "2026-09-29"
     },
     {
+      "id": "moscow-2026-10-11-6de6981347",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-11",
+      "time": "17:00",
+      "title": "Контуры моды",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": true,
+      "categories": [
+        "медиаторский тур"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/fashion-contours",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-01",
+      "audience_text": "› Медиация › Туры Регистрация Билеты на индивидуальный медиаторский тур Дата: с 6 авг 2025 Регистрация Билеты на индивидуальный медиаторский тур Возраст: от 16 Тип: Медиаторский тур Место: Площадь Доступность  Возрастные ограничения 16+ Участники тура, созданного совместно с брендом LIMÉ , проследят взаимосвязь моды с повседневностью и искусством, используя ассоциативные карты, отсылающие к творчеству известных дизайнеров. Что такое «Индивидуальный медиаторский тур»?  {\"points\":[{\"id\":4,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":6,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.4,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":5,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} T Одежда — это больше чем ткань и крой. Подобно художественному произведению искусства, это зашифрованное послание, где каждый шов или принт рассказывает историю. Почему сегодня мы выбираем oversize , а завтра — обтягивающие силуэты? Как подиумные образы становятся частью нашего гардероба, а уличная мода проникает в музеи? Тур регулярно проходит с переводом на русский жестовый язык. Глухие и слабослышащие люди могут зарегистрироваться, написав на почту access@ges-2.org или номер +7 (963) 996 3687 (SMS, WhatsApp, Telegram)*. Слышащих посетителей просим воспользоваться кнопкой «Регистрация». Иллюстрация: Маша Титова На медиаторском туре мы обратимся к специально созданным ассоциативным картам, которые помогут увидеть неочевидные связи между искусством, модой и повседневностью. Мы рассмотрим культовые показы, расшифруем фирменные паттерны брендов и проследим, как социальные изменения обусловливают тренды. Объединив изучение моды, выставочных проектов и пространства Дома культуры « ГЭС-2 », мы попробуем взглянуть на знакомые вещи по-новому. Официальный партнер направления медиации Дома культуры « ГЭС-2 » Авторы Анастасия Горбунова, Даша Горячева, Ника Карпенко, Карина Чернышова Художник-иллюстратор Маша Титова * Сообщая нам свои личные данные, вы даете согласие на их обработку в соответствии с нашей Политикой в отношении обработки и защиты персональных данных. Дизайнер Мария Виноградова {\"grid\":{\"width\":963,\"column_width\":89,\"columns_n\":9,\"gutter\":20,\"margin\":0,\"line\":10},\"palette\":\"default\",\"responsive_mode\":true,\"responsive_min_width\":512,\"responsive_max_width\":1100,\"colorchanger_fullscreen",
+      "price_type": "paid",
+      "availability": "available",
+      "availability_checked_at": "2026-10-01"
+    },
+    {
       "id": "moscow-2026-10-11-14d1173fbf",
       "status": "new",
       "kind": "event",
@@ -17104,7 +17640,8 @@
       "editor_note": "",
       "instagram_image": "",
       "social_priority": null,
-      "telegram_include": false
+      "telegram_include": false,
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-11-1f26889cb6",
@@ -17347,7 +17884,8 @@
       "editor_note": "",
       "instagram_image": "",
       "social_priority": null,
-      "telegram_include": false
+      "telegram_include": false,
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-10-13-a7d373690c",
@@ -17623,7 +18161,35 @@
       "editor_note": "",
       "instagram_image": "",
       "social_priority": null,
-      "telegram_include": false
+      "telegram_include": false,
+      "reviewed_at": ""
+    },
+    {
+      "id": "moscow-2026-10-13-fcace6108c",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-13",
+      "time": "19:30",
+      "title": "Танец: в процессе создания. Юля Авраменко",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "перформанс"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/easy-a-dance-in-the-making-yulia-avramenko",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-01",
+      "audience_text": "› Программа Проект : Танец: в процессе создания Дата: 13 окт 2026, 19:30–21:00 Регистрация Возраст: от 16 Тип: Танцевальный перформанс Место: Актовый зал Возрастные ограничения 16+ Дуэт о становлении совместности как инстинкта. Обсуждение со зрителями ведет медиатор Дома культуры « ГЭС-2 » Татьяна Мельникова. T В новом проекте под рабочим названием «Сафари» танцхудожница Юля Авраменко вместе с танцовщиком Самиром Макеевым исследует проявление совместности как сексуального инстинкта. Это естественное продолжение ее прошлых работ, в частности перформанса «Мама», в котором она исследовала связь материнского инстинкта и инстинктивного чувства танцовщика. Иллюстрация: Doomvogue Мне интересно проявить, как два человека становятся одним единым и при этом продолжают быть разделенными, как через тело и внимание двое могут совпадать в неслучайных случайностях. Мне кажется, это магические моменты. Так что моя работа и про отношения, и про эмпатию, и про охоту — мне нравится образ хищника, который в процессе охоты и поедания добычи становится тем, кого он ест. — Юля Авраменко Опираясь на танцевальные, соматические и другие контактные практики, а также на тексты Германа Нитча, Йоэля Регева и Эдуардо Кона, Юля ставит вопросы о совместном бытии как опыте совпадений и отражений. Работа дает пространство для танцевальной импровизации, обращенной к совпадениям на разных уровнях восприятия: тактильном и кинестетическом. Кроме того, автор исследует процесс пристального наблюдения, ожидания и накопления энергии в теле, как у хищника перед прыжком, когда цель охоты — это мгновение совместного бытия. Юля Авраменко — танцхудожница, хореограф, преподаватель. Выпускница магистерской программы «Художественные практики современного танца» Академии русского балета имени А. Я. Вагановой. С 2015 года создает художественные проекты, которые были показаны в Самаре, Казани, Владивостоке, Москве и Санкт-Петербурге. С 2019 по 2026 год вела лабораторию практик современного танца K•ART•OFF•L , сотрудничала с галереей «Виктория» и филиалом Третьяковской галереи в Самаре. С 2026 года живет и работает в Санкт-Петербурге. Самир Макеев — танцовщик и перформер. Выпускник Тульского областного колледжа культуры и искусства по специальности «хореографическое творчество». Участник танцевальной компании «Ника» (2021–2025). В качестве исполнителя сотрудничал с такими хореографами, как Дарья Бузовкина, Александр Челидзе, Александр и Виктория Исаковы-Янчевские. Активно развивает современный танец в Туле, со",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-01"
     },
     {
       "id": "russia-2026-10-14-4fc7e7dd9f",
@@ -17758,7 +18324,8 @@
       "editor_note": "",
       "instagram_image": "",
       "social_priority": null,
-      "telegram_include": false
+      "telegram_include": false,
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-14-9dfc8f92b3",
@@ -17827,7 +18394,8 @@
       "editor_note": "",
       "instagram_image": "",
       "social_priority": null,
-      "telegram_include": false
+      "telegram_include": false,
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-14-422be2d050",
@@ -17928,7 +18496,8 @@
       "editor_note": "",
       "instagram_image": "",
       "social_priority": null,
-      "telegram_include": false
+      "telegram_include": false,
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-14-b243361041",
@@ -17993,7 +18562,8 @@
       "editor_note": "",
       "instagram_image": "",
       "social_priority": null,
-      "telegram_include": false
+      "telegram_include": false,
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-10-15-1ad9be15d0",
@@ -18131,6 +18701,40 @@
       "reviewed_at": "2026-09-29"
     },
     {
+      "id": "moscow-2026-10-15-823eca7e69",
+      "status": "approved",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-15",
+      "time": "00:20",
+      "title": "Лекция «Дмитрий Левицкий»",
+      "venue": "Третьяковская галерея",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Мы обрабатываем файлы cookie, чтобы улучшить работу сайта. Оставаясь на сайте, вы соглашаетесь с пользовательским соглашением . Вы можете запретить сохранение cookies в настройках браузера.",
+      "url": "https://www.tretyakovgallery.ru/events/o/lektsiya-dmitriy-levitskiy-10-2026/",
+      "source": "Третьяковская галерея — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-28",
+      "price_type": "paid",
+      "availability": "available",
+      "availability_checked_at": "2026-10-01",
+      "instagram_include": false,
+      "editor_note": "",
+      "social_title": "",
+      "social_priority": null,
+      "social_description": "",
+      "instagram_image": "",
+      "telegram_include": false,
+      "reviewed_at": "2026-09-29"
+    },
+    {
       "status": "approved",
       "editor_note": "Добавлено по свежему анонсу; первоисточник проверен",
       "checked_at": "2026-09-26",
@@ -18197,7 +18801,8 @@
       "editor_note": "",
       "instagram_image": "",
       "social_priority": null,
-      "telegram_include": false
+      "telegram_include": false,
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-10-16-8be918bf24",
@@ -18297,7 +18902,8 @@
       "editor_note": "",
       "instagram_image": "",
       "social_priority": null,
-      "telegram_include": false
+      "telegram_include": false,
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-16-a4e875c14e",
@@ -18600,7 +19206,8 @@
       "editor_note": "",
       "instagram_image": "",
       "social_priority": null,
-      "telegram_include": false
+      "telegram_include": false,
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-19-14d1173fbf",
@@ -18633,7 +19240,8 @@
       "editor_note": "",
       "instagram_image": "",
       "social_priority": null,
-      "telegram_include": false
+      "telegram_include": false,
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-20-14d1173fbf",
@@ -18802,7 +19410,8 @@
       "editor_note": "",
       "instagram_image": "",
       "social_priority": null,
-      "telegram_include": false
+      "telegram_include": false,
+      "reviewed_at": ""
     },
     {
       "status": "approved",
@@ -18937,7 +19546,8 @@
       "editor_note": "",
       "instagram_image": "",
       "social_priority": null,
-      "telegram_include": false
+      "telegram_include": false,
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-10-23-413153c0d6",
@@ -19072,7 +19682,8 @@
       "editor_note": "",
       "instagram_image": "",
       "social_priority": null,
-      "telegram_include": false
+      "telegram_include": false,
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-24-3569cdc778",
@@ -19242,7 +19853,8 @@
       "editor_note": "",
       "instagram_image": "",
       "social_priority": null,
-      "telegram_include": false
+      "telegram_include": false,
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-10-26-fb027d72d2",
@@ -19309,7 +19921,8 @@
       "editor_note": "",
       "instagram_image": "",
       "social_priority": null,
-      "telegram_include": false
+      "telegram_include": false,
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-10-27-385dd4bc2d",
@@ -19580,7 +20193,8 @@
       "editor_note": "",
       "instagram_image": "",
       "social_priority": null,
-      "telegram_include": false
+      "telegram_include": false,
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-30-3470d908a2",
@@ -19684,7 +20298,8 @@
       "editor_note": "",
       "instagram_image": "",
       "social_priority": null,
-      "telegram_include": false
+      "telegram_include": false,
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-11-01-6e82235541",
@@ -19894,7 +20509,8 @@
       "editor_note": "",
       "instagram_image": "",
       "social_priority": null,
-      "telegram_include": false
+      "telegram_include": false,
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-15-fa0fd7ca12",
@@ -20100,7 +20716,8 @@
       "editor_note": "",
       "instagram_image": "",
       "social_priority": null,
-      "telegram_include": false
+      "telegram_include": false,
+      "reviewed_at": ""
     },
     {
       "id": "russia-2026-12-13-3a942b4abf",

@@ -834,6 +834,290 @@
       "max_detail_pages": 140,
       "detail_workers": 10,
       "source_group": "discovery_aggregator"
+    },
+    {
+      "name": "Открытые мастерские — Лиговский 99",
+      "city": "spb",
+      "url": "https://lermontovka-spb.ru/center/otkrytye-masterskie/",
+      "venue": "Открытые мастерские — Лиговский 99",
+      "adapter": "event_links",
+      "href_contains": [
+        "/events/"
+      ],
+      "exclude_paths": [
+        "/",
+        "/events/",
+        "/news/",
+        "/projects/"
+      ],
+      "max_detail_pages": 40,
+      "detail_workers": 4,
+      "source_group": "library"
+    },
+    {
+      "name": "Библиотека комиксов",
+      "city": "spb",
+      "url": "https://lermontovka-spb.ru/center/biblioteka-komiksov/",
+      "venue": "Библиотека комиксов",
+      "adapter": "event_links",
+      "href_contains": [
+        "/events/"
+      ],
+      "exclude_paths": [
+        "/",
+        "/events/",
+        "/news/",
+        "/projects/"
+      ],
+      "max_detail_pages": 40,
+      "detail_workers": 4,
+      "source_group": "library"
+    },
+    {
+      "name": "Библиотека книжной графики",
+      "city": "spb",
+      "url": "https://lermontovka-spb.ru/center/biblioteka-knizhnoy-grafiki/",
+      "venue": "Библиотека книжной графики",
+      "adapter": "event_links",
+      "href_contains": [
+        "/events/"
+      ],
+      "exclude_paths": [
+        "/",
+        "/events/",
+        "/news/",
+        "/projects/"
+      ],
+      "max_detail_pages": 40,
+      "detail_workers": 4,
+      "source_group": "library"
+    },
+    {
+      "name": "Открытая гостиная",
+      "city": "spb",
+      "url": "https://lermontovka-spb.ru/center/otkrytaya-gostinaya/",
+      "venue": "Открытая гостиная",
+      "adapter": "event_links",
+      "href_contains": [
+        "/events/"
+      ],
+      "exclude_paths": [
+        "/",
+        "/events/",
+        "/news/",
+        "/projects/"
+      ],
+      "max_detail_pages": 40,
+      "detail_workers": 4,
+      "source_group": "library"
+    },
+    {
+      "name": "Маяковка в Севкабель Порту",
+      "city": "spb",
+      "url": "https://line-lib.timepad.ru/",
+      "venue": "Маяковка в Севкабель Порту",
+      "adapter": "event_links",
+      "href_contains": [
+        "/event/"
+      ],
+      "exclude_paths": [
+        "/",
+        "/events/",
+        "/news/",
+        "/projects/"
+      ],
+      "max_detail_pages": 40,
+      "detail_workers": 4,
+      "source_group": "library"
+    },
+    {
+      "name": "Лекторий’порт",
+      "city": "spb",
+      "url": "https://lectoriumport.ru/",
+      "venue": "Лекторий’порт",
+      "adapter": "event_links",
+      "href_contains": [
+        "/event/",
+        "/afisha/",
+        "intervalsfest.com"
+      ],
+      "exclude_paths": [
+        "/",
+        "/events/",
+        "/news/",
+        "/projects/"
+      ],
+      "max_detail_pages": 40,
+      "detail_workers": 4,
+      "source_group": "education"
+    },
+    {
+      "name": "Библиотека Маяковского — афиша",
+      "city": "spb",
+      "url": "https://pl.spb.ru/events/",
+      "venue": "Библиотека Маяковского — афиша",
+      "adapter": "event_links",
+      "href_contains": [
+        "/events/"
+      ],
+      "exclude_paths": [
+        "/",
+        "/events/",
+        "/news/",
+        "/projects/"
+      ],
+      "max_detail_pages": 40,
+      "detail_workers": 4,
+      "source_group": "library"
+    },
+    {
+      "name": "Центр манги и комиксов",
+      "city": "spb",
+      "url": "https://cbsfr.ru/manga_center",
+      "venue": "Центр манги и комиксов",
+      "adapter": "event_links",
+      "href_contains": [
+        "/news/",
+        "/events/",
+        "teletype.in/@mangacomicscenter/"
+      ],
+      "exclude_paths": [
+        "/",
+        "/events/",
+        "/news/",
+        "/projects/"
+      ],
+      "max_detail_pages": 40,
+      "detail_workers": 4,
+      "source_group": "library"
+    },
+    {
+      "name": "Борей",
+      "city": "spb",
+      "url": "https://borey.ru/",
+      "venue": "Борей",
+      "adapter": "event_links",
+      "href_contains": [
+        "borey.ru/"
+      ],
+      "exclude_paths": [
+        "/",
+        "/events/",
+        "/news/",
+        "/projects/",
+        "/collection/",
+        "/studio/",
+        "/publishing/",
+        "/bookstore/",
+        "/plan-galerei/",
+        "/borey-books-project/",
+        "/kak-izdat-svoyu-knigu/",
+        "/galereya-parazit/"
+      ],
+      "max_detail_pages": 60,
+      "detail_workers": 4,
+      "source_group": "gallery"
+    },
+    {
+      "name": "Стрит-арт хранение",
+      "city": "spb",
+      "url": "https://street-art-storage.com/projects/",
+      "venue": "Стрит-арт хранение",
+      "adapter": "event_links",
+      "href_contains": [
+        "/projects/",
+        "timepad.ru/event/"
+      ],
+      "exclude_paths": [
+        "/",
+        "/events/",
+        "/news/",
+        "/projects/"
+      ],
+      "max_detail_pages": 40,
+      "detail_workers": 4,
+      "source_group": "gallery"
+    },
+    {
+      "name": "Международная школа дизайна — Петербург",
+      "city": "spb",
+      "url": "https://spb.designschool.ru/sobytiya/",
+      "venue": "Международная школа дизайна — Петербург",
+      "adapter": "event_links",
+      "href_contains": [
+        "spb.designschool.ru/"
+      ],
+      "exclude_paths": [
+        "/",
+        "/sobytiya/",
+        "/study/",
+        "/courses/",
+        "/gallery/",
+        "/contact/",
+        "/faq/",
+        "/about/",
+        "/teachers/",
+        "/distance/"
+      ],
+      "max_detail_pages": 60,
+      "detail_workers": 4,
+      "source_group": "education"
+    },
+    {
+      "name": "Открытые мастерские — официальный Telegram",
+      "city": "spb",
+      "url": "https://t.me/s/omasterskie",
+      "venue": "Открытые мастерские",
+      "adapter": "telegram_channel_events",
+      "source_group": "official_telegram"
+    },
+    {
+      "name": "Библиотека комиксов — официальный Telegram",
+      "city": "spb",
+      "url": "https://t.me/s/comix_library",
+      "venue": "Библиотека комиксов",
+      "adapter": "telegram_channel_events",
+      "source_group": "official_telegram"
+    },
+    {
+      "name": "Открытая гостиная — официальный Telegram",
+      "city": "spb",
+      "url": "https://t.me/s/open_living",
+      "venue": "Открытая гостиная",
+      "adapter": "telegram_channel_events",
+      "source_group": "official_telegram"
+    },
+    {
+      "name": "Лекторий’порт — официальный Telegram",
+      "city": "spb",
+      "url": "https://t.me/s/lectoriumport",
+      "venue": "Лекторий’порт",
+      "adapter": "telegram_channel_events",
+      "source_group": "official_telegram"
+    },
+    {
+      "name": "Библиотека Маяковского — официальный Telegram",
+      "city": "spb",
+      "url": "https://t.me/s/mayakovka",
+      "venue": "Библиотека Маяковского",
+      "adapter": "telegram_channel_events",
+      "source_group": "official_telegram"
+    },
+    {
+      "name": "Стрит-арт хранение — официальный Telegram",
+      "city": "spb",
+      "url": "https://t.me/s/streetartstorage",
+      "venue": "Стрит-арт хранение",
+      "adapter": "telegram_channel_events",
+      "source_group": "official_telegram"
+    },
+    {
+      "name": "Международная школа дизайна — Петербург — официальный Telegram",
+      "city": "spb",
+      "url": "https://t.me/s/spbdesignschool",
+      "venue": "Международная школа дизайна — Петербург",
+      "adapter": "telegram_channel_events",
+      "source_group": "official_telegram"
     }
   ]
 }

@@ -12321,7 +12321,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "free",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-10-02-acb47fea46",
@@ -12347,7 +12355,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-10-02-f3192d9c53",
@@ -12439,7 +12455,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "free",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-10-02-5995f84169",
@@ -12497,7 +12521,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "free",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-10-02-026c00f45d",
@@ -12694,7 +12726,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "free",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-10-02-d170ed50f0",
@@ -12720,7 +12760,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "free",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-10-02-e7d7a7a0a3",
@@ -12746,7 +12794,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "free",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-10-02-e526011734",
@@ -12758,8 +12814,8 @@
       "title": "Хибла Герзмава споёт «Анну Болейн»",
       "venue": "",
       "address": "",
-      "price": null,
-      "price_text": "",
+      "price": 0,
+      "price_text": "Бесплатно",
       "registration": false,
       "categories": [],
       "description": "6 и 8 октября на сцене Мариинского-2 пройдут гастроли Московского академического Музыкального театра имени Станиславского и Немировича-Данченко – гости представят петербургскую премьеру оперы Доницетти «Анна Болейн» с Хиблой Герзмавой в титульной партии.",
@@ -12768,9 +12824,17 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-10-02",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-02-a54110213e",
@@ -12830,7 +12894,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-02-e7982b72fb",
@@ -12867,6 +12939,32 @@
       "reviewed_at": ""
     },
     {
+      "id": "spb-2026-10-02-ab80b01632",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-02",
+      "time": "15:00",
+      "title": "· Презентация «Основы скетчинга» и обсуждение темы «Где современный художник находит заказы, средняя стоимость работ и доходы» (ведёт художница с образованием Вера Николюкина)",
+      "venue": "Открытая гостиная",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "презентация"
+      ],
+      "description": "Мы не учимся «правильно» рисовать — мы учимся видеть и чувствовать. · Скетчинг портретов с натуры (пары, смена ролей, быстрые зарисовки) · Разговор «Что такое арт-терапия» — простыми словами и с примерами (ведёт психолог с образованием, художница-самоучка Полина Ковпак) · Творческая разминка: несколько упражнений, которые «будят» мозг · Психологический тест на креативность (без оценок, для себя) · Знакомства, нетворкинг: каждый желающий рассказывает о себе, своей творческой деятельности, получает возможность презентовать несколько своих работ, соцсети.",
+      "url": "https://otkrytaya-gostinaya.timepad.ru/event/4226182/",
+      "source": "Открытая гостиная — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-10-02",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-02"
+    },
+    {
       "id": "moscow-2026-10-02-c883bc5f7a",
       "status": "new",
       "kind": "event",
@@ -12888,7 +12986,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "paid",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-02-22a7d7c1f0",
@@ -13014,7 +13120,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "paid",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-10-02-2d2787b31f",
@@ -13082,6 +13196,32 @@
       "social_priority": null,
       "telegram_include": false,
       "reviewed_at": ""
+    },
+    {
+      "id": "spb-2026-10-02-e5857c4da2",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-02",
+      "time": "19:15",
+      "title": "В год 120-летия Дмитрия Шостаковича поговорим о его творчестве для кино — музыке, которая стала важной частью истории советского кинематографа. Обсудим, как композитор работал с кинематографом и какую роль его музыка играла в создании экранных образов.",
+      "venue": "Библиотека Маяковского",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "встреча"
+      ],
+      "description": "Шостакович и кино: музыкальные опыты Лектор – Константин Юрьевич Михайлов, старший преподаватель Санкт-Петербургской государственной консерватории имени Н. А. Римского-Корсакова, преподаватель Хорового училища имени М. И. Глинки. Встреча проходит в рамках года петербургской культуры, объявленного по случаю 120-летнего юбилея композитора, при участии Молодёжного совета Комитета по культуре Санкт-Петербурга. • Наб. р. Фонтанки, 44, 1-й этаж, Медиахолл",
+      "url": "https://tsentralnaya-events.timepad.ru/event/4191111/",
+      "source": "Библиотека Маяковского — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-10-02",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-02"
     },
     {
       "status": "approved",
@@ -13244,7 +13384,7 @@
       "review_reason": "",
       "discovered_at": "2026-09-25",
       "price_type": "free",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-02",
       "instagram_include": false,
       "social_title": "",
@@ -13392,6 +13532,30 @@
       "reviewed_at": ""
     },
     {
+      "id": "spb-2026-10-03-f68e69526f",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-03",
+      "time": "14:00",
+      "title": "в Открытой гостиной состоится",
+      "venue": "Открытая гостиная",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "вторая часть лекции «Роберт Шекли. Поздний период творчества». Продолжаем разговор об одном из самых ярких и остроумных фантастов XX века. В центре внимания: поздние десятилетия творчества, время, когда зрелый Шекли продолжал удивлять читателей и создавал свои самые глубокие и неожиданные иронические рассказы. Речь пойдёт не только о знаменитых рассказах, но и о романах и повестях, написанных в тот поздний период научной фантастики. Присоединяйтесь, чтобы узнать, каким был Шекли на позднем этапе своего пути.",
+      "url": "https://otkrytaya-gostinaya.timepad.ru/event/4203623/",
+      "source": "Открытая гостиная — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-10-02",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-02"
+    },
+    {
       "id": "moscow-2026-10-03-e25cf1c326",
       "status": "rejected",
       "kind": "event",
@@ -13447,7 +13611,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-03-8227c07e08",
@@ -13512,6 +13684,32 @@
       "social_priority": null,
       "editor_note": "",
       "instagram_include": false,
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-02"
+    },
+    {
+      "id": "spb-2026-10-03-4a12237755",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-03",
+      "time": "16:30",
+      "title": "Герой романа Гончарова застрял на диване — но был ли он просто «лентяем»? На новой встрече в библиотеке разберем культовый образ глазами психологии: чем Обломов отличается от выгоревшего трудоголика, и где та грань, после которой бездействие становится ловушкой. Вместе с практикующим психологом почитаем любимые страницы, найдем отражение в современной жизни и попробуем честно ответить: «А не Обломов ли я сегодня?».",
+      "venue": "Открытая гостиная",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Будет уютно. Приходите, разберемся, когда стоит встать с дивана, а когда остаться. Ведущая — Анастасия Лукьянова, поведенческий психолог.",
+      "url": "https://otkrytaya-gostinaya.timepad.ru/event/4212526/",
+      "source": "Открытая гостиная — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-10-02",
       "price_type": "unknown",
       "availability": "unknown",
       "availability_checked_at": "2026-10-02"
@@ -14173,6 +14371,32 @@
       "reviewed_at": ""
     },
     {
+      "id": "spb-2026-10-04-b6085bfe07",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-04",
+      "time": "13:00",
+      "title": "В Библиотеке Комиксов (7-я Красноармейская, д.30) пройдет новая встреча комиксистов.",
+      "venue": "Библиотека комиксов",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "встреча"
+      ],
+      "description": "Комикс-Джем — динамичный творческий движ, где главное не результат, а сам процесс совместного творчества. В начале встречи все участники узнают, в каком формате предстоит работать. После этого мы сформируем небольшие команды, в которых людям необходимо будет нарисовать по кадру в комиксе каждого из своих товарищей. В конце встречи все покажут результаты своей работы и мы их обсудим. – рисовательный комикс-клуб, объединяющий как новичков, так и опытных комиксистов в стенах нашей библиотеки практически каждое воскресенье.",
+      "url": "https://vk.ru/away.php?to=https%3A%2F%2Fcomix-library.timepad.ru%2Fevent%2F4221910%2F&amp;utf=1",
+      "source": "Библиотека комиксов — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-10-02",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-02"
+    },
+    {
       "status": "rejected",
       "kind": "event",
       "city": "moscow",
@@ -14489,6 +14713,30 @@
       "editor_note": "Проверено по первоисточнику 26.09.2026."
     },
     {
+      "id": "spb-2026-10-04-1d073b8b09",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-04",
+      "time": "18:30",
+      "title": "Морфология погребального обряда",
+      "venue": "Библиотека Маяковского",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "Смерть можно назвать универсалией человеческой культуры. Относиться к этому можно по-разному, однако, сложно спорить с тем, какой след она оставляет в культуре. Люди осмысляют ее и выражают множеством способов. Наверняка, вам знакомы «смертные» приметы о закрытых окнах или еловых ветвях. Но как именно это связано со смертью? • разберемся в структуре погребального обряда; • поговорим о разных видах погребения; • откроем новый смысл известных примет и атрибутов; • узнаем, зачем на похоронах ставят кутью, блины и кисель.",
+      "url": "https://tsentralnaya-events.timepad.ru/event/4191117/",
+      "source": "Библиотека Маяковского — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-10-02",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-02"
+    },
+    {
       "id": "moscow-2026-10-05-dba338c92d",
       "status": "approved",
       "city": "moscow",
@@ -14614,7 +14862,13 @@
       "availability": "unknown",
       "availability_checked_at": "2026-10-02",
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "social_priority": null,
+      "editor_note": "",
+      "social_title": "",
+      "instagram_image": "",
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-05-14d1173fbf",
@@ -14774,7 +15028,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-10-06-ed530d8639",
@@ -14832,6 +15094,66 @@
       "review_reason": "",
       "discovered_at": "2026-10-02",
       "price_type": "free",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
+    },
+    {
+      "id": "spb-2026-10-06-bf0c137ac7",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-06",
+      "time": "18:30",
+      "title": "Переезд это большое событие, в котором человек очень часто чувствует себя крайне одиноко. И страшнее всего лермонтовское «одиночество в толпе». Когда кажется, что все вокруг знают что делать, куда идти, как и где решать проблемы, справляться с тоской по прежней жизни и открываться новому.",
+      "venue": "Открытая гостиная",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "событие"
+      ],
+      "description": "в Открытой гостиной пройдет круг поддержки на тему «Переезд» с психотерапевткой Асей Гавань. Большая часть людей живущих в нашем городе постоянно — когда-то переехали сюда. Кто-то в 17 лет из-за университета, кто-то в более зрелом возрасте из-за работы. И помимо архитектуры, восторга связанного с красотой города и улучшением жизни, есть ещё и часть, которую приходится оставить. Семью, друзей, связи, знакомые улицы. Приглашаем вас на наш круг поддержки, побыть среди таких же живых, уязвимых людей, у которых тоже был в жизни опыт переезда. Послушать других и высказаться о том, что беспокоит.",
+      "url": "https://otkrytaya-gostinaya.timepad.ru/event/4219473/",
+      "source": "Открытая гостиная — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-10-02",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-02"
+    },
+    {
+      "id": "spb-2026-10-06-64822080cc",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-06",
+      "time": "19:00",
+      "title": "На трёх лекциях Владлен Семёнович Измозик расскажет об истории российской перлюстрации XVIII — начала XX века, работе «чёрных кабинетов» и чиновниках, которые занимались тайным просмотром корреспонденции.",
+      "venue": "наб. р. Фонтанки, 44, 1-й этаж, Медиахолл",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "«Чёрные кабинеты» в Российской империи. Цикл лекций Владлена Семёновича Измозика, доктора исторических наук, профессора Что происходило с письмами, которые отправляли по почте в Российской империи? Перлюстрация — тайное вскрытие корреспонденции — была одной из самых охраняемых государственных тайн. Лекция. «Чёрные кабинеты» в Российской империи. XVIII — начало XX веков Где: наб. р. Фонтанки, 44, 1-й этаж, Медиахолл Поговорим о том, как возникла и развивалась система перлюстрации, как вскрывали частную и дипломатическую переписку, какие курьёзные случаи происходили в этой работе и почему её счи",
+      "url": "https://tsentralnaya-events.timepad.ru/event/4192392/",
+      "source": "Библиотека Маяковского — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-10-02",
+      "price_type": "unknown",
       "availability": "unknown",
       "availability_checked_at": "2026-10-02"
     },
@@ -14974,6 +15296,32 @@
       "availability_checked_at": "2026-10-02"
     },
     {
+      "id": "spb-2026-10-07-8a133b0f0d",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-07",
+      "time": "12:00",
+      "title": ". Гостей ждёт экскурсия по библиотеке и практика в оставшееся время.",
+      "venue": "Открытая гостиная",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "библиотечный центр общения «Современник» Клуб рисующих библиотекарей (КрБ) — это продолжение проекта «Вебтюнь» МЦБС им. М. Ю. Лермонтова в формате нетворкинг-сообщества. Мы собираемся два раза в месяц по средам в библиотеках города, чтобы вместе творить и общаться. Одна встреча в месяц будет проходить на базе Открытой гостиной, вторая в библиотеке одной из участниц клуба. • Подробности о работе клуба и глобальных планах на остаток года читайте в закрепах нашего чата: • По любым другим вопросам о работе клуба пишите в чат;",
+      "url": "https://otkrytaya-gostinaya.timepad.ru/event/4225991/",
+      "source": "Открытая гостиная — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-02",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-02"
+    },
+    {
       "id": "moscow-2026-10-07-ad5480ce53",
       "status": "new",
       "kind": "event",
@@ -14997,7 +15345,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "free",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-07-14d1173fbf",
@@ -15032,6 +15388,32 @@
       "social_priority": null,
       "telegram_include": false,
       "reviewed_at": ""
+    },
+    {
+      "id": "spb-2026-10-07-a5703bfdc7",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-07",
+      "time": "18:30",
+      "title": "И первая встреча будет приурочена прошедшему Дню Бэтмена и посвящена безумному кроссоверу — мультфильму «Бэтмен против Дракулы» (2005).",
+      "venue": "Библиотека комиксов",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "встреча"
+      ],
+      "description": "Экранизировано: «Бэтмен против Дракулы» Мы запускаем кинолекторий, посвящённый экранизациям и адаптациям комиксов и манги, а также фильмам и мультфильмам, связанным с комикс-индустрией. В октябрьский вечер мы с головой погрузимся в атмосферу мрачной и кровавой истории, в которой встретились (столкнулись) два главных символа мрачности, отчуждённости и амбассадора летучьих мышей, стильных плащей и любителей ночного образа жизни — Бэтмен и Дракула! Поговорим о комиксах, в которых Бэтмен сталкивался с Дракулой, вспомним о давней связи двух поп-культурных икон и пройдемся по другим колоритным проти",
+      "url": "https://t.me/comix_library/2827",
+      "source": "Библиотека комиксов — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-10-02",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-02"
     },
     {
       "status": "approved",
@@ -15103,6 +15485,30 @@
       "availability_checked_at": "2026-10-02"
     },
     {
+      "id": "spb-2026-10-07-8212c9b882",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-07",
+      "time": "19:00",
+      "title": "Открытой гостиной в пройдёт",
+      "venue": "Открытая гостиная",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "обмен литературой на иностранных языках. Приносите книгу, с которой готовы расстаться, чтобы подарить ей новую жизнь. Расскажите о любимой книге и узнайте чужие истории. Найдите ту самую, что будет ждать именно вас. Вас ждёт расслабленная, неформальная обстановка, где можно общаться, знакомиться или просто молча поменять книжки, если сегодня такое настроение.",
+      "url": "https://otkrytaya-gostinaya.timepad.ru/event/4216032/",
+      "source": "Открытая гостиная — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-10-02",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-02"
+    },
+    {
       "id": "moscow-2026-10-07-83bf876191",
       "status": "new",
       "kind": "event",
@@ -15160,7 +15566,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "free",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-08-c56f49b305",
@@ -15685,7 +16099,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "paid",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-10-08-a283b39647",
@@ -15719,6 +16141,32 @@
       "availability_checked_at": "2026-10-02"
     },
     {
+      "id": "spb-2026-10-08-58e62a0194",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-08",
+      "time": "18:30",
+      "title": "Этим летом в Каннах прошёл самый престижный фестиваль в сфере рекламы \"Каннские Львы\". Реклама — это уже давно не просто призыв \"купить что-то\". Реклама может быть социальной, может быть навязчивой, незаметной, шокирующей, смешной и, в конце концов, настоящим произведением искусства! Приглашаю вас обсудить успешную и провальную, интересную или яркую рекламу на английском языке!",
+      "venue": "Открытая гостиная",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "фестиваль"
+      ],
+      "description": "Мероприятие пройдёт на английском языке. Желаемый уровень знаний для участия — В2. Ведущая — Ольга Обрывалина, преподаватель английского языка, лингвист-переводчик и автор канала о языках",
+      "url": "https://otkrytaya-gostinaya.timepad.ru/event/4224209/",
+      "source": "Открытая гостиная — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-10-02",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-02"
+    },
+    {
       "id": "moscow-2026-10-08-d8e15293e8",
       "status": "new",
       "kind": "event",
@@ -15742,7 +16190,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "free",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-08-19606f2101",
@@ -15766,7 +16222,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "free",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-08-f8072f8992",
@@ -15826,7 +16290,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "free",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-08-9cc379a143",
@@ -16090,7 +16562,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "paid",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-09-14d1173fbf",
@@ -16150,7 +16630,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "free",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-10-09-c1dd3b1c56",
@@ -16308,6 +16796,40 @@
       "discovered_at": "2026-10-02",
       "price_type": "free",
       "availability": "unknown",
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
+    },
+    {
+      "id": "spb-2026-10-09-ac1bcf9155",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-09",
+      "time": "18:30",
+      "title": "лекция «Этнографическая фотография: как запечатлевали народную культуру сто лет назад?».",
+      "venue": "Открытая гостиная",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "в Открытой гостиной пройдет Может ли простой фотоснимок рассказать о целой эпохе больше, чем страницы текста? Поговорим о том, как возникла этнографическая съемка, зачем она понадобилась науке и чем оказалась ценна для сохранения народной культуры — от костюмов и обрядов до повседневного быта. Разберемся, в каких условиях работали фотографы-этнографы и в чем была специфика съемки. Вглядимся в архивные кадры и сквозь время увидим тех, кто жил сто лет назад: дедушку в окружении внуков, кочевников, разбирающих юрту, невесту, волнующуюся перед свадьбой, мастеров-кустарей, поглощенных своим делом.",
+      "url": "https://otkrytaya-gostinaya.timepad.ru/event/4217660/",
+      "source": "Открытая гостиная — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-10-02",
+      "price_type": "unknown",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-02"
     },
     {
@@ -16366,7 +16888,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "free",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-09-9c4e5a2ad1",
@@ -16392,7 +16922,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "free",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-09-d06bdbac9d",
@@ -16457,6 +16995,30 @@
       "social_priority": null,
       "editor_note": "",
       "instagram_include": false,
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-02"
+    },
+    {
+      "id": "spb-2026-10-09-be54828e79",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-09",
+      "time": "19:15",
+      "title": "Россия на выставке в Париже",
+      "venue": "Библиотека Маяковского",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "В 1900 году Россия приняла участие во Всемирной выставке в Париже, представив свои достижения в экономике и культуре. Итогом стали 1589 наград, а российская экспозиция разместилась в 17 из 18 павильонов благодаря организаторским способностям Генерального комиссара Русского отдела князя В. Н. Тенишева. На встрече посмотрим видеохронику Парижской выставки и её торжественного открытия, совершим виртуальное путешествие в Павильон Русских окраин и узнаем, как всего за 30 минут можно было попасть из Парижа в Сибирь.",
+      "url": "https://tsentralnaya-events.timepad.ru/event/4192306/",
+      "source": "Библиотека Маяковского — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-10-02",
       "price_type": "unknown",
       "availability": "unknown",
       "availability_checked_at": "2026-10-02"
@@ -16826,7 +17388,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-10-10-6274d9b2ae",
@@ -17123,7 +17693,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "paid",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-10-e25cf1c326",
@@ -17158,6 +17736,30 @@
       "social_priority": null,
       "social_description": "",
       "reviewed_at": "2026-09-27"
+    },
+    {
+      "id": "spb-2026-10-10-a7c4aff1b4",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-10",
+      "time": "16:00",
+      "title": "Креативное письмо. Как оседлать метамодерн?",
+      "venue": "Библиотека Маяковского",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "Постмодерн уже научил нас ломать четвёртую стену, путать хронологию, вставлять в роман документы, сноски, чужие тексты и ненадёжных рассказчиков. Но что делать дальше? Современная литература снова поворачивается к герою, эмоции и хорошо рассказанной истории — только уже не отказываясь от всего арсенала литературных экспериментов. На лекции поговорим о том, как писать необычно, не превращая текст в головоломку ради головоломки. — что такое «брешь» Роберта Макки и как превратить простое действие героя в полноценную историю;",
+      "url": "https://tsentralnaya-events.timepad.ru/event/4201719/",
+      "source": "Библиотека Маяковского — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-10-02",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-10-6de6981347",
@@ -17526,7 +18128,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-10-11-94108f9818",
@@ -18265,7 +18875,13 @@
       "availability": "unknown",
       "availability_checked_at": "2026-10-02",
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "social_priority": null,
+      "editor_note": "",
+      "social_title": "",
+      "instagram_image": "",
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-12-eebb063dbc",
@@ -18361,7 +18977,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "free",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-12-14d1173fbf",
@@ -18421,7 +19045,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "free",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-10-13-a7d373690c",
@@ -19020,7 +19652,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "free",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-14-adb94a2fdd",
@@ -19148,7 +19788,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "free",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-14-b243361041",
@@ -19379,7 +20027,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-15-934d534304",
@@ -19473,7 +20129,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-15-6d8f1e6c5b",
@@ -19671,7 +20335,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "free",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-15-1b2996abe8",
@@ -19697,7 +20369,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "paid",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-15-14d1173fbf",
@@ -19765,6 +20445,30 @@
       "instagram_image": "",
       "telegram_include": false,
       "instagram_include": false
+    },
+    {
+      "id": "spb-2026-10-16-7610db9f22",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-16",
+      "time": "",
+      "title": "Второй год подряд мы становится площадкой для Международного фестиваля кино о ментальном здоровье",
+      "venue": "Лекторий’порт",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [],
+      "description": "",
+      "url": "https://mentalfilmfest.com/catalog?city=spb&amp;place=%D0%BB%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%B8%D0%B9%E2%80%99%D0%BF%D0%BE%D1%80%D1%82",
+      "source": "Лекторий’порт — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-10-02",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-02"
     },
     {
       "id": "spb-2026-10-16-8be918bf24",
@@ -19926,7 +20630,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "paid",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-10-16-41c2fb9b16",
@@ -20053,7 +20765,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "free",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-16-14d1173fbf",
@@ -20214,7 +20934,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "free",
       "availability": "available",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-17-54d5563287",
@@ -20565,7 +21293,15 @@
       "audience_text": "› Программа Дата: 3– 19 окт 2026 Возраст: от 12 Тип: Музыкальная программа Место: Актовый зал Доступность  Возрастные ограничения 12+ Лучшие российские пианисты реконструируют легендарный цикл Антона Рубинштейна. T В сезоне 1885/1886 великий русский пианист Антон Рубинштейн проделал уникальный, единственный в своем роде эксперимент над собой и публикой — он сыграл собственную версию истории музыки в семи главах. Каждая из сольных программ выстраивалась как многочасовой марафон, бросая вызов и возможностям исполнителя, и восприятию слушателя, и привычному концертному формату. Традиционным антрактам Рубинштейн предпочитал короткие перерывы, но зачастую обходился и вовсе без них, объединяя части программы в единую метакомпозицию импровизационными связками. Впервые прозвучавшие в Берлине, а затем представленные в Вене, Петербурге, Москве, Лейпциге, Париже и Лондоне, «Исторические концерты» по сей день остаются одним из самых радикальных художественных жестов, когда-либо осуществленных на музыкальной сцене. Программа  {\"points\":[{\"id\":4,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":6,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.4,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":5,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} Билеты на все концерты можно купить заранее со скидкой. Стоимость льготного билета не меняется и составляет 1200 руб. Цикл Рубинштейна хронологически прослеживал эволюцию клавирной музыки от барокко до позднего романтизма и предлагал расслышать в смене эстетических направлений и стилей единый художественный нарратив. Просветительские проекты, которые знакомили публику с ходом развития искусства и наводили мосты между прошлым и настоящим, были привычным явлением для европейской музыкальной жизни XIX века. Однако «Исторические концерты» резко выделялись из контекста времени — и стилевой широтой репертуара, и беспрецедентным масштабом замысла. По сути, Рубинштейн вплотную подошел к изобретению современного музыкального кураторства. 140 лет спустя Дом культуры « ГЭС-2 » и Центр наследия Антона Рубинштейна впервые предпринимают попытку реконструкции легендарного цикла. На протяжении семи вечеров семь программ «Исторических концертов» будут последовательно исполнены в Актовом зале сборной ведущих российских пианистов наших дней — вызов Рубинштейна п",
       "price_type": "paid",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-18-71392b2a4d",
@@ -20693,7 +21429,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "free",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-18-550f9318dc",
@@ -20720,7 +21464,15 @@
       "audience_text": "› Практики › игровые Дата: 6 сен– 27 дек 2026 Регистрация Возраст: от 16 Тип: Кружок Место: Классы Возрастные ограничения 16+ Регулярные встречи любителей современных настольных игр с участием опытного инструктора. T Уже несколько лет на Платформах « ГЭС-2 » можно познакомиться с сообществами любителей разных настольных игр и просто поиграть в шахматы и настолки . Задача Клуба — сформировать постоянное сообщество в Доме культуры, популяризовать лучшие произведения игростроения и усилить влияние Дома культуры как институции, дружественной большой городской аудитории энтузиастов настольных игр. Расписание 6, 20 сен, 3, 18 окт, 1, 15, 29 ноя, 13, 27 дек Встречи проходят с 14:00 до 21:00. Фото: Аня Тодич Отличительной особенностью Клуба станет новая разветвленная система определения лучшего игрока сезона и чемпионов в отдельных дисциплинах. Результаты всех матчей будут фиксироваться на специальных бланках, заверяться инструктором и передаваться в счетную комиссию для создания клубного рейтинга игроков и выявления победителей в разных номинациях. Система начисления очков разработана с учетом количества участников, среднего времени одной партии и сложности игры. Ведущим Клуба станет Александр Марк, известный по прошлогоднему проекту « Книжный куб ». Он выбрал игры, которые будут доступны на встречах. Присоединиться можно в любой момент. Новички смогут пройти обучение по выбранной игре. Лучшие игроки по итогам сезона будут награждены на специальной церемонии в конце года. Система начисления очков в Клубе настольных игр \" ГЭС-2  {\"points\":[{\"id\":1,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":3,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.4,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":2,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} Номинации 1. Абсолютный чемпион клуба — игрок, набравший наибольшее количество очков по результатам всех клубов. 2. Абсолютный тяжеловес — больше всего побед в сложных играх. 3. Абсолютный легковес — больше всего побед в легких играх. 4. FFA (сам за себя) — больше всего побед в партиях с пятью участниками и больше. 6. Душа клуба — посетивший больше всего встреч сезона. 7. Современный шумер — больше всего очков, набранных в самой древней игре, царской игре Ура. Ведущий Александр Марк — основатель и ведущий сообщества современных настольн",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-10-18-45c10ca222",
@@ -20780,7 +21532,15 @@
       "audience_text": "› Программа Дата: 3– 19 окт 2026 Возраст: от 12 Тип: Музыкальная программа Место: Актовый зал Доступность  Возрастные ограничения 12+ Лучшие российские пианисты реконструируют легендарный цикл Антона Рубинштейна. T В сезоне 1885/1886 великий русский пианист Антон Рубинштейн проделал уникальный, единственный в своем роде эксперимент над собой и публикой — он сыграл собственную версию истории музыки в семи главах. Каждая из сольных программ выстраивалась как многочасовой марафон, бросая вызов и возможностям исполнителя, и восприятию слушателя, и привычному концертному формату. Традиционным антрактам Рубинштейн предпочитал короткие перерывы, но зачастую обходился и вовсе без них, объединяя части программы в единую метакомпозицию импровизационными связками. Впервые прозвучавшие в Берлине, а затем представленные в Вене, Петербурге, Москве, Лейпциге, Париже и Лондоне, «Исторические концерты» по сей день остаются одним из самых радикальных художественных жестов, когда-либо осуществленных на музыкальной сцене. Программа  {\"points\":[{\"id\":4,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":6,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.4,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":5,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} Билеты на все концерты можно купить заранее со скидкой. Стоимость льготного билета не меняется и составляет 1200 руб. Цикл Рубинштейна хронологически прослеживал эволюцию клавирной музыки от барокко до позднего романтизма и предлагал расслышать в смене эстетических направлений и стилей единый художественный нарратив. Просветительские проекты, которые знакомили публику с ходом развития искусства и наводили мосты между прошлым и настоящим, были привычным явлением для европейской музыкальной жизни XIX века. Однако «Исторические концерты» резко выделялись из контекста времени — и стилевой широтой репертуара, и беспрецедентным масштабом замысла. По сути, Рубинштейн вплотную подошел к изобретению современного музыкального кураторства. 140 лет спустя Дом культуры « ГЭС-2 » и Центр наследия Антона Рубинштейна впервые предпринимают попытку реконструкции легендарного цикла. На протяжении семи вечеров семь программ «Исторических концертов» будут последовательно исполнены в Актовом зале сборной ведущих российских пианистов наших дней — вызов Рубинштейна п",
       "price_type": "paid",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-18-1f26889cb6",
@@ -20843,7 +21603,13 @@
       "availability": "unknown",
       "availability_checked_at": "2026-10-02",
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "social_priority": null,
+      "editor_note": "",
+      "social_title": "",
+      "instagram_image": "",
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-19-eebb063dbc",
@@ -20897,7 +21663,15 @@
       "audience_text": "› Программа Дата: 3– 19 окт 2026 Возраст: от 12 Тип: Музыкальная программа Место: Актовый зал Доступность  Возрастные ограничения 12+ Лучшие российские пианисты реконструируют легендарный цикл Антона Рубинштейна. T В сезоне 1885/1886 великий русский пианист Антон Рубинштейн проделал уникальный, единственный в своем роде эксперимент над собой и публикой — он сыграл собственную версию истории музыки в семи главах. Каждая из сольных программ выстраивалась как многочасовой марафон, бросая вызов и возможностям исполнителя, и восприятию слушателя, и привычному концертному формату. Традиционным антрактам Рубинштейн предпочитал короткие перерывы, но зачастую обходился и вовсе без них, объединяя части программы в единую метакомпозицию импровизационными связками. Впервые прозвучавшие в Берлине, а затем представленные в Вене, Петербурге, Москве, Лейпциге, Париже и Лондоне, «Исторические концерты» по сей день остаются одним из самых радикальных художественных жестов, когда-либо осуществленных на музыкальной сцене. Программа  {\"points\":[{\"id\":4,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":6,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.4,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":5,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} Билеты на все концерты можно купить заранее со скидкой. Стоимость льготного билета не меняется и составляет 1200 руб. Цикл Рубинштейна хронологически прослеживал эволюцию клавирной музыки от барокко до позднего романтизма и предлагал расслышать в смене эстетических направлений и стилей единый художественный нарратив. Просветительские проекты, которые знакомили публику с ходом развития искусства и наводили мосты между прошлым и настоящим, были привычным явлением для европейской музыкальной жизни XIX века. Однако «Исторические концерты» резко выделялись из контекста времени — и стилевой широтой репертуара, и беспрецедентным масштабом замысла. По сути, Рубинштейн вплотную подошел к изобретению современного музыкального кураторства. 140 лет спустя Дом культуры « ГЭС-2 » и Центр наследия Антона Рубинштейна впервые предпринимают попытку реконструкции легендарного цикла. На протяжении семи вечеров семь программ «Исторических концертов» будут последовательно исполнены в Актовом зале сборной ведущих российских пианистов наших дней — вызов Рубинштейна п",
       "price_type": "paid",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-19-7cf575da34",
@@ -20921,7 +21695,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-19-40aac17a0e",
@@ -20945,7 +21727,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "free",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-19-14d1173fbf",
@@ -21030,7 +21820,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "free",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-20-b607d0e197",
@@ -21143,7 +21941,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "free",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-20-14d1173fbf",
@@ -21203,7 +22009,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "free",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-10-20-c485253d20",
@@ -21260,7 +22074,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "free",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-10-20-d6b5a6d1fa",
@@ -21449,7 +22271,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "free",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-21-8dc1d097f3",
@@ -21475,7 +22305,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "free",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-10-21-6274d9b2ae",
@@ -21566,7 +22404,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "free",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-10-21-1e9bde00e7",
@@ -21856,7 +22702,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "free",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-22-477dfdecdb",
@@ -21882,7 +22736,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "paid",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-10-22-c05f7669d2",
@@ -21939,7 +22801,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "free",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-22-05c67d7f07",
@@ -21966,7 +22836,13 @@
       "availability": "available",
       "availability_checked_at": "2026-10-02",
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "social_priority": null,
+      "editor_note": "",
+      "social_title": "",
+      "instagram_image": "",
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-10-23-413153c0d6",
@@ -22165,7 +23041,15 @@
       "audience_text": "› Малые своды Дата: 18 сен– 22 ноя 2026 Возраст: от 16 Тип: Лаборатория Место: Малые своды Возрастные ограничения 16+ Танцевально-перформативная лаборатория, совмещенная с анализом работ по современной философии и антропологии. Расписание  {\"points\":[{\"id\":4,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":6,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.4,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":5,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} T Основной вопрос, которым предлагает задаться ведущая Мария Яшникова: как научиться действовать через удовольствие, желание, а не из привычных регистров «нужно» или «можно»? Таким образом художница предлагает найти способы сосуществования с другими людьми в разных ситуациях и научиться осознанно влиять на различные сферы своей жизни — бытовую, рабочую, романтическую, социальную и др. Чтобы принять участие в лаборатории, пришлите* письмо с темой «Под ногами мягкий пол» на community@v-a-c.org до 14 сентября включительно. Приложите к нему видео танца длительностью 3-5 минут, в котором вы несколько раз повторяете комбинацию из простых движений (шаг, поворот головы, разворот и др.) и импровизируете со словами «желание» или «расширение». Также расскажите в письме, почему вы хотите участвовать в лаборатории. Не забудьте указать ваши имя и контакты для обратной связи (телефон, мессенджер и т.д.). Чтобы вам было комфортно, возьмите с собой удобную одежду и сменную обувь или нескользящие носки. В Малых сводах есть раздевалка с локерами и душ, где можно освежиться после практики. Фото: Вадим Штэйн Задача лаборатории — обнаружить желание внутри себя, а не в «зеркале другого», найти путь к телу изменяющемуся: действующему, готовому, нежному, сильному, расслабленному, широкому, звонкому, спокойному. Радость тут в том, что это желание существует, даже когда не артикулируется нами осознанно. Кроме соматических практик мы обратимся к текстам философов и антропологов ХХ—ХХI веков, таким как «Посткапиталистическое желание. Последние лекции» Марка Фишера, «Слушание» и «Как жить вместе» Ролана Барта, «Каннибальские метафизики» Эдуарду Вивейруш де Кастру и «Линии: краткая история» Тима Ингольда. — Мария Яшникова Чтобы научиться различать множество информационных потоков, которые влияют на наши решения, участники сосредоточат внимание на д",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-23-aa8503e63c",
@@ -22322,7 +23206,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-23-7ad9fb1762",
@@ -22348,7 +23240,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "free",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-23-591549b456",
@@ -22372,7 +23272,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "paid",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-24-3569cdc778",
@@ -22628,7 +23536,15 @@
       "audience_text": "› Малые своды Дата: 18 сен– 22 ноя 2026 Возраст: от 16 Тип: Лаборатория Место: Малые своды Возрастные ограничения 16+ Танцевально-перформативная лаборатория, совмещенная с анализом работ по современной философии и антропологии. Расписание  {\"points\":[{\"id\":4,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":6,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.4,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":5,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} T Основной вопрос, которым предлагает задаться ведущая Мария Яшникова: как научиться действовать через удовольствие, желание, а не из привычных регистров «нужно» или «можно»? Таким образом художница предлагает найти способы сосуществования с другими людьми в разных ситуациях и научиться осознанно влиять на различные сферы своей жизни — бытовую, рабочую, романтическую, социальную и др. Чтобы принять участие в лаборатории, пришлите* письмо с темой «Под ногами мягкий пол» на community@v-a-c.org до 14 сентября включительно. Приложите к нему видео танца длительностью 3-5 минут, в котором вы несколько раз повторяете комбинацию из простых движений (шаг, поворот головы, разворот и др.) и импровизируете со словами «желание» или «расширение». Также расскажите в письме, почему вы хотите участвовать в лаборатории. Не забудьте указать ваши имя и контакты для обратной связи (телефон, мессенджер и т.д.). Чтобы вам было комфортно, возьмите с собой удобную одежду и сменную обувь или нескользящие носки. В Малых сводах есть раздевалка с локерами и душ, где можно освежиться после практики. Фото: Вадим Штэйн Задача лаборатории — обнаружить желание внутри себя, а не в «зеркале другого», найти путь к телу изменяющемуся: действующему, готовому, нежному, сильному, расслабленному, широкому, звонкому, спокойному. Радость тут в том, что это желание существует, даже когда не артикулируется нами осознанно. Кроме соматических практик мы обратимся к текстам философов и антропологов ХХ—ХХI веков, таким как «Посткапиталистическое желание. Последние лекции» Марка Фишера, «Слушание» и «Как жить вместе» Ролана Барта, «Каннибальские метафизики» Эдуарду Вивейруш де Кастру и «Линии: краткая история» Тима Ингольда. — Мария Яшникова Чтобы научиться различать множество информационных потоков, которые влияют на наши решения, участники сосредоточат внимание на д",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-10-25-4adb73b149",
@@ -22723,7 +23639,15 @@
       "audience_text": "› Малые своды Дата: 18 сен– 22 ноя 2026 Возраст: от 16 Тип: Лаборатория Место: Малые своды Возрастные ограничения 16+ Танцевально-перформативная лаборатория, совмещенная с анализом работ по современной философии и антропологии. Расписание  {\"points\":[{\"id\":4,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":6,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.4,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":5,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} T Основной вопрос, которым предлагает задаться ведущая Мария Яшникова: как научиться действовать через удовольствие, желание, а не из привычных регистров «нужно» или «можно»? Таким образом художница предлагает найти способы сосуществования с другими людьми в разных ситуациях и научиться осознанно влиять на различные сферы своей жизни — бытовую, рабочую, романтическую, социальную и др. Чтобы принять участие в лаборатории, пришлите* письмо с темой «Под ногами мягкий пол» на community@v-a-c.org до 14 сентября включительно. Приложите к нему видео танца длительностью 3-5 минут, в котором вы несколько раз повторяете комбинацию из простых движений (шаг, поворот головы, разворот и др.) и импровизируете со словами «желание» или «расширение». Также расскажите в письме, почему вы хотите участвовать в лаборатории. Не забудьте указать ваши имя и контакты для обратной связи (телефон, мессенджер и т.д.). Чтобы вам было комфортно, возьмите с собой удобную одежду и сменную обувь или нескользящие носки. В Малых сводах есть раздевалка с локерами и душ, где можно освежиться после практики. Фото: Вадим Штэйн Задача лаборатории — обнаружить желание внутри себя, а не в «зеркале другого», найти путь к телу изменяющемуся: действующему, готовому, нежному, сильному, расслабленному, широкому, звонкому, спокойному. Радость тут в том, что это желание существует, даже когда не артикулируется нами осознанно. Кроме соматических практик мы обратимся к текстам философов и антропологов ХХ—ХХI веков, таким как «Посткапиталистическое желание. Последние лекции» Марка Фишера, «Слушание» и «Как жить вместе» Ролана Барта, «Каннибальские метафизики» Эдуарду Вивейруш де Кастру и «Линии: краткая история» Тима Ингольда. — Мария Яшникова Чтобы научиться различать множество информационных потоков, которые влияют на наши решения, участники сосредоточат внимание на д",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-25-d10c5d9596",
@@ -22747,7 +23671,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "free",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-25-13fa912f27",
@@ -22773,7 +23705,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-10-25-7fbe864a32",
@@ -23024,6 +23964,38 @@
       "discovered_at": "2026-10-02",
       "price_type": "unknown",
       "availability": "unknown",
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
+    },
+    {
+      "id": "spb-2026-10-26-553aaae4cb",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-26",
+      "time": "18:00",
+      "title": "Сегодня успех дизайнера все чаще зависит не только от хорошего вкуса и насмотренности, но и от умения использовать нейросети как профессиональный инструмент.",
+      "venue": "Международная школа дизайна — Петербург",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "Именно сейчас это особенно важно: рынок дизайна стремительно меняется, а ожидания заказчиков растут. Им нужны не просто красивые визуализации, а скорость, вариативность, точность и убедительная концепция, которую можно быстро показать, обсудить и развить в сильное решение. Приглашаем на наш практический курс «Нейросети в дизайне интерьеров и экстерьеров» с Анной Шишенко. Наш вебинар про практическое применение ИИ на разных этапах работы над проектом — от работы с брифом и анализа до концепции, референсов, визуализации, видео и коммуникации с заказчиком.",
+      "url": "https://t.me/spbdesignschool/6995",
+      "source": "Международная школа дизайна — Петербург — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-10-02",
+      "price_type": "unknown",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-02"
     },
     {
@@ -23149,7 +24121,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "free",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-26-f157f04325",
@@ -23366,7 +24346,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "free",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-27-14d1173fbf",
@@ -23426,7 +24414,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "free",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-27-17d40d2f82",
@@ -23477,7 +24473,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-28-9dfc8f92b3",
@@ -23564,7 +24568,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "paid",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-28-93c9532bcf",
@@ -23590,7 +24602,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "free",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-10-28-e264866514",
@@ -23745,7 +24765,15 @@
       "audience_text": "› Дети и подростки Проект : Натюрморт. Портрет. Пейзаж. После жанра Дата: 29 окт– 1 ноя 2026 Возраст: 12-15 Тип: Кружок Место: Классы Возрастные ограничения 12+ Интенсив-исследование окружающих нас вещей с самых неожиданных сторон. Занятия проходят с 29 октября по 1 ноября ежедневно с 15:00 до 19:00. Чтобы присоединиться к кружку, напишите нам* в телеграм @ges2kidsandteens или на почту kids@v-a-c.org с темой письма «Это не предмет». Расскажите, почему вы хотите участвовать, какая художественная практика вам ближе всего, какой предмет вы бы взяли с собой на необитаемый остров и почему. Не забудьте указать ваши имя, фамилию и возраст, а также телефон для связи. T Что, если самые обычные предметы — совсем не то, чем кажутся? На этом интенсиве мы попробуем взглянуть на них по-новому, глазами художников, дизайнеров и исследователей. Мы будем много рисовать, экспериментировать, задавать неожиданные вопросы, искать скрытые возможности и придумывать идеи. Исследуем, как форма связана с функцией, что происходит с предметом, когда он теряет свое назначение, и почему один и тот же объект может рассказывать разные истории в зависимости от того, где и в каких обстоятельствах мы его встречаем. За вдохновением обратимся к выставке « Натюрморт. Портрет. Пейзаж. После жанра », книгам из Библиотеки « ГЭС-2 », а также к экономике, социальным наукам, географии и истории искусства и дизайна. Все этапы исследования найдут отражение в личном арт-буке — дневнике наблюдений, вопросов, зарисовок и творческих экспериментов. Итогом курса станет собственный художественный или дизайнерский проект, в котором каждый участник предложит свое переосмысление выбранного объекта. Кружок подойдет для подростков 12–15 лет с разным художественным опытом, которые хотят освоить инструменты визуального исследования, развить творческое мышление и научиться видеть то, что обычно остается незамеченным. Ведущая Виктория Щербенко — преподаватель предмета «Искусство» на английском языке, педагог творческих и теоретических занятий в музеях Москвы, автор интерактивных путеводителей по выставкам и экспозициям Музея современного искусства «Гараж», Новой Третьяковки, Дома культуры « ГЭС-2 ». * Пожалуйста, обратите внимание: сообщая нам свои личные данные, вы даете согласие на их обработку в соответствии с нашей Политикой в отношении обработки и защиты персональных данных . {\"grid\":{\"width\":963,\"column_width\":89,\"columns_n\":9,\"gutter\":20,\"margin\":0,\"line\":10},\"palette\":\"default\",\"responsive_mode\":true,\"responsi",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-29-14d1173fbf",
@@ -23871,7 +24899,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "free",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-29-05c67d7f07",
@@ -23898,7 +24934,13 @@
       "availability": "available",
       "availability_checked_at": "2026-10-02",
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "social_priority": null,
+      "editor_note": "",
+      "social_title": "",
+      "instagram_image": "",
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-29-b8d8f4eb96",
@@ -23924,7 +24966,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "free",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-30-3470d908a2",
@@ -24091,7 +25141,15 @@
       "audience_text": "› Дети и подростки Проект : Натюрморт. Портрет. Пейзаж. После жанра Дата: 29 окт– 1 ноя 2026 Возраст: 12-15 Тип: Кружок Место: Классы Возрастные ограничения 12+ Интенсив-исследование окружающих нас вещей с самых неожиданных сторон. Занятия проходят с 29 октября по 1 ноября ежедневно с 15:00 до 19:00. Чтобы присоединиться к кружку, напишите нам* в телеграм @ges2kidsandteens или на почту kids@v-a-c.org с темой письма «Это не предмет». Расскажите, почему вы хотите участвовать, какая художественная практика вам ближе всего, какой предмет вы бы взяли с собой на необитаемый остров и почему. Не забудьте указать ваши имя, фамилию и возраст, а также телефон для связи. T Что, если самые обычные предметы — совсем не то, чем кажутся? На этом интенсиве мы попробуем взглянуть на них по-новому, глазами художников, дизайнеров и исследователей. Мы будем много рисовать, экспериментировать, задавать неожиданные вопросы, искать скрытые возможности и придумывать идеи. Исследуем, как форма связана с функцией, что происходит с предметом, когда он теряет свое назначение, и почему один и тот же объект может рассказывать разные истории в зависимости от того, где и в каких обстоятельствах мы его встречаем. За вдохновением обратимся к выставке « Натюрморт. Портрет. Пейзаж. После жанра », книгам из Библиотеки « ГЭС-2 », а также к экономике, социальным наукам, географии и истории искусства и дизайна. Все этапы исследования найдут отражение в личном арт-буке — дневнике наблюдений, вопросов, зарисовок и творческих экспериментов. Итогом курса станет собственный художественный или дизайнерский проект, в котором каждый участник предложит свое переосмысление выбранного объекта. Кружок подойдет для подростков 12–15 лет с разным художественным опытом, которые хотят освоить инструменты визуального исследования, развить творческое мышление и научиться видеть то, что обычно остается незамеченным. Ведущая Виктория Щербенко — преподаватель предмета «Искусство» на английском языке, педагог творческих и теоретических занятий в музеях Москвы, автор интерактивных путеводителей по выставкам и экспозициям Музея современного искусства «Гараж», Новой Третьяковки, Дома культуры « ГЭС-2 ». * Пожалуйста, обратите внимание: сообщая нам свои личные данные, вы даете согласие на их обработку в соответствии с нашей Политикой в отношении обработки и защиты персональных данных . {\"grid\":{\"width\":963,\"column_width\":89,\"columns_n\":9,\"gutter\":20,\"margin\":0,\"line\":10},\"palette\":\"default\",\"responsive_mode\":true,\"responsi",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "social_priority": null,
+      "editor_note": "",
+      "telegram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-10-30-ae1d1312ba",

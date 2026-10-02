@@ -476,6 +476,20 @@ def extract_event_links(html, src):
             return None
         dsoup=BeautifulSoup(detail,"html.parser")
         dtext=clean(dsoup.get_text(" ",strip=True))
+        if "manege.spb.ru" in urlparse(full).netloc.lower():
+            # The site-wide opening-hours date is today's date, not an
+            # event date. Related-event cards and credits are also unrelated.
+            heading = dsoup.select_one(".recommendations__title")
+            articles = dsoup.select("article.text__section__content")
+            if not heading or not articles:
+                return None
+            scoped = BeautifulSoup("<div></div>", "html.parser")
+            root = scoped.div
+            root.append(BeautifulSoup(str(heading), "html.parser"))
+            for article in articles:
+                root.append(BeautifulSoup(str(article), "html.parser"))
+            dsoup = scoped
+            dtext = clean(dsoup.get_text(" ", strip=True))
         if src.get("split_programs"):
             page_date=parse_date(dtext,require_year=True)
             split=extract_split_program_events(dsoup,src,full,dtext,(page_date or today).year)
@@ -531,7 +545,17 @@ def extract_event_links(html, src):
             return None
 
         context=event_context(dtext,title,6000 if "mispxx-xxi.ru" in host else 2200)
-        if is_winzavod:
+        if "manege.spb.ru" in host:
+            heading = dsoup.select_one(".recommendations__title")
+            heading_text = clean(heading.get_text(" ", strip=True)) if heading else ""
+            is_exhibition = bool(re.match(r"^(?:Выставочный проект|Выставка|Арт.?инсталляция)", title, re.I))
+            start_dt,end_dt = parse_ru_date_range(heading_text, today.year)
+            dt = start_dt or parse_date(context, require_year=False, default_year=today.year)
+            if not is_exhibition:
+                body = " ".join(a.get_text(" ", strip=True) for a in dsoup.select("article.text__section__content"))
+                dt = parse_date(body, require_year=False, default_year=today.year)
+                end_dt = None
+        elif is_winzavod:
             start_dt,end_dt=parse_ru_date_range(context,today.year)
             if not start_dt:
                 start_dt,end_dt=parse_exhibition_range(context)

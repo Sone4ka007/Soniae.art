@@ -12299,7 +12299,7 @@
     },
     {
       "id": "spb-2026-10-02-efed6a0440",
-      "status": "new",
+      "status": "check",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-02",
@@ -12355,7 +12355,14 @@
       "discovered_at": "2026-10-02",
       "price_type": "free",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "telegram_include": false,
+      "instagram_include": false,
+      "social_priority": null,
+      "social_description": "",
+      "instagram_image": "",
+      "editor_note": "",
+      "social_title": ""
     },
     {
       "id": "spb-2026-10-02-a72cb3d2ce",
@@ -12381,7 +12388,14 @@
       "discovered_at": "2026-10-02",
       "price_type": "free",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "telegram_include": false,
+      "instagram_include": false,
+      "social_priority": null,
+      "social_description": "",
+      "instagram_image": "",
+      "editor_note": "",
+      "social_title": ""
     },
     {
       "id": "spb-2026-10-02-c4a099dd48",
@@ -12408,7 +12422,14 @@
       "price_type": "paid",
       "availability": "unknown",
       "availability_checked_at": "2026-10-02",
-      "start_date": "2026-10-02"
+      "start_date": "2026-10-02",
+      "telegram_include": false,
+      "instagram_include": false,
+      "social_priority": null,
+      "social_description": "",
+      "instagram_image": "",
+      "editor_note": "",
+      "social_title": ""
     },
     {
       "id": "spb-2026-10-02-3cd49c3183",
@@ -12434,7 +12455,14 @@
       "discovered_at": "2026-10-02",
       "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "telegram_include": false,
+      "instagram_include": false,
+      "social_priority": null,
+      "social_description": "",
+      "instagram_image": "",
+      "editor_note": "",
+      "social_title": ""
     },
     {
       "id": "spb-2026-10-02-fc842599bb",
@@ -12460,7 +12488,14 @@
       "discovered_at": "2026-10-02",
       "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "telegram_include": false,
+      "instagram_include": false,
+      "social_priority": null,
+      "social_description": "",
+      "instagram_image": "",
+      "editor_note": "",
+      "social_title": ""
     },
     {
       "id": "spb-2026-10-02-e8e3dc46f4",
@@ -12487,11 +12522,18 @@
       "price_type": "unknown",
       "availability": "unknown",
       "availability_checked_at": "2026-10-02",
-      "start_date": "2026-10-02"
+      "start_date": "2026-10-02",
+      "telegram_include": false,
+      "instagram_include": false,
+      "social_priority": null,
+      "social_description": "",
+      "instagram_image": "",
+      "editor_note": "",
+      "social_title": ""
     },
     {
       "id": "spb-2026-10-02-acb47fea46",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-02",
@@ -12521,7 +12563,7 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "spb-2026-10-02-f3192d9c53",
@@ -12613,7 +12655,14 @@
       "discovered_at": "2026-10-02",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "telegram_include": false,
+      "instagram_include": false,
+      "social_priority": null,
+      "social_description": "",
+      "instagram_image": "",
+      "editor_note": "",
+      "social_title": ""
     },
     {
       "id": "spb-2026-10-02-49a249d90e",
@@ -12639,7 +12688,14 @@
       "discovered_at": "2026-10-02",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "telegram_include": false,
+      "instagram_include": false,
+      "social_priority": null,
+      "social_description": "",
+      "instagram_image": "",
+      "editor_note": "",
+      "social_title": ""
     },
     {
       "id": "spb-2026-10-02-342900f35d",
@@ -12666,11 +12722,18 @@
       "price_type": "unknown",
       "availability": "available",
       "availability_checked_at": "2026-10-02",
-      "start_date": "2026-10-02"
+      "start_date": "2026-10-02",
+      "telegram_include": false,
+      "instagram_include": false,
+      "social_priority": null,
+      "social_description": "",
+      "instagram_image": "",
+      "editor_note": "",
+      "social_title": ""
     },
     {
       "id": "spb-2026-10-02-3bac9d8025",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-02",
@@ -12700,7 +12763,7 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "spb-2026-10-02-5995f84169",
@@ -12758,7 +12821,14 @@
       "discovered_at": "2026-10-02",
       "price_type": "free",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "telegram_include": false,
+      "instagram_include": false,
+      "social_priority": null,
+      "social_description": "",
+      "instagram_image": "",
+      "editor_note": "",
+      "social_title": ""
     },
     {
       "id": "spb-2026-10-02-39ef8bfa2b",
@@ -12784,11 +12854,18 @@
       "discovered_at": "2026-10-02",
       "price_type": "free",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "telegram_include": false,
+      "instagram_include": false,
+      "social_priority": null,
+      "social_description": "",
+      "instagram_image": "",
+      "editor_note": "",
+      "social_title": ""
     },
     {
       "id": "spb-2026-10-02-c04145ff5d",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-02",
@@ -12818,7 +12895,7 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "spb-2026-10-02-026c00f45d",
@@ -12911,7 +12988,14 @@
       "discovered_at": "2026-10-02",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "telegram_include": false,
+      "instagram_include": false,
+      "social_priority": null,
+      "social_description": "",
+      "instagram_image": "",
+      "editor_note": "",
+      "social_title": ""
     },
     {
       "id": "spb-2026-10-02-8672373f44",
@@ -13004,7 +13088,14 @@
       "discovered_at": "2026-10-02",
       "price_type": "paid",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "telegram_include": false,
+      "instagram_include": false,
+      "social_priority": null,
+      "social_description": "",
+      "instagram_image": "",
+      "editor_note": "",
+      "social_title": ""
     },
     {
       "id": "spb-2026-10-02-4b4f95e772",
@@ -13063,7 +13154,14 @@
       "discovered_at": "2026-10-02",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "telegram_include": false,
+      "instagram_include": false,
+      "social_priority": null,
+      "social_description": "",
+      "instagram_image": "",
+      "editor_note": "",
+      "social_title": ""
     },
     {
       "id": "spb-2026-10-02-4d1eeb0a32",
@@ -13089,7 +13187,14 @@
       "discovered_at": "2026-10-02",
       "price_type": "paid",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "telegram_include": false,
+      "instagram_include": false,
+      "social_priority": null,
+      "social_description": "",
+      "instagram_image": "",
+      "editor_note": "",
+      "social_title": ""
     },
     {
       "id": "spb-2026-10-02-93de5a6223",
@@ -13116,7 +13221,14 @@
       "price_type": "paid",
       "availability": "unknown",
       "availability_checked_at": "2026-10-02",
-      "start_date": "2026-10-02"
+      "start_date": "2026-10-02",
+      "telegram_include": false,
+      "instagram_include": false,
+      "social_priority": null,
+      "social_description": "",
+      "instagram_image": "",
+      "editor_note": "",
+      "social_title": ""
     },
     {
       "id": "spb-2026-10-02-a80cd8e728",
@@ -13140,11 +13252,18 @@
       "discovered_at": "2026-10-02",
       "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "telegram_include": false,
+      "instagram_include": false,
+      "social_priority": null,
+      "social_description": "",
+      "instagram_image": "",
+      "editor_note": "",
+      "social_title": ""
     },
     {
       "id": "spb-2026-10-02-b359d039eb",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-02",
@@ -13174,11 +13293,11 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "spb-2026-10-02-d170ed50f0",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-02",
@@ -13208,11 +13327,11 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "spb-2026-10-02-e7d7a7a0a3",
-      "status": "new",
+      "status": "rejected",
       "kind": "open_call",
       "city": "spb",
       "date": "2026-10-02",
@@ -13242,11 +13361,11 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "spb-2026-10-02-e526011734",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-02",
@@ -13274,7 +13393,7 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "spb-2026-10-02-f156b2d884",
@@ -13300,7 +13419,14 @@
       "discovered_at": "2026-10-02",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "telegram_include": false,
+      "instagram_include": false,
+      "social_priority": null,
+      "social_description": "",
+      "instagram_image": "",
+      "editor_note": "",
+      "social_title": ""
     },
     {
       "id": "spb-2026-10-02-4ef88e3073",
@@ -13326,7 +13452,14 @@
       "discovered_at": "2026-10-02",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "telegram_include": false,
+      "instagram_include": false,
+      "social_priority": null,
+      "social_description": "",
+      "instagram_image": "",
+      "editor_note": "",
+      "social_title": ""
     },
     {
       "id": "spb-2026-10-02-15b9a4cbcf",
@@ -13352,7 +13485,14 @@
       "discovered_at": "2026-10-02",
       "price_type": "paid",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "telegram_include": false,
+      "instagram_include": false,
+      "social_priority": null,
+      "social_description": "",
+      "instagram_image": "",
+      "editor_note": "",
+      "social_title": ""
     },
     {
       "id": "spb-2026-10-02-cd8a833d5a",
@@ -13378,7 +13518,14 @@
       "discovered_at": "2026-10-02",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "telegram_include": false,
+      "instagram_include": false,
+      "social_priority": null,
+      "social_description": "",
+      "instagram_image": "",
+      "editor_note": "",
+      "social_title": ""
     },
     {
       "id": "spb-2026-10-02-3243239c57",
@@ -13404,7 +13551,14 @@
       "discovered_at": "2026-10-02",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "telegram_include": false,
+      "instagram_include": false,
+      "social_priority": null,
+      "social_description": "",
+      "instagram_image": "",
+      "editor_note": "",
+      "social_title": ""
     },
     {
       "id": "spb-2026-10-02-148742e6ba",
@@ -13428,7 +13582,14 @@
       "discovered_at": "2026-10-02",
       "price_type": "paid",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "telegram_include": false,
+      "instagram_include": false,
+      "social_priority": null,
+      "social_description": "",
+      "instagram_image": "",
+      "editor_note": "",
+      "social_title": ""
     },
     {
       "id": "spb-2026-10-02-c590c03870",
@@ -13454,7 +13615,14 @@
       "discovered_at": "2026-10-02",
       "price_type": "paid",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "telegram_include": false,
+      "instagram_include": false,
+      "social_priority": null,
+      "social_description": "",
+      "instagram_image": "",
+      "editor_note": "",
+      "social_title": ""
     },
     {
       "id": "moscow-2026-10-02-a54110213e",
@@ -13514,7 +13682,14 @@
       "discovered_at": "2026-10-02",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "telegram_include": false,
+      "instagram_include": false,
+      "social_priority": null,
+      "social_description": "",
+      "instagram_image": "",
+      "editor_note": "",
+      "social_title": ""
     },
     {
       "id": "spb-2026-10-02-dc5aa1bc2a",
@@ -13540,7 +13715,14 @@
       "discovered_at": "2026-10-02",
       "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "telegram_include": false,
+      "instagram_include": false,
+      "social_priority": null,
+      "social_description": "",
+      "instagram_image": "",
+      "editor_note": "",
+      "social_title": ""
     },
     {
       "id": "spb-2026-10-02-7b7aafc809",
@@ -13566,11 +13748,18 @@
       "discovered_at": "2026-10-02",
       "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "telegram_include": false,
+      "instagram_include": false,
+      "social_priority": null,
+      "social_description": "",
+      "instagram_image": "",
+      "editor_note": "",
+      "social_title": ""
     },
     {
       "id": "moscow-2026-10-02-24ed9e4726",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-02",
@@ -13600,7 +13789,7 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "spb-2026-10-02-924f24e075",
@@ -13626,7 +13815,14 @@
       "discovered_at": "2026-10-02",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "telegram_include": false,
+      "instagram_include": false,
+      "social_priority": null,
+      "social_description": "",
+      "instagram_image": "",
+      "editor_note": "",
+      "social_title": ""
     },
     {
       "id": "spb-2026-10-02-bb9ac87531",
@@ -13650,7 +13846,14 @@
       "discovered_at": "2026-10-02",
       "price_type": "free",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "telegram_include": false,
+      "instagram_include": false,
+      "social_priority": null,
+      "social_description": "",
+      "instagram_image": "",
+      "editor_note": "",
+      "social_title": ""
     },
     {
       "id": "spb-2026-10-02-e41704d234",
@@ -13674,7 +13877,14 @@
       "discovered_at": "2026-10-02",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "telegram_include": false,
+      "instagram_include": false,
+      "social_priority": null,
+      "social_description": "",
+      "instagram_image": "",
+      "editor_note": "",
+      "social_title": ""
     },
     {
       "id": "spb-2026-10-02-fca6e04a36",
@@ -13698,7 +13908,14 @@
       "discovered_at": "2026-10-02",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "telegram_include": false,
+      "instagram_include": false,
+      "social_priority": null,
+      "social_description": "",
+      "instagram_image": "",
+      "editor_note": "",
+      "social_title": ""
     },
     {
       "id": "moscow-2026-10-02-e7982b72fb",
@@ -13758,11 +13975,18 @@
       "discovered_at": "2026-10-02",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "telegram_include": false,
+      "instagram_include": false,
+      "social_priority": null,
+      "social_description": "",
+      "instagram_image": "",
+      "editor_note": "",
+      "social_title": ""
     },
     {
       "id": "spb-2026-10-02-ab80b01632",
-      "status": "check",
+      "status": "approved",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-02",
@@ -13791,7 +14015,8 @@
       "social_priority": null,
       "editor_note": "",
       "instagram_image": "",
-      "telegram_include": false
+      "telegram_include": false,
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "spb-2026-10-02-079fb438ce",
@@ -13815,11 +14040,18 @@
       "discovered_at": "2026-10-02",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "telegram_include": false,
+      "instagram_include": false,
+      "social_priority": null,
+      "social_description": "",
+      "instagram_image": "",
+      "editor_note": "",
+      "social_title": ""
     },
     {
       "id": "moscow-2026-10-02-c883bc5f7a",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-02",
@@ -13847,7 +14079,7 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "spb-2026-10-02-70ad54f03f",
@@ -13873,7 +14105,14 @@
       "discovered_at": "2026-10-02",
       "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "telegram_include": false,
+      "instagram_include": false,
+      "social_priority": null,
+      "social_description": "",
+      "instagram_image": "",
+      "editor_note": "",
+      "social_title": ""
     },
     {
       "id": "moscow-2026-10-02-22a7d7c1f0",
@@ -13933,7 +14172,14 @@
       "discovered_at": "2026-10-02",
       "price_type": "free",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "telegram_include": false,
+      "instagram_include": false,
+      "social_priority": null,
+      "social_description": "",
+      "instagram_image": "",
+      "editor_note": "",
+      "social_title": ""
     },
     {
       "id": "moscow-2026-10-02-398c972a62",
@@ -14005,7 +14251,7 @@
     },
     {
       "id": "spb-2026-10-02-8601f67718",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-02",
@@ -14027,11 +14273,19 @@
       "discovered_at": "2026-10-02",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "telegram_include": false,
+      "instagram_include": false,
+      "social_priority": null,
+      "social_description": "",
+      "instagram_image": "",
+      "editor_note": "",
+      "social_title": "",
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "spb-2026-10-02-17a2af83d9",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-02",
@@ -14053,11 +14307,19 @@
       "discovered_at": "2026-10-02",
       "price_type": "free",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "telegram_include": false,
+      "instagram_include": false,
+      "social_priority": null,
+      "social_description": "",
+      "instagram_image": "",
+      "editor_note": "",
+      "social_title": "",
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-02-00c5a7871d",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-02",
@@ -14085,11 +14347,11 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "spb-2026-10-02-2d2787b31f",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-02",
@@ -14118,11 +14380,12 @@
       "instagram_include": false,
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "spb-2026-10-02-243c80fc3a",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-02",
@@ -14144,7 +14407,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "free",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "telegram_include": false,
+      "instagram_include": false,
+      "social_priority": null,
+      "social_description": "",
+      "instagram_image": "",
+      "editor_note": "",
+      "social_title": "",
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-02-f953cea0f9",
@@ -14321,7 +14592,7 @@
     },
     {
       "id": "spb-2026-10-02-363b185176",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-02",
@@ -14343,11 +14614,19 @@
       "discovered_at": "2026-10-02",
       "price_type": "paid",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "telegram_include": false,
+      "instagram_include": false,
+      "social_priority": null,
+      "social_description": "",
+      "instagram_image": "",
+      "editor_note": "",
+      "social_title": "",
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "spb-2026-10-02-886537ffab",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-02",
@@ -14369,7 +14648,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "paid",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "telegram_include": false,
+      "instagram_include": false,
+      "social_priority": null,
+      "social_description": "",
+      "instagram_image": "",
+      "editor_note": "",
+      "social_title": "",
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-03-ef35829944",
@@ -14575,7 +14862,7 @@
     },
     {
       "id": "spb-2026-10-03-7cd3c3ad37",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-03",
@@ -14597,7 +14884,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "telegram_include": false,
+      "instagram_include": false,
+      "social_priority": null,
+      "social_description": "",
+      "instagram_image": "",
+      "editor_note": "",
+      "social_title": "",
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "spb-2026-10-03-f68e69526f",
@@ -14666,7 +14961,7 @@
     },
     {
       "id": "moscow-2026-10-03-b6d1581846",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-03",
@@ -14694,7 +14989,7 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-03-8227c07e08",
@@ -14732,7 +15027,7 @@
     },
     {
       "id": "spb-2026-10-03-6803e36587",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-03",
@@ -14761,7 +15056,8 @@
       "instagram_include": false,
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "spb-2026-10-03-4a12237755",
@@ -15664,7 +15960,7 @@
     },
     {
       "id": "spb-2026-10-04-f34eec75d2",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-04",
@@ -15693,7 +15989,8 @@
       "instagram_include": false,
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-04-7618771786",
@@ -15934,7 +16231,7 @@
     },
     {
       "id": "moscow-2026-10-05-4550346985",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-05",
@@ -15964,7 +16261,7 @@
       "editor_note": "",
       "social_description": "",
       "social_priority": null,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-05-14d1173fbf",
@@ -16000,7 +16297,7 @@
     },
     {
       "id": "spb-2026-10-05-efc5f604c1",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-05",
@@ -16029,7 +16326,8 @@
       "editor_note": "",
       "instagram_include": false,
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-05-62f0c036fa",
@@ -16102,7 +16400,7 @@
     },
     {
       "id": "moscow-2026-10-06-b4f5d0bea1",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-06",
@@ -16132,11 +16430,11 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "spb-2026-10-06-ed530d8639",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-06",
@@ -16165,11 +16463,12 @@
       "instagram_include": false,
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-06-6501f99a5e",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-06",
@@ -16199,7 +16498,7 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "spb-2026-10-06-bf0c137ac7",
@@ -16440,7 +16739,7 @@
     },
     {
       "id": "moscow-2026-10-07-ad5480ce53",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-07",
@@ -16470,7 +16769,7 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-07-14d1173fbf",
@@ -16577,7 +16876,7 @@
     },
     {
       "id": "spb-2026-10-07-9d89a8e682",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-07",
@@ -16606,7 +16905,8 @@
       "instagram_include": false,
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "spb-2026-10-07-8212c9b882",
@@ -16675,7 +16975,7 @@
     },
     {
       "id": "moscow-2026-10-07-d6c58ec9ac",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-07",
@@ -16705,7 +17005,7 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-08-c56f49b305",
@@ -16741,7 +17041,7 @@
     },
     {
       "id": "moscow-2026-10-08-c8ce87cafd",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-08",
@@ -16765,7 +17065,7 @@
       "availability": "available",
       "availability_checked_at": "2026-10-02",
       "editor_note": "",
-      "reviewed_at": "",
+      "reviewed_at": "2026-10-02",
       "social_title": "",
       "social_description": "",
       "social_priority": null,
@@ -16775,7 +17075,7 @@
     },
     {
       "id": "moscow-2026-10-08-c7be7367d0",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-08",
@@ -16799,7 +17099,7 @@
       "availability": "available",
       "availability_checked_at": "2026-10-02",
       "editor_note": "",
-      "reviewed_at": "",
+      "reviewed_at": "2026-10-02",
       "social_title": "",
       "social_description": "",
       "social_priority": null,
@@ -16881,7 +17181,7 @@
     },
     {
       "id": "moscow-2026-10-08-1b5df9fa79",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-08",
@@ -16905,7 +17205,7 @@
       "availability": "available",
       "availability_checked_at": "2026-10-02",
       "editor_note": "",
-      "reviewed_at": "",
+      "reviewed_at": "2026-10-02",
       "social_title": "",
       "social_description": "",
       "social_priority": null,
@@ -16915,7 +17215,7 @@
     },
     {
       "id": "moscow-2026-10-08-161b0944a9",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-08",
@@ -16939,7 +17239,7 @@
       "availability": "available",
       "availability_checked_at": "2026-10-02",
       "editor_note": "",
-      "reviewed_at": "",
+      "reviewed_at": "2026-10-02",
       "social_title": "",
       "social_description": "",
       "social_priority": null,
@@ -17150,7 +17450,7 @@
     },
     {
       "id": "spb-2026-10-08-79d70b7594",
-      "status": "check",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-08",
@@ -17170,7 +17470,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "telegram_include": false,
+      "instagram_include": false,
+      "social_priority": null,
+      "social_description": "",
+      "instagram_image": "",
+      "editor_note": "",
+      "social_title": "",
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-08-14d1173fbf",
@@ -17208,7 +17516,7 @@
     },
     {
       "id": "spb-2026-10-08-36feec5499",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-08",
@@ -17235,11 +17543,12 @@
       "instagram_include": false,
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-08-65b53b1aa2",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-08",
@@ -17269,11 +17578,11 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "spb-2026-10-08-a283b39647",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-08",
@@ -17300,7 +17609,8 @@
       "instagram_include": false,
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "spb-2026-10-08-58e62a0194",
@@ -17337,7 +17647,7 @@
     },
     {
       "id": "moscow-2026-10-08-d8e15293e8",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-08",
@@ -17367,11 +17677,11 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-08-19606f2101",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-08",
@@ -17399,7 +17709,7 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-08-f8072f8992",
@@ -17437,7 +17747,7 @@
     },
     {
       "id": "moscow-2026-10-08-981403d272",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-08",
@@ -17467,11 +17777,11 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-08-9cc379a143",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-08",
@@ -17495,7 +17805,7 @@
       "availability": "available",
       "availability_checked_at": "2026-10-02",
       "editor_note": "",
-      "reviewed_at": "",
+      "reviewed_at": "2026-10-02",
       "social_title": "",
       "social_description": "",
       "social_priority": null,
@@ -17711,7 +18021,7 @@
     },
     {
       "id": "moscow-2026-10-09-c883bc5f7a",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-09",
@@ -17739,7 +18049,7 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-09-14d1173fbf",
@@ -17777,7 +18087,7 @@
     },
     {
       "id": "moscow-2026-10-09-02914fe36d",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-09",
@@ -17807,11 +18117,11 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "spb-2026-10-09-c1dd3b1c56",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-09",
@@ -17839,7 +18149,7 @@
       "social_priority": null,
       "editor_note": "",
       "instagram_include": false,
-      "reviewed_at": "",
+      "reviewed_at": "2026-10-02",
       "availability": "available",
       "availability_checked_at": "2026-10-02"
     },
@@ -17912,7 +18222,7 @@
     },
     {
       "id": "spb-2026-10-09-d29dc2d1c2",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-09",
@@ -17939,11 +18249,12 @@
       "instagram_include": false,
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-09-f8bd97a160",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-09",
@@ -17973,7 +18284,7 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "spb-2026-10-09-ac1bcf9155",
@@ -18042,7 +18353,7 @@
     },
     {
       "id": "moscow-2026-10-09-8be9a69bab",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-09",
@@ -18072,11 +18383,11 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-09-9c4e5a2ad1",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-09",
@@ -18106,7 +18417,7 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-09-d06bdbac9d",
@@ -18144,7 +18455,7 @@
     },
     {
       "id": "spb-2026-10-09-175af4a8f4",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-09",
@@ -18173,7 +18484,8 @@
       "instagram_include": false,
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "spb-2026-10-09-be54828e79",
@@ -18208,7 +18520,7 @@
     },
     {
       "id": "moscow-2026-10-09-cc08713e34",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-09",
@@ -18232,7 +18544,7 @@
       "availability": "available",
       "availability_checked_at": "2026-10-02",
       "editor_note": "",
-      "reviewed_at": "",
+      "reviewed_at": "2026-10-02",
       "social_title": "",
       "social_description": "",
       "social_priority": null,
@@ -18242,7 +18554,7 @@
     },
     {
       "id": "moscow-2026-10-09-c1c4f6bb35",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-09",
@@ -18266,7 +18578,7 @@
       "availability": "available",
       "availability_checked_at": "2026-10-02",
       "editor_note": "",
-      "reviewed_at": "",
+      "reviewed_at": "2026-10-02",
       "social_title": "",
       "social_description": "",
       "social_priority": null,
@@ -18276,7 +18588,7 @@
     },
     {
       "id": "spb-2026-10-10-9a42a49052",
-      "status": "check",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-10",
@@ -18296,7 +18608,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "telegram_include": false,
+      "instagram_include": false,
+      "social_priority": null,
+      "social_description": "",
+      "instagram_image": "",
+      "editor_note": "",
+      "social_title": "",
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-10-0d01b941a4",
@@ -18573,7 +18893,7 @@
     },
     {
       "id": "moscow-2026-10-10-235293ec9c",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-10",
@@ -18603,7 +18923,7 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "spb-2026-10-10-6274d9b2ae",
@@ -18710,7 +19030,7 @@
     },
     {
       "id": "spb-2026-10-10-0936b275f1",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-10",
@@ -18737,7 +19057,8 @@
       "instagram_include": false,
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-10-e0d50e68a0",
@@ -18878,7 +19199,7 @@
     },
     {
       "id": "moscow-2026-10-10-0ae7e8116a",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-10",
@@ -18908,7 +19229,7 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-10-e25cf1c326",
@@ -19012,7 +19333,7 @@
     },
     {
       "id": "spb-2026-10-10-dddb3d779f",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-10",
@@ -19041,7 +19362,8 @@
       "instagram_include": false,
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "reviewed_at": "2026-10-02"
     },
     {
       "status": "approved",
@@ -19114,7 +19436,7 @@
     },
     {
       "id": "spb-2026-10-10-46bfd8829c",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-10",
@@ -19142,7 +19464,7 @@
       "social_priority": null,
       "editor_note": "",
       "instagram_include": false,
-      "reviewed_at": "",
+      "reviewed_at": "2026-10-02",
       "availability": "available",
       "availability_checked_at": "2026-10-02"
     },
@@ -19217,7 +19539,7 @@
     },
     {
       "id": "spb-2026-10-11-28db461626",
-      "status": "new",
+      "status": "approved",
       "kind": "exhibition",
       "city": "spb",
       "date": "2026-10-11",
@@ -19240,7 +19562,15 @@
       "price_type": "unknown",
       "availability": "unknown",
       "availability_checked_at": "2026-10-02",
-      "start_date": "2026-10-11"
+      "start_date": "2026-10-11",
+      "telegram_include": false,
+      "instagram_include": false,
+      "social_priority": null,
+      "social_description": "",
+      "instagram_image": "",
+      "editor_note": "",
+      "social_title": "",
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-11-b6270b7e37",
@@ -19347,7 +19677,7 @@
     },
     {
       "id": "moscow-2026-10-11-93ac4d43f4",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-11",
@@ -19377,7 +19707,7 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "spb-2026-10-11-94108f9818",
@@ -20033,7 +20363,7 @@
     },
     {
       "id": "spb-2026-10-11-0c3a305609",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-11",
@@ -20062,7 +20392,8 @@
       "instagram_include": false,
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "spb-2026-10-11-6274d9b2ae",
@@ -20099,7 +20430,7 @@
     },
     {
       "id": "moscow-2026-10-12-4550346985",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-12",
@@ -20129,7 +20460,7 @@
       "editor_note": "",
       "social_description": "",
       "social_priority": null,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-12-eebb063dbc",
@@ -20203,7 +20534,7 @@
     },
     {
       "id": "moscow-2026-10-12-af75e2c0e1",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-12",
@@ -20233,7 +20564,7 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-12-14d1173fbf",
@@ -20271,7 +20602,7 @@
     },
     {
       "id": "moscow-2026-10-12-f02545eb99",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-12",
@@ -20301,7 +20632,7 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "international-2026-10-13-a7d373690c",
@@ -20580,7 +20911,7 @@
     },
     {
       "id": "spb-2026-10-13-82703e2bbd",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-13",
@@ -20609,11 +20940,12 @@
       "instagram_include": false,
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "spb-2026-10-13-2c948092fe",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-13",
@@ -20642,7 +20974,8 @@
       "editor_note": "",
       "instagram_include": false,
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-13-fcace6108c",
@@ -20750,7 +21083,7 @@
     },
     {
       "id": "spb-2026-10-14-c2079e095b",
-      "status": "check",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-14",
@@ -20772,7 +21105,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "telegram_include": false,
+      "instagram_include": false,
+      "social_priority": null,
+      "social_description": "",
+      "instagram_image": "",
+      "editor_note": "",
+      "social_title": "",
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-14-1b4d82cf46",
@@ -20911,7 +21252,7 @@
     },
     {
       "id": "moscow-2026-10-14-d4171e2818",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-14",
@@ -20941,7 +21282,7 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-14-adb94a2fdd",
@@ -20979,7 +21320,7 @@
     },
     {
       "id": "spb-2026-10-14-52b6bbc776",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-14",
@@ -21007,7 +21348,7 @@
       "social_priority": null,
       "editor_note": "",
       "instagram_include": false,
-      "reviewed_at": "",
+      "reviewed_at": "2026-10-02",
       "availability": "available",
       "availability_checked_at": "2026-10-02"
     },
@@ -21047,7 +21388,7 @@
     },
     {
       "id": "moscow-2026-10-14-5a7e37188c",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-14",
@@ -21077,7 +21418,7 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-14-b243361041",
@@ -21250,7 +21591,7 @@
     },
     {
       "id": "moscow-2026-10-15-b4b0db8293",
-      "status": "new",
+      "status": "rejected",
       "kind": "exhibition",
       "city": "moscow",
       "date": "2026-10-15",
@@ -21276,7 +21617,7 @@
       "availability_checked_at": "2026-10-02",
       "start_date": "2026-10-15",
       "editor_note": "",
-      "reviewed_at": "",
+      "reviewed_at": "2026-10-02",
       "social_title": "",
       "social_description": "",
       "social_priority": null,
@@ -21286,7 +21627,7 @@
     },
     {
       "id": "moscow-2026-10-15-9523a47ad3",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-15",
@@ -21316,7 +21657,7 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-15-934d534304",
@@ -21388,7 +21729,7 @@
     },
     {
       "id": "moscow-2026-10-15-8d476406f3",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-15",
@@ -21418,7 +21759,7 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-15-6d8f1e6c5b",
@@ -21525,7 +21866,7 @@
     },
     {
       "id": "spb-2026-10-15-683445c961",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-15",
@@ -21554,7 +21895,8 @@
       "instagram_include": false,
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "reviewed_at": "2026-10-02"
     },
     {
       "status": "approved",
@@ -21594,7 +21936,7 @@
     },
     {
       "id": "moscow-2026-10-15-9da8feacfa",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-15",
@@ -21624,11 +21966,11 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-15-1b2996abe8",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-15",
@@ -21658,7 +22000,7 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-15-14d1173fbf",
@@ -21696,7 +22038,7 @@
     },
     {
       "id": "moscow-2026-10-15-05c67d7f07",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-15",
@@ -21719,7 +22061,7 @@
       "availability": "available",
       "availability_checked_at": "2026-10-02",
       "editor_note": "",
-      "reviewed_at": "",
+      "reviewed_at": "2026-10-02",
       "social_title": "",
       "social_description": "",
       "social_priority": null,
@@ -21898,7 +22240,7 @@
     },
     {
       "id": "moscow-2026-10-16-c883bc5f7a",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-16",
@@ -21926,11 +22268,11 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "spb-2026-10-16-41c2fb9b16",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-16",
@@ -21958,7 +22300,7 @@
       "social_priority": null,
       "editor_note": "",
       "instagram_include": false,
-      "reviewed_at": "",
+      "reviewed_at": "2026-10-02",
       "availability": "available",
       "availability_checked_at": "2026-10-02"
     },
@@ -22031,7 +22373,7 @@
     },
     {
       "id": "moscow-2026-10-16-2020b0bdb6",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-16",
@@ -22061,7 +22403,7 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-16-14d1173fbf",
@@ -22165,7 +22507,7 @@
     },
     {
       "id": "discovery-a4e53df7b5c410",
-      "status": "check",
+      "status": "rejected",
       "kind": "event",
       "city": "russia",
       "date": "2026-10-17",
@@ -22192,7 +22534,7 @@
       "review_reason": "special_event_discovery",
       "editor_note": "Обнаружено мониторингом ежегодных фестивалей/дизайн-событий; требуется редакторская проверка.",
       "discovered_at": "2026-10-02",
-      "reviewed_at": "",
+      "reviewed_at": "2026-10-02",
       "social_title": "",
       "social_description": "",
       "social_priority": null,
@@ -22202,7 +22544,7 @@
     },
     {
       "id": "moscow-2026-10-17-9f35b6af55",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-17",
@@ -22230,11 +22572,11 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "spb-2026-10-17-e58721df09",
-      "status": "check",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-17",
@@ -22254,7 +22596,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "telegram_include": false,
+      "instagram_include": false,
+      "social_priority": null,
+      "social_description": "",
+      "instagram_image": "",
+      "editor_note": "",
+      "social_title": "",
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-17-54d5563287",
@@ -22427,7 +22777,7 @@
     },
     {
       "id": "spb-2026-10-17-bae5bc9ca8",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-17",
@@ -22455,7 +22805,7 @@
       "social_priority": null,
       "editor_note": "",
       "instagram_include": false,
-      "reviewed_at": "",
+      "reviewed_at": "2026-10-02",
       "availability": "available",
       "availability_checked_at": "2026-10-02"
     },
@@ -22495,7 +22845,7 @@
     },
     {
       "id": "spb-2026-10-17-d709f81e9f",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-17",
@@ -22523,13 +22873,13 @@
       "social_priority": null,
       "editor_note": "",
       "instagram_include": false,
-      "reviewed_at": "",
+      "reviewed_at": "2026-10-02",
       "availability": "available",
       "availability_checked_at": "2026-10-02"
     },
     {
       "id": "spb-2026-10-17-7a3d0973c4",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-17",
@@ -22558,7 +22908,8 @@
       "instagram_include": false,
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-17-6355ebfb04",
@@ -22596,7 +22947,7 @@
     },
     {
       "id": "moscow-2026-10-17-5554a42377",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-17",
@@ -22627,7 +22978,7 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-18-71392b2a4d",
@@ -22733,7 +23084,7 @@
     },
     {
       "id": "moscow-2026-10-18-bf12d29991",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-18",
@@ -22763,11 +23114,11 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-18-550f9318dc",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-18",
@@ -22798,11 +23149,11 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "spb-2026-10-18-45c10ca222",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-18",
@@ -22831,11 +23182,12 @@
       "instagram_include": false,
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-18-5554a42377",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-18",
@@ -22866,7 +23218,7 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-18-1f26889cb6",
@@ -22905,7 +23257,7 @@
     },
     {
       "id": "moscow-2026-10-19-4550346985",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-19",
@@ -22935,7 +23287,7 @@
       "editor_note": "",
       "social_description": "",
       "social_priority": null,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-19-eebb063dbc",
@@ -22973,7 +23325,7 @@
     },
     {
       "id": "moscow-2026-10-19-5554a42377",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-19",
@@ -23004,11 +23356,11 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-19-7cf575da34",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-19",
@@ -23036,11 +23388,11 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-19-40aac17a0e",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-19",
@@ -23068,7 +23420,7 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-19-14d1173fbf",
@@ -23140,7 +23492,7 @@
     },
     {
       "id": "moscow-2026-10-19-2404e01c82",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-19",
@@ -23168,7 +23520,7 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-20-b607d0e197",
@@ -23273,7 +23625,7 @@
     },
     {
       "id": "moscow-2026-10-20-3133ec8862",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-20",
@@ -23303,7 +23655,7 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-20-14d1173fbf",
@@ -23341,7 +23693,7 @@
     },
     {
       "id": "moscow-2026-10-20-35111de63e",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-20",
@@ -23371,11 +23723,11 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "spb-2026-10-20-c485253d20",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-20",
@@ -23402,11 +23754,12 @@
       "instagram_include": false,
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-20-6501f99a5e",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-20",
@@ -23436,11 +23789,11 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "spb-2026-10-20-d6b5a6d1fa",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-20",
@@ -23469,7 +23822,8 @@
       "instagram_include": false,
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "russia-2026-10-21-86b51ee813",
@@ -23610,7 +23964,7 @@
     },
     {
       "id": "moscow-2026-10-21-ad5480ce53",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-21",
@@ -23640,11 +23994,11 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-21-8dc1d097f3",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-21",
@@ -23674,7 +24028,7 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "spb-2026-10-21-6274d9b2ae",
@@ -23745,7 +24099,7 @@
     },
     {
       "id": "moscow-2026-10-21-c8087011a9",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-21",
@@ -23773,11 +24127,11 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "spb-2026-10-21-1e9bde00e7",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-21",
@@ -23805,7 +24159,7 @@
       "social_priority": null,
       "editor_note": "",
       "instagram_include": false,
-      "reviewed_at": "",
+      "reviewed_at": "2026-10-02",
       "availability": "available",
       "availability_checked_at": "2026-10-02"
     },
@@ -23879,7 +24233,7 @@
     },
     {
       "id": "spb-2026-10-21-f18431c9e7",
-      "status": "check",
+      "status": "approved",
       "kind": "open_call",
       "city": "moscow",
       "date": "2026-10-21",
@@ -23901,7 +24255,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "telegram_include": false,
+      "instagram_include": false,
+      "social_priority": null,
+      "social_description": "",
+      "instagram_image": "",
+      "editor_note": "",
+      "social_title": "",
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "russia-2026-10-22-1e66714dca",
@@ -23974,7 +24336,7 @@
     },
     {
       "id": "moscow-2026-10-22-14d1173fbf",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-22",
@@ -24004,7 +24366,7 @@
       "instagram_image": "",
       "social_priority": null,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "spb-2026-10-22-d70f2c6fd6",
@@ -24041,7 +24403,7 @@
     },
     {
       "id": "spb-2026-10-22-9102c66de5",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-22",
@@ -24070,11 +24432,12 @@
       "editor_note": "",
       "instagram_include": false,
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-22-f8f18bd7ee",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-22",
@@ -24104,11 +24467,11 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-22-477dfdecdb",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-22",
@@ -24138,11 +24501,11 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "spb-2026-10-22-c05f7669d2",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-22",
@@ -24171,11 +24534,12 @@
       "instagram_include": false,
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-22-19606f2101",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-22",
@@ -24203,11 +24567,11 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-22-05c67d7f07",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-22",
@@ -24236,7 +24600,7 @@
       "editor_note": "",
       "social_description": "",
       "social_priority": null,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "international-2026-10-23-413153c0d6",
@@ -24412,7 +24776,7 @@
     },
     {
       "id": "moscow-2026-10-23-dc07f0121e",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-23",
@@ -24443,7 +24807,7 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-23-aa8503e63c",
@@ -24482,7 +24846,7 @@
     },
     {
       "id": "moscow-2026-10-23-14d1173fbf",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-23",
@@ -24512,7 +24876,7 @@
       "instagram_image": "",
       "social_priority": null,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-23-26d1e37cc7",
@@ -24587,7 +24951,7 @@
     },
     {
       "id": "moscow-2026-10-23-17b40447e2",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-23",
@@ -24615,11 +24979,11 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-23-7ad9fb1762",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-23",
@@ -24649,11 +25013,11 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-23-591549b456",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-23",
@@ -24681,7 +25045,7 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-24-3569cdc778",
@@ -24719,7 +25083,7 @@
     },
     {
       "id": "spb-2026-10-24-31133af75e",
-      "status": "check",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-24",
@@ -24741,7 +25105,15 @@
       "discovered_at": "2026-10-02",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "telegram_include": false,
+      "instagram_include": false,
+      "social_priority": null,
+      "social_description": "",
+      "instagram_image": "",
+      "editor_note": "",
+      "social_title": "",
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-24-64aa698d00",
@@ -24779,7 +25151,7 @@
     },
     {
       "id": "spb-2026-10-24-1e9bde00e7",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-24",
@@ -24807,13 +25179,13 @@
       "social_priority": null,
       "editor_note": "",
       "instagram_include": false,
-      "reviewed_at": "",
+      "reviewed_at": "2026-10-02",
       "availability": "available",
       "availability_checked_at": "2026-10-02"
     },
     {
       "id": "spb-2026-10-24-82d35d881c",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-24",
@@ -24842,7 +25214,8 @@
       "instagram_include": false,
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-24-e25cf1c326",
@@ -24880,7 +25253,7 @@
     },
     {
       "id": "spb-2026-10-24-21c907ec6e",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-24",
@@ -24909,7 +25282,8 @@
       "instagram_include": false,
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-24-6355ebfb04",
@@ -24947,7 +25321,7 @@
     },
     {
       "id": "moscow-2026-10-24-dc07f0121e",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-24",
@@ -24978,7 +25352,7 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "international-2026-10-25-4adb73b149",
@@ -25017,7 +25391,7 @@
     },
     {
       "id": "spb-2026-10-25-13f930f283",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-25",
@@ -25046,11 +25420,12 @@
       "instagram_include": false,
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-25-dc07f0121e",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-25",
@@ -25081,11 +25456,11 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-25-d10c5d9596",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-25",
@@ -25113,11 +25488,11 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-25-13fa912f27",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-25",
@@ -25147,11 +25522,11 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "spb-2026-10-25-7fbe864a32",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-25",
@@ -25180,11 +25555,12 @@
       "instagram_include": false,
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-25-14d1173fbf",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-25",
@@ -25214,7 +25590,7 @@
       "instagram_image": "",
       "social_priority": null,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-25-1f26889cb6",
@@ -25390,7 +25766,7 @@
     },
     {
       "id": "moscow-2026-10-26-f305c56561",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-26",
@@ -25420,7 +25796,7 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "spb-2026-10-26-553aaae4cb",
@@ -25455,7 +25831,7 @@
     },
     {
       "id": "spb-2026-10-26-3f80b9bdf5",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-26",
@@ -25482,7 +25858,8 @@
       "instagram_include": false,
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-26-1daaf6011d",
@@ -25554,7 +25931,7 @@
     },
     {
       "id": "moscow-2026-10-26-6fa5a61f80",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-26",
@@ -25584,7 +25961,7 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-26-f157f04325",
@@ -25793,7 +26170,7 @@
     },
     {
       "id": "moscow-2026-10-27-3133ec8862",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-27",
@@ -25823,7 +26200,7 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-27-14d1173fbf",
@@ -25861,7 +26238,7 @@
     },
     {
       "id": "moscow-2026-10-27-f8bd97a160",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-27",
@@ -25891,7 +26268,7 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-27-17d40d2f82",
@@ -25929,7 +26306,7 @@
     },
     {
       "id": "moscow-2026-10-28-6fdd3ff58e",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-28",
@@ -25957,7 +26334,7 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-28-9dfc8f92b3",
@@ -26029,7 +26406,7 @@
     },
     {
       "id": "moscow-2026-10-28-f2ec73f23f",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-28",
@@ -26059,11 +26436,11 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-28-93c9532bcf",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-28",
@@ -26093,7 +26470,7 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "spb-2026-10-28-e264866514",
@@ -26232,7 +26609,7 @@
     },
     {
       "id": "moscow-2026-10-29-600a19d7cf",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-29",
@@ -26263,11 +26640,11 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-29-14d1173fbf",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-29",
@@ -26297,11 +26674,11 @@
       "instagram_image": "",
       "social_priority": null,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "spb-2026-10-29-be37c64b5d",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-29",
@@ -26330,11 +26707,12 @@
       "instagram_include": false,
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "spb-2026-10-29-05d027f8ef",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-29",
@@ -26363,11 +26741,12 @@
       "editor_note": "",
       "instagram_include": false,
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-29-07a5eab5b6",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-29",
@@ -26397,11 +26776,11 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-29-05c67d7f07",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-29",
@@ -26430,11 +26809,11 @@
       "editor_note": "",
       "social_description": "",
       "social_priority": null,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-29-b8d8f4eb96",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-29",
@@ -26464,7 +26843,7 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "moscow-2026-10-30-3470d908a2",
@@ -26608,7 +26987,7 @@
     },
     {
       "id": "moscow-2026-10-30-600a19d7cf",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-30",
@@ -26639,11 +27018,11 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "spb-2026-10-30-ae1d1312ba",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-30",
@@ -26672,7 +27051,8 @@
       "instagram_include": false,
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "international-2026-10-31-69b169d62b",
@@ -26780,7 +27160,7 @@
     },
     {
       "id": "spb-2026-10-31-21c907ec6e",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-31",
@@ -26809,7 +27189,8 @@
       "instagram_include": false,
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "spb-2026-10-31-1e707897e6",
@@ -26846,7 +27227,7 @@
     },
     {
       "id": "spb-2026-10-31-517be39b64",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-31",
@@ -26875,7 +27256,8 @@
       "instagram_include": false,
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-02"
+      "availability_checked_at": "2026-10-02",
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "international-2026-11-01-6e82235541",
@@ -27056,7 +27438,7 @@
     },
     {
       "id": "spb-2026-11-08-1faf91a3f9",
-      "status": "new",
+      "status": "approved",
       "kind": "exhibition",
       "city": "spb",
       "date": "2026-11-08",
@@ -27079,7 +27461,15 @@
       "price_type": "paid",
       "availability": "unknown",
       "availability_checked_at": "2026-10-02",
-      "start_date": "2026-11-08"
+      "start_date": "2026-11-08",
+      "telegram_include": false,
+      "instagram_include": false,
+      "social_priority": null,
+      "social_description": "",
+      "instagram_image": "",
+      "editor_note": "",
+      "social_title": "",
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "international-2026-11-15-5fb181d2e2",
@@ -27290,7 +27680,7 @@
     },
     {
       "id": "international-2026-11-30-9a278ceca1",
-      "status": "check",
+      "status": "rejected",
       "kind": "open_call",
       "city": "international",
       "date": "2026-11-30",
@@ -27321,7 +27711,7 @@
       "instagram_image": "",
       "social_priority": null,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-02"
     },
     {
       "id": "russia-2026-12-13-3a942b4abf",

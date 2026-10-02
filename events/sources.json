@@ -1118,6 +1118,145 @@
       "venue": "Международная школа дизайна — Петербург",
       "adapter": "telegram_channel_events",
       "source_group": "official_telegram"
+    },
+    {
+      "name": "Новая Голландия — Сообщество и образование",
+      "city": "spb",
+      "url": "https://www.newhollandsp.ru/events/education/",
+      "venue": "Новая Голландия",
+      "adapter": "event_links",
+      "href_contains": [
+        "/events/"
+      ],
+      "exclude_paths": [
+        "/events/education/",
+        "/events/all-events/",
+        "/events/art/",
+        "/events/past/"
+      ],
+      "max_detail_pages": 40,
+      "detail_workers": 4,
+      "source_group": "art_center"
+    },
+    {
+      "name": "АРТМУЗА — события",
+      "city": "spb",
+      "url": "https://artmuza.spb.ru/news.html",
+      "venue": "АРТМУЗА",
+      "adapter": "event_links",
+      "href_contains": [
+        "/events/"
+      ],
+      "exclude_paths": [
+        "/events/lectures/",
+        "/events/novosti/",
+        "/events/"
+      ],
+      "max_detail_pages": 40,
+      "detail_workers": 4,
+      "source_group": "art_center"
+    },
+    {
+      "name": "Дом Радио",
+      "city": "spb",
+      "url": "https://dom.radio/",
+      "venue": "Дом Радио",
+      "adapter": "event_links",
+      "href_contains": [
+        "/event/",
+        "/events/",
+        "timepad.ru/event/"
+      ],
+      "exclude_paths": [
+        "/"
+      ],
+      "max_detail_pages": 40,
+      "detail_workers": 4,
+      "source_group": "art_center"
+    },
+    {
+      "name": "Брусницын — культурный квартал",
+      "city": "spb",
+      "url": "https://brusnitsyn.spb.ru/",
+      "venue": "Брусницын",
+      "adapter": "event_links",
+      "href_contains": [
+        "brusnitsyn.spb.ru/",
+        "timepad.ru/event/"
+      ],
+      "exclude_paths": [
+        "/",
+        "/about",
+        "/contacts",
+        "/residents"
+      ],
+      "max_detail_pages": 40,
+      "detail_workers": 4,
+      "source_group": "art_center"
+    },
+    {
+      "name": "Пушкинская-10 — события",
+      "city": "spb",
+      "url": "https://p-10.ru/events/",
+      "venue": "Пушкинская-10",
+      "adapter": "event_links",
+      "href_contains": [
+        "/events/"
+      ],
+      "exclude_paths": [
+        "/events/"
+      ],
+      "max_detail_pages": 40,
+      "detail_workers": 4,
+      "source_group": "art_center"
+    },
+    {
+      "name": "Порядок слов — лекторий на Пушкинской-10",
+      "city": "spb",
+      "url": "https://wordorder.ru/pushkinskaya-10/",
+      "venue": "Порядок слов — Пушкинская-10",
+      "adapter": "event_links",
+      "href_contains": [
+        "/pushkinskaya-10/"
+      ],
+      "exclude_paths": [
+        "/pushkinskaya-10/"
+      ],
+      "max_detail_pages": 40,
+      "detail_workers": 4,
+      "source_group": "art_center"
+    },
+    {
+      "name": "Манеж — события",
+      "city": "spb",
+      "url": "https://manege.spb.ru/categories/events",
+      "venue": "Манеж",
+      "adapter": "event_links",
+      "href_contains": [
+        "/events/"
+      ],
+      "exclude_paths": [
+        "/events/"
+      ],
+      "max_detail_pages": 40,
+      "detail_workers": 4,
+      "source_group": "art_center"
+    },
+    {
+      "name": "Дом Радио — официальный Telegram",
+      "city": "spb",
+      "url": "https://t.me/s/domradio_online",
+      "venue": "Дом Радио",
+      "adapter": "telegram_channel_events",
+      "source_group": "official_telegram"
+    },
+    {
+      "name": "Пушкинская-10 — официальный Telegram",
+      "city": "spb",
+      "url": "https://t.me/s/pushkinskaya10",
+      "venue": "Пушкинская-10",
+      "adapter": "telegram_channel_events",
+      "source_group": "official_telegram"
     }
   ]
 }

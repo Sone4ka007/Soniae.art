@@ -204,10 +204,14 @@
       "venue": "Музей искусства Санкт-Петербурга XX–XXI веков",
       "adapter": "event_links",
       "href_contains": [
-        "/education/"
+        "/about/afisha/"
       ],
       "max_detail_pages": 60,
-      "detail_workers": 8
+      "detail_workers": 8,
+      "exclude_paths": [
+        "/about/afisha/"
+      ],
+      "listing_pages": 3
     },
     {
       "name": "Музей искусства Санкт-Петербурга XX–XXI веков — выставки",
@@ -383,14 +387,16 @@
       "venue": "Санкт-Петербургская государственная театральная библиотека",
       "adapter": "event_links",
       "href_contains": [
-        "/afisha/",
-        "/event/",
-        "/events/"
+        "/news/tpost/"
       ],
       "max_detail_pages": 100,
       "detail_workers": 8,
       "source_group": "library",
-      "high_free_yield": true
+      "high_free_yield": true,
+      "exclude_paths": [
+        "/afisha",
+        "/afisha/"
+      ]
     },
     {
       "name": "Санкт-Петербургская государственная театральная библиотека — выставки",

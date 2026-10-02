@@ -54,7 +54,8 @@ SKIP_TITLES = {
     "подробнее","все события","смотреть все","архив","читать далее","показать ещё",
     "показать еще","единый билет","следующий день","предыдущий день",
     "more details","see more","learn more","условия участия","о событии","об этом событии",
-    "будущие выставки","текущие выставки","выставки"
+    "будущие выставки","текущие выставки","выставки",
+    "подписка на рассылку","подписаться на рассылку"
 }
 
 def load_json(path, default):
@@ -255,7 +256,7 @@ def parse_price(text):
     t = clean(text)
     # Explicit money always wins over generic "Бесплатные" navigation/filter
     # text that may also be present on the same page.
-    m = re.search(r"(?<!\d)(\d[\d\s\u00a0]{0,7})\s*₽", t)
+    m = re.search(r"(?<!\d)(\d[\d\s\u00a0]{0,7})\s*(?:₽|руб(?:лей|ля|ль|\.)?\b)", t, re.I)
     if m:
         try:
             value=int(re.sub(r"\D","",m.group(1)))
@@ -455,6 +456,16 @@ def extract_event_links(html, src):
         if any(p in full for p in patterns) and full not in seen_urls:
             seen_urls.add(full); urls.append(full)
 
+    if src.get("listing_pages"):
+        for page in range(2,int(src["listing_pages"])+1):
+            page_url=src["url"]+("&" if "?" in src["url"] else "?")+f"PAGEN_1={page}"
+            try:
+                more=BeautifulSoup(fetch(page_url),"html.parser")
+            except Exception: continue
+            for a in more.find_all("a",href=True):
+                full=urljoin(src["url"],a["href"])
+                if any(p in full for p in patterns) and urlparse(full).path not in exclude_paths and full not in seen_urls:
+                    seen_urls.add(full);urls.append(full)
     max_pages=int(src.get("max_detail_pages",60))
     urls=urls[:max_pages]
 
@@ -478,6 +489,18 @@ def extract_event_links(html, src):
         is_exhibition=(src.get("kind")=="exhibition" or "/exhibitions/" in path_low or "/exhibition/" in path_low)
 
         title=""
+        if "mispxx-xxi.ru" in host:
+            heading=dsoup.select_one(".list__news-h1")
+            if heading: title=clean(heading.get_text(" ",strip=True))
+            article=dsoup.select_one(".list__news-event")
+            if article: dtext=clean(article.get_text(" ",strip=True))
+        if "rgub.ru" in host:
+            heading=dsoup.select_one(".articleheader")
+            article=dsoup.select_one(".articletext")
+            if heading:
+                title=clean(heading.get_text(" ",strip=True))
+            if article:
+                dtext=clean(article.get_text(" ",strip=True))
         # AZ and Hermitage pages can put generic internal headings such as
         # "О событии" before the actual event title. OpenGraph is more reliable.
         if is_az or "hermitagemuseum.org" in host:
@@ -507,7 +530,7 @@ def extract_event_links(html, src):
         if not title:
             return None
 
-        context=event_context(dtext,title,2200)
+        context=event_context(dtext,title,6000 if "mispxx-xxi.ru" in host else 2200)
         if is_winzavod:
             start_dt,end_dt=parse_ru_date_range(context,today.year)
             if not start_dt:
@@ -516,6 +539,9 @@ def extract_event_links(html, src):
         elif is_az:
             start_dt,end_dt=parse_ru_date_range(context,today.year)
             dt=start_dt or parse_date(context,require_year=False,default_year=today.year)
+        elif "mispxx-xxi.ru" in host and not is_exhibition:
+            date_node=dsoup.select_one(".list__news-date")
+            dt=parse_date(date_node.get_text(" ",strip=True),require_year=False,default_year=today.year) if date_node else None
         elif is_exhibition:
             start_dt,end_dt=parse_exhibition_range(dtext)
             dt=start_dt or parse_date(dtext,require_year=True)
@@ -532,7 +558,7 @@ def extract_event_links(html, src):
         elif is_exhibition and dt<today-timedelta(days=365):
             return None
 
-        tm=parse_event_page_time(context[:900] if "jewish-museum.ru" not in host else dtext,host)
+        tm=parse_event_page_time(context if "mispxx-xxi.ru" in host else (context[:900] if "jewish-museum.ru" not in host else dtext),host)
         price,price_text=parse_price(context[:1200] if (is_az or is_winzavod) else dtext)
         reg=bool(re.search(r"регистрац|зарегистр|купить билет",context[:1400] if (is_az or is_winzavod) else dtext,re.I)) or None
         cat=event_category(context[:1800])
@@ -994,6 +1020,28 @@ def extract_telegram_channel_events(html, src):
 
 def extract_rnb(html, src):
     soup=BeautifulSoup(html,"html.parser")
+    cards=[]
+    for heading in soup.select(".zagl a[href]"):
+        card=heading.find_parent(class_="row")
+        if not card: continue
+        day=card.select_one(".day"); month=card.select_one(".month"); year=card.select_one(".year")
+        if not all((day,month,year)): continue
+        dt=parse_date(" ".join(x.get_text(" ",strip=True) for x in (day,month,year)),require_year=True)
+        if not dt or dt<date.today(): continue
+        title=clean(heading.get_text(" ",strip=True))
+        raw=clean(card.get_text(" ",strip=True))
+        tm=card.select_one(".time")
+        price,price_text=parse_price(raw)
+        desc=card.select_one(".text_after")
+        ev=make_event(src,dt.isoformat(),parse_time(tm.get_text() if tm else ""),title,
+                      urljoin(src["url"],heading["href"]),clean(desc.get_text(" ",strip=True)) if desc else "",
+                      price=price,price_text=price_text,registration=bool(re.search(r"регистрац",raw,re.I)),
+                      categories=[event_category(title)] if event_category(title) else [])
+        place=card.select_one(".a_building[data-address]")
+        if place: ev["address"]=place["data-address"]
+        cards.append(ev)
+    if cards: return cards
+
     lines=[clean(x) for x in soup.get_text("\n",strip=True).split("\n")]
     lines=[x for x in lines if x]
     out=[]; today=date.today(); i=0
@@ -1389,7 +1437,7 @@ def extract_open_call_listing(html, src):
         out.append(ev)
     return out
 
-def extract_ges2(src, days=14):
+def extract_ges2(src, days=31):
     out, seen = [], set()
     today = date.today()
     detail_cache={}
@@ -1459,17 +1507,25 @@ def extract_ges2(src, days=14):
                 continue
 
             cat=detail["cat"] or event_category(txt)
-            key=(dt.isoformat(),full)
+            is_exhibition=bool(re.search(r"тип:\s*(?:выставка|инсталляция)\b",detail["text"],re.I))
+            start_dt,end_dt=parse_ru_date_range(detail["text"],today.year) if is_exhibition else (None,None)
+            event_date=(start_dt or dt).isoformat()
+            key=("exhibition" if is_exhibition else dt.isoformat(),full)
             if key in seen:
                 continue
             seen.add(key)
 
             price,price_text=parse_price(detail["text"] or txt)
             reg=bool(re.search(r"регистрац|зарегистр",detail["text"] or txt,re.I)) or None
-            ev=make_event(src,dt.isoformat(),parse_time(txt),title,full,"",
+            ev=make_event(src,event_date,"" if is_exhibition else parse_time(txt),title,full,"",
                           price=price,price_text=price_text,registration=reg,
                           categories=[cat] if cat else [])
             ev["audience_text"]=(detail["text"] or "")[:2500]
+            if is_exhibition:
+                ev["kind"]="exhibition"
+                ev["categories"]=["выставка"]
+                if start_dt: ev["start_date"]=start_dt.isoformat()
+                if end_dt: ev["end_date"]=end_dt.isoformat()
             out.append(ev)
     return out
 
@@ -1483,6 +1539,8 @@ def main():
         e for e in db.get("events",[])
         if str(e.get("source") or "") != "Design Mate — календарь"
     ]
+    from dedupe_exhibitions import collapse_exhibitions
+    current_events=collapse_exhibitions(current_events)
     existing={e.get("id"):e for e in current_events}
     occurrence_index={
         (e.get("city"),e.get("date"),str(e.get("url","")).strip().lower(),
@@ -1545,11 +1603,16 @@ def main():
             if not old_id and n_url and n_url != src_url:
                 old_id=url_date_index.get((n.get("city"),n.get("date"),n_url))
             host=urlparse(n_url).netloc.lower() if n_url else ""
+            if not old_id and (n.get("kind")=="exhibition" or "rgub.ru" in host):
+                matches=[e for e in existing.values() if e.get("city")==n.get("city") and str(e.get("url","")).strip().lower()==n_url]
+                if matches:
+                    matches.sort(key=lambda e:(e.get("status")!="approved",e.get("date","")))
+                    old_id=matches[0]["id"]
             # Winzavod and AZ previously stored the wrong end-date/opening-time
             # from page chrome. Match their existing approved records by stable
             # detail URL + title so a corrected scrape repairs facts instead of
             # creating a duplicate candidate.
-            if not old_id and n_url and any(h in host for h in ("winzavod.ru","museum-az.com")):
+            if not old_id and n_url and any(h in host for h in ("winzavod.ru","museum-az.com","rgub.ru")):
                 old_id=url_title_index.get((
                     n.get("city"),n_url,re.sub(r"\W+","",str(n.get("title","")).lower())
                 ))

@@ -78,6 +78,9 @@ for generated_event in generated.get("events",[]):
         for k in ("date","time","start_date","end_date","availability","availability_checked_at"):
             if k in generated_event and generated_event.get(k) not in (None,""):
                 e[k]=generated_event[k]
+        if str(old.get("title","")).lower() in ("подписка на рассылку","подписаться на рассылку"):
+            for k in ("title","description","categories","audience_text"):
+                if k in generated_event: e[k]=generated_event[k]
         # Keep the generated identity when a source legitimately changes the
         # technical id, while preserving moderation/editorial fields.
         if rid:

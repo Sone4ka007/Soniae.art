@@ -130,6 +130,8 @@ def stale(e,today):
 def run(path,fix=False,strict=False):
     p=Path(path)
     db=json.loads(p.read_text("utf-8"))
+    from dedupe_exhibitions import collapse_exhibitions
+    db["events"]=collapse_exhibitions(db.get("events",[]))
     changed=0
     errors=[]
     for e in db.get("events",[]):

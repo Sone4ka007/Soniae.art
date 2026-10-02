@@ -12299,7 +12299,7 @@
     },
     {
       "id": "spb-2026-10-02-efed6a0440",
-      "status": "check",
+      "status": "new",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-02",
@@ -12396,8 +12396,7 @@
       "social_description": "",
       "instagram_image": "",
       "editor_note": "",
-      "social_title": "",
-      "reviewed_at": ""
+      "social_title": ""
     },
     {
       "id": "spb-2026-10-02-c4a099dd48",
@@ -12532,8 +12531,7 @@
       "social_description": "",
       "instagram_image": "",
       "editor_note": "",
-      "social_title": "",
-      "reviewed_at": ""
+      "social_title": ""
     },
     {
       "id": "spb-2026-10-02-acb47fea46",
@@ -12702,41 +12700,6 @@
       "editor_note": "",
       "social_title": "",
       "reviewed_at": "2026-10-02"
-    },
-    {
-      "id": "spb-2026-10-02-342900f35d",
-      "status": "new",
-      "kind": "exhibition",
-      "city": "spb",
-      "date": "2026-10-02",
-      "time": "",
-      "title": "Выставочный проект «Сцена действия» 25 сентября 2026 — 14 февраля 2027",
-      "venue": "Манеж",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [
-        "выставка"
-      ],
-      "description": "25 сентября в Музейно-выставочном комплексе «Манеж» открывается выставка «Сцена действия» — проект, приуроченный к 150-летию Союза театральных деятелей Российской Федерации.",
-      "url": "https://manege.spb.ru/events/vystavochnyj-proekt-sczena-dejstviya/",
-      "source": "Манеж — события",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-10-02",
-      "price_type": "unknown",
-      "availability": "available",
-      "availability_checked_at": "2026-10-02",
-      "start_date": "2026-10-02",
-      "telegram_include": false,
-      "instagram_include": false,
-      "social_priority": null,
-      "social_description": "",
-      "instagram_image": "",
-      "editor_note": "",
-      "social_title": "",
-      "reviewed_at": ""
     },
     {
       "id": "spb-2026-10-02-3bac9d8025",
@@ -13272,8 +13235,7 @@
       "social_description": "",
       "instagram_image": "",
       "editor_note": "",
-      "social_title": "",
-      "reviewed_at": ""
+      "social_title": ""
     },
     {
       "id": "spb-2026-10-02-b359d039eb",
@@ -13442,40 +13404,6 @@
       "editor_note": "",
       "social_title": "",
       "reviewed_at": "2026-10-02"
-    },
-    {
-      "id": "spb-2026-10-02-4ef88e3073",
-      "status": "new",
-      "kind": "event",
-      "city": "spb",
-      "date": "2026-10-02",
-      "time": "00:20",
-      "title": "Арт‑инсталляция «Цветущий сад»",
-      "venue": "Манеж",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [
-        "перформанс"
-      ],
-      "description": "Музейно‑выставочный комплекс «Манеж» , ландшафтное бюро «VERDE» , питомник «Садово‑Парковые Растения» и компания «АлисСтрой» представляют художественную инсталляцию «Цветущий сад», которая откроется 18 мая на площади у западного фасада Манежа.",
-      "url": "https://manege.spb.ru/events/art%e2%80%91installyacziya-czvetushhij-sad/",
-      "source": "Манеж — события",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-10-02",
-      "price_type": "unknown",
-      "availability": "unknown",
-      "availability_checked_at": "2026-10-02",
-      "telegram_include": false,
-      "instagram_include": false,
-      "social_priority": null,
-      "social_description": "",
-      "instagram_image": "",
-      "editor_note": "",
-      "social_title": "",
-      "reviewed_at": ""
     },
     {
       "id": "spb-2026-10-02-15b9a4cbcf",
@@ -16854,6 +16782,34 @@
       "reviewed_at": ""
     },
     {
+      "id": "spb-2026-10-07-a72cb3d2ce",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-07",
+      "time": "",
+      "title": "«Просветительская среда». Лекционный цикл к выставке «Сцена действия» 25 сентября 2026 — 14 февраля 2027",
+      "venue": "Манеж",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": true,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Дорогие друзья, представляем вам программу «Просветительская среда» — специальный цикл лекций, подготовленный к выставке «Сцена действия». По средам вечером встречаемся с вами в аванзале Манежа и погружаемся в историю отечественного театра.",
+      "url": "https://manege.spb.ru/events/vystavochnyj-proekt-sczena-dejstviya-lekcyy/",
+      "source": "Манеж — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-02",
+      "price_type": "free",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-02",
+      "telegram_include": false,
+      "instagram_include": false
+    },
+    {
       "id": "moscow-2026-10-07-233e77b0e3",
       "status": "approved",
       "kind": "event",
@@ -19930,6 +19886,39 @@
       "social_title": "",
       "instagram_include": false,
       "telegram_include": false
+    },
+    {
+      "id": "spb-2026-10-11-148742e6ba",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-11",
+      "time": "00:20",
+      "title": "Карта Манежа. Годовой абонемент",
+      "venue": "Манеж",
+      "address": "",
+      "price": 3000,
+      "price_text": "3000 ₽",
+      "registration": true,
+      "categories": [],
+      "description": "Карта Манежа — это годовой абонемент для тех, кто хочет быть ближе к искусству: безлимитно приходить на выставки Манежа и МИСП, проходить без очереди и становиться частью специальной программы площадки. Выберите подходящий формат: Карта Манежа. Гость 3 000 ₽ купить Карта Манежа.",
+      "url": "https://manege.spb.ru/events/karta-manezha-uzhe-v-prodazhe/",
+      "source": "Манеж — события",
+      "checked_at": "",
+      "review_reason": "non_event_service_page",
+      "discovered_at": "2026-10-02",
+      "price_type": "paid",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-02",
+      "telegram_include": false,
+      "instagram_include": false,
+      "social_priority": null,
+      "social_description": "",
+      "instagram_image": "",
+      "editor_note": "",
+      "social_title": "",
+      "reviewed_at": "2026-10-02",
+      "start_date": "2026-10-11"
     },
     {
       "id": "spb-2026-10-11-20744129e7",

@@ -14478,6 +14478,30 @@
       "reviewed_at": ""
     },
     {
+      "id": "spb-2026-10-02-d4cbaa8a86",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-02",
+      "time": "19:30",
+      "title": "Догадки об Останине",
+      "venue": "Пушкинская-10",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [],
+      "description": "Приглашаем его друзей, со-авторов, учеников и корреспондентов на Вечер памяти. Давайте соберемся и вспомним этого вдающегося разговорного философа, культурного провокатора, визионера и изобретателя. Нам всем грустно и пусто без его полуночных звонков и внезапных визитов, и об этом обязательно надо поговорить.",
+      "url": "https://p-10.ru/events/dogadki-ob-ostanine/",
+      "source": "Пушкинская-10 — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-02",
+      "price_type": "free",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-02"
+    },
+    {
       "status": "approved",
       "kind": "event",
       "city": "moscow",
@@ -16856,7 +16880,13 @@
       "availability": "unknown",
       "availability_checked_at": "2026-10-02",
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "social_title": "",
+      "instagram_image": "",
+      "editor_note": "",
+      "social_priority": null,
+      "social_description": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-07-233e77b0e3",

@@ -127,6 +127,26 @@ def stale(e,today):
     except Exception:
         return False
 
+def exclusion_reason(e, today=None):
+    today = today or date.today()
+    title = low(e.get("title"))
+    cats = " ".join(low(c) for c in e.get("categories", []))
+    if e.get("kind", "event") == "event" and (
+        re.search(r"концерт|concert|\\bджем\\b|\\bdj[- ]|музыкальн.{0,20}(?:вечер|программ)", title)
+        or re.search(r"концерт|concert", cats)
+    ):
+        return "music_concert_excluded"
+    if stale(e, today):
+        return "past_event"
+    if e.get("kind", "event") == "event":
+        try:
+            d = date.fromisoformat(e.get("date", ""))
+            if d > today + timedelta(days=45):
+                return "outside_collection_horizon"
+        except (ValueError, TypeError):
+            return "event_date_required"
+    return ""
+
 def run(path,fix=False,strict=False):
     p=Path(path)
     db=json.loads(p.read_text("utf-8"))
@@ -136,6 +156,11 @@ def run(path,fix=False,strict=False):
     errors=[]
     for e in db.get("events",[]):
         changed+=bool(normalize(e))
+        reason = exclusion_reason(e)
+        if reason and e.get("status") in ("new", "check"):
+            e["status"] = "rejected"
+            e["review_reason"] = reason
+            changed += 1
 
     # Do not treat a shared museum/homepage URL as a duplicate by itself.
     # Duplicate detection is conservative: same normalized title + venue/source.

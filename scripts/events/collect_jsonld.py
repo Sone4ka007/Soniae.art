@@ -705,10 +705,7 @@ def extract_single_event_page(html, src):
     if not dt:
         return []
     if dt < today - timedelta(days=60):
-        try:
-            dt=date(dt.year+1,dt.month,dt.day)
-        except ValueError:
-            return []
+        return []
     if dt < today:
         return []
 
@@ -832,7 +829,7 @@ def extract_telegram_digest(html, src):
                     try:
                         current_date=date(year,month,int(dm.group(1)))
                         if current_date < today - timedelta(days=60):
-                            current_date=date(year+1,month,int(dm.group(1)))
+                            current_date=None
                     except ValueError:
                         current_date=None
                 continue
@@ -884,10 +881,7 @@ def extract_telegram_channel_events(html, src):
         if not dt:
             continue
         if dt < today - timedelta(days=60):
-            try:
-                dt=date(dt.year+1,dt.month,dt.day)
-            except ValueError:
-                continue
+            continue
         if dt < today:
             continue
 
@@ -1592,6 +1586,9 @@ def main():
 
         source_added=0
         for n in candidates:
+            from quality_gate import exclusion_reason
+            if exclusion_reason(n):
+                continue
             occ=(n.get("city"),n.get("date"),str(n.get("url","")).strip().lower(),
                  re.sub(r"\W+","",str(n.get("title","")).lower()))
             old_id=occurrence_index.get(occ)

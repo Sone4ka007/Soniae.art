@@ -442,6 +442,43 @@ def extract_split_program_events(dsoup, src, full, page_text, page_year):
         out.append(ev)
     return out
 
+def extract_tretyakov_description(soup):
+    """Read description tab, including content serialized for client rendering."""
+    def tidy(text):
+        text = re.sub(r"«\s+", "«", text)
+        text = re.sub(r"\s+»", "»", text)
+        return re.sub(r"\s+([.,;:])", r"\1", text)
+    parts = []
+    for script in soup.find_all("script"):
+        payload = script.string or script.get_text()
+        match = re.search(r'\bshort_desc\s*:\s*("(?:\\.|[^"\\])*")', payload)
+        if not match:
+            continue
+        try:
+            short = json.loads(match.group(1))
+        except (ValueError, TypeError):
+            continue
+        text = clean(BeautifulSoup(short, "html.parser").get_text(" ", strip=True))
+        text = re.split(r"Для дополнительной информации\s*:", text, maxsplit=1, flags=re.I)[0].strip()
+        if text:
+            return tidy(text)
+        full = re.search(r'\bdetail_text\s*:\s*\{\s*full\s*:\s*("(?:\\.|[^"\\])*")', payload)
+        if full:
+            try:
+                text = clean(BeautifulSoup(json.loads(full.group(1)), "html.parser").get_text(" ", strip=True))
+            except (ValueError, TypeError):
+                continue
+            text = re.split(r"Продажа билетов|ВНИМАНИЕ!", text, maxsplit=1, flags=re.I)[0].strip()
+            if text:
+                return tidy(text)
+    for selector in (".event-detail__description-col.__left-col", ".event-detail__description-col.__right-col"):
+        node = soup.select_one(selector)
+        text = clean(node.get_text(" ", strip=True)) if node else ""
+        if text:
+            parts.append(text)
+    return tidy(clean(" ".join(parts)))
+
+
 def extract_event_links(html, src):
     soup=BeautifulSoup(html,"html.parser")
     out=[]; seen_urls=set(); today=date.today()
@@ -617,8 +654,7 @@ def extract_event_links(html, src):
             if article:
                 desc = clean(article.get_text(" ", strip=True))
         if "tretyakovgallery.ru" in host:
-            node = dsoup.select_one(".event-detail__description-col.__right-col")
-            desc = clean(node.get_text(" ", strip=True)) if node else ""
+            desc = extract_tretyakov_description(dsoup)
         hard_boilerplate=(
             "сегодня выставки и галереи закрыты",
             "сегодня выставки, галереи, магазины и кафе работают",

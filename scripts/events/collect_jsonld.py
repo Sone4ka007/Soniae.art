@@ -612,6 +612,10 @@ def extract_event_links(html, src):
                                 break
                 if parts:
                     desc=clean(" ".join(parts))
+        if "rgub.ru" in host:
+            article = dsoup.select_one(".articletext")
+            if article:
+                desc = clean(article.get_text(" ", strip=True))
         if "tretyakovgallery.ru" in host:
             node = dsoup.select_one(".event-detail__description-col.__right-col")
             desc = clean(node.get_text(" ", strip=True)) if node else ""
@@ -654,7 +658,7 @@ def extract_event_links(html, src):
                     desc=clean(" ".join(win_parts))
         start_node=dsoup.find("h1") or dsoup.find("h2") or dsoup
         parts=[]
-        if not desc and "tretyakovgallery.ru" not in host:
+        if not desc and not any(site in host for site in ("tretyakovgallery.ru", "rgub.ru")):
             paragraph_nodes=start_node.find_all_next("p")
         else:
             paragraph_nodes=[]

@@ -42,6 +42,21 @@ def clean_description(text, kind):
 
 def normalize(e):
     changed=[]
+    # Verified primary-source correction; keep the existing id and moderation.
+    if urlparse(str(e.get("url", ""))).netloc.removeprefix("www.") == "rosphoto.org" and urlparse(str(e.get("url", ""))).path.rstrip("/") == "/events/pustaya-scena":
+        facts = {
+            "kind": "exhibition", "categories": ["выставка"],
+            "date": "2026-09-12", "start_date": "2026-09-12",
+            "end_date": "2026-10-11", "time": "",
+            "venue": "Санкт-Петербургское общество «А–Я»",
+            "address": "Невский проспект, 60, двор кинотеатра «Аврора»",
+            "price": 200, "price_type": "paid",
+            "price_text": "200 ₽; ср.–вс., 12:00–20:00"
+        }
+        for key, value in facts.items():
+            if e.get(key) != value:
+                e[key] = value
+                changed.append("verified_rosphoto_" + key)
     e.setdefault("categories",[])
     if not isinstance(e["categories"],list):
         e["categories"]=[x.strip() for x in str(e["categories"]).split(",") if x.strip()]

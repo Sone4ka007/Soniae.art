@@ -545,6 +545,8 @@ def extract_event_links(html, src):
             return None
 
         context=event_context(dtext,title,6000 if "mispxx-xxi.ru" in host else 2200)
+        if "rosphoto.org" in host and re.search(r"(?:персональн\\w*|представ\\w*).{0,80}выставк", context, re.I):
+            is_exhibition = True
         if "manege.spb.ru" in host:
             heading = dsoup.select_one(".recommendations__title")
             heading_text = clean(heading.get_text(" ", strip=True)) if heading else ""

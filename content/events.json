@@ -15436,6 +15436,32 @@
       "sheet_synced_description": "3 октября 2026 года в 16 часов приглашаем на бесплатную тематическую экскурсию-квест «Знакомство с русским зарубежьем». Экскурсия-квест адресована младшим школьникам и проходит по основной экспозиции Музея русского зарубежья."
     },
     {
+      "id": "spb-2026-10-03-c574513ca9",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-03",
+      "time": "16:00",
+      "title": "Каждую субботу в 16:00 — обзорная экскурсия по «Пушкинской-10»",
+      "venue": "Пушкинская-10",
+      "address": "",
+      "price": 600,
+      "price_text": "600 ₽",
+      "registration": false,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "Каждую субботу ровно в 16:00 группа будет отправляться от ресепшена в путешествие по коридорам и галереям «Пушкинской-10». В сопровождении опытного экскурсовода гости не только разберутся в современном и актуальном искусстве, но и получат ответы на все интересующие вопросы и проникнутся духом петербургского андерграунда.",
+      "url": "https://p-10.ru/events/obzornaya-ekskursiya-po-pushkinskoj-10-2/",
+      "source": "Пушкинская-10 — события",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-03",
+      "price_type": "paid",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-03"
+    },
+    {
       "id": "spb-2026-10-03-6803e36587",
       "status": "rejected",
       "kind": "event",
@@ -15615,6 +15641,32 @@
       "sheet_synced_description": "Дискуссия архитектурной школы МАРШ о профессии светодизайнера и перспективах индустрии."
     },
     {
+      "id": "spb-2026-10-03-0c3870ba2c",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-03",
+      "time": "18:00",
+      "title": "Показ документального фильма Мартона Ороса о Дёрде Кепеше «Соединяя искусство и науку» и встреча с режиссёром",
+      "venue": "Пушкинская-10",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [
+        "кинопоказ"
+      ],
+      "description": "Дёрдь Кепеш — венгерский визионер и ключевая фигурой медиа-арта, чьи исследования света и интеграции художников с учёными и инженерами опередили время.",
+      "url": "https://p-10.ru/events/pokaz-dokumentalnogo-filma-martona-orosa-o-djorde-kepeshe-soedinyaya-iskusstvo-i-nauku-i-vstrecha-s-rezhissjorom/",
+      "source": "Пушкинская-10 — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-03",
+      "price_type": "free",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-03"
+    },
+    {
       "status": "rejected",
       "kind": "event",
       "city": "moscow",
@@ -15710,7 +15762,7 @@
       "review_reason": "",
       "discovered_at": "2026-09-21",
       "price_type": "unknown",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-03",
       "editor_note": "",
       "reviewed_at": "2026-09-21",
@@ -17267,7 +17319,8 @@
       "telegram_include": false,
       "editor_note": "",
       "instagram_image": "",
-      "social_priority": null
+      "social_priority": null,
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-06-781c85084b",
@@ -17547,7 +17600,8 @@
       "telegram_include": false,
       "editor_note": "",
       "instagram_image": "",
-      "social_priority": null
+      "social_priority": null,
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-07-14d1173fbf",
@@ -17651,7 +17705,8 @@
       "telegram_include": false,
       "editor_note": "",
       "instagram_image": "",
-      "social_priority": null
+      "social_priority": null,
+      "reviewed_at": ""
     },
     {
       "status": "approved",

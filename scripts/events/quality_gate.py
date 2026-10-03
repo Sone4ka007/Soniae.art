@@ -28,6 +28,8 @@ def is_aggregator_url(url):
 
 def clean_description(text, kind):
     s=re.sub(r"\s+"," ",str(text or "")).strip()
+    if re.search(r"cookies?|пользовательским соглашением|настройках браузера", s, re.I):
+        return ""
     s=re.sub(r"(?:Доступно по Пушкинской карте\s*Узнать больше\s*)+","",s,flags=re.I)
     if any(x in s.lower() for x in BOILERPLATE[:2]) and len(s)<260:
         return ""

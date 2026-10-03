@@ -612,11 +612,14 @@ def extract_event_links(html, src):
                                 break
                 if parts:
                     desc=clean(" ".join(parts))
+        if "tretyakovgallery.ru" in host:
+            node = dsoup.select_one(".event-detail__description-col.__right-col")
+            desc = clean(node.get_text(" ", strip=True)) if node else ""
         hard_boilerplate=(
             "сегодня выставки и галереи закрыты",
             "сегодня выставки, галереи, магазины и кафе работают",
             "магазины и кафе работают в обычном режиме",
-            "режим работы"
+            "режим работы", "cookie", "пользовательским соглашением"
         )
 
         if is_winzavod:
@@ -651,7 +654,7 @@ def extract_event_links(html, src):
                     desc=clean(" ".join(win_parts))
         start_node=dsoup.find("h1") or dsoup.find("h2") or dsoup
         parts=[]
-        if not desc:
+        if not desc and "tretyakovgallery.ru" not in host:
             paragraph_nodes=start_node.find_all_next("p")
         else:
             paragraph_nodes=[]
@@ -1645,7 +1648,10 @@ def main():
                 editor_note=old.get("editor_note","")
                 reviewed_at=old.get("reviewed_at","")
                 discovered_at=old.get("discovered_at") or n.get("discovered_at")
+                editorial_description = old.get("description") if old.get("description_editorial") else None
                 old.update(n)
+                if editorial_description is not None:
+                    old["description"] = editorial_description
                 old["id"]=old_id
                 old["status"]=final_status
                 old["editor_note"]=editor_note

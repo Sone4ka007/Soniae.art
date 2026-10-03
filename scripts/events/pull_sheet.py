@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import json, os
+from sheet_editorial import merge_description
 from datetime import date
 from pathlib import Path
 from google.oauth2.service_account import Credentials
@@ -40,6 +41,7 @@ def main():
         rid=row.get("id","").strip()
         if not rid or rid not in byid: continue
         e=byid[rid]
+        merge_description(e, row)
         old_status=e.get("status","")
         for k in editable:
             if k not in row: continue

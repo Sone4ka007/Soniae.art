@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import json, os
+from sheet_editorial import merge_description
 from pathlib import Path
 from google.oauth2.service_account import Credentials
 from googleapiclient.discovery import build
@@ -50,6 +51,7 @@ def preserve_editor_fields(api, db):
         if not rid or rid not in byid:
             continue
         e=byid[rid]
+        merge_description(e, obj)
         old_status=e.get("status","")
         live_status=str(obj.get("status","")).strip()
         synced_status=str(obj.get("synced_status","")).strip()
@@ -92,7 +94,7 @@ def main():
     api=svc.spreadsheets().values()
     merged,current_order=preserve_editor_fields(api,db)
     db["events"]=sorted(db.get("events",[]),key=lambda e:(e.get("date",""),e.get("time",""),e.get("title","")))
-    DB.write_text(json.dumps(db,ensure_ascii=False,indent=2)+"\n","utf-8")
+
 
     rows=[HEADERS]
     import datetime as _dt
@@ -135,6 +137,10 @@ def main():
             e.get("instagram_include","") if e.get("instagram_include") is not None else "",
             e.get("instagram_image","")
         ])
+
+    for e in sheet_events:
+        e["sheet_synced_description"] = e.get("description", "")
+    DB.write_text(json.dumps(db,ensure_ascii=False,indent=2)+"\n","utf-8")
 
     api.clear(spreadsheetId=SHEET_ID,range=RANGE,body={}).execute()
     api.update(spreadsheetId=SHEET_ID,range="Events!A1",valueInputOption="RAW",body={"values":rows}).execute()

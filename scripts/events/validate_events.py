@@ -135,26 +135,8 @@ def main():
         editable_status=e.get("status") in ("new","check")
         if editable_status and title_blob in STALE_EXACT_TITLES:
             e["status"]="rejected"; e["review_reason"]="excluded_stale_event"; changed+=1; continue
-        if editable_status and (
-            ("гэс-2" in blob or "ges-2.org" in blob) and
-            any(x in blob for x in GES2_MASTERCLASS_HINTS)
-        ):
-            e["status"]="rejected"; e["review_reason"]="excluded_ges2_masterclass"; changed+=1; continue
-        if editable_status and (
-            ("гэс-2" in blob or "ges-2.org" in blob) and
-            any(x in title_blob for x in GES2_LOW_VALUE_HINTS)
-        ):
-            e["status"]="rejected"; e["review_reason"]="excluded_ges2_low_value"; changed+=1; continue
-        if editable_status and e.get("kind")=="event" and (
-            ("гэс-2" in blob or "ges-2.org" in blob) and
-            any(x in blob for x in GES2_FILM_HINTS) and
-            not any(x in blob for x in GES2_FILM_FESTIVAL_HINTS)
-        ):
-            e["status"]="rejected"; e["review_reason"]="excluded_ges2_nonfestival_screening"; changed+=1; continue
         if editable_status and any(x in blob for x in EXCLUDE):
             e["status"]="rejected"; e["review_reason"]="excluded_person"; changed+=1; continue
-        if editable_status and any(x in filter_blob for x in PLEIN) and not any(x in blob for x in GELD):
-            e["status"]="rejected"; e["review_reason"]="excluded_plein_air"; changed+=1; continue
         if editable_status and (
             any(x in filter_blob for x in FAMILY_CHILDREN) or
             any(x in title_blob for x in KNOWN_CHILD_EVENT_HINTS) or
@@ -168,14 +150,6 @@ def main():
         if editable_status and e.get("kind")=="event" and any(x in filter_blob for x in TOUR_HINTS):
             if not any(x in (filter_blob+" "+audience_blob[:1200]) for x in TOUR_KEEP):
                 e["status"]="rejected"; e["review_reason"]="excluded_tour_mediation"; changed+=1; continue
-        if editable_status and e.get("kind")=="open_call":
-            paid_call=(e.get("price_type")=="paid" or any(x in blob for x in PAY_TO_PLAY_HINTS))
-            if paid_call:
-                if any(x in blob for x in MARKET_FEE_HINTS):
-                    e["status"]="check"; e["review_reason"]="paid_market_fee_exception_review"; changed+=1; continue
-                if any(x in blob for x in PRESTIGE_WHITELIST_HINTS):
-                    e["status"]="check"; e["review_reason"]="paid_prestigious_call_exception_review"; changed+=1; continue
-                e["status"]="rejected"; e["review_reason"]="excluded_paid_open_call"; changed+=1; continue
         if problems and e.get("status")=="new":
             e["status"]="check"; e["review_reason"]=", ".join(problems); changed+=1
     before_drop=len(db.get("events",[]))

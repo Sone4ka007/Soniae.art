@@ -1323,6 +1323,70 @@
       "max_detail_pages": 60,
       "detail_workers": 6,
       "source_group": "art_school"
+    },
+    {
+      "name": "Школа Родченко — новости и события",
+      "city": "moscow",
+      "url": "https://mdfschool.ru/",
+      "venue": "Московская школа фотографии и мультимедиа имени Родченко",
+      "adapter": "event_links",
+      "href_contains": [
+        "/news/",
+        "/events/",
+        "/event/"
+      ],
+      "kind": "event",
+      "max_detail_pages": 70,
+      "detail_workers": 6,
+      "source_group": "art_school"
+    },
+    {
+      "name": "Институт современного искусства Иосифа Бакштейна — события",
+      "city": "moscow",
+      "url": "https://ica-moscow.ru/",
+      "venue": "Институт современного искусства Иосифа Бакштейна",
+      "adapter": "event_links",
+      "href_contains": [
+        "/events/",
+        "/event/",
+        "/news/"
+      ],
+      "kind": "event",
+      "max_detail_pages": 60,
+      "detail_workers": 6,
+      "source_group": "art_school"
+    },
+    {
+      "name": "Галерея ГРАУНД — события",
+      "city": "moscow",
+      "url": "https://groundmoscow.com/",
+      "venue": "Галерея ГРАУНД",
+      "adapter": "event_links",
+      "href_contains": [
+        "/events/",
+        "/event/",
+        "/projects/"
+      ],
+      "kind": "event",
+      "max_detail_pages": 60,
+      "detail_workers": 6,
+      "source_group": "gallery"
+    },
+    {
+      "name": "Фонд культуры Екатерина — выставки и события",
+      "city": "moscow",
+      "url": "https://ekaterina-fondation.ru/",
+      "venue": "Фонд культуры «Екатерина»",
+      "adapter": "event_links",
+      "href_contains": [
+        "/events/",
+        "/exhibitions/",
+        "/projects/"
+      ],
+      "kind": "event",
+      "max_detail_pages": 60,
+      "detail_workers": 6,
+      "source_group": "art_institution"
     }
   ]
 }

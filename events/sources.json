@@ -1261,6 +1261,68 @@
       "venue": "Пушкинская-10",
       "adapter": "telegram_channel_events",
       "source_group": "official_telegram"
+    },
+    {
+      "name": "Московская школа современного искусства — события",
+      "city": "moscow",
+      "url": "https://msca.ru/",
+      "venue": "Московская школа современного искусства",
+      "adapter": "event_links",
+      "href_contains": [
+        "/event/"
+      ],
+      "kind": "event",
+      "max_detail_pages": 70,
+      "detail_workers": 6,
+      "source_group": "art_school"
+    },
+    {
+      "name": "ФотоДепартамент — события и программы",
+      "city": "spb",
+      "url": "https://fotodepartament.ru/",
+      "venue": "ФотоДепартамент",
+      "adapter": "event_links",
+      "href_contains": [
+        "/events/",
+        "/event/",
+        "/131"
+      ],
+      "kind": "event",
+      "max_detail_pages": 70,
+      "detail_workers": 6,
+      "source_group": "art_school"
+    },
+    {
+      "name": "Фонд ПРО АРТЕ — афиша",
+      "city": "spb",
+      "url": "https://www.proarte.ru/",
+      "venue": "Фонд «ПРО АРТЕ»",
+      "adapter": "event_links",
+      "href_contains": [
+        "/events/",
+        "/afisha/",
+        "/event/"
+      ],
+      "kind": "event",
+      "max_detail_pages": 60,
+      "detail_workers": 6,
+      "source_group": "art_institution"
+    },
+    {
+      "name": "Академия художеств имени Репина — выставки и события",
+      "city": "spb",
+      "url": "https://www.artsacademy.ru/",
+      "venue": "Санкт-Петербургская академия художеств имени Ильи Репина",
+      "adapter": "event_links",
+      "href_contains": [
+        "/news/",
+        "/exhibitions/",
+        "/events/"
+      ],
+      "kind": "event",
+      "max_detail_pages": 60,
+      "detail_workers": 6,
+      "source_group": "art_school"
     }
   ]
 }

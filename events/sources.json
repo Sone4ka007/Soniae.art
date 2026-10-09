@@ -1387,6 +1387,24 @@
       "max_detail_pages": 60,
       "detail_workers": 6,
       "source_group": "art_institution"
+    },
+    {
+      "name": "Полторы комнаты — музей Иосифа Бродского",
+      "city": "spb",
+      "url": "https://brodsky.online/",
+      "venue": "Музей «Полторы комнаты» Иосифа Бродского",
+      "adapter": "event_links",
+      "href_contains": [
+        "/events/",
+        "/event/",
+        "/exhibition/",
+        "/exhibitions/",
+        "/afisha/"
+      ],
+      "kind": "event",
+      "max_detail_pages": 70,
+      "detail_workers": 6,
+      "source_group": "museum"
     }
   ]
 }

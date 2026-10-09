@@ -524,7 +524,7 @@
     {
       "name": "Масловка — события",
       "city": "moscow",
-      "url": "https://maslovka.org/",
+      "url": "https://maslovka.org/events-active/",
       "venue": "Музейный центр «Масловка. Городок художников»",
       "adapter": "event_links",
       "href_contains": [
@@ -533,7 +533,11 @@
       ],
       "max_detail_pages": 80,
       "detail_workers": 8,
-      "source_group": "museum"
+      "source_group": "museum",
+      "exclude_paths": [
+        "/events-active/",
+        "/events-past/"
+      ]
     },
     {
       "name": "Музей архитектуры им. Щусева — выставки",

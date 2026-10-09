@@ -19132,7 +19132,7 @@
       "review_reason": "curated_telegram_source",
       "discovered_at": "2026-09-30",
       "price_type": "free",
-      "availability": "sold_out",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-09",
       "social_title": "",
       "social_priority": null,
@@ -19287,6 +19287,84 @@
       "sheet_synced_description": "Call for entries for an International Photography Exhibition. This month-long exhibition will be a photography exhibition with the theme Wildlife. Free to submit and open to everyone."
     },
     {
+      "id": "spb-2026-10-09-e694b90097",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-09",
+      "time": "",
+      "title": "В Константиновском дворце Светлана Крючкова представит моноспектакль, посвященный Лермонтову",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [],
+      "description": "Правообладатель изображения: Пресс-служба ФЕМФКМ «Дворцы Санкт-Петербурга». Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами!",
+      "url": "https://spbcult.ru/news/anonsy/v-konstantinovskom-dvortse-svetlana-kryuchkova-predstavit-monospektakl-posvyashchennyy-lermontovu/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-09",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-09"
+    },
+    {
+      "id": "spb-2026-10-09-7821ada132",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-09",
+      "time": "",
+      "title": "В Петербурге стартует космический лекторий",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "фестиваль"
+      ],
+      "description": "15 октября образовательно-выставочный комплекс «Музей космонавтики и ракетной техники имени Валентина Петровича Глушко» запускает работу «Космического лектория».",
+      "url": "https://spbcult.ru/news/anonsy/v-peterburge-startuet-kosmicheskiy-lektoriy/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-09",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-09"
+    },
+    {
+      "id": "spb-2026-10-09-7353fb8b6b",
+      "status": "new",
+      "kind": "exhibition",
+      "city": "spb",
+      "date": "2026-10-09",
+      "time": "",
+      "title": "В галерее «Мастер» открылась выставка Евгении Ласкиной «3.0»",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "игра",
+        "выставка"
+      ],
+      "description": "Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами! Также вы можете отправить статью в социальной сети или мессенджере Если у вас есть чем поделиться с нашими читателями, вы можете предложить свою статью.",
+      "url": "https://spbcult.ru/news/anonsy/v-galeree-master-otkrylas-vystavka-3-0-evgenii-laskinoy/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-09",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-09",
+      "start_date": "2026-10-09"
+    },
+    {
       "id": "spb-2026-10-09-5995f84169",
       "status": "new",
       "kind": "event",
@@ -19316,7 +19394,8 @@
       "social_priority": null,
       "social_title": "",
       "instagram_image": "",
-      "instagram_include": false
+      "instagram_include": false,
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-10-09-a7499e87b0",
@@ -19362,7 +19441,7 @@
       "title": "Кинофестиваль «Каро/Арт» откроет фильм о группе Shortparis",
       "venue": "",
       "address": "",
-      "price": 0,
+      "price": null,
       "price_text": "Бесплатно",
       "registration": false,
       "categories": [
@@ -19384,7 +19463,8 @@
       "social_priority": null,
       "social_title": "",
       "instagram_image": "",
-      "instagram_include": false
+      "instagram_include": false,
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-09-83e3d37ff2",
@@ -19419,6 +19499,85 @@
       "editor_note": "",
       "social_description": "",
       "social_title": ""
+    },
+    {
+      "id": "spb-2026-10-09-e0c6fe5525",
+      "status": "new",
+      "kind": "exhibition",
+      "city": "spb",
+      "date": "2026-10-09",
+      "time": "",
+      "title": "Музей ОБЭРИУ запутается в дочерях",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "выставка"
+      ],
+      "description": "В Музее ОБЭРИУ открывается выставка «Дочь дочери дочерей дочери». Она посвящена художницам, спутницам, хранительницам архивов, музам и интеллектуальным соратницам обэриутов — тем, чье присутствие долгое время оставалось второстепенным, незаметным или вовсе исключенным из официального повествования. В Музее ОБЭРИУ открывается выставка «Дочь дочери дочерей дочери».",
+      "url": "https://spbcult.ru/news/anonsy/muzey-oberiu-zaputaetsya-v-docheryakh-/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-09",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-09",
+      "start_date": "2026-10-09"
+    },
+    {
+      "id": "spb-2026-10-09-1335e31dfa",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-09",
+      "time": "",
+      "title": "Труппа театра Бориса Эйфмана выступит во Вьетнаме",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "встреча"
+      ],
+      "description": "Во второй половине октября Санкт-Петербургский государственный академический театр балета Бориса Эйфмана посетит Вьетнам. Местная аудитория сможет посмотреть снискавший всемирное признание спектакль «Евгений Онегин». Труппа представит пластическую интерпретацию великого романа в стихах Пушкина в Хошимине и Ханое.",
+      "url": "https://spbcult.ru/news/anonsy/truppa-teatra-borisa-eyfmana-vystupit-vo-vetname/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-09",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-09"
+    },
+    {
+      "id": "spb-2026-10-09-f4380cbea0",
+      "status": "new",
+      "kind": "open_call",
+      "city": "spb",
+      "date": "2026-10-09",
+      "time": "",
+      "title": "Учреждения культуры Петербурга объявили конкурс на замещение вакантных должностей",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "open-call"
+      ],
+      "description": "Комитет по культуре Санкт-Петербурга объявил открытый конкурс на замещение вакантных должностей в подведомственных учреждениях культуры. Информация о вакансиях опубликована на официальном сайте Комитета. К участию в конкурсе приглашаются кандидаты, соответствующие квалификационным требованиям к должности.",
+      "url": "https://spbcult.ru/news/anonsy/v-uchrezhdeniyakh-kultury-peterburga-otkryli-konkurs-na-zameshchenie-vakantnykh-dolzhnostey/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-09",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-09"
     },
     {
       "id": "moscow-2026-10-09-0c10b4b008",
@@ -19458,7 +19617,7 @@
     },
     {
       "id": "moscow-2026-10-09-086888f0c0",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-09",
@@ -19488,11 +19647,12 @@
       "social_title": "",
       "social_priority": null,
       "telegram_include": false,
-      "editor_note": ""
+      "editor_note": "",
+      "reviewed_at": "2026-10-09"
     },
     {
       "id": "moscow-2026-10-09-ed1f556e23",
-      "status": "check",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-09",
@@ -19521,7 +19681,7 @@
       "editor_note": "",
       "social_description": "",
       "instagram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-09"
     },
     {
       "id": "moscow-2026-10-09-c883bc5f7a",
@@ -20118,7 +20278,7 @@
     },
     {
       "id": "moscow-2026-10-09-bf6764a5f1",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-09",
@@ -20149,7 +20309,7 @@
       "social_priority": null,
       "telegram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-09"
     },
     {
       "id": "moscow-2026-10-09-c1c4f6bb35",
@@ -20188,7 +20348,7 @@
     },
     {
       "id": "spb-2026-10-10-d8275146f3",
-      "status": "check",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-10",
@@ -20217,7 +20377,7 @@
       "instagram_image": "",
       "social_description": "",
       "social_priority": null,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-09"
     },
     {
       "id": "spb-2026-10-10-9a42a49052",
@@ -20708,7 +20868,7 @@
     },
     {
       "id": "moscow-2026-10-10-ed1f556e23",
-      "status": "check",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-10",
@@ -20737,7 +20897,7 @@
       "editor_note": "",
       "social_description": "",
       "instagram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-09"
     },
     {
       "id": "moscow-2026-10-10-14d1173fbf",
@@ -21650,7 +21810,7 @@
     },
     {
       "id": "moscow-2026-10-10-086888f0c0",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-10",
@@ -21680,7 +21840,8 @@
       "social_title": "",
       "social_priority": null,
       "telegram_include": false,
-      "editor_note": ""
+      "editor_note": "",
+      "reviewed_at": "2026-10-09"
     },
     {
       "id": "spb-2026-10-10-3d20cce13f",
@@ -21789,7 +21950,7 @@
     },
     {
       "id": "moscow-2026-10-11-f9cf64be24",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-11",
@@ -21818,7 +21979,7 @@
       "social_priority": null,
       "telegram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-09"
     },
     {
       "id": "spb-2026-10-11-148742e6ba",
@@ -21891,7 +22052,7 @@
     },
     {
       "id": "spb-2026-10-11-19dfb05f5e",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-11",
@@ -21922,7 +22083,7 @@
       "social_priority": null,
       "social_description": "",
       "instagram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-09"
     },
     {
       "id": "moscow-2026-10-11-69ed0c0c18",
@@ -22171,6 +22332,34 @@
       "sheet_synced_description": ""
     },
     {
+      "id": "moscow-2026-10-11-111fceaeec",
+      "status": "check",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-11",
+      "time": "12:00",
+      "title": "Выставки и винтаж — планы на выходные",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "Бесплатно",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Сегодня, завтра и послезавтра в 1 корпусе Музея Москвы проходит ярмарка . Здесь можно найти винтажную одежду, украшения и аксессуары: сумки, очки, платки, жакеты, платья, пальто и интересные коллекционные вещи. А еще фарфор, стекло, серебро, посуду и предметы интерьера. А перед выбором подарков можно посетить сразу две выставки в 3 корпусе: основную экспозицию «Ученые дамы. Наука без разрешения» . На обе выставки действует приятная акция по",
+      "url": "https://mosmuseum.ru/events/p/flea_market/",
+      "source": "Соня Go — события",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-10-09",
+      "price_type": "free",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-09",
+      "telegram_include": false,
+      "instagram_include": false
+    },
+    {
       "id": "moscow-2026-10-11-98f4534d25",
       "status": "rejected",
       "kind": "event",
@@ -22244,7 +22433,7 @@
     },
     {
       "id": "moscow-2026-10-11-086888f0c0",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-11",
@@ -22274,7 +22463,8 @@
       "social_title": "",
       "social_priority": null,
       "telegram_include": false,
-      "editor_note": ""
+      "editor_note": "",
+      "reviewed_at": "2026-10-09"
     },
     {
       "id": "moscow-2026-10-11-9f703f36f1",
@@ -22313,7 +22503,7 @@
     },
     {
       "id": "moscow-2026-10-11-ed1f556e23",
-      "status": "check",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-11",
@@ -22342,7 +22532,7 @@
       "editor_note": "",
       "social_description": "",
       "instagram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-09"
     },
     {
       "id": "moscow-2026-10-11-fb436d1eb0",
@@ -22484,7 +22674,7 @@
     },
     {
       "id": "spb-2026-10-11-6c40974f96",
-      "status": "check",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-11",
@@ -22515,7 +22705,7 @@
       "social_priority": null,
       "social_description": "",
       "instagram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-09"
     },
     {
       "id": "moscow-2026-10-11-d5623dd3d1",
@@ -22591,7 +22781,7 @@
     },
     {
       "id": "moscow-2026-10-11-7c6b00b660",
-      "status": "new",
+      "status": "rejected",
       "kind": "open_call",
       "city": "moscow",
       "date": "2026-10-11",
@@ -22622,11 +22812,12 @@
       "social_description": "",
       "editor_note": "",
       "telegram_include": false,
-      "social_title": ""
+      "social_title": "",
+      "reviewed_at": "2026-10-09"
     },
     {
       "id": "spb-2026-10-11-5020b68d50",
-      "status": "check",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-11",
@@ -22655,7 +22846,7 @@
       "editor_note": "",
       "telegram_include": false,
       "social_title": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-09"
     },
     {
       "id": "moscow-2026-10-11-869e6a8711",
@@ -22762,7 +22953,7 @@
     },
     {
       "id": "moscow-2026-10-11-bea4a21473",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-11",
@@ -22793,7 +22984,7 @@
       "editor_note": "",
       "social_description": "",
       "social_title": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-09"
     },
     {
       "id": "moscow-2026-10-11-6de6981347",
@@ -22904,7 +23095,7 @@
     },
     {
       "id": "moscow-2026-10-11-608724cb7a",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-11",
@@ -22935,7 +23126,7 @@
       "editor_note": "",
       "social_description": "",
       "social_title": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-09"
     },
     {
       "id": "moscow-2026-10-11-5554a42377",
@@ -22975,7 +23166,7 @@
     },
     {
       "id": "spb-2026-10-11-2d5c86b046",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-11",
@@ -23006,7 +23197,7 @@
       "social_priority": null,
       "social_description": "",
       "instagram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-09"
     },
     {
       "id": "spb-2026-10-11-0c3a305609",
@@ -23112,7 +23303,7 @@
     },
     {
       "id": "moscow-2026-10-11-617f321ba0",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-11",
@@ -23143,7 +23334,34 @@
       "editor_note": "",
       "social_description": "",
       "social_title": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-09"
+    },
+    {
+      "id": "spb-2026-10-12-3212bb7087",
+      "status": "check",
+      "kind": "exhibition",
+      "city": "spb",
+      "date": "2026-10-12",
+      "time": "",
+      "title": "ВЫСТАВКА",
+      "venue": "Лиговский пр-т, 99 (вход через Библиотеку «Лиговская»).",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [
+        "выставка"
+      ],
+      "description": "Приглашаем в экспозиционное пространство библиотеки «Лиговская» на выставку \"19 стульев и еще Кое-что\". \"19 стульев и еще Кое-что\" - инклюзивный проект мастерских Центра поддержки людей с ОВЗ \"Дом Малецкого\", в котором соединились дизайн мебели, экология и совместное творчество людей с разными возможностями.",
+      "url": "https://t.me/omasterskie/1956",
+      "source": "Открытые мастерские — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-10-09",
+      "price_type": "free",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-09",
+      "start_date": "2026-10-12"
     },
     {
       "id": "moscow-2026-10-12-c3cb427dd4",
@@ -23431,7 +23649,7 @@
     },
     {
       "id": "moscow-2026-10-12-da75d0bb98",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-12",
@@ -23460,7 +23678,7 @@
       "social_priority": null,
       "instagram_image": "",
       "social_title": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-09"
     },
     {
       "id": "moscow-2026-10-12-14d1173fbf",
@@ -23571,7 +23789,7 @@
     },
     {
       "id": "spb-2026-10-13-f0d6d5528d",
-      "status": "check",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-13",
@@ -23602,7 +23820,7 @@
       "instagram_image": "",
       "social_priority": null,
       "social_title": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-09"
     },
     {
       "id": "moscow-2026-10-13-1a0c92c08e",
@@ -23640,7 +23858,7 @@
     },
     {
       "id": "moscow-2026-10-13-1405247759",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-13",
@@ -23671,7 +23889,7 @@
       "editor_note": "",
       "telegram_include": false,
       "social_title": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-09"
     },
     {
       "id": "spb-2026-10-13-d840639c9f",
@@ -23818,7 +24036,7 @@
     },
     {
       "id": "moscow-2026-10-13-8e986e5bb2",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-13",
@@ -23849,7 +24067,7 @@
       "instagram_image": "",
       "social_description": "",
       "social_priority": null,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-09"
     },
     {
       "id": "moscow-2026-10-13-98f4534d25",
@@ -24194,11 +24412,12 @@
       "social_priority": null,
       "social_title": "",
       "instagram_image": "",
-      "instagram_include": false
+      "instagram_include": false,
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-10-13-5f0c86ecfc",
-      "status": "check",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-13",
@@ -24227,7 +24446,7 @@
       "social_priority": null,
       "instagram_image": "",
       "social_title": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-09"
     },
     {
       "id": "moscow-2026-10-13-14d48cda04",
@@ -24261,11 +24480,12 @@
       "social_priority": null,
       "social_title": "",
       "instagram_image": "",
-      "instagram_include": false
+      "instagram_include": false,
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-13-224ac2564a",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-13",
@@ -24296,11 +24516,11 @@
       "instagram_image": "",
       "social_description": "",
       "social_priority": null,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-09"
     },
     {
       "id": "moscow-2026-10-13-42cf30c8fb",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-13",
@@ -24331,7 +24551,7 @@
       "instagram_image": "",
       "social_description": "",
       "social_priority": null,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-09"
     },
     {
       "id": "moscow-2026-10-13-fcace6108c",
@@ -24930,7 +25150,7 @@
     },
     {
       "id": "spb-2026-10-14-f8e44f38f8",
-      "status": "check",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-14",
@@ -24959,7 +25179,7 @@
       "editor_note": "",
       "telegram_include": false,
       "social_title": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-09"
     },
     {
       "id": "spb-2026-10-14-52b6bbc776",
@@ -24995,6 +25215,32 @@
       "availability": "available",
       "availability_checked_at": "2026-10-09",
       "sheet_synced_description": ""
+    },
+    {
+      "id": "spb-2026-10-14-82dca84ca4",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-14",
+      "time": "19:00",
+      "title": "Кураторская экскурсия Елены Куценко по выставке «Художник Ленинграда. Владимир Гринберг»",
+      "venue": "Музей искусства Санкт-Петербурга XX–XXI веков",
+      "address": "",
+      "price": 600,
+      "price_text": "600 ₽",
+      "registration": false,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "",
+      "url": "https://mispxx-xxi.ru/about/afisha/22541/",
+      "source": "Музей искусства Санкт-Петербурга XX–XXI веков — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-09",
+      "price_type": "paid",
+      "availability": "available",
+      "availability_checked_at": "2026-10-09"
     },
     {
       "id": "spb-2026-10-14-98fef0aa32",
@@ -25066,7 +25312,7 @@
     },
     {
       "id": "moscow-2026-10-14-a39ff7ebce",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-14",
@@ -25097,7 +25343,7 @@
       "instagram_image": "",
       "social_description": "",
       "social_priority": null,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-09"
     },
     {
       "id": "moscow-2026-10-14-5a7e37188c",
@@ -25137,7 +25383,7 @@
     },
     {
       "id": "moscow-2026-10-14-b449451574",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-14",
@@ -25168,7 +25414,7 @@
       "social_priority": null,
       "instagram_include": false,
       "instagram_image": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-09"
     },
     {
       "id": "moscow-2026-10-14-b243361041",
@@ -25376,7 +25622,8 @@
       "social_priority": null,
       "social_title": "",
       "instagram_image": "",
-      "instagram_include": false
+      "instagram_include": false,
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-15-b2b68f4fc7",
@@ -25443,7 +25690,8 @@
       "social_priority": null,
       "social_title": "",
       "instagram_image": "",
-      "instagram_include": false
+      "instagram_include": false,
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-15-b4b0db8293",
@@ -26047,7 +26295,7 @@
     },
     {
       "id": "spb-2026-10-15-cdbc96528f",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-15",
@@ -26078,7 +26326,7 @@
       "social_priority": null,
       "telegram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-09"
     },
     {
       "id": "moscow-2026-10-15-05c67d7f07",
@@ -26146,7 +26394,8 @@
       "social_priority": null,
       "social_title": "",
       "instagram_image": "",
-      "instagram_include": false
+      "instagram_include": false,
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-15-fa5c082f91",
@@ -26180,7 +26429,8 @@
       "social_priority": null,
       "social_title": "",
       "instagram_image": "",
-      "instagram_include": false
+      "instagram_include": false,
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-10-16-7610db9f22",
@@ -26638,7 +26888,7 @@
     },
     {
       "id": "spb-2026-10-16-45c52693c1",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-16",
@@ -26668,7 +26918,8 @@
       "social_title": "",
       "social_priority": null,
       "telegram_include": false,
-      "editor_note": ""
+      "editor_note": "",
+      "reviewed_at": "2026-10-09"
     },
     {
       "id": "moscow-2026-10-16-2020b0bdb6",
@@ -26848,6 +27099,32 @@
       "sheet_synced_description": ""
     },
     {
+      "id": "spb-2026-10-17-1af68fc64a",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-17",
+      "time": "",
+      "title": "Будущая встреча будет посвящена созданию одноцветных натюрмортов. Каждый участник должен принести различные интересные цветные предметы, из которых на месте участницы клуба сформируют необычные композиции.",
+      "venue": "Открытая гостиная",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "встреча"
+      ],
+      "description": "Женский рисовальный клуб — это встречи для совместных зарисовок с натуры. Его цель — создать атмосферу поддержки и обмена опытом среди рисующих женщин любого уровня. По традиции уточняем, что это не образовательный проект, а приятные сессии совместного занятия творчеством в компании замечательных художниц и подруг нашего пространства Маши Гордеевой и Дуни Ершовой. Записаться на встречу (это обязательно!) нужно в сообщениях группы Ждем всех, кто хочет рисовать в компании.",
+      "url": "https://vk.ru/clubjenris",
+      "source": "Открытая гостиная — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-10-09",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-09"
+    },
+    {
       "id": "moscow-2026-10-17-9f35b6af55",
       "status": "approved",
       "kind": "event",
@@ -26882,7 +27159,7 @@
     },
     {
       "id": "moscow-2026-10-17-301dc85490",
-      "status": "new",
+      "status": "approved",
       "kind": "exhibition",
       "city": "moscow",
       "date": "2026-10-17",
@@ -26915,7 +27192,7 @@
       "social_priority": null,
       "instagram_include": false,
       "instagram_image": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-09"
     },
     {
       "id": "spb-2026-10-17-e58721df09",
@@ -27093,7 +27370,7 @@
     },
     {
       "id": "moscow-2026-10-17-31fc1debc6",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-17",
@@ -27125,7 +27402,7 @@
       "social_priority": null,
       "instagram_include": false,
       "instagram_image": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-09"
     },
     {
       "id": "moscow-2026-10-17-869e6a8711",
@@ -27657,6 +27934,32 @@
       "description_editorial": true
     },
     {
+      "id": "moscow-2026-10-18-358e5259ef",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-18",
+      "time": "00:20",
+      "title": "Лекция «Рококо»",
+      "venue": "Третьяковская галерея",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Лекция к абонементу №05 «Стили и направления: от барокко до реализма» 4 октября 2026 – 22 ноября 2026 Лекция будет проходить в Лекционном зале Инженерного корпуса (Лаврушинский переулок, д. 12, вход с Малого Толмачёвского переулка) и в режиме реального времени на платформе МТС Линк в формате онлайн. Продолжительность лекции: 1 час 30 минут.",
+      "url": "https://www.tretyakovgallery.ru/events/o/lektsiya-rokoko-10-2026/",
+      "source": "Третьяковская галерея — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-09",
+      "price_type": "paid",
+      "availability": "available",
+      "availability_checked_at": "2026-10-09"
+    },
+    {
       "id": "moscow-2026-10-18-9f703f36f1",
       "status": "rejected",
       "kind": "event",
@@ -27728,7 +28031,7 @@
     },
     {
       "id": "spb-2026-10-18-e42df718b4",
-      "status": "check",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-18",
@@ -27759,7 +28062,7 @@
       "social_priority": null,
       "instagram_image": "",
       "social_title": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-09"
     },
     {
       "id": "moscow-2026-10-18-14d1173fbf",
@@ -27798,7 +28101,7 @@
     },
     {
       "id": "moscow-2026-10-18-31fc1debc6",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-18",
@@ -27830,7 +28133,7 @@
       "social_priority": null,
       "instagram_include": false,
       "instagram_image": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-09"
     },
     {
       "id": "moscow-2026-10-18-bf12d29991",
@@ -28183,7 +28486,8 @@
       "social_priority": null,
       "social_title": "",
       "instagram_image": "",
-      "instagram_include": false
+      "instagram_include": false,
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-19-4550346985",
@@ -28747,7 +29051,7 @@
     },
     {
       "id": "spb-2026-10-20-9e62748ee6",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-20",
@@ -28775,7 +29079,8 @@
       "editor_note": "",
       "social_priority": null,
       "instagram_image": "",
-      "social_title": ""
+      "social_title": "",
+      "reviewed_at": "2026-10-09"
     },
     {
       "id": "spb-2026-10-20-c485253d20",
@@ -29373,6 +29678,32 @@
       "sheet_synced_description": "Показ дебютного фильма Иштвана Сабо «Пора мечтаний» (1964) на языке оригинала с субтитрами."
     },
     {
+      "id": "spb-2026-10-21-82dca84ca4",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-21",
+      "time": "19:00",
+      "title": "Кураторская экскурсия Елены Куценко по выставке «Художник Ленинграда. Владимир Гринберг»",
+      "venue": "Музей искусства Санкт-Петербурга XX–XXI веков",
+      "address": "",
+      "price": 600,
+      "price_text": "600 ₽",
+      "registration": false,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "",
+      "url": "https://mispxx-xxi.ru/about/afisha/22544/",
+      "source": "Музей искусства Санкт-Петербурга XX–XXI веков — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-09",
+      "price_type": "paid",
+      "availability": "available",
+      "availability_checked_at": "2026-10-09"
+    },
+    {
       "id": "spb-2026-10-21-9d89a8e682",
       "status": "approved",
       "kind": "event",
@@ -29477,6 +29808,32 @@
       "telegram_include": false,
       "reviewed_at": "",
       "sheet_synced_description": "Фонд MaxArt открыл набор ещё на два сезона резиденции в провинции Гуандун: месяц работы в мастерской Музея современного искусства Янцзян рядом с группой Чжэн Гогу, грант 100 000 ₽, дорога и проживание за счёт фонда. Заезды — в декабре 2026-го и феврале 2027-го."
+    },
+    {
+      "id": "moscow-2026-10-22-b5e91a63f5",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-22",
+      "time": "00:20",
+      "title": "Лекция «Владимир Боровиковский»",
+      "venue": "Третьяковская галерея",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Лекция к абонементу №01 «Мастера русской живописи. Часть 1. От Рокотова до Иванова» 1 октября 2026 – 5 ноября 2026 Лекция будет проходить в Лекционном зале Инженерного корпуса (Лаврушинский переулок, д. 12, вход с Малого Толмачёвского переулка) и в режиме реального времени на платформе МТС Линк в формате онлайн. Продолжительность лекции: 1 час 30 минут.",
+      "url": "https://www.tretyakovgallery.ru/events/o/lektsiya-vladimir-borovikovskiy-09-2026/",
+      "source": "Третьяковская галерея — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-09",
+      "price_type": "paid",
+      "availability": "available",
+      "availability_checked_at": "2026-10-09"
     },
     {
       "id": "moscow-2026-10-22-6d8f1e6c5b",
@@ -30150,7 +30507,7 @@
     },
     {
       "id": "moscow-2026-10-23-6fa41a2df5",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-23",
@@ -30182,7 +30539,7 @@
       "social_priority": null,
       "instagram_include": false,
       "instagram_image": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-09"
     },
     {
       "id": "moscow-2026-10-23-26d1e37cc7",
@@ -30395,6 +30752,32 @@
       "social_title": "",
       "reviewed_at": "2026-10-02",
       "sheet_synced_description": "открывает новый концертный сезон вечером, который сопоставляет два противоположных способа переживать музыку — аполлонический и дионисийский — и предлагает слушателям пройти по воображаемому мосту между ними. В первом отделении выступит — петербургский коллектив современной академической музыки, основанный студентами и выпускниками консерватории. Программа их выступления выстраивает путь от предельной тишины к ритуальному звуковому театру. Во второй части концерта выступит — коллектив Алексея Тегина, работающий на границе музыки, шума и перформанса. Его метод физический и интуитивный: звук зде"
+    },
+    {
+      "id": "spb-2026-10-24-0c317c8181",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-24",
+      "time": "",
+      "title": "Лекция Антона Успенского «Круг художников: оптика и поэтика»",
+      "venue": "Музей искусства Санкт-Петербурга XX–XXI веков",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "",
+      "url": "https://mispxx-xxi.ru/about/afisha/22545/",
+      "source": "Музей искусства Санкт-Петербурга XX–XXI веков — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-09",
+      "price_type": "paid",
+      "availability": "available",
+      "availability_checked_at": "2026-10-09"
     },
     {
       "id": "moscow-2026-10-24-64aa698d00",
@@ -30888,7 +31271,7 @@
     },
     {
       "id": "moscow-2026-10-25-aac15749d9",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-25",
@@ -30918,7 +31301,8 @@
       "editor_note": "",
       "social_priority": null,
       "instagram_include": false,
-      "instagram_image": ""
+      "instagram_image": "",
+      "reviewed_at": "2026-10-09"
     },
     {
       "id": "moscow-2026-10-25-48d0afb82b",
@@ -31452,7 +31836,7 @@
     },
     {
       "id": "spb-2026-10-26-553aaae4cb",
-      "status": "check",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-26",
@@ -31480,7 +31864,7 @@
       "editor_note": "",
       "instagram_image": "",
       "telegram_include": false,
-      "reviewed_at": "",
+      "reviewed_at": "2026-10-09",
       "sheet_synced_description": "Именно сейчас это особенно важно: рынок дизайна стремительно меняется, а ожидания заказчиков растут. Им нужны не просто красивые визуализации, а скорость, вариативность, точность и убедительная концепция, которую можно быстро показать, обсудить и развить в сильное решение. Приглашаем на наш практический курс «Нейросети в дизайне интерьеров и экстерьеров» с Анной Шишенко. Наш вебинар про практическое применение ИИ на разных этапах работы над проектом — от работы с брифом и анализа до концепции, референсов, визуализации, видео и коммуникации с заказчиком."
     },
     {
@@ -33176,7 +33560,7 @@
     },
     {
       "id": "spb-2026-10-31-dc2b425171",
-      "status": "new",
+      "status": "rejected",
       "kind": "exhibition",
       "city": "spb",
       "date": "2026-10-31",
@@ -33208,7 +33592,7 @@
       "social_priority": null,
       "instagram_image": "",
       "social_title": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-09"
     },
     {
       "id": "spb-2026-10-31-e67cd97edb",
@@ -33877,7 +34261,7 @@
     },
     {
       "id": "spb-2026-11-02-0e987411cc",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "spb",
       "date": "2026-11-02",
@@ -33907,7 +34291,8 @@
       "editor_note": "",
       "social_priority": null,
       "instagram_image": "",
-      "social_title": ""
+      "social_title": "",
+      "reviewed_at": "2026-10-09"
     },
     {
       "id": "spb-2026-11-03-11a6fcdd93",
@@ -33941,11 +34326,12 @@
       "social_priority": null,
       "social_title": "",
       "instagram_image": "",
-      "instagram_include": false
+      "instagram_include": false,
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-04-670f99a88f",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-04",
@@ -33959,7 +34345,7 @@
       "categories": [
         "программа"
       ],
-      "description": "С 4 ноября 2026 года По средам в 19:00 10 встреч: 8 занятий в музее + 2 встречи с художником Стоимость полного модуля — 60 000 ₽ Можно ли посмотреть на историю искусства не только как зритель — и использовать её, чтобы придумать собственное произведение? Новая программа Музея Масловки соединяет историю искусства, разговор о собственном образе и практическую работу с художником.",
+      "description": "С 4 ноября 2026 года По средам в 19:00 10 встреч: 8 занятий в музее + 2 встречи с художником Стоимость модуля — 60 000 ₽ Можно ли посмотреть на историю искусства не только как зритель — и использовать её, чтобы придумать собственное произведение? Новая программа Музея Масловки соединяет историю искусства, разговор о собственном образе и практическую работу с художником.",
       "url": "https://maslovka.org/events/istoriya-iskusstva-kak-lichnyy-opyt-modul-i-portret-opyt-samorefleksii/",
       "source": "Масловка — события",
       "checked_at": "",
@@ -33976,7 +34362,7 @@
       "social_priority": null,
       "instagram_include": false,
       "instagram_image": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-09"
     },
     {
       "id": "spb-2026-11-05-04b52b67df",
@@ -34550,7 +34936,7 @@
     },
     {
       "id": "international-2026-12-14-490beaf85a",
-      "status": "check",
+      "status": "rejected",
       "kind": "open_call",
       "city": "international",
       "date": "2026-12-14",
@@ -34568,7 +34954,7 @@
       "url": "https://www.curatorspace.com/opportunities/detail/pages-artists-book-fair/11203",
       "source": "CuratorSpace — opportunities",
       "checked_at": "",
-      "review_reason": "primary_source_required",
+      "review_reason": "discovery_source_needs_primary_verification",
       "discovered_at": "2026-10-07",
       "audience_text": "Opportunity details | PAGES Artists' Book Fair 2027 | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register PAGES Artists' Book Fair 2027 Deadline: 14/12/2026 City: Leeds | Region: West Yorkshire | Country: United Kingdom | Pages Leeds Report this? Description Opportunity FAQs Make a submission Contact curator We are now inviting submissions for participation in the 25th PAGES Artists' Book Fair, to be held at Leeds Art Gallery and Central Library, Leeds, UK, Friday 19 March (11:00-17:00) and Saturday 20th March (10:30-16:00) 2027. DEADLINE: 23:59 on MONDAY 14th DECEMBER 2026. PAGES Artists' Book Fair forms the core of a rolling programme of interrelated events that aim to establish critical engagement with the medium of the artist's book, raising awareness, encouraging production and creating new platforms for display and exchange between audience and maker. A comprehensive catalogue with documentation for each participating artist, imprint or collective will be produced. Fee per table (approx. 180 x 75cm) : Individual artists/imprints/publishers: £90 Colleges and Universities: £150 Trade stands: £200 There is also the option to submit a joint application with another exhibitor to share a table. To Apply: Please complete the online form at the ‘Make a Submission’ tab with all the relevant information by 23:59 on MONDAY 14 DECEMBER 2024 . All information and images must be current, and should not have been submitted in previous years. N.B. There are a limited number of tables available. Submissions will be reviewed and selected by the PAGES team to reflect the current concerns and modes of production within the contemporary artist's book genre. We will contact you by Friday 8th January 2027 to let you know if you have been selected for the 2027 Artists' Book Fair and to request payment. Make a submission Contact the curator Who is eligible for this opportunity? Artist's book makers, fine/small press publishers, bookbinding and paper suppliers, artists, designers. When is the deadline? Monday 14th December 2026, 23:59hrs. How many images can I submit? Please submit up to 5 full colour images of recent work for consideration. If your application is successful, these may be displayed on the PAGES website, reproduced in greyscale in the PAGES 2025 publication and/or used for publicity purposes. How much does it cost? There are a range of prices available depending on the type of organisation. Prices per table for the two days are as follows: Individual artist/imprint/collective: £90 College/University: £150 Trade/Supplier: £200 There is also the option to submit a joint application with another exhibitor to share a table. What are the event opening hours? The artists' book fair will be held over two days; Friday 19th March (11.00-17.00) and Saturday 20th March (10.30-16.00) 2027. When will I hear if my application has been successful? You will receive confirmation by Friday 8th January 2027. What if I have special access needs or other requirements? Once we have made our selection, we will then ask all successful participants if they have any access or technical requirements. You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Advertisement Other opportunities Call for Interviewee - Research on Generative AI Art Practice My name is Yudi Zhang and I am a Doctorate PGR at the University of Aberdeen seeking... Wildlife 2027, International Photography Exhibition Call for entries for an International Photography Exhibition. This month-long exhibition will be... Golden Hour 2027, International Photography Exhibition Call for entries for an International Photography Exhibition. This month-long exhibition will be... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
       "price_type": "unknown",
@@ -34582,7 +34968,7 @@
       "instagram_image": "",
       "social_description": "",
       "social_priority": null,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-09"
     },
     {
       "id": "international-2026-12-21-97062fdc2c",

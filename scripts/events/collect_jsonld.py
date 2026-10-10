@@ -1713,7 +1713,9 @@ def main():
                     url_title_index[(n.get("city"),n_url,re.sub(r"\W+","",str(n.get("title","")).lower()))]=n["id"]
                 found+=1
                 source_added+=1
-        print(f"SOURCE {src['name']}: candidates={len(candidates)} new={source_added}")
+        print(f"SOURCE {src['name']}: candidates={len(candidates)} new={source_added} adapter={adapter} url={src['url']}")
+        if not candidates:
+            print(f"EMPTY_SOURCE {src['name']}: adapter={adapter} url={src['url']} (inspect listing links, date format, or blocked fetch)",file=sys.stderr)
 
     db["updated_at"]=datetime.now(timezone.utc).date().isoformat()
     db["events"]=sorted(existing.values(),key=lambda e:(e.get("date",""),e.get("time",""),e.get("title","")))

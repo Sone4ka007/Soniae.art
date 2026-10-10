@@ -608,6 +608,14 @@ def extract_event_links(html, src):
         elif is_exhibition:
             start_dt,end_dt=parse_exhibition_range(dtext)
             dt=start_dt or parse_date(dtext,require_year=True)
+        elif "brodsky.online" in host:
+            # The museum publishes event dates as "15.10, чт • 19:30" without a year.
+            # Read the event heading/date block, not unrelated dates in the footer.
+            heading=dsoup.find("h1")
+            scoped=clean(heading.parent.get_text(" ",strip=True))[:550] if heading and heading.parent else context[:550]
+            dt=parse_date(scoped,require_year=False,default_year=today.year)
+            if not dt:
+                dt=parse_date(context[:500],require_year=False,default_year=today.year)
         else:
             dt=parse_date(dtext,require_year=True)
 

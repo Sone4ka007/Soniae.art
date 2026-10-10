@@ -521,6 +521,8 @@ def extract_event_links(html, src):
                 if any(p in full for p in patterns) and urlparse(full).path not in exclude_paths and full not in seen_urls:
                     seen_urls.add(full);urls.append(full)
     max_pages=int(src.get("max_detail_pages",60))
+    if not urls:
+        print(f"EMPTY_LINKS {src['name']}: matching_links=0 total_anchors={len(soup.find_all('a',href=True))} patterns={patterns} url={src['url']}",file=sys.stderr)
     urls=urls[:max_pages]
 
     def parse_detail(full):

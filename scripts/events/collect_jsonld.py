@@ -144,6 +144,23 @@ def parse_date(text, require_year=True, default_year=None):
     except ValueError:
         return None
 
+def parse_listing_date(text, today=None):
+    """Parse compact museum listing dates without inventing a year for old posts."""
+    today = today or date.today()
+    t = clean(text).lower()
+    m = re.search(r"(?<!\\d)(\\d{1,2})[./](\\d{1,2})(?![./\\d])", t)
+    if m:
+        try:
+            d = date(today.year, int(m.group(2)), int(m.group(1)))
+            # A December listing viewed in January can refer to next year;
+            # never silently roll old dates forward by an entire year.
+            if d < today - timedelta(days=45) and today.month >= 11 and d.month <= 2:
+                d = date(today.year + 1, d.month, d.day)
+            return d
+        except ValueError:
+            return None
+    return parse_date(t, require_year=False, default_year=today.year)
+
 def parse_deadline(text):
     d=parse_date(text,require_year=True)
     if d:
@@ -613,9 +630,9 @@ def extract_event_links(html, src):
             # Read the event heading/date block, not unrelated dates in the footer.
             heading=dsoup.find("h1")
             scoped=clean(heading.parent.get_text(" ",strip=True))[:550] if heading and heading.parent else context[:550]
-            dt=parse_date(scoped,require_year=False,default_year=today.year)
+            dt=parse_listing_date(scoped,today)
             if not dt:
-                dt=parse_date(context[:500],require_year=False,default_year=today.year)
+                dt=parse_listing_date(context[:500],today)
         else:
             dt=parse_date(dtext,require_year=True)
 

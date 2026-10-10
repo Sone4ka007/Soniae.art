@@ -20191,7 +20191,7 @@
     },
     {
       "id": "spb-2026-10-10-5995f84169",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-10",
@@ -20211,7 +20211,16 @@
       "discovered_at": "2026-10-10",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-10"
+      "availability_checked_at": "2026-10-10",
+      "instagram_image": "",
+      "telegram_include": false,
+      "social_description": "",
+      "social_priority": null,
+      "editor_note": "",
+      "social_title": "",
+      "instagram_include": false,
+      "reviewed_at": "2026-10-10",
+      "sheet_synced_description": ""
     },
     {
       "id": "spb-2026-10-10-d8275146f3",
@@ -24682,7 +24691,7 @@
     },
     {
       "id": "moscow-2026-10-14-ad5068aa47",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-14",
@@ -24704,7 +24713,16 @@
       "discovered_at": "2026-10-10",
       "price_type": "free",
       "availability": "available",
-      "availability_checked_at": "2026-10-10"
+      "availability_checked_at": "2026-10-10",
+      "instagram_image": "",
+      "telegram_include": false,
+      "social_description": "",
+      "social_priority": null,
+      "editor_note": "",
+      "social_title": "",
+      "instagram_include": false,
+      "reviewed_at": "2026-10-10",
+      "sheet_synced_description": "14 октября 2026 года в 18 часов 30 минут приглашаем на презентацию специального номера журнала «Иностранная литература» (2026, № 8), посвященного Вирджинии Вулф. Одной из центральных тем разговора станет история русских переводов Вулф и роль журнала «Иностранная литература» в знакомстве отечественного читателя с ее прозой."
     },
     {
       "id": "moscow-2026-10-14-9dfc8f92b3",
@@ -25057,7 +25075,7 @@
     },
     {
       "id": "moscow-2026-10-14-cda4fa7eaf",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-14",
@@ -25079,7 +25097,16 @@
       "discovered_at": "2026-10-10",
       "price_type": "free",
       "availability": "available",
-      "availability_checked_at": "2026-10-10"
+      "availability_checked_at": "2026-10-10",
+      "instagram_image": "",
+      "telegram_include": false,
+      "social_description": "",
+      "social_priority": null,
+      "editor_note": "",
+      "social_title": "",
+      "instagram_include": false,
+      "reviewed_at": "2026-10-10",
+      "sheet_synced_description": "14 октября 2026 года в 18 часов 30 минут совместно с киностудией «Русский путь», киноклубом «Русский путь», при поддержке Министерства культуры России, Союза кинематографистов России, Союза писателей России в рамках Российской национальной премии в области неигрового кино «Золотая свеча» приглашаем на показ документального фильма «Саамы."
     },
     {
       "id": "moscow-2026-10-14-adb94a2fdd",
@@ -26365,7 +26392,8 @@
       "discovered_at": "2026-10-10",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-10-10"
+      "availability_checked_at": "2026-10-10",
+      "sheet_synced_description": "Леонид Аронзон скончался от огнестрельного ранения при не до конца выясненных обстоятельствах 13 октября 1970 года. Первый вечер памяти поэта состоялся через пять лет после его ухода, 18 октября 1975 года. Воспоминания о вечере приводит в своём дневнике Юлия Вознесенская: «В зале около 200 человек /рассчитан он на 100/."
     },
     {
       "id": "moscow-2026-10-15-05c67d7f07",
@@ -28076,7 +28104,14 @@
       "price_type": "paid",
       "availability": "available",
       "availability_checked_at": "2026-10-10",
-      "sheet_synced_description": "Еврейский музей и центр толерантности совместно с компанией «Глазами инженера» приглашают на экскурсию по Бахметьевскому автобусному гаражу — шедевру авангарда в архитектуре В середине 1920-х годов на улицах Москвы появились регулярные автобусные маршруты, а вместе с ними возникла необходимость в новых гаражах для быстро растущего городского транспорта."
+      "sheet_synced_description": "Еврейский музей и центр толерантности совместно с компанией «Глазами инженера» приглашают на экскурсию по Бахметьевскому автобусному гаражу — шедевру авангарда в архитектуре В середине 1920-х годов на улицах Москвы появились регулярные автобусные маршруты, а вместе с ними возникла необходимость в новых гаражах для быстро растущего городского транспорта.",
+      "instagram_image": "",
+      "telegram_include": false,
+      "social_description": "",
+      "social_priority": null,
+      "editor_note": "",
+      "social_title": "",
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-18-d5623dd3d1",
@@ -28208,7 +28243,14 @@
       "price_type": "paid",
       "availability": "available",
       "availability_checked_at": "2026-10-10",
-      "sheet_synced_description": ""
+      "sheet_synced_description": "",
+      "instagram_image": "",
+      "telegram_include": false,
+      "social_description": "",
+      "social_priority": null,
+      "editor_note": "",
+      "social_title": "",
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-18-31fc1debc6",
@@ -28355,7 +28397,7 @@
     },
     {
       "id": "moscow-2026-10-18-61f7d2379f",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-18",
@@ -28377,7 +28419,16 @@
       "discovered_at": "2026-10-10",
       "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-10-10"
+      "availability_checked_at": "2026-10-10",
+      "instagram_image": "",
+      "telegram_include": false,
+      "social_description": "",
+      "social_priority": null,
+      "editor_note": "",
+      "social_title": "",
+      "instagram_include": false,
+      "reviewed_at": "2026-10-10",
+      "sheet_synced_description": "Что объединяет Фаину Раневскую, Эль Лисицкого и фильмы братьев Коэн? Разбираемся на экскурсии культуролога Анны Межаковой Входной билет на основную экспозицию приобретается отдельно Входной билет на основную экспозицию приобретается отдельно Еврейский фольклор это не только Тора и библейские сказания, это огромное количество сказок, баек и анекдотов."
     },
     {
       "id": "moscow-2026-10-18-00c85a88e1",
@@ -28558,7 +28609,7 @@
     },
     {
       "id": "moscow-2026-10-18-7b963d742c",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-18",
@@ -28580,7 +28631,16 @@
       "discovered_at": "2026-10-10",
       "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-10-10"
+      "availability_checked_at": "2026-10-10",
+      "instagram_image": "",
+      "telegram_include": false,
+      "social_description": "",
+      "social_priority": null,
+      "editor_note": "",
+      "social_title": "",
+      "instagram_include": false,
+      "reviewed_at": "2026-10-10",
+      "sheet_synced_description": "В Еврейском музее и центре толерантности состоится встреча с артистом балета Азарием Плисецким, посвящённая выходу в издательстве СЛОВО/SLOVO его книги «Век Майи» и открытию выставки «Век Майи Плисецкой»."
     },
     {
       "id": "moscow-2026-10-18-98f4534d25",
@@ -28641,7 +28701,8 @@
       "discovered_at": "2026-10-10",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-10-10"
+      "availability_checked_at": "2026-10-10",
+      "sheet_synced_description": "Оставляя свои контакты, вы даёте согласие на обработку персональных данных"
     },
     {
       "id": "spb-2026-10-19-7f5548b1fe",
@@ -31933,7 +31994,8 @@
       "discovered_at": "2026-10-10",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-10-10"
+      "availability_checked_at": "2026-10-10",
+      "sheet_synced_description": "Иосиф Бродский — автор, путешествующий по Советскому Союзу и за его пределами. До эмиграции его путешествия были во многом обусловлены желанием посмотреть хотя бы свою страну. Опыт, приобретенный в геологических экспедициях, командировках от журнала «Костер» и личных поездках на юг и Балтийское побережье, был отражен в стихах шестидесятых годов."
     },
     {
       "id": "moscow-2026-10-26-14d1173fbf",

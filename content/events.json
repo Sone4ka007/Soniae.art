@@ -20211,8 +20211,7 @@
       "discovered_at": "2026-10-10",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-10",
-      "sheet_synced_description": ""
+      "availability_checked_at": "2026-10-10"
     },
     {
       "id": "spb-2026-10-10-d8275146f3",
@@ -24402,33 +24401,6 @@
       "reviewed_at": "2026-10-09"
     },
     {
-      "id": "spb-2026-10-13-850eb2ec29",
-      "status": "new",
-      "kind": "event",
-      "city": "spb",
-      "date": "2026-10-13",
-      "time": "19:30",
-      "title": "Голосами других. Вечер памяти Леонида Аронзона",
-      "venue": "Музей «Полторы комнаты» Иосифа Бродского",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [
-        "программа"
-      ],
-      "description": "Леонид Аронзон скончался от огнестрельного ранения при не до конца выясненных обстоятельствах 13 октября 1970 года. Первый вечер памяти поэта состоялся через пять лет после его ухода, 18 октября 1975 года. Воспоминания о вечере приводит в своём дневнике Юлия Вознесенская: «В зале около 200 человек /рассчитан он на 100/.",
-      "url": "https://brodsky.online/events/golosami-drugikh-vecher-pamyati-leonida-aronzona/",
-      "source": "Полторы комнаты — музей Иосифа Бродского",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-10-10",
-      "price_type": "unknown",
-      "availability": "available",
-      "availability_checked_at": "2026-10-10",
-      "sheet_synced_description": "Леонид Аронзон скончался от огнестрельного ранения при не до конца выясненных обстоятельствах 13 октября 1970 года. Первый вечер памяти поэта состоялся через пять лет после его ухода, 18 октября 1975 года. Воспоминания о вечере приводит в своём дневнике Юлия Вознесенская: «В зале около 200 человек /рассчитан он на 100/."
-    },
-    {
       "id": "moscow-2026-10-13-224ac2564a",
       "status": "rejected",
       "kind": "event",
@@ -24732,8 +24704,7 @@
       "discovered_at": "2026-10-10",
       "price_type": "free",
       "availability": "available",
-      "availability_checked_at": "2026-10-10",
-      "sheet_synced_description": "14 октября 2026 года в 18 часов 30 минут приглашаем на презентацию специального номера журнала «Иностранная литература» (2026, № 8), посвященного Вирджинии Вулф. Одной из центральных тем разговора станет история русских переводов Вулф и роль журнала «Иностранная литература» в знакомстве отечественного читателя с ее прозой."
+      "availability_checked_at": "2026-10-10"
     },
     {
       "id": "moscow-2026-10-14-9dfc8f92b3",
@@ -25108,8 +25079,7 @@
       "discovered_at": "2026-10-10",
       "price_type": "free",
       "availability": "available",
-      "availability_checked_at": "2026-10-10",
-      "sheet_synced_description": "14 октября 2026 года в 18 часов 30 минут совместно с киностудией «Русский путь», киноклубом «Русский путь», при поддержке Министерства культуры России, Союза кинематографистов России, Союза писателей России в рамках Российской национальной премии в области неигрового кино «Золотая свеча» приглашаем на показ документального фильма «Саамы."
+      "availability_checked_at": "2026-10-10"
     },
     {
       "id": "moscow-2026-10-14-adb94a2fdd",
@@ -26370,6 +26340,32 @@
       "telegram_include": false,
       "editor_note": "",
       "reviewed_at": "2026-10-09"
+    },
+    {
+      "id": "spb-2026-10-15-850eb2ec29",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-15",
+      "time": "19:30",
+      "title": "Голосами других. Вечер памяти Леонида Аронзона",
+      "venue": "Музей «Полторы комнаты» Иосифа Бродского",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "программа"
+      ],
+      "description": "Леонид Аронзон скончался от огнестрельного ранения при не до конца выясненных обстоятельствах 13 октября 1970 года. Первый вечер памяти поэта состоялся через пять лет после его ухода, 18 октября 1975 года. Воспоминания о вечере приводит в своём дневнике Юлия Вознесенская: «В зале около 200 человек /рассчитан он на 100/.",
+      "url": "https://brodsky.online/events/golosami-drugikh-vecher-pamyati-leonida-aronzona/",
+      "source": "Полторы комнаты — музей Иосифа Бродского",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-10",
+      "price_type": "unknown",
+      "availability": "available",
+      "availability_checked_at": "2026-10-10"
     },
     {
       "id": "moscow-2026-10-15-05c67d7f07",
@@ -28381,8 +28377,7 @@
       "discovered_at": "2026-10-10",
       "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-10-10",
-      "sheet_synced_description": "Что объединяет Фаину Раневскую, Эль Лисицкого и фильмы братьев Коэн? Разбираемся на экскурсии культуролога Анны Межаковой Входной билет на основную экспозицию приобретается отдельно Входной билет на основную экспозицию приобретается отдельно Еврейский фольклор это не только Тора и библейские сказания, это огромное количество сказок, баек и анекдотов."
+      "availability_checked_at": "2026-10-10"
     },
     {
       "id": "moscow-2026-10-18-00c85a88e1",
@@ -28585,8 +28580,7 @@
       "discovered_at": "2026-10-10",
       "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-10-10",
-      "sheet_synced_description": "В Еврейском музее и центре толерантности состоится встреча с артистом балета Азарием Плисецким, посвящённая выходу в издательстве СЛОВО/SLOVO его книги «Век Майи» и открытию выставки «Век Майи Плисецкой»."
+      "availability_checked_at": "2026-10-10"
     },
     {
       "id": "moscow-2026-10-18-98f4534d25",
@@ -28622,6 +28616,32 @@
       "social_priority": null,
       "telegram_include": false,
       "editor_note": ""
+    },
+    {
+      "id": "spb-2026-10-18-020d3b2f98",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-18",
+      "time": "21:10",
+      "title": "Мероприятия",
+      "venue": "Музей «Полторы комнаты» Иосифа Бродского",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Оставляя свои контакты, вы даёте согласие на обработку персональных данных",
+      "url": "https://brodsky.online/events/",
+      "source": "Полторы комнаты — музей Иосифа Бродского",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-10",
+      "price_type": "unknown",
+      "availability": "available",
+      "availability_checked_at": "2026-10-10"
     },
     {
       "id": "spb-2026-10-19-7f5548b1fe",
@@ -31888,6 +31908,32 @@
       "telegram_include": false,
       "reviewed_at": "",
       "sheet_synced_description": "City: Sheffield | Region: South Yorkshire | Country: United Kingdom | Fronteer Art"
+    },
+    {
+      "id": "spb-2026-10-26-a742e5228b",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-26",
+      "time": "09:11",
+      "title": "Путешествия Иосифа Бродского. Экскурсия в музее; обед — в Шалмане",
+      "venue": "Музей «Полторы комнаты» Иосифа Бродского",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "Иосиф Бродский — автор, путешествующий по Советскому Союзу и за его пределами. До эмиграции его путешествия были во многом обусловлены желанием посмотреть хотя бы свою страну. Опыт, приобретенный в геологических экспедициях, командировках от журнала «Костер» и личных поездках на юг и Балтийское побережье, был отражен в стихах шестидесятых годов.",
+      "url": "https://brodsky.online/events/puteshestviya-iosifa-brodskogo-ekskursiya-v-muzee-obed-v-piteynom-zavedenii-shalman/",
+      "source": "Полторы комнаты — музей Иосифа Бродского",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-10",
+      "price_type": "unknown",
+      "availability": "available",
+      "availability_checked_at": "2026-10-10"
     },
     {
       "id": "moscow-2026-10-26-14d1173fbf",

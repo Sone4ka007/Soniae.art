@@ -21852,7 +21852,8 @@
       "instagram_include": false,
       "social_description": "",
       "editor_note": "",
-      "social_title": ""
+      "social_title": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-11-b6270b7e37",
@@ -22622,6 +22623,30 @@
       "description_editorial": true
     },
     {
+      "id": "moscow-2026-10-11-cda8f2c8b7",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-11",
+      "time": "13:00",
+      "title": "Хамовники. Советский урбанистический эксперимент",
+      "venue": "Музей «Гараж»",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "В 1920-е годы Москва переживала масштабный эксперимент: после разрухи Гражданской войны ее пытались восстановить и переосмыслить. Новая жилищная политика и возобновившееся строительство формировали представление о городе как пространстве коллективной жизни, где производство и общественная инфраструктура должны быть взаимосвязаны.",
+      "url": "https://garagemca.org/event/khamovniki-a-soviet-urban-planning-experiment",
+      "source": "Музей современного искусства «Гараж»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-11",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-11"
+    },
+    {
       "id": "spb-2026-10-11-6c40974f96",
       "status": "rejected",
       "kind": "event",
@@ -23206,7 +23231,7 @@
       "review_reason": "excluded_tour_mediation",
       "discovered_at": "2026-10-02",
       "price_type": "paid",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-11",
       "editor_note": "",
       "telegram_include": false,
@@ -24897,6 +24922,32 @@
       "editor_note": ""
     },
     {
+      "id": "moscow-2026-10-14-3cb1996822",
+      "status": "check",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-14",
+      "time": "12:00",
+      "title": "Онлайн-конференция по дизайну МАСШТАБ",
+      "venue": "-",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": false,
+      "categories": [
+        "конференция"
+      ],
+      "description": "Конференция МАСШТАБ — онлайн-мероприятие про дизайн-образование и карьеру. Участников ждут вдохновляющие спикеры из Apple, Adidas, Яндекс и других крупнейших мировых и российских брендов, а также экспертные дискуссии о том, какие компетенции будут востребованы в ближайшие пять лет и как построить успешную карьеру в России и за рубежом. Конференция пройдёт в двух залах, где посетители услышат истории дизайнеров, которые создавали проекты для компаний мирового уровня, узнают, какие навыки действительно важны и открывают двери в международную индустрию. Ответами на эти и другие вопросы поделятся эксперты индустрии.",
+      "url": "https://design-mate.ru/go/events/onlayn-konferenciya-po-dizaynu-masshtab",
+      "source": "Design Mate — календарь",
+      "checked_at": "",
+      "review_reason": "discovery_source_needs_primary_verification",
+      "discovered_at": "2026-10-11",
+      "price_type": "free",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-11"
+    },
+    {
       "id": "moscow-2026-10-14-d5623dd3d1",
       "status": "rejected",
       "kind": "event",
@@ -25978,6 +26029,32 @@
       "description_editorial": true
     },
     {
+      "id": "moscow-2026-10-15-9f703f36f1",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-15",
+      "time": "00:20",
+      "title": "ПОДПИШИТЕСЬ И ПОЛУЧАЙТЕ НОВОСТИ МУЗЕЯ ПЕРВЫМИ",
+      "venue": "Еврейский музей и центр толерантности",
+      "address": "",
+      "price": 2000,
+      "price_text": "2000 ₽",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "",
+      "url": "https://www.jewish-museum.ru/events/",
+      "source": "Еврейский музей и центр толерантности",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-11",
+      "price_type": "paid",
+      "availability": "available",
+      "availability_checked_at": "2026-10-11"
+    },
+    {
       "id": "spb-2026-10-15-3497c8964e",
       "status": "rejected",
       "kind": "event",
@@ -26568,7 +26645,8 @@
       "instagram_include": false,
       "social_description": "",
       "editor_note": "",
-      "social_title": ""
+      "social_title": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-10-15-cdbc96528f",
@@ -26672,7 +26750,8 @@
       "instagram_include": false,
       "social_description": "",
       "editor_note": "",
-      "social_title": ""
+      "social_title": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-15-05c67d7f07",
@@ -27896,7 +27975,8 @@
       "instagram_include": false,
       "social_description": "",
       "editor_note": "",
-      "social_title": ""
+      "social_title": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-17-422be2d050",
@@ -28141,7 +28221,8 @@
       "instagram_include": false,
       "social_description": "",
       "editor_note": "",
-      "social_title": ""
+      "social_title": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-10-17-d709f81e9f",
@@ -28316,7 +28397,8 @@
       "instagram_include": false,
       "social_description": "",
       "editor_note": "",
-      "social_title": ""
+      "social_title": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-17-98f4534d25",

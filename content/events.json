@@ -23956,7 +23956,8 @@
       "social_description": "",
       "social_priority": null,
       "instagram_include": false,
-      "telegram_include": false
+      "telegram_include": false,
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-10-13-3e8714affa",
@@ -24025,6 +24026,58 @@
       "social_title": "",
       "instagram_image": "",
       "instagram_include": false
+    },
+    {
+      "id": "spb-2026-10-13-39e247098d",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-13",
+      "time": "",
+      "title": "Наши события",
+      "venue": "Международная школа дизайна — Петербург",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "событие"
+      ],
+      "description": "Анна Крутолевич пришла в дизайн после 14 лет работы главным бухгалтером. Сегодня она — востребованный дизайнер, преподаватель МШД и героиня программы «Дачный ответ» на НТВ. Разбираем ее путь и то, как системное образование меняет траекторию карьеры: от первых шагов в новой профессии до дома по собственному дизайну под Выборгом.",
+      "url": "https://spb.designschool.ru/category/lifeschool/",
+      "source": "Международная школа дизайна — Петербург",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-13",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-13"
+    },
+    {
+      "id": "spb-2026-10-13-4b95f292d3",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-13",
+      "time": "",
+      "title": "От бухгалтерии до эксперта-дизайнера на НТВ: путь выпускницы Международной Школы Дизайна (СПб) Анны Крутолевич",
+      "venue": "Международная школа дизайна — Петербург",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "Анна Крутолевич пришла в дизайн после 14 лет работы главным бухгалтером. Сегодня она — востребованный дизайнер, преподаватель МШД и героиня программы «Дачный ответ» на НТВ. Разбираем ее путь и то, как системное образование меняет траекторию карьеры: от первых шагов в новой профессии до дома по собственному дизайну под Выборгом.",
+      "url": "https://spb.designschool.ru/2026/10/13/ot-buxgalterii-do-eksperta-dizajnera-na-ntv-put-vypusknicy-mezhdunarodnoj-shkoly-dizajna-spb-anny-krutolevich/",
+      "source": "Международная школа дизайна — Петербург",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-13",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-13"
     },
     {
       "id": "spb-2026-10-13-c0cb152877",
@@ -24674,7 +24727,7 @@
       "review_reason": "excluded_tour_mediation",
       "discovered_at": "2026-10-02",
       "price_type": "paid",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-13",
       "editor_note": "",
       "telegram_include": false,
@@ -27128,6 +27181,32 @@
       "reviewed_at": "2026-10-09"
     },
     {
+      "id": "moscow-2026-10-15-f6b65652ea",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-15",
+      "time": "19:30",
+      "title": "«Впереди планеты всей». Майя Плисецкая и феномен советского балета",
+      "venue": "Еврейский музей и центр толерантности",
+      "address": "",
+      "price": 250,
+      "price_text": "250 ₽",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "За минувший ХХ век русский балет стал своего рода визитной карточкой нашей страны и покорил сердца тысяч зрителей во всем мире. Начало столетия ознаменовалось успешными выступлениями антрепризы С.",
+      "url": "https://www.jewish-museum.ru/events/vperedi-planety-vsey-mayya-plisetskaya-i-fenomen-sovetskogo-baleta/",
+      "source": "Еврейский музей и центр толерантности",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-13",
+      "price_type": "paid",
+      "availability": "available",
+      "availability_checked_at": "2026-10-13"
+    },
+    {
       "id": "spb-2026-10-15-850eb2ec29",
       "status": "new",
       "kind": "event",
@@ -27334,7 +27413,8 @@
       "social_description": "",
       "social_priority": null,
       "instagram_include": false,
-      "telegram_include": false
+      "telegram_include": false,
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-10-16-7610db9f22",
@@ -28035,6 +28115,30 @@
       "telegram_include": false,
       "instagram_include": false,
       "sheet_synced_description": ""
+    },
+    {
+      "id": "spb-2026-10-17-2324cbe750",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-17",
+      "time": "",
+      "title": "Билеты на КИНОЧИТКА №5, 17 октября 2026, лекторий'порт (Санкт-Петербург)",
+      "venue": "Лекторий’порт",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [],
+      "description": "",
+      "url": "https://qtickets.ru/event/257919",
+      "source": "Лекторий’порт",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-13",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-13"
     },
     {
       "id": "spb-2026-10-17-1af68fc64a",
@@ -29122,6 +29226,30 @@
       "instagram_include": false,
       "instagram_image": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "spb-2026-10-18-ff6f9570bd",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-18",
+      "time": "",
+      "title": "Посмотрите, какую красоту подготовила уже куратор зоны коллажей",
+      "venue": "Библиотека комиксов",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "Ждем вас на наш тематический вечер «Слэшер-пати!»",
+      "url": "https://vk.ru/away.php?to=https%3A%2F%2Fcomix-library.timepad.ru%2Fevent%2F4231843%2F&amp;utf=1",
+      "source": "Библиотека комиксов — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-10-13",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-13"
     },
     {
       "id": "spb-2026-10-18-7faa09c6a6",
@@ -31080,7 +31208,8 @@
       "social_description": "",
       "social_priority": null,
       "instagram_include": false,
-      "telegram_include": false
+      "telegram_include": false,
+      "reviewed_at": ""
     },
     {
       "id": "russia-2026-10-21-86b51ee813",
@@ -31259,6 +31388,32 @@
       "sheet_synced_description": ""
     },
     {
+      "id": "spb-2026-10-21-2967de1d05",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-21",
+      "time": "12:00",
+      "title": "Клуб рисующих библиотекарей (КрБ) — это продолжение проекта «Вебтюнь» МЦБС им. М. Ю. Лермонтова в формате нетворкинг-сообщества. Мы собираемся два раза в месяц по средам в библиотеках города, чтобы вместе творить и общаться. Одна встреча в месяц будет проходить на базе Открытой гостиной, вторая в библиотеке одной из участниц клуба.",
+      "venue": "Открытая гостиная",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "встреча"
+      ],
+      "description": "[только для библиотекарей] • Подробности о работе клуба и глобальных планах на остаток года читайте в закрепах нашего чата: • По любым другим вопросам о работе клуба пишите в чат: • По вопросам официальных писем-вызовов и прочих документов можно обратится к нам в ЛС.",
+      "url": "https://otkrytaya-gostinaya.timepad.ru/event/4225598/",
+      "source": "Открытая гостиная — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-10-13",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-13"
+    },
+    {
       "id": "moscow-2026-10-21-422be2d050",
       "status": "rejected",
       "kind": "event",
@@ -31433,6 +31588,32 @@
       "telegram_include": false,
       "reviewed_at": "",
       "sheet_synced_description": "Встреча с подводным фотографом Кириллом Ледневым"
+    },
+    {
+      "id": "spb-2026-10-21-ed8d4a21e7",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-21",
+      "time": "18:30",
+      "title": "Уютным осенним вечером в центре Петербурга мы будем обсуждать тему, важность которой сложно переоценить. Мы будем говорить о механизмах, посредством которых человеческая психика сохраняет себя от потери целостности.",
+      "venue": "Открытая гостиная",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "- разберем такие понятия как «психологическая защита» и «копинг-стратегия»; - узнаем отличия зрелых психологических защит от незрелых; - поговорим о роли психологических защит в развитии личности и их взаимосвязи с эмоциями; - будем учиться отслеживать и различать виды психологических защит у себя и окружающих; - обсудим особенности проявления данных механизмов у детей. Ведущая: Ирина Кленская — психолог-консультант.",
+      "url": "https://otkrytaya-gostinaya.timepad.ru/event/4252108/",
+      "source": "Открытая гостиная — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-10-13",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-13"
     },
     {
       "id": "moscow-2026-10-21-c8087011a9",
@@ -31748,6 +31929,33 @@
       "telegram_include": false,
       "sheet_synced_description": "Лекция к абонементу №01 «Мастера русской живописи. Часть 1. От Рокотова до Иванова» 1 октября 2026 – 5 ноября 2026 Лекция будет проходить в Лекционном зале Инженерного корпуса (Лаврушинский переулок, д. 12, вход с Малого Толмачёвского переулка) и в режиме реального времени на платформе МТС Линк в формате онлайн. Продолжительность лекции: 1 час 30 минут.",
       "reviewed_at": "2026-10-09"
+    },
+    {
+      "id": "moscow-2026-10-22-8c7ac32fc5",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-22",
+      "time": "11:00",
+      "title": "Мастер-класс по тафтингу",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": 8000,
+      "price_text": "8000 ₽",
+      "registration": false,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/tufting-workshop",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-13",
+      "audience_text": "› Своды › Мастер-классы Дата: с окт 2026 Билеты Возраст: от 18 Тип: Мастер-класс в «Сводах» Место: Своды Возрастные ограничения 6+ К участию в мастер-классах мы приглашаем людей, достигших 18 лет. Продолжительность: 3,5 часа Стоимость: 8000 руб. * Сложность: 7/10 Количество участников: 2 * За одного участника. Расходные материалы включены в стоимость. Центр художественного производства «Своды» приглашает познакомиться с мастерскими, освоить новые навыки и поработать на профессиональном оборудовании. T Тафтинг — это техника создания ковров, при которой ворс вплетается в ткань с использованием тафтингового пистолета. На мастер-классе вместе со специалистом текстильной мастерской Натальей Цыганковой вы создадите компактные ковры размером 35×35 см. Мастер расскажет особенности работы с тафтинговым пистолетом, машинкой для стрижки ворса, а также подскажет, какие материалы выбрать для создания идеального ковра. После оплаты мастер-класса мы отправим вам на выбор несколько наших вариантов узоров и попросим определиться с выбором рисунка, который вы хотите перенести на ковер, не позднее чем за сутки до мастер-класса. Забрать готовое изделие можно будет не ранее чем через неделю, после того, как высохнет клеевая основа. Подробнее о сроках готовности расскажет мастер. {\"points\":[{\"id\":1,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":3,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.6,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":2,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} Официальный партнер Центра художественного производства «Своды» Фото: Вадим Штэйн {\"grid\":{\"width\":963,\"column_width\":89,\"columns_n\":9,\"gutter\":20,\"margin\":0,\"line\":10},\"palette\":\"default\",\"responsive_mode\":true,\"responsive_min_width\":512,\"responsive_max_width\":1100,\"colorchanger_fullscreen\":false,\"colorchanger_overflow\":true,\"page_cropping\":false,\"global_google_analytics_id\":\"\",\"global_yandex_metrika_id\":\"\",\"article_mode\":{\"mode\":\"page\",\"transition_type\":\"slide\",\"transition_direction\":\"horizontal\",\"transition_look\":\"belt\",\"slides_form\":{}},\"default_font\":{\"css\":\".editor {font-family: Diagramatika Text; font-size: 20px; font-weight: 400; line-height: 20px;}\"},\"smooth_scroll\":false} ГЭС-2 Посещение [+] План здания Правила посещения Ателье Игровая Кинотеатр Концертный зал Библиотека Малые своды Магазин",
+      "price_type": "paid",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-13"
     },
     {
       "id": "moscow-2026-10-22-6d8f1e6c5b",
@@ -32206,6 +32414,33 @@
       "sheet_synced_description": "City: Scarborough | Region: North Yorkshire | Country: United Kingdom | Estar May"
     },
     {
+      "id": "spb-2026-10-23-1cbdb6fd83",
+      "status": "new",
+      "kind": "exhibition",
+      "city": "spb",
+      "date": "2026-10-23",
+      "time": "",
+      "title": "Выставка «Доверяй только твоей тревоге». Александра Паперно",
+      "venue": "Музей «Полторы комнаты» Иосифа Бродского",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": true,
+      "categories": [
+        "выставка"
+      ],
+      "description": "Куратор: Сергей Фофанов Хранитель: Ольга Сейфетдинова Осенью 2026 года музей «Полторы комнаты» Иосифа Бродского представляет первую в Санкт-Петербурге персональную выставку Александры Паперно «Доверяй только твоей тревоге».",
+      "url": "https://brodsky.online/events/vystavka-doveryay-tolko-tvoey-trevoge-aleksandra-paperno/",
+      "source": "Полторы комнаты — музей Иосифа Бродского",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-13",
+      "price_type": "unknown",
+      "availability": "available",
+      "availability_checked_at": "2026-10-13",
+      "start_date": "2026-10-23"
+    },
+    {
       "id": "moscow-2026-10-23-633c02f875",
       "status": "approved",
       "kind": "event",
@@ -32598,6 +32833,32 @@
       "sheet_synced_description": "Встречи комиксистов"
     },
     {
+      "id": "spb-2026-10-23-48059a0422",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-23",
+      "time": "18:30",
+      "title": "лекция «Жизнь среди богов: жречество в синто».",
+      "venue": "Открытая гостиная",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "в Открытой гостиной пройдет Синто — неотъемлемая часть культурной жизни Японии, которая привлекает к себе внимание своей связью с живым миром и красотой ритуала. Согласно ему, людей повсюду окружают ками — боги и духи, присутствующие в природе, предметах и людях. На лекции разберём, что такое синто, и как оно менялось на протяжении истории: от разрозненных родовых культов до государственной религии эпохи Мэйдзи и её современного положения. Поговорим о том, кто такие каннуси, и в чём заключается их роль. Рассмотрим основные обряды синто — очищение, подношения и календарные праздники.",
+      "url": "https://otkrytaya-gostinaya.timepad.ru/event/4251208/",
+      "source": "Открытая гостиная — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-10-13",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-13"
+    },
+    {
       "id": "moscow-2026-10-23-e5eee23c79",
       "status": "rejected",
       "kind": "event",
@@ -32944,6 +33205,32 @@
       "sheet_synced_description": "Экскурсия включает знакомство со зданием, в котором находится РОСФОТО, и постоянной экспозицией «Внутри старинного фотоаппарата». Здание, в котором расположен музей, представляет собой яркий образец архитектуры северного модерна. В оформлении использованы майоликовые композиции по рисункам Николая Рериха."
     },
     {
+      "id": "spb-2026-10-24-371fd82947",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-24",
+      "time": "11:30",
+      "title": "«Два дня. М/Ж». Фестиваль популярной науки о различиях между мужчинами и женщинами",
+      "venue": "Библиотека Маяковского",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "фестиваль"
+      ],
+      "description": "Каждую осень в Маяковке собираются научные эксперты и популяризаторы, чтобы разобраться в одном большом вопросе. В этот раз будем выяснять, в чём же различия между М и Ж — без гендерных баттлов и взаимных упрёков, с опорой на науку и точное знание. Среди спикеров — эволюционный биолог Михаил Никитин, археолог Александр Бутягин, биолог Илья Удалов и другие яркие представители научпопа, чьи выступления вы наверняка встречали. Косметика женская и мужская: в чём разница Лекция химика-разработчика и популяризатора Дениса Байгозина.",
+      "url": "https://oxta8.timepad.ru/event/4239558/",
+      "source": "Библиотека Маяковского — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-10-13",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-13"
+    },
+    {
       "id": "moscow-2026-10-24-64aa698d00",
       "status": "rejected",
       "kind": "event",
@@ -33187,6 +33474,32 @@
       "editor_note": "",
       "social_description": "",
       "instagram_include": false
+    },
+    {
+      "id": "moscow-2026-10-24-bcba3b765a",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-24",
+      "time": "14:00",
+      "title": "Лекция «Павел Третьяков и Виктор Васнецов»",
+      "venue": "Третьяковская галерея",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Лекция в рамках цикла «Павел Третьяков и русские художники». Продолжительность – 1 час. Место проведения – Музей Павла и Сергея Третьяковых.",
+      "url": "https://www.tretyakovgallery.ru/events/o/lektsiya-pavel-tretyakov-i-viktor-vasnetsov/",
+      "source": "Третьяковская галерея — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-13",
+      "price_type": "paid",
+      "availability": "available",
+      "availability_checked_at": "2026-10-13"
     },
     {
       "id": "spb-2026-10-24-82d35d881c",
@@ -35965,6 +36278,32 @@
       "sheet_synced_description": "Вы узнаете их с первых нот. Они звучат в моменты триумфа, любви, опасности и тихой грусти. Это музыка, которая стала не просто фоном, а главным героем культовых фильмов."
     },
     {
+      "id": "moscow-2026-10-30-080ca37e62",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-30",
+      "time": "19:00",
+      "title": "Лекция «Павел Третьяков и Иван Крамской»",
+      "venue": "Третьяковская галерея",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Лекция в рамках цикла «Павел Третьяков и русские художники». Продолжительность – 1 час. Место проведения – Музей Павла и Сергея Третьяковых.",
+      "url": "https://www.tretyakovgallery.ru/events/o/lektsiya-pavel-tretyakov-i-ivan-kramskoy/",
+      "source": "Третьяковская галерея — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-13",
+      "price_type": "paid",
+      "availability": "available",
+      "availability_checked_at": "2026-10-13"
+    },
+    {
       "id": "moscow-2026-10-30-5120dd5b06",
       "status": "rejected",
       "kind": "event",
@@ -36172,6 +36511,41 @@
       "editor_note": "",
       "telegram_include": false,
       "reviewed_at": "2026-10-12"
+    },
+    {
+      "id": "spb-2026-10-31-020d3b2f98",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-31",
+      "time": "00:20",
+      "title": "Мероприятия",
+      "venue": "Музей «Полторы комнаты» Иосифа Бродского",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Оставляя свои контакты, вы даёте согласие на обработку персональных данных",
+      "url": "https://brodsky.online/events/",
+      "source": "Полторы комнаты — музей Иосифа Бродского",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-12",
+      "price_type": "unknown",
+      "availability": "available",
+      "availability_checked_at": "2026-10-13",
+      "telegram_include": false,
+      "instagram_include": false,
+      "sheet_synced_description": "Оставляя свои контакты, вы даёте согласие на обработку персональных данных",
+      "instagram_image": "",
+      "editor_note": "",
+      "social_description": "",
+      "social_title": "",
+      "social_priority": null,
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-31-e3aefd4737",
@@ -36450,41 +36824,6 @@
       "availability_checked_at": "2026-10-13",
       "reviewed_at": "2026-10-02",
       "sheet_synced_description": "Исполнители : А. Михеева (художественное слово), А. Блинов (художественное слово), М. Абердин (фортепиано)."
-    },
-    {
-      "id": "spb-2026-10-31-020d3b2f98",
-      "status": "new",
-      "kind": "event",
-      "city": "spb",
-      "date": "2026-10-31",
-      "time": "21:10",
-      "title": "Мероприятия",
-      "venue": "Музей «Полторы комнаты» Иосифа Бродского",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [
-        "лекция"
-      ],
-      "description": "Оставляя свои контакты, вы даёте согласие на обработку персональных данных",
-      "url": "https://brodsky.online/events/",
-      "source": "Полторы комнаты — музей Иосифа Бродского",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-10-12",
-      "price_type": "unknown",
-      "availability": "available",
-      "availability_checked_at": "2026-10-13",
-      "telegram_include": false,
-      "instagram_include": false,
-      "sheet_synced_description": "Оставляя свои контакты, вы даёте согласие на обработку персональных данных",
-      "instagram_image": "",
-      "editor_note": "",
-      "social_description": "",
-      "social_title": "",
-      "social_priority": null,
-      "reviewed_at": ""
     },
     {
       "id": "international-2026-11-01-6e82235541",
@@ -36803,6 +37142,32 @@
       "instagram_include": false,
       "reviewed_at": "",
       "sheet_synced_description": "Площадь Маяковского (ныне вновь Триумфальная) — одно из знаковых мест, которые связаны с Оттепелью. Этот недолгий период, с середины 1950-х по середину 1960-х, дал мощный импульс развитию творческой свободы в литературе, театре, изобразительном искусстве. С момента открытия памятника Владимиру Маяковскому начались публичные чтения стихов, в том числе и запрещенных поэтов."
+    },
+    {
+      "id": "moscow-2026-11-01-fd619c9f4d",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-01",
+      "time": "12:30",
+      "title": "Экскурсионный маршрут / Нонконформисты на Кропоткинской: возмутители спокойствия в благородном предместье",
+      "venue": "Музей AZ",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Местность между Арбатом и Москвой-рекой неизменно привлекает заповедной стариной — хотя в последние десятилетия активно застраивается новым элитным жильем. Тем не менее здесь, в так называемом московском Сен-Жерменском предместье, еще сохранились и допетровские палаты, и ампирные дворянские усадьбы, и купеческие дома в стиле модерн, и конструктивистские здания 1920-30-х.",
+      "url": "https://museum-az.com/event/ekskursionnyy-marshrut-nonkonformisty-na-kropotkinskoy-vozmutiteli-spokoystviya-v-blagorodnom-predme8981/",
+      "source": "Музей AZ — выставки и события",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-13",
+      "price_type": "paid",
+      "availability": "available",
+      "availability_checked_at": "2026-10-13"
     },
     {
       "id": "moscow-2026-10-04-16f6939347",
@@ -37158,6 +37523,32 @@
       "sheet_synced_description": "Мила Силенина и Яна Эткина из Holystick разберут реальные выставочные и культурные проекты: поиск визуального языка, физические материалы в книгах и выставках, работу с кураторами и художниками."
     },
     {
+      "id": "moscow-2026-11-06-63e55d0987",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-06",
+      "time": "19:00",
+      "title": "Лекция «Павел Третьяков и Василий Верещагин»",
+      "venue": "Третьяковская галерея",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Лекция в рамках цикла «Павел Третьяков и русские художники». Продолжительность – 1 час. Место проведения – Музей Павла и Сергея Третьяковых.",
+      "url": "https://www.tretyakovgallery.ru/events/o/lektsiya-pavel-tretyakov-i-vasiliy-vereshchagin/",
+      "source": "Третьяковская галерея — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-13",
+      "price_type": "paid",
+      "availability": "available",
+      "availability_checked_at": "2026-10-13"
+    },
+    {
       "id": "international-2026-11-07-e6acac2220",
       "status": "rejected",
       "kind": "open_call",
@@ -37226,7 +37617,8 @@
       "social_description": "",
       "social_priority": null,
       "instagram_include": false,
-      "telegram_include": false
+      "telegram_include": false,
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-08-1faf91a3f9",
@@ -37297,7 +37689,8 @@
       "social_description": "",
       "social_priority": null,
       "instagram_include": false,
-      "telegram_include": false
+      "telegram_include": false,
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-12-05c67d7f07",
@@ -37330,7 +37723,8 @@
       "social_description": "",
       "social_priority": null,
       "instagram_include": false,
-      "telegram_include": false
+      "telegram_include": false,
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-11-15-fb1e594bf1",
@@ -37614,7 +38008,8 @@
       "social_description": "",
       "social_priority": null,
       "instagram_include": false,
-      "telegram_include": false
+      "telegram_include": false,
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-11-25-41e93ee2bb",
@@ -37720,7 +38115,8 @@
       "social_description": "",
       "social_priority": null,
       "instagram_include": false,
-      "telegram_include": false
+      "telegram_include": false,
+      "reviewed_at": ""
     },
     {
       "id": "russia-2026-12-13-3a942b4abf",
@@ -37826,7 +38222,8 @@
       "social_description": "",
       "social_priority": null,
       "instagram_include": false,
-      "telegram_include": false
+      "telegram_include": false,
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-12-15-5242c7f93a",
@@ -37861,7 +38258,8 @@
       "social_description": "",
       "social_priority": null,
       "instagram_include": false,
-      "telegram_include": false
+      "telegram_include": false,
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-12-21-97062fdc2c",

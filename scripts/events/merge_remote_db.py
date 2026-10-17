@@ -2,6 +2,7 @@
 import json, re, sys
 from pathlib import Path
 from urllib.parse import urlsplit, urlunsplit
+from sheet_editorial import apply_editor_overrides
 
 generated_path=Path(sys.argv[1])
 remote_path=Path(sys.argv[2])
@@ -94,6 +95,15 @@ for generated_event in generated.get("events",[]):
         if rid and rid in curated_by_id:
             e.update(curated_by_id[rid])
 
+    combined_overrides={}
+    if old and isinstance(old.get("editor_overrides"),dict):
+        combined_overrides.update(old.get("editor_overrides") or {})
+    if isinstance(generated_event.get("editor_overrides"),dict):
+        combined_overrides.update(generated_event.get("editor_overrides") or {})
+    if combined_overrides:
+        e["editor_overrides"]=combined_overrides
+        apply_editor_overrides(e)
+
     merged.append(e)
     final_id=e.get("id")
     if final_id:
@@ -107,9 +117,13 @@ for curated_event in curated.get("events",[]):
         continue
     old=remote_by_id.get(rid)
     if old and old.get("status") in ("approved","rejected"):
-        merged.append(dict(old))
+        item=dict(old)
+        apply_editor_overrides(item)
+        merged.append(item)
     else:
-        merged.append(dict(curated_event))
+        item=dict(curated_event)
+        apply_editor_overrides(item)
+        merged.append(item)
     seen.add(rid)
 
 # Reviewed records are durable even if a source temporarily disappears or an
@@ -120,7 +134,9 @@ for e in remote.get("events",[]):
     if not rid or rid in seen:
         continue
     if e.get("status") in ("approved","rejected"):
-        merged.append(dict(e))
+        item=dict(e)
+        apply_editor_overrides(item)
+        merged.append(item)
         seen.add(rid)
 
 generated["events"]=sorted(

@@ -28721,7 +28721,7 @@
     },
     {
       "id": "moscow-2026-10-17-8cb3f8d42f",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-17",
@@ -28753,9 +28753,10 @@
       "social_description": "",
       "social_title": "",
       "social_priority": null,
-      "reviewed_at": "",
+      "reviewed_at": "2026-10-17",
       "editor_overrides": {
-        "registration": false
+        "registration": false,
+        "status": "rejected"
       }
     },
     {
@@ -29651,7 +29652,7 @@
     },
     {
       "id": "spb-2026-10-18-ff6f9570bd",
-      "status": "check",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-18",
@@ -29680,9 +29681,10 @@
       "editor_note": "",
       "social_title": "",
       "instagram_include": false,
-      "reviewed_at": "",
+      "reviewed_at": "2026-10-17",
       "editor_overrides": {
-        "registration": false
+        "registration": false,
+        "status": "rejected"
       }
     },
     {
@@ -30506,7 +30508,7 @@
     },
     {
       "id": "spb-2026-10-18-ae41038a4b",
-      "status": "check",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-18",
@@ -30530,12 +30532,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "rejected"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-17"
     },
     {
       "id": "moscow-2026-10-18-5554a42377",
@@ -31523,7 +31526,7 @@
     },
     {
       "id": "spb-2026-10-20-d840639c9f",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-20",
@@ -31548,10 +31551,12 @@
       "availability_checked_at": "2026-10-17",
       "editor_overrides": {
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "rejected"
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "reviewed_at": "2026-10-17"
     },
     {
       "id": "moscow-2026-10-20-b607d0e197",
@@ -32213,7 +32218,7 @@
     },
     {
       "id": "international-2026-10-21-2c38c7030d",
-      "status": "check",
+      "status": "rejected",
       "kind": "open_call",
       "city": "international",
       "date": "2026-10-21",
@@ -32245,9 +32250,10 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": "",
+      "reviewed_at": "2026-10-17",
       "editor_overrides": {
-        "registration": false
+        "registration": false,
+        "status": "rejected"
       }
     },
     {
@@ -32606,7 +32612,7 @@
     },
     {
       "id": "spb-2026-10-21-2967de1d05",
-      "status": "check",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-21",
@@ -32637,9 +32643,10 @@
       "editor_note": "",
       "social_title": "",
       "instagram_include": false,
-      "reviewed_at": "",
+      "reviewed_at": "2026-10-17",
       "editor_overrides": {
-        "registration": false
+        "registration": false,
+        "status": "rejected"
       }
     },
     {
@@ -33226,7 +33233,7 @@
     },
     {
       "id": "spb-2026-10-21-0ed59cb5cb",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-21",
@@ -33251,10 +33258,12 @@
       "availability_checked_at": "2026-10-17",
       "editor_overrides": {
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "rejected"
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "reviewed_at": "2026-10-17"
     },
     {
       "id": "moscow-2026-10-21-ea42d008c3",
@@ -33864,10 +33873,10 @@
       }
     },
     {
-      "status": "new",
+      "status": "approved",
       "editor_note": "Добавлено по подборке 19–25 октября; первоисточник проверен",
       "checked_at": "2026-10-17",
-      "reviewed_at": "",
+      "reviewed_at": "2026-10-17",
       "availability": "available",
       "availability_checked_at": "2026-10-17",
       "registration": false,
@@ -33891,7 +33900,14 @@
       "url": "https://www.tretyakovgallery.ru/events/o/lektsiya-skvoz-obektiv-simvolizma-10-2026/",
       "source": "Третьяковская галерея",
       "discovered_at": "2026-10-17",
-      "review_reason": ""
+      "review_reason": "",
+      "editor_overrides": {
+        "status": "approved",
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "spb-2026-10-22-548cb9f278",
@@ -34082,10 +34098,10 @@
       "sheet_synced_description": "Дата начала регистрации — 5 октября. Лектор — Яна Лорви, этномузыколог, исследователь традиционной культуры, автор и руководитель экспедиций по Ленинградской области и Карелии."
     },
     {
-      "status": "new",
+      "status": "approved",
       "editor_note": "Добавлено по подборке 19–25 октября; первоисточник проверен",
       "checked_at": "2026-10-17",
-      "reviewed_at": "",
+      "reviewed_at": "2026-10-17",
       "availability": "available",
       "availability_checked_at": "2026-10-17",
       "registration": false,
@@ -34109,7 +34125,14 @@
       "url": "https://www.tretyakovgallery.ru/events/o/lektsiya-orest-kiprenskiy-10-2026/",
       "source": "Третьяковская галерея",
       "discovered_at": "2026-10-17",
-      "review_reason": ""
+      "review_reason": "",
+      "editor_overrides": {
+        "status": "approved",
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-22-19606f2101",
@@ -35140,7 +35163,7 @@
     },
     {
       "id": "spb-2026-10-23-7311e563da",
-      "status": "check",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-23",
@@ -35169,7 +35192,10 @@
       "social_title": "",
       "instagram_image": "",
       "social_priority": null,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-17",
+      "editor_overrides": {
+        "status": "rejected"
+      }
     },
     {
       "id": "moscow-2026-10-23-591549b456",
@@ -35318,7 +35344,7 @@
     },
     {
       "id": "moscow-2026-10-24-4103ac25f5",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-24",
@@ -35349,7 +35375,10 @@
       "social_priority": null,
       "instagram_include": false,
       "telegram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-17",
+      "editor_overrides": {
+        "status": "approved"
+      }
     },
     {
       "id": "moscow-2026-10-24-9b9ee6a4b0",
@@ -35494,7 +35523,7 @@
     },
     {
       "id": "spb-2026-10-24-371fd82947",
-      "status": "check",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-24",
@@ -35525,9 +35554,10 @@
       "editor_note": "",
       "social_title": "",
       "instagram_include": false,
-      "reviewed_at": "",
+      "reviewed_at": "2026-10-17",
       "editor_overrides": {
-        "registration": false
+        "registration": false,
+        "status": "rejected"
       }
     },
     {
@@ -35593,11 +35623,17 @@
       "url": "https://www.tretyakovgallery.ru/events/o/lektsiya-russkie-skazki-v-illyustratsiyakh-eleny-polenovoy-10-2026/",
       "source": "Третьяковская галерея",
       "discovered_at": "2026-10-17",
-      "review_reason": "excluded_family_children"
+      "review_reason": "excluded_family_children",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-24-8cb3f8d42f",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-24",
@@ -35629,9 +35665,10 @@
       "social_description": "",
       "social_title": "",
       "social_priority": null,
-      "reviewed_at": "",
+      "reviewed_at": "2026-10-17",
       "editor_overrides": {
-        "registration": false
+        "registration": false,
+        "status": "rejected"
       }
     },
     {
@@ -35775,10 +35812,10 @@
       "reviewed_at": ""
     },
     {
-      "status": "new",
+      "status": "approved",
       "editor_note": "Добавлено по подборке 19–25 октября; первоисточник проверен",
       "checked_at": "2026-10-17",
-      "reviewed_at": "",
+      "reviewed_at": "2026-10-17",
       "availability": "available",
       "availability_checked_at": "2026-10-17",
       "registration": false,
@@ -35802,7 +35839,14 @@
       "url": "https://www.tretyakovgallery.ru/events/o/lektsiya-kazimir-malevich-10-2026/",
       "source": "Третьяковская галерея",
       "discovered_at": "2026-10-17",
-      "review_reason": ""
+      "review_reason": "",
+      "editor_overrides": {
+        "status": "approved",
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-24-98f4534d25",
@@ -36269,7 +36313,7 @@
     },
     {
       "id": "spb-2026-10-24-d12ac7c27c",
-      "status": "check",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-24",
@@ -36298,9 +36342,10 @@
       "telegram_include": false,
       "social_priority": null,
       "sheet_synced_description": "в библиотеке комиксов (7-я Красноармейская, д.30) продолжается цикл шорты, в рамках которого мы смотрим и обсуждаем короткометражные анимационные фильмы из разных стран. вас ждёт подборка короткометражек, вызывающих мурашки и трепет. от ужаса? смеха? красоты? всё из этого. по традиции в октябре будем поглощать контент на тему человеческих (и не только) страхов. посмотрим и обсудим, на что готовы пойти разные авторы, чтобы вызвать у нас страх, тревогу и чувство неопределённости. — прийти без короткометражного опыта",
-      "reviewed_at": "",
+      "reviewed_at": "2026-10-17",
       "editor_overrides": {
-        "registration": false
+        "registration": false,
+        "status": "rejected"
       }
     },
     {
@@ -36524,7 +36569,7 @@
     },
     {
       "id": "moscow-2026-10-25-777e29383c",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-25",
@@ -36549,12 +36594,13 @@
       "availability_checked_at": "2026-10-17",
       "editor_overrides": {
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "rejected"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-17"
     },
     {
       "id": "spb-2026-10-25-1686b00688",
@@ -36629,10 +36675,10 @@
       "reviewed_at": "2026-10-17"
     },
     {
-      "status": "new",
+      "status": "approved",
       "editor_note": "Добавлено по подборке 19–25 октября; первоисточник проверен",
       "checked_at": "2026-10-17",
-      "reviewed_at": "",
+      "reviewed_at": "2026-10-17",
       "availability": "available",
       "availability_checked_at": "2026-10-17",
       "registration": true,
@@ -36656,7 +36702,14 @@
       "url": "https://mmoma.ru/visit/events/luzhniki70_lectures/description",
       "source": "ММОМА",
       "discovered_at": "2026-10-17",
-      "review_reason": ""
+      "review_reason": "",
+      "editor_overrides": {
+        "status": "approved",
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-25-48d0afb82b",
@@ -36694,10 +36747,10 @@
       "instagram_include": false
     },
     {
-      "status": "new",
+      "status": "approved",
       "editor_note": "Добавлено по подборке 19–25 октября; первоисточник проверен",
       "checked_at": "2026-10-17",
-      "reviewed_at": "",
+      "reviewed_at": "2026-10-17",
       "availability": "available",
       "availability_checked_at": "2026-10-17",
       "registration": false,
@@ -36721,13 +36774,20 @@
       "url": "https://www.tretyakovgallery.ru/events/o/lektsiya-voyna-i-mir-v-poemakh-gomera-iliada-i-odisseya-2026/",
       "source": "Третьяковская галерея",
       "discovered_at": "2026-10-17",
-      "review_reason": ""
+      "review_reason": "",
+      "editor_overrides": {
+        "status": "approved",
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
-      "status": "new",
+      "status": "rejected",
       "editor_note": "Добавлено по подборке 19–25 октября; подтверждено билетным оператором",
       "checked_at": "2026-10-17",
-      "reviewed_at": "",
+      "reviewed_at": "2026-10-17",
       "availability": "available",
       "availability_checked_at": "2026-10-17",
       "registration": false,
@@ -36751,7 +36811,14 @@
       "url": "https://msk.kassir.ru/obrazovanie/tsentr-iskusstv-art-korobka/aleksandr-zorin-master-klass-baykalskie-zarisovki-maslyanaya-pastel_2026-10-25",
       "source": "KASSIR.RU / Центр искусств «Art коробка»",
       "discovered_at": "2026-10-17",
-      "review_reason": ""
+      "review_reason": "",
+      "editor_overrides": {
+        "status": "rejected",
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-25-422be2d050",
@@ -36827,10 +36894,10 @@
       }
     },
     {
-      "status": "new",
+      "status": "rejected",
       "editor_note": "Добавлено по подборке 19–25 октября; первоисточник проверен",
       "checked_at": "2026-10-17",
-      "reviewed_at": "",
+      "reviewed_at": "2026-10-17",
       "availability": "available",
       "availability_checked_at": "2026-10-17",
       "registration": false,
@@ -36853,13 +36920,20 @@
       "url": "https://www.tretyakovgallery.ru/events/o/lektsiya-sentimentalizm-10-2026/",
       "source": "Третьяковская галерея",
       "discovered_at": "2026-10-17",
-      "review_reason": ""
+      "review_reason": "",
+      "editor_overrides": {
+        "status": "rejected",
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
-      "status": "new",
+      "status": "rejected",
       "editor_note": "Добавлено по подборке 19–25 октября; первоисточник проверен",
       "checked_at": "2026-10-17",
-      "reviewed_at": "",
+      "reviewed_at": "2026-10-17",
       "availability": "available",
       "availability_checked_at": "2026-10-17",
       "registration": false,
@@ -36882,7 +36956,14 @@
       "url": "https://centrezotov.ru/events/hleb/master-klass-po-sozdaniyu-keramicheskoj-posudy/",
       "source": "Центр Зотов",
       "discovered_at": "2026-10-17",
-      "review_reason": ""
+      "review_reason": "",
+      "editor_overrides": {
+        "status": "rejected",
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-25-dc07f0121e",
@@ -37546,7 +37627,7 @@
     },
     {
       "id": "spb-2026-10-26-a738da0159",
-      "status": "check",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-26",
@@ -37577,9 +37658,10 @@
       "social_description": "",
       "social_priority": null,
       "social_title": "",
-      "reviewed_at": "",
+      "reviewed_at": "2026-10-17",
       "editor_overrides": {
-        "registration": false
+        "registration": false,
+        "status": "rejected"
       }
     },
     {
@@ -38574,7 +38656,7 @@
     },
     {
       "id": "spb-2026-10-28-00327fe18e",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-28",
@@ -38605,7 +38687,10 @@
       "social_description": "",
       "social_priority": null,
       "social_title": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-17",
+      "editor_overrides": {
+        "status": "approved"
+      }
     },
     {
       "id": "spb-2026-10-28-e264866514",
@@ -39078,7 +39163,7 @@
     },
     {
       "id": "spb-2026-10-29-bc177ceacc",
-      "status": "check",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-29",
@@ -39104,10 +39189,12 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "rejected"
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "reviewed_at": "2026-10-17"
     },
     {
       "id": "moscow-2026-10-29-3bf7b28bed",
@@ -40090,7 +40177,7 @@
     },
     {
       "id": "spb-2026-10-31-020d3b2f98",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-31",
@@ -40121,7 +40208,10 @@
       "social_description": "",
       "social_title": "",
       "social_priority": null,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-17",
+      "editor_overrides": {
+        "status": "rejected"
+      }
     },
     {
       "id": "moscow-2026-10-31-e3aefd4737",
@@ -40193,7 +40283,7 @@
     },
     {
       "id": "moscow-2026-10-31-8cb3f8d42f",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-31",
@@ -40225,9 +40315,10 @@
       "social_description": "",
       "social_title": "",
       "social_priority": null,
-      "reviewed_at": "",
+      "reviewed_at": "2026-10-17",
       "editor_overrides": {
-        "registration": false
+        "registration": false,
+        "status": "rejected"
       }
     },
     {
@@ -40374,7 +40465,7 @@
     },
     {
       "id": "spb-2026-10-31-6a26fd8351",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-31",
@@ -40405,7 +40496,10 @@
       "social_description": "",
       "social_priority": null,
       "social_title": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-17",
+      "editor_overrides": {
+        "status": "rejected"
+      }
     },
     {
       "id": "spb-2026-10-31-517be39b64",
@@ -40600,7 +40694,7 @@
     },
     {
       "id": "moscow-2026-11-01-af7f4a2910",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-01",
@@ -40625,12 +40719,13 @@
       "availability_checked_at": "2026-10-17",
       "editor_overrides": {
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "rejected"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-17"
     },
     {
       "id": "spb-2026-11-01-09ca26027f",
@@ -41233,7 +41328,7 @@
     },
     {
       "id": "spb-2026-11-05-cda167ff31",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-11-05",
@@ -41264,7 +41359,10 @@
       "social_description": "",
       "social_priority": null,
       "social_title": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-17",
+      "editor_overrides": {
+        "status": "rejected"
+      }
     },
     {
       "id": "spb-2026-11-05-04b52b67df",
@@ -41998,7 +42096,7 @@
     },
     {
       "id": "moscow-2026-11-14-8a0aafabae",
-      "status": "check",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-14",
@@ -42021,12 +42119,13 @@
       "availability_checked_at": "2026-10-17",
       "editor_overrides": {
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "rejected"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-17"
     },
     {
       "id": "international-2026-11-15-fb1e594bf1",
@@ -42252,7 +42351,7 @@
     },
     {
       "id": "moscow-2026-11-15-ec2aa4b7b4",
-      "status": "check",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-15",
@@ -42275,12 +42374,13 @@
       "availability_checked_at": "2026-10-17",
       "editor_overrides": {
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "rejected"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-17"
     },
     {
       "id": "russia-2026-11-16-b6f0d00beb",

@@ -762,7 +762,7 @@
       "review_reason": "",
       "discovered_at": "2026-09-21",
       "price_type": "free",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-17",
       "editor_note": "",
       "reviewed_at": "2026-09-21",
@@ -836,7 +836,7 @@
       "review_reason": "",
       "discovered_at": "2026-09-21",
       "price_type": "free",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-17",
       "editor_note": "",
       "reviewed_at": "2026-09-21",
@@ -947,7 +947,7 @@
       "review_reason": "",
       "discovered_at": "2026-09-21",
       "price_type": "free",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-17",
       "editor_note": "",
       "reviewed_at": "2026-09-21",
@@ -984,7 +984,7 @@
       "review_reason": "",
       "discovered_at": "2026-09-21",
       "price_type": "free",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-17",
       "editor_note": "",
       "reviewed_at": "2026-09-21",
@@ -1518,7 +1518,7 @@
       "review_reason": "",
       "discovered_at": "2026-09-23",
       "price_type": "free",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-17",
       "start_date": "2026-09-22",
       "social_priority": null,
@@ -28891,7 +28891,7 @@
       "review_reason": "excluded_tour_mediation",
       "discovered_at": "2026-10-02",
       "price_type": "paid",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-17",
       "editor_note": "",
       "telegram_include": false,
@@ -29076,7 +29076,7 @@
       "editor_note": "",
       "instagram_include": false,
       "reviewed_at": "2026-10-02",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-17",
       "sheet_synced_description": ""
     },
@@ -29152,6 +29152,32 @@
       "editor_overrides": {
         "registration": false
       }
+    },
+    {
+      "id": "spb-2026-10-17-c574513ca9",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-17",
+      "time": "16:00",
+      "title": "Каждую субботу в 16:00 — обзорная экскурсия по «Пушкинской-10»",
+      "venue": "Пушкинская-10",
+      "address": "",
+      "price": 600,
+      "price_text": "600 ₽",
+      "registration": false,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "Каждую субботу ровно в 16:00 группа будет отправляться от ресепшена в путешествие по коридорам и галереям «Пушкинской-10». В сопровождении опытного экскурсовода гости не только разберутся в современном и актуальном искусстве, но и получат ответы на все интересующие вопросы и проникнутся духом петербургского андерграунда.",
+      "url": "https://p-10.ru/events/obzornaya-ekskursiya-po-pushkinskoj-10-2/",
+      "source": "Пушкинская-10 — события",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-17",
+      "price_type": "paid",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-17"
     },
     {
       "id": "moscow-2026-10-17-c939da139e",
@@ -29293,7 +29319,7 @@
       "editor_note": "",
       "instagram_include": false,
       "reviewed_at": "2026-10-02",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-17",
       "sheet_synced_description": ""
     },
@@ -30501,7 +30527,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-18-5554a42377",
@@ -31911,7 +31939,7 @@
       "editor_note": "",
       "instagram_include": false,
       "price_type": "unknown",
-      "availability": "unknown",
+      "availability": "available",
       "availability_checked_at": "2026-10-17",
       "reviewed_at": "2026-10-02",
       "sheet_synced_description": "Режиссер – Ж. Деланнуа В главных ролях: М. Влади, Ж. Марэ, Л. Падовани, Ж.-Ф. Порон А. Дюко Автор и ведущий — киновед Ф. Ю. Коркин Дата начала регистрации — 13 октября"
@@ -36369,6 +36397,32 @@
       "reviewed_at": "2026-10-09"
     },
     {
+      "id": "moscow-2026-10-25-777e29383c",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-25",
+      "time": "00:20",
+      "title": "Лекция «Классицизм»",
+      "venue": "Третьяковская галерея",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Лекция к абонементу №05 «Стили и направления: от барокко до реализма» 4 октября 2026 – 22 ноября 2026 Лекция будет проходить в Лекционном зале Инженерного корпуса (Лаврушинский переулок, д. 12, вход с Малого Толмачёвского переулка) и в режиме реального времени на платформе МТС Линк в формате онлайн. Продолжительность лекции: 1 час 30 минут.",
+      "url": "https://www.tretyakovgallery.ru/events/o/lektsiya-klassitsizm-10-2026/",
+      "source": "Третьяковская галерея — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-17",
+      "price_type": "paid",
+      "availability": "available",
+      "availability_checked_at": "2026-10-17"
+    },
+    {
       "id": "spb-2026-10-25-1686b00688",
       "status": "rejected",
       "kind": "event",
@@ -37203,7 +37257,7 @@
       "editor_note": "",
       "instagram_include": false,
       "price_type": "unknown",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-17",
       "reviewed_at": "2026-10-02",
       "sheet_synced_description": "Режиссер — Д. Франчолини В главных ролях: Тото, В. де Сика, С. Пампанини, Ф. Фабрици, Д. Ралли Автор и ведущий цикла — киновед Ф. Ю. Коркин . Дата начала регистрации — 19 октября"
@@ -38741,6 +38795,32 @@
       }
     },
     {
+      "id": "spb-2026-10-29-bc177ceacc",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-29",
+      "time": "18:30",
+      "title": "А ещё встреча будет интерактивной! Задавайте вопросы — авторов самых интересных ждут подарки",
+      "venue": "Международная школа дизайна — Петербург",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [
+        "встреча"
+      ],
+      "description": "Искусство читать. Искусство видеть Поговорим о дизайн-бестселлерах, интересных новинках в области архитектуры, искусства и визуальной культуры. Надежда поделится личной подборкой книг, которые помогают развивать насмотренность, находить вдохновение и новые решения для работы. Онлайн, участие бесплатное. Запись будет доступна в течение двух недель. Регистрируйтесь на сайте Международной Школы Дизайна и присоединяйтесь!",
+      "url": "https://t.me/spbdesignschool/7048",
+      "source": "Международная школа дизайна — Петербург — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-10-17",
+      "price_type": "free",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-17"
+    },
+    {
       "id": "moscow-2026-10-29-3bf7b28bed",
       "status": "approved",
       "kind": "event",
@@ -38879,7 +38959,7 @@
       "editor_note": "",
       "instagram_include": false,
       "price_type": "unknown",
-      "availability": "unknown",
+      "availability": "available",
       "availability_checked_at": "2026-10-17",
       "reviewed_at": "2026-10-02",
       "sheet_synced_description": "Руководитель и аранжировщик — композитор И. Вакуленко. Исполнители — «CITY MUSIC BAND»."
@@ -39426,7 +39506,7 @@
       "editor_note": "",
       "instagram_include": false,
       "price_type": "unknown",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-17",
       "reviewed_at": "2026-10-02",
       "sheet_synced_description": "Вы узнаете их с первых нот. Они звучат в моменты триумфа, любви, опасности и тихой грусти. Это музыка, которая стала не просто фоном, а главным героем культовых фильмов."
@@ -40712,7 +40792,7 @@
       "review_reason": "",
       "discovered_at": "2026-10-06",
       "price_type": "unknown",
-      "availability": "unknown",
+      "availability": "available",
       "availability_checked_at": "2026-10-17",
       "sheet_synced_description": "Дата начала регистрации — 19 октября Лектор — Яна Лорви, этномузыколог, исследователь традиционной культуры, автор и руководитель экспедиций по Ленинградской области и Карелии",
       "telegram_include": false,
@@ -40885,7 +40965,7 @@
       "review_reason": "",
       "discovered_at": "2026-10-16",
       "price_type": "unknown",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-17",
       "sheet_synced_description": "Лектор — Яна Лорви , этномузыколог, исследователь традиционной культуры, автор и руководитель экспедиций по Ленинградской области и Карелии",
       "instagram_include": false,
@@ -41628,6 +41708,30 @@
       "social_title": ""
     },
     {
+      "id": "moscow-2026-11-14-8a0aafabae",
+      "status": "check",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-14",
+      "time": "16:00",
+      "title": "Лекция «Время музейных поэтов. Вадим Знаменов и его Петергоф»",
+      "venue": "Музей русского импрессионизма",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [],
+      "description": "",
+      "url": "https://www.rusimp.su/events/kuratorskaya-lekciya-vremya-muzeynyh-poetov-vadim-znamenov-i-ego-petergof",
+      "source": "Музей русского импрессионизма",
+      "checked_at": "",
+      "review_reason": "year_not_explicit_on_primary_listing",
+      "discovered_at": "2026-10-17",
+      "price_type": "paid",
+      "availability": "available",
+      "availability_checked_at": "2026-10-17"
+    },
+    {
       "id": "international-2026-11-15-fb1e594bf1",
       "status": "rejected",
       "kind": "open_call",
@@ -41848,6 +41952,30 @@
       "editor_overrides": {
         "registration": false
       }
+    },
+    {
+      "id": "moscow-2026-11-15-ec2aa4b7b4",
+      "status": "check",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-15",
+      "time": "14:30",
+      "title": "Лекция «Метод Мстислава Добужинского. Город как живой организм»",
+      "venue": "Музей русского импрессионизма",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [],
+      "description": "",
+      "url": "https://www.rusimp.su/events/lekciya-metod-mstislava-dobuzhinskogo-gorod-kak-zhivoy-organizm",
+      "source": "Музей русского импрессионизма",
+      "checked_at": "",
+      "review_reason": "year_not_explicit_on_primary_listing",
+      "discovered_at": "2026-10-17",
+      "price_type": "paid",
+      "availability": "available",
+      "availability_checked_at": "2026-10-17"
     },
     {
       "id": "russia-2026-11-16-b6f0d00beb",

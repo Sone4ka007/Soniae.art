@@ -29,6 +29,34 @@ def canonical_url(v):
     except Exception:
         return ""
 
+def bad_title(value):
+    title=str(value or "").strip()
+    if not title:
+        return True
+    words=title.split()
+    starts_type=bool(re.match(
+        r"^(?:лекция|встреча|мастер-класс|воркшоп|презентация|паблик-ток|"
+        r"дискуссия|выставка|открытие|конференция|семинар|перформанс|кинопоказ)\\b",
+        title,re.I
+    ))
+    if title.startswith((".",",",";",":")):
+        return True
+    if re.match(
+        r"^(?:на\\s+(?:лекции|встрече|занятии)|мы\\s+(?:будем|поговорим)|"
+        r"вы\\s+(?:увидите|узнаете)|приглашаем\\b|сегодня\\b|"
+        r"будущая\\s+встреча|у\\s+каждого\\s+человека|нас\\s+с\\s+детства|"
+        r"человек\\s+начинает|переезд\\s+это|герой\\s+романа|по\\s+этому\\s+поводу)",
+        title,re.I
+    ):
+        return True
+    if len(title)>180 and not starts_type:
+        return True
+    if len(words)>24 and not starts_type:
+        return True
+    if len(re.findall(r"[.!?](?:\\s|$)",title))>=2 and len(words)>16 and not starts_type:
+        return True
+    return False
+
 def unique_map(events, key_fn):
     grouped={}
     for item in events:
@@ -79,9 +107,16 @@ for generated_event in generated.get("events",[]):
         for k in ("date","time","start_date","end_date","availability","availability_checked_at"):
             if k in generated_event and generated_event.get(k) not in (None,""):
                 e[k]=generated_event[k]
-        if str(old.get("title","")).lower() in ("подписка на рассылку","подписаться на рассылку"):
-            for k in ("title","description","categories","audience_text"):
-                if k in generated_event: e[k]=generated_event[k]
+        title_overridden="title" in (old.get("editor_overrides") or {})
+        if (
+            str(old.get("title","")).lower() in ("подписка на рассылку","подписаться на рассылку")
+            or (bad_title(old.get("title")) and not title_overridden)
+        ):
+            if generated_event.get("title") and not bad_title(generated_event.get("title")):
+                e["title"]=generated_event["title"]
+            for k in ("description","categories","audience_text"):
+                if k in generated_event and k not in (old.get("editor_overrides") or {}):
+                    e[k]=generated_event[k]
         # Keep the generated identity when a source legitimately changes the
         # technical id, while preserving moderation/editorial fields.
         if rid:

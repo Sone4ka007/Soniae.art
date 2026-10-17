@@ -682,7 +682,8 @@
         "price": "",
         "description": ""
       }
-    ]
+    ],
+    "archived": true
   },
   {
     "id": "white-on-black",
@@ -747,7 +748,8 @@
         "price": "",
         "description": ""
       }
-    ]
+    ],
+    "archived": true
   },
   {
     "id": "black-on-white",
@@ -782,7 +784,8 @@
         "featured": false,
         "status": "not_for_sale",
         "price": "",
-        "description": ""
+        "description": "",
+        "archived": true
       },
       {
         "id": "blackwhite-03",
@@ -961,7 +964,8 @@
         "price": "",
         "description": ""
       }
-    ]
+    ],
+    "archived": true
   },
   {
     "id": "supermetal",
@@ -1012,6 +1016,7 @@
         "price": "",
         "description": ""
       }
-    ]
+    ],
+    "archived": true
   }
 ]

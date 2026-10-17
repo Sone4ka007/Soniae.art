@@ -3,6 +3,7 @@ const dialog=document.querySelector('#lightbox');
 const dimg=dialog.querySelector('img');
 const dtitle=dialog.querySelector('strong');
 const dmeta=dialog.querySelector('span');
+const archiveView=document.body.dataset.portfolioView==='archive';
 
 const chunkSets={};
 const imageCache=new Map();
@@ -38,14 +39,16 @@ const setOrientation=img=>{
   img.closest('.work').classList.add(img.naturalWidth>img.naturalHeight?'landscape':'portrait');
 };
 
-fetch('content/series.json')
+fetch('content/series.json?v=20261018-archive')
   .then(r=>r.json())
   .then(series=>{
-    series.forEach(s=>{
+    const visibleSeries=series.map(s=>({...s,works:s.works.filter(w=>w.id!=='market-03'&&Boolean(s.archived||w.archived)===archiveView)})).filter(s=>s.works.length);
+    visibleSeries.forEach((s,index)=>{
       const row=document.createElement('section');
-      const visibleWorks=s.works.filter(w=>w.id!=='market-03');
+      const visibleWorks=s.works;
+      const number=String(index).padStart(2,'0');
       const description=seriesDescriptions[s.id]||s.description||'';
-      row.innerHTML=`<div class="series-row"><span class="number">${s.number}</span><h3>${s.title}</h3><p>${description}</p><span class="year">${s.year}<br>＋</span></div><div class="series-content"><div class="gallery">${visibleWorks.map(w=>{
+      row.innerHTML=`<div class="series-row"><span class="number">${number}</span><h3>${s.title}</h3><p>${description}</p><span class="year">${s.year}<br>＋</span></div><div class="series-content"><div class="gallery">${visibleWorks.map(w=>{
         const image=resolveImage(w);
         const isChunked=Boolean(chunkSets[w.id]);
         const meta=[w.year,w.materials,w.size].filter(Boolean).join(' · ');

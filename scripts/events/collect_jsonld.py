@@ -284,16 +284,111 @@ def parse_price(text):
         return 0, "Бесплатно"
     return None, ""
 
+TITLE_PREFIXES = tuple(sorted(set(EVENT_TYPES + [
+    "открытие выставки","презентация книги","презентация альбома","паблик-ток",
+    "круглый стол","дискуссия","artist talk","open call"
+]), key=len, reverse=True))
+
+TITLE_META_RE = re.compile(
+    r"^(?:[•·▪▫◦—–-]+\\s*)?(?:(?:\\d{1,2}[./]\\d{1,2}(?:[./]20\\d{2})?|"
+    r"\\d{1,2}\\s+[а-яё]{3,10}(?:\\s+20\\d{2})?)\\s*[,|—–-]*\\s*)?"
+    r"(?:(?:[01]?\\d|2[0-3]):[0-5]\\d\\s*[,|—–-]*\\s*)?",
+    re.I
+)
+
+DESCRIPTION_START_RE = re.compile(
+    r"^(?:на\\s+(?:лекции|встрече|занятии|мастер-классе)|"
+    r"на\\s+новой\\s+встрече|в\\s+(?:библиотеке|музее|галерее)|"
+    r"сегодня\\b|этим\\s+(?:летом|вечером|утром)|"
+    r"мы\\s+(?:будем|поговорим|разберем|обсудим)|"
+    r"вы\\s+(?:увидите|узнаете|сможете)|"
+    r"приглашаем\\b|будущая\\s+встреча|"
+    r"у\\s+каждого\\s+человека|нас\\s+с\\s+детства|"
+    r"человек\\s+начинает|переезд\\s+это|"
+    r"герой\\s+(?:романа|фильма)|по\\s+этому\\s+поводу)",
+    re.I
+)
+
+def normalize_event_title(value):
+    title=clean(value).replace("�","")
+    title=TITLE_META_RE.sub("",title).strip()
+    title=re.sub(r"^(?:событие|мероприятие)\\s*[:—–-]\\s*","",title,flags=re.I)
+    title=re.sub(r"\\s+(?:подробнее|регистрация|купить билет)\\s*$","",title,flags=re.I)
+    title=title.strip(" \\t\\n|—–-·•")
+    # Preserve a formal event-type prefix plus a quoted title, while dropping
+    # explanatory prose that accidentally follows it.
+    prefix_pat="|".join(re.escape(x) for x in TITLE_PREFIXES)
+    m=re.match(rf"^((?:{prefix_pat})\\s+)?([«\"])(.{4,180}?)[»\"]",title,re.I)
+    if m:
+        prefix=clean(m.group(1) or "")
+        quoted=clean(m.group(3))
+        if prefix:
+            return f"{prefix} «{quoted}»"
+        return f"«{quoted}»"
+    return title
+
+def title_looks_like_description(value):
+    title=normalize_event_title(value)
+    if not title:
+        return True
+    words=title.split()
+    sentences=len(re.findall(r"[.!?](?:\\s|$)",title))
+    starts_with_type=any(title.lower().startswith(x.lower()) for x in TITLE_PREFIXES)
+    if title.startswith((".",",",";",":")):
+        return True
+    if DESCRIPTION_START_RE.search(title):
+        return True
+    if len(title)>180 and not starts_with_type:
+        return True
+    if len(words)>24 and not starts_with_type:
+        return True
+    if sentences>=2 and len(words)>16 and not starts_with_type:
+        return True
+    return False
+
+def extract_page_title(url):
+    try:
+        html=fetch(url)
+    except Exception:
+        return ""
+    soup=BeautifulSoup(html,"html.parser")
+    candidates=[]
+    for attrs in ({"property":"og:title"},{"name":"twitter:title"}):
+        node=soup.find("meta",attrs=attrs)
+        if node and node.get("content"):
+            candidates.append(node.get("content"))
+    h1=soup.find("h1")
+    if h1:
+        candidates.append(h1.get_text(" ",strip=True))
+    if soup.title:
+        candidates.append(soup.title.get_text(" ",strip=True))
+    host=urlparse(url).netloc.lower()
+    for candidate in candidates:
+        title=normalize_event_title(candidate)
+        title=re.sub(r"\\s*[|—-]\\s*(?:Timepad|Афиша|Билеты|Главная).*$","",title,flags=re.I)
+        if host:
+            title=re.sub(r"\\s*[|—-]\\s*[^|—]{2,70}$","",title).strip()
+        if title and not title_looks_like_description(title) and len(title)<=180:
+            return title
+    return ""
+
 def make_event(src, dt, tm, title, url, description="", venue="", address="", price=None,
                price_text="", registration=None, categories=None, status="new", reason=""):
+    raw_title=clean(title)
+    normalized_title=normalize_event_title(raw_title)
+    bad_title=title_looks_like_description(normalized_title)
+    display_title=normalized_title if not bad_title else "Название требует проверки"
+    if bad_title:
+        status="check"
+        reason=(reason+", " if reason else "")+"invalid_title_from_description"
     return {
-        "id": stable_id(src["city"], dt, title),
+        "id": stable_id(src["city"], dt, raw_title or url),
         "status": status,
         "kind": src.get("kind","event"),
         "city": src["city"],
         "date": dt,
         "time": tm,
-        "title": clean(title),
+        "title": display_title,
         "venue": clean(venue or src.get("venue","")),
         "address": clean(address),
         "price": price,
@@ -1054,6 +1149,10 @@ def extract_telegram_channel_events(html, src):
                 if len(line)>=6:
                     title=line
                     break
+        if title and title_looks_like_description(title) and event_url not in (post_url,src["url"]):
+            resolved=extract_page_title(event_url)
+            if resolved:
+                title=resolved
         if not title:
             continue
 

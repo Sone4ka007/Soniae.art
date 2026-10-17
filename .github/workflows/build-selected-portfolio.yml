@@ -1,0 +1,39 @@
+name: Build selected portfolio
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'tools/build_selected_portfolio.py'
+      - '.github/workflows/build-selected-portfolio.yml'
+      - 'assets/site_optimized_for_github (1)/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install reportlab pillow cairosvg
+
+      - name: Build PDF
+        run: python tools/build_selected_portfolio.py
+
+      - name: Upload portfolio
+        uses: actions/upload-artifact@v4
+        with:
+          name: sonya-enokaeva-selected-portfolio-2026
+          path: dist/sonya_enokaeva_selected_portfolio_2026.pdf
+          if-no-files-found: error
+          retention-days: 7

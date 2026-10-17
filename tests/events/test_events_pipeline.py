@@ -184,12 +184,35 @@ class EditorialDurabilityTests(unittest.TestCase):
         self.assertIn("const key = e.id || [", js)
         self.assertNotIn("const key = (e.url ||", js)
 
-    def test_sheet_pull_accepts_only_guarded_editor_content_fields(self):
-        src = (ROOT/"scripts/events/pull_sheet.py").read_text("utf-8")
-        self.assertIn('"status","editor_note","checked_at","review_reason","url","source"', src)
+    def test_sheet_pull_accepts_all_user_content_fields_as_overrides(self):
+        src = (ROOT/"scripts/events/sheet_editorial.py").read_text("utf-8")
+        self.assertIn('"title","status","date","time","venue","city","kind","categories","description"', src)
+        self.assertIn('"url","source","address","price_type","price_text","registration","availability"', src)
         self.assertIn('"social_priority","social_title","social_description"', src)
-        self.assertIn('baseline_key="synced_"+k', src)
-        self.assertNotIn('"description","venue","address","price"', src)
+        self.assertIn('editor_overrides', src)
+
+class TitleQualityTests(unittest.TestCase):
+    def test_description_paragraph_is_not_used_as_title(self):
+        mod = load_module("collect_title_test", "scripts/events/collect_jsonld.py")
+        prose = ("Уютным осенним вечером в центре Петербурга мы будем обсуждать тему, "
+                 "важность которой сложно переоценить. Мы будем говорить о механизмах психики.")
+        self.assertTrue(mod.title_looks_like_description(prose))
+        event = mod.make_event(
+            {"city":"spb","name":"Test","venue":"Test"},
+            "2026-10-21","18:30",prose,"https://example.org/event"
+        )
+        self.assertEqual(event["title"], "Название требует проверки")
+        self.assertEqual(event["status"], "check")
+        self.assertIn("invalid_title_from_description", event["review_reason"])
+
+    def test_formal_quoted_title_is_preserved(self):
+        mod = load_module("collect_title_test2", "scripts/events/collect_jsonld.py")
+        title = "Лекция «Синди Шерман. Искусство перевоплощения» — регистрация"
+        self.assertEqual(
+            mod.normalize_event_title(title),
+            "лекция «Синди Шерман. Искусство перевоплощения»"
+        )
+        self.assertFalse(mod.title_looks_like_description(title))
 
 
 if __name__ == "__main__":

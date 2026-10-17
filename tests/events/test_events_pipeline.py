@@ -210,7 +210,7 @@ class TitleQualityTests(unittest.TestCase):
         title = "Лекция «Синди Шерман. Искусство перевоплощения» — регистрация"
         self.assertEqual(
             mod.normalize_event_title(title),
-            "лекция «Синди Шерман. Искусство перевоплощения»"
+            "Лекция «Синди Шерман. Искусство перевоплощения»"
         )
         self.assertFalse(mod.title_looks_like_description(title))
 

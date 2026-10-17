@@ -1,92 +1,56 @@
 #!/usr/bin/env python3
 import json, os
-from sheet_editorial import merge_description
 from datetime import date
 from pathlib import Path
 from google.oauth2.service_account import Credentials
 from googleapiclient.discovery import build
+from sheet_editorial import capture_editor_overrides, apply_editor_overrides
 
 ROOT=Path(__file__).resolve().parents[2]
 DB=ROOT/"content/events.json"
 SHEET_ID=os.environ["EVENTS_SHEET_ID"]
 CREDS=json.loads(os.environ["GOOGLE_SERVICE_ACCOUNT_JSON"])
-RANGE="Events!A:AI"
+RANGE="Events!A:AJ"
 
 def service():
     scopes=["https://www.googleapis.com/auth/spreadsheets.readonly"]
     creds=Credentials.from_service_account_info(CREDS,scopes=scopes)
     return build("sheets","v4",credentials=creds,cache_discovery=False)
 
-def parse_bool(v):
-    if isinstance(v,bool): return v
-    s=str(v).strip().lower()
-    if not s: return None
-    return s in ("true","1","yes","да")
-
 def main():
-    data=service().spreadsheets().values().get(spreadsheetId=SHEET_ID,range=RANGE).execute().get("values",[])
-    if not data: raise SystemExit("Sheet is empty")
+    data=service().spreadsheets().values().get(
+        spreadsheetId=SHEET_ID,range=RANGE
+    ).execute().get("values",[])
+    if not data:
+        raise SystemExit("Sheet is empty")
     headers=data[0]
     rows=[dict(zip(headers,row+[""]*(len(headers)-len(row)))) for row in data[1:]]
     db=json.loads(DB.read_text("utf-8"))
     byid={e.get("id"):e for e in db.get("events",[]) if e.get("id")}
-    # The moderation Sheet is not a second content database.
-    # Only explicit editorial decisions may flow back into GitHub.
-    editable={
-        "status","title","editor_note","checked_at","review_reason","url","source",
-        "social_priority","social_title","social_description",
-        "telegram_include","instagram_include","instagram_image"
-    }
+    changed_fields=0
+
     for row in rows:
-        rid=row.get("id","").strip()
-        if not rid or rid not in byid: continue
+        rid=str(row.get("id","")).strip()
+        if not rid or rid not in byid:
+            continue
         e=byid[rid]
-        merge_description(e, row)
-        old_status=e.get("status","")
-        for k in editable:
-            if k not in row: continue
-            v=row[k]
-            if k=="status":
-                live_status=str(v).strip()
-                synced_status=str(row.get("synced_status","")).strip()
-                # A status is an editor decision only when it differs from the
-                # baseline last written by the bot. This prevents bot-written
-                # statuses from being re-imported as human approvals.
-                if not synced_status or live_status==synced_status:
-                    continue
-                if live_status not in ("new","check","approved","rejected"):
-                    continue
-            elif k in ("telegram_include","instagram_include"):
-                v=parse_bool(v)
-            elif k=="social_priority":
-                s=str(v).strip()
-                v=int(s) if s.isdigit() else None
-            elif k in ("social_title","social_description","instagram_image"):
-                v=str(v).strip()
-            elif k=="title":
-                live_value=str(v).strip()
-                synced_value=str(row.get("synced_title","")).strip()
-                if not live_value or live_value==synced_value:
-                    continue
-                v=live_value
-            elif k in ("url","source"):
-                baseline_key="synced_"+k
-                live_value=str(v).strip()
-                synced_value=str(row.get(baseline_key,"")).strip()
-                # Import source edits only when the editor changed the live cell
-                # since the bot last wrote it. Empty cells are ignored.
-                if not live_value or live_value==synced_value:
-                    continue
-                v=live_value
-            e[k]=v
-        new_status=e.get("status","")
-        if new_status != old_status:
+        old_status=str(e.get("status",""))
+        changed=capture_editor_overrides(e,row)
+        changed_fields += len(changed)
+        new_status=str(e.get("status",""))
+        if new_status != old_status and "reviewed_at" not in (e.get("editor_overrides") or {}):
             if new_status in ("approved","rejected"):
                 e["reviewed_at"]=date.today().isoformat()
             elif new_status in ("new","check"):
                 e["reviewed_at"]=""
-    db["events"]=sorted(byid.values(),key=lambda e:(e.get("date",""),e.get("time",""),e.get("title","")))
-    DB.write_text(json.dumps(db,ensure_ascii=False,indent=2)+"\n","utf-8")
-    print(f"Pulled editor fields for {len(rows)} rows")
+        apply_editor_overrides(e)
 
-if __name__=="__main__": main()
+    db["events"]=sorted(
+        byid.values(),
+        key=lambda e:(e.get("date",""),e.get("time",""),e.get("title",""))
+    )
+    DB.write_text(json.dumps(db,ensure_ascii=False,indent=2)+"\n","utf-8")
+    print(f"Pulled {changed_fields} manual field overrides from {len(rows)} rows")
+
+if __name__=="__main__":
+    main()

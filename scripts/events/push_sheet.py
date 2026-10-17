@@ -1,48 +1,40 @@
 #!/usr/bin/env python3
+import datetime as _dt
 import json, os
-from sheet_editorial import merge_description
 from pathlib import Path
 from google.oauth2.service_account import Credentials
 from googleapiclient.discovery import build
+from sheet_editorial import capture_editor_overrides, apply_editor_overrides, snapshot_from_event
 
 ROOT=Path(__file__).resolve().parents[2]
 DB=ROOT/"content/events.json"
 SHEET_ID=os.environ["EVENTS_SHEET_ID"]
 CREDS=json.loads(os.environ["GOOGLE_SERVICE_ACCOUNT_JSON"])
-RANGE="Events!A:AI"
-HEADERS=["title","status","date","time","venue","city","kind","categories","description","url","source","address","price_type","price_text","registration","availability","availability_checked_at","review_reason","editor_note","discovered_at","reviewed_at","price","checked_at","days_ahead","id","synced_status","synced_url","synced_source","social_priority","social_title","social_description","telegram_include","instagram_include","instagram_image","synced_title"]
+RANGE="Events!A:AJ"
+HEADERS=[
+    "title","status","date","time","venue","city","kind","categories","description","url","source",
+    "address","price_type","price_text","registration","availability","availability_checked_at",
+    "review_reason","editor_note","discovered_at","reviewed_at","price","checked_at","days_ahead",
+    "id","synced_status","synced_url","synced_source","social_priority","social_title",
+    "social_description","telegram_include","instagram_include","instagram_image","synced_title",
+    "synced_row_json"
+]
 
 def service():
     scopes=["https://www.googleapis.com/auth/spreadsheets"]
     creds=Credentials.from_service_account_info(CREDS,scopes=scopes)
     return build("sheets","v4",credentials=creds,cache_discovery=False)
 
-def parse_bool(v):
-    if isinstance(v,bool): return v
-    s=str(v).strip().lower()
-    if not s: return None
-    if s in ("true","1","yes","да"): return True
-    if s in ("false","0","no","нет"): return False
-    return None
-
 def preserve_editor_fields(api, db):
-    # Merge the live Sheet back into the DB immediately before overwriting it.
-    # Also remember the live row order so a push cannot move rows while the
-    # editor is actively moderating them.
     current=api.get(spreadsheetId=SHEET_ID,range=RANGE).execute().get("values",[])
     if not current:
-        return 0, {}
+        return 0, {}, 0
     headers=current[0]
     byid={e.get("id"):e for e in db.get("events",[]) if e.get("id")}
     current_order={}
-    # Preserve only moderation decisions made in the live Sheet.
-    # Public event content is owned by the repository/curated layer.
-    editable={
-        "title","editor_note","checked_at","review_reason","url","source",
-        "social_priority","social_title","social_description",
-        "telegram_include","instagram_include","instagram_image"
-    }
     merged=0
+    changed_fields=0
+
     for idx,row in enumerate(current[1:],start=1):
         obj=dict(zip(headers,row+[""]*(len(headers)-len(row))))
         rid=str(obj.get("id","")).strip()
@@ -51,114 +43,96 @@ def preserve_editor_fields(api, db):
         if not rid or rid not in byid:
             continue
         e=byid[rid]
-        merge_description(e, obj)
-        old_status=e.get("status","")
-        live_status=str(obj.get("status","")).strip()
-        synced_status=str(obj.get("synced_status","")).strip()
-        if synced_status and live_status!=synced_status and live_status in ("new","check","approved","rejected"):
-            e["status"]=live_status
-        for k in editable:
-            if k not in obj:
-                continue
-            v=obj[k]
-            if k in ("telegram_include","instagram_include"):
-                e[k]=parse_bool(v)
-                continue
-            if k=="social_priority":
-                s=str(v).strip()
-                e[k]=int(s) if s.isdigit() else None
-                continue
-            if k in ("social_title","social_description","instagram_image"):
-                e[k]=str(v).strip()
-                continue
-            if k=="title":
-                live_value=str(v).strip()
-                synced_value=str(obj.get("synced_title","")).strip()
-                if live_value and live_value!=synced_value:
-                    e[k]=live_value
-                continue
-            if k in ("url","source"):
-                live_value=str(v).strip()
-                synced_value=str(obj.get("synced_"+k,"")).strip()
-                if live_value and live_value!=synced_value:
-                    e[k]=live_value
-                continue
-            if v not in ("",None) or k in {"editor_note","review_reason"}:
-                e[k]=v
-        if e.get("status","") != old_status:
-            if e.get("status") in ("approved","rejected"):
-                import datetime as _dt
+        apply_editor_overrides(e)
+        old_status=str(e.get("status",""))
+        changed=capture_editor_overrides(e,obj)
+        changed_fields += len(changed)
+        new_status=str(e.get("status",""))
+        if new_status != old_status and "reviewed_at" not in (e.get("editor_overrides") or {}):
+            if new_status in ("approved","rejected"):
                 e["reviewed_at"]=_dt.date.today().isoformat()
-            elif e.get("status") in ("new","check"):
+            elif new_status in ("new","check"):
                 e["reviewed_at"]=""
+        apply_editor_overrides(e)
         merged+=1
-    return merged, current_order
+    return merged, current_order, changed_fields
+
+def row_for_event(e):
+    apply_editor_overrides(e)
+    try:
+        days=(_dt.date.fromisoformat(str(e.get("date","")))-_dt.date.today()).days
+    except Exception:
+        days=""
+    categories=e.get("categories",[])
+    categories_text=",".join(categories) if isinstance(categories,list) else str(categories or "")
+    registration=e.get("registration")
+    telegram=e.get("telegram_include")
+    instagram=e.get("instagram_include")
+    snapshot=json.dumps(snapshot_from_event(e),ensure_ascii=False,separators=(",",":"))
+    return [
+        e.get("title",""),e.get("status","new"),e.get("date",""),e.get("time",""),e.get("venue",""),
+        e.get("city",""),e.get("kind","event"),categories_text,e.get("description",""),e.get("url",""),
+        e.get("source",""),e.get("address",""),e.get("price_type","unknown"),e.get("price_text",""),
+        bool(registration) if registration is not None else "",e.get("availability","unknown"),
+        e.get("availability_checked_at",""),e.get("review_reason",""),e.get("editor_note",""),
+        e.get("discovered_at",""),e.get("reviewed_at",""),e.get("price",""),e.get("checked_at",""),
+        days,e.get("id",""),e.get("status","new"),e.get("url",""),e.get("source",""),
+        e.get("social_priority",""),e.get("social_title",""),e.get("social_description",""),
+        telegram if telegram is not None else "",instagram if instagram is not None else "",
+        e.get("instagram_image",""),e.get("title",""),snapshot
+    ]
 
 def main():
     db=json.loads(DB.read_text("utf-8"))
+    for e in db.get("events",[]):
+        apply_editor_overrides(e)
+
     svc=service()
     api=svc.spreadsheets().values()
-    merged,current_order=preserve_editor_fields(api,db)
-    db["events"]=sorted(db.get("events",[]),key=lambda e:(e.get("date",""),e.get("time",""),e.get("title","")))
+    merged,current_order,changed_fields=preserve_editor_fields(api,db)
 
+    db["events"]=sorted(
+        db.get("events",[]),
+        key=lambda e:(e.get("date",""),e.get("time",""),e.get("title",""))
+    )
 
-    rows=[HEADERS]
-    import datetime as _dt
     priority={"new":0,"check":1,"approved":2,"rejected":3}
     existing=[]
     fresh=[]
     for e in db.get("events",[]):
+        apply_editor_overrides(e)
         rid=e.get("id","")
         (existing if rid in current_order else fresh).append(e)
 
-    # Existing rows keep their exact live Sheet order, regardless of status edits.
     existing.sort(key=lambda e:current_order.get(e.get("id",""),10**9))
-    # Only genuinely new rows are ordered by moderation priority and recency.
     fresh.sort(key=lambda e:(
         priority.get(e.get("status","new"),9),
-        -(int(str(e.get("discovered_at","1900-01-01")).replace("-","")) if str(e.get("discovered_at","")).replace("-","").isdigit() else 0),
-        e.get("date",""),
-        e.get("time",""),
-        e.get("title","")
+        -(int(str(e.get("discovered_at","1900-01-01")).replace("-",""))
+          if str(e.get("discovered_at","")).replace("-","").isdigit() else 0),
+        e.get("date",""),e.get("time",""),e.get("title","")
     ))
     sheet_events=existing+fresh
-    for e in sheet_events:
-        try:
-            days=(_dt.date.fromisoformat(e.get("date",""))-_dt.date.today()).days
-        except Exception:
-            days=""
-        rows.append([
-            e.get("title",""),e.get("status","new"),e.get("date",""),e.get("time",""),e.get("venue",""),
-            e.get("city",""),e.get("kind","event"),
-            ",".join(e.get("categories",[])) if isinstance(e.get("categories"),list) else e.get("categories",""),
-            e.get("description",""),e.get("url",""),e.get("source",""),e.get("address",""),
-            e.get("price_type","unknown"),e.get("price_text",""),
-            bool(e.get("registration")) if e.get("registration") is not None else "",
-            e.get("availability","unknown"),e.get("availability_checked_at",""),
-            e.get("review_reason",""),e.get("editor_note",""),e.get("discovered_at",""),e.get("reviewed_at",""),
-            e.get("price",""),e.get("checked_at",""),days,e.get("id",""),e.get("status","new"),
-            e.get("url",""),e.get("source",""),
-            e.get("social_priority",""),e.get("social_title",""),e.get("social_description",""),
-            e.get("telegram_include","") if e.get("telegram_include") is not None else "",
-            e.get("instagram_include","") if e.get("instagram_include") is not None else "",
-            e.get("instagram_image",""),e.get("title","")
-        ])
+    rows=[HEADERS]+[row_for_event(e) for e in sheet_events]
 
-    for e in sheet_events:
-        e["sheet_synced_description"] = e.get("description", "")
     DB.write_text(json.dumps(db,ensure_ascii=False,indent=2)+"\n","utf-8")
 
     api.clear(spreadsheetId=SHEET_ID,range=RANGE,body={}).execute()
-    api.update(spreadsheetId=SHEET_ID,range="Events!A1",valueInputOption="RAW",body={"values":rows}).execute()
+    api.update(
+        spreadsheetId=SHEET_ID,range="Events!A1",valueInputOption="RAW",body={"values":rows}
+    ).execute()
 
-    meta=svc.spreadsheets().get(spreadsheetId=SHEET_ID,fields="sheets(properties(sheetId,title,gridProperties(rowCount,columnCount)))").execute()
-    sheet_id=next(s["properties"]["sheetId"] for s in meta["sheets"] if s["properties"]["title"]=="Events")
-    # Reset data validation across the editable grid first. This removes stale
-    # dropdown rules left behind when columns are reordered, then reapplies
-    # validation only to controlled fields.
+    meta=svc.spreadsheets().get(
+        spreadsheetId=SHEET_ID,
+        fields="sheets(properties(sheetId,title,gridProperties(rowCount,columnCount)))"
+    ).execute()
+    sheet_id=next(
+        s["properties"]["sheetId"] for s in meta["sheets"]
+        if s["properties"]["title"]=="Events"
+    )
+
     requests=[
-      {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":0,"endColumnIndex":35}}},
-      {"setBasicFilter":{"filter":{"range":{"sheetId":sheet_id,"startRowIndex":0,"startColumnIndex":0,"endColumnIndex":34}}}},
+      {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":0,"endColumnIndex":36}}},
+      {"setBasicFilter":{"filter":{"range":{"sheetId":sheet_id,"startRowIndex":0,"startColumnIndex":0,"endColumnIndex":36}}}},
       {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":1,"endColumnIndex":2},
         "rule":{"condition":{"type":"ONE_OF_LIST","values":[{"userEnteredValue":x} for x in ["new","check","approved","rejected"]]},"strict":True,"showCustomUi":True}}},
       {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":5,"endColumnIndex":6},
@@ -176,10 +150,15 @@ def main():
       {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":28,"endColumnIndex":29},
         "rule":{"condition":{"type":"NUMBER_BETWEEN","values":[{"userEnteredValue":"0"},{"userEnteredValue":"5"}]},"strict":True,"showCustomUi":True}}},
       {"updateDimensionProperties":{"range":{"sheetId":sheet_id,"dimension":"COLUMNS","startIndex":24,"endIndex":28},
+        "properties":{"hiddenByUser":True},"fields":"hiddenByUser"}},
+      {"updateDimensionProperties":{"range":{"sheetId":sheet_id,"dimension":"COLUMNS","startIndex":34,"endIndex":36},
         "properties":{"hiddenByUser":True},"fields":"hiddenByUser"}}
     ]
-    requests.append({"updateDimensionProperties":{"range":{"sheetId":sheet_id,"dimension":"COLUMNS","startIndex":34,"endIndex":35},"properties":{"hiddenByUser":True},"fields":"hiddenByUser"}})
     svc.spreadsheets().batchUpdate(spreadsheetId=SHEET_ID,body={"requests":requests}).execute()
-    print(f"Preserved editor fields for {merged} rows; pushed {len(rows)-1} events to Google Sheet")
+    print(
+        f"Preserved editor fields for {merged} rows; detected {changed_fields} manual field edits; "
+        f"pushed {len(rows)-1} events to Google Sheet"
+    )
 
-if __name__=="__main__": main()
+if __name__=="__main__":
+    main()

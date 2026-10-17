@@ -762,7 +762,7 @@
       "review_reason": "",
       "discovered_at": "2026-09-21",
       "price_type": "free",
-      "availability": "unknown",
+      "availability": "available",
       "availability_checked_at": "2026-10-17",
       "editor_note": "",
       "reviewed_at": "2026-09-21",
@@ -836,7 +836,7 @@
       "review_reason": "",
       "discovered_at": "2026-09-21",
       "price_type": "free",
-      "availability": "unknown",
+      "availability": "available",
       "availability_checked_at": "2026-10-17",
       "editor_note": "",
       "reviewed_at": "2026-09-21",
@@ -947,7 +947,7 @@
       "review_reason": "",
       "discovered_at": "2026-09-21",
       "price_type": "free",
-      "availability": "unknown",
+      "availability": "available",
       "availability_checked_at": "2026-10-17",
       "editor_note": "",
       "reviewed_at": "2026-09-21",
@@ -984,7 +984,7 @@
       "review_reason": "",
       "discovered_at": "2026-09-21",
       "price_type": "free",
-      "availability": "unknown",
+      "availability": "available",
       "availability_checked_at": "2026-10-17",
       "editor_note": "",
       "reviewed_at": "2026-09-21",
@@ -1518,7 +1518,7 @@
       "review_reason": "",
       "discovered_at": "2026-09-23",
       "price_type": "free",
-      "availability": "unknown",
+      "availability": "available",
       "availability_checked_at": "2026-10-17",
       "start_date": "2026-09-22",
       "social_priority": null,
@@ -29177,7 +29177,13 @@
       "discovered_at": "2026-10-17",
       "price_type": "paid",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-17"
+      "availability_checked_at": "2026-10-17",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-17-c939da139e",
@@ -29615,7 +29621,7 @@
       "city": "spb",
       "date": "2026-10-18",
       "time": "",
-      "title": "YouTube",
+      "title": "Название требует проверки",
       "venue": "Пушкинская-10",
       "address": "",
       "price": null,
@@ -29624,11 +29630,11 @@
       "categories": [
         "игра"
       ],
-      "description": "По этому поводу подготовили большое интервью с Андреем Клюкановым про то, откуда автор достал дюжину школьных парт, как связаны экспонаты выставки с «Фонтаном» Дюшана и какую роль в экспозиции играет «народное искусство»?",
+      "description": "",
       "url": "https://youtu.be/6WWuxfNIyFc",
       "source": "Пушкинская-10 — официальный Telegram",
       "checked_at": "",
-      "review_reason": "curated_telegram_source",
+      "review_reason": "curated_telegram_source, invalid_title_from_description",
       "discovered_at": "2026-10-08",
       "price_type": "unknown",
       "availability": "unknown",
@@ -30493,7 +30499,7 @@
       "editor_note": "",
       "instagram_include": false,
       "price_type": "unknown",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-17",
       "reviewed_at": "2026-10-02",
       "sheet_synced_description": "Руководитель и аранжировщик — композитор И. Вакуленко. Исполнители — «CITY MUSIC BAND»."
@@ -33858,6 +33864,36 @@
       }
     },
     {
+      "status": "new",
+      "editor_note": "Добавлено по подборке 19–25 октября; первоисточник проверен",
+      "checked_at": "2026-10-17",
+      "reviewed_at": "",
+      "availability": "available",
+      "availability_checked_at": "2026-10-17",
+      "registration": false,
+      "price": 500,
+      "price_text": "500 ₽",
+      "price_type": "paid",
+      "id": "manual-moscow-2026-10-22-borisov-musatov-photo",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-22",
+      "time": "18:00",
+      "title": "Лекция «Сквозь объектив символизма»",
+      "venue": "Третьяковская галерея — Корпус на Кадашёвской набережной",
+      "address": "Кадашёвская набережная, 12",
+      "categories": [
+        "лекция",
+        "фотография",
+        "история искусства"
+      ],
+      "description": "Лекция о фотографии Виктора Борисова-Мусатова и о том, как фотоэтюды становились частью его художественного метода и основой для живописных и графических произведений.",
+      "url": "https://www.tretyakovgallery.ru/events/o/lektsiya-skvoz-obektiv-simvolizma-10-2026/",
+      "source": "Третьяковская галерея",
+      "discovered_at": "2026-10-17",
+      "review_reason": ""
+    },
+    {
       "id": "spb-2026-10-22-548cb9f278",
       "status": "rejected",
       "kind": "event",
@@ -34044,6 +34080,36 @@
       "availability_checked_at": "2026-10-17",
       "reviewed_at": "2026-10-02",
       "sheet_synced_description": "Дата начала регистрации — 5 октября. Лектор — Яна Лорви, этномузыколог, исследователь традиционной культуры, автор и руководитель экспедиций по Ленинградской области и Карелии."
+    },
+    {
+      "status": "new",
+      "editor_note": "Добавлено по подборке 19–25 октября; первоисточник проверен",
+      "checked_at": "2026-10-17",
+      "reviewed_at": "",
+      "availability": "available",
+      "availability_checked_at": "2026-10-17",
+      "registration": false,
+      "price": null,
+      "price_text": "",
+      "price_type": "paid",
+      "id": "manual-moscow-2026-10-22-kiprensky",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-22",
+      "time": "19:00",
+      "title": "Лекция «Орест Кипренский»",
+      "venue": "Третьяковская галерея — Инженерный корпус",
+      "address": "Лаврушинский переулок, 12",
+      "categories": [
+        "лекция",
+        "история искусства",
+        "живопись"
+      ],
+      "description": "Лекция цикла «Мастера русской живописи. Часть 1. От Рокотова до Иванова», посвящённая Оресту Кипренскому.",
+      "url": "https://www.tretyakovgallery.ru/events/o/lektsiya-orest-kiprenskiy-10-2026/",
+      "source": "Третьяковская галерея",
+      "discovered_at": "2026-10-17",
+      "review_reason": ""
     },
     {
       "id": "moscow-2026-10-22-19606f2101",
@@ -35500,6 +35566,36 @@
       "sheet_synced_description": ""
     },
     {
+      "status": "rejected",
+      "editor_note": "Добавлено по подборке 19–25 октября; первоисточник проверен. Семейная аудитория 7+.",
+      "checked_at": "2026-10-17",
+      "reviewed_at": "2026-10-17",
+      "availability": "available",
+      "availability_checked_at": "2026-10-17",
+      "registration": false,
+      "price": 450,
+      "price_text": "450 ₽",
+      "price_type": "paid",
+      "id": "manual-moscow-2026-10-24-polenova-fairy-tales",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-24",
+      "time": "12:00",
+      "title": "Лекция «Русские сказки в иллюстрациях Елены Поленовой»",
+      "venue": "Третьяковская галерея — Инженерный корпус",
+      "address": "Лаврушинский переулок, 12",
+      "categories": [
+        "лекция",
+        "иллюстрация",
+        "книжная графика"
+      ],
+      "description": "Лекция об иллюстрациях Елены Поленовой к русским народным сказкам и её особом стиле в детских изданиях. Программа рассчитана на семейную аудиторию 7+.",
+      "url": "https://www.tretyakovgallery.ru/events/o/lektsiya-russkie-skazki-v-illyustratsiyakh-eleny-polenovoy-10-2026/",
+      "source": "Третьяковская галерея",
+      "discovered_at": "2026-10-17",
+      "review_reason": "excluded_family_children"
+    },
+    {
       "id": "moscow-2026-10-24-8cb3f8d42f",
       "status": "new",
       "kind": "event",
@@ -35677,6 +35773,36 @@
       "social_description": "",
       "instagram_include": false,
       "reviewed_at": ""
+    },
+    {
+      "status": "new",
+      "editor_note": "Добавлено по подборке 19–25 октября; первоисточник проверен",
+      "checked_at": "2026-10-17",
+      "reviewed_at": "",
+      "availability": "available",
+      "availability_checked_at": "2026-10-17",
+      "registration": false,
+      "price": 650,
+      "price_text": "650 ₽ офлайн / 700 ₽ онлайн",
+      "price_type": "paid",
+      "id": "manual-moscow-2026-10-24-malevich",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-24",
+      "time": "13:00",
+      "title": "Лекция «Казимир Малевич»",
+      "venue": "Новая Третьяковка",
+      "address": "Крымский Вал, 10",
+      "categories": [
+        "лекция",
+        "история искусства",
+        "авангард"
+      ],
+      "description": "Лекция о художественной системе Малевича: от кубизма и футуризма к супрематизму и позднему возвращению к фигуративности.",
+      "url": "https://www.tretyakovgallery.ru/events/o/lektsiya-kazimir-malevich-10-2026/",
+      "source": "Третьяковская галерея",
+      "discovered_at": "2026-10-17",
+      "review_reason": ""
     },
     {
       "id": "moscow-2026-10-24-98f4534d25",
@@ -36420,7 +36546,15 @@
       "discovered_at": "2026-10-17",
       "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-10-17"
+      "availability_checked_at": "2026-10-17",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-10-25-1686b00688",
@@ -36495,6 +36629,36 @@
       "reviewed_at": "2026-10-17"
     },
     {
+      "status": "new",
+      "editor_note": "Добавлено по подборке 19–25 октября; первоисточник проверен",
+      "checked_at": "2026-10-17",
+      "reviewed_at": "",
+      "availability": "available",
+      "availability_checked_at": "2026-10-17",
+      "registration": true,
+      "price": null,
+      "price_text": "По регистрации + входной билет в музей",
+      "price_type": "paid",
+      "id": "manual-moscow-2026-10-25-art-sport",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-25",
+      "time": "13:00",
+      "title": "Искусство и спорт — связь сквозь эпохи",
+      "venue": "ММОМА",
+      "address": "Гоголевский бульвар, 10",
+      "categories": [
+        "лекция",
+        "современное искусство",
+        "визуальная культура"
+      ],
+      "description": "Лекция о том, как спорт отражает ценности разных эпох и как художники работают со спортивной темой; также обсуждаются нейроэстетика и опыт творчества.",
+      "url": "https://mmoma.ru/visit/events/luzhniki70_lectures/description",
+      "source": "ММОМА",
+      "discovered_at": "2026-10-17",
+      "review_reason": ""
+    },
+    {
       "id": "moscow-2026-10-25-48d0afb82b",
       "status": "rejected",
       "kind": "event",
@@ -36528,6 +36692,66 @@
       "editor_note": "",
       "social_description": "",
       "instagram_include": false
+    },
+    {
+      "status": "new",
+      "editor_note": "Добавлено по подборке 19–25 октября; первоисточник проверен",
+      "checked_at": "2026-10-17",
+      "reviewed_at": "",
+      "availability": "available",
+      "availability_checked_at": "2026-10-17",
+      "registration": false,
+      "price": null,
+      "price_text": "",
+      "price_type": "paid",
+      "id": "manual-moscow-2026-10-25-homer",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-25",
+      "time": "13:00",
+      "title": "Лекция «Война и мир в поэмах Гомера „Илиада“ и „Одиссея“»",
+      "venue": "Новая Третьяковка",
+      "address": "Крымский Вал, 10",
+      "categories": [
+        "лекция",
+        "история искусства",
+        "визуальная культура"
+      ],
+      "description": "Лекция из цикла о литературных сюжетах и их живописных интерпретациях: как античные тексты считываются в произведениях разных художественных эпох.",
+      "url": "https://www.tretyakovgallery.ru/events/o/lektsiya-voyna-i-mir-v-poemakh-gomera-iliada-i-odisseya-2026/",
+      "source": "Третьяковская галерея",
+      "discovered_at": "2026-10-17",
+      "review_reason": ""
+    },
+    {
+      "status": "new",
+      "editor_note": "Добавлено по подборке 19–25 октября; подтверждено билетным оператором",
+      "checked_at": "2026-10-17",
+      "reviewed_at": "",
+      "availability": "available",
+      "availability_checked_at": "2026-10-17",
+      "registration": false,
+      "price": 3000,
+      "price_text": "3000 ₽",
+      "price_type": "paid",
+      "id": "manual-moscow-2026-10-25-zorin-pastel",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-25",
+      "time": "14:00",
+      "title": "Александр Зорин. Мастер-класс «Байкальские зарисовки», масляная пастель",
+      "venue": "Центр искусств «Art коробка»",
+      "address": "Автозаводская улица, 18",
+      "categories": [
+        "мастер-класс",
+        "рисунок",
+        "пастель"
+      ],
+      "description": "Демонстрационный мастер-класс по работе масляной пастелью по мотивам байкальских пленэров в рамках выставки «Современный русский импрессионизм 2026».",
+      "url": "https://msk.kassir.ru/obrazovanie/tsentr-iskusstv-art-korobka/aleksandr-zorin-master-klass-baykalskie-zarisovki-maslyanaya-pastel_2026-10-25",
+      "source": "KASSIR.RU / Центр искусств «Art коробка»",
+      "discovered_at": "2026-10-17",
+      "review_reason": ""
     },
     {
       "id": "moscow-2026-10-25-422be2d050",
@@ -36601,6 +36825,64 @@
       "editor_overrides": {
         "availability": "unknown"
       }
+    },
+    {
+      "status": "new",
+      "editor_note": "Добавлено по подборке 19–25 октября; первоисточник проверен",
+      "checked_at": "2026-10-17",
+      "reviewed_at": "",
+      "availability": "available",
+      "availability_checked_at": "2026-10-17",
+      "registration": false,
+      "price": 650,
+      "price_text": "650 ₽ офлайн / 700 ₽ онлайн",
+      "price_type": "paid",
+      "id": "manual-moscow-2026-10-25-sentimentalism",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-25",
+      "time": "15:00",
+      "title": "Лекция «Сентиментализм»",
+      "venue": "Третьяковская галерея — Инженерный корпус",
+      "address": "Лаврушинский переулок, 12",
+      "categories": [
+        "лекция",
+        "история искусства"
+      ],
+      "description": "Лекция о сентиментализме как литературно-художественном направлении XVIII века, его эстетике и внимании к внутреннему миру человека.",
+      "url": "https://www.tretyakovgallery.ru/events/o/lektsiya-sentimentalizm-10-2026/",
+      "source": "Третьяковская галерея",
+      "discovered_at": "2026-10-17",
+      "review_reason": ""
+    },
+    {
+      "status": "new",
+      "editor_note": "Добавлено по подборке 19–25 октября; первоисточник проверен",
+      "checked_at": "2026-10-17",
+      "reviewed_at": "",
+      "availability": "available",
+      "availability_checked_at": "2026-10-17",
+      "registration": false,
+      "price": null,
+      "price_text": "По билету",
+      "price_type": "paid",
+      "id": "manual-moscow-2026-10-25-zotov-ceramics",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-25",
+      "time": "15:00",
+      "title": "Мастер-класс по созданию керамической посуды",
+      "venue": "Центр Зотов",
+      "address": "Ходынская улица, 2, стр. 1",
+      "categories": [
+        "мастер-класс",
+        "керамика"
+      ],
+      "description": "Практический мастер-класс 16+: лепка небольших керамических ёмкостей и роспись керамическими красками. Ведущий — художник Борис Макаров.",
+      "url": "https://centrezotov.ru/events/hleb/master-klass-po-sozdaniyu-keramicheskoj-posudy/",
+      "source": "Центр Зотов",
+      "discovered_at": "2026-10-17",
+      "review_reason": ""
     },
     {
       "id": "moscow-2026-10-25-dc07f0121e",
@@ -37257,7 +37539,7 @@
       "editor_note": "",
       "instagram_include": false,
       "price_type": "unknown",
-      "availability": "unknown",
+      "availability": "available",
       "availability_checked_at": "2026-10-17",
       "reviewed_at": "2026-10-02",
       "sheet_synced_description": "Режиссер — Д. Франчолини В главных ролях: Тото, В. де Сика, С. Пампанини, Ф. Фабрици, Д. Ралли Автор и ведущий цикла — киновед Ф. Ю. Коркин . Дата начала регистрации — 19 октября"
@@ -38313,7 +38595,7 @@
       "review_reason": "",
       "discovered_at": "2026-10-16",
       "price_type": "unknown",
-      "availability": "unknown",
+      "availability": "available",
       "availability_checked_at": "2026-10-17",
       "sheet_synced_description": "Лектор — Д. А. Кашкарев , заведующий научно-просветительским сектором «Юсуповский дворец на Литейном» Государственного музея «Исаакиевский собор»",
       "instagram_include": false,
@@ -38806,7 +39088,7 @@
       "address": "",
       "price": 0,
       "price_text": "Бесплатно",
-      "registration": null,
+      "registration": false,
       "categories": [
         "встреча"
       ],
@@ -38818,7 +39100,14 @@
       "discovered_at": "2026-10-17",
       "price_type": "free",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-17"
+      "availability_checked_at": "2026-10-17",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-29-3bf7b28bed",
@@ -40965,7 +41254,7 @@
       "review_reason": "",
       "discovered_at": "2026-10-16",
       "price_type": "unknown",
-      "availability": "unknown",
+      "availability": "available",
       "availability_checked_at": "2026-10-17",
       "sheet_synced_description": "Лектор — Яна Лорви , этномузыколог, исследователь традиционной культуры, автор и руководитель экспедиций по Ленинградской области и Карелии",
       "instagram_include": false,
@@ -41729,7 +42018,15 @@
       "discovered_at": "2026-10-17",
       "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-10-17"
+      "availability_checked_at": "2026-10-17",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-11-15-fb1e594bf1",
@@ -41975,7 +42272,15 @@
       "discovered_at": "2026-10-17",
       "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-10-17"
+      "availability_checked_at": "2026-10-17",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "russia-2026-11-16-b6f0d00beb",

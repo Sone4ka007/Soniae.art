@@ -76,6 +76,21 @@
         "status": "not_for_sale",
         "price": "",
         "description": ""
+      },
+      {
+        "id": "city-facade",
+        "title": "Фасад",
+        "titleEn": "Facade",
+        "series": "Утиные истории",
+        "seriesId": "duck-stories",
+        "year": "2026",
+        "materials": "",
+        "size": "",
+        "image": "assets/works/2026-autumn/city-facade.jpeg",
+        "featured": false,
+        "status": "not_for_sale",
+        "price": "",
+        "description": ""
       }
     ]
   },
@@ -502,21 +517,6 @@
         "materials": "",
         "size": "",
         "image": "assets/works/2026-autumn/city-building-nine.jpeg",
-        "featured": false,
-        "status": "not_for_sale",
-        "price": "",
-        "description": ""
-      },
-      {
-        "id": "city-facade",
-        "title": "Фасад",
-        "titleEn": "Facade",
-        "series": "Город",
-        "seriesId": "city",
-        "year": "2026",
-        "materials": "",
-        "size": "",
-        "image": "assets/works/2026-autumn/city-facade.jpeg",
         "featured": false,
         "status": "not_for_sale",
         "price": "",

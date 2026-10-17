@@ -56,6 +56,19 @@
       ]
     },
     {
+      "name": "Третьяковская галерея — лекции",
+      "city": "moscow",
+      "url": "https://www.tretyakovgallery.ru/edu/lektsii/",
+      "venue": "Третьяковская галерея",
+      "adapter": "event_links",
+      "href_contains": [
+        "/events/o/"
+      ],
+      "max_detail_pages": 100,
+      "detail_workers": 8,
+      "source_group": "museum"
+    },
+    {
       "name": "Центр Вознесенского",
       "city": "moscow",
       "url": "https://www.voznesenskycenter.ru/",

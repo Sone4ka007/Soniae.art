@@ -65,13 +65,13 @@ fetch('../content/series.json')
   .then(r=>r.json())
   .then(series=>{
     series.forEach(s=>{
-      const translatedSeries=seriesTranslations[s.id]||{title:s.title,description:s.description};
+      const translatedSeries=seriesTranslations[s.id]||{title:s.titleEn||s.title,description:s.descriptionEn||s.description};
       const row=document.createElement('section');
       const visibleWorks=s.works.filter(w=>w.id!=='market-03');
       row.innerHTML=`<div class="series-row"><span class="number">${s.number}</span><h3>${translatedSeries.title}</h3><p>${translatedSeries.description||''}</p><span class="year">${s.year}<br>＋</span></div><div class="series-content"><div class="gallery">${visibleWorks.map(w=>{
         const image=resolveImage(w);
         const isChunked=Boolean(chunkSets[w.id]);
-        const title=workTitles[w.id]||w.title;
+        const title=workTitles[w.id]||w.titleEn||w.title;
         const meta=[w.year,translateMaterials(w.materials),w.size].filter(Boolean).join(' · ');
         const media=isChunked
           ? `<img data-chunk-id="${w.id}" alt="${title}" loading="lazy">`

@@ -9,8 +9,8 @@ ROOT=Path(__file__).resolve().parents[2]
 DB=ROOT/"content/events.json"
 SHEET_ID=os.environ["EVENTS_SHEET_ID"]
 CREDS=json.loads(os.environ["GOOGLE_SERVICE_ACCOUNT_JSON"])
-RANGE="Events!A:AH"
-HEADERS=["title","status","date","time","venue","city","kind","categories","description","url","source","address","price_type","price_text","registration","availability","availability_checked_at","review_reason","editor_note","discovered_at","reviewed_at","price","checked_at","days_ahead","id","synced_status","synced_url","synced_source","social_priority","social_title","social_description","telegram_include","instagram_include","instagram_image"]
+RANGE="Events!A:AI"
+HEADERS=["title","status","date","time","venue","city","kind","categories","description","url","source","address","price_type","price_text","registration","availability","availability_checked_at","review_reason","editor_note","discovered_at","reviewed_at","price","checked_at","days_ahead","id","synced_status","synced_url","synced_source","social_priority","social_title","social_description","telegram_include","instagram_include","instagram_image","synced_title"]
 
 def service():
     scopes=["https://www.googleapis.com/auth/spreadsheets"]
@@ -38,7 +38,7 @@ def preserve_editor_fields(api, db):
     # Preserve only moderation decisions made in the live Sheet.
     # Public event content is owned by the repository/curated layer.
     editable={
-        "editor_note","checked_at","review_reason","url","source",
+        "title","editor_note","checked_at","review_reason","url","source",
         "social_priority","social_title","social_description",
         "telegram_include","instagram_include","instagram_image"
     }
@@ -70,6 +70,12 @@ def preserve_editor_fields(api, db):
                 continue
             if k in ("social_title","social_description","instagram_image"):
                 e[k]=str(v).strip()
+                continue
+            if k=="title":
+                live_value=str(v).strip()
+                synced_value=str(obj.get("synced_title","")).strip()
+                if live_value and live_value!=synced_value:
+                    e[k]=live_value
                 continue
             if k in ("url","source"):
                 live_value=str(v).strip()
@@ -135,7 +141,7 @@ def main():
             e.get("social_priority",""),e.get("social_title",""),e.get("social_description",""),
             e.get("telegram_include","") if e.get("telegram_include") is not None else "",
             e.get("instagram_include","") if e.get("instagram_include") is not None else "",
-            e.get("instagram_image","")
+            e.get("instagram_image",""),e.get("title","")
         ])
 
     for e in sheet_events:
@@ -151,7 +157,7 @@ def main():
     # dropdown rules left behind when columns are reordered, then reapplies
     # validation only to controlled fields.
     requests=[
-      {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":0,"endColumnIndex":34}}},
+      {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":0,"endColumnIndex":35}}},
       {"setBasicFilter":{"filter":{"range":{"sheetId":sheet_id,"startRowIndex":0,"startColumnIndex":0,"endColumnIndex":34}}}},
       {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":1,"endColumnIndex":2},
         "rule":{"condition":{"type":"ONE_OF_LIST","values":[{"userEnteredValue":x} for x in ["new","check","approved","rejected"]]},"strict":True,"showCustomUi":True}}},
@@ -172,6 +178,7 @@ def main():
       {"updateDimensionProperties":{"range":{"sheetId":sheet_id,"dimension":"COLUMNS","startIndex":24,"endIndex":28},
         "properties":{"hiddenByUser":True},"fields":"hiddenByUser"}}
     ]
+    requests.append({"updateDimensionProperties":{"range":{"sheetId":sheet_id,"dimension":"COLUMNS","startIndex":34,"endIndex":35},"properties":{"hiddenByUser":True},"fields":"hiddenByUser"}})
     svc.spreadsheets().batchUpdate(spreadsheetId=SHEET_ID,body={"requests":requests}).execute()
     print(f"Preserved editor fields for {merged} rows; pushed {len(rows)-1} events to Google Sheet")
 

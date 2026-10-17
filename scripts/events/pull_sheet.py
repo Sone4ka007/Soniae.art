@@ -10,7 +10,7 @@ ROOT=Path(__file__).resolve().parents[2]
 DB=ROOT/"content/events.json"
 SHEET_ID=os.environ["EVENTS_SHEET_ID"]
 CREDS=json.loads(os.environ["GOOGLE_SERVICE_ACCOUNT_JSON"])
-RANGE="Events!A:AH"
+RANGE="Events!A:AI"
 
 def service():
     scopes=["https://www.googleapis.com/auth/spreadsheets.readonly"]
@@ -33,7 +33,7 @@ def main():
     # The moderation Sheet is not a second content database.
     # Only explicit editorial decisions may flow back into GitHub.
     editable={
-        "status","editor_note","checked_at","review_reason","url","source",
+        "status","title","editor_note","checked_at","review_reason","url","source",
         "social_priority","social_title","social_description",
         "telegram_include","instagram_include","instagram_image"
     }
@@ -63,6 +63,12 @@ def main():
                 v=int(s) if s.isdigit() else None
             elif k in ("social_title","social_description","instagram_image"):
                 v=str(v).strip()
+            elif k=="title":
+                live_value=str(v).strip()
+                synced_value=str(row.get("synced_title","")).strip()
+                if not live_value or live_value==synced_value:
+                    continue
+                v=live_value
             elif k in ("url","source"):
                 baseline_key="synced_"+k
                 live_value=str(v).strip()

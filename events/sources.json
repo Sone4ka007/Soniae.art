@@ -1418,6 +1418,19 @@
       "max_detail_pages": 70,
       "detail_workers": 6,
       "source_group": "museum"
+    },
+    {
+      "name": "Театральный музей им. А. А. Бахрушина — афиша",
+      "city": "moscow",
+      "url": "https://www.bakhrushinmuseum.ru/timetable/",
+      "venue": "Театральный музей им. А. А. Бахрушина",
+      "adapter": "event_links",
+      "href_contains": [
+        "/event/"
+      ],
+      "max_detail_pages": 120,
+      "detail_workers": 8,
+      "source_group": "museum"
     }
   ]
 }

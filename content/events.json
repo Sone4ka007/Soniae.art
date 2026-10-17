@@ -30484,7 +30484,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [],
       "description": "Мы подготовили карточки с референсами образов для нашего тематического вечера Вдохновляйтесь образами из культовых ужастиков и выбирайте свой стиль. Кровавые детали, мрачная эстетика, культовые персонажи или собственная версия хоррор-лука — дайте волю фантазии и станьте частью фильма ужасов!",
       "url": "https://comix-library.timepad.ru/event/4231843/",
@@ -30494,7 +30494,14 @@
       "discovered_at": "2026-10-17",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-17"
+      "availability_checked_at": "2026-10-17",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-18-5554a42377",

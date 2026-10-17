@@ -30473,6 +30473,30 @@
       "sheet_synced_description": "Руководитель и аранжировщик — композитор И. Вакуленко. Исполнители — «CITY MUSIC BAND»."
     },
     {
+      "id": "spb-2026-10-18-ae41038a4b",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-18",
+      "time": "16:00",
+      "title": "СЛЭШЕР-ПАТИ",
+      "venue": "Библиотека комиксов",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "Мы подготовили карточки с референсами образов для нашего тематического вечера Вдохновляйтесь образами из культовых ужастиков и выбирайте свой стиль. Кровавые детали, мрачная эстетика, культовые персонажи или собственная версия хоррор-лука — дайте волю фантазии и станьте частью фильма ужасов!",
+      "url": "https://comix-library.timepad.ru/event/4231843/",
+      "source": "Библиотека комиксов — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-10-17",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-17"
+    },
+    {
       "id": "moscow-2026-10-18-5554a42377",
       "status": "rejected",
       "kind": "event",
@@ -31480,7 +31504,13 @@
       "discovered_at": "2026-10-17",
       "price_type": "paid",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-17"
+      "availability_checked_at": "2026-10-17",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-20-b607d0e197",
@@ -31874,7 +31904,7 @@
       "editor_note": "",
       "instagram_include": false,
       "price_type": "unknown",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-17",
       "reviewed_at": "2026-10-02",
       "sheet_synced_description": "Режиссер – Ж. Деланнуа В главных ролях: М. Влади, Ж. Марэ, Л. Падовани, Ж.-Ф. Порон А. Дюко Автор и ведущий — киновед Ф. Ю. Коркин Дата начала регистрации — 13 октября"
@@ -33177,7 +33207,13 @@
       "discovered_at": "2026-10-17",
       "price_type": "paid",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-17"
+      "availability_checked_at": "2026-10-17",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-21-ea42d008c3",
@@ -35995,7 +36031,7 @@
       "editor_note": "",
       "instagram_include": false,
       "price_type": "unknown",
-      "availability": "unknown",
+      "availability": "available",
       "availability_checked_at": "2026-10-17",
       "reviewed_at": "2026-10-02",
       "sheet_synced_description": "Исполнители : Ансамбль «Без слов» / «SinPalabras»"
@@ -38216,7 +38252,7 @@
       "review_reason": "",
       "discovered_at": "2026-10-16",
       "price_type": "unknown",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-17",
       "sheet_synced_description": "Лектор — Д. А. Кашкарев , заведующий научно-просветительским сектором «Юсуповский дворец на Литейном» Государственного музея «Исаакиевский собор»",
       "instagram_include": false,
@@ -38836,7 +38872,7 @@
       "editor_note": "",
       "instagram_include": false,
       "price_type": "unknown",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-17",
       "reviewed_at": "2026-10-02",
       "sheet_synced_description": "Руководитель и аранжировщик — композитор И. Вакуленко. Исполнители — «CITY MUSIC BAND»."
@@ -39383,7 +39419,7 @@
       "editor_note": "",
       "instagram_include": false,
       "price_type": "unknown",
-      "availability": "unknown",
+      "availability": "available",
       "availability_checked_at": "2026-10-17",
       "reviewed_at": "2026-10-02",
       "sheet_synced_description": "Вы узнаете их с первых нот. Они звучат в моменты триумфа, любви, опасности и тихой грусти. Это музыка, которая стала не просто фоном, а главным героем культовых фильмов."
@@ -39983,7 +40019,7 @@
       "review_reason": "",
       "discovered_at": "2026-10-16",
       "price_type": "unknown",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-17",
       "sheet_synced_description": "Что объединяет российского императора Александра II, выдающегося дипломата Александра Горчакова и знаменитого поэта Фёдора Тютчева? Лектор : Размахнина Анастасия Александровна — историк, соавтор научно-популярного блога delicate fancy",
       "instagram_include": false,
@@ -40216,7 +40252,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-01-09ca26027f",
@@ -40667,7 +40705,7 @@
       "review_reason": "",
       "discovered_at": "2026-10-06",
       "price_type": "unknown",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-17",
       "sheet_synced_description": "Дата начала регистрации — 19 октября Лектор — Яна Лорви, этномузыколог, исследователь традиционной культуры, автор и руководитель экспедиций по Ленинградской области и Карелии",
       "telegram_include": false,

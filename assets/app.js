@@ -39,7 +39,7 @@ const setOrientation=img=>{
   img.closest('.work').classList.add(img.naturalWidth>img.naturalHeight?'landscape':'portrait');
 };
 
-fetch('content/series.json?v=20261018-archive')
+fetch('content/series.json?v=20261018-metadata',{cache:'no-cache'})
   .then(r=>r.json())
   .then(series=>{
     const visibleSeries=series.map(s=>({...s,works:s.works.filter(w=>w.id!=='market-03'&&Boolean(s.archived||w.archived)===archiveView)})).filter(s=>s.works.length);

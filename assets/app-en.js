@@ -62,7 +62,7 @@ const setOrientation=img=>{
   img.closest('.work').classList.add(img.naturalWidth>img.naturalHeight?'landscape':'portrait');
 };
 
-fetch('../content/series.json?v=20261018-archive')
+fetch('../content/series.json?v=20261018-metadata',{cache:'no-cache'})
   .then(r=>r.json())
   .then(series=>{
     const visibleSeries=series.map(s=>({...s,works:s.works.filter(w=>w.id!=='market-03'&&Boolean(s.archived||w.archived)===archiveView)})).filter(s=>s.works.length);
@@ -75,7 +75,7 @@ fetch('../content/series.json?v=20261018-archive')
         const image=resolveImage(w);
         const isChunked=Boolean(chunkSets[w.id]);
         const title=workTitles[w.id]||w.titleEn||w.title;
-        const meta=[w.year,translateMaterials(w.materials),w.size].filter(Boolean).join(' · ');
+        const meta=[w.year,w.materialsEn||translateMaterials(w.materials),w.size].filter(Boolean).join(' · ');
         const media=isChunked
           ? `<img data-chunk-id="${w.id}" alt="${title}" loading="lazy">`
           : `<img src="${image}" alt="${title}" loading="lazy">`;

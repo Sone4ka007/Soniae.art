@@ -30091,7 +30091,13 @@
       "discovered_at": "2026-10-18",
       "price_type": "paid",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-18"
+      "availability_checked_at": "2026-10-18",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "spb-2026-10-18-cfbf13f5a9",
@@ -30105,7 +30111,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "встреча"
       ],
@@ -30117,7 +30123,14 @@
       "discovered_at": "2026-10-18",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-18"
+      "availability_checked_at": "2026-10-18",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-18-31fc1debc6",
@@ -32964,7 +32977,7 @@
       "address": "",
       "price": 0,
       "price_text": "Бесплатно",
-      "registration": null,
+      "registration": false,
       "categories": [],
       "description": "В книге «Старинные дачи Петербурга. Дома и люди», вышедшей в издательстве «Бомбора» в 2026 году, Елена Травина рассказывает о дачной жизни Петербурга начала XX века. Автор обращается к материалам 1910 года: изучает старые газеты, сравнивает цены на дачи в разных посёлках, выбирает место для летнего отдыха и договаривается об аренде. Все люди и дома, о которых идёт речь в книге, существовали на самом деле. Стихи, кулинарные рецепты, байки, сплетни и рекламные объявления взяты из старых журналов. На встрече поговорим о работе над книгой и о том, как архивные материалы помогают восстановить истор",
       "url": "https://t.me/mayakovka/2113",
@@ -32974,7 +32987,14 @@
       "discovered_at": "2026-10-18",
       "price_type": "free",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-18"
+      "availability_checked_at": "2026-10-18",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-21-832bc85e9b",
@@ -37213,7 +37233,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "мастер-класс"
       ],
@@ -37225,7 +37245,14 @@
       "discovered_at": "2026-10-18",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-18"
+      "availability_checked_at": "2026-10-18",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-25-dc07f0121e",
@@ -37505,7 +37532,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "встреча"
       ],
@@ -37517,7 +37544,14 @@
       "discovered_at": "2026-10-18",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-18"
+      "availability_checked_at": "2026-10-18",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-25-9725e1b4d8",
@@ -37640,7 +37674,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [],
       "description": "Создать визуализацию, поэкспериментировать с материалами, оживить интерьер или подготовить эффектную презентацию для заказчика. Всё это уже можно делать с помощью нейросетей. Главное — знать, какие инструменты выбрать и как с ними работать. «Нейросети в дизайне интерьеров и экстерьеров» Вместе с преподавателем Анной Шишенко участники познакомятся с ChatGPT, Midjourney, NanoBanana, Runway и другими ИИ-инструментами, научатся создавать изображения и видео, грамотно составлять запросы и применять нейросети на разных этапах дизайн-проекта.",
       "url": "https://t.me/spbdesignschool/7050",
@@ -37650,7 +37684,14 @@
       "discovered_at": "2026-10-18",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-18"
+      "availability_checked_at": "2026-10-18",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "spb-2026-10-26-5af952e26e",

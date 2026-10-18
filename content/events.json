@@ -30401,7 +30401,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "мастер-класс"
       ],
@@ -30413,7 +30413,14 @@
       "discovered_at": "2026-10-18",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-18"
+      "availability_checked_at": "2026-10-18",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-18-00c85a88e1",
@@ -30783,7 +30790,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [],
       "description": "Социальная комедия с эротическим оттенком по мотивам пьесы М. Хейфеца «Не забудьте расписаться». На свете есть две вечные темы — это любовь и….",
       "url": "https://p-10.ru/events/polnoe-juridicheskoe-soprovozhdenie-po-motivam-pesy-m-hejfeca-10/",
@@ -30793,7 +30800,14 @@
       "discovered_at": "2026-10-18",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-18"
+      "availability_checked_at": "2026-10-18",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-18-852ca946b2",
@@ -37119,7 +37133,13 @@
       "discovered_at": "2026-10-18",
       "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-10-18"
+      "availability_checked_at": "2026-10-18",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "status": "rejected",
@@ -42271,7 +42291,13 @@
       "discovered_at": "2026-10-18",
       "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-10-18"
+      "availability_checked_at": "2026-10-18",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "international-2026-11-11-533523acf3",

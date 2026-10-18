@@ -29589,7 +29589,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [],
       "description": "",
       "url": "https://hermitagemuseum.org/what-s-on/afisha_mincult/?lng=ru",
@@ -29599,7 +29599,14 @@
       "discovered_at": "2026-10-18",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-18"
+      "availability_checked_at": "2026-10-18",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "spb-2026-10-18-ff6f9570bd",
@@ -30303,7 +30310,13 @@
       "discovered_at": "2026-10-18",
       "price_type": "free",
       "availability": "available",
-      "availability_checked_at": "2026-10-18"
+      "availability_checked_at": "2026-10-18",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-18-00c85a88e1",
@@ -30399,7 +30412,13 @@
       "discovered_at": "2026-10-18",
       "price_type": "free",
       "availability": "available",
-      "availability_checked_at": "2026-10-18"
+      "availability_checked_at": "2026-10-18",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "spb-2026-10-18-b6085bfe07",
@@ -33972,7 +33991,13 @@
       "discovered_at": "2026-10-18",
       "price_type": "free",
       "availability": "available",
-      "availability_checked_at": "2026-10-18"
+      "availability_checked_at": "2026-10-18",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "spb-2026-10-22-bb1fba1751",
@@ -34257,7 +34282,13 @@
       "discovered_at": "2026-10-18",
       "price_type": "free",
       "availability": "available",
-      "availability_checked_at": "2026-10-18"
+      "availability_checked_at": "2026-10-18",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-22-05c67d7f07",
@@ -35346,7 +35377,13 @@
       "discovered_at": "2026-10-18",
       "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-10-18"
+      "availability_checked_at": "2026-10-18",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "spb-2026-10-24-0586a962f4",
@@ -36130,7 +36167,13 @@
       "discovered_at": "2026-10-18",
       "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-10-18"
+      "availability_checked_at": "2026-10-18",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-24-a551de4f5e",
@@ -42583,7 +42626,13 @@
       "discovered_at": "2026-10-18",
       "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-10-18"
+      "availability_checked_at": "2026-10-18",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "international-2026-11-20-e51b07d15a",

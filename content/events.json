@@ -29606,7 +29606,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-10-18-ff6f9570bd",
@@ -30068,6 +30070,56 @@
       "instagram_include": false
     },
     {
+      "id": "spb-2026-10-18-5758682b63",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-18",
+      "time": "13:00",
+      "title": "«Котофей Иваныч» по мотивам русской народной сказки",
+      "venue": "Пушкинская-10",
+      "address": "",
+      "price": 1200,
+      "price_text": "1200 ₽",
+      "registration": false,
+      "categories": [],
+      "description": "Весёлый спектакль для всей семьи о приключениях харизматичного Котофея Ивановича и смекалистой лисы Лизаветы Патрикеевной. Любимая сказка с песнями, танцами, шутками и прибаутками, о том, что всякую глупость и наглость можно победить умом да юмором.",
+      "url": "https://p-10.ru/events/kotofej-ivanych-po-motivam-russkoj-narodnoj-skazki-8/",
+      "source": "Пушкинская-10 — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-18",
+      "price_type": "paid",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-18"
+    },
+    {
+      "id": "spb-2026-10-18-cfbf13f5a9",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-18",
+      "time": "13:00",
+      "title": "Открытая встреча клуба бонсай",
+      "venue": "Пушкинская-10",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "встреча"
+      ],
+      "description": "Клуб любителей бонсай Петербурга и Ленобласти «Кэнгай» объявляет открытую встречу, который может посетить каждый интересующий культурой бонсаев. О чем ещё поговорить в начале нового сезона, как не о сезонах. В календаре их четыре, у японцев — 72, а на практике?",
+      "url": "https://p-10.ru/events/otkrytaya-ideya-kluba-bonsaj/",
+      "source": "Пушкинская-10 — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-18",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-18"
+    },
+    {
       "id": "moscow-2026-10-18-31fc1debc6",
       "status": "rejected",
       "kind": "event",
@@ -30316,7 +30368,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-18-00c85a88e1",
@@ -30418,7 +30472,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-10-18-b6085bfe07",
@@ -30523,7 +30579,7 @@
       "editor_note": "",
       "instagram_include": false,
       "price_type": "unknown",
-      "availability": "unknown",
+      "availability": "available",
       "availability_checked_at": "2026-10-18",
       "reviewed_at": "2026-10-02",
       "sheet_synced_description": "Руководитель и аранжировщик — композитор И. Вакуленко. Исполнители — «CITY MUSIC BAND»."
@@ -32897,6 +32953,30 @@
       }
     },
     {
+      "id": "spb-2026-10-21-9651bb73ff",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-21",
+      "time": "18:30",
+      "title": "Старинные дачи Петербурга: люди и дома",
+      "venue": "Библиотека Маяковского",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [],
+      "description": "В книге «Старинные дачи Петербурга. Дома и люди», вышедшей в издательстве «Бомбора» в 2026 году, Елена Травина рассказывает о дачной жизни Петербурга начала XX века. Автор обращается к материалам 1910 года: изучает старые газеты, сравнивает цены на дачи в разных посёлках, выбирает место для летнего отдыха и договаривается об аренде. Все люди и дома, о которых идёт речь в книге, существовали на самом деле. Стихи, кулинарные рецепты, байки, сплетни и рекламные объявления взяты из старых журналов. На встрече поговорим о работе над книгой и о том, как архивные материалы помогают восстановить истор",
+      "url": "https://t.me/mayakovka/2113",
+      "source": "Библиотека Маяковского — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-10-18",
+      "price_type": "free",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-18"
+    },
+    {
       "id": "moscow-2026-10-21-832bc85e9b",
       "status": "rejected",
       "kind": "event",
@@ -33597,7 +33677,7 @@
       "review_reason": "",
       "discovered_at": "2026-10-16",
       "price_type": "free",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-18",
       "sheet_synced_description": "22 октября в Новом здании Российской национальной библиотеки откроется выставка «Сказка, рассказанная и записанная: к 200-летию А. Н. Афанасьева», подготовленная совместно с Санкт-Петербургской государственной художественно-промышленной академией имени А. Л. Штиглица.",
       "instagram_include": false,
@@ -33997,7 +34077,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-10-22-bb1fba1751",
@@ -34144,7 +34226,7 @@
       "editor_note": "",
       "instagram_include": false,
       "price_type": "unknown",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-18",
       "reviewed_at": "2026-10-02",
       "sheet_synced_description": "Дата начала регистрации — 5 октября. Лектор — Яна Лорви, этномузыколог, исследователь традиционной культуры, автор и руководитель экспедиций по Ленинградской области и Карелии."
@@ -34288,7 +34370,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-22-05c67d7f07",
@@ -35383,7 +35467,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-10-24-0586a962f4",
@@ -36173,7 +36259,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-24-a551de4f5e",
@@ -37114,6 +37202,32 @@
       "instagram_include": false
     },
     {
+      "id": "spb-2026-10-25-0e191591a0",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-25",
+      "time": "15:00",
+      "title": "Мастер-класс: татуировки в игровых вселенных",
+      "venue": "Библиотека комиксов",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "Что общего у татуировок, игровых персонажей и твоего следующего арта? Будем разбираться. Поговорим о тату в видеоиграх, разберём крутые визуальные решения и посмотрим, как перенести эстетику любимых игровых миров в реальный дизайн. А дальше — практика. Погрузимся в dotwork — стиль, где всё решают точки, — и попробуем создать собственный эскиз. — дизайнер и татуировщик с большим опытом. Знает, как прокачать идею до полноценного эскиза.",
+      "url": "https://comix-library.timepad.ru/event/4258672/",
+      "source": "Библиотека комиксов — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-10-18",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-18"
+    },
+    {
       "id": "moscow-2026-10-25-dc07f0121e",
       "status": "rejected",
       "kind": "event",
@@ -37380,6 +37494,32 @@
       }
     },
     {
+      "id": "spb-2026-10-25-5a0ad90fda",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-25",
+      "time": "18:00",
+      "title": "В Библиотеке комиксов (7-я Красноармейская, д. 30) пройдет встреча, посвящённая кинематографу Южной Кореи.",
+      "venue": "Библиотека комиксов",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "встреча"
+      ],
+      "description": "Не только «Паразиты»: кино Южной Кореи Если вы: находитесь в запутанных семейных отношениях, провели 15 лет в заточении, нашли мёртвую ворону в соевом соусе или семью у себя в подвале — возможно, впервые, — это будет плюсом. Если всё это вам ни о чём не говорит — ничего страшного. На встрече поговорим о том, как через кризисы, цензуру и войны корейское кино пришло к мировому признанию. Разберём, чем хороши отдельные фильмы и какие авторы за ними стоят.",
+      "url": "https://comix-library.timepad.ru/event/4221052/",
+      "source": "Библиотека комиксов — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-10-18",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-18"
+    },
+    {
       "id": "moscow-2026-10-25-9725e1b4d8",
       "status": "rejected",
       "kind": "event",
@@ -37487,6 +37627,30 @@
       "editor_overrides": {
         "registration": false
       }
+    },
+    {
+      "id": "spb-2026-10-26-d46811b042",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-26",
+      "time": "",
+      "title": "Нейросети в дизайне: от красивой картинки до полноценного проекта!",
+      "venue": "Международная школа дизайна — Петербург",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "Создать визуализацию, поэкспериментировать с материалами, оживить интерьер или подготовить эффектную презентацию для заказчика. Всё это уже можно делать с помощью нейросетей. Главное — знать, какие инструменты выбрать и как с ними работать. «Нейросети в дизайне интерьеров и экстерьеров» Вместе с преподавателем Анной Шишенко участники познакомятся с ChatGPT, Midjourney, NanoBanana, Runway и другими ИИ-инструментами, научатся создавать изображения и видео, грамотно составлять запросы и применять нейросети на разных этапах дизайн-проекта.",
+      "url": "https://t.me/spbdesignschool/7050",
+      "source": "Международная школа дизайна — Петербург — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-10-18",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-18"
     },
     {
       "id": "spb-2026-10-26-5af952e26e",
@@ -37768,7 +37932,7 @@
       "editor_note": "",
       "instagram_include": false,
       "price_type": "unknown",
-      "availability": "unknown",
+      "availability": "available",
       "availability_checked_at": "2026-10-18",
       "reviewed_at": "2026-10-02",
       "sheet_synced_description": "Режиссер — Д. Франчолини В главных ролях: Тото, В. де Сика, С. Пампанини, Ф. Фабрици, Д. Ралли Автор и ведущий цикла — киновед Ф. Ю. Коркин . Дата начала регистрации — 19 октября"
@@ -38825,7 +38989,7 @@
       "review_reason": "",
       "discovered_at": "2026-10-16",
       "price_type": "unknown",
-      "availability": "unknown",
+      "availability": "available",
       "availability_checked_at": "2026-10-18",
       "sheet_synced_description": "Лектор — Д. А. Кашкарев , заведующий научно-просветительским сектором «Юсуповский дворец на Литейном» Государственного музея «Исаакиевский собор»",
       "instagram_include": false,
@@ -39162,6 +39326,43 @@
       "instagram_image": "",
       "social_priority": null,
       "reviewed_at": "2026-10-17"
+    },
+    {
+      "status": "approved",
+      "editor_note": "Добавлено по подборке 19–25 октября; первоисточник проверен",
+      "checked_at": "2026-10-17",
+      "reviewed_at": "2026-10-17",
+      "availability": "available",
+      "availability_checked_at": "2026-10-18",
+      "registration": false,
+      "price": null,
+      "price_text": "",
+      "price_type": "paid",
+      "id": "moscow-2026-10-29-80abf31bf1",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-29",
+      "time": "00:20",
+      "title": "Лекция «Орест Кипренский»",
+      "venue": "Третьяковская галерея — Инженерный корпус",
+      "address": "Лаврушинский переулок, 12",
+      "categories": [
+        "лекция",
+        "история искусства",
+        "живопись"
+      ],
+      "description": "Лекция цикла «Мастера русской живописи. Часть 1. От Рокотова до Иванова», посвящённая Оресту Кипренскому.",
+      "url": "https://www.tretyakovgallery.ru/events/o/lektsiya-orest-kiprenskiy-10-2026/",
+      "source": "Третьяковская галерея",
+      "discovered_at": "2026-10-17",
+      "review_reason": "",
+      "editor_overrides": {
+        "status": "approved",
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-29-6d8f1e6c5b",
@@ -41324,7 +41525,7 @@
       "review_reason": "",
       "discovered_at": "2026-10-06",
       "price_type": "unknown",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-18",
       "sheet_synced_description": "Дата начала регистрации — 19 октября Лектор — Яна Лорви, этномузыколог, исследователь традиционной культуры, автор и руководитель экспедиций по Ленинградской области и Карелии",
       "telegram_include": false,
@@ -41756,7 +41957,7 @@
       "review_reason": "",
       "discovered_at": "2026-10-14",
       "price_type": "free",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-18",
       "sheet_synced_description": "Продолжая использовать этот сайт, вы соглашаетесь с политикой в области обработки и защиты персональных данных",
       "telegram_include": false,
@@ -42632,7 +42833,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-11-20-e51b07d15a",

@@ -30738,7 +30738,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [],
       "description": "",
       "url": "https://hermitagemuseum.org/what-s-on/afisha_mincult/?lng=ru",
@@ -30748,7 +30748,14 @@
       "discovered_at": "2026-10-19",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-19"
+      "availability_checked_at": "2026-10-19",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "spb-2026-10-19-7f5548b1fe",
@@ -32643,7 +32650,13 @@
       "discovered_at": "2026-10-19",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-10-19"
+      "availability_checked_at": "2026-10-19",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-21-422be2d050",
@@ -34411,7 +34424,13 @@
       "discovered_at": "2026-10-19",
       "price_type": "free",
       "availability": "available",
-      "availability_checked_at": "2026-10-19"
+      "availability_checked_at": "2026-10-19",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-22-9d1769c57d",
@@ -35105,7 +35124,13 @@
       "discovered_at": "2026-10-19",
       "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-10-19"
+      "availability_checked_at": "2026-10-19",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-23-6fa41a2df5",
@@ -37450,7 +37475,13 @@
       "discovered_at": "2026-10-19",
       "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-10-19"
+      "availability_checked_at": "2026-10-19",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-25-e30a87c375",
@@ -37835,7 +37866,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "экскурсия"
       ],
@@ -37847,7 +37878,14 @@
       "discovered_at": "2026-10-19",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-19"
+      "availability_checked_at": "2026-10-19",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "spb-2026-10-26-a742e5228b",
@@ -38498,7 +38536,13 @@
       "discovered_at": "2026-10-19",
       "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-10-19"
+      "availability_checked_at": "2026-10-19",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "spb-2026-10-27-020d3b2f98",
@@ -39143,7 +39187,13 @@
       "discovered_at": "2026-10-19",
       "price_type": "paid",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-19"
+      "availability_checked_at": "2026-10-19",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-28-e5d99795fd",
@@ -39736,7 +39786,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "лекция"
       ],
@@ -39748,7 +39798,14 @@
       "discovered_at": "2026-10-19",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-19"
+      "availability_checked_at": "2026-10-19",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "spb-2026-10-29-bc177ceacc",
@@ -41939,7 +41996,13 @@
       "discovered_at": "2026-10-19",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-10-19"
+      "availability_checked_at": "2026-10-19",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "spb-2026-11-05-cda167ff31",
@@ -42730,7 +42793,13 @@
       "discovered_at": "2026-10-19",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-10-19"
+      "availability_checked_at": "2026-10-19",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-11-14-422be2d050",

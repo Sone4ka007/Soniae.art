@@ -31289,7 +31289,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [],
       "description": "",
       "url": "https://hermitagemuseum.org/what-s-on/afisha_mincult/?lng=ru",
@@ -31299,7 +31299,14 @@
       "discovered_at": "2026-10-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-20"
+      "availability_checked_at": "2026-10-20",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-20-70545d084e",
@@ -31327,7 +31334,13 @@
       "end_date": "2026-12-22",
       "price_type": "free",
       "availability": "available",
-      "availability_checked_at": "2026-10-20"
+      "availability_checked_at": "2026-10-20",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "spb-2026-10-20-39e247098d",
@@ -31351,7 +31364,13 @@
       "discovered_at": "2026-10-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-20"
+      "availability_checked_at": "2026-10-20",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "spb-2026-10-20-993b0f9629",
@@ -31377,7 +31396,13 @@
       "discovered_at": "2026-10-20",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-20"
+      "availability_checked_at": "2026-10-20",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "spb-2026-10-20-061819e03c",
@@ -32354,7 +32379,13 @@
       "end_date": "2026-11-26",
       "price_type": "free",
       "availability": "available",
-      "availability_checked_at": "2026-10-20"
+      "availability_checked_at": "2026-10-20",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-21-eb465356a7",
@@ -32453,7 +32484,13 @@
       "end_date": "2026-12-05",
       "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-10-20"
+      "availability_checked_at": "2026-10-20",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-21-b6fb7c98ef",
@@ -32481,7 +32518,13 @@
       "end_date": "2026-12-04",
       "price_type": "free",
       "availability": "available",
-      "availability_checked_at": "2026-10-20"
+      "availability_checked_at": "2026-10-20",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-21-0ae55ffb2d",
@@ -32509,7 +32552,13 @@
       "end_date": "2026-12-06",
       "price_type": "free",
       "availability": "available",
-      "availability_checked_at": "2026-10-20"
+      "availability_checked_at": "2026-10-20",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-21-adf97c0eeb",
@@ -32537,7 +32586,13 @@
       "end_date": "2026-11-01",
       "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-10-20"
+      "availability_checked_at": "2026-10-20",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "russia-2026-10-21-d73278da8a",
@@ -32639,7 +32694,13 @@
       "end_date": "2026-11-28",
       "price_type": "free",
       "availability": "available",
-      "availability_checked_at": "2026-10-20"
+      "availability_checked_at": "2026-10-20",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-21-039e6e5c63",
@@ -32702,7 +32763,13 @@
       "end_date": "2026-12-06",
       "price_type": "free",
       "availability": "available",
-      "availability_checked_at": "2026-10-20"
+      "availability_checked_at": "2026-10-20",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "spb-2026-10-21-e203f3c49f",
@@ -33713,7 +33780,13 @@
       "end_date": "2026-12-06",
       "price_type": "free",
       "availability": "available",
-      "availability_checked_at": "2026-10-20"
+      "availability_checked_at": "2026-10-20",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-22-dde804a5a1",
@@ -34812,7 +34885,13 @@
       "discovered_at": "2026-10-20",
       "price_type": "free",
       "availability": "available",
-      "availability_checked_at": "2026-10-20"
+      "availability_checked_at": "2026-10-20",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "international-2026-10-23-413153c0d6",
@@ -37513,7 +37592,13 @@
       "discovered_at": "2026-10-20",
       "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-10-20"
+      "availability_checked_at": "2026-10-20",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-25-98f4534d25",
@@ -39505,7 +39590,13 @@
       "discovered_at": "2026-10-20",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-10-20"
+      "availability_checked_at": "2026-10-20",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-27-17d40d2f82",
@@ -42489,7 +42580,13 @@
       "discovered_at": "2026-10-20",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-10-20"
+      "availability_checked_at": "2026-10-20",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-04-e13b7fce78",
@@ -42824,7 +42921,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "open-call"
       ],
@@ -42837,7 +42934,14 @@
       "audience_text": "Opportunity details | Abstract Art - Open Call | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register Abstract Art - Open Call Deadline: 04/11/2026 City: Halifax | Region: West Yorkshire | Country: United Kingdom | Open Gallery Report this? Description Make a submission Contact curator Call for Artists: ‘Abstract Art' Exhibition – November/December 2026. Open Gallery is inviting submissions of original artworks on the theme ‘Abstract Art’ for a vibrant Autumn exhibition in November-December 2026. This is a fantastic opportunity for UK-based artists to showcase their work at the Open Gallery in Halifax and connect with a new audience. Abstract Art Open Call invites artists to submit 2D and 3D artworks that explore the beauty and diversity of abstraction. We welcome creative interpretations that use shape, colour, and texture to express unique perspectives and highlight the limitless possibilities of abstract art. All interpretations and creative approaches to the abstract theme are encouraged. Key Dates Deadline to apply: Wednesday, 4 November 2026 Notification of selection: Thursday, 5 November 2026 Delivery of artwork: Between 6 – 14 November 2026 Exhibition dates: 25 November- 12 December 2026 Opening event: Wednesday, 25 November, 5–7 pm Who Can Apply We welcome submissions from any UK-based artist working in 2D or 3D media who can arrange delivery and collection of their work to/from the gallery in Halifax. Accepted Media Painting, sculpture, photography, textiles, jewellery, artists’ books, mixed media, etc. Submission Guidelines Apply via CuratorSpace.com Submit up to three artworks Provide a short description (max. 150 words) of your work and how it connects to the theme ‘Abstract Art’. This will be included in the exhibition catalogue. Include price (or mark NFS if not for sale) Include dimensions in cm (including frame if applicable) Fees & Sales Free to apply If selected, a £40 participation fee per artist applies A 20% commission will be taken on sales to cover administrative costs The participation fee helps support the exhibition and directly benefits participating artists by increasing their exposure through inclusion in a professionally printed catalogue, features on our website and on our Instagram account (with over 2,600 followers), and the opportunity to connect with fellow artists during the exhibition and opening event. The fee also helps us keep the gallery running as an accessible space for artists and the local community. Selected works will be: Exhibited in Open Gallery, Halifax (4a Broad St Plaza, Halifax HX1 1UX), a new location in a prime spot to attract visitors. Featured on our website and social media Included in a printed exhibition catalogue By submitting, you agree that your images may be used in promotional materials (social media, flyers, posters, etc.). About Us Open Gallery, founded in 2022, is a local, independent art space in Halifax dedicated to showcasing contemporary visual art across a wide range of media. Run by a small, passionate team, the gallery aims to support emerging and established artists by providing inclusive opportunities to exhibit work and connect with new audiences. Our newly relocated space at Broad Street Plaza offers a vibrant, accessible setting in the heart of Halifax, designed to engage the local community and attract art lovers from across the region. The gallery is open Wednesday–Saturday, 11 am–4 pm. Open Gallery CIC Make a submission Contact the curator You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Advertisement Other opportunities Call for Art Submissions – Art Horizons Magazine - Vol 6, Issue 3, 2026 Art Horizons Magazine (ISSN: 3068-1103) invites artists, researchers, and writers worldwide to... Elemental Dot Gallery are looking for artworks that celebrate the elements for their exhibition... BHM Benefit: Celebration of Community Creatives OPEN CALL: CELEBRATING COMMUNITY CREATIVES Black History Month London | Art, Music, Culture &... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-20"
+      "availability_checked_at": "2026-10-20",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "spb-2026-11-04-94108f9818",
@@ -44296,7 +44400,13 @@
       "audience_text": "› Сообщества Билеты Абонемент Дата: 8 окт– 26 ноя 2026 Билеты Абонемент Возраст: от 18 Тип: Практика Место: Малые своды Возрастные ограничения 18+ Можно ли смеяться без причины? Не только можно, но и нужно. Йога смеха предлагает именно такой опыт. Встречи проходят по четвергам с 19:30 до 21:00. Чтобы вам было комфортно, возьмите с собой удобную одежду и сменную обувь или нескользящие носки. В Малых сводах есть локеры для вещей и раздевалка. Пожалуйста, приходите немного заранее, чтобы переодеться и подготовиться к практике. Практика рассчитана на восемь занятий с 8 октября по 26 ноября . Вы можете посещать их по одному или приобрести абонемент (от трех занятий). Скидка начинает действовать, если вы покупаете абонемент на четыре встречи и больше. Чтобы купить билет, выберите нужные даты и перейдите к оплате. Обратите внимание: билет действителен только на указанную в нем дату. Стоимость разового занятия — 800 рублей. T Йога смеха (хасья-йога) сочетает в себе дыхательные упражнения, игровые техники и намеренный смех, который постепенно становится естественным благодаря взаимодействию участников. Метод был разработан индийским врачом Маданом Катарией в 1995 году. Он основан на наблюдении, что организм одинаково реагирует на спонтанный и намеренно вызванный смех: в обоих случаях активизируются процессы, связанные с расслаблением, дыханием и эмоциональной разрядкой. Фото: Аня Тодич Осенью нам часто не хватает света, энергии и поводов для радости. В этот период особенно важно находить способы восстановить внутренний баланс. Йога смеха может стать одним из них. Каждое занятие начинается с простых дыхательных упражнений и постепенно переходит к игровым практикам, в которых используются зрительный и физический контакт с другими людьми, движение и различные формы смеховых упражнений. Постепенно искусственный смех сменяется искренним, а групповая динамика помогает преодолеть чувство неловкости и вовлечься в процесс. Занятия не требуют специальной подготовки, хорошей физической формы или развитого чувства юмора. Они подойдут всем, кто хочет познакомиться с необычной телесной практикой, отвлечься от повседневных забот, снизить уровень напряжения и провести время в безопасной и доброжелательной атмосфере. Обратите внимание: практика включает активное дыхание и умеренную физическую нагрузку и не рекомендуется при наличии сердечно-сосудистых заболеваний, неконтролируемой гипертонии, недавно перенесенных операциях, осложненной беременности, тяжелых заболеваниях органов дых",
       "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-10-20"
+      "availability_checked_at": "2026-10-20",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "international-2026-11-20-e51b07d15a",
@@ -44469,7 +44579,13 @@
       "price_type": "unknown",
       "availability": "available",
       "availability_checked_at": "2026-10-20",
-      "start_date": "2026-11-22"
+      "start_date": "2026-11-22",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-11-22-38e5462a75",
@@ -44632,7 +44748,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "open-call"
       ],
@@ -44645,7 +44761,14 @@
       "audience_text": "Opportunity details | Forgotten | Collage Artists | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register Forgotten | Collage Artists Deadline: 30/11/2026 City: San Francisco, California | Country: United States | Robyn Mallery Report this? Description Make a submission Contact curator What work of yours has been forgotten? Makes you feel forgotten? or otherwise relates to the idea of \"forgotten\"? We want to see! | COLLAGE ARTISTS ONLY Photosynthesis Magazine is interested in works that may have been declined from various opportunities (but do not have to be), feel forgotten, that you, yourself, forgot about, or that address the topic of feeling forgotten. Vocabulary.com says, \"Something that's forgotten isn't remembered or considered.\" Keep this in mind when submitting your pieces. Please note, we REQUIRE a description that explains how the piece relates to the theme of forgotten. We can't always connect the dots without the description, and without it we will decline. Who has been forgotten? What has been forgotten? Is there a place that feels forgotten? We want to know! Pieces can be political in nature. Please be aware that we are a leftist, pro-Palestine, pro-choice, anti-fascist publication, so if your work falls outside of that it's not likely to be published by us. We are accepting physical or digital collage only (cut paper, zine aesthetics, Xerox distortion, archival disruption, assemblage scanned flat, etc.). No paintings, no photography alone, no illustration alone — collage must be the primary method and conceptual anchor. We especially encourage submissions from artists who are multiply marginalised, chronically ill, disabled, trans, intersex, undocumented, incarcerated or formerly incarcerated, low-income, and otherwise systemically excluded. Feel free to note these intersectional identities in your descriptions if you like. You are welcome to use a pseudonym if you like. Benefits: Artists will receive a digital copy of the published work Credit lines and description of the artwork will accompany images in the issue We will provide promotion via Photosynthesis Magazine's growing social media (350~) WHO ARE WE? Collage is on the rise as an art form, and it is being explored in new and intriguing ways every day. As a new and independent magazine, we are here to highlight talented and thought-provoking artists that are not afraid to push the boundaries of what is socially acceptable. We are specifically keeping our eyes out for artists who cross lines that have been set by aristocratic elites and works that force us to ask again questions that we thought we had answered long ago. What is art? Who gets to decide what art is? Who is allowed to make it? An important part of collage work is how it tells stories in a torn and fractured way that no other art form can quite touch. It can be an artist's way of sorting thoughts and memories, a way of combining them, and a way of connecting them to new ideas and philosophies. We look for art that is beautiful, painful, emotion-filled, gory, devastating, aesthetic, clever, and political. Above all, it is crucial that the message behind the work is significant and purposeful. This magazine has been on Hiatus as the curator completed graduate school, and is now back in action due to the alarming political choices being made around the world. The curator believes that now, more than ever, collage artists' voices are crucial. Make a submission Contact the curator You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Advertisement Other opportunities Call for Art Submissions – Art Horizons Magazine - Vol 6, Issue 3, 2026 Art Horizons Magazine (ISSN: 3068-1103) invites artists, researchers, and writers worldwide to... Elemental Dot Gallery are looking for artworks that celebrate the elements for their exhibition... BHM Benefit: Celebration of Community Creatives OPEN CALL: CELEBRATING COMMUNITY CREATIVES Black History Month London | Art, Music, Culture &... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-20"
+      "availability_checked_at": "2026-10-20",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "international-2026-12-01-4d18caf296",

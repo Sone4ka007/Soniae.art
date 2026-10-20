@@ -1,0 +1,32 @@
+.journal-list{display:grid;gap:18px}
+.journal-card--cover{grid-template-columns:minmax(180px,280px) 1fr 34px;align-items:end;gap:28px}
+.journal-card--cover img{width:100%;height:auto}
+.journal-card--cover .journal-number{display:block;margin-bottom:18px}
+.image-issue-head{padding:32px 24px;border-bottom:1px solid #111}
+.image-issue-kicker{display:flex;justify-content:space-between;gap:20px;font-size:12px;font-weight:700}
+.image-issue-head h1{font-size:clamp(42px,8vw,112px);line-height:.94;letter-spacing:-.055em;margin:40px 0 20px;max-width:1180px;font-weight:900}
+.image-issue-head p{font-size:16px;line-height:1.5;margin:0;max-width:760px}
+.image-issue-page-nav{display:flex;flex-wrap:wrap;gap:8px;padding:20px 24px;border-bottom:1px solid #111}
+.image-issue-page-nav a{display:grid;place-items:center;min-width:44px;min-height:44px;border:1px solid #111;font-size:14px;font-weight:700}
+.image-issue-page-nav a:hover{background:#111;color:#fff}
+.image-issue-pages{padding:24px;background:#f4f4f2}
+.image-issue-page{max-width:1100px;margin:0 auto 32px;scroll-margin-top:92px}
+.image-issue-page:last-child{margin-bottom:0}
+.image-issue-page>a{display:block;background:#fff;cursor:zoom-in}
+.image-issue-page img{width:100%;height:auto}
+.image-issue-page figcaption{display:flex;align-items:baseline;gap:18px;padding:14px 0 0;font-size:14px;line-height:1.4}
+.image-issue-page figcaption span:first-child{font-size:12px;font-weight:700;white-space:nowrap}
+.image-issue-nav{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;padding:24px;border-top:1px solid #111;font-size:13px;font-weight:700}
+.journal-page a:focus-visible,.journal-page button:focus-visible{outline:3px solid #111;outline-offset:4px}
+@media(max-width:760px){
+  .journal-card--cover{grid-template-columns:1fr;gap:16px}
+  .journal-card--cover .journal-arrow{display:none}
+  .image-issue-head{padding:24px 18px}
+  .image-issue-kicker{flex-wrap:wrap;gap:10px}
+  .image-issue-head h1{font-size:clamp(34px,9vw,62px);margin-top:30px}
+  .image-issue-page-nav{padding:18px}
+  .image-issue-pages{padding:14px}
+  .image-issue-page{margin-bottom:24px}
+  .image-issue-page figcaption{gap:12px;font-size:13px}
+  .image-issue-nav{padding:20px 18px}
+}

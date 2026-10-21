@@ -1060,7 +1060,7 @@
       "start_date": "2026-09-03",
       "end_date": "2027-01-17",
       "price_type": "paid",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-21",
       "social_title": "",
       "social_priority": null,
@@ -32182,7 +32182,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-10-21-2c38c7030d",
@@ -32247,7 +32249,7 @@
       "review_reason": "",
       "discovered_at": "2026-10-15",
       "price_type": "paid",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-21",
       "sheet_synced_description": "",
       "social_priority": null,
@@ -32324,7 +32326,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-21-a7f98a4f0f",
@@ -32411,7 +32415,7 @@
       "price_text": "",
       "registration": false,
       "categories": [],
-      "description": "22 октября на территории Тихвинского кладбища Александро-Невской лавры при участии духовенства и представителей органов власти пройдёт торжественная церемония открытия и освящения памятных досок военным медикам .",
+      "description": "22 октября на территории Тихвинского кладбища Александро-Невской лавры при участии духовенства и представителей органов власти пройдёт торжественная церемония открытия и освящёния памятных досок военным медикам .",
       "url": "https://spbcult.ru/news/anonsy/v-aleksandro-nevskoy-lavre-otkroyut-pamyatnye-doski-voennym-medikam-/",
       "source": "Петербургский дневник культуры — анонсы",
       "checked_at": "",
@@ -32425,7 +32429,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-10-21-3ab0af6d67",
@@ -32455,7 +32461,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-10-21-3eb09fab54",
@@ -32486,7 +32494,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "russia-2026-10-21-86b51ee813",
@@ -32553,7 +32563,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-21-74e7c2d3cf",
@@ -32565,7 +32577,7 @@
       "title": "Дамир Муратов Неполное собрание сочинений",
       "venue": "ЦСИ Винзавод",
       "address": "",
-      "price": 0,
+      "price": 1800,
       "price_text": "12000 ₽",
       "registration": false,
       "categories": [
@@ -32579,7 +32591,7 @@
       "discovered_at": "2026-10-20",
       "start_date": "2026-10-21",
       "end_date": "2026-12-05",
-      "price_type": "free",
+      "price_type": "paid",
       "availability": "available",
       "availability_checked_at": "2026-10-21",
       "editor_overrides": {
@@ -32709,7 +32721,7 @@
       "title": "Коллективная выставка Громкая тишина касания",
       "venue": "ЦСИ Винзавод",
       "address": "",
-      "price": 1500,
+      "price": 12000,
       "price_text": "1800 ₽",
       "registration": false,
       "categories": [
@@ -32736,6 +32748,32 @@
       "reviewed_at": ""
     },
     {
+      "id": "spb-2026-10-21-a97c9584bc",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-21",
+      "time": "",
+      "title": "Международная Школа Дизайна (СПб) выступит информационным партнером салона «Инвестиции в наследие»",
+      "venue": "Международная школа дизайна — Петербург",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "Международная Школа Дизайна (СПб) выступит информационным партнером салона «Инвестиции в наследие». Закрытое мероприятие пройдет 22 октября в Особняке И. Мясникова в Санкт-Петербурге.",
+      "url": "https://spb.designschool.ru/2026/10/21/mezhdunarodnaya-shkola-dizajna-spb-vystupit-informacionnym-partnerom-salona-investicii-v-nasledie/",
+      "source": "Международная школа дизайна — Петербург",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-21",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-21"
+    },
+    {
       "id": "spb-2026-10-21-39e247098d",
       "status": "new",
       "kind": "event",
@@ -32749,7 +32787,7 @@
       "price_text": "",
       "registration": false,
       "categories": [],
-      "description": "Преподаватель Международной Школы Дизайна (СПб) Ирина Сильченко рассказала РБК, как подготовить квартиру к сдаче в аренду и снизить затраты на ремонт без потери качества.",
+      "description": "Международная Школа Дизайна (СПб) выступит информационным партнером салона «Инвестиции в наследие». Закрытое мероприятие пройдет 22 октября в Особняке И. Мясникова в Санкт-Петербурге.",
       "url": "https://spb.designschool.ru/category/lifeschool/",
       "source": "Международная школа дизайна — Петербург",
       "checked_at": "",
@@ -32763,7 +32801,9 @@
       "editor_overrides": {
         "telegram_include": false,
         "instagram_include": false
-      }
+      },
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "russia-2026-10-21-d73278da8a",
@@ -32840,6 +32880,33 @@
       }
     },
     {
+      "id": "spb-2026-10-21-d0a01234bf",
+      "status": "new",
+      "kind": "exhibition",
+      "city": "spb",
+      "date": "2026-10-21",
+      "time": "",
+      "title": "При участии петербургского Дома БРИКС открывается выставка «Связующие нити. Человек. Культура. Движение»",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "выставка"
+      ],
+      "description": "В рамках, проходящего 22-24 октября юбилейного 30-го форума «Российский промышленник», петербургский Дом БРИКС представил уникальный арт-проект. Выставка художника Игоря Рязанцева «Связующие нити. Движение» предлагает взглянуть на международное сотрудничество через призму искусства.",
+      "url": "https://spbcult.ru/news/anonsy/na-forume-rossiyskiy-promyshlennik-otkrylas-vystavka-svyazuyushchie-niti/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-21",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-21",
+      "start_date": "2026-10-21"
+    },
+    {
       "id": "moscow-2026-10-21-227412a086",
       "status": "new",
       "kind": "exhibition",
@@ -32874,6 +32941,32 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "spb-2026-10-21-f304030063",
+      "status": "new",
+      "kind": "open_call",
+      "city": "spb",
+      "date": "2026-10-21",
+      "time": "",
+      "title": "Творчески о честности - завершается приём заявок на региональный конкурс",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "open-call"
+      ],
+      "description": "23 октября завершается приём заявок на участие в Региональном конкурсе на лучшую работу, посвящённую противодействию коррупции. Академия технического творчества и цифровых технологий приглашает школьников от 11 до 18 лет успеть принять участие в творческом состязании.",
+      "url": "https://spbcult.ru/news/anonsy/tvorcheski-o-chestnosti-zavershaetsya-priyem-zayavok-na-regionalnyy-konkurs/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-21",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-21"
     },
     {
       "id": "moscow-2026-10-21-039e6e5c63",
@@ -32917,22 +33010,22 @@
       "city": "spb",
       "date": "2026-10-21",
       "time": "",
-      "title": "Фестиваль искусств имени Шаляпина «Дар» пройдет в третий раз",
+      "title": "Фестиваль искусств имени Шаляпина «Дар» пройдёт в третий раз",
       "venue": "",
       "address": "",
-      "price": null,
-      "price_text": "",
+      "price": 0,
+      "price_text": "Бесплатно",
       "registration": false,
       "categories": [
         "фестиваль"
       ],
-      "description": "С 11 ноября по 2 декабря в Петербурге пройдет Фестиваль искусств имени Фёдора Ивановича Шаляпина «Дар». Фестиваль носит имя великого русского баса, чья творческая судьба стала частью культурного наследия России.",
+      "description": "С 11 ноября по 2 декабря в Петербурге пройдёт Фестиваль искусств имени Фёдора Ивановича Шаляпина «Дар». Фестиваль носит имя великого русского баса, чья творческая судьба стала частью культурного наследия России.",
       "url": "https://spbcult.ru/news/anonsy/festival-iskusstv-imeni-shalyapina-dar-proydet-v-tretiy-raz/",
       "source": "Петербургский дневник культуры — анонсы",
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-10-21",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-10-21",
       "editor_overrides": {
@@ -32940,7 +33033,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-10-21-f82f6c82f1",
@@ -32952,8 +33047,8 @@
       "title": "Центр Сергея Курёхина показывает премьеру «Леса» и возвращает «Этно-механику»",
       "venue": "",
       "address": "",
-      "price": null,
-      "price_text": "",
+      "price": 0,
+      "price_text": "Бесплатно",
       "registration": false,
       "categories": [],
       "description": "Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами! Также вы можете отправить статью в социальной сети или мессенджере Если у вас есть чем поделиться с нашими читателями, вы можете предложить свою статью.",
@@ -32962,7 +33057,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-10-21",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-10-21",
       "editor_overrides": {
@@ -32970,7 +33065,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-21-fcd4e2d7b6",
@@ -33072,7 +33169,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-21-30cdfdde0f",
@@ -33924,7 +34023,7 @@
       "review_reason": "",
       "discovered_at": "2026-10-15",
       "price_type": "paid",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-21",
       "sheet_synced_description": "",
       "social_priority": null,
@@ -33999,7 +34098,7 @@
       "review_reason": "",
       "discovered_at": "2026-10-16",
       "price_type": "free",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-21",
       "sheet_synced_description": "22 октября в Новом здании Российской национальной библиотеки откроется выставка «Сказка, рассказанная и записанная: к 200-летию А. Н. Афанасьева», подготовленная совместно с Санкт-Петербургской государственной художественно-промышленной академией имени А. Л. Штиглица.",
       "instagram_include": false,
@@ -34154,7 +34253,7 @@
       "review_reason": "",
       "discovered_at": "2026-10-16",
       "price_type": "paid",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-21",
       "sheet_synced_description": "",
       "instagram_include": false,
@@ -34910,7 +35009,7 @@
       "editor_note": "",
       "instagram_include": false,
       "price_type": "unknown",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-21",
       "reviewed_at": "2026-10-02",
       "sheet_synced_description": "Дата начала регистрации — 5 октября. Лектор — Яна Лорви, этномузыколог, исследователь традиционной культуры, автор и руководитель экспедиций по Ленинградской области и Карелии."
@@ -35115,7 +35214,7 @@
       "review_reason": "",
       "discovered_at": "2026-10-16",
       "price_type": "paid",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-21",
       "sheet_synced_description": "",
       "instagram_include": false,
@@ -35184,7 +35283,7 @@
       "review_reason": "",
       "discovered_at": "2026-10-16",
       "price_type": "paid",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-21",
       "sheet_synced_description": "",
       "instagram_include": false,
@@ -35338,7 +35437,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-23-edf3031dc6",
@@ -36354,7 +36455,7 @@
       "review_reason": "",
       "discovered_at": "2026-10-18",
       "price_type": "paid",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-21",
       "editor_overrides": {
         "telegram_include": false,
@@ -37212,7 +37313,7 @@
       "review_reason": "",
       "discovered_at": "2026-09-27",
       "price_type": "paid",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-21",
       "editor_note": "",
       "telegram_include": false,
@@ -37280,7 +37381,7 @@
       "review_reason": "",
       "discovered_at": "2026-10-18",
       "price_type": "paid",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-21",
       "editor_overrides": {
         "telegram_include": false,
@@ -37528,7 +37629,7 @@
       "review_reason": "",
       "discovered_at": "2026-09-27",
       "price_type": "paid",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-21",
       "editor_note": "",
       "telegram_include": false,
@@ -38060,7 +38161,7 @@
       "review_reason": "",
       "discovered_at": "2026-10-20",
       "price_type": "paid",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-21",
       "editor_overrides": {
         "telegram_include": false,
@@ -38467,7 +38568,7 @@
       "editor_note": "Добавлено по подборке 19–25 октября; первоисточник проверен",
       "checked_at": "2026-10-17",
       "reviewed_at": "2026-10-17",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-21",
       "registration": false,
       "price": null,
@@ -38672,7 +38773,7 @@
       "review_reason": "",
       "discovered_at": "2026-10-19",
       "price_type": "paid",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-21",
       "editor_overrides": {
         "telegram_include": false,
@@ -39083,7 +39184,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-10-26-5af952e26e",
@@ -39398,7 +39501,7 @@
       "editor_note": "",
       "instagram_include": false,
       "price_type": "unknown",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-21",
       "reviewed_at": "2026-10-02",
       "sheet_synced_description": "Режиссер — Д. Франчолини В главных ролях: Тото, В. де Сика, С. Пампанини, Ф. Фабрици, Д. Ралли Автор и ведущий цикла — киновед Ф. Ю. Коркин . Дата начала регистрации — 19 октября"
@@ -39877,7 +39980,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-27-8c7ac32fc5",
@@ -39973,14 +40078,16 @@
       "review_reason": "",
       "discovered_at": "2026-10-21",
       "price_type": "paid",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-21",
       "editor_overrides": {
         "telegram_include": false,
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-27-422be2d050",
@@ -40259,14 +40366,16 @@
       "review_reason": "",
       "discovered_at": "2026-10-21",
       "price_type": "paid",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-21",
       "editor_overrides": {
         "telegram_include": false,
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-27-17d40d2f82",
@@ -40329,14 +40438,16 @@
       "review_reason": "",
       "discovered_at": "2026-10-21",
       "price_type": "paid",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-21",
       "editor_overrides": {
         "telegram_include": false,
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-28-6fdd3ff58e",
@@ -40720,7 +40831,7 @@
       "review_reason": "",
       "discovered_at": "2026-10-16",
       "price_type": "unknown",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-21",
       "sheet_synced_description": "Лектор — Д. А. Кашкарев , заведующий научно-просветительским сектором «Юсуповский дворец на Литейном» Государственного музея «Исаакиевский собор»",
       "instagram_include": false,
@@ -40800,7 +40911,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-10-29-cb8ec52db8",
@@ -41157,7 +41270,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-29-6d8f1e6c5b",
@@ -41627,7 +41742,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-10-29-df32f22abf",
@@ -41659,7 +41776,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-29-05c67d7f07",
@@ -42326,7 +42445,7 @@
       "review_reason": "",
       "discovered_at": "2026-10-15",
       "price_type": "paid",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-21",
       "sheet_synced_description": "",
       "social_description": "",
@@ -42879,6 +42998,32 @@
       "editor_overrides": {
         "availability": "available"
       }
+    },
+    {
+      "id": "moscow-2026-10-31-267c448d66",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-31",
+      "time": "15:00",
+      "title": "ТЭД: 4 ключевых навыка начинающего специалиста",
+      "venue": "РГБМ",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [
+        "презентация"
+      ],
+      "description": "ТЭД: 4 ключевых навыка начинающего специалиста 16+ 31 октября 2026 (суббота) 15:00 Зал визуальных искусств Вход свободный 2026-10-31 15:00 2026-10-31 15:00 Europe/Moscow ТЭД: 4 ключевых навыка начинающего специалиста Исследовательницы из делового клуба «Вне шаблона» расскажут о метанавыках, которые можно развить уже в старших классах и на первых курсах РГБМ, Зал визуальных искусств РГБМ info@rgub.ru Исследовательницы из делового клуба «Вне шаблона» расскажут о метанавыках, которые можно развить уже в старших классах и на первых курсах Профессионализм складывается не только из знаний и практики. Есть метанавыки — универсальные умения, которые можно развивать прямо сейчас: наблюдать и анализировать, уверенно говорить о себе, вести профессиональные соцсети, вовремя отдыхать. Это прочные кирпичики в базе будущего профи. «Насмотренность». Независимая исследовательница, психолог и бизнес-консультант, автор книги «Редактор привычек» Мария Резникова поговорит о том, как развивать профессиональное чутьё, когда реальной практики мало: искать кейсы в литературе, опрашивать специалистов, анализировать ошибки и решения, собирать собственную базу; «Самопрезентация». Тимлид системных и бизнес-аналитиков, автор книги «Код в мешке» о формулировке требований к IT-проектам Василиса Акашева расскажет, как новичку говорить о себе без страха и сомнений, опираться на навыки и уверенно рассказывать о достижениях; «Профессиональные соцсети». Графический дизайнер, видеограф и продюсер подкаста «Вне шаблона» Марина Лыткина даст практические советы по тому, как вести социальные сети и не бросить: что публиковать, как говорить на камеру и где брать контент; «Отдых и выгорание». Тренер публичных выступлений, автор книги «Удержать зрителей! Самоучитель публичного выступления», руководительница интеллектуального клуба «LivreLady» Виктория Матущенко расскажет, как заметить усталость, поставить навык отдыха и переключения задолго до истощения — пока вы молоды и полны сил. «Приходите — учиться уверенности в себе и умению заботиться о себе до того, как это станет критически необходимым» , — говорят организаторы. Деловой клуб «Вне шаблона» объединяет опыт великих предшественников и современных специалистов, создавая обучающие материалы для профессионального роста.",
+      "url": "https://rgub.ru/schedule/item.php?new_id=49757",
+      "source": "Российская государственная библиотека для молодёжи — афиша",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-21",
+      "price_type": "free",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-21"
     },
     {
       "id": "moscow-2026-10-31-eca75b2255",
@@ -43494,7 +43639,68 @@
       "sheet_synced_description": "Традиционно Ивановская горка воспринимается как заповедник старой Москвы и кладезь захватывающих историй, известных нам благодаря Гиляровскому. Но мало кто знает, что, кроме Левитана, здесь жили и работали и другие знаменитые художники. Этот район «вобрал в себя» творчество самых разных мастеров разных эпох: от Саврасова и Левитана до Бродского и Шелковского."
     },
     {
+      "id": "moscow-2026-11-01-732e936867",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-01",
+      "time": "12:30",
+      "title": "Экскурсионный маршрут / Арт-истории Чистых прудов: от Маросейки до Фурманного",
+      "venue": "Музей AZ",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Большинство из прилегающих к Чистопрудному бульвару улиц и переулков удивительным образом не только сохранили наследие прошлых веков, но и оказались питательной средой и эпицентрами современного искусства.",
+      "url": "https://museum-az.com/event/ekskursionnyy-marshrut-art-istorii-chistykh-prudov-ot-maroseyki-do-furmannogo-08-11/",
+      "source": "Музей AZ — выставки и события",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-21",
+      "price_type": "paid",
+      "availability": "available",
+      "availability_checked_at": "2026-10-21"
+    },
+    {
       "id": "moscow-2026-10-04-65ab0155ea",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-01",
+      "time": "12:30",
+      "title": "Экскурсионный маршрут / Вокруг Маяковки: места силы советского андеграунда",
+      "venue": "Музей AZ",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Площадь Маяковского (ныне вновь Триумфальная) — одно из знаковых мест, которые связаны с Оттепелью. Этот недолгий период, с середины 1950-х по середину 1960-х, дал мощный импульс развитию творческой свободы в литературе, театре, изобразительном искусстве. С момента открытия памятника Владимиру Маяковскому начались публичные чтения стихов, в том числе и запрещенных поэтов.",
+      "url": "https://museum-az.com/event/ekskursionnyy-marshrut-ot-vkhutemasa-do-az-arta-31-10/",
+      "source": "Музей AZ — выставки и события",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-09-24",
+      "price_type": "paid",
+      "availability": "available",
+      "availability_checked_at": "2026-10-21",
+      "social_title": "",
+      "social_description": "",
+      "editor_note": "",
+      "telegram_include": false,
+      "social_priority": null,
+      "instagram_image": "",
+      "instagram_include": false,
+      "reviewed_at": "",
+      "sheet_synced_description": "Площадь Маяковского (ныне вновь Триумфальная) — одно из знаковых мест, которые связаны с Оттепелью. Этот недолгий период, с середины 1950-х по середину 1960-х, дал мощный импульс развитию творческой свободы в литературе, театре, изобразительном искусстве. С момента открытия памятника Владимиру Маяковскому начались публичные чтения стихов, в том числе и запрещенных поэтов."
+    },
+    {
+      "id": "moscow-2026-11-01-65ab0155ea",
       "status": "rejected",
       "kind": "event",
       "city": "moscow",
@@ -43564,6 +43770,41 @@
     },
     {
       "id": "moscow-2026-10-04-16f6939347",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-01",
+      "time": "12:30",
+      "title": "Экскурсионный маршрут / От ВХУТЕМАСа до AZ ARTа",
+      "venue": "Музей AZ",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Пересечение Мясницкой улицы и Бульварного кольца было важным местом в артистической жизни Москвы как в ХIX, так и в ХХ веке. Здесь происходили интереснейшие события в истории русского авангарда и неофициального искусства 1960-1970-х годов.",
+      "url": "https://museum-az.com/event/ekskursionnyy-marshrut-ot-vkhutemasa-do-az-arta-18-10/",
+      "source": "Музей AZ — выставки и события",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-09-24",
+      "price_type": "paid",
+      "availability": "available",
+      "availability_checked_at": "2026-10-21",
+      "social_title": "",
+      "social_description": "",
+      "editor_note": "",
+      "telegram_include": false,
+      "social_priority": null,
+      "instagram_image": "",
+      "instagram_include": false,
+      "reviewed_at": "",
+      "sheet_synced_description": "Пересечение Мясницкой улицы и Бульварного кольца было важным местом в артистической жизни Москвы как в ХIX, так и в ХХ веке. Здесь происходили интереснейшие события в истории русского авангарда и неофициального искусства 1960-1970-х годов."
+    },
+    {
+      "id": "moscow-2026-11-01-16f6939347",
       "status": "rejected",
       "kind": "event",
       "city": "moscow",
@@ -43732,7 +43973,7 @@
       "review_reason": "",
       "discovered_at": "2026-10-06",
       "price_type": "unknown",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-21",
       "sheet_synced_description": "Дата начала регистрации — 19 октября Лектор — Яна Лорви, этномузыколог, исследователь традиционной культуры, автор и руководитель экспедиций по Ленинградской области и Карелии",
       "telegram_include": false,
@@ -43975,7 +44216,7 @@
       "review_reason": "",
       "discovered_at": "2026-10-16",
       "price_type": "unknown",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-21",
       "sheet_synced_description": "Лектор — Яна Лорви , этномузыколог, исследователь традиционной культуры, автор и руководитель экспедиций по Ленинградской области и Карелии",
       "instagram_include": false,
@@ -44234,7 +44475,7 @@
       "review_reason": "",
       "discovered_at": "2026-10-14",
       "price_type": "free",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-21",
       "sheet_synced_description": "Продолжая использовать этот сайт, вы соглашаетесь с политикой в области обработки и защиты персональных данных",
       "telegram_include": false,
@@ -45452,7 +45693,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-20-dc07f0121e",
@@ -45486,7 +45729,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-11-22-74e7820a46",

@@ -32771,7 +32771,13 @@
       "discovered_at": "2026-10-21",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-21"
+      "availability_checked_at": "2026-10-21",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "spb-2026-10-21-39e247098d",
@@ -32904,7 +32910,13 @@
       "price_type": "unknown",
       "availability": "unknown",
       "availability_checked_at": "2026-10-21",
-      "start_date": "2026-10-21"
+      "start_date": "2026-10-21",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-21-227412a086",
@@ -32966,7 +32978,13 @@
       "discovered_at": "2026-10-21",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-21"
+      "availability_checked_at": "2026-10-21",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-21-039e6e5c63",
@@ -43011,7 +43029,7 @@
       "address": "",
       "price": 0,
       "price_text": "Бесплатно",
-      "registration": null,
+      "registration": false,
       "categories": [
         "презентация"
       ],
@@ -43023,7 +43041,14 @@
       "discovered_at": "2026-10-21",
       "price_type": "free",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-21"
+      "availability_checked_at": "2026-10-21",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-31-eca75b2255",
@@ -43662,7 +43687,13 @@
       "discovered_at": "2026-10-21",
       "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-10-21"
+      "availability_checked_at": "2026-10-21",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-04-65ab0155ea",

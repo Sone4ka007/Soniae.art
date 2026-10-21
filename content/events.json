@@ -32176,7 +32176,13 @@
       "discovered_at": "2026-10-21",
       "price_type": "free",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-21"
+      "availability_checked_at": "2026-10-21",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "international-2026-10-21-2c38c7030d",
@@ -32312,7 +32318,13 @@
       "discovered_at": "2026-10-21",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-21"
+      "availability_checked_at": "2026-10-21",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-21-a7f98a4f0f",
@@ -32407,7 +32419,13 @@
       "discovered_at": "2026-10-21",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-21"
+      "availability_checked_at": "2026-10-21",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "spb-2026-10-21-3ab0af6d67",
@@ -32431,7 +32449,13 @@
       "discovered_at": "2026-10-21",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-21"
+      "availability_checked_at": "2026-10-21",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "spb-2026-10-21-3eb09fab54",
@@ -32445,7 +32469,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [],
       "description": "",
       "url": "https://www.artsacademy.ru/additionally/news/2025/",
@@ -32455,7 +32479,14 @@
       "discovered_at": "2026-10-21",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-21"
+      "availability_checked_at": "2026-10-21",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "russia-2026-10-21-86b51ee813",
@@ -32505,7 +32536,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [],
       "description": "",
       "url": "https://hermitagemuseum.org/what-s-on/afisha_mincult/?lng=ru",
@@ -32515,7 +32546,14 @@
       "discovered_at": "2026-10-21",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-21"
+      "availability_checked_at": "2026-10-21",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-21-74e7c2d3cf",
@@ -32896,7 +32934,13 @@
       "discovered_at": "2026-10-21",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-21"
+      "availability_checked_at": "2026-10-21",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "spb-2026-10-21-f82f6c82f1",
@@ -32920,7 +32964,13 @@
       "discovered_at": "2026-10-21",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-21"
+      "availability_checked_at": "2026-10-21",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-21-fcd4e2d7b6",
@@ -33016,7 +33066,13 @@
       "discovered_at": "2026-10-21",
       "price_type": "free",
       "availability": "available",
-      "availability_checked_at": "2026-10-21"
+      "availability_checked_at": "2026-10-21",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-21-30cdfdde0f",
@@ -35276,7 +35332,13 @@
       "discovered_at": "2026-10-21",
       "price_type": "free",
       "availability": "available",
-      "availability_checked_at": "2026-10-21"
+      "availability_checked_at": "2026-10-21",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-23-edf3031dc6",
@@ -39015,7 +39077,13 @@
       "discovered_at": "2026-10-21",
       "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-10-21"
+      "availability_checked_at": "2026-10-21",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "spb-2026-10-26-5af952e26e",
@@ -39803,7 +39871,13 @@
       "discovered_at": "2026-10-21",
       "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-10-21"
+      "availability_checked_at": "2026-10-21",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-27-8c7ac32fc5",
@@ -39900,7 +39974,13 @@
       "discovered_at": "2026-10-21",
       "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-10-21"
+      "availability_checked_at": "2026-10-21",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-27-422be2d050",
@@ -40180,7 +40260,13 @@
       "discovered_at": "2026-10-21",
       "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-10-21"
+      "availability_checked_at": "2026-10-21",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-27-17d40d2f82",
@@ -40244,7 +40330,13 @@
       "discovered_at": "2026-10-21",
       "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-10-21"
+      "availability_checked_at": "2026-10-21",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-28-6fdd3ff58e",
@@ -40702,7 +40794,13 @@
       "discovered_at": "2026-10-21",
       "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-10-21"
+      "availability_checked_at": "2026-10-21",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "international-2026-10-29-cb8ec52db8",
@@ -41053,7 +41151,13 @@
       "discovered_at": "2026-10-21",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-10-21"
+      "availability_checked_at": "2026-10-21",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-29-6d8f1e6c5b",
@@ -41504,7 +41608,7 @@
       "address": "",
       "price": 0,
       "price_text": "Бесплатно",
-      "registration": null,
+      "registration": false,
       "categories": [
         "лекция"
       ],
@@ -41516,7 +41620,14 @@
       "discovered_at": "2026-10-21",
       "price_type": "free",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-21"
+      "availability_checked_at": "2026-10-21",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "spb-2026-10-29-df32f22abf",
@@ -41542,7 +41653,13 @@
       "discovered_at": "2026-10-21",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-10-21"
+      "availability_checked_at": "2026-10-21",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-29-05c67d7f07",
@@ -45329,7 +45446,13 @@
       "audience_text": "› Дети и подростки Проект : По правилам и без Дата: 4 сен– 27 ноя 2026 Регистрация Возраст: 0-3 Тип: Игра Место: Платформы , Классы Возрастные ограничения 0+ Тринадцать игровых встреч для малышей и их родителей. Ждем родителей и детей от 0 до 3,5 года. Занятия проходят каждую пятницу с 4 сентября по 27 ноября, с 11:15 до 12:15. Обратите внимание: 2 октября занятия не будет. Количество мест ограничено. Каждому ребенку нужна регистрация. Сопровождающему взрослому достаточно регистрации на вход в Дом культуры. T Малыши играют с самого рождения! Через игру ребенок познает мир, выстраивает связь с близким взрослым, учится чувствовать и исследовать. В игре развиваются движения, речь и множество первичных навыков, таких значимых в начале жизни. Иллюстрация: Поля Плавинская Программа следует концепции «Бейби Сенсори» — международной методике гармоничного развития. На встречах мы обсуждаем, как взрослому мягко вести игру, какие форматы подходят детям разного возраста и какие умения формируются в процессе. Мы поговорим о том, как игры помогают ребенку лучше подготовиться к детскому саду, к учебе и новым открытиям. Узнаем, почему мамино пение поддерживает речевое и музыкальное развитие, как прыжки, ползание и прогулки по сенсорным дорожкам укрепляют уверенность и почему так важна совместная игра. Встречи помогут родителям качественно провести время с малышом. Незаметно и легко дети будут развивать ключевые навыки, а взрослые пополнят арсенал идей для игр дома. К каждому занятию мы подготовим карточку-памятку с активностями и их значением. Все фото: Вадим Штэйн Ведущие Аня Великанова — нейропсихолог. В настоящее время учится на клинического психолога в Сеченовском университете и ведет частную психологическую практику. Класс-лидер в АНО «Первые годы». Более 5 лет работает с детьми и подростками. Соня Маркова — психолог-педагог, детский психолог, ABA-специалист. Окончила МПГУ по направлению «психолог-педагог», получила повышение квалификации на обучении по детской психологии, обучение по 1-й ступени ABA-терапии. Педагог в благотворительном фонде для подростков с РАС. Проходила практику в школе приемных родителей в Институте развития семейного устройства. Класс-лидер в АНО «Первые годы». Ассистент Мария Меркулова {\"grid\":{\"width\":963,\"column_width\":89,\"columns_n\":9,\"gutter\":20,\"margin\":0,\"line\":10},\"palette\":\"default\",\"responsive_mode\":true,\"responsive_min_width\":512,\"responsive_max_width\":1100,\"colorchanger_fullscreen\":false,\"colorchanger_overflow\":true,\"page_cropping\":",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-21"
+      "availability_checked_at": "2026-10-21",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-11-20-dc07f0121e",
@@ -45343,7 +45466,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "лаборатория"
       ],
@@ -45356,7 +45479,14 @@
       "audience_text": "› Малые своды Дата: 18 сен– 22 ноя 2026 Возраст: от 16 Тип: Лаборатория Место: Малые своды Возрастные ограничения 16+ Танцевально-перформативная лаборатория, совмещенная с анализом работ по современной философии и антропологии. Расписание  {\"points\":[{\"id\":4,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":6,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.4,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":5,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} T Основной вопрос, которым предлагает задаться ведущая Мария Яшникова: как научиться действовать через удовольствие, желание, а не из привычных регистров «нужно» или «можно»? Таким образом художница предлагает найти способы сосуществования с другими людьми в разных ситуациях и научиться осознанно влиять на различные сферы своей жизни — бытовую, рабочую, романтическую, социальную и др. Чтобы принять участие в лаборатории, пришлите* письмо с темой «Под ногами мягкий пол» на community@v-a-c.org до 14 сентября включительно. Приложите к нему видео танца длительностью 3-5 минут, в котором вы несколько раз повторяете комбинацию из простых движений (шаг, поворот головы, разворот и др.) и импровизируете со словами «желание» или «расширение». Также расскажите в письме, почему вы хотите участвовать в лаборатории. Не забудьте указать ваши имя и контакты для обратной связи (телефон, мессенджер и т.д.). Чтобы вам было комфортно, возьмите с собой удобную одежду и сменную обувь или нескользящие носки. В Малых сводах есть раздевалка с локерами и душ, где можно освежиться после практики. Фото: Вадим Штэйн Задача лаборатории — обнаружить желание внутри себя, а не в «зеркале другого», найти путь к телу изменяющемуся: действующему, готовому, нежному, сильному, расслабленному, широкому, звонкому, спокойному. Радость тут в том, что это желание существует, даже когда не артикулируется нами осознанно. Кроме соматических практик мы обратимся к текстам философов и антропологов ХХ—ХХI веков, таким как «Посткапиталистическое желание. Последние лекции» Марка Фишера, «Слушание» и «Как жить вместе» Ролана Барта, «Каннибальские метафизики» Эдуарду Вивейруш де Кастру и «Линии: краткая история» Тима Ингольда. — Мария Яшникова Чтобы научиться различать множество информационных потоков, которые влияют на наши решения, участники сосредоточат внимание на д",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-21"
+      "availability_checked_at": "2026-10-21",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "international-2026-11-22-74e7820a46",

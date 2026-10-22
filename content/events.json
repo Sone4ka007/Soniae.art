@@ -32379,7 +32379,7 @@
       "title": "Дамир Муратов Неполное собрание сочинений",
       "venue": "ЦСИ Винзавод",
       "address": "",
-      "price": 1800,
+      "price": 12000,
       "price_text": "12000 ₽",
       "registration": false,
       "categories": [
@@ -32523,7 +32523,7 @@
       "title": "Коллективная выставка Громкая тишина касания",
       "venue": "ЦСИ Винзавод",
       "address": "",
-      "price": 12000,
+      "price": 1500,
       "price_text": "1800 ₽",
       "registration": false,
       "categories": [
@@ -33632,6 +33632,59 @@
       }
     },
     {
+      "id": "spb-2026-10-22-87a417db3c",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-22",
+      "time": "",
+      "title": "В Российском этнографическом музее настанет «Щедрая пора»",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "С 24 октября в Российском этнографическом музее будет проходить программа «Щедрая пора: Осенние каникулы». Посетителей ждут игровые и тематические экскурсии, творческие мастер-классы, концерт и видеопоказы для детей и взрослых. С 24 октября в Российском этнографическом музее будет проходить программа «Щедрая пора: Осенние каникулы».",
+      "url": "https://spbcult.ru/news/anonsy/v-rossiyskom-etnograficheskom-muzee-nastanet-shchedraya-pora/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-22",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-22"
+    },
+    {
+      "id": "spb-2026-10-22-9feba1db88",
+      "status": "new",
+      "kind": "exhibition",
+      "city": "spb",
+      "date": "2026-10-22",
+      "time": "",
+      "title": "В Эрмитаже провозгласят мир",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "выставка"
+      ],
+      "description": "В Аполлоновом зале Зимнего дворца открывается выставка «Fiat Pax. Часы «Битва римлян с сабинянами». К завершению реставрации».",
+      "url": "https://spbcult.ru/news/anonsy/v-ermitazhe-provozglasyat-mir/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-22",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-22",
+      "start_date": "2026-10-22"
+    },
+    {
       "id": "spb-2026-10-22-e2db4bcdc8",
       "status": "approved",
       "kind": "exhibition",
@@ -33656,7 +33709,7 @@
       "review_reason": "",
       "discovered_at": "2026-10-16",
       "price_type": "free",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-22",
       "sheet_synced_description": "22 октября в Новом здании Российской национальной библиотеки откроется выставка «Сказка, рассказанная и записанная: к 200-летию А. Н. Афанасьева», подготовленная совместно с Санкт-Петербургской государственной художественно-промышленной академией имени А. Л. Штиглица.",
       "instagram_include": false,
@@ -33709,7 +33762,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-22-3e1dd715e6",
@@ -33784,6 +33839,32 @@
       "description_editorial": true
     },
     {
+      "id": "spb-2026-10-22-5a64c12ab0",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-22",
+      "time": "",
+      "title": "Новосибирский симфонический оркестр исполнит в Петербурге сочинения Губайдулиной, Стравинского и Рахманинова",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "диалог"
+      ],
+      "description": "24 октября в Большом зале Петербургской филармонии состоится концерт, посвящённый 70-летию Новосибирского академического симфонического оркестра.",
+      "url": "https://spbcult.ru/news/anonsy/novosibirskiy-simfonicheskiy-orkestr-ispolnit-v-peterburge-sochineniya-gubaydulinoy-stravinskogo-i-r/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-22",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-22"
+    },
+    {
       "id": "russia-2026-10-22-1e66714dca",
       "status": "rejected",
       "kind": "open_call",
@@ -33818,6 +33899,30 @@
       "telegram_include": false,
       "reviewed_at": "",
       "sheet_synced_description": "Фонд MaxArt открыл набор ещё на два сезона резиденции в провинции Гуандун: месяц работы в мастерской Музея современного искусства Янцзян рядом с группой Чжэн Гогу, грант 100 000 ₽, дорога и проживание за счёт фонда. Заезды — в декабре 2026-го и феврале 2027-го."
+    },
+    {
+      "id": "spb-2026-10-22-ee445efa14",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-22",
+      "time": "",
+      "title": "Царскосельская скульптура надела зимнюю одежду",
+      "venue": "",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": false,
+      "categories": [],
+      "description": "Музей-заповедник «Царское Село» готовит к зимним холодам парковую скульптуру. 22 октября «тёплую одежду» одели на статуи перед фасадом Екатерининского дворца и на Эрмитажной аллее Екатерининского парка – это в основном подлинная венецианская скульптура первой четверти XVIII века.",
+      "url": "https://spbcult.ru/news/anonsy/tsarskoselskaya-skulptura-nadela-zimnyuyu-odezhdu/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-22",
+      "price_type": "free",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-22"
     },
     {
       "id": "moscow-2026-10-22-be6bdc8e39",
@@ -34163,7 +34268,7 @@
       "review_reason": "excluded_tour_mediation",
       "discovered_at": "2026-10-11",
       "price_type": "paid",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-22",
       "sheet_synced_description": "15 октября 2026 года в 17 часов приглашаем на лекцию-экскурсию «Б.Ю.Поплавский: “Дионис” русского зарубежья». Лекция-экскурсия посвящена жизни и творчеству одного из самых талантливых поэтов российской эмиграции.",
       "social_priority": null,
@@ -34231,7 +34336,7 @@
       "review_reason": "excluded_tour_mediation",
       "discovered_at": "2026-10-17",
       "price_type": "paid",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-22",
       "sheet_synced_description": "22 октября 2026 года в 17 часов приглашаем на лекцию-экскурсию «Два Ивана. И.А.Бунин и И.С.Шмелев: судеб скрещенья». Имена Ивана Алексеевича Бунина и Ивана Сергеевича Шмелева связаны не только их принадлежностью к литературе русского зарубежья.",
       "social_title": "",
@@ -34443,7 +34548,7 @@
       "review_reason": "",
       "discovered_at": "2026-10-18",
       "price_type": "free",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-22",
       "editor_overrides": {
         "telegram_include": false,
@@ -34736,7 +34841,7 @@
       "review_reason": "",
       "discovered_at": "2026-10-18",
       "price_type": "free",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-22",
       "editor_overrides": {
         "telegram_include": false,
@@ -35021,7 +35126,7 @@
       "review_reason": "",
       "discovered_at": "2026-10-21",
       "price_type": "free",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-22",
       "editor_overrides": {
         "telegram_include": false,
@@ -35610,7 +35715,7 @@
       "review_reason": "excluded_tour_mediation",
       "discovered_at": "2026-10-19",
       "price_type": "paid",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-22",
       "editor_overrides": {
         "telegram_include": false,
@@ -36081,7 +36186,7 @@
       "review_reason": "excluded_tour_mediation",
       "discovered_at": "2026-10-22",
       "price_type": "paid",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-22",
       "editor_overrides": {
         "telegram_include": false,
@@ -36398,7 +36503,7 @@
       "review_reason": "excluded_tour_mediation",
       "discovered_at": "2026-10-01",
       "price_type": "unknown",
-      "availability": "unknown",
+      "availability": "available",
       "availability_checked_at": "2026-10-22",
       "social_title": "",
       "social_description": "",
@@ -36592,6 +36697,30 @@
       "instagram_image": "",
       "social_priority": null,
       "reviewed_at": "2026-10-17"
+    },
+    {
+      "id": "spb-2026-10-24-d6bf348636",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-24",
+      "time": "12:00",
+      "title": "Современные эзотерические и оккультные практики: что за ними стоит?",
+      "venue": "Библиотека Маяковского",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "Таро, астрология, энергетические практики и другие эзотерические учения становятся всё популярнее. Но почему люди к ним обращаются? Какие обещания дают подобные практики и как к ним относится христианство? Приглашаем на лекцию, где поговорим о современных эзотерических течениях, их влиянии на человека и православном взгляде на духовные поиски. Лектор — священник Николай Святченко, преподаватель Санкт-Петербургской Духовной Академии, преподаватель Русской Христианской Гуманитарной Академии им. Ф. М. Достоевского.",
+      "url": "https://tsentralnaya-events.timepad.ru/event/4260381/",
+      "source": "Библиотека Маяковского — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-10-22",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-22"
     },
     {
       "id": "moscow-2026-10-24-8c1680b942",
@@ -37325,7 +37454,7 @@
       "review_reason": "excluded_tour_mediation",
       "discovered_at": "2026-10-02",
       "price_type": "paid",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-22",
       "editor_note": "",
       "reviewed_at": "",
@@ -37867,6 +37996,32 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "moscow-2026-10-25-d862bf8419",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-25",
+      "time": "13:00",
+      "title": "Деревянная школа. Лица и маски",
+      "venue": "Центр Зотов",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "",
+      "url": "https://centrezotov.ru/events/derevyannaya-shkola-h-zotov/derevyannaya-shkola-licza-i-maski/",
+      "source": "Центр Зотов",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-22",
+      "price_type": "paid",
+      "availability": "available",
+      "availability_checked_at": "2026-10-22"
     },
     {
       "id": "moscow-2026-10-25-98f4534d25",
@@ -38907,7 +39062,7 @@
       "review_reason": "",
       "discovered_at": "2026-10-14",
       "price_type": "unknown",
-      "availability": "unknown",
+      "availability": "available",
       "availability_checked_at": "2026-10-22",
       "sheet_synced_description": "Осенние каникулы — это идеальное время, которое можно провести с творческой пользой и вдохновением! РОСФОТО приглашает детей от 6 до 17 лет на просветительские и творческие мероприятия разного формата: мастер-классы, квесты, викторины.",
       "telegram_include": false,
@@ -39197,7 +39352,7 @@
       "editor_note": "",
       "instagram_include": false,
       "price_type": "unknown",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-22",
       "reviewed_at": "2026-10-02",
       "sheet_synced_description": "Режиссер — Д. Франчолини В главных ролях: Тото, В. де Сика, С. Пампанини, Ф. Фабрици, Д. Ралли Автор и ведущий цикла — киновед Ф. Ю. Коркин . Дата начала регистрации — 19 октября"
@@ -40178,6 +40333,32 @@
       "reviewed_at": ""
     },
     {
+      "id": "spb-2026-10-28-a72cb3d2ce",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-28",
+      "time": "",
+      "title": "«Просветительская среда». Лекционный цикл к выставке «Сцена действия» 25 сентября 2026 — 14 февраля 2027",
+      "venue": "Манеж",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": true,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Дорогие друзья, представляем вам программу «Просветительская среда» — специальный цикл лекций, подготовленный к выставке «Сцена действия». По средам вечером встречаемся с вами в аванзале Манежа и погружаемся в историю отечественного театра.",
+      "url": "https://manege.spb.ru/events/vystavochnyj-proekt-sczena-dejstviya-lekcyy/",
+      "source": "Манеж — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-22",
+      "price_type": "free",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-22"
+    },
+    {
       "id": "moscow-2026-10-28-6fdd3ff58e",
       "status": "rejected",
       "kind": "event",
@@ -40598,7 +40779,7 @@
       "review_reason": "",
       "discovered_at": "2026-09-28",
       "price_type": "paid",
-      "availability": "unknown",
+      "availability": "available",
       "availability_checked_at": "2026-10-22",
       "instagram_include": false,
       "editor_note": "",
@@ -40674,7 +40855,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-28-13b8d7d310",
@@ -40706,7 +40889,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-10-29-cb8ec52db8",
@@ -41637,7 +41822,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-29-05c67d7f07",
@@ -41856,7 +42043,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-30-bcba3b765a",
@@ -43019,7 +43208,7 @@
       "review_reason": "",
       "discovered_at": "2026-10-16",
       "price_type": "unknown",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-22",
       "sheet_synced_description": "Что объединяет российского императора Александра II, выдающегося дипломата Александра Горчакова и знаменитого поэта Фёдора Тютчева? Лектор : Размахнина Анастасия Александровна — историк, соавтор научно-популярного блога delicate fancy",
       "instagram_include": false,
@@ -43319,7 +43508,7 @@
       "review_reason": "excluded_tour_mediation",
       "discovered_at": "2026-10-01",
       "price_type": "paid",
-      "availability": "unknown",
+      "availability": "available",
       "availability_checked_at": "2026-10-22",
       "editor_note": "",
       "social_priority": null,
@@ -43481,8 +43670,8 @@
       "title": "Территория свободы. Нонконформисты в Тарусе",
       "venue": "Музей AZ",
       "address": "",
-      "price": null,
-      "price_text": "",
+      "price": 0,
+      "price_text": "Бесплатно",
       "registration": false,
       "categories": [
         "лекция"
@@ -43493,7 +43682,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-10-20",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability": "available",
       "availability_checked_at": "2026-10-22",
       "editor_overrides": {
@@ -43891,6 +44080,70 @@
       }
     },
     {
+      "id": "spb-2026-11-02-9366161df8",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-02",
+      "time": "01:20",
+      "title": "Премьера документального фильма «Медали за уголь и сталь»",
+      "venue": "РОСФОТО",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": true,
+      "categories": [
+        "семинар"
+      ],
+      "description": "Серия из цикла «Прорабы великих побед. Награды трудового фронта» посвящена восстановлению после Великой Отечественной войны угольных шахт Донбасса и металлургического комплекса Запорожья.",
+      "url": "https://rosphoto.org/events/premera-dokumentalnogo-filma-medali-za-ugol-i-stal/",
+      "source": "РОСФОТО",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-22",
+      "price_type": "unknown",
+      "availability": "available",
+      "availability_checked_at": "2026-10-22"
+    },
+    {
+      "id": "spb-2026-11-02-0586a962f4",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-02",
+      "time": "18:30",
+      "title": "встреча книжного клуба",
+      "venue": "Открытая гостиная",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "встреча"
+      ],
+      "description": "в Открытой гостиной состоится Обсудим жанр фикшна, который называют вирдом (от английского weird), на примере сразу двух небольших произведений: повесть Дафны ДюМорье «Птицы» и роман «Совушка» Клэр Ошецки. К обсуждению присоединится писательница и создательница авторского курса «Странная литература» в школе WLAG (Write Like a Grrrl) Саша Першина. «Экранизация Хичкока затмила небольшую повесть ДюМорье: про нее как будто мало кто знает, мало кто читал. Однако этот текст заслуживает внимания, являясь классикой литературы ужаса. Хоррор, который создает ДюМорье в «Птицах», можно жанрово определить",
+      "url": "https://otkrytaya-gostinaya.timepad.ru/event/4250847/",
+      "source": "Открытая гостиная — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-10-14",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-22",
+      "sheet_synced_description": "в Открытой гостиной состоится Обсудим жанр фикшна, который называют вирдом (от английского weird), на примере сразу двух небольших произведений: повесть Дафны ДюМорье «Птицы» и роман «Совушка» Клэр Ошецки. К обсуждению присоединится писательница и создательница авторского курса «Странная литература» в школе WLAG (Write Like a Grrrl) Саша Першина. «Экранизация Хичкока затмила небольшую повесть ДюМорье: про нее как будто мало кто знает, мало кто читал. Однако этот текст заслуживает внимания, являясь классикой литературы ужаса. Хоррор, который создает ДюМорье в «Птицах», можно жанрово определить",
+      "telegram_include": false,
+      "instagram_image": "",
+      "social_priority": null,
+      "social_description": "",
+      "editor_note": "",
+      "social_title": "",
+      "instagram_include": false,
+      "reviewed_at": "2026-10-17",
+      "editor_overrides": {
+        "registration": false
+      }
+    },
+    {
       "id": "spb-2026-11-02-0e987411cc",
       "status": "approved",
       "kind": "event",
@@ -43948,7 +44201,7 @@
       "review_reason": "",
       "discovered_at": "2026-10-09",
       "price_type": "paid",
-      "availability": "unknown",
+      "availability": "available",
       "availability_checked_at": "2026-10-22",
       "sheet_synced_description": "РОСФОТО присоединяется к всероссийской акции «Ночь искусств», в рамках которой посетителей ждут специальные предложения и тематические экскурсии. «В единстве культур — сила народа» — под таким девизом пройдет ежегодная всероссийская акция, организованная Министерством культуры Российской Федерации.",
       "social_description": "",
@@ -44019,7 +44272,7 @@
       "review_reason": "excluded_tour_mediation",
       "discovered_at": "2026-10-16",
       "price_type": "unknown",
-      "availability": "unknown",
+      "availability": "available",
       "availability_checked_at": "2026-10-22",
       "sheet_synced_description": "Экскурсия включает знакомство со зданием, в котором находится РОСФОТО, и постоянной экспозицией «Внутри старинного фотоаппарата». Здание, в котором расположен музей, представляет собой яркий образец архитектуры северного модерна. В оформлении использованы майоликовые композиции по рисункам Николая Рериха.",
       "instagram_include": false,
@@ -44053,7 +44306,7 @@
       "review_reason": "excluded_tour_mediation",
       "discovered_at": "2026-10-15",
       "price_type": "paid",
-      "availability": "unknown",
+      "availability": "available",
       "availability_checked_at": "2026-10-22",
       "sheet_synced_description": "Этот выставочный проект посвящен одному из главных событий конца XIX века — XVI Всероссийской промышленной и художественной выставке 1896 года в Нижнем Новгороде. На экскурсии мы поговорим о том, почему Нижегородская выставка удивила всю Россию и единственная вошла в историю под именем «великая».",
       "editor_note": "",
@@ -44162,7 +44415,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-05-0bce51b132",
@@ -44221,7 +44476,7 @@
       "review_reason": "",
       "discovered_at": "2026-10-16",
       "price_type": "unknown",
-      "availability": "unknown",
+      "availability": "available",
       "availability_checked_at": "2026-10-22",
       "sheet_synced_description": "Лектор — Яна Лорви , этномузыколог, исследователь традиционной культуры, автор и руководитель экспедиций по Ленинградской области и Карелии",
       "instagram_include": false,
@@ -44259,7 +44514,7 @@
       "review_reason": "",
       "discovered_at": "2026-10-06",
       "price_type": "paid",
-      "availability": "unknown",
+      "availability": "available",
       "availability_checked_at": "2026-10-22",
       "sheet_synced_description": "На встрече поговорим, из каких элементов складывается визуальный код венгерской столицы. Как город видят туристы, местные жители, любители истории и фотографы. Посмотрим важные для иконографии города кадры и познакомимся с работами фотохудожников, запечатлевших жизнь Будапешта на разных этапах. Спикер — Дарья Никифорова , унгарист и автор цикла лекций о современной венгерской фотографии, координатор культурных проектов Института Листа.",
       "editor_note": "",
@@ -44525,6 +44780,33 @@
       "reviewed_at": "2026-10-17"
     },
     {
+      "id": "international-2026-11-08-f9e3a218bb",
+      "status": "check",
+      "kind": "open_call",
+      "city": "international",
+      "date": "2026-11-08",
+      "time": "",
+      "title": "Christmas Fair at the Phoenix Cinema: 5-6 December 2026",
+      "venue": "CuratorSpace",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "open-call"
+      ],
+      "description": "Phoenix Cinema is opening doors for a Christmas film-themed fair – Apply for a stall now! Whether you paint or make quilts, knit or screen print, make jewellery or arrange wreaths – if you can draw inspiration from film, we’d like to hear from you.",
+      "url": "https://www.curatorspace.com/opportunities/detail/christmas-fair-at-the-phoenix-cinema--december/11255",
+      "source": "CuratorSpace — opportunities",
+      "checked_at": "",
+      "review_reason": "primary_source_required",
+      "discovered_at": "2026-10-22",
+      "audience_text": "Opportunity details | Christmas Fair at the Phoenix Cinema: 5-6 December 2026 | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register Christmas Fair at the Phoenix Cinema: 5-6 December 2026 Deadline: 08/11/2026 City: London | Region: London | Country: United Kingdom | Phoenix Cinema Report this? Description Opportunity FAQs Make a submission Contact curator Phoenix Cinema is opening doors for a Christmas film-themed fair – Apply for a stall now! Whether you paint or make quilts, knit or screen print, make jewellery or arrange wreaths – if you can draw inspiration from film, we’d like to hear from you. We’re looking for arts and crafts sellers who have works that incorporate film and cinema, whether the works are dedicated to a beloved Christmas movie, capture the cinematic experience or relate to a moment in cinema’s history. Works can also be linked to the Phoenix Cinema itself: based in North London’s East Finchley, we are one of the oldest continuously running independent cinemas in the UK, and a registered charity. If you’re looking for inspiration and haven’t visited us before, come by for a cuppa or a chat with our friendly staff. Accepted media: painting, illustration, print, photography, jewellery, ceramics, glass, collage, textile. We also welcome art books (film/cinema-linked), greeting cards, pins & badges, flower/wreath arrangements, Christmas decorations, candles, etc. No AI generated works accepted. All works must be hand-made and safe for purchase. Location: Phoenix Cinema, East Finchley, 52 High Road N2 9PJ Date & time: Saturday 5 December & Sunday 6 December, 10 am-4 pm Participation fee: £35 All proceeds will go to the artist. The cinema doesn't take commissions. Application deadline: 23:59, Sunday 8 November. You will receive support from the cinema’s marketing team publicising the event and your profile on social media. You can apply to sell on both days or just one (please specify which in your application); the stall fee is the same. Please also specify whether you'd need a full table or half-table. Spaces are limited to 10 sellers per day. Important: Space is limited, so please bring a compact freestanding display or hanging system that fits within your allocated area (56x56cm half-table and 70x70cm full table). Note: no direct wall mounting will be available. Storage space is also limited, so please bring only as much stock as you can keep in your own space. Make a submission Contact the curator Who is eligible for this opportunity? Open to all artists, crafts makers and artisans, who can offer a cinema/film-linked item(s). Excluding food and drinks sellers. When is the deadline? Sunday 8 November, 23:59 UK time. When is the delivery date? Stall set-up is 9am on the day. How much does it cost? £35 What are the market opening hours? 10am to 4pm* 5 December, 10am to 3pm 6 December. *Subject to cinema programme confirmation. Will be confirmed in November. Does the location have disabled access? Yes. What publicity will be provided as part of the opportunity? Dedicated posts on the Phoenix Cinema social media platforms. Printed flyers distributed locally. Do I need to be present? Yes. What happens if my proposal is chosen? You will be contacted by the Phoenix Cinema gallery curator to arrange stall fee payment and discuss any further details. What are the selection criteria? We’re looking for arts and crafts sellers who have works that incorporate film and cinema; whether the works are dedicated to a beloved Christmas movie, capture the cinemagoing experience or relate to a moment in cinema’s history. Works can also be linking to the Phoenix Cinema itself: based in North London’s East Finchley, we are one of the oldest continuously running independent cinemas in the UK, and a registered charity. For film-related inspiration, you can take a look at our website: www.phoenixcinema.co.uk You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Advertisement Other opportunities Call for Ceramic Artists: Sunken Studio Pottery Market 2026 Applications are now open for makers to join our curated pottery market, hosted inside Sunken... Streams Exhibition Space2 would like to invite artists to share their unique perspective and passion for the local... The 17th Annual Pound Arts Open Exhibition Thank you for submitting your work to the 17th annual Pound Arts Open Exhibition. Please read... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-22"
+    },
+    {
       "id": "international-2026-11-08-e826eaddc9",
       "status": "rejected",
       "kind": "open_call",
@@ -44707,6 +44989,33 @@
       "editor_overrides": {
         "registration": false
       }
+    },
+    {
+      "id": "russia-2026-11-10-567cf4347f",
+      "status": "check",
+      "kind": "open_call",
+      "city": "russia",
+      "date": "2026-11-10",
+      "time": "",
+      "title": "Опен-колл на новогоднюю выставку галереи ARTSTORY",
+      "venue": "Ewert",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "open-call"
+      ],
+      "description": "Приглашает художников, работающих в живописи, скульптуре и оригинальной графике, принять участие в групповом проекте об ожидании праздника и предчувствии чуда. Тема включает традиции подготовки к Новому году и Рождеству, личные истории и создание праздничной атмосферы.",
+      "url": "https://ewert.ru/competitions/open-koll-na-novogodnyuyu-vystavku-galerei-artstory/",
+      "source": "Ewert — возможности для художников",
+      "checked_at": "",
+      "review_reason": "primary_source_required",
+      "discovered_at": "2026-10-22",
+      "audience_text": "Опен-колл на новогоднюю выставку галереи ARTSTORY | Эверт Перейти к содержимому Эверт Афиша Журнал Конкурсы Эверт Конкурсы Опен-колл на новогоднюю выставку галереи ARTSTORY конкурс Опен-колл на новогоднюю выставку галереи ARTSTORY Приём заявок до 10 ноября 2026 ↓ Приглашает художников, работающих в живописи, скульптуре и оригинальной графике, принять участие в групповом проекте об ожидании праздника и предчувствии чуда. Тема включает традиции подготовки к Новому году и Рождеству, личные истории и создание праздничной атмосферы. О конкурсе Open Call: новогодняя выставка в галерее ARTSTORY Галерея ARTSTORY объявляет открытый конкурс среди художников, работающих в живописи, скульптуре и оригинальной графике. В преддверии Нового года и Рождества галерея готовит групповой выставочный проект, главной темой которого станет ожидание праздника и предчувствие чуда. В центре внимания — не только сами праздники, но процесс подготовки и создание особой атмосферы: гирлянды на окнах, наряженная ёлка, упакованные подарки, подписанные открытки, мягкий свет свечей. Организаторы предлагают художникам поразмышлять о традициях, связанных с подготовкой к зимним праздникам, и вспомнить личные истории, связанные с Новым годом и Рождеством. Для участия необходимо отправить портфолио на почту opencall@art-story.com . Заявки принимаются до 10 ноября 2026 года. Для кого графики, скульпторы, художники Что дают выставка Как подать заявку Приём заявок до 10 ноября 2026 Все конкурсы Афиша на почту Раз в неделю, без спама. Сайт Email Подписаться Согласен на обработку персональных данных и получение писем. Эверт Афиша, карта и журнал современного искусства. О проекте Институции Художники и кураторы Контакты Политика конфиденциальности",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-22"
     },
     {
       "id": "moscow-2026-11-10-422be2d050",
@@ -45438,7 +45747,7 @@
       "review_reason": "",
       "discovered_at": "2026-09-21",
       "price_type": "paid",
-      "availability": "unknown",
+      "availability": "available",
       "availability_checked_at": "2026-10-22",
       "editor_note": "",
       "reviewed_at": "",
@@ -45907,7 +46216,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-11-22-74e7820a46",

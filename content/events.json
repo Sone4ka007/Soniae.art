@@ -33692,7 +33692,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [],
       "description": "",
       "url": "https://hermitagemuseum.org/what-s-on/afisha_mincult/?lng=ru",
@@ -33702,7 +33702,14 @@
       "discovered_at": "2026-10-22",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-22"
+      "availability_checked_at": "2026-10-22",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-22-3e1dd715e6",
@@ -36075,7 +36082,13 @@
       "discovered_at": "2026-10-22",
       "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-10-22"
+      "availability_checked_at": "2026-10-22",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-24-ec61ce9f2b",
@@ -40655,7 +40668,13 @@
       "discovered_at": "2026-10-22",
       "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-10-22"
+      "availability_checked_at": "2026-10-22",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-28-13b8d7d310",
@@ -40681,7 +40700,13 @@
       "discovered_at": "2026-10-22",
       "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-10-22"
+      "availability_checked_at": "2026-10-22",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "international-2026-10-29-cb8ec52db8",
@@ -41606,7 +41631,13 @@
       "discovered_at": "2026-10-22",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-10-22"
+      "availability_checked_at": "2026-10-22",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-29-05c67d7f07",
@@ -41805,7 +41836,7 @@
       "address": "",
       "price": 0,
       "price_text": "Бесплатно",
-      "registration": null,
+      "registration": false,
       "categories": [
         "open-call"
       ],
@@ -41818,7 +41849,14 @@
       "audience_text": "Опен-колл ST. ART «Будь чайкой»: бесплатная публикация для художников | Эверт Перейти к содержимому Эверт Афиша Журнал Конкурсы Эверт Конкурсы Опен-колл ST. ART «Будь чайкой»: бесплатная публикация для художников конкурс Опен-колл ST. ART «Будь чайкой»: бесплатная публикация для художников Приём заявок до 30 октября 2026 ↓ Онлайн-платформа о современном искусстве ST. ART выберет трёх художников или художниц и бесплатно опубликует материал о них — интервью или текст о проекте. Для участия достаточно заполнить анкету и рассказать о своей практике. О конкурсе Три публикации по итогам анкеты ST. ART — платформа о современном искусстве, которая работает с 2020 года и пишет обо всём, от классики до радикальных форм и от крупных институций до квартирных выставок. В разделе интервью у издания выходили разговоры с авторами и кураторами мирового уровня: среди героев — Эс Девлин, Тео Янсен, Вон Вулф, Хайке Мюндер и Якопо Кривелли Висконти. Теперь редакция открыла опен-колл «Будь чайкой» и зовёт рассказать о себе художников и художниц, чьи имена пока не так известны. Редакцию интересует то, чем автор занят сейчас: какие темы он исследует, как устроена его практика, что стоит за проектами. Рассказ можно построить двумя способами — показать несколько работ или подробно разобрать один проект. Из всех заявок отберут трёх участников; с ними редакция свяжется лично и вместе решит, в каком формате выйдет материал — интервью или текст о проекте. Публикации появятся на сайте ST. ART . Условия участие и публикация бесплатны; приём заявок — до 30 октября 2026 года, 18:00 по Москве; ограничений по городу и медиуму в анонсе нет. Анкета и контакты Заявка подаётся через анкету на Яндекс Формах . Анонс опен-колла — в соцсетях издания . Для кого художники Что дают публикация в журнале Как подать заявку Приём заявок до 30 октября 2026 Перейти к конкурсу → Все конкурсы Афиша на почту Раз в неделю, без спама. Сайт Email Подписаться Согласен на обработку персональных данных и получение писем. Эверт Афиша, карта и журнал современного искусства. О проекте Институции Художники и кураторы Контакты Политика конфиденциальности",
       "price_type": "free",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-22"
+      "availability_checked_at": "2026-10-22",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-30-bcba3b765a",
@@ -43767,7 +43805,13 @@
       "discovered_at": "2026-10-22",
       "price_type": "paid",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-22"
+      "availability_checked_at": "2026-10-22",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "international-2026-11-02-4d384abbfe",
@@ -44101,7 +44145,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [],
       "description": "5–6 ноября в Белом зале Дома Дурасова в Москве состоится II Всероссийская конференция по архитектурному образованию «ИИ в архитектурном образовании». Совместная инициатива Школы дизайна НИУ ВШЭ, Союза архитекторов России и Международного архитектурного благотворительного фонда им. Якова Чернихова соберёт экспертов, чтобы обсудить, как искусственный интеллект меняет профессию, инструменты проектирования и подходы к обучению будущих архитекторов. 05 ноября 2026 — 06 ноября 2026",
       "url": "https://design.hse.ru/news/7323",
@@ -44111,7 +44155,14 @@
       "discovered_at": "2026-10-22",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-22"
+      "availability_checked_at": "2026-10-22",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "spb-2026-11-05-0bce51b132",
@@ -44863,7 +44914,13 @@
       "discovered_at": "2026-10-22",
       "price_type": "paid",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-22"
+      "availability_checked_at": "2026-10-22",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-11-12-422be2d050",
@@ -45830,7 +45887,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "лаборатория"
       ],
@@ -45843,7 +45900,14 @@
       "audience_text": "› Малые своды Дата: 18 сен– 22 ноя 2026 Возраст: от 16 Тип: Лаборатория Место: Малые своды Возрастные ограничения 16+ Танцевально-перформативная лаборатория, совмещенная с анализом работ по современной философии и антропологии. Расписание  {\"points\":[{\"id\":4,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":6,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.4,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":5,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} T Основной вопрос, которым предлагает задаться ведущая Мария Яшникова: как научиться действовать через удовольствие, желание, а не из привычных регистров «нужно» или «можно»? Таким образом художница предлагает найти способы сосуществования с другими людьми в разных ситуациях и научиться осознанно влиять на различные сферы своей жизни — бытовую, рабочую, романтическую, социальную и др. Чтобы принять участие в лаборатории, пришлите* письмо с темой «Под ногами мягкий пол» на community@v-a-c.org до 14 сентября включительно. Приложите к нему видео танца длительностью 3-5 минут, в котором вы несколько раз повторяете комбинацию из простых движений (шаг, поворот головы, разворот и др.) и импровизируете со словами «желание» или «расширение». Также расскажите в письме, почему вы хотите участвовать в лаборатории. Не забудьте указать ваши имя и контакты для обратной связи (телефон, мессенджер и т.д.). Чтобы вам было комфортно, возьмите с собой удобную одежду и сменную обувь или нескользящие носки. В Малых сводах есть раздевалка с локерами и душ, где можно освежиться после практики. Фото: Вадим Штэйн Задача лаборатории — обнаружить желание внутри себя, а не в «зеркале другого», найти путь к телу изменяющемуся: действующему, готовому, нежному, сильному, расслабленному, широкому, звонкому, спокойному. Радость тут в том, что это желание существует, даже когда не артикулируется нами осознанно. Кроме соматических практик мы обратимся к текстам философов и антропологов ХХ—ХХI веков, таким как «Посткапиталистическое желание. Последние лекции» Марка Фишера, «Слушание» и «Как жить вместе» Ролана Барта, «Каннибальские метафизики» Эдуарду Вивейруш де Кастру и «Линии: краткая история» Тима Ингольда. — Мария Яшникова Чтобы научиться различать множество информационных потоков, которые влияют на наши решения, участники сосредоточат внимание на д",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-22"
+      "availability_checked_at": "2026-10-22",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "international-2026-11-22-74e7820a46",

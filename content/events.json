@@ -34859,7 +34859,13 @@
       "discovered_at": "2026-10-23",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-23"
+      "availability_checked_at": "2026-10-23",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "spb-2026-10-23-b04941bffd",
@@ -34883,7 +34889,13 @@
       "discovered_at": "2026-10-23",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-23"
+      "availability_checked_at": "2026-10-23",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-23-a7ad7db747",
@@ -35051,7 +35063,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [],
       "description": "",
       "url": "https://hermitagemuseum.org/what-s-on/afisha_mincult/?lng=ru",
@@ -35061,7 +35073,14 @@
       "discovered_at": "2026-10-23",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-23"
+      "availability_checked_at": "2026-10-23",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "spb-2026-10-23-b815c05256",
@@ -35162,7 +35181,13 @@
       "price_type": "unknown",
       "availability": "available",
       "availability_checked_at": "2026-10-23",
-      "start_date": "2026-10-23"
+      "start_date": "2026-10-23",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-23-47d7090e39",
@@ -35296,7 +35321,13 @@
       "discovered_at": "2026-10-23",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-23"
+      "availability_checked_at": "2026-10-23",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-23-b920f54838",
@@ -36472,7 +36503,13 @@
       "discovered_at": "2026-10-23",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-10-23"
+      "availability_checked_at": "2026-10-23",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "status": "rejected",
@@ -37708,7 +37745,13 @@
       "discovered_at": "2026-10-23",
       "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-10-23"
+      "availability_checked_at": "2026-10-23",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-25-777e29383c",
@@ -38884,7 +38927,13 @@
       "discovered_at": "2026-10-23",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-10-23"
+      "availability_checked_at": "2026-10-23",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "international-2026-10-26-fb027d72d2",
@@ -41194,7 +41243,13 @@
       "discovered_at": "2026-10-23",
       "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-10-23"
+      "availability_checked_at": "2026-10-23",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-29-d4e7f006a0",
@@ -41220,7 +41275,13 @@
       "discovered_at": "2026-10-23",
       "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-10-23"
+      "availability_checked_at": "2026-10-23",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-29-d28e597f20",
@@ -41391,7 +41452,13 @@
       "discovered_at": "2026-10-23",
       "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-10-23"
+      "availability_checked_at": "2026-10-23",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-29-6ae8537f08",
@@ -41417,7 +41484,13 @@
       "discovered_at": "2026-10-23",
       "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-10-23"
+      "availability_checked_at": "2026-10-23",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-29-658ce25c5e",
@@ -42122,7 +42195,13 @@
       "discovered_at": "2026-10-23",
       "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-10-23"
+      "availability_checked_at": "2026-10-23",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-29-b8d8f4eb96",
@@ -42187,7 +42266,13 @@
       "discovered_at": "2026-10-23",
       "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-10-23"
+      "availability_checked_at": "2026-10-23",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "international-2026-10-30-4f3004830e",
@@ -42325,7 +42410,13 @@
       "discovered_at": "2026-10-23",
       "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-10-23"
+      "availability_checked_at": "2026-10-23",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-30-5dc85f0a8c",
@@ -42351,7 +42442,13 @@
       "discovered_at": "2026-10-23",
       "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-10-23"
+      "availability_checked_at": "2026-10-23",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "russia-2026-10-30-0a586a1b5d",
@@ -42836,7 +42933,13 @@
       "discovered_at": "2026-10-23",
       "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-10-23"
+      "availability_checked_at": "2026-10-23",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "spb-2026-10-30-ae1d1312ba",
@@ -42919,7 +43022,7 @@
       "address": "Садовая ул., д. 18",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "лекция"
       ],
@@ -42931,7 +43034,14 @@
       "discovered_at": "2026-10-23",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-23"
+      "availability_checked_at": "2026-10-23",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-30-080ca37e62",
@@ -46412,7 +46522,13 @@
       "audience_text": "Грантовая программа «ГЭС-2» для художников, кураторов и исследователей: восьмой открытый набор | Эверт Перейти к содержимому Эверт Афиша Журнал Конкурсы Эверт Конкурсы Грантовая программа «ГЭС-2» для художников, кураторов и исследователей: восьмой открытый набор грант Грантовая программа «ГЭС-2» для художников, кураторов и исследователей: восьмой открытый набор Приём заявок до 15 ноября 2026 ↓ Тридцать участников получат по 50 000 рублей в месяц на руки в течение полугода — на текущий или новый проект без ограничений по теме. Исследователям в этом наборе предлагают изучать цифровую среду и влияние ИИ на культуру и восприятие пространства. О конкурсе Полгода ежемесячной поддержки на свой проект Дом культуры «ГЭС-2» открыл восьмой набор в грантовую программу для российских художников и творческих авторов, кураторов и исследователей визуальной культуры. Деньги выдаются на работу над уже начатыми проектами или на разработку новых: 50 000 рублей после вычета налогов каждый месяц в течение шести месяцев. Продлить грант нельзя. Восьмой грантовый период продлится с 1 февраля по 31 июля 2027 года, всего гранты получат 30 человек. Кому и на что Художникам и творческим авторам — в визуальном искусстве, звуке, музыке, танце, театре, перформансе и междисциплинарных практиках, без ограничений по теме и методу. Средства можно тратить на аренду мастерской или зала, материалы, поездки — или просто на свободное время для работы. Кураторам — на подготовку проектов и сопутствующих программ: сбор художественных и архивных материалов, перевод, расшифровку аудио и видео, поездки. Исследователям — тем, кто изучает цифровую среду и отношения человека, технологий и культурного пространства, в том числе влияние ИИ на социальные и культурные явления и на восприятие физического пространства. Грант покрывает поездки, редактуру и корректуру, доступ к архивам, перевод и расшифровку. Главные критерии отбора — убедительная идея и ясный план работы и расходов. Показывать или публиковать итоговый проект не обязательно, но по окончании периода нужен отчёт в свободной форме: что сделано и куда ушли деньги. Условия участвовать могут граждане и налоговые резиденты России от 18 лет; учебные работы в качестве проекта не принимаются; участники седьмого периода в этот набор не подают — повторная заявка возможна через один период, то есть с девятого набора; грант не открывает доступ к Центру художественного производства «Своды» и программе резиденций «ГЭС-2» — туда отбор отдельный. Для ориентира: в седьмом наборе жюри рассмотрело 199 заявок от художников, 60 — от исследователей и 44 — от кураторов. В жюри — команда фонда V–A–C, в том числе старший куратор Катерина Чучалина и программный директор Алиса Прудникова. Что нужно прислать Заявка подаётся через онлайн-анкету . К ней прикладываются: CV или портфолио в doc или pdf, до 8 Мб; краткое описание проекта (или проектов) в doc или pdf, до 1 Мб: концепция, техника или метод, объём работы, сроки, при необходимости — институции и специалисты, без которых проект не сделать; обоснование потребности в гранте и план расходов в doc; скан или фото подписанного согласия на участие в pdf или jpeg, до 1 Мб. Вопросы можно задать по адресу grant@v-a-c.org . График приём заявок — 12 октября — 15 ноября 2026 года; онлайн-интервью с кандидатами — 30 ноября — 13 декабря; публикация списка участников на сайте «ГЭС-2» — 14 декабря; заключение договоров — 15 декабря 2026 — 31 января 2027 года; начало выплат — февраль 2027 года. Для кого исследователи, кураторы, художники Что дают грант Как подать заявку Приём заявок до 15 ноября 2026 Перейти к конкурсу → Все конкурсы Афиша на почту Раз в неделю, без спама. Сайт Email Подписаться Согласен на обработку персональных данных и получение писем. Эверт Афиша, карта и журнал современного искусства. О проекте Институции Художники и кураторы Контакты Политика конфиденциальности",
       "price_type": "paid",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-23"
+      "availability_checked_at": "2026-10-23",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-11-15-b80985df2c",
@@ -46684,7 +46800,13 @@
       "audience_text": "Опен-колл выставки «Бумажная пыль» в ЦТИ «Фабрика» | Эверт Перейти к содержимому Эверт Афиша Журнал Конкурсы Эверт Конкурсы Опен-колл выставки «Бумажная пыль» в ЦТИ «Фабрика» конкурс Опен-колл выставки «Бумажная пыль» в ЦТИ «Фабрика» Приём заявок до 16 ноября 2026 ↓ Куратор Михаил Сидлин отбирает пятерых художников в выставку о бумаге — материале, с которого начиналась история бывшей фабрики «Октябрь». Работу нужно сделать на её бумаге или с её использованием; «Фабрика» даёт бумагу, мастерскую и до 15 000 рублей на проект. О конкурсе Работы из бумаги той самой фабрики «Бумажная пыль» — третья сессия проекта «Неистовый конец» в ЦТИ «Фабрика». Тема выбрана не случайно: когда-то здесь работала «Фабрика технических бумаг «Октябрь», и с бумаги началась история места. По замыслу куратора Михаила Сидлина, ею же история центра и закончится. В концепции бумага описана двояко. С одной стороны, это основа европейской культуры до цифровой эпохи — письма, книги, рисунка, фотографии и массовой печати. С другой — материал заметно более уязвимый, чем холст, дерево или металл: он горит, рвётся, размокает и истлевает, а значит, легко становится метафорой недолговечности. Как опорные точки для размышлений куратор предлагает три цитаты — из «Короля Ричарда II» Шекспира («Сделаем прах нашей бумагой»), «Псалма» Пауля Целана и «Мастера и Маргариты» («Рукописи не горят»). Выставку соберут как сеть связей. Половину участников — пятерых — выбирает куратор, ещё пятерых отберут по опен-коллу. Каждый из десяти предложит соучастника — другого художника, с которым можно выстроить любое сотрудничество в рамках проекта. Техника не ограничена: рисунок, письмо, вырезание, сжигание, папье-маше, печатная графика, коллаж, книга художника, объект, скульптура, инсталляция, в том числе сайт-специфическая, видео — при условии, что в кадре участвует бумага. Работать можно в пяти мастерских «Фабрики»: и как в производственной площадке, и как в месте показа. Что даёт «Фабрика» бумагу производства фабрики «Октябрь» как основу работы; мастерскую, если она нужна проекту; до 15 000 рублей на проект одного художника. После выставки работы остаются у авторов. Художники, уже участвовавшие в «Неистовом конце», подать заявку не могут. Что нужно прислать описание проекта на русском языке — до 1000 знаков — и эскиз; предварительный расчёт бюджета; портфолио и CV; кандидатуру соучастника. Заявки принимаются на почту mmovchey@gmail.com . График приём заявок — до 16 ноября 2026 года; объявление участников — 20 ноября 2026 года; готовность работ — до 20 января 2027 года; открытие выставки — 31 января 2027 года, в день рождения ЦТИ «Фабрика». Для кого художники Что дают выставка, производственный бюджет Как подать заявку Приём заявок до 16 ноября 2026 Перейти к конкурсу → Все конкурсы Афиша на почту Раз в неделю, без спама. Сайт Email Подписаться Согласен на обработку персональных данных и получение писем. Эверт Афиша, карта и журнал современного искусства. О проекте Институции Художники и кураторы Контакты Политика конфиденциальности",
       "price_type": "paid",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-23"
+      "availability_checked_at": "2026-10-23",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "russia-2026-11-16-38d02e8514",
@@ -46711,7 +46833,13 @@
       "audience_text": "Осенний опен-колл галереи «Тираж 1/1» — 2026 | Эверт Перейти к содержимому Эверт Афиша Журнал Конкурсы Эверт Конкурсы Осенний опен-колл галереи «Тираж 1/1» — 2026 конкурс Осенний опен-колл галереи «Тираж 1/1» — 2026 Приём заявок до 16 ноября 2026 ↓ Московская галерея современного искусства и коллекционного дизайна ищет авторов для своей выставочной программы: отобранным художникам обещают персональные и групповые выставки и продвижение на российских и зарубежных ярмарках. Медиум любой, заявки только по почте. О конкурсе Галерея ищет авторов в постоянную программу «Тираж 1/1» работает на стыке современного искусства и коллекционного дизайна и регулярно выставляется на ярмарках — Cosmoscow и |catalog|. Осенний опен-колл — способ найти художников, которые могут стать частью выставочной и исследовательской программы галереи надолго, а не на один проект. Тему и художественный язык галерея не задаёт. Смотреть будут на индивидуальный подход к материалу и форме, на свежее прочтение актуальных процессов и на цельность авторской позиции — главный критерий отбора здесь не отдельная удачная работа, а то, насколько практика художника совпадает с направлением галереи. Внимание к материалу, пространству и способу взаимодействия со зрителем для «Тиража» принципиально. Кто может участвовать художники старше 18 лет; любой медиум: живопись, скульптура, графика, фотография, видео, цифровое искусство, перформанс и другие; готовность к диалогу и долгому сотрудничеству с галереей. Что предлагает галерея показ работ в пространстве «Тиража 1/1»; участие в персональных и групповых выставках; продвижение через российские и зарубежные ярмарки. Что нужно прислать Письмо с темой «Open Call: Художник» на адрес art@tirageunique.ru — другие каналы галерея не рассматривает. В письмо вложить: биографию и CV; от одной до пяти работ — изображения в хорошем качестве или ссылки на видео; короткое описание каждой работы; artist statement. Для кого художники Что дают выставка, ярмарка Как подать заявку Приём заявок до 16 ноября 2026 Перейти к конкурсу → Все конкурсы Афиша на почту Раз в неделю, без спама. Сайт Email Подписаться Согласен на обработку персональных данных и получение писем. Эверт Афиша, карта и журнал современного искусства. О проекте Институции Художники и кураторы Контакты Политика конфиденциальности",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-23"
+      "availability_checked_at": "2026-10-23",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "international-2026-11-17-bfeafeaa9c",
@@ -47083,7 +47211,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "open-call"
       ],
@@ -47096,7 +47224,14 @@
       "audience_text": "Opportunity details | Winter Issue/ Seasonal Edition | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register Winter Issue/ Seasonal Edition Deadline: 22/11/2026 City: Tbilisi | Country: Georgia | Collect Art Report this? Description Opportunity FAQs Make a submission Contact curator This open call invites artists working in various media, including painting, drawing, collage, installation, illustration, photography, sculpture, ceramics, textiles, assemblage, fiber art, paper art, printmaking, 3D digital art, glass art, metalwork, and more. Open to artists worldwide, aged 18 and above. ​ There is no theme for this edition. ​ Each selected artist will receive a 2-6 page spread in both print and digital magazines, featuring a biography, statement, interview, website, and 2-10 selected artworks. All published artists will receive a complimentary digital issue of the magazine, which will be promoted on our website/social media. In addition, you will receive the link for ordering the printed magazine. Moreover, the curatorial team will select a few exceptional artists for inclusion in their upcoming book edition titled '101 Contemporary Artists and More...' ​ Requirements: Up to 12 photos, details of the work (title, medium, size, year, description is optional), brief biography, artist statement (min 100 words each), website, and social media links. ​​ Deadline: November 22, 2026 Application Fee: No Fee The participation fee is 35 EUR (in case of acceptance) Promotional Coverage: 1 dedicated post on the ‘NEWS’ page of our website 2 to 5 individual posts on Facebook and Instagram An announcement post featuring the magazine cover and the names of all published artists 3 group posts on Facebook and Instagram, each including one artwork from every featured artist Email outreach to our network of artists, gallerists, collectors, readers, and art professionals. Our Reach and Exposure: More than 1.2 million readers on Yumpu Over 682,274 readers on Scribd More than 150 printed copies sold per edition Each edition is now showcased at our newly opened Art Gallery in Tbilisi, Georgia, and is also featured in exhibitions and art events. To date, we have published 128 Seasonal and Special Editions of our magazine, featuring over 2,000 artists from around the world. Further Opportunities: Our curatorial team will also select several outstanding artists for inclusion in the upcoming book edition titled “101 Contemporary Artists and More…”. Selection is based on the overall vision for the book and available space. However, we aim to feature as many artists as possible from our previous magazine editions. Additionally, with each edition, our curators highlight a select group of artists for future exhibitions at our new 170 sq. m professionally curated art gallery in the prestigious centre of Tbilisi, Georgia. The gallery is dedicated to modern and contemporary art, providing a powerful platform for international exposure, including painting, drawing, photography, sculpture, ceramics, textile, installation, New media, mixed media works, etc. Make a submission Contact the curator Who is eligible for this opportunity? Open to artists worldwide, aged 18 and above. When is the deadline? November 22, 2026. How many works can I submit? Up to 12. How much does it cost? Application Fee: No Fee. The participation fee is 35 EUR (in case of acceptance). You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Advertisement Other opportunities Streams Exhibition Space2 would like to invite artists to share their unique perspective and passion for the local... The 17th Annual Pound Arts Open Exhibition Thank you for submitting your work to the 17th annual Pound Arts Open Exhibition. Please read... ArtGeminiPrize 2026 - Call For Artists 13th Edition ArtGeminiPrize 2026 x Fresh Art Fair Call For Artists - Painting Photography Sculpture More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-23"
+      "availability_checked_at": "2026-10-23",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-11-22-d87ea3610e",
@@ -47229,7 +47364,13 @@
       "discovered_at": "2026-10-23",
       "price_type": "unknown",
       "availability": "available",
-      "availability_checked_at": "2026-10-23"
+      "availability_checked_at": "2026-10-23",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-11-22-dc07f0121e",
@@ -47243,7 +47384,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "лаборатория"
       ],
@@ -47256,7 +47397,14 @@
       "audience_text": "› Малые своды Дата: 18 сен– 22 ноя 2026 Возраст: от 16 Тип: Лаборатория Место: Малые своды Возрастные ограничения 16+ Танцевально-перформативная лаборатория, совмещенная с анализом работ по современной философии и антропологии. Расписание  {\"points\":[{\"id\":4,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":6,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.4,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":5,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} T Основной вопрос, которым предлагает задаться ведущая Мария Яшникова: как научиться действовать через удовольствие, желание, а не из привычных регистров «нужно» или «можно»? Таким образом художница предлагает найти способы сосуществования с другими людьми в разных ситуациях и научиться осознанно влиять на различные сферы своей жизни — бытовую, рабочую, романтическую, социальную и др. Регистрация на программу закрыта. Чтобы вам было комфортно, возьмите с собой удобную одежду и сменную обувь или нескользящие носки. В Малых сводах есть раздевалка с локерами и душ, где можно освежиться после практики. Фото: Вадим Штэйн Задача лаборатории — обнаружить желание внутри себя, а не в «зеркале другого», найти путь к телу изменяющемуся: действующему, готовому, нежному, сильному, расслабленному, широкому, звонкому, спокойному. Радость тут в том, что это желание существует, даже когда не артикулируется нами осознанно. Кроме соматических практик мы обратимся к текстам философов и антропологов ХХ—ХХI веков, таким как «Посткапиталистическое желание. Последние лекции» Марка Фишера, «Слушание» и «Как жить вместе» Ролана Барта, «Каннибальские метафизики» Эдуарду Вивейруш де Кастру и «Линии: краткая история» Тима Ингольда. — Мария Яшникова Чтобы научиться различать множество информационных потоков, которые влияют на наши решения, участники сосредоточат внимание на движении и физических ощущениях: попробуют ощутить способность тела меняться, научиться принимать решения и действовать, опираясь на телесные сигналы. Для этого художница предлагает воспользоваться приемами из таких соматических практик, как метод Фельденкрайза, техника гага Охада Нахарина и другие. Нам предстоит исследовать, как можно коснуться другого телом, взглядом, голосом, мыслью. Будем танцевать, двигаться, работать с различными состояниями тела и с поэтическими образами",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-23"
+      "availability_checked_at": "2026-10-23",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-11-22-93b08d7246",
@@ -47280,7 +47428,13 @@
       "discovered_at": "2026-10-23",
       "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-10-23"
+      "availability_checked_at": "2026-10-23",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "international-2026-11-23-9a93613704",
@@ -47294,7 +47448,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "open-call"
       ],
@@ -47307,7 +47461,14 @@
       "audience_text": "Opportunity details | Reflection/ Special Edition | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register Reflection/ Special Edition Deadline: 23/11/2026 City: Tbilisi | Country: Georgia | Collect Art Report this? Description Opportunity FAQs Make a submission Contact curator Collect Art invites artists working across all mediums to share works that explore REFLECTION as a visual, emotional, philosophical, or symbolic experience. For this special edition, Collect Art invites artists working across all mediums to share works that explore Reflection as a visual, emotional, philosophical, or symbolic experience. Reflection is an exploration of how we see, perceive, and understand ourselves and the world around us. It can emerge through mirrors, memories, emotions, relationships, nature, or the passage of time. Beyond the physical image, reflection invites artists to question identity, examine inner landscapes, and reconsider familiar realities from new perspectives. Open to visual artists worldwide, aged 18 and above, working in various media, including painting, drawing, collage, installation, illustration, photography, sculpture, ceramics, textiles, assemblage, fibre art, paper art, printmaking, 3D digital art, glass art, metalwork, and more. ​ Each selected artist will receive a 2-6 page spread in print and digital magazines including a biography, statement, interview, website, and 2-10 featured artworks. All published artists will receive a complimentary digital issue of the magazine, which will be promoted on our website/social media. In addition, you will receive the link for ordering the printed magazine. Moreover, the curatorial team will select a few exceptional artists for inclusion in their upcoming book edition titled '101 Contemporary Artists and More...' ​ Requirements: Up to 12 photos, details of the work (title, medium, size, year), brief biography, artist statement (min 100 words each), website, and social media links. Deadline: November 23, 2026 Application Fee: No Fee The participation fee is 25 EUR (in case of acceptance) Promotional Coverage: 1 dedicated post on the ‘NEWS’ page of our website 2 to 5 individual posts on Facebook and Instagram An announcement post featuring the magazine cover and the names of all published artists 3 group posts on Facebook and Instagram, each including one artwork from every featured artist Email outreach to our network of artists, gallerists, collectors, readers, and art professionals. Our Reach and Exposure: More than 1.2 million readers on Yumpu Over 682,274 readers on Scribd More than 150 printed copies sold per edition Each edition is now showcased at our newly opened Art Gallery in Tbilisi, Georgia, and is also featured in exhibitions and art events. To date, we have published 128 Seasonal and Special Editions of our magazine, featuring over 2,000 artists from around the world. Further Opportunities: Our curatorial team will also select several outstanding artists for inclusion in the upcoming book edition titled “101 Contemporary Artists and More…”. Selection is based on the overall vision for the book and available space. However, we aim to feature as many artists as possible from our previous magazine editions. Additionally, with each edition, our curators highlight a select group of artists for future exhibitions at our new 170 sq. m professionally curated art gallery in the prestigious centre of Tbilisi, Georgia. The gallery is dedicated to modern and contemporary art, providing a powerful platform for international exposure, including painting, drawing, photography, sculpture, ceramics, textile, installation, New media, mixed media works, etc. Make a submission Contact the curator Who is eligible for this opportunity? Open to artists worldwide, aged 18 and above, working in various media, including painting, drawing, collage, installation, illustration, photography, sculpture, ceramics, textiles, assemblage, fibre art, paper art, printmaking, 3D digital art, glass art, metalwork, and more.​ When is the deadline? November 23, 2026. How many works can I submit? Up to 12. How much does it cost? Application Fee: No Fee The participation fee is 25 EUR (in case of acceptance) You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Advertisement Other opportunities Streams Exhibition Space2 would like to invite artists to share their unique perspective and passion for the local... The 17th Annual Pound Arts Open Exhibition Thank you for submitting your work to the 17th annual Pound Arts Open Exhibition. Please read... ArtGeminiPrize 2026 - Call For Artists 13th Edition ArtGeminiPrize 2026 x Fresh Art Fair Call For Artists - Painting Photography Sculpture More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-23"
+      "availability_checked_at": "2026-10-23",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "international-2026-11-25-ef39cd57a5",
@@ -47395,7 +47556,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "open-call"
       ],
@@ -47408,7 +47569,14 @@
       "audience_text": "Opportunity details | Darkness | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register Darkness Deadline: 27/11/2026 City: Tbilisi | Country: Georgia | Collect Art Report this? Description Opportunity FAQs Make a submission Contact curator For this special edition, Collect Art invites artists to explore darkness in its many forms—from the psychological and emotional to the physical, symbolic, and poetic. Darkness may speak of solitude, hidden memories, fear, dreams, the unknown, night, silence, or the unseen dimensions of existence. Darkness is more than the absence of light. It is a space of mystery, introspection, uncertainty, transformation, and imagination. It can conceal, protect, reveal, or invite us to see beyond what is immediately visible. We welcome artworks that interpret darkness through personal experience, atmosphere, symbolism, contrast, or abstraction, offering viewers an opportunity to discover what emerges when light becomes limited and perception begins to change. What can be found in the dark—and what becomes visible only when we stop looking for light? Open to artists worldwide, aged 18 and above, working in various media, including painting, drawing, collage, installation, illustration, photography, sculpture, ceramics, textiles, assemblage, fiber art, paper art, printmaking, 3D digital art, glass art, metalwork, and more.​. Selected artists will have the privilege of being showcased in a month-long online exhibition and will receive a 2-6 page spread in both print and digital magazines. This feature will encompass a biography, artist statement, interview, website link, and 2-10 featured artworks. Moreover, all published artists will receive a complimentary digital issue of the magazine, which will be actively promoted on our website and social media platforms. Additionally, artists will be provided with a link to order the printed version of the magazine. The curatorial team will select a few exceptional artists for inclusion in their upcoming book edition titled '101 Contemporary Artists and More...' ​ Requirements: Up to 12 photos; work details (title, medium, size, year; description optional); brief biography; artist statement (min 100 words each); website; and social media links. Deadline: November 27, 2026 Application Fee: No Fee The participation fee is 55 EUR (in case of acceptance) Promotional Coverage: 1 dedicated post on the ‘NEWS’ page of our website 2 to 5 individual posts on Facebook and Instagram An announcement post featuring the magazine cover and the names of all published artists 3 group posts on Facebook and Instagram, each including one artwork from every featured artist Email outreach to our network of artists, gallerists, collectors, readers, and art professionals. Our Reach and Exposure: More than 1.2 million readers on Yumpu Over 682,274 readers on Scribd More than 150 printed copies sold per edition Each edition is now showcased at our newly opened Art Gallery in Tbilisi, Georgia, and is also featured in exhibitions and art events. To date, we have published 128 Seasonal and Special Editions of our magazine, featuring over 2,000 artists from around the world. Further Opportunities: Our curatorial team will also select several outstanding artists for inclusion in the upcoming book edition titled “101 Contemporary Artists and More…”. Selection is based on the overall vision for the book and available space. However, we aim to feature as many artists as possible from our previous magazine editions. Additionally, with each edition, our curators highlight a select group of artists for future exhibitions at our new 170 sq. m professionally curated art gallery in the prestigious centre of Tbilisi, Georgia. The gallery is dedicated to modern and contemporary art, providing a powerful platform for international exposure, including painting, drawing, photography, sculpture, ceramics, textile, installation, New media, mixed media works, etc. Make a submission Contact the curator Who is eligible for this opportunity? Open to artists worldwide, aged 18 and above, working in various media, including painting, drawing, collage, installation, illustration, photography, sculpture, ceramics, textiles, assemblage, fiber art, paper art, printmaking, 3D digital art, glass art, metalwork, and more.​. When is the deadline? November 27, 2026. How many works can I submit? Up to 12. How much does it cost? Application Fee: No Fee The participation fee is 55 EUR (in case of acceptance) You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Advertisement Other opportunities Streams Exhibition Space2 would like to invite artists to share their unique perspective and passion for the local... The 17th Annual Pound Arts Open Exhibition Thank you for submitting your work to the 17th annual Pound Arts Open Exhibition. Please read... ArtGeminiPrize 2026 - Call For Artists 13th Edition ArtGeminiPrize 2026 x Fresh Art Fair Call For Artists - Painting Photography Sculpture More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-23"
+      "availability_checked_at": "2026-10-23",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "international-2026-11-30-9a278ceca1",

@@ -34859,7 +34859,13 @@
       "discovered_at": "2026-10-23",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-23"
+      "availability_checked_at": "2026-10-23",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "spb-2026-10-23-fc12489fba",
@@ -34920,7 +34926,13 @@
       "price_type": "unknown",
       "availability": "unknown",
       "availability_checked_at": "2026-10-23",
-      "start_date": "2026-10-23"
+      "start_date": "2026-10-23",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "spb-2026-10-23-b04941bffd",
@@ -34978,7 +34990,13 @@
       "discovered_at": "2026-10-23",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-23"
+      "availability_checked_at": "2026-10-23",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "spb-2026-10-23-3b8aa85314",
@@ -35002,7 +35020,13 @@
       "discovered_at": "2026-10-23",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-23"
+      "availability_checked_at": "2026-10-23",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-23-a7ad7db747",
@@ -35215,7 +35239,13 @@
       "discovered_at": "2026-10-23",
       "price_type": "free",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-23"
+      "availability_checked_at": "2026-10-23",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "spb-2026-10-23-b815c05256",
@@ -35280,7 +35310,13 @@
       "price_type": "unknown",
       "availability": "unknown",
       "availability_checked_at": "2026-10-23",
-      "start_date": "2026-10-23"
+      "start_date": "2026-10-23",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-23-633c02f875",
@@ -35342,7 +35378,13 @@
       "discovered_at": "2026-10-23",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-23"
+      "availability_checked_at": "2026-10-23",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-23-e8ca70211f",
@@ -35404,7 +35446,13 @@
       "price_type": "free",
       "availability": "available",
       "availability_checked_at": "2026-10-23",
-      "start_date": "2026-10-23"
+      "start_date": "2026-10-23",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "spb-2026-10-23-6159cca79f",
@@ -35430,7 +35478,13 @@
       "discovered_at": "2026-10-23",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-23"
+      "availability_checked_at": "2026-10-23",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-23-47d7090e39",
@@ -35493,7 +35547,13 @@
       "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-10-23",
-      "start_date": "2026-10-23"
+      "start_date": "2026-10-23",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-23-2391905ba1",
@@ -35841,7 +35901,13 @@
       "discovered_at": "2026-10-23",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-23"
+      "availability_checked_at": "2026-10-23",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-23-d5623dd3d1",
@@ -39749,7 +39815,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "встреча"
       ],
@@ -39761,7 +39827,14 @@
       "discovered_at": "2026-10-23",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-23"
+      "availability_checked_at": "2026-10-23",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-26-3c94697fb2",
@@ -45290,7 +45363,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "фестиваль"
       ],
@@ -45302,7 +45375,14 @@
       "discovered_at": "2026-10-23",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-23"
+      "availability_checked_at": "2026-10-23",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "international-2026-11-04-8b7a0eb137",
@@ -48321,7 +48401,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "open-call"
       ],
@@ -48334,7 +48414,14 @@
       "audience_text": "Opportunity details | 2027 | FIRST PLINTH: PUBLIC ART AWARD | Royal Society of Sculptors | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register 2027 | FIRST PLINTH: PUBLIC ART AWARD | Royal Society of Sculptors Deadline: 12/01/2027 City: London | Region: London | Country: United Kingdom | Eilidh McCormick Paid opportunity Report this? Description Opportunity FAQs Make a submission Contact curator First Plinth: Public Art Award 2027 | Offering sculptors an opportunity to extend their practice into competing for public art commissions | winning sculptor is awarded £20,000 to produce a large-scale sculpture | The award theme is RENEWAL ABOUT THE AWARD This biennial award is open to artists working in three dimensions, offering a unique opportunity to establish a track record in the competitive field of public art. Five artists will be shortlisted as finalists for the award and invited to develop a maquette to be presented on a plinth with a surface area of 60 × 60 cm, alongside a fully developed proposal in digital format. This should include supporting documentation, such as costings, as well as drawings or rendered photographs illustrating the proposed work at full scale. Each finalist will receive £1000 to support the development and production of these materials. Once the proposals are complete, finalists will be interviewed by the judging panel on the afternoon of Saturday, 24 April 2027. The winning artist will be announced at an event that evening. The winner will receive £20,000 towards the production of a large-scale sculpture. In addition to financial support, the award provides access to a team of experienced professionals, including engineers, consultants and artists, who will offer mentoring and technical guidance throughout the fabrication process. This support is designed to ensure the successful realisation of the winning concept to the exacting standards required for installation in a public setting. The winning sculpture will be exhibited on the sculpture terrace at Dora House in 2028 before moving to a second exhibition site. Previous locations have included Queen Elizabeth Olympic Park and The Art House in Wakefield, known as the ‘City of Sculpture’. During the same period, the winning artist will also have the opportunity to present a supporting exhibition in the galleries of the Royal Society of Sculptors, alongside one other artist of their choice, subject to invitation. As part of the award, the winning artist will be expected to participate in a film documenting the production of their sculpture and take part in an In Conversation event during the exhibition. An arts professional will also write an accompanying essay to contextualise and support the exhibition. This award is generously supported by the Mirisch & Lebenheim Charitable Foundation. THE BRIEF First Plinth: Public Art Award is designed to closely replicate the public art commissioning procedure. The award’s aim is to challenge, yet support the sculptor through this process. Like most public art commissions, there is a theme, and therefore value will be attributed to a well-considered approach to the theme of RENEWAL. Open to interpretation and approach, we hope this theme encourages applicants to push the boundaries of their practice. ABOUT THE SCULPTURE TERRACE AT DORA HOUSE The sculpture terrace is part of the Royal Society of Sculptors site at 108 Old Brompton Road. Dimensions: approximately 6 x 3.5m | Work will sit directly upon the ground | Weight bearing: approximately 2000 kg | Foundations: existing concrete foundation 2.5 x 2.5 m to a depth of 20cm | Covering: gravel | Lighting: floodlit at night; external power socket for additional electricity/lighting THE JUDGES Emma M. Price | curator and producer Emma M. Price is a UK-based public art curator and producer with more than twenty-five years’ experience working strategically across the public and private sectors on the commissioning of public art. In 2016, she co-founded Studio Response, a leading arts organisation that invites artists, sculptors, designers, makers and architects to develop new work in public spaces. She is an advocate and enabler of artist-led ideas and engagement projects that support community campaigns and placemaking initiatives in both urban and rural environments. Price holds a BA (Hons) in Photography and a postgraduate diploma in Design Management. She is an Honorary Fellow of the Royal Society of Architects in Wales (Hon. RSAW) and a Fellow of the Royal Society of Arts (FRSA). Studio Response is the recipient of the 2023 Dewi-Prys Thomas Award for Welsh design excellence and sustainable community regeneration. Bill Price | Director WSP Bill Price is a Director at global professional services firm WSP and a structural engineer by background. He worked on the Shard at London Bridge from the earliest stages of design development as well as the recently completed Paddington Square. He is now working on several masterplans involving transport infrastructure, sports facilities and regeneration projects. Over the years, Bill has also worked with many artists and sculptors, assisting with engineering design, fabrication, safety, transportation and site installation. Bill has been a Trustee of the Royal Society of Sculptors for several years and provides support to the board as well as artists if required. In addition, Bill is Chair of the Rose Theatre in Kingston, supporting original drama and family shows as well as a wide range of youth and community engagement. Hannele Tilles | Curator Hannele has a long-standing association with art, particularly sculpture, and has served in juries for Public Art Awards at the Royal Society of Sculptors. She was also a jury member and organiser for the Society’s SKULPTUR project, an exhibition of work from all five Nordic countries. She has helped foster a relationship between the RSS and the Association of Finnish Sculptors. Hannele has also been a jury member for the biennial Finnish Art Prize Below Zero since its inception in 2017 as well as a triennial art prize at Galicia Jewish Museum in Krakow, Poland. She has curated photographic exhibitions in her native Finland and has been involved with the commissioning of numerous sculptures in the UK. Laura Ford | President of the Royal Society of Sculptors Laura Ford studied at Bath Academy of Art between 1978-82, including a period at the Cooper Union School of Art, New York. Then completed an MA at Chelsea School of art 1982-83. Her work is represented in many public collections, including Tate, the Victoria and Albert Museum, and the Government Art Collection. Laura's sculptures are faithful representations of fantasy with sometimes bittersweet and menacing qualities mixed with tenderness. She uses humour and an acute observation of the human condition to engage with wider social and political issues. Her work is intensely crafted but playful, and she has used a range of media to realise her work including, drawing, painting, performance, set design and has increasingly taken on the challenge of public art alongside museum and gallery shows. ENTRY FEE Early bird fee applies to applications made before 12 pm UK time on Tuesday 17 November Early Bird | Non RSS members - £17 Early Bird | RSS members - £12 Fee for applications made after 12pm UK time on Tuesday 17 November Non RSS members - £34 RSS members - £24 **** Please note that the application fee is non-refundable **** ENTRY PROCESS To apply, please prepare the following: A CV of no more than two pages long - required A brief description of your present practice (100 words) - required Up to 10 images of recent work - required A text proposal for an artwork relating to the theme of RENEWAL (500 words) - required Up to 3 images that support your idea outline - optional Click the 'Make a submission' tab at the top of this page to apply. KEY DATES The closing deadline for applications | 5 PM , 12 JANUARY 2027 Notification of all results will be sent by email week commencing | 8 FEBRUARY 2027 Unfortunately, due to the number of applications we receive, feedback will not be given at this stage. Shortlisted artists present Maquettes to Jury | AFTERNOON OF SATURDAY 24 APRIL 2027 Winner announced | EVENING OF SATURDAY 24 APRIL 2027 ELIGIBILITY Applications are welcomed from artists of any age and nationality working in any style or media who are yet to be recognised as practitioners in public art and have not yet won an open (or closed) competition for a commission to create a work for a public space above the value of £20,000. If you are unsure if you would be eligible due to previous presentations of your work in public spaces, please contact us. For those who have received formal training, the expectation is that you will have a minimum of three years post-graduate experience. Shortlisted artists will be required to attend an interview on Saturday, 24 April 2027 (also International Sculpture Day), to present a maquette, bound supporting documents, drawings or rendered photographs of the full-scale work, and up to ten images of existing work will need to be presented at this stage (4 copies for the 4 judges). Shortlisted artists will be expected to be present on the evening of 24 April 2027 for the announcement of the winner of First Plinth 2027. RULES & GUIDELINES By submitting an application, the entrant promises that all of the information comprised in the application is correct. The entrant also promises to comply with these rules and any other award requirements specified by the Royal Society of Sculptors (whether on its website or otherwise) and the Society reserves its right to exclude any entry which in its opinion does not comply. All applications must be made using the online form. No hard copy applications will be accepted. Applications must be received by the closing date specified. The proposals submitted must be entirely the entrant’s original idea and creation and they must not infringe someone else’s copyright or other intellectual property rights. The submission must be lawful; it must not be offensive, obscene, racist, discriminatory, or otherwise objectionable, and it must not contain any form of advertising. Proposals must also not be hazardous in any way, and a thorough risk assessment must be supplied by the artist if the initial proposal is shortlisted. Entrants grant the Royal Society of Sculptors the unrestricted right (without royalty) to reproduce images of submitted artworks in any publication in connection with the First Plinth award, be it online, printed or otherwise disseminated. The Judge's decision is final. If the Royal Society of Sculptors is unable to contact any shortlisted artist or winners via the email address supplied by the entrant, the shortlist position/ award lapses, and the Royal Society of Sculptors reserves the right to select alternative winners. Submission fees The following submission fees apply to this opportunity. Early Bird | Non RSS members - 17.00 GBP Early Bird | RSS members - 12.00 GBP Non RSS members - 34.00 GBP RSS members - 24.00 GBP The appropriate fee will be payable using a debit or credit card after the first submission has been completed. If the submission fee allows you to submit more than once, you will be able to make further submissions after the first. Contact the curator if you have any questions about the opportunity or the submission fee, or email help@curatorspace.com if you have any questions about the payment process. Make a submission Contact the curator Who is eligible for this opportunity? This biennial award is open to any artist working in three dimensions. You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-23"
+      "availability_checked_at": "2026-10-23",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     }
   ]
 }

@@ -653,7 +653,7 @@
       "start_date": "2026-08-26",
       "end_date": "2026-11-01",
       "price_type": "unknown",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-23",
       "social_title": "",
       "social_priority": null,
@@ -32379,7 +32379,7 @@
       "title": "Дамир Муратов Неполное собрание сочинений",
       "venue": "ЦСИ Винзавод",
       "address": "",
-      "price": 0,
+      "price": 12000,
       "price_text": "12000 ₽",
       "registration": false,
       "categories": [
@@ -32393,7 +32393,7 @@
       "discovered_at": "2026-10-20",
       "start_date": "2026-10-21",
       "end_date": "2026-12-05",
-      "price_type": "free",
+      "price_type": "paid",
       "availability": "available",
       "availability_checked_at": "2026-10-23",
       "editor_overrides": {
@@ -32523,7 +32523,7 @@
       "title": "Коллективная выставка Громкая тишина касания",
       "venue": "ЦСИ Винзавод",
       "address": "",
-      "price": 0,
+      "price": 12000,
       "price_text": "1800 ₽",
       "registration": false,
       "categories": [
@@ -32537,7 +32537,7 @@
       "discovered_at": "2026-10-20",
       "start_date": "2026-10-21",
       "end_date": "2026-11-01",
-      "price_type": "free",
+      "price_type": "paid",
       "availability": "available",
       "availability_checked_at": "2026-10-23",
       "editor_overrides": {
@@ -34836,6 +34836,32 @@
       }
     },
     {
+      "id": "spb-2026-10-23-982c12ab04",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-23",
+      "time": "",
+      "title": "«Доброселфи» - запечатлеть хороший поступок",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "фестиваль"
+      ],
+      "description": "Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами! Также вы можете отправить статью в социальной сети или мессенджере Если у вас есть чем поделиться с нашими читателями, вы можете предложить свою статью.",
+      "url": "https://spbcult.ru/news/anonsy/dobroselfi-zapechatlet-khoroshiy-postupok/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-23",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-23"
+    },
+    {
       "id": "spb-2026-10-23-fc12489fba",
       "status": "new",
       "kind": "event",
@@ -34865,7 +34891,36 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
+    },
+    {
+      "id": "spb-2026-10-23-d89bec485a",
+      "status": "new",
+      "kind": "exhibition",
+      "city": "spb",
+      "date": "2026-10-23",
+      "time": "",
+      "title": "В Константиновском дворце попадут в ритм природы",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "выставка"
+      ],
+      "description": "Константиновский дворец продолжает знакомить гостей с творчеством известных петербургских художников Сергея и Натальи Филипповых. Вторая персональная выставка: «В ритме природы: осень и зима в живописи академического реализма» проходит в рамках проекта «Современные художники России» и работает с 17 октября.",
+      "url": "https://spbcult.ru/news/anonsy/v-konstantinovskom-dvortse-popadut-v-ritm-prirody/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-23",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-23",
+      "start_date": "2026-10-23"
     },
     {
       "id": "spb-2026-10-23-b04941bffd",
@@ -34895,7 +34950,59 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
+    },
+    {
+      "id": "spb-2026-10-23-0dade91c36",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-23",
+      "time": "",
+      "title": "В Театре музкомедии представят рок-мюзикл «Два капитана» по песням «Агаты Кристи»",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "фестиваль"
+      ],
+      "description": "Театр музыкальной комедии и музыкально-драматический театр «Синяя птица» готовятся к премьере рок-мюзикла «Два капитана» по песням Вадима Самойлова – его можно будет посмотреть 24 и 25 октября.",
+      "url": "https://spbcult.ru/news/anonsy/v-teatre-muzkomedii-predstavyat-rok-myuzikl-dva-kapitana-po-pesnyam-agaty-kristi/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-23",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-23"
+    },
+    {
+      "id": "spb-2026-10-23-3b8aa85314",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-23",
+      "time": "",
+      "title": "В галерее «Сарай» ощутят «Эгрегор»",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [],
+      "description": "23 октября в галерее «Сарай» Музея Анны Ахматовой представят нового участника проекта «Было \\ Не Было» – петербургского художника (S_S) /Сергея Савельева. В своих работах художник обращается к метафизике и области подсознательного. Создает мрачные фантасмагорические сцены, населенные персонажами, заимствованными из мировой истории, сказок, антиутопий и научной фантастики.",
+      "url": "https://spbcult.ru/news/anonsy/v-galeree-saray-oshchutyat-egregor/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-23",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-23"
     },
     {
       "id": "moscow-2026-10-23-a7ad7db747",
@@ -35080,7 +35187,35 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
+    },
+    {
+      "id": "spb-2026-10-23-081b8f14b3",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-23",
+      "time": "",
+      "title": "На детском кинофестивале покажут работы из Беларуси, Казахстана, Италии и Латвии",
+      "venue": "",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": true,
+      "categories": [
+        "фестиваль"
+      ],
+      "description": "Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами! Также вы можете отправить статью в социальной сети или мессенджере Если у вас есть чем поделиться с нашими читателями, вы можете предложить свою статью.",
+      "url": "https://spbcult.ru/news/anonsy/na-detskom-kinofestivale-pokazhut-raboty-iz-belarusi-kazakhstana-italii-i-latvii/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-23",
+      "price_type": "free",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-23"
     },
     {
       "id": "spb-2026-10-23-b815c05256",
@@ -35121,6 +35256,33 @@
       }
     },
     {
+      "id": "spb-2026-10-23-deba2da234",
+      "status": "new",
+      "kind": "exhibition",
+      "city": "spb",
+      "date": "2026-10-23",
+      "time": "",
+      "title": "Новые выставки на Большой Морской, 38",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "выставка"
+      ],
+      "description": "27 и 28 октября в выставочных залах Санкт-Петебургского С оюза художников открываются сразу несколько новых экспозиций. В 16:00 в зале «Трапеция» открывается выставка «Здесь рождаются художники» , приуроченная к 40-летию Санкт-Петербургской детской художественной школы № 17. Школа впервые открыла свои двери для учащихся 1 сентября 1986 года.",
+      "url": "https://spbcult.ru/news/anonsy/novye-vystavki-na-bolshoy-morskoy-38/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-23",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-23",
+      "start_date": "2026-10-23"
+    },
+    {
       "id": "moscow-2026-10-23-633c02f875",
       "status": "approved",
       "kind": "event",
@@ -35157,6 +35319,32 @@
       }
     },
     {
+      "id": "spb-2026-10-23-e81465ab30",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-23",
+      "time": "",
+      "title": "Пушкин вернётся на Мойку, 12",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "фестиваль"
+      ],
+      "description": "На Мойку, 12 возвращается знаменитый портрет 1827 года, на котором Пушкин изображен en trois quarts (в три четверти), сидящим в халате в непринужденной позе. После окончания выставки в Русском музее картина кисти Василия Тропинина займёт свое законное место в экспозиции музея «Пушкин. Это произведение находится в собрании Всероссийского музея А.",
+      "url": "https://spbcult.ru/news/anonsy/pushkin-vernyetsya-na-moyku-12/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-23",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-23"
+    },
+    {
       "id": "moscow-2026-10-23-e8ca70211f",
       "status": "new",
       "kind": "exhibition",
@@ -35187,7 +35375,62 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
+    },
+    {
+      "id": "moscow-2026-10-23-5f1b7ea955",
+      "status": "new",
+      "kind": "exhibition",
+      "city": "moscow",
+      "date": "2026-10-23",
+      "time": "",
+      "title": "Сегодня в Artplay",
+      "venue": "ARTPLAY",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": true,
+      "categories": [
+        "выставка"
+      ],
+      "description": "Продолжая использовать этот сайт, вы соглашаетесь с политикой в области обработки и защиты персональных данных",
+      "url": "https://artplay.ru/events/market",
+      "source": "ARTPLAY — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-23",
+      "price_type": "free",
+      "availability": "available",
+      "availability_checked_at": "2026-10-23",
+      "start_date": "2026-10-23"
+    },
+    {
+      "id": "spb-2026-10-23-6159cca79f",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-23",
+      "time": "",
+      "title": "Фестиваль «Мир классического романса» пройдет в Петербурге и Донецке",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "«Вместе с командой мы с удовольствием наблюдаем, как развивается история нашего фестиваля, как он «обрастает» традициями, единомышленниками, поклонниками. Три года назад мы выбрали жанр романса как наиболее демократичный, потенциально интересный для широкого круга слушателей, и сегодня можем с уверенностью сказать, что в выборе не ошиблись!",
+      "url": "https://spbcult.ru/news/anonsy/festival-mir-klassicheskogo-romansa-proydet-v-peterburge-i-donetske/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-23",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-23"
     },
     {
       "id": "moscow-2026-10-23-47d7090e39",
@@ -35224,6 +35467,33 @@
       "editor_overrides": {
         "registration": false
       }
+    },
+    {
+      "id": "spb-2026-10-23-a523e4645c",
+      "status": "new",
+      "kind": "exhibition",
+      "city": "spb",
+      "date": "2026-10-23",
+      "time": "",
+      "title": "Юбилейная выставка Александры Жирмунской открывается в Петребурге",
+      "venue": "",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": false,
+      "categories": [
+        "выставка"
+      ],
+      "description": "Математик по первому образованию, на протяжении уже сорока пяти лет Александра Викторовна преподаёт живопись, являясь одним из самых опытных учителей предмета в художественном училище имени Рериха. Её студенты регулярно занимают призовые места на конкурсах, а выпускники успешно поступают в ведущие художественные вузы города.",
+      "url": "https://spbcult.ru/news/anonsy/yubileynaya-vystavka-aleksandry-zhirmunskoy-otkryvaetsya-v-petreburge/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-23",
+      "price_type": "free",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-23",
+      "start_date": "2026-10-23"
     },
     {
       "id": "moscow-2026-10-23-2391905ba1",
@@ -35327,7 +35597,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-23-b920f54838",
@@ -35546,6 +35818,30 @@
       "instagram_include": false,
       "telegram_include": false,
       "sheet_synced_description": ""
+    },
+    {
+      "id": "spb-2026-10-23-ed1937b39e",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-23",
+      "time": "17:00",
+      "title": "«Балтийский дом» устроит юбилейный вечер по случаю 90-летия",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [],
+      "description": "26 октября театру-фестивалю «Балтийский дом» исполнится 90 лет. В праздничный вечер коллектив представит премьерный спектакль юбилейного сезона — «Собаку на сене» в постановке Игоря Коняева. 26 октября театру-фестивалю «Балтийский дом» исполнится 90 лет.",
+      "url": "https://spbcult.ru/news/anonsy/-baltiyskiy-dom-ustroit-yubileynyy-vecher-po-sluchayu-90-letiya/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-23",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-23"
     },
     {
       "id": "moscow-2026-10-23-d5623dd3d1",
@@ -37287,7 +37583,7 @@
       "editor_note": "",
       "instagram_include": false,
       "price_type": "unknown",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-23",
       "reviewed_at": "2026-10-02",
       "sheet_synced_description": "Исполнители : Ансамбль «Без слов» / «SinPalabras»"
@@ -37751,7 +38047,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-25-777e29383c",
@@ -38933,7 +39231,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-10-26-fb027d72d2",
@@ -39355,7 +39655,7 @@
       "editor_note": "",
       "instagram_include": false,
       "price_type": "unknown",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-23",
       "reviewed_at": "2026-10-02",
       "sheet_synced_description": "Режиссер — Д. Франчолини В главных ролях: Тото, В. де Сика, С. Пампанини, Ф. Фабрици, Д. Ралли Автор и ведущий цикла — киновед Ф. Ю. Коркин . Дата начала регистрации — 19 октября"
@@ -39436,6 +39736,32 @@
       "editor_overrides": {
         "registration": false
       }
+    },
+    {
+      "id": "spb-2026-10-26-e3e462efc0",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-26",
+      "time": "19:00",
+      "title": "Встреча проходит",
+      "venue": "Библиотека Маяковского",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "встреча"
+      ],
+      "description": "Вместо человека: кукла в театре Режиссерский театр XX века в период своего рождения и становления неизменно задавался вопросом об актере — его способе существования и воплощения на сцене. Вместе с новаторскими актерскими системами возникали и утопические поиски другого — неодушевленного — актера. От идей Гордона Крэга о «сверхмарионетке» до «музея восприятия» Хайнера Гёббельса – режиссеры неизменно используют новых неживых исполнителей для своих драматических и междисциплинарных опытов. Как действуют куклы и предметы в таких спектаклях и как может быть устроен театра без актеров – поговорим на",
+      "url": "https://tsentralnaya-events.timepad.ru/event/4192427/",
+      "source": "Библиотека Маяковского — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-10-23",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-23"
     },
     {
       "id": "moscow-2026-10-26-3c94697fb2",
@@ -41249,7 +41575,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-29-d4e7f006a0",
@@ -41281,7 +41609,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-29-d28e597f20",
@@ -41458,7 +41788,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-29-6ae8537f08",
@@ -41490,7 +41822,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-29-658ce25c5e",
@@ -41952,7 +42286,7 @@
       "editor_note": "",
       "instagram_include": false,
       "price_type": "unknown",
-      "availability": "unknown",
+      "availability": "available",
       "availability_checked_at": "2026-10-23",
       "reviewed_at": "2026-10-02",
       "sheet_synced_description": "Руководитель и аранжировщик — композитор И. Вакуленко. Исполнители — «CITY MUSIC BAND»."
@@ -42201,7 +42535,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-29-b8d8f4eb96",
@@ -42272,7 +42608,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-10-30-4f3004830e",
@@ -42416,7 +42754,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-30-5dc85f0a8c",
@@ -42448,7 +42788,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "russia-2026-10-30-0a586a1b5d",
@@ -42939,7 +43281,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-10-30-ae1d1312ba",
@@ -42971,7 +43315,7 @@
       "editor_note": "",
       "instagram_include": false,
       "price_type": "unknown",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-23",
       "reviewed_at": "2026-10-02",
       "sheet_synced_description": "Вы узнаете их с первых нот. Они звучат в моменты триумфа, любви, опасности и тихой грусти. Это музыка, которая стала не просто фоном, а главным героем культовых фильмов."
@@ -44935,6 +45279,32 @@
       "reviewed_at": ""
     },
     {
+      "id": "spb-2026-11-03-8b9adc409b",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-03",
+      "time": "18:30",
+      "title": "Название требует проверки",
+      "venue": "Открытая гостиная",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "фестиваль"
+      ],
+      "description": "Приходите обсуждать современные театральные постановки и делиться впечатлениями от фестиваля. Мероприятие проводится полностью на французском языке и подходит для тех, у кого уровень от В1. Ведущая клуба — Лариса Шакунова, преподавательница французского языка, выпускница Восточного факультета Санкт-Петербургского государственного университета (DALF C1), авторка подкаста о языках и культуре «хо-ро-шо!» («ÇA VA»)",
+      "url": "https://otkrytaya-gostinaya.timepad.ru/event/4266724/",
+      "source": "Открытая гостиная — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source, invalid_title_from_description",
+      "discovered_at": "2026-10-23",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-23"
+    },
+    {
       "id": "international-2026-11-04-8b7a0eb137",
       "status": "check",
       "kind": "open_call",
@@ -46105,7 +46475,9 @@
       "editor_overrides": {
         "telegram_include": false,
         "instagram_include": false
-      }
+      },
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-12-05c67d7f07",
@@ -46528,7 +46900,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-15-b80985df2c",
@@ -46806,7 +47180,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "russia-2026-11-16-38d02e8514",
@@ -46839,7 +47215,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-11-17-bfeafeaa9c",
@@ -47231,7 +47609,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-22-d87ea3610e",
@@ -47370,7 +47750,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-22-dc07f0121e",
@@ -47404,7 +47786,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-22-93b08d7246",
@@ -47434,7 +47818,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-11-23-9a93613704",
@@ -47468,7 +47854,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-11-25-ef39cd57a5",
@@ -47576,7 +47964,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-11-30-9a278ceca1",
@@ -47918,6 +48308,33 @@
       "editor_overrides": {
         "registration": false
       }
+    },
+    {
+      "id": "international-2027-01-12-fdba99f20b",
+      "status": "check",
+      "kind": "open_call",
+      "city": "international",
+      "date": "2027-01-12",
+      "time": "",
+      "title": "2027 | FIRST PLINTH: PUBLIC ART AWARD | Royal Society of Sculptors",
+      "venue": "CuratorSpace",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "open-call"
+      ],
+      "description": "First Plinth: Public Art Award 2027 | Offering sculptors an opportunity to extend their practice into competing for public art commissions | winning sculptor is awarded £20,000 to produce a large-scale sculpture | The award theme is RENEWAL",
+      "url": "https://www.curatorspace.com/opportunities/detail/first-plinth-public-art-award--royal-society-of-sculptors/11261",
+      "source": "CuratorSpace — opportunities",
+      "checked_at": "",
+      "review_reason": "primary_source_required",
+      "discovered_at": "2026-10-23",
+      "audience_text": "Opportunity details | 2027 | FIRST PLINTH: PUBLIC ART AWARD | Royal Society of Sculptors | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register 2027 | FIRST PLINTH: PUBLIC ART AWARD | Royal Society of Sculptors Deadline: 12/01/2027 City: London | Region: London | Country: United Kingdom | Eilidh McCormick Paid opportunity Report this? Description Opportunity FAQs Make a submission Contact curator First Plinth: Public Art Award 2027 | Offering sculptors an opportunity to extend their practice into competing for public art commissions | winning sculptor is awarded £20,000 to produce a large-scale sculpture | The award theme is RENEWAL ABOUT THE AWARD This biennial award is open to artists working in three dimensions, offering a unique opportunity to establish a track record in the competitive field of public art. Five artists will be shortlisted as finalists for the award and invited to develop a maquette to be presented on a plinth with a surface area of 60 × 60 cm, alongside a fully developed proposal in digital format. This should include supporting documentation, such as costings, as well as drawings or rendered photographs illustrating the proposed work at full scale. Each finalist will receive £1000 to support the development and production of these materials. Once the proposals are complete, finalists will be interviewed by the judging panel on the afternoon of Saturday, 24 April 2027. The winning artist will be announced at an event that evening. The winner will receive £20,000 towards the production of a large-scale sculpture. In addition to financial support, the award provides access to a team of experienced professionals, including engineers, consultants and artists, who will offer mentoring and technical guidance throughout the fabrication process. This support is designed to ensure the successful realisation of the winning concept to the exacting standards required for installation in a public setting. The winning sculpture will be exhibited on the sculpture terrace at Dora House in 2028 before moving to a second exhibition site. Previous locations have included Queen Elizabeth Olympic Park and The Art House in Wakefield, known as the ‘City of Sculpture’. During the same period, the winning artist will also have the opportunity to present a supporting exhibition in the galleries of the Royal Society of Sculptors, alongside one other artist of their choice, subject to invitation. As part of the award, the winning artist will be expected to participate in a film documenting the production of their sculpture and take part in an In Conversation event during the exhibition. An arts professional will also write an accompanying essay to contextualise and support the exhibition. This award is generously supported by the Mirisch & Lebenheim Charitable Foundation. THE BRIEF First Plinth: Public Art Award is designed to closely replicate the public art commissioning procedure. The award’s aim is to challenge, yet support the sculptor through this process. Like most public art commissions, there is a theme, and therefore value will be attributed to a well-considered approach to the theme of RENEWAL. Open to interpretation and approach, we hope this theme encourages applicants to push the boundaries of their practice. ABOUT THE SCULPTURE TERRACE AT DORA HOUSE The sculpture terrace is part of the Royal Society of Sculptors site at 108 Old Brompton Road. Dimensions: approximately 6 x 3.5m | Work will sit directly upon the ground | Weight bearing: approximately 2000 kg | Foundations: existing concrete foundation 2.5 x 2.5 m to a depth of 20cm | Covering: gravel | Lighting: floodlit at night; external power socket for additional electricity/lighting THE JUDGES Emma M. Price | curator and producer Emma M. Price is a UK-based public art curator and producer with more than twenty-five years’ experience working strategically across the public and private sectors on the commissioning of public art. In 2016, she co-founded Studio Response, a leading arts organisation that invites artists, sculptors, designers, makers and architects to develop new work in public spaces. She is an advocate and enabler of artist-led ideas and engagement projects that support community campaigns and placemaking initiatives in both urban and rural environments. Price holds a BA (Hons) in Photography and a postgraduate diploma in Design Management. She is an Honorary Fellow of the Royal Society of Architects in Wales (Hon. RSAW) and a Fellow of the Royal Society of Arts (FRSA). Studio Response is the recipient of the 2023 Dewi-Prys Thomas Award for Welsh design excellence and sustainable community regeneration. Bill Price | Director WSP Bill Price is a Director at global professional services firm WSP and a structural engineer by background. He worked on the Shard at London Bridge from the earliest stages of design development as well as the recently completed Paddington Square. He is now working on several masterplans involving transport infrastructure, sports facilities and regeneration projects. Over the years, Bill has also worked with many artists and sculptors, assisting with engineering design, fabrication, safety, transportation and site installation. Bill has been a Trustee of the Royal Society of Sculptors for several years and provides support to the board as well as artists if required. In addition, Bill is Chair of the Rose Theatre in Kingston, supporting original drama and family shows as well as a wide range of youth and community engagement. Hannele Tilles | Curator Hannele has a long-standing association with art, particularly sculpture, and has served in juries for Public Art Awards at the Royal Society of Sculptors. She was also a jury member and organiser for the Society’s SKULPTUR project, an exhibition of work from all five Nordic countries. She has helped foster a relationship between the RSS and the Association of Finnish Sculptors. Hannele has also been a jury member for the biennial Finnish Art Prize Below Zero since its inception in 2017 as well as a triennial art prize at Galicia Jewish Museum in Krakow, Poland. She has curated photographic exhibitions in her native Finland and has been involved with the commissioning of numerous sculptures in the UK. Laura Ford | President of the Royal Society of Sculptors Laura Ford studied at Bath Academy of Art between 1978-82, including a period at the Cooper Union School of Art, New York. Then completed an MA at Chelsea School of art 1982-83. Her work is represented in many public collections, including Tate, the Victoria and Albert Museum, and the Government Art Collection. Laura's sculptures are faithful representations of fantasy with sometimes bittersweet and menacing qualities mixed with tenderness. She uses humour and an acute observation of the human condition to engage with wider social and political issues. Her work is intensely crafted but playful, and she has used a range of media to realise her work including, drawing, painting, performance, set design and has increasingly taken on the challenge of public art alongside museum and gallery shows. ENTRY FEE Early bird fee applies to applications made before 12 pm UK time on Tuesday 17 November Early Bird | Non RSS members - £17 Early Bird | RSS members - £12 Fee for applications made after 12pm UK time on Tuesday 17 November Non RSS members - £34 RSS members - £24 **** Please note that the application fee is non-refundable **** ENTRY PROCESS To apply, please prepare the following: A CV of no more than two pages long - required A brief description of your present practice (100 words) - required Up to 10 images of recent work - required A text proposal for an artwork relating to the theme of RENEWAL (500 words) - required Up to 3 images that support your idea outline - optional Click the 'Make a submission' tab at the top of this page to apply. KEY DATES The closing deadline for applications | 5 PM , 12 JANUARY 2027 Notification of all results will be sent by email week commencing | 8 FEBRUARY 2027 Unfortunately, due to the number of applications we receive, feedback will not be given at this stage. Shortlisted artists present Maquettes to Jury | AFTERNOON OF SATURDAY 24 APRIL 2027 Winner announced | EVENING OF SATURDAY 24 APRIL 2027 ELIGIBILITY Applications are welcomed from artists of any age and nationality working in any style or media who are yet to be recognised as practitioners in public art and have not yet won an open (or closed) competition for a commission to create a work for a public space above the value of £20,000. If you are unsure if you would be eligible due to previous presentations of your work in public spaces, please contact us. For those who have received formal training, the expectation is that you will have a minimum of three years post-graduate experience. Shortlisted artists will be required to attend an interview on Saturday, 24 April 2027 (also International Sculpture Day), to present a maquette, bound supporting documents, drawings or rendered photographs of the full-scale work, and up to ten images of existing work will need to be presented at this stage (4 copies for the 4 judges). Shortlisted artists will be expected to be present on the evening of 24 April 2027 for the announcement of the winner of First Plinth 2027. RULES & GUIDELINES By submitting an application, the entrant promises that all of the information comprised in the application is correct. The entrant also promises to comply with these rules and any other award requirements specified by the Royal Society of Sculptors (whether on its website or otherwise) and the Society reserves its right to exclude any entry which in its opinion does not comply. All applications must be made using the online form. No hard copy applications will be accepted. Applications must be received by the closing date specified. The proposals submitted must be entirely the entrant’s original idea and creation and they must not infringe someone else’s copyright or other intellectual property rights. The submission must be lawful; it must not be offensive, obscene, racist, discriminatory, or otherwise objectionable, and it must not contain any form of advertising. Proposals must also not be hazardous in any way, and a thorough risk assessment must be supplied by the artist if the initial proposal is shortlisted. Entrants grant the Royal Society of Sculptors the unrestricted right (without royalty) to reproduce images of submitted artworks in any publication in connection with the First Plinth award, be it online, printed or otherwise disseminated. The Judge's decision is final. If the Royal Society of Sculptors is unable to contact any shortlisted artist or winners via the email address supplied by the entrant, the shortlist position/ award lapses, and the Royal Society of Sculptors reserves the right to select alternative winners. Submission fees The following submission fees apply to this opportunity. Early Bird | Non RSS members - 17.00 GBP Early Bird | RSS members - 12.00 GBP Non RSS members - 34.00 GBP RSS members - 24.00 GBP The appropriate fee will be payable using a debit or credit card after the first submission has been completed. If the submission fee allows you to submit more than once, you will be able to make further submissions after the first. Contact the curator if you have any questions about the opportunity or the submission fee, or email help@curatorspace.com if you have any questions about the payment process. Make a submission Contact the curator Who is eligible for this opportunity? This biennial award is open to any artist working in three dimensions. You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-23"
     }
   ]
 }

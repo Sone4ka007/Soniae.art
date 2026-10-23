@@ -32379,7 +32379,7 @@
       "title": "Дамир Муратов Неполное собрание сочинений",
       "venue": "ЦСИ Винзавод",
       "address": "",
-      "price": 12000,
+      "price": 1800,
       "price_text": "12000 ₽",
       "registration": false,
       "categories": [
@@ -32523,7 +32523,7 @@
       "title": "Коллективная выставка Громкая тишина касания",
       "venue": "ЦСИ Винзавод",
       "address": "",
-      "price": 12000,
+      "price": 0,
       "price_text": "1800 ₽",
       "registration": false,
       "categories": [
@@ -32537,7 +32537,7 @@
       "discovered_at": "2026-10-20",
       "start_date": "2026-10-21",
       "end_date": "2026-11-01",
-      "price_type": "paid",
+      "price_type": "free",
       "availability": "available",
       "availability_checked_at": "2026-10-23",
       "editor_overrides": {
@@ -34865,7 +34865,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-10-23-fc12489fba",
@@ -34932,7 +34934,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-10-23-b04941bffd",
@@ -34996,7 +35000,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-10-23-3b8aa85314",
@@ -35026,7 +35032,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-23-a7ad7db747",
@@ -35245,7 +35253,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-10-23-b815c05256",
@@ -35316,7 +35326,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-23-633c02f875",
@@ -35384,7 +35396,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-23-e8ca70211f",
@@ -35452,7 +35466,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-10-23-6159cca79f",
@@ -35484,7 +35500,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-23-47d7090e39",
@@ -35553,7 +35571,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-23-2391905ba1",
@@ -35907,7 +35927,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-23-d5623dd3d1",
@@ -36308,6 +36330,32 @@
       "editor_overrides": {
         "status": "rejected"
       }
+    },
+    {
+      "id": "spb-2026-10-23-0edf638a69",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-23",
+      "time": "19:00",
+      "title": "Сбой Конвейера",
+      "venue": "Пушкинская-10",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "фестиваль"
+      ],
+      "description": "Всё, чему сложно подобрать стиль, формат, вписать в рамки, устаканить и устранить. Строго, безумно, индивидуально. Фестиваль СБОЙ КОНВЕЙЕРА.",
+      "url": "https://p-10.ru/events/sboj-konvejera-3/",
+      "source": "Пушкинская-10 — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-23",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-23"
     },
     {
       "id": "moscow-2026-10-23-591549b456",
@@ -37407,6 +37455,32 @@
       "reviewed_at": "2026-10-21"
     },
     {
+      "id": "spb-2026-10-24-6274d9b2ae",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-24",
+      "time": "15:00",
+      "title": "Экскурсия по выставке «Художник Ленинграда. Владимир Гринберг»",
+      "venue": "Музей искусства Санкт-Петербурга XX–XXI веков",
+      "address": "",
+      "price": 600,
+      "price_text": "600 ₽",
+      "registration": false,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "",
+      "url": "https://mispxx-xxi.ru/about/afisha/22557/",
+      "source": "Музей искусства Санкт-Петербурга XX–XXI веков — события",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-23",
+      "price_type": "paid",
+      "availability": "available",
+      "availability_checked_at": "2026-10-23"
+    },
+    {
       "id": "moscow-2026-10-24-94318a0e50",
       "status": "new",
       "kind": "event",
@@ -37649,7 +37723,7 @@
       "editor_note": "",
       "instagram_include": false,
       "price_type": "unknown",
-      "availability": "unknown",
+      "availability": "available",
       "availability_checked_at": "2026-10-23",
       "reviewed_at": "2026-10-02",
       "sheet_synced_description": "Исполнители : Ансамбль «Без слов» / «SinPalabras»"
@@ -39117,6 +39191,32 @@
       }
     },
     {
+      "id": "spb-2026-10-25-6274d9b2ae",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-25",
+      "time": "17:00",
+      "title": "Экскурсия по выставке «Художник Ленинграда. Владимир Гринберг»",
+      "venue": "Музей искусства Санкт-Петербурга XX–XXI веков",
+      "address": "",
+      "price": 600,
+      "price_text": "600 ₽",
+      "registration": false,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "",
+      "url": "https://mispxx-xxi.ru/about/afisha/22560/",
+      "source": "Музей искусства Санкт-Петербурга XX–XXI веков — события",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-23",
+      "price_type": "paid",
+      "availability": "available",
+      "availability_checked_at": "2026-10-23"
+    },
+    {
       "id": "moscow-2026-10-25-1f26889cb6",
       "status": "rejected",
       "kind": "event",
@@ -39834,7 +39934,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-26-3c94697fb2",
@@ -41086,6 +41188,32 @@
       }
     },
     {
+      "id": "spb-2026-10-28-6274d9b2ae",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-28",
+      "time": "17:00",
+      "title": "Экскурсия по выставке «Художник Ленинграда. Владимир Гринберг»",
+      "venue": "Музей искусства Санкт-Петербурга XX–XXI веков",
+      "address": "",
+      "price": 600,
+      "price_text": "600 ₽",
+      "registration": false,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "",
+      "url": "https://mispxx-xxi.ru/about/afisha/22561/",
+      "source": "Музей искусства Санкт-Петербурга XX–XXI веков — события",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-23",
+      "price_type": "paid",
+      "availability": "available",
+      "availability_checked_at": "2026-10-23"
+    },
+    {
       "id": "moscow-2026-10-28-f2ec73f23f",
       "status": "rejected",
       "kind": "event",
@@ -41617,6 +41745,30 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "moscow-2026-10-29-bbeb4aa649",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-29",
+      "time": "",
+      "title": "Американский эко-авангард: кинопоказ и музыкальный перформанс в рамках SmallShorts",
+      "venue": "Школа дизайна НИУ ВШЭ",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [],
+      "description": "29 октября в ЦСИ Винзавод в рамках параллельной программы фестиваля экранных искусств «​​​​​​​Смол Шорт» Школы дизайна НИУ ВШЭ пройдёт показ короткометражных фильмов режиссёров американского эко-авангарда. Зрителей ждёт знакомство с экспериментальным кинематографом и музыкальный лайв-перформанс, который объединит движущееся изображение и живой звук. 29 октября 2026",
+      "url": "https://design.hse.ru/news/7334",
+      "source": "Школа дизайна НИУ ВШЭ",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-23",
+      "price_type": "free",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-23"
     },
     {
       "id": "moscow-2026-10-29-cbe8021539",
@@ -42359,7 +42511,7 @@
       "editor_note": "",
       "instagram_include": false,
       "price_type": "unknown",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-23",
       "reviewed_at": "2026-10-02",
       "sheet_synced_description": "Руководитель и аранжировщик — композитор И. Вакуленко. Исполнители — «CITY MUSIC BAND»."
@@ -43222,6 +43374,32 @@
       "reviewed_at": ""
     },
     {
+      "id": "spb-2026-10-30-b472168689",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-30",
+      "time": "17:30",
+      "title": "Арт-школа МИСП | Лекция «Женщины в объективе импрессионизма: Мэри Кассат и Берта Моризо»",
+      "venue": "Музей искусства Санкт-Петербурга XX–XXI веков",
+      "address": "",
+      "price": 500,
+      "price_text": "500 ₽",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "",
+      "url": "https://mispxx-xxi.ru/about/afisha/22564/",
+      "source": "Музей искусства Санкт-Петербурга XX–XXI веков — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-23",
+      "price_type": "paid",
+      "availability": "available",
+      "availability_checked_at": "2026-10-23"
+    },
+    {
       "id": "moscow-2026-10-30-c1d26867c5",
       "status": "approved",
       "kind": "event",
@@ -43388,7 +43566,7 @@
       "editor_note": "",
       "instagram_include": false,
       "price_type": "unknown",
-      "availability": "unknown",
+      "availability": "available",
       "availability_checked_at": "2026-10-23",
       "reviewed_at": "2026-10-02",
       "sheet_synced_description": "Вы узнаете их с первых нот. Они звучат в моменты триумфа, любви, опасности и тихой грусти. Это музыка, которая стала не просто фоном, а главным героем культовых фильмов."
@@ -43443,14 +43621,14 @@
       "categories": [
         "лекция"
       ],
-      "description": "Лектор — Арсений Суржа, театральный критик, историк балета, приглашённый эксперт телеканала «Россия-Культура», автор и ведущий просветительских программ и лекций по истории театра и балетного искусства.",
+      "description": "Лектор — Арсений Суржа, театральный критик, историк балета, приглашённый эксперт телеканала «Россия-Культура», автор и ведущий просветительских программ и лекций по истории театра и балетного искусства. Проект реализован с использованием гранта, предоставленного ООГО «Российский фонд культуры» в рамках федерального проекта «Семейные ценности и инфраструктура культуры» национального проекта «Семья». Организатор – АНО «Продюсерский центр «Открытое искусство».",
       "url": "https://nlr.ru/nlr_visit/event/3721",
       "source": "Российская национальная библиотека — афиша",
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-10-23",
       "price_type": "unknown",
-      "availability": "unknown",
+      "availability": "available",
       "availability_checked_at": "2026-10-23",
       "editor_overrides": {
         "registration": false,
@@ -43458,7 +43636,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-30-080ca37e62",
@@ -45065,6 +45245,32 @@
       "sheet_synced_description": "Экскурсия с хранителем коллекции — это редкая возможность увидеть выставку глазами специалиста, который ежедневно работает с наследием Анатолия Зверева. Особенность такой экскурсии — доступ в закрытую часть экспозиции, где хранятся настоящие «жемчужины коллекции»."
     },
     {
+      "id": "moscow-2026-11-01-6a7cce8c40",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-01",
+      "time": "16:00",
+      "title": "«Искусство и наука в лесах и на болотах»",
+      "venue": "Фонд Ruarts",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": false,
+      "categories": [
+        "встреча"
+      ],
+      "description": "1 ноября в 16:00 в Фонде Ruarts состоится круглый стол «Искусство и наука в лесах и на болотах». В рамках финисажа выставки «Поля падения» в Фонде Ruarts пройдёт мероприятие, посвящённое пересечениям художественной и антропологической практик и тому, как устроено сотрудничество внутри междисциплинарных проектов.",
+      "url": "https://ruarts.foundation/ru/events/meeting/121",
+      "source": "Фонд Ruarts — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-23",
+      "price_type": "free",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-23"
+    },
+    {
       "id": "spb-2026-11-01-2cf7a50539",
       "status": "new",
       "kind": "event",
@@ -45382,7 +45588,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-11-04-8b7a0eb137",
@@ -45623,6 +45831,32 @@
       "reviewed_at": ""
     },
     {
+      "id": "moscow-2026-11-05-6181f826d5",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-05",
+      "time": "01:20",
+      "title": "Лекция «Карл Брюллов»",
+      "venue": "Третьяковская галерея",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Лекция к абонементу №01 «Мастера русской живописи. Часть 1. От Рокотова до Иванова» 1 октября 2026 – 5 ноября 2026 Лекция будет проходить в Лекционном зале Инженерного корпуса (Лаврушинский переулок, д. 12, вход с Малого Толмачёвского переулка) и в режиме реального времени на платформе МТС Линк в формате онлайн. Продолжительность лекции: 1 час 30 минут.",
+      "url": "https://www.tretyakovgallery.ru/events/o/lektsiya-karl-bryullov-10-2026/",
+      "source": "Третьяковская галерея — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-23",
+      "price_type": "paid",
+      "availability": "available",
+      "availability_checked_at": "2026-10-23"
+    },
+    {
       "id": "spb-2026-11-05-0bce51b132",
       "status": "new",
       "kind": "event",
@@ -45679,7 +45913,7 @@
       "review_reason": "",
       "discovered_at": "2026-10-16",
       "price_type": "unknown",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-23",
       "sheet_synced_description": "Лектор — Яна Лорви , этномузыколог, исследователь традиционной культуры, автор и руководитель экспедиций по Ленинградской области и Карелии",
       "instagram_include": false,
@@ -45804,6 +46038,32 @@
       "editor_overrides": {
         "registration": false
       }
+    },
+    {
+      "id": "moscow-2026-11-06-b1dc365b61",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-06",
+      "time": "01:20",
+      "title": "Лекция «Михаил Петрович Кристи»",
+      "venue": "Третьяковская галерея",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Лекция к абонементу №02 «Попечители и директора Третьяковской галереи» 2 октября 2026 – 20 ноября 2026 Лекция будет проходить в Лекционном зале Инженерного корпуса (Лаврушинский переулок, д. 12, вход с Малого Толмачёвского переулка) и в режиме реального времени на платформе МТС Линк в формате онлайн. Продолжительность лекции: 1 час 30 минут.",
+      "url": "https://www.tretyakovgallery.ru/events/o/lektsiya-mikhail-petrovich-kristi-10-2026/",
+      "source": "Третьяковская галерея — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-23",
+      "price_type": "paid",
+      "availability": "available",
+      "availability_checked_at": "2026-10-23"
     },
     {
       "status": "approved",
@@ -46594,6 +46854,33 @@
       "reviewed_at": ""
     },
     {
+      "id": "moscow-2026-11-12-d74b62747b",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-12",
+      "time": "19:30",
+      "title": "Пределы жанра: литература как портрет, пейзаж и натюрморт",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "публичная программа"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/the-boundaries-of-genre-literature-as-portrait-landscape-and-still-life",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-23",
+      "audience_text": "› Библиотека Проект : Натюрморт. Портрет. Пейзаж. После жанра Дата: 12– 26 ноя 2026 Возраст: от 12 Тип: Публичная программа Место: Библиотека Возрастные ограничения 12+ Три встречи о том, как принципы живописных жанров — натюрморта, портрета и пейзажа — находят отражение в литературе XXI века. Программа  {\"points\":[{\"id\":4,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":6,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.4,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":5,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} T Каждая дискуссия строится как разговор писателя и исследователя литературы вокруг одной из центральных тем выставки «Натюрморт. Портрет. Пейзаж. После жанра». Участники обсудят, каким образом визуальные принципы, традиционно связанные с изобразительным искусством, могут проявляться в современной литературе. Куратор Полина Куварзина — филолог, библиотекарь Дома культуры « ГЭС-2 ». Программа Пределы жанра: литература как натюрморт Регистрация начнется позже {\"points\":[{\"id\":1,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":3,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.4,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":2,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} Когда: 12 ноя, 19:30–21:30 Разговор будет посвящен литературному натюрморту и метафорическому взгляду на художественный текст через оптику живописного жанра. Стихопроза Дениса Осокина строится вокруг образов-картин, повседневных жестов и деталей, которые замедляют повествование и располагают к созерцанию. Наблюдение здесь соединяется с самым различным дофантазированием, в том числе фольклорного и этнографического материала, который Осокин вплетает в ткань текста. Почему в современном мире, где скорость жизни постоянно растет, а внимание все чаще оказывается рассеянным, практика медленного, внимательного чтения сохраняет свою ценность? Спикеры Денис Осокин ― прозаик, поэт и сценарист. Лауреат литературных премий «Дебют», «Звездный билет», имени Андрея Белого, кинопремий «Ника», «Белый Слон» и других. По его повести «Овсянки», циклам рассказов «Небесные жены луговых мари», «Ангелы и революция» были с",
+      "price_type": "paid",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-23"
+    },
+    {
       "id": "spb-2026-11-13-be8fd13284",
       "status": "rejected",
       "kind": "event",
@@ -46757,7 +47044,7 @@
       "review_reason": "",
       "discovered_at": "2026-10-19",
       "price_type": "unknown",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-23",
       "editor_overrides": {
         "telegram_include": false,
@@ -47403,6 +47690,33 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "moscow-2026-11-19-d74b62747b",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-19",
+      "time": "19:30",
+      "title": "Пределы жанра: литература как портрет, пейзаж и натюрморт",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "публичная программа"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/the-boundaries-of-genre-literature-as-portrait-landscape-and-still-life",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-23",
+      "audience_text": "› Библиотека Проект : Натюрморт. Портрет. Пейзаж. После жанра Дата: 12– 26 ноя 2026 Возраст: от 12 Тип: Публичная программа Место: Библиотека Возрастные ограничения 12+ Три встречи о том, как принципы живописных жанров — натюрморта, портрета и пейзажа — находят отражение в литературе XXI века. Программа  {\"points\":[{\"id\":4,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":6,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.4,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":5,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} T Каждая дискуссия строится как разговор писателя и исследователя литературы вокруг одной из центральных тем выставки «Натюрморт. Портрет. Пейзаж. После жанра». Участники обсудят, каким образом визуальные принципы, традиционно связанные с изобразительным искусством, могут проявляться в современной литературе. Куратор Полина Куварзина — филолог, библиотекарь Дома культуры « ГЭС-2 ». Программа Пределы жанра: литература как натюрморт Регистрация начнется позже {\"points\":[{\"id\":1,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":3,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.4,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":2,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} Когда: 12 ноя, 19:30–21:30 Разговор будет посвящен литературному натюрморту и метафорическому взгляду на художественный текст через оптику живописного жанра. Стихопроза Дениса Осокина строится вокруг образов-картин, повседневных жестов и деталей, которые замедляют повествование и располагают к созерцанию. Наблюдение здесь соединяется с самым различным дофантазированием, в том числе фольклорного и этнографического материала, который Осокин вплетает в ткань текста. Почему в современном мире, где скорость жизни постоянно растет, а внимание все чаще оказывается рассеянным, практика медленного, внимательного чтения сохраняет свою ценность? Спикеры Денис Осокин ― прозаик, поэт и сценарист. Лауреат литературных премий «Дебют», «Звездный билет», имени Андрея Белого, кинопремий «Ника», «Белый Слон» и других. По его повести «Овсянки», циклам рассказов «Небесные жены луговых мари», «Ангелы и революция» были с",
+      "price_type": "paid",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-23"
     },
     {
       "id": "moscow-2026-11-19-44aeceee8c",
@@ -48421,7 +48735,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     }
   ]
 }

@@ -32381,7 +32381,7 @@
       "title": "Дамир Муратов Неполное собрание сочинений",
       "venue": "ЦСИ Винзавод",
       "address": "",
-      "price": 1500,
+      "price": 12000,
       "price_text": "12000 ₽",
       "registration": false,
       "categories": [
@@ -32525,7 +32525,7 @@
       "title": "Коллективная выставка Громкая тишина касания",
       "venue": "ЦСИ Винзавод",
       "address": "",
-      "price": 0,
+      "price": 1800,
       "price_text": "1800 ₽",
       "registration": false,
       "categories": [
@@ -32539,7 +32539,7 @@
       "discovered_at": "2026-10-20",
       "start_date": "2026-10-21",
       "end_date": "2026-11-01",
-      "price_type": "free",
+      "price_type": "paid",
       "availability": "available",
       "availability_checked_at": "2026-10-24",
       "editor_overrides": {
@@ -33692,7 +33692,7 @@
       "title": "Евгений Шадко Искренность",
       "venue": "ЦСИ Винзавод",
       "address": "",
-      "price": 1800,
+      "price": 0,
       "price_text": "Бесплатно",
       "registration": false,
       "categories": [
@@ -37166,6 +37166,32 @@
       "reviewed_at": "2026-10-06"
     },
     {
+      "id": "spb-2026-10-24-c574513ca9",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-24",
+      "time": "16:00",
+      "title": "Каждую субботу в 16:00 — обзорная экскурсия по «Пушкинской-10»",
+      "venue": "Пушкинская-10",
+      "address": "",
+      "price": 600,
+      "price_text": "600 ₽",
+      "registration": false,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "Каждую субботу ровно в 16:00 группа будет отправляться от ресепшена в путешествие по коридорам и галереям «Пушкинской-10». В сопровождении опытного экскурсовода гости не только разберутся в современном и актуальном искусстве, но и получат ответы на все интересующие вопросы и проникнутся духом петербургского андерграунда.",
+      "url": "https://p-10.ru/events/obzornaya-ekskursiya-po-pushkinskoj-10-2/",
+      "source": "Пушкинская-10 — события",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-24",
+      "price_type": "paid",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-24"
+    },
+    {
       "id": "moscow-2026-10-24-00c85a88e1",
       "status": "rejected",
       "kind": "event",
@@ -37373,7 +37399,7 @@
       "editor_note": "",
       "instagram_include": false,
       "price_type": "unknown",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-24",
       "reviewed_at": "2026-10-02",
       "sheet_synced_description": "Исполнители : Ансамбль «Без слов» / «SinPalabras»"
@@ -41261,7 +41287,7 @@
       "review_reason": "",
       "discovered_at": "2026-10-16",
       "price_type": "unknown",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-24",
       "sheet_synced_description": "Лектор — Д. А. Кашкарев , заведующий научно-просветительским сектором «Юсуповский дворец на Литейном» Государственного музея «Исаакиевский собор»",
       "instagram_include": false,
@@ -42699,7 +42725,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-29-478c2fd5a1",
@@ -43480,7 +43508,7 @@
       "editor_note": "",
       "instagram_include": false,
       "price_type": "unknown",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-24",
       "reviewed_at": "2026-10-02",
       "sheet_synced_description": "Вы узнаете их с первых нот. Они звучат в моменты триумфа, любви, опасности и тихой грусти. Это музыка, которая стала не просто фоном, а главным героем культовых фильмов."
@@ -44416,7 +44444,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-10-31-517be39b64",
@@ -44655,14 +44685,16 @@
       "price": 0,
       "price_text": "",
       "registration": false,
-      "categories": [],
+      "categories": [
+        "выставка"
+      ],
       "description": "На метро Музей AZ находится между станциями метро «Маяковская» и «Белорусская» (кольцевая). Мы рекомендуем идти в Музей от станции «Маяковская». Вам нужен Выход №1 на 1-я Тверская-Ямская улица, 2-я Тверская-Ямская улица.",
       "url": "https://museum-az.com/event/territoriya-svobody-nonkonformisty-v-taruse/",
       "source": "Музей AZ — выставки и события",
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-10-20",
-      "price_type": "paid",
+      "price_type": "free",
       "availability": "available",
       "availability_checked_at": "2026-10-24",
       "editor_overrides": {
@@ -45478,7 +45510,7 @@
       "review_reason": "",
       "discovered_at": "2026-10-06",
       "price_type": "unknown",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-24",
       "sheet_synced_description": "Дата начала регистрации — 19 октября Лектор — Яна Лорви, этномузыколог, исследователь традиционной культуры, автор и руководитель экспедиций по Ленинградской области и Карелии",
       "telegram_include": false,
@@ -45892,7 +45924,7 @@
       "review_reason": "",
       "discovered_at": "2026-10-19",
       "price_type": "unknown",
-      "availability": "unknown",
+      "availability": "available",
       "availability_checked_at": "2026-10-24",
       "editor_overrides": {
         "telegram_include": false,
@@ -46297,7 +46329,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-07-84b65b4d8b",
@@ -47157,7 +47191,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-14-c9781b67f3",

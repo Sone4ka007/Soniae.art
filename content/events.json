@@ -42682,7 +42682,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [],
       "description": "Команда без выгорания: как управлять творческой командой в режиме высокой нагрузки и смены поколений Команда без выгорания: как управлять творческой командой в режиме высокой нагрузки и смены поколений 105120, Россия, Москва, Центр дизайна Artplay, ул. Нижняя Сыромятническая, 10, стр.",
       "url": "https://britishdesign.ru/about/events/400884/",
@@ -42692,7 +42692,14 @@
       "discovered_at": "2026-10-24",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-24"
+      "availability_checked_at": "2026-10-24",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-29-478c2fd5a1",
@@ -44390,7 +44397,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "лекция"
       ],
@@ -44402,7 +44409,14 @@
       "discovered_at": "2026-10-24",
       "price_type": "unknown",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-24"
+      "availability_checked_at": "2026-10-24",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "spb-2026-10-31-517be39b64",
@@ -46277,7 +46291,13 @@
       "discovered_at": "2026-10-24",
       "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-10-24"
+      "availability_checked_at": "2026-10-24",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-11-07-84b65b4d8b",
@@ -47131,7 +47151,13 @@
       "discovered_at": "2026-10-24",
       "price_type": "paid",
       "availability": "available",
-      "availability_checked_at": "2026-10-24"
+      "availability_checked_at": "2026-10-24",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "spb-2026-11-14-c9781b67f3",

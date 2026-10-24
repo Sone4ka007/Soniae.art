@@ -32381,7 +32381,7 @@
       "title": "Дамир Муратов Неполное собрание сочинений",
       "venue": "ЦСИ Винзавод",
       "address": "",
-      "price": 0,
+      "price": 1500,
       "price_text": "12000 ₽",
       "registration": false,
       "categories": [
@@ -32395,7 +32395,7 @@
       "discovered_at": "2026-10-20",
       "start_date": "2026-10-21",
       "end_date": "2026-12-05",
-      "price_type": "free",
+      "price_type": "paid",
       "availability": "available",
       "availability_checked_at": "2026-10-24",
       "editor_overrides": {
@@ -32525,7 +32525,7 @@
       "title": "Коллективная выставка Громкая тишина касания",
       "venue": "ЦСИ Винзавод",
       "address": "",
-      "price": 12000,
+      "price": 0,
       "price_text": "1800 ₽",
       "registration": false,
       "categories": [
@@ -32539,7 +32539,7 @@
       "discovered_at": "2026-10-20",
       "start_date": "2026-10-21",
       "end_date": "2026-11-01",
-      "price_type": "paid",
+      "price_type": "free",
       "availability": "available",
       "availability_checked_at": "2026-10-24",
       "editor_overrides": {
@@ -33692,7 +33692,7 @@
       "title": "Евгений Шадко Искренность",
       "venue": "ЦСИ Винзавод",
       "address": "",
-      "price": 12000,
+      "price": 1800,
       "price_text": "Бесплатно",
       "registration": false,
       "categories": [
@@ -35998,7 +35998,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-10-24-31133af75e",
@@ -37229,7 +37231,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-24-3569cdc778",
@@ -39511,7 +39515,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-10-26-553aaae4cb",
@@ -41255,7 +41261,7 @@
       "review_reason": "",
       "discovered_at": "2026-10-16",
       "price_type": "unknown",
-      "availability": "unknown",
+      "availability": "available",
       "availability_checked_at": "2026-10-24",
       "sheet_synced_description": "Лектор — Д. А. Кашкарев , заведующий научно-просветительским сектором «Юсуповский дворец на Литейном» Государственного музея «Исаакиевский собор»",
       "instagram_include": false,
@@ -42405,7 +42411,7 @@
       "editor_note": "",
       "instagram_include": false,
       "price_type": "unknown",
-      "availability": "unknown",
+      "availability": "available",
       "availability_checked_at": "2026-10-24",
       "reviewed_at": "2026-10-02",
       "sheet_synced_description": "Руководитель и аранжировщик — композитор И. Вакуленко. Исполнители — «CITY MUSIC BAND»."
@@ -42663,6 +42669,30 @@
       "editor_overrides": {
         "registration": false
       }
+    },
+    {
+      "id": "moscow-2026-10-29-ce41771f43",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-29",
+      "time": "19:30",
+      "title": "Центр Зотов х МАРШ х Британка 29 октября, Чт Начало в 19:30",
+      "venue": "Британская высшая школа дизайна",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "Команда без выгорания: как управлять творческой командой в режиме высокой нагрузки и смены поколений Команда без выгорания: как управлять творческой командой в режиме высокой нагрузки и смены поколений 105120, Россия, Москва, Центр дизайна Artplay, ул. Нижняя Сыромятническая, 10, стр.",
+      "url": "https://britishdesign.ru/about/events/400884/",
+      "source": "Британская высшая школа дизайна — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-24",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-24"
     },
     {
       "id": "moscow-2026-10-29-478c2fd5a1",
@@ -44349,6 +44379,32 @@
       }
     },
     {
+      "id": "spb-2026-10-31-fce1559a44",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-31",
+      "time": "17:00",
+      "title": "В Библиотеке Комиксов пройдет лекция-практикум, посвященная борьбе с внутренними тревогами через визуальное искусство.",
+      "venue": "Библиотека комиксов",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Комиксотерапия: Рисуем свои страхи В этот день многие отмечают Тыквенный Спас и вспоминают вымышленных монстров. Но наши настоящие страхи и тревоги не привязаны к календарю — они мешают нам жить, принимать решения и двигаться вперед каждый день. На встрече мы разберем, как творчество помогает мозгу справляться со стрессом, и как авторы графических романов переносят переживания на бумагу. В практической части каждый участник сможет создать свой мини-комикс, чтобы «овеществить», приручить или высмеять собственный страх.",
+      "url": "https://clck.ru/3WEVAG",
+      "source": "Библиотека комиксов — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-10-24",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-24"
+    },
+    {
       "id": "spb-2026-10-31-517be39b64",
       "status": "rejected",
       "kind": "event",
@@ -44585,14 +44641,16 @@
       "price": 0,
       "price_text": "",
       "registration": false,
-      "categories": [],
+      "categories": [
+        "выставка"
+      ],
       "description": "На метро Музей AZ находится между станциями метро «Маяковская» и «Белорусская» (кольцевая). Мы рекомендуем идти в Музей от станции «Маяковская». Вам нужен Выход №1 на 1-я Тверская-Ямская улица, 2-я Тверская-Ямская улица.",
       "url": "https://museum-az.com/event/territoriya-svobody-nonkonformisty-v-taruse/",
       "source": "Музей AZ — выставки и события",
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-10-20",
-      "price_type": "paid",
+      "price_type": "free",
       "availability": "available",
       "availability_checked_at": "2026-10-24",
       "editor_overrides": {
@@ -45162,7 +45220,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-01-6a7cce8c40",
@@ -45406,7 +45466,7 @@
       "review_reason": "",
       "discovered_at": "2026-10-06",
       "price_type": "unknown",
-      "availability": "unknown",
+      "availability": "available",
       "availability_checked_at": "2026-10-24",
       "sheet_synced_description": "Дата начала регистрации — 19 октября Лектор — Яна Лорви, этномузыколог, исследователь традиционной культуры, автор и руководитель экспедиций по Ленинградской области и Карелии",
       "telegram_include": false,
@@ -45862,7 +45922,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-05-cda167ff31",
@@ -46192,6 +46254,32 @@
       "telegram_include": false,
       "instagram_include": false,
       "reviewed_at": "2026-10-24"
+    },
+    {
+      "id": "moscow-2026-11-07-361d91be6e",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-07",
+      "time": "01:20",
+      "title": "Лекция «Василий Кандинский»",
+      "venue": "Третьяковская галерея",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Лекция к абонементу №08 «Крупнейшие мастера русского авангарда». 10 октября 2026 – 21 ноября 2026 Лекция будет проходить в Малом зале Новой Третьяковки (Крымский Вал, 10) и в режиме реального времени на платформе МТС Линк в формате онлайн. Продолжительность лекции: 1 час 30 мин.",
+      "url": "https://www.tretyakovgallery.ru/events/o/lektsiya-vasiliy-kandinskiy-10-2026/",
+      "source": "Третьяковская галерея — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-24",
+      "price_type": "paid",
+      "availability": "available",
+      "availability_checked_at": "2026-10-24"
     },
     {
       "id": "moscow-2026-11-07-84b65b4d8b",
@@ -47022,6 +47110,32 @@
       "social_title": ""
     },
     {
+      "id": "moscow-2026-11-14-31bcf621dc",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-14",
+      "time": "01:20",
+      "title": "Лекция «Искусство первой половины ХIХ века»",
+      "venue": "Третьяковская галерея",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Лекция к абонементу №03 «Тысяча лет русского искусства». 3 октября 2026 – 26 декабря 2026 Лекция будет проходить в Лекционном зале Инженерного корпуса (Лаврушинский переулок, д. 12, вход с Малого Толмачёвского переулка). Продолжительность лекции: 1 час 30 минут.",
+      "url": "https://www.tretyakovgallery.ru/events/o/lektsiya-iskusstvo-pervoy-poloviny-khikh-veka-10-2026/",
+      "source": "Третьяковская галерея — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-24",
+      "price_type": "paid",
+      "availability": "available",
+      "availability_checked_at": "2026-10-24"
+    },
+    {
       "id": "spb-2026-11-14-c9781b67f3",
       "status": "new",
       "kind": "event",
@@ -47042,7 +47156,7 @@
       "review_reason": "",
       "discovered_at": "2026-10-19",
       "price_type": "unknown",
-      "availability": "unknown",
+      "availability": "available",
       "availability_checked_at": "2026-10-24",
       "editor_overrides": {
         "telegram_include": false,
@@ -47698,7 +47812,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-19-05c67d7f07",
@@ -48571,7 +48687,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "russia-2026-12-13-3a942b4abf",

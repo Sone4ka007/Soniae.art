@@ -37189,7 +37189,13 @@
       "discovered_at": "2026-10-24",
       "price_type": "paid",
       "availability": "unknown",
-      "availability_checked_at": "2026-10-24"
+      "availability_checked_at": "2026-10-24",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-24-00c85a88e1",

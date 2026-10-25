@@ -131,6 +131,10 @@ def main():
     )
 
     requests=[
+      {"updateDimensionProperties":{"range":{"sheetId":sheet_id,"dimension":"ROWS","startIndex":1,"endIndex":max(2,len(rows))},
+        "properties":{"pixelSize":96},"fields":"pixelSize"}},
+      {"repeatCell":{"range":{"sheetId":sheet_id,"startRowIndex":1,"endRowIndex":max(2,len(rows)),"startColumnIndex":0,"endColumnIndex":36},
+        "cell":{"userEnteredFormat":{"verticalAlignment":"TOP","wrapStrategy":"CLIP"}},"fields":"userEnteredFormat.verticalAlignment,userEnteredFormat.wrapStrategy"}},
       {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":0,"endColumnIndex":36}}},
       {"setBasicFilter":{"filter":{"range":{"sheetId":sheet_id,"startRowIndex":0,"startColumnIndex":0,"endColumnIndex":36}}}},
       {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":1,"endColumnIndex":2},

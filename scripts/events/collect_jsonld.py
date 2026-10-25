@@ -1758,7 +1758,14 @@ def main():
                 print(f"WARN {src['name']}: {e}",file=sys.stderr)
                 continue
             candidates.extend(extract_jsonld(html,src))
-            if adapter=="hse":
+            if adapter.startswith("sketch_"):
+                from sketch_sources import extract as extract_sketch
+                try:
+                    candidates = extract_sketch(html, src, make_event, parse_price)
+                except Exception as exc:
+                    print(f"WARN {src['name']}: {exc}", file=sys.stderr)
+                    candidates = []
+            elif adapter=="hse":
                 candidates.extend(extract_hse(html,src))
             elif adapter=="rusimp":
                 candidates.extend(extract_rusimp(html,src))
@@ -1792,7 +1799,7 @@ def main():
             # Do not use this shortcut for a source's shared listing URL.
             n_url=str(n.get("url","")).strip().lower()
             src_url=str(src.get("url","")).strip().lower()
-            if not old_id and n_url and n_url != src_url:
+            if not old_id and n_url and n_url != src_url and not adapter.startswith("sketch_"):
                 old_id=url_date_index.get((n.get("city"),n.get("date"),n_url))
             host=urlparse(n_url).netloc.lower() if n_url else ""
             if not old_id and (n.get("kind")=="exhibition" or "rgub.ru" in host):
@@ -1842,3 +1849,4 @@ def main():
 
 if __name__=="__main__":
     main()
+

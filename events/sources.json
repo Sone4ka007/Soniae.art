@@ -1431,6 +1431,52 @@
       "max_detail_pages": 120,
       "detail_workers": 8,
       "source_group": "museum"
+    },
+    {
+      "name": "Наброски на Покровке",
+      "city": "moscow",
+      "url": "https://t.me/s/nabroski_pokrovka",
+      "venue": "Наброски на Покровке",
+      "adapter": "sketch_telegram",
+      "kind": "event",
+      "source_group": "sketching"
+    },
+    {
+      "name": "Pick Me Art Studio — наброски",
+      "city": "moscow",
+      "url": "https://t.me/s/pickmeartstudio",
+      "venue": "Pick Me Art Studio",
+      "adapter": "sketch_telegram",
+      "kind": "event",
+      "source_group": "sketching"
+    },
+    {
+      "name": "Простая школа — открытые практики",
+      "city": "moscow",
+      "url": "https://prostaya.ru/praktiki",
+      "venue": "Простая школа",
+      "adapter": "sketch_prostaya",
+      "kind": "event",
+      "source_group": "sketching",
+      "address": "Москва, ул. Пятницкая, 71/5, строение 2, офис 503"
+    },
+    {
+      "name": "Sketching Biro — наброски",
+      "city": "spb",
+      "url": "https://t.me/s/sketching_biro",
+      "venue": "Sketching Biro",
+      "adapter": "sketch_telegram",
+      "kind": "event",
+      "source_group": "sketching"
+    },
+    {
+      "name": "Мастерская Олеси Федоренко — наброски",
+      "city": "spb",
+      "url": "https://vk.com/nabroskispb",
+      "venue": "Мастерская Олеси Федоренко",
+      "adapter": "sketch_vk",
+      "kind": "event",
+      "source_group": "sketching"
     }
   ]
 }

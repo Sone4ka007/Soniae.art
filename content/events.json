@@ -591,6 +591,36 @@
       }
     },
     {
+      "id": "moscow-2026-07-15-04318b5546",
+      "status": "new",
+      "kind": "exhibition",
+      "city": "moscow",
+      "date": "2026-07-15",
+      "time": "",
+      "title": "14 сезон Открытых студий Винзавода",
+      "venue": "ЦСИ Винзавод",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [
+        "выставка"
+      ],
+      "description": "",
+      "url": "https://www.winzavod.ru/calendar/exhibitions/14-sezon-otkrytykh-studiy-winzavoda/",
+      "source": "ЦСИ Винзавод",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-25",
+      "start_date": "2026-07-15",
+      "end_date": "2027-01-31",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-07-31-78d767ce3e",
       "status": "rejected",
       "kind": "exhibition",
@@ -36329,6 +36359,36 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
+      "id": "moscow-2026-10-21-d7dc5ab12f",
+      "status": "new",
+      "kind": "exhibition",
+      "city": "moscow",
+      "date": "2026-10-21",
+      "time": "",
+      "title": "Неприснившееся завтра",
+      "venue": "ЦСИ Винзавод",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [
+        "выставка"
+      ],
+      "description": "",
+      "url": "https://www.winzavod.ru/calendar/exhibitions/neprisnivsheesya-zavtra/",
+      "source": "ЦСИ Винзавод",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-25",
+      "start_date": "2026-10-21",
+      "end_date": "2026-11-29",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "russia-2026-10-21-d73278da8a",
       "status": "approved",
       "kind": "open_call",
@@ -36517,6 +36577,37 @@
       "reviewed_at": "2026-10-19",
       "time_verification": "unverified",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
+      "id": "moscow-2026-10-21-5f1ecc1c15",
+      "status": "new",
+      "kind": "exhibition",
+      "city": "moscow",
+      "date": "2026-10-21",
+      "time": "",
+      "title": "Что ты сделал для хип-хопа в свои годы",
+      "venue": "ЦСИ Винзавод",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [
+        "перформанс",
+        "выставка"
+      ],
+      "description": "",
+      "url": "https://www.winzavod.ru/calendar/exhibitions/chto-ty-sdelal-dlya-khip-khopa-v-svoi-gody/",
+      "source": "ЦСИ Винзавод",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-25",
+      "start_date": "2026-10-21",
+      "end_date": "2026-12-01",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "spb-2026-10-21-6274d9b2ae",
@@ -38156,49 +38247,7 @@
       "reviewed_at": "2026-10-17",
       "availability": "unknown",
       "availability_checked_at": "",
-      "registration": false,
-      "price": null,
-      "price_text": "",
-      "price_type": "paid",
-      "id": "moscow-2026-10-29-80abf31bf1",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-10-22",
-      "time": "19:00",
-      "title": "Лекция «Орест Кипренский»",
-      "venue": "Третьяковская галерея — Инженерный корпус",
-      "address": "Лаврушинский переулок, 12",
-      "categories": [
-        "лекция",
-        "история искусства",
-        "живопись"
-      ],
-      "description": "Лекция цикла «Мастера русской живописи. Часть 1. От Рокотова до Иванова», посвящённая Оресту Кипренскому.",
-      "url": "https://www.tretyakovgallery.ru/events/o/lektsiya-orest-kiprenskiy-10-2026/",
-      "source": "Третьяковская галерея",
-      "discovered_at": "2026-10-17",
-      "review_reason": "",
-      "editor_overrides": {
-        "status": "approved",
-        "telegram_include": false,
-        "instagram_include": false,
-        "registration": false
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "ticket_required": true,
-      "time_verification": "verified",
-      "time_evidence": "22 октября 2026 19:00",
-      "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
-    },
-    {
-      "status": "approved",
-      "editor_note": "Добавлено по подборке 19–25 октября; первоисточник проверен",
-      "checked_at": "2026-10-17",
-      "reviewed_at": "2026-10-17",
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "registration": false,
+      "registration": null,
       "price": null,
       "price_text": "",
       "price_type": "paid",
@@ -38224,7 +38273,49 @@
         "status": "approved",
         "telegram_include": false,
         "instagram_include": false,
-        "registration": false
+        "registration": null
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "ticket_required": true,
+      "time_verification": "verified",
+      "time_evidence": "22 октября 2026 19:00",
+      "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
+      "status": "approved",
+      "editor_note": "Добавлено по подборке 19–25 октября; первоисточник проверен",
+      "checked_at": "2026-10-17",
+      "reviewed_at": "2026-10-17",
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "registration": null,
+      "price": null,
+      "price_text": "",
+      "price_type": "paid",
+      "id": "moscow-2026-10-29-80abf31bf1",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-22",
+      "time": "19:00",
+      "title": "Лекция «Орест Кипренский»",
+      "venue": "Третьяковская галерея — Инженерный корпус",
+      "address": "Лаврушинский переулок, 12",
+      "categories": [
+        "лекция",
+        "история искусства",
+        "живопись"
+      ],
+      "description": "Лекция цикла «Мастера русской живописи. Часть 1. От Рокотова до Иванова», посвящённая Оресту Кипренскому.",
+      "url": "https://www.tretyakovgallery.ru/events/o/lektsiya-orest-kiprenskiy-10-2026/",
+      "source": "Третьяковская галерея",
+      "discovered_at": "2026-10-17",
+      "review_reason": "",
+      "editor_overrides": {
+        "status": "approved",
+        "telegram_include": false,
+        "instagram_include": false,
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -40874,7 +40965,7 @@
       "address": "1-й Голутвинский переулок, 16, стр. 1",
       "price": 850,
       "price_text": "850 ₽; льготный — 650 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -40898,7 +40989,7 @@
       "reviewed_at": "2026-10-17",
       "ticket_required": true,
       "editor_overrides": {
-        "registration": false
+        "registration": null
       },
       "time_verification": "verified",
       "time_evidence": "24 октября 2026 14:00",
@@ -40916,7 +41007,7 @@
       "address": "1-й Голутвинский переулок, 16, стр. 1",
       "price": 850,
       "price_text": "850 ₽; льготный — 650 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -40943,7 +41034,7 @@
       "time_evidence": "24 октября 2026 14:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
       "editor_overrides": {
-        "registration": false
+        "registration": null
       }
     },
     {
@@ -41526,6 +41617,32 @@
       "editor_overrides": {
         "registration": false
       }
+    },
+    {
+      "id": "spb-2026-10-25-b7914ca255",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-25",
+      "time": "",
+      "title": "«Когда я была маленькая» по мотивам произведения К. Драгунской",
+      "venue": "Пушкинская-10",
+      "address": "",
+      "price": 1000,
+      "price_text": "1000 ₽",
+      "registration": null,
+      "categories": [],
+      "description": "Кажется, в этих историях всегда лето и каникулы, велосипеды, костры, лодки и ёжики, а зима наступает на пять минут, для порядка, «чтоб было». Там мамы ходят в парк шуршать сухими листьями, папы веселые и добрые, всегда поддержат бродячего барбоса в трудную минуту. Родители помнят, что они тоже были детьми.",
+      "url": "https://p-10.ru/events/kogda-ya-byla-malenkaya-po-motivam-proizvedeniya-k-dragunskoj-8/",
+      "source": "Пушкинская-10 — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-25",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "spb-2026-10-25-dc9be4f0a3",
@@ -42116,6 +42233,62 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
+      "id": "moscow-2026-10-25-c40e7952b7",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-25",
+      "time": "10:00",
+      "title": "Воркшопы",
+      "venue": "ЦСИ Винзавод",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "",
+      "url": "https://www.winzavod.ru/calendar/workshops/",
+      "source": "ЦСИ Винзавод",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-25",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "moscow-2026-10-25-fefbfbd35d",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-25",
+      "time": "10:00",
+      "title": "Курсы",
+      "venue": "ЦСИ Винзавод",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "",
+      "url": "https://www.winzavod.ru/calendar/course/",
+      "source": "ЦСИ Винзавод",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-25",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-10-25-331f7306e3",
       "status": "approved",
       "kind": "event",
@@ -42346,6 +42519,34 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
+      "id": "moscow-2026-10-25-2b2a385dc4",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-25",
+      "time": "13:00",
+      "title": "Сборная экскурсия по выставке «Анатолий Зверев. Открытое хранение»",
+      "venue": "Музей AZ",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "На экскурсии по выставке «Анатолий Зверев. Открытое хранение» вы узнаете об истории формирования коллекции Музея AZ, увидите ранние произведения Анатолия Зверева, познакомитесь с серией прекрасных женских образов, включая портреты Оксаны Асеевой, и поймете, какую роль в экспозиции играет танцевальный видео-перформанс.",
+      "url": "https://museum-az.com/event/sbornaya-ekskursiya-po-vystavke-anatoliy-zverev-otkrytoe-khranenie-25-10-/",
+      "source": "Музей AZ — выставки и события",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-25",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-10-25-bd8f7d3352",
       "status": "rejected",
       "kind": "event",
@@ -42490,7 +42691,7 @@
     },
     {
       "id": "moscow-2026-10-25-5039d7f49d",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-25",
@@ -42508,7 +42709,7 @@
       "url": "https://www.jewish-museum.ru/events/demony-inkvizitsiya-i-pervye-getto-kak-evrei-vyzhili-v-srednevekovoy-evrope/",
       "source": "Еврейский музей и центр толерантности",
       "checked_at": "",
-      "review_reason": "",
+      "review_reason": "excluded_tour_mediation",
       "discovered_at": "2026-10-25",
       "price_type": "free",
       "availability": "unknown",
@@ -43902,41 +44103,6 @@
       }
     },
     {
-      "id": "moscow-2026-10-26-c3cb427dd4",
-      "status": "rejected",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-10-26",
-      "time": "16:00",
-      "title": "Арт-территория «Контур»",
-      "venue": "Еврейский музей и центр толерантности",
-      "address": "",
-      "price": 1100,
-      "price_text": "1100 ₽",
-      "registration": false,
-      "categories": [
-        "лекция"
-      ],
-      "description": "1 100 ₽ - разовый билет 4 000 ₽ - абонемент на 4 занятия Отправимся в путешествие по главным эпохам и направлениям европейского искусства: от Возрождения до искусства XX века. Будем рисовать музыку, собирать картины из геометрических фигур, придумывать несуществующих животных, искать цвета настроения и создавать собственный художественный язык.",
-      "url": "https://www.jewish-museum.ru/events/art-territoriya-kontur-/",
-      "source": "Еврейский музей и центр толерантности",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-10-21",
-      "price_type": "paid",
-      "availability": "unknown",
-      "availability_checked_at": "2026-10-25",
-      "editor_overrides": {
-        "telegram_include": false,
-        "instagram_include": false,
-        "status": "rejected"
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": "2026-10-24"
-    },
-    {
       "id": "moscow-2026-10-26-f305c56561",
       "status": "rejected",
       "kind": "event",
@@ -44131,6 +44297,34 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
+      "id": "moscow-2026-10-26-2b2a385dc4",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-26",
+      "time": "19:00",
+      "title": "Сборная экскурсия по выставке «Анатолий Зверев. Открытое хранение»",
+      "venue": "Музей AZ",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "На экскурсии по выставке «Анатолий Зверев. Открытое хранение» вы узнаете об истории формирования коллекции Музея AZ, увидите ранние произведения Анатолия Зверева, познакомитесь с серией прекрасных женских образов, включая портреты Оксаны Асеевой, и поймете, какую роль в экспозиции играет танцевальный видео-перформанс.",
+      "url": "https://museum-az.com/event/sbornaya-ekskursiya-po-vystavke-anatoliy-zverev-otkrytoe-khranenie-26-10/",
+      "source": "Музей AZ — выставки и события",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-25",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-10-20-47b8e1b12d",
       "status": "approved",
       "kind": "event",
@@ -44169,6 +44363,72 @@
       },
       "time_verification": "verified",
       "time_evidence": "26 октября 2026 (понедельник) 19:30",
+      "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
+      "id": "moscow-2026-10-26-a8f5e6cb61",
+      "status": "check",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-26",
+      "time": "19:30",
+      "title": "Мастер-класс по коллажу с художником Сашей Посохом",
+      "venue": "Столешников переулок, 11",
+      "address": "",
+      "price": 3500,
+      "price_text": "3500 ₽",
+      "registration": null,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "Саша Посох — архитектор и мультимедиа-художник, работающий на пересечении архитектуры, фотографии, рисунка и графического дизайна. На мастер-классе участники познакомятся с коллажем как художественным методом, позволяющим создавать новые образы из уже существующих изображений. Используя журналы, книги и другие печатные материалы, каждый сможет поэкспериментировать с композицией, сочетаниями форм и цветов и создать собственный коллаж.",
+      "url": "https://design-mate.ru/go/events/master-klass-po-kollazhu-s-hudozhnikom-sashey-posohom",
+      "source": "Design Mate — календарь",
+      "checked_at": "",
+      "review_reason": "discovery_source_needs_primary_verification",
+      "discovered_at": "2026-10-25",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "moscow-2026-10-26-c3cb427dd4",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-26",
+      "time": "23:11",
+      "title": "Арт-территория «Контур»",
+      "venue": "Еврейский музей и центр толерантности",
+      "address": "",
+      "price": 1100,
+      "price_text": "1100 ₽",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "1 100 ₽ - разовый билет 4 000 ₽ - абонемент на 4 занятия Отправимся в путешествие по главным эпохам и направлениям европейского искусства: от Возрождения до искусства XX века. Будем рисовать музыку, собирать картины из геометрических фигур, придумывать несуществующих животных, искать цвета настроения и создавать собственный художественный язык.",
+      "url": "https://www.jewish-museum.ru/events/art-territoriya-kontur-/",
+      "source": "Еврейский музей и центр толерантности",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-21",
+      "price_type": "paid",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-25",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false,
+        "status": "rejected"
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": "2026-10-24",
+      "time_verification": "verified",
+      "time_evidence": "26.10.2026-23.11",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
@@ -44946,44 +45206,6 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
-      "id": "spb-2026-10-27-3ddf87dd59",
-      "status": "rejected",
-      "kind": "event",
-      "city": "spb",
-      "date": "2026-10-27",
-      "time": "19:00",
-      "title": "Встреча с Глебом Шульпяковым « Я тень священную мне встречу…»",
-      "venue": "Музей «Полторы комнаты» Иосифа Бродского",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [
-        "мастер-класс"
-      ],
-      "description": "Читателя найду в потомстве я. Евгений Боратынский, 1828. Иосиф Бродский называл Боратынского поэтом поколения, первым русским поэтом-интеллектуалом.",
-      "url": "https://brodsky.online/events/vstrecha-s-glebom-shulpyakov-ya-ten-svyashchennuyu-mne-vstrechu-/",
-      "source": "Полторы комнаты — музей Иосифа Бродского",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-10-15",
-      "price_type": "unknown",
-      "availability": "unknown",
-      "availability_checked_at": "2026-10-25",
-      "sheet_synced_description": "Читателя найду в потомстве я. Евгений Боратынский, 1828. Иосиф Бродский называл Боратынского поэтом поколения, первым русским поэтом-интеллектуалом.",
-      "social_description": "",
-      "social_title": "",
-      "telegram_include": false,
-      "social_priority": null,
-      "instagram_image": "",
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": "2026-10-17",
-      "time_verification": "verified",
-      "time_evidence": "27.10, вт • 19:00",
-      "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
-    },
-    {
       "id": "moscow-2026-11-03-3d116bf28f",
       "status": "approved",
       "kind": "event",
@@ -45097,6 +45319,34 @@
       "time_verification": "verified",
       "time_evidence": "27.10.26 19:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
+      "id": "moscow-2026-10-27-2b2a385dc4",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-27",
+      "time": "19:00",
+      "title": "Сборная экскурсия по выставке «Анатолий Зверев. Открытое хранение»",
+      "venue": "Музей AZ",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "На экскурсии по выставке «Анатолий Зверев. Открытое хранение» вы узнаете об истории формирования коллекции Музея AZ, увидите ранние произведения Анатолия Зверева, познакомитесь с серией прекрасных женских образов, включая портреты Оксаны Асеевой, и поймете, какую роль в экспозиции играет танцевальный видео-перформанс.",
+      "url": "https://museum-az.com/event/sbornaya-ekskursiya-po-vystavke-anatoliy-zverev-otkrytoe-khranenie-27-10/",
+      "source": "Музей AZ — выставки и события",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-25",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "spb-2026-10-27-d840639c9f",
@@ -45213,6 +45463,44 @@
       "reviewed_at": "2026-10-24",
       "time_verification": "verified",
       "time_evidence": "27.10.26 20:00",
+      "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
+      "id": "spb-2026-10-27-3ddf87dd59",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-27",
+      "time": "21:10",
+      "title": "Встреча с Глебом Шульпяковым « Я тень священную мне встречу…»",
+      "venue": "Музей «Полторы комнаты» Иосифа Бродского",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "Читателя найду в потомстве я. Евгений Боратынский, 1828. Иосиф Бродский называл Боратынского поэтом поколения, первым русским поэтом-интеллектуалом.",
+      "url": "https://brodsky.online/events/vstrecha-s-glebom-shulpyakov-ya-ten-svyashchennuyu-mne-vstrechu-/",
+      "source": "Полторы комнаты — музей Иосифа Бродского",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-15",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-25",
+      "sheet_synced_description": "Читателя найду в потомстве я. Евгений Боратынский, 1828. Иосиф Бродский называл Боратынского поэтом поколения, первым русским поэтом-интеллектуалом.",
+      "social_description": "",
+      "social_title": "",
+      "telegram_include": false,
+      "social_priority": null,
+      "instagram_image": "",
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": "2026-10-17",
+      "time_verification": "verified",
+      "time_evidence": "27.10, вт • 19:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
@@ -45846,6 +46134,34 @@
       "time_verification": "verified",
       "time_evidence": "28 октября 19:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
+      "id": "moscow-2026-10-28-2b2a385dc4",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-28",
+      "time": "19:00",
+      "title": "Сборная экскурсия по выставке «Анатолий Зверев. Открытое хранение»",
+      "venue": "Музей AZ",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "На экскурсии по выставке «Анатолий Зверев. Открытое хранение» вы узнаете об истории формирования коллекции Музея AZ, увидите ранние произведения Анатолия Зверева, познакомитесь с серией прекрасных женских образов, включая портреты Оксаны Асеевой, и поймете, какую роль в экспозиции играет танцевальный видео-перформанс.",
+      "url": "https://museum-az.com/event/sbornaya-ekskursiya-po-vystavke-anatoliy-zverev-otkrytoe-khranenie-28-104475/",
+      "source": "Музей AZ — выставки и события",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-25",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-10-28-18b1630bf5",
@@ -46497,43 +46813,6 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
-      "id": "moscow-2026-10-29-658ce25c5e",
-      "status": "rejected",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-10-29",
-      "time": "",
-      "title": "Чувственность в искусстве глазами женщин художниц",
-      "venue": "Музейный центр «Масловка. Городок художников»",
-      "address": "",
-      "price": 1900,
-      "price_text": "1900 ₽",
-      "registration": false,
-      "categories": [
-        "лекция"
-      ],
-      "description": "«Мужчины смотрят на женщин, женщины видят себя рассматриваемыми», — утверждал историк искусства Джон Бергер. Долгое время в изобразительном искусстве женщины воспринимались лишь как объект зрительского внимания через призму мужского взгляда, однако всё изменилось с приходом XX века.",
-      "url": "https://maslovka.org/events/chuvstvennost-v-iskusstve-glazami-zhenshchin-khudozhnits/",
-      "source": "Масловка — события",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-10-21",
-      "price_type": "paid",
-      "availability": "unknown",
-      "availability_checked_at": "2026-10-25",
-      "editor_overrides": {
-        "telegram_include": false,
-        "instagram_include": false,
-        "status": "rejected"
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": "2026-10-24",
-      "time_verification": "unverified",
-      "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
-    },
-    {
       "id": "moscow-2026-10-29-600a19d7cf",
       "status": "rejected",
       "kind": "event",
@@ -47049,42 +47328,32 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
-      "id": "spb-2026-10-29-df32f22abf",
+      "id": "moscow-2026-10-29-2b2a385dc4",
       "status": "rejected",
       "kind": "event",
-      "city": "spb",
+      "city": "moscow",
       "date": "2026-10-29",
       "time": "19:00",
-      "title": "Название требует проверки",
-      "venue": "Музей «Полторы комнаты» Иосифа Бродского",
+      "title": "Сборная экскурсия по выставке «Анатолий Зверев. Открытое хранение»",
+      "venue": "Музей AZ",
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": false,
+      "registration": null,
       "categories": [
-        "презентация"
+        "лекция"
       ],
-      "description": "Презентация книг Галины Зелениной «Чемодан, вокзал, увольте. Позднесоветские евреи между русской интеллигенций и эмиграцией» (Издательство Европейского университета в Санкт-Петербурге, 2026) и «Exnostris. Очерки советской еврейской автобиографии» (Еврейский музей и Центр толерантности, 2026).",
-      "url": "https://brodsky.online/events/chemodan-vokzal-pishite-prezentatsiya-knig-galiny-zeleninoy-chemodan-vokzal-uvolte-pozdnesovetskie-e/",
-      "source": "Полторы комнаты — музей Иосифа Бродского",
+      "description": "На экскурсии по выставке «Анатолий Зверев. Открытое хранение» вы узнаете об истории формирования коллекции Музея AZ, увидите ранние произведения Анатолия Зверева, познакомитесь с серией прекрасных женских образов, включая портреты Оксаны Асеевой, и поймете, какую роль в экспозиции играет танцевальный видео-перформанс.",
+      "url": "https://museum-az.com/event/sbornaya-ekskursiya-po-vystavke-anatoliy-zverev-otkrytoe-khranenie-29-109952/",
+      "source": "Музей AZ — выставки и события",
       "checked_at": "",
-      "review_reason": "invalid_title_from_description",
-      "discovered_at": "2026-10-21",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-25",
       "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": "2026-10-25",
-      "editor_overrides": {
-        "telegram_include": false,
-        "instagram_include": false,
-        "status": "rejected"
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": "2026-10-25",
-      "time_verification": "verified",
-      "time_evidence": "29.10, чт • 19:00",
-      "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-10-29-3830665110",
@@ -47122,6 +47391,43 @@
       "reviewed_at": "2026-10-24",
       "time_verification": "verified",
       "time_evidence": "29.10.2026 19:00",
+      "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
+      "id": "moscow-2026-10-29-658ce25c5e",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-29",
+      "time": "19:00",
+      "title": "Чувственность в искусстве глазами женщин художниц",
+      "venue": "Музейный центр «Масловка. Городок художников»",
+      "address": "",
+      "price": 1900,
+      "price_text": "1900 ₽",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "«Мужчины смотрят на женщин, женщины видят себя рассматриваемыми», — утверждал историк искусства Джон Бергер. Долгое время в изобразительном искусстве женщины воспринимались лишь как объект зрительского внимания через призму мужского взгляда, однако всё изменилось с приходом XX века.",
+      "url": "https://maslovka.org/events/chuvstvennost-v-iskusstve-glazami-zhenshchin-khudozhnits/",
+      "source": "Масловка — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-21",
+      "price_type": "paid",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-25",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false,
+        "status": "rejected"
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": "2026-10-24",
+      "time_verification": "unverified",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
@@ -47314,6 +47620,44 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": "2026-10-24"
+    },
+    {
+      "id": "spb-2026-10-29-df32f22abf",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-29",
+      "time": "21:10",
+      "title": "Название требует проверки",
+      "venue": "Музей «Полторы комнаты» Иосифа Бродского",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "презентация"
+      ],
+      "description": "Презентация книг Галины Зелениной «Чемодан, вокзал, увольте. Позднесоветские евреи между русской интеллигенций и эмиграцией» (Издательство Европейского университета в Санкт-Петербурге, 2026) и «Exnostris. Очерки советской еврейской автобиографии» (Еврейский музей и Центр толерантности, 2026).",
+      "url": "https://brodsky.online/events/chemodan-vokzal-pishite-prezentatsiya-knig-galiny-zeleninoy-chemodan-vokzal-uvolte-pozdnesovetskie-e/",
+      "source": "Полторы комнаты — музей Иосифа Бродского",
+      "checked_at": "",
+      "review_reason": "invalid_title_from_description",
+      "discovered_at": "2026-10-21",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-25",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false,
+        "status": "rejected"
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": "2026-10-25",
+      "time_verification": "verified",
+      "time_evidence": "29.10, чт • 19:00",
+      "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
       "id": "international-2026-10-30-4f3004830e",
@@ -47828,6 +48172,34 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
+      "id": "moscow-2026-10-30-2b2a385dc4",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-30",
+      "time": "15:30",
+      "title": "Сборная экскурсия по выставке «Анатолий Зверев. Открытое хранение»",
+      "venue": "Музей AZ",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "На экскурсии по выставке «Анатолий Зверев. Открытое хранение» вы узнаете об истории формирования коллекции Музея AZ, увидите ранние произведения Анатолия Зверева, познакомитесь с серией прекрасных женских образов, включая портреты Оксаны Асеевой, и поймете, какую роль в экспозиции играет танцевальный видео-перформанс.",
+      "url": "https://museum-az.com/event/sbornaya-ekskursiya-po-vystavke-anatoliy-zverev-otkrytoe-khranenie-30-10180/",
+      "source": "Музей AZ — выставки и события",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-25",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "spb-2026-10-30-b472168689",
       "status": "approved",
       "kind": "event",
@@ -48143,7 +48515,7 @@
       "address": "Лаврушинский переулок, 12",
       "price": 650,
       "price_text": "650 ₽; онлайн — 700 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -48160,7 +48532,7 @@
         "telegram_include": false,
         "instagram_include": false,
         "status": "approved",
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -48207,44 +48579,6 @@
       "reviewed_at": "2026-10-17",
       "time_verification": "verified",
       "time_evidence": "30 октября 2026 19:00",
-      "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
-    },
-    {
-      "id": "spb-2026-10-30-9b2ed009fe",
-      "status": "approved",
-      "kind": "event",
-      "city": "spb",
-      "date": "2026-10-30",
-      "time": "19:00",
-      "title": "Лекция Ольги Сейфетдиновой «Человек есть то, что он читает»",
-      "venue": "Музей «Полторы комнаты» Иосифа Бродского",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [
-        "лекция"
-      ],
-      "description": "«Человек есть то, что он читает» — пишет Иосиф Бродский в эссе «Поклониться тени». Личная библиотека способна рассказать о хозяине многое, библиотека — это своего рода метатекст о нем: не только с литературоведческой точки зрения (истоки, влияния, язык), но и с человеческой.",
-      "url": "https://brodsky.online/events/lektsiya-olgi-seyfetdinovoy-chelovek-est-to-chto-on-chitaet/",
-      "source": "Полторы комнаты — музей Иосифа Бродского",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-10-19",
-      "price_type": "unknown",
-      "availability": "unknown",
-      "availability_checked_at": "2026-10-25",
-      "editor_overrides": {
-        "telegram_include": false,
-        "instagram_include": false,
-        "status": "approved"
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": "2026-10-24",
-      "time_verification": "verified",
-      "time_evidence": "30.10, пт • 19:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
@@ -48308,7 +48642,7 @@
       "review_reason": "",
       "discovered_at": "2026-09-20",
       "price_type": "paid",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-09-27",
       "kind": "event",
       "editor_note": "",
@@ -48350,7 +48684,7 @@
       "review_reason": "",
       "discovered_at": "2026-09-20",
       "price_type": "paid",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-16",
       "kind": "event",
       "editor_note": "",
@@ -48441,6 +48775,44 @@
       "sheet_synced_description": "",
       "time_verification": "verified",
       "time_evidence": "30.10.2026 | 20:00",
+      "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
+      "id": "spb-2026-10-30-9b2ed009fe",
+      "status": "approved",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-30",
+      "time": "21:10",
+      "title": "Лекция Ольги Сейфетдиновой «Человек есть то, что он читает»",
+      "venue": "Музей «Полторы комнаты» Иосифа Бродского",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "«Человек есть то, что он читает» — пишет Иосиф Бродский в эссе «Поклониться тени». Личная библиотека способна рассказать о хозяине многое, библиотека — это своего рода метатекст о нем: не только с литературоведческой точки зрения (истоки, влияния, язык), но и с человеческой.",
+      "url": "https://brodsky.online/events/lektsiya-olgi-seyfetdinovoy-chelovek-est-to-chto-on-chitaet/",
+      "source": "Полторы комнаты — музей Иосифа Бродского",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-19",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-25",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false,
+        "status": "approved"
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": "2026-10-24",
+      "time_verification": "verified",
+      "time_evidence": "30.10, пт • 19:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
@@ -49065,6 +49437,34 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
+      "id": "moscow-2026-10-31-2b2a385dc4",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-31",
+      "time": "14:00",
+      "title": "Сборная экскурсия по выставке «Анатолий Зверев. Открытое хранение»",
+      "venue": "Музей AZ",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "На экскурсии по выставке «Анатолий Зверев. Открытое хранение» вы узнаете об истории формирования коллекции Музея AZ, увидите ранние произведения Анатолия Зверева, познакомитесь с серией прекрасных женских образов, включая портреты Оксаны Асеевой, и поймете, какую роль в экспозиции играет танцевальный видео-перформанс.",
+      "url": "https://museum-az.com/event/sbornaya-ekskursiya-po-vystavke-anatoliy-zverev-otkrytoe-khranenie-31-105746/",
+      "source": "Музей AZ — выставки и события",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-25",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "spb-2026-10-31-21c907ec6e",
       "status": "rejected",
       "kind": "event",
@@ -49106,6 +49506,34 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
+      "id": "moscow-2026-10-31-27d13f4f1f",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-31",
+      "time": "15:00",
+      "title": "Лекция «Чертополох»",
+      "venue": "Третьяковская галерея",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Лекция к абонементу №04 «Баллада о цветах» 3 октября 2026 – 7 ноября 2026 Лекция будет проходить в Лекционном зале Инженерного корпуса (Лаврушинский переулок, д. 12, вход с Малого Толмачёвского переулка) и в режиме реального времени на платформе МТС Линк в формате онлайн. Продолжительность лекции: 1 час 30 минут.",
+      "url": "https://www.tretyakovgallery.ru/events/o/lektsiya-chertopolokh-10-2026/",
+      "source": "Третьяковская галерея — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-25",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-10-31-267c448d66",
       "status": "approved",
       "kind": "event",
@@ -49143,6 +49571,34 @@
       "time_verification": "verified",
       "time_evidence": "31 октября 2026 (суббота) 15:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
+      "id": "moscow-2026-10-31-cb01852729",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-31",
+      "time": "15:00",
+      "title": "Экскурсия с хранителем музея по выставке «Анатолий Зверев. Открытое хранение»",
+      "venue": "Музей AZ",
+      "address": "",
+      "price": 800,
+      "price_text": "800 ₽",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Экскурсия с хранителем коллекции — это редкая возможность увидеть выставку глазами специалиста, который ежедневно работает с наследием Анатолия Зверева. Особенность такой экскурсии — доступ в закрытую часть экспозиции, где хранятся настоящие «жемчужины коллекции».",
+      "url": "https://museum-az.com/event/ekskursiya-s-khranitelem-muzeya-po-vystavke-anatoliy-zverev-otkrytoe-khranenie-31-10/",
+      "source": "Музей AZ — выставки и события",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-25",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-10-31-eca75b2255",
@@ -49824,14 +50280,16 @@
       "price": 0,
       "price_text": "",
       "registration": false,
-      "categories": [],
+      "categories": [
+        "выставка"
+      ],
       "description": "На метро Музей AZ находится между станциями метро «Маяковская» и «Белорусская» (кольцевая). Мы рекомендуем идти в Музей от станции «Маяковская». Вам нужен Выход №1 на 1-я Тверская-Ямская улица, 2-я Тверская-Ямская улица.",
       "url": "https://museum-az.com/event/territoriya-svobody-nonkonformisty-v-taruse/",
       "source": "Музей AZ — выставки и события",
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-10-20",
-      "price_type": "paid",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-10-25",
       "editor_overrides": {
@@ -49888,41 +50346,6 @@
       "editor_overrides": {
         "time": ""
       }
-    },
-    {
-      "id": "moscow-2026-11-01-732e936867",
-      "status": "rejected",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-11-01",
-      "time": "",
-      "title": "Экскурсионный маршрут / Арт-истории Чистых прудов: от Маросейки до Фурманного",
-      "venue": "Музей AZ",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [
-        "лекция"
-      ],
-      "description": "Большинство из прилегающих к Чистопрудному бульвару улиц и переулков удивительным образом не только сохранили наследие прошлых веков, но и оказались питательной средой и эпицентрами современного искусства.",
-      "url": "https://museum-az.com/event/ekskursionnyy-marshrut-art-istorii-chistykh-prudov-ot-maroseyki-do-furmannogo-08-11/",
-      "source": "Музей AZ — выставки и события",
-      "checked_at": "",
-      "review_reason": "excluded_tour_mediation",
-      "discovered_at": "2026-10-21",
-      "price_type": "paid",
-      "availability": "unknown",
-      "availability_checked_at": "2026-10-25",
-      "editor_overrides": {
-        "telegram_include": false,
-        "instagram_include": false,
-        "time": ""
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "time_verification": "unverified",
-      "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
       "id": "moscow-2026-10-04-65ab0155ea",
@@ -50471,6 +50894,32 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
+      "id": "spb-2026-11-02-2b399c4849",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-02",
+      "time": "10:30",
+      "title": "Каким будет интерьер 2027 года?",
+      "venue": "Международная школа дизайна — Петербург",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "Новые оттенки, неожиданные сочетания фактур, свежие формы мебели и нестандартные решения — какие из этих тенденций действительно стоит взять на заметку дизайнеру? Вместе с Ксенией Бандориной, экспертом и аналитиком дизайна, разберём главные интерьерные тенденции наступающего года: от цветовых палитр и материалов до освещения, мебели и декора. И главное — поговорим о том, как адаптировать актуальные тренды для реальных проектов, а не просто любоваться ими на красивых картинках. Хотите первыми узнать, что будет актуально в дизайне интерьеров в 2027 году?",
+      "url": "https://t.me/spbdesignschool/7062",
+      "source": "Международная школа дизайна — Петербург — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-10-25",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "spb-2026-11-02-9366161df8",
       "status": "rejected",
       "kind": "event",
@@ -50780,6 +51229,43 @@
       "telegram_include": false,
       "instagram_include": false,
       "time_verification": "unverified",
+      "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
+      "id": "moscow-2026-11-04-fd619c9f4d",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-04",
+      "time": "12:30",
+      "title": "Экскурсионный маршрут / Нонконформисты на Кропоткинской: возмутители спокойствия в благородном предместье",
+      "venue": "Музей AZ",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Местность между Арбатом и Москвой-рекой неизменно привлекает заповедной стариной — хотя в последние десятилетия активно застраивается новым элитным жильем. Тем не менее здесь, в так называемом московском Сен-Жерменском предместье, еще сохранились и допетровские палаты, и ампирные дворянские усадьбы, и купеческие дома в стиле модерн, и конструктивистские здания 1920-30-х.",
+      "url": "https://museum-az.com/event/ekskursionnyy-marshrut-nonkonformisty-na-kropotkinskoy-vozmutiteli-spokoystviya-v-blagorodnom-predme8981/",
+      "source": "Музей AZ — выставки и события",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-13",
+      "price_type": "paid",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-25",
+      "sheet_synced_description": "Местность между Арбатом и Москвой-рекой неизменно привлекает заповедной стариной — хотя в последние десятилетия активно застраивается новым элитным жильем. Тем не менее здесь, в так называемом московском Сен-Жерменском предместье, еще сохранились и допетровские палаты, и ампирные дворянские усадьбы, и купеческие дома в стиле модерн, и конструктивистские здания 1920-30-х.",
+      "social_priority": null,
+      "instagram_image": "",
+      "social_description": "",
+      "telegram_include": false,
+      "editor_note": "",
+      "social_title": "",
+      "instagram_include": false,
+      "time_verification": "verified",
+      "time_evidence": "1 ноября 2026, 12:30",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
@@ -51742,6 +52228,41 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
+      "id": "moscow-2026-11-01-732e936867",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-08",
+      "time": "",
+      "title": "Экскурсионный маршрут / Арт-истории Чистых прудов: от Маросейки до Фурманного",
+      "venue": "Музей AZ",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Большинство из прилегающих к Чистопрудному бульвару улиц и переулков удивительным образом не только сохранили наследие прошлых веков, но и оказались питательной средой и эпицентрами современного искусства.",
+      "url": "https://museum-az.com/event/ekskursionnyy-marshrut-art-istorii-chistykh-prudov-ot-maroseyki-do-furmannogo-08-11/",
+      "source": "Музей AZ — выставки и события",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-21",
+      "price_type": "paid",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-25",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false,
+        "time": ""
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "time_verification": "unverified",
+      "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
       "id": "international-2026-11-09-330553996a",
       "status": "rejected",
       "kind": "open_call",
@@ -52009,6 +52530,32 @@
       "editor_overrides": {
         "registration": false
       }
+    },
+    {
+      "id": "spb-2026-11-11-2b455f77a1",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-11",
+      "time": "",
+      "title": "Дом Радио и",
+      "venue": "Дом Радио",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "представляют российскую премьеру фильма «Роберт Уилсон: красота Первый в России показ документальной ленты Карла фон Карштедта о Роберте Уилсоне — одном из важнейших режиссеров, сценографов и драматургов XX века — пройдет в ноябре в Доме Радио. В фильме о нем рассказывают Том Уэйтс, Уиллем Дефо, Марина Абрамович и другие звезды из самых разных сфер искусства. Сам Уилсон тоже появляется в кадре — картина была закончена в 2021 году. Перед премьерой в Доме Радио театровед расскажет о ранних работах режиссера и о сформировавшем его американском культурном контексте. После показа она проведет обсуж",
+      "url": "https://widget.afisha.yandex.ru/w/sessions/MTA4ODU1fDkwODAyMXwxNDQ3NjIzNnwxNzk0NDEyODAwMDAw?clientKey=845c7e3f-7061-4f5f-9a71-a10acf702212",
+      "source": "Дом Радио — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-10-25",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-11-422be2d050",
@@ -52430,7 +52977,7 @@
       "review_reason": "",
       "discovered_at": "2026-10-14",
       "price_type": "paid",
-      "availability": "available",
+      "availability": "unknown",
       "availability_checked_at": "2026-10-24",
       "sheet_synced_description": "Лекция в рамках цикла «Павел Третьяков и русские художники». Продолжительность – 1 час. Место проведения – Музей Павла и Сергея Третьяковых.",
       "telegram_include": false,
@@ -53509,6 +54056,34 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
+      "id": "moscow-2026-11-21-16f6939347",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-21",
+      "time": "12:30",
+      "title": "Экскурсионный маршрут / От ВХУТЕМАСа до AZ ARTа",
+      "venue": "Музей AZ",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Пересечение Мясницкой улицы и Бульварного кольца было важным местом в артистической жизни Москвы как в ХIX, так и в ХХ веке. Здесь происходили интереснейшие события в истории русского авангарда и неофициального искусства 1960-1970-х годов.",
+      "url": "https://museum-az.com/event/ekskursionnyy-marshrut-ot-vkhutemasa-do-az-arta-21-11/",
+      "source": "Музей AZ — выставки и события",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-25",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "international-2026-11-22-74e7820a46",
       "status": "rejected",
       "kind": "open_call",
@@ -53853,7 +54428,7 @@
       "title": "Международный архитектурный фестиваль «Зодчество. Россия»",
       "venue": "г. Москва, ул. Ильинка, 4",
       "address": "",
-      "price": 0,
+      "price": 3500,
       "price_text": "Бесплатно",
       "registration": false,
       "categories": [
@@ -53872,13 +54447,13 @@
       "availability_checked_at": "",
       "time_verification": "unverified",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
+      "telegram_include": false,
+      "instagram_include": false,
       "editor_overrides": {
         "time": "",
         "telegram_include": false,
         "instagram_include": false
-      },
-      "telegram_include": false,
-      "instagram_include": false
+      }
     },
     {
       "id": "international-2026-11-25-ef39cd57a5",

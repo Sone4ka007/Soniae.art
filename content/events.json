@@ -39862,7 +39862,7 @@
     },
     {
       "id": "moscow-2026-10-26-5f73160fd7",
-      "status": "check",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-26",
@@ -39886,9 +39886,12 @@
       "price_type": "paid",
       "availability": "unknown",
       "availability_checked_at": "",
-      "reviewed_at": "",
+      "reviewed_at": "2026-10-25",
       "availability_evidence": "",
-      "ticket_required": false
+      "ticket_required": false,
+      "editor_overrides": {
+        "status": "approved"
+      }
     },
     {
       "id": "spb-2026-10-26-e3e462efc0",
@@ -40401,7 +40404,7 @@
     },
     {
       "id": "moscow-2026-10-27-b9a5fe1f3d",
-      "status": "check",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-27",
@@ -40425,9 +40428,12 @@
       "price_type": "paid",
       "availability": "unknown",
       "availability_checked_at": "",
-      "reviewed_at": "",
+      "reviewed_at": "2026-10-25",
       "availability_evidence": "",
-      "ticket_required": false
+      "ticket_required": false,
+      "editor_overrides": {
+        "status": "approved"
+      }
     },
     {
       "id": "moscow-2026-10-27-8c7ac32fc5",
@@ -40928,7 +40934,7 @@
     },
     {
       "id": "moscow-2026-10-27-4d10a2d654-1900",
-      "status": "check",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-27",
@@ -40952,9 +40958,12 @@
       "availability": "unknown",
       "availability_checked_at": "",
       "editor_note": "",
-      "reviewed_at": "",
+      "reviewed_at": "2026-10-25",
       "availability_evidence": "",
-      "ticket_required": false
+      "ticket_required": false,
+      "editor_overrides": {
+        "status": "approved"
+      }
     },
     {
       "id": "moscow-2026-10-27-664af796fe",
@@ -41138,7 +41147,7 @@
     },
     {
       "id": "moscow-2026-10-28-d4ed4734f6",
-      "status": "check",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-28",
@@ -41162,9 +41171,12 @@
       "price_type": "paid",
       "availability": "unknown",
       "availability_checked_at": "",
-      "reviewed_at": "",
+      "reviewed_at": "2026-10-25",
       "availability_evidence": "",
-      "ticket_required": false
+      "ticket_required": false,
+      "editor_overrides": {
+        "status": "approved"
+      }
     },
     {
       "id": "moscow-2026-10-28-8c7ac32fc5",
@@ -42270,7 +42282,7 @@
     },
     {
       "id": "moscow-2026-10-29-b485ac3446",
-      "status": "check",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-29",
@@ -42294,9 +42306,12 @@
       "price_type": "paid",
       "availability": "unknown",
       "availability_checked_at": "",
-      "reviewed_at": "",
+      "reviewed_at": "2026-10-25",
       "availability_evidence": "",
-      "ticket_required": false
+      "ticket_required": false,
+      "editor_overrides": {
+        "status": "approved"
+      }
     },
     {
       "id": "moscow-2026-10-29-6d8f1e6c5b",
@@ -43312,7 +43327,7 @@
     },
     {
       "id": "moscow-2026-10-30-73b662c76a",
-      "status": "check",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-30",
@@ -43336,9 +43351,12 @@
       "price_type": "paid",
       "availability": "unknown",
       "availability_checked_at": "",
-      "reviewed_at": "",
+      "reviewed_at": "2026-10-25",
       "availability_evidence": "",
-      "ticket_required": false
+      "ticket_required": false,
+      "editor_overrides": {
+        "status": "approved"
+      }
     },
     {
       "id": "moscow-2026-10-30-b920f54838",
@@ -43945,7 +43963,7 @@
     },
     {
       "id": "moscow-2026-10-30-da81792ce4",
-      "status": "check",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-30",
@@ -43969,9 +43987,12 @@
       "price_type": "paid",
       "availability": "unknown",
       "availability_checked_at": "",
-      "reviewed_at": "",
+      "reviewed_at": "2026-10-25",
       "availability_evidence": "",
-      "ticket_required": false
+      "ticket_required": false,
+      "editor_overrides": {
+        "status": "approved"
+      }
     },
     {
       "id": "moscow-2026-10-30-a4e875c14e",
@@ -44592,7 +44613,7 @@
     },
     {
       "id": "moscow-2026-10-31-64ecc1a02b",
-      "status": "check",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-31",
@@ -44616,9 +44637,12 @@
       "price_type": "paid",
       "availability": "unknown",
       "availability_checked_at": "",
-      "reviewed_at": "",
+      "reviewed_at": "2026-10-25",
       "availability_evidence": "",
-      "ticket_required": false
+      "ticket_required": false,
+      "editor_overrides": {
+        "status": "approved"
+      }
     },
     {
       "id": "moscow-2026-10-31-267c448d66",
@@ -45160,16 +45184,14 @@
       "price": 0,
       "price_text": "",
       "registration": false,
-      "categories": [
-        "выставка"
-      ],
+      "categories": [],
       "description": "На метро Музей AZ находится между станциями метро «Маяковская» и «Белорусская» (кольцевая). Мы рекомендуем идти в Музей от станции «Маяковская». Вам нужен Выход №1 на 1-я Тверская-Ямская улица, 2-я Тверская-Ямская улица.",
       "url": "https://museum-az.com/event/territoriya-svobody-nonkonformisty-v-taruse/",
       "source": "Музей AZ — выставки и события",
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-10-20",
-      "price_type": "free",
+      "price_type": "paid",
       "availability": "unknown",
       "availability_checked_at": "2026-10-25",
       "editor_overrides": {
@@ -45965,7 +45987,7 @@
     },
     {
       "id": "moscow-2026-11-02-5f73160fd7",
-      "status": "check",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-02",
@@ -45989,9 +46011,12 @@
       "price_type": "paid",
       "availability": "unknown",
       "availability_checked_at": "",
-      "reviewed_at": "",
+      "reviewed_at": "2026-10-25",
       "availability_evidence": "",
-      "ticket_required": false
+      "ticket_required": false,
+      "editor_overrides": {
+        "status": "approved"
+      }
     },
     {
       "id": "spb-2026-11-02-0e987411cc",
@@ -46065,7 +46090,7 @@
     },
     {
       "id": "moscow-2026-11-03-b9a5fe1f3d",
-      "status": "check",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-03",
@@ -46089,9 +46114,12 @@
       "price_type": "paid",
       "availability": "unknown",
       "availability_checked_at": "",
-      "reviewed_at": "",
+      "reviewed_at": "2026-10-25",
       "availability_evidence": "",
-      "ticket_required": false
+      "ticket_required": false,
+      "editor_overrides": {
+        "status": "approved"
+      }
     },
     {
       "id": "spb-2026-11-03-8b9adc409b",
@@ -46203,7 +46231,7 @@
     },
     {
       "id": "moscow-2026-11-04-d4ed4734f6",
-      "status": "check",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-04",
@@ -46227,9 +46255,12 @@
       "price_type": "paid",
       "availability": "unknown",
       "availability_checked_at": "",
-      "reviewed_at": "",
+      "reviewed_at": "2026-10-25",
       "availability_evidence": "",
-      "ticket_required": false
+      "ticket_required": false,
+      "editor_overrides": {
+        "status": "approved"
+      }
     },
     {
       "id": "spb-2026-11-04-94108f9818",
@@ -46437,7 +46468,7 @@
     },
     {
       "id": "moscow-2026-11-05-b485ac3446",
-      "status": "check",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-05",
@@ -46461,9 +46492,12 @@
       "price_type": "paid",
       "availability": "unknown",
       "availability_checked_at": "",
-      "reviewed_at": "",
+      "reviewed_at": "2026-10-25",
       "availability_evidence": "",
-      "ticket_required": false
+      "ticket_required": false,
+      "editor_overrides": {
+        "status": "approved"
+      }
     },
     {
       "id": "spb-2026-11-05-0bce51b132",
@@ -46722,7 +46756,7 @@
     },
     {
       "id": "moscow-2026-11-06-73b662c76a",
-      "status": "check",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-06",
@@ -46746,9 +46780,12 @@
       "price_type": "paid",
       "availability": "unknown",
       "availability_checked_at": "",
-      "reviewed_at": "",
+      "reviewed_at": "2026-10-25",
       "availability_evidence": "",
-      "ticket_required": false
+      "ticket_required": false,
+      "editor_overrides": {
+        "status": "approved"
+      }
     },
     {
       "status": "approved",
@@ -46825,7 +46862,7 @@
     },
     {
       "id": "moscow-2026-11-06-da81792ce4",
-      "status": "check",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-06",
@@ -46849,9 +46886,12 @@
       "price_type": "paid",
       "availability": "unknown",
       "availability_checked_at": "",
-      "reviewed_at": "",
+      "reviewed_at": "2026-10-25",
       "availability_evidence": "",
-      "ticket_required": false
+      "ticket_required": false,
+      "editor_overrides": {
+        "status": "approved"
+      }
     },
     {
       "id": "international-2026-11-07-e6acac2220",
@@ -46996,7 +47036,7 @@
     },
     {
       "id": "moscow-2026-11-07-64ecc1a02b",
-      "status": "check",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-07",
@@ -47020,9 +47060,12 @@
       "price_type": "paid",
       "availability": "unknown",
       "availability_checked_at": "",
-      "reviewed_at": "",
+      "reviewed_at": "2026-10-25",
       "availability_evidence": "",
-      "ticket_required": false
+      "ticket_required": false,
+      "editor_overrides": {
+        "status": "approved"
+      }
     },
     {
       "id": "international-2026-11-08-f9e3a218bb",

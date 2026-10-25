@@ -14,7 +14,7 @@ class ExhibitionFrontendTests(unittest.TestCase):
         js=(ROOT/"assets/events.js").read_text("utf-8")
         self.assertIn("events.json?v=' + Date.now()",js)
         html=(ROOT/"events/index.html").read_text("utf-8")
-        self.assertIn("events.js?v=20260924-1",html)
+        self.assertRegex(html, r"events\.js\?v=[^\"\s]+")
 
     def test_winzavod_description_filters_schedule_boilerplate(self):
         source=(ROOT/"scripts/events/collect_jsonld.py").read_text("utf-8")

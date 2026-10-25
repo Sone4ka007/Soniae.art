@@ -39,3 +39,26 @@ Editorial exclusions currently planned for the collector:
 - exclude events with Alim Velitov
 - exclude plein airs unless the event is by Alexey Geld
 - never auto-delete ambiguous borderline events; mark them `check`
+
+## Sketch places directory
+
+The «Наброски» tab reads `content/sketch-places.json`, independently of the automated events pipeline. Places do not expire and are filtered by city and price. Only approved records appear. Add records to the `places` array:
+
+```json
+{
+  "id": "unique-place-id",
+  "status": "approved",
+  "title": "Название",
+  "city": "spb",
+  "venue": "Площадка",
+  "address": "Адрес",
+  "schedule": "Расписание встреч — у организатора",
+  "description": "Формат встреч и что рисуют",
+  "price_type": "unknown",
+  "price_text": "Стоимость уточняйте у организатора",
+  "registration": true,
+  "url": "https://example.org/"
+}
+```
+
+Use `moscow` or `spb` for city and `free`, `paid` or `unknown` for price_type. Omit registration if unknown. Keep organizer links current.

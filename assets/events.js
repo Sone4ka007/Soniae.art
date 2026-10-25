@@ -34,6 +34,8 @@
   const weekdays = ['ВОСКРЕСЕНЬЕ','ПОНЕДЕЛЬНИК','ВТОРНИК','СРЕДА','ЧЕТВЕРГ','ПЯТНИЦА','СУББОТА'];
 
   let events = [];
+  let sketchPlaces = [];
+  let sketchError = false;
 
   const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const localDate = iso => new Date(iso + 'T00:00:00');
@@ -156,7 +158,37 @@
     return 'ДОСТУПНОСТЬ НЕ ПРОВЕРЕНА';
   }
 
+  function renderSketches() {
+    document.getElementById('events-range').textContent = 'МЕСТА И СООБЩЕСТВА';
+    const places = sketchPlaces.filter(e => e.status === 'approved'
+      && (state.city === 'all' || e.city === state.city)
+      && (state.price === 'all' || e.price_type === state.price));
+    const n = places.length, mod = n % 100, digit = n % 10;
+    count.textContent = n + ' ' + (mod >= 11 && mod <= 14 ? 'МЕСТ' : digit === 1 ? 'МЕСТО' : digit >= 2 && digit <= 4 ? 'МЕСТА' : 'МЕСТ');
+    empty.hidden = places.length !== 0;
+    empty.querySelector('p').textContent = sketchError ? 'Не удалось загрузить список мест для набросков.' : sketchPlaces.some(e => e.status === 'approved') ? 'По выбранным фильтрам мест пока нет.' : 'Здесь будут появляться места и встречи для набросков с натуры.';
+    list.innerHTML = places.map(e => `
+      <article class="event-card exhibition-card">
+        <div class="event-main"><h3>${esc(e.title)}</h3>
+          ${e.schedule ? `<p class="event-period">${esc(e.schedule)}</p>` : ''}
+          <p>${esc(shortDescription(e.description))}</p></div>
+        <div class="event-meta">
+          <p><strong>${esc(e.venue || '')}</strong></p>
+          <p>${esc(e.address || '')}</p><p>${esc(cityNames[e.city] || e.city || '')}</p>
+          <div class="event-price ${e.price_type === 'free' ? 'free' : ''}">${priceLabel(e)}</div>
+          ${e.registration === true ? '<p>НУЖНА РЕГИСТРАЦИЯ</p>' : e.registration === false ? '<p>БЕЗ РЕГИСТРАЦИИ</p>' : ''}
+        </div>
+        <a class="event-link" href="${esc(e.url)}" target="_blank" rel="noopener">К ОРГАНИЗАТОРУ ↗</a>
+      </article>`).join('');
+  }
+
   function render() {
+    const sketch = state.kind === 'sketch';
+    document.getElementById('sketch-intro').hidden = !sketch;
+    [registrationButtons[0]?.parentElement, availabilityButtons[0]?.parentElement, document.querySelector('.date-filter'), categorySelect].forEach(el => { if (el) el.hidden = sketch; });
+    if (sketch) { renderSketches(); return; }
+    empty.querySelector('p').textContent = 'Сейчас по выбранным фильтрам событий нет.';
+
     let visible = events.filter(isVisible).sort((a,b) => {
       const ad = a.start_date || a.date || '';
       const bd = b.start_date || b.date || '';
@@ -333,10 +365,16 @@
     render();
   });
 
+  fetch('/content/sketch-places.json?v=' + Date.now(), { cache: 'no-store' })
+    .then(r => { if (!r.ok) throw new Error('sketch-places.json'); return r.json(); })
+    .then(data => { sketchPlaces = Array.isArray(data) ? data : (data.places || []); if (state.kind === 'sketch') render(); })
+    .catch(() => { sketchError = true; if (state.kind === 'sketch') render(); });
+
   fetch('/content/events.json?v=' + Date.now(), { cache: 'no-store' })
     .then(r => { if (!r.ok) throw new Error('events.json'); return r.json(); })
     .then(data => { events = Array.isArray(data) ? data : (data.events || []); render(); })
     .catch(() => {
+      if (state.kind === 'sketch') return;
       list.innerHTML = '<div class="events-empty"><p>Не удалось загрузить базу событий.</p></div>';
       empty.hidden = true;
     });

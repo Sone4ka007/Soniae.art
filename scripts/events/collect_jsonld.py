@@ -1765,6 +1765,13 @@ def main():
                 except Exception as exc:
                     print(f"WARN {src['name']}: {exc}", file=sys.stderr)
                     candidates = []
+                    for fallback_url in src.get("fallback_urls", []):
+                        try:
+                            candidates = extract_sketch(fetch(fallback_url), src, make_event, parse_price)
+                            print(f"FALLBACK {src['name']}: {fallback_url} candidates={len(candidates)}")
+                            break
+                        except Exception as fallback_exc:
+                            print(f"WARN {src['name']} fallback {fallback_url}: {fallback_exc}", file=sys.stderr)
             elif adapter=="hse":
                 candidates.extend(extract_hse(html,src))
             elif adapter=="rusimp":

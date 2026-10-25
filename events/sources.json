@@ -1467,7 +1467,10 @@
       "venue": "Sketching Biro",
       "adapter": "sketch_telegram",
       "kind": "event",
-      "source_group": "sketching"
+      "source_group": "sketching",
+      "fallback_urls": [
+        "https://t.me/s/birospb9"
+      ]
     },
     {
       "name": "Мастерская Олеси Федоренко — наброски",

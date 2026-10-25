@@ -36,10 +36,11 @@ class SketchSourcesTests(unittest.TestCase):
         self.assertTrue(all(e['url']=='https://t.me/studio/1' and e['status']=='check' for e in events))
 
     def test_vk_dated_post_and_missing_public_feed(self):
-        html = '<div class="post" id="post-41389363_123"><div class="wall_post_text">Наброски 27.10.2026 в 19:30, 800 ₽</div></div>'
+        html = '<div class="post" id="post-41389363_123"><div class="wall_post_text">Наброски 27.10.2026 в 19.30, 800 ₽</div></div>'
         events = extract(html, self.source('sketch_vk'), make_event, parse_price, date(2026,10,25))
         self.assertEqual(events[0]['url'],'https://vk.com/wall-41389363_123')
         self.assertEqual(events[0]['price'],800)
+        self.assertEqual(events[0]['time'],'19:30')
         with self.assertRaisesRegex(ValueError,'no public posts'):
             extract('<html>Login</html>',self.source('sketch_vk'),make_event,parse_price,date(2026,10,25))
 

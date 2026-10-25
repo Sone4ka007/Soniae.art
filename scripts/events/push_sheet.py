@@ -4,6 +4,7 @@ import json, os
 from pathlib import Path
 from google.oauth2.service_account import Credentials
 from googleapiclient.discovery import build
+from verified_schedule import apply_verified_schedule
 from sheet_editorial import capture_editor_overrides, apply_editor_overrides, snapshot_from_event
 
 ROOT=Path(__file__).resolve().parents[2]
@@ -44,6 +45,7 @@ def preserve_editor_fields(api, db):
             continue
         e=byid[rid]
         apply_editor_overrides(e)
+        apply_verified_schedule(e)
         old_status=str(e.get("status",""))
         changed=capture_editor_overrides(e,obj)
         changed_fields += len(changed)
@@ -54,11 +56,13 @@ def preserve_editor_fields(api, db):
             elif new_status in ("new","check"):
                 e["reviewed_at"]=""
         apply_editor_overrides(e)
+        apply_verified_schedule(e)
         merged+=1
     return merged, current_order, changed_fields
 
 def row_for_event(e):
     apply_editor_overrides(e)
+    apply_verified_schedule(e)
     try:
         days=(_dt.date.fromisoformat(str(e.get("date","")))-_dt.date.today()).days
     except Exception:
@@ -86,6 +90,7 @@ def main():
     db=json.loads(DB.read_text("utf-8"))
     for e in db.get("events",[]):
         apply_editor_overrides(e)
+        apply_verified_schedule(e)
 
     svc=service()
     api=svc.spreadsheets().values()
@@ -101,6 +106,7 @@ def main():
     fresh=[]
     for e in db.get("events",[]):
         apply_editor_overrides(e)
+        apply_verified_schedule(e)
         rid=e.get("id","")
         (existing if rid in current_order else fresh).append(e)
 

@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'content/events.json'
+      - 'content/events_time_verified.json'
       - '.github/workflows/events-sheet-sync.yml'
   workflow_dispatch:
     inputs:

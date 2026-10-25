@@ -235,7 +235,8 @@ def parse_event_page_time(text, host=""):
         if m:
             return f"{int(m.group(1)):02d}:{m.group(2)}"
 
-    return parse_time(t)
+    # A bare clock may be opening hours, a duration, or a related event.
+    return ""
 
 def parse_ru_date_range(text, default_year=None):
     t=clean(text).lower().replace("ё","е")
@@ -626,7 +627,7 @@ def extract_event_links(html, src):
         except Exception:
             return None
         dsoup=BeautifulSoup(detail,"html.parser")
-        dtext=clean(dsoup.get_text(" ",strip=True))
+        dtext=clean((dsoup.body or dsoup).get_text(" ",strip=True))
         if "manege.spb.ru" in urlparse(full).netloc.lower():
             # The site-wide opening-hours date is today's date, not an
             # event date. Related-event cards and credits are also unrelated.
@@ -695,6 +696,8 @@ def extract_event_links(html, src):
         if not title:
             return None
 
+        schedule_node=dsoup.select_one(".event-detail__info-date") if "tretyakov" in host else None
+        schedule_text=clean(schedule_node.get_text(" ",strip=True)) if schedule_node else ""
         context=event_context(dtext,title,6000 if "mispxx-xxi.ru" in host else 2200)
         if "rosphoto.org" in host and re.search(r"(?:персональн\\w*|представ\\w*).{0,80}выставк", context, re.I):
             is_exhibition = True
@@ -731,7 +734,7 @@ def extract_event_links(html, src):
             if not dt:
                 dt=parse_listing_date(context[:500],today)
         else:
-            dt=parse_date(context,require_year=True) if "tretyakov" in host else parse_date(dtext,require_year=True)
+            dt=parse_date(schedule_text,require_year=True) if "tretyakov" in host else parse_date(dtext,require_year=True)
 
         if not dt:
             return None
@@ -743,7 +746,7 @@ def extract_event_links(html, src):
         elif is_exhibition and dt<today-timedelta(days=365):
             return None
 
-        tm=parse_event_page_time(context if "mispxx-xxi.ru" in host else (context[:900] if "jewish-museum.ru" not in host else dtext),host)
+        tm=parse_event_page_time(schedule_text,host) if "tretyakov" in host else parse_event_page_time(context,host)
         price,price_text=parse_price(context[:1200] if (is_az or is_winzavod) else dtext)
         reg=bool(re.search(r"регистрац|зарегистр|купить билет",context[:1400] if (is_az or is_winzavod) else dtext,re.I)) or None
         cat=event_category(context[:1800])

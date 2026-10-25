@@ -4,6 +4,7 @@ from datetime import date
 from pathlib import Path
 from google.oauth2.service_account import Credentials
 from googleapiclient.discovery import build
+from verified_schedule import apply_verified_schedule
 from sheet_editorial import capture_editor_overrides, apply_editor_overrides
 
 ROOT=Path(__file__).resolve().parents[2]
@@ -44,6 +45,7 @@ def main():
             elif new_status in ("new","check"):
                 e["reviewed_at"]=""
         apply_editor_overrides(e)
+        apply_verified_schedule(e)
 
     db["events"]=sorted(
         byid.values(),

@@ -292,7 +292,7 @@
         </div>
         ${items.map(e => `
           <article class="event-card">
-            <div class="event-time">${state.kind === 'open_call' ? 'OPEN CALL' : esc(e.time || '—')}</div>
+            <div class="event-time">${state.kind === 'open_call' ? 'OPEN CALL' : esc(e.time || 'ВРЕМЯ УТОЧНЯЕТСЯ')}</div>
             <div class="event-main">
               <h3>${esc(e.title)}</h3>
               ${formatEventRange(e) ? `<p class="event-period">${esc(formatEventRange(e))}</p>` : ''}
@@ -395,9 +395,27 @@
     .then(data => { sketchPlaces = Array.isArray(data) ? data : (data.places || []); if (state.kind === 'sketch') render(); })
     .catch(() => { sketchError = true; if (state.kind === 'sketch') render(); });
 
-  fetch('/content/events.json?v=' + Date.now(), { cache: 'no-store' })
-    .then(r => { if (!r.ok) throw new Error('events.json'); return r.json(); })
-    .then(data => { events = Array.isArray(data) ? data : (data.events || []); events = events.map(normalizeLegacyEvent); render(); })
+  Promise.all([
+    fetch('/content/events.json?v=' + Date.now(), { cache: 'no-store' }).then(r => { if (!r.ok) throw new Error('events.json'); return r.json(); }),
+    fetch('/content/events_time_verified.json?v=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : {corrections:{}}).catch(() => ({corrections:{}}))
+  ])
+    .then(([data, audit]) => {
+      events = Array.isArray(data) ? data : (data.events || []);
+      events = events.map(e => {
+        const facts = audit.corrections?.[e.id];
+        if (facts && String(e.time_verified_at || '') <= String(facts.time_verified_at || '')) {
+          e = {...e};
+          for (const field of ['date', 'time']) {
+            if (field in facts && ([facts['previous_' + field], facts[field]].includes(e[field] || '') || (field === 'time' && !e[field] && facts.time_verification === 'verified'))) {
+              if (field === 'date') for (const boundary of ['start_date', 'end_date']) if (e[boundary] === facts.previous_date) e[boundary] = facts.date;
+              e[field] = facts[field];
+            }
+          }
+        }
+        return normalizeLegacyEvent(e);
+      });
+      render();
+    })
     .catch(() => {
       if (state.kind === 'sketch') return;
       list.innerHTML = '<div class="events-empty"><p>Не удалось загрузить базу событий.</p></div>';

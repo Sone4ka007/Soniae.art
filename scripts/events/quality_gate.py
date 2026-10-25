@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-import argparse, json, re
+import argparse, json, re, sys
 from datetime import date, timedelta
 from pathlib import Path
 from urllib.parse import urlparse
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 AGGREGATOR_HOSTS=("ewert.ru","curatorspace.com","artconnect.com","on-the-move.org")
 BOILERPLATE=(
@@ -44,6 +45,8 @@ def clean_description(text, kind):
     return s
 
 def normalize(e):
+    from verified_schedule import apply_verified_schedule
+    apply_verified_schedule(e)
     changed=[]
     # Correct date/time contamination from related-event cards in the page.
     path = urlparse(str(e.get("url", ""))).path.rstrip("/")

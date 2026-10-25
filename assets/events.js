@@ -152,6 +152,31 @@
     return cut.slice(0, end > 0 ? end : max).trim() + '…';
   }
 
+  // Repair legacy records immediately, including dates copied from related cards.
+  function normalizeLegacyEvent(e) {
+    const path = String(e.url || '').split('?')[0].replace(/\/$/, '');
+    if (path.endsWith('/lektsiya-pavel-tretyakov-i-viktor-vasnetsov')) {
+      e = {...e, date: '2026-10-24', time: '14:00', price: 850,
+        price_text: '850 ₽; льготный — 650 ₽', ticket_required: true,
+        registration: null, availability: 'unknown', availability_checked_at: ''};
+    } else if (path.endsWith('/lektsiya-orest-kiprenskiy-10-2026')) {
+      e = {...e, date: '2026-10-22', time: '19:00', ticket_required: true,
+        registration: null, availability: 'unknown', availability_checked_at: ''};
+    }
+    if (e.availability === 'available' && !e.availability_evidence) {
+      e = {...e, availability: 'unknown', availability_checked_at: ''};
+    }
+    if (e.price_type === 'paid' && e.registration === false) e = {...e, registration: null};
+    return e;
+  }
+
+  function admissionLabel(e) {
+    if (e.ticket_required) return '<p>НУЖЕН БИЛЕТ</p>';
+    if (e.registration === true) return '<p>НУЖНА РЕГИСТРАЦИЯ</p>';
+    if (e.registration === false) return '<p>БЕЗ РЕГИСТРАЦИИ</p>';
+    return '';
+  }
+
   function availabilityLabel(e) {
     if (e.availability === 'available') return 'ЕСТЬ МЕСТА / БИЛЕТЫ';
     if (e.availability === 'sold_out') return 'МЕСТ НЕТ / ЗАПИСЬ ЗАКРЫТА';
@@ -176,7 +201,7 @@
           <p><strong>${esc(e.venue || '')}</strong></p>
           <p>${esc(e.address || '')}</p><p>${esc(cityNames[e.city] || e.city || '')}</p>
           <div class="event-price ${e.price_type === 'free' ? 'free' : ''}">${priceLabel(e)}</div>
-          ${e.registration === true ? '<p>НУЖНА РЕГИСТРАЦИЯ</p>' : e.registration === false ? '<p>БЕЗ РЕГИСТРАЦИИ</p>' : ''}
+          ${admissionLabel(e)}
         </div>
         <a class="event-link" href="${esc(e.url)}" target="_blank" rel="noopener">К ОРГАНИЗАТОРУ ↗</a>
       </article>`).join('');
@@ -230,7 +255,7 @@
               <p>${esc(e.address || '')}</p>
               <p>${esc(cityNames[e.city] || e.city || '')}</p>
               <div class="event-price ${e.price_type === 'free' ? 'free' : ''}">${priceLabel(e)}</div>
-              ${e.registration === true ? '<p>НУЖНА РЕГИСТРАЦИЯ</p>' : e.registration === false ? '<p>БЕЗ РЕГИСТРАЦИИ</p>' : ''}
+              ${admissionLabel(e)}
               <p>${availabilityLabel(e)}</p>
               ${e.availability_checked_at ? `<div class="event-check">МЕСТА ПРОВЕРЕНЫ: ${esc(e.availability_checked_at)}</div>` : ''}
             </div>
@@ -279,7 +304,7 @@
               <p>${esc(e.address || '')}</p>
               <p>${esc(cityNames[e.city] || e.city || '')}</p>
               <div class="event-price ${e.price_type === 'free' ? 'free' : ''}">${priceLabel(e)}</div>
-              ${e.registration === true ? '<p>НУЖНА РЕГИСТРАЦИЯ</p>' : e.registration === false ? '<p>БЕЗ РЕГИСТРАЦИИ</p>' : ''}
+              ${admissionLabel(e)}
               <p>${availabilityLabel(e)}</p>
               ${e.availability_checked_at ? `<div class="event-check">МЕСТА ПРОВЕРЕНЫ: ${esc(e.availability_checked_at)}</div>` : ''}
               ${e.checked_at ? `<div class="event-check">ПРОВЕРЕНО: ${esc(e.checked_at)}</div>` : ''}
@@ -372,7 +397,7 @@
 
   fetch('/content/events.json?v=' + Date.now(), { cache: 'no-store' })
     .then(r => { if (!r.ok) throw new Error('events.json'); return r.json(); })
-    .then(data => { events = Array.isArray(data) ? data : (data.events || []); render(); })
+    .then(data => { events = Array.isArray(data) ? data : (data.events || []); events = events.map(normalizeLegacyEvent); render(); })
     .catch(() => {
       if (state.kind === 'sketch') return;
       list.innerHTML = '<div class="events-empty"><p>Не удалось загрузить базу событий.</p></div>';

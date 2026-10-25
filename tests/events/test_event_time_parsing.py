@@ -12,6 +12,11 @@ class EventTimeParsingTests(unittest.TestCase):
         cls.mod=importlib.util.module_from_spec(spec)
         spec.loader.exec_module(cls.mod)
 
+    def test_numeric_date_is_not_a_clock(self):
+        self.assertEqual(self.mod.parse_event_page_time("24.10.2026 14:00"), "14:00")
+        self.assertEqual(self.mod.parse_event_page_time("22.10.2026 19:00"), "19:00")
+        self.assertEqual(self.mod.parse_event_page_time("24.10.2026"), "")
+
     def test_opening_hours_do_not_override_dated_event_time(self):
         text="Режим работы 12:00–22:00. Лекция. 30.09.2026, 19:00"
         self.assertEqual(self.mod.parse_event_page_time(text,"example-museum.ru"),"19:00")

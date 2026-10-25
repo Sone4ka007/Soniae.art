@@ -13,8 +13,7 @@ SOLD_OUT=[
     r"регистрац(?:ия|ию) завершен",r"набор закрыт",r"места закончились"
 ]
 AVAILABLE=[
-    r"купить билет",r"купить билеты",r"зарегистрироваться",r"регистрация открыта",
-    r"осталось \d+ мест",r"есть места",r"выбрать билет",r"оформить билет"
+    r"осталось \d+ мест",r"есть места"
 ]
 REG_HINTS=[
     r"зарегистрироваться",r"регистрация открыта",r"регистрация закрыта",
@@ -56,10 +55,10 @@ def inspect_url(url):
         soft_closed=any(re.search(p,text,re.I) for p in (
             r"регистрация закрыта",r"регистрац(?:ия|ию) завершен",r"набор закрыт"
         ))
-        if has_active_action:
-            availability="available"
-        elif hard_sold_out or soft_closed:
+        if hard_sold_out or soft_closed:
             availability="sold_out"
+        elif has_active_action:
+            availability="available"
         has_reg=any(re.search(p,text,re.I) for p in REG_HINTS)
         has_ticket=any(re.search(p,text,re.I) for p in TICKET_HINTS)
         explicit_free=bool(re.search(
@@ -135,8 +134,10 @@ def main():
         url=str(e.get("url",""))
         availability,has_reg,has_ticket,page_price,buy_ticket,explicit_free=results.get(
             url,("unknown",False,False,"unknown",False,False))
+        e["availability_evidence"]="explicit_seats" if availability == "available" else ""
+        e["ticket_required"]=bool(buy_ticket)
         e["availability"]=availability
-        e["availability_checked_at"]=checked
+        e["availability_checked_at"]=checked if availability != "unknown" else ""
 
         # Recompute price conservatively from the live event page.
         # Never keep a stale "free" classification when the page asks to buy a ticket.
@@ -148,8 +149,6 @@ def main():
             e["price_type"]="unknown"
         if has_reg:
             e["registration"]=True
-        elif has_ticket:
-            e["registration"]=False
         else:
             e["registration"]=None
 

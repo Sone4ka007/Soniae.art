@@ -45,6 +45,26 @@ def clean_description(text, kind):
 
 def normalize(e):
     changed=[]
+    # Correct date/time contamination from related-event cards in the page.
+    path = urlparse(str(e.get("url", ""))).path.rstrip("/")
+    host = urlparse(str(e.get("url", ""))).netloc.lower()
+    facts = None
+    if "tretyakov" in host:
+        if path.endswith("/lektsiya-pavel-tretyakov-i-viktor-vasnetsov"):
+            facts = {"date": "2026-10-24", "time": "14:00", "price": 850,
+                     "price_type": "paid", "price_text": "850 ₽; льготный — 650 ₽",
+                     "venue": "Музей Павла и Сергея Третьяковых",
+                     "address": "1-й Голутвинский переулок, 16, стр. 1"}
+        elif path.endswith("/lektsiya-orest-kiprenskiy-10-2026"):
+            facts = {"date": "2026-10-22", "time": "19:00"}
+    if facts:
+        facts.update({"ticket_required": True, "registration": None, "availability": "unknown", "availability_checked_at": ""})
+        for key, value in facts.items():
+            if e.get(key) != value:
+                e[key] = value
+                changed.append("verified_tretyakov_" + key)
+            if key in e.get("editor_overrides", {}):
+                e["editor_overrides"][key] = value
     # Verified primary-source correction; keep the existing id and moderation.
     if urlparse(str(e.get("url", ""))).netloc.removeprefix("www.") == "rosphoto.org" and urlparse(str(e.get("url", ""))).path.rstrip("/") == "/events/pustaya-scena":
         facts = {

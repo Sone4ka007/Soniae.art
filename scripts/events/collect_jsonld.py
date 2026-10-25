@@ -197,7 +197,7 @@ def parse_exhibition_range(text):
     return None,None
 
 def parse_time(text):
-    m = re.search(r"(?<!\d)([01]?\d|2[0-3]):(\d{2})(?!\d)", clean(text))
+    m = re.search(r"(?<!\d)([01]?\d|2[0-3]):([0-5]\d)(?!\d)", clean(text))
     return f"{int(m.group(1)):02d}:{m.group(2)}" if m else ""
 
 def parse_event_page_time(text, host=""):
@@ -206,7 +206,7 @@ def parse_event_page_time(text, host=""):
     # Explicit event labels beat generic museum opening hours.
     m=re.search(
         r"(?:время|начало(?:\s+мероприятия)?|начало\s+в)\s*[:—–-]?\s*"
-        r"([01]?\d|2[0-3])[:.]([0-5]\d)",
+        r"(?<!\d)([01]?\d|2[0-3])[:.]([0-5]\d)(?!\d)",
         t, re.I
     )
     if m:
@@ -215,10 +215,10 @@ def parse_event_page_time(text, host=""):
     # Prefer a clock value attached to an event date. This works for both
     # 30.09.2026, 19:00 and 30 сентября 2026 19.00.
     patterns=[
-        r"\d{1,2}[./]\d{1,2}(?:[./]\d{2,4})?\s*(?:г\.)?\s*[,/|]?\s*"
-        r"([01]?\d|2[0-3])[:.]([0-5]\d)",
+        r"(?<![\d./])\d{1,2}[./]\d{1,2}(?:[./](?:20\d{2}|\d{2}))?(?![\d./])\s*(?:г\.)?\s*[,/|]?\s*"
+        r"(?<!\d)([01]?\d|2[0-3])[:.]([0-5]\d)(?!\d)",
         r"\d{1,2}\s+[а-яё]{3,10}(?:\s+20\d{2})?\s*(?:г\.)?\s*[,/|]?\s*"
-        r"([01]?\d|2[0-3])[:.]([0-5]\d)"
+        r"(?<!\d)([01]?\d|2[0-3])[:.]([0-5]\d)(?!\d)"
     ]
     for pattern in patterns:
         m=re.search(pattern,t,re.I)
@@ -731,7 +731,7 @@ def extract_event_links(html, src):
             if not dt:
                 dt=parse_listing_date(context[:500],today)
         else:
-            dt=parse_date(dtext,require_year=True)
+            dt=parse_date(context,require_year=True) if "tretyakov" in host else parse_date(dtext,require_year=True)
 
         if not dt:
             return None

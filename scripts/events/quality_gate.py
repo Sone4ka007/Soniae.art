@@ -55,6 +55,11 @@ def normalize(e):
                      "price_type": "paid", "price_text": "850 ₽; льготный — 650 ₽",
                      "venue": "Музей Павла и Сергея Третьяковых",
                      "address": "1-й Голутвинский переулок, 16, стр. 1"}
+        elif path.endswith("/lektsiya-mikhail-petrovich-kristi-10-2026"):
+            facts = {"date": "2026-10-30", "time": "19:00", "price": 650,
+                     "price_type": "paid", "price_text": "650 ₽; онлайн — 700 ₽",
+                     "venue": "Третьяковская галерея — Инженерный корпус",
+                     "address": "Лаврушинский переулок, 12"}
         elif path.endswith("/lektsiya-orest-kiprenskiy-10-2026"):
             facts = {"date": "2026-10-22", "time": "19:00"}
     if facts:

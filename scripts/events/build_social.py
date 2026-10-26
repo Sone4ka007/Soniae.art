@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
-import argparse, html, json, math
+import argparse, html, json, math, sys
 from datetime import date, datetime, timedelta
 from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from ruble_font import ruble_font_face
 
 ROOT = Path(__file__).resolve().parents[2]
 DB = ROOT / "content/events.json"
@@ -12,10 +14,10 @@ MONTHS_LOW = ["января","февраля","марта","апреля","ма�
 DAYS_SHORT = ["ПН","ВТ","СР","ЧТ","ПТ","СБ","ВС"]
 DAYS_FULL = ["ПОНЕДЕЛЬНИК","ВТОРНИК","СРЕДА","ЧЕТВЕРГ","ПЯТНИЦА","СУББОТА","ВОСКРЕСЕНЬЕ"]
 
-CSS = r"""
+CSS = ruble_font_face() + r"""
 *{box-sizing:border-box}
 html,body{margin:0;padding:0;background:#fff;color:#080808}
-body{font-family:"Arial Narrow","Roboto Condensed","Liberation Sans Narrow",Arial,sans-serif}
+body{font-family:"Ruble Fallback","Arial Narrow","Roboto Condensed","Liberation Sans Narrow","Noto Sans",Arial,sans-serif}
 .page{width:1080px;height:1350px;background:#fff;padding:44px 48px 34px;overflow:hidden;position:relative}
 .topline{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:3px solid #111;padding-bottom:12px;font-size:25px;font-weight:700;letter-spacing:4px;text-transform:uppercase}
 .day-title{font-family:Impact,"Arial Narrow",sans-serif;font-size:146px;line-height:.86;letter-spacing:-4px;font-weight:900;margin:28px 0 24px;text-transform:uppercase;white-space:nowrap}
@@ -25,7 +27,7 @@ body{font-family:"Arial Narrow","Roboto Condensed","Liberation Sans Narrow",Aria
 .event-rule{background:#111;width:1px}
 .event-title{font-size:39px;line-height:.98;font-weight:900;margin:0 0 6px}
 .event-meta{font-size:28px;line-height:1.05;margin:0 0 10px}
-.badge{display:inline-block;background:#ececec;padding:7px 18px 6px;font-size:24px;line-height:1;font-weight:500}
+.badge{display:inline-block;background:#ececec;padding:7px 18px 6px;font-size:24px;line-height:1;font-weight:500;font-family:"Ruble Fallback","Arial Narrow","Noto Sans",sans-serif}
 .badge.alert{background:#111;color:#fff}
 .footer{position:absolute;left:48px;right:48px;bottom:13px;border-top:2px solid #111;text-align:center;padding-top:8px;font-size:16px;letter-spacing:3px;text-transform:uppercase}
 
@@ -39,7 +41,7 @@ body{font-family:"Arial Narrow","Roboto Condensed","Liberation Sans Narrow",Aria
 .summary-time{font-size:22px;line-height:1;font-weight:900;margin-bottom:4px}
 .summary-event-title{font-size:23px;line-height:.98;font-weight:900;margin-bottom:5px}
 .summary-venue{font-size:18px;line-height:1.05;margin-bottom:7px}
-.summary-badge{display:inline-block;background:#ececec;padding:5px 9px 4px;font-size:16px;line-height:1}
+.summary-badge{display:inline-block;background:#ececec;padding:5px 9px 4px;font-size:16px;line-height:1;font-family:"Ruble Fallback","Arial Narrow","Noto Sans",sans-serif}
 .summary-footer{position:absolute;left:48px;right:48px;bottom:11px;text-align:center;font-size:16px;letter-spacing:3px}
 
 .pdf-doc{margin:0;padding:0}
@@ -184,10 +186,10 @@ def summary_page(days, by_day, start, end, city, page_no, total_pages):
 </section>"""
 
 
-TELEGRAM_CSS = r"""
+TELEGRAM_CSS = ruble_font_face() + r"""
 *{box-sizing:border-box}
 html,body{margin:0;padding:0;background:#fff;color:#090909}
-body{font-family:Arial,Helvetica,sans-serif}
+body{font-family:"Ruble Fallback",Arial,"Noto Sans",Helvetica,sans-serif}
 .tg-sheet{width:1080px;padding:48px 54px 44px;background:#fff}
 .tg-title{font-family:Impact,"Arial Narrow",sans-serif;font-size:86px;line-height:.88;
   font-weight:900;text-transform:uppercase;letter-spacing:-1px;margin:0 0 10px}

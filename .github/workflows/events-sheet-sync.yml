@@ -39,30 +39,30 @@ jobs:
         env:
           EVENTS_SHEET_ID: ${{ vars.EVENTS_SHEET_ID }}
           GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
-        run: python scripts/events/pull_sheet.py
+        run: |
+          # Queue time can leave this job on the triggering SHA. Refresh before
+          # reading the database so Sheet edits land on the current events.
+          bash scripts/events/git_sync_main.sh
+          python scripts/events/pull_sheet.py
       - name: Commit editor changes
         if: github.event_name == 'schedule' || inputs.direction == 'pull'
-        run: |
-          if ! git diff --quiet -- content/events.json; then
-            git config user.name "sonyae-events-bot"
-            git config user.email "actions@users.noreply.github.com"
-            git add content/events.json
-            git commit -m "Sync event moderation from Google Sheet"
-            git push
-          fi
+        env:
+          EVENTS_SHEET_ID: ${{ vars.EVENTS_SHEET_ID }}
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+        run: bash scripts/events/persist_events_json.sh "Sync event moderation from Google Sheet"
       - name: Push database to Sheet
         if: github.event_name == 'push' || inputs.direction == 'push'
         env:
           EVENTS_SHEET_ID: ${{ vars.EVENTS_SHEET_ID }}
           GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
-        run: python scripts/events/push_sheet.py
+        run: |
+          # Never publish the queued triggering commit. That snapshot is what
+          # overwrote the Sheet and then failed with "fetch first".
+          bash scripts/events/git_sync_main.sh
+          python scripts/events/push_sheet.py
       - name: Persist editor changes captured during push
         if: github.event_name == 'push' || inputs.direction == 'push'
-        run: |
-          if ! git diff --quiet -- content/events.json; then
-            git config user.name "sonyae-events-bot"
-            git config user.email "actions@users.noreply.github.com"
-            git add content/events.json
-            git commit -m "Preserve event moderation edits during Sheet push"
-            git push
-          fi
+        env:
+          EVENTS_SHEET_ID: ${{ vars.EVENTS_SHEET_ID }}
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+        run: bash scripts/events/persist_events_json.sh "Preserve event moderation edits during Sheet push"

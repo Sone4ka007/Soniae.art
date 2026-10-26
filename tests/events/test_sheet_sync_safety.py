@@ -163,7 +163,7 @@ class RubleGlyphTests(unittest.TestCase):
             "price": 500,
             "price_text": "500 ₽",
             "price_type": "paid",
-        }], 2, 5, "moscow")
+        }], 2, 5, "moscow", date(2026, 10, 19), date(2026, 10, 25))
         self.assertIn("500 ₽", page)
         self.assertNotIn("500 руб", page)
 

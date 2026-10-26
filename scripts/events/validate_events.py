@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
-import json,re
+import json,re,sys
 from datetime import date
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[2]; DB=ROOT/"content/events.json"
+_HERE=str(Path(__file__).resolve().parent)
+if _HERE not in sys.path:
+    sys.path.insert(0, _HERE)
 
 EXCLUDE=("алим велитов","alim velitov")
 STALE_EXACT_TITLES=(
@@ -133,6 +136,11 @@ def main():
         if key in seen: problems.append("possible_duplicate")
         else: seen[key]=e.get("id")
         editable_status=e.get("status") in ("new","check")
+        if editable_status:
+            from row_hygiene import junk_reason
+            hygiene=junk_reason(e)
+            if hygiene:
+                e["status"]="rejected"; e["review_reason"]=hygiene; changed+=1; continue
         if editable_status and title_blob in STALE_EXACT_TITLES:
             e["status"]="rejected"; e["review_reason"]="excluded_stale_event"; changed+=1; continue
         if editable_status and any(x in blob for x in EXCLUDE):

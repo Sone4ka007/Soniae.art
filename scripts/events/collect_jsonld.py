@@ -9,6 +9,9 @@ from urllib.parse import urljoin, urlparse
 from bs4 import BeautifulSoup
 
 ROOT = Path(__file__).resolve().parents[2]
+_HERE = str(Path(__file__).resolve().parent)
+if _HERE not in sys.path:
+    sys.path.insert(0, _HERE)
 SOURCES = ROOT / "events/sources.json"
 DB = ROOT / "content/events.json"
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
@@ -75,15 +78,16 @@ def stable_id(city, dt, title):
     digest = hashlib.sha1(title.encode("utf-8")).hexdigest()[:10]
     return f"{city}-{dt}-{digest}"
 
-def fetch(url):
+def fetch(url, timeout=30, attempts=3):
     last_error = None
     host = urlparse(url).netloc.lower()
-    for attempt in range(3):
+    attempts = max(1, int(attempts))
+    for attempt in range(attempts):
         try:
             # requests/certifi is more reliable than urllib on museum sites with
             # non-standard certificate chains; browser-like headers also avoid
             # simple bot blocks such as the Museum of Moscow 403 response.
-            r = requests.get(url, headers=BROWSER_HEADERS, timeout=30, allow_redirects=True)
+            r = requests.get(url, headers=BROWSER_HEADERS, timeout=timeout, allow_redirects=True)
             if r.status_code == 403:
                 # Some sites key off fetch metadata as well as User-Agent.
                 retry_headers = dict(BROWSER_HEADERS)
@@ -93,7 +97,7 @@ def fetch(url):
                     "Sec-Fetch-Site": "none",
                     "Sec-Fetch-User": "?1",
                 })
-                r = requests.get(url, headers=retry_headers, timeout=30, allow_redirects=True)
+                r = requests.get(url, headers=retry_headers, timeout=timeout, allow_redirects=True)
             if r.status_code >= 400:
                 r.raise_for_status()
             r.encoding = r.encoding or "utf-8"
@@ -105,7 +109,7 @@ def fetch(url):
             # without certificate verification rather than dropping the museum.
             if "hermitagemuseum.org" in host:
                 try:
-                    r = requests.get(url, headers=BROWSER_HEADERS, timeout=30,
+                    r = requests.get(url, headers=BROWSER_HEADERS, timeout=timeout,
                                      allow_redirects=True, verify=False)
                     r.raise_for_status()
                     r.encoding = r.encoding or "utf-8"
@@ -114,7 +118,7 @@ def fetch(url):
                     last_error = fallback_exc
         except Exception as exc:
             last_error = exc
-        if attempt < 2:
+        if attempt + 1 < attempts:
             time.sleep(1.5 * (attempt + 1))
     raise last_error
 
@@ -192,6 +196,33 @@ def parse_exhibition_range(text):
     if m:
         try:
             return date(int(m.group(3)),int(m.group(2)),int(m.group(1))), date(int(m.group(6)),int(m.group(5)),int(m.group(4)))
+        except ValueError:
+            pass
+    # 2 September - 6 December 2026, used by gallery sites that publish in English.
+    month_pat="|".join(sorted(EN_MONTHS, key=len, reverse=True))
+    m=re.search(rf"(?<!\d)(\d{{1,2}})\s+({month_pat})\.?\s*[-–—]\s*(\d{{1,2}})\s+({month_pat})\.?,?\s*(20\d{{2}})", t, re.I)
+    if m:
+        end_year=int(m.group(5))
+        sm, em = EN_MONTHS[m.group(2).lower()], EN_MONTHS[m.group(4).lower()]
+        start_year=end_year-1 if sm>em else end_year
+        try:
+            return date(start_year, sm, int(m.group(1))), date(end_year, em, int(m.group(3)))
+        except ValueError:
+            pass
+    # December 1 - 5, 2026
+    m=re.search(rf"({month_pat})\.?\s+(\d{{1,2}})\s*[-–—]\s*(\d{{1,2}}),?\s*(20\d{{2}})", t, re.I)
+    if m:
+        try:
+            return date(int(m.group(4)), EN_MONTHS[m.group(1).lower()], int(m.group(2))), date(int(m.group(4)), EN_MONTHS[m.group(1).lower()], int(m.group(3)))
+        except ValueError:
+            pass
+    m=re.search(rf"({month_pat})\.?\s+(\d{{1,2}})\s*[-–—]\s*({month_pat})\.?\s+(\d{{1,2}}),?\s*(20\d{{2}})", t, re.I)
+    if m:
+        end_year=int(m.group(5))
+        sm, em = EN_MONTHS[m.group(1).lower()], EN_MONTHS[m.group(3).lower()]
+        start_year=end_year-1 if sm>em else end_year
+        try:
+            return date(start_year, sm, int(m.group(2))), date(end_year, em, int(m.group(4)))
         except ValueError:
             pass
     return None,None
@@ -375,6 +406,10 @@ def extract_page_title(url):
 
 def make_event(src, dt, tm, title, url, description="", venue="", address="", price=None,
                price_text="", registration=None, categories=None, status="new", reason=""):
+    from row_hygiene import infer_clock, strip_comment_form
+    description=strip_comment_form(description)
+    if not tm:
+        tm=infer_clock(description)
     raw_title=clean(title)
     normalized_title=normalize_event_title(raw_title)
     bad_title=title_looks_like_description(normalized_title)
@@ -606,17 +641,26 @@ def extract_event_links(html, src):
         if any(p in full for p in patterns) and full not in seen_urls:
             seen_urls.add(full); urls.append(full)
 
+    def absorb(page_html, base):
+        more=BeautifulSoup(page_html,"html.parser")
+        for a in more.find_all("a",href=True):
+            full=urljoin(base,a["href"])
+            if any(p in full for p in patterns) and urlparse(full).path not in exclude_paths and full not in seen_urls:
+                seen_urls.add(full);urls.append(full)
     if src.get("listing_pages"):
         for page in range(2,int(src["listing_pages"])+1):
             page_url=src["url"]+("&" if "?" in src["url"] else "?")+f"PAGEN_1={page}"
             try:
-                more=BeautifulSoup(fetch(page_url),"html.parser")
+                absorb(fetch(page_url), src["url"])
             except Exception: continue
-            for a in more.find_all("a",href=True):
-                full=urljoin(src["url"],a["href"])
-                if any(p in full for p in patterns) and urlparse(full).path not in exclude_paths and full not in seen_urls:
-                    seen_urls.add(full);urls.append(full)
+    for page_url in src.get("extra_listing_urls") or []:
+        try:
+            absorb(fetch(page_url, timeout=int(src.get("timeout") or 30), attempts=int(src.get("attempts") or 2)), page_url)
+        except Exception as exc:
+            print(f"WARN {src['name']} extra listing {page_url}: {exc}", file=sys.stderr)
     max_pages=int(src.get("max_detail_pages",60))
+    if not urls and re.search(r"список пуст", soup.get_text(" ", strip=True), re.I):
+        print(f"EMPTY_PUBLISHED {src['name']}: the page itself says the list is empty url={src['url']}", file=sys.stderr)
     if not urls:
         print(f"EMPTY_LINKS {src['name']}: matching_links=0 total_anchors={len(soup.find_all('a',href=True))} patterns={patterns} url={src['url']}",file=sys.stderr)
     urls=urls[:max_pages]
@@ -650,6 +694,10 @@ def extract_event_links(html, src):
         start_dt=end_dt=None
         path_low=urlparse(full).path.lower()
         host=urlparse(full).netloc.lower()
+        # Fragment's listing mixes the Moscow gallery with fair booths in other cities.
+        if "fragment.gallery" in host and re.search(r"\b(?:miami|nada|new york|london|paris)\b", dtext, re.I):
+            if not re.search(r"москв|moscow", dtext, re.I):
+                return None
         is_az=("museum-az.com" in host)
         is_winzavod=("winzavod.ru" in host)
         is_exhibition=(src.get("kind")=="exhibition" or "/exhibitions/" in path_low or "/exhibition/" in path_low)
@@ -1163,6 +1211,15 @@ def extract_telegram_channel_events(html, src):
                 title=resolved
         if not title:
             continue
+        from row_hygiene import dangling_title
+        if dangling_title(title):
+            for line in lines:
+                if line == title or len(line) > 80:
+                    continue
+                if parse_date(line, require_year=False, default_year=today.year):
+                    continue
+                title = clean(title + " " + line)
+                break
 
         venue=""
         for line in lines:
@@ -1399,13 +1456,12 @@ def extract_zotov(html, src):
 def extract_mamm(html, src):
     soup=BeautifulSoup(html,"html.parser")
     out=[]; seen=set(); today=date.today()
+    detail_re=re.compile(r"/(?:events/(?:lectures|obrazovatelnye)|exhibitions/20\d\d)/[^/?#]+/?$")
     for a in soup.find_all("a",href=True):
-        href=a.get("href","")
-        if "/events/detail/" not in href:
+        href=a.get("href","").split("?")[0]
+        if not detail_re.search(href):
             continue
         title=clean(a.get_text(" ",strip=True))
-        if len(title)<8 or title.lower() in SKIP_TITLES:
-            continue
         full=urljoin(src["url"],href)
         if full in seen:
             continue
@@ -1416,15 +1472,34 @@ def extract_mamm(html, src):
             continue
         dsoup=BeautifulSoup(detail,"html.parser")
         dtext=clean(dsoup.get_text(" ",strip=True))
-        dt=parse_date(dtext,require_year=True)
-        if not dt or dt<today:
+        # The listing chrome contains other dates. The event date sits next to the clock:
+        # «1 ноября в 16:00».
+        scoped=re.search(
+            r"\d{1,2}\s+[а-яё]{3,12}\s*(?:20\d{2})?\s*(?:г\.?\s*)?(?:в|/)\s*\d{1,2}[:.]\d{2}",
+            dtext, re.I,
+        )
+        dt=parse_date(scoped.group(0) if scoped else dtext, require_year=False, default_year=today.year)
+        is_exhibition="/exhibitions/" in urlparse(full).path
+        end_dt=None
+        if is_exhibition:
+            start_dt,end_dt=parse_ru_date_range(dtext,today.year)
+            if not start_dt:
+                start_dt,end_dt=parse_exhibition_range(dtext)
+            dt=start_dt or dt
+            if end_dt and end_dt<today:
+                continue
+            if not end_dt and (not dt or dt<today):
+                continue
+        elif not dt or dt<today:
             continue
         h=dsoup.find(["h1","h2"])
         if h:
             htitle=clean(h.get_text(" ",strip=True))
-            if len(htitle)>=8:
+            if len(htitle)>=8 and htitle.lower() not in SKIP_TITLES:
                 title=htitle
-        tm=parse_event_page_time(dtext[:1600],urlparse(full).netloc.lower())
+        if len(title)<8 or title.lower() in SKIP_TITLES:
+            continue
+        tm="" if is_exhibition else parse_event_page_time(dtext[:1600],urlparse(full).netloc.lower())
         price,price_text=parse_price(dtext)
         reg=bool(re.search(r"регистрац|купить билет",dtext,re.I)) or None
         desc=""
@@ -1433,8 +1508,15 @@ def extract_mamm(html, src):
             desc=clean(" ".join(clean(p.get_text(" ",strip=True)) for p in ps[:3]))
             if len(desc)>650:
                 desc=desc[:647].rstrip()+"..."
-        out.append(make_event(src,dt.isoformat(),tm,title,full,desc,
-                              price=price,price_text=price_text,registration=reg))
+        event_src=dict(src, kind="exhibition") if is_exhibition else src
+        ev=make_event(event_src,dt.isoformat(),tm,title,full,desc,
+                      price=price,price_text=price_text,registration=reg,
+                      categories=["выставка"] if is_exhibition else [])
+        if is_exhibition:
+            ev["start_date"]=dt.isoformat()
+            if end_dt:
+                ev["end_date"]=end_dt.isoformat()
+        out.append(ev)
     return out
 
 def open_call_summary(soup, title, fallback=""):
@@ -1726,6 +1808,66 @@ def extract_ges2(src, days=31):
             out.append(ev)
     return out
 
+def gather_candidates(src):
+    adapter=src.get("adapter","")
+    if adapter=="ges2":
+        return extract_ges2(src)
+    if adapter in {"tretyakov_api","hermitage_api","kudago","pro_culture"}:
+        from extra_sources import (
+            extract_hermitage_api, extract_kudago, extract_pro_culture, extract_tretyakov_api,
+        )
+        return {
+            "tretyakov_api": extract_tretyakov_api,
+            "hermitage_api": extract_hermitage_api,
+            "kudago": extract_kudago,
+            "pro_culture": extract_pro_culture,
+        }[adapter](src)
+    timeout=int(src.get("timeout") or 30)
+    attempts=int(src.get("attempts") or 3)
+    html=fetch(src["url"], timeout=timeout, attempts=attempts)
+    candidates=list(extract_jsonld(html,src))
+    if adapter.startswith("sketch_"):
+        from sketch_sources import extract as extract_sketch
+        try:
+            candidates = extract_sketch(html, src, make_event, parse_price)
+        except Exception as exc:
+            print(f"WARN {src['name']}: {exc}", file=sys.stderr)
+            candidates = []
+            for fallback_url in src.get("fallback_urls", []):
+                try:
+                    candidates = extract_sketch(fetch(fallback_url, timeout=timeout, attempts=attempts), src, make_event, parse_price)
+                    print(f"FALLBACK {src['name']}: {fallback_url} candidates={len(candidates)}")
+                    break
+                except Exception as fallback_exc:
+                    print(f"WARN {src['name']} fallback {fallback_url}: {fallback_exc}", file=sys.stderr)
+    elif adapter=="hse":
+        candidates.extend(extract_hse(html,src))
+    elif adapter=="rusimp":
+        candidates.extend(extract_rusimp(html,src))
+    elif adapter=="rnb":
+        candidates.extend(extract_rnb(html,src))
+    elif adapter=="event_links":
+        candidates.extend(extract_event_links(html,src))
+    elif adapter=="zotov":
+        candidates.extend(extract_zotov(html,src))
+    elif adapter=="mamm":
+        candidates.extend(extract_mamm(html,src))
+    elif adapter=="design_mate":
+        candidates.extend(extract_design_mate(html,src))
+    elif adapter=="open_call_listing":
+        candidates.extend(extract_open_call_listing(html,src))
+    elif adapter=="telegram_digest":
+        candidates.extend(extract_telegram_digest(html,src))
+    elif adapter=="telegram_channel_events":
+        candidates.extend(extract_telegram_channel_events(html,src))
+    elif adapter=="timepad":
+        from extra_sources import extract_timepad
+        candidates.extend(extract_timepad(html,src))
+    elif adapter=="artguide":
+        from extra_sources import extract_artguide
+        candidates.extend(extract_artguide(html,src))
+    return candidates
+
 def main():
     cfg=load_json(SOURCES,{"sources":[]})
     db=load_json(DB,{"schema_version":1,"events":[]})
@@ -1753,53 +1895,28 @@ def main():
          re.sub(r"\W+","",str(e.get("title","")).lower())):e.get("id")
         for e in current_events if e.get("id") and e.get("url") and e.get("title")
     }
+    from event_identity import identity_key, same_occurrence
+    identity_index={}
+    for event in current_events:
+        key=identity_key(event)
+        if key and event.get("id"):
+            identity_index.setdefault(key, []).append(event["id"])
     found=0
+    health=[]
     for src in cfg.get("sources",[]):
         adapter=src.get("adapter","")
-        candidates=[]
-        if adapter=="ges2":
-            candidates=extract_ges2(src)
-        else:
-            try:
-                html=fetch(src["url"])
-            except Exception as e:
-                print(f"WARN {src['name']}: {e}",file=sys.stderr)
-                continue
-            candidates.extend(extract_jsonld(html,src))
-            if adapter.startswith("sketch_"):
-                from sketch_sources import extract as extract_sketch
-                try:
-                    candidates = extract_sketch(html, src, make_event, parse_price)
-                except Exception as exc:
-                    print(f"WARN {src['name']}: {exc}", file=sys.stderr)
-                    candidates = []
-                    for fallback_url in src.get("fallback_urls", []):
-                        try:
-                            candidates = extract_sketch(fetch(fallback_url), src, make_event, parse_price)
-                            print(f"FALLBACK {src['name']}: {fallback_url} candidates={len(candidates)}")
-                            break
-                        except Exception as fallback_exc:
-                            print(f"WARN {src['name']} fallback {fallback_url}: {fallback_exc}", file=sys.stderr)
-            elif adapter=="hse":
-                candidates.extend(extract_hse(html,src))
-            elif adapter=="rusimp":
-                candidates.extend(extract_rusimp(html,src))
-            elif adapter=="rnb":
-                candidates.extend(extract_rnb(html,src))
-            elif adapter=="event_links":
-                candidates.extend(extract_event_links(html,src))
-            elif adapter=="zotov":
-                candidates.extend(extract_zotov(html,src))
-            elif adapter=="mamm":
-                candidates.extend(extract_mamm(html,src))
-            elif adapter=="design_mate":
-                candidates.extend(extract_design_mate(html,src))
-            elif adapter=="open_call_listing":
-                candidates.extend(extract_open_call_listing(html,src))
-            elif adapter=="telegram_digest":
-                candidates.extend(extract_telegram_digest(html,src))
-            elif adapter=="telegram_channel_events":
-                candidates.extend(extract_telegram_channel_events(html,src))
+        if src.get("enabled") is False:
+            note=src.get("health_note") or "disabled"
+            print(f"SOURCE {src['name']}: candidates=0 new=0 adapter={adapter} skipped=disabled {note}")
+            health.append({"name":src["name"],"candidates":0,"new":0,"disabled":True,"note":note,"url":src.get("url","")})
+            continue
+        error=""
+        try:
+            candidates=gather_candidates(src)
+        except Exception as e:
+            error=str(e)
+            candidates=[]
+            print(f"WARN {src['name']}: {e}",file=sys.stderr)
 
         source_added=0
         for n in candidates:
@@ -1830,6 +1947,28 @@ def main():
                 old_id=url_title_index.get((
                     n.get("city"),n_url,re.sub(r"\W+","",str(n.get("title","")).lower())
                 ))
+            identity_hit=False
+            if not old_id:
+                key=identity_key(n)
+                for cand in identity_index.get(key, []):
+                    previous=existing.get(cand)
+                    if previous and same_occurrence(previous, n):
+                        identity_hit=True
+                        break
+            if identity_hit:
+                # Same title, venue and day already exists, often under another URL.
+                # Leave that row, including an approved or rejected decision, untouched.
+                print(f"SKIP {src['name']}: duplicate_occurrence {n.get('title')}", file=sys.stderr)
+                continue
+            from row_hygiene import junk_reason
+            reason=junk_reason(n)
+            if reason and not (old_id and old_id in existing and existing[old_id].get("status") in ("approved","rejected")):
+                if old_id and old_id in existing and existing[old_id].get("status") in ("new","check"):
+                    n["status"]="rejected"
+                    n["review_reason"]=reason
+                else:
+                    print(f"SKIP {src['name']}: {reason} {n.get('title')}", file=sys.stderr)
+                    continue
             if old_id and old_id in existing:
                 old=existing[old_id]
                 final_status=old.get("status") if old.get("status") in ("approved","rejected") else n.get("status","new")
@@ -1853,15 +1992,52 @@ def main():
                     url_title_index[(n.get("city"),n_url,re.sub(r"\W+","",str(n.get("title","")).lower()))]=n["id"]
                 found+=1
                 source_added+=1
+                key=identity_key(n)
+                if key:
+                    identity_index.setdefault(key, []).append(n["id"])
         print(f"SOURCE {src['name']}: candidates={len(candidates)} new={source_added} adapter={adapter} url={src['url']}")
         if not candidates:
             print(f"EMPTY_SOURCE {src['name']}: adapter={adapter} url={src['url']} (inspect listing links, date format, or blocked fetch)",file=sys.stderr)
+        health.append({
+            "name":src["name"],"candidates":len(candidates),"new":source_added,
+            "error":error,"note":src.get("health_note") or "","url":src.get("url",""),
+        })
 
+    from source_health import write_health
+    write_health(health)
     db["updated_at"]=datetime.now(timezone.utc).date().isoformat()
     db["events"]=sorted(existing.values(),key=lambda e:(e.get("date",""),e.get("time",""),e.get("title","")))
     DB.write_text(json.dumps(db,ensure_ascii=False,indent=2)+"\n","utf-8")
     print(f"Collector found {found} raw new candidates before validation; temporary total {len(db['events'])}")
 
+def probe(names):
+    """Count candidates for the named sources without writing the database."""
+    cfg=load_json(SOURCES,{"sources":[]})
+    wanted={name for name in names if name}
+    rows=[]
+    for src in cfg.get("sources",[]):
+        if wanted and src.get("name") not in wanted:
+            continue
+        if src.get("enabled") is False:
+            rows.append({"name":src["name"],"candidates":0,"new":0,"disabled":True,"note":src.get("health_note") or "disabled","url":src.get("url","")})
+            print(f"SOURCE {src['name']}: candidates=0 skipped=disabled")
+            continue
+        error=""
+        try:
+            candidates=gather_candidates(src)
+        except Exception as exc:
+            error=str(exc)
+            candidates=[]
+            print(f"WARN {src['name']}: {exc}", file=sys.stderr)
+        print(f"SOURCE {src['name']}: candidates={len(candidates)} adapter={src.get('adapter')} url={src.get('url')}")
+        rows.append({"name":src["name"],"candidates":len(candidates),"new":0,"error":error,"note":src.get("health_note") or "","url":src.get("url","")})
+    from source_health import write_health
+    write_health(rows)
+    return rows
+
 if __name__=="__main__":
-    main()
+    if len(sys.argv)>1 and sys.argv[1]=="--probe":
+        probe(sys.argv[2:])
+    else:
+        main()
 

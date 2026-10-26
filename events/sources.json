@@ -36,7 +36,14 @@
       "adapter": "event_links",
       "href_contains": [
         "/event/"
-      ]
+      ],
+      "extra_listing_urls": [
+        "https://garagemca.org/calendar?event_kind=education",
+        "https://garagemca.org/calendar?event_kind=talks"
+      ],
+      "max_detail_pages": 40,
+      "detail_workers": 6,
+      "health_note": "Кроме общей афиши читаются образование и дискуссии. Билетные ссылки zapomni.ru не являются карточками события."
     },
     {
       "name": "Дом культуры «ГЭС-2»",
@@ -58,15 +65,13 @@
     {
       "name": "Третьяковская галерея — лекции",
       "city": "moscow",
-      "url": "https://www.tretyakovgallery.ru/edu/lektsii/",
+      "url": "https://www.tretyakovgallery.ru/api/content/events/?archive=n&page_size=50&section=lektsii",
       "venue": "Третьяковская галерея",
-      "adapter": "event_links",
-      "href_contains": [
-        "/events/o/"
-      ],
-      "max_detail_pages": 100,
-      "detail_workers": 8,
-      "source_group": "museum"
+      "adapter": "tretyakov_api",
+      "section": "lektsii",
+      "page_size": 50,
+      "source_group": "museum",
+      "health_note": "Лекции отдаются JSON после загрузки страницы; HTML /edu/lektsii/ ссылок не содержит."
     },
     {
       "name": "Центр Вознесенского",
@@ -91,9 +96,10 @@
     {
       "name": "Мультимедиа Арт Музей",
       "city": "moscow",
-      "url": "https://mamm-mdf.ru/events/",
+      "url": "https://mamm.art/events/",
       "venue": "Мультимедиа Арт Музей, Москва",
-      "adapter": "mamm"
+      "adapter": "mamm",
+      "health_note": "Сайт переехал с mamm-mdf.ru на mamm.art. Кино и курсы не собираются."
     },
     {
       "name": "Ewert — возможности для художников",
@@ -149,7 +155,10 @@
         "/visit/events/"
       ],
       "max_detail_pages": 40,
-      "detail_workers": 8
+      "detail_workers": 8,
+      "attempts": 1,
+      "timeout": 20,
+      "health_note": "Страница отвечает 200 и сама пишет «Список пуст». Выставки по-прежнему идут отдельным источником."
     },
     {
       "name": "ММОМА — выставки",
@@ -268,17 +277,10 @@
       "city": "spb",
       "url": "https://hermitagemuseum.org/what-s-on",
       "venue": "Государственный Эрмитаж",
-      "adapter": "event_links",
-      "href_contains": [
-        "/what-s-on/",
-        "/exhibitions/",
-        "/events/"
-      ],
-      "exclude_paths": [
-        "/what-s-on"
-      ],
-      "max_detail_pages": 120,
-      "detail_workers": 8
+      "adapter": "hermitage_api",
+      "api_types": ["exhibition", "event"],
+      "source_group": "museum",
+      "health_note": "HTML what's-on пустой без JavaScript. Список читается из публичного POST /api/whats/load."
     },
     {
       "name": "Русский музей — выставки",
@@ -321,19 +323,11 @@
     {
       "name": "Русский музей — лекторий",
       "city": "spb",
-      "url": "https://rusmuseum.ru/pages/lecture/",
+      "url": "https://t.me/s/lektoriyrusmuseum",
       "venue": "Лекторий Русского музея",
-      "adapter": "event_links",
-      "href_contains": [
-        "/pages/lecture/",
-        "/events/",
-        "/news/"
-      ],
-      "exclude_paths": [
-        "/pages/lecture/"
-      ],
-      "max_detail_pages": 60,
-      "detail_workers": 8
+      "adapter": "telegram_channel_events",
+      "source_group": "museum",
+      "health_note": "Страница /pages/lecture/ не содержит карточек лекций, только меню. Афиша лектория публикуется в официальном Telegram."
     },
     {
       "name": "Библиотека им. Н. А. Некрасова",
@@ -381,8 +375,11 @@
       ],
       "max_detail_pages": 140,
       "detail_workers": 10,
+      "attempts": 1,
+      "timeout": 12,
       "source_group": "library",
-      "high_free_yield": true
+      "high_free_yield": true,
+      "health_note": "Адрес /ru/events/afisha/ отвечает 404, главная библиотеки с этого сервера часто не открывается."
     },
     {
       "name": "Российская национальная библиотека — афиша",
@@ -646,7 +643,10 @@
       ],
       "max_detail_pages": 60,
       "detail_workers": 8,
-      "source_group": "museum"
+      "attempts": 1,
+      "timeout": 12,
+      "source_group": "museum",
+      "health_note": "Сайт закрыт DDoS-Guard (403) для этого сервера. Обход защиты не делаем. Официальный Telegram музея остаётся отдельным источником."
     },
     {
       "name": "Музей Москвы — выставки",
@@ -724,9 +724,12 @@
       "exclude_paths": [
         "/event/"
       ],
-      "max_detail_pages": 120,
-      "detail_workers": 8,
-      "source_group": "museum"
+      "max_detail_pages": 20,
+      "detail_workers": 4,
+      "attempts": 1,
+      "timeout": 12,
+      "source_group": "museum",
+      "health_note": "/event/ отвечает 404. На главной остались только ссылки на билеты, VK и MAX, без афиши."
     },
     {
       "name": "КУБ — события",
@@ -983,9 +986,12 @@
         "/news/",
         "/projects/"
       ],
-      "max_detail_pages": 40,
+      "max_detail_pages": 20,
       "detail_workers": 4,
-      "source_group": "library"
+      "attempts": 1,
+      "timeout": 8,
+      "source_group": "library",
+      "health_note": "pl.spb.ru обрывает TLS. Официальный Telegram библиотеки собирается отдельно и работает."
     },
     {
       "name": "Центр манги и комиксов",
@@ -1143,7 +1149,7 @@
       "venue": "Новая Голландия",
       "adapter": "event_links",
       "href_contains": [
-        "/events/"
+        "/events/education/"
       ],
       "exclude_paths": [
         "/events/education/",
@@ -1151,9 +1157,12 @@
         "/events/art/",
         "/events/past/"
       ],
-      "max_detail_pages": 40,
+      "max_detail_pages": 30,
       "detail_workers": 4,
-      "source_group": "art_center"
+      "attempts": 2,
+      "timeout": 20,
+      "source_group": "art_center",
+      "health_note": "Страница образования открывается. Раньше сбор упирался в таймаут соединения."
     },
     {
       "name": "АРТМУЗА — события",
@@ -1340,18 +1349,23 @@
     {
       "name": "Школа Родченко — новости и события",
       "city": "moscow",
-      "url": "https://mdfschool.ru/",
+      "url": "https://mdfschool.ru/events/anounces/",
       "venue": "Московская школа фотографии и мультимедиа имени Родченко",
       "adapter": "event_links",
       "href_contains": [
-        "/news/",
-        "/events/",
-        "/event/"
+        "/events/anounces/"
+      ],
+      "exclude_paths": [
+        "/events/anounces/",
+        "/events/"
       ],
       "kind": "event",
-      "max_detail_pages": 70,
-      "detail_workers": 6,
-      "source_group": "art_school"
+      "max_detail_pages": 20,
+      "detail_workers": 4,
+      "attempts": 2,
+      "timeout": 20,
+      "source_group": "art_school",
+      "health_note": "Афиша открывается на /events/anounces/. На 26 октября 2026 опубликованные анонсы уже прошли, например 1–17 октября, поэтому живых дат нет."
     },
     {
       "name": "Институт современного искусства Иосифа Бакштейна — события",
@@ -1365,9 +1379,9 @@
         "/news/"
       ],
       "kind": "event",
-      "max_detail_pages": 60,
-      "detail_workers": 6,
-      "source_group": "art_school"
+      "enabled": false,
+      "source_group": "art_school",
+      "health_note": "Домен ica-moscow.ru сейчас занят другим сайтом (церковь), это не институт Бакштейна. Сбор выключен, чтобы не тащить чужие события."
     },
     {
       "name": "Галерея ГРАУНД — события",
@@ -1471,6 +1485,146 @@
       "fallback_urls": [
         "https://t.me/s/birospb9"
       ]
+    },
+    {
+      "name": "KudaGo — выставки и образование, Москва",
+      "city": "moscow",
+      "url": "https://kudago.com/public-api/v1.4/events/?location=msk&categories=exhibition,education",
+      "venue": "",
+      "adapter": "kudago",
+      "attempts": 1,
+      "timeout": 12,
+      "source_group": "aggregator",
+      "health_note": "Публичный API без ключа. С этого сервера KudaGo часто отвечает 403. Берём только выставки и образование, не больше двух страниц."
+    },
+    {
+      "name": "Эрарта — календарь",
+      "city": "spb",
+      "url": "https://www.erarta.com/ru/calendar/",
+      "venue": "Музей современного искусства Эрарта",
+      "adapter": "event_links",
+      "href_contains": [
+        "/calendar/exhibitions/detail/",
+        "/calendar/events/detail/"
+      ],
+      "max_detail_pages": 30,
+      "detail_workers": 4,
+      "source_group": "museum"
+    },
+    {
+      "name": "Севкабель Порт — выставки",
+      "city": "spb",
+      "url": "https://sevcableport.ru/afisha/vystavki/",
+      "venue": "Севкабель Порт",
+      "adapter": "event_links",
+      "href_contains": [
+        "/afisha/"
+      ],
+      "exclude_paths": [
+        "/afisha/",
+        "/afisha/vystavki/",
+        "/afisha/konczerty/",
+        "/afisha/festivali/",
+        "/afisha/ekskursii/",
+        "/afisha/market/",
+        "/afisha/detyam/"
+      ],
+      "max_detail_pages": 20,
+      "detail_workers": 4,
+      "source_group": "art_center"
+    },
+    {
+      "name": "PRO.Культура.РФ — события",
+      "city": "moscow",
+      "url": "https://pro.culture.ru/api/2.5/events?status=accepted&limit=30&sort=-start",
+      "venue": "",
+      "adapter": "pro_culture",
+      "attempts": 1,
+      "timeout": 12,
+      "source_group": "aggregator",
+      "health_note": "Открытое API отвечает 403 без ключа. Ключ не подставляем и никуда не логинимся."
+    },
+    {
+      "name": "Артгид — анонсы",
+      "city": "moscow",
+      "url": "https://artguide.com/",
+      "venue": "Артгид",
+      "adapter": "artguide",
+      "href_contains": [
+        "/posts/",
+        "/post/",
+        "/events/"
+      ],
+      "max_detail_pages": 15,
+      "attempts": 1,
+      "timeout": 15,
+      "source_group": "media",
+      "health_note": "Сайт с этого сервера часто не отвечает по таймауту. Одна попытка, без повторов."
+    },
+    {
+      "name": "Timepad — искусство, Москва",
+      "city": "moscow",
+      "url": "https://timepad.ru/events/?city=moscow&q=%D0%B8%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%BE",
+      "venue": "",
+      "adapter": "timepad",
+      "max_detail_pages": 12,
+      "attempts": 1,
+      "timeout": 12,
+      "source_group": "aggregator",
+      "health_note": "Публичный API Timepad без токена отвечает 403. Читаем только открытую страницу поиска, без входа."
+    },
+    {
+      "name": "Галерея Ovcharenko — выставки",
+      "city": "moscow",
+      "url": "https://ovcharenko.art/exhibitions/",
+      "venue": "Галерея Ovcharenko",
+      "adapter": "event_links",
+      "href_contains": [
+        "/exhibitions/"
+      ],
+      "exclude_paths": [
+        "/exhibitions/"
+      ],
+      "kind": "exhibition",
+      "max_detail_pages": 15,
+      "detail_workers": 4,
+      "source_group": "gallery"
+    },
+    {
+      "name": "Fragment Gallery — выставки",
+      "city": "moscow",
+      "url": "https://fragment.gallery/exhibitions/",
+      "venue": "Fragment Gallery",
+      "adapter": "event_links",
+      "href_contains": [
+        "/exhibitions/"
+      ],
+      "exclude_paths": [
+        "/exhibitions/"
+      ],
+      "kind": "exhibition",
+      "max_detail_pages": 15,
+      "detail_workers": 4,
+      "source_group": "gallery",
+      "health_note": "Первые карточки списка — ярмарочные стенды вне Москвы. Их пропускаем. На проверенных страницах не осталось текущей московской выставки с датой."
+    },
+    {
+      "name": "Галерея pop/off/art — выставки",
+      "city": "moscow",
+      "url": "https://popoffart.com/",
+      "venue": "Галерея pop/off/art",
+      "adapter": "event_links",
+      "href_contains": [
+        "/exhibitions/2026/"
+      ],
+      "exclude_paths": [
+        "/exhibitions/2026/",
+        "/exhibitions/2026/:"
+      ],
+      "kind": "exhibition",
+      "max_detail_pages": 15,
+      "detail_workers": 4,
+      "source_group": "gallery"
     }
   ]
 }

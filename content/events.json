@@ -38274,7 +38274,7 @@
       "reviewed_at": "2026-10-17",
       "availability": "unknown",
       "availability_checked_at": "",
-      "registration": false,
+      "registration": null,
       "price": null,
       "price_text": "",
       "price_type": "paid",
@@ -38300,7 +38300,7 @@
         "status": "approved",
         "telegram_include": false,
         "instagram_include": false,
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -38316,7 +38316,7 @@
       "reviewed_at": "2026-10-17",
       "availability": "unknown",
       "availability_checked_at": "",
-      "registration": false,
+      "registration": null,
       "price": null,
       "price_text": "",
       "price_type": "paid",
@@ -38342,7 +38342,7 @@
         "status": "approved",
         "telegram_include": false,
         "instagram_include": false,
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -40992,7 +40992,7 @@
       "address": "1-й Голутвинский переулок, 16, стр. 1",
       "price": 850,
       "price_text": "850 ₽; льготный — 650 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -41016,7 +41016,7 @@
       "reviewed_at": "2026-10-17",
       "ticket_required": true,
       "editor_overrides": {
-        "registration": false
+        "registration": null
       },
       "time_verification": "verified",
       "time_evidence": "24 октября 2026 14:00",
@@ -41034,7 +41034,7 @@
       "address": "1-й Голутвинский переулок, 16, стр. 1",
       "price": 850,
       "price_text": "850 ₽; льготный — 650 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -41061,7 +41061,7 @@
       "time_evidence": "24 октября 2026 14:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
       "editor_overrides": {
-        "registration": false
+        "registration": null
       }
     },
     {
@@ -43269,7 +43269,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-10-26-fb027d72d2",
@@ -43613,7 +43615,37 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
+    },
+    {
+      "id": "spb-2026-10-26-6b3c5a0234",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-26",
+      "time": "",
+      "title": "Дизайнер — партнер, а не ремесленник: преподаватель МШД о страхе перед AI",
+      "venue": "Международная школа дизайна — Петербург",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "Преподаватель Международной Школы Дизайна (СПб) Дарья Кузьменко дала интервью РБК, в котором объяснила, почему паника вокруг нейросетей в графическом дизайне преждевременна. По словам эксперта, инструменты на базе ИИ в руках креативного специалиста, который понимает, как их правильно применять, — это эффективное подспорье.",
+      "url": "https://spb.designschool.ru/2026/10/26/dizajner-partner-a-ne-remeslennik-prepodavatel-mshd-o-straxe-pered-ai/",
+      "source": "Международная школа дизайна — Петербург",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-26",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-10-26-98f4534d25",
@@ -43847,6 +43879,32 @@
       "reviewed_at": "2026-10-25",
       "time_verification": "unverified",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
+      "id": "spb-2026-10-26-39e247098d",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-26",
+      "time": "",
+      "title": "Наши события",
+      "venue": "Международная школа дизайна — Петербург",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "Преподаватель Международной Школы Дизайна (СПб) Дарья Кузьменко дала интервью РБК, в котором объяснила, почему паника вокруг нейросетей в графическом дизайне преждевременна. По словам эксперта, инструменты на базе ИИ в руках креативного специалиста, который понимает, как их правильно применять, — это эффективное подспорье.",
+      "url": "https://spb.designschool.ru/category/lifeschool/",
+      "source": "Международная школа дизайна — Петербург",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-26",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "spb-2026-10-26-d46811b042",
@@ -44992,6 +45050,62 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
+      "id": "moscow-2026-10-27-b2f389d79e",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-27",
+      "time": "11:00",
+      "title": "Маршрут по истории наземного и подземного транспорта",
+      "venue": "Музей Транспорта Москвы",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "",
+      "url": "https://mtmuseum.ru/affiche/marshrut-po-istorii-nazemnogo-i-podzemnogo-transporta/",
+      "source": "Музей транспорта Москвы — афиша",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-26",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "spb-2026-10-27-cfe585fea8",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-27",
+      "time": "12:00",
+      "title": "Мастер-класс «Я — ХУДОЖНИК ЭКСЛИБРИСА»",
+      "venue": "Российская национальная библиотека",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "Сеансы состоятся: 27 октября в 15:00 29 октября в 13:30",
+      "url": "https://nlr.ru/nlr_visit/event/3739",
+      "source": "Российская национальная библиотека — афиша",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-26",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-10-27-6471f19c88",
       "status": "rejected",
       "kind": "event",
@@ -45028,6 +45142,34 @@
       "time_verification": "verified",
       "time_evidence": "27.10.26 12:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
+      "id": "moscow-2026-10-27-f044d8e0b5",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-27",
+      "time": "14:00",
+      "title": "История наземного городского транспорта",
+      "venue": "Музей Транспорта Москвы",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "",
+      "url": "https://mtmuseum.ru/affiche/istoriya-nazemnogo-gorodskogo-transporta/",
+      "source": "Музей транспорта Москвы — афиша",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-26",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "spb-2026-10-27-d70f2c6fd6",
@@ -45148,6 +45290,34 @@
       "time_verification": "verified",
       "time_evidence": "27 октября 2026 (вторник) 15:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
+      "id": "moscow-2026-10-27-675d262640",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-27",
+      "time": "16:00",
+      "title": "История Московского метрополитена",
+      "venue": "Музей Транспорта Москвы",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "",
+      "url": "https://mtmuseum.ru/affiche/istoriya-moskovskogo-metropolitena/",
+      "source": "Музей транспорта Москвы — афиша",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-26",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-10-27-1405247759",
@@ -45515,7 +45685,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-27-17d40d2f82",
@@ -46094,8 +46266,8 @@
       "review_reason": "year_not_explicit_on_primary_listing",
       "discovered_at": "2026-10-15",
       "price_type": "paid",
-      "availability": "unknown",
-      "availability_checked_at": "2026-10-25",
+      "availability": "sold_out",
+      "availability_checked_at": "2026-10-26",
       "sheet_synced_description": "",
       "editor_note": "",
       "social_priority": null,
@@ -46873,6 +47045,41 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
+      "id": "moscow-2026-10-29-b2b68f4fc7",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-29",
+      "time": "",
+      "title": "Лекторий",
+      "venue": "Музей архитектуры им. А. В. Щусева",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [],
+      "description": "",
+      "url": "https://muar.ru/lectures/",
+      "source": "Музей архитектуры им. Щусева — мероприятия",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-06",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-15",
+      "sheet_synced_description": "",
+      "editor_note": "",
+      "social_title": "",
+      "social_priority": null,
+      "instagram_include": false,
+      "instagram_image": "",
+      "telegram_include": false,
+      "social_description": "",
+      "reviewed_at": "2026-10-06",
+      "time_verification": "unverified",
+      "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
       "id": "moscow-2026-10-29-6d8f1e6c5b",
       "status": "rejected",
       "kind": "event",
@@ -47030,6 +47237,34 @@
       "time_verification": "verified",
       "time_evidence": "29.10 12:10",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
+      "id": "spb-2026-10-29-5dbf975713",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-29",
+      "time": "13:30",
+      "title": "Мастер-класс «Я — ИЛЛЮСТРАТОР КНИГИ»",
+      "venue": "Российская национальная библиотека",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "Сеансы состоятся: 27 октября в 12:00, 13:30 29 октября в 15:00, 16:30",
+      "url": "https://nlr.ru/nlr_visit/event/3738",
+      "source": "Российская национальная библиотека — афиша",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-26",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "spb-2026-10-29-6274d9b2ae",
@@ -48667,7 +48902,7 @@
       "address": "Лаврушинский переулок, 12",
       "price": 650,
       "price_text": "650 ₽; онлайн — 700 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -48684,7 +48919,7 @@
         "telegram_include": false,
         "instagram_include": false,
         "status": "approved",
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -49585,6 +49820,34 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
+      "id": "moscow-2026-10-31-21829df8e9",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-31",
+      "time": "12:00",
+      "title": "экскурсия «Архитектурные диковины петровской Москвы» (",
+      "venue": "Музей Москвы",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "",
+      "url": "https://t.me/mosmuseum/7581",
+      "source": "Музей Москвы — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-26",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "spb-2026-10-31-61c6ecbab5",
       "status": "approved",
       "kind": "event",
@@ -50159,7 +50422,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-31-6de4feac72",
@@ -50514,6 +50779,74 @@
       "sheet_synced_description": "Государственный музей изобразительных искусств имени А.С. Пушкина представляет выставку «Алмазная колесница. Буддийское искусство России» — первый масштабный проект о буддийском искусстве в России."
     },
     {
+      "id": "spb-2026-11-01-176451c1ba",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-01",
+      "time": "",
+      "title": "Название требует проверки",
+      "venue": "Дом Радио",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Дайджест ближайших событий просветительской программы: Петербургский композитор Юрий Красавин за свою жизнь дал до обидного малое количество интервью — и чуть ли не впервые будет рассказывать о себе и своей музыке на открытой встрече со слушателями. Разговор с одним из самых самобытных и значительных отечественных композиторов нашего времени, «последним из могикан» золотого века ленинградской композиторской школы в Доме Радио проведет музыкальный критик Богдан Королёк. Для Николая Метнера стремительное изменение художественного языка в XX веке стало трагедией. Он так и не примирился с эстетико",
+      "url": "https://domradio.timepad.ru/event/4246377/",
+      "source": "Дом Радио — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-10-15",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-23",
+      "sheet_synced_description": "Дайджест ближайших событий просветительской программы: Петербургский композитор Юрий Красавин за свою жизнь дал до обидного малое количество интервью — и чуть ли не впервые будет рассказывать о себе и своей музыке на открытой встрече со слушателями. Разговор с одним из самых самобытных и значительных отечественных композиторов нашего времени, «последним из могикан» золотого века ленинградской композиторской школы в Доме Радио проведет музыкальный критик Богдан Королёк. Для Николая Метнера стремительное изменение художественного языка в XX веке стало трагедией. Он так и не примирился с эстетико",
+      "social_priority": null,
+      "telegram_include": false,
+      "instagram_image": "",
+      "social_description": "",
+      "editor_note": "",
+      "social_title": "",
+      "instagram_include": false,
+      "reviewed_at": "2026-10-17",
+      "editor_overrides": {
+        "registration": false
+      },
+      "time_verification": "unverified",
+      "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
+      "id": "moscow-2026-11-01-9f703f36f1",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-01",
+      "time": "",
+      "title": "ПОДПИШИТЕСЬ И ПОЛУЧАЙТЕ НОВОСТИ МУЗЕЯ ПЕРВЫМИ",
+      "venue": "Еврейский музей и центр толерантности",
+      "address": "",
+      "price": 151700,
+      "price_text": "151700 ₽",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "",
+      "url": "https://www.jewish-museum.ru/events/",
+      "source": "Еврейский музей и центр толерантности",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-26",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-01-2b2a385dc4",
       "status": "rejected",
       "kind": "event",
@@ -50606,14 +50939,16 @@
       "price": 0,
       "price_text": "",
       "registration": false,
-      "categories": [],
+      "categories": [
+        "выставка"
+      ],
       "description": "На метро Музей AZ находится между станциями метро «Маяковская» и «Белорусская» (кольцевая). Мы рекомендуем идти в Музей от станции «Маяковская». Вам нужен Выход №1 на 1-я Тверская-Ямская улица, 2-я Тверская-Ямская улица.",
       "url": "https://museum-az.com/event/territoriya-svobody-nonkonformisty-v-taruse/",
       "source": "Музей AZ — выставки и события",
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-10-20",
-      "price_type": "paid",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-10-25",
       "editor_overrides": {
@@ -50832,6 +51167,46 @@
       }
     },
     {
+      "id": "moscow-2026-11-01-d4f6927bd5",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-01",
+      "time": "01:11",
+      "title": "Экскурсия “Маршрут построен: от Бахметьевского гаража к Еврейскому музею” x Глазами инженера",
+      "venue": "Еврейский музей и центр толерантности",
+      "address": "",
+      "price": 1700,
+      "price_text": "1700 ₽",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Еврейский музей и центр толерантности совместно с компанией «Глазами инженера» приглашают на экскурсию по Бахметьевскому автобусному гаражу — шедевру авангарда в архитектуре В середине 1920-х годов на улицах Москвы появились регулярные автобусные маршруты, а вместе с ними возникла необходимость в новых гаражах для быстро растущего городского транспорта.",
+      "url": "https://www.jewish-museum.ru/events/ekskursiya-marshrut-postroen-ot-bakhmetevskogo-garazha-k-evreyskomu-muzeyu-x-glazami-inzhenera-/",
+      "source": "Еврейский музей и центр толерантности",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-10",
+      "price_type": "paid",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-18",
+      "sheet_synced_description": "Еврейский музей и центр толерантности совместно с компанией «Глазами инженера» приглашают на экскурсию по Бахметьевскому автобусному гаражу — шедевру авангарда в архитектуре В середине 1920-х годов на улицах Москвы появились регулярные автобусные маршруты, а вместе с ними возникла необходимость в новых гаражах для быстро растущего городского транспорта.",
+      "instagram_image": "",
+      "telegram_include": false,
+      "social_description": "",
+      "social_priority": null,
+      "editor_note": "",
+      "social_title": "",
+      "instagram_include": false,
+      "time_verification": "verified",
+      "time_evidence": "18.10.2026-01.11",
+      "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
+      "editor_overrides": {
+        "time": "01:11"
+      }
+    },
+    {
       "id": "moscow-2026-11-01-fd619c9f4d",
       "status": "rejected",
       "kind": "event",
@@ -50867,6 +51242,32 @@
       "time_verification": "verified",
       "time_evidence": "1 ноября 2026, 12:30",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
+      "id": "spb-2026-11-01-ddb4c02dc6",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-01",
+      "time": "13:00",
+      "title": "Комикстерий: Ужас-клише",
+      "venue": "Библиотека комиксов",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "Приходите при возможности в костюме героя своего комикс-героя или в Spooky гриме, ведь на новой встрече мы будем рисовать комиксы с вашими оригинальными персонажами, которые попадут в классические клише ужастиков! Представьте: ваш герой надел страшный костюм, который теперь не снять… Или встретил кого-то с очень странной внешностью, и все уверены, что это просто грим… А может, он услышал жуткий звук из подвала, нашёл проклятую книгу и, конечно, решил прочитать заклинание, призвав зловещих монстров в наш дивный мир?",
+      "url": "https://t.me/comix_library/2873",
+      "source": "Библиотека комиксов — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-10-26",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-01-a19447258a",
@@ -50907,6 +51308,34 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
+      "id": "moscow-2026-11-01-a67bd74ca8",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-01",
+      "time": "14:00",
+      "title": "Как сионисты хотели угнать самолет: история возвращения евреев в Израиль",
+      "venue": "Еврейский музей и центр толерантности",
+      "address": "",
+      "price": 600,
+      "price_text": "600 ₽",
+      "registration": null,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "Обретение дома — очень важное событие для еврейского народа. На экскурсии узнаем, что такое путь к горе Сион, насколько сложным он был и оказался ли пройден. Входной билет на основную экспозицию приобретается отдельно",
+      "url": "https://www.jewish-museum.ru/events/dolgiy-put-domoy-istoriya-sionizma/",
+      "source": "Еврейский музей и центр толерантности",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-26",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-01-e3248ee216",
       "status": "new",
       "kind": "event",
@@ -50939,7 +51368,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-01-09ca26027f",
@@ -51003,7 +51434,7 @@
       "discovered_at": "2026-10-26",
       "price_type": "free",
       "availability_evidence": "",
-      "ticket_required": true,
+      "ticket_required": false,
       "availability": "unknown",
       "availability_checked_at": "",
       "editor_overrides": {
@@ -51047,7 +51478,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-01-6a7cce8c40",
@@ -51087,6 +51520,34 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
+      "id": "moscow-2026-11-01-0175f414b9",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-01",
+      "time": "16:00",
+      "title": "Век Шагала",
+      "venue": "Еврейский музей и центр толерантности",
+      "address": "",
+      "price": 600,
+      "price_text": "600 ₽",
+      "registration": null,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "Россия, Белоруссия и Франция считают Марка Шагала своим национальным художником. Но как же так получилось и кому на самом деле принадлежало сердце Шагала? Рассказываем на тематической экскурсии.",
+      "url": "https://www.jewish-museum.ru/events/vek-shagala/",
+      "source": "Еврейский музей и центр толерантности",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-26",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "spb-2026-11-01-2cf7a50539",
       "status": "approved",
       "kind": "event",
@@ -51123,6 +51584,62 @@
       "time_verification": "verified",
       "time_evidence": "01.11.2026 17:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
+      "id": "spb-2026-11-01-7f18998c1c",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-01",
+      "time": "17:00",
+      "title": "Лекция Софьи Кучерявенко «Призраки Петербурга. Адреса»",
+      "venue": "Музей искусства Санкт-Петербурга XX–XXI веков",
+      "address": "",
+      "price": 600,
+      "price_text": "600 ₽",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "",
+      "url": "https://mispxx-xxi.ru/about/afisha/22568/",
+      "source": "Музей искусства Санкт-Петербурга XX–XXI веков — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-26",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "moscow-2026-11-01-beef62faa1",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-01",
+      "time": "19:00",
+      "title": "Любовь, рождение и смерть: цикл еврейской жизни",
+      "venue": "Еврейский музей и центр толерантности",
+      "address": "",
+      "price": 600,
+      "price_text": "600 ₽",
+      "registration": null,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "Экскурсия историка и старшего преподавателя кафедры иудаики Института стран Азии и Африки МГУ Максима Гаммала Входной билет на основную экспозицию приобретается отдельно",
+      "url": "https://www.jewish-museum.ru/events/lyubov-smert-i-evrei-tsikl-evreyskoy-zhizni2/",
+      "source": "Еврейский музей и центр толерантности",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-26",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "international-2026-11-02-4d384abbfe",
@@ -51513,6 +52030,34 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
+      "id": "spb-2026-11-03-d70f2c6fd6",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-03",
+      "time": "14:00",
+      "title": "Экскурсия по выставке «Художник Ленинграда. Владимир Гринберг» для посетителей серебряного возраста",
+      "venue": "Музей искусства Санкт-Петербурга XX–XXI веков",
+      "address": "",
+      "price": 400,
+      "price_text": "400 ₽",
+      "registration": null,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "",
+      "url": "https://mispxx-xxi.ru/about/afisha/22569/",
+      "source": "Музей искусства Санкт-Петербурга XX–XXI веков — события",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-26",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "international-2026-11-04-8b7a0eb137",
       "status": "rejected",
       "kind": "open_call",
@@ -51630,6 +52175,34 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
+      "id": "moscow-2026-11-04-175d817326",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-04",
+      "time": "12:00",
+      "title": "Мастер-класс «Искусство сторителлинга»",
+      "venue": "Музей Транспорта Москвы",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "",
+      "url": "https://mtmuseum.ru/affiche/master-klass-iskusstvo-storitellinga/",
+      "source": "Музей транспорта Москвы — афиша",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-26",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-04-fd619c9f4d",
       "status": "rejected",
       "kind": "event",
@@ -51704,6 +52277,34 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
+      "id": "spb-2026-11-04-6274d9b2ae",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-04",
+      "time": "14:00",
+      "title": "Экскурсия по выставке «Художник Ленинграда. Владимир Гринберг»",
+      "venue": "Музей искусства Санкт-Петербурга XX–XXI веков",
+      "address": "",
+      "price": 600,
+      "price_text": "600 ₽",
+      "registration": null,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "",
+      "url": "https://mispxx-xxi.ru/about/afisha/22572/",
+      "source": "Музей искусства Санкт-Петербурга XX–XXI веков — события",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-26",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "spb-2026-11-04-8814ce216b",
       "status": "rejected",
       "kind": "event",
@@ -51739,6 +52340,60 @@
       "time_verification": "verified",
       "time_evidence": "04.11.2026 в 15:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
+      "id": "spb-2026-11-04-ff66695f46",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-04",
+      "time": "16:00",
+      "title": "Арт-терапия | Занятие «Линия с характером»",
+      "venue": "Музей искусства Санкт-Петербурга XX–XXI веков",
+      "address": "",
+      "price": 800,
+      "price_text": "800 ₽",
+      "registration": null,
+      "categories": [],
+      "description": "",
+      "url": "https://mispxx-xxi.ru/about/afisha/22573/",
+      "source": "Музей искусства Санкт-Петербурга XX–XXI веков — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-26",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "moscow-2026-11-04-a350217735",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-04",
+      "time": "17:00",
+      "title": "Мастер-класс по театру теней «Путешествие вокруг света за 10 минут»",
+      "venue": "Музей Транспорта Москвы",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "",
+      "url": "https://mtmuseum.ru/affiche/master-klass-po-teatru-teney-puteshestvie-vokrug-sveta-za-10-minut/",
+      "source": "Музей транспорта Москвы — афиша",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-26",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "spb-2026-11-04-2bcb79c0ea",
@@ -51850,6 +52505,45 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
+      "id": "spb-2026-11-05-e129a78438",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-05",
+      "time": "",
+      "title": "Арт-медиация Елены Ильиной «Цветовая гармония» по выставке «Художник Ленинграда. Владимир Гринберг»",
+      "venue": "Музей искусства Санкт-Петербурга XX–XXI веков",
+      "address": "",
+      "price": 600,
+      "price_text": "600 ₽",
+      "registration": true,
+      "categories": [
+        "лекция"
+      ],
+      "description": "",
+      "url": "https://mispxx-xxi.ru/about/afisha/22501/",
+      "source": "Музей искусства Санкт-Петербурга XX–XXI веков — события",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-02",
+      "price_type": "paid",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-20",
+      "editor_note": "",
+      "telegram_include": false,
+      "social_priority": null,
+      "social_description": "",
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "sheet_synced_description": "",
+      "time_verification": "unverified",
+      "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
+      "editor_overrides": {
+        "time": ""
+      }
+    },
+    {
       "id": "moscow-2026-11-05-b485ac3446",
       "status": "approved",
       "kind": "event",
@@ -51929,6 +52623,45 @@
       },
       "time_verification": "unverified",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
+      "id": "moscow-2026-11-05-84b65b4d8b",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-05",
+      "time": "",
+      "title": "Скоро в Artplay",
+      "venue": "ARTPLAY",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": true,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "Продолжая использовать этот сайт, вы соглашаетесь с политикой в области обработки и защиты персональных данных",
+      "url": "https://artplay.ru/events/ekskursiya",
+      "source": "ARTPLAY — события",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-06",
+      "price_type": "free",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-15",
+      "sheet_synced_description": "Продолжая использовать этот сайт, вы соглашаетесь с политикой в области обработки и защиты персональных данных",
+      "editor_note": "",
+      "social_title": "",
+      "social_priority": null,
+      "instagram_include": false,
+      "instagram_image": "",
+      "telegram_include": false,
+      "social_description": "",
+      "time_verification": "unverified",
+      "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
+      "editor_overrides": {
+        "time": ""
+      }
     },
     {
       "id": "spb-2026-11-05-0bce51b132",
@@ -52162,6 +52895,45 @@
       }
     },
     {
+      "id": "spb-2026-11-06-e96e84ce1f",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-06",
+      "time": "",
+      "title": "Арт-медиация Софьи Кучерявенко «100 видов реки Невы»",
+      "venue": "Музей искусства Санкт-Петербурга XX–XXI веков",
+      "address": "",
+      "price": 600,
+      "price_text": "600 ₽",
+      "registration": true,
+      "categories": [
+        "лекция"
+      ],
+      "description": "",
+      "url": "https://mispxx-xxi.ru/about/afisha/22494/",
+      "source": "Музей искусства Санкт-Петербурга XX–XXI веков — события",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-02",
+      "price_type": "paid",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-16",
+      "editor_note": "",
+      "telegram_include": false,
+      "social_priority": null,
+      "social_description": "",
+      "social_title": "",
+      "instagram_image": "",
+      "instagram_include": false,
+      "sheet_synced_description": "",
+      "time_verification": "unverified",
+      "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
+      "editor_overrides": {
+        "time": ""
+      }
+    },
+    {
       "status": "approved",
       "editor_note": "Добавлено по свежему анонсу; первоисточник проверен",
       "checked_at": "2026-09-26",
@@ -52362,6 +53134,46 @@
       }
     },
     {
+      "id": "spb-2026-11-07-d709f81e9f",
+      "status": "approved",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-07",
+      "time": "",
+      "title": "Авторская экскурсия Софьи Кучерявенко «Петербургская палитра: свет и цвет северной столицы»",
+      "venue": "Музей искусства Санкт-Петербурга XX–XXI веков",
+      "address": "",
+      "price": 600,
+      "price_text": "600 ₽",
+      "registration": true,
+      "categories": [
+        "лекция"
+      ],
+      "description": "",
+      "url": "https://mispxx-xxi.ru/about/afisha/22498/",
+      "source": "Музей искусства Санкт-Петербурга XX–XXI веков — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-02",
+      "price_type": "paid",
+      "social_title": "",
+      "social_description": "",
+      "instagram_image": "",
+      "telegram_include": false,
+      "social_priority": null,
+      "editor_note": "",
+      "instagram_include": false,
+      "reviewed_at": "2026-10-02",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-17",
+      "sheet_synced_description": "",
+      "time_verification": "unverified",
+      "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
+      "editor_overrides": {
+        "time": ""
+      }
+    },
+    {
       "id": "moscow-2026-11-07-086888f0c0",
       "status": "rejected",
       "kind": "event",
@@ -52438,6 +53250,34 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
+      "id": "spb-2026-11-07-625af21bf8",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-07",
+      "time": "",
+      "title": "Превратности судьбы Сергея Довлатова и его публикаций на Западе: лекция Александра Гачкова",
+      "venue": "Дом Радио",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "к 85-летию одного из самых читаемых русских писателей XX века В конце 1970-х Довлатов оказался в Нью-Йорке. Там он издавал русскоязычную газету «Новый американец», работал на радио, много печатался и добился необычного для иностранца успеха: рассказы Довлатова публиковал известный журнал The New Yorker. Об американской жизни Сергея Довлатова, его книгах и издательских проектах, его пути к литературному признанию расскажет Александр Гачков — исследователь советской неофициальной культуры, коллекционер русскоязычных зарубежных изданий и автор канала",
+      "url": "https://domradio.timepad.ru/event/4265513/",
+      "source": "Дом Радио — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-10-26",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-07-84b65b4d8b",
       "status": "rejected",
       "kind": "event",
@@ -52475,6 +53315,34 @@
       "editor_overrides": {
         "time": "08:11"
       }
+    },
+    {
+      "id": "spb-2026-11-07-6274d9b2ae",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-07",
+      "time": "16:00",
+      "title": "Экскурсия по выставке «Художник Ленинграда. Владимир Гринберг»",
+      "venue": "Музей искусства Санкт-Петербурга XX–XXI веков",
+      "address": "",
+      "price": 600,
+      "price_text": "600 ₽",
+      "registration": null,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "",
+      "url": "https://mispxx-xxi.ru/about/afisha/22578/",
+      "source": "Музей искусства Санкт-Петербурга XX–XXI веков — события",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-26",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "international-2026-11-08-f9e3a218bb",
@@ -52661,6 +53529,62 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
+      "id": "moscow-2026-11-08-a193b10c2a",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-08",
+      "time": "16:00",
+      "title": "Лекция «Как сохранить историю транспорта, или как авангардный гараж стал самым современным музеем Москвы?»",
+      "venue": "Музей Транспорта Москвы",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "",
+      "url": "https://mtmuseum.ru/affiche/lektsiya-kak-sokhranit-istoriyu-transporta-/",
+      "source": "Музей транспорта Москвы — афиша",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-26",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "spb-2026-11-08-6274d9b2ae",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-08",
+      "time": "17:00",
+      "title": "Экскурсия по выставке «Художник Ленинграда. Владимир Гринберг»",
+      "venue": "Музей искусства Санкт-Петербурга XX–XXI веков",
+      "address": "",
+      "price": 600,
+      "price_text": "600 ₽",
+      "registration": null,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "",
+      "url": "https://mispxx-xxi.ru/about/afisha/22582/",
+      "source": "Музей искусства Санкт-Петербурга XX–XXI веков — события",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-26",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "international-2026-11-09-330553996a",
       "status": "rejected",
       "kind": "open_call",
@@ -52814,6 +53738,62 @@
       "reviewed_at": "2026-10-24"
     },
     {
+      "id": "spb-2026-11-10-d70f2c6fd6",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-10",
+      "time": "14:00",
+      "title": "Экскурсия по выставке «Художник Ленинграда. Владимир Гринберг» для посетителей серебряного возраста",
+      "venue": "Музей искусства Санкт-Петербурга XX–XXI веков",
+      "address": "",
+      "price": 400,
+      "price_text": "400 ₽",
+      "registration": null,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "",
+      "url": "https://mispxx-xxi.ru/about/afisha/22570/",
+      "source": "Музей искусства Санкт-Петербурга XX–XXI веков — события",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-26",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "spb-2026-11-10-4df1eb99df",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-10",
+      "time": "18:00",
+      "title": "Кураторская экскурсия по выставке «Художник Ленинграда. Владимир Гринберг» в поэтическом сопровождении",
+      "venue": "Музей искусства Санкт-Петербурга XX–XXI веков",
+      "address": "",
+      "price": 600,
+      "price_text": "600 ₽",
+      "registration": null,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "",
+      "url": "https://mispxx-xxi.ru/about/afisha/22583/",
+      "source": "Музей искусства Санкт-Петербурга XX–XXI веков — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-26",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-10-ceca5c9467",
       "status": "rejected",
       "kind": "event",
@@ -52851,6 +53831,34 @@
       "time_verification": "verified",
       "time_evidence": "10 ноя, вторник, 18:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
+      "id": "spb-2026-11-10-cc05471254",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-10",
+      "time": "18:30",
+      "title": "Совместная публичная программа Hovard Club и Манежа «От кураторского замысла к диалогу»",
+      "venue": "Манеж",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Hovard Club и Манеж запускауют совместную публичную программу «От кураторского замысла к диалогу»! Цикл встреч посвящён разным этапам встречи с искусством: от создания выставки до самостоятельного знакомства с произведениями.",
+      "url": "https://manege.spb.ru/events/sovmestnaya-publichnaya-programma-hovard-club-i-manezha-ot-kuratorskogo-zamysla-k-dialogu/",
+      "source": "Манеж — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-26",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-10-b2ec9159a6",
@@ -53046,6 +54054,34 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
+      "id": "spb-2026-11-11-17165fb22c",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-11",
+      "time": "16:00",
+      "title": "Презентация книг Ю. Г. Слепухина серии «Русская литература. Большие книги» (2025–2026)",
+      "venue": "Российская национальная библиотека",
+      "address": "Садовая ул., д. 18",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": true,
+      "categories": [
+        "презентация"
+      ],
+      "description": "Ведущие — представители издательства «Азбука» и вдова писателя Наталья Александровна Слепухина — генеральный директор Благотворительного фонда имени Ю. Г. Слепухина «Лучшие книги библиотекам».",
+      "url": "https://nlr.ru/nlr_visit/event/3707",
+      "source": "Российская национальная библиотека — афиша",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-26",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "spb-2026-11-11-e04979f457",
       "status": "approved",
       "kind": "event",
@@ -53082,6 +54118,34 @@
       "time_verification": "verified",
       "time_evidence": "11.11.2026 19:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
+      "id": "spb-2026-11-11-d3d4a393a3",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-11",
+      "time": "19:00",
+      "title": "Лекция «Между Петербургом и Лондоном: династические связи от Александра I до Николая II»",
+      "venue": "Российская национальная библиотека",
+      "address": "Садовая ул., д. 18",
+      "price": null,
+      "price_text": "",
+      "registration": true,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Что связывало российский императорский дом с британской королевской семьёй задолго до знаменитого брака Николая II и Александры Фёдоровны? Лектор : Екатерина Савищенко — искусствовед, соавтор научно-популярного блога delicate fancy",
+      "url": "https://nlr.ru/nlr_visit/event/3701",
+      "source": "Российская национальная библиотека — афиша",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-26",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-12-422be2d050",
@@ -53162,6 +54226,34 @@
       },
       "time_verification": "unverified",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
+      "id": "spb-2026-11-12-6274d9b2ae",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-12",
+      "time": "14:00",
+      "title": "Экскурсия по выставке «Художник Ленинграда. Владимир Гринберг»",
+      "venue": "Музей искусства Санкт-Петербурга XX–XXI веков",
+      "address": "",
+      "price": 600,
+      "price_text": "600 ₽",
+      "registration": null,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "",
+      "url": "https://mispxx-xxi.ru/about/afisha/22584/",
+      "source": "Музей искусства Санкт-Петербурга XX–XXI веков — события",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-26",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-12-ceca5c9467",
@@ -53502,8 +54594,8 @@
       "review_reason": "year_not_explicit_on_primary_listing",
       "discovered_at": "2026-10-17",
       "price_type": "paid",
-      "availability": "unknown",
-      "availability_checked_at": "2026-10-25",
+      "availability": "sold_out",
+      "availability_checked_at": "2026-10-26",
       "editor_overrides": {
         "telegram_include": false,
         "instagram_include": false,
@@ -53595,14 +54687,14 @@
       "city": "spb",
       "date": "2026-11-14",
       "time": "16:00",
-      "title": "«Пират» (1948 г.) Режиссер — В. Миннелли",
+      "title": "Х/ф «Пират» (1948 г.)",
       "venue": "Российская национальная библиотека",
       "address": "Московский пр., д. 165, корп. 2",
       "price": 0,
       "price_text": "Бесплатно",
       "registration": true,
       "categories": [],
-      "description": "Чтобы завоевать сердце романтически настроенной девушки, актер из бродячей труппы выдает себя за знаменитого пирата, в то время как ее скучный жених всеми силами пытается скрыть свое темное прошлое. Фильм впервые был показан в мае 1948 году. The New York Times писала: «\"Пират\", который вчера был показан в мюзик-холле \"Радио-сити\", — это ослепительная, захватывающая феерия, переливающаяся всеми цветами радуги…» Несмотря на хвалу критиков, зрители все же фильм не оценили и кассовые сборы не оправдали ожиданий. Мы же скептически относимся и к статистике и предлагаем нашим зрителем вместе посмотреть фильм и поделиться впечатлениями.",
+      "description": "Режиссер — В. Миннелли",
       "url": "https://nlr.ru/nlr_visit/event/3733",
       "source": "Российская национальная библиотека — афиша",
       "checked_at": "",
@@ -53618,7 +54710,37 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
+    },
+    {
+      "id": "spb-2026-11-14-6274d9b2ae",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-14",
+      "time": "16:00",
+      "title": "Экскурсия по выставке «Художник Ленинграда. Владимир Гринберг»",
+      "venue": "Музей искусства Санкт-Петербурга XX–XXI веков",
+      "address": "",
+      "price": 600,
+      "price_text": "600 ₽",
+      "registration": null,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "",
+      "url": "https://mispxx-xxi.ru/about/afisha/22587/",
+      "source": "Музей искусства Санкт-Петербурга XX–XXI веков — события",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-26",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "international-2026-11-15-fb1e594bf1",
@@ -53732,6 +54854,46 @@
       "sheet_synced_description": "Call for book artists to participate in TABOR, a year-long online residency bringing together eight book artists from varied backgrounds to infuse each other’s work, develop their professional practice, and make new work for an online joint group exhibition at the end of the residency.",
       "editor_overrides": {
         "registration": false
+      }
+    },
+    {
+      "id": "spb-2026-11-15-d709f81e9f",
+      "status": "approved",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-15",
+      "time": "",
+      "title": "Авторская экскурсия Софьи Кучерявенко «Петербургская палитра: свет и цвет северной столицы»",
+      "venue": "Музей искусства Санкт-Петербурга XX–XXI веков",
+      "address": "",
+      "price": 600,
+      "price_text": "600 ₽",
+      "registration": true,
+      "categories": [
+        "лекция"
+      ],
+      "description": "",
+      "url": "https://mispxx-xxi.ru/about/afisha/22498/",
+      "source": "Музей искусства Санкт-Петербурга XX–XXI веков — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-02",
+      "price_type": "paid",
+      "social_title": "",
+      "social_description": "",
+      "instagram_image": "",
+      "telegram_include": false,
+      "social_priority": null,
+      "editor_note": "",
+      "instagram_include": false,
+      "reviewed_at": "2026-10-02",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-17",
+      "sheet_synced_description": "",
+      "time_verification": "unverified",
+      "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
+      "editor_overrides": {
+        "time": ""
       }
     },
     {
@@ -53913,8 +55075,8 @@
       "review_reason": "year_not_explicit_on_primary_listing",
       "discovered_at": "2026-10-17",
       "price_type": "paid",
-      "availability": "unknown",
-      "availability_checked_at": "2026-10-25",
+      "availability": "sold_out",
+      "availability_checked_at": "2026-10-26",
       "editor_overrides": {
         "telegram_include": false,
         "instagram_include": false,
@@ -53951,8 +55113,8 @@
       "review_reason": "year_not_explicit_on_primary_listing",
       "discovered_at": "2026-10-20",
       "price_type": "paid",
-      "availability": "unknown",
-      "availability_checked_at": "2026-10-25",
+      "availability": "sold_out",
+      "availability_checked_at": "2026-10-26",
       "editor_overrides": {
         "telegram_include": false,
         "instagram_include": false,
@@ -54003,6 +55165,34 @@
       "instagram_include": false,
       "telegram_include": false,
       "sheet_synced_description": "Пушкинский музей представляет выставку «Фабрицио Плесси. Вертикальные моря», приуроченную к 10-летию работы музея с медиаискусством. Проект позволит зрителям впервые увидеть произведение итальянского художника, одного из “пионеров” медиа-арта Фабрицио Плесси, созданное специально для музея."
+    },
+    {
+      "id": "spb-2026-11-15-6274d9b2ae",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-15",
+      "time": "15:00",
+      "title": "Экскурсия по выставке «Художник Ленинграда. Владимир Гринберг»",
+      "venue": "Музей искусства Санкт-Петербурга XX–XXI веков",
+      "address": "",
+      "price": 600,
+      "price_text": "600 ₽",
+      "registration": null,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "",
+      "url": "https://mispxx-xxi.ru/about/afisha/22591/",
+      "source": "Музей искусства Санкт-Петербурга XX–XXI веков — события",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-26",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "russia-2026-11-16-b6f0d00beb",
@@ -54171,8 +55361,8 @@
       "review_reason": "year_not_explicit_on_primary_listing",
       "discovered_at": "2026-10-18",
       "price_type": "paid",
-      "availability": "unknown",
-      "availability_checked_at": "2026-10-25",
+      "availability": "sold_out",
+      "availability_checked_at": "2026-10-26",
       "editor_overrides": {
         "telegram_include": false,
         "instagram_include": false,
@@ -54259,6 +55449,34 @@
       "reviewed_at": "2026-10-25",
       "time_verification": "unverified",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
+      "id": "spb-2026-11-19-bf383d08fa",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-19",
+      "time": "18:00",
+      "title": "Лекция «Прогулки в лесу: осторожно, встреча с хищниками. Как себя вести»",
+      "venue": "Российская национальная библиотека",
+      "address": "Московский пр., д. 165, корп. 2",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Встреча с Павлом Глазковым, биологом и ведущим телеканала «Санкт-Петербург». Совместно с представителями Санкт-Петербургского отделения Поисково-спасательного отряда «ЛизаАлерт»",
+      "url": "https://nlr.ru/nlr_visit/event/3716",
+      "source": "Российская национальная библиотека — афиша",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-26",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-19-d74b62747b",
@@ -54372,7 +55590,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-11-20-e51b07d15a",
@@ -54480,7 +55700,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-20-b904ea1219",
@@ -54650,7 +55872,7 @@
       "price_text": "Бесплатно",
       "registration": true,
       "categories": [],
-      "description": "Одесса, 1919 год. Большевистское подполье ведет агитацию среди солдат французских войск. Понимание среди части французов находят речи большевика Степанова. Цветочница Санька требует от Степанова опасных заданий. Легкомысленный отпрыск богатейшей банкирши Женя, под влиянием Степанова мечтавший стать пламенным революционером, для погашения карточного долга за вознаграждение предает учителя и Саньку. Степанова расстреливают, Санька убивает предателя. Войска Красной Армии занимают Одессу. Четверо бывших оккупантов, перешедших на сторону большевиков, остаются, чтобы вместе с Санькой и другими подпольщиками продолжить борьбу с белогвардейцами. Валерий Золотухин, сыгравший в фильме, писал: «Мы хотели, чтобы на наш фильм пришёл массовый зритель, и мы решили возродить в своей работе принципы и приёмы, рождённые революционным искусством первых лет Советской власти, которое само по себе уходило глубочайшими корнями в народные, балаганные, площадные представления…» На встрече поговорим о том, что же у съемочной группы получилось, и почему снятый в 1968 году фильм советский зритель увидел только 11 лет спустя.",
+      "description": "",
       "url": "https://nlr.ru/nlr_visit/event/3734",
       "source": "Российская национальная библиотека — афиша",
       "checked_at": "",
@@ -54666,7 +55888,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-11-22-74e7820a46",
@@ -54873,8 +56097,8 @@
       "review_reason": "year_not_explicit_on_primary_listing",
       "discovered_at": "2026-10-23",
       "price_type": "paid",
-      "availability": "unknown",
-      "availability_checked_at": "2026-10-25",
+      "availability": "sold_out",
+      "availability_checked_at": "2026-10-26",
       "editor_overrides": {
         "telegram_include": false,
         "instagram_include": false,
@@ -55041,6 +56265,34 @@
       }
     },
     {
+      "id": "moscow-2026-11-24-df4566acc2",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-24",
+      "time": "17:00",
+      "title": "Мастер-класс «Лифтинг полароидной эмульсии»",
+      "venue": "Музей Транспорта Москвы",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "",
+      "url": "https://mtmuseum.ru/affiche/master-klass-lifting-polaroidnoy-emulsii/",
+      "source": "Музей транспорта Москвы — афиша",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-26",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "international-2026-11-25-ef39cd57a5",
       "status": "rejected",
       "kind": "open_call",
@@ -55137,15 +56389,17 @@
       "price_type": "paid",
       "availability_evidence": "",
       "ticket_required": true,
-      "availability": "unknown",
-      "availability_checked_at": "",
+      "availability": "sold_out",
+      "availability_checked_at": "2026-10-26",
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-11-27-33a95938e3",

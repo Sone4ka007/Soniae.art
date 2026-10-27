@@ -14,7 +14,9 @@ class ReviewedEventLockTests(unittest.TestCase):
 
     def test_curated_seed_cannot_override_reviewed_record(self):
         self.assertIn('old=remote_by_id.get(rid)', self.source)
-        self.assertIn('merged.append(dict(old))', self.source)
+        self.assertIn('if old and old.get("status") in ("approved","rejected"):', self.source)
+        self.assertIn('item=dict(old)', self.source)
+        self.assertIn('merged.append(item)', self.source)
 
     def test_reviewed_record_survives_source_disappearance(self):
         self.assertIn('if e.get("status") in ("approved","rejected"):', self.source)

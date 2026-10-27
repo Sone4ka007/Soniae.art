@@ -41,6 +41,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Fast-forward to current main
+        run: bash scripts/events/git_sync_main.sh
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -69,32 +71,19 @@ jobs:
       - name: Commit database changes
         run: |
           cp content/events.json /tmp/events-generated.json
-          git fetch origin main
-          git show origin/main:content/events.json > /tmp/events-remote.json
-          git reset --hard origin/main
-          python scripts/events/merge_remote_db.py /tmp/events-generated.json /tmp/events-remote.json content/events.json
-          python scripts/events/quality_gate.py content/events.json --fix --strict
-          if ! git diff --quiet -- content/events.json; then
-            git config user.name "sonyae-events-bot"
-            git config user.email "actions@users.noreply.github.com"
-            git add content/events.json
-            git commit -m "Update events database"
-            git push
-          fi
+          bash scripts/events/commit_merged_events.sh /tmp/events-generated.json "Update events database"
       - name: Push database to moderation Sheet
         env:
           EVENTS_SHEET_ID: ${{ vars.EVENTS_SHEET_ID }}
           GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
-        run: python scripts/events/push_sheet.py
-      - name: Persist editor changes captured during final Sheet push
         run: |
-          if ! git diff --quiet -- content/events.json; then
-            git config user.name "sonyae-events-bot"
-            git config user.email "actions@users.noreply.github.com"
-            git add content/events.json
-            git commit -m "Preserve late event moderation edits"
-            git push
-          fi
+          bash scripts/events/git_sync_main.sh
+          python scripts/events/push_sheet.py
+      - name: Persist editor changes captured during final Sheet push
+        env:
+          EVENTS_SHEET_ID: ${{ vars.EVENTS_SHEET_ID }}
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+        run: bash scripts/events/persist_events_json.sh "Preserve late event moderation edits"
 
   weekly:
     if: github.event_name == 'workflow_dispatch'
@@ -165,7 +154,11 @@ jobs:
           npm install --no-save playwright
           npx playwright install --with-deps chromium
       - name: Render social files
-        run: node scripts/events/render_weekly.js
+        run: |
+          # weekly.html is optional here. build_social.py writes the Instagram
+          # and Telegram HTML; render_weekly.js must still produce those files
+          # when the A4 digest was not built.
+          node scripts/events/render_weekly.js
       - name: Send package to Materials channel
         env:
           SOCIAL_TELEGRAM_BOT_TOKEN: ${{ secrets.SOCIAL_TELEGRAM_BOT_TOKEN }}

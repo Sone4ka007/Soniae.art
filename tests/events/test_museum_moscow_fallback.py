@@ -3,6 +3,7 @@ import importlib.util
 import json
 import os
 import unittest
+from datetime import date, timedelta
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[2]
@@ -22,11 +23,15 @@ class MuseumMoscowFallbackTests(unittest.TestCase):
         spec=importlib.util.spec_from_file_location("collector",ROOT/"scripts/events/collect_jsonld.py")
         mod=importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
-        html="""
+        when=date.today()+timedelta(days=10)
+        if when.year!=date.today().year:
+            when=date.today()
+        months=("января","февраля","марта","апреля","мая","июня","июля","августа","сентября","октября","ноября","декабря")
+        html=f"""
         <div class="tgme_widget_message" data-post="mosmuseum/9999">
           <div class="tgme_widget_message_text">
             Дайджест событий в Музее Москвы и наших филиалах<br>
-            ➖ 24 сентября, четверг<br>
+            ➖ {when.day} {months[when.month-1]}, четверг<br>
             19:00 лекция «Типографика авангарда» (Музей Москвы)<br>
             20:30 встреча с художником (Центр Гиляровского)
           </div>

@@ -38277,7 +38277,7 @@
       "reviewed_at": "2026-10-17",
       "availability": "unknown",
       "availability_checked_at": "",
-      "registration": null,
+      "registration": false,
       "price": null,
       "price_text": "",
       "price_type": "paid",
@@ -38303,7 +38303,7 @@
         "status": "approved",
         "telegram_include": false,
         "instagram_include": false,
-        "registration": null
+        "registration": false
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -38319,7 +38319,7 @@
       "reviewed_at": "2026-10-17",
       "availability": "unknown",
       "availability_checked_at": "",
-      "registration": null,
+      "registration": false,
       "price": null,
       "price_text": "",
       "price_type": "paid",
@@ -38345,7 +38345,7 @@
         "status": "approved",
         "telegram_include": false,
         "instagram_include": false,
-        "registration": null
+        "registration": false
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -40995,7 +40995,7 @@
       "address": "1-й Голутвинский переулок, 16, стр. 1",
       "price": 850,
       "price_text": "850 ₽; льготный — 650 ₽",
-      "registration": null,
+      "registration": false,
       "categories": [
         "лекция"
       ],
@@ -41019,7 +41019,7 @@
       "reviewed_at": "2026-10-17",
       "ticket_required": true,
       "editor_overrides": {
-        "registration": null
+        "registration": false
       },
       "time_verification": "verified",
       "time_evidence": "24 октября 2026 14:00",
@@ -41037,7 +41037,7 @@
       "address": "1-й Голутвинский переулок, 16, стр. 1",
       "price": 850,
       "price_text": "850 ₽; льготный — 650 ₽",
-      "registration": null,
+      "registration": false,
       "categories": [
         "лекция"
       ],
@@ -41064,7 +41064,7 @@
       "time_evidence": "24 октября 2026 14:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
       "editor_overrides": {
-        "registration": null
+        "registration": false
       }
     },
     {
@@ -44665,7 +44665,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [],
       "description": "",
       "url": "https://hermitagemuseum.org/what-s-on/afisha_mincult/?lng=ru",
@@ -44677,7 +44677,14 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-27-98f4534d25",
@@ -44891,7 +44898,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [],
       "description": "28 октября (по старому стилю – 16 октября) 1838 года в Петербурге в память о победах русского оружия в войнах с Персией и Турцией 1826–1829 годов были торжественно открыты Московские триумфальные ворота – крупнейшее в мире на тот момент сборное сооружение из чугуна.",
       "url": "https://spbcult.ru/news/anonsy/moskovskie-triumfalnye-vorota-istoriya-krupneyshego-chugunnogo-pamyatnika-peterburga/",
@@ -44903,7 +44910,14 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-27-086888f0c0",
@@ -45034,7 +45048,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "диалог"
       ],
@@ -45048,7 +45062,14 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-11-01-732e936867",
@@ -45433,7 +45454,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "лекция"
       ],
@@ -45447,7 +45468,14 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-11-21-16f6939347",
@@ -46548,7 +46576,7 @@
       "address": "",
       "price": 0,
       "price_text": "Бесплатно",
-      "registration": null,
+      "registration": false,
       "categories": [
         "выставка"
       ],
@@ -46563,7 +46591,14 @@
       "ticket_required": true,
       "availability": "unknown",
       "availability_checked_at": "",
-      "start_date": "2026-10-28"
+      "start_date": "2026-10-28",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "spb-2026-10-28-e264866514",
@@ -46617,7 +46652,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [],
       "description": "Будем наводить порядок и готовиться к предстоящим мероприятиям.",
       "url": "https://t.me/open_living/3204",
@@ -46629,7 +46664,14 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-28-6fdd3ff58e",
@@ -46759,7 +46801,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "экскурсия"
       ],
@@ -46773,7 +46815,14 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-28-08573941ce",
@@ -46787,7 +46836,7 @@
       "address": "",
       "price": 600,
       "price_text": "600 ₽",
-      "registration": null,
+      "registration": false,
       "categories": [
         "лекция"
       ],
@@ -46801,7 +46850,14 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-28-f2ec73f23f",
@@ -49448,7 +49504,7 @@
       "address": "Лаврушинский переулок, 12",
       "price": 650,
       "price_text": "650 ₽; онлайн — 700 ₽",
-      "registration": null,
+      "registration": false,
       "categories": [
         "лекция"
       ],
@@ -49465,7 +49521,7 @@
         "telegram_include": false,
         "instagram_include": false,
         "status": "approved",
-        "registration": null
+        "registration": false
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -51745,7 +51801,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "лекция"
       ],
@@ -51759,7 +51815,14 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-11-01-a19447258a",
@@ -51922,7 +51985,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "встреча"
       ],
@@ -51936,7 +51999,14 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-11-01-5494e7ffad",
@@ -52211,7 +52281,7 @@
       "address": "",
       "price": 300,
       "price_text": "300 ₽",
-      "registration": null,
+      "registration": false,
       "categories": [
         "встреча"
       ],
@@ -52225,7 +52295,14 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-11-01-beef62faa1",
@@ -52511,7 +52588,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "экскурсия"
       ],
@@ -52525,7 +52602,14 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "spb-2026-11-02-0e987411cc",
@@ -54289,7 +54373,7 @@
       "address": "Москва, ул. Пятницкая, 71/5, строение 2, офис 503",
       "price": 800,
       "price_text": "800 ₽",
-      "registration": null,
+      "registration": false,
       "categories": [
         "наброски"
       ],
@@ -54304,7 +54388,14 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "international-2026-11-10-a442cf41fe",
@@ -55214,7 +55305,13 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-24-9b9ee6a4b0",
@@ -56564,7 +56661,13 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-11-21-dc07f0121e",
@@ -57174,7 +57277,7 @@
       "address": "",
       "price": 800,
       "price_text": "800 ₽",
-      "registration": null,
+      "registration": false,
       "categories": [],
       "description": "",
       "url": "https://ges-2.org/laughter-yoga",
@@ -57187,7 +57290,14 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-11-26-d74b62747b",
@@ -57201,7 +57311,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "публичная программа"
       ],
@@ -57216,7 +57326,14 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "international-2026-11-27-33a95938e3",
@@ -57647,7 +57764,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "open-call"
       ],
@@ -57662,7 +57779,14 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "international-2027-01-12-fdba99f20b",

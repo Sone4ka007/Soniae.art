@@ -11,7 +11,7 @@ ROOT=Path(__file__).resolve().parents[2]
 DB=ROOT/"content/events.json"
 SHEET_ID=os.environ["EVENTS_SHEET_ID"]
 CREDS=json.loads(os.environ["GOOGLE_SERVICE_ACCOUNT_JSON"])
-RANGE="Events!A:AJ"
+RANGE="Events!A:AK"
 
 def service():
     scopes=["https://www.googleapis.com/auth/spreadsheets.readonly"]

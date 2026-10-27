@@ -10,10 +10,10 @@ USER_EDITABLE_FIELDS = (
     "url","source","address","price_type","price_text","registration","availability",
     "availability_checked_at","review_reason","editor_note","discovered_at","reviewed_at",
     "price","checked_at","social_priority","social_title","social_description",
-    "telegram_include","instagram_include","instagram_image",
+    "telegram_include","instagram_include","post_include","instagram_image",
 )
 
-BOOL_FIELDS = {"registration","telegram_include","instagram_include"}
+BOOL_FIELDS = {"registration","telegram_include","instagram_include","post_include"}
 INT_FIELDS = {"social_priority"}
 NUMBER_FIELDS = {"price"}
 

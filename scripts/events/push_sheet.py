@@ -11,13 +11,13 @@ ROOT=Path(__file__).resolve().parents[2]
 DB=ROOT/"content/events.json"
 SHEET_ID=os.environ["EVENTS_SHEET_ID"]
 CREDS=json.loads(os.environ["GOOGLE_SERVICE_ACCOUNT_JSON"])
-RANGE="Events!A:AJ"
+RANGE="Events!A:AK"
 HEADERS=[
     "title","status","date","time","venue","city","kind","categories","description","url","source",
     "address","price_type","price_text","registration","availability","availability_checked_at",
     "review_reason","editor_note","discovered_at","reviewed_at","price","checked_at","days_ahead",
     "id","synced_status","synced_url","synced_source","social_priority","social_title",
-    "social_description","telegram_include","instagram_include","instagram_image","synced_title",
+    "social_description","telegram_include","instagram_include","post_include","instagram_image","synced_title",
     "synced_row_json"
 ]
 
@@ -72,6 +72,7 @@ def row_for_event(e):
     registration=e.get("registration")
     telegram=e.get("telegram_include")
     instagram=e.get("instagram_include")
+    post_include=e.get("post_include")
     snapshot=json.dumps(snapshot_from_event(e),ensure_ascii=False,separators=(",",":"))
     return [
         e.get("title",""),e.get("status","new"),e.get("date",""),e.get("time",""),e.get("venue",""),
@@ -83,6 +84,7 @@ def row_for_event(e):
         days,e.get("id",""),e.get("status","new"),e.get("url",""),e.get("source",""),
         e.get("social_priority",""),e.get("social_title",""),e.get("social_description",""),
         telegram if telegram is not None else "",instagram if instagram is not None else "",
+        post_include if post_include is not None else "",
         e.get("instagram_image",""),e.get("title",""),snapshot
     ]
 
@@ -139,10 +141,10 @@ def main():
     requests=[
       {"updateDimensionProperties":{"range":{"sheetId":sheet_id,"dimension":"ROWS","startIndex":1,"endIndex":max(2,len(rows))},
         "properties":{"pixelSize":96},"fields":"pixelSize"}},
-      {"repeatCell":{"range":{"sheetId":sheet_id,"startRowIndex":1,"endRowIndex":max(2,len(rows)),"startColumnIndex":0,"endColumnIndex":36},
+      {"repeatCell":{"range":{"sheetId":sheet_id,"startRowIndex":1,"endRowIndex":max(2,len(rows)),"startColumnIndex":0,"endColumnIndex":37},
         "cell":{"userEnteredFormat":{"verticalAlignment":"TOP","wrapStrategy":"CLIP"}},"fields":"userEnteredFormat.verticalAlignment,userEnteredFormat.wrapStrategy"}},
-      {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":0,"endColumnIndex":36}}},
-      {"setBasicFilter":{"filter":{"range":{"sheetId":sheet_id,"startRowIndex":0,"startColumnIndex":0,"endColumnIndex":36}}}},
+      {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":0,"endColumnIndex":37}}},
+      {"setBasicFilter":{"filter":{"range":{"sheetId":sheet_id,"startRowIndex":0,"startColumnIndex":0,"endColumnIndex":37}}}},
       {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":1,"endColumnIndex":2},
         "rule":{"condition":{"type":"ONE_OF_LIST","values":[{"userEnteredValue":x} for x in ["new","check","approved","rejected"]]},"strict":True,"showCustomUi":True}}},
       {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":5,"endColumnIndex":6},
@@ -155,13 +157,13 @@ def main():
         "rule":{"condition":{"type":"BOOLEAN"},"strict":True,"showCustomUi":True}}},
       {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":15,"endColumnIndex":16},
         "rule":{"condition":{"type":"ONE_OF_LIST","values":[{"userEnteredValue":x} for x in ["available","sold_out","postponed","cancelled","unknown"]]},"strict":True,"showCustomUi":True}}},
-      {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":31,"endColumnIndex":33},
+      {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":31,"endColumnIndex":34},
         "rule":{"condition":{"type":"BOOLEAN"},"strict":True,"showCustomUi":True}}},
       {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":28,"endColumnIndex":29},
         "rule":{"condition":{"type":"NUMBER_BETWEEN","values":[{"userEnteredValue":"0"},{"userEnteredValue":"5"}]},"strict":True,"showCustomUi":True}}},
       {"updateDimensionProperties":{"range":{"sheetId":sheet_id,"dimension":"COLUMNS","startIndex":24,"endIndex":28},
         "properties":{"hiddenByUser":True},"fields":"hiddenByUser"}},
-      {"updateDimensionProperties":{"range":{"sheetId":sheet_id,"dimension":"COLUMNS","startIndex":34,"endIndex":36},
+      {"updateDimensionProperties":{"range":{"sheetId":sheet_id,"dimension":"COLUMNS","startIndex":35,"endIndex":37},
         "properties":{"hiddenByUser":True},"fields":"hiddenByUser"}}
     ]
     svc.spreadsheets().batchUpdate(spreadsheetId=SHEET_ID,body={"requests":requests}).execute()

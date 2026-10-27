@@ -20,7 +20,8 @@ class CoreMuseumSourceTests(unittest.TestCase):
         s=self.by_name["Государственный Эрмитаж — выставки и события"]
         self.assertEqual(s["city"],"spb")
         self.assertEqual(s["url"],"https://hermitagemuseum.org/what-s-on")
-        self.assertEqual(s["adapter"],"event_links")
+        self.assertEqual(s["adapter"],"hermitage_api")
+        self.assertIn("exhibition", s.get("api_types") or [])
 
     def test_museum_of_moscow_has_events_and_exhibitions(self):
         events=self.by_name["Музей Москвы — события"]

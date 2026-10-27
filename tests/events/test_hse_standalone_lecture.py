@@ -2,7 +2,7 @@
 import importlib.util
 import json
 import unittest
-from datetime import date
+from datetime import date, timedelta
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[2]
@@ -20,11 +20,15 @@ class HseStandaloneLectureTests(unittest.TestCase):
         self.assertEqual(src["adapter"],"single_event_page")
 
     def test_single_event_page(self):
-        html="""
+        when=date.today()+timedelta(days=10)
+        if when.year!=date.today().year:
+            when=date.today()
+        months=("января","февраля","марта","апреля","мая","июня","июля","августа","сентября","октября","ноября","декабря")
+        html=f"""
         <html><body>
           <h1>Дизайн рулит: как дизайн-концепции драйвят бизнес</h1>
           <p>Бесплатная открытая лекция и публичная сессия вопросов-ответов.</p>
-          <div>Дата и время: 29 сентября 2026, 14:00</div>
+          <div>Дата и время: {when.day} {months[when.month-1]} {when.year}, 14:00</div>
           <div>Адрес: ул. Малая Пионерская, 12</div>
           <div>Зарегистрироваться</div>
         </body></html>
@@ -32,7 +36,7 @@ class HseStandaloneLectureTests(unittest.TestCase):
         src={"name":"Школа дизайна НИУ ВШЭ — отдельные регистрационные страницы","city":"moscow","url":"https://design.hse.ru/info/lecture_drive","venue":"Школа дизайна НИУ ВШЭ","kind":"event"}
         events=self.mod.extract_single_event_page(html,src)
         self.assertEqual(len(events),1)
-        self.assertEqual(events[0]["date"],"2026-09-29")
+        self.assertEqual(events[0]["date"],when.isoformat())
         self.assertEqual(events[0]["time"],"14:00")
         self.assertEqual(events[0]["price"],0)
         self.assertEqual(events[0]["status"],"check")

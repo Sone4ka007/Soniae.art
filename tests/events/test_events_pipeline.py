@@ -47,21 +47,32 @@ class ValidationRulesTests(unittest.TestCase):
         return event
 
     def test_known_child_event_is_rejected(self):
-        out = self.run_validate(self.base_event(title="А и Б сидели на трубе"))
-        self.assertEqual(out["status"], "rejected")
-        self.assertEqual(out["review_reason"], "excluded_family_children")
+        mod = load_module("validate_events_child", "scripts/events/validate_events.py")
+        with tempfile.TemporaryDirectory() as td:
+            db = Path(td) / "events.json"
+            db.write_text(json.dumps(
+                {"events": [self.base_event(title="А и Б сидели на трубе")]},
+                ensure_ascii=False,
+            ), "utf-8")
+            mod.DB = db
+            mod.main()
+            events = json.loads(db.read_text("utf-8"))["events"]
+        # Family events are rejected and then removed, so they never reach the sheet.
+        self.assertEqual(events, [])
 
-    def test_ges2_workshop_is_rejected(self):
+    def test_ges2_workshop_stays_for_human_review(self):
+        # GES-2 workshops, low-value titles and paid open calls are no longer
+        # auto-rejected. They stay new so the editor can decide.
         out = self.run_validate(self.base_event(
             title="Мастер-класс по коллажу",
             venue="ГЭС-2",
             source="Дом культуры «ГЭС-2»",
             url="https://ges-2.org/event/test",
         ))
-        self.assertEqual(out["status"], "rejected")
-        self.assertEqual(out["review_reason"], "excluded_ges2_masterclass")
+        self.assertEqual(out["status"], "new")
+        self.assertNotEqual(out.get("review_reason"), "excluded_ges2_masterclass")
 
-    def test_generic_paid_international_competition_is_rejected(self):
+    def test_generic_paid_international_competition_stays_for_human_review(self):
         out = self.run_validate(self.base_event(
             kind="open_call",
             title="International Competition for Artists",
@@ -69,10 +80,10 @@ class ValidationRulesTests(unittest.TestCase):
             price_type="paid",
             categories=["open-call"],
         ))
-        self.assertEqual(out["status"], "rejected")
-        self.assertEqual(out["review_reason"], "excluded_paid_open_call")
+        self.assertEqual(out["status"], "new")
+        self.assertNotEqual(out.get("review_reason"), "excluded_paid_open_call")
 
-    def test_curatorspace_fee_below_summary_is_rejected(self):
+    def test_curatorspace_fee_stays_for_human_review(self):
         out = self.run_validate(self.base_event(
             kind="open_call",
             title="Affordable Art Open Call",
@@ -83,10 +94,10 @@ class ValidationRulesTests(unittest.TestCase):
             categories=["open-call"],
             price_type="unknown",
         ))
-        self.assertEqual(out["status"], "rejected")
-        self.assertEqual(out["review_reason"], "excluded_paid_open_call")
+        self.assertEqual(out["status"], "new")
+        self.assertNotEqual(out.get("review_reason"), "excluded_paid_open_call")
 
-    def test_whitelisted_paid_major_call_requires_review(self):
+    def test_whitelisted_paid_major_call_is_not_auto_rejected(self):
         out = self.run_validate(self.base_event(
             kind="open_call",
             title="Tokyo Biennale Open Call",
@@ -94,8 +105,8 @@ class ValidationRulesTests(unittest.TestCase):
             price_type="paid",
             categories=["open-call"],
         ))
-        self.assertEqual(out["status"], "check")
-        self.assertEqual(out["review_reason"], "paid_prestigious_call_exception_review")
+        self.assertEqual(out["status"], "new")
+        self.assertNotEqual(out.get("review_reason"), "excluded_paid_open_call")
 
 
 class QualityGateTests(unittest.TestCase):

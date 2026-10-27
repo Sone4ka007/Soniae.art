@@ -13,7 +13,10 @@ class Ges2NoiseTests(unittest.TestCase):
             "индивидуальный медиаторский тур",
         ):
             self.assertIn(title,source)
-        self.assertIn("excluded_ges2_low_value",source)
+        # The hint list stays in the validator. These titles are no longer
+        # auto-rejected; the editor reviews them.
+        self.assertIn("GES2_LOW_VALUE_HINTS",source)
+        self.assertNotIn("excluded_ges2_low_value",source)
 
     def test_collector_log_calls_candidates_raw(self):
         source=(ROOT/"scripts/events/collect_jsonld.py").read_text("utf-8")

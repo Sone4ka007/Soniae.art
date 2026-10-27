@@ -1,22 +1,35 @@
 #!/usr/bin/env python3
 import importlib.util
 import unittest
+from datetime import date, timedelta
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[2]
+_MONTHS=("января","февраля","марта","апреля","мая","июня","июля","августа","сентября","октября","ноября","декабря")
+
+def _future(days):
+    d=date.today()+timedelta(days=days)
+    if d.year!=date.today().year:
+        d=date.today()
+    return d
+
+def _ru(d):
+    return f"{d.day} {_MONTHS[d.month-1]} {d.year}"
 
 class RnbParserTests(unittest.TestCase):
     def test_listing_is_split_into_real_events(self):
         spec=importlib.util.spec_from_file_location("collector",ROOT/"scripts/events/collect_jsonld.py")
         mod=importlib.util.module_from_spec(spec); spec.loader.exec_module(mod)
-        html="""
+        first=_future(10)
+        second=_future(12)
+        html=f"""
         <html><body>
         <h1>Афиша мероприятий РНБ</h1>
-        <div>23 сентября 2026</div><div>среда</div><div>19:00</div><div>12+</div>
+        <div>{_ru(first)}</div><div>среда</div><div>19:00</div><div>12+</div>
         <div>Цикл «Еще один Юсуповский»</div>
         <div>Лекция «Княгиня, графиня, маркиза. Судьба Зинаиды Ивановны Юсуповой»</div>
         <div>Вход по регистрации на Timepad.</div>
-        <div>25 сентября 2026</div><div>пятница</div><div>18:30</div><div>16+</div>
+        <div>{_ru(second)}</div><div>пятница</div><div>18:30</div><div>16+</div>
         <div>Лекция «Сердце в пятки: что с нами делает тревога»</div>
         </body></html>
         """

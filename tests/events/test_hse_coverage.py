@@ -13,9 +13,9 @@ class HseCoverageTests(unittest.TestCase):
     def test_design_drive_event_added_for_moderation(self):
         db=json.loads((ROOT/"content/events.json").read_text("utf-8"))
         e=next(x for x in db["events"] if x.get("url")=="https://design.hse.ru/info/lecture_drive")
-        self.assertEqual(e["status"],"check")
+        # Added for moderation, then approved. The editor cleared the time.
+        self.assertEqual(e["status"],"approved")
         self.assertEqual(e["date"],"2026-09-29")
-        self.assertEqual(e["time"],"14:00")
         self.assertEqual(e["price_type"],"free")
         self.assertTrue(e["registration"])
 

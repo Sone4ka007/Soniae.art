@@ -16,7 +16,9 @@ class SpbCultSourceTests(unittest.TestCase):
         db=json.loads((ROOT/"content/events.json").read_text("utf-8"))
         items=[e for e in db["events"] if str(e.get("id","")).startswith("spb-2026-09-25-manege-")]
         self.assertEqual(len(items),4)
-        self.assertTrue(all(e["status"]=="check" for e in items))
+        # The editor approved these four round tables. The URL must stay the
+        # Timepad registration page.
+        self.assertTrue(all(e["status"]=="approved" for e in items))
         self.assertTrue(all(e["url"]=="https://manegespb.timepad.ru/event/4205671/" for e in items))
 
 if __name__=="__main__":

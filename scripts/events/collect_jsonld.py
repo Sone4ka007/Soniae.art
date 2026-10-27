@@ -291,35 +291,35 @@ TITLE_PREFIXES = tuple(sorted(set(EVENT_TYPES + [
 ]), key=len, reverse=True))
 
 TITLE_META_RE = re.compile(
-    r"^(?:[•·▪▫◦—–-]+\\s*)?(?:(?:\\d{1,2}[./]\\d{1,2}(?:[./]20\\d{2})?|"
-    r"\\d{1,2}\\s+[а-яё]{3,10}(?:\\s+20\\d{2})?)\\s*[,|—–-]*\\s*)?"
-    r"(?:(?:[01]?\\d|2[0-3]):[0-5]\\d\\s*[,|—–-]*\\s*)?",
+    r"^(?:[•·▪▫◦—–-]+\s*)?(?:(?:\d{1,2}[./]\d{1,2}(?:[./]20\d{2})?|"
+    r"\d{1,2}\s+[а-яё]{3,10}(?:\s+20\d{2})?)\s*[,|—–-]*\s*)?"
+    r"(?:(?:[01]?\d|2[0-3]):[0-5]\d\s*[,|—–-]*\s*)?",
     re.I
 )
 
 DESCRIPTION_START_RE = re.compile(
-    r"^(?:на\\s+(?:лекции|встрече|занятии|мастер-классе)|"
-    r"на\\s+новой\\s+встрече|в\\s+(?:библиотеке|музее|галерее)|"
-    r"сегодня\\b|этим\\s+(?:летом|вечером|утром)|"
-    r"мы\\s+(?:будем|поговорим|разберем|обсудим)|"
-    r"вы\\s+(?:увидите|узнаете|сможете)|"
-    r"приглашаем\\b|будущая\\s+встреча|"
-    r"у\\s+каждого\\s+человека|нас\\s+с\\s+детства|"
-    r"человек\\s+начинает|переезд\\s+это|"
-    r"герой\\s+(?:романа|фильма)|по\\s+этому\\s+поводу)",
+    r"^(?:на\s+(?:лекции|встрече|занятии|мастер-классе)|"
+    r"на\s+новой\s+встрече|в\s+(?:библиотеке|музее|галерее)|"
+    r"сегодня\b|этим\s+(?:летом|вечером|утром)|"
+    r"мы\s+(?:будем|поговорим|разберем|обсудим)|"
+    r"вы\s+(?:увидите|узнаете|сможете)|"
+    r"приглашаем\b|будущая\s+встреча|"
+    r"у\s+каждого\s+человека|нас\s+с\s+детства|"
+    r"человек\s+начинает|переезд\s+это|"
+    r"герой\s+(?:романа|фильма)|по\s+этому\s+поводу)",
     re.I
 )
 
 def normalize_event_title(value):
     title=clean(value).replace("�","")
     title=TITLE_META_RE.sub("",title).strip()
-    title=re.sub(r"^(?:событие|мероприятие)\\s*[:—–-]\\s*","",title,flags=re.I)
-    title=re.sub(r"\\s+(?:подробнее|регистрация|купить билет)\\s*$","",title,flags=re.I)
-    title=title.strip(" \\t\\n|—–-·•")
+    title=re.sub(r"^(?:событие|мероприятие)\s*[:—–-]\s*","",title,flags=re.I)
+    title=re.sub(r"\s+(?:подробнее|регистрация|купить билет)\s*$","",title,flags=re.I)
+    title=title.strip(" \t\n|—–-·•")
     # Preserve a formal event-type prefix plus a quoted title, while dropping
     # explanatory prose that accidentally follows it.
     prefix_pat="|".join(re.escape(x) for x in TITLE_PREFIXES)
-    m=re.match(rf"^((?:{prefix_pat})\\s+)?([«\"])(.{4,180}?)[»\"]",title,re.I)
+    m=re.match(rf"^((?:{prefix_pat})\s+)?([«\"])(.{{4,180}}?)[»\"]",title,re.I)
     if m:
         prefix=clean(m.group(1) or "")
         quoted=clean(m.group(3))
@@ -333,7 +333,7 @@ def title_looks_like_description(value):
     if not title:
         return True
     words=title.split()
-    sentences=len(re.findall(r"[.!?](?:\\s|$)",title))
+    sentences=len(re.findall(r"[.!?](?:\s|$)",title))
     starts_with_type=any(title.lower().startswith(x.lower()) for x in TITLE_PREFIXES)
     if title.startswith((".",",",";",":")):
         return True
@@ -1114,8 +1114,13 @@ def extract_telegram_channel_events(html, src):
 
         # Sonya Go posts often contain the real event title as a quoted linked
         # phrase followed by "официальный анонс". Prefer that over editorial notes.
-        for line in lines:
-            m=re.search(r"[«\"]([^»\"]{6,220})[»\"]\s*[—–-]?\s*(?:официальн(?:ый|ая)\s+анонс|анонс|регистрац)",line,re.I)
+        for i,line in enumerate(lines):
+            # Telegram HTML puts the link label ("официальный анонс") on the next line.
+            nxt=lines[i+1] if i+1<len(lines) else ""
+            candidate=line
+            if re.fullmatch(r"(?:официальн(?:ый|ая)\s+анонс|анонс|регистрац\w*)",nxt,re.I):
+                candidate=f"{line} {nxt}"
+            m=re.search(r"[«\"]([^»\"]{6,220})[»\"]\s*[—–-]?\s*(?:официальн(?:ый|ая)\s+анонс|анонс|регистрац)",candidate,re.I)
             if m:
                 title=clean(m.group(1))
                 break

@@ -35994,7 +35994,7 @@
       "review_reason": "",
       "discovered_at": "2026-10-20",
       "start_date": "2026-10-21",
-      "end_date": "2026-12-06",
+      "end_date": "2026-11-29",
       "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-10-25",
@@ -38277,7 +38277,7 @@
       "reviewed_at": "2026-10-17",
       "availability": "unknown",
       "availability_checked_at": "",
-      "registration": false,
+      "registration": null,
       "price": null,
       "price_text": "",
       "price_type": "paid",
@@ -38303,7 +38303,7 @@
         "status": "approved",
         "telegram_include": false,
         "instagram_include": false,
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -38319,7 +38319,7 @@
       "reviewed_at": "2026-10-17",
       "availability": "unknown",
       "availability_checked_at": "",
-      "registration": false,
+      "registration": null,
       "price": null,
       "price_text": "",
       "price_type": "paid",
@@ -38345,7 +38345,7 @@
         "status": "approved",
         "telegram_include": false,
         "instagram_include": false,
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -40995,7 +40995,7 @@
       "address": "1-й Голутвинский переулок, 16, стр. 1",
       "price": 850,
       "price_text": "850 ₽; льготный — 650 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -41019,7 +41019,7 @@
       "reviewed_at": "2026-10-17",
       "ticket_required": true,
       "editor_overrides": {
-        "registration": false
+        "registration": null
       },
       "time_verification": "verified",
       "time_evidence": "24 октября 2026 14:00",
@@ -41037,7 +41037,7 @@
       "address": "1-й Голутвинский переулок, 16, стр. 1",
       "price": 850,
       "price_text": "850 ₽; льготный — 650 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -41064,7 +41064,7 @@
       "time_evidence": "24 октября 2026 14:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
       "editor_overrides": {
-        "registration": false
+        "registration": null
       }
     },
     {
@@ -45874,6 +45874,112 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
+      "id": "spb-2026-10-28-b161b463e1",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-28",
+      "time": "",
+      "title": "«Идиот» Вайнберга прозвучит в Мариинском к 35-летию мировой премьеры",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "диалог"
+      ],
+      "description": "29 октября в Концертном зале Мариинского театра будет представлена опера Мечислава Вайнберга «Идиот» в постановке заслуженного деятеля искусств России Алексея Степанюка. Показ спектакля Мариинский театр посвящает двум юбилеям: 35-летию мировой премьеры оперы и 205-летию со дня рождения Фёдора Достоевского, чей одноименный роман был положен в основу сочинения.",
+      "url": "https://spbcult.ru/news/anonsy/idiot-vaynberga-prozvuchit-v-mariinskom-k-35-letiyu-mirovoy-premery/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-28",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "spb-2026-10-28-debe3cee4c",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-28",
+      "time": "",
+      "title": "«Каменный цветок» в Мариинке посвятят памяти Ирины Генслер",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "На исторической сцене Мариинского театра в память об ушедшей недавно Ирине Генслер покажут балет Сергея Прокофьева «Каменный цветок». Танцовщицы и педагога не стало 22 октября - на девяносто седьмом году жизни. На исторической сцене Мариинского театра в память об ушедшей недавно Ирине Генслер покажут балет Сергея Прокофьева «Каменный цветок».",
+      "url": "https://spbcult.ru/news/anonsy/kamennyy-tsvetok-v-mariinke-posvyatyat-pamyati-iriny-gensler-/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-28",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "spb-2026-10-28-edc7ee7b6e",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-28",
+      "time": "",
+      "title": "В «Царском Селе» произвели первую массовую посадку деревьев после июльского урагана",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "В ГМЗ «Царское Село» произвели первую массовую посадку деревьев после июльского урагана. Для этого меценаты подарили 20 саженцев дубов и одну черемуху Маака. Молодые деревья посадили в Екатерининском и Александровском парках.",
+      "url": "https://spbcult.ru/news/anonsy/v-tsarskom-sele-proizveli-pervuyu-massovuyu-posadku-derevev-posle-iyulskogo-uragana/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-28",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "moscow-2026-10-28-7fe02f77b4",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-28",
+      "time": "",
+      "title": "Видеоэссе участников первого сезона мастерской «Суперкат»",
+      "venue": "Музей «Гараж»",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "Онлайн-показ работ участников первого сезона мастерской по видеоэссеистике «Суперкат» . Участникам мастерской было предложено использовать широкий спектр стратегий видеоэссеистики — от видеографической критики до автофикшена и специфических форм художественного высказывания.",
+      "url": "https://garagemca.org/event/video-essays-by-participants-of-the-first-season-of-the-supercut-workshop",
+      "source": "Музей современного искусства «Гараж»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-28",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "spb-2026-10-28-5995f84169",
       "status": "new",
       "kind": "event",
@@ -45904,7 +46010,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-28-98f4534d25",
@@ -45944,6 +46052,32 @@
       "reviewed_at": "2026-10-24",
       "time_verification": "unverified",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
+      "id": "spb-2026-10-28-bed98e243c",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-28",
+      "time": "",
+      "title": "Импровизация на тему «Тетради дождей»",
+      "venue": "Пушкинская-10",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [],
+      "description": "В честь финисажа выставки Светы Носовой молодые музыканты из сообщества Музея Звука сыграют акустический импровизационный сет с использованием звуковых объектов.",
+      "url": "https://p-10.ru/events/improvizaciya-na-temu-tetradi-dozhdej/",
+      "source": "Пушкинская-10 — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-28",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-10-28-422be2d050",
@@ -46018,7 +46152,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-28-8c7ac32fc5",
@@ -46141,6 +46277,34 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
+      "id": "spb-2026-10-28-29196ed894",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-28",
+      "time": "",
+      "title": "На фасаде Петропавловского собора продемонстрируют культурные традиции страны",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "программа"
+      ],
+      "description": "4 ноября в Петропавловской крепости пройдёт мультимедийный спектакль «Свет единства» - под звуки карильона на фасаде собора оживут образы народного искусства и культурных традиций страны. 4 ноября в Петропавловской крепости пройдёт мультимедийный спектакль «Свет единства» - под звуки карильона на фасаде собора оживут образы народного искусства и культурных традиций страны.",
+      "url": "https://spbcult.ru/news/anonsy/na-fasade-petropavlovskogo-sobora-ozhivut-kulturnye-traditsii-strany-/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-28",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "spb-2026-10-28-39cbd1ec5c",
       "status": "new",
       "kind": "event",
@@ -46171,7 +46335,65 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
+    },
+    {
+      "id": "spb-2026-10-28-33a6bf6548",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-28",
+      "time": "",
+      "title": "Русский музей посвятил программу ко Дню народного единства истории императорской армии и культуре нанайцев",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами! Также вы можете отправить статью в социальной сети или мессенджере Если у вас есть чем поделиться с нашими читателями, вы можете предложить свою статью.",
+      "url": "https://spbcult.ru/news/anonsy/russkiy-muzey-posvyatil-programmu-ko-dnyu-narodnogo-edinstva-istorii-imperatorskoy-armii-i-kulture-n/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-28",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "spb-2026-10-28-f88ec406e2",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-28",
+      "time": "",
+      "title": "Русский музей представил в Таиланде планшетную выставку «Русские сезоны»",
+      "venue": "Лекторий Русского музея",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [
+        "встреча"
+      ],
+      "description": "В рамках международного проекта «Русские сезоны», который проходит в Королевстве Таиланд в течение всего года, Русский музей представил планшетную выставку «Русские сезоны».",
+      "url": "https://rusmuseum.ru/news/",
+      "source": "Русский музей — лекторий",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-28",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "spb-2026-10-28-b9cccfc03b",
@@ -46250,6 +46472,61 @@
       "editor_overrides": {
         "time": ""
       }
+    },
+    {
+      "id": "spb-2026-10-28-da8eb8fbff",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-28",
+      "time": "",
+      "title": "Фильм «Рождение империи» расскажет о новой России",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "29 октября в широкий прокат выходит историческая лента «Рождение империи» Андрея Кравчука, созданная студией «ТРИТЭ» Никиты Михалкова при участии телеканала «Россия». Фильм рассказывает о восхождении на престол Петра I, Северной войне и рождении новой России.",
+      "url": "https://spbcult.ru/news/anonsy/film-rozhdenie-imperii-rasskazhet-o-novoy-rossii/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-28",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "spb-2026-10-28-3a6a0c73a6",
+      "status": "new",
+      "kind": "exhibition",
+      "city": "spb",
+      "date": "2026-10-28",
+      "time": "",
+      "title": "Эрмитаж покажет немецкий фарфор XVIII века",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "выставка"
+      ],
+      "description": "В Эрмитаже открывается выставка «Путешествие Арканума. Немецкий фарфор XVIII века». Она представит как художественное своеобразие изделий разных мануфактур (порядка 90 экспонатов), так и единство эстетических постулатов, определившее облик изделий этого времени.",
+      "url": "https://spbcult.ru/news/anonsy/ermitazh-pokazhet-nemetskiy-farfor-xviii-veka/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-28",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "start_date": "2026-10-28"
     },
     {
       "id": "spb-2026-10-28-acbd824d59",
@@ -46361,6 +46638,34 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": "2026-10-27"
+    },
+    {
+      "id": "spb-2026-10-28-45e69feb1b",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-28",
+      "time": "11:00",
+      "title": "К 250-летию церкви Рождества Иоанна Предтечи проведут конференцию",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "конференция"
+      ],
+      "description": "Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами! Также вы можете отправить статью в социальной сети или мессенджере Если у вас есть чем поделиться с нашими читателями, вы можете предложить свою статью.",
+      "url": "https://spbcult.ru/news/anonsy/k-250-letiyu-tserkvi-rozhdestva-ioanna-predtechi-provedut-konferentsiyu/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-28",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-10-28-6fdd3ff58e",
@@ -47647,7 +47952,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-29-6ae8537f08",
@@ -47727,6 +48034,41 @@
       },
       "time_verification": "unverified",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
+      "id": "spb-2026-10-29-020d3b2f98",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-29",
+      "time": "08:11",
+      "title": "Мероприятия",
+      "venue": "Музей «Полторы комнаты» Иосифа Бродского",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Оставляя свои контакты, вы даёте согласие на обработку персональных данных",
+      "url": "https://brodsky.online/events/",
+      "source": "Полторы комнаты — музей Иосифа Бродского",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-21",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-25",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false,
+        "status": "rejected"
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": "2026-10-24"
     },
     {
       "id": "moscow-2026-10-29-cbe8021539",
@@ -48270,7 +48612,47 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
+    },
+    {
+      "id": "spb-2026-10-29-df32f22abf",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-29",
+      "time": "19:00",
+      "title": "Название требует проверки",
+      "venue": "Музей «Полторы комнаты» Иосифа Бродского",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "презентация"
+      ],
+      "description": "Презентация книг Галины Зелениной «Чемодан, вокзал, увольте. Позднесоветские евреи между русской интеллигенций и эмиграцией» (Издательство Европейского университета в Санкт-Петербурге, 2026) и «Exnostris. Очерки советской еврейской автобиографии» (Еврейский музей и Центр толерантности, 2026).",
+      "url": "https://brodsky.online/events/chemodan-vokzal-pishite-prezentatsiya-knig-galiny-zeleninoy-chemodan-vokzal-uvolte-pozdnesovetskie-e/",
+      "source": "Полторы комнаты — музей Иосифа Бродского",
+      "checked_at": "",
+      "review_reason": "invalid_title_from_description",
+      "discovered_at": "2026-10-21",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-25",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false,
+        "status": "rejected"
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": "2026-10-25",
+      "time_verification": "verified",
+      "time_evidence": "29.10, чт • 19:00",
+      "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
       "id": "moscow-2026-10-29-2b2a385dc4",
@@ -48536,79 +48918,6 @@
       "reviewed_at": "2026-10-24",
       "time_verification": "verified",
       "time_evidence": "29.10.26 20:00",
-      "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
-    },
-    {
-      "id": "spb-2026-10-29-020d3b2f98",
-      "status": "rejected",
-      "kind": "event",
-      "city": "spb",
-      "date": "2026-10-29",
-      "time": "21:10",
-      "title": "Мероприятия",
-      "venue": "Музей «Полторы комнаты» Иосифа Бродского",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [
-        "лекция"
-      ],
-      "description": "Оставляя свои контакты, вы даёте согласие на обработку персональных данных",
-      "url": "https://brodsky.online/events/",
-      "source": "Полторы комнаты — музей Иосифа Бродского",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-10-21",
-      "price_type": "unknown",
-      "availability": "unknown",
-      "availability_checked_at": "2026-10-25",
-      "editor_overrides": {
-        "telegram_include": false,
-        "instagram_include": false,
-        "status": "rejected"
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": "2026-10-24"
-    },
-    {
-      "id": "spb-2026-10-29-df32f22abf",
-      "status": "rejected",
-      "kind": "event",
-      "city": "spb",
-      "date": "2026-10-29",
-      "time": "21:10",
-      "title": "Название требует проверки",
-      "venue": "Музей «Полторы комнаты» Иосифа Бродского",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [
-        "презентация"
-      ],
-      "description": "Презентация книг Галины Зелениной «Чемодан, вокзал, увольте. Позднесоветские евреи между русской интеллигенций и эмиграцией» (Издательство Европейского университета в Санкт-Петербурге, 2026) и «Exnostris. Очерки советской еврейской автобиографии» (Еврейский музей и Центр толерантности, 2026).",
-      "url": "https://brodsky.online/events/chemodan-vokzal-pishite-prezentatsiya-knig-galiny-zeleninoy-chemodan-vokzal-uvolte-pozdnesovetskie-e/",
-      "source": "Полторы комнаты — музей Иосифа Бродского",
-      "checked_at": "",
-      "review_reason": "invalid_title_from_description",
-      "discovered_at": "2026-10-21",
-      "price_type": "unknown",
-      "availability": "unknown",
-      "availability_checked_at": "2026-10-25",
-      "editor_overrides": {
-        "telegram_include": false,
-        "instagram_include": false,
-        "status": "rejected"
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": "2026-10-25",
-      "time_verification": "verified",
-      "time_evidence": "29.10, чт • 19:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
@@ -49085,6 +49394,44 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
+      "id": "spb-2026-10-30-9b2ed009fe",
+      "status": "approved",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-30",
+      "time": "08:11",
+      "title": "Лекция Ольги Сейфетдиновой «Человек есть то, что он читает»",
+      "venue": "Музей «Полторы комнаты» Иосифа Бродского",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "«Человек есть то, что он читает» — пишет Иосиф Бродский в эссе «Поклониться тени». Личная библиотека способна рассказать о хозяине многое, библиотека — это своего рода метатекст о нем: не только с литературоведческой точки зрения (истоки, влияния, язык), но и с человеческой.",
+      "url": "https://brodsky.online/events/lektsiya-olgi-seyfetdinovoy-chelovek-est-to-chto-on-chitaet/",
+      "source": "Полторы комнаты — музей Иосифа Бродского",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-19",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-25",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false,
+        "status": "approved"
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": "2026-10-24",
+      "time_verification": "verified",
+      "time_evidence": "30.10, пт • 19:00",
+      "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
       "id": "moscow-2026-10-30-8f7b831fd0",
       "status": "rejected",
       "kind": "event",
@@ -49233,6 +49580,34 @@
       "time_verification": "verified",
       "time_evidence": "30.10 18:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
+      "id": "moscow-2026-10-30-2053f86d8e",
+      "status": "check",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-30",
+      "time": "18:30",
+      "title": "Паблик-ток «НОВЫЙ МЕЛЬНИКОВ: неизвестные проекты архитектора»",
+      "venue": "Музей Транспорта Москвы",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "",
+      "url": "https://mtmuseum.ru/affiche/lektoriy/",
+      "source": "Музей транспорта Москвы — афиша",
+      "checked_at": "",
+      "review_reason": "possible_duplicate",
+      "discovered_at": "2026-10-28",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-10-30-c1d26867c5",
@@ -49474,7 +49849,7 @@
       "address": "Лаврушинский переулок, 12",
       "price": 650,
       "price_text": "650 ₽; онлайн — 700 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -49491,7 +49866,7 @@
         "telegram_include": false,
         "instagram_include": false,
         "status": "approved",
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -49734,44 +50109,6 @@
       "sheet_synced_description": "",
       "time_verification": "verified",
       "time_evidence": "30.10.2026 | 20:00",
-      "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
-    },
-    {
-      "id": "spb-2026-10-30-9b2ed009fe",
-      "status": "approved",
-      "kind": "event",
-      "city": "spb",
-      "date": "2026-10-30",
-      "time": "21:10",
-      "title": "Лекция Ольги Сейфетдиновой «Человек есть то, что он читает»",
-      "venue": "Музей «Полторы комнаты» Иосифа Бродского",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [
-        "лекция"
-      ],
-      "description": "«Человек есть то, что он читает» — пишет Иосиф Бродский в эссе «Поклониться тени». Личная библиотека способна рассказать о хозяине многое, библиотека — это своего рода метатекст о нем: не только с литературоведческой точки зрения (истоки, влияния, язык), но и с человеческой.",
-      "url": "https://brodsky.online/events/lektsiya-olgi-seyfetdinovoy-chelovek-est-to-chto-on-chitaet/",
-      "source": "Полторы комнаты — музей Иосифа Бродского",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-10-19",
-      "price_type": "unknown",
-      "availability": "unknown",
-      "availability_checked_at": "2026-10-25",
-      "editor_overrides": {
-        "telegram_include": false,
-        "instagram_include": false,
-        "status": "approved"
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": "2026-10-24",
-      "time_verification": "verified",
-      "time_evidence": "30.10, пт • 19:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
@@ -51607,14 +51944,16 @@
       "price": 0,
       "price_text": "",
       "registration": false,
-      "categories": [],
+      "categories": [
+        "выставка"
+      ],
       "description": "На метро Музей AZ находится между станциями метро «Маяковская» и «Белорусская» (кольцевая). Мы рекомендуем идти в Музей от станции «Маяковская». Вам нужен Выход №1 на 1-я Тверская-Ямская улица, 2-я Тверская-Ямская улица.",
       "url": "https://museum-az.com/event/territoriya-svobody-nonkonformisty-v-taruse/",
       "source": "Музей AZ — выставки и события",
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-10-20",
-      "price_type": "paid",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-10-25",
       "editor_overrides": {
@@ -52677,7 +53016,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-02-5f73160fd7",
@@ -53092,7 +53433,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-03-b9a5fe1f3d",
@@ -53170,6 +53513,34 @@
       "instagram_include": false
     },
     {
+      "id": "moscow-2026-11-03-7116cb1f65",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-03",
+      "time": "19:00",
+      "title": "Лекция «Накануне монголо-татарского нашествия. Древнерусская живопись первой половины XIII века»",
+      "venue": "Третьяковская галерея",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Лекция к абонементу №6 «Древнерусская живопись XI–XIII веков. Мозаики, фрески, иконы. Книжная миниатюра». 6 октября 2026 – 10 ноября 2026 Лекция будет проходить в Лекционном зале Инженерного корпуса (Лаврушинский переулок, д. 12, вход с Малого Толмачёвского переулка) и в режиме реального времени на платформе МТС Линк в формате онлайн. Продолжительность лекции: 90 минут.",
+      "url": "https://www.tretyakovgallery.ru/events/o/lektsiya-nakanune-mongolo-tatarskogo-nashestviya-drevnerusskaya-zhivopis-pervoy-poloviny-xiii-veka-1/",
+      "source": "Третьяковская галерея — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-28",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-03-4797bda394",
       "status": "new",
       "kind": "event",
@@ -53202,7 +53573,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-11-04-8b7a0eb137",
@@ -53607,7 +53980,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-04-2bcb79c0ea",
@@ -53715,7 +54090,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-05-54179407af",
@@ -54341,6 +54718,34 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
+      "id": "spb-2026-11-06-6274d9b2ae",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-06",
+      "time": "15:00",
+      "title": "Экскурсия по выставке «Художник Ленинграда. Владимир Гринберг»",
+      "venue": "Музей искусства Санкт-Петербурга XX–XXI веков",
+      "address": "",
+      "price": 600,
+      "price_text": "600 ₽",
+      "registration": null,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "",
+      "url": "https://mispxx-xxi.ru/about/afisha/22610/",
+      "source": "Музей искусства Санкт-Петербурга XX–XXI веков — события",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-28",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-06-63e55d0987",
       "status": "approved",
       "kind": "event",
@@ -54675,7 +55080,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-07-e58254161c",
@@ -54710,7 +55117,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-07-6274d9b2ae",
@@ -54746,6 +55155,34 @@
       },
       "telegram_include": false,
       "instagram_include": false
+    },
+    {
+      "id": "moscow-2026-11-07-96c8d83947",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-07",
+      "time": "19:00",
+      "title": "Лето в Бадене: кинопоказ",
+      "venue": "Еврейский музей и центр толерантности",
+      "address": "",
+      "price": 350,
+      "price_text": "350 ₽",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "",
+      "url": "https://www.jewish-museum.ru/events/leto-v-badene-kinopokaz/",
+      "source": "Еврейский музей и центр толерантности",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-28",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "international-2026-11-08-f9e3a218bb",
@@ -55157,6 +55594,47 @@
       }
     },
     {
+      "id": "moscow-2026-11-10-015018c37f",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-10",
+      "time": "",
+      "title": "Мастер-класс по пошиву свитшота и брюк",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/sweatshirt-and-trousers-sewing-masterclass",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "excluded_ges2_masterclass",
+      "discovered_at": "2026-09-30",
+      "audience_text": "› Своды › Мастер-классы Дата: с 7 ноя 2023 Билеты Возраст: от 18 Тип: Мастер-класс в «Сводах» Место: Своды Возрастные ограничения 6+ Центр художественного производства «Своды» приглашает познакомиться с мастерскими, освоить новые навыки и поработать на профессиональном оборудовании. Приглашаем к участию людей, достигших 18 лет. Продолжительность: 3,5 часа Стоимость: 5000 руб. ** Сложность: 5/10 Количество участников: 2 * Покупая билет, пожалуйста, выбирайте дату в зависимости от того, какую именно вещь вы хотите сшить: мастер-классы чередуются каждую неделю. ** За одного участника. В стоимость мастер-класса включены расходные материалы. T На мастер-классе вы сможете самостоятельно раскроить и сшить трикотажные брюки-джоггеры или свитшот по нашим лекалам*. Специалист текстильной мастерской «Сводов» Юлия Шнайдер расскажет об особенностях работы с трикотажным футером и поможет подобрать подходящие лекала под ваш размер. В процессе вы научитесь пользоваться оверлоком и прямострочной швейной машинкой и узнаете, чем отличается рибана от кашкорсе. {\"points\":[{\"id\":1,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":3,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.6,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":2,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} Официальный партнер Центра художественного производства «Своды» Все фото: Аня Тодич {\"width\":963,\"column_width\":89,\"columns_n\":9,\"gutter\":20,\"margin\":0,\"line\":10} default true 512 1100 false true true {\"mode\":\"page\",\"transition_type\":\"slide\",\"transition_direction\":\"horizontal\",\"transition_look\":\"belt\",\"slides_form\":{}} {\"css\":\".editor {font-family: Diagramatika Text; font-size: 20px; font-weight: 400; line-height: 20px;}\"} ГЭС-2 Посещение [+] План здания Правила посещения Ателье Игровая Кинотеатр Концертный зал Библиотека Малые своды Магазин Ресторан и кафе Парковка Вокруг Доступность Как нас найти Календарь Программа Направления [+] Практики Медиация Дети и подростки Сообщества Школы Университеты Города Возможности [+] Своды Студии Резиденции Гранты Исследования Издательство  О нас [+] Дом культуры История и архитектура Посещение [+] Календарь Программа Направления [+] Возможности [+] Исследования Издательство О нас [+] Болотная набережная, 15 , Москва Болотная набережная, 15 Москва +7 (495) 990 0000 v - a-c@v - a-c",
+      "price_type": "paid",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-13",
+      "editor_note": "",
+      "instagram_include": false,
+      "telegram_include": false,
+      "social_priority": null,
+      "instagram_image": "",
+      "social_description": "",
+      "social_title": "",
+      "reviewed_at": "",
+      "sheet_synced_description": "",
+      "time_verification": "unverified",
+      "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
+      "editor_overrides": {
+        "time": ""
+      }
+    },
+    {
       "id": "russia-2026-11-10-567cf4347f",
       "status": "rejected",
       "kind": "open_call",
@@ -55227,7 +55705,8 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-10-d70f2c6fd6",
@@ -55604,6 +56083,92 @@
       },
       "time_verification": "unverified",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
+      "id": "moscow-2026-11-11-8c7ac32fc5",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-11",
+      "time": "11:00",
+      "title": "Мастер-класс по тафтингу",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": 8000,
+      "price_text": "8000 ₽",
+      "registration": null,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/tufting-workshop",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-28",
+      "audience_text": "› Своды › Мастер-классы Дата: с окт 2026 Билеты Возраст: от 18 Тип: Мастер-класс в «Сводах» Место: Своды Возрастные ограничения 6+ К участию в мастер-классах мы приглашаем людей, достигших 18 лет. Продолжительность: 3,5 часа Стоимость: 8000 руб. * Сложность: 7/10 Количество участников: 2 * За одного участника. Расходные материалы включены в стоимость. Центр художественного производства «Своды» приглашает познакомиться с мастерскими, освоить новые навыки и поработать на профессиональном оборудовании. T Тафтинг — это техника создания ковров, при которой ворс вплетается в ткань с использованием тафтингового пистолета. На мастер-классе вместе со специалистом текстильной мастерской Натальей Цыганковой вы создадите компактные ковры размером 35×35 см. Мастер расскажет особенности работы с тафтинговым пистолетом, машинкой для стрижки ворса, а также подскажет, какие материалы выбрать для создания идеального ковра. После оплаты мастер-класса мы отправим вам на выбор несколько наших вариантов узоров и попросим определиться с выбором рисунка, который вы хотите перенести на ковер, не позднее чем за сутки до мастер-класса. Забрать готовое изделие можно будет не ранее чем через неделю, после того, как высохнет клеевая основа. Подробнее о сроках готовности расскажет мастер. {\"points\":[{\"id\":1,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":3,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.6,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":2,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} Официальный партнер Центра художественного производства «Своды» Фото: Вадим Штэйн {\"grid\":{\"width\":963,\"column_width\":89,\"columns_n\":9,\"gutter\":20,\"margin\":0,\"line\":10},\"palette\":\"default\",\"responsive_mode\":true,\"responsive_min_width\":512,\"responsive_max_width\":1100,\"colorchanger_fullscreen\":false,\"colorchanger_overflow\":true,\"page_cropping\":false,\"global_google_analytics_id\":\"\",\"global_yandex_metrika_id\":\"\",\"article_mode\":{\"mode\":\"page\",\"transition_type\":\"slide\",\"transition_direction\":\"horizontal\",\"transition_look\":\"belt\",\"slides_form\":{}},\"default_font\":{\"css\":\".editor {font-family: Diagramatika Text; font-size: 20px; font-weight: 400; line-height: 20px;}\"},\"smooth_scroll\":false} ГЭС-2 Посещение [+] План здания Правила посещения Ателье Игровая Кинотеатр Концертный зал Библиотека Малые своды Магазин",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "moscow-2026-11-11-9dfc8f92b3",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-11",
+      "time": "11:00",
+      "title": "Мастер-класс по шелкографии",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": 4000,
+      "price_text": "4000 ₽",
+      "registration": null,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/vaults-masterclass-in-silkscreen-printing",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-28",
+      "audience_text": "› Своды › Мастер-классы Дата: с 27 июл 2022 Билеты Возраст: от 18 Тип: Мастер-класс в «Сводах» Место: Своды Возрастные ограничения 6+ К участию в мастер-классах мы приглашаем людей, достигших 18 лет. Продолжительность: 3 часа Стоимость: 4000 руб. Сложность: 3/10 Количество участников: до 2 человек * В стоимость мастер-класса включены краски, бумага и другие расходные материалы. Центр художественного производства «Своды» приглашает познакомиться с мастерскими, освоить новые навыки и поработать на профессиональном оборудовании. T Вы познакомитесь с основами технологии ручной трафаретной печати и вместе с мастером Артемием Кулеминым с нуля создадите шелкографический плакат-коллаж формата А3. Можно выбрать несколько из предложенных нами изображений, геометрических узоров и надписей. {\"points\":[{\"id\":1,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":3,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.6,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":2,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} Официальный партнер Центра художественного производства «Своды» Фото: Аня Тодич {\"grid\":{\"width\":963,\"column_width\":89,\"columns_n\":9,\"gutter\":20,\"margin\":0,\"line\":10},\"palette\":\"default\",\"responsive_mode\":true,\"responsive_min_width\":512,\"responsive_max_width\":1100,\"colorchanger_fullscreen\":false,\"colorchanger_overflow\":true,\"page_cropping\":false,\"global_google_analytics_id\":\"\",\"global_yandex_metrika_id\":\"\",\"article_mode\":{\"mode\":\"page\",\"transition_type\":\"slide\",\"transition_direction\":\"horizontal\",\"transition_look\":\"belt\",\"slides_form\":{}},\"default_font\":{\"css\":\".editor {font-family: Diagramatika Text; font-size: 20px; font-weight: 400; line-height: 20px;}\"},\"smooth_scroll\":false} ГЭС-2 Посещение [+] План здания Правила посещения Ателье Игровая Кинотеатр Концертный зал Библиотека Малые своды Магазин Ресторан и кафе Парковка Вокруг Доступность Как нас найти Календарь Программа Направления [+] Практики Медиация Дети и подростки Сообщества Школы Университеты Города Возможности [+] Своды Студии Резиденции Гранты Исследования Издательство  О нас [+] Дом культуры История и архитектура ru / en Посещение [+] Календарь Программа Направления [+] Возможности [+] Исследования Издательство О нас [+] Болотная набережная, 15 , Москва Болотная набережная, 15 Москва +7 (495) 990 0000 v - a-c@v - ",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "spb-2026-11-11-6274d9b2ae",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-11",
+      "time": "15:00",
+      "title": "Экскурсия по выставке «Художник Ленинграда. Владимир Гринберг»",
+      "venue": "Музей искусства Санкт-Петербурга XX–XXI веков",
+      "address": "",
+      "price": 600,
+      "price_text": "600 ₽",
+      "registration": null,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "",
+      "url": "https://mispxx-xxi.ru/about/afisha/22611/",
+      "source": "Музей искусства Санкт-Петербурга XX–XXI веков — события",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-28",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "spb-2026-11-11-17165fb22c",
@@ -56104,6 +56669,64 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
+      "id": "moscow-2026-11-13-b920f54838",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-13",
+      "time": "11:00",
+      "title": "Мастер-класс по столярному делу. Настольное зеркало",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": 4000,
+      "price_text": "4000 ₽",
+      "registration": null,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/masterclass-in-carpentry-desk-mirror",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-28",
+      "audience_text": "› Своды › Мастер-классы Дата: с 19 июл 2024 Билеты Возраст: от 18 Тип: Мастер-класс в «Сводах» Место: Своды Возрастные ограничения 6+ Центр художественного производства «Своды» приглашает познакомиться с мастерскими, освоить новые навыки и поработать на профессиональном оборудовании. Приглашаем к участию людей, достигших 18 лет. Продолжительность: 3–4 часа Стоимость: 4 000 руб. Сложность: 8 /10 Количество участников: 2 В стоимость включены все расходные материалы. Мы также предоставляем спецодежду. Забрать готовое изделие можно через несколько дней после обработки маслом. Подробнее о сроках расскажет мастер. Просим вас по возможности убрать волосы в гладкую прическу или под головной убор. Обращаем ваше внимание, что в столярной мастерской можно находиться только в закрытой обуви. T В столярной мастерской «Сводов» вы получите навык работы с деревом и необходимым инструментом. Вместе со специалистом столярной мастерской «Сводов» выберете форму для настольного зеркала, вырежете изделие лобзиком из массива дуба или клена, поработаете и ручным фрезером, и на специальном столе, сделаете пазы для зеркала и проведете финишную обработку работы маслом. Максимальный размер изделия — 230 × 180 мм. {\"points\":[{\"id\":1,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":3,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.6,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":2,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} Официальный партнер Центра художественного производства «Своды» Фото: Гоша Бергал {\"width\":963,\"column_width\":89,\"columns_n\":9,\"gutter\":20,\"margin\":0,\"line\":10} default true 512 1100 false true true {\"mode\":\"page\",\"transition_type\":\"slide\",\"transition_direction\":\"horizontal\",\"transition_look\":\"belt\",\"slides_form\":{}} {\"css\":\".editor {font-family: Diagramatika Text; font-size: 20px; font-weight: 400; line-height: 20px;}\"} ГЭС-2 Посещение [+] План здания Правила посещения Ателье Игровая Кинотеатр Концертный зал Библиотека Малые своды Магазин Ресторан и кафе Парковка Вокруг Доступность Как нас найти Календарь Программа Направления [+] Практики Медиация Дети и подростки Сообщества Школы Университеты Города Возможности [+] Своды Студии Резиденции Гранты Исследования Издательство  О нас [+] Дом культуры История и архитектура ru / en Посещение [+] Календарь Программа Направления",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "moscow-2026-11-13-aa8503e63c",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-13",
+      "time": "14:00",
+      "title": "Мастер-класс по трехмерному сканированию и печати",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": 7000,
+      "price_text": "7000 ₽",
+      "registration": null,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/vaults-master-class-in-3d-scanning-and-printing",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-28",
+      "audience_text": "› Своды › Мастер-классы Дата: с 29 апр 2022 Билеты Возраст: от 18 Тип: Мастер-класс в «Сводах» Место: Своды Возрастные ограничения 6+ К участию в мастер-классах мы приглашаем людей, достигших 18 лет. Продолжительность: 3 часа Стоимость: 7000 руб. * Сложность: 1/10 Количество участников: 2 * За одного участника. В стоимость мастер-класса включены пластик/полимер, а также материалы для постобработки. Центр художественного производства «Своды» приглашает познакомиться с мастерскими, освоить новые навыки и поработать на профессиональном оборудовании. T В мастерской 3D-печати можно создать свой объемный портрет или мини-копию любого предмета, который вы принесете из дома (размер готового изделия не более 100×100×100 мм). Специалист «Сводов» Сергей Калинин объяснит технические тонкости объемного сканирования и печати и поможет в работе. Принимая решение об участии, пожалуйста, учтите, что вам придется работать с частыми и яркими вспышками 3D-сканера. Фото: Аня Тодич Для работы лучше выбрать объект с матовой поверхностью; если она глянцевая или зеркальная, возможно, потребуется обработать ее тальком для лучшей видимости сканером. Если вы планируете сделать портрет, то стоит прийти в светлой и не блестящей одежде, а также воспользоваться головным убором — своим или предложенным в мастерской, так как сканер плохо распознает волосы. Забрать готовое изделие можно после постобработки, не раньше чем через три рабочих дня. Подробнее о сроках расскажет заведующий мастерской. {\"points\":[{\"id\":1,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":3,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.6,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":2,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} Официальный партнер Центра художественного производства «Своды» {\"width\":963,\"column_width\":89,\"columns_n\":9,\"gutter\":20,\"margin\":0,\"line\":10} default true 512 1100 false true false {\"mode\":\"page\",\"transition_type\":\"slide\",\"transition_direction\":\"horizontal\",\"transition_look\":\"belt\",\"slides_form\":{}} {\"css\":\".editor {font-family: Diagramatika Text; font-size: 20px; font-weight: 400; line-height: 20px;}\"} ГЭС-2 Посещение [+] План здания Правила посещения Ателье Игровая Кинотеатр Концертный зал Библиотека Малые своды Магазин Ресторан и кафе Парковка Вокруг Доступность Как нас найти Календарь Программ",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-13-cf673211bf",
       "status": "new",
       "kind": "event",
@@ -56139,6 +56762,34 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "spb-2026-11-13-f359bda75c",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-13",
+      "time": "17:30",
+      "title": "Арт-школа МИСП | Лекция «Поль Сезанн: как устроена живопись»",
+      "venue": "Музей искусства Санкт-Петербурга XX–XXI веков",
+      "address": "",
+      "price": 500,
+      "price_text": "500 ₽",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "",
+      "url": "https://mispxx-xxi.ru/about/afisha/22585/",
+      "source": "Музей искусства Санкт-Петербурга XX–XXI веков — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-28",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-10-24-9b9ee6a4b0",
@@ -56256,6 +56907,34 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
+      "id": "moscow-2026-11-14-9f84af6814",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-14",
+      "time": "",
+      "title": "«Сумерки идолов»",
+      "venue": "Фонд Ruarts",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "14 ноября в 14:00 в Фонде Ruarts состоится лекция Михаила Майзульса «Сумерки идолов». Средневековые художники изобрели язык политического и религиозного протеста задолго до революций ХХ века. Разбитые колонны, летящие осколки камня и поверженные безликие идолы на старинных алтарях — это не просто декорации, а мощный символ победы новой идеи над старым миром.",
+      "url": "https://ruarts.foundation/ru/events/lecture/122",
+      "source": "Фонд Ruarts — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-28",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-14-422be2d050",
       "status": "rejected",
       "kind": "event",
@@ -56330,6 +57009,34 @@
       "reviewed_at": "2026-10-17",
       "time_verification": "unverified",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
+      "id": "spb-2026-11-14-faec6c13cc",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-14",
+      "time": "",
+      "title": "ПРОВЕРКА ВОЗРАСТА",
+      "venue": "Порядок слов — Пушкинская-10",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "14 ноября в 19:00 в книжном магазине «P. S.» состоится презентация книги Рената Беккина «Дворник писателя Хармса» и встреча с автором. Впервые повесть была опубликована в журнале «Новая Юность» в 2023 году.",
+      "url": "https://wordorder.ru/pushkinskaya-10/prezentaciya-knigi-renata-bekkina-dvornik-pisatelya-harmsa-i-vstrecha-s-avtorom/",
+      "source": "Порядок слов — лекторий на Пушкинской-10",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-28",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "spb-2026-11-14-c9781b67f3",
@@ -57039,6 +57746,63 @@
       "reviewed_at": "2026-10-24"
     },
     {
+      "id": "moscow-2026-11-16-eebb063dbc",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-16",
+      "time": "12:00",
+      "title": "Мастер-класс по ручной оптической черно-белой фотопечати",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": 4000,
+      "price_text": "4000 ₽",
+      "registration": null,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/vaults-masterclass-in-manual-optical-black-and-white-photo-printing",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-28",
+      "audience_text": "› Своды › Мастер-классы Дата: с 24 ноя 2025 Билеты Возраст: от 18 Тип: Мастер-класс в «Сводах» Место: Своды Возрастные ограничения 6+ Центр художественного производства «Своды» приглашает познакомиться с мастерскими, освоить новые навыки и поработать на профессиональном оборудовании. К участию в мастер-классах мы приглашаем людей, достигших 18 лет. Продолжительность: 4 часа Стоимость: 4000 руб. * Сложность: 1/10 Количество участников: 2 * За одного участника. В стоимость мастер-класса включены фотобумага и необходимые реактивы. T Заведующий фотолабораторией Андрей Шагин расскажет об основных принципах и приемах классической аналоговой печати и поможет самостоятельно напечатать снимок (размер готового фото не более 24×30,5 см). Вы можете выбрать один из наших негативов с видами « ГЭС-2 » и «Сводов» или принести собственный. Принимая решение об участии, пожалуйста, учтите, что вам придется четыре часа находиться в темном помещении с красным неоновым освещением. {\"points\":[{\"id\":1,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":3,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.6,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":2,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} Официальный партнер Центра художественного производства «Своды» Все фото: Аня Тодич {\"width\":963,\"column_width\":89,\"columns_n\":9,\"gutter\":20,\"margin\":0,\"line\":10} default true 512 1100 false true true {\"mode\":\"page\",\"transition_type\":\"slide\",\"transition_direction\":\"horizontal\",\"transition_look\":\"belt\",\"slides_form\":{}} {\"css\":\".editor {font-family: Diagramatika Text; font-size: 20px; font-weight: 400; line-height: 20px;}\"} ГЭС-2 Посещение [+] План здания Правила посещения Ателье Игровая Кинотеатр Концертный зал Библиотека Малые своды Магазин Ресторан и кафе Парковка Вокруг Доступность Как нас найти Календарь Программа Направления [+] Практики Медиация Дети и подростки Сообщества Школы Университеты Города Возможности [+] Своды Студии Резиденции Гранты Исследования Издательство  О нас [+] Дом культуры История и архитектура ru / en Посещение [+] Календарь Программа Направления [+] Возможности [+] Исследования Издательство О нас [+] Болотная набережная, 15 , Москва Болотная набережная, 15 Москва +7 (495) 990 0000 v - a-c@v - a-c.org  V–A–C Доступность Пресс-офис Вакансии Контакты VK Telegram Youtube ",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "moscow-2026-11-16-6c388b096a",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-16",
+      "time": "16:30",
+      "title": "Неделя толерантности 2026 «Культура объединяет»",
+      "venue": "Еврейский музей и центр толерантности",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "С 16 по 19 ноября Еврейский музей и центр толерантности проводит Неделю толерантности 2026 «Культура объединяет». Четыре дня лекций, музыки, кино и встреч о том, как традиции, язык, мода и искусство разных народов помогают людям услышать друг друга. Неделя проходит под эгидой ЮНЕСКО и входит в программу Года единства народов России.",
+      "url": "https://www.jewish-museum.ru/events/nedelya-tolerantnosti-2026-kultura-obedinyaet/",
+      "source": "Еврейский музей и центр толерантности",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-28",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "international-2026-11-17-bfeafeaa9c",
       "status": "rejected",
       "kind": "open_call",
@@ -57114,6 +57878,172 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
+      "id": "moscow-2026-11-17-4a06efd1fb",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-17",
+      "time": "",
+      "title": "Мастер-класс по лепке с пуансонами",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/masterclass-in-clay-modelling-with-punches",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "excluded_ges2_masterclass",
+      "discovered_at": "2026-09-30",
+      "audience_text": "› Своды › Мастер-классы Дата: с 15 июл 2023 Билеты Возраст: от 18 Тип: Мастер-класс в «Сводах» Место: Своды Возрастные ограничения 6+ Приглашаем к участию людей, достигших 18 лет. Продолжительность: 3 часа Стоимость: 5000 руб. * Сложность: 2/10 Количество участников: 2 * За одного участника. В стоимость мастер-класса включены 2 кг глины, ангобы, глазурь. Центр художественного производства «Своды» приглашает познакомиться с мастерскими, освоить новые навыки и поработать на профессиональном оборудовании. T Вы познакомитесь с правилами работы с глиной и сможете создать блюдо с помощью пуансонов — специальных форм для изготовления керамической посуды. Мастер Наташа Цыганкова расскажет о технических нюансах процесса, поможет подобрать форму для изделия, задекорировать его и подготовить к обжигу. Фото: Аня Тодич {\"points\":[{\"id\":1,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":3,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.6,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":2,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} Официальный партнер Центра художественного производства «Своды» Забрать готовое изделие можно после обжига, не раньше чем через две недели. Подробнее о сроках расскажет мастер. {\"width\":963,\"column_width\":89,\"columns_n\":9,\"gutter\":20,\"margin\":0,\"line\":10} default true 512 1100 false true false {\"mode\":\"page\",\"transition_type\":\"slide\",\"transition_direction\":\"horizontal\",\"transition_look\":\"belt\",\"slides_form\":{}} {\"css\":\".editor {font-family: Diagramatika Text; font-size: 20px; font-weight: 400; line-height: 20px;}\"} ГЭС-2 Посещение [+] План здания Правила посещения Ателье Игровая Кинотеатр Концертный зал Библиотека Малые своды Магазин Ресторан и кафе Парковка Вокруг Доступность Как нас найти Календарь Программа Направления [+] Практики Медиация Дети и подростки Сообщества Школы Университеты Города Возможности [+] Своды Студии Резиденции Гранты Исследования Издательство  О нас [+] Дом культуры История и архитектура ru / en Посещение [+] Календарь Программа Направления [+] Возможности [+] Исследования Издательство О нас [+] Болотная набережная, 15 , Москва Болотная набережная, 15 Москва +7 (495) 990 0000 v - a-c@v - a-c.org  V–A–C Доступность Пресс-офис Вакансии Контакты VK Telegram Youtube  V–A–C Доступность Пресс-офис Вакансии Контакты VK Telegram Yo",
+      "price_type": "paid",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-13",
+      "editor_note": "",
+      "instagram_include": false,
+      "telegram_include": false,
+      "social_priority": null,
+      "instagram_image": "",
+      "social_description": "",
+      "social_title": "",
+      "reviewed_at": "",
+      "sheet_synced_description": "",
+      "time_verification": "unverified",
+      "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
+      "editor_overrides": {
+        "time": ""
+      }
+    },
+    {
+      "id": "moscow-2026-11-17-b607d0e197",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-17",
+      "time": "",
+      "title": "Мастер-класс по пошиву худи",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": 7000,
+      "price_text": "7000 ₽",
+      "registration": false,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/master-class-in-sewing-a-hoodie",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "excluded_ges2_masterclass",
+      "discovered_at": "2026-10-02",
+      "audience_text": "› Своды › Мастер-классы Дата: с окт 2025 Билеты Возраст: от 18 Тип: Мастер-класс в «Сводах» Место: Своды Возрастные ограничения 6+ К участию в мастер-классах мы приглашаем людей, достигших 18 лет. Продолжительность: 4 часа Стоимость: 7000 руб. * Сложность: 6/10 Количество участников: 2 * За одного участника. Расходные материалы включены в стоимость. Центр художественного производства «Своды» приглашает познакомиться с мастерскими, освоить новые навыки и поработать на профессиональном оборудовании. T Специалист текстильной мастерской «Сводов» Юлия Шнайдер расскажет об особенностях работы с трикотажным футером и поможет подобрать подходящие лекала, а затем вы самостоятельно раскроите и сошьете худи. Вы также сможете выполнить вышивку на специальном оборудовании, если захотите. В процессе вы научитесь пользоваться оверлоком, распошивальной и прямострочной швейными машинками. {\"points\":[{\"id\":1,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":3,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.6,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":2,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} Официальный партнер Центра художественного производства «Своды» Все фото: Аня Тодич {\"width\":963,\"column_width\":89,\"columns_n\":9,\"gutter\":20,\"margin\":0,\"line\":10} default true 512 1100 false true false {\"mode\":\"page\",\"transition_type\":\"slide\",\"transition_direction\":\"horizontal\",\"transition_look\":\"belt\",\"slides_form\":{}} {\"css\":\".editor {font-family: Diagramatika Text; font-size: 20px; font-weight: 400; line-height: 20px;}\"} ГЭС-2 Посещение [+] План здания Правила посещения Ателье Игровая Кинотеатр Концертный зал Библиотека Малые своды Магазин Ресторан и кафе Парковка Вокруг Доступность Как нас найти Календарь Программа Направления [+] Практики Медиация Дети и подростки Сообщества Школы Университеты Города Возможности [+] Своды Студии Резиденции Гранты Исследования Издательство  О нас [+] Дом культуры История и архитектура ru / en Посещение [+] Календарь Программа Направления [+] Возможности [+] Исследования Издательство О нас [+] Болотная набережная, 15 , Москва Болотная набережная, 15 Москва +7 (495) 990 0000 v - a-c@v - a-c.org  V–A–C Доступность Пресс-офис Вакансии Контакты VK Telegram Youtube  V–A–C Доступность Пресс-офис Вакансии Контакты VK Telegram Youtube Пользовательское сог",
+      "price_type": "paid",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-20",
+      "editor_note": "",
+      "social_description": "",
+      "instagram_include": false,
+      "telegram_include": false,
+      "instagram_image": "",
+      "social_priority": null,
+      "social_title": "",
+      "sheet_synced_description": "",
+      "time_verification": "unverified",
+      "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
+      "editor_overrides": {
+        "time": ""
+      }
+    },
+    {
+      "id": "spb-2026-11-17-d70f2c6fd6",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-17",
+      "time": "14:00",
+      "title": "Экскурсия по выставке «Художник Ленинграда. Владимир Гринберг» для посетителей серебряного возраста",
+      "venue": "Музей искусства Санкт-Петербурга XX–XXI веков",
+      "address": "",
+      "price": 400,
+      "price_text": "400 ₽",
+      "registration": null,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "",
+      "url": "https://mispxx-xxi.ru/about/afisha/22616/",
+      "source": "Музей искусства Санкт-Петербурга XX–XXI веков — события",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-28",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "moscow-2026-11-18-9dfc8f92b3",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-18",
+      "time": "11:00",
+      "title": "Мастер-класс по шелкографии",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": 4000,
+      "price_text": "4000 ₽",
+      "registration": null,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/vaults-masterclass-in-silkscreen-printing",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-28",
+      "audience_text": "› Своды › Мастер-классы Дата: с 27 июл 2022 Билеты Возраст: от 18 Тип: Мастер-класс в «Сводах» Место: Своды Возрастные ограничения 6+ К участию в мастер-классах мы приглашаем людей, достигших 18 лет. Продолжительность: 3 часа Стоимость: 4000 руб. Сложность: 3/10 Количество участников: до 2 человек * В стоимость мастер-класса включены краски, бумага и другие расходные материалы. Центр художественного производства «Своды» приглашает познакомиться с мастерскими, освоить новые навыки и поработать на профессиональном оборудовании. T Вы познакомитесь с основами технологии ручной трафаретной печати и вместе с мастером Артемием Кулеминым с нуля создадите шелкографический плакат-коллаж формата А3. Можно выбрать несколько из предложенных нами изображений, геометрических узоров и надписей. {\"points\":[{\"id\":1,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":3,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.6,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":2,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} Официальный партнер Центра художественного производства «Своды» Фото: Аня Тодич {\"grid\":{\"width\":963,\"column_width\":89,\"columns_n\":9,\"gutter\":20,\"margin\":0,\"line\":10},\"palette\":\"default\",\"responsive_mode\":true,\"responsive_min_width\":512,\"responsive_max_width\":1100,\"colorchanger_fullscreen\":false,\"colorchanger_overflow\":true,\"page_cropping\":false,\"global_google_analytics_id\":\"\",\"global_yandex_metrika_id\":\"\",\"article_mode\":{\"mode\":\"page\",\"transition_type\":\"slide\",\"transition_direction\":\"horizontal\",\"transition_look\":\"belt\",\"slides_form\":{}},\"default_font\":{\"css\":\".editor {font-family: Diagramatika Text; font-size: 20px; font-weight: 400; line-height: 20px;}\"},\"smooth_scroll\":false} ГЭС-2 Посещение [+] План здания Правила посещения Ателье Игровая Кинотеатр Концертный зал Библиотека Малые своды Магазин Ресторан и кафе Парковка Вокруг Доступность Как нас найти Календарь Программа Направления [+] Практики Медиация Дети и подростки Сообщества Школы Университеты Города Возможности [+] Своды Студии Резиденции Гранты Исследования Издательство  О нас [+] Дом культуры История и архитектура ru / en Посещение [+] Календарь Программа Направления [+] Возможности [+] Исследования Издательство О нас [+] Болотная набережная, 15 , Москва Болотная набережная, 15 Москва +7 (495) 990 0000 v - a-c@v - ",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "spb-2026-11-18-9e5ab92fbf",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-18",
+      "time": "19:00",
+      "title": "Музыкально-поэтическая экскурсия по выставке «Художник Ленинграда. Владимир Гринберг» (скрипка)",
+      "venue": "Музей искусства Санкт-Петербурга XX–XXI веков",
+      "address": "",
+      "price": 600,
+      "price_text": "600 ₽",
+      "registration": null,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "",
+      "url": "https://mispxx-xxi.ru/about/afisha/22617/",
+      "source": "Музей искусства Санкт-Петербурга XX–XXI веков — события",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-28",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "international-2026-11-19-aa6cdedf7f",
       "status": "rejected",
       "kind": "open_call",
@@ -57186,6 +58116,34 @@
       "reviewed_at": "2026-10-25",
       "time_verification": "unverified",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
+      "id": "spb-2026-11-19-6274d9b2ae",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-19",
+      "time": "14:00",
+      "title": "Экскурсия по выставке «Художник Ленинграда. Владимир Гринберг»",
+      "venue": "Музей искусства Санкт-Петербурга XX–XXI веков",
+      "address": "",
+      "price": 600,
+      "price_text": "600 ₽",
+      "registration": null,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "",
+      "url": "https://mispxx-xxi.ru/about/afisha/22618/",
+      "source": "Музей искусства Санкт-Петербурга XX–XXI веков — события",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-28",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "spb-2026-11-19-bf383d08fa",
@@ -57532,6 +58490,92 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
+      "id": "moscow-2026-11-20-b920f54838",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-20",
+      "time": "11:00",
+      "title": "Мастер-класс по столярному делу. Настольное зеркало",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": 4000,
+      "price_text": "4000 ₽",
+      "registration": null,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/masterclass-in-carpentry-desk-mirror",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-28",
+      "audience_text": "› Своды › Мастер-классы Дата: с 19 июл 2024 Билеты Возраст: от 18 Тип: Мастер-класс в «Сводах» Место: Своды Возрастные ограничения 6+ Центр художественного производства «Своды» приглашает познакомиться с мастерскими, освоить новые навыки и поработать на профессиональном оборудовании. Приглашаем к участию людей, достигших 18 лет. Продолжительность: 3–4 часа Стоимость: 4 000 руб. Сложность: 8 /10 Количество участников: 2 В стоимость включены все расходные материалы. Мы также предоставляем спецодежду. Забрать готовое изделие можно через несколько дней после обработки маслом. Подробнее о сроках расскажет мастер. Просим вас по возможности убрать волосы в гладкую прическу или под головной убор. Обращаем ваше внимание, что в столярной мастерской можно находиться только в закрытой обуви. T В столярной мастерской «Сводов» вы получите навык работы с деревом и необходимым инструментом. Вместе со специалистом столярной мастерской «Сводов» выберете форму для настольного зеркала, вырежете изделие лобзиком из массива дуба или клена, поработаете и ручным фрезером, и на специальном столе, сделаете пазы для зеркала и проведете финишную обработку работы маслом. Максимальный размер изделия — 230 × 180 мм. {\"points\":[{\"id\":1,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":3,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.6,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":2,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} Официальный партнер Центра художественного производства «Своды» Фото: Гоша Бергал {\"width\":963,\"column_width\":89,\"columns_n\":9,\"gutter\":20,\"margin\":0,\"line\":10} default true 512 1100 false true true {\"mode\":\"page\",\"transition_type\":\"slide\",\"transition_direction\":\"horizontal\",\"transition_look\":\"belt\",\"slides_form\":{}} {\"css\":\".editor {font-family: Diagramatika Text; font-size: 20px; font-weight: 400; line-height: 20px;}\"} ГЭС-2 Посещение [+] План здания Правила посещения Ателье Игровая Кинотеатр Концертный зал Библиотека Малые своды Магазин Ресторан и кафе Парковка Вокруг Доступность Как нас найти Календарь Программа Направления [+] Практики Медиация Дети и подростки Сообщества Школы Университеты Города Возможности [+] Своды Студии Резиденции Гранты Исследования Издательство  О нас [+] Дом культуры История и архитектура ru / en Посещение [+] Календарь Программа Направления",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "moscow-2026-11-20-aa8503e63c",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-20",
+      "time": "14:00",
+      "title": "Мастер-класс по трехмерному сканированию и печати",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": 7000,
+      "price_text": "7000 ₽",
+      "registration": null,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/vaults-master-class-in-3d-scanning-and-printing",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-28",
+      "audience_text": "› Своды › Мастер-классы Дата: с 29 апр 2022 Билеты Возраст: от 18 Тип: Мастер-класс в «Сводах» Место: Своды Возрастные ограничения 6+ К участию в мастер-классах мы приглашаем людей, достигших 18 лет. Продолжительность: 3 часа Стоимость: 7000 руб. * Сложность: 1/10 Количество участников: 2 * За одного участника. В стоимость мастер-класса включены пластик/полимер, а также материалы для постобработки. Центр художественного производства «Своды» приглашает познакомиться с мастерскими, освоить новые навыки и поработать на профессиональном оборудовании. T В мастерской 3D-печати можно создать свой объемный портрет или мини-копию любого предмета, который вы принесете из дома (размер готового изделия не более 100×100×100 мм). Специалист «Сводов» Сергей Калинин объяснит технические тонкости объемного сканирования и печати и поможет в работе. Принимая решение об участии, пожалуйста, учтите, что вам придется работать с частыми и яркими вспышками 3D-сканера. Фото: Аня Тодич Для работы лучше выбрать объект с матовой поверхностью; если она глянцевая или зеркальная, возможно, потребуется обработать ее тальком для лучшей видимости сканером. Если вы планируете сделать портрет, то стоит прийти в светлой и не блестящей одежде, а также воспользоваться головным убором — своим или предложенным в мастерской, так как сканер плохо распознает волосы. Забрать готовое изделие можно после постобработки, не раньше чем через три рабочих дня. Подробнее о сроках расскажет заведующий мастерской. {\"points\":[{\"id\":1,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":3,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.6,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":2,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} Официальный партнер Центра художественного производства «Своды» {\"width\":963,\"column_width\":89,\"columns_n\":9,\"gutter\":20,\"margin\":0,\"line\":10} default true 512 1100 false true false {\"mode\":\"page\",\"transition_type\":\"slide\",\"transition_direction\":\"horizontal\",\"transition_look\":\"belt\",\"slides_form\":{}} {\"css\":\".editor {font-family: Diagramatika Text; font-size: 20px; font-weight: 400; line-height: 20px;}\"} ГЭС-2 Посещение [+] План здания Правила посещения Ателье Игровая Кинотеатр Концертный зал Библиотека Малые своды Магазин Ресторан и кафе Парковка Вокруг Доступность Как нас найти Календарь Программ",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "spb-2026-11-20-6274d9b2ae",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-20",
+      "time": "15:00",
+      "title": "Экскурсия по выставке «Художник Ленинграда. Владимир Гринберг»",
+      "venue": "Музей искусства Санкт-Петербурга XX–XXI веков",
+      "address": "",
+      "price": 600,
+      "price_text": "600 ₽",
+      "registration": null,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "",
+      "url": "https://mispxx-xxi.ru/about/afisha/22612/",
+      "source": "Музей искусства Санкт-Петербурга XX–XXI веков — события",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-28",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-20-cf673211bf",
       "status": "new",
       "kind": "event",
@@ -57567,6 +58611,126 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "spb-2026-11-20-48372deac5",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-20",
+      "time": "17:30",
+      "title": "Арт-школа МИСП | Жорж Сёра и неоимпрессионисты: наука цвета",
+      "venue": "Музей искусства Санкт-Петербурга XX–XXI веков",
+      "address": "",
+      "price": 500,
+      "price_text": "500 ₽",
+      "registration": null,
+      "categories": [],
+      "description": "",
+      "url": "https://mispxx-xxi.ru/about/afisha/22619/",
+      "source": "Музей искусства Санкт-Петербурга XX–XXI веков — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-28",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "spb-2026-11-20-e96e84ce1f",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-20",
+      "time": "18:00",
+      "title": "Арт-медиация Софьи Кучерявенко «100 видов реки Невы»",
+      "venue": "Музей искусства Санкт-Петербурга XX–XXI веков",
+      "address": "",
+      "price": 600,
+      "price_text": "600 ₽",
+      "registration": null,
+      "categories": [],
+      "description": "",
+      "url": "https://mispxx-xxi.ru/about/afisha/22620/",
+      "source": "Музей искусства Санкт-Петербурга XX–XXI веков — события",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-28",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "spb-2026-11-21-bae5bc9ca8",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-21",
+      "time": "",
+      "title": "Арт-практика | Творческое занятие «Силуэты Ленинграда»",
+      "venue": "Музей искусства Санкт-Петербурга XX–XXI веков",
+      "address": "",
+      "price": 600,
+      "price_text": "600 ₽",
+      "registration": true,
+      "categories": [
+        "лекция"
+      ],
+      "description": "",
+      "url": "https://mispxx-xxi.ru/about/afisha/22496/",
+      "source": "Музей искусства Санкт-Петербурга XX–XXI веков — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-02",
+      "price_type": "paid",
+      "social_title": "",
+      "social_description": "",
+      "instagram_image": "",
+      "telegram_include": false,
+      "social_priority": null,
+      "editor_note": "",
+      "instagram_include": false,
+      "reviewed_at": "2026-10-02",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-17",
+      "sheet_synced_description": "",
+      "time_verification": "unverified",
+      "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
+      "editor_overrides": {
+        "time": ""
+      }
+    },
+    {
+      "id": "moscow-2026-11-21-8810f46980",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-21",
+      "time": "",
+      "title": "Гонг-перформанс",
+      "venue": "Фонд Ruarts",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "перформанс"
+      ],
+      "description": "21 ноября в 13:00 в Фонде Ruarts состоится гонг-перформанс Юлии Гоголевой (SENSONICA). Исследовательско-художественное событие, посвящённое звуку как физическому явлению, способу изменения восприятия и инструменту взаимодействия с пространством, телом и сознанием.",
+      "url": "https://ruarts.foundation/ru/events/lecture/123",
+      "source": "Фонд Ruarts — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-28",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-21-dc07f0121e",
@@ -57644,6 +58808,34 @@
       "instagram_include": false
     },
     {
+      "id": "spb-2026-11-21-6274d9b2ae",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-21",
+      "time": "13:00",
+      "title": "Экскурсия по выставке «Художник Ленинграда. Владимир Гринберг»",
+      "venue": "Музей искусства Санкт-Петербурга XX–XXI веков",
+      "address": "",
+      "price": 600,
+      "price_text": "600 ₽",
+      "registration": null,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "",
+      "url": "https://mispxx-xxi.ru/about/afisha/22621/",
+      "source": "Музей искусства Санкт-Петербурга XX–XXI веков — события",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-28",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "spb-2026-11-21-292db8036a",
       "status": "rejected",
       "kind": "event",
@@ -57677,6 +58869,34 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": "2026-10-27"
+    },
+    {
+      "id": "spb-2026-11-21-d709f81e9f",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-21",
+      "time": "17:00",
+      "title": "Авторская экскурсия Софьи Кучерявенко «Петербургская палитра: свет и цвет северной столицы»",
+      "venue": "Музей искусства Санкт-Петербурга XX–XXI веков",
+      "address": "",
+      "price": 600,
+      "price_text": "600 ₽",
+      "registration": null,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "",
+      "url": "https://mispxx-xxi.ru/about/afisha/22624/",
+      "source": "Музей искусства Санкт-Петербурга XX–XXI веков — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-28",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "international-2026-11-22-74e7820a46",
@@ -57753,6 +58973,34 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": "2026-10-24"
+    },
+    {
+      "id": "moscow-2026-11-22-2a19a40da5",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-22",
+      "time": "",
+      "title": "«Тайна Грааля»",
+      "venue": "Фонд Ruarts",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "22 ноября в 18:00 в Фонде Ruarts состоится лекция Александра Ницберга «Тайна Грааля». Встреча будет посвящена исследованию одного из самых загадочных символов европейской культуры.",
+      "url": "https://ruarts.foundation/ru/events/lecture/124",
+      "source": "Фонд Ruarts — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-28",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-22-d87ea3610e",
@@ -57861,6 +59109,46 @@
       "instagram_include": false,
       "telegram_include": false,
       "sheet_synced_description": "Государственный музей изобразительных искусств имени А.С. Пушкина представляет проект «Кубинский плакат. Кино и революция» — первую в России выставку, посвященную культурному феномену, причисленному ЮНЕСКО к мировому наследию человечества."
+    },
+    {
+      "id": "spb-2026-11-22-46bfd8829c",
+      "status": "approved",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-22",
+      "time": "",
+      "title": "Лекция Софьи Кучерявенко «По маршруту Париж – Ленинград: Альбер Марке и русские пейзажисты»",
+      "venue": "Музей искусства Санкт-Петербурга XX–XXI веков",
+      "address": "",
+      "price": 600,
+      "price_text": "600 ₽",
+      "registration": true,
+      "categories": [
+        "лекция"
+      ],
+      "description": "",
+      "url": "https://mispxx-xxi.ru/about/afisha/22486/",
+      "source": "Музей искусства Санкт-Петербурга XX–XXI веков — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-02",
+      "price_type": "paid",
+      "social_title": "",
+      "social_description": "",
+      "instagram_image": "",
+      "telegram_include": false,
+      "social_priority": null,
+      "editor_note": "",
+      "instagram_include": false,
+      "reviewed_at": "2026-10-02",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-10",
+      "sheet_synced_description": "",
+      "time_verification": "unverified",
+      "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
+      "editor_overrides": {
+        "time": ""
+      }
     },
     {
       "id": "moscow-2026-11-22-93b08d7246",
@@ -58014,6 +59302,35 @@
       "reviewed_at": "2026-10-24"
     },
     {
+      "id": "moscow-2026-11-23-eebb063dbc",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-23",
+      "time": "12:00",
+      "title": "Мастер-класс по ручной оптической черно-белой фотопечати",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": 4000,
+      "price_text": "4000 ₽",
+      "registration": null,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/vaults-masterclass-in-manual-optical-black-and-white-photo-printing",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-28",
+      "audience_text": "› Своды › Мастер-классы Дата: с 24 ноя 2025 Билеты Возраст: от 18 Тип: Мастер-класс в «Сводах» Место: Своды Возрастные ограничения 6+ Центр художественного производства «Своды» приглашает познакомиться с мастерскими, освоить новые навыки и поработать на профессиональном оборудовании. К участию в мастер-классах мы приглашаем людей, достигших 18 лет. Продолжительность: 4 часа Стоимость: 4000 руб. * Сложность: 1/10 Количество участников: 2 * За одного участника. В стоимость мастер-класса включены фотобумага и необходимые реактивы. T Заведующий фотолабораторией Андрей Шагин расскажет об основных принципах и приемах классической аналоговой печати и поможет самостоятельно напечатать снимок (размер готового фото не более 24×30,5 см). Вы можете выбрать один из наших негативов с видами « ГЭС-2 » и «Сводов» или принести собственный. Принимая решение об участии, пожалуйста, учтите, что вам придется четыре часа находиться в темном помещении с красным неоновым освещением. {\"points\":[{\"id\":1,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":3,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.6,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":2,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} Официальный партнер Центра художественного производства «Своды» Все фото: Аня Тодич {\"width\":963,\"column_width\":89,\"columns_n\":9,\"gutter\":20,\"margin\":0,\"line\":10} default true 512 1100 false true true {\"mode\":\"page\",\"transition_type\":\"slide\",\"transition_direction\":\"horizontal\",\"transition_look\":\"belt\",\"slides_form\":{}} {\"css\":\".editor {font-family: Diagramatika Text; font-size: 20px; font-weight: 400; line-height: 20px;}\"} ГЭС-2 Посещение [+] План здания Правила посещения Ателье Игровая Кинотеатр Концертный зал Библиотека Малые своды Магазин Ресторан и кафе Парковка Вокруг Доступность Как нас найти Календарь Программа Направления [+] Практики Медиация Дети и подростки Сообщества Школы Университеты Города Возможности [+] Своды Студии Резиденции Гранты Исследования Издательство  О нас [+] Дом культуры История и архитектура ru / en Посещение [+] Календарь Программа Направления [+] Возможности [+] Исследования Издательство О нас [+] Болотная набережная, 15 , Москва Болотная набережная, 15 Москва +7 (495) 990 0000 v - a-c@v - a-c.org  V–A–C Доступность Пресс-офис Вакансии Контакты VK Telegram Youtube ",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-24-058b1d17f2",
       "status": "approved",
       "kind": "event",
@@ -58051,6 +59368,35 @@
         "status": "approved"
       },
       "reviewed_at": "2026-10-27"
+    },
+    {
+      "id": "moscow-2026-11-24-e729e1a012",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-24",
+      "time": "11:00",
+      "title": "Сезонный мастер-класс по пошиву панамы из экомеха",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": 5000,
+      "price_text": "5000 ₽",
+      "registration": null,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/seasonal-master-class-in-sewing-an-eco-fir-panama-hat",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-28",
+      "audience_text": "› Своды › Мастер-классы Дата: с дек 2025 Билеты Возраст: от 18 Тип: Мастер-класс в «Сводах» Место: Своды Возрастные ограничения 6+ К участию в мастер-классах мы приглашаем людей, достигших 18 лет. Продолжительность: 4 часа Стоимость: 5000 руб. * Сложность: 6/10 Количество участников: 2 * За одного участника. Расходные материалы включены в стоимость. Центр художественного производства «Своды» приглашает познакомиться с мастерскими, освоить новые навыки и поработать на профессиональном оборудовании. T Панама из экомеха нейтральных пастельных тонов отлично смотрится в сочетании с любой зимней верхней одеждой. Мастер «Сводов» поможет вам раскроить и сшить ее. В процессе вы научитесь пользоваться раскройным оборудованием и прямострочной швейной машиной, а также познакомитесь с особенностями создания изделий из экомеха. {\"points\":[{\"id\":1,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":3,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.6,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":2,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} Официальный партнер Центра художественного производства «Своды» Все фото: Анна Завозяева {\"width\":963,\"column_width\":89,\"columns_n\":9,\"gutter\":20,\"margin\":0,\"line\":10} default true 512 1100 false true false {\"mode\":\"page\",\"transition_type\":\"slide\",\"transition_direction\":\"horizontal\",\"transition_look\":\"belt\",\"slides_form\":{}} {\"css\":\".editor {font-family: Diagramatika Text; font-size: 20px; font-weight: 400; line-height: 20px;}\"} ГЭС-2 Посещение [+] План здания Правила посещения Ателье Игровая Кинотеатр Концертный зал Библиотека Малые своды Магазин Ресторан и кафе Парковка Вокруг Доступность Как нас найти Календарь Программа Направления [+] Практики Медиация Дети и подростки Сообщества Школы Университеты Города Возможности [+] Своды Студии Резиденции Гранты Исследования Издательство  О нас [+] Дом культуры История и архитектура Посещение [+] Календарь Программа Направления [+] Возможности [+] Исследования Издательство О нас [+] Болотная набережная, 15 , Москва Болотная набережная, 15 Москва +7 (495) 990 0000 v - a-c@v - a-c.org  V–A–C Доступность Пресс-офис Вакансии Контакты VK Telegram Youtube  V–A–C Доступность Пресс-офис Вакансии Контакты VK Telegram Youtube Пользовательское соглашение Политика обработки персональных данных Правила посещен",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-24-df4566acc2",
@@ -58200,6 +59546,64 @@
       "reviewed_at": "2026-10-27"
     },
     {
+      "id": "moscow-2026-11-25-8c7ac32fc5",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-25",
+      "time": "11:00",
+      "title": "Мастер-класс по тафтингу",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": 8000,
+      "price_text": "8000 ₽",
+      "registration": null,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/tufting-workshop",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-28",
+      "audience_text": "› Своды › Мастер-классы Дата: с окт 2026 Билеты Возраст: от 18 Тип: Мастер-класс в «Сводах» Место: Своды Возрастные ограничения 6+ К участию в мастер-классах мы приглашаем людей, достигших 18 лет. Продолжительность: 3,5 часа Стоимость: 8000 руб. * Сложность: 7/10 Количество участников: 2 * За одного участника. Расходные материалы включены в стоимость. Центр художественного производства «Своды» приглашает познакомиться с мастерскими, освоить новые навыки и поработать на профессиональном оборудовании. T Тафтинг — это техника создания ковров, при которой ворс вплетается в ткань с использованием тафтингового пистолета. На мастер-классе вместе со специалистом текстильной мастерской Натальей Цыганковой вы создадите компактные ковры размером 35×35 см. Мастер расскажет особенности работы с тафтинговым пистолетом, машинкой для стрижки ворса, а также подскажет, какие материалы выбрать для создания идеального ковра. После оплаты мастер-класса мы отправим вам на выбор несколько наших вариантов узоров и попросим определиться с выбором рисунка, который вы хотите перенести на ковер, не позднее чем за сутки до мастер-класса. Забрать готовое изделие можно будет не ранее чем через неделю, после того, как высохнет клеевая основа. Подробнее о сроках готовности расскажет мастер. {\"points\":[{\"id\":1,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":3,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.6,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":2,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} Официальный партнер Центра художественного производства «Своды» Фото: Вадим Штэйн {\"grid\":{\"width\":963,\"column_width\":89,\"columns_n\":9,\"gutter\":20,\"margin\":0,\"line\":10},\"palette\":\"default\",\"responsive_mode\":true,\"responsive_min_width\":512,\"responsive_max_width\":1100,\"colorchanger_fullscreen\":false,\"colorchanger_overflow\":true,\"page_cropping\":false,\"global_google_analytics_id\":\"\",\"global_yandex_metrika_id\":\"\",\"article_mode\":{\"mode\":\"page\",\"transition_type\":\"slide\",\"transition_direction\":\"horizontal\",\"transition_look\":\"belt\",\"slides_form\":{}},\"default_font\":{\"css\":\".editor {font-family: Diagramatika Text; font-size: 20px; font-weight: 400; line-height: 20px;}\"},\"smooth_scroll\":false} ГЭС-2 Посещение [+] План здания Правила посещения Ателье Игровая Кинотеатр Концертный зал Библиотека Малые своды Магазин",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "moscow-2026-11-25-9dfc8f92b3",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-25",
+      "time": "11:00",
+      "title": "Мастер-класс по шелкографии",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": 4000,
+      "price_text": "4000 ₽",
+      "registration": null,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/vaults-masterclass-in-silkscreen-printing",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-28",
+      "audience_text": "› Своды › Мастер-классы Дата: с 27 июл 2022 Билеты Возраст: от 18 Тип: Мастер-класс в «Сводах» Место: Своды Возрастные ограничения 6+ К участию в мастер-классах мы приглашаем людей, достигших 18 лет. Продолжительность: 3 часа Стоимость: 4000 руб. Сложность: 3/10 Количество участников: до 2 человек * В стоимость мастер-класса включены краски, бумага и другие расходные материалы. Центр художественного производства «Своды» приглашает познакомиться с мастерскими, освоить новые навыки и поработать на профессиональном оборудовании. T Вы познакомитесь с основами технологии ручной трафаретной печати и вместе с мастером Артемием Кулеминым с нуля создадите шелкографический плакат-коллаж формата А3. Можно выбрать несколько из предложенных нами изображений, геометрических узоров и надписей. {\"points\":[{\"id\":1,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":3,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.6,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":2,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} Официальный партнер Центра художественного производства «Своды» Фото: Аня Тодич {\"grid\":{\"width\":963,\"column_width\":89,\"columns_n\":9,\"gutter\":20,\"margin\":0,\"line\":10},\"palette\":\"default\",\"responsive_mode\":true,\"responsive_min_width\":512,\"responsive_max_width\":1100,\"colorchanger_fullscreen\":false,\"colorchanger_overflow\":true,\"page_cropping\":false,\"global_google_analytics_id\":\"\",\"global_yandex_metrika_id\":\"\",\"article_mode\":{\"mode\":\"page\",\"transition_type\":\"slide\",\"transition_direction\":\"horizontal\",\"transition_look\":\"belt\",\"slides_form\":{}},\"default_font\":{\"css\":\".editor {font-family: Diagramatika Text; font-size: 20px; font-weight: 400; line-height: 20px;}\"},\"smooth_scroll\":false} ГЭС-2 Посещение [+] План здания Правила посещения Ателье Игровая Кинотеатр Концертный зал Библиотека Малые своды Магазин Ресторан и кафе Парковка Вокруг Доступность Как нас найти Календарь Программа Направления [+] Практики Медиация Дети и подростки Сообщества Школы Университеты Города Возможности [+] Своды Студии Резиденции Гранты Исследования Издательство  О нас [+] Дом культуры История и архитектура ru / en Посещение [+] Календарь Программа Направления [+] Возможности [+] Исследования Издательство О нас [+] Болотная набережная, 15 , Москва Болотная набережная, 15 Москва +7 (495) 990 0000 v - a-c@v - ",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-26-05c67d7f07",
       "status": "new",
       "kind": "event",
@@ -58311,6 +59715,35 @@
       "reviewed_at": "2026-10-24"
     },
     {
+      "id": "moscow-2026-11-27-b920f54838",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-27",
+      "time": "11:00",
+      "title": "Мастер-класс по столярному делу. Настольное зеркало",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": 4000,
+      "price_text": "4000 ₽",
+      "registration": null,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/masterclass-in-carpentry-desk-mirror",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-28",
+      "audience_text": "› Своды › Мастер-классы Дата: с 19 июл 2024 Билеты Возраст: от 18 Тип: Мастер-класс в «Сводах» Место: Своды Возрастные ограничения 6+ Центр художественного производства «Своды» приглашает познакомиться с мастерскими, освоить новые навыки и поработать на профессиональном оборудовании. Приглашаем к участию людей, достигших 18 лет. Продолжительность: 3–4 часа Стоимость: 4 000 руб. Сложность: 8 /10 Количество участников: 2 В стоимость включены все расходные материалы. Мы также предоставляем спецодежду. Забрать готовое изделие можно через несколько дней после обработки маслом. Подробнее о сроках расскажет мастер. Просим вас по возможности убрать волосы в гладкую прическу или под головной убор. Обращаем ваше внимание, что в столярной мастерской можно находиться только в закрытой обуви. T В столярной мастерской «Сводов» вы получите навык работы с деревом и необходимым инструментом. Вместе со специалистом столярной мастерской «Сводов» выберете форму для настольного зеркала, вырежете изделие лобзиком из массива дуба или клена, поработаете и ручным фрезером, и на специальном столе, сделаете пазы для зеркала и проведете финишную обработку работы маслом. Максимальный размер изделия — 230 × 180 мм. {\"points\":[{\"id\":1,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":3,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.6,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":2,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} Официальный партнер Центра художественного производства «Своды» Фото: Гоша Бергал {\"width\":963,\"column_width\":89,\"columns_n\":9,\"gutter\":20,\"margin\":0,\"line\":10} default true 512 1100 false true true {\"mode\":\"page\",\"transition_type\":\"slide\",\"transition_direction\":\"horizontal\",\"transition_look\":\"belt\",\"slides_form\":{}} {\"css\":\".editor {font-family: Diagramatika Text; font-size: 20px; font-weight: 400; line-height: 20px;}\"} ГЭС-2 Посещение [+] План здания Правила посещения Ателье Игровая Кинотеатр Концертный зал Библиотека Малые своды Магазин Ресторан и кафе Парковка Вокруг Доступность Как нас найти Календарь Программа Направления [+] Практики Медиация Дети и подростки Сообщества Школы Университеты Города Возможности [+] Своды Студии Резиденции Гранты Исследования Издательство  О нас [+] Дом культуры История и архитектура ru / en Посещение [+] Календарь Программа Направления",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-27-b904ea1219",
       "status": "new",
       "kind": "event",
@@ -58343,7 +59776,38 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
+    },
+    {
+      "id": "moscow-2026-11-27-aa8503e63c",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-27",
+      "time": "14:00",
+      "title": "Мастер-класс по трехмерному сканированию и печати",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": 7000,
+      "price_text": "7000 ₽",
+      "registration": null,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/vaults-master-class-in-3d-scanning-and-printing",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-28",
+      "audience_text": "› Своды › Мастер-классы Дата: с 29 апр 2022 Билеты Возраст: от 18 Тип: Мастер-класс в «Сводах» Место: Своды Возрастные ограничения 6+ К участию в мастер-классах мы приглашаем людей, достигших 18 лет. Продолжительность: 3 часа Стоимость: 7000 руб. * Сложность: 1/10 Количество участников: 2 * За одного участника. В стоимость мастер-класса включены пластик/полимер, а также материалы для постобработки. Центр художественного производства «Своды» приглашает познакомиться с мастерскими, освоить новые навыки и поработать на профессиональном оборудовании. T В мастерской 3D-печати можно создать свой объемный портрет или мини-копию любого предмета, который вы принесете из дома (размер готового изделия не более 100×100×100 мм). Специалист «Сводов» Сергей Калинин объяснит технические тонкости объемного сканирования и печати и поможет в работе. Принимая решение об участии, пожалуйста, учтите, что вам придется работать с частыми и яркими вспышками 3D-сканера. Фото: Аня Тодич Для работы лучше выбрать объект с матовой поверхностью; если она глянцевая или зеркальная, возможно, потребуется обработать ее тальком для лучшей видимости сканером. Если вы планируете сделать портрет, то стоит прийти в светлой и не блестящей одежде, а также воспользоваться головным убором — своим или предложенным в мастерской, так как сканер плохо распознает волосы. Забрать готовое изделие можно после постобработки, не раньше чем через три рабочих дня. Подробнее о сроках расскажет заведующий мастерской. {\"points\":[{\"id\":1,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":3,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.6,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":2,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} Официальный партнер Центра художественного производства «Своды» {\"width\":963,\"column_width\":89,\"columns_n\":9,\"gutter\":20,\"margin\":0,\"line\":10} default true 512 1100 false true false {\"mode\":\"page\",\"transition_type\":\"slide\",\"transition_direction\":\"horizontal\",\"transition_look\":\"belt\",\"slides_form\":{}} {\"css\":\".editor {font-family: Diagramatika Text; font-size: 20px; font-weight: 400; line-height: 20px;}\"} ГЭС-2 Посещение [+] План здания Правила посещения Ателье Игровая Кинотеатр Концертный зал Библиотека Малые своды Магазин Ресторан и кафе Парковка Вокруг Доступность Как нас найти Календарь Программ",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-27-cf673211bf",
@@ -58378,7 +59842,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-11-30-9a278ceca1",

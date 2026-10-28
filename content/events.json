@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-27",
+  "updated_at": "2026-10-28",
   "events": [
     {
       "id": "moscow-2025-09-03-6b54dbdbf3",
@@ -38277,7 +38277,7 @@
       "reviewed_at": "2026-10-17",
       "availability": "unknown",
       "availability_checked_at": "",
-      "registration": false,
+      "registration": null,
       "price": null,
       "price_text": "",
       "price_type": "paid",
@@ -38303,7 +38303,7 @@
         "status": "approved",
         "telegram_include": false,
         "instagram_include": false,
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -38319,7 +38319,7 @@
       "reviewed_at": "2026-10-17",
       "availability": "unknown",
       "availability_checked_at": "",
-      "registration": false,
+      "registration": null,
       "price": null,
       "price_text": "",
       "price_type": "paid",
@@ -38345,7 +38345,7 @@
         "status": "approved",
         "telegram_include": false,
         "instagram_include": false,
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -40995,7 +40995,7 @@
       "address": "1-й Голутвинский переулок, 16, стр. 1",
       "price": 850,
       "price_text": "850 ₽; льготный — 650 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -41019,7 +41019,7 @@
       "reviewed_at": "2026-10-17",
       "ticket_required": true,
       "editor_overrides": {
-        "registration": false
+        "registration": null
       },
       "time_verification": "verified",
       "time_evidence": "24 октября 2026 14:00",
@@ -41037,7 +41037,7 @@
       "address": "1-й Голутвинский переулок, 16, стр. 1",
       "price": 850,
       "price_text": "850 ₽; льготный — 650 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -41064,7 +41064,7 @@
       "time_evidence": "24 октября 2026 14:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
       "editor_overrides": {
-        "registration": false
+        "registration": null
       }
     },
     {
@@ -44618,82 +44618,6 @@
       }
     },
     {
-      "id": "spb-2026-10-27-2f6fb76662",
-      "status": "new",
-      "kind": "exhibition",
-      "city": "spb",
-      "date": "2026-10-27",
-      "time": "",
-      "title": "Выставка «Пластический код Эрьзи» раскроет секрет стиля скульптора",
-      "venue": "",
-      "address": "",
-      "price": 0,
-      "price_text": "Бесплатно",
-      "registration": false,
-      "categories": [
-        "выставка"
-      ],
-      "description": "Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами! Также вы можете отправить статью в социальной сети или мессенджере Если у вас есть чем поделиться с нашими читателями, вы можете предложить свою статью.",
-      "url": "https://spbcult.ru/news/anonsy/vystavka-plasticheskiy-kod-erzi-raskroet-sekret-stilya-skulptora/",
-      "source": "Петербургский дневник культуры — анонсы",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-10-27",
-      "price_type": "free",
-      "availability_evidence": "",
-      "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "start_date": "2026-10-27",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": ""
-    },
-    {
-      "id": "spb-2026-10-27-986b15d13f",
-      "status": "new",
-      "kind": "exhibition",
-      "city": "spb",
-      "date": "2026-10-27",
-      "time": "",
-      "title": "Выставка «Продолжая традиции» открылась в Институте культурных программ",
-      "venue": "",
-      "address": "",
-      "price": 0,
-      "price_text": "Бесплатно",
-      "registration": false,
-      "categories": [
-        "выставка"
-      ],
-      "description": "Правообладатель: Институт культурных программ. «Мы открываем персональную выставку замечательного живописца. Хочу отметить, Александра Фёдоровна не только художник.",
-      "url": "https://spbcult.ru/news/anonsy/v-ikp-otkrylas-vystavka-v-pamyat-o-zasluzhennom-rabotnike-kultury-rf-aleksandry-belolipetskoy/",
-      "source": "Петербургский дневник культуры — анонсы",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-10-27",
-      "price_type": "free",
-      "availability_evidence": "",
-      "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "start_date": "2026-10-27",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": ""
-    },
-    {
       "id": "moscow-2026-10-27-d5623dd3d1",
       "status": "rejected",
       "kind": "event",
@@ -44728,41 +44652,6 @@
       "instagram_include": false,
       "time_verification": "unverified",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
-    },
-    {
-      "id": "spb-2026-10-27-5995f84169",
-      "status": "new",
-      "kind": "event",
-      "city": "spb",
-      "date": "2026-10-27",
-      "time": "",
-      "title": "Государственный Эрмитаж",
-      "venue": "Государственный Эрмитаж",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [],
-      "description": "",
-      "url": "https://hermitagemuseum.org/what-s-on/afisha_mincult/?lng=ru",
-      "source": "Государственный Эрмитаж — выставки и события",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-10-27",
-      "price_type": "unknown",
-      "availability_evidence": "",
-      "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-27-98f4534d25",
@@ -44842,40 +44731,6 @@
       "editor_overrides": {
         "time": ""
       }
-    },
-    {
-      "id": "spb-2026-10-27-15597ae94c",
-      "status": "new",
-      "kind": "event",
-      "city": "spb",
-      "date": "2026-10-27",
-      "time": "",
-      "title": "Культурные мероприятия, доступные для людей с инвалидностью в Петербурге: ноябрь 2026",
-      "venue": "",
-      "address": "",
-      "price": 0,
-      "price_text": "Бесплатно",
-      "registration": true,
-      "categories": [],
-      "description": "Библиотека для слепых и слабовидящих. у главного входа со стороны ул. Стрельнинской напротив поста охраны установлена тактильно-звуковая мнемосхема; у входа размещены объявления с телефонами сопровождения: +7 (812) 417-56-85, +7 (812) 417-52-11;",
-      "url": "https://spbcult.ru/news/anonsy/kulturnye-meropriyatiya-dostupnye-dlya-lyudey-s-invalidnostyu-v-peterburge-noyabr-2026/",
-      "source": "Петербургский дневник культуры — анонсы",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-10-27",
-      "price_type": "free",
-      "availability_evidence": "",
-      "ticket_required": true,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "telegram_include": false,
-        "instagram_include": false
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-27-1ad5cc054d",
@@ -44999,41 +44854,6 @@
       }
     },
     {
-      "id": "spb-2026-10-27-eb0460c423",
-      "status": "new",
-      "kind": "event",
-      "city": "spb",
-      "date": "2026-10-27",
-      "time": "",
-      "title": "Московские триумфальные ворота: история крупнейшего чугунного памятника Петербурга",
-      "venue": "",
-      "address": "",
-      "price": 0,
-      "price_text": "Бесплатно",
-      "registration": false,
-      "categories": [],
-      "description": "28 октября (по старому стилю – 16 октября) 1838 года в Петербурге в память о победах русского оружия в войнах с Персией и Турцией 1826–1829 годов были торжественно открыты Московские триумфальные ворота – крупнейшее в мире на тот момент сборное сооружение из чугуна.",
-      "url": "https://spbcult.ru/news/anonsy/moskovskie-triumfalnye-vorota-istoriya-krupneyshego-chugunnogo-pamyatnika-peterburga/",
-      "source": "Петербургский дневник культуры — анонсы",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-10-27",
-      "price_type": "free",
-      "availability_evidence": "",
-      "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": ""
-    },
-    {
       "id": "moscow-2026-10-27-086888f0c0",
       "status": "rejected",
       "kind": "event",
@@ -45151,80 +44971,6 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
-      "id": "spb-2026-10-27-56ca3a3a08",
-      "status": "new",
-      "kind": "event",
-      "city": "spb",
-      "date": "2026-10-27",
-      "time": "",
-      "title": "Фестиваль русского искусства «Петербургская осень» отмечает юбилей",
-      "venue": "",
-      "address": "",
-      "price": 0,
-      "price_text": "Бесплатно",
-      "registration": false,
-      "categories": [
-        "диалог"
-      ],
-      "description": "Грядущее открытие «Петербургской осени» обещает быть особенным. Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами!",
-      "url": "https://spbcult.ru/news/anonsy/festival-russkogo-iskusstva-peterburgskaya-osen-otmechaet-yubiley/",
-      "source": "Петербургский дневник культуры — анонсы",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-10-27",
-      "price_type": "free",
-      "availability_evidence": "",
-      "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": ""
-    },
-    {
-      "id": "spb-2026-10-27-9f933ef51d",
-      "status": "new",
-      "kind": "event",
-      "city": "spb",
-      "date": "2026-10-27",
-      "time": "",
-      "title": "Художники-архитекторы спроектировали и нарисовали Петербург",
-      "venue": "",
-      "address": "",
-      "price": 0,
-      "price_text": "Бесплатно",
-      "registration": false,
-      "categories": [
-        "диалог"
-      ],
-      "description": "«Наш проект — это Петербург как архитектурный ансамбль, увиденный глазами художника. Экспозиция выстроена как неспешная прогулка по городу в графике: от торжественных парадных видов до тихих, почти незаметных уголков, хранящих особую атмосферу», — говорит директор «Общества поощрения художеств» Людмила Ермолина.",
-      "url": "https://spbcult.ru/news/anonsy/khudozhniki-arkhitektory-sproektirovali-i-narisovali-peterburg-/",
-      "source": "Петербургский дневник культуры — анонсы",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-10-27",
-      "price_type": "free",
-      "availability_evidence": "",
-      "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": ""
-    },
-    {
       "id": "moscow-2026-10-04-65ab0155ea",
       "status": "rejected",
       "kind": "event",
@@ -45301,82 +45047,6 @@
       "reviewed_at": "2026-10-24",
       "time_verification": "unverified",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
-    },
-    {
-      "id": "moscow-2026-10-25-c40e7952b7",
-      "status": "rejected",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-10-27",
-      "time": "10:00",
-      "title": "Воркшопы",
-      "venue": "ЦСИ Винзавод",
-      "address": "",
-      "price": 0,
-      "price_text": "Бесплатно",
-      "registration": false,
-      "categories": [
-        "лекция"
-      ],
-      "description": "",
-      "url": "https://www.winzavod.ru/calendar/workshops/",
-      "source": "ЦСИ Винзавод",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-10-25",
-      "price_type": "free",
-      "availability_evidence": "",
-      "ticket_required": true,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false,
-        "status": "rejected"
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": "2026-10-27"
-    },
-    {
-      "id": "moscow-2026-10-25-fefbfbd35d",
-      "status": "rejected",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-10-27",
-      "time": "10:00",
-      "title": "Курсы",
-      "venue": "ЦСИ Винзавод",
-      "address": "",
-      "price": 0,
-      "price_text": "Бесплатно",
-      "registration": false,
-      "categories": [
-        "лекция"
-      ],
-      "description": "",
-      "url": "https://www.winzavod.ru/calendar/course/",
-      "source": "ЦСИ Винзавод",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-10-25",
-      "price_type": "free",
-      "availability_evidence": "",
-      "ticket_required": true,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false,
-        "status": "rejected"
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": "2026-10-27"
     },
     {
       "id": "moscow-2026-10-27-b2f389d79e",
@@ -45749,39 +45419,6 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": "2026-10-24"
-    },
-    {
-      "id": "moscow-2026-10-27-618b00b055",
-      "status": "new",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-10-27",
-      "time": "17:22",
-      "title": "Школа Родченко - С 29 октября по 7 ноября приглашаем в Школу Родченко!",
-      "venue": "Московская школа фотографии и мультимедиа имени Родченко",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [],
-      "description": "",
-      "url": "https://mdfschool.ru/events/anounces/news_url_posvyat26/",
-      "source": "Школа Родченко — новости и события",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-10-27",
-      "price_type": "unknown",
-      "availability_evidence": "",
-      "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false
-      },
-      "telegram_include": false,
-      "instagram_include": false
     },
     {
       "id": "spb-2026-10-27-e203f3c49f",
@@ -46237,6 +45874,32 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
+      "id": "spb-2026-10-28-5995f84169",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-28",
+      "time": "",
+      "title": "Государственный Эрмитаж",
+      "venue": "Государственный Эрмитаж",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "",
+      "url": "https://hermitagemuseum.org/what-s-on/afisha_mincult/?lng=ru",
+      "source": "Государственный Эрмитаж — выставки и события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-28",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-10-28-98f4534d25",
       "status": "rejected",
       "kind": "event",
@@ -46314,6 +45977,34 @@
       "editor_overrides": {
         "time": ""
       }
+    },
+    {
+      "id": "moscow-2026-10-28-30cdfdde0f",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-28",
+      "time": "",
+      "title": "Клуб английского языка «От Биг-Бена до Букингема: по страницам английской литературы»",
+      "venue": "Еврейский музей и центр толерантности",
+      "address": "",
+      "price": 4000,
+      "price_text": "4000 ₽",
+      "registration": null,
+      "categories": [
+        "игра"
+      ],
+      "description": "4 000 ₽ - Абонемент (4 занятия) 1 100 ₽ - Разовое занятие Программа 28 октября 2026 (16:00-17:00) 04 ноября 2026 (16:00-17:00) 11 ноября 2026 (16:00-17:00) 18 ноября 2026 (16:00-17:00) 25 ноября 2026 (16:00-17:00) 02 декабря 2026 (16:00-17:00) 09 декабря 2026 (16:00-17:00) 16 декабря 2026 (16:00-17:00) 23 декабря 2026 (16:00-17:00)",
+      "url": "https://www.jewish-museum.ru/events/klub-angliyskogo-yazyka-ot-big-bena-do-bukingema-po-stranitsam-angliyskoy-literatury/",
+      "source": "Еврейский музей и центр толерантности",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-28",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-10-28-8c7ac32fc5",
@@ -46436,6 +46127,32 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
+      "id": "spb-2026-10-28-39cbd1ec5c",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-28",
+      "time": "",
+      "title": "Поезд Деда Мороза возвращается",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами! Также вы можете отправить статью в социальной сети или мессенджере Если у вас есть чем поделиться с нашими читателями, вы можете предложить свою статью.",
+      "url": "https://spbcult.ru/news/anonsy/2026-poezd-deda-moroza-vozvrashchaetsya/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-28",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "spb-2026-10-28-b9cccfc03b",
       "status": "new",
       "kind": "exhibition",
@@ -46549,6 +46266,82 @@
       "reviewed_at": ""
     },
     {
+      "id": "moscow-2026-10-25-c40e7952b7",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-28",
+      "time": "10:00",
+      "title": "Воркшопы",
+      "venue": "ЦСИ Винзавод",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "",
+      "url": "https://www.winzavod.ru/calendar/workshops/",
+      "source": "ЦСИ Винзавод",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-25",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false,
+        "status": "rejected"
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": "2026-10-27"
+    },
+    {
+      "id": "moscow-2026-10-25-fefbfbd35d",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-28",
+      "time": "10:00",
+      "title": "Курсы",
+      "venue": "ЦСИ Винзавод",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "",
+      "url": "https://www.winzavod.ru/calendar/course/",
+      "source": "ЦСИ Винзавод",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-25",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false,
+        "status": "rejected"
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": "2026-10-27"
+    },
+    {
       "id": "moscow-2026-10-28-6fdd3ff58e",
       "status": "rejected",
       "kind": "event",
@@ -46587,6 +46380,34 @@
       "time_verification": "verified",
       "time_evidence": "28 октября 2026 11:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
+      "id": "moscow-2026-10-28-f044d8e0b5",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-28",
+      "time": "14:00",
+      "title": "История наземного городского транспорта",
+      "venue": "Музей Транспорта Москвы",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "",
+      "url": "https://mtmuseum.ru/affiche/istoriya-nazemnogo-gorodskogo-transporta/",
+      "source": "Музей транспорта Москвы — афиша",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-28",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-10-28-14d1173fbf",
@@ -46628,6 +46449,34 @@
       "time_verification": "verified",
       "time_evidence": "28 октября 2026 (среда) 15:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
+      "id": "moscow-2026-10-28-675d262640",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-28",
+      "time": "16:00",
+      "title": "История Московского метрополитена",
+      "venue": "Музей Транспорта Москвы",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "",
+      "url": "https://mtmuseum.ru/affiche/istoriya-moskovskogo-metropolitena/",
+      "source": "Музей транспорта Москвы — афиша",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-28",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "spb-2026-10-28-6274d9b2ae",
@@ -46698,6 +46547,34 @@
       },
       "telegram_include": false,
       "instagram_include": false
+    },
+    {
+      "id": "moscow-2026-10-28-b2f389d79e",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-28",
+      "time": "18:00",
+      "title": "Маршрут по истории наземного и подземного транспорта",
+      "venue": "Музей Транспорта Москвы",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "",
+      "url": "https://mtmuseum.ru/affiche/marshrut-po-istorii-nazemnogo-i-podzemnogo-transporta/",
+      "source": "Музей транспорта Москвы — афиша",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-28",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-10-28-08573941ce",
@@ -46842,7 +46719,7 @@
       "discovered_at": "2026-10-15",
       "price_type": "paid",
       "availability": "sold_out",
-      "availability_checked_at": "2026-10-27",
+      "availability_checked_at": "2026-10-28",
       "sheet_synced_description": "",
       "editor_note": "",
       "social_priority": null,
@@ -47696,6 +47573,34 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
+      "id": "moscow-2026-10-29-5bf68881ae",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-29",
+      "time": "",
+      "title": "Сокровища и чудовища древнего мира",
+      "venue": "Еврейский музей и центр толерантности",
+      "address": "",
+      "price": 1100,
+      "price_text": "1100 ₽",
+      "registration": null,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "1 100 ₽ - разовое занятие 4 000 ₽ - абонемент на четыре занятия Сентябрь посвятим таинственной Египетской цивилизации: три занятия с мастер-классами для детей 5 – 7 лет, где дети познакомятся с древней историей Египта! 29 октября | На вершине Олимпа: знакомство с греческими богами",
+      "url": "https://www.jewish-museum.ru/events/sokrovishcha-i-chudovishcha-drevnego-mira/",
+      "source": "Еврейский музей и центр толерантности",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-28",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-10-29-6ae8537f08",
       "status": "rejected",
       "kind": "event",
@@ -48283,6 +48188,34 @@
       "time_verification": "verified",
       "time_evidence": "29 октября 2026 (четверг) 19:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
+      "id": "moscow-2026-10-29-614555ac64",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-29",
+      "time": "19:00",
+      "title": "Лекция Ирины Актугановой «Движение от интермедиальности к междисциплинарности в художественных проектах и институциях Санкт-Петербурга»",
+      "venue": "Музей «Гараж»",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": true,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Лекция посвящена истории развития междисциплинарного искусства в Санкт-Петербурге — от технологических художественных практик 1990-х годов до новых форм взаимодействия искусства, науки и технологий в 2000-е и 2010-е годы.",
+      "url": "https://garagemca.org/event/irina-aktuganova-lecture-from-intermediality-to-interdisciplinarity-in-st-petersburg-art-projects-and-institutions",
+      "source": "Музей современного искусства «Гараж»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-28",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-10-29-2b2a385dc4",
@@ -49486,7 +49419,7 @@
       "address": "Лаврушинский переулок, 12",
       "price": 650,
       "price_text": "650 ₽; онлайн — 700 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -49503,7 +49436,7 @@
         "telegram_include": false,
         "instagram_include": false,
         "status": "approved",
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -51619,14 +51552,16 @@
       "price": 0,
       "price_text": "",
       "registration": false,
-      "categories": [],
+      "categories": [
+        "выставка"
+      ],
       "description": "На метро Музей AZ находится между станциями метро «Маяковская» и «Белорусская» (кольцевая). Мы рекомендуем идти в Музей от станции «Маяковская». Вам нужен Выход №1 на 1-я Тверская-Ямская улица, 2-я Тверская-Ямская улица.",
       "url": "https://museum-az.com/event/territoriya-svobody-nonkonformisty-v-taruse/",
       "source": "Музей AZ — выставки и события",
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-10-20",
-      "price_type": "paid",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-10-25",
       "editor_overrides": {
@@ -52244,7 +52179,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-01-ca1460b952",
@@ -52657,6 +52594,32 @@
       }
     },
     {
+      "id": "moscow-2026-11-02-c3cb427dd4",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-02",
+      "time": "",
+      "title": "Арт-территория «Контур»",
+      "venue": "Еврейский музей и центр толерантности",
+      "address": "",
+      "price": 1100,
+      "price_text": "1100 ₽",
+      "registration": null,
+      "categories": [],
+      "description": "1 100 ₽ - разовый билет 4 000 ₽ - абонемент на 4 занятия Отправимся в путешествие по главным эпохам и направлениям европейского искусства: от Возрождения до искусства XX века. Будем рисовать музыку, собирать картины из геометрических фигур, придумывать несуществующих животных, искать цвета настроения и создавать собственный художественный язык.",
+      "url": "https://www.jewish-museum.ru/events/art-territoriya-kontur-/",
+      "source": "Еврейский музей и центр толерантности",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-28",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-02-5f73160fd7",
       "status": "approved",
       "kind": "event",
@@ -52890,6 +52853,34 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
+      "id": "spb-2026-11-02-1970546180",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-02",
+      "time": "19:00",
+      "title": "Лекция «Коронованные пациенты: как и чем лечили царей и императоров»",
+      "venue": "Российская национальная библиотека",
+      "address": "Московский пр., д. 165, корп. 2",
+      "price": 200,
+      "price_text": "200 ₽",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Автор цикла и лектор — ведущий археограф Отдела рукописей РНБ Д. О. Алешин",
+      "url": "https://nlr.ru/nlr_visit/event/3710",
+      "source": "Российская национальная библиотека — афиша",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-28",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "spb-2026-11-03-11a6fcdd93",
       "status": "approved",
       "kind": "event",
@@ -53004,6 +52995,32 @@
       "instagram_include": false
     },
     {
+      "id": "moscow-2026-11-03-1405247759",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-03",
+      "time": "",
+      "title": "Студия «Шерлоковедение»",
+      "venue": "Еврейский музей и центр толерантности",
+      "address": "",
+      "price": 1100,
+      "price_text": "1100 ₽",
+      "registration": null,
+      "categories": [],
+      "description": "Как передать зашифрованное сообщение напарнику, если он находится на другом конце секретной базы? Зачем профессиональному сыщику может понадобиться собственный рупор и как собрать его своими руками из простых материалов? Проверим свой слух и зоркость в серии динамичных шпионских игр.",
+      "url": "https://www.jewish-museum.ru/events/studiya-sherlokovedenie/",
+      "source": "Еврейский музей и центр толерантности",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-28",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-03-b9a5fe1f3d",
       "status": "approved",
       "kind": "event",
@@ -53077,6 +53094,34 @@
       },
       "telegram_include": false,
       "instagram_include": false
+    },
+    {
+      "id": "moscow-2026-11-03-4797bda394",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-03",
+      "time": "19:30",
+      "title": "Специальный показ. Новый дом",
+      "venue": "Центр Зотов",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "спецпоказ"
+      ],
+      "description": "",
+      "url": "https://centrezotov.ru/events/speczialnyj-pokaz-novyj-dom/",
+      "source": "Центр Зотов",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-28",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "international-2026-11-04-8b7a0eb137",
@@ -53449,6 +53494,34 @@
       "reviewed_at": "2026-10-27"
     },
     {
+      "id": "moscow-2026-11-04-291751795a",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-04",
+      "time": "19:00",
+      "title": "Арт-встреча: осенний абстрактный коллаж (14 - 22 года)",
+      "venue": "Еврейский музей и центр толерантности",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Творческая встреча по созданию абстрактного коллажа для людей от 14 до 22 лет. Вход свободный по регистрации.",
+      "url": "https://www.jewish-museum.ru/events/art-vstrecha-osenniy-abstraktnyy-kollazh-14-22-goda/",
+      "source": "Еврейский музей и центр толерантности",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-28",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "spb-2026-11-04-2bcb79c0ea",
       "status": "rejected",
       "kind": "event",
@@ -53520,6 +53593,34 @@
       "time_verification": "verified",
       "time_evidence": "04.11.2026 19:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
+      "id": "moscow-2026-11-04-b494ef8640",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-04",
+      "time": "19:30",
+      "title": "Страна алмазов и золота: как евреи поселились на юге Африки",
+      "venue": "Еврейский музей и центр толерантности",
+      "address": "",
+      "price": 500,
+      "price_text": "500 ₽",
+      "registration": null,
+      "categories": [
+        "игра"
+      ],
+      "description": "",
+      "url": "https://www.jewish-museum.ru/events/strana-almazov-i-zolota-kak-evrei-poselilis-na-yuge-afriki/",
+      "source": "Еврейский музей и центр толерантности",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-28",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-05-54179407af",
@@ -53715,6 +53816,34 @@
       "editor_overrides": {
         "time": ""
       }
+    },
+    {
+      "id": "spb-2026-11-05-5fe0d5bb80",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-05",
+      "time": "18:00",
+      "title": "Лекция « Бабочки и цветы: предметы искусства глазами биологов »",
+      "venue": "Российская национальная библиотека",
+      "address": "пл. Островского, д. 1-3",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Лектор — кандидат биологических наук В. А. Бубырева",
+      "url": "https://nlr.ru/nlr_visit/event/3746",
+      "source": "Российская национальная библиотека — афиша",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-28",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "spb-2026-11-05-0bce51b132",
@@ -54414,6 +54543,60 @@
       }
     },
     {
+      "id": "spb-2026-11-07-3c5f35e68d",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-07",
+      "time": "14:00",
+      "title": "в Открытой гостиной состоится вторая часть",
+      "venue": "Открытая гостиная",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "лекции «Роберт Шекли. Часть 3. Рассказы до 70-х» Продолжаем разговор об одном из самых ярких и остроумных фантастов XX века. В центре внимания: поздние десятилетия творчества, время, когда зрелый Шекли продолжал удивлять читателей и создавал свои самые глубокие и неожиданные иронические рассказы. Речь пойдёт не только о знаменитых рассказах, но и о романах и повестях, написанных в тот поздний период научной фантастики. Присоединяйтесь, чтобы узнать, каким был Шекли на позднем этапе своего пути. Лектор — Станислав Золотько,",
+      "url": "https://otkrytaya-gostinaya.timepad.ru/event/4269898/",
+      "source": "Открытая гостиная — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-10-28",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "spb-2026-11-07-e58254161c",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-07",
+      "time": "16:00",
+      "title": "Кажется, 7-го ноября уже перестало ассоциироваться с красными флагами и громкими призывами.",
+      "venue": "Открытая гостиная",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "встреча"
+      ],
+      "description": "Теперь мы спокойно закутываемся в любимые пледы с книжками, или просто планируем короткие поездки \"на ноябрьские\", или мирно готовимся к зиме... Но без революций не было бы, наверное, ни пледов, ни поездок. А генетическая память, возможно, всё-таки существует. В какой момент человек решает, что пора что-то менять кардинально? В истории, в науке, просто в жизни, в конце концов? Кто они - герои баталий - внешних и внутренних? И действительно ли революция ведёт к прогрессу? На очередной встрече испанского клуба обсудим разнообразные революции - от научных и исторических до литературных и модных.",
+      "url": "https://otkrytaya-gostinaya.timepad.ru/event/4277182/",
+      "source": "Открытая гостиная — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-10-28",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "spb-2026-11-07-6274d9b2ae",
       "status": "rejected",
       "kind": "event",
@@ -54893,6 +55076,35 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": "2026-10-24"
+    },
+    {
+      "id": "moscow-2026-11-10-b9a5fe1f3d",
+      "status": "check",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-10",
+      "time": "10:30",
+      "title": "Тематические наброски",
+      "venue": "Простая школа",
+      "address": "Москва, ул. Пятницкая, 71/5, строение 2, офис 503",
+      "price": 750,
+      "price_text": "750 ₽",
+      "registration": null,
+      "categories": [
+        "наброски"
+      ],
+      "description": "Те же наброски, но с темой, которую задает ведущий.Ищем новые выразительные средства и пластические решения. Тема не обязательство — рисуем, что интересно.",
+      "url": "https://prostaya.ru/praktiki",
+      "source": "Простая школа — открытые практики",
+      "checked_at": "",
+      "review_reason": "recurring_schedule_confirm_specific_date",
+      "discovered_at": "2026-10-28",
+      "editor_note": "По еженедельному расписанию школы; проверить отмены и анонс конкретной даты.",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "spb-2026-11-10-d70f2c6fd6",
@@ -55848,6 +56060,34 @@
       }
     },
     {
+      "id": "spb-2026-11-13-aecd2362ef",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-13",
+      "time": "19:00",
+      "title": "Лекция «”Не роман, а роман в стихах — дьявольская разница!” А. С. Пушкин. “Евгений Онегин”»",
+      "venue": "Российская национальная библиотека",
+      "address": "Московский пр., д. 165, корп. 2",
+      "price": 200,
+      "price_text": "200 ₽",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Автор цикла и лектор — старший научный сотрудник отдела рукописей РНБ, доцент кафедры истории русской литературы СПбГУ, кандидат филологических наук Е. А. Филонов.",
+      "url": "https://nlr.ru/nlr_visit/event/3711",
+      "source": "Российская национальная библиотека — афиша",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-28",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-13-8f293dde1e",
       "status": "approved",
       "kind": "event",
@@ -55947,7 +56187,7 @@
       "discovered_at": "2026-10-17",
       "price_type": "paid",
       "availability": "sold_out",
-      "availability_checked_at": "2026-10-27",
+      "availability_checked_at": "2026-10-28",
       "editor_overrides": {
         "telegram_include": false,
         "instagram_include": false,
@@ -56436,7 +56676,7 @@
       "discovered_at": "2026-10-17",
       "price_type": "paid",
       "availability": "sold_out",
-      "availability_checked_at": "2026-10-27",
+      "availability_checked_at": "2026-10-28",
       "editor_overrides": {
         "telegram_include": false,
         "instagram_include": false,
@@ -56474,7 +56714,7 @@
       "discovered_at": "2026-10-20",
       "price_type": "paid",
       "availability": "sold_out",
-      "availability_checked_at": "2026-10-27",
+      "availability_checked_at": "2026-10-28",
       "editor_overrides": {
         "telegram_include": false,
         "instagram_include": false,
@@ -56729,7 +56969,7 @@
       "discovered_at": "2026-10-18",
       "price_type": "paid",
       "availability": "sold_out",
-      "availability_checked_at": "2026-10-27",
+      "availability_checked_at": "2026-10-28",
       "editor_overrides": {
         "telegram_include": false,
         "instagram_include": false,
@@ -57514,7 +57754,7 @@
       "discovered_at": "2026-10-23",
       "price_type": "paid",
       "availability": "sold_out",
-      "availability_checked_at": "2026-10-27",
+      "availability_checked_at": "2026-10-28",
       "editor_overrides": {
         "telegram_include": false,
         "instagram_include": false,
@@ -57817,7 +58057,7 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "sold_out",
-      "availability_checked_at": "2026-10-27",
+      "availability_checked_at": "2026-10-28",
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
@@ -57939,6 +58179,64 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": "2026-10-24"
+    },
+    {
+      "id": "moscow-2026-11-27-b904ea1219",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-27",
+      "time": "11:15",
+      "title": "Вагон пользы и еще тележка",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": true,
+      "categories": [
+        "встреча"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/loads-of-benefits-and-a-cartload",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-28",
+      "audience_text": "› Дети и подростки Проект : По правилам и без Дата: 4 сен– 27 ноя 2026 Регистрация Возраст: 0-3 Тип: Игра Место: Платформы , Классы Возрастные ограничения 0+ Тринадцать игровых встреч для малышей и их родителей. Ждем родителей и детей от 0 до 3,5 года. Занятия проходят каждую пятницу с 4 сентября по 27 ноября, с 11:15 до 12:15. Обратите внимание: 2 октября занятия не будет. Количество мест ограничено. Каждому ребенку нужна регистрация. Сопровождающему взрослому достаточно регистрации на вход в Дом культуры. T Малыши играют с самого рождения! Через игру ребенок познает мир, выстраивает связь с близким взрослым, учится чувствовать и исследовать. В игре развиваются движения, речь и множество первичных навыков, таких значимых в начале жизни. Иллюстрация: Поля Плавинская Программа следует концепции «Бейби Сенсори» — международной методике гармоничного развития. На встречах мы обсуждаем, как взрослому мягко вести игру, какие форматы подходят детям разного возраста и какие умения формируются в процессе. Мы поговорим о том, как игры помогают ребенку лучше подготовиться к детскому саду, к учебе и новым открытиям. Узнаем, почему мамино пение поддерживает речевое и музыкальное развитие, как прыжки, ползание и прогулки по сенсорным дорожкам укрепляют уверенность и почему так важна совместная игра. Встречи помогут родителям качественно провести время с малышом. Незаметно и легко дети будут развивать ключевые навыки, а взрослые пополнят арсенал идей для игр дома. К каждому занятию мы подготовим карточку-памятку с активностями и их значением. Все фото: Вадим Штэйн Ведущие Аня Великанова — нейропсихолог. В настоящее время учится на клинического психолога в Сеченовском университете и ведет частную психологическую практику. Класс-лидер в АНО «Первые годы». Более 5 лет работает с детьми и подростками. Соня Маркова — психолог-педагог, детский психолог, ABA-специалист. Окончила МПГУ по направлению «психолог-педагог», получила повышение квалификации на обучении по детской психологии, обучение по 1-й ступени ABA-терапии. Педагог в благотворительном фонде для подростков с РАС. Проходила практику в школе приемных родителей в Институте развития семейного устройства. Класс-лидер в АНО «Первые годы». Ассистент Мария Меркулова {\"grid\":{\"width\":963,\"column_width\":89,\"columns_n\":9,\"gutter\":20,\"margin\":0,\"line\":10},\"palette\":\"default\",\"responsive_mode\":true,\"responsive_min_width\":512,\"responsive_max_width\":1100,\"colorchanger_fullscreen\":false,\"colorchanger_overflow\":true,\"page_cropping\":",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "moscow-2026-11-27-cf673211bf",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-27",
+      "time": "17:00",
+      "title": "Тонкости восприятия",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": true,
+      "categories": [
+        "публичная программа"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/subtleties-of-perception",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-28",
+      "audience_text": "› Практики › инклюзивные Дата: с 25 апр 2026 Возраст: от 16 Тип: Публичная программа Место: Классы , Галереи 2 этажа Доступность  Возрастные ограничения 16+ Регулярные встречи для незрячих и слабовидящих посетителей, приуроченные к текущим выставкам Дома культуры и направленные на формирование целостного опыта их восприятия. Расписание 23 окт, 13, 20 и 27 ноя, 18 дек с 17:00 до 19:00 Встречи проходят в Классах Дома культуры. Чтобы зарегистрироваться, напишите* нам в Телеграм, WhatsApp , СМС-сообщения на +7 (963) 996 3687 . T Программа предполагает последовательное знакомство с тематикой выставки и ее художественным контекстом через различные медиумы — тактильные, звуковые, ольфакторные. Встречи включают совместный анализ ключевых идей и решений, а также последующее исследование экспозиции с тифлокомментированием. В программе примут участие медиаторы Дома культуры, кураторы выставок и другие приглашенные специалисты. Каждой выставке посвящается цикл из нескольких встреч, выстроенных как последовательное погружение в ее концепцию и структуру. Мы рекомендуем участникам по возможности посещать весь цикл встреч, чтобы сохранить целостность опыта и динамику групповой работы. Программа ориентирована на формирование устойчивой группы, которая проходит путь исследования выставки вместе. В программе будут использоваться тактильные материалы и модели, сделанные в Центре художественного производства « Своды ». Автор программы Тимофей Горшков — медиатор и консультант по вопросам доступности музеев и культурных институций. Читает лекции о музыке и учится в магистратуре на философском факультете в МГУ имени М. В. Ломоносова. Медиаторы « ГЭС-2 » Маша Галочкина, Катерина Ляйнен, Алина Мирошник, Настя Стреблянская, Тая Фролова, Виктор Циряниди Ассистенты Полина Губай, Лена Паневина, Элина Штанько Специалист по работе со станками ЧПУ и 3D-печатью Центра художественного производства «Своды» Сергей Калинин * Пожалуйста, обратите внимание, что, сообщая нам свои личные данные, вы даете согласие на их обработку в соответствии с нашей Политикой в отношении обработки и защиты персональных данных . Куратор Александра Харченко {\"grid\":{\"width\":963,\"column_width\":89,\"columns_n\":9,\"gutter\":20,\"margin\":0,\"line\":10},\"palette\":\"default\",\"responsive_mode\":true,\"responsive_min_width\":512,\"responsive_max_width\":1100,\"colorchanger_fullscreen\":false,\"colorchanger_overflow\":true,\"page_cropping\":false,\"global_google_analytics_id\":\"\",\"global_yandex_metrika_id\":\"\",\"article_mode\":{\"mode\":\"page\",\"t",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "international-2026-11-30-9a278ceca1",
@@ -58080,7 +58378,7 @@
       "audience_text": "Opportunity details | Open Call for JustArt Newspaper Club Issue 9 | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register Open Call for JustArt Newspaper Club Issue 9 Deadline: 05/12/2026 Jenny Ping Lam Lin Report this? Description Make a submission Contact curator Open Call - Issue 9 Digital Residues In an era of technological hyper-acceleration, we leave behind an expanding landscape of digital detritus: obsolete formats, corrupted data, forgotten archives and emotional traces embedded within our screens. For Issue 9, Digital Residues, JustArt invites artists, curators and writers to examine the blind spots of the virtual world and explore what remains when digital promises of seamless connectivity and permanence begin to fracture. We are particularly interested in the shifting relationship between human creativity and artificial intelligence. As generative technologies reshape artistic practice, how do we negotiate authorship, agency, and creative freedom? Should we defend the boundaries of human craftsmanship, or embrace collaboration with intelligent systems to expand the possibilities of expression? We welcome submissions that investigate the material, cultural, and psychological tensions between human expression and machine learning. From digital decay and forgotten archives to algorithmic aesthetics, technological memory and acts of creative resistance, we invite you to reconsider the remnants of our increasingly automated world. What does it mean to create, remember, and resist in a world shaped by machines? What We’re Looking For: Artists: Submit 5-8 images of your artwork, along with a description of your work, your bio, and an artist statement. Curators: Share your past projects, project concepts, and your bio, along with 5-8 accompanying images Participation Fee: £38 (Required for selected participants) - Includes a digital copy Social Media Exposure: Your work will be highlighted on our platforms - JustArt Collective Instagram and website. 5K+ Followers on Instagram, and we are growing! Monthly reviewers on Instagram: 50K+ Distribution: The newspaper will be distributed at various art exhibitions and bookshops across the UK. Bookshops: NewBridge Books (Newcastle Upon Tyne) Kafka Bookshop (London) Good Press (Glasgow) Books From Below (Newcastle Upon Tyne) The JustArt newspaper club (Print) ISSN 2979-5494 The JustArt newspaper club (Online) ISSN 2979-5508 We will feature participants on JustArt Collective social media. As a member of the JustArt community, we will select 1-2 participants for free exhibitions with JustArt. Past selected artists for free exhibitions: Jingyun Guan (Issue1): The Hechyeomoyeo 17 Exhibition in Dublin Aitor Moncho Tudanca (Collective Voices 1st Edition) and Anthony Hodgson(Collective Voices 1st Edition): HCMY Mexicali 2026 in Mexico Jingyun Guan (Issue 1) and Bahar Talebi Najafabadi (Issue 3): Human Voyage: The Day We Leave the Shore Exhibition in London Jenny Ping Lam Lin (Issue 4) and Esther Xiang (Issue 3): The Hechyeomoyeo 13 Exhibition in Thailand Sarah Muwanga (Issue 2) and Chaeyeon Kang (Issue 3): The Shape of Anxiety Exhibition in London Sean BW Parker and Sarah Muwanga (Issue 2): Borderlines Exhibition in London About US: Additional Opportunity Artists participating in this program will be prioritised for invitations to participate in JustArt Collective’s future art exhibitions. About JustArt Collective: JustArt Collective is a dynamic group of artists and curators united by a shared passion for the arts. Originally founded in Hong Kong, the collective is now actively engaged in the UK. Throughout our creative journey, we have recognised the vital role of community within the art world. Our mission is to bring together everyone involved in JustArt projects to form a vibrant new community. We encourage open dialogue and the exchange of ideas on a wide range of art-related topics. This includes not only discussions about artistic practices but also the exploration of how to make art more accessible and visible to a broader audience. By fostering these conversations, we aim to inspire fresh perspectives and a deeper appreciation for art among our community and the wider public. Through collaboration and sharing, we hope to cultivate an environment where creativity thrives and everyone's voice is heard. Join us as we work to redefine the art community and enrich our collective experience. For our newspaper, the first print run will be 50 copies. After we sell out the first round (normally sold out during preorder). We will do 30-50 copies for the second round (distributed at bookshops and exhibitions). More information about JustArt Collective can be found on our official website and Instagram account: @Justart_Collective Make a submission Contact the curator You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Advertisement Other opportunities The 17th Annual Pound Arts Open Exhibition Thank you for submitting your work to the 17th annual Pound Arts Open Exhibition. Please read... Revolution: Open Call for artists in any medium REVOLUTION What is REVOLUTION? Your ideas may be framed in terms of change, transformation, ... Life models wanted in Durham and Hartlepool Looking for life models for regular monthly in-person sessions in Durham, North East England.... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
       "price_type": "unknown",
       "availability": "sold_out",
-      "availability_checked_at": "2026-10-27",
+      "availability_checked_at": "2026-10-28",
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
@@ -58342,7 +58640,7 @@
       "checked_at": "",
       "review_reason": "primary_source_required",
       "discovered_at": "2026-10-27",
-      "audience_text": "Opportunity details | Call for curators or curator/artists to create a site-specific show | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register Call for curators or curator/artists to create a site-specific show Deadline: 31/12/2026 City: London | Country: United Kingdom | GARAGE GALLERY Report this? Description Opportunity FAQs Make a submission Contact curator Garage Gallery E17 is now its fifth year of hosting imaginative, intimate and engaging exhibitions in our light and flexible space in Walthamstow village, East London. In addition to our programme of short group shows we are looking for curators and curator/artists interested in creating a site-specific installation in our space, a garage on the ground floor of a Victorian terraced house. We established the Gallery in 2022 to provide an opportunity for artists, both new to showing work and more established, to bring their work to life, in a welcoming and collaborative environment. Our shows to date have included hung work, sculpture and installations, workshops, audio and video based content and textiles and sculpture. Each curator and group of artists we have worked with has enjoyed the freedom to shape their own exhibition, and their feedback and that of our visitors has been universally positive. In 2024 we hosted ‘Fluorescent Banquet’, which we had first spotted when it was sited near Liverpool St Station in London. Its creators, Alice in Hackneyland, re-created the work in our much more intimate space, and it worked brilliantly. We would love to host something similar again – responding to the space in a surprising/thought-provoking/humorous way. Please let us know your initial ideas for our space (you can see images on our website; note it’s around 20sq meters). We’re not expecting a fully-worked proposal at this stage. If we think your idea is an option for us then we’ll invite you to come and visit the space and talk to us further. Make a submission Contact the curator Who is eligible for this opportunity? Groups of artists (at least three) with a curator (who may be one of the artists), either new to exhibiting or with previous experience. A connection to East London is desirable but not essential. When is the deadline? Thursday 31st December, but we will look at submissions on a rolling basis and we will also be flexible about 'late' submissions. How much does it cost? We operate on a not-for-profit basis and we manage the space on a voluntary basis. There is no cost for submitting proposals at this stage. If we do host your exhibition then we ask groups for a contribution of £60 to cover our costs. We also ask groups to be responsible for purchasing refreshments for a Private View, and we ask for 10% of any sales made. We work with groups on publicity and ask them to produce as a minimum a small number of printed posters (they may choose to produce flyers etc too). Are there payments to artists? No Is there a private view / opening? Yes What are the exhibition opening hours? To be agreed on a show-by-show basis with the group Does the location have disabled access? Yes What publicity will be provided as part of the opportunity? Groups are expected to work with us on publicity including producing posters at their cost. We promote shows via our website and instagram and do some local publicity with flyers/cards. Do I need to be present? Yes we ask curators/artists to invigilate so one person needs to be present when the gallery is open. How do you decide on proposals? We’re not expecting a fully-worked proposal at this stage. We will make an initial decision based on the space, what's worked well before and what we feel might be practical. If we think your idea is an option for us then we’ll invite you to come and visit the space and talk to us further. You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Advertisement Other opportunities One Colour Challenge Collect Art is thrilled to announce a new international open call, inviting artists to explore... Ones to Watch 2027 ONES TO WATCH IS BACK! Are you a Yorkshire-born or Yorkshire-based artist at the start of your... Solitude Collect Art is delighted to present the open call for the upcoming curated online exhibition and... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
+      "audience_text": "Opportunity details | Call for curators or curator/artists to create a site-specific show | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register Call for curators or curator/artists to create a site-specific show Deadline: 31/12/2026 City: London | Country: United Kingdom | GARAGE GALLERY Report this? Description Opportunity FAQs Make a submission Contact curator Garage Gallery E17 is now its fifth year of hosting imaginative, intimate and engaging exhibitions in our light and flexible space in Walthamstow village, East London. In addition to our programme of short group shows we are looking for curators and curator/artists interested in creating a site-specific installation in our space, a garage on the ground floor of a Victorian terraced house. We established the Gallery in 2022 to provide an opportunity for artists, both new to showing work and more established, to bring their work to life, in a welcoming and collaborative environment. Our shows to date have included hung work, sculpture and installations, workshops, audio and video based content and textiles and sculpture. Each curator and group of artists we have worked with has enjoyed the freedom to shape their own exhibition, and their feedback and that of our visitors has been universally positive. In 2024 we hosted ‘Fluorescent Banquet’, which we had first spotted when it was sited near Liverpool St Station in London. Its creators, Alice in Hackneyland, re-created the work in our much more intimate space, and it worked brilliantly. We would love to host something similar again – responding to the space in a surprising/thought-provoking/humorous way. Please let us know your initial ideas for our space (you can see images on our website; note it’s around 20sq meters). We’re not expecting a fully-worked proposal at this stage. If we think your idea is an option for us then we’ll invite you to come and visit the space and talk to us further. Make a submission Contact the curator Who is eligible for this opportunity? Groups of artists (at least three) with a curator (who may be one of the artists), either new to exhibiting or with previous experience. A connection to East London is desirable but not essential. When is the deadline? Thursday 31st December, but we will look at submissions on a rolling basis and we will also be flexible about 'late' submissions. How much does it cost? We operate on a not-for-profit basis and we manage the space on a voluntary basis. There is no cost for submitting proposals at this stage. If we do host your exhibition then we ask groups for a contribution of £60 to cover our costs. We also ask groups to be responsible for purchasing refreshments for a Private View, and we ask for 10% of any sales made. We work with groups on publicity and ask them to produce as a minimum a small number of printed posters (they may choose to produce flyers etc too). Are there payments to artists? No Is there a private view / opening? Yes What are the exhibition opening hours? To be agreed on a show-by-show basis with the group Does the location have disabled access? Yes What publicity will be provided as part of the opportunity? Groups are expected to work with us on publicity including producing posters at their cost. We promote shows via our website and instagram and do some local publicity with flyers/cards. Do I need to be present? Yes we ask curators/artists to invigilate so one person needs to be present when the gallery is open. How do you decide on proposals? We’re not expecting a fully-worked proposal at this stage. We will make an initial decision based on the space, what's worked well before and what we feel might be practical. If we think your idea is an option for us then we’ll invite you to come and visit the space and talk to us further. You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Advertisement Other opportunities Ones to Watch 2027 ONES TO WATCH IS BACK! Are you a Yorkshire-born or Yorkshire-based artist at the start of your... Solitude Collect Art is delighted to present the open call for the upcoming curated online exhibition and... Land/Sea; Photography Exhibition Our exhibitions will explore the polarities of our lives and the world around us. These themes,... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
       "price_type": "unknown",
       "availability_evidence": "",
       "ticket_required": false,

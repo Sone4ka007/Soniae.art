@@ -38277,7 +38277,7 @@
       "reviewed_at": "2026-10-17",
       "availability": "unknown",
       "availability_checked_at": "",
-      "registration": false,
+      "registration": null,
       "price": null,
       "price_text": "",
       "price_type": "paid",
@@ -38303,7 +38303,7 @@
         "status": "approved",
         "telegram_include": false,
         "instagram_include": false,
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -38319,7 +38319,7 @@
       "reviewed_at": "2026-10-17",
       "availability": "unknown",
       "availability_checked_at": "",
-      "registration": false,
+      "registration": null,
       "price": null,
       "price_text": "",
       "price_type": "paid",
@@ -38345,7 +38345,7 @@
         "status": "approved",
         "telegram_include": false,
         "instagram_include": false,
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -40995,7 +40995,7 @@
       "address": "1-й Голутвинский переулок, 16, стр. 1",
       "price": 850,
       "price_text": "850 ₽; льготный — 650 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -41019,7 +41019,7 @@
       "reviewed_at": "2026-10-17",
       "ticket_required": true,
       "editor_overrides": {
-        "registration": false
+        "registration": null
       },
       "time_verification": "verified",
       "time_evidence": "24 октября 2026 14:00",
@@ -41037,7 +41037,7 @@
       "address": "1-й Голутвинский переулок, 16, стр. 1",
       "price": 850,
       "price_text": "850 ₽; льготный — 650 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -41064,7 +41064,7 @@
       "time_evidence": "24 октября 2026 14:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
       "editor_overrides": {
-        "registration": false
+        "registration": null
       }
     },
     {
@@ -46869,6 +46869,34 @@
       "sheet_synced_description": "Further Opportunities: Our curatorial team will also select several outstanding artists for inclusion in the upcoming book edition titled “101 Contemporary Artists and More…”. Selection is based on the overall vision for the book and available space. However, we aim to feature as many artists as possible from our previous magazine editions. Additionally, with each edition, our curators highlight a select group of artists for future exhibitions at our new 170 sq. m professionally curated art gallery in the prestigio"
     },
     {
+      "id": "spb-2026-10-29-8e7224c372",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-29",
+      "time": "",
+      "title": "«У меня был план»: выпускница МШД Марина Подрезова рассказала, как преуспела в интерьерном стайлинге",
+      "venue": "Международная школа дизайна — Петербург",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "Выпускница Международной Школы Дизайна (СПб) Марина Подрезова рассказала, как преуспела в интерьерном стайлинге. Сначала поступила на курс «Декорирование интерьера» , чтобы освоить профессию с нуля, а в процессе обучения открыла для себя направление, которое стало делом ее жизни. (На фото: Стилист, декоратор интерьера Марина Подрезова.",
+      "url": "https://spb.designschool.ru/2026/10/29/u-menya-byl-plan-vypusknica-mshd-marina-podrezova-rasskazala-kak-preuspela-v-interernom-stajlinge/",
+      "source": "Международная школа дизайна — Петербург",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-29",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "spb-2026-10-29-bc177ceacc",
       "status": "rejected",
       "kind": "event",
@@ -46942,6 +46970,62 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
+      "id": "spb-2026-10-29-0b075d9f64",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-29",
+      "time": "",
+      "title": "В Доме книги пройдут «Дни Достоевского»",
+      "venue": "",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [
+        "кинопоказ"
+      ],
+      "description": "Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами! Также вы можете отправить статью в социальной сети или мессенджере Если у вас есть чем поделиться с нашими читателями, вы можете предложить свою статью.",
+      "url": "https://spbcult.ru/news/anonsy/v-sankt-peterburgskom-dome-knigi-proydut-dni-dostoevskogo/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-29",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "spb-2026-10-29-6eb3c64051",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-29",
+      "time": "",
+      "title": "В Мариинском театре состоятся новые премьерные показы оперы «Вильгельм Телль»",
+      "venue": "",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Правообладатель: Мариинский театр. Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами!",
+      "url": "https://spbcult.ru/news/anonsy/v-mariinskom-teatre-sostoyatsya-novye-premernye-pokazy-opery-vilgelm-tell/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-29",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "spb-2026-10-29-28e84b1dd9",
       "status": "new",
       "kind": "exhibition",
@@ -46975,7 +47059,37 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
+    },
+    {
+      "id": "spb-2026-10-29-ef98b98ae0",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-29",
+      "time": "",
+      "title": "В ТЮЗе пройдет круглый стол, посвящённый наследию Зиновия Корогодского",
+      "venue": "",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [
+        "диалог"
+      ],
+      "description": "Правообладатель изображений: Пресс-служба ТЮЗа им. Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами!",
+      "url": "https://spbcult.ru/news/anonsy/v-tyuze-proydet-kruglyy-stol-posvyashchennyy-naslediyu-zinoviya-korogodskogo/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-29",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-10-29-d28e597f20",
@@ -47052,6 +47166,61 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
+      "id": "spb-2026-10-29-f76036d51f",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-29",
+      "time": "",
+      "title": "Всероссийский изобразительный диктант выявит талантливых российских детей",
+      "venue": "",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [],
+      "description": "Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами! Также вы можете отправить статью в социальной сети или мессенджере Если у вас есть чем поделиться с нашими читателями, вы можете предложить свою статью.",
+      "url": "https://spbcult.ru/news/anonsy/vserossiyskiy-izobrazitelnyy-diktant-vyyavit-talantlivykh-rossiyskikh-detey/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-29",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "spb-2026-10-29-081bf71850",
+      "status": "new",
+      "kind": "exhibition",
+      "city": "spb",
+      "date": "2026-10-29",
+      "time": "",
+      "title": "Выставка в «Доме ангелов» учит слышать себя сквозь шум повседневности",
+      "venue": "",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": true,
+      "categories": [
+        "выставка"
+      ],
+      "description": "Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами! Также вы можете отправить статью в социальной сети или мессенджере Если у вас есть чем поделиться с нашими читателями, вы можете предложить свою статью.",
+      "url": "https://spbcult.ru/news/anonsy/vystavka-v-dome-angelov-uchit-slyshat-sebya-za-shumom-povsednevnosti/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-29",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "start_date": "2026-10-29"
+    },
+    {
       "id": "spb-2026-10-29-5995f84169",
       "status": "new",
       "kind": "event",
@@ -47082,7 +47251,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-29-422be2d050",
@@ -47356,6 +47527,69 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
+      "id": "spb-2026-10-29-c8cb62cb07",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-29",
+      "time": "",
+      "title": "Молодёжный театр на Фонтанке проведёт творческий квиз",
+      "venue": "",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [
+        "фестиваль"
+      ],
+      "description": "3 ноября, в рамках Всероссийской культурно-образовательной акции «Ночь искусств», Молодёжный театр на Фонтанке проведёт Театральный квиз. Правообладатель фото: пресс-служба Молодёжного театра на Фонтанке. Театральный квиз – это возможность с головой погрузиться в мир закулисья.",
+      "url": "https://spbcult.ru/news/anonsy/molodyezhnyy-teatr-na-fontanke-provedyet-teatralnyy-kviz/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-29",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "spb-2026-10-29-39e247098d",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-29",
+      "time": "",
+      "title": "Наши события",
+      "venue": "Международная школа дизайна — Петербург",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [],
+      "description": "Преподаватель Международной Школы Дизайна (СПб) Дарья Кузьменко дала интервью РБК, в котором объяснила, почему паника вокруг нейросетей в графическом дизайне преждевременна. По словам эксперта, инструменты на базе ИИ в руках креативного специалиста, который понимает, как их правильно применять, — это эффективное подспорье.",
+      "url": "https://spb.designschool.ru/category/lifeschool/",
+      "source": "Международная школа дизайна — Петербург",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-26",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false,
+        "status": "rejected"
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "reviewed_at": "2026-10-27"
+    },
+    {
       "id": "moscow-2026-10-29-6d8f1e6c5b",
       "status": "rejected",
       "kind": "event",
@@ -47443,17 +47677,19 @@
       "title": "Театр балета имени Леонида Якобсона отмечает 10-летие постановки «Спящая красавица»",
       "venue": "",
       "address": "",
-      "price": null,
-      "price_text": "",
+      "price": 0,
+      "price_text": "Бесплатно",
       "registration": false,
-      "categories": [],
+      "categories": [
+        "фестиваль"
+      ],
       "description": "Правообладатель фото: Пресс-служба Театра балета имени Леонида Якобсона. Правообладатель фото: Пресс-служба Театра балета имени Леонида Якобсона. Спасибо, что оставляете обратную связь!",
       "url": "https://spbcult.ru/news/anonsy/teatr-baleta-imeni-leonida-yakobsona-otmechaet-10-letie-postanovki-spyashchaya-krasavitsa/",
       "source": "Петербургский дневник культуры — анонсы",
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-10-29",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
@@ -47464,7 +47700,48 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
+    },
+    {
+      "id": "moscow-2026-10-29-0c3cbf97be",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-29",
+      "time": "",
+      "title": "Тематическая экскурсия «Русская литература в изгнании. Писатели и читатели русского зарубежья»",
+      "venue": "Дом русского зарубежья им. А. Солженицына",
+      "address": "",
+      "price": 300,
+      "price_text": "300 ₽",
+      "registration": true,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "8 октября 2026 года в 16 часов приглашаем на тематическую экскурсию «Русская литература в изгнании. Писатели и читатели русского зарубежья». Вывезенные из России книги и русская литература стали в изгнании важнейшими средствами сохранения «русскости», памяти о России, поддержания надежды на возвращение.",
+      "url": "https://www.domrz.ru/event/70274_tematicheskaya_ekskursiya_russkaya_literatura_v_izgnanii_pisateli_i_chitateli_russkogo_zarubezhya2008/",
+      "source": "Дом русского зарубежья — афиша",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-05",
+      "price_type": "paid",
+      "availability": "sold_out",
+      "availability_checked_at": "2026-10-29",
+      "sheet_synced_description": "8 октября 2026 года в 16 часов приглашаем на тематическую экскурсию «Русская литература в изгнании. Писатели и читатели русского зарубежья». Вывезенные из России книги и русская литература стали в изгнании важнейшими средствами сохранения «русскости», памяти о России, поддержания надежды на возвращение.",
+      "instagram_image": "",
+      "telegram_include": false,
+      "instagram_include": false,
+      "social_priority": null,
+      "editor_note": "",
+      "social_description": "",
+      "social_title": "",
+      "time_verification": "unverified",
+      "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
+      "editor_overrides": {
+        "time": ""
+      }
     },
     {
       "id": "moscow-2026-10-29-6ae8537f08",
@@ -47502,6 +47779,32 @@
       "reviewed_at": "2026-10-24",
       "time_verification": "unverified",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
+      "id": "spb-2026-10-29-a3364a23db",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-29",
+      "time": "",
+      "title": "Эстетика тревоги А24 и новая культура авторского кино",
+      "venue": "Пушкинская-10",
+      "address": "",
+      "price": 600,
+      "price_text": "600 ₽",
+      "registration": null,
+      "categories": [],
+      "description": "С киноведом, лектором МГИК и независимым исследователем киноязыка Тасей Филиной разберемся как кино, построенное на тревоге, абсурде и нарушении привычных ожиданий, становится частью массовой культуры? A24 превратила странность в художественную ценность, а дискомфорт в эстетику.",
+      "url": "https://p-10.ru/events/estetika-trevogi-a24-i-novaya-kultura-avtorskogo-kino/",
+      "source": "Пушкинская-10 — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-29",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-10-29-600a19d7cf",
@@ -47696,6 +47999,44 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
+      "id": "spb-2026-10-29-df32f22abf",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-29",
+      "time": "12:11",
+      "title": "Название требует проверки",
+      "venue": "Музей «Полторы комнаты» Иосифа Бродского",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "презентация"
+      ],
+      "description": "Презентация книг Галины Зелениной «Чемодан, вокзал, увольте. Позднесоветские евреи между русской интеллигенций и эмиграцией» (Издательство Европейского университета в Санкт-Петербурге, 2026) и «Exnostris. Очерки советской еврейской автобиографии» (Еврейский музей и Центр толерантности, 2026).",
+      "url": "https://brodsky.online/events/chemodan-vokzal-pishite-prezentatsiya-knig-galiny-zeleninoy-chemodan-vokzal-uvolte-pozdnesovetskie-e/",
+      "source": "Полторы комнаты — музей Иосифа Бродского",
+      "checked_at": "",
+      "review_reason": "invalid_title_from_description",
+      "discovered_at": "2026-10-21",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-25",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false,
+        "status": "rejected"
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": "2026-10-25",
+      "time_verification": "verified",
+      "time_evidence": "29.10, чт • 19:00",
+      "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
       "id": "spb-2026-10-29-5dbf975713",
       "status": "approved",
       "kind": "event",
@@ -47731,6 +48072,34 @@
       "telegram_include": false,
       "instagram_include": false,
       "reviewed_at": "2026-10-27"
+    },
+    {
+      "id": "moscow-2026-10-29-a17deeef55",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-29",
+      "time": "14:00",
+      "title": "Бесплатная тематическая экскурсия «Литературные реликвии русского зарубежья»",
+      "venue": "Дом русского зарубежья им. А. Солженицына",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": true,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "29 октября 2026 года в 14 часов приглашаем на бесплатную тематическую экскурсию «Литературные реликвии русского зарубежья». Наш музей хранит память о русских эмигрантах, об их нелегком жизненном пути на чужбине, мечтах и надеждах на возвращение в Россию. Оказавшись в изгнании, они берегли, как святыню, те вещи, что напоминали им о родном доме, близких и друзьях.",
+      "url": "https://www.domrz.ru/event/70376_besplatnaya_tematicheskaya_ekskursiya_literaturnye_relikvii_russkogo_zarubezhya_/",
+      "source": "Дом русского зарубежья — афиша",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-29",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "sold_out",
+      "availability_checked_at": "2026-10-29"
     },
     {
       "id": "spb-2026-10-29-6274d9b2ae",
@@ -47848,6 +48217,34 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
+      "id": "spb-2026-10-29-dc67051929",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-29",
+      "time": "17:30",
+      "title": "Экскурсия «Отражения Новой Голландии» на теплоходе",
+      "venue": "Новая Голландия",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "Где в нашем городе оставили след голландские и новоголландские зодчие, архитекторы и инженеры? А также приключения голландцев в России; «малые» и «большие» голландцы. Ведущий Митя Гольцман — экскурсовод Новой Голландии, краевед, участник археологических экспедиций Государственного Эрмитажа.",
+      "url": "https://www.newhollandsp.ru/events/education/reflections-boat-tour/",
+      "source": "Новая Голландия — Сообщество и образование",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-29",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "spb-2026-10-29-844448fad6",
       "status": "rejected",
       "kind": "event",
@@ -47909,8 +48306,8 @@
       "review_reason": "",
       "discovered_at": "2026-10-16",
       "price_type": "free",
-      "availability": "unknown",
-      "availability_checked_at": "2026-10-25",
+      "availability": "sold_out",
+      "availability_checked_at": "2026-10-29",
       "sheet_synced_description": "Как действовать, если подрядчик отступает от проекта, смета растет, сроки сдвигаются, а технические решения приходится менять уже на объекте? Разберем реальные ситуации из практики ландшафтных дизайнеров и обсудим, как находить решения в сложных рабочих ситуациях. 105120, Россия, Москва, Центр дизайна Artplay, ул.",
       "instagram_include": false,
       "social_title": "",
@@ -47923,6 +48320,34 @@
       "time_verification": "verified",
       "time_evidence": "2026-10-29T18:30",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
+      "id": "moscow-2026-10-29-210c9365ba",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-29",
+      "time": "19:00",
+      "title": "«Семнадцать мгновений весны» (1973) Татьяны Лиозновой – модель «двойной жизни» в живописи 1970-х годов.",
+      "venue": "Музейный центр «Масловка. Городок художников»",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Лекция из цикла «Любить человека». Кинематограф и изобразительное искусство Отношения советского искусства и кинематографа от эпохи Сталинского ампира до Перестройки В этом курсе прослеживаются связи между советским изобразительным искусством, кино и другими феноменами визуальной культуры.",
+      "url": "https://maslovka.org/events/lektsiya-model-dvoynoy-zhizni-v-zhivopisi-1970-kh-i-v-seriale-semnadtsat-mgnoveniy-vesny-1973/",
+      "source": "Масловка — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-29",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-10-29-14d1173fbf",
@@ -48005,6 +48430,34 @@
       "time_verification": "verified",
       "time_evidence": "29.10.2026 19:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
+      "id": "moscow-2026-10-29-afbd75e48e",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-29",
+      "time": "19:00",
+      "title": "Книжный клуб, посвященный обсуждению литературы русской эмиграции. Марина Цветаева «Поэма конца» и «Поэма горы»",
+      "venue": "Дом русского зарубежья им. А. Солженицына",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": true,
+      "categories": [
+        "встреча"
+      ],
+      "description": "29 октября 2026 года в 19 часов приглашаем на очередную встречу книжного клуба, посвященного обсуждению литературы русской эмиграции. Что такое русское зарубежье? Казалось бы, это парадоксальное словосочетание изучено вдоль и поперек: миллионы лекций и семинаров, тысячи конференций, сотни статей, десятки диссертаций.",
+      "url": "https://www.domrz.ru/event/70020_knizhnyy_klub_posvyashchennyy_obsuzhdeniyu_literatury_russkoy_emigratsii_marina_tsvetaeva_poema_konts/",
+      "source": "Дом русского зарубежья — афиша",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-29",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "sold_out",
+      "availability_checked_at": "2026-10-29"
     },
     {
       "id": "spb-2026-10-29-be37c64b5d",
@@ -48201,79 +48654,6 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": ""
-    },
-    {
-      "id": "spb-2026-10-29-df32f22abf",
-      "status": "rejected",
-      "kind": "event",
-      "city": "spb",
-      "date": "2026-10-29",
-      "time": "19:00",
-      "title": "Название требует проверки",
-      "venue": "Музей «Полторы комнаты» Иосифа Бродского",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [
-        "презентация"
-      ],
-      "description": "Презентация книг Галины Зелениной «Чемодан, вокзал, увольте. Позднесоветские евреи между русской интеллигенций и эмиграцией» (Издательство Европейского университета в Санкт-Петербурге, 2026) и «Exnostris. Очерки советской еврейской автобиографии» (Еврейский музей и Центр толерантности, 2026).",
-      "url": "https://brodsky.online/events/chemodan-vokzal-pishite-prezentatsiya-knig-galiny-zeleninoy-chemodan-vokzal-uvolte-pozdnesovetskie-e/",
-      "source": "Полторы комнаты — музей Иосифа Бродского",
-      "checked_at": "",
-      "review_reason": "invalid_title_from_description",
-      "discovered_at": "2026-10-21",
-      "price_type": "unknown",
-      "availability": "unknown",
-      "availability_checked_at": "2026-10-25",
-      "editor_overrides": {
-        "telegram_include": false,
-        "instagram_include": false,
-        "status": "rejected"
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": "2026-10-25",
-      "time_verification": "verified",
-      "time_evidence": "29.10, чт • 19:00",
-      "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
-    },
-    {
-      "id": "moscow-2026-10-29-2b2a385dc4",
-      "status": "rejected",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-10-29",
-      "time": "19:00",
-      "title": "Сборная экскурсия по выставке «Анатолий Зверев. Открытое хранение»",
-      "venue": "Музей AZ",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [
-        "лекция"
-      ],
-      "description": "На экскурсии по выставке «Анатолий Зверев. Открытое хранение» вы узнаете об истории формирования коллекции Музея AZ, увидите ранние произведения Анатолия Зверева, познакомитесь с серией прекрасных женских образов, включая портреты Оксаны Асеевой, и поймете, какую роль в экспозиции играет танцевальный видео-перформанс.",
-      "url": "https://museum-az.com/event/sbornaya-ekskursiya-po-vystavke-anatoliy-zverev-otkrytoe-khranenie-29-109952/",
-      "source": "Музей AZ — выставки и события",
-      "checked_at": "",
-      "review_reason": "excluded_tour_mediation",
-      "discovered_at": "2026-10-25",
-      "price_type": "unknown",
-      "availability_evidence": "",
-      "ticket_required": true,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false
-      },
-      "telegram_include": false,
-      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-29-3830665110",
@@ -48739,6 +49119,45 @@
       }
     },
     {
+      "id": "moscow-2026-10-30-d27db9de0f",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-30",
+      "time": "",
+      "title": "Лекция-экскурсия «Ларисса Андерсен. Судьбы русского зарубежья»",
+      "venue": "Дом русского зарубежья им. А. Солженицына",
+      "address": "",
+      "price": 300,
+      "price_text": "300 ₽",
+      "registration": true,
+      "categories": [
+        "лекция"
+      ],
+      "description": "10 октября 2026 года в 14 часов приглашаем на лекцию-экскурсию «Ларисса Андерсен. Судьбы русского зарубежья». На лекции-экскурсии посетители узнают о жизни и творчестве Лариссы Андерсен — одной из ярких представительниц творческой плеяды русского зарубежья, о которой, к сожалению, мало известно в России.",
+      "url": "https://www.domrz.ru/event/70280_lektsiya_ekskursiya_larissa_andersen_sudby_russkogo_zarubezhya63235654/",
+      "source": "Дом русского зарубежья — афиша",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-07",
+      "price_type": "paid",
+      "availability": "sold_out",
+      "availability_checked_at": "2026-10-29",
+      "sheet_synced_description": "10 октября 2026 года в 14 часов приглашаем на лекцию-экскурсию «Ларисса Андерсен. Судьбы русского зарубежья». На лекции-экскурсии посетители узнают о жизни и творчестве Лариссы Андерсен — одной из ярких представительниц творческой плеяды русского зарубежья, о которой, к сожалению, мало известно в России.",
+      "editor_note": "",
+      "social_title": "",
+      "telegram_include": false,
+      "instagram_include": false,
+      "instagram_image": "",
+      "social_description": "",
+      "social_priority": null,
+      "time_verification": "unverified",
+      "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
+      "editor_overrides": {
+        "time": ""
+      }
+    },
+    {
       "id": "moscow-2026-10-30-b920f54838",
       "status": "rejected",
       "city": "moscow",
@@ -48938,6 +49357,81 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
+      "id": "moscow-2026-11-01-732e936867",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-30",
+      "time": "",
+      "title": "Экскурсионный маршрут / Арт-истории Чистых прудов: от Маросейки до Фурманного",
+      "venue": "Музей AZ",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Большинство из прилегающих к Чистопрудному бульвару улиц и переулков удивительным образом не только сохранили наследие прошлых веков, но и оказались питательной средой и эпицентрами современного искусства.",
+      "url": "https://museum-az.com/event/ekskursionnyy-marshrut-art-istorii-chistykh-prudov-ot-maroseyki-do-furmannogo-08-11/",
+      "source": "Музей AZ — выставки и события",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-21",
+      "price_type": "paid",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-25",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false,
+        "time": ""
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "time_verification": "unverified",
+      "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
+      "id": "moscow-2026-11-01-65ab0155ea",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-30",
+      "time": "",
+      "title": "Экскурсионный маршрут / Вокруг Маяковки: места силы советского андеграунда",
+      "venue": "Музей AZ",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Площадь Маяковского (ныне вновь Триумфальная) — одно из знаковых мест, которые связаны с Оттепелью. Этот недолгий период, с середины 1950-х по середину 1960-х, дал мощный импульс развитию творческой свободы в литературе, театре, изобразительном искусстве. С момента открытия памятника Владимиру Маяковскому начались публичные чтения стихов, в том числе и запрещенных поэтов.",
+      "url": "https://museum-az.com/event/ekskursionnyy-marshrut-ot-vkhutemasa-do-az-arta-31-10/",
+      "source": "Музей AZ — выставки и события",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-09-24",
+      "price_type": "paid",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-25",
+      "social_title": "",
+      "social_description": "",
+      "editor_note": "",
+      "telegram_include": false,
+      "social_priority": null,
+      "instagram_image": "",
+      "instagram_include": false,
+      "reviewed_at": "",
+      "sheet_synced_description": "Площадь Маяковского (ныне вновь Триумфальная) — одно из знаковых мест, которые связаны с Оттепелью. Этот недолгий период, с середины 1950-х по середину 1960-х, дал мощный импульс развитию творческой свободы в литературе, театре, изобразительном искусстве. С момента открытия памятника Владимиру Маяковскому начались публичные чтения стихов, в том числе и запрещенных поэтов.",
+      "time_verification": "unverified",
+      "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
+      "editor_overrides": {
+        "time": ""
+      }
+    },
+    {
       "id": "moscow-2026-10-30-600a19d7cf",
       "status": "rejected",
       "kind": "event",
@@ -49018,6 +49512,246 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
+      "id": "moscow-2026-11-14-65ab0155ea",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-30",
+      "time": "12:30",
+      "title": "Экскурсионный маршрут / Вокруг Маяковки: места силы советского андеграунда",
+      "venue": "Музей AZ",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Площадь Маяковского (ныне вновь Триумфальная) — одно из знаковых мест, которые связаны с Оттепелью. Этот недолгий период, с середины 1950-х по середину 1960-х, дал мощный импульс развитию творческой свободы в литературе, театре, изобразительном искусстве. С момента открытия памятника Владимиру Маяковскому начались публичные чтения стихов, в том числе и запрещенных поэтов.",
+      "url": "https://museum-az.com/event/ekskursionnyy-marshrut-ot-vkhutemasa-do-az-arta-14-11/",
+      "source": "Музей AZ — выставки и события",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-26",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
+    },
+    {
+      "id": "moscow-2026-11-01-fd619c9f4d",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-30",
+      "time": "12:30",
+      "title": "Экскурсионный маршрут / Нонконформисты на Кропоткинской: возмутители спокойствия в благородном предместье",
+      "venue": "Музей AZ",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Местность между Арбатом и Москвой-рекой неизменно привлекает заповедной стариной — хотя в последние десятилетия активно застраивается новым элитным жильем. Тем не менее здесь, в так называемом московском Сен-Жерменском предместье, еще сохранились и допетровские палаты, и ампирные дворянские усадьбы, и купеческие дома в стиле модерн, и конструктивистские здания 1920-30-х.",
+      "url": "https://museum-az.com/event/ekskursionnyy-marshrut-nonkonformisty-na-kropotkinskoy-vozmutiteli-spokoystviya-v-blagorodnom-predme8981/",
+      "source": "Музей AZ — выставки и события",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-13",
+      "price_type": "paid",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-25",
+      "sheet_synced_description": "Местность между Арбатом и Москвой-рекой неизменно привлекает заповедной стариной — хотя в последние десятилетия активно застраивается новым элитным жильем. Тем не менее здесь, в так называемом московском Сен-Жерменском предместье, еще сохранились и допетровские палаты, и ампирные дворянские усадьбы, и купеческие дома в стиле модерн, и конструктивистские здания 1920-30-х.",
+      "social_priority": null,
+      "instagram_image": "",
+      "social_description": "",
+      "telegram_include": false,
+      "editor_note": "",
+      "social_title": "",
+      "instagram_include": false,
+      "time_verification": "verified",
+      "time_evidence": "1 ноября 2026, 12:30",
+      "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
+      "id": "moscow-2026-10-27-fd619c9f4d",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-30",
+      "time": "12:30",
+      "title": "Экскурсионный маршрут / Нонконформисты на Кропоткинской: возмутители спокойствия в благородном предместье",
+      "venue": "Музей AZ",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Местность между Арбатом и Москвой-рекой неизменно привлекает заповедной стариной — хотя в последние десятилетия активно застраивается новым элитным жильем. Тем не менее здесь, в так называемом московском Сен-Жерменском предместье, еще сохранились и допетровские палаты, и ампирные дворянские усадьбы, и купеческие дома в стиле модерн, и конструктивистские здания 1920-30-х.",
+      "url": "https://museum-az.com/event/ekskursionnyy-marshrut-nonkonformisty-na-kropotkinskoy-vozmutiteli-spokoystviya-v-blagorodnom-predme-04-11/",
+      "source": "Музей AZ — выставки и события",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-27",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
+    },
+    {
+      "id": "moscow-2026-10-30-fd619c9f4d",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-30",
+      "time": "12:30",
+      "title": "Экскурсионный маршрут / Нонконформисты на Кропоткинской: возмутители спокойствия в благородном предместье",
+      "venue": "Музей AZ",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Местность между Арбатом и Москвой-рекой неизменно привлекает заповедной стариной — хотя в последние десятилетия активно застраивается новым элитным жильем. Тем не менее здесь, в так называемом московском Сен-Жерменском предместье, еще сохранились и допетровские палаты, и ампирные дворянские усадьбы, и купеческие дома в стиле модерн, и конструктивистские здания 1920-30-х.",
+      "url": "https://museum-az.com/event/ekskursionnyy-marshrut-nonkonformisty-na-kropotkinskoy-vozmutiteli-spokoystviya-v-blagorodnom-predme-29-11/",
+      "source": "Музей AZ — выставки и события",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-29",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "moscow-2026-11-21-16f6939347",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-30",
+      "time": "12:30",
+      "title": "Экскурсионный маршрут / От ВХУТЕМАСа до AZ ARTа",
+      "venue": "Музей AZ",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Пересечение Мясницкой улицы и Бульварного кольца было важным местом в артистической жизни Москвы как в ХIX, так и в ХХ веке. Здесь происходили интереснейшие события в истории русского авангарда и неофициального искусства 1960-1970-х годов.",
+      "url": "https://museum-az.com/event/ekskursionnyy-marshrut-ot-vkhutemasa-do-az-arta-21-11/",
+      "source": "Музей AZ — выставки и события",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-25",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
+    },
+    {
+      "id": "moscow-2026-10-31-2b2a385dc4",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-30",
+      "time": "14:00",
+      "title": "Сборная экскурсия по выставке «Анатолий Зверев. Открытое хранение»",
+      "venue": "Музей AZ",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "На экскурсии по выставке «Анатолий Зверев. Открытое хранение» вы узнаете об истории формирования коллекции Музея AZ, увидите ранние произведения Анатолия Зверева, познакомитесь с серией прекрасных женских образов, включая портреты Оксаны Асеевой, и поймете, какую роль в экспозиции играет танцевальный видео-перформанс.",
+      "url": "https://museum-az.com/event/sbornaya-ekskursiya-po-vystavke-anatoliy-zverev-otkrytoe-khranenie-31-105746/",
+      "source": "Музей AZ — выставки и события",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-25",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
+    },
+    {
+      "id": "moscow-2026-10-31-cb01852729",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-30",
+      "time": "15:00",
+      "title": "Экскурсия с хранителем музея по выставке «Анатолий Зверев. Открытое хранение»",
+      "venue": "Музей AZ",
+      "address": "",
+      "price": 800,
+      "price_text": "800 ₽",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Экскурсия с хранителем коллекции — это редкая возможность увидеть выставку глазами специалиста, который ежедневно работает с наследием Анатолия Зверева. Особенность такой экскурсии — доступ в закрытую часть экспозиции, где хранятся настоящие «жемчужины коллекции».",
+      "url": "https://museum-az.com/event/ekskursiya-s-khranitelem-muzeya-po-vystavke-anatoliy-zverev-otkrytoe-khranenie-31-10/",
+      "source": "Музей AZ — выставки и события",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-25",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
+    },
+    {
       "id": "moscow-2026-10-30-8f7b831fd0",
       "status": "rejected",
       "kind": "event",
@@ -49090,6 +49824,34 @@
       },
       "telegram_include": false,
       "instagram_include": false
+    },
+    {
+      "id": "spb-2026-10-30-e203f3c49f",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-30",
+      "time": "17:30",
+      "title": "«Петербург глазами инженера». Экскурсия «Как устроены мосты» на теплоходе Новой Голландии",
+      "venue": "Новая Голландия",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "Проект «Петербург глазами инженера» проведёт на прогулочном теплоходе Новой Голландии экскурсию «Как устроены мосты». Петербургские мосты — один из главных символов города и неотъемлемая часть нашей жизни. Мы по ним гуляем, ездим, ищем великолепные виды для фото, смотрим, как они разводятся.",
+      "url": "https://www.newhollandsp.ru/events/education/engineer-boat-tour/",
+      "source": "Новая Голландия — Сообщество и образование",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-29",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "spb-2026-10-30-b472168689",
@@ -49239,6 +50001,34 @@
       "time_verification": "verified",
       "time_evidence": "30.10.2026 | 18:30",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
+      "id": "moscow-2026-10-30-2f316f6405",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-30",
+      "time": "18:30",
+      "title": "Семинар «Вселенная Сирина: опыт реконструкции единого художественного мира Владимира Набокова»",
+      "venue": "Дом русского зарубежья им. А. Солженицына",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": true,
+      "categories": [
+        "презентация"
+      ],
+      "description": "30 октября 2026 года в 18 часов 30 минут приглашаем на очередное заседание научно-просветительского проекта «Отражения». В рамках набоковского семинара состоится вечер, посвященный дерзкой попытке собрать вселенную Набокова в единую модель.",
+      "url": "https://www.domrz.ru/event/70416_seminar_vselennaya_sirina_opyt_rekonstruktsii_edinogo_khudozhestvennogo_mira_vladimira_nabokova/",
+      "source": "Дом русского зарубежья — афиша",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-29",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "sold_out",
+      "availability_checked_at": "2026-10-29"
     },
     {
       "id": "spb-2026-10-30-e7849a586b",
@@ -49444,7 +50234,7 @@
       "address": "Лаврушинский переулок, 12",
       "price": 650,
       "price_text": "650 ₽; онлайн — 700 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -49461,7 +50251,7 @@
         "telegram_include": false,
         "instagram_include": false,
         "status": "approved",
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -49548,6 +50338,41 @@
       "time_verification": "verified",
       "time_evidence": "30.10, пт • 19:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
+      "id": "moscow-2026-10-29-2b2a385dc4",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-30",
+      "time": "19:00",
+      "title": "Сборная экскурсия по выставке «Анатолий Зверев. Открытое хранение»",
+      "venue": "Музей AZ",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "На экскурсии по выставке «Анатолий Зверев. Открытое хранение» вы узнаете об истории формирования коллекции Музея AZ, увидите ранние произведения Анатолия Зверева, познакомитесь с серией прекрасных женских образов, включая портреты Оксаны Асеевой, и поймете, какую роль в экспозиции играет танцевальный видео-перформанс.",
+      "url": "https://museum-az.com/event/sbornaya-ekskursiya-po-vystavke-anatoliy-zverev-otkrytoe-khranenie-29-109952/",
+      "source": "Музей AZ — выставки и события",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-25",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-09-27-a4e875c14e",
@@ -50247,46 +51072,6 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
-      "id": "moscow-2026-11-01-65ab0155ea",
-      "status": "rejected",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-10-31",
-      "time": "",
-      "title": "Экскурсионный маршрут / Вокруг Маяковки: места силы советского андеграунда",
-      "venue": "Музей AZ",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [
-        "лекция"
-      ],
-      "description": "Площадь Маяковского (ныне вновь Триумфальная) — одно из знаковых мест, которые связаны с Оттепелью. Этот недолгий период, с середины 1950-х по середину 1960-х, дал мощный импульс развитию творческой свободы в литературе, театре, изобразительном искусстве. С момента открытия памятника Владимиру Маяковскому начались публичные чтения стихов, в том числе и запрещенных поэтов.",
-      "url": "https://museum-az.com/event/ekskursionnyy-marshrut-ot-vkhutemasa-do-az-arta-31-10/",
-      "source": "Музей AZ — выставки и события",
-      "checked_at": "",
-      "review_reason": "excluded_tour_mediation",
-      "discovered_at": "2026-09-24",
-      "price_type": "paid",
-      "availability": "unknown",
-      "availability_checked_at": "2026-10-25",
-      "social_title": "",
-      "social_description": "",
-      "editor_note": "",
-      "telegram_include": false,
-      "social_priority": null,
-      "instagram_image": "",
-      "instagram_include": false,
-      "reviewed_at": "",
-      "sheet_synced_description": "Площадь Маяковского (ныне вновь Триумфальная) — одно из знаковых мест, которые связаны с Оттепелью. Этот недолгий период, с середины 1950-х по середину 1960-х, дал мощный импульс развитию творческой свободы в литературе, театре, изобразительном искусстве. С момента открытия памятника Владимиру Маяковскому начались публичные чтения стихов, в том числе и запрещенных поэтов.",
-      "time_verification": "unverified",
-      "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
-      "editor_overrides": {
-        "time": ""
-      }
-    },
-    {
       "id": "moscow-2026-10-31-e3aefd4737",
       "status": "approved",
       "kind": "event",
@@ -50513,39 +51298,32 @@
       "reviewed_at": ""
     },
     {
-      "id": "moscow-2026-10-31-2b2a385dc4",
-      "status": "rejected",
+      "id": "moscow-2026-10-31-0fcdd93d96",
+      "status": "new",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-31",
       "time": "14:00",
-      "title": "Сборная экскурсия по выставке «Анатолий Зверев. Открытое хранение»",
-      "venue": "Музей AZ",
+      "title": "Бесплатная интерактивная программа «Образы Таганки»",
+      "venue": "Дом русского зарубежья им. А. Солженицына",
       "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": true,
       "categories": [
-        "лекция"
+        "мастер-класс"
       ],
-      "description": "На экскурсии по выставке «Анатолий Зверев. Открытое хранение» вы узнаете об истории формирования коллекции Музея AZ, увидите ранние произведения Анатолия Зверева, познакомитесь с серией прекрасных женских образов, включая портреты Оксаны Асеевой, и поймете, какую роль в экспозиции играет танцевальный видео-перформанс.",
-      "url": "https://museum-az.com/event/sbornaya-ekskursiya-po-vystavke-anatoliy-zverev-otkrytoe-khranenie-31-105746/",
-      "source": "Музей AZ — выставки и события",
+      "description": "в рамках акции по продвижению деятельности московских музеев 31 октября 2026 года в 14 часов приглашаем на бесплатную интерактивную программу «Образы Таганки». Интерактивная программа знакомит с историей Москвы и Таганского района от глубокой древности до современности. Почему Москва «стоит на семи холмах»?",
+      "url": "https://www.domrz.ru/event/70353_besplatnaya_interaktivnaya_programma_obrazy_taganki/",
+      "source": "Дом русского зарубежья — афиша",
       "checked_at": "",
-      "review_reason": "excluded_tour_mediation",
-      "discovered_at": "2026-10-25",
-      "price_type": "unknown",
+      "review_reason": "",
+      "discovered_at": "2026-10-29",
+      "price_type": "free",
       "availability_evidence": "",
       "ticket_required": true,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false
-      },
-      "telegram_include": false,
-      "instagram_include": false
+      "availability": "sold_out",
+      "availability_checked_at": "2026-10-29"
     },
     {
       "id": "spb-2026-10-31-21c907ec6e",
@@ -50705,41 +51483,6 @@
       "time_verification": "verified",
       "time_evidence": "31 октября 2026 (суббота) 15:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
-    },
-    {
-      "id": "moscow-2026-10-31-cb01852729",
-      "status": "rejected",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-10-31",
-      "time": "15:00",
-      "title": "Экскурсия с хранителем музея по выставке «Анатолий Зверев. Открытое хранение»",
-      "venue": "Музей AZ",
-      "address": "",
-      "price": 800,
-      "price_text": "800 ₽",
-      "registration": false,
-      "categories": [
-        "лекция"
-      ],
-      "description": "Экскурсия с хранителем коллекции — это редкая возможность увидеть выставку глазами специалиста, который ежедневно работает с наследием Анатолия Зверева. Особенность такой экскурсии — доступ в закрытую часть экспозиции, где хранятся настоящие «жемчужины коллекции».",
-      "url": "https://museum-az.com/event/ekskursiya-s-khranitelem-muzeya-po-vystavke-anatoliy-zverev-otkrytoe-khranenie-31-10/",
-      "source": "Музей AZ — выставки и события",
-      "checked_at": "",
-      "review_reason": "excluded_tour_mediation",
-      "discovered_at": "2026-10-25",
-      "price_type": "paid",
-      "availability_evidence": "",
-      "ticket_required": true,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false
-      },
-      "telegram_include": false,
-      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-31-eca75b2255",
@@ -51410,6 +52153,46 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
+      "id": "moscow-2026-11-01-5d95849603",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-01",
+      "time": "",
+      "title": "Обзорные экскурсии по Музею русского зарубежья",
+      "venue": "Дом русского зарубежья им. А. Солженицына",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": true,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "Стоимость: экскурсионное обслуживание (500 руб.) + входной билет Русское зарубежье — это уникальное явление в мировой истории и культуре.",
+      "url": "https://www.domrz.ru/event/70312_obzornye_ekskursii_po_muzeyu_russkogo_zarubezhya/",
+      "source": "Дом русского зарубежья — афиша",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-09-27",
+      "price_type": "paid",
+      "availability": "sold_out",
+      "availability_checked_at": "2026-10-29",
+      "social_title": "",
+      "instagram_image": "",
+      "telegram_include": false,
+      "instagram_include": false,
+      "social_priority": null,
+      "social_description": "",
+      "editor_note": "",
+      "reviewed_at": "",
+      "sheet_synced_description": "Стоимость: экскурсионное обслуживание (500 руб.) + входной билет Русское зарубежье — это уникальное явление в мировой истории и культуре.",
+      "time_verification": "unverified",
+      "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
+      "editor_overrides": {
+        "time": ""
+      }
+    },
+    {
       "id": "moscow-2026-11-01-9f703f36f1",
       "status": "rejected",
       "kind": "event",
@@ -51539,14 +52322,16 @@
       "price": 0,
       "price_text": "",
       "registration": false,
-      "categories": [],
+      "categories": [
+        "выставка"
+      ],
       "description": "На метро Музей AZ находится между станциями метро «Маяковская» и «Белорусская» (кольцевая). Мы рекомендуем идти в Музей от станции «Маяковская». Вам нужен Выход №1 на 1-я Тверская-Ямская улица, 2-я Тверская-Ямская улица.",
       "url": "https://museum-az.com/event/territoriya-svobody-nonkonformisty-v-taruse/",
       "source": "Музей AZ — выставки и события",
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-10-20",
-      "price_type": "paid",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-10-25",
       "editor_overrides": {
@@ -51763,43 +52548,6 @@
       "editor_overrides": {
         "time": "01:11"
       }
-    },
-    {
-      "id": "moscow-2026-11-01-fd619c9f4d",
-      "status": "rejected",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-11-01",
-      "time": "12:30",
-      "title": "Экскурсионный маршрут / Нонконформисты на Кропоткинской: возмутители спокойствия в благородном предместье",
-      "venue": "Музей AZ",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [
-        "лекция"
-      ],
-      "description": "Местность между Арбатом и Москвой-рекой неизменно привлекает заповедной стариной — хотя в последние десятилетия активно застраивается новым элитным жильем. Тем не менее здесь, в так называемом московском Сен-Жерменском предместье, еще сохранились и допетровские палаты, и ампирные дворянские усадьбы, и купеческие дома в стиле модерн, и конструктивистские здания 1920-30-х.",
-      "url": "https://museum-az.com/event/ekskursionnyy-marshrut-nonkonformisty-na-kropotkinskoy-vozmutiteli-spokoystviya-v-blagorodnom-predme8981/",
-      "source": "Музей AZ — выставки и события",
-      "checked_at": "",
-      "review_reason": "excluded_tour_mediation",
-      "discovered_at": "2026-10-13",
-      "price_type": "paid",
-      "availability": "unknown",
-      "availability_checked_at": "2026-10-25",
-      "sheet_synced_description": "Местность между Арбатом и Москвой-рекой неизменно привлекает заповедной стариной — хотя в последние десятилетия активно застраивается новым элитным жильем. Тем не менее здесь, в так называемом московском Сен-Жерменском предместье, еще сохранились и допетровские палаты, и ампирные дворянские усадьбы, и купеческие дома в стиле модерн, и конструктивистские здания 1920-30-х.",
-      "social_priority": null,
-      "instagram_image": "",
-      "social_description": "",
-      "telegram_include": false,
-      "editor_note": "",
-      "social_title": "",
-      "instagram_include": false,
-      "time_verification": "verified",
-      "time_evidence": "1 ноября 2026, 12:30",
-      "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
       "id": "spb-2026-11-01-084d2e1900",
@@ -53106,6 +53854,34 @@
       "instagram_include": false
     },
     {
+      "id": "spb-2026-11-03-81ac1b4826",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-03",
+      "time": "17:30",
+      "title": "К «Ночи искусств – 2026» | Музыкально-поэтическая (флейта) экскурсия по выставке «Художник Ленинграда. Владимир Гринберг»",
+      "venue": "Музей искусства Санкт-Петербурга XX–XXI веков",
+      "address": "",
+      "price": 600,
+      "price_text": "600 ₽",
+      "registration": null,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "",
+      "url": "https://mispxx-xxi.ru/about/afisha/22628/",
+      "source": "Музей искусства Санкт-Петербурга XX–XXI веков — события",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-29",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-03-7116cb1f65",
       "status": "new",
       "kind": "event",
@@ -53217,6 +53993,34 @@
       "reviewed_at": "2026-10-24"
     },
     {
+      "id": "moscow-2026-11-04-9fa77a8965",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-04",
+      "time": "",
+      "title": "Дома, которые нас объединяют",
+      "venue": "Музей архитектуры им. А. В. Щусева",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "игра"
+      ],
+      "description": "",
+      "url": "https://muar.ru/meropriyatiya/doma-kotorye-nas-obedinyayut/",
+      "source": "Музей архитектуры им. Щусева — мероприятия",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-29",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-04-670f99a88f",
       "status": "rejected",
       "kind": "event",
@@ -53297,6 +54101,34 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
+      "id": "moscow-2026-11-04-020d3b2f98",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-04",
+      "time": "",
+      "title": "Мероприятия",
+      "venue": "Музей архитектуры им. А. В. Щусева",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "",
+      "url": "https://muar.ru/meropriyatiya/",
+      "source": "Музей архитектуры им. Щусева — мероприятия",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-29",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-04-175d817326",
       "status": "approved",
       "kind": "event",
@@ -53332,41 +54164,6 @@
       "telegram_include": false,
       "instagram_include": false,
       "reviewed_at": "2026-10-27"
-    },
-    {
-      "id": "moscow-2026-10-27-fd619c9f4d",
-      "status": "rejected",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-11-04",
-      "time": "12:30",
-      "title": "Экскурсионный маршрут / Нонконформисты на Кропоткинской: возмутители спокойствия в благородном предместье",
-      "venue": "Музей AZ",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [
-        "лекция"
-      ],
-      "description": "Местность между Арбатом и Москвой-рекой неизменно привлекает заповедной стариной — хотя в последние десятилетия активно застраивается новым элитным жильем. Тем не менее здесь, в так называемом московском Сен-Жерменском предместье, еще сохранились и допетровские палаты, и ампирные дворянские усадьбы, и купеческие дома в стиле модерн, и конструктивистские здания 1920-30-х.",
-      "url": "https://museum-az.com/event/ekskursionnyy-marshrut-nonkonformisty-na-kropotkinskoy-vozmutiteli-spokoystviya-v-blagorodnom-predme-04-11/",
-      "source": "Музей AZ — выставки и события",
-      "checked_at": "",
-      "review_reason": "excluded_tour_mediation",
-      "discovered_at": "2026-10-27",
-      "price_type": "paid",
-      "availability_evidence": "",
-      "ticket_required": true,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false
-      },
-      "telegram_include": false,
-      "instagram_include": false
     },
     {
       "id": "spb-2026-11-04-94108f9818",
@@ -53550,6 +54347,34 @@
       "reviewed_at": "2026-10-27"
     },
     {
+      "id": "spb-2026-11-04-a72cb3d2ce",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-04",
+      "time": "19:00",
+      "title": "«Просветительская среда». Лекционный цикл к выставке «Сцена действия» 25 сентября 2026 — 14 февраля 2027",
+      "venue": "Манеж",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": true,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Дорогие друзья, представляем вам программу «Просветительская среда» — специальный цикл лекций, подготовленный к выставке «Сцена действия». По средам вечером встречаемся с вами в аванзале Манежа и погружаемся в историю отечественного театра.",
+      "url": "https://manege.spb.ru/events/vystavochnyj-proekt-sczena-dejstviya-lekcyy/",
+      "source": "Манеж — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-29",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-04-291751795a",
       "status": "new",
       "kind": "event",
@@ -53729,7 +54554,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-05-54179407af",
@@ -54117,6 +54944,34 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
+      "id": "moscow-2026-11-05-87509a8743",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-05",
+      "time": "19:00",
+      "title": "Лекция «Александр Иванов»",
+      "venue": "Третьяковская галерея",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Лекция к абонементу №01 «Мастера русской живописи. Часть 1. От Рокотова до Иванова» 1 октября 2026 – 5 ноября 2026 Лекция будет проходить в Лекционном зале Инженерного корпуса (Лаврушинский переулок, д. 12, вход с Малого Толмачёвского переулка) и в режиме реального времени на платформе МТС Линк в формате онлайн. Продолжительность лекции: 1 час 30 минут.",
+      "url": "https://www.tretyakovgallery.ru/events/o/lektsiya-aleksandr-ivanov-11-2026/",
+      "source": "Третьяковская галерея — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-29",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "spb-2026-11-05-04b52b67df",
       "status": "approved",
       "kind": "event",
@@ -54153,6 +55008,34 @@
       "time_verification": "verified",
       "time_evidence": "5 ноября, 19:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
+      "id": "moscow-2026-11-05-6734b4aa99",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-05",
+      "time": "19:00",
+      "title": "Экспозиция с трех точек зрения: музей, архитектор зритель 05 ноября, Чт Начало в 19:00",
+      "venue": "Британская высшая школа дизайна",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": true,
+      "categories": [
+        "презентация"
+      ],
+      "description": "У каждого участника выставочного процесса есть свои интересы. Музей хочет передать публике смыслы, а архитектор ищет объёмно-пространственное решение, в котором эти идеи раскроются. Зритель, в свою очередь, приходит за впечатлениями и хочет увидеть экспозицию, которая надолго останется в его памяти.",
+      "url": "https://britishdesign.ru/about/events/401837/",
+      "source": "Британская высшая школа дизайна — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-29",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "international-2026-11-06-e5e1a6b184",
@@ -54616,6 +55499,32 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
+      "id": "spb-2026-11-07-19ecb2b493",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-07",
+      "time": "",
+      "title": "Музыка",
+      "venue": "Новая Голландия",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "Детская площадка «Фрегат» будет закрыта 29 и 30 октября. Приносим извинения за возможные неудобства.",
+      "url": "https://www.newhollandsp.ru/events/concerts/",
+      "source": "Новая Голландия — Сообщество и образование",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-29",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-07-64ecc1a02b",
       "status": "approved",
       "kind": "event",
@@ -54876,6 +55785,32 @@
       "reviewed_at": ""
     },
     {
+      "id": "spb-2026-11-07-e4cb45c21d",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-07",
+      "time": "19:00",
+      "title": "Разговорный клуб на русском жестовом языке в «Сообществе»",
+      "venue": "Новая Голландия",
+      "address": "",
+      "price": 300,
+      "price_text": "300 ₽",
+      "registration": null,
+      "categories": [],
+      "description": "В «Сообществе» начинаются регулярные встречи разговорного клуба на русском жестовом языке. На них участники будут оттачивать навык общения на РЖЯ, ближе знакомиться с культурой глухих и, конечно, узнавать новые жесты. Общение проходит в полной тишине — единственным звуком будет только ваш смех во время игр!",
+      "url": "https://www.newhollandsp.ru/events/education/rsl-speaking-club/",
+      "source": "Новая Голландия — Сообщество и образование",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-29",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "international-2026-11-08-f9e3a218bb",
       "status": "rejected",
       "kind": "open_call",
@@ -55020,7 +55955,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-08-e79320720d",
@@ -55060,41 +55997,6 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
-      "id": "moscow-2026-11-01-732e936867",
-      "status": "rejected",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-11-08",
-      "time": "",
-      "title": "Экскурсионный маршрут / Арт-истории Чистых прудов: от Маросейки до Фурманного",
-      "venue": "Музей AZ",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [
-        "лекция"
-      ],
-      "description": "Большинство из прилегающих к Чистопрудному бульвару улиц и переулков удивительным образом не только сохранили наследие прошлых веков, но и оказались питательной средой и эпицентрами современного искусства.",
-      "url": "https://museum-az.com/event/ekskursionnyy-marshrut-art-istorii-chistykh-prudov-ot-maroseyki-do-furmannogo-08-11/",
-      "source": "Музей AZ — выставки и события",
-      "checked_at": "",
-      "review_reason": "excluded_tour_mediation",
-      "discovered_at": "2026-10-21",
-      "price_type": "paid",
-      "availability": "unknown",
-      "availability_checked_at": "2026-10-25",
-      "editor_overrides": {
-        "telegram_include": false,
-        "instagram_include": false,
-        "time": ""
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "time_verification": "unverified",
-      "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
-    },
-    {
       "id": "spb-2026-11-08-fe7e0ac9b9",
       "status": "new",
       "kind": "event",
@@ -55110,7 +56012,7 @@
       "categories": [
         "лекция"
       ],
-      "description": "«Лето в Бадене» — это первая экранизация виртуозного автофикшн-романа Леонида Цыпкина, где личная история писателя из 1970-х переплетается с эпизодами из жизни Федора Михайловича Достоевского. Экранизацией романа занимались режиссер Антон Желнов (друг музея, один из авторов фильма «Бродский не поэт») и соавтор сценария Юрий Сапрыкин.",
+      "description": "«Лето в Бадене» — личная история человека, который в один момент рискует потерять все и решается кардинально изменить свою жизнь. Когда семья, карьера и репутация рассыпаются на глазах, главный герой идет ва-банк и пробует реализоваться в писательском творчестве. Вдохновением и путеводной звездой для него становится классик русской литературы Федор Михайлович Достоевский.",
       "url": "https://brodsky.online/events/pokaz-filma-antona-zhelnova-leto-v-badene-i-obsuzhdenie-s-kseniey-prikhotko/",
       "source": "Полторы комнаты — музей Иосифа Бродского",
       "checked_at": "",
@@ -55127,7 +56029,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-08-020d3b2f98",
@@ -55306,7 +56210,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-09-5f73160fd7",
@@ -55949,7 +56855,8 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-11-8c7ac32fc5",
@@ -56328,6 +57235,34 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
+      "id": "spb-2026-11-12-020d3b2f98",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-12",
+      "time": "08:11",
+      "title": "Мероприятия",
+      "venue": "Музей «Полторы комнаты» Иосифа Бродского",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Оставляя свои контакты, вы даёте согласие на обработку персональных данных",
+      "url": "https://brodsky.online/events/",
+      "source": "Полторы комнаты — музей Иосифа Бродского",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-29",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "spb-2026-11-12-6274d9b2ae",
       "status": "rejected",
       "kind": "event",
@@ -56361,6 +57296,35 @@
       },
       "telegram_include": false,
       "instagram_include": false
+    },
+    {
+      "id": "moscow-2026-11-12-7fffb56c23",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-12",
+      "time": "17:30",
+      "title": "Общие основания. Неполный глоссарий педагогических терминов Фернана Делиньи",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/common-grounds-an-incomplete-glossary",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-29",
+      "audience_text": "› Исследования Проект : По ту сторону урока: экспериментальные педагогики сегодня Дата: 12– 14 ноя 2026 Регистрация начнется позже Возраст: от 18 Тип: Встреча Место: Платформы , Классы Возрастные ограничения 18+ Лекция и переводческий практикум, посвященные институциональной педагогике, в рамках конференции « По ту сторону урока: экспериментальные педагогики сегодня ». Лекция пройдет 12 ноября с 17:30 до 18:30 на Левой платформе. Вход свободный, по общей регистрации на конференцию. Переводческие практикумы пройдут 13 ноября с 19:00 до 21:00 и 14 ноября с 12:00 до 14:00 в Классах. Чтобы принять участие, оставьте, пожалуйста, заявку. T Что объединяет школу, психиатрическую лечебницу и современный музей? Как печатный станок, кинокамера, клуб помогают преодолеть отчуждение? На лекции пойдет речь об институциональных педагогике и психотерапии — движениях, общей целью которых стала борьба с институциональным и эпистемологическим насилием и переосмысление институции как коллективной организации пространства, законов и поведенческих моделей. Основатель институциональной педагогики Фернан Ури определял понятие «институция» очень широко: от бытовой ситуации, в которой двое договорились делить кусок мыла, до сложной исторически сложившейся социальной структуры. Размышляя о том, как именно «двое договорились» и каким образом сложилась структура, Ури обращался к психоанализу — точнее, к языку и бессознательным процессам, регулирующим отношения в коллективе. Мы поговорим о его видении этих взаимосвязей, обсудим, почему Аида Васкес и Фернан Ури полагали, что школьникам необходима групповая субъектность, как Франсуа Тоскейез и Жан Ури намеревались «излечить лечебницу» и для чего сегодня обращаться к реформам XX века. В то время как институциональные педагоги и психиатры совершали «лингвистический поворот», философ и педагог Фернан Делиньи разрабатывал методы работы и жизни с теми и для тех, кто остался «за пределами слова». Он критически относился к институциями любого рода и полагал, что следует искать способы социального объединения, существующие до языка. Так в конце 1960-х он основал коммуну для невербальных людей (в основном детей и подростков) с аутизмом в Севеннах, на юге Франции. За более чем 20 лет он вместе с коллегами разработал и описал несколько практик такой альтернативной организации коллективной жизни. Долгое время работы Делиньи были доступны только на французском: лишь в 2015 году вышел англоязычный сборник, а переводов на русский не появилось до сих пор",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-12-ceca5c9467",
@@ -56788,6 +57752,35 @@
       "instagram_include": false
     },
     {
+      "id": "moscow-2026-11-13-7fffb56c23",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-13",
+      "time": "19:00",
+      "title": "Общие основания. Неполный глоссарий педагогических терминов Фернана Делиньи",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/common-grounds-an-incomplete-glossary",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-29",
+      "audience_text": "› Исследования Проект : По ту сторону урока: экспериментальные педагогики сегодня Дата: 12– 14 ноя 2026 Регистрация начнется позже Возраст: от 18 Тип: Встреча Место: Платформы , Классы Возрастные ограничения 18+ Лекция и переводческий практикум, посвященные институциональной педагогике, в рамках конференции « По ту сторону урока: экспериментальные педагогики сегодня ». Лекция пройдет 12 ноября с 17:30 до 18:30 на Левой платформе. Вход свободный, по общей регистрации на конференцию. Переводческие практикумы пройдут 13 ноября с 19:00 до 21:00 и 14 ноября с 12:00 до 14:00 в Классах. Чтобы принять участие, оставьте, пожалуйста, заявку. T Что объединяет школу, психиатрическую лечебницу и современный музей? Как печатный станок, кинокамера, клуб помогают преодолеть отчуждение? На лекции пойдет речь об институциональных педагогике и психотерапии — движениях, общей целью которых стала борьба с институциональным и эпистемологическим насилием и переосмысление институции как коллективной организации пространства, законов и поведенческих моделей. Основатель институциональной педагогики Фернан Ури определял понятие «институция» очень широко: от бытовой ситуации, в которой двое договорились делить кусок мыла, до сложной исторически сложившейся социальной структуры. Размышляя о том, как именно «двое договорились» и каким образом сложилась структура, Ури обращался к психоанализу — точнее, к языку и бессознательным процессам, регулирующим отношения в коллективе. Мы поговорим о его видении этих взаимосвязей, обсудим, почему Аида Васкес и Фернан Ури полагали, что школьникам необходима групповая субъектность, как Франсуа Тоскейез и Жан Ури намеревались «излечить лечебницу» и для чего сегодня обращаться к реформам XX века. В то время как институциональные педагоги и психиатры совершали «лингвистический поворот», философ и педагог Фернан Делиньи разрабатывал методы работы и жизни с теми и для тех, кто остался «за пределами слова». Он критически относился к институциями любого рода и полагал, что следует искать способы социального объединения, существующие до языка. Так в конце 1960-х он основал коммуну для невербальных людей (в основном детей и подростков) с аутизмом в Севеннах, на юге Франции. За более чем 20 лет он вместе с коллегами разработал и описал несколько практик такой альтернативной организации коллективной жизни. Долгое время работы Делиньи были доступны только на французском: лишь в 2015 году вышел англоязычный сборник, а переводов на русский не появилось до сих пор",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-13-8f293dde1e",
       "status": "approved",
       "kind": "event",
@@ -57012,39 +58005,33 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
-      "id": "moscow-2026-11-14-65ab0155ea",
-      "status": "rejected",
+      "id": "moscow-2026-11-14-7fffb56c23",
+      "status": "new",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-14",
-      "time": "12:30",
-      "title": "Экскурсионный маршрут / Вокруг Маяковки: места силы советского андеграунда",
-      "venue": "Музей AZ",
+      "time": "12:00",
+      "title": "Общие основания. Неполный глоссарий педагогических терминов Фернана Делиньи",
+      "venue": "ГЭС-2",
       "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
       "categories": [
         "лекция"
       ],
-      "description": "Площадь Маяковского (ныне вновь Триумфальная) — одно из знаковых мест, которые связаны с Оттепелью. Этот недолгий период, с середины 1950-х по середину 1960-х, дал мощный импульс развитию творческой свободы в литературе, театре, изобразительном искусстве. С момента открытия памятника Владимиру Маяковскому начались публичные чтения стихов, в том числе и запрещенных поэтов.",
-      "url": "https://museum-az.com/event/ekskursionnyy-marshrut-ot-vkhutemasa-do-az-arta-14-11/",
-      "source": "Музей AZ — выставки и события",
+      "description": "",
+      "url": "https://ges-2.org/common-grounds-an-incomplete-glossary",
+      "source": "Дом культуры «ГЭС-2»",
       "checked_at": "",
-      "review_reason": "excluded_tour_mediation",
-      "discovered_at": "2026-10-26",
-      "price_type": "paid",
+      "review_reason": "",
+      "discovered_at": "2026-10-29",
+      "audience_text": "› Исследования Проект : По ту сторону урока: экспериментальные педагогики сегодня Дата: 12– 14 ноя 2026 Регистрация начнется позже Возраст: от 18 Тип: Встреча Место: Платформы , Классы Возрастные ограничения 18+ Лекция и переводческий практикум, посвященные институциональной педагогике, в рамках конференции « По ту сторону урока: экспериментальные педагогики сегодня ». Лекция пройдет 12 ноября с 17:30 до 18:30 на Левой платформе. Вход свободный, по общей регистрации на конференцию. Переводческие практикумы пройдут 13 ноября с 19:00 до 21:00 и 14 ноября с 12:00 до 14:00 в Классах. Чтобы принять участие, оставьте, пожалуйста, заявку. T Что объединяет школу, психиатрическую лечебницу и современный музей? Как печатный станок, кинокамера, клуб помогают преодолеть отчуждение? На лекции пойдет речь об институциональных педагогике и психотерапии — движениях, общей целью которых стала борьба с институциональным и эпистемологическим насилием и переосмысление институции как коллективной организации пространства, законов и поведенческих моделей. Основатель институциональной педагогики Фернан Ури определял понятие «институция» очень широко: от бытовой ситуации, в которой двое договорились делить кусок мыла, до сложной исторически сложившейся социальной структуры. Размышляя о том, как именно «двое договорились» и каким образом сложилась структура, Ури обращался к психоанализу — точнее, к языку и бессознательным процессам, регулирующим отношения в коллективе. Мы поговорим о его видении этих взаимосвязей, обсудим, почему Аида Васкес и Фернан Ури полагали, что школьникам необходима групповая субъектность, как Франсуа Тоскейез и Жан Ури намеревались «излечить лечебницу» и для чего сегодня обращаться к реформам XX века. В то время как институциональные педагоги и психиатры совершали «лингвистический поворот», философ и педагог Фернан Делиньи разрабатывал методы работы и жизни с теми и для тех, кто остался «за пределами слова». Он критически относился к институциями любого рода и полагал, что следует искать способы социального объединения, существующие до языка. Так в конце 1960-х он основал коммуну для невербальных людей (в основном детей и подростков) с аутизмом в Севеннах, на юге Франции. За более чем 20 лет он вместе с коллегами разработал и описал несколько практик такой альтернативной организации коллективной жизни. Долгое время работы Делиньи были доступны только на французском: лишь в 2015 году вышел англоязычный сборник, а переводов на русский не появилось до сих пор",
+      "price_type": "free",
       "availability_evidence": "",
-      "ticket_required": true,
+      "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false
-      },
-      "telegram_include": false,
-      "instagram_include": false
+      "availability_checked_at": ""
     },
     {
       "id": "spb-2026-11-14-e7d09106e5",
@@ -57463,6 +58450,34 @@
       "reviewed_at": "2026-10-17",
       "time_verification": "unverified",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
+      "id": "spb-2026-11-15-489997f0c8",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-15",
+      "time": "",
+      "title": "Моноспектакль Игоря Устиновича «Идиллия» по стихам и прозе Даниила Хармса экскурсия Софьи Кучерявенко «Петербургская палитра: свет и цвет северной столицы»",
+      "venue": "Музей искусства Санкт-Петербурга XX–XXI веков",
+      "address": "",
+      "price": 1500,
+      "price_text": "1500 ₽",
+      "registration": null,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "",
+      "url": "https://mispxx-xxi.ru/about/afisha/22592/",
+      "source": "Музей искусства Санкт-Петербурга XX–XXI веков — события",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-29",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-15-b80985df2c",
@@ -58808,41 +59823,6 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
-      "id": "moscow-2026-11-21-16f6939347",
-      "status": "rejected",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-11-21",
-      "time": "12:30",
-      "title": "Экскурсионный маршрут / От ВХУТЕМАСа до AZ ARTа",
-      "venue": "Музей AZ",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [
-        "лекция"
-      ],
-      "description": "Пересечение Мясницкой улицы и Бульварного кольца было важным местом в артистической жизни Москвы как в ХIX, так и в ХХ веке. Здесь происходили интереснейшие события в истории русского авангарда и неофициального искусства 1960-1970-х годов.",
-      "url": "https://museum-az.com/event/ekskursionnyy-marshrut-ot-vkhutemasa-do-az-arta-21-11/",
-      "source": "Музей AZ — выставки и события",
-      "checked_at": "",
-      "review_reason": "excluded_tour_mediation",
-      "discovered_at": "2026-10-25",
-      "price_type": "paid",
-      "availability_evidence": "",
-      "ticket_required": true,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false
-      },
-      "telegram_include": false,
-      "instagram_include": false
-    },
-    {
       "id": "spb-2026-11-21-6274d9b2ae",
       "status": "rejected",
       "kind": "event",
@@ -59325,6 +60305,34 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
+      "id": "spb-2026-11-22-6274d9b2ae",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-22",
+      "time": "15:00",
+      "title": "Экскурсия по выставке «Художник Ленинграда. Владимир Гринберг»",
+      "venue": "Музей искусства Санкт-Петербурга XX–XXI веков",
+      "address": "",
+      "price": 600,
+      "price_text": "600 ₽",
+      "registration": null,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "",
+      "url": "https://mispxx-xxi.ru/about/afisha/22629/",
+      "source": "Музей искусства Санкт-Петербурга XX–XXI веков — события",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-29",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "international-2026-11-23-9a93613704",
       "status": "rejected",
       "kind": "open_call",
@@ -59394,7 +60402,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-23-eebb063dbc",
@@ -59792,7 +60802,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-10-27",
-      "audience_text": "› Библиотека Проект : Натюрморт. Портрет. Пейзаж. После жанра Дата: 12– 26 ноя 2026 Возраст: от 12 Тип: Публичная программа Место: Библиотека Возрастные ограничения 12+ Три встречи о том, как принципы живописных жанров — натюрморта, портрета и пейзажа — находят отражение в литературе XXI века. Программа  {\"points\":[{\"id\":4,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":6,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.4,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":5,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} T Каждая дискуссия строится как разговор писателя и исследователя литературы вокруг одной из центральных тем выставки «Натюрморт. Портрет. Пейзаж. После жанра». Участники обсудят, каким образом визуальные принципы, традиционно связанные с изобразительным искусством, могут проявляться в современной литературе. Куратор Полина Куварзина — филолог, библиотекарь Дома культуры « ГЭС-2 ». Программа Пределы жанра: литература как натюрморт Регистрация начнется позже {\"points\":[{\"id\":1,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":3,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.4,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":2,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} Когда: 12 ноя, 19:30–21:30 Разговор будет посвящен литературному натюрморту и метафорическому взгляду на художественный текст через оптику живописного жанра. Стихопроза Дениса Осокина строится вокруг образов-картин, повседневных жестов и деталей, которые замедляют повествование и располагают к созерцанию. Наблюдение здесь соединяется с самым различным дофантазированием, в том числе фольклорного и этнографического материала, который Осокин вплетает в ткань текста. Почему в современном мире, где скорость жизни постоянно растет, а внимание все чаще оказывается рассеянным, практика медленного, внимательного чтения сохраняет свою ценность? Спикеры Денис Осокин ― прозаик, поэт и сценарист. Лауреат литературных премий «Дебют», «Звездный билет», имени Андрея Белого, кинопремий «Ника», «Белый Слон» и других. По его повести «Овсянки», циклам рассказов «Небесные жены луговых мари», «Ангелы и революция» были с",
+      "audience_text": "› Библиотека Проект : Натюрморт. Портрет. Пейзаж. После жанра Дата: 12– 26 ноя 2026 Возраст: от 12 Тип: Публичная программа Место: Библиотека Возрастные ограничения 12+ Три встречи о том, как принципы живописных жанров — натюрморта, портрета и пейзажа — находят отражение в литературе XXI века. Программа  {\"points\":[{\"id\":4,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":6,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.4,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":5,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} T Каждая дискуссия строится как разговор писателя и исследователя литературы вокруг одной из центральных тем выставки «Натюрморт. Портрет. Пейзаж. После жанра». Участники обсудят, каким образом визуальные принципы, традиционно связанные с изобразительным искусством, могут проявляться в современной литературе. Куратор Полина Куварзина — филолог, библиотекарь Дома культуры « ГЭС-2 ». Программа Пределы жанра: литература как натюрморт Регистрация {\"points\":[{\"id\":1,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":3,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.4,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":2,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} Когда: 12 ноя, 19:30–21:30 Разговор будет посвящен литературному натюрморту и метафорическому взгляду на художественный текст через оптику живописного жанра. Стихопроза Дениса Осокина строится вокруг образов-картин, повседневных жестов и деталей, которые замедляют повествование и располагают к созерцанию. Наблюдение здесь соединяется с самым различным дофантазированием, в том числе фольклорного и этнографического материала, который Осокин вплетает в ткань текста. Почему в современном мире, где скорость жизни постоянно растет, а внимание все чаще оказывается рассеянным, практика медленного, внимательного чтения сохраняет свою ценность? Спикеры Денис Осокин ― прозаик, поэт и сценарист. Лауреат литературных премий «Дебют», «Звездный билет», имени Андрея Белого, кинопремий «Ника», «Белый Слон» и других. По его повести «Овсянки», циклам рассказов «Небесные жены луговых мари», «Ангелы и революция» были сняты фильмы. По",
       "price_type": "paid",
       "availability_evidence": "",
       "ticket_required": false,
@@ -60028,7 +61038,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-28-8cb3f8d42f",
@@ -60064,7 +61076,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-11-30-9a278ceca1",
@@ -60141,6 +61155,35 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": "2026-10-24"
+    },
+    {
+      "id": "international-2026-11-30-fb1c93c537",
+      "status": "check",
+      "kind": "open_call",
+      "city": "international",
+      "date": "2026-11-30",
+      "time": "",
+      "title": "VISIONS - online photography exhibition - OPEN CALL",
+      "venue": "CuratorSpace",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "open-call"
+      ],
+      "description": "City: Cambridge | Region: Cambridgeshire | Country: United Kingdom | Viktor Barkhatov",
+      "url": "https://www.curatorspace.com/opportunities/detail/visions--online-photography-exhibition--open-call/11293",
+      "source": "CuratorSpace — opportunities",
+      "checked_at": "",
+      "review_reason": "primary_source_required",
+      "discovered_at": "2026-10-29",
+      "audience_text": "Opportunity details | VISIONS - online photography exhibition - OPEN CALL | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register VISIONS - online photography exhibition - OPEN CALL Deadline: 30/11/2026 City: Cambridge | Region: Cambridgeshire | Country: United Kingdom | Viktor Barkhatov Report this? Description Opportunity FAQs Make a submission Contact curator Submit your photographs for our new curated online exhibition. We want to see all kinds of photographic approaches - any techniques are welcome! Cambridge Photography Gallery invites photographers from around the world to participate in a new curated online exhibition. We continue to explore how rich the world of photography is and how many visual forms it can take. That's why we're leaving the theme open to your interpretation as artists. We welcome all forms of photography: single images, projects of any length, and all kinds of techniques and approaches. At the same time, we know that every exhibition is also shaped by a curatorial vision. With VISIONS, we'd like to shift our own perspective a little and show that curatorial vision can take many different forms too. Details: Submission fee: Free Participation fee (if selected): £15 Deadline to submit: November 30, 2026 Exhibition dates: December 07 – December 22, 2026 Eligible submissions: Singles and Series Exhibition benefits: Selected artists will be presented in a curated online exhibition hosted on our website. Each participating artist will receive a dedicated post on our Instagram page, which currently has over 1800 engaged followers and continues to grow. Our previous online exhibitions attracted more than 2,000 visitors. “VISIONS” will be promoted through our existing channels to reach a similarly engaged audience of photography enthusiasts. Every selected artist will receive a digital certificate of participation confirming their inclusion in the exhibition, suitable for their portfolio or CV. All participants will receive guaranteed consideration for free participation in our next offline exhibition in Cambridge that will take place in Autumn 2027. About Cambridge Photography Gallery: Cambridge Photography Gallery is a new place for contemporary photography. A place for photography that makes you feel and think. We love photography. And we're pretty sure you do too. But in a world where billions of images are created every day, photography remains an underappreciated form of art. The voices of photographers who have something to say often remain unheard. We wanted to change that, even if just a little. We wanted to create a platform to help photography be seen. And we believe it's crucial to keep the dialogue around photography alive and to support it as an art medium. We're an online and nomadic gallery. For now, at least. We organise curated online exhibitions, and once a year we also organise a physical exhibition in Cambridge. We don't have our own exhibition space in Cambridge [yet], but we'd like to grow. And who knows, perhaps one day you'll be able to find us on Google Maps. Eligibility: Open to all photographers worldwide All photographic techniques are allowed Artwork sales and commission: The exhibition is non-commercial. Artworks will not be sold through our platform. Our goal is to provide visibility and context for the artists rather than to facilitate direct sales. Copyright: Copyright of all submitted works will remain with the photographers at all times. By submitting, artists grant us permission to exhibit and promote their work in the context of this exhibition and its related promotional materials. Make a submission Contact the curator Who is eligible for this opportunity? Photographers of all levels and from all countries. When is the deadline? November 30, 2026 How many works can I submit? There is no fixed limit on the number of images. You are free to include as many as you feel are necessary for your project. Can I submit diptychs, collages, virtual photography? Yes. All formats and approaches are welcome. Can I submit AI-generated images? No, AI-generated images are not accepted. You may use AI tools as part of the workflow or editing process of your photographs, but fully AI-generated images are not accepted. Why is the exhibition only two weeks long, even though it’s online? We believe that a limited time window helps the exhibition feel special. During these two weeks, we will actively promote the exhibition, post dedicated Instagram posts, and share stories together with the artists. After it ends, the exhibition will remain accessible on our website in the “Past Exhibitions” section. Why is there a participation fee? The participation fee helps us cover the administrative costs of running the exhibition, maintaining the website, email, and other related expenses. We’re a small independent initiative - our goal is not profit, but sustainability. You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Advertisement Other opportunities Solitude Collect Art is delighted to present the open call for the upcoming curated online exhibition and... Land/Sea; Photography Exhibition Our exhibitions will explore the polarities of our lives and the world around us. These themes,... Print It! 2026 CALLING ALL INTERNATIONAL CREATIVES! Print It! returns in 2026 as a curated exhibition at The... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "international-2026-12-01-4d18caf296",
@@ -60369,6 +61412,35 @@
       "editor_overrides": {
         "registration": false
       }
+    },
+    {
+      "id": "international-2026-12-18-9e69ff8f97",
+      "status": "check",
+      "kind": "open_call",
+      "city": "international",
+      "date": "2026-12-18",
+      "time": "",
+      "title": "Call for curators or curator/artists to create a short group show as part of our 2027 programme",
+      "venue": "CuratorSpace",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "open-call"
+      ],
+      "description": "Garage Gallery E17 is now its fifth year of hosting imaginative, intimate and engaging exhibitions in our light and flexible space in Walthamstow village, East London. We are looking for curators and curator/artists for group shows (3 artists or more) for our 2027 programme of short shows (4 days), every 6-8 weeks during the year.",
+      "url": "https://www.curatorspace.com/opportunities/detail/call-for-curators-or-curatorartists-to-create-a-short-group-show-as-part-of-our--programme/11275",
+      "source": "CuratorSpace — opportunities",
+      "checked_at": "",
+      "review_reason": "primary_source_required",
+      "discovered_at": "2026-10-29",
+      "audience_text": "Opportunity details | Call for curators or curator/artists to create a short group show as part of our 2027 programme | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register Call for curators or curator/artists to create a short group show as part of our 2027 programme Deadline: 18/12/2026 City: London | Country: United Kingdom | GARAGE GALLERY Report this? Description Opportunity FAQs Make a submission Contact curator Garage Gallery E17 is now its fifth year of hosting imaginative, intimate and engaging exhibitions in our light and flexible space in Walthamstow village, East London. We are looking for curators and curator/artists for group shows (3 artists or more) for our 2027 programme of short shows (4 days), every 6-8 weeks during the year. We established the Gallery in 2022 to provide an opportunity for artists, both new to showing work and more established, to bring their work to life, in a welcoming and collaborative environment. Our shows to date have included hung work, sculpture and installations, workshops, audio and video based content and textiles and sculpture. Each curator and group of artists we have worked with has enjoyed the freedom to shape their own exhibition, and their feedback and that of our visitors has been universally positive. Every couple of months, we host a new exhibition over a long weekend (Thurs/Fri to Sunday). From experience we have found that because of the size and location of the Gallery and the ethos of collaboration, group shows of 3 or more artists tend to work best. We are particularly interested in socially conscious and thought-provoking themes but we are open to ideas. You can get an idea of the range of our previous shows from our website; please message us if you'd like to discuss your idea before submitting a proposal. Make a submission Contact the curator Who is eligible for this opportunity? Groups of artists (at least three) with a curator (who may be one of the artists), either new to exhibiting or with previous experience. A connection to East London is desirable but not essential. We are interested in thought-provoking socially conscious work but we also want to host a variety of short exhibitions so we're open to any ideas. When is the deadline? Friday 18th December, but we will look at submissions on a rolling basis and we will also be flexible about 'late' submissions. How much does it cost? We operate on a not-for-profit basis and we manage the space on a voluntary basis. There is no cost for submitting proposals at this stage. If we do host your exhibition then we ask groups for a contribution of £60 to cover our costs. We also ask groups to be responsible for purchasing refreshments for a Private View, and we ask for 10% of any sales made. We work with groups on publicity and ask them to produce as a minimum a small number of printed posters (they may choose to produce flyers etc too). Are there payments to artists? No Is there a private view / opening? Yes What are the exhibition opening hours? To be agreed on a show-by-show basis with the group Does the location have disabled access? Yes What publicity will be provided as part of the opportunity? Groups are expected to work with us on publicity including producing posters at their cost. We promote shows via our website and instagram and do some local publicity with flyers/cards. Do I need to be present? Yes we ask curators/artists to invigilate so one person needs to be present when the gallery is open. How do you decide on proposals? We will take into consideration the range of shows that we are running, and the different artist groups we are hosting, what would work well in our fairly restricted space, and what we feel would appeal to our regular visitors as well as attracting new people into the space. What happens if my proposal is chosen? We will ask you to visit the space and talk with you about the practicalities of setting up, running and 'staffing' a short show. You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Advertisement Other opportunities Solitude Collect Art is delighted to present the open call for the upcoming curated online exhibition and... Land/Sea; Photography Exhibition Our exhibitions will explore the polarities of our lives and the world around us. These themes,... Print It! 2026 CALLING ALL INTERNATIONAL CREATIVES! Print It! returns in 2026 as a curated exhibition at The... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "international-2026-12-20-7d49348433",

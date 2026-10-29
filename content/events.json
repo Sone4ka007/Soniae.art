@@ -46953,7 +46953,7 @@
       "address": "",
       "price": 0,
       "price_text": "Бесплатно",
-      "registration": null,
+      "registration": false,
       "categories": [
         "выставка"
       ],
@@ -46968,7 +46968,14 @@
       "ticket_required": false,
       "availability": "unknown",
       "availability_checked_at": "",
-      "start_date": "2026-10-29"
+      "start_date": "2026-10-29",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-29-d28e597f20",
@@ -47056,7 +47063,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [],
       "description": "",
       "url": "https://hermitagemuseum.org/what-s-on/afisha_mincult/?lng=ru",
@@ -47068,7 +47075,14 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-29-422be2d050",
@@ -47431,7 +47445,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [],
       "description": "Правообладатель фото: Пресс-служба Театра балета имени Леонида Якобсона. Правообладатель фото: Пресс-служба Театра балета имени Леонида Якобсона. Спасибо, что оставляете обратную связь!",
       "url": "https://spbcult.ru/news/anonsy/teatr-baleta-imeni-leonida-yakobsona-otmechaet-10-letie-postanovki-spyashchaya-krasavitsa/",
@@ -47443,7 +47457,14 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-29-6ae8537f08",
@@ -53687,7 +53708,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "спецпоказ"
       ],
@@ -53701,7 +53722,14 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-11-05-54179407af",
@@ -54971,7 +54999,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "мастер-класс"
       ],
@@ -54985,7 +55013,14 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "spb-2026-11-08-e79320720d",
@@ -55071,7 +55106,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "лекция"
       ],
@@ -55085,7 +55120,14 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "spb-2026-11-08-020d3b2f98",
@@ -55099,7 +55141,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "лекция"
       ],
@@ -55113,7 +55155,14 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-11-08-a193b10c2a",
@@ -55236,7 +55285,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "лекция"
       ],
@@ -55250,7 +55299,14 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-11-09-5f73160fd7",
@@ -55871,7 +55927,7 @@
       "address": "Москва, ул. Пятницкая, 71/5, строение 2, офис 503",
       "price": 750,
       "price_text": "750 ₽",
-      "registration": null,
+      "registration": false,
       "categories": [
         "наброски"
       ],
@@ -55886,7 +55942,14 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-11-11-8c7ac32fc5",
@@ -59310,7 +59373,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "лаборатория"
       ],
@@ -59324,7 +59387,14 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-11-23-eebb063dbc",
@@ -59937,7 +60007,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "лекция"
       ],
@@ -59951,7 +60021,14 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-11-28-8cb3f8d42f",
@@ -59965,7 +60042,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "мастер-класс"
       ],
@@ -59980,7 +60057,14 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "international-2026-11-30-9a278ceca1",

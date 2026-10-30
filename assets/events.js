@@ -207,6 +207,45 @@
       </article>`).join('');
   }
 
+  // Collapse duplicate records from repeat collector passes, regardless of their
+  // generated ids. Keep genuinely separate sessions on different dates or times.
+  function dedupeVisibleEvents(list) {
+    const norm = value => String(value || '').normalize('NFKC').toLowerCase()
+      .replace(/ё/g, 'е').replace(/[«»„“”]/g, '')
+      .replace(/[.,!?()[\\]:;]/g, ' ').replace(/\\s+/g, ' ').trim();
+    const kindOf = e => (e.kind === 'exhibition' || (e.categories || []).includes('выставка'))
+      ? 'exhibition' : (e.kind || 'event');
+    const same = (a, b) => {
+      if (kindOf(a) !== kindOf(b) || norm(a.title) !== norm(b.title) ||
+          norm(a.city) !== norm(b.city)) return false;
+      const aDate = a.start_date || a.date || '';
+      const bDate = b.start_date || b.date || '';
+      if (!aDate || aDate !== bDate) return false;
+      const aVenue = norm(a.venue || a.address);
+      const bVenue = norm(b.venue || b.address);
+      if (aVenue && bVenue && aVenue !== bVenue) return false;
+      // Without a shared location, require a matching primary source.
+      if (!aVenue || !bVenue) {
+        const url = e => String(e.url || '').split('?')[0].replace(/\\/$/, '');
+        if (!url(a) || url(a) !== url(b)) return false;
+      }
+      // Two separately ticketed sessions on one day are not duplicates.
+      if (a.time && b.time && a.time !== b.time) return false;
+      return true;
+    };
+    const quality = e => (String(e.id || '').startsWith('manual-') ? 10 : 0)
+      + (e.time ? 2 : 0) + (e.address ? 1 : 0)
+      + (e.availability_evidence ? 2 : 0)
+      + Math.min(String(e.description || '').length, 400) / 200;
+    const unique = [];
+    for (const event of list) {
+      const index = unique.findIndex(other => same(other, event));
+      if (index === -1) unique.push(event);
+      else if (quality(event) > quality(unique[index])) unique[index] = event;
+    }
+    return unique;
+  }
+
   function render() {
     const sketch = state.kind === 'sketch';
     document.getElementById('sketch-intro').hidden = !sketch;
@@ -219,6 +258,8 @@
       const bd = b.start_date || b.date || '';
       return ad.localeCompare(bd) || String(a.title||'').localeCompare(String(b.title||''));
     });
+
+    visible = dedupeVisibleEvents(visible);
 
     if (state.kind === 'exhibition') {
       const unique = new Map();

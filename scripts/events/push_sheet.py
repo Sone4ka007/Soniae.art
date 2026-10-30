@@ -117,7 +117,10 @@ def main():
           if str(e.get("discovered_at","")).replace("-","").isdigit() else 0),
         e.get("date",""),e.get("time",""),e.get("title","")
     ))
-    sheet_events=existing+fresh
+    # Editorial reset on 2026-10-30: retain only approved items in the public
+    # moderation ledger. Unapproved discoveries remain in the JSON database
+    # for deduplication and audit, but cannot return to the working Sheet.
+    sheet_events=[e for e in existing+fresh if str(e.get("status", "")) == "approved"]
     rows=[HEADERS]+[row_for_event(e) for e in sheet_events]
 
     DB.write_text(json.dumps(db,ensure_ascii=False,indent=2)+"\n","utf-8")

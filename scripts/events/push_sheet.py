@@ -117,10 +117,46 @@ def main():
           if str(e.get("discovered_at","")).replace("-","").isdigit() else 0),
         e.get("date",""),e.get("time",""),e.get("title","")
     ))
-    # Editorial reset on 2026-10-30: retain only approved items in the public
-    # moderation ledger. Unapproved discoveries remain in the JSON database
-    # for deduplication and audit, but cannot return to the working Sheet.
-    sheet_events=[e for e in existing+fresh if str(e.get("status", "")) == "approved"]
+    # The old unreviewed backlog was archived on 2026-10-30. It must not
+    # reappear in the editor's working queue. Keep collecting new discoveries,
+    # but only expose promising recent candidates from vetted institutions.
+    def show_in_editor(e):
+        status=str(e.get("status", "")).strip()
+        if status == "approved":
+            return True
+        if status not in ("new", "check"):
+            return False
+        if str(e.get("discovered_at", "")) <= "2026-10-30":
+            return False
+        title=str(e.get("title", "")).strip().lower()
+        if len(title) < 12 or title in {
+            "мероприятия", "наши события", "новости", "государственный эрмитаж",
+            "музыка", "афиша", "события"
+        }:
+            return False
+        source=str(e.get("source", "")).lower()
+        trusted=(
+            "третьяковская", "русский музей", "росфото", "гараж", "центр зотов",
+            "манеж", "гэс-2", "школа дизайна", "простая школа", "музей az",
+            "музей архитектуры", "новая голландия", "открытые мастерские",
+            "масловка", "кгалерея", "kgallery", "фото департамент",
+            "фотодепартамент", "пушкинская-10", "музей современного искусства"
+        )
+        if not any(s in source for s in trusted):
+            return False
+        if any(s in title for s in ("детская", "для детей", "школьников", "семейная экскурсия")):
+            return False
+        categories=e.get("categories") or []
+        if isinstance(categories, str):
+            categories=[categories]
+        categories=" ".join(str(x).lower() for x in categories)
+        if "экскурсия" in categories and not any(
+            t in title for t in ("кураторская", "авторская", "с художником")
+        ):
+            return False
+        return True
+
+    sheet_events=[e for e in existing+fresh if show_in_editor(e)]
     rows=[HEADERS]+[row_for_event(e) for e in sheet_events]
 
     DB.write_text(json.dumps(db,ensure_ascii=False,indent=2)+"\n","utf-8")

@@ -38277,7 +38277,7 @@
       "reviewed_at": "2026-10-17",
       "availability": "unknown",
       "availability_checked_at": "",
-      "registration": false,
+      "registration": null,
       "price": null,
       "price_text": "",
       "price_type": "paid",
@@ -38303,7 +38303,7 @@
         "status": "approved",
         "telegram_include": false,
         "instagram_include": false,
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -38319,7 +38319,7 @@
       "reviewed_at": "2026-10-17",
       "availability": "unknown",
       "availability_checked_at": "",
-      "registration": false,
+      "registration": null,
       "price": null,
       "price_text": "",
       "price_type": "paid",
@@ -38345,7 +38345,7 @@
         "status": "approved",
         "telegram_include": false,
         "instagram_include": false,
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -40995,7 +40995,7 @@
       "address": "1-й Голутвинский переулок, 16, стр. 1",
       "price": 850,
       "price_text": "850 ₽; льготный — 650 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -41019,7 +41019,7 @@
       "reviewed_at": "2026-10-17",
       "ticket_required": true,
       "editor_overrides": {
-        "registration": false
+        "registration": null
       },
       "time_verification": "verified",
       "time_evidence": "24 октября 2026 14:00",
@@ -41037,7 +41037,7 @@
       "address": "1-й Голутвинский переулок, 16, стр. 1",
       "price": 850,
       "price_text": "850 ₽; льготный — 650 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -41064,7 +41064,7 @@
       "time_evidence": "24 октября 2026 14:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
       "editor_overrides": {
-        "registration": false
+        "registration": null
       }
     },
     {
@@ -48440,6 +48440,116 @@
       }
     },
     {
+      "id": "spb-2026-10-30-1cc8545c6c",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-30",
+      "time": "",
+      "title": "«Вокруг Битлз»: вторая научная конференция",
+      "venue": "Пушкинская-10",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "конференция"
+      ],
+      "description": "Вторая научная конференция будет вновь посвящена новым исследованиям влияния творчества The Beatles в различных областях.",
+      "url": "https://p-10.ru/events/vokrug-bitlz-vtoraya-nauchnaya-konferenciya/",
+      "source": "Пушкинская-10 — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-30",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "spb-2026-10-30-4e6d5e4e7d",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-30",
+      "time": "",
+      "title": "В РОСФОТО покажу фотоархив Николая Акимова",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "Выставочный проект «Архив Николая Акимова. Фотография как записная книжка» представит коллекцию фотографий выдающегося художника, сценографа, режиссера и педагога Николая Акимова, чьё 125-летие со дня рождения отмечается в этом году. Выставочный проект «Архив Николая Акимова.",
+      "url": "https://spbcult.ru/news/anonsy/v-rosfoto-pokazhu-fotoarkhiv-nikolaya-akimova/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-30",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "spb-2026-10-30-5da4d0536e",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-30",
+      "time": "",
+      "title": "В СХ обсудят традиции и новаторство Академии художеств",
+      "venue": "",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [
+        "диалог"
+      ],
+      "description": "13 и 14 ноября в Союзе художников пройдет Научно-практическая конференция «Санкт-Петербургская Академия художеств. Традиции и новаторство в контексте XXI века». К участию в ней приглашаются научные сотрудники, преподаватели, искусствоведы, художники и молодые исследователи.",
+      "url": "https://spbcult.ru/news/anonsy/v-skh-obsudyat-traditsii-i-novatorstvo-akademii-khudozhestv/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-30",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "spb-2026-10-30-3c26687e2f",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-30",
+      "time": "",
+      "title": "В Строгановском дворце пройдёт мастер-класс «Алюмография: секреты ручной печати»",
+      "venue": "Лекторий Русского музея",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "В рамках международного проекта «Русские сезоны», который проходит в Королевстве Таиланд в течение всего года, Русский музей представил планшетную выставку «Русские сезоны».",
+      "url": "https://rusmuseum.ru/news/",
+      "source": "Русский музей — лекторий",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-30",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-10-30-b904ea1219",
       "status": "rejected",
       "city": "moscow",
@@ -48481,6 +48591,34 @@
       }
     },
     {
+      "id": "spb-2026-10-30-0d39d40b4d",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-30",
+      "time": "",
+      "title": "Выставку «Архиграфика. Печать города» дополнят бесплатные лекции",
+      "venue": "",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": true,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами! Также вы можете отправить статью в социальной сети или мессенджере Если у вас есть чем поделиться с нашими читателями, вы можете предложить свою статью.",
+      "url": "https://spbcult.ru/news/anonsy/vystavku-arkhigrafika-pechat-goroda-dopolnyat-besplatnye-lektsii-prepodavateley-spgkhpa-im-shtiglits/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-30",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "spb-2026-10-30-5995f84169",
       "status": "new",
       "kind": "event",
@@ -48511,7 +48649,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-30-3470d908a2",
@@ -48661,7 +48801,37 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
+    },
+    {
+      "id": "spb-2026-10-30-06541d6bda",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-30",
+      "time": "",
+      "title": "Коллажная встреча «Листопад наоборот»",
+      "venue": "Пушкинская-10",
+      "address": "",
+      "price": 300,
+      "price_text": "300 ₽",
+      "registration": null,
+      "categories": [
+        "воркшоп"
+      ],
+      "description": "Приглашаем вас на 6 из 13 художественных воркшопов (рабочих мастерских), Тема октября: листопад Приём: отпечаток-перенос Дополнительный материал: ферментированные листья Октябрь — время, когда всё замедляется, темнеет и начинает пахнуть землёй. Приём «отпечаток-перенос» позволит получить мягкий, неровный, живой лист оставит свой след этой осени, который станет слоем коллажа.",
+      "url": "https://p-10.ru/events/kollazhnaya-vstrecha-listopad-naoborot/",
+      "source": "Пушкинская-10 — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-30",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-10-30-d27db9de0f",
@@ -48894,7 +49064,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-30-da81792ce4",
@@ -49084,7 +49256,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-10-30-9b2ed009fe",
@@ -49411,6 +49585,34 @@
       },
       "telegram_include": false,
       "instagram_include": false
+    },
+    {
+      "id": "spb-2026-10-30-aae0c0f86f",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-30",
+      "time": "14:00",
+      "title": "В ТЮЗе представят знаменитый театральный метод Корогодского",
+      "venue": "",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": true,
+      "categories": [
+        "диалог"
+      ],
+      "description": "Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами! Также вы можете отправить статью в социальной сети или мессенджере Если у вас есть чем поделиться с нашими читателями, вы можете предложить свою статью.",
+      "url": "https://spbcult.ru/news/anonsy/v-tyuze-predstavyat-znamenityy-teatralnyy-metod-korogodskogo/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-30",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-10-31-2b2a385dc4",
@@ -49742,7 +49944,7 @@
     },
     {
       "id": "moscow-2026-10-30-2f316f6405",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-30",
@@ -49769,12 +49971,13 @@
       "availability_checked_at": "2026-10-30",
       "editor_overrides": {
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-30"
     },
     {
       "id": "spb-2026-10-30-e7849a586b",
@@ -49980,7 +50183,7 @@
       "address": "Лаврушинский переулок, 12",
       "price": 650,
       "price_text": "650 ₽; онлайн — 700 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -49997,7 +50200,7 @@
         "telegram_include": false,
         "instagram_include": false,
         "status": "approved",
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -50310,7 +50513,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-10-31-62ed818893",
@@ -50660,6 +50865,41 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
+      "id": "moscow-2026-10-31-4c74a282ac",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-31",
+      "time": "",
+      "title": "Лекция-экскурсия «В.Бубнова — русский художник в Японии»",
+      "venue": "Дом русского зарубежья им. А. Солженицына",
+      "address": "",
+      "price": 400,
+      "price_text": "400 ₽",
+      "registration": true,
+      "categories": [
+        "лекция"
+      ],
+      "description": "23 октября 2026 года в 17 часов приглашаем на лекцию-экскурсию «В.Бубнова — русский художник в Японии». Варвара Бубнова (1886–1983) — яркая представительница русского художественного авангарда и человек удивительной судьбы. Участница выставок «Союза молодежи» и «Ослиного хвоста», она в начале 1920-х годов покинула Россию и на 36 лет связала свою жизнь с Японией.",
+      "url": "https://www.domrz.ru/event/70298_lektsiya_ekskursiya_v_bubnova_russkiy_khudozhnik_v_yaponii/",
+      "source": "Дом русского зарубежья — афиша",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-19",
+      "price_type": "paid",
+      "availability": "sold_out",
+      "availability_checked_at": "2026-10-30",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false,
+        "time": ""
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "time_verification": "unverified",
+      "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
       "id": "moscow-2026-10-31-8cb3f8d42f",
       "status": "rejected",
       "kind": "event",
@@ -51003,6 +51243,35 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
+      "id": "moscow-2026-10-31-50c1b8883d",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-31",
+      "time": "13:00",
+      "title": "Барашек Шон и чудище лохматое",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/shaun-the-sheep-the-beast-of-mossy-bottom",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-30",
+      "audience_text": "Дата: с 29 окт 2026 Билеты Возраст: от 6 Тип: Кинопоказ Место: Кинотеатр Возрастные ограничения 6+ Хеллоуин в овечьей шкуре в новом мастер-классе кукольной анимации от создателей «Уоллеса и Громита». Shaun the Sheep: The Beast of Mossy Bottom 2026, Стив Кокс, Мэттью Уокер | Steve Cox, Matthew Walker Великобритания 80 мин., рус. дуб. мультипликационный T Неуклюжий Фермер случайно потоптал весь урожай тыкв, так что спасать осень предстоит самому бессловесному и неочевидному из гениев нашего мира — барашку Шону. Блеющий изобретатель быстро соорудит волшебную микстуру, возвращающую обязательным октябрьским овощам презентабельный вид, — но не учтет некоторых побочных эффектов, из-за которых в идиллическом Моссингеме аккурат к Хеллоуину заведется косматый монстр. Кадр из фильма «Барашек Шон и чудище лохматое», 2026 Один из лучших образцов покадровой анимации, полностью сделанный вручную, в новой хеллоуинской классике от студии Aardman. — Питер Трэверс, The Travers Take На фоне стремительно скатывающейся в банальности и однообразие анимационной индустрии творения британской студии Aardman (помимо «Барашка Шона» знаменитой также «Уоллесом и Громитом») остаются спасительным глотком свежего воздуха. Третий фильм о лидере овечьего стада отличается теми же фирменными качествами, что сделали франшизу глобальным хитом: достойное Чарли Чаплина и Бастера Китона чувство визуальной шутки, убийственные посвящения классике (на этот раз приветы передаются «Психозу» и «Ночи живых мертвецов»), всепроникающая ироничная мудрость. И все это — без единого слова (но с многочисленными «бе» и «ме»). {\"grid\":{\"width\":963,\"column_width\":89,\"columns_n\":9,\"gutter\":20,\"margin\":0,\"line\":10},\"palette\":\"default\",\"responsive_mode\":true,\"responsive_min_width\":512,\"responsive_max_width\":1100,\"colorchanger_fullscreen\":false,\"colorchanger_overflow\":true,\"page_cropping\":false,\"global_google_analytics_id\":\"\",\"global_yandex_metrika_id\":\"\",\"article_mode\":{\"mode\":\"page\",\"transition_type\":\"slide\",\"transition_direction\":\"horizontal\",\"transition_look\":\"belt\",\"slides_form\":{}},\"default_font\":{\"css\":\".editor {font-family: Diagramatika Text; font-size: 20px; font-weight: 400; line-height: 20px;}\"},\"smooth_scroll\":false} ГЭС-2 Посещение [+] План здания Правила посещения Ателье Игровая Кинотеатр Концертный зал Библиотека Малые своды Магазин Ресторан и кафе Парковка Вокруг Доступность Как нас найти Календарь Программа Направления [+] Практики Медиация Дети и подростки Сообщества Школы Университеты Города Возможн",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-07-361d91be6e",
       "status": "approved",
       "kind": "event",
@@ -51043,7 +51312,7 @@
     },
     {
       "id": "moscow-2026-10-31-ddce13075d",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-31",
@@ -51071,12 +51340,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "rejected"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-30"
     },
     {
       "id": "moscow-2026-10-31-0fcdd93d96",
@@ -51669,47 +51939,35 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
-      "id": "moscow-2026-10-04-12be1ec556",
-      "status": "rejected",
+      "id": "spb-2026-10-31-c8e1a3b119",
+      "status": "check",
       "kind": "event",
-      "city": "moscow",
-      "date": "2026-11-01",
-      "time": "",
-      "title": "AZ Online",
-      "venue": "Музей AZ",
+      "city": "spb",
+      "date": "2026-10-31",
+      "time": "20:00",
+      "title": "Название требует проверки",
+      "venue": "Пушкинская-10",
       "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
+      "price": 500,
+      "price_text": "500 ₽",
+      "registration": null,
       "categories": [
-        "лекция"
+        "событие"
       ],
-      "description": "На метро Музей AZ находится между станциями метро «Маяковская» и «Белорусская» (кольцевая). Мы рекомендуем идти в Музей от станции «Маяковская». Вам нужен Выход №1 на 1-я Тверская-Ямская улица, 2-я Тверская-Ямская улица.",
-      "url": "https://museum-az.com/az-show/",
-      "source": "Музей AZ — выставки и события",
+      "description": "Часто задаваемые вопросы о фестивале «Когда гаснет свет…» С 19:30 наш ресепшен в корпусе А (вход с Лиговского пр., 53) начинает продажу единых билетов, относящихся к фестивалю, и выдачу квестовых программ. Стоимость билета — 500 рублей. Большая часть галерей подготовила специальную программу для этого вечера, однако учитывайте, что для посещения будут доступны только галереи корпуса В и музей звука в корпусе D. Нужно брать с собой фонарик? Необязательно. Вы можете подсвечивать себе дорогу телефоном или своим фонариком, если вам так удобнее, но также мы будем выдавать фонарики по запросу.",
+      "url": "https://t.me/pushkinskaya10/1592",
+      "source": "Пушкинская-10 — официальный Telegram",
       "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-23",
-      "price_type": "unknown",
+      "review_reason": "curated_telegram_source, invalid_title_from_description",
+      "discovered_at": "2026-10-30",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": "2026-10-25",
-      "telegram_include": false,
-      "social_description": "",
-      "instagram_image": "",
-      "social_title": "",
-      "editor_note": "",
-      "social_priority": null,
-      "instagram_include": false,
-      "reviewed_at": "2026-09-24",
-      "sheet_synced_description": "На метро Музей AZ находится между станциями метро «Маяковская» и «Белорусская» (кольцевая). Мы рекомендуем идти в Музей от станции «Маяковская». Вам нужен Выход №1 на 1-я Тверская-Ямская улица, 2-я Тверская-Ямская улица.",
-      "time_verification": "unverified",
-      "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
-      "editor_overrides": {
-        "time": ""
-      }
+      "availability_checked_at": ""
     },
     {
-      "id": "moscow-2026-11-01-12be1ec556",
+      "id": "moscow-2026-10-04-12be1ec556",
       "status": "rejected",
       "kind": "event",
       "city": "moscow",
@@ -52059,46 +52317,6 @@
       }
     },
     {
-      "id": "moscow-2026-10-04-bb9ac87531",
-      "status": "rejected",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-11-01",
-      "time": "",
-      "title": "События",
-      "venue": "Музей AZ",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [
-        "лекция"
-      ],
-      "description": "На метро Музей AZ находится между станциями метро «Маяковская» и «Белорусская» (кольцевая). Мы рекомендуем идти в Музей от станции «Маяковская». Вам нужен Выход №1 на 1-я Тверская-Ямская улица, 2-я Тверская-Ямская улица.",
-      "url": "https://museum-az.com/event/",
-      "source": "Музей AZ — выставки и события",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-09-23",
-      "price_type": "unknown",
-      "availability": "unknown",
-      "availability_checked_at": "2026-10-25",
-      "telegram_include": false,
-      "social_description": "",
-      "instagram_image": "",
-      "social_title": "",
-      "editor_note": "",
-      "social_priority": null,
-      "instagram_include": false,
-      "reviewed_at": "2026-09-24",
-      "sheet_synced_description": "На метро Музей AZ находится между станциями метро «Маяковская» и «Белорусская» (кольцевая). Мы рекомендуем идти в Музей от станции «Маяковская». Вам нужен Выход №1 на 1-я Тверская-Ямская улица, 2-я Тверская-Ямская улица.",
-      "time_verification": "unverified",
-      "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
-      "editor_overrides": {
-        "time": ""
-      }
-    },
-    {
       "id": "moscow-2026-11-01-406d4ae682",
       "status": "rejected",
       "kind": "exhibition",
@@ -52111,14 +52329,16 @@
       "price": 0,
       "price_text": "",
       "registration": false,
-      "categories": [],
+      "categories": [
+        "выставка"
+      ],
       "description": "На метро Музей AZ находится между станциями метро «Маяковская» и «Белорусская» (кольцевая). Мы рекомендуем идти в Музей от станции «Маяковская». Вам нужен Выход №1 на 1-я Тверская-Ямская улица, 2-я Тверская-Ямская улица.",
       "url": "https://museum-az.com/event/territoriya-svobody-nonkonformisty-v-taruse/",
       "source": "Музей AZ — выставки и события",
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-10-20",
-      "price_type": "paid",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-10-25",
       "editor_overrides": {
@@ -52408,7 +52628,7 @@
     },
     {
       "id": "moscow-2026-11-01-70e846d835",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-01",
@@ -52436,12 +52656,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-30"
     },
     {
       "id": "moscow-2026-11-01-a19447258a",
@@ -52480,6 +52701,34 @@
       "time_verification": "verified",
       "time_evidence": "01.11.2026 13:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
+      "id": "spb-2026-11-01-dc67051929",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-01",
+      "time": "13:30",
+      "title": "Экскурсия «Отражения Новой Голландии» на теплоходе",
+      "venue": "Новая Голландия",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "Где в нашем городе оставили след голландские и новоголландские зодчие, архитекторы и инженеры? А также приключения голландцев в России; «малые» и «большие» голландцы. Ведущий Митя Гольцман — экскурсовод Новой Голландии, краевед, участник археологических экспедиций Государственного Эрмитажа.",
+      "url": "https://www.newhollandsp.ru/events/education/reflections-boat-tour/",
+      "source": "Новая Голландия — Сообщество и образование",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-30",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-01-a67bd74ca8",
@@ -52887,6 +53136,43 @@
       }
     },
     {
+      "id": "spb-2026-11-01-ddf26cb2b6",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-01",
+      "time": "17:00",
+      "title": "ÐÑÐ¾Ð²ÐµÑÐºÐ° Ð±ÑÐ°ÑÐ·ÐµÑÐ° Ð¿ÐµÑÐµÐ´ Ð¿ÐµÑÐµÑ Ð¾Ð´Ð¾Ð¼ Ð½Ð° tsentralnaya-events.timepad.ru",
+      "venue": "Библиотека Маяковского",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Как не попасться на враньё извозчика? Дачная жизнь Петербурга начала XX века Дача давно стала частью нашей жизни, местом отдыха от городской суеты. А какой она была, когда только появилась? Какое место занимала в жизни петербуржцев начала XX века? Разраставшийся город постепенно включал в себя старые пригородные местности, а с развитием железной дороги дачники разъехались по всей территории Петербургской губернии. В путеводителях появлялись всё новые и новые посёлки… На встрече поговорим о даче не как о красивой декорации, а как о целом мире со своими привычками, модой, развлечениями — и даже",
+      "url": "https://tsentralnaya-events.timepad.ru/event/4250929/",
+      "source": "Библиотека Маяковского — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-10-27",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
+    },
+    {
       "id": "spb-2026-11-01-2cf7a50539",
       "status": "approved",
       "kind": "event",
@@ -52962,45 +53248,8 @@
       "reviewed_at": "2026-10-27"
     },
     {
-      "id": "spb-2026-11-01-ddf26cb2b6",
-      "status": "check",
-      "kind": "event",
-      "city": "spb",
-      "date": "2026-11-01",
-      "time": "17:00",
-      "title": "Название требует проверки",
-      "venue": "Библиотека Маяковского",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [
-        "лекция"
-      ],
-      "description": "Как не попасться на враньё извозчика? Дачная жизнь Петербурга начала XX века Дача давно стала частью нашей жизни, местом отдыха от городской суеты. А какой она была, когда только появилась? Какое место занимала в жизни петербуржцев начала XX века? Разраставшийся город постепенно включал в себя старые пригородные местности, а с развитием железной дороги дачники разъехались по всей территории Петербургской губернии. В путеводителях появлялись всё новые и новые посёлки… На встрече поговорим о даче не как о красивой декорации, а как о целом мире со своими привычками, модой, развлечениями — и даже",
-      "url": "https://tsentralnaya-events.timepad.ru/event/4250929/",
-      "source": "Библиотека Маяковского — официальный Telegram",
-      "checked_at": "",
-      "review_reason": "curated_telegram_source, invalid_title_from_description",
-      "discovered_at": "2026-10-27",
-      "price_type": "unknown",
-      "availability_evidence": "",
-      "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": ""
-    },
-    {
       "id": "spb-2026-11-01-e83aa45bd5",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "spb",
       "date": "2026-11-01",
@@ -53028,12 +53277,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-30"
     },
     {
       "id": "moscow-2026-11-01-beef62faa1",
@@ -53378,6 +53628,34 @@
       "instagram_include": false
     },
     {
+      "id": "spb-2026-11-02-4118e2f51f",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-02",
+      "time": "18:30",
+      "title": "Название требует проверки",
+      "venue": "Библиотека Маяковского",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [
+        "встреча"
+      ],
+      "description": "«Адамах»: ищу человека. Трудный путь чистой поэзии Селин Зенс Селин Зенс — французская поэтесса и переводчица, автор нескольких поэтических сборников, организованных по общему принципу единого высказывания, состоящего из отдельных фрагментов. Наиболее последовательно и доказательно этот поэтический принцип разворачивается в самом ярком сборнике поэтессы «Адамах» (1988), посвящённом поискам отца, погибшего в годы Второй мировой войны. Авторское «я» пытается пробиться сквозь толщу неизвестности — обрести посредством поэтического языка диалог с абсолютно незнакомой, чужой и в то же время родствен",
+      "url": "https://t.me/mayakovka/2129",
+      "source": "Библиотека Маяковского — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source, invalid_title_from_description",
+      "discovered_at": "2026-10-30",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "spb-2026-11-02-0e987411cc",
       "status": "approved",
       "kind": "event",
@@ -53449,6 +53727,34 @@
       },
       "telegram_include": false,
       "instagram_include": false
+    },
+    {
+      "id": "moscow-2026-11-03-a60280a43f",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-03",
+      "time": "",
+      "title": "«Ночь искусств» в Доме русского зарубежья",
+      "venue": "Дом русского зарубежья им. А. Солженицына",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": true,
+      "categories": [
+        "лекция"
+      ],
+      "description": "3 ноября 2026 года с 18 до 24 часов приглашаем на бесплатные мероприятия в рамках всероссийской акции «Ночь искусств». ️Для участия необходимо приобрести бесплатный билет на сайте mos.ru : 19:00 Интерактивная программа с мастер-классом «“И Творчество, и Чудотворство…”: Художественный мир сестры Иоанны (Ю.Н.Рейтлингер)» 19:00 Концерт гитариста М.Радюкевича «Гитара на холсте»",
+      "url": "https://www.domrz.ru/event/70740_noch_iskusstv_v_dome_russkogo_zarubezhya/",
+      "source": "Дом русского зарубежья — афиша",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-30",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "sold_out",
+      "availability_checked_at": "2026-10-30"
     },
     {
       "id": "spb-2026-11-03-11a6fcdd93",
@@ -53815,6 +54121,71 @@
       "reviewed_at": ""
     },
     {
+      "id": "moscow-2026-11-03-658ce25c5e",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-03",
+      "time": "19:00",
+      "title": "Чувственность в искусстве глазами женщин художниц",
+      "venue": "Музейный центр «Масловка. Городок художников»",
+      "address": "",
+      "price": 1900,
+      "price_text": "1900 ₽",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "«Мужчины смотрят на женщин, женщины видят себя рассматриваемыми», — утверждал историк искусства Джон Бергер. Долгое время в изобразительном искусстве женщины воспринимались лишь как объект зрительского внимания через призму мужского взгляда, однако всё изменилось с приходом XX века.",
+      "url": "https://maslovka.org/events/chuvstvennost-v-iskusstve-glazami-zhenshchin-khudozhnits/",
+      "source": "Масловка — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-21",
+      "price_type": "paid",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-25",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false,
+        "status": "rejected"
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": "2026-10-24",
+      "time_verification": "unverified",
+      "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
+      "id": "spb-2026-11-03-d840639c9f",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-03",
+      "time": "19:00",
+      "title": "Шахматный клуб в «Сообществе»",
+      "venue": "Новая Голландия",
+      "address": "",
+      "price": 300,
+      "price_text": "300 ₽",
+      "registration": true,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "В рамках шахматного клуба проводятся лекции, мастер-классы, и, конечно, открытые турниры в разных форматах. Встречи проходят совместно со Школой Сергея Мкртычанца. Встречи проходят в пространстве «Сообщество» .",
+      "url": "https://www.newhollandsp.ru/events/education/chess-club-2026/",
+      "source": "Новая Голландия — Сообщество и образование",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-30",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-03-4797bda394",
       "status": "new",
       "kind": "event",
@@ -54041,6 +54412,44 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "spb-2026-11-04-a7adc41ae8",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-04",
+      "time": "",
+      "title": "ОБРАЩАЕМ ВНИМАНИЕ! 8 октября МАНЕЖ работает до 18:30. Двери на вход закрываются в 17:00 8 октября 2026",
+      "venue": "Манеж",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [],
+      "description": "Друзья, обращаем внимание, что 8 октября Манеж работает до 18:30 (вход в выставочный комплекс закрывается в 17:00). Приобретая билеты на сеанс в 17:00, пожалуйста, рассчитывайте время на осмотр экспозиции. Билеты доступны по ссылке , а также в кассе Манежа.",
+      "url": "https://manege.spb.ru/events/8-oktyabrya-manezh-rabotaet-do-1830-dveri-na-vhod-zakryvayutsya-v-1700/",
+      "source": "Манеж — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-06",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-08",
+      "sheet_synced_description": "Друзья, обращаем внимание, что 8 октября Манеж работает до 18:30 (вход в выставочный комплекс закрывается в 17:00). Приобретая билеты на сеанс в 17:00, пожалуйста, рассчитывайте время на осмотр экспозиции. Билеты доступны по ссылке , а также в кассе Манежа.",
+      "editor_note": "",
+      "social_title": "",
+      "social_priority": null,
+      "instagram_include": false,
+      "instagram_image": "",
+      "telegram_include": false,
+      "social_description": "",
+      "reviewed_at": "2026-10-06",
+      "time_verification": "unverified",
+      "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
+      "editor_overrides": {
+        "time": ""
+      }
     },
     {
       "id": "moscow-2026-11-04-175d817326",
@@ -54669,7 +55078,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-05-84b65b4d8b",
@@ -54743,7 +55154,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-05-9b2ed009fe",
@@ -54785,7 +55198,7 @@
     },
     {
       "id": "moscow-2026-11-05-8019a38ae4",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-05",
@@ -54812,10 +55225,13 @@
       "availability_checked_at": "",
       "editor_overrides": {
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "reviewed_at": "2026-10-30",
+      "editor_note": ""
     },
     {
       "id": "spb-2026-11-05-5fe0d5bb80",
@@ -55077,11 +55493,13 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-05-6734b4aa99",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-05",
@@ -55108,12 +55526,13 @@
       "availability_checked_at": "",
       "editor_overrides": {
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-30"
     },
     {
       "id": "moscow-2026-11-05-3cc2c911bc",
@@ -55147,7 +55566,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-11-06-e5e1a6b184",
@@ -55380,7 +55801,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-06-da81792ce4",
@@ -55458,6 +55881,34 @@
       "instagram_include": false
     },
     {
+      "id": "moscow-2026-11-06-51c2626b24",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-06",
+      "time": "19:00",
+      "title": "Лекция «Александр Иванович Замошкин»",
+      "venue": "Третьяковская галерея",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Лекция к абонементу №02 «Попечители и директора Третьяковской галереи» 2 октября 2026 – 20 ноября 2026 Лекция будет проходить в Лекционном зале Инженерного корпуса (Лаврушинский переулок, д. 12, вход с Малого Толмачёвского переулка) и в режиме реального времени на платформе МТС Линк в формате онлайн. Продолжительность лекции: 1 час 30 минут.",
+      "url": "https://www.tretyakovgallery.ru/events/o/lektsiya-aleksandr-ivanovich-zamoshkin-11-2026/",
+      "source": "Третьяковская галерея — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-30",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-06-63e55d0987",
       "status": "approved",
       "kind": "event",
@@ -55527,7 +55978,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-06-0b473deff7",
@@ -55562,7 +56015,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-11-07-e6acac2220",
@@ -55645,7 +56100,7 @@
     },
     {
       "id": "moscow-2026-11-07-94e84b92a6",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-07",
@@ -55671,12 +56126,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "rejected"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-30"
     },
     {
       "id": "moscow-2026-11-07-086888f0c0",
@@ -55745,7 +56201,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-07-64ecc1a02b",
@@ -55929,7 +56387,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-07-e58254161c",
@@ -56071,7 +56531,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-11-08-f9e3a218bb",
@@ -56258,6 +56720,34 @@
       "reviewed_at": "2026-10-24",
       "time_verification": "unverified",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
+      "id": "spb-2026-11-08-0f29c2fadd",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-08",
+      "time": "",
+      "title": "Экскурсия по экспозиции «Фо­то­гра­фия. Изоб­ре­тая цвет»",
+      "venue": "РОСФОТО",
+      "address": "",
+      "price": 700,
+      "price_text": "700 ₽",
+      "registration": null,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "На экскурсии вы узнаете о по­яв­ле­нии и раз­ви­тии цвет­ной фо­то­гра­фии: на­уч­ных экс­пе­ри­мен­тах XIX и XX веков; пер­вых цвет­ных фо­то­изоб­ра­же­ни­ях; слай­дах и нега­ти­вах, по­явив­ших­ся в се­ре­дине 1930-х годов; циф­ро­вой фо­то­гра­фии.",
+      "url": "https://rosphoto.org/events/ekskursiya-po-ekspozicii-fo-to-gra-fiya-izob-re-taya-cvet/",
+      "source": "РОСФОТО",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-30",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "spb-2026-11-08-fe7e0ac9b9",
@@ -56479,7 +56969,7 @@
     },
     {
       "id": "moscow-2026-11-09-5f73160fd7",
-      "status": "check",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-09",
@@ -56508,11 +56998,12 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       },
       "telegram_include": false,
       "instagram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-30"
     },
     {
       "id": "international-2026-11-10-a442cf41fe",
@@ -56673,7 +57164,7 @@
     },
     {
       "id": "moscow-2026-11-10-b9a5fe1f3d",
-      "status": "check",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-10",
@@ -56702,11 +57193,12 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       },
       "telegram_include": false,
       "instagram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-30"
     },
     {
       "id": "spb-2026-11-10-d70f2c6fd6",
@@ -56852,7 +57344,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-10-cc05471254",
@@ -56931,7 +57425,7 @@
     },
     {
       "id": "moscow-2026-11-10-7874148c04",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-10",
@@ -56956,12 +57450,13 @@
       "availability_checked_at": "",
       "editor_overrides": {
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "rejected"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-30"
     },
     {
       "id": "international-2026-11-11-533523acf3",
@@ -57121,7 +57616,7 @@
     },
     {
       "id": "moscow-2026-11-11-d4ed4734f6",
-      "status": "check",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-11",
@@ -57150,11 +57645,12 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       },
       "telegram_include": false,
       "instagram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-30"
     },
     {
       "id": "moscow-2026-11-11-8c7ac32fc5",
@@ -57233,6 +57729,35 @@
       "reviewed_at": ""
     },
     {
+      "id": "moscow-2026-11-11-3fe6d8213b",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-11",
+      "time": "11:30",
+      "title": "По ту сторону урока: экспериментальные педагогики сегодня",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "фестиваль"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/projects/beyond-the-lesson-experimental-pedagogies-today",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-30",
+      "audience_text": "› Исследования Регистрация Расписание конференции Дата: 11– 14 ноя 2026 Регистрация Расписание конференции Возраст: от 18 Тип: Публичная программа Место: Актовый зал , Платформы , Классы Возрастные ограничения 16+ Конференция-фестиваль, посвященная многообразию педагогических практик и методик. T Образование постоянно переизобретает себя, адаптируясь к меняющейся реальности. Хотя институции вроде школы и университета обычно довольно консервативны, в XX веке достижения педагогов, теоретиков и художников-экспериментаторов — от создателей авангардных мастерских и новаторов институциональной психотерапии до апологетов школьной горизонтальности и практиков «театра угнетенных» — сильно изменили общественные представления о том, что вообще значит учить и учиться. Мы обращаемся к этому наследию как к живому ресурсу, синтезируя лучшее, что было найдено педагогикой, с анализом возможностей, которые открывает сегодняшний день: художественных, технологических, организационных. Конференция соберет художников, педагогов, исследователей и кураторов. Четыре дня программы выстроены как своего рода закольцованный сюжет. Первый день — обращение к наследию педагогических экспериментов XX века. Второй — исследование школ и пространств за их пределами: летние лагеря, культурные институции, улицы, торговые центры, онлайн-платформы и даже психиатрические лечебницы. Третий — критический разговор о месте нейросетей в обучении и познании. Четвертый день возвращает нас к игре и практикам коллективности как изначальному основанию живой педагогики. Кураторы Лера Конончук, Анна Ушакова Сокураторы Вера Замыслова, Сергей Кочкуров, Степан Овчинников, Наталья Смолянская Консультанты Саша Аникушин, Юлия Евстратова, Саша Пучкова Продюсеры Ольга Королева, Дарья Шадрина Графический дизайн Мария Виноградова, Олеся Воронина Корректоры Елена Каршина, Ольга Силина Редактор Анастасия Рондарева {\"grid\":{\"width\":963,\"column_width\":89,\"columns_n\":9,\"gutter\":20,\"margin\":0,\"line\":10},\"palette\":\"default\",\"responsive_mode\":true,\"responsive_min_width\":512,\"responsive_max_width\":1100,\"colorchanger_fullscreen\":false,\"colorchanger_overflow\":true,\"page_cropping\":false,\"global_google_analytics_id\":\"\",\"global_yandex_metrika_id\":\"\",\"article_mode\":{\"mode\":\"page\",\"transition_type\":\"slide\",\"transition_direction\":\"horizontal\",\"transition_look\":\"belt\",\"slides_form\":{}},\"default_font\":{\"css\":\".editor {font-family: Diagramatika Text; font-size: 20px; font-weight: 400; line-height: 20px;}\"},\"smooth_scroll\":false} Беседа П",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "spb-2026-11-11-6274d9b2ae",
       "status": "rejected",
       "kind": "event",
@@ -57305,7 +57830,7 @@
     },
     {
       "id": "moscow-2026-11-11-7f89d777c4",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-11",
@@ -57325,7 +57850,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-10-27",
-      "audience_text": "› Исследования Проект : По ту сторону урока: экспериментальные педагогики сегодня Дата: 11 ноя 2026, 16:00–18:00 Регистрация начнется позже Возраст: от 14 Тип: Мастерская Место: Классы Возрастные ограничения 12+ Мастерская по созданию визуальной поэзии в рамках конференции « По ту сторону урока: экспериментальные педагогики сегодня ». Ведущие  {\"points\":[{\"id\":4,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":6,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.4,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":5,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} T Вместе с участниками объединения «Войти и разрешить» мы попробуем соединить свои мысли и случайно оказавшиеся под рукой предметы. Результатом станут необычные буриме-объекты, коллажи и ассамбляжи из различных материалов: газет и журналов, деревянных шариков и ниток. В процессе мы будем отталкиваться от конкретных образцов визуальной поэзии — излюбленного жанра многих художников авангарда, в том числе философа и теоретика нового искусства Ги Дебора. «Лишь одна задача кажется нам заслуживающей внимания — разработка совместных развлечений», — говорил он. Предлагаем развлекаться вместе! Ведущие Екатерина Казейкина — художник, дизайнер, бумажный инженер, исследователь и педагог. Сотрудничает с французскими и российскими издательствами. Автор обучающих курсов по интерактивным книгам, проходящих на базе школы визуальных искусств «Братец Лис». Преподаватель мастер-классов для детей и взрослых при ЦТИ «Фабрика» и Французском институте в России (Москва), а также в рамках программы социально-культурных проектов в Париже. Лиза Мовчан — куратор ЦТИ «Фабрика», экс-продюсер внешних проектов Школы дизайна НИУ ВШЭ. Независимый куратор, исследовательница и социолог. Создательница художественно-садоводческой инициативы «Будет сад». Вероника Соловьева — художница, работающая преимущественно с видео. Выпускница бакалавриата по программе «Современное искусство» Школы дизайна НИУ ВШЭ. Участница арт-группы «Войти и разрешить». {\"grid\":{\"width\":963,\"column_width\":89,\"columns_n\":9,\"gutter\":20,\"margin\":0,\"line\":10},\"palette\":\"default\",\"responsive_mode\":true,\"responsive_min_width\":512,\"responsive_max_width\":1100,\"colorchanger_fullscreen\":false,\"colorchanger_overflow\":true,\"page_cropping\":false,\"global_google_analytics_id\":\"\",\"global_yandex",
+      "audience_text": "› Исследования Проект : По ту сторону урока: экспериментальные педагогики сегодня Дата: 11 ноя 2026, 16:00–18:00 Регистрация Возраст: от 14 Тип: Мастерская Место: Классы Возрастные ограничения 12+ Мастерская по созданию визуальной поэзии в рамках конференции « По ту сторону урока: экспериментальные педагогики сегодня ». Ведущие  {\"points\":[{\"id\":4,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":6,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.4,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":5,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} T Вместе с участниками объединения «Войти и разрешить» мы попробуем соединить свои мысли и случайно оказавшиеся под рукой предметы. Результатом станут необычные буриме-объекты, коллажи и ассамбляжи из различных материалов: газет и журналов, деревянных шариков и ниток. В процессе мы будем отталкиваться от конкретных образцов визуальной поэзии — излюбленного жанра многих художников авангарда, в том числе философа и теоретика нового искусства Ги Дебора. «Лишь одна задача кажется нам заслуживающей внимания — разработка совместных развлечений», — говорил он. Предлагаем развлекаться вместе! Ведущие Екатерина Казейкина — художник, дизайнер, бумажный инженер, исследователь и педагог. Сотрудничает с французскими и российскими издательствами. Автор обучающих курсов по интерактивным книгам, проходящих на базе школы визуальных искусств «Братец Лис». Преподаватель мастер-классов для детей и взрослых при ЦТИ «Фабрика» и Французском институте в России (Москва), а также в рамках программы социально-культурных проектов в Париже. Лиза Мовчан — куратор ЦТИ «Фабрика», экс-продюсер внешних проектов Школы дизайна НИУ ВШЭ. Независимый куратор, исследовательница и социолог. Создательница художественно-садоводческой инициативы «Будет сад». Вероника Соловьева — художница, работающая преимущественно с видео. Выпускница бакалавриата по программе «Современное искусство» Школы дизайна НИУ ВШЭ. Участница арт-группы «Войти и разрешить». {\"grid\":{\"width\":963,\"column_width\":89,\"columns_n\":9,\"gutter\":20,\"margin\":0,\"line\":10},\"palette\":\"default\",\"responsive_mode\":true,\"responsive_min_width\":512,\"responsive_max_width\":1100,\"colorchanger_fullscreen\":false,\"colorchanger_overflow\":true,\"page_cropping\":false,\"global_google_analytics_id\":\"\",\"global_yandex_metrika_id\":\"\"",
       "price_type": "unknown",
       "availability_evidence": "",
       "ticket_required": false,
@@ -57334,16 +57859,17 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "rejected"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-30"
     },
     {
       "id": "moscow-2026-11-11-6b98848171",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-11",
@@ -57371,12 +57897,13 @@
       "availability_checked_at": "",
       "editor_overrides": {
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "rejected"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-30"
     },
     {
       "id": "spb-2026-11-11-e04979f457",
@@ -57486,7 +58013,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-12-422be2d050",
@@ -57607,7 +58136,7 @@
     },
     {
       "id": "moscow-2026-11-12-b485ac3446",
-      "status": "check",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-12",
@@ -57636,10 +58165,41 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "reviewed_at": "2026-10-30"
+    },
+    {
+      "id": "moscow-2026-11-12-3fe6d8213b",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-12",
+      "time": "11:30",
+      "title": "По ту сторону урока: экспериментальные педагогики сегодня",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "фестиваль"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/projects/beyond-the-lesson-experimental-pedagogies-today",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-30",
+      "audience_text": "› Исследования Регистрация Расписание конференции Дата: 11– 14 ноя 2026 Регистрация Расписание конференции Возраст: от 18 Тип: Публичная программа Место: Актовый зал , Платформы , Классы Возрастные ограничения 16+ Конференция-фестиваль, посвященная многообразию педагогических практик и методик. T Образование постоянно переизобретает себя, адаптируясь к меняющейся реальности. Хотя институции вроде школы и университета обычно довольно консервативны, в XX веке достижения педагогов, теоретиков и художников-экспериментаторов — от создателей авангардных мастерских и новаторов институциональной психотерапии до апологетов школьной горизонтальности и практиков «театра угнетенных» — сильно изменили общественные представления о том, что вообще значит учить и учиться. Мы обращаемся к этому наследию как к живому ресурсу, синтезируя лучшее, что было найдено педагогикой, с анализом возможностей, которые открывает сегодняшний день: художественных, технологических, организационных. Конференция соберет художников, педагогов, исследователей и кураторов. Четыре дня программы выстроены как своего рода закольцованный сюжет. Первый день — обращение к наследию педагогических экспериментов XX века. Второй — исследование школ и пространств за их пределами: летние лагеря, культурные институции, улицы, торговые центры, онлайн-платформы и даже психиатрические лечебницы. Третий — критический разговор о месте нейросетей в обучении и познании. Четвертый день возвращает нас к игре и практикам коллективности как изначальному основанию живой педагогики. Кураторы Лера Конончук, Анна Ушакова Сокураторы Вера Замыслова, Сергей Кочкуров, Степан Овчинников, Наталья Смолянская Консультанты Саша Аникушин, Юлия Евстратова, Саша Пучкова Продюсеры Ольга Королева, Дарья Шадрина Графический дизайн Мария Виноградова, Олеся Воронина Корректоры Елена Каршина, Ольга Силина Редактор Анастасия Рондарева {\"grid\":{\"width\":963,\"column_width\":89,\"columns_n\":9,\"gutter\":20,\"margin\":0,\"line\":10},\"palette\":\"default\",\"responsive_mode\":true,\"responsive_min_width\":512,\"responsive_max_width\":1100,\"colorchanger_fullscreen\":false,\"colorchanger_overflow\":true,\"page_cropping\":false,\"global_google_analytics_id\":\"\",\"global_yandex_metrika_id\":\"\",\"article_mode\":{\"mode\":\"page\",\"transition_type\":\"slide\",\"transition_direction\":\"horizontal\",\"transition_look\":\"belt\",\"slides_form\":{}},\"default_font\":{\"css\":\".editor {font-family: Diagramatika Text; font-size: 20px; font-weight: 400; line-height: 20px;}\"},\"smooth_scroll\":false} Беседа П",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "spb-2026-11-12-6274d9b2ae",
@@ -57825,7 +58385,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-13-b904ea1219",
@@ -57987,6 +58549,35 @@
       "reviewed_at": ""
     },
     {
+      "id": "moscow-2026-11-13-3fe6d8213b",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-13",
+      "time": "11:30",
+      "title": "По ту сторону урока: экспериментальные педагогики сегодня",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "фестиваль"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/projects/beyond-the-lesson-experimental-pedagogies-today",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-30",
+      "audience_text": "› Исследования Регистрация Расписание конференции Дата: 11– 14 ноя 2026 Регистрация Расписание конференции Возраст: от 18 Тип: Публичная программа Место: Актовый зал , Платформы , Классы Возрастные ограничения 16+ Конференция-фестиваль, посвященная многообразию педагогических практик и методик. T Образование постоянно переизобретает себя, адаптируясь к меняющейся реальности. Хотя институции вроде школы и университета обычно довольно консервативны, в XX веке достижения педагогов, теоретиков и художников-экспериментаторов — от создателей авангардных мастерских и новаторов институциональной психотерапии до апологетов школьной горизонтальности и практиков «театра угнетенных» — сильно изменили общественные представления о том, что вообще значит учить и учиться. Мы обращаемся к этому наследию как к живому ресурсу, синтезируя лучшее, что было найдено педагогикой, с анализом возможностей, которые открывает сегодняшний день: художественных, технологических, организационных. Конференция соберет художников, педагогов, исследователей и кураторов. Четыре дня программы выстроены как своего рода закольцованный сюжет. Первый день — обращение к наследию педагогических экспериментов XX века. Второй — исследование школ и пространств за их пределами: летние лагеря, культурные институции, улицы, торговые центры, онлайн-платформы и даже психиатрические лечебницы. Третий — критический разговор о месте нейросетей в обучении и познании. Четвертый день возвращает нас к игре и практикам коллективности как изначальному основанию живой педагогики. Кураторы Лера Конончук, Анна Ушакова Сокураторы Вера Замыслова, Сергей Кочкуров, Степан Овчинников, Наталья Смолянская Консультанты Саша Аникушин, Юлия Евстратова, Саша Пучкова Продюсеры Ольга Королева, Дарья Шадрина Графический дизайн Мария Виноградова, Олеся Воронина Корректоры Елена Каршина, Ольга Силина Редактор Анастасия Рондарева {\"grid\":{\"width\":963,\"column_width\":89,\"columns_n\":9,\"gutter\":20,\"margin\":0,\"line\":10},\"palette\":\"default\",\"responsive_mode\":true,\"responsive_min_width\":512,\"responsive_max_width\":1100,\"colorchanger_fullscreen\":false,\"colorchanger_overflow\":true,\"page_cropping\":false,\"global_google_analytics_id\":\"\",\"global_yandex_metrika_id\":\"\",\"article_mode\":{\"mode\":\"page\",\"transition_type\":\"slide\",\"transition_direction\":\"horizontal\",\"transition_look\":\"belt\",\"slides_form\":{}},\"default_font\":{\"css\":\".editor {font-family: Diagramatika Text; font-size: 20px; font-weight: 400; line-height: 20px;}\"},\"smooth_scroll\":false} Беседа П",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-13-aa8503e63c",
       "status": "new",
       "kind": "event",
@@ -58026,7 +58617,7 @@
     },
     {
       "id": "moscow-2026-11-13-cf673211bf",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-13",
@@ -58054,16 +58645,17 @@
       "availability_checked_at": "",
       "editor_overrides": {
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "rejected"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-30"
     },
     {
       "id": "spb-2026-11-13-f359bda75c",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "spb",
       "date": "2026-11-13",
@@ -58091,12 +58683,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-30"
     },
     {
       "id": "moscow-2026-10-24-9b9ee6a4b0",
@@ -58400,6 +58993,35 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "moscow-2026-11-14-3fe6d8213b",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-14",
+      "time": "11:30",
+      "title": "По ту сторону урока: экспериментальные педагогики сегодня",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "фестиваль"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/projects/beyond-the-lesson-experimental-pedagogies-today",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-30",
+      "audience_text": "› Исследования Регистрация Расписание конференции Дата: 11– 14 ноя 2026 Регистрация Расписание конференции Возраст: от 18 Тип: Публичная программа Место: Актовый зал , Платформы , Классы Возрастные ограничения 16+ Конференция-фестиваль, посвященная многообразию педагогических практик и методик. T Образование постоянно переизобретает себя, адаптируясь к меняющейся реальности. Хотя институции вроде школы и университета обычно довольно консервативны, в XX веке достижения педагогов, теоретиков и художников-экспериментаторов — от создателей авангардных мастерских и новаторов институциональной психотерапии до апологетов школьной горизонтальности и практиков «театра угнетенных» — сильно изменили общественные представления о том, что вообще значит учить и учиться. Мы обращаемся к этому наследию как к живому ресурсу, синтезируя лучшее, что было найдено педагогикой, с анализом возможностей, которые открывает сегодняшний день: художественных, технологических, организационных. Конференция соберет художников, педагогов, исследователей и кураторов. Четыре дня программы выстроены как своего рода закольцованный сюжет. Первый день — обращение к наследию педагогических экспериментов XX века. Второй — исследование школ и пространств за их пределами: летние лагеря, культурные институции, улицы, торговые центры, онлайн-платформы и даже психиатрические лечебницы. Третий — критический разговор о месте нейросетей в обучении и познании. Четвертый день возвращает нас к игре и практикам коллективности как изначальному основанию живой педагогики. Кураторы Лера Конончук, Анна Ушакова Сокураторы Вера Замыслова, Сергей Кочкуров, Степан Овчинников, Наталья Смолянская Консультанты Саша Аникушин, Юлия Евстратова, Саша Пучкова Продюсеры Ольга Королева, Дарья Шадрина Графический дизайн Мария Виноградова, Олеся Воронина Корректоры Елена Каршина, Ольга Силина Редактор Анастасия Рондарева {\"grid\":{\"width\":963,\"column_width\":89,\"columns_n\":9,\"gutter\":20,\"margin\":0,\"line\":10},\"palette\":\"default\",\"responsive_mode\":true,\"responsive_min_width\":512,\"responsive_max_width\":1100,\"colorchanger_fullscreen\":false,\"colorchanger_overflow\":true,\"page_cropping\":false,\"global_google_analytics_id\":\"\",\"global_yandex_metrika_id\":\"\",\"article_mode\":{\"mode\":\"page\",\"transition_type\":\"slide\",\"transition_direction\":\"horizontal\",\"transition_look\":\"belt\",\"slides_form\":{}},\"default_font\":{\"css\":\".editor {font-family: Diagramatika Text; font-size: 20px; font-weight: 400; line-height: 20px;}\"},\"smooth_scroll\":false} Беседа П",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "spb-2026-11-14-c9781b67f3",
@@ -59413,6 +60035,32 @@
       "instagram_include": false
     },
     {
+      "id": "spb-2026-11-17-e261866824",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-17",
+      "time": "17:00",
+      "title": "Вы давно присматриваетесь к профессии дизайнера?",
+      "venue": "Международная школа дизайна — Петербург",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "Мы приглашаем вас познакомиться с ней на практике! — возможность на один вечер стать нашим студентом. В программе — два занятия: 17:00 — «Создание самплбордов» Вместе с Полиной Розенберг поработаем с материалами, фактурами и оттенками и соберём из них визуальную концепцию интерьера. 18:30 — «Колористика в дизайне» С Евгенией Мекеришвили разберёмся, как цвет меняет настроение пространства. Подберём палитру, воплотим её в авторской картине и получим обратную связь преподавателя. А между занятиями познакомимся со Школой, обсудим программы обучения и ответим на ваши вопросы о первых шагах в профес",
+      "url": "https://t.me/spbdesignschool/7070",
+      "source": "Международная школа дизайна — Петербург — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-10-30",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-18-9dfc8f92b3",
       "status": "new",
       "kind": "event",
@@ -59486,6 +60134,46 @@
       "instagram_include": false
     },
     {
+      "id": "moscow-2026-11-01-12be1ec556",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-19",
+      "time": "",
+      "title": "AZ Online",
+      "venue": "Музей AZ",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "На метро Музей AZ находится между станциями метро «Маяковская» и «Белорусская» (кольцевая). Мы рекомендуем идти в Музей от станции «Маяковская». Вам нужен Выход №1 на 1-я Тверская-Ямская улица, 2-я Тверская-Ямская улица.",
+      "url": "https://museum-az.com/az-show/",
+      "source": "Музей AZ — выставки и события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-23",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-25",
+      "telegram_include": false,
+      "social_description": "",
+      "instagram_image": "",
+      "social_title": "",
+      "editor_note": "",
+      "social_priority": null,
+      "instagram_include": false,
+      "reviewed_at": "2026-09-24",
+      "sheet_synced_description": "На метро Музей AZ находится между станциями метро «Маяковская» и «Белорусская» (кольцевая). Мы рекомендуем идти в Музей от станции «Маяковская». Вам нужен Выход №1 на 1-я Тверская-Ямская улица, 2-я Тверская-Ямская улица.",
+      "time_verification": "unverified",
+      "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
+      "editor_overrides": {
+        "time": ""
+      }
+    },
+    {
       "id": "international-2026-11-19-aa6cdedf7f",
       "status": "rejected",
       "kind": "open_call",
@@ -59556,7 +60244,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-19-05c67d7f07",
@@ -59594,6 +60284,74 @@
       "reviewed_at": "2026-10-25",
       "time_verification": "unverified",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
+      "id": "moscow-2026-10-04-bb9ac87531",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-19",
+      "time": "",
+      "title": "События",
+      "venue": "Музей AZ",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "На метро Музей AZ находится между станциями метро «Маяковская» и «Белорусская» (кольцевая). Мы рекомендуем идти в Музей от станции «Маяковская». Вам нужен Выход №1 на 1-я Тверская-Ямская улица, 2-я Тверская-Ямская улица.",
+      "url": "https://museum-az.com/event/",
+      "source": "Музей AZ — выставки и события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-23",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-25",
+      "telegram_include": false,
+      "social_description": "",
+      "instagram_image": "",
+      "social_title": "",
+      "editor_note": "",
+      "social_priority": null,
+      "instagram_include": false,
+      "reviewed_at": "2026-09-24",
+      "sheet_synced_description": "На метро Музей AZ находится между станциями метро «Маяковская» и «Белорусская» (кольцевая). Мы рекомендуем идти в Музей от станции «Маяковская». Вам нужен Выход №1 на 1-я Тверская-Ямская улица, 2-я Тверская-Ямская улица.",
+      "time_verification": "unverified",
+      "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
+      "editor_overrides": {
+        "time": ""
+      }
+    },
+    {
+      "id": "moscow-2026-11-19-12be1ec556",
+      "status": "check",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-19",
+      "time": "12:30",
+      "title": "AZ Online",
+      "venue": "Музей AZ",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "На метро Музей AZ находится между станциями метро «Маяковская» и «Белорусская» (кольцевая). Мы рекомендуем идти в Музей от станции «Маяковская». Вам нужен Выход №1 на 1-я Тверская-Ямская улица, 2-я Тверская-Ямская улица.",
+      "url": "https://museum-az.com/az-show/?future=Y",
+      "source": "Музей AZ — выставки и события",
+      "checked_at": "",
+      "review_reason": "possible_duplicate",
+      "discovered_at": "2026-10-30",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "spb-2026-11-19-6274d9b2ae",
@@ -60087,7 +60845,7 @@
     },
     {
       "id": "moscow-2026-11-20-cf673211bf",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-20",
@@ -60115,16 +60873,17 @@
       "availability_checked_at": "",
       "editor_overrides": {
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "rejected"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-30"
     },
     {
       "id": "spb-2026-11-20-48372deac5",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "spb",
       "date": "2026-11-20",
@@ -60150,12 +60909,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-30"
     },
     {
       "id": "spb-2026-11-20-e96e84ce1f",
@@ -61238,7 +61998,7 @@
     },
     {
       "id": "moscow-2026-11-26-05c67d7f07",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-26",
@@ -61265,16 +62025,17 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "rejected"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-30"
     },
     {
       "id": "moscow-2026-11-26-d74b62747b",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-26",
@@ -61303,12 +62064,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-30"
     },
     {
       "id": "international-2026-11-27-33a95938e3",
@@ -61642,7 +62404,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-29-9f582f94c1",
@@ -61678,7 +62442,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-11-30-9a278ceca1",
@@ -61828,7 +62594,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-12-01-4d18caf296",
@@ -62174,7 +62942,7 @@
     },
     {
       "id": "international-2026-12-31-8500f81093",
-      "status": "check",
+      "status": "rejected",
       "kind": "open_call",
       "city": "international",
       "date": "2026-12-31",
@@ -62192,7 +62960,7 @@
       "url": "https://www.curatorspace.com/opportunities/detail/call-for-curators-or-curatorartists-to-create-a-sitespecific-show/11281",
       "source": "CuratorSpace — opportunities",
       "checked_at": "",
-      "review_reason": "primary_source_required",
+      "review_reason": "discovery_source_needs_primary_verification",
       "discovered_at": "2026-10-27",
       "audience_text": "Opportunity details | Call for curators or curator/artists to create a site-specific show | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register Call for curators or curator/artists to create a site-specific show Deadline: 31/12/2026 City: London | Country: United Kingdom | GARAGE GALLERY Report this? Description Opportunity FAQs Make a submission Contact curator Garage Gallery E17 is now its fifth year of hosting imaginative, intimate and engaging exhibitions in our light and flexible space in Walthamstow village, East London. In addition to our programme of short group shows we are looking for curators and curator/artists interested in creating a site-specific installation in our space, a garage on the ground floor of a Victorian terraced house. We established the Gallery in 2022 to provide an opportunity for artists, both new to showing work and more established, to bring their work to life, in a welcoming and collaborative environment. Our shows to date have included hung work, sculpture and installations, workshops, audio and video based content and textiles and sculpture. Each curator and group of artists we have worked with has enjoyed the freedom to shape their own exhibition, and their feedback and that of our visitors has been universally positive. In 2024 we hosted ‘Fluorescent Banquet’, which we had first spotted when it was sited near Liverpool St Station in London. Its creators, Alice in Hackneyland, re-created the work in our much more intimate space, and it worked brilliantly. We would love to host something similar again – responding to the space in a surprising/thought-provoking/humorous way. Please let us know your initial ideas for our space (you can see images on our website; note it’s around 20sq meters). We’re not expecting a fully-worked proposal at this stage. If we think your idea is an option for us then we’ll invite you to come and visit the space and talk to us further. Make a submission Contact the curator Who is eligible for this opportunity? Groups of artists (at least three) with a curator (who may be one of the artists), either new to exhibiting or with previous experience. A connection to East London is desirable but not essential. When is the deadline? Thursday 31st December, but we will look at submissions on a rolling basis and we will also be flexible about 'late' submissions. How much does it cost? We operate on a not-for-profit basis and we manage the space on a voluntary basis. There is no cost for submitting proposals at this stage. If we do host your exhibition then we ask groups for a contribution of £60 to cover our costs. We also ask groups to be responsible for purchasing refreshments for a Private View, and we ask for 10% of any sales made. We work with groups on publicity and ask them to produce as a minimum a small number of printed posters (they may choose to produce flyers etc too). Are there payments to artists? No Is there a private view / opening? Yes What are the exhibition opening hours? To be agreed on a show-by-show basis with the group Does the location have disabled access? Yes What publicity will be provided as part of the opportunity? Groups are expected to work with us on publicity including producing posters at their cost. We promote shows via our website and instagram and do some local publicity with flyers/cards. Do I need to be present? Yes we ask curators/artists to invigilate so one person needs to be present when the gallery is open. How do you decide on proposals? We’re not expecting a fully-worked proposal at this stage. We will make an initial decision based on the space, what's worked well before and what we feel might be practical. If we think your idea is an option for us then we’ll invite you to come and visit the space and talk to us further. You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Advertisement Other opportunities Print It! 2026 CALLING ALL INTERNATIONAL CREATIVES! Print It! returns in 2026 as a curated exhibition at The... Women in Photography 2027, International Photography Exhibition Call for entries for an International Photography Exhibition. This month-long exhibition will be... Seasons 2027, International Photography Exhibition Call for entries for an International Photography Exhibition. This month-long exhibition will be... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
       "price_type": "unknown",
@@ -62203,12 +62971,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "rejected"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-30"
     },
     {
       "id": "international-2027-01-12-fdba99f20b",

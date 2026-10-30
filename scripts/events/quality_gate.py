@@ -221,14 +221,32 @@ def run(path,fix=False,strict=False):
             groups.setdefault(key,[]).append(e)
     for key,items in groups.items():
         if len(items)<=1: continue
-        # Multiple dated occurrences of the same normal event are allowed.
+        # Multiple *different dates/times* are distinct sessions. Duplicates
+        # of one session may have different generated IDs across collector runs.
         if all(e.get("kind")=="event" for e in items):
-            continue
-        items.sort(key=lambda e:(0 if str(e.get("id","")).startswith("manual-") else 1, low(e.get("id"))))
-        for e in items[1:]:
-            e["status"]="rejected"
-            e["review_reason"]="duplicate_record"
-            changed+=1
+            sessions={}
+            for e in items:
+                event_date=str(e.get("start_date") or e.get("date") or "")
+                if not event_date: continue
+                session=(event_date,low(e.get("city")),low(e.get("time")))
+                sessions.setdefault(session,[]).append(e)
+            clusters=[group for group in sessions.values() if len(group)>1]
+        else:
+            clusters=[items]
+        for cluster in clusters:
+            cluster.sort(key=lambda e:(
+                0 if str(e.get("id","")).startswith("manual-") else 1,
+                -len(str(e.get("description") or "")),
+                low(e.get("id"))
+            ))
+            for e in cluster[1:]:
+                e["status"]="rejected"
+                e["review_reason"]="duplicate_record"
+                # Make this decision durable even when the record already has
+                # a manual-approval override from a previous Sheet sync.
+                e.setdefault("editor_overrides",{})["status"]="rejected"
+                e["editor_overrides"]["review_reason"]="duplicate_record"
+                changed+=1
 
     ids=set()
     today=date.today()

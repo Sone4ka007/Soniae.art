@@ -212,7 +212,7 @@
   function dedupeVisibleEvents(list) {
     const norm = value => String(value || '').normalize('NFKC').toLowerCase()
       .replace(/ё/g, 'е').replace(/[«»„“”]/g, '')
-      .replace(/[.,!?()[\\]:;]/g, ' ').replace(/\\s+/g, ' ').trim();
+      .replace(/[^\p{L}\p{N}]+/gu, ' ').trim();
     const kindOf = e => (e.kind === 'exhibition' || (e.categories || []).includes('выставка'))
       ? 'exhibition' : (e.kind || 'event');
     const same = (a, b) => {
@@ -226,7 +226,7 @@
       if (aVenue && bVenue && aVenue !== bVenue) return false;
       // Without a shared location, require a matching primary source.
       if (!aVenue || !bVenue) {
-        const url = e => String(e.url || '').split('?')[0].replace(/\\/$/, '');
+        const url = e => { const v = String(e.url || '').split('?')[0]; return v.endsWith('/') ? v.slice(0,-1) : v; };
         if (!url(a) || url(a) !== url(b)) return false;
       }
       // Two separately ticketed sessions on one day are not duplicates.

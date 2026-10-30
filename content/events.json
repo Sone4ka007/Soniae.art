@@ -8026,7 +8026,7 @@
     },
     {
       "id": "moscow-2026-10-04-732e936867",
-      "status": "approved",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-09-26",
@@ -8044,7 +8044,7 @@
       "url": "https://museum-az.com/event/ekskursionnyy-marshrut-art-istorii-chistykh-prudov-ot-maroseyki-do-furmannogo-26-09/",
       "source": "Музей AZ — выставки и события",
       "checked_at": "",
-      "review_reason": "",
+      "review_reason": "duplicate_record",
       "discovered_at": "2026-09-22",
       "price_type": "free",
       "availability": "available",
@@ -8062,7 +8062,9 @@
       "time_evidence": "26 сентября 2026, 12:30",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
       "editor_overrides": {
-        "time": "12:30"
+        "time": "12:30",
+        "status": "rejected",
+        "review_reason": "duplicate_record"
       }
     },
     {
@@ -8105,7 +8107,7 @@
     },
     {
       "id": "moscow-2026-10-17-a9cb5c29e5",
-      "status": "approved",
+      "status": "rejected",
       "city": "moscow",
       "date": "2026-09-26",
       "time": "13:00",
@@ -8122,7 +8124,7 @@
       "url": "https://centrezotov.ru/events/fotoprogulka-ne-nyt/",
       "source": "Центр Зотов",
       "checked_at": "",
-      "review_reason": "",
+      "review_reason": "duplicate_record",
       "discovered_at": "2026-09-20",
       "price_type": "paid",
       "availability": "available",
@@ -8141,7 +8143,9 @@
       "time_evidence": "26.09.26 13:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
       "editor_overrides": {
-        "date": "2026-09-26"
+        "date": "2026-09-26",
+        "status": "rejected",
+        "review_reason": "duplicate_record"
       }
     },
     {
@@ -16993,7 +16997,7 @@
     },
     {
       "id": "moscow-2026-10-17-54d5563287",
-      "status": "approved",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-03",
@@ -17011,7 +17015,7 @@
       "url": "https://www.tretyakovgallery.ru/events/o/iskusstvo-drevney-rusi-xi-xvii-vekov-22/",
       "source": "Третьяковская галерея — события",
       "checked_at": "",
-      "review_reason": "",
+      "review_reason": "duplicate_record",
       "discovered_at": "2026-09-28",
       "price_type": "paid",
       "availability": "available",
@@ -17031,7 +17035,9 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
       "editor_overrides": {
         "date": "2026-10-03",
-        "time": "12:00"
+        "time": "12:00",
+        "status": "rejected",
+        "review_reason": "duplicate_record"
       }
     },
     {
@@ -19969,7 +19975,7 @@
     },
     {
       "id": "spb-2026-10-21-9d89a8e682",
-      "status": "approved",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-10-07",
@@ -19987,7 +19993,7 @@
       "url": "https://nlr.ru/nlr_visit/event/3639",
       "source": "Российская национальная библиотека — афиша",
       "checked_at": "",
-      "review_reason": "",
+      "review_reason": "duplicate_record",
       "discovered_at": "2026-10-02",
       "social_title": "",
       "social_description": "",
@@ -20003,7 +20009,9 @@
       "sheet_synced_description": "Лектор — Жуков В.В. заведующий сектором истории реставрации «Юсуповского дворца на Литейном» Государственного музея «Исаакиевский собор».",
       "editor_overrides": {
         "availability": "unknown",
-        "date": "2026-10-07"
+        "date": "2026-10-07",
+        "status": "rejected",
+        "review_reason": "duplicate_record"
       },
       "time_verification": "verified",
       "time_evidence": "7 октября 2026, среда, 19:00",
@@ -21141,7 +21149,7 @@
     },
     {
       "id": "moscow-2026-10-15-823eca7e69",
-      "status": "approved",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-08",
@@ -21159,7 +21167,7 @@
       "url": "https://www.tretyakovgallery.ru/events/o/lektsiya-dmitriy-levitskiy-10-2026/",
       "source": "Третьяковская галерея — события",
       "checked_at": "",
-      "review_reason": "",
+      "review_reason": "duplicate_record",
       "discovered_at": "2026-09-28",
       "price_type": "paid",
       "availability": "available",
@@ -21179,7 +21187,9 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
       "editor_overrides": {
         "date": "2026-10-08",
-        "time": "19:00"
+        "time": "19:00",
+        "status": "rejected",
+        "review_reason": "duplicate_record"
       }
     },
     {
@@ -22479,7 +22489,7 @@
     },
     {
       "id": "moscow-2026-10-16-a54110213e",
-      "status": "approved",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-09",
@@ -22497,7 +22507,7 @@
       "url": "https://www.tretyakovgallery.ru/events/o/lektsiya-ilya-semyenovich-ostroukhov-11-2026/",
       "source": "Третьяковская галерея — события",
       "checked_at": "",
-      "review_reason": "",
+      "review_reason": "duplicate_record",
       "discovered_at": "2026-09-28",
       "price_type": "paid",
       "availability": "available",
@@ -22517,7 +22527,9 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
       "editor_overrides": {
         "date": "2026-10-09",
-        "time": "19:00"
+        "time": "19:00",
+        "status": "rejected",
+        "review_reason": "duplicate_record"
       }
     },
     {
@@ -36089,7 +36101,7 @@
       }
     },
     {
-      "status": "approved",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "venue": "РОСФОТО",
@@ -36103,7 +36115,7 @@
       "url": "https://rosphoto.org/events/kulturnyj-assamblyazh-dni-vengerskoj-kultury-v-rosfoto-2/",
       "source": "РОСФОТО",
       "checked_at": "",
-      "review_reason": "manual_approval_required",
+      "review_reason": "duplicate_record",
       "editor_note": "Отдельный пункт программы «Культурный ассамбляж»; требуется ручной апрув.",
       "discovered_at": "2026-09-22",
       "reviewed_at": "2026-09-22",
@@ -36125,7 +36137,9 @@
       "time_verification": "unverified",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
       "editor_overrides": {
-        "time": ""
+        "time": "",
+        "status": "rejected",
+        "review_reason": "duplicate_record"
       }
     },
     {
@@ -38277,7 +38291,7 @@
       "reviewed_at": "2026-10-17",
       "availability": "unknown",
       "availability_checked_at": "",
-      "registration": false,
+      "registration": null,
       "price": null,
       "price_text": "",
       "price_type": "paid",
@@ -38303,7 +38317,7 @@
         "status": "approved",
         "telegram_include": false,
         "instagram_include": false,
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -38313,13 +38327,13 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
-      "status": "approved",
+      "status": "rejected",
       "editor_note": "Добавлено по подборке 19–25 октября; первоисточник проверен",
       "checked_at": "2026-10-17",
       "reviewed_at": "2026-10-17",
       "availability": "unknown",
       "availability_checked_at": "",
-      "registration": false,
+      "registration": null,
       "price": null,
       "price_text": "",
       "price_type": "paid",
@@ -38340,12 +38354,13 @@
       "url": "https://www.tretyakovgallery.ru/events/o/lektsiya-orest-kiprenskiy-10-2026/",
       "source": "Третьяковская галерея",
       "discovered_at": "2026-10-17",
-      "review_reason": "",
+      "review_reason": "duplicate_record",
       "editor_overrides": {
-        "status": "approved",
+        "status": "rejected",
         "telegram_include": false,
         "instagram_include": false,
-        "registration": false
+        "registration": null,
+        "review_reason": "duplicate_record"
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -40985,7 +41000,7 @@
     },
     {
       "id": "moscow-2026-10-30-bcba3b765a",
-      "status": "approved",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-24",
@@ -40995,7 +41010,7 @@
       "address": "1-й Голутвинский переулок, 16, стр. 1",
       "price": 850,
       "price_text": "850 ₽; льготный — 650 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -41003,7 +41018,7 @@
       "url": "https://www.tretyakovgallery.ru/events/o/lektsiya-pavel-tretyakov-i-viktor-vasnetsov/",
       "source": "Третьяковская галерея — события",
       "checked_at": "",
-      "review_reason": "",
+      "review_reason": "duplicate_record",
       "discovered_at": "2026-10-14",
       "price_type": "paid",
       "availability": "unknown",
@@ -41019,7 +41034,9 @@
       "reviewed_at": "2026-10-17",
       "ticket_required": true,
       "editor_overrides": {
-        "registration": false
+        "registration": null,
+        "status": "rejected",
+        "review_reason": "duplicate_record"
       },
       "time_verification": "verified",
       "time_evidence": "24 октября 2026 14:00",
@@ -41037,7 +41054,7 @@
       "address": "1-й Голутвинский переулок, 16, стр. 1",
       "price": 850,
       "price_text": "850 ₽; льготный — 650 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -41064,7 +41081,7 @@
       "time_evidence": "24 октября 2026 14:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
       "editor_overrides": {
-        "registration": false
+        "registration": null
       }
     },
     {
@@ -48387,7 +48404,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-10-30-4f3004830e",
@@ -49337,82 +49356,6 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
-      "id": "moscow-2026-10-25-c40e7952b7",
-      "status": "rejected",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-10-30",
-      "time": "10:00",
-      "title": "Воркшопы",
-      "venue": "ЦСИ Винзавод",
-      "address": "",
-      "price": 0,
-      "price_text": "Бесплатно",
-      "registration": false,
-      "categories": [
-        "лекция"
-      ],
-      "description": "",
-      "url": "https://www.winzavod.ru/calendar/workshops/",
-      "source": "ЦСИ Винзавод",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-10-25",
-      "price_type": "free",
-      "availability_evidence": "",
-      "ticket_required": true,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false,
-        "status": "rejected"
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": "2026-10-27"
-    },
-    {
-      "id": "moscow-2026-10-25-fefbfbd35d",
-      "status": "rejected",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-10-30",
-      "time": "10:00",
-      "title": "Курсы",
-      "venue": "ЦСИ Винзавод",
-      "address": "",
-      "price": 0,
-      "price_text": "Бесплатно",
-      "registration": false,
-      "categories": [
-        "лекция"
-      ],
-      "description": "",
-      "url": "https://www.winzavod.ru/calendar/course/",
-      "source": "ЦСИ Винзавод",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-10-25",
-      "price_type": "free",
-      "availability_evidence": "",
-      "ticket_required": true,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false,
-        "status": "rejected"
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": "2026-10-27"
-    },
-    {
       "id": "spb-2026-10-30-fb53373295",
       "status": "rejected",
       "kind": "event",
@@ -50223,7 +50166,7 @@
       "address": "Лаврушинский переулок, 12",
       "price": 650,
       "price_text": "650 ₽; онлайн — 700 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -50240,7 +50183,7 @@
         "telegram_include": false,
         "instagram_include": false,
         "status": "approved",
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -50407,7 +50350,7 @@
     },
     {
       "id": "moscow-2026-10-16-a4e875c14e",
-      "status": "approved",
+      "status": "rejected",
       "city": "moscow",
       "date": "2026-10-30",
       "time": "19:30",
@@ -50443,12 +50386,13 @@
       "time_evidence": "30.10.26 19:30",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
       "editor_overrides": {
-        "date": "2026-10-30"
+        "date": "2026-10-30",
+        "status": "rejected"
       }
     },
     {
       "id": "moscow-2026-10-30-a4e875c14e",
-      "status": "approved",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-10-30",
@@ -50482,7 +50426,10 @@
       "reviewed_at": "2026-10-17",
       "time_verification": "verified",
       "time_evidence": "30.10.26 19:30",
-      "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+      "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
+      "editor_overrides": {
+        "status": "rejected"
+      }
     },
     {
       "id": "moscow-2026-10-30-5120dd5b06",
@@ -51131,6 +51078,82 @@
       "reviewed_at": "2026-10-25",
       "time_verification": "unverified",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
+      "id": "moscow-2026-10-25-c40e7952b7",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-31",
+      "time": "10:00",
+      "title": "Воркшопы",
+      "venue": "ЦСИ Винзавод",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "",
+      "url": "https://www.winzavod.ru/calendar/workshops/",
+      "source": "ЦСИ Винзавод",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-25",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false,
+        "status": "rejected"
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": "2026-10-27"
+    },
+    {
+      "id": "moscow-2026-10-25-fefbfbd35d",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-31",
+      "time": "10:00",
+      "title": "Курсы",
+      "venue": "ЦСИ Винзавод",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "",
+      "url": "https://www.winzavod.ru/calendar/course/",
+      "source": "ЦСИ Винзавод",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-25",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false,
+        "status": "rejected"
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": "2026-10-27"
     },
     {
       "id": "moscow-2026-10-31-e3aefd4737",
@@ -51981,6 +52004,34 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
+      "id": "moscow-2026-10-31-8ab3fd081f",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-10-31",
+      "time": "19:00",
+      "title": "Показ фильмов «Привычка нюхать пальцы» и «Меня пожирает собственная кровать» и обсуждение",
+      "venue": "Музей «Гараж»",
+      "address": "",
+      "price": 500,
+      "price_text": "500 ₽",
+      "registration": null,
+      "categories": [
+        "кинопоказ"
+      ],
+      "description": "Дилогия абсурдистских комедий Вячеслава Иванова о бытовых приключениях продавца сантехники. «Привычка нюхать пальцы» взяла главный приз на кинофестивале «Новое движение» (Великий Новгород) в 2025 году, а визуальное решение «Меня пожирает собственная кровать» было отмечено призом на том же фестивале в 2026 году.",
+      "url": "https://garagemca.org/event/film-screening-and-discussion-the-habit-of-sniffing-fingers-and-my-own-bed-devours-me",
+      "source": "Музей современного искусства «Гараж»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-30",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "spb-2026-10-31-c8e1a3b119",
       "status": "check",
       "kind": "event",
@@ -52373,14 +52424,16 @@
       "price": 0,
       "price_text": "",
       "registration": false,
-      "categories": [],
+      "categories": [
+        "выставка"
+      ],
       "description": "На метро Музей AZ находится между станциями метро «Маяковская» и «Белорусская» (кольцевая). Мы рекомендуем идти в Музей от станции «Маяковская». Вам нужен Выход №1 на 1-я Тверская-Ямская улица, 2-я Тверская-Ямская улица.",
       "url": "https://museum-az.com/event/territoriya-svobody-nonkonformisty-v-taruse/",
       "source": "Музей AZ — выставки и события",
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-10-20",
-      "price_type": "paid",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-10-25",
       "editor_overrides": {
@@ -54129,7 +54182,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-03-7116cb1f65",
@@ -54231,7 +54286,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-03-4797bda394",
@@ -56994,7 +57051,7 @@
       "address": "Московский пр., д. 165, корп. 2",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": true,
       "categories": [],
       "description": "Режиссер — К. Миллер В главных ролях: Ж. Депардье, Миу-Миу, Д. Лаффен, К. Клавье Автор и ведущий цикла — киновед Ф. Ю. Коркин Дата начала регистрации — 2 ноября",
       "url": "https://nlr.ru/nlr_visit/event/3741",
@@ -57084,6 +57141,34 @@
       "telegram_include": false,
       "instagram_include": false,
       "reviewed_at": "2026-10-30"
+    },
+    {
+      "id": "spb-2026-11-09-e9b598f406",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-09",
+      "time": "19:00",
+      "title": "Наступление осени: тексты о Коломне. Чтение третье",
+      "venue": "Новая Голландия",
+      "address": "",
+      "price": 300,
+      "price_text": "300 ₽",
+      "registration": null,
+      "categories": [
+        "встреча"
+      ],
+      "description": "На третьей встрече книжного клуба, посвящённого текстам о Коломне, мы поговорим о рассказе Бориса Рохлина «Новая Голландия» . Этот текст, созданный в 1960-е одним из представителей ленинградского андеграунда, станет для нас ориентиром для разговора о том, как фланёры, создававшие в 1950–1970-е годы неофициальную литературу, оказывались у нашего острова.",
+      "url": "https://www.newhollandsp.ru/events/education/kolomna-text-3/",
+      "source": "Новая Голландия — Сообщество и образование",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-30",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "international-2026-11-10-a442cf41fe",
@@ -58595,6 +58680,35 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
+      "id": "moscow-2026-11-13-73b662c76a",
+      "status": "check",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-13",
+      "time": "10:30",
+      "title": "Наброски",
+      "venue": "Простая школа",
+      "address": "Москва, ул. Пятницкая, 71/5, строение 2, офис 503",
+      "price": 750,
+      "price_text": "750 ₽",
+      "registration": null,
+      "categories": [
+        "наброски"
+      ],
+      "description": "Рисуем обнаженную модель. Три сеанса по 45 минут. Позы от 20 минут до минуты.",
+      "url": "https://prostaya.ru/praktiki",
+      "source": "Простая школа — открытые практики",
+      "checked_at": "",
+      "review_reason": "recurring_schedule_confirm_specific_date",
+      "discovered_at": "2026-10-30",
+      "editor_note": "По еженедельному расписанию школы; проверить отмены и анонс конкретной даты.",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-13-b920f54838",
       "status": "new",
       "kind": "event",
@@ -58893,6 +59007,35 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "moscow-2026-11-13-da81792ce4",
+      "status": "check",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-13",
+      "time": "19:00",
+      "title": "Портрет с темой",
+      "venue": "Простая школа",
+      "address": "Москва, ул. Пятницкая, 71/5, строение 2, офис 503",
+      "price": 750,
+      "price_text": "750 ₽",
+      "registration": null,
+      "categories": [
+        "наброски"
+      ],
+      "description": "Портреты, объединенные темой — от 20 до 45 минут",
+      "url": "https://prostaya.ru/praktiki",
+      "source": "Простая школа — открытые практики",
+      "checked_at": "",
+      "review_reason": "recurring_schedule_confirm_specific_date",
+      "discovered_at": "2026-10-30",
+      "editor_note": "По еженедельному расписанию школы; проверить отмены и анонс конкретной даты.",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-13-8f293dde1e",
@@ -60290,7 +60433,7 @@
       "address": "Садовая ул., д. 18",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": true,
       "categories": [
         "лекция"
       ],
@@ -62248,7 +62391,7 @@
       "address": "Садовая ул., д. 18",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": true,
       "categories": [
         "лекция"
       ],

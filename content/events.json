@@ -52329,14 +52329,16 @@
       "price": 0,
       "price_text": "",
       "registration": false,
-      "categories": [],
+      "categories": [
+        "выставка"
+      ],
       "description": "На метро Музей AZ находится между станциями метро «Маяковская» и «Белорусская» (кольцевая). Мы рекомендуем идти в Музей от станции «Маяковская». Вам нужен Выход №1 на 1-я Тверская-Ямская улица, 2-я Тверская-Ямская улица.",
       "url": "https://museum-az.com/event/territoriya-svobody-nonkonformisty-v-taruse/",
       "source": "Музей AZ — выставки и события",
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-10-20",
-      "price_type": "paid",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-10-25",
       "editor_overrides": {
@@ -53724,7 +53726,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-03-a60280a43f",
@@ -53742,7 +53746,7 @@
       "categories": [
         "лекция"
       ],
-      "description": "3 ноября 2026 года с 18 до 24 часов приглашаем на бесплатные мероприятия в рамках всероссийской акции «Ночь искусств». ️Для участия необходимо приобрести бесплатный билет на сайте mos.ru : 19:00 Интерактивная программа с мастер-классом «“И Творчество, и Чудотворство…”: Художественный мир сестры Иоанны (Ю.Н.Рейтлингер)» 19:00 Концерт гитариста М.Радюкевича «Гитара на холсте»",
+      "description": "3 ноября 2026 года с 18 до 24 часов приглашаем на бесплатные мероприятия в рамках всероссийской акции «Ночь искусств».",
       "url": "https://www.domrz.ru/event/70740_noch_iskusstv_v_dome_russkogo_zarubezhya/",
       "source": "Дом русского зарубежья — афиша",
       "checked_at": "",
@@ -54154,34 +54158,6 @@
       "reviewed_at": "2026-10-24",
       "time_verification": "unverified",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
-    },
-    {
-      "id": "spb-2026-11-03-d840639c9f",
-      "status": "new",
-      "kind": "event",
-      "city": "spb",
-      "date": "2026-11-03",
-      "time": "19:00",
-      "title": "Шахматный клуб в «Сообществе»",
-      "venue": "Новая Голландия",
-      "address": "",
-      "price": 300,
-      "price_text": "300 ₽",
-      "registration": true,
-      "categories": [
-        "мастер-класс"
-      ],
-      "description": "В рамках шахматного клуба проводятся лекции, мастер-классы, и, конечно, открытые турниры в разных форматах. Встречи проходят совместно со Школой Сергея Мкртычанца. Встречи проходят в пространстве «Сообщество» .",
-      "url": "https://www.newhollandsp.ru/events/education/chess-club-2026/",
-      "source": "Новая Голландия — Сообщество и образование",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-10-30",
-      "price_type": "paid",
-      "availability_evidence": "",
-      "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-03-4797bda394",
@@ -55264,7 +55240,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-05-0bce51b132",
@@ -56199,9 +56177,7 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": ""
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-11-07-64ecc1a02b",
@@ -56529,9 +56505,7 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": ""
+      "instagram_include": false
     },
     {
       "id": "international-2026-11-08-f9e3a218bb",
@@ -56927,6 +56901,32 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": "2026-10-24"
+    },
+    {
+      "id": "spb-2026-11-09-58133ba6c2",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-09",
+      "time": "18:00",
+      "title": "Х/ф «Скажите ей, что я ее люблю» (Франция, 1977; психологическая драма по роману П. Хайсмит)",
+      "venue": "Российская национальная библиотека",
+      "address": "Московский пр., д. 165, корп. 2",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "Режиссер — К. Миллер В главных ролях: Ж. Депардье, Миу-Миу, Д. Лаффен, К. Клавье Автор и ведущий цикла — киновед Ф. Ю. Коркин Дата начала регистрации — 2 ноября",
+      "url": "https://nlr.ru/nlr_visit/event/3741",
+      "source": "Российская национальная библиотека — афиша",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-30",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "spb-2026-11-09-86bea8a444",
@@ -58764,7 +58764,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-13-7fffb56c23",
@@ -59094,6 +59096,34 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "spb-2026-11-14-d2dba569b2",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-14",
+      "time": "14:00",
+      "title": "Лекция «Стресс: от понимания к действию. Забота о себе в эпоху нагрузок»",
+      "venue": "Российская национальная библиотека",
+      "address": "Московский пр., д. 165, корп. 2",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Лектор — научный сотрудник лаборатории психофизиологии эмоций НИУ ВШЭ А. Жукова Дата начала регистрации — 31 октября",
+      "url": "https://nlr.ru/nlr_visit/event/3748",
+      "source": "Российская национальная библиотека — афиша",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-30",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "spb-2026-11-14-e7d09106e5",
@@ -59842,6 +59872,32 @@
       "reviewed_at": ""
     },
     {
+      "id": "spb-2026-11-16-29b1659379",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-16",
+      "time": "18:00",
+      "title": "Эхо фестиваля «ПитерДок»",
+      "venue": "Российская национальная библиотека",
+      "address": "Московский пр., д. 165, корп. 2",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [],
+      "description": "На показе фестиваля будут представлены лучшие фильмы из программы фестиваля. Все они рассказывают о традиционных промыслах и жизни разных народов.",
+      "url": "https://nlr.ru/nlr_visit/event/3736",
+      "source": "Российская национальная библиотека — афиша",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-30",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "international-2026-11-17-bfeafeaa9c",
       "status": "rejected",
       "kind": "open_call",
@@ -60059,6 +60115,34 @@
       "availability_checked_at": ""
     },
     {
+      "id": "spb-2026-11-17-ddada24b12",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-17",
+      "time": "19:00",
+      "title": "Лекция «Западноевропейская рукописная книга: материал, внешний вид, состав»",
+      "venue": "Российская национальная библиотека",
+      "address": "Московский пр., д. 165, корп. 2",
+      "price": 200,
+      "price_text": "200 ₽",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Автор цикла и лектор — старший научный сотрудник отдела рукописей РНБ, кандидат исторических наук Ольга Николаевна Блескина",
+      "url": "https://nlr.ru/nlr_visit/event/3712",
+      "source": "Российская национальная библиотека — афиша",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-30",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-18-9dfc8f92b3",
       "status": "new",
       "kind": "event",
@@ -60095,6 +60179,34 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "spb-2026-11-18-9641d9b16f",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-18",
+      "time": "18:30",
+      "title": "Лекция «Гамлет семидесятых»",
+      "venue": "Российская национальная библиотека",
+      "address": "Садовая ул., д. 18",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Автор и ведущий — киновед Ф. Ю. Коркин Дата начала регистрации — 11 ноября",
+      "url": "https://nlr.ru/nlr_visit/event/3742",
+      "source": "Российская национальная библиотека — афиша",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-30",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "spb-2026-11-18-9e5ab92fbf",
@@ -61695,6 +61807,32 @@
       "reviewed_at": ""
     },
     {
+      "id": "spb-2026-11-23-992428d2b1",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-23",
+      "time": "18:00",
+      "title": "Х/ф «Бунтарь без причины » (США, 1955; психологическая драма)",
+      "venue": "Российская национальная библиотека",
+      "address": "Московский пр., д. 165, корп. 2",
+      "price": null,
+      "price_text": "",
+      "registration": true,
+      "categories": [],
+      "description": "Режиссер — Н. Рэй В гл. ролях: Дж. Дин, Н. Вуд, С. Минео Автор и ведущий цикла — киновед Ф. Ю. Коркин Дата начала регистрации — 16 ноября",
+      "url": "https://nlr.ru/nlr_visit/event/3740",
+      "source": "Российская национальная библиотека — афиша",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-30",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-24-058b1d17f2",
       "status": "approved",
       "kind": "event",
@@ -61993,6 +62131,34 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "spb-2026-11-26-60559df863",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-26",
+      "time": "19:00",
+      "title": "Лекция «В Министерстве \"странных\" дел»",
+      "venue": "Российская национальная библиотека",
+      "address": "Садовая ул., д. 18",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Как работало Министерство иностранных дел Российской империи и что происходило за закрытыми дверями дипломатических кабинетов? Лектор : Анастасия Размахнина — историк, соавтор научно-популярного блога delicate fancy",
+      "url": "https://nlr.ru/nlr_visit/event/3702",
+      "source": "Российская национальная библиотека — афиша",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-30",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-26-05c67d7f07",

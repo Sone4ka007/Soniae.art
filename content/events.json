@@ -38291,7 +38291,7 @@
       "reviewed_at": "2026-10-17",
       "availability": "unknown",
       "availability_checked_at": "",
-      "registration": false,
+      "registration": null,
       "price": null,
       "price_text": "",
       "price_type": "paid",
@@ -38317,7 +38317,7 @@
         "status": "approved",
         "telegram_include": false,
         "instagram_include": false,
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -41054,7 +41054,7 @@
       "address": "1-й Голутвинский переулок, 16, стр. 1",
       "price": 850,
       "price_text": "850 ₽; льготный — 650 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -41081,7 +41081,7 @@
       "time_evidence": "24 октября 2026 14:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
       "editor_overrides": {
-        "registration": false
+        "registration": null
       }
     },
     {
@@ -49427,7 +49427,7 @@
       "address": "Лаврушинский переулок, 12",
       "price": 650,
       "price_text": "650 ₽; онлайн — 700 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -49444,7 +49444,7 @@
         "telegram_include": false,
         "instagram_include": false,
         "status": "approved",
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -49941,7 +49941,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-31-422be2d050",
@@ -51886,7 +51888,7 @@
     },
     {
       "title": "Золотая пчела 17 — избранные плакаты",
-      "status": "new",
+      "status": "approved",
       "date": "2026-11-01",
       "time": "",
       "venue": "Культурный кластер АТС, Некрасова, 3–5",
@@ -51907,7 +51909,7 @@
       "review_reason": "",
       "editor_note": "Кандидат 2–8 ноября, не опубликован; ручная модерация",
       "discovered_at": "2026-10-31",
-      "reviewed_at": "",
+      "reviewed_at": "2026-10-31",
       "price": null,
       "checked_at": "",
       "social_priority": null,
@@ -51923,7 +51925,8 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       }
     },
     {
@@ -52096,14 +52099,16 @@
       "price": 0,
       "price_text": "",
       "registration": false,
-      "categories": [],
+      "categories": [
+        "выставка"
+      ],
       "description": "На метро Музей AZ находится между станциями метро «Маяковская» и «Белорусская» (кольцевая). Мы рекомендуем идти в Музей от станции «Маяковская». Вам нужен Выход №1 на 1-я Тверская-Ямская улица, 2-я Тверская-Ямская улица.",
       "url": "https://museum-az.com/event/territoriya-svobody-nonkonformisty-v-taruse/",
       "source": "Музей AZ — выставки и события",
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-10-20",
-      "price_type": "paid",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-10-25",
       "editor_overrides": {
@@ -54036,7 +54041,7 @@
     },
     {
       "title": "«Постановка знака» — выставка фотокниг и зинов",
-      "status": "check",
+      "status": "approved",
       "date": "2026-11-04",
       "time": "",
       "venue": "уточнить",
@@ -54057,7 +54062,7 @@
       "review_reason": "primary_source_confirmation_required",
       "editor_note": "Кандидат 2–8 ноября, не опубликован; ручная модерация",
       "discovered_at": "2026-10-31",
-      "reviewed_at": "",
+      "reviewed_at": "2026-10-31",
       "price": null,
       "checked_at": "",
       "social_priority": null,
@@ -54073,7 +54078,8 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       }
     },
     {
@@ -54901,7 +54907,7 @@
     },
     {
       "title": "Международная конференция по консервации и реставрации современного искусства",
-      "status": "new",
+      "status": "approved",
       "date": "2026-11-05",
       "time": "",
       "venue": "Музей «Гараж» / онлайн",
@@ -54916,13 +54922,13 @@
       "address": "",
       "price_type": "free",
       "price_text": "бесплатно по регистрации",
-      "registration": false,
+      "registration": true,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
       "editor_note": "Кандидат 2–8 ноября, не опубликован; ручная модерация",
       "discovered_at": "2026-10-31",
-      "reviewed_at": "",
+      "reviewed_at": "2026-10-31",
       "price": null,
       "checked_at": "",
       "social_priority": null,
@@ -54937,7 +54943,8 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       }
     },
     {
@@ -55130,7 +55137,7 @@
     },
     {
       "title": "Искусство и власть: русская живопись от авангарда к соцреализму",
-      "status": "new",
+      "status": "approved",
       "date": "2026-11-05",
       "time": "18:30",
       "venue": "Библиотека «Точки зрения», Стрельнинская, 11",
@@ -55149,7 +55156,7 @@
       "review_reason": "",
       "editor_note": "Кандидат 2–8 ноября, не опубликован; ручная модерация",
       "discovered_at": "2026-10-31",
-      "reviewed_at": "",
+      "reviewed_at": "2026-10-31",
       "price": null,
       "checked_at": "",
       "social_priority": null,
@@ -55164,7 +55171,8 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       }
     },
     {
@@ -55471,7 +55479,7 @@
     },
     {
       "title": "Презентация книги Полины Парыгиной «Выпускайте демонов»",
-      "status": "check",
+      "status": "approved",
       "date": "2026-11-05",
       "time": "19:30",
       "venue": "уточнить",
@@ -55492,7 +55500,7 @@
       "review_reason": "primary_source_confirmation_required",
       "editor_note": "Кандидат 2–8 ноября, не опубликован; ручная модерация",
       "discovered_at": "2026-10-31",
-      "reviewed_at": "",
+      "reviewed_at": "2026-10-31",
       "price": null,
       "checked_at": "",
       "social_priority": null,
@@ -55507,7 +55515,8 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       }
     },
     {
@@ -55822,7 +55831,7 @@
     },
     {
       "title": "«Фото-ревью»",
-      "status": "new",
+      "status": "approved",
       "date": "2026-11-06",
       "time": "19:00",
       "venue": "Центр Зотов",
@@ -55843,7 +55852,7 @@
       "review_reason": "",
       "editor_note": "Кандидат 2–8 ноября, не опубликован; ручная модерация",
       "discovered_at": "2026-10-31",
-      "reviewed_at": "",
+      "reviewed_at": "2026-10-31",
       "price": null,
       "checked_at": "",
       "social_priority": null,
@@ -55858,7 +55867,8 @@
       "editor_overrides": {
         "telegram_include": false,
         "instagram_include": false,
-        "registration": false
+        "registration": false,
+        "status": "approved"
       }
     },
     {
@@ -55893,7 +55903,7 @@
     },
     {
       "title": "Лекция «Александр Иванович Замошкин»",
-      "status": "check",
+      "status": "approved",
       "date": "2026-11-06",
       "time": "19:00",
       "venue": "Третьяковская галерея",
@@ -55911,10 +55921,10 @@
       "registration": false,
       "availability": "unknown",
       "availability_checked_at": "",
-      "review_reason": "possible_duplicate",
+      "review_reason": "",
       "editor_note": "Кандидат 2–8 ноября, не опубликован; ручная модерация",
       "discovered_at": "2026-10-31",
-      "reviewed_at": "",
+      "reviewed_at": "2026-10-31",
       "price": null,
       "checked_at": "",
       "social_priority": null,
@@ -55929,7 +55939,8 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       }
     },
     {
@@ -55972,7 +55983,7 @@
     },
     {
       "title": "Лекция Светланы Ершовой «Женщины в картинах русских художников XVIII–XX вв.»",
-      "status": "new",
+      "status": "approved",
       "date": "2026-11-06",
       "time": "19:00",
       "venue": "Книги и кофе, Гагаринская, 20",
@@ -55993,7 +56004,7 @@
       "review_reason": "",
       "editor_note": "Кандидат 2–8 ноября, не опубликован; ручная модерация",
       "discovered_at": "2026-10-31",
-      "reviewed_at": "",
+      "reviewed_at": "2026-10-31",
       "price": null,
       "checked_at": "",
       "social_priority": null,
@@ -56008,7 +56019,8 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       }
     },
     {
@@ -56388,7 +56400,7 @@
     },
     {
       "title": "Лекция «Павел Филонов»",
-      "status": "new",
+      "status": "approved",
       "date": "2026-11-07",
       "time": "13:00",
       "venue": "Новая Третьяковка, Крымский Вал, 10",
@@ -56409,7 +56421,7 @@
       "review_reason": "",
       "editor_note": "Кандидат 2–8 ноября, не опубликован; ручная модерация",
       "discovered_at": "2026-10-31",
-      "reviewed_at": "",
+      "reviewed_at": "2026-10-31",
       "price": null,
       "checked_at": "",
       "social_priority": null,
@@ -56424,7 +56436,8 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       }
     },
     {
@@ -56571,7 +56584,7 @@
     },
     {
       "title": "«Ленинград глазами Владимира Гринберга» — лекция Елены Куценко",
-      "status": "check",
+      "status": "approved",
       "date": "2026-11-07",
       "time": "16:30",
       "venue": "место уточнить",
@@ -56592,7 +56605,7 @@
       "review_reason": "primary_source_confirmation_required",
       "editor_note": "Кандидат 2–8 ноября, не опубликован; ручная модерация",
       "discovered_at": "2026-10-31",
-      "reviewed_at": "",
+      "reviewed_at": "2026-10-31",
       "price": null,
       "checked_at": "",
       "social_priority": null,
@@ -56607,12 +56620,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       }
     },
     {
       "title": "Лекция «Свет, его оптические свойства в искусстве и дизайне»",
-      "status": "new",
+      "status": "approved",
       "date": "2026-11-07",
       "time": "18:00",
       "venue": "Doc Art Gallery, Уральская, 2",
@@ -56633,7 +56647,7 @@
       "review_reason": "",
       "editor_note": "Кандидат 2–8 ноября, не опубликован; ручная модерация",
       "discovered_at": "2026-10-31",
-      "reviewed_at": "",
+      "reviewed_at": "2026-10-31",
       "price": null,
       "checked_at": "",
       "social_priority": null,
@@ -56648,7 +56662,8 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       }
     },
     {
@@ -57771,7 +57786,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-11-11-533523acf3",
@@ -63159,7 +63176,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-30-9f582f94c1",
@@ -63195,7 +63214,9 @@
         "registration": false,
         "telegram_include": false,
         "instagram_include": false
-      }
+      },
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-12-01-fab7f6dc13",

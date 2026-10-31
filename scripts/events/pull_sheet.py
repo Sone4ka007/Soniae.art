@@ -6,7 +6,7 @@ from pathlib import Path
 from google.oauth2.service_account import Credentials
 from googleapiclient.discovery import build
 from verified_schedule import apply_verified_schedule
-from sheet_editorial import capture_editor_overrides, apply_editor_overrides
+from sheet_editorial import capture_editor_overrides, apply_editor_overrides, coerce_sheet_value, USER_EDITABLE_FIELDS
 
 ROOT=Path(__file__).resolve().parents[2]
 DB=ROOT/"content/events.json"
@@ -31,10 +31,31 @@ def main():
     byid={e.get("id"):e for e in db.get("events",[]) if e.get("id")}
     changed_fields=0
 
+    imported_weekly=0
     for row in rows:
         rid=str(row.get("id","")).strip()
-        if not rid or rid not in byid:
+        if not rid:
             continue
+        if rid not in byid:
+            # Editorially selected drafts inserted in the working Google Sheet
+            # must be preserved in GitHub, not dropped at the next sync.
+            if not rid.startswith("manual-weekly-"):
+                continue
+            if (not str(row.get("title","")).strip()
+                or not str(row.get("url","")).startswith("https://")
+                or str(row.get("status","")) not in ("new","check","approved","rejected")):
+                continue
+            try:
+                date.fromisoformat(str(row.get("date","")))
+            except ValueError:
+                continue
+            e={field:coerce_sheet_value(field,row.get(field))
+               for field in USER_EDITABLE_FIELDS}
+            e["id"]=rid
+            if e["status"] in ("approved","rejected") and not e.get("reviewed_at"):
+                e["reviewed_at"]=date.today().isoformat()
+            byid[rid]=e
+            imported_weekly+=1
         e=byid[rid]
         old_status=str(e.get("status",""))
         changed=capture_editor_overrides(e,row)
@@ -113,7 +134,7 @@ def main():
         key=lambda e:(e.get("date",""),e.get("time",""),e.get("title",""))
     )
     DB.write_text(json.dumps(db,ensure_ascii=False,indent=2)+"\n","utf-8")
-    print(f"Pulled {changed_fields} manual field overrides from {len(rows)} rows; promoted {promoted} weekly candidates")
+    print(f"Pulled {changed_fields} manual field overrides from {len(rows)} rows; imported {imported_weekly} shortlisted drafts; promoted {promoted} weekly candidates")
 
 if __name__=="__main__":
     main()

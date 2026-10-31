@@ -38291,7 +38291,7 @@
       "reviewed_at": "2026-10-17",
       "availability": "unknown",
       "availability_checked_at": "",
-      "registration": false,
+      "registration": null,
       "price": null,
       "price_text": "",
       "price_type": "paid",
@@ -38317,7 +38317,7 @@
         "status": "approved",
         "telegram_include": false,
         "instagram_include": false,
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -41054,7 +41054,7 @@
       "address": "1-й Голутвинский переулок, 16, стр. 1",
       "price": 850,
       "price_text": "850 ₽; льготный — 650 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -41081,7 +41081,7 @@
       "time_evidence": "24 октября 2026 14:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
       "editor_overrides": {
-        "registration": false
+        "registration": null
       }
     },
     {
@@ -49427,7 +49427,7 @@
       "address": "Лаврушинский переулок, 12",
       "price": 650,
       "price_text": "650 ₽; онлайн — 700 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -49444,7 +49444,7 @@
         "telegram_include": false,
         "instagram_include": false,
         "status": "approved",
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -49844,6 +49844,32 @@
       }
     },
     {
+      "id": "spb-2026-10-31-0c4f8cbb48",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-31",
+      "time": "",
+      "title": "«Питер Чёрный Пёс» по мотивам произведений Н.В.Гоголя",
+      "venue": "Пушкинская-10",
+      "address": "",
+      "price": 1200,
+      "price_text": "1200 ₽",
+      "registration": null,
+      "categories": [],
+      "description": "Постановка по мотивам произведений Н. Гоголя «Нос», «Записки сумасшедшего» и «Шинель» — коллаж, в котором три истории существуют не как отдельные сюжеты, а как грани одного города. Петербург здесь — живой, мрачный и гипнотически притягательный персонаж: он диктует ритм, вмешивается в судьбы людей и становится пространством, где абсурд кажется единственно возможной правдой.",
+      "url": "https://p-10.ru/events/piter-chjornyj-pjos-po-motivam-proizvedenij-n-v-gogolya/",
+      "source": "Пушкинская-10 — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-31",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "spb-2026-10-31-258bb24f9f",
       "status": "check",
       "kind": "exhibition",
@@ -50024,6 +50050,34 @@
       "editor_overrides": {
         "time": ""
       }
+    },
+    {
+      "id": "spb-2026-10-31-c574513ca9",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-10-31",
+      "time": "",
+      "title": "Каждую субботу в 16:00 — обзорная экскурсия по «Пушкинской-10»",
+      "venue": "Пушкинская-10",
+      "address": "",
+      "price": 600,
+      "price_text": "600 ₽",
+      "registration": null,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "Каждую субботу ровно в 16:00 группа будет отправляться от ресепшена в путешествие по коридорам и галереям «Пушкинской-10». В сопровождении опытного экскурсовода гости не только разберутся в современном и актуальном искусстве, но и получат ответы на все интересующие вопросы и проникнутся духом петербургского андерграунда.",
+      "url": "https://p-10.ru/events/obzornaya-ekskursiya-po-pushkinskoj-10-2/",
+      "source": "Пушкинская-10 — события",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-31",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "spb-2026-10-31-e67cd97edb",
@@ -50433,6 +50487,35 @@
       "editor_overrides": {
         "time": ""
       }
+    },
+    {
+      "id": "spb-2026-10-31-4871fd9fdb",
+      "status": "check",
+      "kind": "open_call",
+      "city": "spb",
+      "date": "2026-10-31",
+      "time": "",
+      "title": "состоится лекция Яна Хейна (сценарист, нарративщик) «История русского комикса» и подведение итогов конкурса с награждением.",
+      "venue": "Библиотека комиксов",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция",
+        "open-call"
+      ],
+      "description": "Внимание, художники! Запускаем конкурс комиксов «Зимний выпуск»! Зима — это не только холод, но и время, когда хочется укутаться в плед, взять планшет (или бумагу и карандаш) и создать что-то классное. Мы объявляем открытый конкурс комиксов совместно с Молодежный центр «Кировский» — истории, от которых становится тепло. Пледы, какао, коты и милые посиделки. — зима в космосе, киберпанк-городе или мире эльфов. — тут главное интрига и неожиданная развязка. 1) Внимательно прочитайте Положение конкурса.",
+      "url": "https://forms.gle/rK7y5qNpAbRqvgdp7",
+      "source": "Библиотека комиксов — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-10-31",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-10-31-f044d8e0b5",
@@ -52099,14 +52182,16 @@
       "price": 0,
       "price_text": "",
       "registration": false,
-      "categories": [],
+      "categories": [
+        "выставка"
+      ],
       "description": "На метро Музей AZ находится между станциями метро «Маяковская» и «Белорусская» (кольцевая). Мы рекомендуем идти в Музей от станции «Маяковская». Вам нужен Выход №1 на 1-я Тверская-Ямская улица, 2-я Тверская-Ямская улица.",
       "url": "https://museum-az.com/event/territoriya-svobody-nonkonformisty-v-taruse/",
       "source": "Музей AZ — выставки и события",
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-10-20",
-      "price_type": "paid",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-10-25",
       "editor_overrides": {
@@ -53644,41 +53729,6 @@
       "instagram_include": false
     },
     {
-      "id": "spb-2026-11-03-3497c8964e",
-      "status": "rejected",
-      "kind": "event",
-      "city": "spb",
-      "date": "2026-11-03",
-      "time": "",
-      "title": "События и выставки",
-      "venue": "РОСФОТО",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [
-        "экскурсия"
-      ],
-      "description": "Нажимая \"Отправить\", я подтверждаю свое согласие на обработку моих персональных данных, указанных в форме This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply. Правила использования материалов и изображений, размещённых на сайте РОСФОТО Тел: (812) 670 7691 Магазин: (812) 670 7691 Факс: (812) 314 6184 e-mail: office@rosphoto.org",
-      "url": "https://rosphoto.org/posetitelyam/events/7/",
-      "source": "РОСФОТО",
-      "checked_at": "",
-      "review_reason": "excluded_tour_mediation",
-      "discovered_at": "2026-10-27",
-      "price_type": "unknown",
-      "availability_evidence": "",
-      "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false
-      },
-      "telegram_include": false,
-      "instagram_include": false
-    },
-    {
       "id": "moscow-2026-11-03-1405247759",
       "status": "new",
       "kind": "event",
@@ -53752,6 +53802,41 @@
       "instagram_include": false,
       "time_verification": "unverified",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
+      "id": "spb-2026-11-03-3497c8964e",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-03",
+      "time": "07:11",
+      "title": "События и выставки",
+      "venue": "РОСФОТО",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "Нажимая \"Отправить\", я подтверждаю свое согласие на обработку моих персональных данных, указанных в форме This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply. Правила использования материалов и изображений, размещённых на сайте РОСФОТО Тел: (812) 670 7691 Магазин: (812) 670 7691 Факс: (812) 314 6184 e-mail: office@rosphoto.org",
+      "url": "https://rosphoto.org/posetitelyam/events/7/",
+      "source": "РОСФОТО",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-27",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "spb-2026-11-03-d70f2c6fd6",
@@ -54920,7 +55005,7 @@
       "address": "",
       "price_type": "free",
       "price_text": "бесплатно по регистрации",
-      "registration": false,
+      "registration": true,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -56474,6 +56559,34 @@
       "reviewed_at": ""
     },
     {
+      "id": "moscow-2026-11-07-ce0a3cac41",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-07",
+      "time": "15:00",
+      "title": "Лекция «Сирень»",
+      "venue": "Третьяковская галерея",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Лекция к абонементу №04 «Баллада о цветах» 3 октября 2026 – 7 ноября 2026 Лекция будет проходить в Лекционном зале Инженерного корпуса (Лаврушинский переулок, д. 12, вход с Малого Толмачёвского переулка) и в режиме реального времени на платформе МТС Линк в формате онлайн. Продолжительность лекции: 1 час 30 минут.",
+      "url": "https://www.tretyakovgallery.ru/events/o/lektsiya-siren-10-2026/",
+      "source": "Третьяковская галерея — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-31",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "spb-2026-11-07-4ec0d02e31",
       "status": "check",
       "kind": "event",
@@ -57021,6 +57134,34 @@
       },
       "telegram_include": false,
       "instagram_include": false
+    },
+    {
+      "id": "moscow-2026-11-08-0fe664bda6",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-08",
+      "time": "15:00",
+      "title": "Лекция «Романтизм»",
+      "venue": "Третьяковская галерея",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Лекция к абонементу №05 «Стили и направления: от барокко до реализма» 4 октября 2026 – 22 ноября 2026 Лекция будет проходить в Лекционном зале Инженерного корпуса (Лаврушинский переулок, д. 12, вход с Малого Толмачёвского переулка) и в режиме реального времени на платформе МТС Линк в формате онлайн. Продолжительность лекции: 1 час 30 минут.",
+      "url": "https://www.tretyakovgallery.ru/events/o/lektsiya-romantizm-11-2026/",
+      "source": "Третьяковская галерея — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-31",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-08-a193b10c2a",

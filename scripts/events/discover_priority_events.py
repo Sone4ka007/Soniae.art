@@ -249,14 +249,25 @@ def merge_events(db, candidates):
     return added
 
 
+def bounded_fetch(url):
+    """Bound a priority search so a blocked search engine cannot stall the main feed."""
+    import requests
+    from collect_jsonld import BROWSER_HEADERS
+    response = requests.get(
+        url, headers=BROWSER_HEADERS, timeout=(6, 12), allow_redirects=True
+    )
+    response.raise_for_status()
+    response.encoding = response.encoding or "utf-8"
+    return response.text
+
+
 def main():
-    from collect_jsonld import fetch
     from quality_gate import exclusion_reason
     today = date.today()
     config = json.loads(CONFIG.read_text("utf-8"))
     db = json.loads(DB.read_text("utf-8"))
     candidates = [
-        e for e in collect(config, fetch, today)
+        e for e in collect(config, bounded_fetch, today)
         if not exclusion_reason(e, today)
     ]
     count = merge_events(db, candidates)

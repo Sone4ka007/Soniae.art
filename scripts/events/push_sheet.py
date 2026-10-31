@@ -126,6 +126,10 @@ def main():
             return True
         if status not in ("new", "check"):
             return False
+        # Manually shortlisted items belong in the approval queue even if
+        # their discovery date predates a scheduled collector run.
+        if str(e.get("id","")).startswith("manual-weekly-"):
+            return True
         if str(e.get("discovered_at", "")) <= "2026-10-30":
             return False
         title=str(e.get("title", "")).strip().lower()
@@ -142,7 +146,13 @@ def main():
             "масловка", "кгалерея", "kgallery", "фото департамент",
             "фотодепартамент", "пушкинская-10", "музей современного искусства"
         )
-        if not any(s in source for s in trusted):
+        topical=(
+            "лекция", "мастер-класс", "наброс", "рисунок", "иллюстрац",
+            "фотограф", "книга", "зин", "график", "художник", "живопис",
+            "дизайн", "типограф", "плакат", "керамик", "резиденц",
+            "биеннале", "artist", "open call", "опен-колл"
+        )
+        if not any(s in source for s in trusted) and not any(t in title for t in topical):
             return False
         if any(s in title for s in ("детская", "для детей", "школьников", "семейная экскурсия")):
             return False
@@ -160,6 +170,26 @@ def main():
     rows=[HEADERS]+[row_for_event(e) for e in sheet_events]
 
     DB.write_text(json.dumps(db,ensure_ascii=False,indent=2)+"\n","utf-8")
+
+    # The editor sheet was deliberately compacted. Grow the grid BEFORE
+    # clearing values, otherwise a fresh batch can exceed its 390-row limit.
+    sheet_meta=svc.spreadsheets().get(
+        spreadsheetId=SHEET_ID,
+        fields="sheets(properties(sheetId,title,gridProperties(rowCount)))"
+    ).execute()
+    props=next(s["properties"] for s in sheet_meta["sheets"]
+               if s["properties"]["title"]=="Events")
+    current_rows=props["gridProperties"]["rowCount"]
+    if len(rows)>current_rows:
+        target_rows=max(500,len(rows)+100)
+        svc.spreadsheets().batchUpdate(
+            spreadsheetId=SHEET_ID,
+            body={"requests":[{"updateSheetProperties":{
+                "properties":{"sheetId":props["sheetId"],
+                              "gridProperties":{"rowCount":target_rows}},
+                "fields":"gridProperties.rowCount"
+            }}]}
+        ).execute()
 
     api.clear(spreadsheetId=SHEET_ID,range=RANGE,body={}).execute()
     api.update(

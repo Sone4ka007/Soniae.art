@@ -52099,16 +52099,14 @@
       "price": 0,
       "price_text": "",
       "registration": false,
-      "categories": [
-        "выставка"
-      ],
+      "categories": [],
       "description": "На метро Музей AZ находится между станциями метро «Маяковская» и «Белорусская» (кольцевая). Мы рекомендуем идти в Музей от станции «Маяковская». Вам нужен Выход №1 на 1-я Тверская-Ямская улица, 2-я Тверская-Ямская улица.",
       "url": "https://museum-az.com/event/territoriya-svobody-nonkonformisty-v-taruse/",
       "source": "Музей AZ — выставки и события",
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-10-20",
-      "price_type": "free",
+      "price_type": "paid",
       "availability": "unknown",
       "availability_checked_at": "2026-10-25",
       "editor_overrides": {
@@ -54922,7 +54920,7 @@
       "address": "",
       "price_type": "free",
       "price_text": "бесплатно по регистрации",
-      "registration": true,
+      "registration": false,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",

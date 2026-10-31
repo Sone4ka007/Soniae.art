@@ -51901,7 +51901,7 @@
       "address": "",
       "price_type": "free",
       "price_text": "бесплатно",
-      "registration": null,
+      "registration": false,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -51913,13 +51913,18 @@
       "social_priority": null,
       "social_title": "",
       "social_description": "",
-      "telegram_include": null,
-      "instagram_include": null,
+      "telegram_include": false,
+      "instagram_include": false,
       "instagram_image": "",
       "id": "manual-weekly-2026-11-01-36e1cd7f",
       "availability_evidence": "",
       "ticket_required": false,
-      "start_date": "2026-11-01"
+      "start_date": "2026-11-01",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      }
     },
     {
       "id": "spb-2026-11-01-176451c1ba",
@@ -52091,16 +52096,14 @@
       "price": 0,
       "price_text": "",
       "registration": false,
-      "categories": [
-        "выставка"
-      ],
+      "categories": [],
       "description": "На метро Музей AZ находится между станциями метро «Маяковская» и «Белорусская» (кольцевая). Мы рекомендуем идти в Музей от станции «Маяковская». Вам нужен Выход №1 на 1-я Тверская-Ямская улица, 2-я Тверская-Ямская улица.",
       "url": "https://museum-az.com/event/territoriya-svobody-nonkonformisty-v-taruse/",
       "source": "Музей AZ — выставки и события",
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-10-20",
-      "price_type": "free",
+      "price_type": "paid",
       "availability": "unknown",
       "availability_checked_at": "2026-10-25",
       "editor_overrides": {
@@ -54048,7 +54051,7 @@
       "address": "",
       "price_type": "free",
       "price_text": "уточнить",
-      "registration": null,
+      "registration": false,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "primary_source_confirmation_required",
@@ -54060,13 +54063,18 @@
       "social_priority": null,
       "social_title": "",
       "social_description": "",
-      "telegram_include": null,
-      "instagram_include": null,
+      "telegram_include": false,
+      "instagram_include": false,
       "instagram_image": "",
       "id": "manual-weekly-2026-11-04-8d934119",
       "availability_evidence": "",
       "ticket_required": false,
-      "start_date": "2026-11-04"
+      "start_date": "2026-11-04",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      }
     },
     {
       "id": "moscow-2026-11-04-9fa77a8965",
@@ -54908,7 +54916,7 @@
       "address": "",
       "price_type": "free",
       "price_text": "бесплатно по регистрации",
-      "registration": true,
+      "registration": false,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -54920,12 +54928,17 @@
       "social_priority": null,
       "social_title": "",
       "social_description": "",
-      "telegram_include": null,
-      "instagram_include": null,
+      "telegram_include": false,
+      "instagram_include": false,
       "instagram_image": "",
       "id": "manual-weekly-2026-11-05-d0b35b74",
       "availability_evidence": "",
-      "ticket_required": true
+      "ticket_required": true,
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      }
     },
     {
       "id": "moscow-2026-11-05-84b65b4d8b",
@@ -55130,7 +55143,7 @@
       "address": "",
       "price_type": "free",
       "price_text": "бесплатно, запись",
-      "registration": null,
+      "registration": false,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -55142,12 +55155,17 @@
       "social_priority": null,
       "social_title": "",
       "social_description": "",
-      "telegram_include": null,
-      "instagram_include": null,
+      "telegram_include": false,
+      "instagram_include": false,
       "instagram_image": "",
       "id": "manual-weekly-2026-11-05-ef72588a",
       "availability_evidence": "",
-      "ticket_required": false
+      "ticket_required": false,
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      }
     },
     {
       "id": "spb-2026-11-05-0bce51b132",
@@ -55468,7 +55486,7 @@
       "address": "",
       "price_type": "free",
       "price_text": "уточнить",
-      "registration": null,
+      "registration": false,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "primary_source_confirmation_required",
@@ -55480,12 +55498,17 @@
       "social_priority": null,
       "social_title": "",
       "social_description": "",
-      "telegram_include": null,
-      "instagram_include": null,
+      "telegram_include": false,
+      "instagram_include": false,
       "instagram_image": "",
       "id": "manual-weekly-2026-11-05-914855e8",
       "availability_evidence": "",
-      "ticket_required": false
+      "ticket_required": false,
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      }
     },
     {
       "id": "international-2026-11-06-e5e1a6b184",
@@ -55814,7 +55837,7 @@
       "address": "",
       "price_type": "paid",
       "price_text": "уточнить",
-      "registration": true,
+      "registration": false,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -55834,7 +55857,8 @@
       "ticket_required": true,
       "editor_overrides": {
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "registration": false
       }
     },
     {
@@ -55884,7 +55908,7 @@
       "address": "",
       "price_type": "paid",
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "possible_duplicate",
@@ -55896,12 +55920,17 @@
       "social_priority": null,
       "social_title": "",
       "social_description": "",
-      "telegram_include": null,
-      "instagram_include": null,
+      "telegram_include": false,
+      "instagram_include": false,
       "instagram_image": "",
       "id": "manual-weekly-2026-11-06-5ca89f6e",
       "availability_evidence": "",
-      "ticket_required": true
+      "ticket_required": true,
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      }
     },
     {
       "id": "moscow-2026-11-06-63e55d0987",
@@ -55958,7 +55987,7 @@
       "address": "",
       "price_type": "paid",
       "price_text": "1100 ₽ / льготный 900 ₽",
-      "registration": true,
+      "registration": false,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -55970,12 +55999,17 @@
       "social_priority": null,
       "social_title": "",
       "social_description": "",
-      "telegram_include": null,
-      "instagram_include": null,
+      "telegram_include": false,
+      "instagram_include": false,
       "instagram_image": "",
       "id": "manual-weekly-2026-11-06-840b67c4",
       "availability_evidence": "",
-      "ticket_required": false
+      "ticket_required": false,
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      }
     },
     {
       "id": "moscow-2026-11-06-815d608a2e",
@@ -56369,7 +56403,7 @@
       "address": "",
       "price_type": "paid",
       "price_text": "650 ₽ / онлайн 700 ₽",
-      "registration": null,
+      "registration": false,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -56381,12 +56415,17 @@
       "social_priority": null,
       "social_title": "",
       "social_description": "",
-      "telegram_include": null,
-      "instagram_include": null,
+      "telegram_include": false,
+      "instagram_include": false,
       "instagram_image": "",
       "id": "manual-weekly-2026-11-07-b6349ed8",
       "availability_evidence": "",
-      "ticket_required": true
+      "ticket_required": true,
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      }
     },
     {
       "id": "spb-2026-11-07-3c5f35e68d",
@@ -56547,7 +56586,7 @@
       "address": "",
       "price_type": "unknown",
       "price_text": "уточнить",
-      "registration": null,
+      "registration": false,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "primary_source_confirmation_required",
@@ -56559,12 +56598,17 @@
       "social_priority": null,
       "social_title": "",
       "social_description": "",
-      "telegram_include": null,
-      "instagram_include": null,
+      "telegram_include": false,
+      "instagram_include": false,
       "instagram_image": "",
       "id": "manual-weekly-2026-11-07-cd355e7c",
       "availability_evidence": "",
-      "ticket_required": false
+      "ticket_required": false,
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      }
     },
     {
       "title": "Лекция «Свет, его оптические свойства в искусстве и дизайне»",
@@ -56583,7 +56627,7 @@
       "address": "",
       "price_type": "paid",
       "price_text": "2000 ₽",
-      "registration": null,
+      "registration": false,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -56595,12 +56639,17 @@
       "social_priority": null,
       "social_title": "",
       "social_description": "",
-      "telegram_include": null,
-      "instagram_include": null,
+      "telegram_include": false,
+      "instagram_include": false,
       "instagram_image": "",
       "id": "manual-weekly-2026-11-07-c858f715",
       "availability_evidence": "",
-      "ticket_required": true
+      "ticket_required": true,
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      }
     },
     {
       "id": "moscow-2026-11-07-96c8d83947",
@@ -57049,7 +57098,7 @@
       "address": "",
       "price_type": "paid",
       "price_text": "2800 ₽",
-      "registration": null,
+      "registration": false,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -57061,12 +57110,17 @@
       "social_priority": null,
       "social_title": "",
       "social_description": "",
-      "telegram_include": null,
-      "instagram_include": null,
+      "telegram_include": false,
+      "instagram_include": false,
       "instagram_image": "",
       "id": "manual-weekly-2026-11-08-12c52e48",
       "availability_evidence": "",
-      "ticket_required": false
+      "ticket_required": false,
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      }
     },
     {
       "id": "international-2026-11-09-330553996a",

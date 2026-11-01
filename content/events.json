@@ -38291,7 +38291,7 @@
       "reviewed_at": "2026-10-17",
       "availability": "unknown",
       "availability_checked_at": "",
-      "registration": null,
+      "registration": false,
       "price": null,
       "price_text": "",
       "price_type": "paid",
@@ -38317,7 +38317,7 @@
         "status": "approved",
         "telegram_include": false,
         "instagram_include": false,
-        "registration": null
+        "registration": false
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -41054,7 +41054,7 @@
       "address": "1-й Голутвинский переулок, 16, стр. 1",
       "price": 850,
       "price_text": "850 ₽; льготный — 650 ₽",
-      "registration": null,
+      "registration": false,
       "categories": [
         "лекция"
       ],
@@ -41081,7 +41081,7 @@
       "time_evidence": "24 октября 2026 14:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
       "editor_overrides": {
-        "registration": null
+        "registration": false
       }
     },
     {
@@ -49427,7 +49427,7 @@
       "address": "Лаврушинский переулок, 12",
       "price": 650,
       "price_text": "650 ₽; онлайн — 700 ₽",
-      "registration": null,
+      "registration": false,
       "categories": [
         "лекция"
       ],
@@ -49444,7 +49444,7 @@
         "telegram_include": false,
         "instagram_include": false,
         "status": "approved",
-        "registration": null
+        "registration": false
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -53031,6 +53031,42 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
+      "title": "Выставка Олеси Лишаевой «Миф места»",
+      "status": "new",
+      "date": "2026-11-02",
+      "time": "",
+      "venue": "Библиотека «Семёновская»",
+      "city": "spb",
+      "kind": "exhibition",
+      "categories": [
+        "выставка",
+        "живопись",
+        "пейзаж"
+      ],
+      "description": "Крым как ландшафт, память и личный миф. Продлится до 30 ноября, свободный вход.",
+      "url": "https://www.lermontovka-spb.ru/events/2_30_11_26_vystavka-mif-mesta-/",
+      "source": "МЦБС им. М. Ю. Лермонтова",
+      "address": "Санкт-Петербург, Московский пр., 50",
+      "price_type": "free",
+      "price_text": "Бесплатно",
+      "registration": false,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "review_reason": "",
+      "editor_note": "Дополнительный поиск 01.11.2026. Проверить перед публикацией.",
+      "discovered_at": "2026-11-01",
+      "reviewed_at": "",
+      "price": 0,
+      "checked_at": "",
+      "social_priority": null,
+      "social_title": "",
+      "social_description": "",
+      "telegram_include": null,
+      "instagram_include": null,
+      "instagram_image": "",
+      "id": "manual-weekly-2026-11-round2-myth-place"
+    },
+    {
       "id": "spb-2026-11-02-0586a962f4",
       "status": "rejected",
       "kind": "event",
@@ -53754,7 +53790,7 @@
       "address": "",
       "price_type": "paid",
       "price_text": "500 ₽",
-      "registration": null,
+      "registration": false,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -53766,12 +53802,17 @@
       "social_priority": null,
       "social_title": "",
       "social_description": "",
-      "telegram_include": null,
-      "instagram_include": null,
+      "telegram_include": false,
+      "instagram_include": false,
       "instagram_image": "",
       "id": "manual-weekly-2026-11-rm-north",
       "availability_evidence": "",
-      "ticket_required": true
+      "ticket_required": true,
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      }
     },
     {
       "id": "spb-2026-11-03-d70f2c6fd6",
@@ -53807,6 +53848,41 @@
       },
       "telegram_include": false,
       "instagram_include": false
+    },
+    {
+      "title": "«Искусство. Женский взгляд» — спектакль",
+      "status": "new",
+      "date": "2026-11-03",
+      "time": "17:00",
+      "venue": "Дом-музей Марины Цветаевой",
+      "city": "moscow",
+      "kind": "event",
+      "categories": [
+        "спектакль",
+        "женщины в искусстве"
+      ],
+      "description": "Спектакль в программе Ночи искусств 2026.",
+      "url": "https://dommuseum.ru/artnught2023",
+      "source": "Дом-музей Марины Цветаевой",
+      "address": "Москва, Борисоглебский пер., 6, стр. 1",
+      "price_type": "free",
+      "price_text": "Бесплатно по регистрации",
+      "registration": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "review_reason": "",
+      "editor_note": "Дополнительный поиск 01.11.2026. Проверить перед публикацией.",
+      "discovered_at": "2026-11-01",
+      "reviewed_at": "",
+      "price": 0,
+      "checked_at": "",
+      "social_priority": null,
+      "social_title": "",
+      "social_description": "",
+      "telegram_include": null,
+      "instagram_include": null,
+      "instagram_image": "",
+      "id": "manual-weekly-2026-11-round2-tsvetaeva-performance"
     },
     {
       "id": "spb-2026-11-03-81ac1b4826",
@@ -53909,12 +53985,52 @@
       "social_priority": null,
       "social_title": "",
       "social_description": "",
-      "telegram_include": null,
-      "instagram_include": null,
+      "telegram_include": false,
+      "instagram_include": false,
       "instagram_image": "",
       "id": "manual-weekly-2026-11-mmoma-visual",
       "availability_evidence": "",
-      "ticket_required": false
+      "ticket_required": false,
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      }
+    },
+    {
+      "title": "Онлайн-лекция «Пабло Пикассо. Ольга»",
+      "status": "new",
+      "date": "2026-11-03",
+      "time": "18:00",
+      "venue": "Эрмитаж / онлайн",
+      "city": "spb",
+      "kind": "event",
+      "categories": [
+        "лекция",
+        "онлайн",
+        "искусство XX века"
+      ],
+      "description": "Онлайн-цикл «Художник, время, красота», образ Ольги Хохловой у Пикассо.",
+      "url": "https://www.hermitagemuseum.org/learn/lectorium/online",
+      "source": "Государственный Эрмитаж",
+      "address": "",
+      "price_type": "unknown",
+      "price_text": "Билеты на сайте Эрмитажа",
+      "registration": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "review_reason": "",
+      "editor_note": "Дополнительный поиск 01.11.2026. Проверить перед публикацией.",
+      "discovered_at": "2026-11-01",
+      "reviewed_at": "",
+      "price": null,
+      "checked_at": "",
+      "social_priority": null,
+      "social_title": "",
+      "social_description": "",
+      "telegram_include": null,
+      "instagram_include": null,
+      "instagram_image": "",
+      "id": "manual-weekly-2026-11-round2-hermitage-picasso"
     },
     {
       "id": "moscow-2026-11-03-50572aee6e",
@@ -54062,6 +54178,41 @@
       "reviewed_at": "2026-10-24",
       "time_verification": "unverified",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
+      "title": "Чувственность в искусстве глазами женщин-художниц",
+      "status": "new",
+      "date": "2026-11-03",
+      "time": "19:00",
+      "venue": "Музей «Масловка. Городок художников»",
+      "city": "moscow",
+      "kind": "event",
+      "categories": [
+        "лекция",
+        "история искусства"
+      ],
+      "description": "Лекция Елизаветы Климовой о субъектности и изображении женского тела в искусстве XX века.",
+      "url": "https://maslovka.org/events/chuvstvennost-v-iskusstve-glazami-zhenshchin-khudozhnits/",
+      "source": "Музей Масловки",
+      "address": "",
+      "price_type": "paid",
+      "price_text": "1900 ₽",
+      "registration": false,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "review_reason": "",
+      "editor_note": "Дополнительный поиск 01.11.2026. Проверить перед публикацией.",
+      "discovered_at": "2026-11-01",
+      "reviewed_at": "",
+      "price": 1900,
+      "checked_at": "",
+      "social_priority": null,
+      "social_title": "",
+      "social_description": "",
+      "telegram_include": null,
+      "instagram_include": null,
+      "instagram_image": "",
+      "id": "manual-weekly-2026-11-round2-maslovka-women"
     },
     {
       "id": "spb-2026-11-03-d840639c9f",
@@ -54218,12 +54369,16 @@
       "social_priority": null,
       "social_title": "",
       "social_description": "",
-      "telegram_include": null,
-      "instagram_include": null,
+      "telegram_include": false,
+      "instagram_include": false,
       "instagram_image": "",
       "id": "manual-weekly-2026-11-mmoma-rukhin",
       "availability_evidence": "",
-      "ticket_required": false
+      "ticket_required": false,
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      }
     },
     {
       "title": "Перформативная встреча «Передай другому» — костюм и движение",
@@ -54255,12 +54410,16 @@
       "social_priority": null,
       "social_title": "",
       "social_description": "",
-      "telegram_include": null,
-      "instagram_include": null,
+      "telegram_include": false,
+      "instagram_include": false,
       "instagram_image": "",
       "id": "manual-weekly-2026-11-mmoma-costumes",
       "availability_evidence": "",
-      "ticket_required": false
+      "ticket_required": false,
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      }
     },
     {
       "id": "international-2026-11-04-8b7a0eb137",
@@ -54553,7 +54712,7 @@
       "address": "",
       "price_type": "free",
       "price_text": "Онлайн бесплатно; время уточнить",
-      "registration": null,
+      "registration": false,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "manual_verification_required",
@@ -54565,12 +54724,17 @@
       "social_priority": null,
       "social_title": "",
       "social_description": "",
-      "telegram_include": null,
-      "instagram_include": null,
+      "telegram_include": false,
+      "instagram_include": false,
       "instagram_image": "",
       "id": "manual-weekly-2026-11-rm-nanai",
       "availability_evidence": "",
-      "ticket_required": true
+      "ticket_required": true,
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      }
     },
     {
       "title": "Презентация цифрового проекта к 150-летию Ивана Билибина",
@@ -54591,7 +54755,7 @@
       "address": "",
       "price_type": "free",
       "price_text": "Онлайн-проект",
-      "registration": null,
+      "registration": false,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "manual_verification_required",
@@ -54603,12 +54767,17 @@
       "social_priority": null,
       "social_title": "",
       "social_description": "",
-      "telegram_include": null,
-      "instagram_include": null,
+      "telegram_include": false,
+      "instagram_include": false,
       "instagram_image": "",
       "id": "manual-weekly-2026-11-rm-bilibin",
       "availability_evidence": "",
-      "ticket_required": true
+      "ticket_required": true,
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      }
     },
     {
       "id": "moscow-2026-11-04-175d817326",
@@ -54713,12 +54882,87 @@
       "social_priority": null,
       "social_title": "",
       "social_description": "",
-      "telegram_include": null,
-      "instagram_include": null,
+      "telegram_include": false,
+      "instagram_include": false,
       "instagram_image": "",
       "id": "manual-weekly-2026-11-mmoma-sidur",
       "availability_evidence": "",
-      "ticket_required": false
+      "ticket_required": false,
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      }
+    },
+    {
+      "title": "Вечер рассказов Надежды Тэффи и Владимира Набокова",
+      "status": "new",
+      "date": "2026-11-04",
+      "time": "14:00",
+      "venue": "Дом-музей Марины Цветаевой",
+      "city": "moscow",
+      "kind": "event",
+      "categories": [
+        "литература",
+        "чтения"
+      ],
+      "description": "Литературный вечер в программе Ночи искусств.",
+      "url": "https://dommuseum.ru/artnught2023",
+      "source": "Дом-музей Марины Цветаевой",
+      "address": "Москва, Борисоглебский пер., 6, стр. 1",
+      "price_type": "free",
+      "price_text": "Бесплатно по регистрации",
+      "registration": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "review_reason": "",
+      "editor_note": "Дополнительный поиск 01.11.2026. Проверить перед публикацией.",
+      "discovered_at": "2026-11-01",
+      "reviewed_at": "",
+      "price": 0,
+      "checked_at": "",
+      "social_priority": null,
+      "social_title": "",
+      "social_description": "",
+      "telegram_include": null,
+      "instagram_include": null,
+      "instagram_image": "",
+      "id": "manual-weekly-2026-11-round2-tsvetaeva-readings"
+    },
+    {
+      "title": "Камерная выставка авторского текстиля",
+      "status": "check",
+      "date": "2026-11-04",
+      "time": "14:00",
+      "venue": "Арт-клуб на Невском, 51Г",
+      "city": "spb",
+      "kind": "exhibition",
+      "categories": [
+        "выставка",
+        "текстиль",
+        "прикладное искусство"
+      ],
+      "description": "12 авторских текстильных работ. Выставка в камерном арт-пространстве, повторяется до конца ноября.",
+      "url": "https://spontanno.space/spb/exhibitions/vystavka-tekstilya--hbhfnzqb",
+      "source": "СПОНТАННО / Timepad",
+      "address": "Санкт-Петербург, Невский пр., 51Г",
+      "price_type": "unknown",
+      "price_text": "Условия уточняются",
+      "registration": false,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "review_reason": "manual_primary_or_terms_check",
+      "editor_note": "Дополнительный поиск 01.11.2026. Проверить перед публикацией.",
+      "discovered_at": "2026-11-01",
+      "reviewed_at": "",
+      "price": null,
+      "checked_at": "",
+      "social_priority": null,
+      "social_title": "",
+      "social_description": "",
+      "telegram_include": null,
+      "instagram_include": null,
+      "instagram_image": "",
+      "id": "manual-weekly-2026-11-round2-textile"
     },
     {
       "id": "spb-2026-11-04-94108f9818",
@@ -54822,12 +55066,16 @@
       "social_priority": null,
       "social_title": "",
       "social_description": "",
-      "telegram_include": null,
-      "instagram_include": null,
+      "telegram_include": false,
+      "instagram_include": false,
       "instagram_image": "",
       "id": "manual-weekly-2026-11-mmoma-dream",
       "availability_evidence": "",
-      "ticket_required": false
+      "ticket_required": false,
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      }
     },
     {
       "id": "spb-2026-11-04-8814ce216b",
@@ -54937,6 +55185,42 @@
       "telegram_include": false,
       "instagram_include": false,
       "reviewed_at": "2026-10-27"
+    },
+    {
+      "title": "«Как луч и как взгляд» — вечер неслышащих поэтов и художников",
+      "status": "new",
+      "date": "2026-11-04",
+      "time": "18:00",
+      "venue": "Дом-музей Марины Цветаевой",
+      "city": "moscow",
+      "kind": "event",
+      "categories": [
+        "визуальное искусство",
+        "поэзия",
+        "встреча"
+      ],
+      "description": "Поэзия с переводом на РЖЯ и показ фотографий работ неслышащих художников.",
+      "url": "https://dommuseum.ru/kalendar-sobyitij/2026/noyabr/noch-iskusstv-2026.-tvorcheskij-vecher-neslyishashhix-poetov-i-xudozhnikov-kak-luch-i-kak-vzglyad",
+      "source": "Дом-музей Марины Цветаевой",
+      "address": "Москва, Борисоглебский пер., 6, стр. 1",
+      "price_type": "free",
+      "price_text": "Бесплатно по регистрации",
+      "registration": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "review_reason": "",
+      "editor_note": "Дополнительный поиск 01.11.2026. Проверить перед публикацией.",
+      "discovered_at": "2026-11-01",
+      "reviewed_at": "",
+      "price": 0,
+      "checked_at": "",
+      "social_priority": null,
+      "social_title": "",
+      "social_description": "",
+      "telegram_include": null,
+      "instagram_include": null,
+      "instagram_image": "",
+      "id": "manual-weekly-2026-11-round2-tsvetaeva-artists"
     },
     {
       "id": "spb-2026-11-04-a72cb3d2ce",
@@ -55586,6 +55870,76 @@
       "editor_note": ""
     },
     {
+      "title": "Кураторская экскурсия «Каким бы раем я оградил тебя»",
+      "status": "check",
+      "date": "2026-11-05",
+      "time": "15:00",
+      "venue": "Музей Достоевского",
+      "city": "spb",
+      "kind": "event",
+      "categories": [
+        "кураторская экскурсия",
+        "литература"
+      ],
+      "description": "Куратор Наталья Ашимбаева о выставке, посвящённой творческой лаборатории Достоевского.",
+      "url": "https://spontanno.space/spb/lectures/lektsiya-ekskursiya-po-vystavke-kakim-by-raem-ya-ogradil-tebya--nkqfn3ny",
+      "source": "СПОНТАННО / Музей Достоевского",
+      "address": "Санкт-Петербург, Кузнечный пер., 5/2",
+      "price_type": "free",
+      "price_text": "Бесплатно",
+      "registration": false,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "review_reason": "manual_primary_or_terms_check",
+      "editor_note": "Дополнительный поиск 01.11.2026. Проверить перед публикацией.",
+      "discovered_at": "2026-11-01",
+      "reviewed_at": "",
+      "price": 0,
+      "checked_at": "",
+      "social_priority": null,
+      "social_title": "",
+      "social_description": "",
+      "telegram_include": null,
+      "instagram_include": null,
+      "instagram_image": "",
+      "id": "manual-weekly-2026-11-round2-dostoevsky-curator"
+    },
+    {
+      "title": "Кураторская экскурсия по выставке «Нездешний вечер»",
+      "status": "check",
+      "date": "2026-11-05",
+      "time": "15:30",
+      "venue": "Дом-музей Марины Цветаевой",
+      "city": "moscow",
+      "kind": "event",
+      "categories": [
+        "кураторская экскурсия",
+        "выставка"
+      ],
+      "description": "Обзор мемориальной квартиры и кураторская часть по выставке.",
+      "url": "https://dommuseum.ru/kalendar-sobyitij/2026/noyabr/",
+      "source": "Дом-музей Марины Цветаевой",
+      "address": "Москва, Борисоглебский пер., 6, стр. 1",
+      "price_type": "unknown",
+      "price_text": "Стоимость уточняется",
+      "registration": false,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "review_reason": "manual_primary_or_terms_check",
+      "editor_note": "Дополнительный поиск 01.11.2026. Проверить перед публикацией.",
+      "discovered_at": "2026-11-01",
+      "reviewed_at": "",
+      "price": null,
+      "checked_at": "",
+      "social_priority": null,
+      "social_title": "",
+      "social_description": "",
+      "telegram_include": null,
+      "instagram_include": null,
+      "instagram_image": "",
+      "id": "manual-weekly-2026-11-round2-tsvetaeva-curator"
+    },
+    {
       "id": "spb-2026-11-05-5fe0d5bb80",
       "status": "new",
       "kind": "event",
@@ -55621,6 +55975,42 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "title": "Открытие «Вращение сфер» и лекция «Рыбий глаз в ночи»",
+      "status": "new",
+      "date": "2026-11-05",
+      "time": "18:00",
+      "venue": "Планетарий № 1",
+      "city": "spb",
+      "kind": "event",
+      "categories": [
+        "вернисаж",
+        "фотография",
+        "лекция"
+      ],
+      "description": "Открытие выставки и лекция о ночном пейзаже.",
+      "url": "https://www.planetarium.one/",
+      "source": "Планетарий № 1",
+      "address": "Санкт-Петербург, наб. Обводного канала, 74, лит. Ц",
+      "price_type": "unknown",
+      "price_text": "По регистрации",
+      "registration": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "review_reason": "",
+      "editor_note": "Дополнительный поиск 01.11.2026. Проверить перед публикацией.",
+      "discovered_at": "2026-11-01",
+      "reviewed_at": "",
+      "price": null,
+      "checked_at": "",
+      "social_priority": null,
+      "social_title": "",
+      "social_description": "",
+      "telegram_include": null,
+      "instagram_include": null,
+      "instagram_image": "",
+      "id": "manual-weekly-2026-11-round2-planetarium-exhibit"
     },
     {
       "title": "Искусство и власть: русская живопись от авангарда к соцреализму",
@@ -55778,6 +56168,42 @@
       "time_verification": "verified",
       "time_evidence": "5 ноября, 19:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
+      "title": "«Калина красная»: фильм Шукшина и живопись Виктора Попкова",
+      "status": "check",
+      "date": "2026-11-05",
+      "time": "19:00",
+      "venue": "Музей «Масловка. Городок художников»",
+      "city": "moscow",
+      "kind": "event",
+      "categories": [
+        "лекция",
+        "живопись",
+        "кино"
+      ],
+      "description": "Лекция Кирилла Светлякова о примитивизме, суровом стиле и эстетике фильма Шукшина.",
+      "url": "https://maslovka.org/events/lektsiya-kalina-krasnaya-1973-vasiliya-shukshina-skazka-o-razboynike-sudba-derevni-i-sovremennogo-cheloveka/",
+      "source": "Музей Масловки",
+      "address": "",
+      "price_type": "unknown",
+      "price_text": "Стоимость уточняется",
+      "registration": false,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "review_reason": "manual_primary_or_terms_check",
+      "editor_note": "Дополнительный поиск 01.11.2026. Проверить перед публикацией.",
+      "discovered_at": "2026-11-01",
+      "reviewed_at": "",
+      "price": null,
+      "checked_at": "",
+      "social_priority": null,
+      "social_title": "",
+      "social_description": "",
+      "telegram_include": null,
+      "instagram_include": null,
+      "instagram_image": "",
+      "id": "manual-weekly-2026-11-round2-maslovka-kalina"
     },
     {
       "id": "moscow-2026-11-05-87509a8743",
@@ -55958,12 +56384,16 @@
       "social_priority": null,
       "social_title": "",
       "social_description": "",
-      "telegram_include": null,
-      "instagram_include": null,
+      "telegram_include": false,
+      "instagram_include": false,
       "instagram_image": "",
       "id": "manual-weekly-2026-11-garage-collectors",
       "availability_evidence": "",
-      "ticket_required": true
+      "ticket_required": true,
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      }
     },
     {
       "id": "moscow-2026-11-05-3cc2c911bc",
@@ -56175,7 +56605,7 @@
       "address": "",
       "price_type": "unknown",
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -56187,13 +56617,18 @@
       "social_priority": null,
       "social_title": "",
       "social_description": "",
-      "telegram_include": null,
-      "instagram_include": null,
+      "telegram_include": false,
+      "instagram_include": false,
       "instagram_image": "",
       "id": "manual-weekly-2026-11-erarta-vasin",
       "availability_evidence": "",
       "ticket_required": true,
-      "start_date": "2026-11-06"
+      "start_date": "2026-11-06",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      }
     },
     {
       "id": "moscow-2026-11-06-f8bd97a160",
@@ -56479,6 +56914,77 @@
       "instagram_include": false
     },
     {
+      "title": "Вернисаж «Соединяя берега: Петербург 2026»",
+      "status": "new",
+      "date": "2026-11-06",
+      "time": "17:30",
+      "venue": "Библиотека им. К. А. Тимирязева",
+      "city": "spb",
+      "kind": "event",
+      "categories": [
+        "вернисаж",
+        "городская живопись"
+      ],
+      "description": "Художники об изображении Петербурга и его мостов; встреча с авторами.",
+      "url": "https://lermontovka-spb.ru/events/6_11_26_otkrytie-vystavki-soedinyaya-berega-peterburg-2026/",
+      "source": "МЦБС им. М. Ю. Лермонтова",
+      "address": "Санкт-Петербург, ул. Шкапина, 6",
+      "price_type": "free",
+      "price_text": "Бесплатно по регистрации",
+      "registration": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "review_reason": "",
+      "editor_note": "Дополнительный поиск 01.11.2026. Проверить перед публикацией.",
+      "discovered_at": "2026-11-01",
+      "reviewed_at": "",
+      "price": 0,
+      "checked_at": "",
+      "social_priority": null,
+      "social_title": "",
+      "social_description": "",
+      "telegram_include": null,
+      "instagram_include": null,
+      "instagram_image": "",
+      "id": "manual-weekly-2026-11-round2-bridges-opening"
+    },
+    {
+      "title": "Онлайн-лекция «Искусство династии Цин»",
+      "status": "new",
+      "date": "2026-11-06",
+      "time": "18:00",
+      "venue": "Эрмитаж / онлайн",
+      "city": "spb",
+      "kind": "event",
+      "categories": [
+        "лекция",
+        "онлайн",
+        "искусство Китая"
+      ],
+      "description": "Искусствовед М. В. Козловская об искусстве династии Цин.",
+      "url": "https://www.hermitagemuseum.org/what-s-on/china26",
+      "source": "Государственный Эрмитаж",
+      "address": "",
+      "price_type": "unknown",
+      "price_text": "Билеты на сайте Эрмитажа",
+      "registration": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "review_reason": "",
+      "editor_note": "Дополнительный поиск 01.11.2026. Проверить перед публикацией.",
+      "discovered_at": "2026-11-01",
+      "reviewed_at": "",
+      "price": null,
+      "checked_at": "",
+      "social_priority": null,
+      "social_title": "",
+      "social_description": "",
+      "telegram_include": null,
+      "instagram_include": null,
+      "instagram_image": "",
+      "id": "manual-weekly-2026-11-round2-hermitage-qing"
+    },
+    {
       "title": "«Фото-ревью»",
       "status": "approved",
       "date": "2026-11-06",
@@ -56631,6 +57137,41 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
+      "title": "Лекция «Энди Уорхол: как банка супа стала искусством»",
+      "status": "new",
+      "date": "2026-11-06",
+      "time": "19:00",
+      "venue": "Планетарий № 1",
+      "city": "spb",
+      "kind": "event",
+      "categories": [
+        "лекция",
+        "поп-арт"
+      ],
+      "description": "Олеся Александрова о поп-арте, шелкографии и Фабрике Уорхола.",
+      "url": "https://www.planetarium.one/",
+      "source": "Планетарий № 1",
+      "address": "Санкт-Петербург, наб. Обводного канала, 74, лит. Ц",
+      "price_type": "paid",
+      "price_text": "От 450 ₽",
+      "registration": false,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "review_reason": "",
+      "editor_note": "Дополнительный поиск 01.11.2026. Проверить перед публикацией.",
+      "discovered_at": "2026-11-01",
+      "reviewed_at": "",
+      "price": 450,
+      "checked_at": "",
+      "social_priority": null,
+      "social_title": "",
+      "social_description": "",
+      "telegram_include": null,
+      "instagram_include": null,
+      "instagram_image": "",
+      "id": "manual-weekly-2026-11-round2-planetarium-warhol"
+    },
+    {
       "title": "Лекция Светланы Ершовой «Женщины в картинах русских художников XVIII–XX вв.»",
       "status": "approved",
       "date": "2026-11-06",
@@ -56775,12 +57316,16 @@
       "social_priority": null,
       "social_title": "",
       "social_description": "",
-      "telegram_include": null,
-      "instagram_include": null,
+      "telegram_include": false,
+      "instagram_include": false,
       "instagram_image": "",
       "id": "manual-weekly-2026-11-garage-grassroots",
       "availability_evidence": "",
-      "ticket_required": false
+      "ticket_required": false,
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      }
     },
     {
       "id": "international-2026-11-07-e6acac2220",
@@ -56840,7 +57385,7 @@
       "address": "",
       "price_type": "paid",
       "price_text": "Курс 35 000 ₽; заявка до 7 ноября",
-      "registration": null,
+      "registration": false,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "manual_verification_required",
@@ -56852,12 +57397,17 @@
       "social_priority": null,
       "social_title": "",
       "social_description": "",
-      "telegram_include": null,
-      "instagram_include": null,
+      "telegram_include": false,
+      "instagram_include": false,
       "instagram_image": "",
       "id": "manual-weekly-2026-11-zotov-photo-lab",
       "availability_evidence": "",
-      "ticket_required": true
+      "ticket_required": true,
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      }
     },
     {
       "id": "spb-2026-11-07-d709f81e9f",
@@ -57092,7 +57642,7 @@
       "address": "",
       "price_type": "paid",
       "price_text": "Вход по билету в музей",
-      "registration": null,
+      "registration": false,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -57104,13 +57654,18 @@
       "social_priority": null,
       "social_title": "",
       "social_description": "",
-      "telegram_include": null,
-      "instagram_include": null,
+      "telegram_include": false,
+      "instagram_include": false,
       "instagram_image": "",
       "id": "manual-weekly-2026-11-erarta-zaytsev",
       "availability_evidence": "",
       "ticket_required": true,
-      "start_date": "2026-11-07"
+      "start_date": "2026-11-07",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      }
     },
     {
       "id": "spb-2026-11-07-8803c06d84",
@@ -57124,7 +57679,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "выставка"
       ],
@@ -57139,7 +57694,14 @@
       "ticket_required": true,
       "availability": "unknown",
       "availability_checked_at": "",
-      "start_date": "2026-11-07"
+      "start_date": "2026-11-07",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-11-07-64ecc1a02b",
@@ -57559,6 +58121,42 @@
       }
     },
     {
+      "title": "Лекция Петра Термена «Лев Термен и терменвокс»",
+      "status": "new",
+      "date": "2026-11-07",
+      "time": "17:00",
+      "venue": "Новая сцена Александринского театра",
+      "city": "spb",
+      "kind": "event",
+      "categories": [
+        "лекция",
+        "история электронной музыки",
+        "технологии"
+      ],
+      "description": "История первого бесконтактного музыкального инструмента и экспериментального звукового искусства.",
+      "url": "https://spb.kassir.ru/obrazovanie/istoriya-elektronnoy-muzyiki-lev-termen-i-termenvoks-rasskazyivaet-pyotr-termen",
+      "source": "КАССИР.РУ / Александринский театр",
+      "address": "Санкт-Петербург, наб. Фонтанки, 49А",
+      "price_type": "paid",
+      "price_text": "От 500 ₽",
+      "registration": false,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "review_reason": "",
+      "editor_note": "Дополнительный поиск 01.11.2026. Проверить перед публикацией.",
+      "discovered_at": "2026-11-01",
+      "reviewed_at": "",
+      "price": 500,
+      "checked_at": "",
+      "social_priority": null,
+      "social_title": "",
+      "social_description": "",
+      "telegram_include": null,
+      "instagram_include": null,
+      "instagram_image": "",
+      "id": "manual-weekly-2026-11-round2-theremin"
+    },
+    {
       "title": "Лекция «Свет, его оптические свойства в искусстве и дизайне»",
       "status": "approved",
       "date": "2026-11-07",
@@ -57703,12 +58301,16 @@
       "social_priority": null,
       "social_title": "",
       "social_description": "",
-      "telegram_include": null,
-      "instagram_include": null,
+      "telegram_include": false,
+      "instagram_include": false,
       "instagram_image": "",
       "id": "manual-weekly-2026-11-garage-new-materials",
       "availability_evidence": "",
-      "ticket_required": true
+      "ticket_required": true,
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      }
     },
     {
       "id": "international-2026-11-08-f9e3a218bb",
@@ -59048,7 +59650,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "лекция"
       ],
@@ -59062,7 +59664,14 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-11-10-7874148c04",
@@ -59155,7 +59764,13 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "international-2026-11-11-533523acf3",
@@ -59830,7 +60445,13 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "international-2026-11-12-57971d9a68",
@@ -60785,7 +61406,13 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-10-24-9b9ee6a4b0",
@@ -62712,7 +63339,13 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-11-18-ad5480ce53",
@@ -63676,7 +64309,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "выставка"
       ],
@@ -63691,7 +64324,14 @@
       "ticket_required": true,
       "availability": "unknown",
       "availability_checked_at": "",
-      "start_date": "2026-11-20"
+      "start_date": "2026-11-20",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-11-20-9eb04182fc",
@@ -63906,7 +64546,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "программа"
       ],
@@ -63920,7 +64560,14 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-11-20-b029e967f1",
@@ -66125,7 +66772,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "выставка"
       ],
@@ -66140,7 +66787,14 @@
       "ticket_required": true,
       "availability": "unknown",
       "availability_checked_at": "",
-      "start_date": "2026-11-27"
+      "start_date": "2026-11-27",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "spb-2026-11-27-d872c160b2",
@@ -66154,7 +66808,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "выставка"
       ],
@@ -66169,7 +66823,14 @@
       "ticket_required": true,
       "availability": "unknown",
       "availability_checked_at": "",
-      "start_date": "2026-11-27"
+      "start_date": "2026-11-27",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-11-27-f08815a18e",
@@ -66363,7 +67024,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [],
       "description": "",
       "url": "https://centrezotov.ru/events/bashnya/",
@@ -66375,7 +67036,14 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-11-28-aab697f4b0",
@@ -66544,7 +67212,13 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-11-29-0b6f0e020e",
@@ -67225,7 +67899,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "выставка"
       ],
@@ -67240,7 +67914,14 @@
       "ticket_required": true,
       "availability": "unknown",
       "availability_checked_at": "",
-      "start_date": "2026-12-11"
+      "start_date": "2026-12-11",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "spb-2026-12-11-556173ab41",
@@ -67254,7 +67935,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "выставка"
       ],
@@ -67269,7 +67950,14 @@
       "ticket_required": true,
       "availability": "unknown",
       "availability_checked_at": "",
-      "start_date": "2026-12-11"
+      "start_date": "2026-12-11",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "russia-2026-12-13-3a942b4abf",
@@ -67473,7 +68161,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "выставка"
       ],
@@ -67488,7 +68176,14 @@
       "ticket_required": true,
       "availability": "unknown",
       "availability_checked_at": "",
-      "start_date": "2026-12-18"
+      "start_date": "2026-12-18",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "spb-2026-12-18-0b562c2e2b",
@@ -67502,7 +68197,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "выставка"
       ],
@@ -67517,7 +68212,14 @@
       "ticket_required": true,
       "availability": "unknown",
       "availability_checked_at": "",
-      "start_date": "2026-12-18"
+      "start_date": "2026-12-18",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "international-2026-12-20-7d49348433",
@@ -67683,7 +68385,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "выставка"
       ],
@@ -67698,7 +68400,14 @@
       "ticket_required": true,
       "availability": "unknown",
       "availability_checked_at": "",
-      "start_date": "2027-01-22"
+      "start_date": "2027-01-22",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     }
   ]
 }

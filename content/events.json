@@ -38291,7 +38291,7 @@
       "reviewed_at": "2026-10-17",
       "availability": "unknown",
       "availability_checked_at": "",
-      "registration": false,
+      "registration": null,
       "price": null,
       "price_text": "",
       "price_type": "paid",
@@ -38317,7 +38317,7 @@
         "status": "approved",
         "telegram_include": false,
         "instagram_include": false,
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -41054,7 +41054,7 @@
       "address": "1-й Голутвинский переулок, 16, стр. 1",
       "price": 850,
       "price_text": "850 ₽; льготный — 650 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -41081,7 +41081,7 @@
       "time_evidence": "24 октября 2026 14:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
       "editor_overrides": {
-        "registration": false
+        "registration": null
       }
     },
     {
@@ -49427,7 +49427,7 @@
       "address": "Лаврушинский переулок, 12",
       "price": 650,
       "price_text": "650 ₽; онлайн — 700 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -49444,7 +49444,7 @@
         "telegram_include": false,
         "instagram_include": false,
         "status": "approved",
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -51345,7 +51345,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-11-01-6e82235541",
@@ -51661,7 +51663,7 @@
       "address": "",
       "price": 0,
       "price_text": "Бесплатно",
-      "registration": null,
+      "registration": false,
       "categories": [
         "мастер-класс"
       ],
@@ -51675,7 +51677,16 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-01-2b2a385dc4",
@@ -51758,14 +51769,16 @@
       "price": 0,
       "price_text": "",
       "registration": false,
-      "categories": [],
+      "categories": [
+        "выставка"
+      ],
       "description": "На метро Музей AZ находится между станциями метро «Маяковская» и «Белорусская» (кольцевая). Мы рекомендуем идти в Музей от станции «Маяковская». Вам нужен Выход №1 на 1-я Тверская-Ямская улица, 2-я Тверская-Ямская улица.",
       "url": "https://museum-az.com/event/territoriya-svobody-nonkonformisty-v-taruse/",
       "source": "Музей AZ — выставки и события",
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-10-20",
-      "price_type": "paid",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-10-25",
       "editor_overrides": {
@@ -53117,13 +53130,17 @@
       "social_priority": null,
       "social_title": "",
       "social_description": "",
-      "telegram_include": null,
-      "instagram_include": null,
+      "telegram_include": false,
+      "instagram_include": false,
       "instagram_image": "",
       "id": "manual-weekly-2026-11-round2-myth-place",
       "availability_evidence": "",
       "ticket_required": false,
-      "start_date": "2026-11-02"
+      "start_date": "2026-11-02",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      }
     },
     {
       "id": "spb-2026-11-02-0586a962f4",
@@ -53979,12 +53996,16 @@
       "social_priority": null,
       "social_title": "",
       "social_description": "",
-      "telegram_include": null,
-      "instagram_include": null,
+      "telegram_include": false,
+      "instagram_include": false,
       "instagram_image": "",
       "id": "manual-weekly-2026-11-round2-tsvetaeva-performance",
       "availability_evidence": "",
-      "ticket_required": true
+      "ticket_required": true,
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      }
     },
     {
       "id": "spb-2026-11-03-81ac1b4826",
@@ -54129,12 +54150,16 @@
       "social_priority": null,
       "social_title": "",
       "social_description": "",
-      "telegram_include": null,
-      "instagram_include": null,
+      "telegram_include": false,
+      "instagram_include": false,
       "instagram_image": "",
       "id": "manual-weekly-2026-11-round2-hermitage-picasso",
       "availability_evidence": "",
-      "ticket_required": false
+      "ticket_required": false,
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      }
     },
     {
       "id": "moscow-2026-11-03-50572aee6e",
@@ -54313,12 +54338,16 @@
       "social_priority": null,
       "social_title": "",
       "social_description": "",
-      "telegram_include": null,
-      "instagram_include": null,
+      "telegram_include": false,
+      "instagram_include": false,
       "instagram_image": "",
       "id": "manual-weekly-2026-11-round2-maslovka-women",
       "availability_evidence": "",
-      "ticket_required": false
+      "ticket_required": false,
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      }
     },
     {
       "id": "spb-2026-11-03-d840639c9f",
@@ -54754,13 +54783,17 @@
       "social_priority": null,
       "social_title": "",
       "social_description": "",
-      "telegram_include": null,
-      "instagram_include": null,
+      "telegram_include": false,
+      "instagram_include": false,
       "instagram_image": "",
       "id": "manual-weekly-2026-11-round2-textile",
       "availability_evidence": "",
       "ticket_required": false,
-      "start_date": "2026-11-04"
+      "start_date": "2026-11-04",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      }
     },
     {
       "id": "moscow-2026-11-04-d4ed4734f6",
@@ -55107,12 +55140,16 @@
       "social_priority": null,
       "social_title": "",
       "social_description": "",
-      "telegram_include": null,
-      "instagram_include": null,
+      "telegram_include": false,
+      "instagram_include": false,
       "instagram_image": "",
       "id": "manual-weekly-2026-11-round2-tsvetaeva-readings",
       "availability_evidence": "",
-      "ticket_required": true
+      "ticket_required": true,
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      }
     },
     {
       "id": "spb-2026-11-04-94108f9818",
@@ -55367,12 +55404,16 @@
       "social_priority": null,
       "social_title": "",
       "social_description": "",
-      "telegram_include": null,
-      "instagram_include": null,
+      "telegram_include": false,
+      "instagram_include": false,
       "instagram_image": "",
       "id": "manual-weekly-2026-11-round2-tsvetaeva-artists",
       "availability_evidence": "",
-      "ticket_required": true
+      "ticket_required": true,
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      }
     },
     {
       "id": "spb-2026-11-04-a72cb3d2ce",
@@ -55739,13 +55780,17 @@
       "social_priority": null,
       "social_title": "",
       "social_description": "",
-      "telegram_include": null,
-      "instagram_include": null,
+      "telegram_include": false,
+      "instagram_include": false,
       "instagram_image": "",
       "id": "manual-weekly-2026-11-round2-tsvetaeva-curator",
       "availability_evidence": "",
       "ticket_required": true,
-      "start_date": "2026-11-05"
+      "start_date": "2026-11-05",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      }
     },
     {
       "id": "spb-2026-11-05-cda167ff31",
@@ -55842,7 +55887,7 @@
       "address": "",
       "price_type": "free",
       "price_text": "бесплатно по регистрации",
-      "registration": false,
+      "registration": true,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -56089,12 +56134,16 @@
       "social_priority": null,
       "social_title": "",
       "social_description": "",
-      "telegram_include": null,
-      "instagram_include": null,
+      "telegram_include": false,
+      "instagram_include": false,
       "instagram_image": "",
       "id": "manual-weekly-2026-11-round2-dostoevsky-curator",
       "availability_evidence": "",
-      "ticket_required": false
+      "ticket_required": false,
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      }
     },
     {
       "id": "spb-2026-11-05-5fe0d5bb80",
@@ -56164,12 +56213,16 @@
       "social_priority": null,
       "social_title": "",
       "social_description": "",
-      "telegram_include": null,
-      "instagram_include": null,
+      "telegram_include": false,
+      "instagram_include": false,
       "instagram_image": "",
       "id": "manual-weekly-2026-11-round2-planetarium-exhibit",
       "availability_evidence": "",
-      "ticket_required": true
+      "ticket_required": true,
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      }
     },
     {
       "title": "Искусство и власть: русская живопись от авангарда к соцреализму",
@@ -56359,12 +56412,16 @@
       "social_priority": null,
       "social_title": "",
       "social_description": "",
-      "telegram_include": null,
-      "instagram_include": null,
+      "telegram_include": false,
+      "instagram_include": false,
       "instagram_image": "",
       "id": "manual-weekly-2026-11-round2-maslovka-kalina",
       "availability_evidence": "",
-      "ticket_required": false
+      "ticket_required": false,
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      }
     },
     {
       "id": "moscow-2026-11-05-87509a8743",
@@ -57104,12 +57161,16 @@
       "social_priority": null,
       "social_title": "",
       "social_description": "",
-      "telegram_include": null,
-      "instagram_include": null,
+      "telegram_include": false,
+      "instagram_include": false,
       "instagram_image": "",
       "id": "manual-weekly-2026-11-round2-bridges-opening",
       "availability_evidence": "",
-      "ticket_required": false
+      "ticket_required": false,
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      }
     },
     {
       "title": "Онлайн-лекция «Искусство династии Цин»",
@@ -57142,12 +57203,16 @@
       "social_priority": null,
       "social_title": "",
       "social_description": "",
-      "telegram_include": null,
-      "instagram_include": null,
+      "telegram_include": false,
+      "instagram_include": false,
       "instagram_image": "",
       "id": "manual-weekly-2026-11-round2-hermitage-qing",
       "availability_evidence": "",
-      "ticket_required": false
+      "ticket_required": false,
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      }
     },
     {
       "title": "«Фото-ревью»",
@@ -57331,12 +57396,16 @@
       "social_priority": null,
       "social_title": "",
       "social_description": "",
-      "telegram_include": null,
-      "instagram_include": null,
+      "telegram_include": false,
+      "instagram_include": false,
       "instagram_image": "",
       "id": "manual-weekly-2026-11-round2-planetarium-warhol",
       "availability_evidence": "",
-      "ticket_required": true
+      "ticket_required": true,
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      }
     },
     {
       "title": "Лекция Светланы Ершовой «Женщины в картинах русских художников XVIII–XX вв.»",
@@ -58348,12 +58417,16 @@
       "social_priority": null,
       "social_title": "",
       "social_description": "",
-      "telegram_include": null,
-      "instagram_include": null,
+      "telegram_include": false,
+      "instagram_include": false,
       "instagram_image": "",
       "id": "manual-weekly-2026-11-round2-theremin",
       "availability_evidence": "",
-      "ticket_required": true
+      "ticket_required": true,
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      }
     },
     {
       "title": "Лекция «Свет, его оптические свойства в искусстве и дизайне»",

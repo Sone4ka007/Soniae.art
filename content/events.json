@@ -38291,7 +38291,7 @@
       "reviewed_at": "2026-10-17",
       "availability": "unknown",
       "availability_checked_at": "",
-      "registration": false,
+      "registration": null,
       "price": null,
       "price_text": "",
       "price_type": "paid",
@@ -38317,7 +38317,7 @@
         "status": "approved",
         "telegram_include": false,
         "instagram_include": false,
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -41054,7 +41054,7 @@
       "address": "1-й Голутвинский переулок, 16, стр. 1",
       "price": 850,
       "price_text": "850 ₽; льготный — 650 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -41081,7 +41081,7 @@
       "time_evidence": "24 октября 2026 14:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
       "editor_overrides": {
-        "registration": false
+        "registration": null
       }
     },
     {
@@ -49427,7 +49427,7 @@
       "address": "Лаврушинский переулок, 12",
       "price": 650,
       "price_text": "650 ₽; онлайн — 700 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -49444,7 +49444,7 @@
         "telegram_include": false,
         "instagram_include": false,
         "status": "approved",
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -51457,7 +51457,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "title": "Золотая пчела 17 — избранные плакаты",
@@ -51700,14 +51702,16 @@
       "price": 0,
       "price_text": "",
       "registration": false,
-      "categories": [],
+      "categories": [
+        "выставка"
+      ],
       "description": "На метро Музей AZ находится между станциями метро «Маяковская» и «Белорусская» (кольцевая). Мы рекомендуем идти в Музей от станции «Маяковская». Вам нужен Выход №1 на 1-я Тверская-Ямская улица, 2-я Тверская-Ямская улица.",
       "url": "https://museum-az.com/event/territoriya-svobody-nonkonformisty-v-taruse/",
       "source": "Музей AZ — выставки и события",
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-10-20",
-      "price_type": "paid",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-10-25",
       "editor_overrides": {
@@ -52436,7 +52440,7 @@
     },
     {
       "id": "moscow-2026-11-01-51697f408d",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-01",
@@ -52463,10 +52467,13 @@
       "availability_checked_at": "",
       "editor_overrides": {
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "rejected"
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "reviewed_at": "2026-11-01",
+      "editor_note": ""
     },
     {
       "id": "moscow-2026-11-01-ca1460b952",
@@ -52796,7 +52803,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-01-e83aa45bd5",
@@ -53379,11 +53388,13 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-03-00ef9d693a",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-03",
@@ -53411,10 +53422,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "reviewed_at": "2026-11-01",
+      "editor_note": ""
     },
     {
       "id": "moscow-2026-11-03-8c072e75ea",
@@ -53449,7 +53463,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-03-8b9adc409b",
@@ -53516,7 +53532,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-03-5566a35795",
@@ -53681,7 +53699,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-03-3497c8964e",
@@ -53717,6 +53737,43 @@
       },
       "telegram_include": false,
       "instagram_include": false
+    },
+    {
+      "title": "Арт-беседа «Курс на Север»",
+      "status": "new",
+      "date": "2026-11-03",
+      "time": "12:00",
+      "venue": "Михайловский замок, Восточный павильон",
+      "city": "spb",
+      "kind": "event",
+      "categories": [
+        "арт-беседа",
+        "живопись"
+      ],
+      "description": "В рамках праздничной программы Русского музея: искусство путешествий и освоения Севера, работы художников XIX–XX веков.",
+      "url": "https://rusmuseum.ru/news/russkiy-muzey-primet-uchastie-vo-vserossiyskoy-aktsii-noch-iskusstv-/",
+      "source": "Русский музей — события",
+      "address": "",
+      "price_type": "paid",
+      "price_text": "500 ₽",
+      "registration": null,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "review_reason": "",
+      "editor_note": "Ручная проверка афиш 01.11.2026. Не публиковать до одобрения.",
+      "discovered_at": "2026-11-01",
+      "reviewed_at": "",
+      "price": 500,
+      "checked_at": "",
+      "social_priority": null,
+      "social_title": "",
+      "social_description": "",
+      "telegram_include": null,
+      "instagram_include": null,
+      "instagram_image": "",
+      "id": "manual-weekly-2026-11-rm-north",
+      "availability_evidence": "",
+      "ticket_required": true
     },
     {
       "id": "spb-2026-11-03-d70f2c6fd6",
@@ -53825,6 +53882,43 @@
       "reviewed_at": ""
     },
     {
+      "title": "Лекция «Эстетика национального культурного кода и визуальное искусство»",
+      "status": "new",
+      "date": "2026-11-03",
+      "time": "18:00",
+      "venue": "ММОМА, Гоголевский бульвар, 10",
+      "city": "moscow",
+      "kind": "event",
+      "categories": [
+        "лекция",
+        "визуальное искусство"
+      ],
+      "description": "Лекция Валерии Путинцевой-Арданской о визуальном языке национальной культуры — от традиционных мотивов до современного искусства. Ночь искусств, 16+.",
+      "url": "https://mmoma.ru/visit/events/art-night-2026/description",
+      "source": "Московский музей современного искусства (ММОМА)",
+      "address": "",
+      "price_type": "free",
+      "price_text": "Бесплатно по регистрации",
+      "registration": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "review_reason": "",
+      "editor_note": "Ручная проверка афиш 01.11.2026. Не публиковать до одобрения.",
+      "discovered_at": "2026-11-01",
+      "reviewed_at": "",
+      "price": null,
+      "checked_at": "",
+      "social_priority": null,
+      "social_title": "",
+      "social_description": "",
+      "telegram_include": null,
+      "instagram_include": null,
+      "instagram_image": "",
+      "id": "manual-weekly-2026-11-mmoma-visual",
+      "availability_evidence": "",
+      "ticket_required": false
+    },
+    {
       "id": "moscow-2026-11-03-50572aee6e",
       "status": "new",
       "kind": "event",
@@ -53856,7 +53950,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-03-7116cb1f65",
@@ -53928,7 +54024,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-03-658ce25c5e",
@@ -54023,7 +54121,9 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "sold_out",
-      "availability_checked_at": "2026-11-01"
+      "availability_checked_at": "2026-11-01",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-03-4797bda394",
@@ -54089,6 +54189,80 @@
       "ticket_required": true,
       "availability": "sold_out",
       "availability_checked_at": "2026-11-01"
+    },
+    {
+      "title": "Кураторская встреча «Разговор о беспредметном» на выставке Евгения Рухина",
+      "status": "new",
+      "date": "2026-11-03",
+      "time": "21:00",
+      "venue": "ММОМА, Петровка, 25",
+      "city": "moscow",
+      "kind": "event",
+      "categories": [
+        "кураторская встреча",
+        "советский андеграунд"
+      ],
+      "description": "Куратор Ян Гинзбург рассказывает о Рухине, материальности живописи и советском андеграунде; Ночь искусств, 18+.",
+      "url": "https://mmoma.ru/visit/events/art-night-2026/description",
+      "source": "Московский музей современного искусства (ММОМА)",
+      "address": "",
+      "price_type": "free",
+      "price_text": "Бесплатно по регистрации",
+      "registration": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "review_reason": "",
+      "editor_note": "Ручная проверка афиш 01.11.2026. Не публиковать до одобрения.",
+      "discovered_at": "2026-11-01",
+      "reviewed_at": "",
+      "price": null,
+      "checked_at": "",
+      "social_priority": null,
+      "social_title": "",
+      "social_description": "",
+      "telegram_include": null,
+      "instagram_include": null,
+      "instagram_image": "",
+      "id": "manual-weekly-2026-11-mmoma-rukhin",
+      "availability_evidence": "",
+      "ticket_required": false
+    },
+    {
+      "title": "Перформативная встреча «Передай другому» — костюм и движение",
+      "status": "new",
+      "date": "2026-11-03",
+      "time": "21:00",
+      "venue": "ММОМА, Ермолаевский переулок, 17",
+      "city": "moscow",
+      "kind": "event",
+      "categories": [
+        "перформанс",
+        "костюм"
+      ],
+      "description": "Танц-художники и режиссер обмениваются костюмами своих спектаклей и обсуждают связь одежды, движения и импровизации. 16+.",
+      "url": "https://mmoma.ru/visit/events/art-night-2026/description",
+      "source": "Московский музей современного искусства (ММОМА)",
+      "address": "",
+      "price_type": "free",
+      "price_text": "Бесплатно по регистрации",
+      "registration": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "review_reason": "",
+      "editor_note": "Ручная проверка афиш 01.11.2026. Не публиковать до одобрения.",
+      "discovered_at": "2026-11-01",
+      "reviewed_at": "",
+      "price": null,
+      "checked_at": "",
+      "social_priority": null,
+      "social_title": "",
+      "social_description": "",
+      "telegram_include": null,
+      "instagram_include": null,
+      "instagram_image": "",
+      "id": "manual-weekly-2026-11-mmoma-costumes",
+      "availability_evidence": "",
+      "ticket_required": false
     },
     {
       "id": "international-2026-11-04-8b7a0eb137",
@@ -54363,6 +54537,82 @@
       }
     },
     {
+      "title": "Онлайн-лекция «Ритуальная скульптура нанайцев: пластика и сакральные смыслы»",
+      "status": "check",
+      "date": "2026-11-04",
+      "time": "",
+      "venue": "Русский музей / онлайн",
+      "city": "spb",
+      "kind": "event",
+      "categories": [
+        "лекция",
+        "скульптура",
+        "искусство народов"
+      ],
+      "description": "Онлайн-трансляция лекции Татьяны Кубановой о ритуальной скульптуре нанайцев. Очная лекция прошла 30 октября; 4 ноября — трансляция, время уточнить.",
+      "url": "https://rusmuseum.ru/news/russkiy-muzey-primet-uchastie-vo-vserossiyskoy-aktsii-noch-iskusstv-/",
+      "source": "Русский музей — события",
+      "address": "",
+      "price_type": "free",
+      "price_text": "Онлайн бесплатно; время уточнить",
+      "registration": null,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "review_reason": "manual_verification_required",
+      "editor_note": "Ручная проверка афиш 01.11.2026. Не публиковать до одобрения.",
+      "discovered_at": "2026-11-01",
+      "reviewed_at": "",
+      "price": null,
+      "checked_at": "",
+      "social_priority": null,
+      "social_title": "",
+      "social_description": "",
+      "telegram_include": null,
+      "instagram_include": null,
+      "instagram_image": "",
+      "id": "manual-weekly-2026-11-rm-nanai",
+      "availability_evidence": "",
+      "ticket_required": true
+    },
+    {
+      "title": "Презентация цифрового проекта к 150-летию Ивана Билибина",
+      "status": "check",
+      "date": "2026-11-04",
+      "time": "",
+      "venue": "Русский музей / онлайн",
+      "city": "spb",
+      "kind": "event",
+      "categories": [
+        "книжная графика",
+        "иллюстрация",
+        "онлайн"
+      ],
+      "description": "Презентация цифрового проекта Русского музея об Иване Билибине и традициях народного искусства; точное время не указано.",
+      "url": "https://rusmuseum.ru/news/russkiy-muzey-primet-uchastie-vo-vserossiyskoy-aktsii-noch-iskusstv-/",
+      "source": "Русский музей — события",
+      "address": "",
+      "price_type": "free",
+      "price_text": "Онлайн-проект",
+      "registration": null,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "review_reason": "manual_verification_required",
+      "editor_note": "Ручная проверка афиш 01.11.2026. Не публиковать до одобрения.",
+      "discovered_at": "2026-11-01",
+      "reviewed_at": "",
+      "price": null,
+      "checked_at": "",
+      "social_priority": null,
+      "social_title": "",
+      "social_description": "",
+      "telegram_include": null,
+      "instagram_include": null,
+      "instagram_image": "",
+      "id": "manual-weekly-2026-11-rm-bilibin",
+      "availability_evidence": "",
+      "ticket_required": true
+    },
+    {
       "id": "moscow-2026-11-04-175d817326",
       "status": "approved",
       "kind": "event",
@@ -54435,6 +54685,44 @@
       "instagram_include": false
     },
     {
+      "title": "Архив литературных вечеров в Музее Вадима Сидура",
+      "status": "new",
+      "date": "2026-11-04",
+      "time": "14:00",
+      "venue": "ММОМА, Музей Вадима Сидура",
+      "city": "moscow",
+      "kind": "event",
+      "categories": [
+        "архив",
+        "нонконформизм",
+        "литература"
+      ],
+      "description": "Показ видеозаписей литературных вечеров конца 1980-х и начала 1990-х с участием поэтов неофициальной культуры. 16+.",
+      "url": "https://mmoma.ru/visit/events/art-night-2026/description",
+      "source": "Московский музей современного искусства (ММОМА)",
+      "address": "",
+      "price_type": "free",
+      "price_text": "Бесплатно по регистрации",
+      "registration": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "review_reason": "",
+      "editor_note": "Ручная проверка афиш 01.11.2026. Не публиковать до одобрения.",
+      "discovered_at": "2026-11-01",
+      "reviewed_at": "",
+      "price": null,
+      "checked_at": "",
+      "social_priority": null,
+      "social_title": "",
+      "social_description": "",
+      "telegram_include": null,
+      "instagram_include": null,
+      "instagram_image": "",
+      "id": "manual-weekly-2026-11-mmoma-sidur",
+      "availability_evidence": "",
+      "ticket_required": false
+    },
+    {
       "id": "spb-2026-11-04-94108f9818",
       "status": "rejected",
       "kind": "event",
@@ -54505,6 +54793,43 @@
       },
       "telegram_include": false,
       "instagram_include": false
+    },
+    {
+      "title": "Авторский тур «Сеанс совместных сновидений» в мастерской Налбандяна",
+      "status": "new",
+      "date": "2026-11-04",
+      "time": "15:00",
+      "venue": "ММОМА, Музей-мастерская Дмитрия Налбандяна",
+      "city": "moscow",
+      "kind": "event",
+      "categories": [
+        "авторская экскурсия",
+        "искусство"
+      ],
+      "description": "Ксения Земскова проводит необычный сеанс с художественным текстом, составленным из архивных документов и писем; два сеанса — 15:00 и 18:00. 16+.",
+      "url": "https://mmoma.ru/visit/events/art-night-2026/description",
+      "source": "Московский музей современного искусства (ММОМА)",
+      "address": "",
+      "price_type": "free",
+      "price_text": "Бесплатно по регистрации",
+      "registration": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "review_reason": "",
+      "editor_note": "Ручная проверка афиш 01.11.2026. Не публиковать до одобрения.",
+      "discovered_at": "2026-11-01",
+      "reviewed_at": "",
+      "price": null,
+      "checked_at": "",
+      "social_priority": null,
+      "social_title": "",
+      "social_description": "",
+      "telegram_include": null,
+      "instagram_include": null,
+      "instagram_image": "",
+      "id": "manual-weekly-2026-11-mmoma-dream",
+      "availability_evidence": "",
+      "ticket_required": false
     },
     {
       "id": "spb-2026-11-04-8814ce216b",
@@ -55045,7 +55370,7 @@
       "address": "",
       "price_type": "free",
       "price_text": "бесплатно по регистрации",
-      "registration": false,
+      "registration": true,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -55606,6 +55931,43 @@
       "reviewed_at": "2026-10-30"
     },
     {
+      "title": "Дискуссия с коллекционерами: материалы и реставрация произведений",
+      "status": "new",
+      "date": "2026-11-05",
+      "time": "19:30",
+      "venue": "Музей «Гараж», крыша",
+      "city": "moscow",
+      "kind": "event",
+      "categories": [
+        "дискуссия",
+        "современное искусство"
+      ],
+      "description": "Коллекционеры обсуждают сложность хранения и реставрации современных работ, влияние техники и материалов на судьбу произведений. 16+.",
+      "url": "https://garagemca.org/event/discussion-with-collectors",
+      "source": "Музей современного искусства «Гараж»",
+      "address": "",
+      "price_type": "free",
+      "price_text": "Бесплатно по регистрации",
+      "registration": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "review_reason": "",
+      "editor_note": "Ручная проверка афиш 01.11.2026. Не публиковать до одобрения.",
+      "discovered_at": "2026-11-01",
+      "reviewed_at": "",
+      "price": null,
+      "checked_at": "",
+      "social_priority": null,
+      "social_title": "",
+      "social_description": "",
+      "telegram_include": null,
+      "instagram_include": null,
+      "instagram_image": "",
+      "id": "manual-weekly-2026-11-garage-collectors",
+      "availability_evidence": "",
+      "ticket_required": true
+    },
+    {
       "id": "moscow-2026-11-05-3cc2c911bc",
       "status": "new",
       "kind": "event",
@@ -55623,7 +55985,7 @@
       ],
       "description": "",
       "url": "https://centrezotov.ru/events/hleb/pablik-tok-hleb-vchera-segodnya-zavtra/",
-      "source": "Центр Зотов",
+      "source": "Центр Зотов — отдельные события",
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-10-30",
@@ -55799,6 +56161,43 @@
       }
     },
     {
+      "title": "Вася Васин Рыбы и кирпичи",
+      "status": "new",
+      "date": "2026-11-06",
+      "time": "",
+      "venue": "Музей современного искусства Эрарта",
+      "city": "spb",
+      "kind": "exhibition",
+      "categories": [
+        "выставка"
+      ],
+      "description": "Музей современного искусства Эрарта представляет первую персональную выставку рок-звезды и пионера отечественного хип-хопа Васи Васина Рыба как повторяющийся мотив и символ перехода: от продолговатой формы к сложной абстрактной композиции Изобразительное искусство всегда было частью творческого мира Васи Васина, получившего основательную художественную подготовку еще в детстве и активно изучающего локальную…",
+      "url": "https://www.erarta.com/ru/calendar/exhibitions/detail/231025/",
+      "source": "Музей современного искусства Эрарта — выставки",
+      "address": "",
+      "price_type": "unknown",
+      "price_text": "",
+      "registration": null,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "review_reason": "",
+      "editor_note": "Ручная проверка афиш 01.11.2026. Не публиковать до одобрения.",
+      "discovered_at": "2026-11-01",
+      "reviewed_at": "",
+      "price": null,
+      "checked_at": "",
+      "social_priority": null,
+      "social_title": "",
+      "social_description": "",
+      "telegram_include": null,
+      "instagram_include": null,
+      "instagram_image": "",
+      "id": "manual-weekly-2026-11-erarta-vasin",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "start_date": "2026-11-06"
+    },
+    {
       "id": "moscow-2026-11-06-f8bd97a160",
       "status": "new",
       "kind": "event",
@@ -55824,7 +56223,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "status": "approved",
@@ -56012,7 +56413,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-06-b029e967f1",
@@ -56038,7 +56441,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-06-6274d9b2ae",
@@ -56287,7 +56692,7 @@
       ],
       "description": "",
       "url": "https://centrezotov.ru/events/foto-revyu-2/",
-      "source": "Центр Зотов",
+      "source": "Центр Зотов — отдельные события",
       "checked_at": "",
       "review_reason": "possible_duplicate",
       "discovered_at": "2026-10-30",
@@ -56343,6 +56748,43 @@
       "reviewed_at": ""
     },
     {
+      "title": "Дискуссия о низовых практиках реставрации",
+      "status": "new",
+      "date": "2026-11-06",
+      "time": "19:30",
+      "venue": "Музей «Гараж», крыша",
+      "city": "moscow",
+      "kind": "event",
+      "categories": [
+        "дискуссия",
+        "реставрация"
+      ],
+      "description": "Вечерняя дискуссия конференции о реставрации современного искусства. Время 19:30–21:00. 16+.",
+      "url": "https://garagemca.org/en/event/discussion-on-informal-restoration-practices",
+      "source": "Музей современного искусства «Гараж»",
+      "address": "",
+      "price_type": "free",
+      "price_text": "Бесплатно по регистрации",
+      "registration": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "review_reason": "",
+      "editor_note": "Ручная проверка афиш 01.11.2026. Не публиковать до одобрения.",
+      "discovered_at": "2026-11-01",
+      "reviewed_at": "",
+      "price": null,
+      "checked_at": "",
+      "social_priority": null,
+      "social_title": "",
+      "social_description": "",
+      "telegram_include": null,
+      "instagram_include": null,
+      "instagram_image": "",
+      "id": "manual-weekly-2026-11-garage-grassroots",
+      "availability_evidence": "",
+      "ticket_required": false
+    },
+    {
       "id": "international-2026-11-07-e6acac2220",
       "status": "rejected",
       "kind": "open_call",
@@ -56380,6 +56822,44 @@
       "editor_overrides": {
         "registration": false
       }
+    },
+    {
+      "title": "«Остранение» — дедлайн лаборатории осознанной фотографии Юрия Пальмина",
+      "status": "check",
+      "date": "2026-11-07",
+      "time": "",
+      "venue": "Центр Зотов",
+      "city": "moscow",
+      "kind": "open_call",
+      "categories": [
+        "open-call",
+        "фотография",
+        "лаборатория"
+      ],
+      "description": "Прием заявок до 7 ноября. Лаборатория Юрия Пальмина и Ольги Алексеенко о внимательном видении и фотографии через понятие остранения. Стоимость курса 35 000 ₽.",
+      "url": "https://centrezotov.ru/events/ostranenie-laboratoriya-osoznannoj-fotografii-yuriya-palmina-i-olgi-alekseenko/",
+      "source": "Центр Зотов",
+      "address": "",
+      "price_type": "paid",
+      "price_text": "Курс 35 000 ₽; заявка до 7 ноября",
+      "registration": null,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "review_reason": "manual_verification_required",
+      "editor_note": "Ручная проверка афиш 01.11.2026. Не публиковать до одобрения.",
+      "discovered_at": "2026-11-01",
+      "reviewed_at": "",
+      "price": 35000,
+      "checked_at": "",
+      "social_priority": null,
+      "social_title": "",
+      "social_description": "",
+      "telegram_include": null,
+      "instagram_include": null,
+      "instagram_image": "",
+      "id": "manual-weekly-2026-11-zotov-photo-lab",
+      "availability_evidence": "",
+      "ticket_required": true
     },
     {
       "id": "spb-2026-11-07-d709f81e9f",
@@ -56423,7 +56903,7 @@
     },
     {
       "id": "moscow-2026-11-07-3641e5a389",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-07",
@@ -56451,10 +56931,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "reviewed_at": "2026-11-01",
+      "editor_note": ""
     },
     {
       "id": "moscow-2026-11-07-94e84b92a6",
@@ -56518,7 +57001,9 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-07-086888f0c0",
@@ -56590,6 +57075,73 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "title": "Открытие выставки «Петр Зайцев. Формы жизни»",
+      "status": "new",
+      "date": "2026-11-07",
+      "time": "",
+      "venue": "Музей современного искусства Эрарта",
+      "city": "spb",
+      "kind": "exhibition",
+      "categories": [
+        "выставка",
+        "скульптура"
+      ],
+      "description": "Выставка бетонных скульптур художника и архитектора Петра Зайцева. Период 7 ноября 2026 — 7 февраля 2027.",
+      "url": "https://www.erarta.com/ru/calendar/exhibitions/",
+      "source": "Музей современного искусства Эрарта",
+      "address": "",
+      "price_type": "paid",
+      "price_text": "Вход по билету в музей",
+      "registration": null,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "review_reason": "",
+      "editor_note": "Ручная проверка афиш 01.11.2026. Не публиковать до одобрения.",
+      "discovered_at": "2026-11-01",
+      "reviewed_at": "",
+      "price": null,
+      "checked_at": "",
+      "social_priority": null,
+      "social_title": "",
+      "social_description": "",
+      "telegram_include": null,
+      "instagram_include": null,
+      "instagram_image": "",
+      "id": "manual-weekly-2026-11-erarta-zaytsev",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "start_date": "2026-11-07"
+    },
+    {
+      "id": "spb-2026-11-07-8803c06d84",
+      "status": "new",
+      "kind": "exhibition",
+      "city": "spb",
+      "date": "2026-11-07",
+      "time": "",
+      "title": "Петр Зайцев Формы жизни",
+      "venue": "Музей современного искусства Эрарта",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "выставка"
+      ],
+      "description": "Музей современного искусства Эрарта представляет выставку Петра Зайцева, чьи бетонные скульптуры говорят с каждым на простом и понятном языке — языке добра. Лаконичность форм и ясность силуэтов: искусство, основанное на универсальном человеческом опыте и понятных символах «Романтический минимализм» как способ говорить просто о важном",
+      "url": "https://www.erarta.com/ru/calendar/exhibitions/detail/190826/",
+      "source": "Музей современного искусства Эрарта — выставки",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-01",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "start_date": "2026-11-07"
     },
     {
       "id": "moscow-2026-11-07-64ecc1a02b",
@@ -56701,7 +57253,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-07-84b65b4d8b",
@@ -56821,7 +57375,7 @@
     },
     {
       "id": "moscow-2026-11-07-ce0a3cac41",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-07",
@@ -56849,12 +57403,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-11-01"
     },
     {
       "id": "spb-2026-11-07-4ec0d02e31",
@@ -57120,6 +57675,44 @@
       "reviewed_at": ""
     },
     {
+      "title": "Дискуссия «Сохранность произведений из новых материалов»",
+      "status": "new",
+      "date": "2026-11-07",
+      "time": "19:30",
+      "venue": "Музей «Гараж», крыша",
+      "city": "moscow",
+      "kind": "event",
+      "categories": [
+        "дискуссия",
+        "современное искусство",
+        "материалы"
+      ],
+      "description": "Художники и реставраторы обсуждают полимеры, силикон, пенопласт и биоматериалы в произведениях современного искусства. 16+.",
+      "url": "https://garagemca.org/event/discussion-on-the-preservation-of-artworks-made-from-new-materials",
+      "source": "Музей современного искусства «Гараж»",
+      "address": "",
+      "price_type": "free",
+      "price_text": "Бесплатно по регистрации",
+      "registration": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "review_reason": "",
+      "editor_note": "Ручная проверка афиш 01.11.2026. Не публиковать до одобрения.",
+      "discovered_at": "2026-11-01",
+      "reviewed_at": "",
+      "price": null,
+      "checked_at": "",
+      "social_priority": null,
+      "social_title": "",
+      "social_description": "",
+      "telegram_include": null,
+      "instagram_include": null,
+      "instagram_image": "",
+      "id": "manual-weekly-2026-11-garage-new-materials",
+      "availability_evidence": "",
+      "ticket_required": true
+    },
+    {
       "id": "international-2026-11-08-f9e3a218bb",
       "status": "rejected",
       "kind": "open_call",
@@ -57338,7 +57931,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-01-732e936867",
@@ -57501,11 +58096,13 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-08-0fe664bda6",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-08",
@@ -57533,12 +58130,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-11-01"
     },
     {
       "id": "moscow-2026-11-08-a193b10c2a",
@@ -57614,7 +58212,7 @@
     },
     {
       "title": "Мастер-класс «Живописный портрет»",
-      "status": "new",
+      "status": "rejected",
       "date": "2026-11-08",
       "time": "19:00",
       "venue": "Простая школа",
@@ -57635,7 +58233,7 @@
       "review_reason": "",
       "editor_note": "Кандидат 2–8 ноября, не опубликован; ручная модерация",
       "discovered_at": "2026-10-31",
-      "reviewed_at": "",
+      "reviewed_at": "2026-11-01",
       "price": null,
       "checked_at": "",
       "social_priority": null,
@@ -57650,7 +58248,8 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "rejected"
       }
     },
     {
@@ -57716,11 +58315,13 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-09-7a4c68420f",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-09",
@@ -57748,10 +58349,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "reviewed_at": "2026-11-01",
+      "editor_note": ""
     },
     {
       "id": "moscow-2026-11-09-cae66e6a6b",
@@ -57777,7 +58381,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-09-58133ba6c2",
@@ -58024,7 +58630,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-10-103d14850e",
@@ -58059,7 +58667,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-10-015018c37f",
@@ -58429,6 +59039,34 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
+      "id": "moscow-2026-11-10-79ca43c455",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-10",
+      "time": "19:00",
+      "title": "Лекция «Древнерусская живопись второй половины XIII века. Становление местных художественных центров»",
+      "venue": "Третьяковская галерея",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Лекция к абонементу №6 «Древнерусская живопись XI–XIII веков. Мозаики, фрески, иконы. Книжная миниатюра». 6 октября 2026 – 10 ноября 2026 Лекция будет проходить в Лекционном зале Инженерного корпуса (Лаврушинский переулок, д. 12, вход с Малого Толмачёвского переулка) и в режиме реального времени на платформе МТС Линк в формате онлайн. Продолжительность лекции: 90 минут.",
+      "url": "https://www.tretyakovgallery.ru/events/o/lektsiya-drevnerusskaya-zhivopis-vtoroy-poloviny-xiii-veka-stanovlenie-mestnykh-khudozhestvennykh-ts%2011-26/",
+      "source": "Третьяковская галерея — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-01",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-10-7874148c04",
       "status": "rejected",
       "kind": "event",
@@ -58494,6 +59132,34 @@
       "reviewed_at": ""
     },
     {
+      "id": "moscow-2026-11-10-17f1aeb073",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-10",
+      "time": "19:30",
+      "title": "Хлеб по-итальянски. Встреча с ресторанами «Фарина» и Balzi Rossi",
+      "venue": "Центр Зотов",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": true,
+      "categories": [
+        "диалог"
+      ],
+      "description": "",
+      "url": "https://centrezotov.ru/events/hlebnyj-god-v-czentre-zotov/zakvaska/hleb-po-italyanski-vstrecha-s-restoranami-farina-i-balzi-rossi/",
+      "source": "Центр Зотов — отдельные события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-01",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "international-2026-11-11-533523acf3",
       "status": "rejected",
       "kind": "open_call",
@@ -58556,7 +59222,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-11-2b455f77a1",
@@ -58688,7 +59356,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-11-c989c3b8ef",
@@ -58733,7 +59403,7 @@
     },
     {
       "id": "moscow-2026-11-11-f501d9e651",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-11",
@@ -58761,10 +59431,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "reviewed_at": "2026-11-01",
+      "editor_note": ""
     },
     {
       "id": "moscow-2026-11-11-d4ed4734f6",
@@ -59134,6 +59807,34 @@
       "reviewed_at": "2026-10-27"
     },
     {
+      "id": "moscow-2026-11-11-df532ffc89",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-11",
+      "time": "19:30",
+      "title": "Презентация спецвыпуска к 140-летию Алексея Крученых",
+      "venue": "Центр Зотов",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": true,
+      "categories": [
+        "диалог"
+      ],
+      "description": "",
+      "url": "https://centrezotov.ru/events/prezentacziya-speczvypuska-k-140-letiyu-alekseya-kruchenyh/",
+      "source": "Центр Зотов — отдельные события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-01",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "international-2026-11-12-57971d9a68",
       "status": "check",
       "kind": "open_call",
@@ -59275,7 +59976,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-12-734741274c",
@@ -59666,7 +60369,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-13-422be2d050",
@@ -59734,7 +60439,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-13-be8fd13284",
@@ -59809,7 +60516,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-13-b029e967f1",
@@ -59835,7 +60544,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-13-73b662c76a",
@@ -60049,6 +60760,34 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": "2026-10-30"
+    },
+    {
+      "id": "moscow-2026-11-13-40ff1fb27a",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-13",
+      "time": "19:00",
+      "title": "Антропология будущего: конфликт сценариев в переломные эпохи. Презентация 200-го номера «НЛО»",
+      "venue": "Центр Зотов",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": true,
+      "categories": [
+        "диалог"
+      ],
+      "description": "",
+      "url": "https://centrezotov.ru/events/antropologiya-budushhego-konflikt-sczenariev-v-perelomnye-epohi-prezentacziya-200-go-nomera-nlo/",
+      "source": "Центр Зотов — отдельные события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-01",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-10-24-9b9ee6a4b0",
@@ -60296,7 +61035,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-14-87d16414f0",
@@ -60324,7 +61065,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-14-422be2d050",
@@ -60636,7 +61379,8 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-14-e7d09106e5",
@@ -61312,7 +62056,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-16-57bc10a4d7",
@@ -61338,7 +62084,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "russia-2026-11-16-fc469e7818",
@@ -61438,7 +62186,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-16-0e985d0e38",
@@ -61466,7 +62216,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-16-eebb063dbc",
@@ -61636,7 +62388,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-17-00d39b1a63",
@@ -61809,7 +62563,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-17-4d8778cc7b",
@@ -61933,6 +62689,34 @@
       "reviewed_at": ""
     },
     {
+      "id": "moscow-2026-11-17-a35824b5f2",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-17",
+      "time": "19:30",
+      "title": "Саша Маниту. Blink-182",
+      "venue": "Центр Зотов",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": true,
+      "categories": [
+        "лекция"
+      ],
+      "description": "",
+      "url": "https://centrezotov.ru/events/sasha-manitu-blink-182/",
+      "source": "Центр Зотов — отдельные события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-01",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-18-ad5480ce53",
       "status": "rejected",
       "kind": "event",
@@ -61993,7 +62777,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-18-63fe896aa8",
@@ -62019,7 +62805,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-18-9a98188961",
@@ -62047,7 +62835,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-18-9dfc8f92b3",
@@ -62328,7 +63118,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-19-ccb107bab1",
@@ -62363,7 +63155,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-04-bb9ac87531",
@@ -62429,7 +63223,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-19-734741274c",
@@ -62871,8 +63667,37 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
-      "id": "moscow-2026-11-20-9eb04182fc",
+      "id": "spb-2026-11-20-432be7b5fd",
       "status": "new",
+      "kind": "exhibition",
+      "city": "spb",
+      "date": "2026-11-20",
+      "time": "",
+      "title": "Ким Бёнхо Блеск",
+      "venue": "Музей современного искусства Эрарта",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "выставка"
+      ],
+      "description": "Музей современного искусства Эрарта представляет выставку корейского медиахудожника Ким Бёнхо, где идеальные формы обретают выразительность в диалоге с пространством и зрителем Минимализм XXI века: машинная точность, гладкие фактуры и природные мотивы Поверхности, растворенные в пространстве: от материального к неосязаемому",
+      "url": "https://www.erarta.com/ru/calendar/exhibitions/detail/22092501/",
+      "source": "Музей современного искусства Эрарта — выставки",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-01",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "start_date": "2026-11-20"
+    },
+    {
+      "id": "moscow-2026-11-20-9eb04182fc",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-20",
@@ -62900,10 +63725,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "reviewed_at": "2026-11-01",
+      "editor_note": ""
     },
     {
       "id": "moscow-2026-11-20-77cd653916",
@@ -62929,7 +63757,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-20-91de6ea2a2",
@@ -62964,7 +63794,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-20-dc07f0121e",
@@ -63032,7 +63864,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-20-eec373e2b6",
@@ -63057,6 +63891,36 @@
       "price_type": "paid",
       "availability_evidence": "",
       "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
+    },
+    {
+      "id": "moscow-2026-11-20-73198eaae8",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-20",
+      "time": "",
+      "title": "Уикенд «Дни конструктивизма»",
+      "venue": "Центр Зотов",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "программа"
+      ],
+      "description": "",
+      "url": "https://centrezotov.ru/events/uikend-dni-konstruktivizma/",
+      "source": "Центр Зотов — отдельные события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-01",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
       "availability": "unknown",
       "availability_checked_at": ""
     },
@@ -63084,7 +63948,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-20-b920f54838",
@@ -63693,7 +64559,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-22-2a19a40da5",
@@ -63837,7 +64705,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-22-4a9253e3a4",
@@ -63865,7 +64735,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-22-38e5462a75",
@@ -64238,7 +65110,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-23-4382dab901",
@@ -64266,7 +65140,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-23-24e374a8a0",
@@ -64373,7 +65249,7 @@
     },
     {
       "id": "moscow-2026-11-24-fbd139fcfa",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-24",
@@ -64401,10 +65277,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "reviewed_at": "2026-11-01",
+      "editor_note": ""
     },
     {
       "id": "moscow-2026-11-24-9e2e798c17",
@@ -64432,11 +65311,13 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-24-a81010b7e9",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-24",
@@ -64464,10 +65345,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "reviewed_at": "2026-11-01",
+      "editor_note": ""
     },
     {
       "id": "moscow-2026-11-24-058b1d17f2",
@@ -64563,7 +65447,9 @@
       "ticket_required": false,
       "availability": "unknown",
       "availability_checked_at": "",
-      "start_date": "2026-11-24"
+      "start_date": "2026-11-24",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-24-e729e1a012",
@@ -64802,11 +65688,13 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-25-6a394b7dcb",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-25",
@@ -64834,10 +65722,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "reviewed_at": "2026-11-01",
+      "editor_note": ""
     },
     {
       "id": "moscow-2026-11-25-8c7ac32fc5",
@@ -64959,7 +65850,7 @@
     },
     {
       "id": "moscow-2026-11-26-8159f81460",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-26",
@@ -64987,10 +65878,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "reviewed_at": "2026-11-01",
+      "editor_note": ""
     },
     {
       "id": "moscow-2026-11-26-19606f2101",
@@ -65016,7 +65910,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-26-323ab22e3d",
@@ -65044,7 +65940,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-26-734741274c",
@@ -65218,6 +66116,64 @@
       "reviewed_at": "2026-10-24"
     },
     {
+      "id": "spb-2026-11-27-2810533d6e",
+      "status": "new",
+      "kind": "exhibition",
+      "city": "spb",
+      "date": "2026-11-27",
+      "time": "",
+      "title": "Виктор Пономаренко Наблюдатели",
+      "venue": "Музей современного искусства Эрарта",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "выставка"
+      ],
+      "description": "Музей современного искусства Эрарта представляет первую персональную выставку Виктора Пономаренко, который говорит о проблемах современности художественным языком XVII века Еще во время обучения в Санкт-Петербургской академии художеств имени Ильи Репина Виктор Пономаренко нашел свой творческий метод.",
+      "url": "https://www.erarta.com/ru/calendar/exhibitions/detail/01062602/",
+      "source": "Музей современного искусства Эрарта — выставки",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-01",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "start_date": "2026-11-27"
+    },
+    {
+      "id": "spb-2026-11-27-d872c160b2",
+      "status": "new",
+      "kind": "exhibition",
+      "city": "spb",
+      "date": "2026-11-27",
+      "time": "",
+      "title": "Массимилиано Робино Уроки пластики",
+      "venue": "Музей современного искусства Эрарта",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "выставка"
+      ],
+      "description": "В живописи итальянского художника Массимилиано Робино встречаются энергия музыки, точность дизайна и эмоциональная сила современного искусства. Его работы хочется рассматривать долго: многослойные поверхности и сложные формы постепенно раскрываются перед зрителем, позволяя увидеть скрытые символы. Это разговор о памяти, времени и внутреннем состоянии человека.",
+      "url": "https://www.erarta.com/ru/calendar/exhibitions/detail/01062603/",
+      "source": "Музей современного искусства Эрарта — выставки",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-01",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "start_date": "2026-11-27"
+    },
+    {
       "id": "moscow-2026-11-27-f08815a18e",
       "status": "new",
       "kind": "event",
@@ -65243,7 +66199,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-27-b920f54838",
@@ -65396,6 +66354,32 @@
       "reviewed_at": ""
     },
     {
+      "id": "moscow-2026-11-28-0ed98de660",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-28",
+      "time": "",
+      "title": "/ 19:00 Спектакль Башня",
+      "venue": "Центр Зотов",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "",
+      "url": "https://centrezotov.ru/events/bashnya/",
+      "source": "Центр Зотов — отдельные события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-01",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-28-aab697f4b0",
       "status": "new",
       "kind": "event",
@@ -65434,7 +66418,7 @@
     },
     {
       "id": "moscow-2026-11-28-1dce427b91",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-28",
@@ -65462,10 +66446,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "reviewed_at": "2026-11-01",
+      "editor_note": ""
     },
     {
       "id": "moscow-2026-11-28-26d1e37cc7",
@@ -65491,7 +66478,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-28-8cb3f8d42f",
@@ -65532,6 +66521,34 @@
       "reviewed_at": ""
     },
     {
+      "id": "moscow-2026-11-28-79d519d4e3",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-28",
+      "time": "16:30",
+      "title": "Шухов — больше, чем башня на Шаболовке",
+      "venue": "Центр Зотов",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": true,
+      "categories": [
+        "лекция"
+      ],
+      "description": "",
+      "url": "https://centrezotov.ru/events/shuhov-%e2%80%94-bolshe-chem-bashnya-na-shabolovke/",
+      "source": "Центр Зотов — отдельные события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-01",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-29-0b6f0e020e",
       "status": "new",
       "kind": "event",
@@ -65555,7 +66572,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-29-ec2aa4b7b4",
@@ -65626,7 +66645,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-30-fd619c9f4d",
@@ -65879,7 +66900,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-30-a09c72ee24",
@@ -65907,7 +66930,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-30-6eec3ed26a",
@@ -65935,7 +66960,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-30-62f0c036fa",
@@ -65963,11 +66990,13 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-30-eebb063dbc",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-30",
@@ -65996,12 +67025,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "rejected"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-11-01"
     },
     {
       "id": "moscow-2026-11-30-9f582f94c1",
@@ -66144,7 +67174,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-12-05-647fe97094",
@@ -66182,6 +67214,64 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": "2026-10-25"
+    },
+    {
+      "id": "spb-2026-12-11-d7eb167bdb",
+      "status": "new",
+      "kind": "exhibition",
+      "city": "spb",
+      "date": "2026-12-11",
+      "time": "",
+      "title": "Даша Пустовойт Тиндер для русалки",
+      "venue": "Музей современного искусства Эрарта",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "выставка"
+      ],
+      "description": "Дополнительная информация о выставке появится совсем скоро — следите за обновлениями на сайте erarta.com и в социальных сетях музея.",
+      "url": "https://www.erarta.com/ru/calendar/exhibitions/detail/051125/",
+      "source": "Музей современного искусства Эрарта — выставки",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-01",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "start_date": "2026-12-11"
+    },
+    {
+      "id": "spb-2026-12-11-556173ab41",
+      "status": "new",
+      "kind": "exhibition",
+      "city": "spb",
+      "date": "2026-12-11",
+      "time": "",
+      "title": "Родриго Гарридо Все как у людей",
+      "venue": "Музей современного искусства Эрарта",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "выставка"
+      ],
+      "description": "Родриго Гарридо — создатель Sentient Sculptures, «Одушевленных скульптур». В своих работах он соединяет традиционную скульптуру, цифровое моделирование и искусственный интеллект. Его объекты реагируют на внешнюю среду, обладают собственным восприятием и даже способны к эволюции.",
+      "url": "https://www.erarta.com/ru/calendar/exhibitions/detail/11072501/",
+      "source": "Музей современного искусства Эрарта — выставки",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-01",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "start_date": "2026-12-11"
     },
     {
       "id": "russia-2026-12-13-3a942b4abf",
@@ -66374,6 +67464,64 @@
       "reviewed_at": ""
     },
     {
+      "id": "spb-2026-12-18-e95336d249",
+      "status": "new",
+      "kind": "exhibition",
+      "city": "spb",
+      "date": "2026-12-18",
+      "time": "",
+      "title": "Алексей Головин Предел прочности",
+      "venue": "Музей современного искусства Эрарта",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "выставка"
+      ],
+      "description": "Алексей Головин был главным инженером в известной компании, запускающей скоростные поезда по России, но душой стремился к творчеству и каждый вечер, придя домой, садился рисовать. В итоге, оставив высокооплачиваемую работу, решительно пошел в художники. Алексей начал с поисков самобытной, нехарактерной для других художников техники.",
+      "url": "https://www.erarta.com/ru/calendar/exhibitions/detail/01062604/",
+      "source": "Музей современного искусства Эрарта — выставки",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-01",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "start_date": "2026-12-18"
+    },
+    {
+      "id": "spb-2026-12-18-0b562c2e2b",
+      "status": "new",
+      "kind": "exhibition",
+      "city": "spb",
+      "date": "2026-12-18",
+      "time": "",
+      "title": "Данил Головкин Фрагменты",
+      "venue": "Музей современного искусства Эрарта",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "выставка"
+      ],
+      "description": "Данил Головкин — fashion-фотограф, известный узнаваемым визуальным стилем. Он снимал для Vogue, GQ, l'Officiel, Glamour, Allure, Harper's Bazaar, Elle и других глянцевых изданий, сотрудничал со множеством брендов. Проект, представленный в Эрарте, объединяет знаковые работы последних лет — от почти живописных портретов до экспрессивных fashion-образов.",
+      "url": "https://www.erarta.com/ru/calendar/exhibitions/detail/120526/",
+      "source": "Музей современного искусства Эрарта — выставки",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-01",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "start_date": "2026-12-18"
+    },
+    {
       "id": "international-2026-12-20-7d49348433",
       "status": "rejected",
       "kind": "open_call",
@@ -66524,6 +67672,35 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": "2026-10-25"
+    },
+    {
+      "id": "spb-2027-01-22-c246c0b662",
+      "status": "check",
+      "kind": "exhibition",
+      "city": "spb",
+      "date": "2027-01-22",
+      "time": "",
+      "title": "Хуан Юйлун Оставьте меня в покое",
+      "venue": "Музей современного искусства Эрарта",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "выставка"
+      ],
+      "description": "В творчестве китайского скульптора Хуан Юйлуна древние традиции Востока встречаются с современной уличной культурой. Ключевой образ художника — загадочная фигура в худи, интернациональной одежде обитателей городов. Зритель, заглянувший под капюшон, встречается с пустотой или своим отражением.",
+      "url": "https://www.erarta.com/ru/calendar/exhibitions/detail/030826/",
+      "source": "Музей современного искусства Эрарта — выставки",
+      "checked_at": "",
+      "review_reason": "wrong_year",
+      "discovered_at": "2026-11-01",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "start_date": "2027-01-22"
     }
   ]
 }

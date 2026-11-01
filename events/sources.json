@@ -29,6 +29,14 @@
       "adapter": "zotov"
     },
     {
+      "name": "Центр Зотов — отдельные события",
+      "city": "moscow",
+      "url": "https://centrezotov.ru/events/",
+      "venue": "Центр Зотов",
+      "adapter": "zotov",
+      "source_group": "museum"
+    },
+    {
       "name": "Музей современного искусства «Гараж»",
       "city": "moscow",
       "url": "https://garagemca.org/calendar?event_kind=events",
@@ -163,6 +171,20 @@
       "kind": "exhibition",
       "max_detail_pages": 40,
       "detail_workers": 8
+    },
+    {
+      "name": "Музей современного искусства Эрарта — выставки",
+      "city": "spb",
+      "url": "https://www.erarta.com/ru/calendar/exhibitions/",
+      "venue": "Музей современного искусства Эрарта",
+      "adapter": "event_links",
+      "href_contains": [
+        "/calendar/exhibitions/detail/"
+      ],
+      "kind": "exhibition",
+      "max_detail_pages": 60,
+      "detail_workers": 6,
+      "source_group": "museum"
     },
     {
       "name": "ЦСИ Винзавод",

@@ -38291,7 +38291,7 @@
       "reviewed_at": "2026-10-17",
       "availability": "unknown",
       "availability_checked_at": "",
-      "registration": false,
+      "registration": null,
       "price": null,
       "price_text": "",
       "price_type": "paid",
@@ -38317,7 +38317,7 @@
         "status": "approved",
         "telegram_include": false,
         "instagram_include": false,
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -41054,7 +41054,7 @@
       "address": "1-й Голутвинский переулок, 16, стр. 1",
       "price": 850,
       "price_text": "850 ₽; льготный — 650 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -41081,7 +41081,7 @@
       "time_evidence": "24 октября 2026 14:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
       "editor_overrides": {
-        "registration": false
+        "registration": null
       }
     },
     {
@@ -49427,7 +49427,7 @@
       "address": "Лаврушинский переулок, 12",
       "price": 650,
       "price_text": "650 ₽; онлайн — 700 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -49444,7 +49444,7 @@
         "telegram_include": false,
         "instagram_include": false,
         "status": "approved",
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -51320,6 +51320,34 @@
       }
     },
     {
+      "id": "spb-2026-11-01-1ef60c09e4",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-01",
+      "time": "",
+      "title": "JOURAVLIE",
+      "venue": "Пушкинская-10",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "встреча"
+      ],
+      "description": "Первый день самого мрачного месяца осени. 1 ноября в воскресенье на сцене Fish Fabrique Nouvelle — JOURAVLIE , ленинградские меланхолики с брит-попом внутри, любовью к пост-панку и песнями, в которых личное выходит наружу и неизбежно становится общим.",
+      "url": "https://p-10.ru/events/jouravlie/",
+      "source": "Пушкинская-10 — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-01",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "international-2026-11-01-6e82235541",
       "status": "rejected",
       "kind": "open_call",
@@ -51622,6 +51650,34 @@
       "reviewed_at": "2026-10-27"
     },
     {
+      "id": "spb-2026-11-01-3026ae41e6",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-01",
+      "time": "",
+      "title": "Русский музей знакомит аудиторию с молодёжными инициативами в сфере культуры",
+      "venue": "Лекторий Русского музея",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "В рамках международного проекта «Русские сезоны», который проходит в Королевстве Таиланд в течение всего года, Русский музей представил планшетную выставку «Русские сезоны».",
+      "url": "https://rusmuseum.ru/news/",
+      "source": "Русский музей — лекторий",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-01",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-01-2b2a385dc4",
       "status": "rejected",
       "kind": "event",
@@ -51702,14 +51758,16 @@
       "price": 0,
       "price_text": "",
       "registration": false,
-      "categories": [],
+      "categories": [
+        "выставка"
+      ],
       "description": "На метро Музей AZ находится между станциями метро «Маяковская» и «Белорусская» (кольцевая). Мы рекомендуем идти в Музей от станции «Маяковская». Вам нужен Выход №1 на 1-я Тверская-Ямская улица, 2-я Тверская-Ямская улица.",
       "url": "https://museum-az.com/event/territoriya-svobody-nonkonformisty-v-taruse/",
       "source": "Музей AZ — выставки и события",
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-10-20",
-      "price_type": "paid",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-10-25",
       "editor_overrides": {
@@ -53064,7 +53122,10 @@
       "telegram_include": null,
       "instagram_include": null,
       "instagram_image": "",
-      "id": "manual-weekly-2026-11-round2-myth-place"
+      "id": "manual-weekly-2026-11-round2-myth-place",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "start_date": "2026-11-02"
     },
     {
       "id": "spb-2026-11-02-0586a962f4",
@@ -53502,6 +53563,47 @@
       "reviewed_at": ""
     },
     {
+      "id": "moscow-2026-11-03-4d10a2d654-1900",
+      "status": "approved",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-03",
+      "time": "",
+      "title": "Наброски — Наброски на Покровке",
+      "venue": "Наброски на Покровке",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "наброски"
+      ],
+      "description": "Придумала для вас что-то эдакое, Приходите рисовать и веселиться во вторник 27 октября в 19:00. Наброски проведу я, Полина Калашникова. Тема занятия: Игра в Твистер. С собой — любимые материалы для графики. Прихватите цвета твистера — желтый, синий, красный и зеленый. Уровень участников — любой. 1100р при записи по вск включительно, 1300 для поздних пташек. Запись в лс или комментарием под постом. Жду ❤️ 🪄 Будем играть!",
+      "url": "https://t.me/nabroski_pokrovka/723",
+      "source": "Наброски на Покровке",
+      "checked_at": "",
+      "review_reason": "sketch_post_verify_date_time",
+      "discovered_at": "2026-10-25",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": "2026-10-25",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "editor_overrides": {
+        "status": "approved",
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false,
+        "time": ""
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "time_verification": "unverified",
+      "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
       "id": "spb-2026-11-03-8b9adc409b",
       "status": "rejected",
       "kind": "event",
@@ -53882,7 +53984,9 @@
       "telegram_include": null,
       "instagram_include": null,
       "instagram_image": "",
-      "id": "manual-weekly-2026-11-round2-tsvetaeva-performance"
+      "id": "manual-weekly-2026-11-round2-tsvetaeva-performance",
+      "availability_evidence": "",
+      "ticket_required": true
     },
     {
       "id": "spb-2026-11-03-81ac1b4826",
@@ -54030,7 +54134,9 @@
       "telegram_include": null,
       "instagram_include": null,
       "instagram_image": "",
-      "id": "manual-weekly-2026-11-round2-hermitage-picasso"
+      "id": "manual-weekly-2026-11-round2-hermitage-picasso",
+      "availability_evidence": "",
+      "ticket_required": false
     },
     {
       "id": "moscow-2026-11-03-50572aee6e",
@@ -54180,27 +54286,27 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
-      "title": "Чувственность в искусстве глазами женщин-художниц",
-      "status": "new",
+      "title": "Чувственность в искусстве глазами женщин художниц",
+      "status": "check",
       "date": "2026-11-03",
       "time": "19:00",
-      "venue": "Музей «Масловка. Городок художников»",
+      "venue": "Музейный центр «Масловка. Городок художников»",
       "city": "moscow",
       "kind": "event",
       "categories": [
         "лекция",
         "история искусства"
       ],
-      "description": "Лекция Елизаветы Климовой о субъектности и изображении женского тела в искусстве XX века.",
+      "description": "«Мужчины смотрят на женщин, женщины видят себя рассматриваемыми», — утверждал историк искусства Джон Бергер. Долгое время в изобразительном искусстве женщины воспринимались лишь как объект зрительского внимания через призму мужского взгляда, однако всё изменилось с приходом XX века.",
       "url": "https://maslovka.org/events/chuvstvennost-v-iskusstve-glazami-zhenshchin-khudozhnits/",
-      "source": "Музей Масловки",
+      "source": "Масловка — события",
       "address": "",
       "price_type": "paid",
       "price_text": "1900 ₽",
       "registration": false,
       "availability": "unknown",
       "availability_checked_at": "",
-      "review_reason": "",
+      "review_reason": "possible_duplicate",
       "editor_note": "Дополнительный поиск 01.11.2026. Проверить перед публикацией.",
       "discovered_at": "2026-11-01",
       "reviewed_at": "",
@@ -54212,7 +54318,9 @@
       "telegram_include": null,
       "instagram_include": null,
       "instagram_image": "",
-      "id": "manual-weekly-2026-11-round2-maslovka-women"
+      "id": "manual-weekly-2026-11-round2-maslovka-women",
+      "availability_evidence": "",
+      "ticket_required": false
     },
     {
       "id": "spb-2026-11-03-d840639c9f",
@@ -54459,6 +54567,45 @@
       "reviewed_at": "2026-10-24"
     },
     {
+      "id": "spb-2026-11-04-3497c8964e",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-04",
+      "time": "",
+      "title": "Event calendar",
+      "venue": "РОСФОТО",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [],
+      "description": "By clicking \"Submit\" I agree to the collection and usage of my personal information in the form above This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply. Правила использования материалов и изображений, размещённых на сайте РОСФОТО Tel: +7 (812) 500 7000 Fax: +7 (812) 314 6184 e-mail: office@rosphoto.org",
+      "url": "https://rosphoto.org/en/events/",
+      "source": "РОСФОТО",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-22",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-09-30",
+      "editor_note": "",
+      "reviewed_at": "2026-09-23",
+      "social_title": "",
+      "social_priority": null,
+      "social_description": "",
+      "instagram_include": false,
+      "telegram_include": false,
+      "instagram_image": "",
+      "sheet_synced_description": "By clicking \"Submit\" I agree to the collection and usage of my personal information in the form above This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply. Правила использования материалов и изображений, размещённых на сайте РОСФОТО Tel: +7 (812) 500 7000 Fax: +7 (812) 314 6184 e-mail: office@rosphoto.org",
+      "editor_overrides": {
+        "registration": false,
+        "time": ""
+      },
+      "time_verification": "unverified",
+      "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
       "title": "«Постановка знака» — выставка фотокниг и зинов",
       "status": "approved",
       "date": "2026-11-04",
@@ -54577,6 +54724,45 @@
       "editor_overrides": {
         "time": ""
       }
+    },
+    {
+      "title": "Камерная выставка авторского текстиля",
+      "status": "check",
+      "date": "2026-11-04",
+      "time": "",
+      "venue": "Арт-клуб на Невском, 51Г",
+      "city": "spb",
+      "kind": "exhibition",
+      "categories": [
+        "выставка",
+        "текстиль",
+        "прикладное искусство"
+      ],
+      "description": "12 авторских текстильных работ. Выставка в камерном арт-пространстве, повторяется до конца ноября.",
+      "url": "https://spontanno.space/spb/exhibitions/vystavka-tekstilya--hbhfnzqb",
+      "source": "СПОНТАННО / Timepad",
+      "address": "Санкт-Петербург, Невский пр., 51Г",
+      "price_type": "unknown",
+      "price_text": "Условия уточняются",
+      "registration": false,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "review_reason": "manual_primary_or_terms_check",
+      "editor_note": "Дополнительный поиск 01.11.2026. Проверить перед публикацией.",
+      "discovered_at": "2026-11-01",
+      "reviewed_at": "",
+      "price": null,
+      "checked_at": "",
+      "social_priority": null,
+      "social_title": "",
+      "social_description": "",
+      "telegram_include": null,
+      "instagram_include": null,
+      "instagram_image": "",
+      "id": "manual-weekly-2026-11-round2-textile",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "start_date": "2026-11-04"
     },
     {
       "id": "moscow-2026-11-04-d4ed4734f6",
@@ -54926,43 +55112,9 @@
       "telegram_include": null,
       "instagram_include": null,
       "instagram_image": "",
-      "id": "manual-weekly-2026-11-round2-tsvetaeva-readings"
-    },
-    {
-      "title": "Камерная выставка авторского текстиля",
-      "status": "check",
-      "date": "2026-11-04",
-      "time": "14:00",
-      "venue": "Арт-клуб на Невском, 51Г",
-      "city": "spb",
-      "kind": "exhibition",
-      "categories": [
-        "выставка",
-        "текстиль",
-        "прикладное искусство"
-      ],
-      "description": "12 авторских текстильных работ. Выставка в камерном арт-пространстве, повторяется до конца ноября.",
-      "url": "https://spontanno.space/spb/exhibitions/vystavka-tekstilya--hbhfnzqb",
-      "source": "СПОНТАННО / Timepad",
-      "address": "Санкт-Петербург, Невский пр., 51Г",
-      "price_type": "unknown",
-      "price_text": "Условия уточняются",
-      "registration": false,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "review_reason": "manual_primary_or_terms_check",
-      "editor_note": "Дополнительный поиск 01.11.2026. Проверить перед публикацией.",
-      "discovered_at": "2026-11-01",
-      "reviewed_at": "",
-      "price": null,
-      "checked_at": "",
-      "social_priority": null,
-      "social_title": "",
-      "social_description": "",
-      "telegram_include": null,
-      "instagram_include": null,
-      "instagram_image": "",
-      "id": "manual-weekly-2026-11-round2-textile"
+      "id": "manual-weekly-2026-11-round2-tsvetaeva-readings",
+      "availability_evidence": "",
+      "ticket_required": true
     },
     {
       "id": "spb-2026-11-04-94108f9818",
@@ -55220,7 +55372,9 @@
       "telegram_include": null,
       "instagram_include": null,
       "instagram_image": "",
-      "id": "manual-weekly-2026-11-round2-tsvetaeva-artists"
+      "id": "manual-weekly-2026-11-round2-tsvetaeva-artists",
+      "availability_evidence": "",
+      "ticket_required": true
     },
     {
       "id": "spb-2026-11-04-a72cb3d2ce",
@@ -55558,6 +55712,44 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
+      "title": "Кураторская экскурсия по выставке «Нездешний вечер»",
+      "status": "check",
+      "date": "2026-11-05",
+      "time": "",
+      "venue": "Дом-музей Марины Цветаевой",
+      "city": "moscow",
+      "kind": "exhibition",
+      "categories": [
+        "кураторская экскурсия",
+        "выставка"
+      ],
+      "description": "Обзор мемориальной квартиры и кураторская часть по выставке.",
+      "url": "https://dommuseum.ru/kalendar-sobyitij/2026/noyabr/",
+      "source": "Дом-музей Марины Цветаевой",
+      "address": "Москва, Борисоглебский пер., 6, стр. 1",
+      "price_type": "unknown",
+      "price_text": "Стоимость уточняется",
+      "registration": false,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "review_reason": "manual_primary_or_terms_check",
+      "editor_note": "Дополнительный поиск 01.11.2026. Проверить перед публикацией.",
+      "discovered_at": "2026-11-01",
+      "reviewed_at": "",
+      "price": null,
+      "checked_at": "",
+      "social_priority": null,
+      "social_title": "",
+      "social_description": "",
+      "telegram_include": null,
+      "instagram_include": null,
+      "instagram_image": "",
+      "id": "manual-weekly-2026-11-round2-tsvetaeva-curator",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "start_date": "2026-11-05"
+    },
+    {
       "id": "spb-2026-11-05-cda167ff31",
       "status": "rejected",
       "kind": "event",
@@ -55652,7 +55844,7 @@
       "address": "",
       "price_type": "free",
       "price_text": "бесплатно по регистрации",
-      "registration": false,
+      "registration": true,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -55902,42 +56094,9 @@
       "telegram_include": null,
       "instagram_include": null,
       "instagram_image": "",
-      "id": "manual-weekly-2026-11-round2-dostoevsky-curator"
-    },
-    {
-      "title": "Кураторская экскурсия по выставке «Нездешний вечер»",
-      "status": "check",
-      "date": "2026-11-05",
-      "time": "15:30",
-      "venue": "Дом-музей Марины Цветаевой",
-      "city": "moscow",
-      "kind": "event",
-      "categories": [
-        "кураторская экскурсия",
-        "выставка"
-      ],
-      "description": "Обзор мемориальной квартиры и кураторская часть по выставке.",
-      "url": "https://dommuseum.ru/kalendar-sobyitij/2026/noyabr/",
-      "source": "Дом-музей Марины Цветаевой",
-      "address": "Москва, Борисоглебский пер., 6, стр. 1",
-      "price_type": "unknown",
-      "price_text": "Стоимость уточняется",
-      "registration": false,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "review_reason": "manual_primary_or_terms_check",
-      "editor_note": "Дополнительный поиск 01.11.2026. Проверить перед публикацией.",
-      "discovered_at": "2026-11-01",
-      "reviewed_at": "",
-      "price": null,
-      "checked_at": "",
-      "social_priority": null,
-      "social_title": "",
-      "social_description": "",
-      "telegram_include": null,
-      "instagram_include": null,
-      "instagram_image": "",
-      "id": "manual-weekly-2026-11-round2-tsvetaeva-curator"
+      "id": "manual-weekly-2026-11-round2-dostoevsky-curator",
+      "availability_evidence": "",
+      "ticket_required": false
     },
     {
       "id": "spb-2026-11-05-5fe0d5bb80",
@@ -56010,7 +56169,9 @@
       "telegram_include": null,
       "instagram_include": null,
       "instagram_image": "",
-      "id": "manual-weekly-2026-11-round2-planetarium-exhibit"
+      "id": "manual-weekly-2026-11-round2-planetarium-exhibit",
+      "availability_evidence": "",
+      "ticket_required": true
     },
     {
       "title": "Искусство и власть: русская живопись от авангарда к соцреализму",
@@ -56203,7 +56364,9 @@
       "telegram_include": null,
       "instagram_include": null,
       "instagram_image": "",
-      "id": "manual-weekly-2026-11-round2-maslovka-kalina"
+      "id": "manual-weekly-2026-11-round2-maslovka-kalina",
+      "availability_evidence": "",
+      "ticket_required": false
     },
     {
       "id": "moscow-2026-11-05-87509a8743",
@@ -56946,7 +57109,9 @@
       "telegram_include": null,
       "instagram_include": null,
       "instagram_image": "",
-      "id": "manual-weekly-2026-11-round2-bridges-opening"
+      "id": "manual-weekly-2026-11-round2-bridges-opening",
+      "availability_evidence": "",
+      "ticket_required": false
     },
     {
       "title": "Онлайн-лекция «Искусство династии Цин»",
@@ -56982,7 +57147,9 @@
       "telegram_include": null,
       "instagram_include": null,
       "instagram_image": "",
-      "id": "manual-weekly-2026-11-round2-hermitage-qing"
+      "id": "manual-weekly-2026-11-round2-hermitage-qing",
+      "availability_evidence": "",
+      "ticket_required": false
     },
     {
       "title": "«Фото-ревью»",
@@ -57169,7 +57336,9 @@
       "telegram_include": null,
       "instagram_include": null,
       "instagram_image": "",
-      "id": "manual-weekly-2026-11-round2-planetarium-warhol"
+      "id": "manual-weekly-2026-11-round2-planetarium-warhol",
+      "availability_evidence": "",
+      "ticket_required": true
     },
     {
       "title": "Лекция Светланы Ершовой «Женщины в картинах русских художников XVIII–XX вв.»",
@@ -57701,7 +57870,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-07-64ecc1a02b",
@@ -57855,6 +58026,34 @@
       "editor_overrides": {
         "time": "08:11"
       }
+    },
+    {
+      "id": "moscow-2026-11-07-4965a683e1",
+      "status": "check",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-07",
+      "time": "10:00",
+      "title": "Археологический фестиваль «Открытый лист»",
+      "venue": "ул. Бауманская, д. 58/25, стр. 14",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [
+        "фестиваль"
+      ],
+      "description": "Прежде чем отправиться в поле, археолог получает открытый лист — личное разрешение от государства на раскопки. 7 ноября такой лист получит каждый гость Некрасовки: археологи, музейные специалисты, реставраторы, художники и популяризаторы науки расскажут, как устроена экспедиция и что происходит с артефактом после извлечения из культурного слоя, так ли достоверен кинематограф в отражении исторических фактов и почему археология до сих пор вдохновляет художников и создателей игр. На один день библиотека им. Некрасова превратится в полевой лагерь археологов, куда прибудут ученые из самых разных городов страны – от Москвы и Санкт-Петербурга до Кра",
+      "url": "https://design-mate.ru/go/events/arheologicheskiy-festival-otkrytyy-list",
+      "source": "Design Mate — календарь",
+      "checked_at": "",
+      "review_reason": "discovery_source_needs_primary_verification",
+      "discovered_at": "2026-11-01",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "title": "Лекция «Павел Филонов»",
@@ -58154,7 +58353,9 @@
       "telegram_include": null,
       "instagram_include": null,
       "instagram_image": "",
-      "id": "manual-weekly-2026-11-round2-theremin"
+      "id": "manual-weekly-2026-11-round2-theremin",
+      "availability_evidence": "",
+      "ticket_required": true
     },
     {
       "title": "Лекция «Свет, его оптические свойства в искусстве и дизайне»",
@@ -58699,6 +58900,34 @@
       "availability_checked_at": "",
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "moscow-2026-11-08-d56fe339d2",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-08",
+      "time": "14:00",
+      "title": "Евреи и революция: между красными и белыми",
+      "venue": "Еврейский музей и центр толерантности",
+      "address": "",
+      "price": 600,
+      "price_text": "600 ₽",
+      "registration": null,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "Череда антисемитских законов и распространившаяся к концу XIX века погромная травля евреев поставили российских евреев в сложное положение, подтолкнувшее многих из них к революционной борьбе. Разбираемся, почему былой принцип компромисса сменился радикальным противостоянием и были ли другие пути развития событий Входной билет на основную экспозицию приобретается отдельно",
+      "url": "https://www.jewish-museum.ru/events/evrei-i-revolyutsiya-mezhdu-krasnymi-i-belymi/",
+      "source": "Еврейский музей и центр толерантности",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-11-01",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-08-0fe664bda6",
@@ -59671,7 +59900,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-10-7874148c04",
@@ -59770,7 +60001,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-11-11-533523acf3",
@@ -60451,7 +60684,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-11-12-57971d9a68",
@@ -60475,7 +60710,7 @@
       "checked_at": "",
       "review_reason": "primary_source_required",
       "discovered_at": "2026-10-30",
-      "audience_text": "Opportunity details | Exhibition Open Call - Hand Me Down | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register Exhibition Open Call - Hand Me Down Deadline: 12/11/2026 City: London, Greater London | Region: Greater London | Country: United Kingdom | Wanyue Zhang Report this? Description Opportunity FAQs Make a submission Contact curator No Limits Gallery invites visual artists to submit work for Hand Me Down, a two-month show opening this December. Free to apply and open to all. Selected artists could go on to work with us long-term. The exhibition launches with a one-day programme of live music and a fashion show, presented by NICOLA Arts. No Limits Gallery is a dedicated space within the NICOLA Arts charity shop, and Hand Me Down takes its cue from the shop itself, where something one person lets go of finds its way to a stranger. While second-hand things are often dismissed as old or worn, Hand Me Down treats them as holders of emotional value and sparks for relationships yet to form. We invite visual creatives to explore what builds up as things change hands, from objects and materials to the stories, memories, and feelings they carry, each holding a history to share, a connection to make, and something to pass on. The call opens to artists at any stage of their practice, with or without formal training. We welcome work in all media, including painting, sculpture, photography, textiles and installation. You can submit existing work or new work made in response to the theme. Exhibition Details Dates: 12 December 2026 – 20 February 2027 Opening: 12 December, from 12pm until late Location: Ministry of NICOLA Arts, 642 Wandsworth Road, London SW8 3JW How to Participate Applying is FREE. If your work is selected, we ask for a £10 participation fee to secure your place. This fee doesn’t cover the full cost of producing the exhibition, but it goes a long way in helping us keep the organisation running. Please note that selected works must remain on display for the full exhibition period. Artists are responsible for delivering their work to the gallery, in person or by post, and for collecting it once the exhibition closes. Submission Deadline : 12 November 2026, 23:59 (London time) Select up to 5 images of your work. Label each file with your name only, numbered in order, e.g. Firstname_Surname1, Firstname_Surname2. Files without the correct name may be lost or mixed up with other submissions. Make a submission Contact the curator Who is eligible for this opportunity? Everyone When is the deadline? 12 November, 2026 before 23:59 (London time) How many works can I submit? Up to 5 images. When is the delivery date? 12 December 2026 - 20 February 2027 How much does it cost? Free to apply, and if selected there is a £10 participation fee. Is there a private view / opening? On 12 December 2026, from 12pm till late. What are the exhibition opening hours? Mon - Fri: 10:00 am - 6:00 pm Saturday: noon - 6:00 pm Opening hours over Christmas and New Year will be confirmed closer to the time. Do I need to be present? No, we do everything for you. You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Advertisement Other opportunities Ones to Watch 2027 - Zine Open Call Submit your zine or book to be part of the Zine Library for our annual exhibition celebrating... Reset: 2026 Call for Performers and Artists: Reset 2026 Parkscapes II London gallery is holding a Festive Season Exhibition, 3rd - 19th December 2026. We’re... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
+      "audience_text": "Opportunity details | Exhibition Open Call - Hand Me Down | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register Exhibition Open Call - Hand Me Down Deadline: 12/11/2026 City: London, Greater London | Region: Greater London | Country: United Kingdom | Wanyue Zhang Report this? Description Opportunity FAQs Make a submission Contact curator No Limits Gallery invites visual artists to submit work for Hand Me Down, a two-month show opening this December. Free to apply and open to all. Selected artists could go on to work with us long-term. The exhibition launches with a one-day programme of live music and a fashion show, presented by NICOLA Arts. No Limits Gallery is a dedicated space within the NICOLA Arts charity shop, and Hand Me Down takes its cue from the shop itself, where something one person lets go of finds its way to a stranger. While second-hand things are often dismissed as old or worn, Hand Me Down treats them as holders of emotional value and sparks for relationships yet to form. We invite visual creatives to explore what builds up as things change hands, from objects and materials to the stories, memories, and feelings they carry, each holding a history to share, a connection to make, and something to pass on. The call opens to artists at any stage of their practice, with or without formal training. We welcome work in all media, including painting, sculpture, photography, textiles and installation. You can submit existing work or new work made in response to the theme. Exhibition Details Dates: 12 December 2026 – 20 February 2027 Opening: 12 December, from 12pm until late Location: Ministry of NICOLA Arts, 642 Wandsworth Road, London SW8 3JW How to Participate Applying is FREE. If your work is selected, we ask for a £10 participation fee to secure your place. This fee doesn’t cover the full cost of producing the exhibition, but it goes a long way in helping us keep the organisation running. Please note that selected works must remain on display for the full exhibition period. Artists are responsible for delivering their work to the gallery, in person or by post, and for collecting it once the exhibition closes. Submission Deadline : 12 November 2026, 23:59 (London time) Select up to 5 images of your work. Label each file with your name only, numbered in order, e.g. Firstname_Surname1, Firstname_Surname2. Files without the correct name may be lost or mixed up with other submissions. Make a submission Contact the curator Who is eligible for this opportunity? Everyone When is the deadline? 12 November, 2026 before 23:59 (London time) How many works can I submit? Up to 5 images. When is the delivery date? 12 December 2026 - 20 February 2027 How much does it cost? Free to apply, and if selected there is a £10 participation fee. Is there a private view / opening? On 12 December 2026, from 12pm till late. What are the exhibition opening hours? Mon - Fri: 10:00 am - 6:00 pm Saturday: noon - 6:00 pm Opening hours over Christmas and New Year will be confirmed closer to the time. Do I need to be present? No, we do everything for you. You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Advertisement Other opportunities Reset: 2026 Call for Performers and Artists: Reset 2026 Parkscapes II London gallery is holding a Festive Season Exhibition, 3rd - 19th December 2026. We’re... Hit & Run - One day pop up exhibition Arrive. Install. Network. Disappear. HIT & RUN is an exhibition built around movement, momentum,... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
       "price_type": "unknown",
       "availability_evidence": "",
       "ticket_required": false,
@@ -60905,7 +61140,7 @@
       "checked_at": "",
       "review_reason": "primary_source_required",
       "discovered_at": "2026-10-30",
-      "audience_text": "Opportunity details | YOSN Art Series, Vol. 2: Type Design, Visual Poetry & Letterform Experiments | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register YOSN Art Series, Vol. 2: Type Design, Visual Poetry & Letterform Experiments Deadline: 13/11/2026 Country: United States | Danting Li Report this? Description Opportunity FAQs Make a submission Contact curator This open call seeks artworks across four categories: type design, visual poetry, letterform experiments, and calligraphy art. Submissions can be anything, even a simple letter design, from any language or culture. YOSN Art Series, Vol. 2: Type Design, Visual Poetry & Letterform Experiments is organized and presented by SparksGlo, a California-based design agency dedicated to turning unique visions into reality through innovative design solutions and strategic expertise. The purpose of this open call is to showcase outstanding artworks and discover artists with strong creative voices, meaningful stories, and unique perspectives related to type design, visual poetry, letterform experiments, and calligraphy art. Selected works will be featured in our globally distributed e-magazine, YOSN Art Series, Vol. 2: Type Design, Visual Poetry & Letterform Experiments. YOSN Art Series, Vol. 2: Type Design, Visual Poetry & Letterform Experiments is the second volume of the YOSN Art Series. YOSN stands for Young Mountain. It represents the spirit of staying passionate, ambitious, and creative despite life’s challenges, while also reflecting the power of the new generation. Artists from all around the world are welcome to submit their artworks. What Selected Artists Will Receive: 1. Selected artworks will be featured in our international e-magazine. 2. Selected artists will receive an invitation to participate in an interview for the magazine. The interview will explore the stories behind their artworks and their perspectives on the theme “Type Design, Visual Poetry & Letterform Experiments”. Fees: Submission Fee: None Participation Fee upon Selection: None Open Call Theme: Type is not simply a tool to express what we want to say. Its shape can also reflect the complex cultural backgrounds behind it. Can you imagine how different type designs can influence a reader’s emotions? Can you imagine how different letters can be arranged and combined into visual poetry? Can you imagine how graphic elements can be grouped together to form a single letter or character, echoing the origins of pictographic characters in history? Can you imagine how calligraphy art can be exaggerated and aesthetically pleasing? This open call seeks artworks across four categories: type design, visual poetry, letterform experiments, and calligraphy art. Submissions can be anything, even a simple letter design, from any language or culture. It’ll be a fun project. Use your imagination, and let’s play together. Art Categories: This open call welcomes all visual artists working in two-dimensional and three-dimensional media. Accepted categories include: Digital art & graphics Painting Drawing UI/UX design Illustration Printmaking Photography Installation art Fiber art Sculpture Mixed media Architecture Music production Interior design Jewelry design Landscape architecture Visual development Fashion Game development Style Requirements: All artistic styles are welcome. Both abstract and representational interpretations of the theme are accepted. Please do not submit works that contain hateful or discriminatory content toward any group of people. Submitted works must be suitable for digital display and provided as high-quality images. Please include a clear description of both your artwork and yourself. Originality and AI: All submitted artworks must be original works created entirely by the entrant. Entries must not copy or closely imitate copyrighted or previously published artworks, photographs, or other creative works. All submitted artworks should be created entirely by you without the use of artificial intelligence (AI) tools, including AI-generated or AI-assisted content, and that no part of the work was produced using AI technologies. Artwork Image Requirements: File Type: JPG or PNG Color Mode: RGB Resolution: 72–300 dpi Maximum Pixel Dimension: 2400 px Minimum Pixel Dimension: 1200 px Publication Platforms and Timeline: The publication is planned for release around the end of December. If there are delays, participants will be notified promptly. YOSN Art Series, Vol. 2: Type Design, Visual Poetry & Letterform Experiments is planned to be distributed through platforms including Yumpu, Lulu, Amazon Kindle Direct Publishing, and additional platforms in the future. This is the link to one of the platforms where our 1st volume was published: https://www.yumpu.com/en/document/view/71261993/yosn-art-series-vol-1-ai-data-illusion Make a submission Contact the curator Who is eligible for this opportunity? Everyone When is the deadline? Nov 13, 2026 How many works can I submit? One. How much does it cost? 0. Are there payments to artists? No. You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Advertisement Other opportunities Ones to Watch 2027 - Zine Open Call Submit your zine or book to be part of the Zine Library for our annual exhibition celebrating... Reset: 2026 Call for Performers and Artists: Reset 2026 Parkscapes II London gallery is holding a Festive Season Exhibition, 3rd - 19th December 2026. We’re... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
+      "audience_text": "Opportunity details | YOSN Art Series, Vol. 2: Type Design, Visual Poetry & Letterform Experiments | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register YOSN Art Series, Vol. 2: Type Design, Visual Poetry & Letterform Experiments Deadline: 13/11/2026 Country: United States | Danting Li Report this? Description Opportunity FAQs Make a submission Contact curator This open call seeks artworks across four categories: type design, visual poetry, letterform experiments, and calligraphy art. Submissions can be anything, even a simple letter design, from any language or culture. YOSN Art Series, Vol. 2: Type Design, Visual Poetry & Letterform Experiments is organized and presented by SparksGlo, a California-based design agency dedicated to turning unique visions into reality through innovative design solutions and strategic expertise. The purpose of this open call is to showcase outstanding artworks and discover artists with strong creative voices, meaningful stories, and unique perspectives related to type design, visual poetry, letterform experiments, and calligraphy art. Selected works will be featured in our globally distributed e-magazine, YOSN Art Series, Vol. 2: Type Design, Visual Poetry & Letterform Experiments. YOSN Art Series, Vol. 2: Type Design, Visual Poetry & Letterform Experiments is the second volume of the YOSN Art Series. YOSN stands for Young Mountain. It represents the spirit of staying passionate, ambitious, and creative despite life’s challenges, while also reflecting the power of the new generation. Artists from all around the world are welcome to submit their artworks. What Selected Artists Will Receive: 1. Selected artworks will be featured in our international e-magazine. 2. Selected artists will receive an invitation to participate in an interview for the magazine. The interview will explore the stories behind their artworks and their perspectives on the theme “Type Design, Visual Poetry & Letterform Experiments”. Fees: Submission Fee: None Participation Fee upon Selection: None Open Call Theme: Type is not simply a tool to express what we want to say. Its shape can also reflect the complex cultural backgrounds behind it. Can you imagine how different type designs can influence a reader’s emotions? Can you imagine how different letters can be arranged and combined into visual poetry? Can you imagine how graphic elements can be grouped together to form a single letter or character, echoing the origins of pictographic characters in history? Can you imagine how calligraphy art can be exaggerated and aesthetically pleasing? This open call seeks artworks across four categories: type design, visual poetry, letterform experiments, and calligraphy art. Submissions can be anything, even a simple letter design, from any language or culture. It’ll be a fun project. Use your imagination, and let’s play together. Art Categories: This open call welcomes all visual artists working in two-dimensional and three-dimensional media. Accepted categories include: Digital art & graphics Painting Drawing UI/UX design Illustration Printmaking Photography Installation art Fiber art Sculpture Mixed media Architecture Music production Interior design Jewelry design Landscape architecture Visual development Fashion Game development Style Requirements: All artistic styles are welcome. Both abstract and representational interpretations of the theme are accepted. Please do not submit works that contain hateful or discriminatory content toward any group of people. Submitted works must be suitable for digital display and provided as high-quality images. Please include a clear description of both your artwork and yourself. Originality and AI: All submitted artworks must be original works created entirely by the entrant. Entries must not copy or closely imitate copyrighted or previously published artworks, photographs, or other creative works. All submitted artworks should be created entirely by you without the use of artificial intelligence (AI) tools, including AI-generated or AI-assisted content, and that no part of the work was produced using AI technologies. Artwork Image Requirements: File Type: JPG or PNG Color Mode: RGB Resolution: 72–300 dpi Maximum Pixel Dimension: 2400 px Minimum Pixel Dimension: 1200 px Publication Platforms and Timeline: The publication is planned for release around the end of December. If there are delays, participants will be notified promptly. YOSN Art Series, Vol. 2: Type Design, Visual Poetry & Letterform Experiments is planned to be distributed through platforms including Yumpu, Lulu, Amazon Kindle Direct Publishing, and additional platforms in the future. This is the link to one of the platforms where our 1st volume was published: https://www.yumpu.com/en/document/view/71261993/yosn-art-series-vol-1-ai-data-illusion Make a submission Contact the curator Who is eligible for this opportunity? Everyone When is the deadline? Nov 13, 2026 How many works can I submit? One. How much does it cost? 0. Are there payments to artists? No. You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Advertisement Other opportunities Reset: 2026 Call for Performers and Artists: Reset 2026 Parkscapes II London gallery is holding a Festive Season Exhibition, 3rd - 19th December 2026. We’re... Hit & Run - One day pop up exhibition Arrive. Install. Network. Disappear. HIT & RUN is an exhibition built around movement, momentum,... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
       "price_type": "unknown",
       "availability_evidence": "",
       "ticket_required": false,
@@ -61412,7 +61647,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-24-9b9ee6a4b0",
@@ -63345,7 +63582,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-18-ad5480ce53",
@@ -63672,7 +63911,7 @@
       "checked_at": "",
       "review_reason": "primary_source_required",
       "discovered_at": "2026-10-30",
-      "audience_text": "Opportunity details | We are all Wonder Women | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register We are all Wonder Women Deadline: 19/11/2026 Simona Rossi Report this? Description Opportunity FAQs Make a submission Contact curator “We Are All Wonder Women” is an international virtual exhibition organised by DiversaMente Arte, taking place from 21 November to 5 December 2026, on the occasion of the International Day for the Elimination of Violence against Women. The exhibition invites artists from around the world to explore the female figure through diverse artistic languages, perspectives and interpretations, celebrating women’s identity, dignity and freedom. We Are All Wonder Women is an international virtual art exhibition organised by DiversaMente Arte, taking place from 21 November to 5 December 2026, on the occasion of the International Day for the Elimination of Violence against Women. The initiative invites artists of all nationalities to explore the female figure through different artistic languages and perspectives, addressing themes of identity, dignity, self-determination and the role of women in contemporary society. All artistic techniques are welcome, provided that the submitted works are relevant to the exhibition's theme. The selected artworks will be exhibited from 21 November to 5 December 2026 in a three-dimensional virtual gallery on Kunstmatrix, through an exhibition accessible to an international audience. The exhibition will also be documented in an official video permanently available on DiversaMente Arte's YouTube channel, ensuring continued digital visibility for the artworks even after the exhibition has ended. The event will be promoted through DiversaMente Arte's social media network, which records over 55,000 monthly views, alongside approximately 5,000 views on YouTube for videos of previous exhibitions already available on the channel. Each participating artist will receive a digital Certificate of Artistic Merit and will be featured in the official bilingual Italian-English catalogue, published as an interactive flipbook on FlipHTML5. A printed edition of the catalogue will also be available to order through diversamentearte.com. The three highest-ranked artists will each be awarded a dedicated page in Issue No. 4, December 2026, of Diversa Mente Art Curator Magazine, an international art and culture publication distributed through international platforms with millions of active users and available with multilingual translation. Applications are free of charge and will remain open until 19 November 2026. Each artist may submit one artwork only. The curatorial selection will be conducted by DiversaMente Arte during the application period. Only accepted artists will be required to pay the €25 participation fee, following notification of their selection. Make a submission Contact the curator Who is eligible for this opportunity? Artists of all nationalities are welcome to apply, working in any artistic medium, provided their artworks are relevant to the exhibition's theme. When is the deadline? The application deadline is 19 November 2026. How many works can I submit? Each artist may submit one artwork only. How much does it cost? Applications are free. Only selected artists will be required to pay a €25 participation fee after receiving confirmation of their acceptance. Are there payments to artists? No monetary payments are provided. The three highest-ranked artists will each receive a dedicated page in Issue No. 4 (December 2026) of Diversa Mente Art Curator Magazine. Is there a private view / opening? The exhibition will open online on 21 November 2026 and remain accessible until 5 December 2026. What are the exhibition opening hours? The virtual exhibition will be accessible online 24 hours a day throughout the exhibition period. What publicity will be provided as part of the opportunity? The exhibition will be promoted through DiversaMente Arte's social media network, which records over 55,000 monthly views. An official permanent exhibition video will be published on YouTube, where videos of previous exhibitions have already received approximately 5,000 views in total. Do I need to be present? No. The exhibition takes place entirely online and does not require artists to attend in person. What kind of proposals are you looking for? We welcome artworks exploring the female figure, women's identity, dignity, self-determination and their role in contemporary society. All artistic techniques are accepted, provided the artworks are relevant to the exhibition's theme. You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Advertisement Other opportunities Ones to Watch 2027 - Zine Open Call Submit your zine or book to be part of the Zine Library for our annual exhibition celebrating... Reset: 2026 Call for Performers and Artists: Reset 2026 Parkscapes II London gallery is holding a Festive Season Exhibition, 3rd - 19th December 2026. We’re... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
+      "audience_text": "Opportunity details | We are all Wonder Women | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register We are all Wonder Women Deadline: 19/11/2026 Simona Rossi Report this? Description Opportunity FAQs Make a submission Contact curator “We Are All Wonder Women” is an international virtual exhibition organised by DiversaMente Arte, taking place from 21 November to 5 December 2026, on the occasion of the International Day for the Elimination of Violence against Women. The exhibition invites artists from around the world to explore the female figure through diverse artistic languages, perspectives and interpretations, celebrating women’s identity, dignity and freedom. We Are All Wonder Women is an international virtual art exhibition organised by DiversaMente Arte, taking place from 21 November to 5 December 2026, on the occasion of the International Day for the Elimination of Violence against Women. The initiative invites artists of all nationalities to explore the female figure through different artistic languages and perspectives, addressing themes of identity, dignity, self-determination and the role of women in contemporary society. All artistic techniques are welcome, provided that the submitted works are relevant to the exhibition's theme. The selected artworks will be exhibited from 21 November to 5 December 2026 in a three-dimensional virtual gallery on Kunstmatrix, through an exhibition accessible to an international audience. The exhibition will also be documented in an official video permanently available on DiversaMente Arte's YouTube channel, ensuring continued digital visibility for the artworks even after the exhibition has ended. The event will be promoted through DiversaMente Arte's social media network, which records over 55,000 monthly views, alongside approximately 5,000 views on YouTube for videos of previous exhibitions already available on the channel. Each participating artist will receive a digital Certificate of Artistic Merit and will be featured in the official bilingual Italian-English catalogue, published as an interactive flipbook on FlipHTML5. A printed edition of the catalogue will also be available to order through diversamentearte.com. The three highest-ranked artists will each be awarded a dedicated page in Issue No. 4, December 2026, of Diversa Mente Art Curator Magazine, an international art and culture publication distributed through international platforms with millions of active users and available with multilingual translation. Applications are free of charge and will remain open until 19 November 2026. Each artist may submit one artwork only. The curatorial selection will be conducted by DiversaMente Arte during the application period. Only accepted artists will be required to pay the €25 participation fee, following notification of their selection. Make a submission Contact the curator Who is eligible for this opportunity? Artists of all nationalities are welcome to apply, working in any artistic medium, provided their artworks are relevant to the exhibition's theme. When is the deadline? The application deadline is 19 November 2026. How many works can I submit? Each artist may submit one artwork only. How much does it cost? Applications are free. Only selected artists will be required to pay a €25 participation fee after receiving confirmation of their acceptance. Are there payments to artists? No monetary payments are provided. The three highest-ranked artists will each receive a dedicated page in Issue No. 4 (December 2026) of Diversa Mente Art Curator Magazine. Is there a private view / opening? The exhibition will open online on 21 November 2026 and remain accessible until 5 December 2026. What are the exhibition opening hours? The virtual exhibition will be accessible online 24 hours a day throughout the exhibition period. What publicity will be provided as part of the opportunity? The exhibition will be promoted through DiversaMente Arte's social media network, which records over 55,000 monthly views. An official permanent exhibition video will be published on YouTube, where videos of previous exhibitions have already received approximately 5,000 views in total. Do I need to be present? No. The exhibition takes place entirely online and does not require artists to attend in person. What kind of proposals are you looking for? We welcome artworks exploring the female figure, women's identity, dignity, self-determination and their role in contemporary society. All artistic techniques are accepted, provided the artworks are relevant to the exhibition's theme. You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Advertisement Other opportunities Reset: 2026 Call for Performers and Artists: Reset 2026 Parkscapes II London gallery is holding a Festive Season Exhibition, 3rd - 19th December 2026. We’re... Hit & Run - One day pop up exhibition Arrive. Install. Network. Disappear. HIT & RUN is an exhibition built around movement, momentum,... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
       "price_type": "unknown",
       "availability_evidence": "",
       "ticket_required": false,
@@ -64331,7 +64570,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-20-9eb04182fc",
@@ -64567,7 +64808,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-20-b029e967f1",
@@ -66794,7 +67037,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-27-d872c160b2",
@@ -66830,7 +67075,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-27-f08815a18e",
@@ -67043,7 +67290,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-28-aab697f4b0",
@@ -67218,7 +67467,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-29-0b6f0e020e",
@@ -67530,7 +67781,7 @@
       "checked_at": "",
       "review_reason": "primary_source_required",
       "discovered_at": "2026-10-29",
-      "audience_text": "Opportunity details | VISIONS - online photography exhibition - OPEN CALL | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register VISIONS - online photography exhibition - OPEN CALL Deadline: 30/11/2026 City: Cambridge | Region: Cambridgeshire | Country: United Kingdom | Viktor Barkhatov Report this? Description Opportunity FAQs Make a submission Contact curator Submit your photographs for our new curated online exhibition. We want to see all kinds of photographic approaches - any techniques are welcome! Cambridge Photography Gallery invites photographers from around the world to participate in a new curated online exhibition. We continue to explore how rich the world of photography is and how many visual forms it can take. That's why we're leaving the theme open to your interpretation as artists. We welcome all forms of photography: single images, projects of any length, and all kinds of techniques and approaches. At the same time, we know that every exhibition is also shaped by a curatorial vision. With VISIONS, we'd like to shift our own perspective a little and show that curatorial vision can take many different forms too. Details: Submission fee: Free Participation fee (if selected): £15 Deadline to submit: November 30, 2026 Exhibition dates: December 07 – December 22, 2026 Eligible submissions: Singles and Series Exhibition benefits: Selected artists will be presented in a curated online exhibition hosted on our website. Each participating artist will receive a dedicated post on our Instagram page, which currently has over 1800 engaged followers and continues to grow. Our previous online exhibitions attracted more than 2,000 visitors. “VISIONS” will be promoted through our existing channels to reach a similarly engaged audience of photography enthusiasts. Every selected artist will receive a digital certificate of participation confirming their inclusion in the exhibition, suitable for their portfolio or CV. All participants will receive guaranteed consideration for free participation in our next offline exhibition in Cambridge that will take place in Autumn 2027. About Cambridge Photography Gallery: Cambridge Photography Gallery is a new place for contemporary photography. A place for photography that makes you feel and think. We love photography. And we're pretty sure you do too. But in a world where billions of images are created every day, photography remains an underappreciated form of art. The voices of photographers who have something to say often remain unheard. We wanted to change that, even if just a little. We wanted to create a platform to help photography be seen. And we believe it's crucial to keep the dialogue around photography alive and to support it as an art medium. We're an online and nomadic gallery. For now, at least. We organise curated online exhibitions, and once a year we also organise a physical exhibition in Cambridge. We don't have our own exhibition space in Cambridge [yet], but we'd like to grow. And who knows, perhaps one day you'll be able to find us on Google Maps. Eligibility: Open to all photographers worldwide All photographic techniques are allowed Artwork sales and commission: The exhibition is non-commercial. Artworks will not be sold through our platform. Our goal is to provide visibility and context for the artists rather than to facilitate direct sales. Copyright: Copyright of all submitted works will remain with the photographers at all times. By submitting, artists grant us permission to exhibit and promote their work in the context of this exhibition and its related promotional materials. Make a submission Contact the curator Who is eligible for this opportunity? Photographers of all levels and from all countries. When is the deadline? November 30, 2026 How many works can I submit? There is no fixed limit on the number of images. You are free to include as many as you feel are necessary for your project. Can I submit diptychs, collages, virtual photography? Yes. All formats and approaches are welcome. Can I submit AI-generated images? No, AI-generated images are not accepted. You may use AI tools as part of the workflow or editing process of your photographs, but fully AI-generated images are not accepted. Why is the exhibition only two weeks long, even though it’s online? We believe that a limited time window helps the exhibition feel special. During these two weeks, we will actively promote the exhibition, post dedicated Instagram posts, and share stories together with the artists. After it ends, the exhibition will remain accessible on our website in the “Past Exhibitions” section. Why is there a participation fee? The participation fee helps us cover the administrative costs of running the exhibition, maintaining the website, email, and other related expenses. We’re a small independent initiative - our goal is not profit, but sustainability. You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Advertisement Other opportunities Ones to Watch 2027 - Zine Open Call Submit your zine or book to be part of the Zine Library for our annual exhibition celebrating... Reset: 2026 Call for Performers and Artists: Reset 2026 Parkscapes II London gallery is holding a Festive Season Exhibition, 3rd - 19th December 2026. We’re... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
+      "audience_text": "Opportunity details | VISIONS - online photography exhibition - OPEN CALL | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register VISIONS - online photography exhibition - OPEN CALL Deadline: 30/11/2026 City: Cambridge | Region: Cambridgeshire | Country: United Kingdom | Viktor Barkhatov Report this? Description Opportunity FAQs Make a submission Contact curator Submit your photographs for our new curated online exhibition. We want to see all kinds of photographic approaches - any techniques are welcome! Cambridge Photography Gallery invites photographers from around the world to participate in a new curated online exhibition. We continue to explore how rich the world of photography is and how many visual forms it can take. That's why we're leaving the theme open to your interpretation as artists. We welcome all forms of photography: single images, projects of any length, and all kinds of techniques and approaches. At the same time, we know that every exhibition is also shaped by a curatorial vision. With VISIONS, we'd like to shift our own perspective a little and show that curatorial vision can take many different forms too. Details: Submission fee: Free Participation fee (if selected): £15 Deadline to submit: November 30, 2026 Exhibition dates: December 07 – December 22, 2026 Eligible submissions: Singles and Series Exhibition benefits: Selected artists will be presented in a curated online exhibition hosted on our website. Each participating artist will receive a dedicated post on our Instagram page, which currently has over 1800 engaged followers and continues to grow. Our previous online exhibitions attracted more than 2,000 visitors. “VISIONS” will be promoted through our existing channels to reach a similarly engaged audience of photography enthusiasts. Every selected artist will receive a digital certificate of participation confirming their inclusion in the exhibition, suitable for their portfolio or CV. All participants will receive guaranteed consideration for free participation in our next offline exhibition in Cambridge that will take place in Autumn 2027. About Cambridge Photography Gallery: Cambridge Photography Gallery is a new place for contemporary photography. A place for photography that makes you feel and think. We love photography. And we're pretty sure you do too. But in a world where billions of images are created every day, photography remains an underappreciated form of art. The voices of photographers who have something to say often remain unheard. We wanted to change that, even if just a little. We wanted to create a platform to help photography be seen. And we believe it's crucial to keep the dialogue around photography alive and to support it as an art medium. We're an online and nomadic gallery. For now, at least. We organise curated online exhibitions, and once a year we also organise a physical exhibition in Cambridge. We don't have our own exhibition space in Cambridge [yet], but we'd like to grow. And who knows, perhaps one day you'll be able to find us on Google Maps. Eligibility: Open to all photographers worldwide All photographic techniques are allowed Artwork sales and commission: The exhibition is non-commercial. Artworks will not be sold through our platform. Our goal is to provide visibility and context for the artists rather than to facilitate direct sales. Copyright: Copyright of all submitted works will remain with the photographers at all times. By submitting, artists grant us permission to exhibit and promote their work in the context of this exhibition and its related promotional materials. Make a submission Contact the curator Who is eligible for this opportunity? Photographers of all levels and from all countries. When is the deadline? November 30, 2026 How many works can I submit? There is no fixed limit on the number of images. You are free to include as many as you feel are necessary for your project. Can I submit diptychs, collages, virtual photography? Yes. All formats and approaches are welcome. Can I submit AI-generated images? No, AI-generated images are not accepted. You may use AI tools as part of the workflow or editing process of your photographs, but fully AI-generated images are not accepted. Why is the exhibition only two weeks long, even though it’s online? We believe that a limited time window helps the exhibition feel special. During these two weeks, we will actively promote the exhibition, post dedicated Instagram posts, and share stories together with the artists. After it ends, the exhibition will remain accessible on our website in the “Past Exhibitions” section. Why is there a participation fee? The participation fee helps us cover the administrative costs of running the exhibition, maintaining the website, email, and other related expenses. We’re a small independent initiative - our goal is not profit, but sustainability. You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Advertisement Other opportunities Reset: 2026 Call for Performers and Artists: Reset 2026 Parkscapes II London gallery is holding a Festive Season Exhibition, 3rd - 19th December 2026. We’re... Hit & Run - One day pop up exhibition Arrive. Install. Network. Disappear. HIT & RUN is an exhibition built around movement, momentum,... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
       "price_type": "unknown",
       "availability_evidence": "",
       "ticket_required": false,
@@ -67921,7 +68172,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-12-11-556173ab41",
@@ -67957,7 +68210,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "russia-2026-12-13-3a942b4abf",
@@ -68133,7 +68388,7 @@
       "checked_at": "",
       "review_reason": "primary_source_required",
       "discovered_at": "2026-10-29",
-      "audience_text": "Opportunity details | Call for curators or curator/artists to create a short group show as part of our 2027 programme | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register Call for curators or curator/artists to create a short group show as part of our 2027 programme Deadline: 18/12/2026 City: London | Country: United Kingdom | GARAGE GALLERY Report this? Description Opportunity FAQs Make a submission Contact curator Garage Gallery E17 is now its fifth year of hosting imaginative, intimate and engaging exhibitions in our light and flexible space in Walthamstow village, East London. We are looking for curators and curator/artists for group shows (3 artists or more) for our 2027 programme of short shows (4 days), every 6-8 weeks during the year. We established the Gallery in 2022 to provide an opportunity for artists, both new to showing work and more established, to bring their work to life, in a welcoming and collaborative environment. Our shows to date have included hung work, sculpture and installations, workshops, audio and video based content and textiles and sculpture. Each curator and group of artists we have worked with has enjoyed the freedom to shape their own exhibition, and their feedback and that of our visitors has been universally positive. Every couple of months, we host a new exhibition over a long weekend (Thurs/Fri to Sunday). From experience we have found that because of the size and location of the Gallery and the ethos of collaboration, group shows of 3 or more artists tend to work best. We are particularly interested in socially conscious and thought-provoking themes but we are open to ideas. You can get an idea of the range of our previous shows from our website; please message us if you'd like to discuss your idea before submitting a proposal. Make a submission Contact the curator Who is eligible for this opportunity? Groups of artists (at least three) with a curator (who may be one of the artists), either new to exhibiting or with previous experience. A connection to East London is desirable but not essential. We are interested in thought-provoking socially conscious work but we also want to host a variety of short exhibitions so we're open to any ideas. When is the deadline? Friday 18th December, but we will look at submissions on a rolling basis and we will also be flexible about 'late' submissions. How much does it cost? We operate on a not-for-profit basis and we manage the space on a voluntary basis. There is no cost for submitting proposals at this stage. If we do host your exhibition then we ask groups for a contribution of £60 to cover our costs. We also ask groups to be responsible for purchasing refreshments for a Private View, and we ask for 10% of any sales made. We work with groups on publicity and ask them to produce as a minimum a small number of printed posters (they may choose to produce flyers etc too). Are there payments to artists? No Is there a private view / opening? Yes What are the exhibition opening hours? To be agreed on a show-by-show basis with the group Does the location have disabled access? Yes What publicity will be provided as part of the opportunity? Groups are expected to work with us on publicity including producing posters at their cost. We promote shows via our website and instagram and do some local publicity with flyers/cards. Do I need to be present? Yes we ask curators/artists to invigilate so one person needs to be present when the gallery is open. How do you decide on proposals? We will take into consideration the range of shows that we are running, and the different artist groups we are hosting, what would work well in our fairly restricted space, and what we feel would appeal to our regular visitors as well as attracting new people into the space. What happens if my proposal is chosen? We will ask you to visit the space and talk with you about the practicalities of setting up, running and 'staffing' a short show. You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Advertisement Other opportunities Ones to Watch 2027 - Zine Open Call Submit your zine or book to be part of the Zine Library for our annual exhibition celebrating... Reset: 2026 Call for Performers and Artists: Reset 2026 Parkscapes II London gallery is holding a Festive Season Exhibition, 3rd - 19th December 2026. We’re... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
+      "audience_text": "Opportunity details | Call for curators or curator/artists to create a short group show as part of our 2027 programme | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register Call for curators or curator/artists to create a short group show as part of our 2027 programme Deadline: 18/12/2026 City: London | Country: United Kingdom | GARAGE GALLERY Report this? Description Opportunity FAQs Make a submission Contact curator Garage Gallery E17 is now its fifth year of hosting imaginative, intimate and engaging exhibitions in our light and flexible space in Walthamstow village, East London. We are looking for curators and curator/artists for group shows (3 artists or more) for our 2027 programme of short shows (4 days), every 6-8 weeks during the year. We established the Gallery in 2022 to provide an opportunity for artists, both new to showing work and more established, to bring their work to life, in a welcoming and collaborative environment. Our shows to date have included hung work, sculpture and installations, workshops, audio and video based content and textiles and sculpture. Each curator and group of artists we have worked with has enjoyed the freedom to shape their own exhibition, and their feedback and that of our visitors has been universally positive. Every couple of months, we host a new exhibition over a long weekend (Thurs/Fri to Sunday). From experience we have found that because of the size and location of the Gallery and the ethos of collaboration, group shows of 3 or more artists tend to work best. We are particularly interested in socially conscious and thought-provoking themes but we are open to ideas. You can get an idea of the range of our previous shows from our website; please message us if you'd like to discuss your idea before submitting a proposal. Make a submission Contact the curator Who is eligible for this opportunity? Groups of artists (at least three) with a curator (who may be one of the artists), either new to exhibiting or with previous experience. A connection to East London is desirable but not essential. We are interested in thought-provoking socially conscious work but we also want to host a variety of short exhibitions so we're open to any ideas. When is the deadline? Friday 18th December, but we will look at submissions on a rolling basis and we will also be flexible about 'late' submissions. How much does it cost? We operate on a not-for-profit basis and we manage the space on a voluntary basis. There is no cost for submitting proposals at this stage. If we do host your exhibition then we ask groups for a contribution of £60 to cover our costs. We also ask groups to be responsible for purchasing refreshments for a Private View, and we ask for 10% of any sales made. We work with groups on publicity and ask them to produce as a minimum a small number of printed posters (they may choose to produce flyers etc too). Are there payments to artists? No Is there a private view / opening? Yes What are the exhibition opening hours? To be agreed on a show-by-show basis with the group Does the location have disabled access? Yes What publicity will be provided as part of the opportunity? Groups are expected to work with us on publicity including producing posters at their cost. We promote shows via our website and instagram and do some local publicity with flyers/cards. Do I need to be present? Yes we ask curators/artists to invigilate so one person needs to be present when the gallery is open. How do you decide on proposals? We will take into consideration the range of shows that we are running, and the different artist groups we are hosting, what would work well in our fairly restricted space, and what we feel would appeal to our regular visitors as well as attracting new people into the space. What happens if my proposal is chosen? We will ask you to visit the space and talk with you about the practicalities of setting up, running and 'staffing' a short show. You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Advertisement Other opportunities Reset: 2026 Call for Performers and Artists: Reset 2026 Parkscapes II London gallery is holding a Festive Season Exhibition, 3rd - 19th December 2026. We’re... Hit & Run - One day pop up exhibition Arrive. Install. Network. Disappear. HIT & RUN is an exhibition built around movement, momentum,... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
       "price_type": "unknown",
       "availability_evidence": "",
       "ticket_required": false,
@@ -68183,7 +68438,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-12-18-0b562c2e2b",
@@ -68219,7 +68476,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-12-20-7d49348433",
@@ -68407,7 +68666,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     }
   ]
 }

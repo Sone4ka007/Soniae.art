@@ -7,8 +7,9 @@ ROOT=Path(__file__).resolve().parents[2]
 class ExhibitionFrontendTests(unittest.TestCase):
     def test_exhibition_category_never_renders_in_events_tab(self):
         js=(ROOT/"assets/events.js").read_text("utf-8")
-        self.assertIn("(e.categories || []).includes('выставка')",js)
-        self.assertIn("normalizedKind !== state.kind",js)
+        self.assertIn("cats.includes('выставка')",js)
+        self.assertIn("const normalizedKind = kindOf(e)",js)
+        self.assertIn("if (!state.kinds.has(normalizedKind)) return false;",js)
 
     def test_events_json_is_cache_busted(self):
         js=(ROOT/"assets/events.js").read_text("utf-8")

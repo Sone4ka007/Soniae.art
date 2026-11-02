@@ -1,0 +1,40 @@
+name: Events frontend smoke test
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'assets/events.js'
+      - 'assets/events.css'
+      - 'events/index.html'
+      - 'content/sketch-places.json'
+      - 'tests/events/test_multiselect_frontend.py'
+      - 'tests/events/test_exhibition_frontend.py'
+      - 'tests/events/test_frontend_date_filter.py'
+      - '.github/workflows/events-frontend.yml'
+  pull_request:
+    paths:
+      - 'assets/events.js'
+      - 'assets/events.css'
+      - 'events/index.html'
+      - 'content/sketch-places.json'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  frontend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate JavaScript syntax
+        run: node --check assets/events.js
+      - name: Check multi-select and dates
+        run: |
+          python -m unittest discover -s tests/events -p 'test_multiselect_frontend.py'
+          python -m unittest discover -s tests/events -p 'test_exhibition_frontend.py'
+          python -m unittest discover -s tests/events -p 'test_frontend_date_filter.py'

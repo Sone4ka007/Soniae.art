@@ -197,28 +197,31 @@
     return 'ДОСТУПНОСТЬ НЕ ПРОВЕРЕНА';
   }
 
-  function renderSketches() {
-    document.getElementById('events-range').textContent = 'МЕСТА И СООБЩЕСТВА';
+  function renderSketchPlaces() {
+    const show = state.kinds.has('sketch');
+    sketchSection.hidden = !show;
+    if (!show) return;
     const places = sketchPlaces.filter(e => e.status === 'approved'
       && (state.city === 'all' || e.city === state.city)
       && (state.price === 'all' || e.price_type === state.price));
-    const n = places.length, mod = n % 100, digit = n % 10;
-    count.textContent = n + ' ' + (mod >= 11 && mod <= 14 ? 'МЕСТ' : digit === 1 ? 'МЕСТО' : digit >= 2 && digit <= 4 ? 'МЕСТА' : 'МЕСТ');
-    empty.hidden = places.length !== 0;
-    empty.querySelector('p').textContent = sketchError ? 'Не удалось загрузить список мест для набросков.' : sketchPlaces.some(e => e.status === 'approved') ? 'По выбранным фильтрам мест пока нет.' : 'Здесь будут появляться места и встречи для набросков с натуры.';
-    list.innerHTML = places.map(e => `
-      <article class="event-card exhibition-card">
+    const n = places.length;
+    sketchCount.textContent = n + ' ' + (n === 1 ? 'МЕСТО' : n >= 2 && n <= 4 ? 'МЕСТА' : 'МЕСТ');
+    sketchPlacesList.innerHTML = places.map(e => `
+      <article class="event-card sketch-place-card">
         <div class="event-main"><h3>${esc(e.title)}</h3>
           ${e.schedule ? `<p class="event-period">${esc(e.schedule)}</p>` : ''}
           <p>${esc(shortDescription(e.description))}</p></div>
         <div class="event-meta">
           <p><strong>${esc(e.venue || '')}</strong></p>
-          <p>${esc(e.address || '')}</p><p>${esc(cityNames[e.city] || e.city || '')}</p>
+          <p>${esc(e.address || '')}</p>
+          <p>${esc(cityNames[e.city] || e.city || '')}</p>
           <div class="event-price ${e.price_type === 'free' ? 'free' : ''}">${priceLabel(e)}</div>
-          ${admissionLabel(e)}
         </div>
         <a class="event-link" href="${esc(e.url)}" target="_blank" rel="noopener">К ОРГАНИЗАТОРУ ↗</a>
       </article>`).join('');
+    if (!places.length) {
+      sketchPlacesList.innerHTML = `<p class="sketch-places-empty">${sketchError ? 'Не удалось загрузить каталог мест.' : 'По выбранным фильтрам площадок нет.'}</p>`;
+    }
   }
 
   // Collapse duplicate records from repeat collector passes, regardless of their
@@ -227,8 +230,6 @@
     const norm = value => String(value || '').normalize('NFKC').toLowerCase()
       .replace(/ё/g, 'е').replace(/[«»„“”]/g, '')
       .replace(/[^\p{L}\p{N}]+/gu, ' ').trim();
-    const kindOf = e => (e.kind === 'exhibition' || (e.categories || []).includes('выставка'))
-      ? 'exhibition' : (e.kind || 'event');
     const same = (a, b) => {
       if (kindOf(a) !== kindOf(b) || norm(a.title) !== norm(b.title) ||
           norm(a.city) !== norm(b.city)) return false;

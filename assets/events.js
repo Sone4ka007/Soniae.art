@@ -8,13 +8,18 @@
   const registrationButtons = [...document.querySelectorAll('[data-registration]')];
   const availabilityButtons = [...document.querySelectorAll('[data-availability]')];
   const kindButtons = [...document.querySelectorAll('[data-kind]')];
+  const kindReset = document.getElementById('kind-reset');
+  const allKinds = ['event', 'exhibition', 'open_call', 'sketch'];
+  const sketchSection = document.getElementById('sketch-section');
+  const sketchPlacesList = document.getElementById('sketch-places-list');
+  const sketchCount = document.getElementById('sketch-count');
   const datePresetButtons = [...document.querySelectorAll('[data-date-preset]')];
   const dateDay = document.getElementById('date-day');
   const dateFrom = document.getElementById('date-from');
   const dateTo = document.getElementById('date-to');
   const dateReset = document.getElementById('date-reset');
   const state = {
-    kind: 'event', city: 'all', price: 'all', category: 'all',
+    kinds: new Set(allKinds), city: 'all', price: 'all', category: 'all',
     registration: 'all', availability: 'all',
     dateFrom: '', dateTo: '', datePreset: ''
   };
@@ -51,6 +56,17 @@
   };
   const todayIso = () => isoFromDate(new Date());
 
+  function kindOf(e) {
+    const cats = Array.isArray(e.categories) ? e.categories : [];
+    if (e.kind === 'open_call') return 'open_call';
+    if (e.kind === 'exhibition' || cats.includes('выставка')) return 'exhibition';
+    const source = String(e.source || '') + ' ' + String(e.venue || '');
+    const sketchSource = /простая школа|pick.?me|наброски на покровке|sketching biro|олеси федоренко|nabroski/i.test(source);
+    const sketchCategory = cats.some(c => /наброс|скетч|рисовани[ея] с натуры|короткий рисунок|портрет с темой/i.test(String(c)));
+    const sketchTitle = sketchSource && /наброс|скетч|портрет|короткий рисунок/i.test(String(e.title || ''));
+    return e.kind === 'sketch' || sketchCategory || sketchTitle ? 'sketch' : 'event';
+  }
+
   function mondayOfWeek(d) {
     const out = new Date(d.getFullYear(), d.getMonth(), d.getDate());
     const day = out.getDay() || 7;
@@ -81,28 +97,26 @@
 
   function dateRangeLabel() {
     const range = customDateRange();
-    if (!range) return state.kind === 'exhibition' ? 'ТЕКУЩИЕ ВЫСТАВКИ' : (state.kind === 'open_call' ? 'ДЕДЛАЙНЫ · 90 ДНЕЙ' : '30 ДНЕЙ ВПЕРЁД');
+    if (!range) return state.kinds.size === 1 && state.kinds.has('exhibition') ? 'ТЕКУЩИЕ ВЫСТАВКИ · 90 ДНЕЙ' : (state.kinds.size === 1 && state.kinds.has('open_call') ? 'ДЕДЛАЙНЫ · 90 ДНЕЙ' : '30 ДНЕЙ ВПЕРЁД');
     if (range.from === range.to) return formatDateRu(range.from).toUpperCase();
     return `${formatDateRu(range.from).toUpperCase()} — ${formatDateRu(range.to).toUpperCase()}`;
   }
 
   function isVisible(e) {
     if (e.status !== 'approved') return false;
-    const normalizedKind = (e.kind === 'exhibition' || (e.categories || []).includes('выставка'))
-      ? 'exhibition'
-      : (e.kind || 'event');
-    if (normalizedKind !== state.kind) return false;
+    const normalizedKind = kindOf(e);
+    if (!state.kinds.has(normalizedKind)) return false;
     const custom = customDateRange();
     const today = todayIso();
-    const max = new Date(); max.setDate(max.getDate() + (state.kind === 'event' ? 30 : 90));
+    const max = new Date(); max.setDate(max.getDate() + (!custom && state.kinds.size === 1 && (normalizedKind === 'exhibition' || normalizedKind === 'open_call') ? 90 : 30));
     const defaultTo = isoFromDate(max);
     const rangeFrom = custom ? custom.from : today;
     const rangeTo = custom ? custom.to : defaultTo;
-    if (state.kind === 'exhibition') {
+    if (normalizedKind === 'exhibition') {
       const start = e.start_date || e.date;
       const end = e.end_date || '9999-12-31';
       if (!start || end < rangeFrom || start > rangeTo) return false;
-    } else if (state.kind === 'event') {
+    } else if (normalizedKind === 'event' || normalizedKind === 'sketch') {
       const start = e.start_date || e.date;
       const end = e.end_date || e.date;
       if (!start || !end || end < rangeFrom || start > rangeTo) return false;

@@ -262,49 +262,63 @@
   }
 
   function render() {
-    const sketch = state.kind === 'sketch';
-    document.getElementById('sketch-intro').hidden = !sketch;
-    [registrationButtons[0]?.parentElement, availabilityButtons[0]?.parentElement, document.querySelector('.date-filter'), categorySelect].forEach(el => { if (el) el.hidden = sketch; });
-    if (sketch) { renderSketches(); return; }
-    empty.querySelector('p').textContent = 'Сейчас по выбранным фильтрам событий нет.';
+    const hasSketches = state.kinds.has('sketch');
+    document.getElementById('sketch-intro').hidden = !hasSketches;
+    empty.querySelector('p').textContent = 'По выбранным фильтрам событий нет.';
 
-    let visible = events.filter(isVisible).sort((a,b) => {
-      const ad = a.start_date || a.date || '';
-      const bd = b.start_date || b.date || '';
-      return ad.localeCompare(bd) || String(a.title||'').localeCompare(String(b.title||''));
-    });
+    let visible = dedupeVisibleEvents(events.filter(isVisible));
+    const custom = customDateRange();
+    const referenceDay = custom ? custom.from : todayIso();
+    const groupDate = e => kindOf(e) === 'exhibition' &&
+      (e.start_date || e.date) < referenceDay ? referenceDay : (e.start_date || e.date);
 
-    visible = dedupeVisibleEvents(visible);
+    visible.sort((a,b) => groupDate(a).localeCompare(groupDate(b))
+      || String(a.time || '').localeCompare(String(b.time || ''))
+      || String(a.title || '').localeCompare(String(b.title || '')));
 
-    if (state.kind === 'exhibition') {
-      const unique = new Map();
-      visible.forEach(e => {
-        // Different exhibitions often share one museum landing page.
-        // Prefer the stable record id; only fall back to exhibition identity fields.
-        const key = e.id || [
-          (e.title || '').trim().toLowerCase(),
-          (e.venue || '').trim().toLowerCase(),
-          e.start_date || e.date || '',
-          e.end_date || ''
-        ].join('|');
-        if (!unique.has(key)) unique.set(key,e);
-      });
-      visible = [...unique.values()];
-      count.textContent = `${visible.length} ${visible.length === 1 ? 'ВЫСТАВКА' : 'ВЫСТАВКИ'}`;
-      document.getElementById('events-range').textContent = dateRangeLabel();
-      empty.hidden = visible.length !== 0;
-      list.innerHTML = visible.map(e => {
-        let period = 'ИДЁТ СЕЙЧАС · ДАТА ОКОНЧАНИЯ НЕ УКАЗАНА';
-        if (e.start_date && e.end_date) period = `${formatDateRu(e.start_date)} — ${formatDateRu(e.end_date)}`;
-        else if (e.start_date) period = `С ${formatDateRu(e.start_date)}`;
-        else if (e.end_date) period = `ДО ${formatDateRu(e.end_date)}`;
-        return `
-          <article class="event-card exhibition-card">
+    const totalPlaces = hasSketches ? sketchPlaces.filter(e =>
+      e.status === 'approved'
+      && (state.city === 'all' || e.city === state.city)
+      && (state.price === 'all' || e.price_type === state.price)).length : 0;
+    count.textContent = `${visible.length} ${visible.length === 1 ? 'СОБЫТИЕ' : 'СОБЫТИЙ'}` +
+      (hasSketches ? ` · ${totalPlaces} МЕСТ ДЛЯ НАБРОСКОВ` : '');
+    document.getElementById('events-range').textContent = dateRangeLabel();
+    empty.hidden = visible.length !== 0 || totalPlaces > 0;
+    list.innerHTML = '';
+
+    const groups = visible.reduce((acc,e) => {
+      (acc[groupDate(e)] ||= []).push(e);
+      return acc;
+    }, {});
+
+    Object.entries(groups).forEach(([date, items]) => {
+      const d = localDate(date);
+      const section = document.createElement('section');
+      section.className = 'event-day';
+      section.innerHTML = `
+        <div class="event-day-title">
+          <span>${String(d.getDate()).padStart(2,'0')}.${String(d.getMonth()+1).padStart(2,'0')}</span>
+          <h2>${weekdays[d.getDay()]} · ${d.getDate()} ${months[d.getMonth()]}</h2>
+        </div>
+        ${items.map(e => {
+          const kind = kindOf(e);
+          const kindLabel = {event:'СОБЫТИЕ', exhibition:'ВЫСТАВКА', open_call:'OPEN CALL', sketch:'НАБРОСКИ'}[kind];
+          let period = formatEventRange(e);
+          if (kind === 'exhibition' && !period) {
+            period = e.end_date ? `ДО ${formatDateRu(e.end_date)}`
+              : `С ${formatDateRu(e.start_date || e.date)}`;
+          }
+          return `
+          <article class="event-card ${kind === 'exhibition' ? 'event-card-exhibition' : ''}">
+            <div class="event-time">${kind === 'open_call' ? 'ДЕДЛАЙН' :
+              kind === 'exhibition' ? 'ВЫСТАВКА' : esc(e.time || 'ВРЕМЯ УТОЧНЯЕТСЯ')}</div>
             <div class="event-main">
+              <span class="event-kind-label">${kindLabel}</span>
               <h3>${esc(e.title)}</h3>
-              <p class="event-period">${period}</p>
+              ${period ? `<p class="event-period">${esc(period)}</p>` : ''}
               <p>${esc(shortDescription(e.description))}</p>
-              <div class="event-tags">${(e.categories || []).map(c => `<span class="event-tag">${esc(categoryNames[c] || c)}</span>`).join('')}</div>
+              <div class="event-tags">${(e.categories || []).map(c =>
+                `<span class="event-tag">${esc(categoryNames[c] || c)}</span>`).join('')}</div>
             </div>
             <div class="event-meta">
               <p><strong>${esc(e.venue || '')}</strong></p>
@@ -317,59 +331,11 @@
             </div>
             <a class="event-link" href="${esc(e.url)}" target="_blank" rel="noopener">ИСТОЧНИК ↗</a>
           </article>`;
-      }).join('');
-      return;
-    }
-
-    if (state.kind === 'open_call') {
-      count.textContent = `${visible.length} OPEN CALLS`;
-      document.getElementById('events-range').textContent = dateRangeLabel();
-    } else {
-      count.textContent = `${visible.length} ${visible.length === 1 ? 'СОБЫТИЕ' : visible.length > 1 && visible.length < 5 ? 'СОБЫТИЯ' : 'СОБЫТИЙ'}`;
-      document.getElementById('events-range').textContent = dateRangeLabel();
-    }
-
-    empty.hidden = visible.length !== 0;
-    list.innerHTML = '';
-
-    const groups = visible.reduce((acc,e) => {
-      (acc[e.date] ||= []).push(e);
-      return acc;
-    }, {});
-
-    Object.entries(groups).forEach(([date, items]) => {
-      const d = localDate(date);
-      const section = document.createElement('section');
-      section.className = 'event-day';
-      section.innerHTML = `
-        <div class="event-day-title">
-          <span>${String(d.getDate()).padStart(2,'0')}.${String(d.getMonth()+1).padStart(2,'0')}</span>
-          <h2>${state.kind === 'open_call' ? 'ДЕДЛАЙН · ' : weekdays[d.getDay()] + ' · '}${d.getDate()} ${months[d.getMonth()]}</h2>
-        </div>
-        ${items.map(e => `
-          <article class="event-card">
-            <div class="event-time">${state.kind === 'open_call' ? 'OPEN CALL' : esc(e.time || 'ВРЕМЯ УТОЧНЯЕТСЯ')}</div>
-            <div class="event-main">
-              <h3>${esc(e.title)}</h3>
-              ${formatEventRange(e) ? `<p class="event-period">${esc(formatEventRange(e))}</p>` : ''}
-              <p>${esc(shortDescription(e.description))}</p>
-              <div class="event-tags">${(e.categories || []).map(c => `<span class="event-tag">${esc(categoryNames[c] || c)}</span>`).join('')}</div>
-            </div>
-            <div class="event-meta">
-              <p><strong>${esc(e.venue || '')}</strong></p>
-              <p>${esc(e.address || '')}</p>
-              <p>${esc(cityNames[e.city] || e.city || '')}</p>
-              <div class="event-price ${e.price_type === 'free' ? 'free' : ''}">${priceLabel(e)}</div>
-              ${admissionLabel(e)}
-              <p>${availabilityLabel(e)}</p>
-              ${e.availability_checked_at ? `<div class="event-check">МЕСТА ПРОВЕРЕНЫ: ${esc(e.availability_checked_at)}</div>` : ''}
-              ${e.checked_at ? `<div class="event-check">ПРОВЕРЕНО: ${esc(e.checked_at)}</div>` : ''}
-            </div>
-            <a class="event-link" href="${esc(e.url)}" target="_blank" rel="noopener">ИСТОЧНИК ↗</a>
-          </article>`).join('')}
+        }).join('')}
       `;
       list.appendChild(section);
     });
+    renderSketchPlaces();
   }
 
   function activate(buttons, clicked) {

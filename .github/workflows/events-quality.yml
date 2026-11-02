@@ -1,6 +1,15 @@
 name: Events quality
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'assets/events.js'
+      - 'assets/events.css'
+      - 'events/index.html'
+      - 'content/sketch-places.json'
+      - 'tests/events/**'
+      - '.github/workflows/events-quality.yml'
   pull_request:
     paths:
       - 'content/events.json'
@@ -25,6 +34,8 @@ jobs:
         run: pip install beautifulsoup4 requests
       - name: Compile event scripts
         run: python -m py_compile scripts/events/*.py
+      - name: Check frontend JavaScript syntax
+        run: node --check assets/events.js
       - name: Run event regression tests
         run: python -m unittest discover -s tests/events -p 'test_*.py'
       - name: Validate and normalize database

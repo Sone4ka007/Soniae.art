@@ -342,9 +342,34 @@
     buttons.forEach(b => b.classList.toggle('active', b === clicked));
   }
 
+  function syncKindButtons() {
+    kindButtons.forEach(btn => {
+      const selected = state.kinds.has(btn.dataset.kind);
+      btn.classList.toggle('active', selected);
+      btn.setAttribute('aria-pressed', String(selected));
+    });
+    if (kindReset) kindReset.hidden = state.kinds.size === allKinds.length;
+  }
   kindButtons.forEach(btn => btn.addEventListener('click', () => {
-    state.kind = btn.dataset.kind; activate(kindButtons, btn); render();
+    const kind = btn.dataset.kind;
+    if (state.kinds.size === allKinds.length) {
+      // Starting from "all", the first tap selects just that section.
+      state.kinds = new Set([kind]);
+    } else if (state.kinds.has(kind)) {
+      if (state.kinds.size === 1) state.kinds = new Set(allKinds);
+      else state.kinds.delete(kind);
+    } else {
+      state.kinds.add(kind);
+    }
+    syncKindButtons();
+    render();
   }));
+  kindReset?.addEventListener('click', () => {
+    state.kinds = new Set(allKinds);
+    syncKindButtons();
+    render();
+  });
+  syncKindButtons();
   cityButtons.forEach(btn => btn.addEventListener('click', () => {
     state.city = btn.dataset.city; activate(cityButtons, btn); render();
   }));
@@ -414,8 +439,8 @@
 
   fetch('/content/sketch-places.json?v=' + Date.now(), { cache: 'no-store' })
     .then(r => { if (!r.ok) throw new Error('sketch-places.json'); return r.json(); })
-    .then(data => { sketchPlaces = Array.isArray(data) ? data : (data.places || []); if (state.kind === 'sketch') render(); })
-    .catch(() => { sketchError = true; if (state.kind === 'sketch') render(); });
+    .then(data => { sketchPlaces = Array.isArray(data) ? data : (data.places || []); if (state.kinds.has('sketch')) render(); })
+    .catch(() => { sketchError = true; if (state.kinds.has('sketch')) render(); });
 
   Promise.all([
     fetch('/content/events.json?v=' + Date.now(), { cache: 'no-store' }).then(r => { if (!r.ok) throw new Error('events.json'); return r.json(); }),
@@ -439,7 +464,7 @@
       render();
     })
     .catch(() => {
-      if (state.kind === 'sketch') return;
+      if (state.kinds.has('sketch') && sketchPlaces.length) return;
       list.innerHTML = '<div class="events-empty"><p>Не удалось загрузить базу событий.</p></div>';
       empty.hidden = true;
     });

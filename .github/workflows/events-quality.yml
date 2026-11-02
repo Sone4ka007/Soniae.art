@@ -1,15 +1,6 @@
 name: Events quality
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'assets/events.js'
-      - 'assets/events.css'
-      - 'events/index.html'
-      - 'content/sketch-places.json'
-      - 'tests/events/**'
-      - '.github/workflows/events-quality.yml'
   pull_request:
     paths:
       - 'content/events.json'

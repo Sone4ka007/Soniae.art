@@ -1,1 +1,65 @@
-{"places": []}
+{
+  "places": [
+    {
+      "id": "prostaya",
+      "status": "approved",
+      "title": "Простая школа — открытые практики",
+      "city": "moscow",
+      "venue": "Простая школа",
+      "address": "Москва, ул. Пятницкая, 71/5, стр. 2, офис 503",
+      "schedule": "Пн–сб: наброски, портрет, короткий рисунок — по расписанию",
+      "description": "Регулярные занятия с моделью, включая быстрые и медленные наброски. Актуальное время и стоимость — в расписании школы.",
+      "price_type": "paid",
+      "price_text": "750–800 ₽ за очную практику",
+      "url": "https://prostaya.ru/praktiki"
+    },
+    {
+      "id": "pokrovka",
+      "status": "approved",
+      "title": "Наброски на Покровке",
+      "city": "moscow",
+      "venue": "Наброски на Покровке",
+      "address": "Москва — место встречи уточняется у организаторов",
+      "schedule": "Обычно по вторникам — проверяйте анонс",
+      "description": "Сообщество рисующих с натуры. Подробности о моделях, времени, адресе и записи публикуют в Telegram.",
+      "price_type": "unknown",
+      "url": "https://t.me/nabroski_pokrovka"
+    },
+    {
+      "id": "pickme",
+      "status": "approved",
+      "title": "PickMe Art Studio — наброски",
+      "city": "moscow",
+      "venue": "PickMe Art Studio",
+      "address": "Москва — адрес уточняется у организаторов",
+      "schedule": "Обычно по средам — проверяйте анонс",
+      "description": "Сеансы рисования модели с натуры. Программу и способ участия организаторы публикуют в Telegram.",
+      "price_type": "unknown",
+      "url": "https://t.me/pickmeartstudio"
+    },
+    {
+      "id": "biro",
+      "status": "approved",
+      "title": "Sketching Biro — наброски",
+      "city": "spb",
+      "venue": "Sketching Biro",
+      "address": "Санкт-Петербург — площадка зависит от анонса",
+      "schedule": "По объявлениям сообщества",
+      "description": "Наброски и практика рисования людей с натуры. Проверяйте дату, место и запись в Telegram.",
+      "price_type": "unknown",
+      "url": "https://t.me/sketching_biro"
+    },
+    {
+      "id": "fedorenko",
+      "status": "approved",
+      "title": "Мастерская Олеси Федоренко — наброски с натуры",
+      "city": "spb",
+      "venue": "АРТМУЗА, мастерская 409",
+      "address": "Санкт-Петербург, 13-я линия В.О., 70–72, 4-й этаж, пом. 409",
+      "schedule": "Вт и чт — вечерние наброски; суббота — портрет и наброски. Время уточнять",
+      "description": "Регулярные наброски обнажённой модели и портретные сессии с Олесей Федоренко; расписание может меняться. Анонсы и запись — в группе ВКонтакте.",
+      "price_type": "unknown",
+      "url": "https://vk.com/nabroskispb"
+    }
+  ]
+}

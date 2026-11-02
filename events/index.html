@@ -23,7 +23,7 @@
   <meta property="og:description" content="Актуальные выставки, лекции, встречи, воркшопы и другие события для художников в Москве и Санкт-Петербурге.">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","@id":"https://sonyae.art/events/#page","url":"https://sonyae.art/events/","name":"Куда сходить художнику в Москве и Петербурге","description":"Актуальные выставки, лекции, паблик-токи, мастер-классы, воркшопы и open calls для художников в Москве и Санкт-Петербурге.","isPartOf":{"@id":"https://sonyae.art/#website"},"about":[{"@type":"City","name":"Москва"},{"@type":"City","name":"Санкт-Петербург"}]}</script>
   <link rel="stylesheet" href="/assets/style.css">
-  <link rel="stylesheet" href="/assets/events.css?v=20261025-sketch">
+  <link rel="stylesheet" href="/assets/events.css?v=20261102-multiselect">
 </head>
 <body>
 <header class="top">
@@ -46,12 +46,16 @@
     <p>Куда сходить художнику в Москве и Санкт-Петербурге: актуальные выставки, лекции, паблик-токи, встречи, мастер-классы, воркшопы и другие арт-события. В подборке — бесплатные и недорогие события, которые могут быть полезны художникам; анонсы проходят редакторскую проверку.</p>
   </section>
 
-  <section class="events-toolbar events-primary-tabs" aria-label="Раздел">
+  <section class="events-toolbar events-primary-tabs" aria-label="Выбор разделов">
+    <div class="kind-toolbar-head">
+      <span>ВЫБЕРИТЕ ОДИН ИЛИ НЕСКОЛЬКО РАЗДЕЛОВ</span>
+      <button id="kind-reset" type="button" class="kind-reset" hidden>ПОКАЗАТЬ ВСЁ ↗</button>
+    </div>
     <div class="filter-group">
-      <button class="filter active" data-kind="event">СОБЫТИЯ</button>
-      <button class="filter" data-kind="exhibition">ВЫСТАВКИ</button>
-      <button class="filter" data-kind="open_call">OPEN CALLS</button>
-      <button class="filter" data-kind="sketch">НАБРОСКИ</button>
+      <button type="button" class="filter active" data-kind="event" aria-pressed="true">СОБЫТИЯ</button>
+      <button type="button" class="filter active" data-kind="exhibition" aria-pressed="true">ВЫСТАВКИ</button>
+      <button type="button" class="filter active" data-kind="open_call" aria-pressed="true">OPEN CALLS</button>
+      <button type="button" class="filter active" data-kind="sketch" aria-pressed="true">НАБРОСКИ</button>
     </div>
   </section>
 
@@ -107,14 +111,19 @@
     </select>
   </section>
 
-  <section id="sketch-intro" class="sketch-intro" hidden><h2>НАБРОСКИ</h2><p>Места и сообщества, где проходят встречи для рисования людей с натуры: наброски, портреты и работа с моделью. Расписание и условия участия — у организаторов.</p></section>
-
   <section class="events-status"><span id="events-count">0 СОБЫТИЙ</span><span id="events-range">30 ДНЕЙ ВПЕРЁД</span></section>
   <section id="events-list" class="events-list" aria-live="polite"></section>
   <section class="events-empty" id="events-empty" hidden><p>Сейчас по выбранным фильтрам событий нет.</p></section>
+  <section id="sketch-section" class="sketch-section" hidden>
+    <div id="sketch-intro" class="sketch-intro">
+      <div class="sketch-intro-title"><h2>ГДЕ РИСОВАТЬ С НАТУРЫ</h2><span id="sketch-count">0 МЕСТ</span></div>
+      <p>Постоянные мастерские и сообщества в Москве и Петербурге. Конкретные сеансы набросков показываются в календаре выше; расписание и условия — по ссылке организатора.</p>
+    </div>
+    <div id="sketch-places-list" class="sketch-places-list"></div>
+  </section>
 </main>
 
 <footer><span>© 2026 СОНЯ ЕНОКАЕВА</span><a href="#">НАВЕРХ ↑</a></footer>
-<script src="/assets/events.js?v=20261025-sketch"></script>
+<script src="/assets/events.js?v=20261102-multiselect"></script>
 </body>
 </html>

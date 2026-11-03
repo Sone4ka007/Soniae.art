@@ -252,15 +252,17 @@ def main():
                      "startIndex":index,"endIndex":index+1},
             "properties":{"pixelSize":width},"fields":"pixelSize"}})
     if len(rows)>1:
-        # Read-only live copy of the editable status column. Google Sheets
-        # shifts relative references across rows in repeatCell formulas.
-        requests.append({"repeatCell":{
+        # Read-only live copy of editable status column A. Write each
+        # formula explicitly, including rows hidden by the editor's filter.
+        # repeatCell can skip filtered-out rows in this integration.
+        formula_rows=[{"values":[{"userEnteredValue":{"formulaValue":
+                      f'=IF(A{i}="","",A{i})'}}]} for i in range(2,len(rows)+1)]
+        requests.append({"updateCells":{
             "range":{"sheetId":sheet_id,"startRowIndex":1,
                      "endRowIndex":len(rows),
                      "startColumnIndex":HEADERS.index("status_copy"),
                      "endColumnIndex":HEADERS.index("status_copy")+1},
-            "cell":{"userEnteredValue":{"formulaValue":'=IF(A2="","",A2)'}},
-            "fields":"userEnteredValue"}})
+            "rows":formula_rows,"fields":"userEnteredValue"}})
         requests.append({"autoResizeDimensions":{
             "dimensions":{"sheetId":sheet_id,"dimension":"ROWS",
                           "startIndex":1,"endIndex":len(rows)}}})

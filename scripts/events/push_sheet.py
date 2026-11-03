@@ -11,7 +11,7 @@ ROOT=Path(__file__).resolve().parents[2]
 DB=ROOT/"content/events.json"
 SHEET_ID=os.environ["EVENTS_SHEET_ID"]
 CREDS=json.loads(os.environ["GOOGLE_SERVICE_ACCOUNT_JSON"])
-RANGE="Events!A:AJ"
+RANGE="Events!A:AK"
 BASE_HEADERS=[
     "title","status","date","time","venue","city","kind","categories","description","url","source",
     "address","price_type","price_text","registration","availability","availability_checked_at",
@@ -22,7 +22,7 @@ BASE_HEADERS=[
 ]
 # Editorial review order. Keep all machine fields, but display description,
 # price and schedule immediately after the title.
-FRONT_COLUMNS=("title","description","price_text","date","time")
+FRONT_COLUMNS=("status","title","description","status_copy","price_text","date","time")
 HEADERS=list(FRONT_COLUMNS)+[h for h in BASE_HEADERS if h not in FRONT_COLUMNS]
 
 def service():
@@ -90,7 +90,7 @@ def row_for_event(e):
         e.get("instagram_image",""),e.get("title",""),snapshot
     ]
     record=dict(zip(BASE_HEADERS,original_order))
-    return [record[column] for column in HEADERS]
+    return [record.get(column,"") for column in HEADERS]
 
 def main():
     db=json.loads(DB.read_text("utf-8"))
@@ -214,12 +214,12 @@ def main():
     requests=[
       # Allow descriptions to use as many lines as necessary. Avoid a
       # fixed pixel height, which hides text on narrow/mobile screens.
-      {"repeatCell":{"range":{"sheetId":sheet_id,"startRowIndex":1,"endRowIndex":max(2,len(rows)),"startColumnIndex":0,"endColumnIndex":36},
+      {"repeatCell":{"range":{"sheetId":sheet_id,"startRowIndex":1,"endRowIndex":max(2,len(rows)),"startColumnIndex":0,"endColumnIndex":len(HEADERS)},
         "cell":{"userEnteredFormat":{"verticalAlignment":"TOP"}},"fields":"userEnteredFormat.verticalAlignment"}},
-      {"repeatCell":{"range":{"sheetId":sheet_id,"startRowIndex":1,"endRowIndex":max(2,len(rows)),"startColumnIndex":0,"endColumnIndex":3},
+      {"repeatCell":{"range":{"sheetId":sheet_id,"startRowIndex":1,"endRowIndex":max(2,len(rows)),"startColumnIndex":0,"endColumnIndex":5},
         "cell":{"userEnteredFormat":{"wrapStrategy":"WRAP"}},"fields":"userEnteredFormat.wrapStrategy"}},
-      {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":0,"endColumnIndex":36}}},
-      {"setBasicFilter":{"filter":{"range":{"sheetId":sheet_id,"startRowIndex":0,"startColumnIndex":0,"endColumnIndex":36}}}},
+      {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":0,"endColumnIndex":len(HEADERS)}}},
+      {"setBasicFilter":{"filter":{"range":{"sheetId":sheet_id,"startRowIndex":0,"startColumnIndex":0,"endColumnIndex":len(HEADERS)}}}},
       {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":HEADERS.index("status"),"endColumnIndex":HEADERS.index("status")+1},
         "rule":{"condition":{"type":"ONE_OF_LIST","values":[{"userEnteredValue":x} for x in ["new","check","approved","rejected"]]},"strict":True,"showCustomUi":True}}},
       {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":HEADERS.index("city"),"endColumnIndex":HEADERS.index("city")+1},
@@ -236,14 +236,15 @@ def main():
         "rule":{"condition":{"type":"BOOLEAN"},"strict":True,"showCustomUi":True}}},
       {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":HEADERS.index("social_priority"),"endColumnIndex":HEADERS.index("social_priority")+1},
         "rule":{"condition":{"type":"NUMBER_BETWEEN","values":[{"userEnteredValue":"0"},{"userEnteredValue":"5"}]},"strict":True,"showCustomUi":True}}},
-      {"updateDimensionProperties":{"range":{"sheetId":sheet_id,"dimension":"COLUMNS","startIndex":24,"endIndex":28},
+      {"updateDimensionProperties":{"range":{"sheetId":sheet_id,"dimension":"COLUMNS","startIndex":HEADERS.index("id"),"endIndex":HEADERS.index("synced_source")+1},
         "properties":{"hiddenByUser":True},"fields":"hiddenByUser"}},
-      {"updateDimensionProperties":{"range":{"sheetId":sheet_id,"dimension":"COLUMNS","startIndex":34,"endIndex":36},
+      {"updateDimensionProperties":{"range":{"sheetId":sheet_id,"dimension":"COLUMNS","startIndex":HEADERS.index("synced_title"),"endIndex":HEADERS.index("synced_row_json")+1},
         "properties":{"hiddenByUser":True},"fields":"hiddenByUser"}}
     ]
     # Stable readable widths and content-based heights after every push,
     # so manual formatting is never lost during a scheduled sync.
-    for column, width in (("title", 310), ("description", 440),
+    for column, width in (("status", 115), ("title", 310), ("description", 440),
+                          ("status_copy", 115),
                           ("price_text", 180), ("date", 120), ("time", 95)):
         index=HEADERS.index(column)
         requests.append({"updateDimensionProperties":{
@@ -251,6 +252,15 @@ def main():
                      "startIndex":index,"endIndex":index+1},
             "properties":{"pixelSize":width},"fields":"pixelSize"}})
     if len(rows)>1:
+        # Read-only live copy of the editable status column. Google Sheets
+        # shifts relative references across rows in repeatCell formulas.
+        requests.append({"repeatCell":{
+            "range":{"sheetId":sheet_id,"startRowIndex":1,
+                     "endRowIndex":len(rows),
+                     "startColumnIndex":HEADERS.index("status_copy"),
+                     "endColumnIndex":HEADERS.index("status_copy")+1},
+            "cell":{"userEnteredValue":{"formulaValue":'=IF(A2="","",A2)'}},
+            "fields":"userEnteredValue"}})
         requests.append({"autoResizeDimensions":{
             "dimensions":{"sheetId":sheet_id,"dimension":"ROWS",
                           "startIndex":1,"endIndex":len(rows)}}})

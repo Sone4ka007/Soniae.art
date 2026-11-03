@@ -38291,7 +38291,7 @@
       "reviewed_at": "2026-10-17",
       "availability": "unknown",
       "availability_checked_at": "",
-      "registration": false,
+      "registration": null,
       "price": null,
       "price_text": "",
       "price_type": "paid",
@@ -38317,7 +38317,7 @@
         "status": "approved",
         "telegram_include": false,
         "instagram_include": false,
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -41054,7 +41054,7 @@
       "address": "1-й Голутвинский переулок, 16, стр. 1",
       "price": 850,
       "price_text": "850 ₽; льготный — 650 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -41081,7 +41081,7 @@
       "time_evidence": "24 октября 2026 14:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
       "editor_overrides": {
-        "registration": false
+        "registration": null
       }
     },
     {
@@ -49427,7 +49427,7 @@
       "address": "Лаврушинский переулок, 12",
       "price": 650,
       "price_text": "650 ₽; онлайн — 700 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -49444,7 +49444,7 @@
         "telegram_include": false,
         "instagram_include": false,
         "status": "approved",
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -51674,14 +51674,16 @@
       "price": 0,
       "price_text": "",
       "registration": false,
-      "categories": [],
+      "categories": [
+        "выставка"
+      ],
       "description": "На метро Музей AZ находится между станциями метро «Маяковская» и «Белорусская» (кольцевая). Мы рекомендуем идти в Музей от станции «Маяковская». Вам нужен Выход №1 на 1-я Тверская-Ямская улица, 2-я Тверская-Ямская улица.",
       "url": "https://museum-az.com/event/territoriya-svobody-nonkonformisty-v-taruse/",
       "source": "Музей AZ — выставки и события",
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-10-20",
-      "price_type": "paid",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-10-25",
       "editor_overrides": {
@@ -53000,6 +53002,60 @@
       "reviewed_at": ""
     },
     {
+      "id": "spb-2026-11-03-84be8aaf95",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-03",
+      "time": "",
+      "title": "В Александровском дворце устроят вечер хризантем",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами! Также вы можете отправить статью в социальной сети или мессенджере Если у вас есть чем поделиться с нашими читателями, вы можете предложить свою статью.",
+      "url": "https://spbcult.ru/news/anonsy/v-aleksandrovskom-dvortse-ustroyat-vecher-khrizantem/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-03",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "spb-2026-11-03-81a0c28b93",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-03",
+      "time": "",
+      "title": "В Петербурге состоится историческая конференция о прошлом и будущем казачества",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "конференция"
+      ],
+      "description": "Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами! Также вы можете отправить статью в социальной сети или мессенджере Если у вас есть чем поделиться с нашими читателями, вы можете предложить свою статью.",
+      "url": "https://spbcult.ru/news/anonsy/v-peterburge-proydyet-istoricheskaya-konferentsiya-o-kazachestve-v-istorii-severo-zapada-rossii/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-03",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-03-6501f99a5e",
       "status": "new",
       "kind": "event",
@@ -53030,6 +53086,63 @@
       "reviewed_at": ""
     },
     {
+      "id": "spb-2026-11-03-faed7d5bb5",
+      "status": "new",
+      "kind": "exhibition",
+      "city": "spb",
+      "date": "2026-11-03",
+      "time": "",
+      "title": "Выставка «Многоликость традиций» раскрывает культуру татар и башкир в Кронштадте",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "выставка"
+      ],
+      "description": "Правообладатель: Евгения Серко / Музей истории Кронштадта. Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами!",
+      "url": "https://spbcult.ru/news/anonsy/vystavka-mnogolikost-traditsiy-otkryvaet-kulturu-tatar-i-bashkir-v-kronshtadte/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-03",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "start_date": "2026-11-03"
+    },
+    {
+      "id": "spb-2026-11-03-93c14c2e73",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-03",
+      "time": "",
+      "title": "Городская дума посвятит программу наследию Ренессанса",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "игра"
+      ],
+      "description": "Выставка «Ускользающая красота и новая жизнь. Правообладатель: пресс-служба фестиваля «Чайковский. Спасибо, что оставляете обратную связь!",
+      "url": "https://spbcult.ru/news/anonsy/spetsialnaya-tematicheskaya-programma/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-03",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "spb-2026-11-03-5995f84169",
       "status": "new",
       "kind": "event",
@@ -53050,6 +53163,94 @@
       "review_reason": "",
       "discovered_at": "2026-11-03",
       "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
+    },
+    {
+      "id": "spb-2026-11-03-c670141f1b",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-03",
+      "time": "",
+      "title": "Зимний фестиваль «Площадь Искусств» будет посвящён Юрию Темирканову и откроется в его день рождения",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "фестиваль"
+      ],
+      "description": "Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами! Также вы можете отправить статью в социальной сети или мессенджере Если у вас есть чем поделиться с нашими читателями, вы можете предложить свою статью.",
+      "url": "https://spbcult.ru/news/anonsy/zimniy-festival-ploshchad-iskusstv-budet-posvyashchen-yuriyu-temirkanovu-i-otkroetsya-v-ego-den-rozh/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-03",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "moscow-2026-11-03-0e70db4264",
+      "status": "new",
+      "kind": "exhibition",
+      "city": "moscow",
+      "date": "2026-11-03",
+      "time": "",
+      "title": "Коллективная выставка Арт-шаффл 43.0",
+      "venue": "ЦСИ Винзавод",
+      "address": "",
+      "price": 12000,
+      "price_text": "12000 ₽",
+      "registration": null,
+      "categories": [
+        "выставка"
+      ],
+      "description": "",
+      "url": "https://www.winzavod.ru/calendar/exhibitions/art-shaffl-43-0/",
+      "source": "ЦСИ Винзавод",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-03",
+      "start_date": "2026-11-03",
+      "end_date": "2026-11-15",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "spb-2026-11-03-a70c3f23c9",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-03",
+      "time": "",
+      "title": "Курс лекций-дискуссий",
+      "venue": "Санкт-Петербургская академия художеств имени Ильи Репина",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [
+        "встреча"
+      ],
+      "description": "",
+      "url": "https://www.artsacademy.ru/additionally/news/2026/",
+      "source": "Академия художеств имени Репина — выставки и события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-03",
+      "price_type": "free",
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
@@ -53275,6 +53476,34 @@
       "instagram_include": false
     },
     {
+      "id": "spb-2026-11-03-09e64ad6da",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-03",
+      "time": "",
+      "title": "Проверить свои знания поможет Географический диктант",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "фестиваль"
+      ],
+      "description": "Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами! Также вы можете отправить статью в социальной сети или мессенджере Если у вас есть чем поделиться с нашими читателями, вы можете предложить свою статью.",
+      "url": "https://spbcult.ru/news/anonsy/v-rossii-napishut-geograficheskiy-diktant/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-03",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-03-b4f4229159",
       "status": "rejected",
       "kind": "event",
@@ -53406,6 +53635,62 @@
       "availability_checked_at": "",
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "spb-2026-11-03-08f9220a1c",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-03",
+      "time": "",
+      "title": "У Ратной палаты в «Царском Селе» пройдет программа «Солдаты Первой мировой»",
+      "venue": "",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [
+        "событие"
+      ],
+      "description": "Правообладатель изображений: Музей-заповедник «Царское Село». Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами!",
+      "url": "https://spbcult.ru/news/anonsy/u-ratnoy-palaty-v-tsarskom-sele-proydet-programma-soldaty-pervoy-mirovoy-/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-03",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "spb-2026-11-03-6a9beb9915",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-03",
+      "time": "",
+      "title": "Фестиваль «Город Петра» собирает театры со всей России в Петербурге",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "фестиваль"
+      ],
+      "description": "Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами! Также вы можете отправить статью в социальной сети или мессенджере Если у вас есть чем поделиться с нашими читателями, вы можете предложить свою статью.",
+      "url": "https://spbcult.ru/news/anonsy/festival-gorod-petra-sobiraet-molodye-teatry-so-vsey-rossii-v-peterburge/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-03",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "spb-2026-11-03-3497c8964e",
@@ -54710,6 +54995,32 @@
       }
     },
     {
+      "id": "spb-2026-11-04-ec2e1f9cab",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-04",
+      "time": "10:00",
+      "title": "Все отделы библиотеки закрыты в праздничный день, кроме библиотеки Охта Lib — она работает по обычному расписанию с 10 до 22 часов.",
+      "venue": "Библиотека Маяковского",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "Без выходных, 10:00–22:00",
+      "url": "https://t.me/mayakovka/2134",
+      "source": "Библиотека Маяковского — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-11-03",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-04-175d817326",
       "status": "approved",
       "kind": "event",
@@ -55593,7 +55904,7 @@
       "address": "",
       "price_type": "free",
       "price_text": "бесплатно по регистрации",
-      "registration": false,
+      "registration": true,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -56608,7 +56919,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-06-f8bd97a160",
@@ -57030,7 +57343,7 @@
       "address": "",
       "price": 300,
       "price_text": "300 ₽",
-      "registration": null,
+      "registration": false,
       "categories": [
         "встреча"
       ],
@@ -57044,7 +57357,14 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-11-06-51c2626b24",
@@ -57596,7 +57916,7 @@
       "address": "",
       "price_type": "free",
       "price_text": "бесплатно по регистрации",
-      "registration": false,
+      "registration": true,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -58314,7 +58634,7 @@
       "address": "",
       "price": 300,
       "price_text": "300 ₽",
-      "registration": null,
+      "registration": false,
       "categories": [
         "встреча"
       ],
@@ -58328,7 +58648,14 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-11-07-96c8d83947",
@@ -58635,7 +58962,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [],
       "description": "",
       "url": "https://www.newhollandsp.ru/events/cinema-and-theatre/",
@@ -58647,7 +58974,14 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "spb-2026-11-08-e79320720d",
@@ -59673,14 +60007,14 @@
       "city": "moscow",
       "date": "2026-11-10",
       "time": "",
-      "title": "Эффективное наставничество",
+      "title": "Эффективное наставничество: опыт Новосибирской областной молодёжной библиотеки",
       "venue": "РГБМ",
       "address": "",
       "price": null,
       "price_text": "",
       "registration": null,
       "categories": [],
-      "description": "10 ноября 2026 11:00 Мероприятие пройдёт онлайн 2026-11-10 11:00 2026-11-10 11:00 Europe/Moscow Эффективное наставничество Цикл профессиональных вебинаров-практикумов РГБМ, Мероприятие пройдёт онлайн РГБМ info@rgub.ru Начальник отдела литературных программ Новосибирской областной молодёжной библиотеки Татьяна Синицына расскажет, как организовано наставничество в учреждении, поделится практическими подходами и поговорит о роли наставника в профессиональной адаптации и развитии сотрудников. Отдельное внимание уделим тому, как наставничество влияет на взаимодействие внутри коллектива, помогает выстраивать рабочие отношения и способствует формированию здоровой корпоративной среды. Ведущий: Фёдор Замыцкий, ведущий методист Всероссийского центра библиотечного кадрового потенциала РГБМ",
+      "description": "10 ноября 2026 11:00 Мероприятие пройдёт онлайн 2026-11-10 11:00 2026-11-10 11:00 Europe/Moscow Эффективное наставничество: опыт Новосибирской областной молодёжной библиотеки Цикл профессиональных вебинаров-практикумов РГБМ, Мероприятие пройдёт онлайн РГБМ info@rgub.ru Начальник отдела литературных программ Новосибирской областной молодёжной библиотеки Татьяна Синицына расскажет, как организовано наставничество в учреждении, поделится практическими подходами и поговорит о роли наставника в профессиональной адаптации и развитии сотрудников. Отдельное внимание уделим тому, как наставничество влияет на взаимодействие внутри коллектива, помогает выстраивать рабочие отношения и способствует формированию здоровой корпоративной среды. Ведущий: Фёдор Замыцкий, ведущий методист Всероссийского центра библиотечного кадрового потенциала РГБМ",
       "url": "https://rgub.ru/schedule/item.php?new_id=50130",
       "source": "Российская государственная библиотека для молодёжи — афиша",
       "checked_at": "",
@@ -60028,6 +60362,32 @@
       "reviewed_at": "2026-10-30"
     },
     {
+      "id": "spb-2026-11-10-6e7ac94eb1",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-10",
+      "time": "19:30",
+      "title": "ÐÑÐ¾Ð²ÐµÑÐºÐ° Ð±ÑÐ°ÑÐ·ÐµÑÐ° Ð¿ÐµÑÐµÐ´ Ð¿ÐµÑÐµÑ Ð¾Ð´Ð¾Ð¼ Ð½Ð° tsentralnaya-events.timepad.ru",
+      "venue": "Библиотека Маяковского",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "Современники «Современника». Театр и советская неофициальная литература в 1960-е годы Ослабление цензуры после знаменитого ХХ съезда отразилось на многих культурных сферах. Параллельно с возникновением театра «Современник», эстрадной студии «Наш Дом» при МГУ, первой в СССР студии пантомимы, организованной Рудольфом Славским в Ленинграде и организацией «народных театров» по всему Союзу по-новому задышала и литературная жизнь. Либерализация издательской политики позволила разрешённым авторам и темам попасть в печать. Появление разнообразных ЛИТО и самиздата — дало возможность заявить о себе моло",
+      "url": "https://tsentralnaya-events.timepad.ru/event/4202454/",
+      "source": "Библиотека Маяковского — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-11-03",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "spb-2026-11-10-bf27d9010f",
       "status": "check",
       "kind": "event",
@@ -60263,6 +60623,36 @@
       "editor_overrides": {
         "time": ""
       }
+    },
+    {
+      "id": "moscow-2026-11-11-54c37dd89c",
+      "status": "new",
+      "kind": "exhibition",
+      "city": "moscow",
+      "date": "2026-11-11",
+      "time": "",
+      "title": "Мила Нишатова. Иногда вода двигается в сторону луны",
+      "venue": "ММОМА",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "выставка"
+      ],
+      "description": "Московский музей современного искусства и Школа современного искусства «Свободные мастерские» представляют персональную выставку Милы Нишатовой «Иногда вода двигается в сторону луны», реализованную в рамках Программы поддержки молодого искусства MMOMA.",
+      "url": "https://mmoma.ru/visit/gallery/nishatova",
+      "source": "ММОМА — выставки",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-03",
+      "start_date": "2026-11-11",
+      "end_date": "2026-12-16",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-11-f0b5df81f4",
@@ -61584,6 +61974,34 @@
       "availability": "unknown",
       "availability_checked_at": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "spb-2026-11-13-ee3b96283d",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-13",
+      "time": "11:00",
+      "title": "Ежегодная научная конференция «XX Шиловские чтения»",
+      "venue": "Российская национальная библиотека",
+      "address": "Садовая ул., д. 18",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": true,
+      "categories": [
+        "конференция"
+      ],
+      "description": "Онлайн-трансляция конференции доступна по ссылке: rutube.ru",
+      "url": "https://nlr.ru/nlr_visit/event/3750",
+      "source": "Российская национальная библиотека — афиша",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-03",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-13-b920f54838",
@@ -62959,6 +63377,62 @@
       "sheet_synced_description": "Пушкинский музей представляет выставку «Фабрицио Плесси. Вертикальные моря», приуроченную к 10-летию работы музея с медиаискусством. Проект позволит зрителям впервые увидеть произведение итальянского художника, одного из “пионеров” медиа-арта Фабрицио Плесси, созданное специально для музея."
     },
     {
+      "id": "spb-2026-11-15-cc49137983",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-15",
+      "time": "08:11",
+      "title": "«Лето в Бадене». Показ фильма Антона Желнова",
+      "venue": "Музей «Полторы комнаты» Иосифа Бродского",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "«Лето в Бадене» — личная история человека, который в один момент рискует потерять все и решается кардинально изменить свою жизнь. Когда семья, карьера и репутация рассыпаются на глазах, главный герой идет ва-банк и пробует реализоваться в писательском творчестве. Вдохновением и путеводной звездой для него становится классик русской литературы Федор Михайлович Достоевский.",
+      "url": "https://brodsky.online/events/leto-v-badene-pokaz-filma-antona-zhelnova-/",
+      "source": "Полторы комнаты — музей Иосифа Бродского",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-03",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "spb-2026-11-15-020d3b2f98",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-15",
+      "time": "08:11",
+      "title": "Мероприятия",
+      "venue": "Музей «Полторы комнаты» Иосифа Бродского",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Оставляя свои контакты, вы даёте согласие на обработку персональных данных",
+      "url": "https://brodsky.online/events/",
+      "source": "Полторы комнаты — музей Иосифа Бродского",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-03",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "spb-2026-11-15-fec57ea5fd",
       "status": "new",
       "kind": "event",
@@ -64064,6 +64538,32 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "spb-2026-11-18-c2b3fa94f6",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-18",
+      "time": "18:00",
+      "title": "Практика коллажа \"Живая вода\"",
+      "venue": "Российская национальная библиотека",
+      "address": "Московский пр., д. 165, корп. 2",
+      "price": null,
+      "price_text": "",
+      "registration": true,
+      "categories": [],
+      "description": "Встреча пройдет в рамках выставки к 200-летию А.Н. Афанасьева \"Сказка, расказанная и записанная\". Мы поговорим о сказках, которые знаем с дества. Вспомним, что за пестрыми сюжетами скрывается устойчивая система ролей и создадим коллажи, в которых сказочные архетипы будут чиататься на новый лад. Автор и ведущий — коллажист А. Д. Кочнева",
+      "url": "https://nlr.ru/nlr_visit/event/3752",
+      "source": "Российская национальная библиотека — афиша",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-03",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "spb-2026-11-18-9641d9b16f",
@@ -65552,6 +66052,34 @@
       "instagram_include": false
     },
     {
+      "id": "spb-2026-11-20-d6c3449b67",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-20",
+      "time": "19:00",
+      "title": "Лекция \"Чудеса Русского Севера. Что можно увидеть и как путешествовать по Русскому Северу\"",
+      "venue": "Российская национальная библиотека",
+      "address": "Садовая ул., д. 18",
+      "price": null,
+      "price_text": "",
+      "registration": true,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Лектор: Александр Моисеев — фотограф, публицист, спикер. Автор книги \"Исчезающий Север\". Автор блогов о Русском Севере в соцсетях. Эксперт фестиваля геобрендов \"Земля Открытий\" (Национальная премия \"Серебряный Лучник\"), член Ассоциации \"Народные блогеры добра\". Организатор путешествий по России со смыслом и за красотой.",
+      "url": "https://nlr.ru/nlr_visit/event/3753",
+      "source": "Российская национальная библиотека — афиша",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-03",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "spb-2026-11-21-bae5bc9ca8",
       "status": "rejected",
       "kind": "event",
@@ -66418,6 +66946,34 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "moscow-2026-11-22-cff89fb1fc",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-22",
+      "time": "14:00",
+      "title": "Алексей Лука. Макет будущего",
+      "venue": "Центр Зотов",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "",
+      "url": "https://centrezotov.ru/events/uikend-dni-konstruktivizma/aleksej-luka-maket-budushhego/",
+      "source": "Центр Зотов — отдельные события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-03",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-22-bcdd1dc362",
@@ -67335,6 +67891,32 @@
       "reviewed_at": ""
     },
     {
+      "id": "spb-2026-11-25-5920084eb3",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-25",
+      "time": "18:00",
+      "title": "Игротека РНБ",
+      "venue": "Российская национальная библиотека",
+      "address": "пл. Островского, д. 1-3",
+      "price": null,
+      "price_text": "",
+      "registration": true,
+      "categories": [],
+      "description": "Мы открываем универсальное просветительское игровое пространство.",
+      "url": "https://nlr.ru/nlr_visit/event/3749",
+      "source": "Российская национальная библиотека — афиша",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-03",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-25-93c9532bcf",
       "status": "rejected",
       "kind": "event",
@@ -67388,7 +67970,7 @@
       "address": "",
       "price": 300,
       "price_text": "300 ₽",
-      "registration": null,
+      "registration": false,
       "categories": [
         "игра"
       ],
@@ -67401,6 +67983,41 @@
       "price_type": "paid",
       "availability_evidence": "",
       "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
+    },
+    {
+      "id": "moscow-2026-11-25-a62e84d83a",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-25",
+      "time": "19:30",
+      "title": "Обсуждение книги «Региональные центры русского авангарда (1918-1922)»",
+      "venue": "Центр Зотов",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": true,
+      "categories": [
+        "диалог"
+      ],
+      "description": "",
+      "url": "https://centrezotov.ru/events/obsuzhdenie-knigi-regionalnye-czentry-russkogo-avangarda-1918-1922/",
+      "source": "Центр Зотов — отдельные события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-03",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
       "availability": "unknown",
       "availability_checked_at": ""
     },
@@ -67928,6 +68545,34 @@
       "reviewed_at": ""
     },
     {
+      "id": "spb-2026-11-27-731d071742",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-27",
+      "time": "18:30",
+      "title": "Лекция «Почему диссонанс — это круто?» (Музыка первой половины ХХ века)",
+      "venue": "Российская национальная библиотека",
+      "address": "пл. Островского, д. 1-3",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Лектор — музыкальный теоретик, член Союза композиторов России Карина Нестерук . Дата начала регистрации — 6 ноября",
+      "url": "https://nlr.ru/nlr_visit/event/3717",
+      "source": "Российская национальная библиотека — афиша",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-03",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-28-0ed98de660",
       "status": "new",
       "kind": "event",
@@ -68115,7 +68760,7 @@
       "address": "",
       "price": 300,
       "price_text": "300 ₽",
-      "registration": null,
+      "registration": false,
       "categories": [
         "диалог"
       ],
@@ -68129,7 +68774,14 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-11-28-79d519d4e3",
@@ -68740,7 +69392,7 @@
       "city": "spb",
       "date": "2026-12-01",
       "time": "",
-      "title": "Внимание!",
+      "title": "Курс лекций-дискуссий",
       "venue": "Санкт-Петербургская академия художеств имени Ильи Репина",
       "address": "",
       "price": null,
@@ -69372,7 +70024,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "open-call"
       ],
@@ -69387,7 +70039,16 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     }
   ]
 }

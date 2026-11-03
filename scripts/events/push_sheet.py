@@ -12,7 +12,7 @@ DB=ROOT/"content/events.json"
 SHEET_ID=os.environ["EVENTS_SHEET_ID"]
 CREDS=json.loads(os.environ["GOOGLE_SERVICE_ACCOUNT_JSON"])
 RANGE="Events!A:AJ"
-HEADERS=[
+BASE_HEADERS=[
     "title","status","date","time","venue","city","kind","categories","description","url","source",
     "address","price_type","price_text","registration","availability","availability_checked_at",
     "review_reason","editor_note","discovered_at","reviewed_at","price","checked_at","days_ahead",
@@ -20,6 +20,10 @@ HEADERS=[
     "social_description","telegram_include","instagram_include","instagram_image","synced_title",
     "synced_row_json"
 ]
+# Editorial review order. Keep all machine fields, but display description,
+# price and schedule immediately after the title.
+FRONT_COLUMNS=("title","description","price_text","date","time")
+HEADERS=list(FRONT_COLUMNS)+[h for h in BASE_HEADERS if h not in FRONT_COLUMNS]
 
 def service():
     scopes=["https://www.googleapis.com/auth/spreadsheets"]
@@ -73,7 +77,7 @@ def row_for_event(e):
     telegram=e.get("telegram_include")
     instagram=e.get("instagram_include")
     snapshot=json.dumps(snapshot_from_event(e),ensure_ascii=False,separators=(",",":"))
-    return [
+    original_order = [
         e.get("title",""),e.get("status","new"),e.get("date",""),e.get("time",""),e.get("venue",""),
         e.get("city",""),e.get("kind","event"),categories_text,e.get("description",""),e.get("url",""),
         e.get("source",""),e.get("address",""),e.get("price_type","unknown"),e.get("price_text",""),
@@ -85,6 +89,8 @@ def row_for_event(e):
         telegram if telegram is not None else "",instagram if instagram is not None else "",
         e.get("instagram_image",""),e.get("title",""),snapshot
     ]
+    record=dict(zip(BASE_HEADERS,original_order))
+    return [record[column] for column in HEADERS]
 
 def main():
     db=json.loads(DB.read_text("utf-8"))
@@ -212,21 +218,21 @@ def main():
         "cell":{"userEnteredFormat":{"verticalAlignment":"TOP","wrapStrategy":"CLIP"}},"fields":"userEnteredFormat.verticalAlignment,userEnteredFormat.wrapStrategy"}},
       {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":0,"endColumnIndex":36}}},
       {"setBasicFilter":{"filter":{"range":{"sheetId":sheet_id,"startRowIndex":0,"startColumnIndex":0,"endColumnIndex":36}}}},
-      {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":1,"endColumnIndex":2},
+      {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":HEADERS.index("status"),"endColumnIndex":HEADERS.index("status")+1},
         "rule":{"condition":{"type":"ONE_OF_LIST","values":[{"userEnteredValue":x} for x in ["new","check","approved","rejected"]]},"strict":True,"showCustomUi":True}}},
-      {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":5,"endColumnIndex":6},
+      {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":HEADERS.index("city"),"endColumnIndex":HEADERS.index("city")+1},
         "rule":{"condition":{"type":"ONE_OF_LIST","values":[{"userEnteredValue":x} for x in ["moscow","spb","russia","international"]]},"strict":True,"showCustomUi":True}}},
-      {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":6,"endColumnIndex":7},
+      {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":HEADERS.index("kind"),"endColumnIndex":HEADERS.index("kind")+1},
         "rule":{"condition":{"type":"ONE_OF_LIST","values":[{"userEnteredValue":x} for x in ["event","exhibition","open_call"]]},"strict":True,"showCustomUi":True}}},
-      {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":12,"endColumnIndex":13},
+      {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":HEADERS.index("price_type"),"endColumnIndex":HEADERS.index("price_type")+1},
         "rule":{"condition":{"type":"ONE_OF_LIST","values":[{"userEnteredValue":x} for x in ["free","paid","unknown"]]},"strict":True,"showCustomUi":True}}},
-      {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":14,"endColumnIndex":15},
+      {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":HEADERS.index("registration"),"endColumnIndex":HEADERS.index("registration")+1},
         "rule":{"condition":{"type":"BOOLEAN"},"strict":True,"showCustomUi":True}}},
-      {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":15,"endColumnIndex":16},
+      {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":HEADERS.index("availability"),"endColumnIndex":HEADERS.index("availability")+1},
         "rule":{"condition":{"type":"ONE_OF_LIST","values":[{"userEnteredValue":x} for x in ["available","sold_out","postponed","cancelled","unknown"]]},"strict":True,"showCustomUi":True}}},
-      {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":31,"endColumnIndex":33},
+      {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":HEADERS.index("telegram_include"),"endColumnIndex":HEADERS.index("instagram_include")+1},
         "rule":{"condition":{"type":"BOOLEAN"},"strict":True,"showCustomUi":True}}},
-      {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":28,"endColumnIndex":29},
+      {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":HEADERS.index("social_priority"),"endColumnIndex":HEADERS.index("social_priority")+1},
         "rule":{"condition":{"type":"NUMBER_BETWEEN","values":[{"userEnteredValue":"0"},{"userEnteredValue":"5"}]},"strict":True,"showCustomUi":True}}},
       {"updateDimensionProperties":{"range":{"sheetId":sheet_id,"dimension":"COLUMNS","startIndex":24,"endIndex":28},
         "properties":{"hiddenByUser":True},"fields":"hiddenByUser"}},

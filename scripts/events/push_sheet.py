@@ -212,10 +212,12 @@ def main():
     )
 
     requests=[
-      {"updateDimensionProperties":{"range":{"sheetId":sheet_id,"dimension":"ROWS","startIndex":1,"endIndex":max(2,len(rows))},
-        "properties":{"pixelSize":96},"fields":"pixelSize"}},
+      # Allow descriptions to use as many lines as necessary. Avoid a
+      # fixed pixel height, which hides text on narrow/mobile screens.
       {"repeatCell":{"range":{"sheetId":sheet_id,"startRowIndex":1,"endRowIndex":max(2,len(rows)),"startColumnIndex":0,"endColumnIndex":36},
-        "cell":{"userEnteredFormat":{"verticalAlignment":"TOP","wrapStrategy":"CLIP"}},"fields":"userEnteredFormat.verticalAlignment,userEnteredFormat.wrapStrategy"}},
+        "cell":{"userEnteredFormat":{"verticalAlignment":"TOP"}},"fields":"userEnteredFormat.verticalAlignment"}},
+      {"repeatCell":{"range":{"sheetId":sheet_id,"startRowIndex":1,"endRowIndex":max(2,len(rows)),"startColumnIndex":0,"endColumnIndex":3},
+        "cell":{"userEnteredFormat":{"wrapStrategy":"WRAP"}},"fields":"userEnteredFormat.wrapStrategy"}},
       {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":0,"endColumnIndex":36}}},
       {"setBasicFilter":{"filter":{"range":{"sheetId":sheet_id,"startRowIndex":0,"startColumnIndex":0,"endColumnIndex":36}}}},
       {"setDataValidation":{"range":{"sheetId":sheet_id,"startRowIndex":1,"startColumnIndex":HEADERS.index("status"),"endColumnIndex":HEADERS.index("status")+1},
@@ -239,6 +241,19 @@ def main():
       {"updateDimensionProperties":{"range":{"sheetId":sheet_id,"dimension":"COLUMNS","startIndex":34,"endIndex":36},
         "properties":{"hiddenByUser":True},"fields":"hiddenByUser"}}
     ]
+    # Stable readable widths and content-based heights after every push,
+    # so manual formatting is never lost during a scheduled sync.
+    for column, width in (("title", 310), ("description", 440),
+                          ("price_text", 180), ("date", 120), ("time", 95)):
+        index=HEADERS.index(column)
+        requests.append({"updateDimensionProperties":{
+            "range":{"sheetId":sheet_id,"dimension":"COLUMNS",
+                     "startIndex":index,"endIndex":index+1},
+            "properties":{"pixelSize":width},"fields":"pixelSize"}})
+    if len(rows)>1:
+        requests.append({"autoResizeDimensions":{
+            "dimensions":{"sheetId":sheet_id,"dimension":"ROWS",
+                          "startIndex":1,"endIndex":len(rows)}}})
     svc.spreadsheets().batchUpdate(spreadsheetId=SHEET_ID,body={"requests":requests}).execute()
     print(
         f"Preserved editor fields for {merged} rows; detected {changed_fields} manual field edits; "

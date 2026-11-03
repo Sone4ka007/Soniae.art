@@ -38291,7 +38291,7 @@
       "reviewed_at": "2026-10-17",
       "availability": "unknown",
       "availability_checked_at": "",
-      "registration": false,
+      "registration": null,
       "price": null,
       "price_text": "",
       "price_type": "paid",
@@ -38317,7 +38317,7 @@
         "status": "approved",
         "telegram_include": false,
         "instagram_include": false,
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -41054,7 +41054,7 @@
       "address": "1-й Голутвинский переулок, 16, стр. 1",
       "price": 850,
       "price_text": "850 ₽; льготный — 650 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -41081,7 +41081,7 @@
       "time_evidence": "24 октября 2026 14:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
       "editor_overrides": {
-        "registration": false
+        "registration": null
       }
     },
     {
@@ -49427,7 +49427,7 @@
       "address": "Лаврушинский переулок, 12",
       "price": 650,
       "price_text": "650 ₽; онлайн — 700 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -49444,7 +49444,7 @@
         "telegram_include": false,
         "instagram_include": false,
         "status": "approved",
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -51674,14 +51674,16 @@
       "price": 0,
       "price_text": "",
       "registration": false,
-      "categories": [],
+      "categories": [
+        "выставка"
+      ],
       "description": "На метро Музей AZ находится между станциями метро «Маяковская» и «Белорусская» (кольцевая). Мы рекомендуем идти в Музей от станции «Маяковская». Вам нужен Выход №1 на 1-я Тверская-Ямская улица, 2-я Тверская-Ямская улица.",
       "url": "https://museum-az.com/event/territoriya-svobody-nonkonformisty-v-taruse/",
       "source": "Музей AZ — выставки и события",
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-10-20",
-      "price_type": "paid",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-10-25",
       "editor_overrides": {
@@ -53058,6 +53060,35 @@
       "reviewed_at": ""
     },
     {
+      "id": "spb-2026-11-03-f81b776c22",
+      "status": "new",
+      "kind": "exhibition",
+      "city": "spb",
+      "date": "2026-11-03",
+      "time": "",
+      "title": "Военно-исторический музей открывает выставку о форме национальных соединений Российской империи",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "выставка"
+      ],
+      "description": "Правообладатель: пресс-служба Военно-исторического музея артиллерии, инженерных войск и войск связи. Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами!",
+      "url": "https://spbcult.ru/news/anonsy/voenno-istoricheskiy-muzey-otkryvaet-vystavku-o-forme-natsionalnykh-soedineniy-rossiyskoy-imperii/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-03",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "start_date": "2026-11-03"
+    },
+    {
       "id": "moscow-2026-11-03-6501f99a5e",
       "status": "new",
       "kind": "event",
@@ -53216,7 +53247,7 @@
       "title": "Коллективная выставка Арт-шаффл 43.0",
       "venue": "ЦСИ Винзавод",
       "address": "",
-      "price": 0,
+      "price": 1500,
       "price_text": "12000 ₽",
       "registration": null,
       "categories": [
@@ -53230,7 +53261,7 @@
       "discovered_at": "2026-11-03",
       "start_date": "2026-11-03",
       "end_date": "2026-11-15",
-      "price_type": "free",
+      "price_type": "paid",
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
@@ -53514,7 +53545,10 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": "",
+      "start_date": "2026-11-03"
     },
     {
       "id": "spb-2026-11-03-8465a80af6",
@@ -53734,6 +53768,35 @@
       "availability_checked_at": "",
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "spb-2026-11-03-69232a98c8",
+      "status": "new",
+      "kind": "exhibition",
+      "city": "spb",
+      "date": "2026-11-03",
+      "time": "",
+      "title": "Эрмитаж открывает ноябрь выставками о Риме, моде и истории транспорта",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "выставка"
+      ],
+      "description": "Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами! Также вы можете отправить статью в социальной сети или мессенджере Если у вас есть чем поделиться с нашими читателями, вы можете предложить свою статью.",
+      "url": "https://spbcult.ru/news/anonsy/ermitazh-otkryvaet-noyabr-vystavkami-o-rime-mode-i-istorii-transporta/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-03",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "start_date": "2026-11-03"
     },
     {
       "id": "spb-2026-11-03-3497c8964e",
@@ -55949,7 +56012,7 @@
       "address": "",
       "price_type": "free",
       "price_text": "бесплатно по регистрации",
-      "registration": false,
+      "registration": true,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -57606,12 +57669,12 @@
     },
     {
       "id": "moscow-2026-11-06-815d608a2e",
-      "status": "check",
+      "status": "new",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-06",
       "time": "19:00",
-      "title": "Фото-ревью",
+      "title": "Юрий Пальмин и Ольга Алексеенко. Фото-ревью",
       "venue": "Центр Зотов",
       "address": "",
       "price": null,
@@ -57624,7 +57687,7 @@
       "url": "https://centrezotov.ru/events/foto-revyu-2/",
       "source": "Центр Зотов — отдельные события",
       "checked_at": "",
-      "review_reason": "possible_duplicate",
+      "review_reason": "",
       "discovered_at": "2026-10-30",
       "price_type": "paid",
       "availability_evidence": "",
@@ -57961,7 +58024,7 @@
       "address": "",
       "price_type": "free",
       "price_text": "бесплатно по регистрации",
-      "registration": false,
+      "registration": true,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -62050,9 +62113,7 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_note": "",
-      "reviewed_at": ""
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-13-b920f54838",
@@ -64618,9 +64679,7 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_note": "",
-      "reviewed_at": ""
+      "availability_checked_at": ""
     },
     {
       "id": "spb-2026-11-18-9641d9b16f",
@@ -66135,14 +66194,12 @@
       "ticket_required": false,
       "availability": "unknown",
       "availability_checked_at": "",
+      "telegram_include": false,
+      "instagram_include": false,
       "editor_overrides": {
         "telegram_include": false,
         "instagram_include": false
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": ""
+      }
     },
     {
       "id": "spb-2026-11-21-bae5bc9ca8",
@@ -67067,15 +67124,15 @@
       "ticket_required": true,
       "availability": "unknown",
       "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": "",
+      "telegram_include": false,
+      "instagram_include": false,
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
         "instagram_include": false
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": ""
+      }
     },
     {
       "id": "moscow-2026-11-22-bcdd1dc362",
@@ -68016,9 +68073,7 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_note": "",
-      "reviewed_at": ""
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-25-93c9532bcf",
@@ -68124,14 +68179,14 @@
       "ticket_required": true,
       "availability": "unknown",
       "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": "",
+      "telegram_include": false,
+      "instagram_include": false,
       "editor_overrides": {
         "telegram_include": false,
         "instagram_include": false
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": ""
+      }
     },
     {
       "id": "moscow-2026-11-26-8159f81460",
@@ -68683,15 +68738,13 @@
       "ticket_required": false,
       "availability": "unknown",
       "availability_checked_at": "",
+      "telegram_include": false,
+      "instagram_include": false,
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
         "instagram_include": false
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": ""
+      }
     },
     {
       "id": "moscow-2026-11-28-0ed98de660",

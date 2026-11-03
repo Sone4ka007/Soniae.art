@@ -38291,7 +38291,7 @@
       "reviewed_at": "2026-10-17",
       "availability": "unknown",
       "availability_checked_at": "",
-      "registration": null,
+      "registration": false,
       "price": null,
       "price_text": "",
       "price_type": "paid",
@@ -38317,7 +38317,7 @@
         "status": "approved",
         "telegram_include": false,
         "instagram_include": false,
-        "registration": null
+        "registration": false
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -41054,7 +41054,7 @@
       "address": "1-й Голутвинский переулок, 16, стр. 1",
       "price": 850,
       "price_text": "850 ₽; льготный — 650 ₽",
-      "registration": null,
+      "registration": false,
       "categories": [
         "лекция"
       ],
@@ -41081,7 +41081,7 @@
       "time_evidence": "24 октября 2026 14:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
       "editor_overrides": {
-        "registration": null
+        "registration": false
       }
     },
     {
@@ -49427,7 +49427,7 @@
       "address": "Лаврушинский переулок, 12",
       "price": 650,
       "price_text": "650 ₽; онлайн — 700 ₽",
-      "registration": null,
+      "registration": false,
       "categories": [
         "лекция"
       ],
@@ -49444,7 +49444,7 @@
         "telegram_include": false,
         "instagram_include": false,
         "status": "approved",
-        "registration": null
+        "registration": false
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -55024,7 +55024,7 @@
     },
     {
       "title": "Онлайн-лекция «Ритуальная скульптура нанайцев: пластика и сакральные смыслы»",
-      "status": "check",
+      "status": "approved",
       "date": "2026-11-04",
       "time": "",
       "venue": "Русский музей / онлайн",
@@ -55047,7 +55047,7 @@
       "review_reason": "manual_verification_required",
       "editor_note": "Ручная проверка афиш 01.11.2026. Не публиковать до одобрения.",
       "discovered_at": "2026-11-01",
-      "reviewed_at": "",
+      "reviewed_at": "2026-11-03",
       "price": null,
       "checked_at": "",
       "social_priority": null,
@@ -55062,12 +55062,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       }
     },
     {
       "title": "Презентация цифрового проекта к 150-летию Ивана Билибина",
-      "status": "check",
+      "status": "approved",
       "date": "2026-11-04",
       "time": "",
       "venue": "Русский музей / онлайн",
@@ -55090,7 +55091,7 @@
       "review_reason": "manual_verification_required",
       "editor_note": "Ручная проверка афиш 01.11.2026. Не публиковать до одобрения.",
       "discovered_at": "2026-11-01",
-      "reviewed_at": "",
+      "reviewed_at": "2026-11-03",
       "price": null,
       "checked_at": "",
       "social_priority": null,
@@ -55105,7 +55106,8 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       }
     },
     {
@@ -57461,7 +57463,7 @@
     },
     {
       "id": "spb-2026-11-06-45c52693c1",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-11-06",
@@ -57489,10 +57491,12 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "rejected"
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "reviewed_at": "2026-11-03"
     },
     {
       "id": "moscow-2026-11-06-51c2626b24",
@@ -58759,7 +58763,7 @@
     },
     {
       "id": "spb-2026-11-07-e83aa45bd5",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "spb",
       "date": "2026-11-07",
@@ -58787,10 +58791,12 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "reviewed_at": "2026-11-03"
     },
     {
       "id": "moscow-2026-11-07-96c8d83947",
@@ -59088,7 +59094,7 @@
     },
     {
       "id": "spb-2026-11-08-e67cd97edb",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-11-08",
@@ -59114,10 +59120,12 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "rejected"
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "reviewed_at": "2026-11-03"
     },
     {
       "id": "spb-2026-11-08-e79320720d",
@@ -64099,7 +64107,7 @@
     },
     {
       "id": "moscow-2026-11-16-5f73160fd7",
-      "status": "check",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-16",
@@ -64128,11 +64136,12 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       },
       "telegram_include": false,
       "instagram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-11-03"
     },
     {
       "id": "international-2026-11-17-bfeafeaa9c",
@@ -66216,7 +66225,7 @@
     },
     {
       "id": "spb-2026-11-20-d6c3449b67",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "spb",
       "date": "2026-11-20",
@@ -66245,8 +66254,10 @@
       "instagram_include": false,
       "editor_overrides": {
         "telegram_include": false,
-        "instagram_include": false
-      }
+        "instagram_include": false,
+        "status": "approved"
+      },
+      "reviewed_at": "2026-11-03"
     },
     {
       "id": "spb-2026-11-21-bae5bc9ca8",
@@ -66467,7 +66478,7 @@
     },
     {
       "id": "moscow-2026-11-21-6450c4e5e8",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-21",
@@ -66494,16 +66505,17 @@
       "availability_checked_at": "",
       "editor_overrides": {
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-11-03"
     },
     {
       "id": "moscow-2026-11-21-93f181f099",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-21",
@@ -66530,12 +66542,13 @@
       "availability_checked_at": "",
       "editor_overrides": {
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "rejected"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-11-03"
     },
     {
       "id": "spb-2026-11-21-292db8036a",
@@ -66611,7 +66624,7 @@
     },
     {
       "id": "moscow-2026-11-21-530b6ef14b",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-21",
@@ -66639,10 +66652,12 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "reviewed_at": "2026-11-03"
     },
     {
       "id": "international-2026-11-22-74e7820a46",
@@ -67119,7 +67134,7 @@
     },
     {
       "id": "moscow-2026-11-22-4a0fbff4de",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-22",
@@ -67146,16 +67161,17 @@
       "availability_checked_at": "",
       "editor_overrides": {
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "rejected"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-11-03"
     },
     {
       "id": "moscow-2026-11-22-cff89fb1fc",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-22",
@@ -67181,13 +67197,14 @@
       "availability": "unknown",
       "availability_checked_at": "",
       "editor_note": "",
-      "reviewed_at": "",
+      "reviewed_at": "2026-11-03",
       "telegram_include": false,
       "instagram_include": false,
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "rejected"
       }
     },
     {
@@ -68176,7 +68193,7 @@
     },
     {
       "id": "spb-2026-11-25-b19eac4576",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "spb",
       "date": "2026-11-25",
@@ -68204,14 +68221,16 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "reviewed_at": "2026-11-03"
     },
     {
       "id": "moscow-2026-11-25-a62e84d83a",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-25",
@@ -68237,12 +68256,13 @@
       "availability": "unknown",
       "availability_checked_at": "",
       "editor_note": "",
-      "reviewed_at": "",
+      "reviewed_at": "2026-11-03",
       "telegram_include": false,
       "instagram_include": false,
       "editor_overrides": {
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       }
     },
     {
@@ -68772,7 +68792,7 @@
     },
     {
       "id": "spb-2026-11-27-731d071742",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-11-27",
@@ -68802,8 +68822,10 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
-      }
+        "instagram_include": false,
+        "status": "rejected"
+      },
+      "reviewed_at": "2026-11-03"
     },
     {
       "id": "moscow-2026-11-28-0ed98de660",
@@ -68984,7 +69006,7 @@
     },
     {
       "id": "spb-2026-11-28-60f91b51a1",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "spb",
       "date": "2026-11-28",
@@ -69012,10 +69034,12 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "reviewed_at": "2026-11-03"
     },
     {
       "id": "moscow-2026-11-28-79d519d4e3",
@@ -69757,7 +69781,7 @@
     },
     {
       "id": "spb-2026-12-11-556173ab41",
-      "status": "new",
+      "status": "approved",
       "kind": "exhibition",
       "city": "spb",
       "date": "2026-12-11",
@@ -69786,12 +69810,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-11-03"
     },
     {
       "id": "russia-2026-12-13-3a942b4abf",
@@ -70254,7 +70279,7 @@
     },
     {
       "id": "international-2027-02-01-4793b5ba65",
-      "status": "check",
+      "status": "rejected",
       "kind": "open_call",
       "city": "international",
       "date": "2027-02-01",
@@ -70283,12 +70308,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "rejected"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-11-03"
     }
   ]
 }

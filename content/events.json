@@ -54786,7 +54786,7 @@
     },
     {
       "id": "moscow-2026-11-04-2f0086fb70",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-04",
@@ -54813,12 +54813,13 @@
       "availability_checked_at": "2026-11-04",
       "editor_overrides": {
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "rejected"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-11-04"
     },
     {
       "id": "spb-2026-11-04-8814ce216b",
@@ -54894,7 +54895,7 @@
     },
     {
       "id": "moscow-2026-11-04-c4ac41cb71",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-04",
@@ -54921,12 +54922,13 @@
       "availability_checked_at": "2026-11-04",
       "editor_overrides": {
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "rejected"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-11-04"
     },
     {
       "id": "moscow-2026-11-04-b09c1086bc",
@@ -59884,7 +59886,7 @@
     },
     {
       "id": "moscow-2026-11-10-5bad11a84a",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-10",
@@ -59905,7 +59907,7 @@
       "review_reason": "",
       "discovered_at": "2026-11-03",
       "editor_note": "",
-      "reviewed_at": "",
+      "reviewed_at": "2026-11-04",
       "price_type": "paid",
       "availability_evidence": "",
       "ticket_required": true,
@@ -59913,7 +59915,8 @@
       "availability_checked_at": "",
       "editor_overrides": {
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "rejected"
       },
       "telegram_include": false,
       "instagram_include": false
@@ -60311,7 +60314,7 @@
     },
     {
       "id": "moscow-2026-11-10-66203186d6",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-10",
@@ -60339,12 +60342,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "rejected"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-11-04"
     },
     {
       "id": "moscow-2026-11-10-3d75ff66fc",
@@ -61402,7 +61406,7 @@
     },
     {
       "id": "moscow-2026-11-12-6bae5e5bb0",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-12",
@@ -61431,12 +61435,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-11-04"
     },
     {
       "id": "spb-2026-11-12-6274d9b2ae",
@@ -62825,7 +62830,7 @@
     },
     {
       "id": "moscow-2026-11-14-06df8f7e16",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-14",
@@ -62854,12 +62859,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-11-04"
     },
     {
       "id": "spb-2026-11-14-d2dba569b2",

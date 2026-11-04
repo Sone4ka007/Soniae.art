@@ -23,7 +23,7 @@
     registration: 'all', availability: 'all',
     dateFrom: '', dateTo: '', datePreset: ''
   };
-  const cityNames = { moscow: 'МОСКВА', spb: 'ПЕТЕРБУРГ', russia: 'РОССИЯ', international: 'МЕЖДУНАРОДНЫЙ' };
+  const cityNames = { moscow: 'МОСКВА', spb: 'ПЕТЕРБУРГ', russia: 'РОССИЯ', international: 'МЕЖДУНАРОДНЫЙ', unknown: 'ГОРОД УТОЧНЯЕТСЯ' };
   const categoryNames = {
     lecture:'ЛЕКЦИЯ', exhibition:'ВЫСТАВКА', tour:'ЭКСКУРСИЯ',
     workshop:'ВОРКШОП', 'artist-talk':'ARTIST TALK', photo:'ФОТОГРАФИЯ',

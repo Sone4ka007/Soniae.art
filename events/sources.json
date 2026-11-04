@@ -1493,6 +1493,15 @@
       "fallback_urls": [
         "https://t.me/s/birospb9"
       ]
+    },
+    {
+      "name": "Шкатулка — наброски",
+      "city": "unknown",
+      "url": "https://t.me/s/shkatuuulka",
+      "venue": "Шкатулка",
+      "adapter": "sketch_telegram",
+      "kind": "event",
+      "source_group": "sketching"
     }
   ]
 }

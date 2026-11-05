@@ -55088,7 +55088,7 @@
     },
     {
       "id": "spb-2026-11-05-75bc43fdb2",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "spb",
       "date": "2026-11-05",
@@ -55098,7 +55098,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "мастер-класс"
       ],
@@ -55112,7 +55112,16 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "status": "approved",
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "reviewed_at": "2026-11-05"
     },
     {
       "id": "moscow-2026-11-05-b485ac3446",
@@ -55345,7 +55354,7 @@
     },
     {
       "id": "spb-2026-11-05-6073e1873a",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-11-05",
@@ -55355,7 +55364,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "мастер-класс"
       ],
@@ -55369,7 +55378,16 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "status": "rejected",
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "reviewed_at": "2026-11-05"
     },
     {
       "id": "moscow-2026-11-05-84b65b4d8b",
@@ -55967,7 +55985,7 @@
     },
     {
       "id": "moscow-2026-11-05-5fd5a8f956",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-05",
@@ -55994,12 +56012,13 @@
       "availability_checked_at": "2026-11-05",
       "editor_overrides": {
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "rejected"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-11-05"
     },
     {
       "id": "spb-2026-11-05-a7d96a01af",
@@ -64330,7 +64349,7 @@
     },
     {
       "id": "spb-2026-11-16-780d1ce5b6",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-11-16",
@@ -64358,12 +64377,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "rejected"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-11-05"
     },
     {
       "id": "international-2026-11-17-bfeafeaa9c",
@@ -64639,7 +64659,7 @@
     },
     {
       "id": "moscow-2026-11-17-b9a5fe1f3d",
-      "status": "check",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-17",
@@ -64668,11 +64688,12 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       },
       "telegram_include": false,
       "instagram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-11-05"
     },
     {
       "id": "spb-2026-11-17-d70f2c6fd6",
@@ -64930,7 +64951,7 @@
     },
     {
       "id": "moscow-2026-11-18-d4ed4734f6",
-      "status": "check",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-18",
@@ -64959,11 +64980,12 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       },
       "telegram_include": false,
       "instagram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-11-05"
     },
     {
       "id": "moscow-2026-11-18-9dfc8f92b3",
@@ -65731,7 +65753,7 @@
     },
     {
       "id": "spb-2026-11-19-d37cec3b3f",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "spb",
       "date": "2026-11-19",
@@ -65757,12 +65779,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-11-05"
     },
     {
       "id": "moscow-2026-11-19-d74b62747b",
@@ -68702,7 +68725,7 @@
     },
     {
       "id": "moscow-2026-11-26-14949d1a3e",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-26",
@@ -68712,7 +68735,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [],
       "description": "26 ноября в ДК «Альфа-Кристалл» на территории исторического завода «Кристалл» состоится DAFES AWARDS SHOW 2026 — церемония награждения международной премии для молодых талантов и признанных профессионалов, создающих будущее креативных индустрий. В этом году событие пройдёт под темой «Интеллектуальное искусство» и превратится в масштабное шоу из пяти самостоятельных визуальных перформансов. Каждый из них посвящён одному из направлений премии: Design, Art, Fashion, Education и Sound. 26 ноября 2026",
       "url": "https://design.hse.ru/news/7372",
@@ -68724,7 +68747,16 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "status": "approved",
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "reviewed_at": "2026-11-05"
     },
     {
       "id": "moscow-2026-11-26-19606f2101",
@@ -69592,7 +69624,7 @@
     },
     {
       "id": "russia-2026-11-29-31f0db3e3d",
-      "status": "check",
+      "status": "approved",
       "kind": "open_call",
       "city": "russia",
       "date": "2026-11-29",
@@ -69620,12 +69652,13 @@
       "availability_checked_at": "",
       "editor_overrides": {
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-11-05"
     },
     {
       "id": "moscow-2026-11-29-0b6f0e020e",
@@ -69883,7 +69916,7 @@
     },
     {
       "id": "russia-2026-11-30-9f804df756",
-      "status": "check",
+      "status": "approved",
       "kind": "open_call",
       "city": "russia",
       "date": "2026-11-30",
@@ -69912,12 +69945,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-11-05"
     },
     {
       "id": "international-2026-11-30-fb1c93c537",
@@ -70234,7 +70268,7 @@
     },
     {
       "id": "international-2026-12-01-3fe0cab2de",
-      "status": "check",
+      "status": "rejected",
       "kind": "open_call",
       "city": "international",
       "date": "2026-12-01",
@@ -70263,12 +70297,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "rejected"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-11-05"
     },
     {
       "id": "spb-2026-12-01-3eb09fab54",
@@ -70367,7 +70402,7 @@
     },
     {
       "id": "moscow-2026-12-05-90c6942ded",
-      "status": "check",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-12-05",
@@ -70377,7 +70412,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [],
       "description": "",
       "url": "https://www.rusimp.su/events/kuratorskaya-lekciya-vosstanovlenie-petergofa-posle-velikoy-otechestvennoy-voyny",
@@ -70389,7 +70424,16 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "status": "approved",
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "reviewed_at": "2026-11-05"
     },
     {
       "id": "moscow-2026-12-05-55d6b4377e",
@@ -70461,7 +70505,7 @@
     },
     {
       "id": "spb-2026-12-05-b09f3e5a19",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "spb",
       "date": "2026-12-05",
@@ -70471,7 +70515,7 @@
       "address": "",
       "price": 300,
       "price_text": "300 ₽",
-      "registration": null,
+      "registration": false,
       "categories": [
         "диалог"
       ],
@@ -70485,7 +70529,16 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "status": "approved",
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "reviewed_at": "2026-11-05"
     },
     {
       "id": "spb-2026-12-11-d7eb167bdb",
@@ -70641,7 +70694,7 @@
     },
     {
       "id": "international-2026-12-14-a8559c5d8a",
-      "status": "check",
+      "status": "rejected",
       "kind": "open_call",
       "city": "international",
       "date": "2026-12-14",
@@ -70670,12 +70723,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "rejected"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-11-05"
     },
     {
       "id": "international-2026-12-15-f95cc06d12",
@@ -71048,7 +71102,7 @@
     },
     {
       "id": "international-2027-01-10-42819ba9a4",
-      "status": "check",
+      "status": "rejected",
       "kind": "open_call",
       "city": "international",
       "date": "2027-01-10",
@@ -71077,12 +71131,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "rejected"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-11-05"
     },
     {
       "id": "international-2027-01-12-fdba99f20b",

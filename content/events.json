@@ -56091,7 +56091,7 @@
     },
     {
       "id": "spb-2026-11-06-d546451783",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "spb",
       "date": "2026-11-06",
@@ -56101,7 +56101,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "мастер-класс"
       ],
@@ -56115,7 +56115,16 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "status": "approved",
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "reviewed_at": "2026-11-06"
     },
     {
       "id": "spb-2026-11-06-c943e3e561",
@@ -57266,7 +57275,7 @@
     },
     {
       "id": "moscow-2026-11-06-14ceeddb18",
-      "status": "check",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-06",
@@ -57294,16 +57303,17 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-11-06"
     },
     {
       "id": "moscow-2026-11-06-ba877cfd02",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-06",
@@ -57331,12 +57341,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "rejected"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-11-06"
     },
     {
       "id": "international-2026-11-07-e6acac2220",
@@ -60394,7 +60405,7 @@
     },
     {
       "id": "spb-2026-11-10-d840639c9f",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-11-10",
@@ -60418,7 +60429,15 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "status": "rejected",
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "reviewed_at": "2026-11-06"
     },
     {
       "id": "spb-2026-11-10-6e7ac94eb1",
@@ -61246,7 +61265,7 @@
     },
     {
       "id": "spb-2026-11-11-a72cb3d2ce",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "spb",
       "date": "2026-11-11",
@@ -61273,12 +61292,13 @@
       "availability_checked_at": "",
       "editor_overrides": {
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-11-06"
     },
     {
       "id": "spb-2026-11-11-e04979f457",
@@ -61501,7 +61521,7 @@
     },
     {
       "id": "moscow-2026-11-12-cfd2a0aa01",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-12",
@@ -61529,12 +61549,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "rejected"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-11-06"
     },
     {
       "id": "moscow-2026-11-12-05c67d7f07",
@@ -61696,7 +61717,7 @@
     },
     {
       "id": "moscow-2026-11-12-8a775018e6",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-12",
@@ -61724,12 +61745,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "rejected"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-11-06"
     },
     {
       "id": "moscow-2026-11-12-734741274c",
@@ -61867,7 +61889,7 @@
     },
     {
       "id": "moscow-2026-11-12-98f4534d25",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-12",
@@ -61895,12 +61917,13 @@
       "availability_checked_at": "",
       "editor_overrides": {
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "rejected"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-11-06"
     },
     {
       "id": "moscow-2026-11-12-6bae5e5bb0",
@@ -62129,7 +62152,7 @@
     },
     {
       "id": "spb-2026-11-12-45f610f9e6",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "spb",
       "date": "2026-11-12",
@@ -62139,7 +62162,7 @@
       "address": "",
       "price": 0,
       "price_text": "Бесплатно",
-      "registration": null,
+      "registration": false,
       "categories": [
         "лекция"
       ],
@@ -62153,7 +62176,16 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "status": "approved",
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "reviewed_at": "2026-11-06"
     },
     {
       "id": "moscow-2026-11-12-d74b62747b",
@@ -62195,7 +62227,7 @@
     },
     {
       "id": "moscow-2026-11-12-3643e2a22e",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-12",
@@ -62223,12 +62255,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "rejected"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-11-06"
     },
     {
       "id": "international-2026-11-13-06d7a43dff",
@@ -62646,7 +62679,7 @@
     },
     {
       "id": "moscow-2026-11-13-98f4534d25",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-13",
@@ -62674,12 +62707,13 @@
       "availability_checked_at": "",
       "editor_overrides": {
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "rejected"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-11-06"
     },
     {
       "id": "moscow-2026-11-13-aa8503e63c",
@@ -62906,7 +62940,7 @@
     },
     {
       "id": "moscow-2026-11-13-64ade2fb93",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-13",
@@ -62934,12 +62968,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-11-06"
     },
     {
       "id": "spb-2026-11-13-aecd2362ef",
@@ -63389,7 +63424,7 @@
     },
     {
       "id": "moscow-2026-11-14-98f4534d25",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-14",
@@ -63417,12 +63452,13 @@
       "availability_checked_at": "",
       "editor_overrides": {
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "rejected"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-11-06"
     },
     {
       "id": "spb-2026-11-14-e731fc22ee",
@@ -63601,7 +63637,7 @@
     },
     {
       "id": "moscow-2026-11-14-00c85a88e1",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-14",
@@ -63630,12 +63666,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "rejected"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-11-06"
     },
     {
       "id": "moscow-2026-11-14-64ecc1a02b",
@@ -64311,7 +64348,7 @@
     },
     {
       "id": "moscow-2026-11-15-dc4f5eed02",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-15",
@@ -64340,12 +64377,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-11-06"
     },
     {
       "id": "moscow-2026-11-15-bd37e6f9c2",
@@ -64498,7 +64536,7 @@
     },
     {
       "id": "moscow-2026-11-15-98f4534d25",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-15",
@@ -64526,12 +64564,13 @@
       "availability_checked_at": "",
       "editor_overrides": {
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-11-06"
     },
     {
       "id": "russia-2026-11-16-b6f0d00beb",
@@ -65277,7 +65316,7 @@
     },
     {
       "id": "spb-2026-11-17-b07ae364e9",
-      "status": "check",
+      "status": "approved",
       "kind": "event",
       "city": "spb",
       "date": "2026-11-17",
@@ -65287,7 +65326,7 @@
       "address": "",
       "price": 0,
       "price_text": "Бесплатно",
-      "registration": null,
+      "registration": false,
       "categories": [],
       "description": "Клуб «Параскева» приглашает всех интересующихся традиционными культурами принять участие в программе клуба «Этношкола. Традиционные ремесла» по направлениям: Традиционный народный костюм, Традиционная народная вышивка, Плетение и ткачество поясов, Ткачество на ткацком стане, Лоскутное шитье, Традиционная кукла, Традиционное узорное вязание, Ажурное вязание, Кружевоплетение (коклюшки), Ковроткачество, Прядение, Традиционные народные украшения. В процессе обучения участники курса изучают примеры традиционного ковроткачества, изучают технологию изготовления ковров, осваивают техники.",
       "url": "https://t.me/omasterskie/1966",
@@ -65299,7 +65338,16 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "status": "approved",
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "reviewed_at": "2026-11-06"
     },
     {
       "id": "moscow-2026-11-17-b9a5fe1f3d",
@@ -65792,7 +65840,7 @@
     },
     {
       "id": "spb-2026-11-18-0ed59cb5cb",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "spb",
       "date": "2026-11-18",
@@ -65820,12 +65868,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-11-06"
     },
     {
       "id": "moscow-2026-11-01-12be1ec556",
@@ -66208,7 +66257,7 @@
     },
     {
       "id": "moscow-2026-11-19-b485ac3446",
-      "status": "check",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-19",
@@ -66237,11 +66286,12 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       },
       "telegram_include": false,
       "instagram_include": false,
-      "reviewed_at": ""
+      "reviewed_at": "2026-11-06"
     },
     {
       "id": "moscow-2026-11-14-65ab0155ea",
@@ -66535,7 +66585,7 @@
     },
     {
       "id": "moscow-2026-11-19-ec5ff63d75",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-19",
@@ -66562,12 +66612,13 @@
       "availability_checked_at": "",
       "editor_overrides": {
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-11-06"
     },
     {
       "id": "moscow-2026-11-19-d74b62747b",
@@ -67606,7 +67657,7 @@
     },
     {
       "id": "moscow-2026-11-21-96618547ab",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-21",
@@ -67616,7 +67667,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "мастер-класс"
       ],
@@ -67630,7 +67681,16 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "status": "rejected",
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "reviewed_at": "2026-11-06"
     },
     {
       "id": "moscow-2026-11-21-fa57738587",
@@ -67743,7 +67803,7 @@
     },
     {
       "id": "moscow-2026-11-21-5f666299e9",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-21",
@@ -67753,7 +67813,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "мастер-класс"
       ],
@@ -67767,7 +67827,16 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "status": "rejected",
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "reviewed_at": "2026-11-06"
     },
     {
       "id": "moscow-2026-11-21-93f181f099",
@@ -71444,7 +71513,7 @@
     },
     {
       "id": "moscow-2026-12-05-84c379d167",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-12-05",
@@ -71454,7 +71523,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "мастер-класс"
       ],
@@ -71468,7 +71537,16 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "status": "rejected",
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "reviewed_at": "2026-11-06"
     },
     {
       "id": "moscow-2026-12-06-9baa5f2467",

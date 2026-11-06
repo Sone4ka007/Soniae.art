@@ -4,5 +4,43 @@
     "lesson2.json",
     "lesson3.json",
     "lesson4.json"
+  ],
+  "schemaVersion": 2,
+  "course": "HSK 4",
+  "parts": [
+    {
+      "id": 1,
+      "title": "ЧАСТЬ 1 · 上",
+      "totalLessons": 10,
+      "lessonIds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "id": 2,
+      "title": "ЧАСТЬ 2 · 下",
+      "totalLessons": 10,
+      "lessonIds": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    }
   ]
 }

@@ -201,6 +201,25 @@
 .ci-decision{border:2px solid var(--ink);padding:clamp(17px,3vw,30px);margin-top:32px;background:var(--white)}.ci-decision.is-unlocked{background:var(--soft)}.ci-decision.is-locked{background:#f5f5f3}.ci-decision h4{font:clamp(26px,3.4vw,44px)/1.15 var(--font-head);margin:15px 0}.ci-decision>p{font-size:14px;color:var(--muted);line-height:1.5}.ci-decision-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:22px}.ci-decision-btn{border:2px solid var(--ink);padding:21px;text-align:left;display:flex;flex-direction:column;gap:11px;background:#fff}.ci-decision-btn:hover:not(:disabled),.ci-decision-btn.is-selected{background:var(--acid)}.ci-decision-btn:disabled:not(.is-selected){opacity:.52;cursor:not-allowed}.ci-decision-btn span{font:750 clamp(24px,2.6vw,32px)/1.5 var(--han)}.ci-decision-btn small{font-size:13px;line-height:1.5;color:var(--muted)}.ci-outcome{margin-top:20px;padding:20px;border:2px solid var(--ink);background:var(--acid)}.ci-outcome p{font-size:16px;line-height:1.5;margin-bottom:0}.ci-next{margin:0 0 25px;padding:17px 0;display:flex;align-items:center;justify-content:space-between;gap:15px;border-bottom:2px solid var(--ink)}.ci-next span{font-size:12px;color:var(--muted);line-height:1.5;max-width:440px}.ci-next .action-btn:disabled{opacity:.48;cursor:not-allowed}
 @media(max-width:680px){.ci-decision-grid{grid-template-columns:1fr}.ci-story-progress{flex-wrap:wrap}.story-track{width:100%}.ci-chapter-hero h4{font-size:clamp(39px,9vw,65px)}.quest-intro:before{font-size:100px;top:7px}.ci-paragraph .ci-line-zh{font-size:28px}.ci-next{align-items:stretch;flex-direction:column}.ci-next .action-btn{width:100%}.ci-decision-btn span{font-size:26px}.quest-intro h4{font-size:53px}.plot-option{padding:15px}}
 
+/* v6: reader tracking and pause controls */
+.ci-player{position:sticky;top:0;z-index:6;background:var(--paper);border:2px solid var(--ink);box-shadow:6px 6px 0 var(--ink);margin:20px 0 26px;padding:14px 19px;max-width:100%}
+.ci-player-heading{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;align-items:center;font-size:12px;font-weight:900;letter-spacing:.07em}
+.ci-player-label{color:var(--ink)}
+.ci-player-controls{display:flex;align-items:stretch;gap:8px;margin:14px 0 10px;flex-wrap:wrap}
+.ci-player-controls button{border:2px solid var(--ink);background:var(--white);padding:10px 14px;min-height:45px;cursor:pointer;font-weight:850;letter-spacing:.03em;font-size:12px}
+.ci-player-controls .ci-main-play{background:var(--acid);min-width:156px}
+.ci-player-controls button:hover{filter:brightness(.95)}
+.ci-playback-track{height:8px;border:1px solid var(--ink);background:#deded5;overflow:hidden}
+#ci-playback-fill{height:100%;background:var(--ink);width:0;transition:width .2s ease}
+.ci-player-note{font-size:11px;line-height:1.4;color:var(--muted);margin-top:9px}
+.ci-line{position:relative;scroll-margin-top:150px;border-radius:4px;transition:background .2s ease,box-shadow .2s ease}
+.ci-paragraph .ci-line.is-reading{background:#e5ff65;box-shadow:0 0 0 7px #e5ff65, -7px 0 0 7px var(--ink);padding-left:10px;margin-left:3px}
+.ci-line.is-reading .ci-line-zh{font-weight:750}
+.ci-line.is-reading:before{content:'▶ СЕЙЧАС';display:block;font-size:10px;font-weight:900;letter-spacing:.09em;padding:6px 0 2px}
+.ci-from-line{border:1px solid var(--ink);background:var(--white);font-size:10px;font-weight:850;padding:7px 9px;letter-spacing:.04em}
+.ci-from-line:hover{background:var(--acid)}
+@media(max-width:680px){.ci-player{padding:12px;box-shadow:3px 3px 0 var(--ink)}.ci-player-controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}.ci-player-controls button{font-size:11px;min-height:44px;padding:8px 4px}.ci-player-controls .ci-main-play{grid-column:1/-1;min-width:0;font-size:14px}.ci-player-note{font-size:10px}.ci-from-line{font-size:9px}.ci-paragraph .ci-line.is-reading{padding-left:7px}}
+
 </style>
 </head>
 <body>
@@ -280,6 +299,7 @@ function miss(zh) {
   save(); toast('ПОПРОБУЙ ЕЩЁ РАЗ');
 }
 function speech(text, force = true) {
+  if (readerPlayback.status !== 'stopped') stopReader();
   if (!force && !state.progress.sound) return;
   if (!('speechSynthesis' in window)) { toast('ОЗВУЧКА НЕ ПОДДЕРЖИВАЕТСЯ БРАУЗЕРОМ'); return; }
   if(typeof speakingSequence!=='undefined') speakingSequence++;
@@ -295,6 +315,7 @@ function autoSpeech(text) { if (state.interacted) speech(text, false); }
 function speakButton(text, label='Послушать') { return `<button type="button" class="speak-inline" data-speak="${esc(text)}" aria-label="${esc(label)}: ${esc(text)}">◖))</button>`; }
 function header(title, desc = '', tag = '') { return `<div class="panel-head"><div><div class="eyebrow">${esc(lesson().label.toUpperCase())} / ${esc(lesson().topic.toUpperCase())}</div><h3>${esc(title)}</h3>${desc?`<p class="panel-desc">${esc(desc)}</p>`:''}</div>${tag ? `<span class="chip">${esc(tag)}</span>` : ''}</div>`; }
 function activateLesson(id) {
+  stopReader();
   if (!state.lessons.some(x => x.id === id)) return;
   state.lessonId = id;
   state.game = null;
@@ -302,6 +323,7 @@ function activateLesson(id) {
   renderShell(); activateMode(state.mode);
 }
 function activateMode(mode) {
+  stopReader();
   if (!modeInfo.some(x => x.id === mode)) return;
   state.mode = mode;
   if (mode === 'story') state.game = { phase: 'intro', index: 0, waiting: false, found: [], combo: 0, points: 0, notice: '', choiceOrder: [], prepSelected: [], zoom: false, lastSpot: null };
@@ -630,7 +652,7 @@ function renderCI(){
  const paragraphs=[];
  for(let start=0;start<r.lines.length;start+=4){
   const lines=r.lines.slice(start,start+4),blockText=lines.map(l=>l[0]).join(' ');
-  paragraphs.push(`<section class="ci-paragraph"><div class="ci-paragraph-head"><span>ФРАГМЕНТ ${String(start/4+1).padStart(2,'0')}</span><button class="ci-block-sound" data-action="ci-listen-block" data-block="${start}" type="button">◖)) СЛУШАТЬ ФРАГМЕНТ</button></div>${lines.map(([zh,ru],i)=>`<div class="ci-line"><div class="ci-line-zh" lang="zh-CN">${tapText(zh)}</div><div class="ci-line-actions">${speakButton(zh,'Прослушать предложение')} ${g.showTranslations?`<span class="ci-ru">${esc(ru)}</span>`:''}</div></div>`).join('')}</section>`);
+  paragraphs.push(`<section class="ci-paragraph"><div class="ci-paragraph-head"><span>ФРАГМЕНТ ${String(start/4+1).padStart(2,'0')}</span><button class="ci-block-sound" data-action="ci-listen-block" data-block="${start}" type="button">◖)) СЛУШАТЬ ФРАГМЕНТ</button></div>${lines.map(([zh,ru],i)=>`<div class="ci-line" id="ci-line-${start+i}" data-ci-line="${start+i}"><div class="ci-line-zh" lang="zh-CN">${tapText(zh)}</div><div class="ci-line-actions">${speakButton(zh,'Прослушать предложение')}<button type="button" class="ci-from-line" data-action="ci-read-from-line" data-line="${start+i}" aria-label="Слушать главу начиная с фразы ${start+i+1}">▶ С ЭТОЙ ФРАЗЫ</button> ${g.showTranslations?`<span class="ci-ru">${esc(ru)}</span>`:''}</div></div>`).join('')}</section>`);
  }
  const checks=r.questions.map((q,i)=>`<div class="ci-question"><div class="eyebrow">ПРОВЕРЬ СЕБЯ · ${i+1}/${r.questions.length}</div><strong>${esc(q.q)}</strong><div class="ci-answers">${q.options.map((ch,j)=>`<button class="ci-choice ${g.solved[i]&&j===q.correct?'is-correct':''} ${g.selected[i]===j&&j!==q.correct?'is-wrong':''}" data-action="ci-pick" data-question="${i}" data-choice="${j}" type="button" ${g.solved[i]?'disabled':''}>${tapAnswer(ch)}</button>`).join('')}</div>${g.solved[i]?`<p class="ci-feedback">✓ ${esc(q.explain)}</p>`:g.selected[i]!==undefined?`<p class="ci-feedback">Попробуй ещё: найди ответ в главе выше.</p>`:''}</div>`).join('');
  const finished=ciFinished();
@@ -640,22 +662,72 @@ function renderCI(){
  const nextLabel=g.idx<works.length-1?'ПЕРЕЙТИ К СЛЕДУЮЩЕЙ ГЛАВЕ →':state.lessonId===1?'ПРОДОЛЖЕНИЕ: ПОИСК КВАРТИРЫ →':'ИСТОРИЯ ЗАВЕРШЕНА · ПОВТОРИТЬ СЛОВА →';
  const next=`<div class="ci-next"><span>${g.decision>=0?'Глава пройдена · решение записано':`Ответь на ${r.questions.length} вопроса и выбери действие, чтобы завершить главу`}</span><button class="action-btn" type="button" data-action="ci-next" ${g.decision===-1?'disabled':''}>${nextLabel}</button></div>`;
  const chapterComplete=works.filter(x=>state.progress.ciDone?.[x.id]).length;
- $('#game-panel').innerHTML=`${header('ИСТОРИЯ: ОТ ПЕРВОГО ДНЯ ДО ПЕРЕЕЗДА','Шесть связанных эпизодов с героями, задачами и последствиями решений. Читай по главам, слушай и проверяй понимание.','SERIAL STORY / HSK 4')}<div class="ci-story-progress"><div><b>ГЛАВА ${String(chapterNumber).padStart(2,'0')}/06</b><span>ПРОЙДЕНО В УРОКЕ ${chapterComplete}/${works.length}</span></div><div class="story-track">${works.map((x,i)=>`<span class="${state.progress.ciDone?.[x.id]?'done':i===g.idx?'here':''}"></span>`).join('')}</div></div><div class="ci-switches">${lessonSwitch}</div><div class="ci-chapter-hero"><span class="ci-chapter-serial">CHAPTER ${String(chapterNumber).padStart(2,'0')}</span><h4>${esc(r.name.replace(/^\d+ \/ /,''))}</h4><p>${esc(r.teaser||'')}</p><div><span>${r.lines.length} ФРАЗ · ${r.questions.length} ВОПРОСА</span><span>ANNA / 小林 / 陈阿姨</span></div></div><div class="ci-toolbar"><button type="button" class="action-btn secondary" data-action="ci-listen">◖)) СЛУШАТЬ ГЛАВУ</button><button type="button" class="action-btn secondary" data-action="ci-translations">${g.showTranslations?'СКРЫТЬ ПЕРЕВОД':'ПОКАЗАТЬ ПЕРЕВОД'}</button><button type="button" class="action-btn secondary" data-action="mode" data-id="story">ИГРАТЬ СЮЖЕТ ↗</button></div><div class="ci-hint">Нажми на незнакомое слово или иероглиф, чтобы послушать, узнать значение и сохранить в свою колоду. Кнопки рядом со строками озвучивают полные предложения.</div><article class="ci-novel" lang="zh-CN">${paragraphs.join('')}</article><div class="ci-checks"><h4>ТЫ ПОНЯЛА, ЧТО ПРОИЗОШЛО?</h4>${checks}</div><div class="ci-decision ${finished?'is-unlocked':'is-locked'}"><div class="eyebrow">РЕШЕНИЕ ГЛАВЫ / 你来决定</div><h4>${esc(choice.prompt)}</h4><p>${finished?'Оба действия возможны. Выбери одно и послушай, что произошло дальше.':'Ответь на вопросы выше, чтобы открыть следующий ход.'}</p><div class="ci-decision-grid">${opts}</div>${outcome}</div>${next}<div class="ci-reader"><h4>СВОЙ КИТАЙСКИЙ ТЕКСТ</h4><p>Вставь любую реплику или предложение: разбей его на кликабельные слова. Незнакомые символы можно озвучить и сохранить с собственным переводом.</p><textarea id="reader-input" rows="3" placeholder="在这里输入中文句子…">${esc(state.readerText||'')}</textarea><button class="action-btn secondary" type="button" data-action="reader-parse">РАЗОБРАТЬ ТЕКСТ ↗</button><div id="reader-output" class="reader-output">${tapText(state.readerText||'')}</div><div class="reader-custom"><label for="reader-unknown">Слово или выражение, которого нет в разборе:</label><input type="text" id="reader-unknown" lang="zh-CN" placeholder="Например: 飞机"><button class="action-btn secondary" type="button" data-action="reader-unknown">ПОСЛУШАТЬ И ДОБАВИТЬ +</button></div></div>`;
+ $('#game-panel').innerHTML=`${header('ИСТОРИЯ: ОТ ПЕРВОГО ДНЯ ДО ПЕРЕЕЗДА','Шесть связанных эпизодов с героями, задачами и последствиями решений. Читай по главам, слушай и проверяй понимание.','SERIAL STORY / HSK 4')}<div class="ci-story-progress"><div><b>ГЛАВА ${String(chapterNumber).padStart(2,'0')}/06</b><span>ПРОЙДЕНО В УРОКЕ ${chapterComplete}/${works.length}</span></div><div class="story-track">${works.map((x,i)=>`<span class="${state.progress.ciDone?.[x.id]?'done':i===g.idx?'here':''}"></span>`).join('')}</div></div><div class="ci-switches">${lessonSwitch}</div><div class="ci-chapter-hero"><span class="ci-chapter-serial">CHAPTER ${String(chapterNumber).padStart(2,'0')}</span><h4>${esc(r.name.replace(/^\d+ \/ /,''))}</h4><p>${esc(r.teaser||'')}</p><div><span>${r.lines.length} ФРАЗ · ${r.questions.length} ВОПРОСА</span><span>ANNA / 小林 / 陈阿姨</span></div></div><div class="ci-toolbar"><button type="button" class="action-btn secondary" data-action="ci-translations">${g.showTranslations?'СКРЫТЬ ПЕРЕВОД':'ПОКАЗАТЬ ПЕРЕВОД'}</button><button type="button" class="action-btn secondary" data-action="mode" data-id="story">ИГРАТЬ СЮЖЕТ ↗</button></div><section class="ci-player" aria-label="Управление аудиочтением"><div class="ci-player-heading"><span class="ci-player-label">◖)) АУДИОЧТЕНИЕ</span><span id="ci-audio-position" role="status">ФРАЗА 01 / ${r.lines.length}</span></div><div class="ci-player-controls"><button type="button" class="ci-main-play" data-action="ci-toggle" id="ci-toggle">▶ СЛУШАТЬ</button><button type="button" class="ci-skip" data-action="ci-prev" aria-label="Предыдущая фраза">← НАЗАД</button><button type="button" class="ci-skip" data-action="ci-next-line" aria-label="Следующая фраза">ВПЕРЁД →</button><button type="button" class="ci-stop" data-action="ci-stop">■ СТОП</button></div><div class="ci-playback-track" role="progressbar" aria-label="Прогресс аудиочтения" aria-valuemin="0" aria-valuemax="${r.lines.length}" aria-valuenow="0" id="ci-playback-track"><div id="ci-playback-fill"></div></div><div class="ci-player-note" id="ci-player-note">Во время чтения текущая фраза подсвечивается и прокручивается к центру экрана. «Продолжить» повторяет фразу с начала.</div></section><div class="ci-hint">Нажми на незнакомое слово или иероглиф, чтобы послушать, узнать значение и сохранить в свою колоду. Кнопки рядом со строками озвучивают полные предложения.</div><article class="ci-novel" lang="zh-CN">${paragraphs.join('')}</article><div class="ci-checks"><h4>ТЫ ПОНЯЛА, ЧТО ПРОИЗОШЛО?</h4>${checks}</div><div class="ci-decision ${finished?'is-unlocked':'is-locked'}"><div class="eyebrow">РЕШЕНИЕ ГЛАВЫ / 你来决定</div><h4>${esc(choice.prompt)}</h4><p>${finished?'Оба действия возможны. Выбери одно и послушай, что произошло дальше.':'Ответь на вопросы выше, чтобы открыть следующий ход.'}</p><div class="ci-decision-grid">${opts}</div>${outcome}</div>${next}<div class="ci-reader"><h4>СВОЙ КИТАЙСКИЙ ТЕКСТ</h4><p>Вставь любую реплику или предложение: разбей его на кликабельные слова. Незнакомые символы можно озвучить и сохранить с собственным переводом.</p><textarea id="reader-input" rows="3" placeholder="在这里输入中文句子…">${esc(state.readerText||'')}</textarea><button class="action-btn secondary" type="button" data-action="reader-parse">РАЗОБРАТЬ ТЕКСТ ↗</button><div id="reader-output" class="reader-output">${tapText(state.readerText||'')}</div><div class="reader-custom"><label for="reader-unknown">Слово или выражение, которого нет в разборе:</label><input type="text" id="reader-unknown" lang="zh-CN" placeholder="Например: 飞机"><button class="action-btn secondary" type="button" data-action="reader-unknown">ПОСЛУШАТЬ И ДОБАВИТЬ +</button></div></div>`;
+ syncReaderUI(false);
 }
 function tapAnswer(text){return esc(text);}
-let speakingSequence=0;
-function speechLines(lines){
- if(!('speechSynthesis' in window))return toast('ОЗВУЧКА НЕ ПОДДЕРЖИВАЕТСЯ БРАУЗЕРОМ');
- const synth=window.speechSynthesis;const token=++speakingSequence;synth.cancel();
- const vs=synth.getVoices();const voice=vs.find(v=>/zh[-_]CN/i.test(v.lang))||vs.find(v=>/^zh/i.test(v.lang));
- let index=0;
- function next(){if(token!==speakingSequence||index>=lines.length)return;const ut=new SpeechSynthesisUtterance(lines[index++]);ut.lang='zh-CN';ut.rate=Number(state.progress.rate||.9);if(voice)ut.voice=voice;ut.onend=next;synth.speak(ut);}next();
+// Внутренний плеер чтения. Отдельные фразы позволяют надёжно ставить на паузу даже на Android.
+let speakingSequence = 0;
+const readerPlayback = {status:'stopped',lessonId:null,chapterId:null,index:0,end:0,token:0};
+function currentReading(){const g=state.mode==='input'?state.game:null;return g?.works?.[g.idx]||null;}
+function readerMatches(){const r=currentReading();return !!r&&readerPlayback.lessonId===state.lessonId&&readerPlayback.chapterId===r.id;}
+function stopReader(){
+ readerPlayback.token++;
+ if(readerPlayback.status!=='stopped'&&'speechSynthesis' in window) window.speechSynthesis.cancel();
+ readerPlayback.status='stopped';readerPlayback.index=0;readerPlayback.end=0;
+ syncReaderUI(false);
+}
+function syncReaderUI(shouldScroll=false){
+ const r=currentReading();if(!r)return;
+ const valid=readerMatches(),active=valid&&readerPlayback.status!=='stopped';
+ const index=valid?Math.max(0,Math.min(readerPlayback.index,r.lines.length-1)):0;
+ const status=active?(readerPlayback.status==='paused'?'ПАУЗА':'СЛУШАЕМ'):'ГОТОВО';
+ const title=document.querySelector('#ci-audio-position');if(title)title.textContent=`${status} · ФРАЗА ${String(index+1).padStart(2,'0')} / ${r.lines.length}`;
+ const toggle=document.querySelector('#ci-toggle');if(toggle){toggle.textContent=readerPlayback.status==='playing'&&valid?'Ⅱ ПАУЗА':readerPlayback.status==='paused'&&valid?'▶ ПРОДОЛЖИТЬ':'▶ СЛУШАТЬ';toggle.setAttribute('aria-pressed',String(readerPlayback.status==='playing'&&valid));}
+ const track=document.querySelector('#ci-playback-track');if(track)track.setAttribute('aria-valuenow',String(active?index+1:0));
+ const fill=document.querySelector('#ci-playback-fill');if(fill)fill.style.width=`${active?(index+1)/r.lines.length*100:0}%`;
+ const note=document.querySelector('#ci-player-note');if(note)note.textContent=active&&readerPlayback.end<r.lines.length?`Сейчас звучит фрагмент · до фразы ${readerPlayback.end} из ${r.lines.length}. Можно поставить на паузу и продолжить.`:'Текущая фраза подсвечивается и прокручивается к центру экрана. «Продолжить» повторяет фразу с начала.';
+ document.querySelectorAll('.ci-line[data-ci-line]').forEach(el=>{const selected=active&&Number(el.dataset.ciLine)===index;el.classList.toggle('is-reading',selected);if(selected)el.setAttribute('aria-current','true');else el.removeAttribute('aria-current');});
+ if(shouldScroll&&active){const line=document.querySelector(`[data-ci-line="${index}"]`);if(line)line.scrollIntoView({block:'center',behavior:window.matchMedia?.('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});}
+}
+function speakReaderSentence(){
+ if(readerPlayback.status!=='playing'||!readerMatches())return;
+ const r=currentReading(),i=readerPlayback.index;
+ if(i>=readerPlayback.end){stopReader();return;}
+ const synth=window.speechSynthesis,token=++readerPlayback.token;
+ const utter=new SpeechSynthesisUtterance(r.lines[i][0]);utter.lang='zh-CN';utter.rate=Number(state.progress.rate||.9);utter.pitch=1;
+ const vs=synth.getVoices(),chinese=vs.find(v=>/zh[-_]CN/i.test(v.lang))||vs.find(v=>/^zh/i.test(v.lang));if(chinese)utter.voice=chinese;
+ utter.onend=()=>{if(token!==readerPlayback.token||readerPlayback.status!=='playing')return;readerPlayback.index++;if(readerPlayback.index>=readerPlayback.end){stopReader();return;}speakReaderSentence();};
+ utter.onerror=event=>{if(token!==readerPlayback.token||readerPlayback.status!=='playing')return;stopReader();if(event.error!=='interrupted'&&event.error!=='canceled')toast('НЕ УДАЛОСЬ ПРОИЗНЕСТИ ФРАЗУ');};
+ syncReaderUI(true);synth.speak(utter);
+}
+function startReader(start=0,end=null){
+ const r=currentReading();if(!r)return;
+ if(!('speechSynthesis' in window)){toast('ОЗВУЧКА НЕ ПОДДЕРЖИВАЕТСЯ БРАУЗЕРОМ');return;}
+ stopReader();readerPlayback.lessonId=state.lessonId;readerPlayback.chapterId=r.id;
+ readerPlayback.index=Math.max(0,Math.min(start,r.lines.length-1));readerPlayback.end=Math.min(end??r.lines.length,r.lines.length);
+ readerPlayback.status='playing';speakReaderSentence();
+}
+function pauseReader(){if(readerPlayback.status!=='playing')return;readerPlayback.status='paused';readerPlayback.token++;window.speechSynthesis.cancel();syncReaderUI(false);}
+function resumeReader(){if(readerPlayback.status!=='paused'||!readerMatches())return;readerPlayback.status='playing';speakReaderSentence();}
+function skipReader(direction){
+ const r=currentReading();if(!r)return;
+ const from=readerMatches()?readerPlayback.index:0;
+ const target=Math.max(0,Math.min(r.lines.length-1,from+direction));
+ const wasPaused=readerPlayback.status==='paused'&&readerMatches();
+ if(wasPaused){readerPlayback.token++;window.speechSynthesis.cancel();readerPlayback.index=target;readerPlayback.end=r.lines.length;syncReaderUI(true);return;}
+ startReader(target);
 }
 function ciAction(action,btn){const g=state.game;const r=g.works[g.idx];
- if(action==='ci-select'){g.idx=Number(btn.dataset.idx);g.showTranslations=false;restoreCIProgress();renderCI();return;}
+ if(action==='ci-select'){stopReader();g.idx=Number(btn.dataset.idx);g.showTranslations=false;restoreCIProgress();renderCI();return;}
  if(action==='ci-translations'){g.showTranslations=!g.showTranslations;renderCI();return;}
- if(action==='ci-listen'){speechLines(r.lines.map(l=>l[0]));return;}
- if(action==='ci-listen-block'){const start=Number(btn.dataset.block);speechLines(r.lines.slice(start,start+4).map(l=>l[0]));return;}
+ if(action==='ci-toggle'){if(readerPlayback.status==='playing'&&readerMatches())pauseReader();else if(readerPlayback.status==='paused'&&readerMatches())resumeReader();else startReader();return;}
+ if(action==='ci-stop'){stopReader();return;}
+ if(action==='ci-prev'){skipReader(-1);return;}
+ if(action==='ci-next-line'){skipReader(1);return;}
+ if(action==='ci-listen'){startReader();return;}
+ if(action==='ci-listen-block'){const start=Number(btn.dataset.block);startReader(start,start+4);return;}
+ if(action==='ci-read-from-line'){startReader(Number(btn.dataset.line));return;}
  if(action==='ci-pick'){
    const i=Number(btn.dataset.question),choice=Number(btn.dataset.choice);if(g.solved[i])return;
    g.selected[i]=choice;
@@ -669,6 +741,7 @@ function ciAction(action,btn){const g=state.game;const r=g.works[g.idx];
  }
  if(action==='ci-next'){
    if(g.decision<0)return;
+   stopReader();
    if(g.idx<g.works.length-1){g.idx++;g.showTranslations=false;restoreCIProgress();renderCI();$('#workspace').scrollIntoView({behavior:'smooth'});return;}
    if(state.lessonId===1){activateLesson(2);activateMode('input');$('#workspace').scrollIntoView({behavior:'smooth'});return;}
    activateMode('review');return;
@@ -707,7 +780,7 @@ document.addEventListener('click', event => {
  case 'review-direction':state.progress.reviewDir=btn.dataset.direction;save();renderReview();break;
  case 'review-reveal':state.game.reveal=true;renderReview();break;
  case 'review-grade':gradeReview(btn.dataset.grade);break;
- case 'ci-select':case 'ci-translations':case 'ci-listen':case 'ci-listen-block':case 'ci-pick':case 'ci-decision':case 'ci-next':case 'reader-parse':case 'reader-unknown':ciAction(action,btn);break;
+ case 'ci-select':case 'ci-translations':case 'ci-listen':case 'ci-listen-block':case 'ci-read-from-line':case 'ci-toggle':case 'ci-stop':case 'ci-prev':case 'ci-next-line':case 'ci-pick':case 'ci-decision':case 'ci-next':case 'reader-parse':case 'reader-unknown':ciAction(action,btn);break;
  }
 });
 document.addEventListener('input', event => {if(event.target.id!=='words-search')return;const q=event.target.value.trim().toLowerCase();document.querySelectorAll('.word-card').forEach(card=>card.hidden=!card.dataset.search.includes(q));});

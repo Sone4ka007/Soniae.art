@@ -1159,11 +1159,11 @@ function renderGoogleAuthPanel() {
   if(cloud.status==='synced')text+='<p>Облачная синхронизация активна. Уроки доступны локально и без сети.</p>';
   if(cloud.status==='choice' && cloud.conflict==='guest') {
     text+='<p>Нашли прогресс без регистрации на этом устройстве. Привязать его к Google-аккаунту или начать новый профиль?</p>';
-    actions+='<button type="button" data-action="auth-choice" data-choice="guest">ПРИВЯЗАТЬ МОЙ ПРОГРЕСС</button><button type="button" class="secondary" data-action="auth-choice" data-choice="empty">НАЧАТЬ С НУЛЯ</button>';
+    actions+='<button type="button" class="secondary" data-action="auth-backup" data-source="guest">СКАЧАТЬ ГОСТЕВОЙ ПРОГРЕСС</button><button type="button" data-action="auth-choice" data-choice="guest">ПРИВЯЗАТЬ МОЙ ПРОГРЕСС</button><button type="button" class="secondary" data-action="auth-choice" data-choice="empty">НАЧАТЬ С НУЛЯ</button>';
   }
   if(cloud.status==='choice' && cloud.conflict==='different') {
     text+='<p>Прогресс на устройстве отличается от облачного. Выбери, какую версию сохранить. Перед заменой будет создана локальная резервная копия.</p>';
-    actions+='<button type="button" data-action="auth-choice" data-choice="cloud">ВОССТАНОВИТЬ ИЗ ОБЛАКА</button><button type="button" class="secondary" data-action="auth-choice" data-choice="device">ИСПОЛЬЗОВАТЬ ЭТО УСТРОЙСТВО</button>';
+    actions+='<button type="button" class="secondary" data-action="auth-backup" data-source="device">СКАЧАТЬ ЭТО УСТРОЙСТВО</button><button type="button" class="secondary" data-action="auth-backup" data-source="cloud">СКАЧАТЬ ОБЛАЧНУЮ КОПИЮ</button><button type="button" data-action="auth-choice" data-choice="cloud">ВОССТАНОВИТЬ ИЗ ОБЛАКА</button><button type="button" class="secondary" data-action="auth-choice" data-choice="device">ИСПОЛЬЗОВАТЬ ЭТО УСТРОЙСТВО</button>';
   }
   if(cloud.status==='choice')actions+='<button type="button" class="secondary" data-action="auth-choice" data-choice="later">РЕШИТЬ ПОЗЖЕ</button>';
   if(cloud.status==='paused')text+='<p>Синхронизация поставлена на паузу по твоему выбору.</p>';
@@ -1245,17 +1245,19 @@ function renderProgress() {
     '<input id="progress-import-file" type="file" accept=".json,application/json" hidden>' +
     '<p class="progress-backup-note">При восстановлении файл заменит текущий прогресс после подтверждения. Регистрация и облачная синхронизация пока не подключены.</p></section></div>';
 }
-function downloadProgress() {
-  const payload = ChineseLabProgress.exportText(state.progress);
+function downloadProgressPayload(payload, label = 'progress') {
   const blob = new Blob([payload], {type: 'application/json;charset=utf-8'});
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
   a.href = url;
-  a.download = 'chinese-lab-progress-' + new Date().toISOString().slice(0,10) + '.json';
+  a.download = 'chinese-lab-' + label + '-' + new Date().toISOString().slice(0,10) + '.json';
   document.body.appendChild(a);
   a.click();
   a.remove();
   setTimeout(() => URL.revokeObjectURL(url), 2000);
+}
+function downloadProgress() {
+  downloadProgressPayload(ChineseLabProgress.exportText(state.progress));
 }
 document.addEventListener('change', async event => {
   if (event.target.id !== 'progress-import-file') return;
@@ -1296,6 +1298,7 @@ document.addEventListener('click', event => {
  case 'auth-retry':ChineseLabCloud.retry();break;
  case 'auth-profile':activateMode('progress');$('#workspace')?.scrollIntoView({behavior:'smooth'});break;
  case 'auth-choice':ChineseLabCloud.choose(btn.dataset.choice);break;
+ case 'auth-backup':{const content=ChineseLabCloud.backupText(btn.dataset.source);if(content)downloadProgressPayload(content,btn.dataset.source+'-backup');break;}
  case 'mode':activateMode(btn.dataset.id);break;
  case 'quest-gloss':case 'quest-analyze':case 'quest-mission-toggle':case 'quest-mission-select':case 'quest-mission-pick':case 'quest-mission-next':case 'quest-spot':case 'quest-choice':case 'quest-token':case 'quest-token-remove':case 'quest-pick':case 'quest-check':case 'quest-clear':case 'quest-hint':case 'quest-translation':case 'quest-zoom':case 'quest-start':case 'quest-next':case 'quest-restart':questAction(action,btn);break;
  case 'sentence-add':case 'sentence-remove':case 'sentence-clear':case 'sentence-hint':case 'sentence-check':case 'sentence-next':sentenceAction(action,btn.dataset.id);break;

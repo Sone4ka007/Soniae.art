@@ -1,0 +1,26 @@
+/* Chinese Lab — progress panel. Existing black/white + lime palette. */
+.progress-board {display:grid;gap:18px}
+.progress-lead {font-size:14px;line-height:1.6;max-width:720px}
+.progress-metrics {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.progress-metric {background:var(--white);border:2px solid var(--ink);padding:18px}
+.progress-metric strong {display:block;font:clamp(36px,5vw,60px)/1 var(--font-head);font-variant-numeric:tabular-nums}
+.progress-metric span {font-size:11px;font-weight:800;letter-spacing:.09em}
+.progress-part {border:2px solid var(--ink);padding:18px;background:var(--white)}
+.progress-part h4 {margin:0 0 10px;font-size:17px}
+.progress-part-summary {margin:0 0 14px;font-size:12px;color:var(--muted)}
+.progress-lessons {display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:9px}
+.progress-lesson {background:var(--paper);border:1px solid var(--line);padding:12px;display:grid;gap:7px;text-align:left;min-width:0}
+button.progress-lesson:hover {border-color:var(--ink);background:var(--acid)}
+.progress-lesson strong {font-size:13px}
+.progress-lesson span {font-size:11px;color:var(--muted)}
+.progress-lesson-meter {height:6px;background:#deded7;overflow:hidden}
+.progress-lesson-meter i {display:block;height:100%;background:#93ba00}
+.progress-backup {padding:18px;border:2px solid var(--ink);background:var(--paper)}
+.progress-backup h4 {margin:0 0 12px}
+.progress-backup-actions {display:flex;flex-wrap:wrap;gap:10px;margin:16px 0 12px}
+.progress-backup-actions button {border:2px solid var(--ink);background:var(--acid);font-weight:800;padding:12px 16px;font-size:12px}
+.progress-backup-actions button:last-of-type {background:var(--white)}
+.progress-backup-note {font-size:12px;line-height:1.6;color:var(--muted)}
+.progress-coming {background:var(--paper);border:1px dashed var(--line);padding:12px;font-size:12px;color:var(--muted)}
+@media (max-width:650px) {.progress-metrics{grid-template-columns:1fr 1fr}.progress-metric{padding:12px}.progress-lessons{grid-template-columns:1fr 1fr}}
+@media (max-width:360px) {.progress-metrics,.progress-lessons{grid-template-columns:1fr}}

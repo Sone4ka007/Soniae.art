@@ -1,7 +1,7 @@
-// Public browser configuration. Only fill after setting up Supabase + Google OAuth.
-// Safe to publish: Supabase project URL and publishable/anon key.
-// NEVER put a Google OAuth client secret or Supabase service_role key here.
+// Chinese Lab public Supabase config. Publishable key (not a secret).
+// Google OAuth provider and site redirect allowlist MUST be configured
+// in Supabase/Google Cloud before merging this change into main.
 window.CHINESE_LAB_SUPABASE = {
-  url: '',
-  publishableKey: ''
+  url: 'https://miarbpjsdglfgsksvovd.supabase.co',
+  publishableKey: 'sb_publishable_TIG0DkbbYNojfdZWkujvWQ_lGWvTyBz'
 };

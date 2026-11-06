@@ -13,6 +13,11 @@
 
   function notify() { if (callbacks && callbacks.onStatus) callbacks.onStatus(); }
   function current() { return { enabled, user, status, conflict: conflict && conflict.kind, errorMessage }; }
+  function canonical(value) {
+    const normalize = v => Array.isArray(v) ? v.map(normalize) :
+      v && typeof v==='object' ? Object.fromEntries(Object.keys(v).sort().map(k=>[k,normalize(v[k])])) : v;
+    return JSON.stringify(normalize(value));
+  }
   function meaningful(p) {
     if (!p || typeof p !== 'object') return false;
     if (Number(p.xp || 0) || Number(p.correct || 0) || Number(p.attempts || 0)) return true;
@@ -60,10 +65,10 @@
         const remoteData = global.ChineseLabProgress.validate(remote.data);
         if (!meaningful(local)) {
           callbacks.applyProgress(remoteData);
-          lastWritten = JSON.stringify(remoteData);
+          lastWritten = canonical(remoteData);
           status = 'synced';
-        } else if (JSON.stringify(local) === JSON.stringify(remoteData)) {
-          lastWritten = JSON.stringify(local);
+        } else if (canonical(local) === canonical(remoteData)) {
+          lastWritten = canonical(local);
           status = 'synced';
         } else {
           conflict = {kind:'different',remote:remoteData,local};
@@ -141,13 +146,19 @@
     if (pending.kind==='different' && choice==='cloud') {
       storedBackup(pending.local,'local');
       callbacks.applyProgress(pending.remote);
-      lastWritten=JSON.stringify(pending.remote);
+      lastWritten=canonical(pending.remote);
       conflict=null; status='synced'; notify();
     } else if (pending.kind==='different' && choice==='device') {
       storedBackup(pending.remote,'cloud');
       conflict=null; status='synced'; lastWritten='';
       notify(); schedule(callbacks.getProgress());
     }
+  }
+  function backupText(source) {
+    if (!conflict) return null;
+    const payload = source==='guest' ? conflict.guest : source==='cloud' ? conflict.remote : conflict.local;
+    if (!payload) return null;
+    return global.ChineseLabProgress.exportText(payload);
   }
   function schedule() {
     if (!user || status!=='synced') return;
@@ -159,7 +170,7 @@
     if (busy || !user || status!=='synced') return;
     const myId=user.id;
     const snapshot=callbacks.getProgress();
-    const content=JSON.stringify(snapshot);
+    const content=canonical(snapshot);
     if (!requested || content===lastWritten) { requested=false; return; }
     busy=true;requested=false;
     try {
@@ -186,7 +197,7 @@
       if (!user || user.id!==myId) return;
       revision=nextRevision;
       lastWritten=content;
-      if (JSON.stringify(callbacks.getProgress())!==content) requested=true;
+      if (canonical(callbacks.getProgress())!==content) requested=true;
     } catch(e) {
       if (!user || user.id!==myId) return;
       console.error('Chinese Lab: cloud save failed',e);
@@ -205,5 +216,5 @@
     await transition(oldUser);
   }
   global.addEventListener('online',()=> {if(status==='error' && user) retry();});
-  global.ChineseLabCloud=Object.freeze({enabled,init,current,signIn,signOut,choose,schedule,retry});
+  global.ChineseLabCloud=Object.freeze({enabled,init,current,signIn,signOut,choose,schedule,retry,backupText});
 })(window);

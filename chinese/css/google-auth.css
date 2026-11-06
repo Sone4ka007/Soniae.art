@@ -1,0 +1,13 @@
+/* GOOGLE AUTH — Chinese Lab */
+.cl-account {font:700 11px var(--font);border:1px solid var(--ink);background:var(--white);padding:10px 12px;min-height:37px;cursor:pointer}
+.cl-account:hover,.cl-auth-actions button:hover{background:var(--acid)}
+.cl-account-user{max-width:175px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;display:inline-block;vertical-align:middle}
+.cl-auth-panel{background:var(--white);border:2px solid var(--ink);padding:17px;display:grid;gap:12px}
+.cl-auth-panel h4{margin:0;font-size:17px}
+.cl-auth-panel p{margin:0;color:var(--muted);font-size:12px;line-height:1.55}
+.cl-auth-actions{display:flex;flex-wrap:wrap;gap:8px}
+.cl-auth-actions button{border:1px solid var(--ink);background:var(--acid);padding:10px 12px;font-size:12px;font-weight:800}
+.cl-auth-actions button.secondary{background:var(--white)}
+.cl-auth-status{font-size:12px;font-weight:700}
+.cl-auth-warning{color:var(--error);line-height:1.5}
+@media (max-width:550px){.cl-account{padding:8px;font-size:10px}.cl-account-user{max-width:85px}}

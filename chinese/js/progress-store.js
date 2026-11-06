@@ -6,6 +6,7 @@
 (function (global) {
   'use strict';
   const STORAGE_KEY = 'sonya-chinese-lab-progress-v1';
+  const accountKey = userId => userId ? STORAGE_KEY + '-user-' + String(userId) : STORAGE_KEY;
   const EXPORT_FORMAT = 'chinese-lab-progress';
   const EXPORT_VERSION = 1;
   const OBJECT_FIELDS = ['stories', 'weak', 'saved', 'srs', 'ciDone', 'questWords'];
@@ -30,19 +31,19 @@
     }
     return progress;
   }
-  function load(defaults) {
+  function load(defaults, userId = null) {
     try {
-      const raw = global.localStorage.getItem(STORAGE_KEY);
+      const raw = global.localStorage.getItem(accountKey(userId));
       return raw ? { ...defaults, ...validate(JSON.parse(raw)) } : { ...defaults };
     } catch (error) {
       console.warn('Chinese Lab: сохранённые данные недоступны', error);
       return { ...defaults };
     }
   }
-  function save(progress) {
+  function save(progress, userId = null) {
     try {
       validate(progress);
-      global.localStorage.setItem(STORAGE_KEY, JSON.stringify(progress));
+      global.localStorage.setItem(accountKey(userId), JSON.stringify(progress));
       return true;
     } catch (error) {
       console.warn('Chinese Lab: не удалось сохранить прогресс', error);
@@ -74,6 +75,6 @@
   global.ChineseLabProgress = Object.freeze({
     storageKey: STORAGE_KEY,
     schemaVersion: EXPORT_VERSION,
-    load, save, exportText, parseImport
+    load, save, validate, exportText, parseImport
   });
 })(window);

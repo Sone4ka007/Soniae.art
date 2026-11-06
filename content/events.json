@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-05",
+  "updated_at": "2026-11-06",
   "events": [
     {
       "id": "moscow-2025-09-03-6b54dbdbf3",
@@ -38291,7 +38291,7 @@
       "reviewed_at": "2026-10-17",
       "availability": "unknown",
       "availability_checked_at": "",
-      "registration": false,
+      "registration": null,
       "price": null,
       "price_text": "",
       "price_type": "paid",
@@ -38317,7 +38317,7 @@
         "status": "approved",
         "telegram_include": false,
         "instagram_include": false,
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -41054,7 +41054,7 @@
       "address": "1-й Голутвинский переулок, 16, стр. 1",
       "price": 850,
       "price_text": "850 ₽; льготный — 650 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -41081,7 +41081,7 @@
       "time_evidence": "24 октября 2026 14:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
       "editor_overrides": {
-        "registration": false
+        "registration": null
       }
     },
     {
@@ -49427,7 +49427,7 @@
       "address": "Лаврушинский переулок, 12",
       "price": 650,
       "price_text": "650 ₽; онлайн — 700 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -49444,7 +49444,7 @@
         "telegram_include": false,
         "instagram_include": false,
         "status": "approved",
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -51674,14 +51674,16 @@
       "price": 0,
       "price_text": "",
       "registration": false,
-      "categories": [],
+      "categories": [
+        "выставка"
+      ],
       "description": "На метро Музей AZ находится между станциями метро «Маяковская» и «Белорусская» (кольцевая). Мы рекомендуем идти в Музей от станции «Маяковская». Вам нужен Выход №1 на 1-я Тверская-Ямская улица, 2-я Тверская-Ямская улица.",
       "url": "https://museum-az.com/event/territoriya-svobody-nonkonformisty-v-taruse/",
       "source": "Музей AZ — выставки и события",
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-10-20",
-      "price_type": "paid",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-10-25",
       "editor_overrides": {
@@ -52951,7 +52953,7 @@
       "title": "Коллективная выставка Арт-шаффл 43.0",
       "venue": "ЦСИ Винзавод",
       "address": "",
-      "price": 12000,
+      "price": 0,
       "price_text": "12000 ₽",
       "registration": null,
       "categories": [
@@ -52965,7 +52967,7 @@
       "discovered_at": "2026-11-03",
       "start_date": "2026-11-03",
       "end_date": "2026-11-15",
-      "price_type": "paid",
+      "price_type": "free",
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
@@ -54940,36 +54942,6 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
-      "id": "spb-2026-11-05-b38c99345d",
-      "status": "new",
-      "kind": "event",
-      "city": "spb",
-      "date": "2026-11-05",
-      "time": "",
-      "title": "«Струны Петербурга» зазвучат в историческом здании на Университетской набережной",
-      "venue": "",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": null,
-      "categories": [
-        "диалог"
-      ],
-      "description": "Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами! Также вы можете отправить статью в социальной сети или мессенджере Если у вас есть чем поделиться с нашими читателями, вы можете предложить свою статью.",
-      "url": "https://spbcult.ru/news/anonsy/struny-peterburga-zazvuchat-na-universitetskoy-naberezhnoy/",
-      "source": "Петербургский дневник культуры — анонсы",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-11-05",
-      "price_type": "unknown",
-      "availability_evidence": "",
-      "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_note": "",
-      "reviewed_at": ""
-    },
-    {
       "id": "spb-2026-11-05-e129a78438",
       "status": "rejected",
       "kind": "event",
@@ -55009,35 +54981,6 @@
       }
     },
     {
-      "id": "spb-2026-11-05-6b25e4405e",
-      "status": "new",
-      "kind": "exhibition",
-      "city": "spb",
-      "date": "2026-11-05",
-      "time": "",
-      "title": "В Таврическом дворце - фотовыставка «Петербург — в мире, мир — в Петербурге…»",
-      "venue": "",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": null,
-      "categories": [
-        "выставка"
-      ],
-      "description": "Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами! Также вы можете отправить статью в социальной сети или мессенджере Если у вас есть чем поделиться с нашими читателями, вы можете предложить свою статью.",
-      "url": "https://spbcult.ru/news/anonsy/v-tavricheskom-dvortse-fotovystavka-peterburg-v-mire-mir-v-peterburge-/",
-      "source": "Петербургский дневник культуры — анонсы",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-11-05",
-      "price_type": "unknown",
-      "availability_evidence": "",
-      "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "start_date": "2026-11-05"
-    },
-    {
       "id": "spb-2026-11-05-c6d348dded",
       "status": "rejected",
       "kind": "event",
@@ -55062,122 +55005,6 @@
       "ticket_required": false,
       "availability": "unknown",
       "availability_checked_at": ""
-    },
-    {
-      "id": "spb-2026-11-05-2e616b74f3",
-      "status": "new",
-      "kind": "exhibition",
-      "city": "spb",
-      "date": "2026-11-05",
-      "time": "",
-      "title": "Вероломство образов Магритта представят в «Брусницыне»",
-      "venue": "",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": null,
-      "categories": [
-        "выставка"
-      ],
-      "description": "13 ноября арт-центр культурного квартала «Брусницын» откроет выставку шедевров графики Рене Магритта «Вероломство образов». Покажут порядка пятидесяти уникальных цветных литографий мастера, на протяжении нескольких лет собиравшихся из частных европейских коллекций.",
-      "url": "https://spbcult.ru/news/anonsy/verolomstvo-obrazov-magritta-predstavyat-v-brusnitsyne/",
-      "source": "Петербургский дневник культуры — анонсы",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-11-05",
-      "price_type": "unknown",
-      "availability_evidence": "",
-      "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "start_date": "2026-11-05"
-    },
-    {
-      "id": "spb-2026-11-05-27bb18cc9d",
-      "status": "new",
-      "kind": "exhibition",
-      "city": "spb",
-      "date": "2026-11-05",
-      "time": "",
-      "title": "Вечер памяти Эдуарда Розовского пройдёт на «Ленфильме»",
-      "venue": "",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": true,
-      "categories": [
-        "выставка"
-      ],
-      "description": "Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами! Также вы можете отправить статью в социальной сети или мессенджере Если у вас есть чем поделиться с нашими читателями, вы можете предложить свою статью.",
-      "url": "https://spbcult.ru/news/anonsy/vecher-pamyati-eduarda-rozovskogo-proydyet-na-lenfilme/",
-      "source": "Петербургский дневник культуры — анонсы",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-11-05",
-      "price_type": "unknown",
-      "availability_evidence": "",
-      "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "start_date": "2026-11-05"
-    },
-    {
-      "id": "spb-2026-11-05-5995f84169",
-      "status": "new",
-      "kind": "event",
-      "city": "spb",
-      "date": "2026-11-05",
-      "time": "",
-      "title": "Государственный Эрмитаж",
-      "venue": "Государственный Эрмитаж",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": null,
-      "categories": [],
-      "description": "",
-      "url": "https://hermitagemuseum.org/what-s-on/afisha_mincult/?lng=ru",
-      "source": "Государственный Эрмитаж — выставки и события",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-11-05",
-      "price_type": "unknown",
-      "availability_evidence": "",
-      "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_note": "",
-      "reviewed_at": ""
-    },
-    {
-      "id": "spb-2026-11-05-e37f2f89c5",
-      "status": "new",
-      "kind": "event",
-      "city": "spb",
-      "date": "2026-11-05",
-      "time": "",
-      "title": "День защитницы и покровительницы рукоделия пройдет в Российском этнографическом музее",
-      "venue": "",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": null,
-      "categories": [
-        "лекция"
-      ],
-      "description": "Правообладатель изображений: Российский этнографический музей. Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами!",
-      "url": "https://spbcult.ru/news/anonsy/den-zashchitnitsy-i-pokrovitelnitsy-rukodeliya-proydet-v-rossiyskom-etnograficheskom-muzee/",
-      "source": "Петербургский дневник культуры — анонсы",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-11-05",
-      "price_type": "paid",
-      "availability_evidence": "",
-      "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_note": "",
-      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-05-75bc43fdb2",
@@ -55341,72 +55168,6 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
-      "id": "moscow-2026-11-05-8628ccfb0e",
-      "status": "new",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-11-05",
-      "time": "",
-      "title": "Лето в Бадене",
-      "venue": "Центр Зотов",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [
-        "новинки проката"
-      ],
-      "description": "",
-      "url": "https://centrezotov.ru/events/leto-v-badene/",
-      "source": "Центр Зотов",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-10-30",
-      "price_type": "paid",
-      "availability_evidence": "",
-      "ticket_required": true,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": ""
-    },
-    {
-      "id": "spb-2026-11-05-2743e74201",
-      "status": "new",
-      "kind": "exhibition",
-      "city": "spb",
-      "date": "2026-11-05",
-      "time": "",
-      "title": "Литературный музей «XX век» открывает выставку «Слово» сквозь время»",
-      "venue": "",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": null,
-      "categories": [
-        "выставка"
-      ],
-      "description": "12 ноября Государственный литературный музей «XX век» открывает выставку «Слово» сквозь время», посвященную выдающемуся памятнику древнерусской литературы XII века - «Слову о полку Игореве». Выставка приурочена к 120-летию со дня рождения Дмитрия Сергеевича Лихачева и проводится в рамках Года петербургской культуры.",
-      "url": "https://spbcult.ru/news/anonsy/literaturnyy-muzey-xx-vek-otkryvaet-vystavku-slovo-skvoz-vremya/",
-      "source": "Петербургский дневник культуры — анонсы",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-11-05",
-      "price_type": "unknown",
-      "availability_evidence": "",
-      "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "start_date": "2026-11-05"
-    },
-    {
       "id": "spb-2026-11-05-a5b929cafe",
       "status": "rejected",
       "kind": "event",
@@ -55460,7 +55221,7 @@
       "address": "",
       "price_type": "free",
       "price_text": "бесплатно по регистрации",
-      "registration": false,
+      "registration": true,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -55484,69 +55245,6 @@
         "instagram_include": false,
         "status": "approved"
       }
-    },
-    {
-      "id": "spb-2026-11-05-39e247098d",
-      "status": "new",
-      "kind": "event",
-      "city": "spb",
-      "date": "2026-11-05",
-      "time": "",
-      "title": "Наши события",
-      "venue": "Международная школа дизайна — Петербург",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": null,
-      "categories": [],
-      "description": "Умные и успешные люди инвестируют в образование. Такие вложения не обесценит кризис. Они останутся с вами, куда бы вы ни поехали.",
-      "url": "https://spb.designschool.ru/category/lifeschool/",
-      "source": "Международная школа дизайна — Петербург",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-11-05",
-      "price_type": "unknown",
-      "availability_evidence": "",
-      "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_note": "",
-      "reviewed_at": ""
-    },
-    {
-      "id": "spb-2026-11-05-bdec702648",
-      "status": "new",
-      "kind": "event",
-      "city": "spb",
-      "date": "2026-11-05",
-      "time": "",
-      "title": "Перформанс ОМ (Открытая Мастерская)",
-      "venue": "Пушкинская-10",
-      "address": "",
-      "price": 0,
-      "price_text": "Бесплатно",
-      "registration": false,
-      "categories": [
-        "перформанс"
-      ],
-      "description": "«Мантра «ОМ» — это не звук, который мы произносим, а пауза, которая произносит нас изнутри» Душеспасительные беседы с художником-графиков Николаем Сычёвым и эмбиент-музыкантом Ильёй СимфоКэтом продолжаются в ноябре. Как и всегда, разговоры без определённой темы, медитативная музыка и свободный творческий процесс, к которому может присоединиться каждый.",
-      "url": "https://p-10.ru/events/performans-om-otkrytaya-masterskaya-19/",
-      "source": "Пушкинская-10 — события",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-11-05",
-      "price_type": "free",
-      "availability_evidence": "",
-      "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false
-      },
-      "telegram_include": false,
-      "instagram_include": false
     },
     {
       "id": "spb-2026-11-05-6073e1873a",
@@ -55623,73 +55321,6 @@
       "editor_overrides": {
         "time": ""
       }
-    },
-    {
-      "id": "moscow-2026-11-05-5bf68881ae",
-      "status": "new",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-11-05",
-      "time": "",
-      "title": "Сокровища и чудовища древнего мира",
-      "venue": "Еврейский музей и центр толерантности",
-      "address": "",
-      "price": 1100,
-      "price_text": "1100 ₽",
-      "registration": null,
-      "categories": [
-        "мастер-класс"
-      ],
-      "description": "1 100 ₽ - разовое занятие 4 000 ₽ - абонемент на четыре занятия Сентябрь посвятим таинственной Египетской цивилизации: три занятия с мастер-классами для детей 5 – 7 лет, где дети познакомятся с древней историей Египта!",
-      "url": "https://www.jewish-museum.ru/events/sokrovishcha-i-chudovishcha-drevnego-mira/",
-      "source": "Еврейский музей и центр толерантности",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-11-02",
-      "price_type": "paid",
-      "availability_evidence": "",
-      "ticket_required": true,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_note": "",
-      "reviewed_at": ""
-    },
-    {
-      "id": "moscow-2026-11-05-c828e81f8e",
-      "status": "new",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-11-05",
-      "time": "",
-      "title": "Сумерки. Сага. Затмение / The Twilight Saga: Eclipse",
-      "venue": "Центр Зотов",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [
-        "снова в кино"
-      ],
-      "description": "",
-      "url": "https://centrezotov.ru/events/sumerki-saga-zatmenie-the-twilight-saga-eclipse/",
-      "source": "Центр Зотов",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-10-30",
-      "price_type": "paid",
-      "availability_evidence": "",
-      "ticket_required": true,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-05-ef35829944",
@@ -55796,32 +55427,6 @@
       "time_verification": "verified",
       "time_evidence": "30.10, пт • 19:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
-    },
-    {
-      "id": "spb-2026-11-05-40684184b3",
-      "status": "new",
-      "kind": "event",
-      "city": "spb",
-      "date": "2026-11-05",
-      "time": "11:00",
-      "title": "Тактильный портрет Гавриила Державина представят в Петербурге",
-      "venue": "",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": null,
-      "categories": [],
-      "description": "9 ноября в Музее-усадьбе Державина будет установлена первая тактильная модель экспоната – портрет самого Гавриила Романовича, выдающегося поэта и государственного деятеля, первого министра юстиции России. Всероссийский музей Пушкина представит этот важный инклюзивный проект в преддверии Международного дня слепых. Портрет - дар мастерской тактильных макетов Михаила и Ольги Шу.",
-      "url": "https://spbcult.ru/news/anonsy/taktilnyy-portret-derzhavina-predstavyat-v-peterburge/",
-      "source": "Петербургский дневник культуры — анонсы",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-11-05",
-      "price_type": "unknown",
-      "availability_evidence": "",
-      "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-05-da99cec964",
@@ -55970,43 +55575,6 @@
         "instagram_include": false,
         "status": "approved"
       }
-    },
-    {
-      "id": "spb-2026-11-05-5fe0d5bb80",
-      "status": "new",
-      "kind": "event",
-      "city": "spb",
-      "date": "2026-11-05",
-      "time": "18:00",
-      "title": "Лекция « Бабочки и цветы: предметы искусства глазами биологов »",
-      "venue": "Российская национальная библиотека",
-      "address": "пл. Островского, д. 1-3",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [
-        "лекция"
-      ],
-      "description": "Лектор — кандидат биологических наук В. А. Бубырева",
-      "url": "https://nlr.ru/nlr_visit/event/3746",
-      "source": "Российская национальная библиотека — афиша",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-10-28",
-      "price_type": "unknown",
-      "availability_evidence": "",
-      "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": ""
     },
     {
       "title": "Открытие «Вращение сфер» и лекция «Рыбий глаз в ночи»",
@@ -56289,43 +55857,6 @@
       }
     },
     {
-      "id": "moscow-2026-11-05-87509a8743",
-      "status": "new",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-11-05",
-      "time": "19:00",
-      "title": "Лекция «Александр Иванов»",
-      "venue": "Третьяковская галерея",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [
-        "лекция"
-      ],
-      "description": "Лекция к абонементу №01 «Мастера русской живописи. Часть 1. От Рокотова до Иванова» 1 октября 2026 – 5 ноября 2026 Лекция будет проходить в Лекционном зале Инженерного корпуса (Лаврушинский переулок, д. 12, вход с Малого Толмачёвского переулка) и в режиме реального времени на платформе МТС Линк в формате онлайн. Продолжительность лекции: 1 час 30 минут.",
-      "url": "https://www.tretyakovgallery.ru/events/o/lektsiya-aleksandr-ivanov-11-2026/",
-      "source": "Третьяковская галерея — события",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-10-29",
-      "price_type": "paid",
-      "availability_evidence": "",
-      "ticket_required": true,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": ""
-    },
-    {
       "id": "spb-2026-11-05-04b52b67df",
       "status": "approved",
       "kind": "event",
@@ -56362,43 +55893,6 @@
       "time_verification": "verified",
       "time_evidence": "5 ноября, 19:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
-    },
-    {
-      "id": "moscow-2026-11-05-c2584cb5af",
-      "status": "new",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-11-05",
-      "time": "19:00",
-      "title": "Специальный показ. Плетёный муж / Wicker",
-      "venue": "Центр Зотов",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [
-        "спецпоказ"
-      ],
-      "description": "",
-      "url": "https://centrezotov.ru/events/speczialnyj-pokaz-pletyonyj-muzh-wicker/",
-      "source": "Центр Зотов",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-10-30",
-      "price_type": "paid",
-      "availability_evidence": "",
-      "ticket_required": true,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-05-6734b4aa99",
@@ -56478,42 +55972,6 @@
         "instagram_include": false,
         "status": "approved"
       }
-    },
-    {
-      "id": "moscow-2026-11-05-3cc2c911bc",
-      "status": "new",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-11-05",
-      "time": "19:30",
-      "title": "Паблик-ток «Хлеб вчера, сегодня, завтра»",
-      "venue": "Центр Зотов",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": true,
-      "categories": [
-        "диалог"
-      ],
-      "description": "",
-      "url": "https://centrezotov.ru/events/hleb/pablik-tok-hleb-vchera-segodnya-zavtra/",
-      "source": "Центр Зотов — отдельные события",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-10-30",
-      "price_type": "paid",
-      "availability_evidence": "",
-      "ticket_required": true,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "telegram_include": false,
-        "instagram_include": false
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": ""
     },
     {
       "title": "Презентация книги Полины Парыгиной «Выпускайте демонов»",
@@ -56634,6 +56092,88 @@
       }
     },
     {
+      "id": "spb-2026-11-06-d546451783",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-06",
+      "time": "",
+      "title": "«Мы годами строим чужие цели»: студентка МШД о своем опыте кардинальной смены профессии",
+      "venue": "Международная школа дизайна — Петербург",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "Студентка Международной Школы Дизайна (СПб) Полина Михайлова сменила пятнадцать лет работы в крупной лизинговой компании на создание собственного серф-бренда. Она еще не закончила обучение, но уже стала основательницей NAMOKNY — сообщества, которое объединило одежду, путешествия и людей, близких к серф-культуре.",
+      "url": "https://spb.designschool.ru/2026/11/06/my-godami-stroim-chuzhie-celi-studentka-mshd-o-svoem-opyte-kardinalnoj-smeny-professii/",
+      "source": "Международная школа дизайна — Петербург",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-06",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "spb-2026-11-06-c943e3e561",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-06",
+      "time": "",
+      "title": "«Разночинный Петербург» отметит годовщину Великой Октябрьской социалистической революции",
+      "venue": "",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [],
+      "description": "Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами! Также вы можете отправить статью в социальной сети или мессенджере Если у вас есть чем поделиться с нашими читателями, вы можете предложить свою статью.",
+      "url": "https://spbcult.ru/news/anonsy/raznochinnyy-peterburg-otmetit-godovshchinu-velikoy-oktyabrskoy-sotsialisticheskoy-revolyutsii/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-06",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "spb-2026-11-06-ea6220334e",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-06",
+      "time": "",
+      "title": "«Севкабель Порт» проведет «День резидента».",
+      "venue": "",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами! Также вы можете отправить статью в социальной сети или мессенджере Если у вас есть чем поделиться с нашими читателями, вы можете предложить свою статью.",
+      "url": "https://spbcult.ru/news/anonsy/sevkabel-port-provedet-den-rezidenta-/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-06",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "spb-2026-11-06-e96e84ce1f",
       "status": "rejected",
       "kind": "event",
@@ -56671,6 +56211,34 @@
       "editor_overrides": {
         "time": ""
       }
+    },
+    {
+      "id": "spb-2026-11-06-f00eb1fda9",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-06",
+      "time": "",
+      "title": "В музее «Невская застава» поговорят о фарфоре",
+      "venue": "",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "15 ноября в 17:00 в музее «Невская застава» пройдёт лекция «Императорский, Государственный, Ленинградский: три эпохи фарфора за 30 лет». Лекция посвящена фарфоровому заводу в Санкт-Петербурге–Петрограде–Ленинграде 1910-1930-х годов. Это время стало эпохой радикальных перемен в нашем государстве: политических, общественных, культурных, мировоззренческих.",
+      "url": "https://spbcult.ru/news/anonsy/v-muzee-nevskaya-zastava-pogovoryat-o-farfore-/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-06",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "title": "Вася Васин Рыбы и кирпичи",
@@ -56870,7 +56438,7 @@
       "discovered_at": "2026-10-04",
       "price_type": "paid",
       "availability": "sold_out",
-      "availability_checked_at": "2026-11-05",
+      "availability_checked_at": "2026-11-06",
       "sheet_synced_description": "8 октября 2026 года в 14 часов приглашаем на лекцию-экскурсию «Русское воинство за рубежом: генералы А.П.Кутепов и В.К.Витковский». Лекция-экскурсия посвящена русским генералам А.П.Кутепову и В.К.Витковскому, участникам Первой мировой и Гражданской войн, доблестно сражавшимся за Россию, видным деятелям русского военного зарубежья.",
       "telegram_include": false,
       "social_priority": null,
@@ -56924,6 +56492,32 @@
       "instagram_include": false,
       "time_verification": "unverified",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
+      "id": "spb-2026-11-06-39e247098d",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-06",
+      "time": "",
+      "title": "Наши события",
+      "venue": "Международная школа дизайна — Петербург",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "Студентка Международной Школы Дизайна (СПб) Полина Михайлова сменила пятнадцать лет работы в крупной лизинговой компании на создание собственного серф-бренда. Она еще не закончила обучение, но уже стала основательницей NAMOKNY — сообщества, которое объединило одежду, путешествия и людей, близких к серф-культуре.",
+      "url": "https://spb.designschool.ru/category/lifeschool/",
+      "source": "Международная школа дизайна — Петербург",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-06",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-06-feaec9af5a",
@@ -57162,7 +56756,7 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "sold_out",
-      "availability_checked_at": "2026-11-05"
+      "availability_checked_at": "2026-11-06"
     },
     {
       "id": "spb-2026-11-06-6274d9b2ae",
@@ -57705,7 +57299,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-06-ba877cfd02",
@@ -57740,7 +57336,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-11-07-e6acac2220",
@@ -57963,7 +57561,7 @@
       "discovered_at": "2026-09-28",
       "price_type": "paid",
       "availability": "sold_out",
-      "availability_checked_at": "2026-11-05",
+      "availability_checked_at": "2026-11-06",
       "social_title": "",
       "telegram_include": false,
       "instagram_image": "",
@@ -58026,7 +57624,7 @@
       "address": "",
       "price_type": "free",
       "price_text": "бесплатно по регистрации",
-      "registration": false,
+      "registration": true,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -58380,7 +57978,7 @@
       "source": "Design Mate — календарь",
       "checked_at": "",
       "review_reason": "discovery_source_needs_primary_verification",
-      "discovered_at": "2026-11-05",
+      "discovered_at": "2026-11-06",
       "price_type": "free",
       "availability_evidence": "",
       "ticket_required": false,
@@ -58493,7 +58091,7 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "sold_out",
-      "availability_checked_at": "2026-11-05"
+      "availability_checked_at": "2026-11-06"
     },
     {
       "id": "spb-2026-11-07-3c5f35e68d",
@@ -59262,7 +58860,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-08-06965c3b85",
@@ -59340,7 +58940,7 @@
       "title": "Юбилейный международный кинофестиваль «Русское зарубежье»",
       "venue": "Дом русского зарубежья им. А. Солженицына",
       "address": "",
-      "price": 0,
+      "price": null,
       "price_text": "Бесплатно",
       "registration": true,
       "categories": [
@@ -59356,7 +58956,9 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "sold_out",
-      "availability_checked_at": "2026-11-05"
+      "availability_checked_at": "2026-11-06",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-08-fe7e0ac9b9",
@@ -59527,7 +59129,7 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "sold_out",
-      "availability_checked_at": "2026-11-05"
+      "availability_checked_at": "2026-11-06"
     },
     {
       "id": "spb-2026-11-08-1016cc1dce",
@@ -60793,6 +60395,34 @@
       "reviewed_at": "2026-10-30"
     },
     {
+      "id": "spb-2026-11-10-d840639c9f",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-10",
+      "time": "19:00",
+      "title": "Шахматный клуб в «Сообществе»",
+      "venue": "Новая Голландия",
+      "address": "",
+      "price": 300,
+      "price_text": "300 ₽",
+      "registration": true,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "В рамках шахматного клуба проводятся лекции, мастер-классы, и, конечно, открытые турниры в разных форматах. Встречи проходят совместно со Школой Сергея Мкртычанца. Встречи проходят в пространстве «Сообщество» .",
+      "url": "https://www.newhollandsp.ru/events/education/chess-club-2026/",
+      "source": "Новая Голландия — Сообщество и образование",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-06",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "spb-2026-11-10-6e7ac94eb1",
       "status": "check",
       "kind": "event",
@@ -61648,7 +61278,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-11-e04979f457",
@@ -61902,7 +61534,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-12-05c67d7f07",
@@ -61970,7 +61604,9 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-12-19606f2101",
@@ -62026,7 +61662,9 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-12-506bef5238",
@@ -62054,7 +61692,9 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-12-8a775018e6",
@@ -62089,7 +61729,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-12-734741274c",
@@ -62258,7 +61900,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-12-6bae5e5bb0",
@@ -62486,6 +62130,34 @@
       "reviewed_at": "2026-11-03"
     },
     {
+      "id": "spb-2026-11-12-45f610f9e6",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-12",
+      "time": "19:00",
+      "title": "Цикл лекций «Интермедиальное искусство Санкт-Петербурга». Глеб Сегеда. «Ленинградский кинобестиарий: параллелы, сквоттеры, видеопираты»",
+      "venue": "Новая Голландия",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "В середине 1980-х годов Ленинград стал одним из центров творческих перемен, которые происходили в едином ритме с развитием новых медиа и стихийными изменениями городской среды. Здесь формировался конгломерат островков альтернативной культуры, существующей параллельно привычной советской реальности.",
+      "url": "https://www.newhollandsp.ru/events/education/intermedia-art-5/",
+      "source": "Новая Голландия — Сообщество и образование",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-06",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-12-d74b62747b",
       "status": "approved",
       "kind": "event",
@@ -62556,7 +62228,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-11-13-06d7a43dff",
@@ -63005,7 +62679,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-13-aa8503e63c",
@@ -63263,7 +62939,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-13-aecd2362ef",
@@ -63744,7 +63422,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-14-e731fc22ee",
@@ -63955,7 +63635,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-14-64ecc1a02b",
@@ -64464,41 +64146,6 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
-      "id": "spb-2026-11-15-489997f0c8",
-      "status": "rejected",
-      "kind": "event",
-      "city": "spb",
-      "date": "2026-11-15",
-      "time": "",
-      "title": "Моноспектакль Игоря Устиновича «Идиллия» по стихам и прозе Даниила Хармса экскурсия Софьи Кучерявенко «Петербургская палитра: свет и цвет северной столицы»",
-      "venue": "Музей искусства Санкт-Петербурга XX–XXI веков",
-      "address": "",
-      "price": 1500,
-      "price_text": "1500 ₽",
-      "registration": false,
-      "categories": [
-        "экскурсия"
-      ],
-      "description": "",
-      "url": "https://mispxx-xxi.ru/about/afisha/22592/",
-      "source": "Музей искусства Санкт-Петербурга XX–XXI веков — события",
-      "checked_at": "",
-      "review_reason": "excluded_tour_mediation",
-      "discovered_at": "2026-10-29",
-      "price_type": "paid",
-      "availability_evidence": "",
-      "ticket_required": true,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false
-      },
-      "telegram_include": false,
-      "instagram_include": false
-    },
-    {
       "id": "moscow-2026-11-15-b80985df2c",
       "status": "approved",
       "kind": "event",
@@ -64698,7 +64345,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-15-bd37e6f9c2",
@@ -64815,6 +64464,41 @@
       "instagram_include": false
     },
     {
+      "id": "spb-2026-11-15-489997f0c8",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-15",
+      "time": "18:00",
+      "title": "Моноспектакль Игоря Устиновича «Идиллия» по стихам и прозе Даниила Хармса экскурсия Софьи Кучерявенко «Петербургская палитра: свет и цвет северной столицы»",
+      "venue": "Музей искусства Санкт-Петербурга XX–XXI веков",
+      "address": "",
+      "price": 1500,
+      "price_text": "1500 ₽",
+      "registration": false,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "",
+      "url": "https://mispxx-xxi.ru/about/afisha/22592/",
+      "source": "Музей искусства Санкт-Петербурга XX–XXI веков — события",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-29",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
+    },
+    {
       "id": "moscow-2026-11-15-98f4534d25",
       "status": "new",
       "kind": "event",
@@ -64847,7 +64531,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "russia-2026-11-16-b6f0d00beb",
@@ -65216,6 +64902,34 @@
       "reviewed_at": ""
     },
     {
+      "id": "spb-2026-11-16-378b993b6a",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-16",
+      "time": "18:30",
+      "title": "ÐÑÐ¾Ð²ÐµÑÐºÐ° Ð±ÑÐ°ÑÐ·ÐµÑÐ° Ð¿ÐµÑÐµÐ´ Ð¿ÐµÑÐµÑ Ð¾Ð´Ð¾Ð¼ Ð½Ð° otkrytaya-gostinaya.timepad.ru",
+      "venue": "Открытая гостиная",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "встреча"
+      ],
+      "description": "в 18:30 в Открытой Гостиной состоится круг поддержки с психотерапевткой Асей Гавань в формате Death Cafe Death Cafe — международная инициатива. Люди, которые так или иначе касались темы смерти, встречаются с другими людьми, чтобы поговорить об этом. Ведь все мы смертны, и мысли о конечности физического существования посещает нас многократно в течении всей жизни. Цикл встреч о смерти пройдёт в рамках нашего ежемесячного круга поддержки. Что такое круг поддержки? Важно понимать, что это не тренинг и не групповая психотерапия. Задача круга — увидеть себя в какой-либо ситуации, поговорить о ней и",
+      "url": "https://otkrytaya-gostinaya.timepad.ru/event/4286105/",
+      "source": "Открытая гостиная — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-11-06",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-16-5f73160fd7",
       "status": "approved",
       "kind": "event",
@@ -65558,6 +65272,32 @@
       "review_reason": "excluded_tour_mediation",
       "discovered_at": "2026-11-01",
       "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "spb-2026-11-17-b07ae364e9",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-17",
+      "time": "",
+      "title": "Этноклуб «Параскева» - Санкт-Петербургская общественная организация по содействию изучения опыта традиционных культур.",
+      "venue": "Лиговский пр-т, 99 (вход через Библиотеку «Лиговская», Открытые мастерские).",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [],
+      "description": "Клуб «Параскева» приглашает всех интересующихся традиционными культурами принять участие в программе клуба «Этношкола. Традиционные ремесла» по направлениям: Традиционный народный костюм, Традиционная народная вышивка, Плетение и ткачество поясов, Ткачество на ткацком стане, Лоскутное шитье, Традиционная кукла, Традиционное узорное вязание, Ажурное вязание, Кружевоплетение (коклюшки), Ковроткачество, Прядение, Традиционные народные украшения. В процессе обучения участники курса изучают примеры традиционного ковроткачества, изучают технологию изготовления ковров, осваивают техники.",
+      "url": "https://t.me/omasterskie/1966",
+      "source": "Открытые мастерские — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-11-06",
+      "price_type": "free",
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
@@ -66085,7 +65825,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-01-12be1ec556",
@@ -66500,7 +66242,8 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-14-65ab0155ea",
@@ -66824,7 +66567,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-19-d74b62747b",
@@ -67862,6 +67607,34 @@
       "availability_checked_at": ""
     },
     {
+      "id": "moscow-2026-11-21-96618547ab",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-21",
+      "time": "12:00",
+      "title": "Мастер-класс «КИМ-10 — первая советская малолитражка»",
+      "venue": "Музей Транспорта Москвы",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "",
+      "url": "https://mtmuseum.ru/affiche/master-klass-kim-10-pervaya-sovetskaya-malolitrazhka/",
+      "source": "Музей транспорта Москвы — афиша",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-06",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-21-fa57738587",
       "status": "rejected",
       "kind": "event",
@@ -67969,6 +67742,34 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": "2026-11-03"
+    },
+    {
+      "id": "moscow-2026-11-21-5f666299e9",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-21",
+      "time": "15:00",
+      "title": "Мастер-класс «Трамвай “Ф”: как передать ток на расстояние?»",
+      "venue": "Музей Транспорта Москвы",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "",
+      "url": "https://mtmuseum.ru/affiche/master-klass-tramvay-f-kak-peredat-tok-na-rasstoyanie-/",
+      "source": "Музей транспорта Москвы — афиша",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-06",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-21-93f181f099",
@@ -70861,7 +70662,9 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-29-550f9318dc",
@@ -70965,7 +70768,9 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-11-30-9a278ceca1",
@@ -71487,7 +71292,7 @@
       "audience_text": "Opportunity details | Open Call for JustArt Newspaper Club Issue 9 | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register Open Call for JustArt Newspaper Club Issue 9 Deadline: 05/12/2026 Jenny Ping Lam Lin Report this? Description Make a submission Contact curator Open Call - Issue 9 Digital Residues In an era of technological hyper-acceleration, we leave behind an expanding landscape of digital detritus: obsolete formats, corrupted data, forgotten archives and emotional traces embedded within our screens. For Issue 9, Digital Residues, JustArt invites artists, curators and writers to examine the blind spots of the virtual world and explore what remains when digital promises of seamless connectivity and permanence begin to fracture. We are particularly interested in the shifting relationship between human creativity and artificial intelligence. As generative technologies reshape artistic practice, how do we negotiate authorship, agency, and creative freedom? Should we defend the boundaries of human craftsmanship, or embrace collaboration with intelligent systems to expand the possibilities of expression? We welcome submissions that investigate the material, cultural, and psychological tensions between human expression and machine learning. From digital decay and forgotten archives to algorithmic aesthetics, technological memory and acts of creative resistance, we invite you to reconsider the remnants of our increasingly automated world. What does it mean to create, remember, and resist in a world shaped by machines? What We’re Looking For: Artists: Submit 5-8 images of your artwork, along with a description of your work, your bio, and an artist statement. Curators: Share your past projects, project concepts, and your bio, along with 5-8 accompanying images Participation Fee: £38 (Required for selected participants) - Includes a digital copy Social Media Exposure: Your work will be highlighted on our platforms - JustArt Collective Instagram and website. 5K+ Followers on Instagram, and we are growing! Monthly reviewers on Instagram: 50K+ Distribution: The newspaper will be distributed at various art exhibitions and bookshops across the UK. Bookshops: NewBridge Books (Newcastle Upon Tyne) Kafka Bookshop (London) Good Press (Glasgow) Books From Below (Newcastle Upon Tyne) The JustArt newspaper club (Print) ISSN 2979-5494 The JustArt newspaper club (Online) ISSN 2979-5508 We will feature participants on JustArt Collective social media. As a member of the JustArt community, we will select 1-2 participants for free exhibitions with JustArt. Past selected artists for free exhibitions: Jingyun Guan (Issue1): The Hechyeomoyeo 17 Exhibition in Dublin Aitor Moncho Tudanca (Collective Voices 1st Edition) and Anthony Hodgson(Collective Voices 1st Edition): HCMY Mexicali 2026 in Mexico Jingyun Guan (Issue 1) and Bahar Talebi Najafabadi (Issue 3): Human Voyage: The Day We Leave the Shore Exhibition in London Jenny Ping Lam Lin (Issue 4) and Esther Xiang (Issue 3): The Hechyeomoyeo 13 Exhibition in Thailand Sarah Muwanga (Issue 2) and Chaeyeon Kang (Issue 3): The Shape of Anxiety Exhibition in London Sean BW Parker and Sarah Muwanga (Issue 2): Borderlines Exhibition in London About US: Additional Opportunity Artists participating in this program will be prioritised for invitations to participate in JustArt Collective’s future art exhibitions. About JustArt Collective: JustArt Collective is a dynamic group of artists and curators united by a shared passion for the arts. Originally founded in Hong Kong, the collective is now actively engaged in the UK. Throughout our creative journey, we have recognised the vital role of community within the art world. Our mission is to bring together everyone involved in JustArt projects to form a vibrant new community. We encourage open dialogue and the exchange of ideas on a wide range of art-related topics. This includes not only discussions about artistic practices but also the exploration of how to make art more accessible and visible to a broader audience. By fostering these conversations, we aim to inspire fresh perspectives and a deeper appreciation for art among our community and the wider public. Through collaboration and sharing, we hope to cultivate an environment where creativity thrives and everyone's voice is heard. Join us as we work to redefine the art community and enrich our collective experience. For our newspaper, the first print run will be 50 copies. After we sell out the first round (normally sold out during preorder). We will do 30-50 copies for the second round (distributed at bookshops and exhibitions). More information about JustArt Collective can be found on our official website and Instagram account: @Justart_Collective Make a submission Contact the curator You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Advertisement Other opportunities The 17th Annual Pound Arts Open Exhibition Thank you for submitting your work to the 17th annual Pound Arts Open Exhibition. Please read... Revolution: Open Call for artists in any medium REVOLUTION What is REVOLUTION? Your ideas may be framed in terms of change, transformation, ... Life models wanted in Durham and Hartlepool Looking for life models for regular monthly in-person sessions in Durham, North East England.... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
       "price_type": "unknown",
       "availability": "sold_out",
-      "availability_checked_at": "2026-11-05",
+      "availability_checked_at": "2026-11-06",
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
@@ -71638,6 +71443,60 @@
       "telegram_include": false,
       "instagram_include": false,
       "reviewed_at": "2026-11-05"
+    },
+    {
+      "id": "moscow-2026-12-05-84c379d167",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-12-05",
+      "time": "17:00",
+      "title": "Мастер-класс «Мотоколяска СМЗ — та самая “моргуновка”»",
+      "venue": "Музей Транспорта Москвы",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "",
+      "url": "https://mtmuseum.ru/affiche/master-klass-motokolyaska-smz-ta-samaya-morgunovka-/",
+      "source": "Музей транспорта Москвы — афиша",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-06",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "moscow-2026-12-06-9baa5f2467",
+      "status": "check",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-12-06",
+      "time": "",
+      "title": "Пластилиновый спектакль «Улитка и кит» 3+",
+      "venue": "Музей русского импрессионизма",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "",
+      "url": "https://www.rusimp.su/events/plastilinovyy-spektakl-ulitka-i-kit-3",
+      "source": "Музей русского импрессионизма",
+      "checked_at": "",
+      "review_reason": "year_not_explicit_on_primary_listing",
+      "discovered_at": "2026-11-06",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "spb-2026-12-11-d7eb167bdb",

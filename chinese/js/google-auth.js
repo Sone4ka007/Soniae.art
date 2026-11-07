@@ -25,9 +25,14 @@
   function notify() { if (callbacks && callbacks.onStatus) callbacks.onStatus(); }
   function current() { return { enabled, user, status, conflict: conflict && conflict.kind, errorMessage }; }
   function canonical(value) {
+    // Older backups and cloud rows do not contain the new resume fields.
+    // Treat missing defaults as equal to avoid false conflicts after an update.
+    const comparable = {...value};
+    if (!comparable.sessions || !Object.keys(comparable.sessions).length) delete comparable.sessions;
+    if (!comparable.lastMode || comparable.lastMode === 'story') delete comparable.lastMode;
     const normalize = v => Array.isArray(v) ? v.map(normalize) :
       v && typeof v==='object' ? Object.fromEntries(Object.keys(v).sort().map(k=>[k,normalize(v[k])])) : v;
-    return JSON.stringify(normalize(value));
+    return JSON.stringify(normalize(comparable));
   }
   function meaningful(p) {
     if (!p || typeof p !== 'object') return false;

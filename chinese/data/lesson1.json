@@ -1834,5 +1834,24 @@
         ]
       }
     ]
+  },
+  "textbookVocabulary": {
+    "source": "新HSK教程 4 上",
+    "pdfPages": [
+      12,
+      14,
+      16,
+      18
+    ],
+    "bookPrintedPages": [
+      2,
+      4,
+      6,
+      8
+    ],
+    "coreWords": 40,
+    "properNouns": 0,
+    "verified": "manual-visual",
+    "lastReviewed": "2026-11-07"
   }
 }

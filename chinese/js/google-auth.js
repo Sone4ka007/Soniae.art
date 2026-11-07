@@ -32,7 +32,7 @@
   function meaningful(p) {
     if (!p || typeof p !== 'object') return false;
     if (Number(p.xp || 0) || Number(p.correct || 0) || Number(p.attempts || 0)) return true;
-    return ['stories','weak','saved','srs','ciDone','questWords'].some(k => p[k] && Object.keys(p[k]).length);
+    return ['stories','weak','saved','srs','ciDone','questWords','sessions'].some(k => p[k] && Object.keys(p[k]).length);
   }
   function storedBackup(data, label) {
     try {

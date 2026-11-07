@@ -435,6 +435,20 @@
 @media(max-width:950px){.lesson-tabs{grid-template-columns:repeat(2,minmax(0,1fr))}.lesson-tab{min-height:110px}}
 @media(max-width:500px){.lesson-tab{padding:13px 10px;gap:5px}.lesson-tab .lesson-num{font-size:35px}.lesson-tab .lesson-name{font-size:12px}.lesson-tab .lesson-count{font-size:9px}.review-scope-buttons button{flex:1 0 30%;padding:10px 7px;font-size:10px}}
 
+
+/* Word-scale sentence tiles; the adjacent question mark keeps translation opt-in. */
+.sentence-piece{display:inline-flex;align-items:stretch;max-width:100%;white-space:nowrap}
+.sentence-piece .sentence-tile{border-right:0}
+.sentence-piece-help{border:2px solid var(--ink);background:var(--white);min-width:29px;padding:0 6px;font:800 14px var(--font)}
+.sentence-piece-help:hover,.sentence-piece-help:focus-visible{background:var(--acid)}
+.sentence-bank{justify-content:flex-start;gap:8px;margin:17px 0;min-height:58px}
+.sentence-answer{gap:8px;min-height:90px}
+.sentence-piece .sentence-tile{font:700 clamp(19px,2.4vw,29px)/1.2 var(--han);padding:9px 11px;min-height:50px}
+@media(max-width:640px){
+ .sentence-piece .sentence-tile{font-size:clamp(19px,5vw,25px);padding:8px 9px;min-height:46px}
+ .sentence-piece-help{min-width:26px;padding:0 5px}
+ .sentence-bank,.sentence-answer{gap:7px}
+}
 </style>
   <link rel="stylesheet" href="./css/progress.css">
   <link rel="stylesheet" href="./css/google-auth.css">
@@ -479,6 +493,7 @@ window.chineseLabLessonFetch=async url=>{const key=String(url).split("/").pop();
 <script src="./js/progress-store.js"></script>
 <script src="./config/supabase.js"></script>
 <script src="./js/google-auth.js"></script>
+<script src="./js/sentence-tiles.js"></script>
 <script>
 const sceneURL = name => window.__offlineScenes[name] || ("assets/"+name+".svg");
 const $ = (selector) => document.querySelector(selector);
@@ -882,15 +897,23 @@ function initSentence(){
 function prepareSentence(){
  const g=state.game;if(g.index>=g.questions.length)return;
  const q=g.questions[g.index];
- g.bank=shuffle(q.parts.map((zh,i)=>({id:`p${i}`,zh})));g.selected=[];g.done=false;g.notice='';g.tries=0;g.hint=false;
+ const vocabulary=allVocabulary();
+ const parts=ChineseLabSentenceTiles.split(q.parts,vocabulary);
+ g.bank=shuffle(parts.map((zh,i)=>({id:`p${i}`,zh})));
+ g.starts=[...new Set((q.variants||[q.parts]).map(v=>ChineseLabSentenceTiles.split(v,vocabulary)[0]))];
+ g.selected=[];g.done=false;g.notice='';g.tries=0;g.hint=false;
 }
 function renderSentence(){
  const g=state.game;
  if(g.index>=g.questions.length){$('#game-panel').innerHTML=completedBlock('ПРЕДЛОЖЕНИЯ СОБРАНЫ',`Правильных переводов: ${g.correct} из ${g.questions.length}.`,'sentence');return;}
  const q=g.questions[g.index];const chosen=g.selected.map(id=>g.bank.find(x=>x.id===id));
- const answer=chosen.map(x=>`<button class="sentence-tile" data-action="sentence-remove" data-id="${esc(x.id)}" ${g.done?'disabled':''}>${esc(x.zh)}</button>`).join('');
- const tiles=g.bank.filter(x=>!g.selected.includes(x.id)).map(x=>`<button class="sentence-tile in-bank" data-action="sentence-add" data-id="${esc(x.id)}" ${g.done?'disabled':''}>${esc(x.zh)}</button>`).join('');
- $('#game-panel').innerHTML=`${header('ПЕРЕВЕДИ И СОБЕРИ ПРЕДЛОЖЕНИЕ','Прочитай фразу по-русски. Составь естественное предложение из китайских слов, нажимая на плитки.',`ФРАЗА ${g.index+1}/${g.questions.length}`)}<div class="quiz-layout"><div class="progress-track"><div style="width:${100*g.index/g.questions.length}%"></div></div><div class="sentence-question"><span class="eyebrow">ПЕРЕВЕДИ НА КИТАЙСКИЙ</span><p>${esc(q.ru)}</p></div><div class="sentence-targets"><span>СЛОВА ЭТОГО УРОКА:</span> ${(q.targets||[]).map(zh=>`<button type="button" data-action="inspect" data-zh="${esc(zh)}" class="target-word">${esc(zh)} ◖))</button>`).join('')}</div><div class="sentence-subtitle">ТВОЙ ОТВЕТ ${g.hint?`· НАЧНИ С «${(q.variants||[q.parts]).map(v=>esc(v[0])).filter((v,i,a)=>a.indexOf(v)===i).join('» ИЛИ «')}»`:''}</div><div class="sentence-answer" aria-label="Собранное предложение">${answer}${chosen.length?'':'<span class="sentence-placeholder">Нажимай на иероглифы ниже ↓</span>'}</div><div class="sentence-bank">${tiles}</div><div class="sentence-tip">Нажми плитку, чтобы добавить в ответ. Незнакомые слова можно открыть и сохранить уже сейчас — через «?» под плитками:</div><div class="sentence-glossary">${g.bank.map(x=>`<button class="sentence-glossary-item" type="button" data-action="inspect" data-zh="${esc(x.zh)}">${esc(x.zh)} <small>?</small></button>`).join('')}</div><div class="sentence-controls"><button type="button" class="action-btn secondary" data-action="sentence-clear" ${g.done?'disabled':''}>ОЧИСТИТЬ</button><button type="button" class="action-btn secondary" data-action="sentence-hint" ${g.done?'disabled':''}>ПОДСКАЗКА</button><button type="button" class="action-btn" data-action="sentence-check" ${chosen.length!==q.parts.length||g.done?'disabled':''}>ПРОВЕРИТЬ →</button>${g.done?'<button type="button" class="action-btn" data-action="sentence-next">ДАЛЬШЕ →</button>':''}</div>${g.notice?`<div class="feedback ${g.done?'':'is-error'} stage-done">${g.done?`<div class="sentence-correct">${tapText(q.zh)} ${speakButton(q.zh,'Прослушать предложение')}</div><p>${esc(q.explain)} ${q.variants?.length>1?'Временное обстоятельство можно ставить перед или после подлежащего, но перед глаголом.':''}</p>`:`<strong>${esc(g.notice)}</strong>`}</div>`:''}<p class="audio-note">После правильного ответа предложение прозвучит по-китайски. Нажми на фразу, чтобы повторить.</p></div>`;
+ const chip=(x,inBank)=>{
+  const zh=x.zh.replace(/[^\u3400-\u9fff]/gu,'');
+  return `<span class="sentence-piece"><button type="button" class="sentence-tile ${inBank?'in-bank':''}" data-action="${inBank?'sentence-add':'sentence-remove'}" data-id="${esc(x.id)}" ${g.done?'disabled':''} lang="zh-CN">${esc(x.zh)}</button><button type="button" class="sentence-piece-help" data-action="inspect" data-zh="${esc(zh)}" aria-label="Перевод и произношение: ${esc(zh)}">?</button></span>`;
+ };
+ const answer=chosen.map(x=>chip(x,false)).join('');
+ const tiles=g.bank.filter(x=>!g.selected.includes(x.id)).map(x=>chip(x,true)).join('');
+ $('#game-panel').innerHTML=`${header('ПЕРЕВЕДИ И СОБЕРИ ПРЕДЛОЖЕНИЕ','Прочитай фразу по-русски. Составь естественное предложение из китайских слов, нажимая на плитки.',`ФРАЗА ${g.index+1}/${g.questions.length}`)}<div class="quiz-layout"><div class="progress-track"><div style="width:${100*g.index/g.questions.length}%"></div></div><div class="sentence-question"><span class="eyebrow">ПЕРЕВЕДИ НА КИТАЙСКИЙ</span><p>${esc(q.ru)}</p></div><div class="sentence-targets"><span>СЛОВА ЭТОГО УРОКА:</span> ${(q.targets||[]).map(zh=>`<button type="button" data-action="inspect" data-zh="${esc(zh)}" class="target-word">${esc(zh)} ◖))</button>`).join('')}</div><div class="sentence-subtitle">ТВОЙ ОТВЕТ ${g.hint?`· НАЧНИ С «${g.starts.map(esc).join('» ИЛИ «')}»`:''}</div><div class="sentence-answer" aria-label="Собранное предложение">${answer}${chosen.length?'':'<span class="sentence-placeholder">Нажимай на иероглифы ниже ↓</span>'}</div><div class="sentence-bank">${tiles}</div><div class="sentence-tip">Нажми плитку, чтобы добавить в ответ. «?» рядом со словом открывает его произношение и перевод по нажатию.</div><div class="sentence-controls"><button type="button" class="action-btn secondary" data-action="sentence-clear" ${g.done?'disabled':''}>ОЧИСТИТЬ</button><button type="button" class="action-btn secondary" data-action="sentence-hint" ${g.done?'disabled':''}>ПОДСКАЗКА</button><button type="button" class="action-btn" data-action="sentence-check" ${chosen.length!==g.bank.length||g.done?'disabled':''}>ПРОВЕРИТЬ →</button>${g.done?'<button type="button" class="action-btn" data-action="sentence-next">ДАЛЬШЕ →</button>':''}</div>${g.notice?`<div class="feedback ${g.done?'':'is-error'} stage-done">${g.done?`<div class="sentence-correct">${tapText(q.zh)} ${speakButton(q.zh,'Прослушать предложение')}</div><p>${esc(q.explain)} ${q.variants?.length>1?'Временное обстоятельство можно ставить перед или после подлежащего, но перед глаголом.':''}</p>`:`<strong>${esc(g.notice)}</strong>`}</div>`:''}<p class="audio-note">После правильного ответа предложение прозвучит по-китайски. Нажми на фразу, чтобы повторить.</p></div>`;
 }
 function sentenceAction(action,id){
  const g=state.game;const q=g.questions[g.index];if(!q)return;

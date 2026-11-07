@@ -10,6 +10,17 @@
   let client = null, user = null, status = enabled ? 'loading' : 'unconfigured';
   let callbacks = null, revision = null, conflict = null, errorMessage = '';
   let timer = 0, busy = false, requested = false, lastWritten = '', switchId = 0;
+  // Supabase returns OAuth errors to the site's redirect URL. Preserve them
+  // before its SDK processes or clears the URL, rather than silently showing guest.
+  let redirectError = (() => {
+    try {
+      const query = new URLSearchParams(global.location.search || '');
+      const hash = new URLSearchParams((global.location.hash || '').replace(/^#/, ''));
+      const code = query.get('error') || hash.get('error');
+      if (!code) return '';
+      return 'Вход через Google не завершён. Проверьте настройки авторизации или попробуйте позже.';
+    } catch { return ''; }
+  })();
 
   function notify() { if (callbacks && callbacks.onStatus) callbacks.onStatus(); }
   function current() { return { enabled, user, status, conflict: conflict && conflict.kind, errorMessage }; }
@@ -41,7 +52,9 @@
     clearTimeout(timer);
     user = nextUser || null;
     revision = null; conflict = null; lastWritten = ''; requested = false;
-    status = user ? 'loading' : 'guest';
+    status = user ? 'loading' : redirectError ? 'error' : 'guest';
+    if (user) { redirectError = ''; errorMessage = ''; }
+    else if (redirectError) errorMessage = redirectError;
     if (callbacks) callbacks.onIdentity(user);
     notify();
     if (!user) return;
@@ -108,6 +121,7 @@
   }
   async function signIn() {
     if (!enabled || !client) return;
+    redirectError = '';
     errorMessage = '';
     try {
       const {error} = await client.auth.signInWithOAuth({

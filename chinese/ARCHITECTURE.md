@@ -11,7 +11,9 @@
 
 ## Stable progress shape
 
-The current progress object contains `xp`, `correct`, `attempts`, `stories`, `weak`, `questWords`, `srs` (per-Hanzi review intervals), `saved` (custom dictionary), `ciDone` (reading chapters), `reviewScope`, `reviewDir`, `sound`, `rate`, and `lastLessonId`. Never change the existing key or remove legacy fields without a migration.
+The current progress object contains `xp`, `correct`, `attempts`, `stories`, `weak`, `questWords`, `srs` (per-Hanzi review intervals), `saved` (custom dictionary), `ciDone` (reading chapters), `reviewScope`, `reviewDir`, `sound`, `rate`, `lastLessonId`, `lastMode`, and `sessions`. Never change the existing key or remove legacy fields without a migration.
+
+`js/exercise-sessions.js` saves a versioned snapshot of the current exercise for each lesson and mode (quest, pairs, two quiz directions, word builder, sentence builder). Both the shuffled order and partial answers are saved on clicks, so switching tabs and reloading resumes the current round. Only the explicit **НАЧАТЬ ЗАНОВО** action resets a round; XP, SRS and completed vocabulary remain untouched. Exercise snapshots are included in local backups and the same Supabase JSONB progress payload—no additional database table is required.
 
 ## Supabase integration (frontend prepared; service not yet configured)
 

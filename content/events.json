@@ -38291,7 +38291,7 @@
       "reviewed_at": "2026-10-17",
       "availability": "unknown",
       "availability_checked_at": "",
-      "registration": false,
+      "registration": null,
       "price": null,
       "price_text": "",
       "price_type": "paid",
@@ -38317,7 +38317,7 @@
         "status": "approved",
         "telegram_include": false,
         "instagram_include": false,
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -41054,7 +41054,7 @@
       "address": "1-й Голутвинский переулок, 16, стр. 1",
       "price": 850,
       "price_text": "850 ₽; льготный — 650 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -41081,7 +41081,7 @@
       "time_evidence": "24 октября 2026 14:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
       "editor_overrides": {
-        "registration": false
+        "registration": null
       }
     },
     {
@@ -49427,7 +49427,7 @@
       "address": "Лаврушинский переулок, 12",
       "price": 650,
       "price_text": "650 ₽; онлайн — 700 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -49444,7 +49444,7 @@
         "telegram_include": false,
         "instagram_include": false,
         "status": "approved",
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -51674,14 +51674,16 @@
       "price": 0,
       "price_text": "",
       "registration": false,
-      "categories": [],
+      "categories": [
+        "выставка"
+      ],
       "description": "На метро Музей AZ находится между станциями метро «Маяковская» и «Белорусская» (кольцевая). Мы рекомендуем идти в Музей от станции «Маяковская». Вам нужен Выход №1 на 1-я Тверская-Ямская улица, 2-я Тверская-Ямская улица.",
       "url": "https://museum-az.com/event/territoriya-svobody-nonkonformisty-v-taruse/",
       "source": "Музей AZ — выставки и события",
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-10-20",
-      "price_type": "paid",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-10-25",
       "editor_overrides": {
@@ -52951,7 +52953,7 @@
       "title": "Коллективная выставка Арт-шаффл 43.0",
       "venue": "ЦСИ Винзавод",
       "address": "",
-      "price": 1500,
+      "price": 12000,
       "price_text": "12000 ₽",
       "registration": null,
       "categories": [
@@ -55219,7 +55221,7 @@
       "address": "",
       "price_type": "free",
       "price_text": "бесплатно по регистрации",
-      "registration": false,
+      "registration": true,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -56963,6 +56965,32 @@
       }
     },
     {
+      "id": "spb-2026-11-07-2ceecd0c01",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-07",
+      "time": "",
+      "title": "«Рождение». Выступление «Петербургской Плейбэк Студии»",
+      "venue": "Пушкинская-10",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": true,
+      "categories": [],
+      "description": "Плейбэк театр – вид современной театральной импровизации, позволяющий глубже проживать события из собственной жизни и из жизни сообществ. Этот формат даст возможность каждому участнику связать эмоциональный отклик на выставку со своей личной историей, а потом создать из этого общий нарратив.",
+      "url": "https://p-10.ru/events/rozhdenie-vystuplenie-peterburgskoj-plejbek-studii/",
+      "source": "Пушкинская-10 — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-07",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "spb-2026-11-07-d709f81e9f",
       "status": "approved",
       "kind": "event",
@@ -57026,7 +57054,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-07-3641e5a389",
@@ -57189,7 +57219,7 @@
       "address": "",
       "price_type": "free",
       "price_text": "бесплатно по регистрации",
-      "registration": false,
+      "registration": true,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -57552,34 +57582,6 @@
       "start_date": "2026-11-07"
     },
     {
-      "id": "moscow-2026-11-07-4965a683e1",
-      "status": "check",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-11-07",
-      "time": "10:00",
-      "title": "Археологический фестиваль «Открытый лист»",
-      "venue": "ул. Бауманская, д. 58/25, стр. 14",
-      "address": "",
-      "price": null,
-      "price_text": "Бесплатно",
-      "registration": null,
-      "categories": [
-        "фестиваль"
-      ],
-      "description": "Прежде чем отправиться в поле, археолог получает открытый лист — личное разрешение от государства на раскопки. 7 ноября такой лист получит каждый гость Некрасовки: археологи, музейные специалисты, реставраторы, художники и популяризаторы науки расскажут, как устроена экспедиция и что происходит с артефактом после извлечения из культурного слоя, так ли достоверен кинематограф в отражении исторических фактов и почему археология до сих пор вдохновляет художников и создателей игр. На один день библиотека им. Некрасова превратится в полевой лагерь археологов, куда прибудут ученые из самых разных городов страны – от Москвы и Санкт-Петербурга до Кра",
-      "url": "https://design-mate.ru/go/events/arheologicheskiy-festival-otkrytyy-list",
-      "source": "Design Mate — календарь",
-      "checked_at": "",
-      "review_reason": "discovery_source_needs_primary_verification",
-      "discovered_at": "2026-11-07",
-      "price_type": "free",
-      "availability_evidence": "",
-      "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": ""
-    },
-    {
       "id": "moscow-2026-10-25-c40e7952b7",
       "status": "rejected",
       "kind": "event",
@@ -57734,6 +57736,41 @@
         "instagram_include": false,
         "status": "approved"
       }
+    },
+    {
+      "id": "spb-2026-11-07-e4cb45c21d",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-07",
+      "time": "13:00",
+      "title": "Разговорный клуб на русском жестовом языке в «Сообществе»",
+      "venue": "Новая Голландия",
+      "address": "",
+      "price": 300,
+      "price_text": "300 ₽",
+      "registration": false,
+      "categories": [],
+      "description": "В «Сообществе» начинаются регулярные встречи разговорного клуба на русском жестовом языке. На них участники будут оттачивать навык общения на РЖЯ, ближе знакомиться с культурой глухих и, конечно, узнавать новые жесты. Общение проходит в полной тишине — единственным звуком будет только ваш смех во время игр!",
+      "url": "https://www.newhollandsp.ru/events/education/rsl-speaking-club/",
+      "source": "Новая Голландия — Сообщество и образование",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-29",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-07-34470e4e14",
@@ -58132,41 +58169,6 @@
       "price_type": "paid",
       "availability_evidence": "",
       "ticket_required": true,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": ""
-    },
-    {
-      "id": "spb-2026-11-07-e4cb45c21d",
-      "status": "new",
-      "kind": "event",
-      "city": "spb",
-      "date": "2026-11-07",
-      "time": "19:00",
-      "title": "Разговорный клуб на русском жестовом языке в «Сообществе»",
-      "venue": "Новая Голландия",
-      "address": "",
-      "price": 300,
-      "price_text": "300 ₽",
-      "registration": false,
-      "categories": [],
-      "description": "В «Сообществе» начинаются регулярные встречи разговорного клуба на русском жестовом языке. На них участники будут оттачивать навык общения на РЖЯ, ближе знакомиться с культурой глухих и, конечно, узнавать новые жесты. Общение проходит в полной тишине — единственным звуком будет только ваш смех во время игр!",
-      "url": "https://www.newhollandsp.ru/events/education/rsl-speaking-club/",
-      "source": "Новая Голландия — Сообщество и образование",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-10-29",
-      "price_type": "paid",
-      "availability_evidence": "",
-      "ticket_required": false,
       "availability": "unknown",
       "availability_checked_at": "",
       "editor_overrides": {
@@ -61499,43 +61501,6 @@
       "availability_checked_at": ""
     },
     {
-      "id": "spb-2026-11-12-020d3b2f98",
-      "status": "new",
-      "kind": "event",
-      "city": "spb",
-      "date": "2026-11-12",
-      "time": "08:11",
-      "title": "Мероприятия",
-      "venue": "Музей «Полторы комнаты» Иосифа Бродского",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [
-        "лекция"
-      ],
-      "description": "Оставляя свои контакты, вы даёте согласие на обработку персональных данных",
-      "url": "https://brodsky.online/events/",
-      "source": "Полторы комнаты — музей Иосифа Бродского",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-10-29",
-      "price_type": "unknown",
-      "availability_evidence": "",
-      "ticket_required": true,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": ""
-    },
-    {
       "id": "moscow-2026-11-12-b485ac3446",
       "status": "approved",
       "kind": "event",
@@ -61715,6 +61680,71 @@
       },
       "telegram_include": false,
       "instagram_include": false
+    },
+    {
+      "id": "spb-2026-11-12-020d3b2f98",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-12",
+      "time": "15:11",
+      "title": "Мероприятия",
+      "venue": "Музей «Полторы комнаты» Иосифа Бродского",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Оставляя свои контакты, вы даёте согласие на обработку персональных данных",
+      "url": "https://brodsky.online/events/",
+      "source": "Полторы комнаты — музей Иосифа Бродского",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-29",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
+    },
+    {
+      "id": "spb-2026-11-12-d4a592982d",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-12",
+      "time": "15:11",
+      "title": "Презентация книги «Воздух» французского поэта Андре дю Буше и обсуждение с переводчиком Иваном Курбаковым и поэтом Александром Скиданом",
+      "venue": "Музей «Полторы комнаты» Иосифа Бродского",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Поэзия дю Буше взыскует дыхания и движения, простирающихся сквозь белые поля внутри страниц и придающих его стихам особый визуальный ритм.",
+      "url": "https://brodsky.online/events/prezentatsiya-knigi-vozdukh-frantsuzskogo-poeta-andre-dyu-bushe-i-obsuzhdenie-s-perevodchikom-ivanom/",
+      "source": "Полторы комнаты — музей Иосифа Бродского",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-07",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "spb-2026-11-12-36feec5499",
@@ -63103,6 +63133,34 @@
       "reviewed_at": ""
     },
     {
+      "id": "spb-2026-11-14-3497c8964e",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-14",
+      "time": "",
+      "title": "События и выставки",
+      "venue": "РОСФОТО",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "Выставка начнет работу в субботу, 14.11.2026 Публичная программа Нажимая \"Отправить\", я подтверждаю свое согласие на обработку моих персональных данных, указанных в форме This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply. Правила использования материалов и изображений, размещённых на сайте РОСФОТО",
+      "url": "https://rosphoto.org/posetitelyam/events/7/",
+      "source": "РОСФОТО",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-11-07",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-14-3fe6d8213b",
       "status": "new",
       "kind": "event",
@@ -63415,7 +63473,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-14-e5682e426b",
@@ -64293,6 +64353,34 @@
       "reviewed_at": ""
     },
     {
+      "id": "moscow-2026-11-15-2bcae38548",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-15",
+      "time": "13:00",
+      "title": "Лекция «Техники гравюры»",
+      "venue": "Третьяковская галерея",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Лекция к абонементу №31 «Язык графики. Материалы и техники». 4 октября 2026 – 13 октября 2026 Лекция будет проходить в Лекционном зале Инженерного корпуса (Лаврушинский переулок, д. 12, вход с Малого Толмачёвского переулка) и в режиме реального времени на платформе МТС Линк в формате онлайн. Продолжительность лекции: 1 час 30 минут.",
+      "url": "https://www.tretyakovgallery.ru/events/o/lektsiya-tekhniki-gravyury-10-2026/",
+      "source": "Третьяковская галерея — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-07",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-15-dc4f5eed02",
       "status": "approved",
       "kind": "event",
@@ -64330,6 +64418,34 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": "2026-11-06"
+    },
+    {
+      "id": "moscow-2026-11-15-c689e645e9",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-15",
+      "time": "15:00",
+      "title": "Лекция «Академизм и салон»",
+      "venue": "Третьяковская галерея",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Лекция к абонементу №05 «Стили и направления: от барокко до реализма» 4 октября 2026 – 22 ноября 2026 Лекция будет проходить в Лекционном зале Инженерного корпуса (Лаврушинский переулок, д. 12, вход с Малого Толмачёвского переулка) и в режиме реального времени на платформе МТС Линк в формате онлайн. Продолжительность лекции: 1 час 30 минут.",
+      "url": "https://www.tretyakovgallery.ru/events/o/lektsiya-akademizm-i-salon-11-2026/",
+      "source": "Третьяковская галерея — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-07",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-15-bd37e6f9c2",
@@ -64885,6 +65001,34 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "spb-2026-11-16-a91c58f9af",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-16",
+      "time": "17:30",
+      "title": "Практикум «По следам ребенка в поиске мотивации» в CoLab «Простые числа»",
+      "venue": "Новая Голландия",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": true,
+      "categories": [
+        "программа"
+      ],
+      "description": "Практикум для педагогов, родителей и всех, кто интересуется развитием детей и исследованием формирования мотивации. Внутренняя мотивация человека — двигатель развития, побуждающий каждого следовать в новое, неизведанное, осваивать новые территории своего разума. Может ли быть утерянной связь с этим внутренним огнём жизни, когда человек ничего не хочет, никуда не стремится?",
+      "url": "https://www.newhollandsp.ru/events/education/colab-motivation/",
+      "source": "Новая Голландия — Сообщество и образование",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-07",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "spb-2026-11-16-29b1659379",
@@ -65681,7 +65825,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-18-d4ed4734f6",
@@ -72315,7 +72461,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2027-01-05-8449789f61",
@@ -72605,7 +72753,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     }
   ]
 }

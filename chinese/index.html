@@ -591,7 +591,7 @@ const modeInfo = [
   { id: 'video', icon: '▷', title: 'ВИДЕО' },
   { id: 'progress', icon: '◫', title: 'МОЙ ПРОГРЕСС' },
 ];
-const progressDefaults = { xp: 0, correct: 0, attempts: 0, stories: {}, weak: {}, sound: true, rate: 0.9, saved: {}, srs: {}, ciDone: {}, questWords: {}, sessions: {}, reviewDir: "hanzi", reviewScope: "all", lastLessonId: 1, lastMode: "story" };
+const progressDefaults = { xp: 0, correct: 0, attempts: 0, stories: {}, weak: {}, sound: true, rate: 0.9, saved: {}, srs: {}, ciDone: {}, questWords: {}, reviewDir: "hanzi", reviewScope: "all", lastLessonId: 1, lastMode: "story" };
 const stored = ChineseLabProgress.load(progressDefaults);
 const state = { lessons: [], manifest: null, cloudUserId:null, lessonId: Number(stored.lastLessonId) || 1, mode: 'story', game: null, interacted: false, progress: stored, pendingToast: 0, highlightedWords: new Set(), wordsSection:'lesson' };
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));

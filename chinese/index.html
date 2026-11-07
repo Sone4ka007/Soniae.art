@@ -1386,7 +1386,7 @@ function renderProgress() {
       '</div></section>';
   }).join('');
   $('#game-panel').innerHTML =
-    header('МОЙ ПРОГРЕСС', 'Прогресс хранится в этом браузере. Для переноса на другое устройство сохрани резервную копию.', 'LOCAL / BACKUP') +
+    header('МОЙ ПРОГРЕСС', 'Прогресс сохраняется в браузере и синхронизируется через Google при активном входе.', 'LOCAL / BACKUP') +
     '<div class="progress-board"><p class="progress-lead">Здесь собираются результаты двух частей HSK 4, интервальные повторения, слова из квестов и завершённые главы. Доступные уроки можно повторять отдельно.</p>' +
     summary + renderGoogleAuthPanel() + partsHtml +
     '<section class="progress-backup"><h4>РЕЗЕРВНАЯ КОПИЯ</h4>' +
@@ -1394,7 +1394,7 @@ function renderProgress() {
     '<div class="progress-backup-actions"><button type="button" data-action="progress-export">СКАЧАТЬ ПРОГРЕСС · JSON</button>' +
     '<button type="button" data-action="progress-import">ВОССТАНОВИТЬ ИЗ ФАЙЛА</button></div>' +
     '<input id="progress-import-file" type="file" accept=".json,application/json" hidden>' +
-    '<p class="progress-backup-note">При восстановлении файл заменит текущий прогресс после подтверждения. Регистрация и облачная синхронизация пока не подключены.</p></section></div>';
+    '<p class="progress-backup-note">При восстановлении файл заменит текущий прогресс после подтверждения. Если ты вошла через Google, новая версия отправится в облако.</p></section></div>';
 }
 function downloadProgressPayload(payload, label = 'progress') {
   const blob = new Blob([payload], {type: 'application/json;charset=utf-8'});

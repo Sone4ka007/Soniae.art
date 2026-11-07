@@ -7,8 +7,8 @@ import { fileURLToPath } from 'node:url';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '../../chinese/data');
 const read = name => JSON.parse(readFileSync(resolve(root, name), 'utf8'));
-const normalize = text => String(text).replace(/[\\s。，？！、：；“”！？]/g, '');
-const hanziLength = text => (String(text).match(/[\\u3400-\\u9fff]/g) || []).length;
+const normalize = text => String(text).replace(/[\s。，？！、：；“”！？]/g, '');
+const hanziLength = text => (String(text).match(/[\u3400-\u9fff]/g) || []).length;
 let sentences = 0, missions = 0;
 for (let i = 1; i <= 10; i++) {
   const lesson = read('lesson' + i + '.json');

@@ -449,6 +449,9 @@
  .sentence-piece-help{min-width:26px;padding:0 5px}
  .sentence-bank,.sentence-answer{gap:7px}
 }
+.exercise-resume-bar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:9px;margin:-10px 0 20px;padding:9px 0;border-bottom:1px solid var(--line);font-size:10px;font-weight:800;letter-spacing:.065em;color:var(--muted)}
+.exercise-resume-bar button{border:1px solid var(--ink);background:transparent;color:var(--ink);padding:7px 10px;font-size:10px;font-weight:800;letter-spacing:.04em}
+.exercise-resume-bar button:hover{background:var(--acid)}
 </style>
   <link rel="stylesheet" href="./css/progress.css">
   <link rel="stylesheet" href="./css/google-auth.css?v=20261107-2">
@@ -571,6 +574,7 @@ window.chineseLabLessonFetch=async url=>{const key=String(url).split("/").pop();
 <script src="./config/supabase.js"></script>
 <script src="./js/google-auth.js"></script>
 <script src="./js/sentence-tiles.js"></script>
+<script src="./js/exercise-sessions.js"></script>
 <script>
 const sceneURL = name => window.__offlineScenes[name] || ("assets/"+name+".svg");
 const $ = (selector) => document.querySelector(selector);
@@ -587,7 +591,7 @@ const modeInfo = [
   { id: 'video', icon: '▷', title: 'ВИДЕО' },
   { id: 'progress', icon: '◫', title: 'МОЙ ПРОГРЕСС' },
 ];
-const progressDefaults = { xp: 0, correct: 0, attempts: 0, stories: {}, weak: {}, sound: true, rate: 0.9, saved: {}, srs: {}, ciDone: {}, questWords: {}, reviewDir: "hanzi", reviewScope: "all", lastLessonId: 1 };
+const progressDefaults = { xp: 0, correct: 0, attempts: 0, stories: {}, weak: {}, sound: true, rate: 0.9, saved: {}, srs: {}, ciDone: {}, questWords: {}, sessions: {}, reviewDir: "hanzi", reviewScope: "all", lastLessonId: 1, lastMode: "story" };
 const stored = ChineseLabProgress.load(progressDefaults);
 const state = { lessons: [], manifest: null, cloudUserId:null, lessonId: Number(stored.lastLessonId) || 1, mode: 'story', game: null, interacted: false, progress: stored, pendingToast: 0, highlightedWords: new Set(), wordsSection:'lesson' };
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -608,6 +612,14 @@ const formatXP = value => String(value).padStart(3, '0');
 function save() {
   ChineseLabProgress.save(state.progress, state.cloudUserId);
   ChineseLabCloud.schedule();
+}
+function saveActiveSession() {
+  if (!state.game || !ChineseLabSessions.modes.has(state.mode)) return;
+  if (ChineseLabSessions.persist(state.progress, state.lessonId, state.mode, state.game, lesson())) save();
+}
+function restoreActiveSession(mode) {
+  const snapshot = ChineseLabSessions.restore(state.progress, state.lessonId, mode, lesson());
+  if (snapshot) state.game = snapshot;
 }
 state.progress.saved ||= {}; state.progress.srs ||= {};
 let toastTimer;
@@ -640,9 +652,15 @@ function speech(text, force = true) {
 }
 function autoSpeech(text) { if (state.interacted) speech(text, false); }
 function speakButton(text, label='Послушать') { return `<button type="button" class="speak-inline" data-speak="${esc(text)}" aria-label="${esc(label)}: ${esc(text)}">◖))</button>`; }
-function header(title, desc = '', tag = '') { return `<div class="panel-head"><div><div class="eyebrow">${esc(lesson().label.toUpperCase())} / ${esc(lesson().topic.toUpperCase())}</div><h3>${esc(title)}</h3>${desc?`<p class="panel-desc">${esc(desc)}</p>`:''}</div>${tag ? `<span class="chip">${esc(tag)}</span>` : ''}</div>`; }
+function header(title, desc = '', tag = '') {
+  const head = `<div class="panel-head"><div><div class="eyebrow">${esc(lesson().label.toUpperCase())} / ${esc(lesson().topic.toUpperCase())}</div><h3>${esc(title)}</h3>${desc?`<p class="panel-desc">${esc(desc)}</p>`:''}</div>${tag ? `<span class="chip">${esc(tag)}</span>` : ''}</div>`;
+  return head + (ChineseLabSessions.modes.has(state.mode)
+    ? '<div class="exercise-resume-bar"><span>АВТОСОХРАНЕНИЕ ЗАДАНИЙ</span><button type="button" data-action="exercise-restart">НАЧАТЬ ЗАНОВО ↻</button></div>'
+    : '');
+}
 function activateLesson(id) {
   stopReader();
+  saveActiveSession();
   if (!state.lessons.some(x => x.id === id)) return;
   state.lessonId = id;
   state.progress.lastLessonId = id;
@@ -651,10 +669,12 @@ function activateLesson(id) {
   $('.lesson-tabs')?.setAttribute('data-current',String(id));
   renderShell(); activateMode(state.mode);
 }
-function activateMode(mode) {
+function activateMode(mode, reset = false) {
   stopReader();
   if (!modeInfo.some(x => x.id === mode)) return;
+  saveActiveSession();
   state.mode = mode;
+  if (reset && ChineseLabSessions.clear(state.progress, state.lessonId, mode)) save();
   if (mode === 'story') initQuest();
   if (mode === 'pairs') initPairs();
   if (mode === 'translate' || mode === 'reverse') initQuiz();
@@ -663,9 +683,12 @@ function activateMode(mode) {
   if (mode === 'review') initReview();
   if (mode === 'input') initCI();
   if (mode === 'words' || mode === 'video' || mode === 'progress') state.game = {};
+  if (!reset && ChineseLabSessions.modes.has(mode)) restoreActiveSession(mode);
+  if (state.progress.lastMode !== mode) { state.progress.lastMode = mode; save(); }
   renderShell(); renderGame();
-  if (state.interacted && mode==='translate') autoSpeech(state.game.questions[0]?.hanzi);
-  if (state.interacted && mode==='story') autoSpeech(lesson().quest.introZh);
+  saveActiveSession();
+  if (state.interacted && mode==='translate') autoSpeech(state.game.questions[state.game.index]?.hanzi);
+  if (state.interacted && mode==='story' && state.game.status==='intro') autoSpeech(lesson().quest.introZh);
 }
 function renderShell() {
   const l = lesson(); if (!l) return;
@@ -1022,7 +1045,7 @@ function renderWords(){
 }
 function renderVideo(){const v=lesson().video;if(!v?.id){$('#game-panel').innerHTML=`${header('ВИДЕО','Проверенного тематического видео пока нет.','ДОПОЛНИТЕЛЬНО')}<p class="audio-note">Этот раздел пока не содержит проверенного внешнего видео. Слушать китайскую речь можно в историях и упражнениях урока.</p>`;return;}$('#game-panel').innerHTML=`${header('СЛУШАЙ РЕАЛЬНУЮ РЕЧЬ','Видео открывается по кнопке — ничего не загружается автоматически.', 'YOUTUBE / ПРАКТИКА')}<div class="video-layout"><div id="video-holder" class="video-poster"><div class="play-circle">▶</div><button type="button" data-action="load-video">СМОТРЕТЬ ЗДЕСЬ ↗</button></div><div class="video-caption"><div class="eyebrow">ДОПОЛНИТЕЛЬНЫЙ МАТЕРИАЛ</div><h4>${esc(v.title)}</h4><p>${esc(v.description)}</p><p><a class="video-link" href="https://www.youtube.com/watch?v=${encodeURIComponent(v.id)}" rel="noopener" target="_blank">ОТКРЫТЬ НА YOUTUBE ↗</a></p><p class="audio-note">Встраивание зависит от настроек автора видео и доступности YouTube в твоём регионе.</p></div></div>`;}
 function loadVideo(){const holder=$('#video-holder');if(holder){const v=lesson().video;holder.className='';holder.innerHTML=`<iframe class="video-frame" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" title="${esc(v.title)}" src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(v.id)}" allowfullscreen></iframe>`;}}
-function completedBlock(title,subtitle,mode){return `<div class="complete"><div class="eyebrow">РАУНД ЗАКОНЧЕН</div><div class="mega">加油!</div><h4>${esc(title)}</h4><p>${esc(subtitle)}</p><button type="button" class="action-btn" data-action="mode" data-id="${esc(mode)}">НОВЫЙ РАУНД ↗</button></div>`;}
+function completedBlock(title,subtitle,mode){return `<div class="complete"><div class="eyebrow">РАУНД ЗАКОНЧЕН</div><div class="mega">加油!</div><h4>${esc(title)}</h4><p>${esc(subtitle)}</p><button type="button" class="action-btn" data-action="exercise-restart">НОВЫЙ РАУНД ↗</button></div>`;}
 /* v4: Shared local spaced repetition, tap-any-character dictionary, and graded input. */
 const DAY = 86400000;
 const HAN_RE = /[\u3400-\u9fff]/u;
@@ -1303,8 +1326,9 @@ function applyAccountProgress(progress) {
   state.progress={...progressDefaults,...progress};
   state.lessonId=Number(state.progress.lastLessonId)||1;
   if(state.lessons.length && !state.lessons.some(l=>l.id===state.lessonId))state.lessonId=state.lessons[0].id;
+  state.game=null;
   save();
-  if(state.lessons.length){renderShell();if(state.mode==='progress')renderProgress();}
+  if(state.lessons.length) activateMode(state.progress.lastMode || 'story');
 }
 function onCloudIdentity(user) {
   state.cloudUserId=user?.id||null;
@@ -1312,7 +1336,8 @@ function onCloudIdentity(user) {
   state.lessonId=Number(state.progress.lastLessonId)||1;
   if(state.lessons.length){
     if(!state.lessons.some(l=>l.id===state.lessonId))state.lessonId=state.lessons[0].id;
-    activateMode('progress'); // Prevent stale quest state from the previous account.
+    state.game=null; // Prevent stale exercise state from the previous account.
+    activateMode(state.progress.lastMode || 'story');
   }
   renderAuthControls();
 }
@@ -1400,9 +1425,8 @@ document.addEventListener('change', async event => {
     state.progress = next;
     ChineseLabCloud.schedule();
     if (state.lessons.some(l => l.id === Number(next.lastLessonId))) state.lessonId = Number(next.lastLessonId);
-    state.game = {};
-    renderShell();
-    renderProgress();
+    state.game = null;
+    activateMode(next.lastMode || 'story');
     toast('ПРОГРЕСС ВОССТАНОВЛЕН');
   } catch (error) {
     console.error(error);
@@ -1427,6 +1451,11 @@ document.addEventListener('click', event => {
  case 'auth-choice':ChineseLabCloud.choose(btn.dataset.choice);break;
  case 'auth-backup':{const content=ChineseLabCloud.backupText(btn.dataset.source);if(content)downloadProgressPayload(content,btn.dataset.source+'-backup');break;}
  case 'mode':activateMode(btn.dataset.id);break;
+ case 'exercise-restart':
+   if (ChineseLabSessions.modes.has(state.mode) &&
+     window.confirm('Начать этот режим заново? Текущая серия заданий будет сброшена, но XP и общий прогресс сохранятся.'))
+     activateMode(state.mode, true);
+   break;
  case 'quest-gloss':case 'quest-analyze':case 'quest-mission-toggle':case 'quest-mission-select':case 'quest-mission-pick':case 'quest-mission-next':case 'quest-spot':case 'quest-choice':case 'quest-token':case 'quest-token-remove':case 'quest-pick':case 'quest-check':case 'quest-clear':case 'quest-hint':case 'quest-translation':case 'quest-zoom':case 'quest-start':case 'quest-next':case 'quest-restart':questAction(action,btn);break;
  case 'sentence-add':case 'sentence-remove':case 'sentence-clear':case 'sentence-hint':case 'sentence-check':case 'sentence-next':sentenceAction(action,btn.dataset.id);break;
  case 'pair':pairPick(btn.dataset.side,btn.dataset.id);break;
@@ -1449,6 +1478,7 @@ document.addEventListener('click', event => {
  case 'review-grade':gradeReview(btn.dataset.grade);break;
  case 'ci-analyze':case 'ci-reveal-option':case 'ci-select':case 'ci-translations':case 'ci-listen':case 'ci-listen-block':case 'ci-read-from-line':case 'ci-toggle':case 'ci-stop':case 'ci-prev':case 'ci-next-line':case 'ci-pick':case 'ci-decision':case 'ci-next':case 'reader-parse':case 'reader-unknown':ciAction(action,btn);break;
  }
+ saveActiveSession();
 });
 document.addEventListener('input', event => {if(event.target.id!=='words-search')return;const q=event.target.value.trim().toLowerCase();document.querySelectorAll('.word-card').forEach(card=>card.hidden=!card.dataset.search.includes(q));});
 $('#audio-toggle').addEventListener('click', ()=>{state.interacted=true;state.progress.sound=!state.progress.sound;save();renderShell();toast(state.progress.sound?'АВТОЗВУК ВКЛЮЧЁН':'АВТОЗВУК ВЫКЛЮЧЕН');});
@@ -1462,7 +1492,7 @@ async function bootstrap(){try{
  const rContext=await window.chineseLabLessonFetch('./data/context-glossary.json');state.contextWords=rContext.ok?await rContext.json():[];
  if(!state.lessons.some(l=>l.id===state.lessonId))state.lessonId=state.lessons[0]?.id||1;
  $('#hero-lessons').textContent=`${state.lessons.map(l=>String(l.id).padStart(2,'0')).join('—')} / УРОКИ В ПРОГРАММЕ`;
- activateMode('story');
+ activateMode(state.progress.lastMode || 'story');
  await ChineseLabCloud.init({
   getProgress:()=>state.progress,
   getGuestProgress:()=>ChineseLabProgress.load(progressDefaults),

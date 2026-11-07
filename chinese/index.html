@@ -686,7 +686,6 @@ function activateMode(mode, reset = false) {
   if (!reset && ChineseLabSessions.modes.has(mode)) restoreActiveSession(mode);
   if (state.progress.lastMode !== mode) { state.progress.lastMode = mode; save(); }
   renderShell(); renderGame();
-  saveActiveSession();
   if (state.interacted && mode==='translate') autoSpeech(state.game.questions[state.game.index]?.hanzi);
   if (state.interacted && mode==='story' && state.game.status==='intro') autoSpeech(lesson().quest.introZh);
 }

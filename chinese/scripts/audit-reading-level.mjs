@@ -32,10 +32,15 @@ function canBuild(token,allowed) {
 }
 function inspect(text,allowed) {
  const unknown=[];
- for(const {segment,isWordLike} of segmenter.segment(text)){
-  if(!isWordLike || !/\p{Script=Han}/u.test(segment))continue;
-  if(allowed.has(segment) || canBuild(segment,allowed))continue;
-  unknown.push(segment);
+ for(const match of text.matchAll(/[\p{Script=Han}]+/gu)){
+  const run=match[0];
+  // Protect known multi-character lesson words (e.g. 入住), even if
+  // Intl.Segmenter splits them incorrectly.
+  if(canBuild(run,allowed))continue;
+  for(const {segment,isWordLike} of segmenter.segment(run)){
+   if(!isWordLike || allowed.has(segment) || canBuild(segment,allowed))continue;
+   unknown.push(segment);
+  }
  }
  return unknown;
 }

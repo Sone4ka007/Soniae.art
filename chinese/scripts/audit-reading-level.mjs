@@ -13,7 +13,7 @@ const load=name=>JSON.parse(readFileSync(join(data,name),'utf8'));
 const base=load('hsk3-base.json').words;
 const readings=load('readings.json');
 const manifest=load('manifest.json');
-const lessonIds=manifest.lessons.map(x=>Number(x.match(/lesson(\\d+)\\.json/)[1]));
+const lessonIds=manifest.lessons.map(x=>Number(x.match(/lesson(\d+)\.json/)[1]));
 const opts=process.argv.slice(2);
 const strict=opts.includes('--strict');
 const only=opts.includes('--lesson')?Number(opts[opts.indexOf('--lesson')+1]):null;
@@ -33,7 +33,7 @@ function canBuild(token,allowed) {
 function inspect(text,allowed) {
  const unknown=[];
  for(const {segment,isWordLike} of segmenter.segment(text)){
-  if(!isWordLike || !/\\p{Script=Han}/u.test(segment))continue;
+  if(!isWordLike || !/\p{Script=Han}/u.test(segment))continue;
   if(allowed.has(segment) || canBuild(segment,allowed))continue;
   unknown.push(segment);
  }

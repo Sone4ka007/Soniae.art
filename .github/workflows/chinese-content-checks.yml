@@ -1,0 +1,25 @@
+name: Chinese Lab content checks
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'chinese/index.html'
+      - 'chinese/data/**'
+      - 'tests/chinese/**'
+      - '.github/workflows/chinese-content-checks.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  graded-readings:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate graded vocabulary and embedded/live reading sync
+        run: node --test tests/chinese/graded-reading-level.test.mjs tests/chinese/readings-sync.test.mjs

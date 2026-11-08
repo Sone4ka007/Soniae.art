@@ -589,6 +589,7 @@ window.chineseLabLessonFetch=async url=>{
 <script src="./js/pinyin-chars.js"></script>
 <script src="./js/sentence-tiles.js"></script>
 <script src="./js/exercise-sessions.js"></script>
+<script src="./js/quest-branches.js?v=20261108-1"></script>
 <script>
 const sceneURL = name => window.__offlineScenes[name] || ("assets/"+name+".svg");
 const $ = (selector) => document.querySelector(selector);
@@ -633,7 +634,9 @@ function saveActiveSession() {
 }
 function restoreActiveSession(mode) {
   const snapshot = ChineseLabSessions.restore(state.progress, state.lessonId, mode, lesson());
-  if (snapshot) state.game = snapshot;
+  // Old seven-scene quest snapshots cannot be replayed against the six-scene
+  // narrative graph. Keep progress/XP, but start a new quest route.
+  if (snapshot && (mode !== 'story' || snapshot.questSchema === lesson().quest.schemaVersion)) state.game = snapshot;
 }
 state.progress.saved ||= {}; state.progress.srs ||= {};
 let toastTimer;
@@ -733,13 +736,19 @@ function renderGame() {
    speech, award, miss, save, renderShell, formatXP. */
 function initQuest(){
   const q=lesson().quest;
-  state.game={isQuest:true,status:'intro',stage:0,seen:[],items:[],tokens:[],selected:[],ready:false,answer:null,
+  state.game={isQuest:true,questSchema:q.schemaVersion||1,routeChoices:[],status:'intro',stage:0,seen:[],items:[],tokens:[],selected:[],ready:false,answer:null,
     feedback:null,points:0,time:q.startTime,trust:2,choices:[],showRu:false,zoom:false,hint:false,usedHint:false,flags:{},tokenOrder:null,analysisKey:null,
    revealed:[],missionOpen:true,missionStage:0,missionResult:null,missionNotice:'',missionShowRu:false};
  state.progress.questWords ||= {};
  state.progress.questWords[lesson().id] ||= {};
 }
-function questStep(){return lesson().quest.steps[state.game.stage];}
+function questStep(){
+ const step=lesson().quest.steps[state.game.stage];
+ if(!step?.branchContexts)return step;
+ const previousChoice=state.game.routeChoices?.[step.options[0].branchAt-1]??0;
+ const context=step.branchContexts[previousChoice]||step.branchContexts[0];
+ return {...step,contextZh:context.zh,contextRu:context.ru};
+}
 
 function questGloss(key,ru){
  if(!ru)return '';
@@ -822,12 +831,20 @@ function questApply(option){
  const g=state.game;g.time+=option.time||0;g.trust+=option.trust||0;questClamp();
  if(option.item)questRemember(option.item);
  g.choices.push({zh:option.zh,ru:option.ru,impact:(option.time||0),trust:(option.trust||0)});
+ if(Number.isInteger(option.branchAt)){
+   g.routeChoices ||= [];
+   g.routeChoices[option.branchAt]=option.branchValue;
+ }
  if(option.flag)g.flags[option.flag]=true;
  questEarn(option.xp||0,'ВЫБОР');
  g.feedback={zh:option.outcomeZh,ru:option.outcomeRu};g.ready=true;
 }
 function questHud(){
  const q=lesson().quest,g=state.game,done=g.stage;
+ if(q.branchEndings){
+   const decisions=(g.routeChoices||[]).length;
+   return `<div class="quest-hud" aria-label="Маршрут истории"><div class="quest-hud-top"><span>ГЛАВА АННЫ · УРОК ${lesson().id} <em> / СЦЕНА ${Math.min(done+1,q.steps.length)} ИЗ ${q.steps.length}</em></span><span class="quest-mini-xp">+${g.points} XP</span></div><div class="quest-meter">${q.steps.map((_,i)=>`<span class="${i<done?'done':i===done?'now':''}"></span>`).join('')}</div><div class="quest-stats"><div><b>${decisions}/3</b><span>ПРИНЯТЫХ РЕШЕНИЯ</span></div><div><b>${Object.keys(questVocabDone()).length}/${lesson().words.length}</b><span>СЛОВА УРОКА</span></div></div></div>`;
+ }
  return `<div class="quest-hud" aria-label="Статус миссии"><div class="quest-hud-top"><span>ДЕЛО ${String(lesson().id).padStart(2,'0')} <em> / ЭТАП ${Math.min(done+1,q.steps.length)} ИЗ ${q.steps.length}</em></span><span class="quest-mini-xp">+ ${g.points} XP</span></div><div class="quest-meter" aria-label="Этапы прохождения">${q.steps.map((_,i)=>`<span class="${i<done?'done':i===done?'now':''}"></span>`).join('')}</div><div class="quest-stats"><div><b>${g.time} <small>МИН</small></b><span>РЕЗЕРВ ВРЕМЕНИ</span></div><div><b>${g.trust}<small>/6</small></b><span>ДОВЕРИЕ</span></div><div><b>${g.items.length}</b><span>УЛИКИ И ПРЕДМЕТЫ</span></div><div><b>${Object.keys(questVocabDone()).length}/${lesson().words.length}</b><span>СЛОВА КВЕСТА</span></div></div></div>`;
 }
 
@@ -879,6 +896,17 @@ function questPick(s){
 }
 function questEnding(){
  const g=state.game,q=lesson().quest;
+ if(q.branchEndings){
+  const first=g.routeChoices?.[0]??0,second=g.routeChoices?.[1]??0,third=g.routeChoices?.[2]??0;
+  const route=first*2+second;
+  const ending=q.branchEndings[route];
+  const lastOption=q.steps[4]?.options?.[third];
+  if(!ending)return '<p>Финал пока недоступен.</p>';
+  const endZh=ending.zh+(lastOption?.outcomeZh?' '+lastOption.outcomeZh:'');
+  const endRu=ending.ru+(lastOption?.outcomeRu?' '+lastOption.outcomeRu:'');
+  return `${header('ТВОЯ КОНЦОВКА','Выбранные действия меняли следующие сцены. В каждом уроке доступны разные исходы.','МАРШРУТ / '+(route+1))}<div class="quest-end"><div class="quest-end-num">✦</div><div><span class="quest-kicker">${esc(ending.kicker)}</span><h4>${esc(q.title)}</h4><div class="quest-result-zh" lang="zh-CN">${tapText(endZh)} ${speakButton(endZh)}</div>${questGloss('branch-end',endRu)}<div class="quest-end-score">${g.points} XP · ${g.routeChoices?.length||0} РЕШЕНИЯ · ФИНАЛ ${route+1}/4</div><div class="quest-end-links"><button type="button" class="action-btn" data-action="quest-restart">ВЫБРАТЬ ДРУГОЙ ПУТЬ ↻</button><button type="button" class="action-btn secondary" data-action="mode" data-id="input">ЧИТАТЬ ИСТОРИЮ →</button></div></div></div>${questMissionBox()}${questInventory()}`;
+ }
+ const g=state.game,q=lesson().quest;
  const stateName=g.time<0||g.flags.unfixed||g.flags.rushed?'fail':g.trust>=4&&g.time>=0?'good':'tight';
  const end=q.endings[stateName];
  return `${header('СЮЖЕТ ЗАВЕРШЁН','Твои решения повлияли на результат. Можно повторить игру другим маршрутом.','MISSION / COMPLETE')}<div class="quest-end"><div class="quest-end-num">${stateName==='good'?'✓':stateName==='tight'?'!':'↻'}</div><div><span class="quest-kicker">${esc(end.kicker)}</span><h4>${esc(q.title)}</h4><div class="quest-result-zh" lang="zh-CN">${tapText(end.zh)} ${speakButton(end.zh)}</div>${questGloss('end',end.ru)}<div class="quest-end-score">${g.points} XP · ДОВЕРИЕ ${g.trust}/6 · ОСТАЛОСЬ ${g.time} МИН</div><div class="quest-end-links"><button type="button" class="action-btn" data-action="quest-restart">ИГРАТЬ ДРУГИМ МАРШРУТОМ ↻</button><button type="button" class="action-btn secondary" data-action="mode" data-id="input">ЧИТАТЬ ИСТОРИЮ →</button></div></div></div>${questMissionBox()}${questInventory()}`;
@@ -886,11 +914,11 @@ function questEnding(){
 function renderStory(){
  const g=state.game,q=lesson().quest;
  if(g.status==='intro'){
-  $('#game-panel').innerHTML=`${header('КВЕСТ / ТЫ ВНУТРИ ИСТОРИИ','Твои решения меняют время, доверие и финал. Знания китайского помогают действовать.','INTERACTIVE FICTION')}<div class="quest-intro-v7"><div class="quest-kicker">ИНТЕРАКТИВНОЕ ДЕЛО ${String(lesson().id).padStart(2,'0')} / ${q.steps.length} СЦЕН</div><h4>${esc(q.title)}</h4><p>${esc(q.tagline)}</p><div lang="zh-CN" class="quest-big-zh">${tapText(q.introZh)} ${speakButton(q.introZh)}</div><div class="quest-objective-v7"><b>МИССИЯ</b><span>${esc(q.objective)}</span></div><div class="quest-intro-buttons"><button type="button" class="action-btn" data-action="quest-start">ВОЙТИ В ИСТОРИЮ →</button><button type="button" class="action-btn secondary" data-action="mode" data-id="input">СНАЧАЛА ПОЧИТАТЬ</button></div><small>Нажимай на китайские слова, чтобы услышать и сохранить их. Время уменьшается только после игровых решений — реального таймера нет.</small></div>`;return;
+  $('#game-panel').innerHTML=`${header('КВЕСТ / ТЫ ВНУТРИ ИСТОРИИ','Каждый выбор меняет следующую сцену и ведёт к одному из нескольких финалов.','INTERACTIVE FICTION')}<div class="quest-intro-v7"><div class="quest-kicker">ИНТЕРАКТИВНОЕ ДЕЛО ${String(lesson().id).padStart(2,'0')} / ${q.steps.length} СЦЕН</div><h4>${esc(q.title)}</h4><p>${esc(q.tagline)}</p><div lang="zh-CN" class="quest-big-zh">${tapText(q.introZh)} ${speakButton(q.introZh)}</div><div class="quest-objective-v7"><b>МИССИЯ</b><span>${esc(q.objective)}</span></div><div class="quest-intro-buttons"><button type="button" class="action-btn" data-action="quest-start">ВОЙТИ В ИСТОРИЮ →</button><button type="button" class="action-btn secondary" data-action="mode" data-id="input">СНАЧАЛА ПОЧИТАТЬ</button></div><small>Три важных выбора, три задания на сборку фраз и словарные миссии из историй этого урока. Перевод открывается по нажатию.</small></div>`;return;
  }
  if(g.status==='complete'){$('#game-panel').innerHTML=questEnding();return;}
  const s=questStep(),body=s.type==='explore'?questExplore(s):s.type==='compose'?questCompose(s):s.type==='pick'?questPick(s):questOptions(s);
- $('#game-panel').innerHTML=`${header('КВЕСТ / РЕШЕНИЯ, КОТОРЫЕ ИМЕЮТ ЗНАЧЕНИЕ','Осматривай предметы, разговаривай и решай реальные задачи на китайском.',`ЭТАП ${g.stage+1} / ${q.steps.length}`)}${questHud()}<section class="quest-scene"><div class="quest-scene-heading"><span>${esc(s.tag)}</span><h4>${esc(s.title)}</h4></div>${questNarrative(s)}${body}</section>${questMissionBox()}${questInventory()}`;
+ $('#game-panel').innerHTML=`${header('КВЕСТ / ИСТОРИЯ АННЫ','Выбирай действия, а затем составляй фразы на китайском. Последствия меняют следующую сцену.',`ЭТАП ${g.stage+1} / ${q.steps.length}`)}${questHud()}<section class="quest-scene"><div class="quest-scene-heading"><span>${esc(s.tag)}</span><h4>${esc(s.title)}</h4></div>${questNarrative(s)}${body}</section>${questMissionBox()}${questInventory()}`;
 }
 function questAction(action,btn){
  const g=state.game;if(!g?.isQuest)return;
@@ -1519,6 +1547,8 @@ async function bootstrap(){try{
  const resp=await Promise.all(manifest.lessons.map(path=>window.chineseLabLessonFetch(`./data/${path}`)));if(resp.some(r=>!r.ok))throw new Error('Данные уроков не загрузились');state.lessons=await Promise.all(resp.map(r=>r.json()));
  const [rExtras,rReadings]=await Promise.all([window.chineseLabLessonFetch('./data/extra-words.json'),window.chineseLabLessonFetch('./data/readings.json')]);
  state.extraWords=rExtras.ok?await rExtras.json():[];state.readings=rReadings.ok?await rReadings.json():{};
+ if(!window.ChineseLabQuestBranches)throw new Error('Модуль сюжетных квестов не загрузился');
+ state.lessons.forEach(l=>{l.quest=window.ChineseLabQuestBranches.build(l,state.readings[String(l.id)]);});
  const rContext=await window.chineseLabLessonFetch('./data/context-glossary.json');state.contextWords=rContext.ok?await rContext.json():[];
  if(!state.lessons.some(l=>l.id===state.lessonId))state.lessonId=state.lessons[0]?.id||1;
  $('#hero-lessons').textContent=`${state.lessons.map(l=>String(l.id).padStart(2,'0')).join('—')} / УРОКИ В ПРОГРАММЕ`;

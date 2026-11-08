@@ -38,7 +38,7 @@ test('Chinese word tiles split phrase into words, not clauses',()=>{
  assert.ok(!complex.includes('坐在'));
  assert.ok(!complex.includes('一台'));
  const proper=globalThis.ChineseLabQuestBranches.tiles('我看见酸汤米线。',['酸汤米线']);
- assert.ok(proper.includes('酸汤米线'),'Protect lesson-specific words');
+ assert.ok(proper.some(tile=>tile.startsWith('酸汤米线')),'Protect lesson-specific words, with trailing punctuation attached');
 
 });
 

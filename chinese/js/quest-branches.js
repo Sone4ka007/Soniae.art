@@ -427,6 +427,14 @@
     // not the visa copy from the abandoned pre-rewrite storyline.
     const required=lesson.id===1&&which===0?['poster','folder','canteen']:
       lesson.id===1&&which===1?['instructions','copy']:source.required;
+    const sceneTopics={
+      2:['房东','音乐'],3:['扫码','快递'],4:['地铁','鲜花'],
+      5:['饭店','聚餐'],6:['医院','体温'],7:['市场调查','客户'],
+      8:['工作','风景'],9:['画','感受'],10:['气温','植物']
+    };
+    const chapterLines=chapters[which===0?0:1].lines;
+    const keyword=sceneTopics[lesson.id]?.[which];
+    const selectedLine=chapterLines.find(([zh])=>keyword&&zh.includes(keyword))||chapterLines[0];
     return {
       ...source,
       image:lesson.id===1&&which===1?'printer-notice':source.image,
@@ -435,25 +443,15 @@
         :(which===0?'ИССЛЕДУЙ МЕСТО':'ПРОВЕРЬ ПОДСКАЗКИ'),
       tag:'НАЖМИ НА ПРЕДМЕТЫ И СОБЕРИ УЛИКИ',
       contextZh:lesson.id===1&&which===0
-        ?'安娜的证不见了。今天下午五点以前，她要把材料给王老师。':
-         lesson.id===1&&which===1
-           ?'安娜找到了证件，但是王老师还需要入学通知。':
-           (chapters[which===0?0:1].lines.find(([zh])=>
-              zh.includes(({
-                2:['房东','音乐'],3:['扫码','快递'],4:['地铁','鲜花'],
-                5:['饭店','聚餐'],6:['医院','体温'],7:['市场调查','客户'],
-                8:['工作','风景'],9:['画','感受'],10:['气温','植物']
-              })[lesson.id]?.[which]||'')||chapters[which===0?0:1].lines[0])[0],
+        ?'安娜的证不见了。今天下午五点以前，她要把材料给王老师。'
+        :lesson.id===1&&which===1
+          ?'安娜找到了证件，但是王老师还需要入学通知。'
+          :selectedLine[0],
       contextRu:lesson.id===1&&which===0
         ?'У Анны пропал документ, необходимый для заявления на стипендию. Приём документов заканчивается в 17:00. Осмотри центр и найди настоящие подсказки.'
         :lesson.id===1&&which===1
           ?'Документ нашёлся, но для заявления ещё нужно уведомление о зачислении. Его можно распечатать перед подачей.'
-          :(chapters[which===0?0:1].lines.find(([zh])=>
-              zh.includes(({
-                2:['房东','音乐'],3:['扫码','快递'],4:['地铁','鲜花'],
-                5:['饭店','聚餐'],6:['医院','体温'],7:['市场调查','客户'],
-                8:['工作','风景'],9:['画','感受'],10:['气温','植物']
-              })[lesson.id]?.[which]||'')||chapters[which===0?0:1].lines[0])[1],
+          :selectedLine[1],
       goal:lesson.id===1&&which===0
         ?'Проверь объявление о стипендии, папку и указатель на столовую.'
         :lesson.id===1&&which===1

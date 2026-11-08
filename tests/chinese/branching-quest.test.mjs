@@ -46,7 +46,7 @@ for(const lesson of lessonData){
  test(`lesson ${lesson.id}: three linked chapters, four distinct endings and graded vocabulary`,()=>{
    const chapters=readings[lesson.id];
    const result=globalThis.ChineseLabQuestBranches.build(lesson,chapters);
-   assert.equal(result.schemaVersion,3);
+   assert.equal(result.schemaVersion,4);
    assert.equal(result.steps.length,6);
    assert.deepEqual(result.steps.map(x=>x.type),['choice','compose','choice','compose','choice','compose']);
    assert.equal(result.branchEndings.length,4);
@@ -65,8 +65,12 @@ for(const lesson of lessonData){
      assert.notEqual(result.steps[2].branchOptions[0][0].zh,result.steps[2].branchOptions[1][0].zh);
    }
    const outcomes=[];
-   for(let a=0;a<2;a++)for(let b=0;b<2;b++)for(let c=0;c<2;c++)
-    outcomes.push(result.branchEndings[a*2+b].ru+' '+result.steps[4].options[c].outcomeRu);
+   for(let a=0;a<2;a++)for(let b=0;b<2;b++)for(let c=0;c<2;c++) {
+     const ending=result.branchEndings[a*2+b];
+     outcomes.push(ending.variants
+       ? ending.variants[c].ru
+       : ending.ru+' '+result.steps[4].options[c].outcomeRu);
+   }
    assert.equal(new Set(outcomes).size,8,'Third decision must affect epilogue');
 
    const groupTasks=result.vocabMissions.flatMap(g=>g.tasks);

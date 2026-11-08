@@ -17,8 +17,15 @@ test('Chinese Lab browser inline scripts have valid syntax',()=>{
  }
  assert.ok(n>=2,'Expected inline application scripts');
 });
+test('printed notice art is actually updated from visa copy to enrollment notice',()=>{
+ const match=html.match(/"printer-notice":"data:image\\/svg\\+xml;base64,([^"]+)"/);
+ assert.ok(match,'Missing new vector art for printed school notice');
+ const drawing=Buffer.from(match[1],'base64').toString('utf8');
+ assert.ok(drawing.includes('入学通知'),'Picture must show the same label as the clue');
+ assert.ok(!drawing.includes('签证复印件'),'Old visa-copy storyline should not remain on illustration');
+});
 test('Chinese Lab connects route-aware story quests with reading chapters',()=>{
- assert.match(html,/quest-branches\.js\?v=20261108-4/);
+ assert.match(html,/quest-branches\.js\?v=20261108-5/);
  assert.match(html,/ChineseLabQuestBranches\.build\(l,state\.readings\[String\(l\.id\)\]\)/);
  assert.match(html,/g\.routeChoices\[option\.branchAt\]=option\.branchValue/);
  assert.match(html,/step\.branchContexts/);

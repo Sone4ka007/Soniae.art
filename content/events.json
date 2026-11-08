@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-07",
+  "updated_at": "2026-11-08",
   "events": [
     {
       "id": "moscow-2025-09-03-6b54dbdbf3",
@@ -38291,7 +38291,7 @@
       "reviewed_at": "2026-10-17",
       "availability": "unknown",
       "availability_checked_at": "",
-      "registration": false,
+      "registration": null,
       "price": null,
       "price_text": "",
       "price_type": "paid",
@@ -38317,7 +38317,7 @@
         "status": "approved",
         "telegram_include": false,
         "instagram_include": false,
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -41054,7 +41054,7 @@
       "address": "1-й Голутвинский переулок, 16, стр. 1",
       "price": 850,
       "price_text": "850 ₽; льготный — 650 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -41081,7 +41081,7 @@
       "time_evidence": "24 октября 2026 14:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
       "editor_overrides": {
-        "registration": false
+        "registration": null
       }
     },
     {
@@ -49427,7 +49427,7 @@
       "address": "Лаврушинский переулок, 12",
       "price": 650,
       "price_text": "650 ₽; онлайн — 700 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -49444,7 +49444,7 @@
         "telegram_include": false,
         "instagram_include": false,
         "status": "approved",
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -51674,14 +51674,16 @@
       "price": 0,
       "price_text": "",
       "registration": false,
-      "categories": [],
+      "categories": [
+        "выставка"
+      ],
       "description": "На метро Музей AZ находится между станциями метро «Маяковская» и «Белорусская» (кольцевая). Мы рекомендуем идти в Музей от станции «Маяковская». Вам нужен Выход №1 на 1-я Тверская-Ямская улица, 2-я Тверская-Ямская улица.",
       "url": "https://museum-az.com/event/territoriya-svobody-nonkonformisty-v-taruse/",
       "source": "Музей AZ — выставки и события",
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-10-20",
-      "price_type": "paid",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-10-25",
       "editor_overrides": {
@@ -52951,7 +52953,7 @@
       "title": "Коллективная выставка Арт-шаффл 43.0",
       "venue": "ЦСИ Винзавод",
       "address": "",
-      "price": 12000,
+      "price": 0,
       "price_text": "12000 ₽",
       "registration": null,
       "categories": [
@@ -52965,7 +52967,7 @@
       "discovered_at": "2026-11-03",
       "start_date": "2026-11-03",
       "end_date": "2026-11-15",
-      "price_type": "paid",
+      "price_type": "free",
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
@@ -55219,7 +55221,7 @@
       "address": "",
       "price_type": "free",
       "price_text": "бесплатно по регистрации",
-      "registration": false,
+      "registration": true,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -56963,38 +56965,6 @@
       }
     },
     {
-      "id": "spb-2026-11-07-2ceecd0c01",
-      "status": "new",
-      "kind": "event",
-      "city": "spb",
-      "date": "2026-11-07",
-      "time": "",
-      "title": "«Рождение». Выступление «Петербургской Плейбэк Студии»",
-      "venue": "Пушкинская-10",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": true,
-      "categories": [],
-      "description": "Плейбэк театр – вид современной театральной импровизации, позволяющий глубже проживать события из собственной жизни и из жизни сообществ. Этот формат даст возможность каждому участнику связать эмоциональный отклик на выставку со своей личной историей, а потом создать из этого общий нарратив.",
-      "url": "https://p-10.ru/events/rozhdenie-vystuplenie-peterburgskoj-plejbek-studii/",
-      "source": "Пушкинская-10 — события",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-11-07",
-      "price_type": "unknown",
-      "availability_evidence": "",
-      "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "telegram_include": false,
-        "instagram_include": false
-      },
-      "telegram_include": false,
-      "instagram_include": false
-    },
-    {
       "id": "spb-2026-11-07-d709f81e9f",
       "status": "approved",
       "kind": "event",
@@ -57033,34 +57003,6 @@
       "editor_overrides": {
         "time": ""
       }
-    },
-    {
-      "id": "spb-2026-11-07-5995f84169",
-      "status": "new",
-      "kind": "event",
-      "city": "spb",
-      "date": "2026-11-07",
-      "time": "",
-      "title": "Государственный Эрмитаж",
-      "venue": "Государственный Эрмитаж",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": null,
-      "categories": [],
-      "description": "",
-      "url": "https://hermitagemuseum.org/what-s-on/afisha_mincult/?lng=ru",
-      "source": "Государственный Эрмитаж — выставки и события",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-11-07",
-      "price_type": "unknown",
-      "availability_evidence": "",
-      "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_note": "",
-      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-07-3641e5a389",
@@ -57177,36 +57119,6 @@
       }
     },
     {
-      "id": "moscow-2026-11-07-ee6b2f9e26",
-      "status": "new",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-11-07",
-      "time": "",
-      "title": "Малика",
-      "venue": "Центр Зотов",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": null,
-      "categories": [
-        "новинки проката"
-      ],
-      "description": "",
-      "url": "https://centrezotov.ru/events/malika/",
-      "source": "Центр Зотов",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-11-01",
-      "price_type": "paid",
-      "availability_evidence": "",
-      "ticket_required": true,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_note": "",
-      "reviewed_at": ""
-    },
-    {
       "title": "Международная конференция по консервации и реставрации современного искусства",
       "status": "approved",
       "date": "2026-11-07",
@@ -57223,7 +57135,7 @@
       "address": "",
       "price_type": "free",
       "price_text": "бесплатно по регистрации",
-      "registration": false,
+      "registration": true,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -57283,41 +57195,6 @@
       "reviewed_at": "2026-10-24",
       "time_verification": "unverified",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
-    },
-    {
-      "id": "spb-2026-11-07-19ecb2b493",
-      "status": "new",
-      "kind": "event",
-      "city": "spb",
-      "date": "2026-11-07",
-      "time": "",
-      "title": "Музыка",
-      "venue": "Новая Голландия",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [],
-      "description": "",
-      "url": "https://www.newhollandsp.ru/events/concerts/",
-      "source": "Новая Голландия — Сообщество и образование",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-10-29",
-      "price_type": "unknown",
-      "availability_evidence": "",
-      "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": ""
     },
     {
       "title": "Открытие выставки «Петр Зайцев. Формы жизни»",
@@ -57586,82 +57463,6 @@
       "start_date": "2026-11-07"
     },
     {
-      "id": "moscow-2026-10-25-c40e7952b7",
-      "status": "rejected",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-11-07",
-      "time": "10:00",
-      "title": "Воркшопы",
-      "venue": "ЦСИ Винзавод",
-      "address": "",
-      "price": 0,
-      "price_text": "Бесплатно",
-      "registration": false,
-      "categories": [
-        "лекция"
-      ],
-      "description": "",
-      "url": "https://www.winzavod.ru/calendar/workshops/",
-      "source": "ЦСИ Винзавод",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-10-25",
-      "price_type": "free",
-      "availability_evidence": "",
-      "ticket_required": true,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false,
-        "status": "rejected"
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": "2026-10-27"
-    },
-    {
-      "id": "moscow-2026-10-25-fefbfbd35d",
-      "status": "rejected",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-11-07",
-      "time": "10:00",
-      "title": "Курсы",
-      "venue": "ЦСИ Винзавод",
-      "address": "",
-      "price": 0,
-      "price_text": "Бесплатно",
-      "registration": false,
-      "categories": [
-        "лекция"
-      ],
-      "description": "",
-      "url": "https://www.winzavod.ru/calendar/course/",
-      "source": "ЦСИ Винзавод",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-10-25",
-      "price_type": "free",
-      "availability_evidence": "",
-      "ticket_required": true,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false,
-        "status": "rejected"
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": "2026-10-27"
-    },
-    {
       "id": "moscow-2026-11-07-ddce13075d",
       "status": "rejected",
       "kind": "event",
@@ -57742,41 +57543,6 @@
       }
     },
     {
-      "id": "spb-2026-11-07-e4cb45c21d",
-      "status": "new",
-      "kind": "event",
-      "city": "spb",
-      "date": "2026-11-07",
-      "time": "13:00",
-      "title": "Разговорный клуб на русском жестовом языке в «Сообществе»",
-      "venue": "Новая Голландия",
-      "address": "",
-      "price": 300,
-      "price_text": "300 ₽",
-      "registration": false,
-      "categories": [],
-      "description": "В «Сообществе» начинаются регулярные встречи разговорного клуба на русском жестовом языке. На них участники будут оттачивать навык общения на РЖЯ, ближе знакомиться с культурой глухих и, конечно, узнавать новые жесты. Общение проходит в полной тишине — единственным звуком будет только ваш смех во время игр!",
-      "url": "https://www.newhollandsp.ru/events/education/rsl-speaking-club/",
-      "source": "Новая Голландия — Сообщество и образование",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-10-29",
-      "price_type": "paid",
-      "availability_evidence": "",
-      "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": ""
-    },
-    {
       "id": "moscow-2026-11-07-34470e4e14",
       "status": "rejected",
       "kind": "event",
@@ -57803,41 +57569,6 @@
       "ticket_required": true,
       "availability": "sold_out",
       "availability_checked_at": "2026-11-07"
-    },
-    {
-      "id": "spb-2026-11-07-3c5f35e68d",
-      "status": "check",
-      "kind": "event",
-      "city": "spb",
-      "date": "2026-11-07",
-      "time": "14:00",
-      "title": "в Открытой гостиной состоится вторая часть",
-      "venue": "Открытая гостиная",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [],
-      "description": "лекции «Роберт Шекли. Часть 3. Рассказы до 70-х» Продолжаем разговор об одном из самых ярких и остроумных фантастов XX века. В центре внимания: поздние десятилетия творчества, время, когда зрелый Шекли продолжал удивлять читателей и создавал свои самые глубокие и неожиданные иронические рассказы. Речь пойдёт не только о знаменитых рассказах, но и о романах и повестях, написанных в тот поздний период научной фантастики. Присоединяйтесь, чтобы узнать, каким был Шекли на позднем этапе своего пути. Лектор — Станислав Золотько,",
-      "url": "https://otkrytaya-gostinaya.timepad.ru/event/4269898/",
-      "source": "Открытая гостиная — официальный Telegram",
-      "checked_at": "",
-      "review_reason": "curated_telegram_source",
-      "discovered_at": "2026-10-28",
-      "price_type": "unknown",
-      "availability_evidence": "",
-      "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-07-ce0a3cac41",
@@ -57876,78 +57607,6 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": "2026-11-01"
-    },
-    {
-      "id": "spb-2026-11-07-4ec0d02e31",
-      "status": "check",
-      "kind": "event",
-      "city": "spb",
-      "date": "2026-11-07",
-      "time": "16:00",
-      "title": "Афропортугальская палитра XX–XXI веков",
-      "venue": "Библиотека Маяковского",
-      "address": "",
-      "price": 0,
-      "price_text": "Бесплатно",
-      "registration": false,
-      "categories": [],
-      "description": "Как португальский язык стал инструментом деколонизации, поиска национальной идентичности и развития самобытной литературы? На презентации создатели и переводчики антологии, филологи и африканисты расскажут о концепции книги, особенностях перевода и литературных связях между Россией и португалоязычным миром. Поговорим о том, о чём пишут африканские авторы, как их герои осмысляют политическую независимость, выстраивают отношения с бывшей метрополией и размышляют о собственном культурном опыте, мечтах и будущем.",
-      "url": "https://t.me/mayakovka/2128",
-      "source": "Библиотека Маяковского — официальный Telegram",
-      "checked_at": "",
-      "review_reason": "curated_telegram_source",
-      "discovered_at": "2026-10-30",
-      "price_type": "free",
-      "availability_evidence": "",
-      "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": ""
-    },
-    {
-      "id": "spb-2026-11-07-e58254161c",
-      "status": "check",
-      "kind": "event",
-      "city": "spb",
-      "date": "2026-11-07",
-      "time": "16:00",
-      "title": "Кажется, 7-го ноября уже перестало ассоциироваться с красными флагами и громкими призывами.",
-      "venue": "Открытая гостиная",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [
-        "встреча"
-      ],
-      "description": "Теперь мы спокойно закутываемся в любимые пледы с книжками, или просто планируем короткие поездки \"на ноябрьские\", или мирно готовимся к зиме... Но без революций не было бы, наверное, ни пледов, ни поездок. А генетическая память, возможно, всё-таки существует. В какой момент человек решает, что пора что-то менять кардинально? В истории, в науке, просто в жизни, в конце концов? Кто они - герои баталий - внешних и внутренних? И действительно ли революция ведёт к прогрессу? На очередной встрече испанского клуба обсудим разнообразные революции - от научных и исторических до литературных и модных.",
-      "url": "https://otkrytaya-gostinaya.timepad.ru/event/4277182/",
-      "source": "Открытая гостиная — официальный Telegram",
-      "checked_at": "",
-      "review_reason": "curated_telegram_source",
-      "discovered_at": "2026-10-28",
-      "price_type": "unknown",
-      "availability_evidence": "",
-      "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-07-6274d9b2ae",
@@ -58149,43 +57808,6 @@
       "reviewed_at": "2026-11-03"
     },
     {
-      "id": "moscow-2026-11-07-96c8d83947",
-      "status": "new",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-11-07",
-      "time": "19:00",
-      "title": "Лето в Бадене: кинопоказ и обсуждение",
-      "venue": "Еврейский музей и центр толерантности",
-      "address": "",
-      "price": 350,
-      "price_text": "350 ₽",
-      "registration": false,
-      "categories": [
-        "лекция"
-      ],
-      "description": "",
-      "url": "https://www.jewish-museum.ru/events/leto-v-badene-kinopokaz/",
-      "source": "Еврейский музей и центр толерантности",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-10-28",
-      "price_type": "paid",
-      "availability_evidence": "",
-      "ticket_required": true,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": ""
-    },
-    {
       "title": "Дискуссия «Сохранность произведений из новых материалов»",
       "status": "approved",
       "date": "2026-11-07",
@@ -58250,7 +57872,7 @@
       "checked_at": "",
       "review_reason": "primary_source_required",
       "discovered_at": "2026-11-04",
-      "audience_text": "Opportunity details | Camden Art Centre Winter Ceramics Market | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register Camden Art Centre Winter Ceramics Market Deadline: 08/11/2026 City: London | Region: London | Country: United Kingdom | Alisa Aistova Report this? Description Opportunity FAQs Make a submission Contact curator Camden Art Centre is inviting ceramic makers to take part in our Winter Ceramics Market, taking place on Saturday 28 and Sunday 29 November 2026, 11am–5pm. The market will bring together emerging and established ceramicists across Gallery 3 and the Drawing Studio, offering visitors the opportunity to discover and buy unique handmade work directly from makers. A limited number of stalls are still available for one or both days. Places are confirmed on a first-completed basis following approval, once both payment and signed Participant Terms & Conditions have been received. Applications may close early if we receive a high volume of submissions. We particularly welcome makers producing ceramic work suitable for seasonal gifting. Camden Art Centre is hosting a winter ceramics market on Sat 28 and Sun 29 November 2026, from 11–5pm. Details This opportunity is most suited to makers looking to sell their own ceramic work for seasonal gifting, as opposed to showcasing fine art ceramics. Sellers can apply to exhibit for one or both days of the market. There are 35 stalls are available each day across our Gallery 3 and Drawing Studio spaces. This is a reduction, based on feedback, from our 2025 market to allow exhibitors more space. Tables will be provided and each stall will be a minimum of 90 x 75cm. Stall holders must provide their own arrangements for taking payments and packaging goods. Stalls will be allocated by a draw on the morning of each day (sellers here for two days will keep the same pitch for both days). Stall holders are expected to obtain and hold their own public liability insurance that covers their participation in this event. Timings Set up can take place from 9am each morning. Wares can be dropped off and stored at Camden Art Centre during the week before the market and collected the following week, dates and times to be confirmed. Promotion Camden Art Centre will be promoting the market through its social media and mailing lists, including with paid ads. Last year this brought c.1,400 visitors across the two days. Cost Pitches cost £99 per day, inc. VAT. No commission will be applied to sales. How to apply The deadline for applications is end of day Sunday 8 November 2026. Applications may close early if we receive a high volume of submissions. Successful applicants will be notified by Monday 9 November. If your application is approved we will send you a payment link to confirm your booking. You will have 48 hours to make this payment. Stalls are only confirmed once the payment is made. Make a submission Contact the curator Who is eligible for this opportunity? This opportunity is most suited to makers looking to sell their own ceramic work for seasonal gifting, as opposed to showcasing fine art ceramics. When is the deadline? 8 November How much does it cost? Pitches cost £99 per day, inc. VAT. No commission will be applied to sales. You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Other opportunities DREDGE - a collective exhibition OPEN CALL DREDGE - a collective exhibition at The Gate Art Space, Gloucester Samson Arts Gloucester is... Red, Green and Gold Fourth Wave present Red, Green and Gold, an alternative festive exhibition showcasing affordable... The FLUX Review Edition 15 International Open Call for Artists | The FLUX Review Edition 15 More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
+      "audience_text": "Opportunity details | Camden Art Centre Winter Ceramics Market | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register Camden Art Centre Winter Ceramics Market Deadline: 08/11/2026 City: London | Region: London | Country: United Kingdom | Alisa Aistova Report this? Description Opportunity FAQs Make a submission Contact curator Camden Art Centre is inviting ceramic makers to take part in our Winter Ceramics Market, taking place on Saturday 28 and Sunday 29 November 2026, 11am–5pm. The market will bring together emerging and established ceramicists across Gallery 3 and the Drawing Studio, offering visitors the opportunity to discover and buy unique handmade work directly from makers. A limited number of stalls are still available for one or both days. Places are confirmed on a first-completed basis following approval, once both payment and signed Participant Terms & Conditions have been received. Applications may close early if we receive a high volume of submissions. We particularly welcome makers producing ceramic work suitable for seasonal gifting. Camden Art Centre is hosting a winter ceramics market on Sat 28 and Sun 29 November 2026, from 11–5pm. Details This opportunity is most suited to makers looking to sell their own ceramic work for seasonal gifting, as opposed to showcasing fine art ceramics. Sellers can apply to exhibit for one or both days of the market. There are 35 stalls are available each day across our Gallery 3 and Drawing Studio spaces. This is a reduction, based on feedback, from our 2025 market to allow exhibitors more space. Tables will be provided and each stall will be a minimum of 90 x 75cm. Stall holders must provide their own arrangements for taking payments and packaging goods. Stalls will be allocated by a draw on the morning of each day (sellers here for two days will keep the same pitch for both days). Stall holders are expected to obtain and hold their own public liability insurance that covers their participation in this event. Timings Set up can take place from 9am each morning. Wares can be dropped off and stored at Camden Art Centre during the week before the market and collected the following week, dates and times to be confirmed. Promotion Camden Art Centre will be promoting the market through its social media and mailing lists, including with paid ads. Last year this brought c.1,400 visitors across the two days. Cost Pitches cost £99 per day, inc. VAT. No commission will be applied to sales. How to apply The deadline for applications is end of day Sunday 8 November 2026. Applications may close early if we receive a high volume of submissions. Successful applicants will be notified by Monday 9 November. If your application is approved we will send you a payment link to confirm your booking. You will have 48 hours to make this payment. Stalls are only confirmed once the payment is made. Make a submission Contact the curator Who is eligible for this opportunity? This opportunity is most suited to makers looking to sell their own ceramic work for seasonal gifting, as opposed to showcasing fine art ceramics. When is the deadline? 8 November How much does it cost? Pitches cost £99 per day, inc. VAT. No commission will be applied to sales. You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Other opportunities The FLUX Review Edition 15 International Open Call for Artists | The FLUX Review Edition 15 Parkscapes II London gallery is holding a Festive Season Exhibition, 3rd - 19th December 2026. We’re... Christmas Fair at the Phoenix Cinema: 5-6 December 2026 Phoenix Cinema is opening doors for a Christmas film-themed fair – Apply for a stall now!... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
       "price_type": "unknown",
       "availability_evidence": "",
       "ticket_required": false,
@@ -58400,6 +58022,32 @@
       "social_title": "",
       "reviewed_at": "2026-10-02",
       "sheet_synced_description": ""
+    },
+    {
+      "id": "spb-2026-11-08-5995f84169",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-08",
+      "time": "",
+      "title": "Государственный Эрмитаж",
+      "venue": "Государственный Эрмитаж",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "",
+      "url": "https://hermitagemuseum.org/what-s-on/afisha_mincult/?lng=ru",
+      "source": "Государственный Эрмитаж — выставки и события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-08",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "spb-2026-11-08-31cb667527",
@@ -58632,7 +58280,7 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "sold_out",
-      "availability_checked_at": "2026-11-07",
+      "availability_checked_at": "2026-11-08",
       "editor_note": "",
       "reviewed_at": ""
     },
@@ -58713,6 +58361,110 @@
       }
     },
     {
+      "id": "moscow-2026-10-25-c40e7952b7",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-08",
+      "time": "10:00",
+      "title": "Воркшопы",
+      "venue": "ЦСИ Винзавод",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "",
+      "url": "https://www.winzavod.ru/calendar/workshops/",
+      "source": "ЦСИ Винзавод",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-25",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false,
+        "status": "rejected"
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": "2026-10-27"
+    },
+    {
+      "id": "moscow-2026-10-25-fefbfbd35d",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-08",
+      "time": "10:00",
+      "title": "Курсы",
+      "venue": "ЦСИ Винзавод",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "",
+      "url": "https://www.winzavod.ru/calendar/course/",
+      "source": "ЦСИ Винзавод",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-25",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false,
+        "status": "rejected"
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": "2026-10-27"
+    },
+    {
+      "id": "moscow-2026-11-08-76b6849277",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-08",
+      "time": "12:30",
+      "title": "Программа «Художественный маршрут»",
+      "venue": "Музей Транспорта Москвы",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "",
+      "url": "https://mtmuseum.ru/affiche/detyam/",
+      "source": "Музей транспорта Москвы — афиша",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-08",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-08-56e5582df3",
       "status": "new",
       "kind": "event",
@@ -58768,7 +58520,7 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "sold_out",
-      "availability_checked_at": "2026-11-07"
+      "availability_checked_at": "2026-11-08"
     },
     {
       "id": "spb-2026-11-08-1016cc1dce",
@@ -58903,6 +58655,34 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": "2026-11-03"
+    },
+    {
+      "id": "moscow-2026-11-08-80a943851a",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-08",
+      "time": "15:00",
+      "title": "Чтение книги «История семейных фотографий» и мастер-класс с искусствоведом Анной Головановой",
+      "venue": "Музей «Гараж»",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": true,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Книга Надежды Беленькой «История семейных фотографий» знакомит детей с историей фотографии и традицией создания семейных фотоальбомов. Вместе с искусствоведом Анной Головановой участники прочитают отрывки из книги, познакомятся со старинными способами съемки и обсудят, в чем заключается ценность семейных альбомов.",
+      "url": "https://garagemca.org/event/reading-the-history-of-family-photographs-and-a-workshop-with-art-historian-anna-golovanova",
+      "source": "Музей современного искусства «Гараж»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-08",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "spb-2026-11-08-fe7e0ac9b9",
@@ -59806,7 +59586,7 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "sold_out",
-      "availability_checked_at": "2026-11-07"
+      "availability_checked_at": "2026-11-08"
     },
     {
       "id": "spb-2026-11-10-4df1eb99df",
@@ -60836,7 +60616,7 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "sold_out",
-      "availability_checked_at": "2026-11-07"
+      "availability_checked_at": "2026-11-08"
     },
     {
       "id": "spb-2026-11-11-6274d9b2ae",
@@ -60947,6 +60727,34 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": "2026-10-30"
+    },
+    {
+      "id": "moscow-2026-11-11-cd4126d8a2",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-11",
+      "time": "17:00",
+      "title": "Лекция-экскурсия «“Робинзоны” русского зарубежья. Остров Тубабао и его жители в конце 1940-х – начале 1950-х годов»",
+      "venue": "Дом русского зарубежья им. А. Солженицына",
+      "address": "",
+      "price": 300,
+      "price_text": "300 ₽",
+      "registration": true,
+      "categories": [
+        "лекция"
+      ],
+      "description": "11 ноября 2026 года в 17 часов приглашаем на лекцию-экскурсию «“Робинзоны” русского зарубежья. Остров Тубабао и его жители в конце 1940-х – начале 1950-х годов». Лекция-экскурсия посвящена необычной странице истории русского зарубежья — беженскому лагерю на филиппинском острове Тубабао в конце 1940-х – начале 1950-х годов.",
+      "url": "https://www.domrz.ru/event/70698_lektsiya_ekskursiya_robinzony_russkogo_zarubezhya_ostrov_tubabao_i_ego_zhiteli_v_kontse_1940_kh_nach/",
+      "source": "Дом русского зарубежья — афиша",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-11-08",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "sold_out",
+      "availability_checked_at": "2026-11-08"
     },
     {
       "id": "moscow-2026-11-11-6b98848171",
@@ -61748,7 +61556,37 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
+    },
+    {
+      "id": "moscow-2026-11-12-0c3cbf97be",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-12",
+      "time": "16:00",
+      "title": "Тематическая экскурсия «Русская литература в изгнании. Писатели и читатели русского зарубежья»",
+      "venue": "Дом русского зарубежья им. А. Солженицына",
+      "address": "",
+      "price": 300,
+      "price_text": "300 ₽",
+      "registration": true,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "12 ноября 2026 года в 16 часов приглашаем на тематическую экскурсию «Русская литература в изгнании. Писатели и читатели русского зарубежья». Вывезенные из России книги и русская литература стали в изгнании важнейшими средствами сохранения «русскости», памяти о России, поддержания надежды на возвращение.",
+      "url": "https://www.domrz.ru/event/70701_tematicheskaya_ekskursiya_russkaya_literatura_v_izgnanii_pisateli_i_chitateli_russkogo_zarubezhya/",
+      "source": "Дом русского зарубежья — афиша",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-11-08",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "sold_out",
+      "availability_checked_at": "2026-11-08"
     },
     {
       "id": "spb-2026-11-12-36feec5499",
@@ -61785,6 +61623,34 @@
       "time_verification": "verified",
       "time_evidence": "8 октября 2026, четверг, 16:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
+      "id": "moscow-2026-11-12-d27db9de0f",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-12",
+      "time": "17:00",
+      "title": "Лекция-экскурсия «Ларисса Андерсен. Судьбы русского зарубежья»",
+      "venue": "Дом русского зарубежья им. А. Солженицына",
+      "address": "",
+      "price": 300,
+      "price_text": "300 ₽",
+      "registration": true,
+      "categories": [
+        "лекция"
+      ],
+      "description": "12 ноября 2026 года в 17 часов приглашаем на лекцию-экскурсию «Ларисса Андерсен. Судьбы русского зарубежья». На лекции-экскурсии посетители узнают о жизни и творчестве Лариссы Андерсен — одной из ярких представительниц творческой плеяды русского зарубежья, о которой, к сожалению, мало известно в России.",
+      "url": "https://www.domrz.ru/event/70700_lektsiya_ekskursiya_larissa_andersen_sudby_russkogo_zarubezhya/",
+      "source": "Дом русского зарубежья — афиша",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-11-08",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "sold_out",
+      "availability_checked_at": "2026-11-08"
     },
     {
       "id": "moscow-2026-11-12-7fffb56c23",
@@ -62884,7 +62750,7 @@
       "discovered_at": "2026-10-19",
       "price_type": "free",
       "availability": "sold_out",
-      "availability_checked_at": "2026-11-07",
+      "availability_checked_at": "2026-11-08",
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
@@ -63716,6 +63582,34 @@
       "availability_checked_at": ""
     },
     {
+      "id": "moscow-2026-11-14-ad0e014527",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-14",
+      "time": "19:00",
+      "title": "Прокаженная: кинопоказ и музыкальное сопровождение",
+      "venue": "Еврейский музей и центр толерантности",
+      "address": "",
+      "price": 500,
+      "price_text": "500 ₽",
+      "registration": null,
+      "categories": [
+        "кинопоказ"
+      ],
+      "description": "",
+      "url": "https://www.jewish-museum.ru/events/prokazhennaya-kinopokaz-i-muzykalnoe-soprovozhdenie/",
+      "source": "Еврейский музей и центр толерантности",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-08",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "international-2026-11-15-c2582e1833",
       "status": "check",
       "kind": "open_call",
@@ -63841,7 +63735,7 @@
       "checked_at": "",
       "review_reason": "primary_source_required",
       "discovered_at": "2026-11-06",
-      "audience_text": "Opportunity details | PEOPLE - Virtual 3D Exhibition: Worldwide Artist OPEN CALL | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register PEOPLE - Virtual 3D Exhibition: Worldwide Artist OPEN CALL Deadline: 15/11/2026 City: Dresden | Country: Germany | Lana-Chiara G. Report this? Description Opportunity FAQs Make a submission Contact curator We invite artists from around the world to share their personal perspectives on the theme People. The subject may be approached through portraiture, figurative art, abstraction, symbolism, or experimental forms. Artists from all backgrounds and at all stages of their careers are welcome to apply. We accept works in a wide range of media and techniques, including painting, drawing, collage, digital art, photography, and sculpture. ​DEADLINE FOR SUBMISSIONS: November 15, 2026. EXHIBITION DATES: January 01 - January 31, 2027​. Worldwide Artist OPEN CALL PEOPLE - Virtual 3D Exhibition People are at the heart of countless artistic stories — as individuals, communities, memories, and reflections of society. This exhibition explores the human figure and the human experience in all their diversity: identity, relationships, emotions, everyday life, belonging, isolation, transformation, and the ways we see and understand one another. ​We are now accepting submissions for PEOPLE, our virtual 3D group exhibition. We invite artists from around the world to share their personal perspectives on the theme People. The subject may be approached through portraiture, figurative art, abstraction, symbolism, or experimental forms. Artists from all backgrounds and at all stages of their careers are welcome to apply. We accept works in a wide range of media and techniques, including painting, drawing, collage, digital art, photography, and sculpture. We are looking for diverse artistic voices, individual interpretations, and distinctive approaches to the theme.​ Fees: There is no application fee. Please feel free to submit your work for consideration. If selected, a €30 processing fee per artist will apply to cover the costs of preparing and presenting the work in the virtual exhibition. Our team and curator will review all submissions, and selected artists will be notified after the selection process.​ Awards​ Five prizes will be awarded at the conclusion of the exhibition. The winners will receive certificates and will be prominently featured in the exhibition's video guide. ​ Social Media Bonus​ All artists selected for the exhibition will be featured on our Instagram account which currently has 10,300+ followers.​ ​​Virtual Exhibition​ PEOPLE is a virtual 3D exhibition, so no physical artworks are required. Selected works will be presented digitally within the virtual exhibition space. Artists are welcome to sell their works during and after the exhibition. We charge 0% commission on sales. Any inquiries regarding the purchase of an artwork will be forwarded directly to the respective artist.​ ​DEADLINE FOR SUBMISSIONS: November 15, 2026 EXHIBITION DATES : January 01 - January 31, 2027​ How to Apply​ Please send us: Up to 3 artwork images in high-quality JPEG format. We will select one or two works for the exhibition. Please name each file with the title of the corresponding artwork (e.g. Untitled.jpg). Artwork details: title, dimensions, medium/technique, and price (e.g. Untitled, 50 × 70 cm, oil on canvas, €500). A brief artist bio (maximum 100 words, preferably written in the third person). Your website and social media links, if applicable. Please note: Political, pornographic, or hate-related artworks will not be accepted. Applications must be submitted in English. Selection ​ All submitted works will be reviewed by our team and curator. The selection will take into consideration the work's creativity, originality, artistic quality, and relevance to the exhibition theme. If You Are Selected​ ​Selected artists will receive a confirmation email with a link to pay the €30 processing fee. Payment can also be made by bank transfer. We will also ask selected artists to provide a statement confirming that they are the author of the submitted artwork and that the work does not infringe the rights of any third party.​ Copyright​ Artists retain full copyright and ownership of their artworks and submitted images. Make a submission Contact the curator Who is eligible for this opportunity? Internationel artists from all backgrounds and at all stages of their careers are welcome to apply. We accept works in a wide range of media and techniques, including painting, drawing, collage, digital art, photography, and sculpture. When is the deadline? November 15, 2026. How many works can I submit? Up to 3 artworks. How much does it cost? There is no application fee. Please feel free to submit your work for consideration. If selected, there is a €30 processing fee per artist. Are there payments to artists? No. How do you decide on proposals? All submitted works will be reviewed by Light Bear Gallery team and curator. What happens if my proposal is chosen? If selected, a €30 processing fee per artist will apply to cover the costs of preparing and presenting the work in the virtual exhibition. Selected artists will be notified after the selection process. What are the selection criteria? The selection will take into consideration the work's creativity, originality, artistic quality, and relevance to the exhibition theme. You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Other opportunities DREDGE - a collective exhibition OPEN CALL DREDGE - a collective exhibition at The Gate Art Space, Gloucester Samson Arts Gloucester is... Red, Green and Gold Fourth Wave present Red, Green and Gold, an alternative festive exhibition showcasing affordable... The FLUX Review Edition 15 International Open Call for Artists | The FLUX Review Edition 15 More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
+      "audience_text": "Opportunity details | PEOPLE - Virtual 3D Exhibition: Worldwide Artist OPEN CALL | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register PEOPLE - Virtual 3D Exhibition: Worldwide Artist OPEN CALL Deadline: 15/11/2026 City: Dresden | Country: Germany | Lana-Chiara G. Report this? Description Opportunity FAQs Make a submission Contact curator We invite artists from around the world to share their personal perspectives on the theme People. The subject may be approached through portraiture, figurative art, abstraction, symbolism, or experimental forms. Artists from all backgrounds and at all stages of their careers are welcome to apply. We accept works in a wide range of media and techniques, including painting, drawing, collage, digital art, photography, and sculpture. ​DEADLINE FOR SUBMISSIONS: November 15, 2026. EXHIBITION DATES: January 01 - January 31, 2027​. Worldwide Artist OPEN CALL PEOPLE - Virtual 3D Exhibition People are at the heart of countless artistic stories — as individuals, communities, memories, and reflections of society. This exhibition explores the human figure and the human experience in all their diversity: identity, relationships, emotions, everyday life, belonging, isolation, transformation, and the ways we see and understand one another. ​We are now accepting submissions for PEOPLE, our virtual 3D group exhibition. We invite artists from around the world to share their personal perspectives on the theme People. The subject may be approached through portraiture, figurative art, abstraction, symbolism, or experimental forms. Artists from all backgrounds and at all stages of their careers are welcome to apply. We accept works in a wide range of media and techniques, including painting, drawing, collage, digital art, photography, and sculpture. We are looking for diverse artistic voices, individual interpretations, and distinctive approaches to the theme.​ Fees: There is no application fee. Please feel free to submit your work for consideration. If selected, a €30 processing fee per artist will apply to cover the costs of preparing and presenting the work in the virtual exhibition. Our team and curator will review all submissions, and selected artists will be notified after the selection process.​ Awards​ Five prizes will be awarded at the conclusion of the exhibition. The winners will receive certificates and will be prominently featured in the exhibition's video guide. ​ Social Media Bonus​ All artists selected for the exhibition will be featured on our Instagram account which currently has 10,300+ followers.​ ​​Virtual Exhibition​ PEOPLE is a virtual 3D exhibition, so no physical artworks are required. Selected works will be presented digitally within the virtual exhibition space. Artists are welcome to sell their works during and after the exhibition. We charge 0% commission on sales. Any inquiries regarding the purchase of an artwork will be forwarded directly to the respective artist.​ ​DEADLINE FOR SUBMISSIONS: November 15, 2026 EXHIBITION DATES : January 01 - January 31, 2027​ How to Apply​ Please send us: Up to 3 artwork images in high-quality JPEG format. We will select one or two works for the exhibition. Please name each file with the title of the corresponding artwork (e.g. Untitled.jpg). Artwork details: title, dimensions, medium/technique, and price (e.g. Untitled, 50 × 70 cm, oil on canvas, €500). A brief artist bio (maximum 100 words, preferably written in the third person). Your website and social media links, if applicable. Please note: Political, pornographic, or hate-related artworks will not be accepted. Applications must be submitted in English. Selection ​ All submitted works will be reviewed by our team and curator. The selection will take into consideration the work's creativity, originality, artistic quality, and relevance to the exhibition theme. If You Are Selected​ ​Selected artists will receive a confirmation email with a link to pay the €30 processing fee. Payment can also be made by bank transfer. We will also ask selected artists to provide a statement confirming that they are the author of the submitted artwork and that the work does not infringe the rights of any third party.​ Copyright​ Artists retain full copyright and ownership of their artworks and submitted images. Make a submission Contact the curator Who is eligible for this opportunity? Internationel artists from all backgrounds and at all stages of their careers are welcome to apply. We accept works in a wide range of media and techniques, including painting, drawing, collage, digital art, photography, and sculpture. When is the deadline? November 15, 2026. How many works can I submit? Up to 3 artworks. How much does it cost? There is no application fee. Please feel free to submit your work for consideration. If selected, there is a €30 processing fee per artist. Are there payments to artists? No. How do you decide on proposals? All submitted works will be reviewed by Light Bear Gallery team and curator. What happens if my proposal is chosen? If selected, a €30 processing fee per artist will apply to cover the costs of preparing and presenting the work in the virtual exhibition. Selected artists will be notified after the selection process. What are the selection criteria? The selection will take into consideration the work's creativity, originality, artistic quality, and relevance to the exhibition theme. You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Other opportunities The FLUX Review Edition 15 International Open Call for Artists | The FLUX Review Edition 15 Camden Art Centre Winter Ceramics Market Camden Art Centre is inviting ceramic makers to take part in our Winter Ceramics Market, taking... Parkscapes II London gallery is holding a Festive Season Exhibition, 3rd - 19th December 2026. We’re... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
       "price_type": "unknown",
       "availability_evidence": "",
       "ticket_required": false,
@@ -64357,6 +64251,34 @@
       "reviewed_at": ""
     },
     {
+      "id": "spb-2026-11-15-b6085bfe07",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-15",
+      "time": "13:00",
+      "title": "В Библиотеке Комиксов (7-я Красноармейская, д.30) пройдет новая встреча комиксистов.",
+      "venue": "Библиотека комиксов",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "встреча"
+      ],
+      "description": "Комикстерий: Осенние наброски с натуры На нашей новой встрече мы будем практиковаться в создании набросков самых динамичных и эффектных (но легко выполнимых) поз, вдохновлённых комиксами! ️Порисуем других и попозируем сами, а в выборе интересной позы помогут специальные карточки Берите с собой свои любимые материалы (мягкие карандаши, линеры, маркеры, планшеты) и зовите друзей, ведь вместе практиковаться – гораздо интереснее и веселее!",
+      "url": "https://comix-library.timepad.ru/event/4283945/",
+      "source": "Библиотека комиксов — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-11-08",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-15-2bcae38548",
       "status": "new",
       "kind": "event",
@@ -64389,7 +64311,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-15-dc4f5eed02",
@@ -64463,7 +64387,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-15-bd37e6f9c2",
@@ -68118,6 +68044,35 @@
       "reviewed_at": "2026-11-06"
     },
     {
+      "id": "moscow-2026-11-21-64ecc1a02b",
+      "status": "check",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-21",
+      "time": "15:00",
+      "title": "Портрет",
+      "venue": "Простая школа",
+      "address": "Москва, ул. Пятницкая, 71/5, строение 2, офис 503",
+      "price": 750,
+      "price_text": "750 ₽",
+      "registration": null,
+      "categories": [
+        "наброски"
+      ],
+      "description": "Модель в одной позе три сеанса по 40-45 минут.",
+      "url": "https://prostaya.ru/praktiki",
+      "source": "Простая школа — открытые практики",
+      "checked_at": "",
+      "review_reason": "recurring_schedule_confirm_specific_date",
+      "discovered_at": "2026-11-08",
+      "editor_note": "По еженедельному расписанию школы; проверить отмены и анонс конкретной даты.",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-21-93f181f099",
       "status": "rejected",
       "kind": "event",
@@ -70231,7 +70186,7 @@
       "checked_at": "",
       "review_reason": "primary_source_required",
       "discovered_at": "2026-11-05",
-      "audience_text": "Opportunity details | Wilderness | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register Wilderness Deadline: 27/11/2026 City: Tbilisi | Country: Georgia | Collect Art Report this? Description Opportunity FAQs Make a submission Contact curator Collect Art invites artists worldwide to submit their work for the upcoming online exhibition and special edition, themed “Wilderness” Wilderness is not just a place on a map. It is a state of being — raw, untamed, unfiltered, and free from control. It is the dense forest we have never entered, the desert that swallows all traces, the ocean depths, the mountain silence, but also the wildness that lives inside us: instinct, memory, fear, desire, and the part of the self that refuses to be domesticated… Collect Art invites artists worldwide to submit their work for the upcoming online exhibition and special edition, themed “Wilderness”. Wilderness is not just a place on a map. It is a state of being — raw, untamed, unfiltered, and free from control. It is the dense forest we have never entered, the desert that swallows all traces, the ocean depths, the mountain silence, but also the wildness that lives inside us: instinct, memory, fear, desire, and the part of the self that refuses to be domesticated… Open to artists worldwide, aged 18 and above, working in various media, including painting, drawing, collage, installation, illustration, photography, sculpture, ceramics, textiles, assemblage, fiber art, paper art, printmaking, 3D digital art, glass art, metalwork, and more.​ We invite works exploring Wilderness in all its forms — from untamed landscapes, natural forces, forests, deserts, oceans and mountains to themes of human-nature relationships, ecological fragility and resilience, solitude, survival, freedom, animal instinct, the feral and primitive, inner wilderness, bodies as landscapes, mythological wilds, and the edge between civilization and chaos. Your interpretation can be literal, symbolic, emotional, political or deeply personal, vast or intimate, quiet or violent, sacred or threatening — approach it through your own unique visual language.. Selected artists will have the privilege of being showcased in a month-long online exhibition and will receive a 2-6 page spread in both print and digital magazines. This feature will encompass a biography, artist statement, interview, website link, and 2-10 featured artworks. Moreover, all published artists will receive a complimentary digital issue of the magazine, which will be actively promoted on our website and social media platforms. Additionally, artists will be provided with a link to order the printed version of the magazine. Moreover, the curatorial team will select a few exceptional artists for inclusion in their upcoming book edition titled '101 Contemporary Artists and More...' ​ Submission requirements: Up to 12 photos; details of the work (title, medium, size, year, description is optional); brief biography; artist statement (min 100 words each); website; and social media links. Deadline: November 27, 2026 Application Fee: No Fee The participation fee is 55 EUR (in case of acceptance) Promotional Coverage: 1 dedicated post on the ‘NEWS’ page of our website 2 to 5 individual posts on Facebook and Instagram An announcement post featuring the magazine cover and the names of all published artists 3 group posts on Facebook and Instagram, each including one artwork from every featured artist Email outreach to our network of artists, gallerists, collectors, readers, and art professionals. Our Reach and Exposure: More than 1.2 million readers on Yumpu Over 682,274 readers on Scribd More than 150 printed copies sold per edition Each edition is now showcased at our newly opened Art Gallery in Tbilisi, Georgia, and is also featured in exhibitions and art events. To date, we have published 128 Seasonal and Special Editions of our magazine, featuring over 2,000 artists from around the world. Further Opportunities: Our curatorial team will also select several outstanding artists for inclusion in the upcoming book edition titled “101 Contemporary Artists and More…”. Selection is based on the overall vision for the book and available space. However, we aim to feature as many artists as possible from our previous magazine editions. Additionally, with each edition, our curators highlight a select group of artists for future exhibitions at our new 170 sq. m professionally curated art gallery in the prestigious centre of Tbilisi, Georgia. The gallery is dedicated to modern and contemporary art, providing a powerful platform for international exposure, including painting, drawing, photography, sculpture, ceramics, textile, installation, New media, mixed media works, etc. Make a submission Contact the curator Who is eligible for this opportunity? Open to artists worldwide, aged 18 and above, working in various media, including painting, drawing, collage, installation, illustration, photography, sculpture, ceramics, textiles, assemblage, fiber art, paper art, printmaking, 3D digital art, glass art, metalwork, and more.​ When is the deadline? November 27, 2026 How many works can I submit? Up to 12 artoworks How much does it cost? Application Fee: No Fee The participation fee is 55 EUR (in case of acceptance) You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Other opportunities DREDGE - a collective exhibition OPEN CALL DREDGE - a collective exhibition at The Gate Art Space, Gloucester Samson Arts Gloucester is... Red, Green and Gold Fourth Wave present Red, Green and Gold, an alternative festive exhibition showcasing affordable... The FLUX Review Edition 15 International Open Call for Artists | The FLUX Review Edition 15 More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
+      "audience_text": "Opportunity details | Wilderness | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register Wilderness Deadline: 27/11/2026 City: Tbilisi | Country: Georgia | Collect Art Report this? Description Opportunity FAQs Make a submission Contact curator Collect Art invites artists worldwide to submit their work for the upcoming online exhibition and special edition, themed “Wilderness” Wilderness is not just a place on a map. It is a state of being — raw, untamed, unfiltered, and free from control. It is the dense forest we have never entered, the desert that swallows all traces, the ocean depths, the mountain silence, but also the wildness that lives inside us: instinct, memory, fear, desire, and the part of the self that refuses to be domesticated… Collect Art invites artists worldwide to submit their work for the upcoming online exhibition and special edition, themed “Wilderness”. Wilderness is not just a place on a map. It is a state of being — raw, untamed, unfiltered, and free from control. It is the dense forest we have never entered, the desert that swallows all traces, the ocean depths, the mountain silence, but also the wildness that lives inside us: instinct, memory, fear, desire, and the part of the self that refuses to be domesticated… Open to artists worldwide, aged 18 and above, working in various media, including painting, drawing, collage, installation, illustration, photography, sculpture, ceramics, textiles, assemblage, fiber art, paper art, printmaking, 3D digital art, glass art, metalwork, and more.​ We invite works exploring Wilderness in all its forms — from untamed landscapes, natural forces, forests, deserts, oceans and mountains to themes of human-nature relationships, ecological fragility and resilience, solitude, survival, freedom, animal instinct, the feral and primitive, inner wilderness, bodies as landscapes, mythological wilds, and the edge between civilization and chaos. Your interpretation can be literal, symbolic, emotional, political or deeply personal, vast or intimate, quiet or violent, sacred or threatening — approach it through your own unique visual language.. Selected artists will have the privilege of being showcased in a month-long online exhibition and will receive a 2-6 page spread in both print and digital magazines. This feature will encompass a biography, artist statement, interview, website link, and 2-10 featured artworks. Moreover, all published artists will receive a complimentary digital issue of the magazine, which will be actively promoted on our website and social media platforms. Additionally, artists will be provided with a link to order the printed version of the magazine. Moreover, the curatorial team will select a few exceptional artists for inclusion in their upcoming book edition titled '101 Contemporary Artists and More...' ​ Submission requirements: Up to 12 photos; details of the work (title, medium, size, year, description is optional); brief biography; artist statement (min 100 words each); website; and social media links. Deadline: November 27, 2026 Application Fee: No Fee The participation fee is 55 EUR (in case of acceptance) Promotional Coverage: 1 dedicated post on the ‘NEWS’ page of our website 2 to 5 individual posts on Facebook and Instagram An announcement post featuring the magazine cover and the names of all published artists 3 group posts on Facebook and Instagram, each including one artwork from every featured artist Email outreach to our network of artists, gallerists, collectors, readers, and art professionals. Our Reach and Exposure: More than 1.2 million readers on Yumpu Over 682,274 readers on Scribd More than 150 printed copies sold per edition Each edition is now showcased at our newly opened Art Gallery in Tbilisi, Georgia, and is also featured in exhibitions and art events. To date, we have published 128 Seasonal and Special Editions of our magazine, featuring over 2,000 artists from around the world. Further Opportunities: Our curatorial team will also select several outstanding artists for inclusion in the upcoming book edition titled “101 Contemporary Artists and More…”. Selection is based on the overall vision for the book and available space. However, we aim to feature as many artists as possible from our previous magazine editions. Additionally, with each edition, our curators highlight a select group of artists for future exhibitions at our new 170 sq. m professionally curated art gallery in the prestigious centre of Tbilisi, Georgia. The gallery is dedicated to modern and contemporary art, providing a powerful platform for international exposure, including painting, drawing, photography, sculpture, ceramics, textile, installation, New media, mixed media works, etc. Make a submission Contact the curator Who is eligible for this opportunity? Open to artists worldwide, aged 18 and above, working in various media, including painting, drawing, collage, installation, illustration, photography, sculpture, ceramics, textiles, assemblage, fiber art, paper art, printmaking, 3D digital art, glass art, metalwork, and more.​ When is the deadline? November 27, 2026 How many works can I submit? Up to 12 artoworks How much does it cost? Application Fee: No Fee The participation fee is 55 EUR (in case of acceptance) You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Other opportunities The FLUX Review Edition 15 International Open Call for Artists | The FLUX Review Edition 15 Camden Art Centre Winter Ceramics Market Camden Art Centre is inviting ceramic makers to take part in our Winter Ceramics Market, taking... Parkscapes II London gallery is holding a Festive Season Exhibition, 3rd - 19th December 2026. We’re... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
       "price_type": "unknown",
       "availability_evidence": "",
       "ticket_required": false,
@@ -70593,7 +70548,7 @@
       "checked_at": "",
       "review_reason": "primary_source_required",
       "discovered_at": "2026-11-05",
-      "audience_text": "Opportunity details | State of the Art | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register State of the Art Deadline: 28/11/2026 City: Tbilisi | Country: Georgia | Collect Art Report this? Description Opportunity FAQs Make a submission Contact curator We invite artists from around the world to submit their work for our upcoming international digital publication, STATE OF THE ART. This theme is an invitation to capture the present. Not the future we imagine, not the past we nostalgize — but the complex, contradictory, hyper-accelerated now we are actually living in. What does it mean to be contemporary? What image, object, gesture, or glitch best represents the state of our art — and the art of our state? We invite artists from around the world to submit their work for our upcoming international digital publication, STATE OF THE ART. This theme is an invitation to capture the present. Not the future we imagine, not the past we nostalgize — but the complex, contradictory, hyper-accelerated now we are actually living in. What does it mean to be contemporary? What image, object, gesture, or glitch best represents the state of our art — and the art of our state? ​ Open to visual artists worldwide, aged 18 and above, working in various media, including painting, drawing, collage, installation, illustration, photography, sculpture, ceramics, textiles, assemblage, fiber art, paper art, printmaking, 3D digital art, glass art, metalwork, and more.​ ​ The theme for this edition is the “State of the Art”. We are seeking visual testimonies of the texture of life in 2026. If a future archaeologist found only your work, what would they understand about what it felt like to be alive right now? Your interpretation can be literal, documentary, symbolic, abstract, speculative or deeply personal, exploring technology and humanity, digital identity, the body, ecology and collapse, present-day politics, new rituals and intimacies, information overload, resilience, or simply the quiet poetry of an ordinary day in this extraordinary time. ​ Each participant will receive a 2-6 page spread in print and digital magazines including a biography, statement, interview, QR code linked to their website and/or social media, and 2-10 featured artworks. All participants will receive a complimentary digital issue of the magazine which will be promoted on our website/social media. In addition, you will receive the link for ordering the printed magazine. Moreover, the curatorial team will select a few exceptional artists for inclusion in their upcoming book edition titled '101 Contemporary Artists and More...' ​ Submission requirements: Up to 12 photos, details of the work (title, medium, size, year, description is optional), brief biography, artist statement (min 100 words each), website, and social media links. Deadline: November 28, 2026 Application Fee: No Fee The participation fee is 25 EUR (in case of acceptance) Promotional Coverage: 1 dedicated post on the ‘NEWS’ page of our website 2 to 5 individual posts on Facebook and Instagram An announcement post featuring the magazine cover and the names of all published artists 3 group posts on Facebook and Instagram, each including one artwork from every featured artist Email outreach to our network of artists, gallerists, collectors, readers, and art professionals. Our Reach and Exposure: More than 1.2 million readers on Yump Over 682,274 readers on Scribd More than 150 printed copies sold per edition Each edition is now showcased at our newly opened Art Gallery in Tbilisi, Georgia, and is also featured in exhibitions and art events. To date, we have published 128 Seasonal and Special Editions of our magazine, featuring over 2,000 artists from around the world. Further Opportunities : Our curatorial team will also select several outstanding artists for inclusion in the upcoming book edition titled “101 Contemporary Artists and More…”. Selection is based on the overall vision for the book and available space. However, we aim to feature as many artists as possible from our previous magazine editions. Additionally, with each edition, our curators highlight a select group of artists for future exhibitions at our new 170 sq. m professionally curated art gallery in the prestigious centre of Tbilisi, Georgia. The gallery is dedicated to modern and contemporary art, providing a powerful platform for international exposure, including painting, drawing, photography, sculpture, ceramics, textile, installation, New media, mixed media works, etc. Make a submission Contact the curator Who is eligible for this opportunity? Open to visual artists worldwide, aged 18 and above, working in various media, including painting, drawing, collage, installation, illustration, photography, sculpture, ceramics, textiles, assemblage, fiber art, paper art, printmaking, 3D digital art, glass art, metalwork, and more.​ When is the deadline? November 28 How many works can I submit? Up to 12 artworks How much does it cost? Application Fee: No Fee The participation fee is 25 EUR (in case of acceptance) You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Other opportunities DREDGE - a collective exhibition OPEN CALL DREDGE - a collective exhibition at The Gate Art Space, Gloucester Samson Arts Gloucester is... Red, Green and Gold Fourth Wave present Red, Green and Gold, an alternative festive exhibition showcasing affordable... The FLUX Review Edition 15 International Open Call for Artists | The FLUX Review Edition 15 More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
+      "audience_text": "Opportunity details | State of the Art | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register State of the Art Deadline: 28/11/2026 City: Tbilisi | Country: Georgia | Collect Art Report this? Description Opportunity FAQs Make a submission Contact curator We invite artists from around the world to submit their work for our upcoming international digital publication, STATE OF THE ART. This theme is an invitation to capture the present. Not the future we imagine, not the past we nostalgize — but the complex, contradictory, hyper-accelerated now we are actually living in. What does it mean to be contemporary? What image, object, gesture, or glitch best represents the state of our art — and the art of our state? We invite artists from around the world to submit their work for our upcoming international digital publication, STATE OF THE ART. This theme is an invitation to capture the present. Not the future we imagine, not the past we nostalgize — but the complex, contradictory, hyper-accelerated now we are actually living in. What does it mean to be contemporary? What image, object, gesture, or glitch best represents the state of our art — and the art of our state? ​ Open to visual artists worldwide, aged 18 and above, working in various media, including painting, drawing, collage, installation, illustration, photography, sculpture, ceramics, textiles, assemblage, fiber art, paper art, printmaking, 3D digital art, glass art, metalwork, and more.​ ​ The theme for this edition is the “State of the Art”. We are seeking visual testimonies of the texture of life in 2026. If a future archaeologist found only your work, what would they understand about what it felt like to be alive right now? Your interpretation can be literal, documentary, symbolic, abstract, speculative or deeply personal, exploring technology and humanity, digital identity, the body, ecology and collapse, present-day politics, new rituals and intimacies, information overload, resilience, or simply the quiet poetry of an ordinary day in this extraordinary time. ​ Each participant will receive a 2-6 page spread in print and digital magazines including a biography, statement, interview, QR code linked to their website and/or social media, and 2-10 featured artworks. All participants will receive a complimentary digital issue of the magazine which will be promoted on our website/social media. In addition, you will receive the link for ordering the printed magazine. Moreover, the curatorial team will select a few exceptional artists for inclusion in their upcoming book edition titled '101 Contemporary Artists and More...' ​ Submission requirements: Up to 12 photos, details of the work (title, medium, size, year, description is optional), brief biography, artist statement (min 100 words each), website, and social media links. Deadline: November 28, 2026 Application Fee: No Fee The participation fee is 25 EUR (in case of acceptance) Promotional Coverage: 1 dedicated post on the ‘NEWS’ page of our website 2 to 5 individual posts on Facebook and Instagram An announcement post featuring the magazine cover and the names of all published artists 3 group posts on Facebook and Instagram, each including one artwork from every featured artist Email outreach to our network of artists, gallerists, collectors, readers, and art professionals. Our Reach and Exposure: More than 1.2 million readers on Yump Over 682,274 readers on Scribd More than 150 printed copies sold per edition Each edition is now showcased at our newly opened Art Gallery in Tbilisi, Georgia, and is also featured in exhibitions and art events. To date, we have published 128 Seasonal and Special Editions of our magazine, featuring over 2,000 artists from around the world. Further Opportunities : Our curatorial team will also select several outstanding artists for inclusion in the upcoming book edition titled “101 Contemporary Artists and More…”. Selection is based on the overall vision for the book and available space. However, we aim to feature as many artists as possible from our previous magazine editions. Additionally, with each edition, our curators highlight a select group of artists for future exhibitions at our new 170 sq. m professionally curated art gallery in the prestigious centre of Tbilisi, Georgia. The gallery is dedicated to modern and contemporary art, providing a powerful platform for international exposure, including painting, drawing, photography, sculpture, ceramics, textile, installation, New media, mixed media works, etc. Make a submission Contact the curator Who is eligible for this opportunity? Open to visual artists worldwide, aged 18 and above, working in various media, including painting, drawing, collage, installation, illustration, photography, sculpture, ceramics, textiles, assemblage, fiber art, paper art, printmaking, 3D digital art, glass art, metalwork, and more.​ When is the deadline? November 28 How many works can I submit? Up to 12 artworks How much does it cost? Application Fee: No Fee The participation fee is 25 EUR (in case of acceptance) You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Other opportunities The FLUX Review Edition 15 International Open Call for Artists | The FLUX Review Edition 15 Camden Art Centre Winter Ceramics Market Camden Art Centre is inviting ceramic makers to take part in our Winter Ceramics Market, taking... Parkscapes II London gallery is holding a Festive Season Exhibition, 3rd - 19th December 2026. We’re... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
       "price_type": "unknown",
       "availability_evidence": "",
       "ticket_required": false,
@@ -70839,7 +70794,7 @@
       "checked_at": "",
       "review_reason": "primary_source_required",
       "discovered_at": "2026-11-04",
-      "audience_text": "Opportunity details | NOTHING IS MADE ONCE... | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register NOTHING IS MADE ONCE... Deadline: 29/11/2026 City: London | Region: London | Country: United Kingdom | Elephant Vision Lab Report this? Description Opportunity FAQs Make a submission Contact curator NOTHING IS MADE ONCE... brings together artists working across analogue, digital and hybrid practices to explore how things are made, remade and transformed. Open to all mediums and disciplines, the exhibition considers how materials, ideas and technologies intersect, inform and reshape one another. On making, repetition and reinvention Nothing we make begins entirely anew. Every act of making carries traces of what came before: a gesture, technique, image or process reimagined. Reflecting on a world of constant technological change and circulating images, it asks what we inherit, what we transform and what new possibilities emerge when we begin again. We welcome submissions across all disciplines and forms of creative practice, including but not limited to: Object and product design Sculpture and three-dimensional practices Painting and drawing Installation and site-specific work Moving image, film and video Sound art and sound design Textiles, fashion and wearable art Ceramics and glass Photography and lens-based practices Printmaking and graphic arts Fine art and mixed-media practices Performance and live art Digital art and interactive media Animation and experimental media Furniture and lighting design Architecture and spatial practices Writing, poetry and text-based work Who Can Apply: This open call is open to all students, recent graduates and emerging artists. We are particularly interested in hearing from artists with limited or no experience exhibiting in professional gallery spaces. We are here to support you! Submission Deadline: 29th November 23:59pm Late submissions will not be considered. Selected artists will be notified by end of day 30th November Exhibition Dates: Artwork drop off: 14th December (Time tbc) PV: 16th December - 6pm - 8pm Open: 16th – 20th December De-install: 20th December 5pm Venue: KOPPEL Collective 157 Regent’s Park RD London NW1 8BB What’s Included: Technical installation / deinstallation in the gallery 10 minute online 1-1 session with the curators Social event and networking Digital Letter of invitation to exhibit Digital Letter of participation at the end of the exhibition Documentation of work in the gallery space Promotional material to share with your networks Social media coverage via Instagram: we have 1390 followers and counting. We have a very limited supply of AV equipment - TBC during 1-1 session. Fees (Only If Selected): £95 This covers all the above benefits - The fee applies to each work submitted and chosen to be exhibited. Fees will be payable by 4th December. Submission is free! Payment is only required if your work is selected. About us: We are Elephant Vision lab, a London-based artist duo collaboration, working across installation, sound, moving image, sculpture, and spatial design. Bringing together backgrounds in sculpture, stage design, audiovisual practice, and narrative environments, their work explores how material, sound, and atmosphere shape bodily perception and spatial experience. We have actively work in the exhibition sector between art universities providing curatorial and exhibition support for student exhibitions in London along with museums and galleries across the UK and Europe. This is our 10th open call, building upon the success of Soft ground in December 2025, Loose ends in January, Known terrain as part of the London Design Festival in September and many more. Additional Information: Artists are responsible for transport and insurance of their work Artworks will not be for sale by default, however artists can provide a QR code to a platform of choice where they can individually sell work if they wish. Installation and deinstallation schedules will be communicated upon selection By submitting, artists grant permission to use images of their work for promotional purposes Artist’s are responsible for delivering and collecting their works - Works may be delivered and collected by arrangement. We look forward to seeing your work! Alex & XinYue - Elephant Vision Lab Make a submission Contact the curator Who is eligible for this opportunity? Students, recent graduates and emerging artists When is the deadline? 29th November 23:59pm How many works can I submit? One per submission, each submission will be counted as an individual work and the application fee will be applied to each work if selected When is the delivery date? 14th December When do I need to collect my work? 5pm 20th December How much does it cost? £95 if selected Is there a private view / opening? Yes on the 16th December 6pm What publicity will be provided as part of the opportunity? The exhibtion will be advertised across our social media, website and artrabbit along with the official Koppel project channels What happens if my proposal is chosen? If chosen an email will be set to you with the next steps. You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Other opportunities DREDGE - a collective exhibition OPEN CALL DREDGE - a collective exhibition at The Gate Art Space, Gloucester Samson Arts Gloucester is... Red, Green and Gold Fourth Wave present Red, Green and Gold, an alternative festive exhibition showcasing affordable... The FLUX Review Edition 15 International Open Call for Artists | The FLUX Review Edition 15 More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
+      "audience_text": "Opportunity details | NOTHING IS MADE ONCE... | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register NOTHING IS MADE ONCE... Deadline: 29/11/2026 City: London | Region: London | Country: United Kingdom | Elephant Vision Lab Report this? Description Opportunity FAQs Make a submission Contact curator NOTHING IS MADE ONCE... brings together artists working across analogue, digital and hybrid practices to explore how things are made, remade and transformed. Open to all mediums and disciplines, the exhibition considers how materials, ideas and technologies intersect, inform and reshape one another. On making, repetition and reinvention Nothing we make begins entirely anew. Every act of making carries traces of what came before: a gesture, technique, image or process reimagined. Reflecting on a world of constant technological change and circulating images, it asks what we inherit, what we transform and what new possibilities emerge when we begin again. We welcome submissions across all disciplines and forms of creative practice, including but not limited to: Object and product design Sculpture and three-dimensional practices Painting and drawing Installation and site-specific work Moving image, film and video Sound art and sound design Textiles, fashion and wearable art Ceramics and glass Photography and lens-based practices Printmaking and graphic arts Fine art and mixed-media practices Performance and live art Digital art and interactive media Animation and experimental media Furniture and lighting design Architecture and spatial practices Writing, poetry and text-based work Who Can Apply: This open call is open to all students, recent graduates and emerging artists. We are particularly interested in hearing from artists with limited or no experience exhibiting in professional gallery spaces. We are here to support you! Submission Deadline: 29th November 23:59pm Late submissions will not be considered. Selected artists will be notified by end of day 30th November Exhibition Dates: Artwork drop off: 14th December (Time tbc) PV: 16th December - 6pm - 8pm Open: 16th – 20th December De-install: 20th December 5pm Venue: KOPPEL Collective 157 Regent’s Park RD London NW1 8BB What’s Included: Technical installation / deinstallation in the gallery 10 minute online 1-1 session with the curators Social event and networking Digital Letter of invitation to exhibit Digital Letter of participation at the end of the exhibition Documentation of work in the gallery space Promotional material to share with your networks Social media coverage via Instagram: we have 1390 followers and counting. We have a very limited supply of AV equipment - TBC during 1-1 session. Fees (Only If Selected): £95 This covers all the above benefits - The fee applies to each work submitted and chosen to be exhibited. Fees will be payable by 4th December. Submission is free! Payment is only required if your work is selected. About us: We are Elephant Vision lab, a London-based artist duo collaboration, working across installation, sound, moving image, sculpture, and spatial design. Bringing together backgrounds in sculpture, stage design, audiovisual practice, and narrative environments, their work explores how material, sound, and atmosphere shape bodily perception and spatial experience. We have actively work in the exhibition sector between art universities providing curatorial and exhibition support for student exhibitions in London along with museums and galleries across the UK and Europe. This is our 10th open call, building upon the success of Soft ground in December 2025, Loose ends in January, Known terrain as part of the London Design Festival in September and many more. Additional Information: Artists are responsible for transport and insurance of their work Artworks will not be for sale by default, however artists can provide a QR code to a platform of choice where they can individually sell work if they wish. Installation and deinstallation schedules will be communicated upon selection By submitting, artists grant permission to use images of their work for promotional purposes Artist’s are responsible for delivering and collecting their works - Works may be delivered and collected by arrangement. We look forward to seeing your work! Alex & XinYue - Elephant Vision Lab Make a submission Contact the curator Who is eligible for this opportunity? Students, recent graduates and emerging artists When is the deadline? 29th November 23:59pm How many works can I submit? One per submission, each submission will be counted as an individual work and the application fee will be applied to each work if selected When is the delivery date? 14th December When do I need to collect my work? 5pm 20th December How much does it cost? £95 if selected Is there a private view / opening? Yes on the 16th December 6pm What publicity will be provided as part of the opportunity? The exhibtion will be advertised across our social media, website and artrabbit along with the official Koppel project channels What happens if my proposal is chosen? If chosen an email will be set to you with the next steps. You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Other opportunities The FLUX Review Edition 15 International Open Call for Artists | The FLUX Review Edition 15 Camden Art Centre Winter Ceramics Market Camden Art Centre is inviting ceramic makers to take part in our Winter Ceramics Market, taking... Parkscapes II London gallery is holding a Festive Season Exhibition, 3rd - 19th December 2026. We’re... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
       "price_type": "unknown",
       "availability_evidence": "",
       "ticket_required": false,
@@ -71674,7 +71629,7 @@
       "audience_text": "Opportunity details | Open Call for JustArt Newspaper Club Issue 9 | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register Open Call for JustArt Newspaper Club Issue 9 Deadline: 05/12/2026 Jenny Ping Lam Lin Report this? Description Make a submission Contact curator Open Call - Issue 9 Digital Residues In an era of technological hyper-acceleration, we leave behind an expanding landscape of digital detritus: obsolete formats, corrupted data, forgotten archives and emotional traces embedded within our screens. For Issue 9, Digital Residues, JustArt invites artists, curators and writers to examine the blind spots of the virtual world and explore what remains when digital promises of seamless connectivity and permanence begin to fracture. We are particularly interested in the shifting relationship between human creativity and artificial intelligence. As generative technologies reshape artistic practice, how do we negotiate authorship, agency, and creative freedom? Should we defend the boundaries of human craftsmanship, or embrace collaboration with intelligent systems to expand the possibilities of expression? We welcome submissions that investigate the material, cultural, and psychological tensions between human expression and machine learning. From digital decay and forgotten archives to algorithmic aesthetics, technological memory and acts of creative resistance, we invite you to reconsider the remnants of our increasingly automated world. What does it mean to create, remember, and resist in a world shaped by machines? What We’re Looking For: Artists: Submit 5-8 images of your artwork, along with a description of your work, your bio, and an artist statement. Curators: Share your past projects, project concepts, and your bio, along with 5-8 accompanying images Participation Fee: £38 (Required for selected participants) - Includes a digital copy Social Media Exposure: Your work will be highlighted on our platforms - JustArt Collective Instagram and website. 5K+ Followers on Instagram, and we are growing! Monthly reviewers on Instagram: 50K+ Distribution: The newspaper will be distributed at various art exhibitions and bookshops across the UK. Bookshops: NewBridge Books (Newcastle Upon Tyne) Kafka Bookshop (London) Good Press (Glasgow) Books From Below (Newcastle Upon Tyne) The JustArt newspaper club (Print) ISSN 2979-5494 The JustArt newspaper club (Online) ISSN 2979-5508 We will feature participants on JustArt Collective social media. As a member of the JustArt community, we will select 1-2 participants for free exhibitions with JustArt. Past selected artists for free exhibitions: Jingyun Guan (Issue1): The Hechyeomoyeo 17 Exhibition in Dublin Aitor Moncho Tudanca (Collective Voices 1st Edition) and Anthony Hodgson(Collective Voices 1st Edition): HCMY Mexicali 2026 in Mexico Jingyun Guan (Issue 1) and Bahar Talebi Najafabadi (Issue 3): Human Voyage: The Day We Leave the Shore Exhibition in London Jenny Ping Lam Lin (Issue 4) and Esther Xiang (Issue 3): The Hechyeomoyeo 13 Exhibition in Thailand Sarah Muwanga (Issue 2) and Chaeyeon Kang (Issue 3): The Shape of Anxiety Exhibition in London Sean BW Parker and Sarah Muwanga (Issue 2): Borderlines Exhibition in London About US: Additional Opportunity Artists participating in this program will be prioritised for invitations to participate in JustArt Collective’s future art exhibitions. About JustArt Collective: JustArt Collective is a dynamic group of artists and curators united by a shared passion for the arts. Originally founded in Hong Kong, the collective is now actively engaged in the UK. Throughout our creative journey, we have recognised the vital role of community within the art world. Our mission is to bring together everyone involved in JustArt projects to form a vibrant new community. We encourage open dialogue and the exchange of ideas on a wide range of art-related topics. This includes not only discussions about artistic practices but also the exploration of how to make art more accessible and visible to a broader audience. By fostering these conversations, we aim to inspire fresh perspectives and a deeper appreciation for art among our community and the wider public. Through collaboration and sharing, we hope to cultivate an environment where creativity thrives and everyone's voice is heard. Join us as we work to redefine the art community and enrich our collective experience. For our newspaper, the first print run will be 50 copies. After we sell out the first round (normally sold out during preorder). We will do 30-50 copies for the second round (distributed at bookshops and exhibitions). More information about JustArt Collective can be found on our official website and Instagram account: @Justart_Collective Make a submission Contact the curator You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Advertisement Other opportunities The 17th Annual Pound Arts Open Exhibition Thank you for submitting your work to the 17th annual Pound Arts Open Exhibition. Please read... Revolution: Open Call for artists in any medium REVOLUTION What is REVOLUTION? Your ideas may be framed in terms of change, transformation, ... Life models wanted in Durham and Hartlepool Looking for life models for regular monthly in-person sessions in Durham, North East England.... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
       "price_type": "unknown",
       "availability": "sold_out",
-      "availability_checked_at": "2026-11-07",
+      "availability_checked_at": "2026-11-08",
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
@@ -71892,6 +71847,34 @@
       "reviewed_at": ""
     },
     {
+      "id": "moscow-2026-12-08-70ce184b3e",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-12-08",
+      "time": "17:00",
+      "title": "Мастер-класс по цианотипии",
+      "venue": "Музей Транспорта Москвы",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "",
+      "url": "https://mtmuseum.ru/affiche/master-klass-po-tsianotipii/",
+      "source": "Музей транспорта Москвы — афиша",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-08",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "spb-2026-12-11-d7eb167bdb",
       "status": "rejected",
       "kind": "exhibition",
@@ -71991,7 +71974,7 @@
       "checked_at": "",
       "review_reason": "primary_source_required",
       "discovered_at": "2026-11-06",
-      "audience_text": "Opportunity details | Open Call: \"Roads & Bridges\". A Curated Photography Exhibition | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register Open Call: \"Roads & Bridges\". A Curated Photography Exhibition Deadline: 13/12/2026 Region: North Yorkshire | Country: United Kingdom | Allora Gallery Report this? Description Opportunity FAQs Make a submission Contact curator SUBMISSIONS NOW OPEN: \"ROADS & BRIDGES\" – INTERNATIONAL PHOTOGRAPHY EXHIBITION. Allora Gallery invites photographers from around the world to submit work for our upcoming online group exhibition, \"Roads & Bridges.\" Every road leads somewhere, and every bridge is a decision to cross. A country lane disappearing into fog, a motorway at night, a mountain pass winding upward, an old stone bridge over a river, a footbridge in the early morning. They connect places and people, and they say a lot about those who built them and those who use them. We’re looking for photographs of paths and crossings in whatever form you find them : empty roads and busy ones, village lanes, highways, trails, railway lines, viaducts, tunnels, bridges of every size and age. Landscapes where a road gives the scene its direction, city views held together by a bridge, trains crossing viaducts, empty platforms, images made on the road itself, people on their way somewhere. The moment of setting out, the arrival, or the stretch in between, all of it is welcome. What road do you keep coming back to? We’d love to see the routes that matter to you, whether famous or just a track nobody else would notice. Eligibility Open to photographers worldwide, of all levels and backgrounds All photographic techniques and approaches welcome (digital, analogue, mixed media) Work must address the theme of \"Roads & Bridges\" in some way Previously exhibited work is eligible AI-generated images are not eligible Exhibition Benefits: Digital certificate of participation provided to all selected artists as official recognition of their inclusion in the international exhibition, suitable for professional portfolios and CV documentation. Selected works will be featured in a professionally curated online exhibition hosted on Allora Gallery's dedicated website, providing international visibility for participating photographers. Our exhibitions typically attract hundreds of visitors from the international photography community, including photographers, collectors, and art enthusiasts. Each artwork will be presented with full artist attribution and titles on the website, with detailed artist statements featured in our social media promotion. Exhibition promotion includes dedicated posts across Allora Gallery's Instagram account (480+ followers and growing) and other social media channels, individual artist features, and ongoing promotional content throughout the exhibition period. We actively engage with the international photography community to maximise reach. Details: Submission fee: Free Participation fee (if selected): £15 Deadline to submit: 13 December 2026 Exhibition dates: 18 January – 18 February 2027 Curated by: Oksana Bochina, founder of Allora Gallery How to submit: Send up to 5 images (JPEG, 2000px on the longest side, 4 MB or less each) Include your name, website and/or Instagram Short bio (max 100 words) and artist statement (max 100 words) Brief statement about your submitted work (max 150 words, optional) Sales & Artist Connection: All exhibited works are available for sale with 100% of proceeds going directly to the artist — Allora Gallery takes no commission. Interested collectors can contact the gallery directly, and we facilitate connections between buyers and artists while respecting artists' privacy and preferences. Exhibition Access: The online exhibition is freely accessible worldwide through our dedicated website, allowing international audiences to discover and engage with contemporary photography. The digital format ensures broad accessibility and extended viewing opportunities beyond traditional gallery limitations, with exhibitions remaining accessible throughout the exhibition period and archived for future viewing. About Allora Gallery: Allora Gallery is an independent online photography space founded in 2025 and devoted to capturing the fleeting, the poetic, and the unseen. Each month, we curate exhibitions around a central theme, welcoming photographers of all backgrounds, styles, and stages of their creative journey. Allora means “then” or “so” in Italian — a word often spoken in moments of pause, just before something begins. For us, it’s that quiet in-between — the breath before the shutter clicks, the stillness before the story unfolds. We are open to submissions from photographers of all levels and backgrounds. Make a submission Contact the curator Who is eligible for this opportunity? We are open to submissions from photographers of all levels and backgrounds. When is the deadline? 13 December 2026. How many works can I submit? Send up to 5 images (JPEG, 2000px on the longest side, 4 MB or less each). How much does it cost? There is no cost to submit your work for consideration. Participation fee is £15. This fee is only applicable if your work is selected for the exhibition. It helps cover costs associated with the online exhibition, digital promotion, and certificate creation. You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Other opportunities DREDGE - a collective exhibition OPEN CALL DREDGE - a collective exhibition at The Gate Art Space, Gloucester Samson Arts Gloucester is... Red, Green and Gold Fourth Wave present Red, Green and Gold, an alternative festive exhibition showcasing affordable... The FLUX Review Edition 15 International Open Call for Artists | The FLUX Review Edition 15 More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
+      "audience_text": "Opportunity details | Open Call: \"Roads & Bridges\". A Curated Photography Exhibition | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register Open Call: \"Roads & Bridges\". A Curated Photography Exhibition Deadline: 13/12/2026 Region: North Yorkshire | Country: United Kingdom | Allora Gallery Report this? Description Opportunity FAQs Make a submission Contact curator SUBMISSIONS NOW OPEN: \"ROADS & BRIDGES\" – INTERNATIONAL PHOTOGRAPHY EXHIBITION. Allora Gallery invites photographers from around the world to submit work for our upcoming online group exhibition, \"Roads & Bridges.\" Every road leads somewhere, and every bridge is a decision to cross. A country lane disappearing into fog, a motorway at night, a mountain pass winding upward, an old stone bridge over a river, a footbridge in the early morning. They connect places and people, and they say a lot about those who built them and those who use them. We’re looking for photographs of paths and crossings in whatever form you find them : empty roads and busy ones, village lanes, highways, trails, railway lines, viaducts, tunnels, bridges of every size and age. Landscapes where a road gives the scene its direction, city views held together by a bridge, trains crossing viaducts, empty platforms, images made on the road itself, people on their way somewhere. The moment of setting out, the arrival, or the stretch in between, all of it is welcome. What road do you keep coming back to? We’d love to see the routes that matter to you, whether famous or just a track nobody else would notice. Eligibility Open to photographers worldwide, of all levels and backgrounds All photographic techniques and approaches welcome (digital, analogue, mixed media) Work must address the theme of \"Roads & Bridges\" in some way Previously exhibited work is eligible AI-generated images are not eligible Exhibition Benefits: Digital certificate of participation provided to all selected artists as official recognition of their inclusion in the international exhibition, suitable for professional portfolios and CV documentation. Selected works will be featured in a professionally curated online exhibition hosted on Allora Gallery's dedicated website, providing international visibility for participating photographers. Our exhibitions typically attract hundreds of visitors from the international photography community, including photographers, collectors, and art enthusiasts. Each artwork will be presented with full artist attribution and titles on the website, with detailed artist statements featured in our social media promotion. Exhibition promotion includes dedicated posts across Allora Gallery's Instagram account (480+ followers and growing) and other social media channels, individual artist features, and ongoing promotional content throughout the exhibition period. We actively engage with the international photography community to maximise reach. Details: Submission fee: Free Participation fee (if selected): £15 Deadline to submit: 13 December 2026 Exhibition dates: 18 January – 18 February 2027 Curated by: Oksana Bochina, founder of Allora Gallery How to submit: Send up to 5 images (JPEG, 2000px on the longest side, 4 MB or less each) Include your name, website and/or Instagram Short bio (max 100 words) and artist statement (max 100 words) Brief statement about your submitted work (max 150 words, optional) Sales & Artist Connection: All exhibited works are available for sale with 100% of proceeds going directly to the artist — Allora Gallery takes no commission. Interested collectors can contact the gallery directly, and we facilitate connections between buyers and artists while respecting artists' privacy and preferences. Exhibition Access: The online exhibition is freely accessible worldwide through our dedicated website, allowing international audiences to discover and engage with contemporary photography. The digital format ensures broad accessibility and extended viewing opportunities beyond traditional gallery limitations, with exhibitions remaining accessible throughout the exhibition period and archived for future viewing. About Allora Gallery: Allora Gallery is an independent online photography space founded in 2025 and devoted to capturing the fleeting, the poetic, and the unseen. Each month, we curate exhibitions around a central theme, welcoming photographers of all backgrounds, styles, and stages of their creative journey. Allora means “then” or “so” in Italian — a word often spoken in moments of pause, just before something begins. For us, it’s that quiet in-between — the breath before the shutter clicks, the stillness before the story unfolds. We are open to submissions from photographers of all levels and backgrounds. Make a submission Contact the curator Who is eligible for this opportunity? We are open to submissions from photographers of all levels and backgrounds. When is the deadline? 13 December 2026. How many works can I submit? Send up to 5 images (JPEG, 2000px on the longest side, 4 MB or less each). How much does it cost? There is no cost to submit your work for consideration. Participation fee is £15. This fee is only applicable if your work is selected for the exhibition. It helps cover costs associated with the online exhibition, digital promotion, and certificate creation. You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Other opportunities The FLUX Review Edition 15 International Open Call for Artists | The FLUX Review Edition 15 Camden Art Centre Winter Ceramics Market Camden Art Centre is inviting ceramic makers to take part in our Winter Ceramics Market, taking... Parkscapes II London gallery is holding a Festive Season Exhibition, 3rd - 19th December 2026. We’re... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
       "price_type": "unknown",
       "availability_evidence": "",
       "ticket_required": false,
@@ -72657,7 +72640,7 @@
       "checked_at": "",
       "review_reason": "primary_source_required",
       "discovered_at": "2026-11-06",
-      "audience_text": "Opportunity details | POETRY OPEN CALL ROOTS | ECOFeminism Festival 2027 | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register POETRY OPEN CALL ROOTS | ECOFeminism Festival 2027 Deadline: 25/01/2027 City: London | Region: London | Country: United Kingdom | ART from HEART Report this? Description Opportunity FAQs Make a submission Contact curator Unearthing Interconnections between Nature and Women Poets and writers are invited to submit work for the Poetry Open Call accompanying the 3rd edition of the ECOFeminism Festival, which explores the theme ROOTS . What does it mean to be rooted? Where do we come from, what connects us, and what sustains us? We invite poets and writers to submit an original poem inspired by ROOTS and its many interpretations. From ancestry, heritage and cultural identity to belonging, migration, memory and the land we call home, we want to hear your perspectives on the visible and invisible connections that shape our lives. Explore the relationship between women and nature, matrilineal knowledge, Indigenous wisdom, ecological interdependence, the legacy of colonialism, or the forces that connect people, communities and the natural world. You may approach the theme through an ecological perspective, a feminist lens, or the intersection of both. We welcome personal reflections, challenging perspectives, powerful narratives and unexpected interpretations. Above all, we want to hear voices that move us, question assumptions and invite us to look more deeply at our connections with one another and the world around us. Selected poets will be invited to perform their work at the ECOFeminism Festival Open Mic event , bringing together poetry, creativity and conversation in a shared celebration of words and ideas. The selected winning poet will receive a £100 cash award from ART from HEART in recognition of their work. The Open Mic event will be facilitated by an experienced poet, bringing professional expertise to the performances. Submission Guidelines Submit one original poem per artist. Poems should take no longer than 5 minutes to read aloud, ensuring equal performance opportunities for all selected poets. Please read the FAQs before applying. Key Information​ Submission Deadline: 25 January 2027 Venue: The Art Pavilion, Mile End Park, Clinton Road, London E3 4QY Open Mic Event: Saturday 10 April 2027, 6–8 pm Award: £100 cash award from ART from HEART Submission Fee: £5 Apply now and let your words take root. ​​​Please read the FAQs before submitting your poem. About ART from HEART ART from HEART CIC is a London-based, women-led, award-winning arts organisation, co-founded by artists Judit Prieto and Beatriz Perez. Since 2019, we have produced large-scale multidisciplinary exhibitions and events that champion socio-cultural causes through the transformative power of Artivism. We are also the founders and organisers of the ECOFeminism Festival. Submission fees The following submission fees apply to this opportunity. Poetry Open Call ROOTS - 5.00 GBP The appropriate fee will be payable using a debit or credit card after the first submission has been completed. If the submission fee allows you to submit more than once, you will be able to make further submissions after the first. Contact the curator if you have any questions about the opportunity or the submission fee, or email help@curatorspace.com if you have any questions about the payment process. Make a submission Contact the curator Who is eligible for this opportunity? UK-based poets and writers aged 18 or over. Poems must be written and performed in English. Selected poets must be available to attend and perform at the Open Mic event in London on Saturday, 10 April 2027 How many poems can I submit? One original poem per artist Are there any length restrictions? Poems should take no longer than 5 minutes to read aloud, ensuring equal performance opportunities for all selected poets When is the deadline for submissions? 25 January 2027 What are the selection criteria? Poems will be assessed on their creative interpretation of the theme ROOTS, originality, strength of expression and relevance to the themes of the ECOFeminism Festival. We welcome work exploring ancestry, identity, belonging, memory, heritage, migration, women and nature, ecological interdependence, and the connections between people, land and the natural world ​ Do I have to Pay a Submission Fee? Yes. The submission fee is £5 per poem. What publicity will be provided as part of the opportunity? Selected poets will be promoted through ART from HEART’s communication channels, including our website, newsletter, blog and social media platforms. Our current audience includes: Instagram: 2,296 followers Facebook: 2,173 followers Newsletter: approximately 2,000 subscribers Website: 2.86K monthly visitors We use these platforms to share selected artists’ work, introduce their practice to our audiences and raise the visibility of their contribution to the ECOFeminism Festival. Publicity may include artist and poet features, event announcements and coverage of the festival programme. Is there a prize? Yes. The selected winning poet will receive a £100 cash award from ART from HEART Where will the poetry open mic take place? The Art Pavilion, Mile End Park, Clinton Road, London E3 4QY When is the open mic event? Saturday 10 April 2027, 6–8 pm You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Other opportunities DREDGE - a collective exhibition OPEN CALL DREDGE - a collective exhibition at The Gate Art Space, Gloucester Samson Arts Gloucester is... Red, Green and Gold Fourth Wave present Red, Green and Gold, an alternative festive exhibition showcasing affordable... The FLUX Review Edition 15 International Open Call for Artists | The FLUX Review Edition 15 More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
+      "audience_text": "Opportunity details | POETRY OPEN CALL ROOTS | ECOFeminism Festival 2027 | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register POETRY OPEN CALL ROOTS | ECOFeminism Festival 2027 Deadline: 25/01/2027 City: London | Region: London | Country: United Kingdom | ART from HEART Report this? Description Opportunity FAQs Make a submission Contact curator Unearthing Interconnections between Nature and Women Poets and writers are invited to submit work for the Poetry Open Call accompanying the 3rd edition of the ECOFeminism Festival, which explores the theme ROOTS . What does it mean to be rooted? Where do we come from, what connects us, and what sustains us? We invite poets and writers to submit an original poem inspired by ROOTS and its many interpretations. From ancestry, heritage and cultural identity to belonging, migration, memory and the land we call home, we want to hear your perspectives on the visible and invisible connections that shape our lives. Explore the relationship between women and nature, matrilineal knowledge, Indigenous wisdom, ecological interdependence, the legacy of colonialism, or the forces that connect people, communities and the natural world. You may approach the theme through an ecological perspective, a feminist lens, or the intersection of both. We welcome personal reflections, challenging perspectives, powerful narratives and unexpected interpretations. Above all, we want to hear voices that move us, question assumptions and invite us to look more deeply at our connections with one another and the world around us. Selected poets will be invited to perform their work at the ECOFeminism Festival Open Mic event , bringing together poetry, creativity and conversation in a shared celebration of words and ideas. The selected winning poet will receive a £100 cash award from ART from HEART in recognition of their work. The Open Mic event will be facilitated by an experienced poet, bringing professional expertise to the performances. Submission Guidelines Submit one original poem per artist. Poems should take no longer than 5 minutes to read aloud, ensuring equal performance opportunities for all selected poets. Please read the FAQs before applying. Key Information​ Submission Deadline: 25 January 2027 Venue: The Art Pavilion, Mile End Park, Clinton Road, London E3 4QY Open Mic Event: Saturday 10 April 2027, 6–8 pm Award: £100 cash award from ART from HEART Submission Fee: £5 Apply now and let your words take root. ​​​Please read the FAQs before submitting your poem. About ART from HEART ART from HEART CIC is a London-based, women-led, award-winning arts organisation, co-founded by artists Judit Prieto and Beatriz Perez. Since 2019, we have produced large-scale multidisciplinary exhibitions and events that champion socio-cultural causes through the transformative power of Artivism. We are also the founders and organisers of the ECOFeminism Festival. Submission fees The following submission fees apply to this opportunity. Poetry Open Call ROOTS - 5.00 GBP The appropriate fee will be payable using a debit or credit card after the first submission has been completed. If the submission fee allows you to submit more than once, you will be able to make further submissions after the first. Contact the curator if you have any questions about the opportunity or the submission fee, or email help@curatorspace.com if you have any questions about the payment process. Make a submission Contact the curator Who is eligible for this opportunity? UK-based poets and writers aged 18 or over. Poems must be written and performed in English. Selected poets must be available to attend and perform at the Open Mic event in London on Saturday, 10 April 2027 How many poems can I submit? One original poem per artist Are there any length restrictions? Poems should take no longer than 5 minutes to read aloud, ensuring equal performance opportunities for all selected poets When is the deadline for submissions? 25 January 2027 What are the selection criteria? Poems will be assessed on their creative interpretation of the theme ROOTS, originality, strength of expression and relevance to the themes of the ECOFeminism Festival. We welcome work exploring ancestry, identity, belonging, memory, heritage, migration, women and nature, ecological interdependence, and the connections between people, land and the natural world ​ Do I have to Pay a Submission Fee? Yes. The submission fee is £5 per poem. What publicity will be provided as part of the opportunity? Selected poets will be promoted through ART from HEART’s communication channels, including our website, newsletter, blog and social media platforms. Our current audience includes: Instagram: 2,296 followers Facebook: 2,173 followers Newsletter: approximately 2,000 subscribers Website: 2.86K monthly visitors We use these platforms to share selected artists’ work, introduce their practice to our audiences and raise the visibility of their contribution to the ECOFeminism Festival. Publicity may include artist and poet features, event announcements and coverage of the festival programme. Is there a prize? Yes. The selected winning poet will receive a £100 cash award from ART from HEART Where will the poetry open mic take place? The Art Pavilion, Mile End Park, Clinton Road, London E3 4QY When is the open mic event? Saturday 10 April 2027, 6–8 pm You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Other opportunities The FLUX Review Edition 15 International Open Call for Artists | The FLUX Review Edition 15 Camden Art Centre Winter Ceramics Market Camden Art Centre is inviting ceramic makers to take part in our Winter Ceramics Market, taking... Parkscapes II London gallery is holding a Festive Season Exhibition, 3rd - 19th December 2026. We’re... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
       "price_type": "unknown",
       "availability_evidence": "",
       "ticket_required": false,

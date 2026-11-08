@@ -28,6 +28,18 @@ test('Chinese word tiles split phrase into words, not clauses',()=>{
  const parts=globalThis.ChineseLabQuestBranches.tiles('我喜欢咖啡。');
  assert.deepEqual(parts,['我','喜欢','咖啡。']);
  assert.equal(parts.join(''),'我喜欢咖啡。');
+
+ const complex=globalThis.ChineseLabQuestBranches.tiles('安娜和小陈坐在客厅里，有一台电视。');
+ assert.ok(complex.includes('小陈'),'小陈 is a proper name, not two separate tiles');
+ assert.ok(complex.includes('坐'));
+ assert.ok(complex.includes('在'));
+ assert.ok(complex.includes('一'));
+ assert.ok(complex.includes('台'));
+ assert.ok(!complex.includes('坐在'));
+ assert.ok(!complex.includes('一台'));
+ const proper=globalThis.ChineseLabQuestBranches.tiles('我看见酸汤米线。',['酸汤米线']);
+ assert.ok(proper.includes('酸汤米线'),'Protect lesson-specific words');
+
 });
 
 for(const lesson of lessonData){

@@ -68,22 +68,54 @@
 
   const segmenter = new Intl.Segmenter('zh-Hans', { granularity:'word' });
 
-  function tiles(text, lessonWords) {
-    // Each tile is one Chinese word; append punctuation to the preceding word.
+  const splitWords = {
+    '带着':['带','着'], '一台':['一','台'], '一件':['一','件'],
+    '一位':['一','位'], '一条':['一','条'], '一个':['一','个'],
+    '一本':['一','本'], '一座':['一','座'], '坐在':['坐','在'],
+    '放在':['放','在'], '住在':['住','在'], '还想':['还','想'],
+    '看了':['看','了'], '到了':['到','了'], '笑了':['笑','了'],
+    '很亮':['很','亮'], '不够':['不','够'], '第三':['第','三'],
+    '第二':['第','二'], '几天':['几','天'], '一起去':['一起','去'],
+    '想去':['想','去'], '其实是':['其实','是'], '又去':['又','去'],
+    '还有':['还','有'], '我想':['我','想']
+  };
+
+  function tiles(text, lessonWords=[]) {
     const source=String(text).trim();
-    const chunks=[...segmenter.segment(source)].map(x=>x.segment);
+    let parts=[...segmenter.segment(source)].map(x=>x.segment).flatMap(x=>splitWords[x]||[x])
+      .filter(x=>x.trim());
+
+    // Rejoin names and long textbook words when Intl.Segmenter separates them.
+    const protectedTerms=[...new Set(['安娜','小林','小陈','王老师',...lessonWords.filter(w=>w.length>=3)])]
+      .sort((a,b)=>b.length-a.length);
+    const joined=[];
+    for(let i=0;i<parts.length;){
+      const matched=protectedTerms.find(term=>{
+        let combined='';
+        for(let j=i;j<parts.length&&combined.length<term.length;j++){
+          combined+=parts[j];
+          if(combined===term)return true;
+        }
+        return false;
+      });
+      if(matched){
+        let count=0,total='';
+        while(total.length<matched.length){total+=parts[i+count];count++;}
+        joined.push(matched);i+=count;
+      } else {joined.push(parts[i]);i++;}
+    }
+    // Punctuation belongs to the adjacent Chinese word, never its own tile.
     const result=[];
-    for(const chunk of chunks) {
-      if(!chunk.trim())continue;
+    for(const chunk of joined){
       if (/^[^\p{Script=Han}\p{Script=Latin}0-9]+$/u.test(chunk)) {
-        if(result.length) result[result.length-1]+=chunk;
+        if(result.length)result[result.length-1]+=chunk;
         else result.push(chunk);
       } else result.push(chunk);
     }
     return result;
   }
 
-  function composeFromChapter(chapter, label) {
+  function composeFromChapter(chapter, label, lessonWords) {
     const lines=chapter.lines.filter(([zh,ru])=>
       !!ru && !/[“”《》]/.test(zh) && [...zh].filter(x=>/\p{Script=Han}/u.test(x)).length>=7 &&
       [...zh].filter(x=>/\p{Script=Han}/u.test(x)).length<=24 &&
@@ -91,7 +123,7 @@
     );
     const chosen=lines.sort((a,b)=>Math.abs(a[0].length-17)-Math.abs(b[0].length-17))[0]
       || chapter.lines.find(x=>x[0]&&x[1]);
-    const tokens=tiles(chosen[0]);
+    const tokens=tiles(chosen[0], lessonWords);
     return {
       type:'compose', title:label, tag:'СОБЕРИ ФРАЗУ ИЗ ИСТОРИИ',
       contextZh:chapter.lines[1]?.[0]||chosen[0], contextRu:chapter.lines[1]?.[1]||chosen[1],
@@ -136,7 +168,7 @@
     const steps=[];
     chapters.forEach((chapter,i)=>{
       steps.push(branchChoice(chapter,i,i?chapters[i-1]:null));
-      steps.push(composeFromChapter(chapter,`СОБЕРИ РЕПЛИКУ · ГЛАВА ${i+1}`));
+      steps.push(composeFromChapter(chapter,`СОБЕРИ РЕПЛИКУ · ГЛАВА ${i+1}`,lesson.words.map(w=>w.hanzi)));
     });
     const outcomeRows=endings[lesson.id];
     if(!outcomeRows||outcomeRows.length!==4)throw Error('Missing branching endings for lesson '+lesson.id);

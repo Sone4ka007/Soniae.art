@@ -133,17 +133,43 @@
     };
   }
 
-  function branchChoice(chapter, index, prevChapter) {
+  // Excerpts are the *causes* of each choice, not the answers already
+  // provided in the canonical reading. Indices refer to the reading lines.
+  const sceneEvidence = {
+    1:[[7,8,16],[5,6,16],[14,15,16]],
+    2:[[2,3,5],[3,5,9],[0,2,4]],
+    3:[[1,7,8],[0,3,5],[0,1,2]],
+    4:[[2,4,11],[0,1],[0,7,9]],
+    5:[[0,1,4],[0,2,5],[0,2,3]],
+    6:[[3,5,8],[0,2,4],[0,4,6]],
+    7:[[1,3,5],[0,1,3],[0,1,6]],
+    8:[[0,2,3],[0,2,11],[0,1,2]],
+    9:[[0,1,11],[0,9,10],[0,11,15]],
+    10:[[0,6,9],[0,8,9],[0,1,4]]
+  };
+
+  function chapterEvidence(chapter, lessonId, chapterIndex) {
+    const indices=sceneEvidence[lessonId]?.[chapterIndex]||[0,1,2];
+    const lines=indices.map(i=>chapter.lines[i]).filter(Boolean);
+    return {
+      setupLines: lines.slice(0,-1),
+      contextZh: lines.at(-1)?.[0] || chapter.lines[0][0],
+      contextRu: chapter.decision.prompt + ' ' + (lines.at(-1)?.[1] || chapter.lines[0][1])
+    };
+  }
+
+  function branchChoice(chapter, index, prevChapter, lessonId) {
     const options=chapter.decision.options.slice(0,2).map((option,i)=>({
       zh:option.zh,ru:option.ru,outcomeZh:option.resultZh,outcomeRu:option.resultRu,
       xp:20,time:i===0?-2:-4,trust:i===0?1:0,branchAt:index,branchValue:i
     }));
-    const first=chapter.lines[0];
-    const out={type:'choice',title:chapter.name,tag:'РЕШЕНИЕ, КОТОРОЕ ИЗМЕНИТ ИСТОРИЮ',
-      contextZh:first[0],contextRu:chapter.decision.prompt+' '+first[1],options};
+    const evidence=chapterEvidence(chapter,lessonId,index);
+    const out={type:'choice',title:chapter.name,tag:'СИТУАЦИЯ → ВЫБОР → ПОСЛЕДСТВИЕ',
+      ...evidence,options};
     if(prevChapter) out.branchContexts=prevChapter.decision.options.slice(0,2).map(o=>({
-      zh:o.resultZh+' '+first[0],
-      ru:o.resultRu+' '+first[1]
+      zh:o.resultZh+' '+evidence.contextZh,
+      ru:o.resultRu+' '+evidence.contextRu,
+      setupLines:evidence.setupLines
     }));
     return out;
   }
@@ -167,7 +193,7 @@
     const old=lesson.quest;
     const steps=[];
     chapters.forEach((chapter,i)=>{
-      steps.push(branchChoice(chapter,i,i?chapters[i-1]:null));
+      steps.push(branchChoice(chapter,i,i?chapters[i-1]:null,lesson.id));
       steps.push(composeFromChapter(chapter,`СОБЕРИ РЕПЛИКУ · ГЛАВА ${i+1}`,lesson.words.map(w=>w.hanzi)));
     });
     const outcomeRows=endings[lesson.id];

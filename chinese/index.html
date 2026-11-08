@@ -532,6 +532,13 @@
       body .site-frame > header.topbar .topbar-line {display:none;}
     }
   </style>
+<style id="chinese-lab-coherent-quest">
+.quest-story-evidence-list{display:grid;gap:10px;padding:10px 0 16px;border-bottom:1px solid #c8c8c2;margin-bottom:17px}
+.quest-story-evidence-zh{font-size:clamp(17px,2.1vw,21px);line-height:1.7;font-weight:500;overflow-wrap:anywhere}
+.quest-story-evidence-zh .word-tap{font-size:inherit;font-weight:inherit}
+.quest-story-evidence-zh .speak-inline{font-size:14px;min-width:30px;min-height:30px}
+.quest-story-evidence p{font-size:13px;line-height:1.5;color:#666;margin:4px 0 0}
+</style>
 </head>
 <body>
   <div class="site-frame">
@@ -589,7 +596,7 @@ window.chineseLabLessonFetch=async url=>{
 <script src="./js/pinyin-chars.js"></script>
 <script src="./js/sentence-tiles.js"></script>
 <script src="./js/exercise-sessions.js"></script>
-<script src="./js/quest-branches.js?v=20261108-1"></script>
+<script src="./js/quest-branches.js?v=20261108-2"></script>
 <script>
 const sceneURL = name => window.__offlineScenes[name] || ("assets/"+name+".svg");
 const $ = (selector) => document.querySelector(selector);
@@ -743,11 +750,18 @@ function initQuest(){
  state.progress.questWords[lesson().id] ||= {};
 }
 function questStep(){
- const step=lesson().quest.steps[state.game.stage];
+ const g=state.game,step=lesson().quest.steps[g.stage];
  if(!step?.branchContexts)return step;
- const previousChoice=state.game.routeChoices?.[step.options[0].branchAt-1]??0;
- const context=step.branchContexts[previousChoice]||step.branchContexts[0];
- return {...step,contextZh:context.zh,contextRu:context.ru};
+ const previousStage=Math.max(0,Math.floor(g.stage/2)-1);
+ const route=g.routeChoices||[];
+ const key=step.branchContexts.length===4
+   ?(route[0]??0)*2+(route[1]??0):(route[previousStage]??0);
+ const context=step.branchContexts[key]||step.branchContexts[0];
+ return {...step,
+   contextZh:context.zh,contextRu:context.ru,
+   setupLines:context.setupLines||step.setupLines||[],
+   options:step.branchOptions?.[key]||step.options
+ };
 }
 
 function questGloss(key,ru){
@@ -865,7 +879,8 @@ function questInventory(){
 
 function questNarrative(s){
  const g=state.game;
- return `<div class="quest-narrative"><div class="quest-narrative-label">${esc(s.tag)} <button type="button" class="quest-plain" data-action="quest-translation">${g.showRu?'СКРЫТЬ ПЕРЕВОД':'ПОКАЗАТЬ ПЕРЕВОД'}</button></div><div class="quest-narrative-zh" lang="zh-CN">${tapText(s.contextZh)} ${speakButton(s.contextZh,'Прослушать ситуацию')}</div>${g.showRu?`<p>${esc(s.contextRu)}</p>`:''}</div>`;
+ const earlier=(s.setupLines||[]).map(([zh,ru],i)=>`<div class="quest-story-evidence"><div lang="zh-CN" class="quest-story-evidence-zh">${tapText(zh)} ${speakButton(zh,'Прослушать предысторию')}</div>${g.showRu?`<p>${esc(ru)}</p>`:''}</div>`).join('');
+ return `<div class="quest-narrative"><div class="quest-narrative-label">${esc(s.tag)} <button type="button" class="quest-plain" data-action="quest-translation">${g.showRu?'СКРЫТЬ ПЕРЕВОД':'ПОКАЗАТЬ ПЕРЕВОД'}</button></div>${earlier?`<div class="quest-story-evidence-list">${earlier}</div>`:''}<div class="quest-narrative-zh" lang="zh-CN">${tapText(s.contextZh)} ${speakButton(s.contextZh,'Прослушать ситуацию')}</div>${g.showRu?`<p>${esc(s.contextRu)}</p>`:''}</div>`;
 }
 function questFeedback(){const g=state.game;if(!g.feedback)return '';
  const f=g.feedback;
@@ -904,9 +919,13 @@ function questEnding(){
   const ending=q.branchEndings[route];
   const lastOption=q.steps[4]?.options?.[third];
   if(!ending)return '<p>Финал пока недоступен.</p>';
-  const endZh=ending.zh+(lastOption?.outcomeZh?' '+lastOption.outcomeZh:'');
-  const endRu=ending.ru+(lastOption?.outcomeRu?' '+lastOption.outcomeRu:'');
-  return `${header('ТВОЯ КОНЦОВКА','Выбранные действия меняли следующие сцены. В каждом уроке доступны разные исходы.','МАРШРУТ / '+(route+1))}<div class="quest-end"><div class="quest-end-num">✦</div><div><span class="quest-kicker">${esc(ending.kicker)}</span><h4>${esc(q.title)}</h4><div class="quest-result-zh" lang="zh-CN">${tapText(endZh)} ${speakButton(endZh)}</div>${questGloss('branch-end',endRu)}<div class="quest-end-score">${g.points} XP · ${g.routeChoices?.length||0} РЕШЕНИЯ · ФИНАЛ ${route+1}/4</div><div class="quest-end-links"><button type="button" class="action-btn" data-action="quest-restart">ВЫБРАТЬ ДРУГОЙ ПУТЬ ↻</button><button type="button" class="action-btn secondary" data-action="mode" data-id="input">ЧИТАТЬ ИСТОРИЮ →</button></div></div></div>${questMissionBox()}${questInventory()}`;
+  const variant=ending.variants?.[third];
+  const final=variant||ending;
+  const endZh=variant?variant.zh:ending.zh+(lastOption?.outcomeZh?' '+lastOption.outcomeZh:'');
+  const endRu=variant?variant.ru:ending.ru+(lastOption?.outcomeRu?' '+lastOption.outcomeRu:'');
+  const total=ending.variants?8:4;
+  const number=ending.variants?route*2+third+1:route+1;
+  return `${header('ТВОЯ КОНЦОВКА','Выбранные действия меняли следующие сцены. В каждом уроке доступны разные исходы.','МАРШРУТ / '+number)}<div class="quest-end"><div class="quest-end-num">✦</div><div><span class="quest-kicker">${esc(final.kicker)}</span><h4>${esc(q.title)}</h4><div class="quest-result-zh" lang="zh-CN">${tapText(endZh)} ${speakButton(endZh)}</div>${questGloss('branch-end',endRu)}<div class="quest-end-score">${g.points} XP · ${g.routeChoices?.length||0} РЕШЕНИЯ · ФИНАЛ ${number}/${total}</div><div class="quest-end-links"><button type="button" class="action-btn" data-action="quest-restart">ВЫБРАТЬ ДРУГОЙ ПУТЬ ↻</button><button type="button" class="action-btn secondary" data-action="mode" data-id="input">ЧИТАТЬ ИСТОРИЮ →</button></div></div></div>${questMissionBox()}${questInventory()}`;
  }
  const stateName=g.time<0||g.flags.unfixed||g.flags.rushed?'fail':g.trust>=4&&g.time>=0?'good':'tight';
  const end=q.endings[stateName];
@@ -915,11 +934,11 @@ function questEnding(){
 function renderStory(){
  const g=state.game,q=lesson().quest;
  if(g.status==='intro'){
-  $('#game-panel').innerHTML=`${header('КВЕСТ / ТЫ ВНУТРИ ИСТОРИИ','Каждый выбор меняет следующую сцену и ведёт к одному из нескольких финалов.','INTERACTIVE FICTION')}<div class="quest-intro-v7"><div class="quest-kicker">ИНТЕРАКТИВНОЕ ДЕЛО ${String(lesson().id).padStart(2,'0')} / ${q.steps.length} СЦЕН</div><h4>${esc(q.title)}</h4><p>${esc(q.tagline)}</p><div lang="zh-CN" class="quest-big-zh">${tapText(q.introZh)} ${speakButton(q.introZh)}</div><div class="quest-objective-v7"><b>МИССИЯ</b><span>${esc(q.objective)}</span></div><div class="quest-intro-buttons"><button type="button" class="action-btn" data-action="quest-start">ВОЙТИ В ИСТОРИЮ →</button><button type="button" class="action-btn secondary" data-action="mode" data-id="input">СНАЧАЛА ПОЧИТАТЬ</button></div><small>Три важных выбора, три задания на сборку фраз и словарные миссии из историй этого урока. Перевод открывается по нажатию.</small></div>`;return;
+  $('#game-panel').innerHTML=`${header('КВЕСТ / ТЫ ВНУТРИ ИСТОРИИ','Каждый выбор меняет следующую сцену и ведёт к одному из нескольких финалов.','INTERACTIVE FICTION')}<div class="quest-intro-v7"><div class="quest-kicker">ИНТЕРАКТИВНОЕ ДЕЛО ${String(lesson().id).padStart(2,'0')} / ${q.steps.length} СЦЕН</div><h4>${esc(q.title)}</h4><p>${esc(q.tagline)}</p><div lang="zh-CN" class="quest-big-zh">${tapText(q.introZh)} ${speakButton(q.introZh)}</div><div class="quest-objective-v7"><b>МИССИЯ</b><span>${esc(q.objective)}</span></div><div class="quest-intro-buttons"><button type="button" class="action-btn" data-action="quest-start">НАЧАТЬ КВЕСТ →</button><button type="button" class="action-btn secondary" data-action="mode" data-id="input">СНАЧАЛА ПОЧИТАТЬ</button></div><small>Три важных выбора, три задания на сборку фраз и словарные миссии из историй этого урока. Перевод открывается по нажатию.</small></div>`;return;
  }
  if(g.status==='complete'){$('#game-panel').innerHTML=questEnding();return;}
  const s=questStep(),body=s.type==='explore'?questExplore(s):s.type==='compose'?questCompose(s):s.type==='pick'?questPick(s):questOptions(s);
- $('#game-panel').innerHTML=`${header('КВЕСТ / ИСТОРИЯ АННЫ','Выбирай действия, а затем составляй фразы на китайском. Последствия меняют следующую сцену.',`ЭТАП ${g.stage+1} / ${q.steps.length}`)}${questHud()}<section class="quest-scene"><div class="quest-scene-heading"><span>${esc(s.tag)}</span><h4>${esc(s.title)}</h4></div>${questNarrative(s)}${body}</section>${questMissionBox()}${questInventory()}`;
+ $('#game-panel').innerHTML=`${header('КВЕСТ / ИСТОРИЯ АННЫ','Выбирай действия, а затем составляй фразы на китайском. Последствия меняют следующую сцену.',`ЭТАП ${g.stage+1} / ${q.steps.length}`)}${questHud()}<section class="quest-scene"><div class="quest-scene-heading"><span>${esc(s.tag)}</span><h4>${esc(s.title)}</h4></div>${s.type==='compose'?'':questNarrative(s)}${body}</section>${questMissionBox()}${questInventory()}`;
 }
 function questAction(action,btn){
  const g=state.game;if(!g?.isQuest)return;

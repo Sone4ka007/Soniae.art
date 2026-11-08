@@ -70,6 +70,17 @@ for(const lesson of lessonData){
      assert.ok(illustrations[0].spots.find(s=>s.id==='canteen').clueZh.includes('食堂'));
      assert.ok(illustrations[0].spots.find(s=>s.id==='folder').clueZh.includes('证'));
    }
+   const artNames={8:['rest-plan','park-rest'],9:['gallery-friends','gallery-studio'],10:['winter-plan','winter-station']};
+   if(artNames[lesson.id]){
+     assert.deepEqual(illustrations.map(s=>s.image),artNames[lesson.id],
+       'The quest must use artwork illustrating the actual story');
+     for(const [i,scene] of illustrations.entries()){
+       const art=readFileSync(join(dataDir,'..','assets',scene.image+'.svg'),'utf8');
+       assert.match(art,/<svg[\\s>]/,'Scene art must be valid-looking SVG');
+       for(const spot of scene.spots)assert.ok(art.includes(spot.word),
+         'Hotspot '+spot.id+' must name an object actually shown/labeled in '+scene.image);
+     }
+   }
    assert.equal(result.branchEndings.length,4);
    assert.equal(new Set(result.branchEndings.map(e=>e.ru)).size,4,'Different choices must produce different outcomes');
    assert.equal(decisions[1].branchContexts.length,2);

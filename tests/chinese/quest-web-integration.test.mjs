@@ -26,7 +26,7 @@ test('Chinese Lab connects route-aware story quests with reading chapters',()=>{
  assert.match(html,/upcoming\?\.skipWhenRoute\?\.every/);
  assert.match(html,/questExplore\(s\)/);
  assert.match(html,/quest-hotspot/);
- assert.match(html,/"printer-notice":"data:image\\/svg\\+xml;base64,/);
+ assert.ok(html.includes('"printer-notice":"data:image/svg+xml;base64,'), 'Updated illustration must contain enrollment notice art');
  assert.match(html,/quest-story-evidence-list/);
  assert.match(html,/ending\.variants\?\.\[third\]/);
  assert.match(html,/q\.branchEndings\[route\]/);

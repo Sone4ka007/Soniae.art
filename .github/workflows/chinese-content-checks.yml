@@ -23,4 +23,4 @@ jobs:
         with:
           node-version: '22'
       - name: Validate reading levels, branching quests and site content
-        run: node --test tests/chinese/graded-reading-level.test.mjs tests/chinese/readings-sync.test.mjs tests/chinese/branching-quest.test.mjs
+        run: node --test tests/chinese/graded-reading-level.test.mjs tests/chinese/readings-sync.test.mjs tests/chinese/branching-quest.test.mjs tests/chinese/quest-web-integration.test.mjs

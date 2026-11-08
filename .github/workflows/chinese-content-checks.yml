@@ -6,6 +6,7 @@ on:
     paths:
       - 'chinese/index.html'
       - 'chinese/data/**'
+      - 'chinese/js/**'
       - 'tests/chinese/**'
       - '.github/workflows/chinese-content-checks.yml'
   workflow_dispatch:

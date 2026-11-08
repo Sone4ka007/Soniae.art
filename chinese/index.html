@@ -596,7 +596,7 @@ window.chineseLabLessonFetch=async url=>{
 <script src="./js/pinyin-chars.js"></script>
 <script src="./js/sentence-tiles.js"></script>
 <script src="./js/exercise-sessions.js"></script>
-<script src="./js/quest-branches.js?v=20261108-2"></script>
+<script src="./js/quest-branches.js?v=20261108-3"></script>
 <script>
 const sceneURL = name => window.__offlineScenes[name] || ("assets/"+name+".svg");
 const $ = (selector) => document.querySelector(selector);
@@ -752,7 +752,7 @@ function initQuest(){
 function questStep(){
  const g=state.game,step=lesson().quest.steps[g.stage];
  if(!step?.branchContexts)return step;
- const previousStage=Math.max(0,Math.floor(g.stage/2)-1);
+ const previousStage=Math.max(0,(step.branchAt??Math.floor(g.stage/2))-1);
  const route=g.routeChoices||[];
  const key=step.branchContexts.length===4
    ?(route[0]??0)*2+(route[1]??0):(route[previousStage]??0);
@@ -917,7 +917,8 @@ function questEnding(){
   const first=g.routeChoices?.[0]??0,second=g.routeChoices?.[1]??0,third=g.routeChoices?.[2]??0;
   const route=first*2+second;
   const ending=q.branchEndings[route];
-  const lastOption=q.steps[4]?.options?.[third];
+  const lastChoice=[...q.steps].reverse().find(s=>s.type==='choice');
+  const lastOption=lastChoice?.options?.[third];
   if(!ending)return '<p>Финал пока недоступен.</p>';
   const variant=ending.variants?.[third];
   const final=variant||ending;
@@ -934,7 +935,7 @@ function questEnding(){
 function renderStory(){
  const g=state.game,q=lesson().quest;
  if(g.status==='intro'){
-  $('#game-panel').innerHTML=`${header('КВЕСТ / ТЫ ВНУТРИ ИСТОРИИ','Каждый выбор меняет следующую сцену и ведёт к одному из нескольких финалов.','INTERACTIVE FICTION')}<div class="quest-intro-v7"><div class="quest-kicker">ИНТЕРАКТИВНОЕ ДЕЛО ${String(lesson().id).padStart(2,'0')} / ${q.steps.length} СЦЕН</div><h4>${esc(q.title)}</h4><p>${esc(q.tagline)}</p><div lang="zh-CN" class="quest-big-zh">${tapText(q.introZh)} ${speakButton(q.introZh)}</div><div class="quest-objective-v7"><b>МИССИЯ</b><span>${esc(q.objective)}</span></div><div class="quest-intro-buttons"><button type="button" class="action-btn" data-action="quest-start">НАЧАТЬ КВЕСТ →</button><button type="button" class="action-btn secondary" data-action="mode" data-id="input">СНАЧАЛА ПОЧИТАТЬ</button></div><small>Три важных выбора, три задания на сборку фраз и словарные миссии из историй этого урока. Перевод открывается по нажатию.</small></div>`;return;
+  $('#game-panel').innerHTML=`${header('КВЕСТ / ТЫ ВНУТРИ ИСТОРИИ','Каждый выбор меняет следующую сцену и ведёт к одному из нескольких финалов.','INTERACTIVE FICTION')}<div class="quest-intro-v7"><div class="quest-kicker">ИНТЕРАКТИВНОЕ ДЕЛО ${String(lesson().id).padStart(2,'0')} / ${q.steps.length} СЦЕН</div><h4>${esc(q.title)}</h4><p>${esc(q.tagline)}</p><div lang="zh-CN" class="quest-big-zh">${tapText(q.introZh)} ${speakButton(q.introZh)}</div><div class="quest-objective-v7"><b>МИССИЯ</b><span>${esc(q.objective)}</span></div><div class="quest-intro-buttons"><button type="button" class="action-btn" data-action="quest-start">НАЧАТЬ КВЕСТ →</button><button type="button" class="action-btn secondary" data-action="mode" data-id="input">СНАЧАЛА ПОЧИТАТЬ</button></div><small>Осмотри две картинки и собери улики, затем прими три решения и составь китайские предложения. Перевод открывается по нажатию.</small></div>`;return;
  }
  if(g.status==='complete'){$('#game-panel').innerHTML=questEnding();return;}
  const s=questStep(),body=s.type==='explore'?questExplore(s):s.type==='compose'?questCompose(s):s.type==='pick'?questPick(s):questOptions(s);
@@ -995,7 +996,10 @@ function questAction(action,btn){
    renderStory();return;
  }
  if(action==='quest-next'&&g.ready){
-   g.stage++;g.ready=false;g.seen=[];g.tokens=[];g.selected=[];g.answer=null;g.feedback=null;g.hint=false;g.usedHint=false;g.zoom=false;g.showRu=false;g.revealed=[];g.tokenOrder=null;g.analysisKey=null;g.missionStage=Math.min(g.stage,6);g.missionResult=null;g.missionNotice='';
+   g.stage++;
+   const upcoming=lesson().quest.steps[g.stage];
+   if(upcoming?.skipWhenRoute?.every((value,i)=>g.routeChoices?.[i]===value))g.stage++;
+   g.ready=false;g.seen=[];g.tokens=[];g.selected=[];g.answer=null;g.feedback=null;g.hint=false;g.usedHint=false;g.zoom=false;g.showRu=false;g.revealed=[];g.tokenOrder=null;g.analysisKey=null;g.missionStage=Math.min(g.stage,6);g.missionResult=null;g.missionNotice='';
    if(g.stage>=lesson().quest.steps.length){g.status='complete';state.progress.stories[lesson().id]=(state.progress.stories[lesson().id]||0)+1;questEarn(35,'ДЕЛО ЗАКРЫТО');save();renderShell();}
    renderStory();$('#game-panel')?.scrollIntoView({behavior:'smooth',block:'start'});return;
  }

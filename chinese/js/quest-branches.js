@@ -318,9 +318,71 @@
     };
   }
 
+
+  // Preserve the two interactive illustrated investigations from the earlier
+  // quest format. All discovery text now comes from the graded Anna reading.
+  // Each record indexes story lines in the relevant chapter for the art zones.
+  const sceneClues={
+    1:[[8,10,7,4,1,16],[11,13,8,0,12]],
+    2:[[10,5,6,11,3,4],[3,4,5,6,9]],
+    3:[[8,16,13,9,7],[1,11,6,0,7]],
+    4:[[3,4,0,9],[4,5,7,9]],
+    5:[[1,4,5,7],[4,3,2,6]],
+    6:[[4,2,1,15],[4,5,6,7]],
+    7:[[4,3,5,17],[8,7,4,11]],
+    8:[[1,2,3,7],[9,2,14,15]],
+    9:[[0,2,8,10],[10,11,9,14]],
+    10:[[6,5,8,10],[1,12,3]]
+  };
+
+  function illustratedScene(lesson, chapters, which) {
+    const source=lesson.quest.steps.filter(s=>s.type==='explore')[which];
+    if(!source)throw Error('Missing illustrated scene '+which+' in lesson '+lesson.id);
+    const reading=chapters[which===0?0:1];
+    const indices=sceneClues[lesson.id]?.[which];
+    if(!indices||indices.length!==source.spots.length)throw Error('Missing story clues for '+lesson.id+' scene '+which);
+    const familiar=['安娜','小林','小陈','学校','老师','时间','手机','朋友','好','去','看','有'];
+    const spots=source.spots.map((spot,i)=>{
+      const line=(reading.lines[indices[i]]||reading.lines[0]);
+      const word=lesson.words.find(w=>line[0].includes(w.hanzi))?.hanzi
+        || familiar.find(w=>line[0].includes(w)) || spot.word;
+      return {...spot,word,clueZh:line[0],clueRu:line[1],
+        item:spot.critical?(word+' · '+spot.ru):undefined};
+    });
+    const required=lesson.id===1&&which===0?['poster','folder','canteen']:
+      lesson.id===1&&which===1?['instructions','notice']:source.required;
+    return {
+      ...source,
+      title:which===0?'ОСМОТРИ МЕСТО · '+(lesson.id===1?'ПРОПАВШИЙ ДОКУМ':'ПОИСК ПОДСКАЗОК'):
+        'ПРОВЕРЬ НАЙДЕННОЕ',
+      tag:'НАЖМИ НА ПРЕДМЕТЫ И СОБЕРИ УЛИКИ',
+      contextZh:which===0?chapters[0].lines[0][0]:(reading.lines[0]?.[0]||''),
+      contextRu:lesson.id===1&&which===0
+        ?'У Анны пропал документ для заявления. На картинке можно проверить срок и сумку и найти подсказку о похожей сумке.'
+        :lesson.id===1&&which===1
+          ?'При подаче документов требуют уведомление о зачислении. Осмотри стойку и проверь, можно ли его предъявить.'
+          :'Осмотри детали места. Они помогут понять, что происходит с Анной, прежде чем принимать следующее решение.',
+      goal:lesson.id===1&&which===0?'Найди срок, проверь сумку и выясни, где могли видеть похожую.':
+        lesson.id===1&&which===1?'Найди требования и уведомление о зачислении.':
+        'Найди все важные подсказки на картинке.',
+      clueScope:'illustration-'+which,
+      spots,required,
+      ...(lesson.id===1&&which===1?{skipWhenRoute:[1,1]}:{})
+    };
+  }
+
+  function withIllustratedScenes(lesson,chapters,quest) {
+    const [first,second]=[0,1].map(i=>illustratedScene(lesson,chapters,i));
+    return {...quest, schemaVersion:5,
+      // Investigation > choice > sentence, then another investigation
+      // before the last decision. This preserves the branching choice indices.
+      steps:[first,...quest.steps.slice(0,4),second,...quest.steps.slice(4)]
+    };
+  }
+
   function build(lesson,chapters) {
     if(!Array.isArray(chapters)||chapters.length!==3)return lesson.quest;
-    if(lesson.id===1)return firstLessonQuest(lesson,chapters);
+    if(lesson.id===1)return withIllustratedScenes(lesson,chapters,firstLessonQuest(lesson,chapters));
     const old=lesson.quest;
     const steps=[];
     chapters.forEach((chapter,i)=>{
@@ -329,7 +391,7 @@
     });
     const outcomeRows=endings[lesson.id];
     if(!outcomeRows||outcomeRows.length!==4)throw Error('Missing branching endings for lesson '+lesson.id);
-    return {
+    return withIllustratedScenes(lesson,chapters,{
       ...old,
       schemaVersion:4,
       title:'ИСТОРИЯ АННЫ · '+lesson.topic,
@@ -341,7 +403,7 @@
       steps,
       branchEndings:outcomeRows.map(([kicker,zh,ru])=>({kicker,zh,ru})),
       vocabMissions:readingMissionGroups(old.vocabMissions,chapters)
-    };
+    });
   }
 
   global.ChineseLabQuestBranches=Object.freeze({build,tiles});

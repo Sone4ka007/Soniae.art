@@ -38291,7 +38291,7 @@
       "reviewed_at": "2026-10-17",
       "availability": "unknown",
       "availability_checked_at": "",
-      "registration": false,
+      "registration": null,
       "price": null,
       "price_text": "",
       "price_type": "paid",
@@ -38317,7 +38317,7 @@
         "status": "approved",
         "telegram_include": false,
         "instagram_include": false,
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -41054,7 +41054,7 @@
       "address": "1-й Голутвинский переулок, 16, стр. 1",
       "price": 850,
       "price_text": "850 ₽; льготный — 650 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -41081,7 +41081,7 @@
       "time_evidence": "24 октября 2026 14:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
       "editor_overrides": {
-        "registration": false
+        "registration": null
       }
     },
     {
@@ -49427,7 +49427,7 @@
       "address": "Лаврушинский переулок, 12",
       "price": 650,
       "price_text": "650 ₽; онлайн — 700 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -49444,7 +49444,7 @@
         "telegram_include": false,
         "instagram_include": false,
         "status": "approved",
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -51674,14 +51674,16 @@
       "price": 0,
       "price_text": "",
       "registration": false,
-      "categories": [],
+      "categories": [
+        "выставка"
+      ],
       "description": "На метро Музей AZ находится между станциями метро «Маяковская» и «Белорусская» (кольцевая). Мы рекомендуем идти в Музей от станции «Маяковская». Вам нужен Выход №1 на 1-я Тверская-Ямская улица, 2-я Тверская-Ямская улица.",
       "url": "https://museum-az.com/event/territoriya-svobody-nonkonformisty-v-taruse/",
       "source": "Музей AZ — выставки и события",
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-10-20",
-      "price_type": "paid",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-10-25",
       "editor_overrides": {
@@ -52951,7 +52953,7 @@
       "title": "Коллективная выставка Арт-шаффл 43.0",
       "venue": "ЦСИ Винзавод",
       "address": "",
-      "price": 0,
+      "price": 1800,
       "price_text": "12000 ₽",
       "registration": null,
       "categories": [
@@ -52965,7 +52967,7 @@
       "discovered_at": "2026-11-03",
       "start_date": "2026-11-03",
       "end_date": "2026-11-15",
-      "price_type": "free",
+      "price_type": "paid",
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
@@ -55219,7 +55221,7 @@
       "address": "",
       "price_type": "free",
       "price_text": "бесплатно по регистрации",
-      "registration": false,
+      "registration": true,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -57133,7 +57135,7 @@
       "address": "",
       "price_type": "free",
       "price_text": "бесплатно по регистрации",
-      "registration": false,
+      "registration": true,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -57956,6 +57958,60 @@
       }
     },
     {
+      "id": "spb-2026-11-08-1ef60c09e4",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-08",
+      "time": "",
+      "title": "JOURAVLIE",
+      "venue": "Пушкинская-10",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "встреча"
+      ],
+      "description": "На сцене Fish Fabrique Nouvelle — JOURAVLIE , ленинградские меланхолики с брит-попом внутри, любовью к пост-панку и песнями, в которых личное выходит наружу и неизбежно становится общим. В программе — гитарная романтика, самокопательные и цепкие тексты, отголоски британской новой волны и тот самый петербургский звук, выросший из клубной культуры 90-х и 2000-х.",
+      "url": "https://p-10.ru/events/jouravlie/",
+      "source": "Пушкинская-10 — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-08",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "spb-2026-11-08-0c4f8cbb48",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-08",
+      "time": "",
+      "title": "«Питер Чёрный Пёс» по мотивам произведений Н.В.Гоголя",
+      "venue": "Пушкинская-10",
+      "address": "",
+      "price": 1200,
+      "price_text": "1200 ₽",
+      "registration": null,
+      "categories": [],
+      "description": "Постановка по мотивам произведений Н. Гоголя «Нос», «Записки сумасшедшего» и «Шинель» — коллаж, в котором три истории существуют не как отдельные сюжеты, а как грани одного города. Петербург здесь — живой, мрачный и гипнотически притягательный персонаж: он диктует ритм, вмешивается в судьбы людей и становится пространством, где абсурд кажется единственно возможной правдой.",
+      "url": "https://p-10.ru/events/piter-chjornyj-pjos-po-motivam-proizvedenij-n-v-gogolya-2/",
+      "source": "Пушкинская-10 — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-08",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-08-5cdb840100",
       "status": "new",
       "kind": "event",
@@ -58045,7 +58101,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-08-31cb667527",
@@ -58223,6 +58281,34 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": "2026-11-03"
+    },
+    {
+      "id": "spb-2026-11-08-b7ed033e2b",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-08",
+      "time": "",
+      "title": "Что такое философия и ее история?",
+      "venue": "Пушкинская-10",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Это могла бы быть вводная лекция для первокурсников, но мы переформатировали её в семинар для друзей. Мы не будем сразу давать определение. Возьмем философию как X и посмотрим, как она производится.",
+      "url": "https://p-10.ru/events/chto-takoe-filosofiya-i-ee-istoriya/",
+      "source": "Пушкинская-10 — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-08",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "spb-2026-11-08-0f29c2fadd",
@@ -58460,7 +58546,9 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-08-56e5582df3",
@@ -58686,7 +58774,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-08-fe7e0ac9b9",
@@ -59395,6 +59485,36 @@
       "reviewed_at": ""
     },
     {
+      "id": "spb-2026-11-10-5cec9b2f3f",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-10",
+      "time": "08:11",
+      "title": "Презентация книги Дмитрия Козлова «\"Новый\" Эль Лисицкого и русский авангард»",
+      "venue": "Музей «Полторы комнаты» Иосифа Бродского",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Книга Дмитрия Козлова «\"Новый\" Эль Лисицкого и русский авангард» посвящена двум важным проблемам истории искусства 1910-х — начала 1920-х гг. Первая — это интерпретация изобразительных сюжетов после «Черного квадрата» Казимира Малевича, когда абстракция заняла центральное место, и художники оказывались в сложной ситуации отсутствия формы.",
+      "url": "https://brodsky.online/events/prezentatsiya-knigi-dmitriya-kozlova-novyy-el-lisitskogo-i-russkiy-avangard/",
+      "source": "Полторы комнаты — музей Иосифа Бродского",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-03",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
+    },
+    {
       "id": "moscow-2026-11-10-b9a5fe1f3d",
       "status": "approved",
       "kind": "event",
@@ -59522,36 +59642,6 @@
       ],
       "description": "Оставляя свои контакты, вы даёте согласие на обработку персональных данных",
       "url": "https://brodsky.online/events/",
-      "source": "Полторы комнаты — музей Иосифа Бродского",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-11-03",
-      "price_type": "unknown",
-      "availability_evidence": "",
-      "ticket_required": true,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_note": "",
-      "reviewed_at": ""
-    },
-    {
-      "id": "spb-2026-11-10-5cec9b2f3f",
-      "status": "new",
-      "kind": "event",
-      "city": "spb",
-      "date": "2026-11-10",
-      "time": "15:11",
-      "title": "Презентация книги Дмитрия Козлова «\"Новый\" Эль Лисицкого и русский авангард»",
-      "venue": "Музей «Полторы комнаты» Иосифа Бродского",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": null,
-      "categories": [
-        "лекция"
-      ],
-      "description": "Книга Дмитрия Козлова «\"Новый\" Эль Лисицкого и русский авангард» посвящена двум важным проблемам истории искусства 1910-х — начала 1920-х гг. Первая — это интерпретация изобразительных сюжетов после «Черного квадрата» Казимира Малевича, когда абстракция заняла центральное место, и художники оказывались в сложной ситуации отсутствия формы.",
-      "url": "https://brodsky.online/events/prezentatsiya-knigi-dmitriya-kozlova-novyy-el-lisitskogo-i-russkiy-avangard/",
       "source": "Полторы комнаты — музей Иосифа Бродского",
       "checked_at": "",
       "review_reason": "",
@@ -59846,6 +59936,34 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": "2026-11-03"
+    },
+    {
+      "id": "moscow-2026-11-10-4d10a2d654-1900",
+      "status": "check",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-10",
+      "time": "19:00",
+      "title": "Наброски — Наброски на Покровке",
+      "venue": "Наброски на Покровке",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "наброски"
+      ],
+      "description": "Друзья, Во вторник 10 ноября в 19:00 проведу всем понравившееся занятие: «Твистер наброски». С собой берите любимые материалы для графики и бумагу А4 или А3 форматов. Запись сегодня 1100р, в пн и во 1300р. Для записи пишите мне в личные сообщения или оставляйте комментарий под постом. 🟡 🟢 🔵 🔴 До встречи!",
+      "url": "https://t.me/nabroski_pokrovka/777",
+      "source": "Наброски на Покровке",
+      "checked_at": "",
+      "review_reason": "sketch_post_verify_date_time",
+      "discovered_at": "2026-11-08",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-10-7874148c04",
@@ -61317,6 +61435,36 @@
       "availability_checked_at": ""
     },
     {
+      "id": "spb-2026-11-12-d4a592982d",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-12",
+      "time": "08:11",
+      "title": "Презентация книги «Воздух» французского поэта Андре дю Буше и обсуждение с переводчиком Иваном Курбаковым и поэтом Александром Скиданом",
+      "venue": "Музей «Полторы комнаты» Иосифа Бродского",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Поэзия дю Буше взыскует дыхания и движения, простирающихся сквозь белые поля внутри страниц и придающих его стихам особый визуальный ритм.",
+      "url": "https://brodsky.online/events/prezentatsiya-knigi-vozdukh-frantsuzskogo-poeta-andre-dyu-bushe-i-obsuzhdenie-s-perevodchikom-ivanom/",
+      "source": "Полторы комнаты — музей Иосифа Бродского",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-07",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
+    },
+    {
       "id": "moscow-2026-11-12-b485ac3446",
       "status": "approved",
       "kind": "event",
@@ -61531,36 +61679,6 @@
       },
       "telegram_include": false,
       "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": ""
-    },
-    {
-      "id": "spb-2026-11-12-d4a592982d",
-      "status": "new",
-      "kind": "event",
-      "city": "spb",
-      "date": "2026-11-12",
-      "time": "15:11",
-      "title": "Презентация книги «Воздух» французского поэта Андре дю Буше и обсуждение с переводчиком Иваном Курбаковым и поэтом Александром Скиданом",
-      "venue": "Музей «Полторы комнаты» Иосифа Бродского",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": null,
-      "categories": [
-        "лекция"
-      ],
-      "description": "Поэзия дю Буше взыскует дыхания и движения, простирающихся сквозь белые поля внутри страниц и придающих его стихам особый визуальный ритм.",
-      "url": "https://brodsky.online/events/prezentatsiya-knigi-vozdukh-frantsuzskogo-poeta-andre-dyu-bushe-i-obsuzhdenie-s-perevodchikom-ivanom/",
-      "source": "Полторы комнаты — музей Иосифа Бродского",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-11-07",
-      "price_type": "unknown",
-      "availability_evidence": "",
-      "ticket_required": true,
-      "availability": "unknown",
-      "availability_checked_at": "",
       "editor_note": "",
       "reviewed_at": ""
     },
@@ -63611,7 +63729,9 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-11-15-c2582e1833",
@@ -64280,7 +64400,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-15-2bcae38548",
@@ -64508,6 +64630,34 @@
       },
       "telegram_include": false,
       "instagram_include": false
+    },
+    {
+      "id": "spb-2026-11-15-23abff78ff",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-15",
+      "time": "17:30",
+      "title": "В Библиотеке Комиксов (7-я Красноармейская, д.30) пройдёт мастер-класс по китайскому языку для начинающих.",
+      "venue": "Библиотека комиксов",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "Китайский по манге и комиксам Китайский по комиксам — реально ли? На нашей ноябрьской лекции докажем: да, реально! Мы за час научимся говорить несложные, но незаменимые в общении фразы, научимся хихикать с истинно китайских мемов, ориентироваться в китайских текстах и некоторых принципах словообразования! В уютном ноябре продолжим говорить о китайской мифологии и её отражении в современной культуре, в том числе — и поп-культуре. Встреча подходит для абсолютных «нулевичков».",
+      "url": "https://comix-library.timepad.ru/event/4291748/",
+      "source": "Библиотека комиксов — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-11-08",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "spb-2026-11-15-489997f0c8",
@@ -67547,6 +67697,32 @@
       "reviewed_at": "2026-10-30"
     },
     {
+      "id": "moscow-2026-11-20-c2383e832e",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-20",
+      "time": "17:30",
+      "title": "Арт-вечер «Лев Бакст»",
+      "venue": "Третьяковская галерея",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "Арт-вечер посвящен великому художнику, чей 160-летний юбилей отмечается в этом году. Продолжительность – 2 часа. Место проведения – пространство выставки (Инженерный корпус, Лаврушинский пер., 12, 2 и 3 этаж), концертный зал «Кадашёвский» (Кадашёвская набережная, 12, 2 и 3 этаж). Билет даёт право бесплатного посещения выставки в день мероприятия. Перед началом балетной программы у гостей будет полтора часа на самостоятельный осмотр экспозиции в Инженерном корпусе.",
+      "url": "https://www.tretyakovgallery.ru/events/o/art-vecher-lev-bakst/",
+      "source": "Третьяковская галерея — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-08",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "spb-2026-11-20-48372deac5",
       "status": "approved",
       "kind": "event",
@@ -68074,7 +68250,8 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-21-93f181f099",
@@ -71883,7 +72060,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-12-11-d7eb167bdb",

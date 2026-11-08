@@ -539,6 +539,22 @@
 .quest-story-evidence-zh .speak-inline{font-size:14px;min-width:30px;min-height:30px}
 .quest-story-evidence p{font-size:13px;line-height:1.5;color:#666;margin:4px 0 0}
 </style>
+
+<style id="quest-mnemonic-style">
+.quest-memory{margin:12px 0 2px;border-top:1px solid var(--line);padding-top:10px}
+.quest-memory-toggle{border:1px solid var(--ink);background:#fff;padding:8px 11px;font:800 11px/1.4 var(--font);letter-spacing:.02em;cursor:pointer;text-align:left}
+.quest-memory-toggle:hover,.quest-memory-mini:hover{background:var(--acid)}
+.quest-memory-body{margin-top:9px;border-left:3px solid var(--ink);background:#f2f3ec;padding:12px 14px}
+.quest-memory-type{font:750 10px/1.4 var(--font);text-transform:uppercase;letter-spacing:.07em;color:var(--muted)}
+.quest-memory-body p{font:500 14px/1.6 var(--font);margin:7px 0 10px;color:var(--ink)}
+.quest-memory-mini{border:1px solid var(--ink);background:#fff;padding:9px 11px;font:750 10px/1.4 var(--font);cursor:pointer;letter-spacing:.03em}
+.quest-memory-answer{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:8px 0 4px}
+.quest-memory-answer b{font:750 28px/1.3 var(--han)}
+.quest-memory-answer span{font-size:13px;color:var(--muted)}
+.quest-hotspot .quest-hotspot-word{position:absolute;left:50%;bottom:-18px;transform:translateX(-50%);background:#fff;border:1px solid var(--ink);padding:2px 5px;font:800 clamp(10px,1.5vw,14px)/1.2 var(--han);white-space:nowrap;pointer-events:none;z-index:2;color:var(--ink)}
+.quest-hotspot.is-seen .quest-hotspot-word{background:var(--acid)}
+@media(max-width:600px){.quest-memory-toggle{min-height:36px}.quest-memory-body p{font-size:13px}.quest-hotspot .quest-hotspot-word{font-size:11px;bottom:-14px}}
+</style>
 </head>
 <body>
   <div class="site-frame">
@@ -596,6 +612,7 @@ window.chineseLabLessonFetch=async url=>{
 <script src="./js/pinyin-chars.js"></script>
 <script src="./js/sentence-tiles.js"></script>
 <script src="./js/exercise-sessions.js"></script>
+<script src="./js/quest-mnemonics.js?v=20261109-1"></script>
 <script src="./js/quest-branches.js?v=20261108-6"></script>
 <script>
 const sceneURL = name => window.__offlineScenes[name] || ("assets/"+name+".svg");
@@ -613,7 +630,7 @@ const modeInfo = [
   { id: 'video', icon: '▷', title: 'ВИДЕО' },
   { id: 'progress', icon: '◫', title: 'МОЙ ПРОГРЕСС' },
 ];
-const progressDefaults = { xp: 0, correct: 0, attempts: 0, stories: {}, weak: {}, sound: true, rate: 0.9, saved: {}, srs: {}, ciDone: {}, questWords: {}, reviewDir: "hanzi", reviewScope: "all", lastLessonId: 1, lastMode: "story" };
+const progressDefaults = { xp: 0, correct: 0, attempts: 0, stories: {}, weak: {}, sound: true, rate: 0.9, saved: {}, srs: {}, ciDone: {}, questWords: {}, mnemonicSeen: {}, reviewDir: "hanzi", reviewScope: "all", lastLessonId: 1, lastMode: "story" };
 const stored = ChineseLabProgress.load(progressDefaults);
 const state = { lessons: [], manifest: null, cloudUserId:null, lessonId: Number(stored.lastLessonId) || 1, mode: 'story', game: null, interacted: false, progress: stored, pendingToast: 0, highlightedWords: new Set(), wordsSection:'lesson' };
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -745,7 +762,7 @@ function initQuest(){
   const q=lesson().quest;
   state.game={isQuest:true,questSchema:q.schemaVersion||1,routeChoices:[],status:'intro',stage:0,seen:[],items:[],tokens:[],selected:[],ready:false,answer:null,
     feedback:null,points:0,time:q.startTime,trust:2,choices:[],showRu:false,zoom:false,hint:false,usedHint:false,flags:{},tokenOrder:null,analysisKey:null,
-   revealed:[],missionOpen:true,missionStage:0,missionResult:null,missionNotice:'',missionShowRu:false};
+   revealed:[],mnemonicWord:null,mnemonicMode:'hint',missionOpen:true,missionStage:0,missionResult:null,missionNotice:'',missionShowRu:false};
  state.progress.questWords ||= {};
  state.progress.questWords[lesson().id] ||= {};
 }
@@ -769,6 +786,22 @@ function questGloss(key,ru){
  const open=state.game.revealed.includes(key);
  return `<div class="quest-gloss"><button type="button" class="quest-reveal" data-action="quest-gloss" data-key="${esc(key)}" aria-expanded="${open}">${open?'СКРЫТЬ ПЕРЕВОД ↑':'ПЕРЕВОД ↓'}</button>${open?`<p class="quest-reveal-text">${esc(ru)}</p>`:''}</div>`;
 }
+
+function questMnemonic(word){
+ const entry=window.ChineseLabMnemonics?.get(lesson().id,word);
+ if(!entry)return '';
+ const g=state.game,open=g.mnemonicWord===word,mode=g.mnemonicMode||'hint';
+ const info=lesson().words.find(w=>w.hanzi===word);
+ let body='';
+ if(open&&mode==='hint'){
+   body=`<div class="quest-memory-body"><span class="quest-memory-type">${esc(entry.kind)} · ассоциация, не этимология</span><p>${esc(entry.cue)}</p><button type="button" class="quest-memory-mini" data-action="quest-memory-test" data-word="${esc(word)}">ПОПРОБУЙ ВСПОМНИТЬ БЕЗ ПОДСКАЗКИ →</button></div>`;
+ }else if(open&&mode==='test'){
+   body=`<div class="quest-memory-body"><span class="quest-memory-type">ПРОВЕРКА СЕБЯ</span><p>Что означает <b lang="zh-CN">${esc(word)}</b>? Произнеси слово и вспомни его значение, затем проверь.</p><button type="button" class="quest-memory-mini" data-action="quest-memory-answer" data-word="${esc(word)}">ПОКАЗАТЬ ОТВЕТ →</button></div>`;
+ }else if(open&&mode==='answer'){
+   body=`<div class="quest-memory-body"><span class="quest-memory-type">ОТВЕТ</span><div class="quest-memory-answer"><b lang="zh-CN">${esc(word)}</b><span>${esc(info?.pinyin||'')}</span></div><p>${esc(info?.ru||'')}</p><button type="button" class="quest-memory-mini" data-action="quest-memory-back" data-word="${esc(word)}">ВЕРНУТЬ АССОЦИАЦИЮ ↻</button></div>`;
+ }
+ return `<div class="quest-memory"><button type="button" class="quest-memory-toggle" data-action="quest-memory" data-word="${esc(word)}" aria-expanded="${open}">${open?'СКРЫТЬ МНЕМОНИКУ ↑':'КАК ЗАПОМНИТЬ? · ◇'}</button>${body}</div>`;
+}
 function questVocabDone(){
  state.progress.questWords ||= {};state.progress.questWords[lesson().id] ||= {};
  return state.progress.questWords[lesson().id];
@@ -789,7 +822,7 @@ function questMissionBox(){
   content='<p class="quest-mission-small">Открой задачи: слова из всего урока встретятся в контексте и в аудио. Перевод показан только по запросу.</p>';
  } else if(g.missionResult){
   const t=g.missionResult;
-  content=`<div class="quest-mission-result"><div class="quest-mission-label">✓ +8 XP · СЛОВО УЗНАНО</div><div class="quest-mission-chinese" lang="zh-CN">${tapText(t.sentence)} ${speakButton(t.sentence,'Послушать целое предложение')}</div>${questGloss('mission-'+g.missionStage+'-'+t.word,t.ru)}<button type="button" class="action-btn" data-action="quest-mission-next">СЛЕДУЮЩЕЕ СЛОВО →</button></div>`;
+  content=`<div class="quest-mission-result"><div class="quest-mission-label">✓ +8 XP · СЛОВО УЗНАНО</div><div class="quest-mission-chinese" lang="zh-CN">${tapText(t.sentence)} ${speakButton(t.sentence,'Послушать целое предложение')}</div>${questGloss('mission-'+g.missionStage+'-'+t.word,t.ru)}${questMnemonic(t.word)}<button type="button" class="action-btn" data-action="quest-mission-next">СЛЕДУЮЩЕЕ СЛОВО →</button></div>`;
  } else if(!task){
   content=`<div class="quest-mission-complete">✓ ВСЕ СЛОВА ЭТОЙ ГРУППЫ ПРОЙДЕНЫ. ${doneCount===total?'ВСЯ ЛЕКСИКА УРОКА ЗАКРЕПЛЕНА!':'ВЫБЕРИ ДРУГУЮ ГРУППУ.'}</div>`;
  } else {
@@ -888,10 +921,10 @@ function questFeedback(){const g=state.game;if(!g.feedback)return '';
 }
 function questExplore(s){
  const g=state.game, seen=new Set(g.seen);
- const hotspots=s.spots.map(o=>`<button type="button" class="quest-hotspot ${seen.has(o.id)?'is-seen':''}" style="left:${o.x}%;top:${o.y}%;width:${o.w}%;height:${o.h}%" data-action="quest-spot" data-id="${esc(o.id)}" aria-label="Осмотреть предмет: ${esc(o.word)}"><span aria-hidden="true">${seen.has(o.id)?'✓':'?'}</span></button>`).join('');
+ const hotspots=s.spots.map(o=>`<button type="button" class="quest-hotspot ${seen.has(o.id)?'is-seen':''}" style="left:${o.x}%;top:${o.y}%;width:${o.w}%;height:${o.h}%" data-action="quest-spot" data-id="${esc(o.id)}" aria-label="Осмотреть предмет: ${esc(o.word)}"><span aria-hidden="true">${seen.has(o.id)?'✓':'?'}</span>${lesson().id===1?`<small class="quest-hotspot-word" lang="zh-CN">${esc(o.word)}</small>`:''} </button>`).join('');
  const found=s.spots.filter(o=>seen.has(o.id));
  const target=s.required.filter(id=>seen.has(id)).length;
- return `<div class="quest-target"><b>ТВОЯ ЗАДАЧА</b><strong>${esc(s.goal)}</strong><span>${target} / ${s.required.length} ВАЖНЫХ ПОДСКАЗОК</span></div><div class="quest-pan-top"><span>НАЖИМАЙ НА ? И ИССЛЕДУЙ. НА ТЕЛЕФОНЕ ДВИГАЙ КАРТИНКУ ↔</span><button type="button" data-action="quest-zoom">${g.zoom?'− УМЕНЬШИТЬ':'+ УВЕЛИЧИТЬ'}</button></div><div class="quest-pan" id="quest-pan"><div class="quest-canvas ${g.zoom?'is-zoom':''}"><img src="${sceneURL(s.image)}" alt="${esc(s.title)}">${hotspots}</div></div><div class="quest-findings">${found.length?found.map(o=>`<div class="quest-finding ${o.critical?'is-critical':''}"><div><button type="button" data-action="inspect" data-zh="${esc(o.word)}" class="quest-finding-word">${esc(o.word)}</button>${speakButton(o.word)}</div><div class="quest-finding-zh" lang="zh-CN">${tapText(o.clueZh)}</div>${questGloss('spot-'+o.id,o.clueRu)}</div>`).join(''):'<p class="quest-no-findings">Сначала нажми на любой предмет на картинке. Не все детали одинаково важны.</p>'}</div>${g.ready?`<div class="quest-ready"><span>✓ УЛИКИ СОБРАНЫ. МОЖНО ИССЛЕДОВАТЬ ЕЩЁ ИЛИ ПРОДОЛЖИТЬ.</span><button type="button" class="action-btn" data-action="quest-next">К СЛЕДУЮЩЕЙ СЦЕНЕ →</button></div>`:''}`;
+ return `<div class="quest-target"><b>ТВОЯ ЗАДАЧА</b><strong>${esc(s.goal)}</strong><span>${target} / ${s.required.length} ВАЖНЫХ ПОДСКАЗОК</span></div><div class="quest-pan-top"><span>НАЖИМАЙ НА ? И ИССЛЕДУЙ. НА ТЕЛЕФОНЕ ДВИГАЙ КАРТИНКУ ↔</span><button type="button" data-action="quest-zoom">${g.zoom?'− УМЕНЬШИТЬ':'+ УВЕЛИЧИТЬ'}</button></div><div class="quest-pan" id="quest-pan"><div class="quest-canvas ${g.zoom?'is-zoom':''}"><img src="${sceneURL(s.image)}" alt="${esc(s.title)}">${hotspots}</div></div><div class="quest-findings">${found.length?found.map(o=>`<div class="quest-finding ${o.critical?'is-critical':''}"><div><button type="button" data-action="inspect" data-zh="${esc(o.word)}" class="quest-finding-word">${esc(o.word)}</button>${speakButton(o.word)}</div><div class="quest-finding-zh" lang="zh-CN">${tapText(o.clueZh)}</div>${questGloss('spot-'+o.id,o.clueRu)}${questMnemonic(o.word)}</div>`).join(''):'<p class="quest-no-findings">Сначала нажми на любой предмет на картинке. Не все детали одинаково важны.</p>'}</div>${g.ready?`<div class="quest-ready"><span>✓ УЛИКИ СОБРАНЫ. МОЖНО ИССЛЕДОВАТЬ ЕЩЁ ИЛИ ПРОДОЛЖИТЬ.</span><button type="button" class="action-btn" data-action="quest-next">К СЛЕДУЮЩЕЙ СЦЕНЕ →</button></div>`:''}`;
 }
 function questAnalysis(key, zh, ru){
  const open=state.game.analysisKey===key;
@@ -935,7 +968,7 @@ function questEnding(){
 function renderStory(){
  const g=state.game,q=lesson().quest;
  if(g.status==='intro'){
-  $('#game-panel').innerHTML=`${header('КВЕСТ / ТЫ ВНУТРИ ИСТОРИИ','Каждый выбор меняет следующую сцену и ведёт к одному из нескольких финалов.','INTERACTIVE FICTION')}<div class="quest-intro-v7"><div class="quest-kicker">ИНТЕРАКТИВНОЕ ДЕЛО ${String(lesson().id).padStart(2,'0')} / ${q.steps.length} СЦЕН</div><h4>${esc(q.title)}</h4><p>${esc(q.tagline)}</p><div lang="zh-CN" class="quest-big-zh">${tapText(q.introZh)} ${speakButton(q.introZh)}</div><div class="quest-objective-v7"><b>МИССИЯ</b><span>${esc(q.objective)}</span></div><div class="quest-intro-buttons"><button type="button" class="action-btn" data-action="quest-start">НАЧАТЬ КВЕСТ →</button><button type="button" class="action-btn secondary" data-action="mode" data-id="input">СНАЧАЛА ПОЧИТАТЬ</button></div><small>Осмотри две картинки и собери улики, затем прими три решения и составь китайские предложения. Перевод открывается по нажатию.</small></div>`;return;
+  $('#game-panel').innerHTML=`${header('КВЕСТ / ТЫ ВНУТРИ ИСТОРИИ','Каждый выбор меняет следующую сцену и ведёт к одному из нескольких финалов.','INTERACTIVE FICTION')}<div class="quest-intro-v7"><div class="quest-kicker">ИНТЕРАКТИВНОЕ ДЕЛО ${String(lesson().id).padStart(2,'0')} / ${q.steps.length} СЦЕН</div><h4>${esc(q.title)}</h4><p>${esc(q.tagline)}</p><div lang="zh-CN" class="quest-big-zh">${tapText(q.introZh)} ${speakButton(q.introZh)}</div><div class="quest-objective-v7"><b>МИССИЯ</b><span>${esc(q.objective)}</span></div><div class="quest-intro-buttons"><button type="button" class="action-btn" data-action="quest-start">НАЧАТЬ КВЕСТ →</button><button type="button" class="action-btn secondary" data-action="mode" data-id="input">СНАЧАЛА ПОЧИТАТЬ</button></div><small>Осмотри две картинки и собери улики, затем прими три решения и составь китайские предложения. Перевод и необязательные мнемоподсказки открываются по нажатию.</small></div>`;return;
  }
  if(g.status==='complete'){$('#game-panel').innerHTML=questEnding();return;}
  const s=questStep(),body=s.type==='explore'?questExplore(s):s.type==='compose'?questCompose(s):s.type==='pick'?questPick(s):questOptions(s);
@@ -948,6 +981,26 @@ function questAction(action,btn){
  if(action==='quest-gloss'){
    const key=btn.dataset.key; if(!key)return;
    g.revealed=g.revealed.includes(key)?g.revealed.filter(x=>x!==key):[...g.revealed,key];renderStory();return;
+ }
+ 
+ if(action==='quest-memory'){
+   const word=btn.dataset.word;
+   if(!window.ChineseLabMnemonics?.get(lesson().id,word))return;
+   if(g.mnemonicWord===word){g.mnemonicWord=null;g.mnemonicMode='hint';}
+   else{
+     g.mnemonicWord=word;g.mnemonicMode='hint';
+     state.progress.mnemonicSeen ||= {};
+     state.progress.mnemonicSeen[lesson().id] ||= {};
+     if(!state.progress.mnemonicSeen[lesson().id][word]){
+       state.progress.mnemonicSeen[lesson().id][word]=true;save();
+     }
+   }
+   renderStory();return;
+ }
+ if(['quest-memory-test','quest-memory-answer','quest-memory-back'].includes(action)){
+   if(g.mnemonicWord!==btn.dataset.word)return;
+   g.mnemonicMode=action==='quest-memory-test'?'test':action==='quest-memory-answer'?'answer':'hint';
+   renderStory();return;
  }
  if(action.startsWith('quest-mission-')){questMissionAction(action,btn);return;}
  if(action==='quest-analyze'){g.analysisKey=g.analysisKey===btn.dataset.key?null:btn.dataset.key;renderStory();return;}
@@ -997,6 +1050,7 @@ function questAction(action,btn){
  }
  if(action==='quest-next'&&g.ready){
    g.stage++;
+   g.mnemonicWord=null;g.mnemonicMode='hint';
    const upcoming=lesson().quest.steps[g.stage];
    if(upcoming?.skipWhenRoute?.every((value,i)=>g.routeChoices?.[i]===value))g.stage++;
    g.ready=false;g.seen=[];g.tokens=[];g.selected=[];g.answer=null;g.feedback=null;g.hint=false;g.usedHint=false;g.zoom=false;g.showRu=false;g.revealed=[];g.tokenOrder=null;g.analysisKey=null;g.missionStage=Math.min(g.stage,6);g.missionResult=null;g.missionNotice='';

@@ -46,7 +46,7 @@ for(const lesson of lessonData){
  test(`lesson ${lesson.id}: three linked chapters, four distinct endings and graded vocabulary`,()=>{
    const chapters=readings[lesson.id];
    const result=globalThis.ChineseLabQuestBranches.build(lesson,chapters);
-   assert.equal(result.schemaVersion,5);
+   assert.equal(result.schemaVersion,6);
    assert.equal(result.steps.length,8);
    assert.deepEqual(result.steps.map(x=>x.type),['explore','choice','compose','choice','compose','explore','choice','compose']);
    const decisions=result.steps.filter(s=>s.type==='choice');

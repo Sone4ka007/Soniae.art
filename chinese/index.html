@@ -854,11 +854,13 @@ function questInventory(){
   const parts=item.split(' · '),name=parts[0],meaning=parts.slice(1).join(' · ');
   return `<div class="quest-item"><strong>${esc(name)}</strong>${meaning && /^[¥$€0-9]/.test(meaning)?`<span>${esc(meaning)}</span>`:meaning?questGloss('item-'+i,meaning):''}</div>`;
  }).join('');
- const log=g.choices.slice(-2).map((c,i)=>{
-   const key='choice-'+(g.choices.length-Math.min(2,g.choices.length)+i);
-   return `<div class="quest-log-entry"><div lang="zh-CN">${tapText(c.zh)}</div><small>${c.impact<0?`−${Math.abs(c.impact)} мин`:`+${c.impact} мин`} · ДОВЕРИЕ ${c.trust>=0?`+${c.trust}`:c.trust}</small>${questGloss(key,c.ru)}</div>`;
+ const branching=!!lesson().quest.branchEndings;
+ const log=g.choices.slice(-3).map((entry,i)=>{
+   const key='choice-'+(g.choices.length-Math.min(3,g.choices.length)+i);
+   const label=branching?'РЕШЕНИЕ МЕНЯЕТ ДАЛЬНЕЙШИЙ СЮЖЕТ':(entry.impact<0?'−'+Math.abs(entry.impact):'+'+entry.impact)+' мин · ДОВЕРИЕ '+entry.trust;
+   return `<div class="quest-log-entry"><div lang="zh-CN">${tapText(entry.zh)}</div><small>${esc(label)}</small>${questGloss(key,entry.ru)}</div>`;
  }).join('');
- return `<aside class="quest-pocket"><div class="quest-pocket-head"><b>▤ НАЙДЕНО</b><span>${g.items.length} ПРЕДМ.</span></div><div class="quest-pocket-list">${g.items.length?items:'<small>Пока пусто. Осмотри сцену и найди подсказки.</small>'}</div>${g.choices.length?`<div class="quest-log"><b>◫ ЖУРНАЛ РЕШЕНИЙ</b>${log}</div>`:''}</aside>`;
+ return `<aside class="quest-pocket"><div class="quest-pocket-head"><b>▤ НАЙДЕНО</b><span>${g.items.length} ПРЕДМ.</span></div><div class="quest-pocket-list">${g.items.length?items:'<small>${branching?"Твой маршрут будет зависеть от выбранных действий.":"Пока пусто. Осмотри сцену и найди подсказки."}</small>'}</div>${g.choices.length?`<div class="quest-log"><b>◫ ЖУРНАЛ РЕШЕНИЙ</b>${log}</div>`:''}</aside>`;
 }
 
 function questNarrative(s){

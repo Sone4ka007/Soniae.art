@@ -393,7 +393,7 @@
        notes:['计划','安娜可以改一下工作计划。','В плане можно выделить время на отдых.']},
       {path:['走路','这里可以慢慢走路。','Тропинка для спокойной прогулки.'],
        view:['风景','这里的风景很美丽。','Красивый вид.'],
-       air:['风景','这里很安静，可以坐下休息。','Зелень и тихое место для отдыха.']}
+       air:['树','这里有树，可以坐下休息。','Деревья создают тень и место для отдыха.']}
     ],
     9:[
       {folder:['印象','这个地方让安娜想起以前的事。','Папка напоминает о прежней встрече с Сяо Чэнь.'],
@@ -435,9 +435,15 @@
     const chapterLines=chapters[which===0?0:1].lines;
     const keyword=sceneTopics[lesson.id]?.[which];
     const selectedLine=chapterLines.find(([zh])=>keyword&&zh.includes(keyword))||chapterLines[0];
+    const artOverride={
+      8:['rest-plan','park-rest'],
+      9:['gallery-friends','gallery-studio'],
+      10:['winter-plan','winter-station']
+    };
     return {
       ...source,
-      image:lesson.id===1&&which===1?'printer-notice':source.image,
+      image:lesson.id===1&&which===1?'printer-notice':
+        (artOverride[lesson.id]?.[which]||source.image),
       title:lesson.id===1
         ?(which===0?'ОСМОТРИ ЦЕНТР · ПОТЕРЯН ДОКУМЕНТ':'ПОДГОТОВЬ УВЕДОМЛЕНИЕ')
         :(which===0?'ИССЛЕДУЙ МЕСТО':'ПРОВЕРЬ ПОДСКАЗКИ'),

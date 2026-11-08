@@ -33,7 +33,7 @@ test('illustrated first-lesson nouns have mnemonic cues',()=>{
 
 test('quest exposes hints only by deliberate button press and supports self recall',()=>{
  const html=readFileSync(join(root,'chinese','index.html'),'utf8');
- assert.match(html,/quest-mnemonics\.js\?v=20261109-1/);
+ assert.match(html,/quest-mnemonics\.js\?v=20261109-2/);
  assert.match(html,/function questMnemonic\(word\)/);
  assert.match(html,/data-action="quest-memory"/);
  assert.match(html,/data-action="quest-memory-test"/);
@@ -43,4 +43,9 @@ test('quest exposes hints only by deliberate button press and supports self reca
  assert.match(html,/quest-memory-toggle/);
  assert.match(html,/mnemonicSeen/);
  assert.match(html,/quest-hotspot-word/);
+ assert.match(html,/quest-preview-location/);
+ for(const action of ['quest-memory','quest-memory-test','quest-memory-answer','quest-memory-back']) {
+   assert.match(html,new RegExp("case '"+action+"':"),action+' must be routed from the global click dispatcher');
+ }
+ assert.match(html,/questMnemonic\('证件'\)/,'Mnemonic example must be visible before entering the first location');
 });

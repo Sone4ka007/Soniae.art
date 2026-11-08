@@ -76,7 +76,7 @@ for(const lesson of lessonData){
        'The quest must use artwork illustrating the actual story');
      for(const [i,scene] of illustrations.entries()){
        const art=readFileSync(join(dataDir,'..','assets',scene.image+'.svg'),'utf8');
-       assert.match(art,/<svg[\\s>]/,'Scene art must be valid-looking SVG');
+       assert.ok(art.trim().startsWith('<svg '),'Scene art must be SVG');
        for(const spot of scene.spots)assert.ok(art.includes(spot.word),
          'Hotspot '+spot.id+' must name an object actually shown/labeled in '+scene.image);
      }

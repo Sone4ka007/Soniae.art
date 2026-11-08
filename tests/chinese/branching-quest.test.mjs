@@ -53,8 +53,17 @@ for(const lesson of lessonData){
    assert.equal(new Set(result.branchEndings.map(e=>e.ru)).size,4,'Different choices must produce different outcomes');
    assert.equal(result.steps[2].branchContexts.length,2);
    assert.notEqual(result.steps[2].branchContexts[0].zh,result.steps[2].branchContexts[1].zh);
-   assert.equal(result.steps[4].branchContexts.length,2);
+   assert.equal(result.steps[4].branchContexts.length,lesson.id===1?4:2);
    assert.notEqual(result.steps[4].branchContexts[0].zh,result.steps[4].branchContexts[1].zh);
+   if(lesson.id===1) {
+     assert.equal(result.steps[2].branchOptions.length,2,'Different first choice must open different decisions');
+     assert.equal(result.steps[4].branchOptions.length,4,'Two decisions must open four different situations');
+     assert.ok(result.steps[0].setupLines.length>=2,'The first quest choice must show the missing document and deadline');
+     assert.match(result.steps[0].contextZh,/食堂/,'The clue for cafeteria action must be visible before choices');
+     assert.equal(result.branchEndings.flatMap(e=>e.variants).length,8,'Every path needs a separate consequence');
+     assert.equal(new Set(result.branchEndings.flatMap(e=>e.variants.map(v=>v.ru))).size,8);
+     assert.notEqual(result.steps[2].branchOptions[0][0].zh,result.steps[2].branchOptions[1][0].zh);
+   }
    const outcomes=[];
    for(let a=0;a<2;a++)for(let b=0;b<2;b++)for(let c=0;c<2;c++)
     outcomes.push(result.branchEndings[a*2+b].ru+' '+result.steps[4].options[c].outcomeRu);
@@ -69,21 +78,36 @@ for(const lesson of lessonData){
        `Mission ${task.word} must reuse a translated line of Anna's story`);
      assert.ok(task.sentence.includes(task.word));
    }
+   for(const step of result.steps.filter(s=>s.type==='choice')){
+     assert.ok(step.branchContexts?.length||step.setupLines?.length,'Decision needs an explicit context');
+   }
    for(const step of result.steps.filter(s=>s.type==='compose')){
      assert.ok(step.tokens.length>=2);
      assert.equal(step.tokens.join(''),step.successZh);
      assert.deepEqual(step.answers[0],step.tokens);
+   }
+   for(const step of result.steps.filter(s=>s.type==='choice')){
+     if(step.branchOptions){
+       const target=step.branchContexts.length;
+       assert.equal(step.branchOptions.length,target,'Every possible state needs actions');
+       for(const group of step.branchOptions){
+         assert.equal(group.length,2);
+         assert.notEqual(group[0].outcomeRu,group[1].outcomeRu);
+       }
+     }
    }
    const allowed=new Set([...base,...names,...lessonData.slice(0,lesson.id).flatMap(l=>l.words.map(w=>w.hanzi))]);
    const chinese=[
      result.introZh,
      ...result.steps.flatMap(s=>[
        s.contextZh,
-       ...(s.branchContexts||[]).map(x=>x.zh),
+       ...(s.setupLines||[]).map(x=>x[0]),
+       ...(s.branchContexts||[]).flatMap(x=>[x.zh,...(x.setupLines||[]).map(y=>y[0])]),
        ...(s.options||[]).flatMap(x=>[x.zh,x.outcomeZh]),
+       ...(s.branchOptions||[]).flatMap(group=>group.flatMap(x=>[x.zh,x.outcomeZh])),
        ...(s.successZh?[s.successZh]:[])
      ]),
-     ...result.branchEndings.map(x=>x.zh),
+     ...result.branchEndings.flatMap(x=>[x.zh,...(x.variants||[]).map(v=>v.zh)]),
      ...groupTasks.map(x=>x.sentence)
    ];
    for(const line of chinese) assert.equal(findUnknown(line,allowed),null,

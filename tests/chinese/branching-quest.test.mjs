@@ -57,8 +57,18 @@ for(const lesson of lessonData){
      assert.ok(scene.required.every(id=>scene.spots.some(s=>s.id===id)),'Every required clue must be on scene');
      assert.ok(scene.spots.every(s=>s.clueZh&&s.clueRu),'Every clue has Chinese and Russian');
      assert.equal(new Set(scene.spots.map(s=>s.id)).size,scene.spots.length);
-     assert.ok(scene.spots.every(spot=>chapters.some(ch=>ch.lines.some(([zh,ru])=>zh===spot.clueZh &&ru===spot.clueRu))),
-       'Each illustrated clue must repeat a line from the current lesson reading');
+     const original=lesson.quest.steps.filter(s=>s.type==='explore')[illustrations.indexOf(scene)];
+     assert.deepEqual(scene.spots.map(s=>s.id),original.spots.map(s=>s.id),
+       'Each hotspot must still point to its originally illustrated object');
+     assert.ok(scene.spots.every(s=>s.word && s.clueZh && s.clueRu),
+       'Image hotspots need an object name and a matching explanatory clue');
+   }
+   if(lesson.id===1){
+     assert.deepEqual(illustrations[0].spots.map(s=>s.word),['奖学金','材料','证件','教师','课程','食堂']);
+     assert.equal(illustrations[1].image,'printer-notice');
+     assert.equal(illustrations[1].spots.find(s=>s.id==='copy').word,'入学通知');
+     assert.ok(illustrations[0].spots.find(s=>s.id==='canteen').clueZh.includes('食堂'));
+     assert.ok(illustrations[0].spots.find(s=>s.id==='folder').clueZh.includes('证'));
    }
    assert.equal(result.branchEndings.length,4);
    assert.equal(new Set(result.branchEndings.map(e=>e.ru)).size,4,'Different choices must produce different outcomes');
@@ -116,7 +126,7 @@ for(const lesson of lessonData){
      result.introZh,
      ...result.steps.flatMap(s=>[
        s.contextZh,
-       ...(s.spots||[]).map(x=>x.clueZh),
+       ...(s.spots||[]).flatMap(x=>[x.word,x.clueZh]),
        ...(s.setupLines||[]).map(x=>x[0]),
        ...(s.branchContexts||[]).flatMap(x=>[x.zh,...(x.setupLines||[]).map(y=>y[0])]),
        ...(s.options||[]).flatMap(x=>[x.zh,x.outcomeZh]),

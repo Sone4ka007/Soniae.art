@@ -46,30 +46,41 @@ for(const lesson of lessonData){
  test(`lesson ${lesson.id}: three linked chapters, four distinct endings and graded vocabulary`,()=>{
    const chapters=readings[lesson.id];
    const result=globalThis.ChineseLabQuestBranches.build(lesson,chapters);
-   assert.equal(result.schemaVersion,4);
-   assert.equal(result.steps.length,6);
-   assert.deepEqual(result.steps.map(x=>x.type),['choice','compose','choice','compose','choice','compose']);
+   assert.equal(result.schemaVersion,5);
+   assert.equal(result.steps.length,8);
+   assert.deepEqual(result.steps.map(x=>x.type),['explore','choice','compose','choice','compose','explore','choice','compose']);
+   const decisions=result.steps.filter(s=>s.type==='choice');
+   const illustrations=result.steps.filter(s=>s.type==='explore');
+   assert.equal(illustrations.length,2,'Every quest must include two illustrated investigations');
+   for(const scene of illustrations){
+     assert.ok(scene.image&&scene.spots.length>=3,'Illustrations must have hotspots');
+     assert.ok(scene.required.every(id=>scene.spots.some(s=>s.id===id)),'Every required clue must be on scene');
+     assert.ok(scene.spots.every(s=>s.clueZh&&s.clueRu),'Every clue has Chinese and Russian');
+     assert.equal(new Set(scene.spots.map(s=>s.id)).size,scene.spots.length);
+     assert.ok(scene.spots.every(spot=>chapters.some(ch=>ch.lines.some(([zh,ru])=>zh===spot.clueZh &&ru===spot.clueRu))),
+       'Each illustrated clue must repeat a line from the current lesson reading');
+   }
    assert.equal(result.branchEndings.length,4);
    assert.equal(new Set(result.branchEndings.map(e=>e.ru)).size,4,'Different choices must produce different outcomes');
-   assert.equal(result.steps[2].branchContexts.length,2);
-   assert.notEqual(result.steps[2].branchContexts[0].zh,result.steps[2].branchContexts[1].zh);
-   assert.equal(result.steps[4].branchContexts.length,lesson.id===1?4:2);
-   assert.notEqual(result.steps[4].branchContexts[0].zh,result.steps[4].branchContexts[1].zh);
+   assert.equal(decisions[1].branchContexts.length,2);
+   assert.notEqual(decisions[1].branchContexts[0].zh,decisions[1].branchContexts[1].zh);
+   assert.equal(decisions[2].branchContexts.length,lesson.id===1?4:2);
+   assert.notEqual(decisions[2].branchContexts[0].zh,decisions[2].branchContexts[1].zh);
    if(lesson.id===1) {
-     assert.equal(result.steps[2].branchOptions.length,2,'Different first choice must open different decisions');
-     assert.equal(result.steps[4].branchOptions.length,4,'Two decisions must open four different situations');
-     assert.ok(result.steps[0].setupLines.length>=2,'The first quest choice must show the missing document and deadline');
-     assert.match(result.steps[0].contextZh,/食堂/,'The clue for cafeteria action must be visible before choices');
+     assert.equal(decisions[1].branchOptions.length,2,'Different first choice must open different decisions');
+     assert.equal(decisions[2].branchOptions.length,4,'Two decisions must open four different situations');
+     assert.ok(decisions[0].setupLines.length>=2,'The first quest choice must show the missing document and deadline');
+     assert.match(decisions[0].contextZh,/食堂/,'The clue for cafeteria action must be visible before choices');
      assert.equal(result.branchEndings.flatMap(e=>e.variants).length,8,'Every path needs a separate consequence');
      assert.equal(new Set(result.branchEndings.flatMap(e=>e.variants.map(v=>v.ru))).size,8);
-     assert.notEqual(result.steps[2].branchOptions[0][0].zh,result.steps[2].branchOptions[1][0].zh);
+     assert.notEqual(decisions[1].branchOptions[0][0].zh,decisions[1].branchOptions[1][0].zh);
    }
    const outcomes=[];
    for(let a=0;a<2;a++)for(let b=0;b<2;b++)for(let c=0;c<2;c++) {
      const ending=result.branchEndings[a*2+b];
      outcomes.push(ending.variants
        ? ending.variants[c].ru
-       : ending.ru+' '+result.steps[4].options[c].outcomeRu);
+       : ending.ru+' '+decisions[2].options[c].outcomeRu);
    }
    assert.equal(new Set(outcomes).size,8,'Third decision must affect epilogue');
 
@@ -105,6 +116,7 @@ for(const lesson of lessonData){
      result.introZh,
      ...result.steps.flatMap(s=>[
        s.contextZh,
+       ...(s.spots||[]).map(x=>x.clueZh),
        ...(s.setupLines||[]).map(x=>x[0]),
        ...(s.branchContexts||[]).flatMap(x=>[x.zh,...(x.setupLines||[]).map(y=>y[0])]),
        ...(s.options||[]).flatMap(x=>[x.zh,x.outcomeZh]),

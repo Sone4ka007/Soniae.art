@@ -18,11 +18,14 @@ test('Chinese Lab browser inline scripts have valid syntax',()=>{
  assert.ok(n>=2,'Expected inline application scripts');
 });
 test('Chinese Lab connects route-aware story quests with reading chapters',()=>{
- assert.match(html,/quest-branches\.js\?v=20261108-2/);
+ assert.match(html,/quest-branches\.js\?v=20261108-3/);
  assert.match(html,/ChineseLabQuestBranches\.build\(l,state\.readings\[String\(l\.id\)\]\)/);
  assert.match(html,/g\.routeChoices\[option\.branchAt\]=option\.branchValue/);
  assert.match(html,/step\.branchContexts/);
  assert.match(html,/step\.branchOptions\?\.\[key\]/);
+ assert.match(html,/upcoming\?\.skipWhenRoute\?\.every/);
+ assert.match(html,/questExplore\(s\)/);
+ assert.match(html,/quest-hotspot/);
  assert.match(html,/quest-story-evidence-list/);
  assert.match(html,/ending\.variants\?\.\[third\]/);
  assert.match(html,/q\.branchEndings\[route\]/);

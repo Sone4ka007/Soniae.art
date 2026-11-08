@@ -555,6 +555,15 @@
 .quest-hotspot.is-seen .quest-hotspot-word{background:var(--acid)}
 @media(max-width:600px){.quest-memory-toggle{min-height:36px}.quest-memory-body p{font-size:13px}.quest-hotspot .quest-hotspot-word{font-size:11px;bottom:-14px}}
 </style>
+<style id="quest-mnemonic-intro-v6">
+.quest-preview-location{margin:18px 0;border:2px solid var(--ink);background:#fff}
+.quest-preview-location img{width:100%;display:block;aspect-ratio:1080/620;object-fit:contain}
+.quest-preview-location p{padding:10px 13px;margin:0;font:800 11px/1.5 var(--font);border-top:1px solid var(--ink)}
+.quest-mnemonic-intro{padding:15px;background:#f3f4ed;border:2px solid var(--ink);margin:14px 0}
+.quest-mnemonic-intro>b{font:850 12px/1.45 var(--font)}
+.quest-mnemonic-intro>p{font:450 13px/1.5 var(--font);margin:7px 0}
+.quest-mnemonic-intro>p span{font:650 17px/1.3 var(--han)}
+</style>
 </head>
 <body>
   <div class="site-frame">
@@ -612,8 +621,8 @@ window.chineseLabLessonFetch=async url=>{
 <script src="./js/pinyin-chars.js"></script>
 <script src="./js/sentence-tiles.js"></script>
 <script src="./js/exercise-sessions.js"></script>
-<script src="./js/quest-mnemonics.js?v=20261109-1"></script>
-<script src="./js/quest-branches.js?v=20261108-6"></script>
+<script src="./js/quest-mnemonics.js?v=20261109-2"></script>
+<script src="./js/quest-branches.js?v=20261109-2"></script>
 <script>
 const sceneURL = name => window.__offlineScenes[name] || ("assets/"+name+".svg");
 const $ = (selector) => document.querySelector(selector);
@@ -658,8 +667,8 @@ function saveActiveSession() {
 }
 function restoreActiveSession(mode) {
   const snapshot = ChineseLabSessions.restore(state.progress, state.lessonId, mode, lesson());
-  // Old seven-scene quest snapshots cannot be replayed against the six-scene
-  // narrative graph. Keep progress/XP, but start a new quest route.
+  // Quest content versions change when scenes or mnemonic interactions change.
+  // An older snapshot is incompatible; XP and completed vocabulary are retained.
   if (snapshot && (mode !== 'story' || snapshot.questSchema === lesson().quest.schemaVersion)) state.game = snapshot;
 }
 state.progress.saved ||= {}; state.progress.srs ||= {};
@@ -968,7 +977,10 @@ function questEnding(){
 function renderStory(){
  const g=state.game,q=lesson().quest;
  if(g.status==='intro'){
-  $('#game-panel').innerHTML=`${header('КВЕСТ / ТЫ ВНУТРИ ИСТОРИИ','Каждый выбор меняет следующую сцену и ведёт к одному из нескольких финалов.','INTERACTIVE FICTION')}<div class="quest-intro-v7"><div class="quest-kicker">ИНТЕРАКТИВНОЕ ДЕЛО ${String(lesson().id).padStart(2,'0')} / ${q.steps.length} СЦЕН</div><h4>${esc(q.title)}</h4><p>${esc(q.tagline)}</p><div lang="zh-CN" class="quest-big-zh">${tapText(q.introZh)} ${speakButton(q.introZh)}</div><div class="quest-objective-v7"><b>МИССИЯ</b><span>${esc(q.objective)}</span></div><div class="quest-intro-buttons"><button type="button" class="action-btn" data-action="quest-start">НАЧАТЬ КВЕСТ →</button><button type="button" class="action-btn secondary" data-action="mode" data-id="input">СНАЧАЛА ПОЧИТАТЬ</button></div><small>Осмотри две картинки и собери улики, затем прими три решения и составь китайские предложения. Перевод и необязательные мнемоподсказки открываются по нажатию.</small></div>`;return;
+  $('#game-panel').innerHTML=`${header('КВЕСТ / ТЫ ВНУТРИ ИСТОРИИ','Каждый выбор меняет следующую сцену и ведёт к одному из нескольких финалов.','INTERACTIVE FICTION')}<div class="quest-intro-v7"><div class="quest-kicker">CHINESE LAB · КВЕСТ v6 / ${String(lesson().id).padStart(2,'0')} · ${q.steps.length} СЦЕН</div><h4>${esc(q.title)}</h4><p>${esc(q.tagline)}</p><div lang="zh-CN" class="quest-big-zh">${tapText(q.introZh)} ${speakButton(q.introZh)}</div><div class="quest-objective-v7"><b>МИССИЯ</b><span>${esc(q.objective)}</span></div>
+${q.steps.some(s=>s.type==='explore')? `<div class="quest-preview-location"><img src="${sceneURL(q.steps.find(s=>s.type==='explore').image)}" alt="Первая локация квеста — осмотри предметы после начала игры" loading="eager"><p>ПЕРВАЯ ЛОКАЦИЯ · нажми «Начать квест», затем исследуй предметы со знаками вопроса</p></div>`:''}
+${lesson().id===1?`<div class="quest-mnemonic-intro"><b>ПРОВЕРЬ, КАК РАБОТАЮТ МНЕМОНИКИ</b><p>Увидишь слово <span lang="zh-CN">证件</span> на предметах. Открой короткую ассоциацию, затем попробуй вспомнить значение самостоятельно.</p>${questMnemonic('证件')}</div>`:''}
+<div class="quest-intro-buttons"><button type="button" class="action-btn" data-action="quest-start">НАЧАТЬ КВЕСТ →</button><button type="button" class="action-btn secondary" data-action="mode" data-id="input">СНАЧАЛА ПОЧИТАТЬ</button></div><small>Осмотри две картинки и собери улики, затем прими три решения и составь китайские предложения. Предметы подписаны по-китайски. После нажатия на предмет появится объяснение и мнемоника.</small></div>`;return;
  }
  if(g.status==='complete'){$('#game-panel').innerHTML=questEnding();return;}
  const s=questStep(),body=s.type==='explore'?questExplore(s):s.type==='compose'?questCompose(s):s.type==='pick'?questPick(s):questOptions(s);
@@ -1619,7 +1631,7 @@ document.addEventListener('click', event => {
      window.confirm('Начать этот режим заново? Текущая серия заданий будет сброшена, но XP и общий прогресс сохранятся.'))
      activateMode(state.mode, true);
    break;
- case 'quest-gloss':case 'quest-analyze':case 'quest-mission-toggle':case 'quest-mission-select':case 'quest-mission-pick':case 'quest-mission-next':case 'quest-spot':case 'quest-choice':case 'quest-token':case 'quest-token-remove':case 'quest-pick':case 'quest-check':case 'quest-clear':case 'quest-hint':case 'quest-translation':case 'quest-zoom':case 'quest-start':case 'quest-next':case 'quest-restart':questAction(action,btn);break;
+ case 'quest-memory':case 'quest-memory-test':case 'quest-memory-answer':case 'quest-memory-back':case 'quest-gloss':case 'quest-analyze':case 'quest-mission-toggle':case 'quest-mission-select':case 'quest-mission-pick':case 'quest-mission-next':case 'quest-spot':case 'quest-choice':case 'quest-token':case 'quest-token-remove':case 'quest-pick':case 'quest-check':case 'quest-clear':case 'quest-hint':case 'quest-translation':case 'quest-zoom':case 'quest-start':case 'quest-next':case 'quest-restart':questAction(action,btn);break;
  case 'sentence-add':case 'sentence-remove':case 'sentence-clear':case 'sentence-hint':case 'sentence-check':case 'sentence-next':sentenceAction(action,btn.dataset.id);break;
  case 'pair':pairPick(btn.dataset.side,btn.dataset.id);break;
  case 'quiz-pick':quizPick(Number(btn.dataset.index));break;

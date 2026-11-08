@@ -472,7 +472,7 @@
 
   function withIllustratedScenes(lesson,chapters,quest) {
     const [first,second]=[0,1].map(i=>illustratedScene(lesson,chapters,i));
-    return {...quest, schemaVersion:5,
+    return {...quest, schemaVersion:6,
       // Investigation > choice > sentence, then another investigation
       // before the last decision. This preserves the branching choice indices.
       steps:[first,...quest.steps.slice(0,4),second,...quest.steps.slice(4)]

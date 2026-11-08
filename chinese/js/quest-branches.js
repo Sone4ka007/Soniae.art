@@ -164,7 +164,7 @@
       xp:20,time:i===0?-2:-4,trust:i===0?1:0,branchAt:index,branchValue:i
     }));
     const evidence=chapterEvidence(chapter,lessonId,index);
-    const out={type:'choice',title:chapter.name,tag:'СИТУАЦИЯ → ВЫБОР → ПОСЛЕДСТВИЕ',
+    const out={type:'choice',branchAt:index,title:chapter.name,tag:'СИТУАЦИЯ → ВЫБОР → ПОСЛЕДСТВИЕ',
       ...evidence,options};
     if(prevChapter) out.branchContexts=prevChapter.decision.options.slice(0,2).map(o=>({
       zh:o.resultZh+' '+evidence.contextZh,
@@ -211,7 +211,7 @@
       ]
     };
     const choice2={
-      type:'choice', title:'02 / Время идёт', tag:'ПОСЛЕДСТВИЕ ПЕРВОГО ВЫБОРА',
+      type:'choice',branchAt:1, title:'02 / Время идёт', tag:'ПОСЛЕДСТВИЕ ПЕРВОГО ВЫБОРА',
       branchContexts:[
         {zh:'安娜和小林去了食堂，找到了小陈。小陈把证件还给了安娜。现在四点了。',
          ru:'В столовой Сяолинь находит студентку Сяо Чэнь с такой же сумкой. Она возвращает Анне документ. Уже 16:00.'},
@@ -234,7 +234,7 @@
       ]
     };
     const choice3={
-      type:'choice', title:'03 / Последнее решение', tag:'ФИНАЛ ЗАВИСИТ ОТ ТВОИХ ДЕЙСТВИЙ',
+      type:'choice',branchAt:2, title:'03 / Последнее решение', tag:'ФИНАЛ ЗАВИСИТ ОТ ТВОИХ ДЕЙСТВИЙ',
       branchContexts:[
         {zh:'王老师看了材料，说：“还需要你的入学通知。”',
          ru:'Госпожа Ван просит последнее недостающее подтверждение — уведомление о зачислении. Время пока есть.'},

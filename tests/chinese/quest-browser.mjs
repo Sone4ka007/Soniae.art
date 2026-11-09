@@ -75,9 +75,25 @@ try {
   await page.locator('.quest-hotspot[data-id="bags"]').click();
   await page.locator('.quest-hotspot[data-id="chen"]').click();
   await page.locator('.quest-ready').waitFor({state:'visible',timeout:10000});
+  await page.locator('.quest-ready [data-action="quest-next"]').click();
+  assert.match(await page.locator('.quest-task').innerText(),/твою сумку/i,'The story should request permission before inspecting someone else’s bag');
+  for(let i=0;i<7;i++)await page.locator('[data-action="quest-token"][data-index="'+i+'"]').click();
+  await page.locator('[data-action="quest-check"]').click();
+  await page.locator('.quest-feedback [data-action="quest-next"]').click();
+  assert.match(await page.locator('.quest-scene-recap').innerText(),/Сяо Чэнь/,'After investigation we must speak with Xiao Chen');
+  await page.locator('.quest-choice').first().click();
+  assert.match(await page.locator('.quest-feedback').innerText(),/小陈/,'The document is returned through dialogue, not offscreen');
+  await page.locator('.quest-feedback [data-action="quest-next"]').click();
+  assert.match(await page.locator('.quest-canvas img').getAttribute('src'),/campus-submit/,'Submitting documents must be illustrated');
+  assert.ok(await page.locator('.quest-canvas img').evaluate(el=>el.complete&&el.naturalWidth>0),'Submission artwork must load');
+  for(const id of ['notice','form','clock'])await page.locator('.quest-hotspot[data-id="'+id+'"]').click();
+  await page.locator('.quest-ready [data-action="quest-next"]').click();
+  await page.locator('.quest-choice').first().click();
+  await page.locator('.quest-feedback [data-action="quest-next"]').click();
+  assert.match(await page.locator('.quest-end').innerText(),/ЗАЯВЛЕНИЕ ПРИНЯТО/,'A complete route must reach its earned ending');
 
   assert.equal(errors.length,0,'Browser errors: '+errors.join(' ; '));
-  console.log('PASS mobile browser: full Anna opening, first location, mnemonic recall, evidence, Xiaolin introduction and illustrated cafeteria search.');
+  console.log('PASS mobile browser: full opening, campus investigation, cafeteria search, permission dialogue, document recovery, submission scene and route-specific ending.');
 } finally {
  await browser.close();
 }

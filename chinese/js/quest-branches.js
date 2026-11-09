@@ -198,9 +198,19 @@
       zh,ru,outcomeZh,outcomeRu,
       branchAt:at,branchValue:value,time:0,trust:0,xp:20
     });
+    const firstChapter=chapters[0];
+    const opening={
+      summaryRu:'Анна приехала в Китай учиться в магистратуре по международной торговле. Она хочет подать заявление на стипендию, чтобы уменьшить финансовую нагрузку на семью. Это её первый день в университете. Она принесла документы, но преподавательница обнаружила пропажу: нет удостоверения, выданного университетом. Сейчас 14:30, а срок подачи — 17:00. Тебе предстоит помочь Анне разобраться, что произошло.',
+      panels:[
+        {title:'АННА ПРИЕХАЛА УЧИТЬСЯ',lines:[firstChapter.lines[0],firstChapter.lines[1]]},
+        {title:'ПОЧЕМУ ВАЖНА СТИПЕНДИЯ',lines:[firstChapter.lines[2],firstChapter.lines[3]]},
+        {title:'ПРОВЕРКА В УНИВЕРСИТЕТЕ',lines:[firstChapter.lines[4],firstChapter.lines[6],firstChapter.lines[7]]},
+        {title:'УЖЕ 14:30. ПОДАЧА ДО 17:00',lines:[firstChapter.lines[8],firstChapter.lines[9],firstChapter.lines[10]]}
+      ]
+    };
     const choice1={
       type:'choice', title:'01 / Где документ?', tag:'ДО ПЯТИ ЧАСОВ',
-      setupLines:[chapters[0].lines[7],chapters[0].lines[8],chapters[0].lines[14]],
+      setupLines:[chapters[0].lines[12],chapters[0].lines[13],chapters[0].lines[14],chapters[0].lines[15]],
       contextZh:'小林说：“刚才在食堂，我看见一个学生拿着和你一样的包。”',
       contextRu:'Сяолинь только что видел в столовой студентку с такой же сумкой. У Анны нет документа, без которого не примут заявление. Как действовать?',
       options:[
@@ -306,9 +316,10 @@
     return {
       ...previous, schemaVersion:4,
       title:'ДОКУМЕНТ ДО ПЯТИ · ИСТОРИЯ АННЫ',
-      tagline:'У Анны пропал документ для заявки на стипендию. Сяолинь видел похожую сумку в столовой. Успеешь ли ты найти документ и подать заявление до пяти?',
-      introZh:chapters[0].lines[7][0]+' '+chapters[0].lines[8][0],
-      introRu:chapters[0].lines[7][1]+' '+chapters[0].lines[8][1],
+      tagline:'Первый день Анны в китайском университете. Заявление на стипендию нужно подать до 17:00 — но сначала предстоит разобраться с пропавшим документом.',
+      opening,
+      introZh:chapters[0].lines[0][0]+' '+chapters[0].lines[1][0],
+      introRu:chapters[0].lines[0][1]+' '+chapters[0].lines[1][1],
       objective:'Найди документ, проверь, хватает ли остальных бумаг, и реши, что делать до закрытия приёма. У выбора есть реальная цена — время.',
       startTime:0, steps,
       branchEndings:endingVariants.map(group=>({
@@ -332,7 +343,7 @@
       passport:['证件','这张证件在这里，但是安娜要找的是学校给她的证。','Это удостоверение на месте. Анна потеряла другой документ — выданный университетом.'],
       teacher:['教师','王老师正在看学生的材料。','Госпожа Ван проверяет документы студентов.'],
       timetable:['课程','这里有学校的课程。今天安娜不是来上课的。','Это расписание занятий, оно не поможет найти пропажу.'],
-      canteen:['食堂','小林刚才在食堂看见一个学生拿着和安娜一样的包。','Указатель на столовую. Сяолинь видел там студентку с такой же сумкой, как у Анны.']
+      canteen:['食堂','这是去食堂的路。安娜还不知道证件在哪里。','Указатель на столовую. Пока Анна не знает, где искать документ. Возможно, кто-то из студентов сможет помочь.']
     },
     {
       instructions:['纸','这里写着：一张一元。','Инструкция рядом с принтером: одна страница стоит 1 юань, сначала нужно заплатить.'],
@@ -472,7 +483,7 @@
 
   function withIllustratedScenes(lesson,chapters,quest) {
     const [first,second]=[0,1].map(i=>illustratedScene(lesson,chapters,i));
-    return {...quest, schemaVersion:6,
+    return {...quest, schemaVersion:7,
       // Investigation > choice > sentence, then another investigation
       // before the last decision. This preserves the branching choice indices.
       steps:[first,...quest.steps.slice(0,4),second,...quest.steps.slice(4)]
@@ -495,6 +506,13 @@
       schemaVersion:4,
       title:'ИСТОРИЯ АННЫ · '+lesson.topic,
       tagline:chapters[0].teaser,
+      opening:{
+        summaryRu:chapters[0].lines.slice(0,3).map(line=>line[1]).join(' '),
+        panels:[
+          {title:'С ЧЕГО ВСЁ НАЧАЛОСЬ',lines:chapters[0].lines.slice(0,3)},
+          {title:'ПЕРВЫЕ СОБЫТИЯ',lines:chapters[0].lines.slice(3,6)}
+        ]
+      },
       introZh:chapters[0].lines[0][0],
       introRu:chapters[0].lines[0][1],
       objective:'Прими три решения по ходу истории и собери три предложения на китайском. Твои ответы изменят последующие события и концовку.',

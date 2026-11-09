@@ -57860,7 +57860,7 @@
       "address": "",
       "price": 4600,
       "price_text": "4600 ₽",
-      "registration": null,
+      "registration": false,
       "categories": [],
       "description": "ACOUSTIC SESSIONS — проект Музея Звука, посвященный импровизационной акустической музыке. Сценарий Acoustic Sessions прост: никакого электричества, никакого усиления, ни датчиков, ни комбиков, ни микрофонов, ничего. Только натуральное звучание инструментов, голоса, объектов, исследование взаимодействий звука as it is и окружающего пространства.",
       "url": "https://p-10.ru/events/acoustic-sessions-4/",
@@ -57872,7 +57872,14 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "international-2026-11-08-ab49cc4d7c",

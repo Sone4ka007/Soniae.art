@@ -45,6 +45,20 @@
     const m=byId[id];if(!m)return {ok:false,reason:'Неизвестная ситуация.'};
     const text=normalize(response);
     if(text.length<3)return {ok:false,reason:'Составь китайскую реплику и попробуй снова.'};
+    // Asking for repetition or slower speech is successful communication,
+    // not a wrong answer and not a completed scholarship application.
+    if(/再说一遍|再讲一遍|重复一遍|没听懂|不太明白|说慢一点|慢一点说/.test(text)){
+      const slow=/慢一点/.test(text);
+      return {ok:false,clarified:true,
+        reply:(slow?'好的，我说慢一点。':'没问题，我再说一次。')+m.teacher,
+        replyRu:(slow?'Хорошо, скажу медленнее: ':'Конечно, повторю: ')+m.teacherRu,
+        reason:'Ты попросила повторить или уточнить вопрос. Теперь можешь ответить.'};
+    }
+    if(m.id==='purpose'&&/不想申请|不申请|不要申请|不需要奖学金/.test(text)){
+      return {ok:false,reply:'你不想申请奖学金吗？那你想问什么？',
+        replyRu:'Вы не хотите подавать заявку на стипендию? Тогда какой у вас вопрос?',
+        reason:'Это отрицание — преподавательница поняла, что ты не собираешься подавать заявку. Уточни намерение.'};
+    }
     const hit=m.require.every(group=>group.some(token=>text.includes(token)));
     return hit?{ok:true,reply:m.reply,replyRu:m.replyRu,keywords:m.keywords}:
       {ok:false,reply:'不好意思，我没听懂。你可以再说一次吗？',replyRu:'Извини, я не поняла. Можешь сказать ещё раз?',reason:m.problem};

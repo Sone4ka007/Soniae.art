@@ -20,7 +20,7 @@ try {
   await page.waitForSelector('#game-panel .quest-intro-v7',{timeout:15000});
 
   const intro=await page.locator('#game-panel').innerText();
-  assert.match(intro,/КВЕСТ v7/,'New quest must display a recognizable version on the intro');
+  assert.match(intro,/КВЕСТ v8/,'New quest must display a recognizable version on the intro');
   assert.match(intro,/Анна приехала в Китай/,'First-time player must see Anna’s background before investigation');
   assert.match(intro,/стипендию/,'First-time player must understand why scholarship matters');
   assert.match(intro,/17:00/,'First-time player must understand the deadline');
@@ -64,10 +64,20 @@ try {
   assert.match(dialogue,/小林/,'After investigation, Xiaolin must be introduced in the story');
   assert.match(dialogue,/证件/,'The dialogue must explain what Anna is looking for');
   assert.match(await page.locator('.quest-narrative').innerText(),/食堂/,'Only after meeting Xiaolin does the player receive the cafeteria clue');
-
+  await page.locator('.quest-choice').first().click();
+  await page.locator('.quest-feedback [data-action="quest-next"]').click();
+  await page.locator('.quest-canvas img').waitFor({state:'visible',timeout:10000});
+  const cafeteriaImage=await page.locator('.quest-canvas img').getAttribute('src');
+  assert.match(cafeteriaImage,/cafeteria-search/,'Cafeteria must be a real scene instead of a skipped plot event');
+  assert.equal(await page.locator('.quest-hotspot[data-id="bags"]').count(),1,'Two matching bags must be inspectable');
+  assert.equal(await page.locator('.quest-hotspot[data-id="chen"]').count(),1,'Xiao Chen must be present in the cafeteria');
+  assert.ok(await page.locator('.quest-canvas img').evaluate(el=>el.complete&&el.naturalWidth>0),'Cafeteria illustration must actually load');
+  await page.locator('.quest-hotspot[data-id="bags"]').click();
+  await page.locator('.quest-hotspot[data-id="chen"]').click();
+  await page.locator('.quest-ready').waitFor({state:'visible',timeout:10000});
 
   assert.equal(errors.length,0,'Browser errors: '+errors.join(' ; '));
-  console.log('PASS mobile browser: first location illustration, six Chinese object labels, mnemonic buttons, self-recall, clickable evidence and quest continuation.');
+  console.log('PASS mobile browser: full Anna opening, first location, mnemonic recall, evidence, Xiaolin introduction and illustrated cafeteria search.');
 } finally {
  await browser.close();
 }

@@ -46,11 +46,13 @@ for(const lesson of lessonData){
  test(`lesson ${lesson.id}: three linked chapters, four distinct endings and graded vocabulary`,()=>{
    const chapters=readings[lesson.id];
    const result=globalThis.ChineseLabQuestBranches.build(lesson,chapters);
-   assert.equal(result.schemaVersion,lesson.id===1?9:7);
+   assert.equal(result.schemaVersion,lesson.id<=2?9:7);
    assert.equal(result.steps.length,lesson.id===1?8:8);
    assert.deepEqual(result.steps.map(x=>x.type),lesson.id===1
      ?['roleplay','explore','choice','explore','compose','choice','explore','choice']
-     :['explore','choice','compose','choice','compose','explore','choice','compose']);
+     :lesson.id===2
+       ?['roleplay','explore','choice','explore','compose','choice','compose','choice']
+       :['explore','choice','compose','choice','compose','explore','choice','compose']);
    const decisions=result.steps.filter(s=>s.type==='choice');
    const illustrations=result.steps.filter(s=>s.type==='explore');
    assert.equal(illustrations.length,lesson.id===1?3:2,'Lesson 1 must show the missing cafeteria investigation');
@@ -110,9 +112,9 @@ for(const lesson of lessonData){
    assert.equal(new Set(result.branchEndings.map(e=>e.ru)).size,4,'Different choices must produce different outcomes');
    assert.equal(decisions[1].branchContexts.length,2);
    assert.notEqual(decisions[1].branchContexts[0].zh,decisions[1].branchContexts[1].zh);
-   assert.equal(decisions[2].branchContexts.length,lesson.id===1?4:2);
+   assert.equal(decisions[2].branchContexts.length,lesson.id<=2?4:2);
    assert.notEqual(decisions[2].branchContexts[0].zh,decisions[2].branchContexts[1].zh);
-   if(lesson.id===1) {
+   if(lesson.id<=2) {
      assert.equal(decisions[1].branchOptions.length,2,'Different first choice must open different decisions');
      assert.equal(decisions[2].branchOptions.length,4,'Two decisions must open four different situations');
      assert.ok(decisions[0].setupLines.length>=2,'The first quest choice must show the missing document and deadline');
@@ -120,6 +122,18 @@ for(const lesson of lessonData){
      assert.equal(result.branchEndings.flatMap(e=>e.variants).length,8,'Every path needs a separate consequence');
      assert.equal(new Set(result.branchEndings.flatMap(e=>e.variants.map(v=>v.ru))).size,8);
      assert.notEqual(decisions[1].branchOptions[0][0].zh,decisions[1].branchOptions[1][0].zh);
+   }
+   if(lesson.id===2) {
+     assert.equal(result.playFirst,true,'Lesson 2 must start with conversation, not forced reading');
+     assert.equal(result.steps[0].type,'roleplay');
+     assert.equal(result.opening.panels.length,4);
+     assert.deepEqual(illustrations.map(x=>x.image),['apartment','night']);
+     assert.ok(result.steps[1].required.includes('kitchen'));
+     assert.ok(result.steps[3].required.includes('window'));
+     assert.equal(result.branchEndings.flatMap(x=>x.variants).length,8);
+     assert.equal(new Set(result.branchEndings.flatMap(x=>x.variants.map(v=>v.ru))).size,8);
+     assert.ok(result.opening.summaryRu.includes('3000'));
+     assert.ok(result.steps.some(s=>s.type==='compose'&&s.successZh.includes('平常晚上')));
    }
    const outcomes=[];
    for(let a=0;a<2;a++)for(let b=0;b<2;b++)for(let c=0;c<2;c++) {

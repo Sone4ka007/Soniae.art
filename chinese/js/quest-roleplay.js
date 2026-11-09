@@ -70,9 +70,63 @@
     return hit&&!contradicted?{ok:true,reply:m.reply,replyRu:m.replyRu,keywords:m.keywords}:
       {ok:false,reply:'不好意思，我没听懂。你可以再说一次吗？',replyRu:'Извини, я не поняла. Можешь сказать ещё раз?',reason:m.problem};
   }
+
+  // A separate conversation for lesson 2. Keep lesson 1's established
+  // scholarship conversation unchanged.
+  const rentalMissions=[
+    {id:'purpose',title:'ЗАЧЕМ ТЫ ПРИШЛА?',goal:'Скажи хозяйке, что хочешь посмотреть квартиру и, возможно, снять её.',
+      teacher:'你好！你来看房子吗？',teacherRu:'Здравствуйте! Пришли посмотреть квартиру?',
+      sample:'你好，我想看看这套房子。',tiles:['你好，','我','想','看看','这套','房子','。'],
+      require:[['房子','房'],['看','租']],problem:'Назови жильё и скажи, что хочешь его посмотреть или арендовать.',
+      reply:'好的，请进来看看吧。客厅很亮。',replyRu:'Хорошо, проходи и осматривайся. В гостиной светло.',
+      keywords:['租','房东','客厅','亮']},
+    {id:'price',title:'СПРОСИ О ЦЕНЕ',goal:'Самостоятельно спроси, сколько стоит аренда в месяц.',
+      teacher:'你觉得这个房子怎么样？',teacherRu:'Как тебе квартира?',
+      sample:'请问，房租每个月多少钱？',tiles:['请问，','房租','每个月','多少钱','？'],
+      require:[['房租','价格'],['多少','多少钱','三千']],problem:'Спроси о стоимости: 房租 или 价格, затем 多少.',
+      reply:'房租每个月三千元。',replyRu:'Аренда — 3000 юаней в месяц.',
+      keywords:['房租','价格','出租']},
+    {id:'quiet',title:'УЗНАЙ О ВЕЧЕРНЕМ ШУМЕ',goal:'Спроси, насколько здесь шумно по вечерам. Это важно для учёбы.',
+      teacher:'你平常晚上做什么？',teacherRu:'Что ты обычно делаешь по вечерам?',
+      sample:'我平常晚上学习。请问，这里晚上热闹吗？',
+      tiles:['我','平常','晚上','学习','。','请问，','这里','晚上','热闹','吗？'],
+      require:[['晚上'],['热闹','安静']],problem:'Спроси, бывает ли по вечерам шумно: 晚上 + 热闹 / 安静.',
+      reply:'晚上有时候很热闹。你可以晚上再来看看。',
+      replyRu:'Иногда здесь оживлённо по вечерам. Можешь прийти и проверить вечером.',
+      keywords:['平常','热闹','课程','周围']},
+    {id:'move',title:'УТОЧНИ ЗАСЕЛЕНИЕ',goal:'Спроси хозяйку, когда можно въехать в квартиру.',
+      teacher:'还有什么问题吗？',teacherRu:'Есть ещё вопросы?',
+      sample:'请问，什么时候可以入住？',tiles:['请问，','什么时候','可以','入住','？'],
+      require:[['入住'],['什么时候','下个星期','可以','哪天']],problem:'Спроси именно о заселении, используя 入住 и вопрос о времени.',
+      reply:'下个星期就可以入住。不过你先想一想。',
+      replyRu:'Заселиться можно на следующей неделе. Но сначала подумай, подходит ли тебе жильё.',
+      keywords:['入住','建议','顺利']}
+  ];
+  const rentalById=Object.fromEntries(rentalMissions.map(m=>[m.id,m]));
+  function evaluateRental(id,response){
+    const m=rentalById[id];
+    if(!m)return {ok:false,reason:'Неизвестная ситуация.'};
+    const t=normalize(response);
+    if(t.length<3)return {ok:false,reason:'Скажи что-нибудь по-китайски или открой подсказку.'};
+    if(/再说一遍|再讲一遍|重复一遍|没听懂|不太明白|说慢一点|慢一点说/.test(t))
+      return {ok:false,clarified:true,reply:'好的，我再说一次。'+m.teacher,
+        replyRu:'Конечно, повторю: '+m.teacherRu,reason:'Ты попросила повторить вопрос. Теперь можешь на него ответить.'};
+    if((id==='purpose'&&/不想(租|看)|不租|不看房/.test(t))||
+       (id==='move'&&/不想入住|不能入住/.test(t)))
+      return {ok:false,reply:'不好意思，你想问什么？',replyRu:'Извините, тогда что бы вы хотели узнать?',reason:'Сейчас ответ означает отказ. Сформулируй нужный вопрос.'};
+    const ok=m.require.every(group=>group.some(word=>t.includes(word)));
+    return ok?{ok:true,reply:m.reply,replyRu:m.replyRu,keywords:m.keywords}:
+      {ok:false,reply:'不好意思，我没听懂。你可以再说一次吗？',
+        replyRu:'Извините, я не поняла. Можете сказать иначе?',reason:m.problem};
+  }
+  const rentalEngine=Object.freeze({
+    missions:Object.freeze(rentalMissions.map(m=>Object.freeze(m))),
+    byId:(id)=>rentalById[id]||null,normalize,evaluate:evaluateRental
+  });
   global.ChineseLabRoleplay=Object.freeze({
     missions:Object.freeze(missions.map(m=>Object.freeze(m))),
     byId:(id)=>byId[id]||null,
-    normalize,evaluate
+    normalize,evaluate,
+    forLesson:(id)=>Number(id)===2?rentalEngine:global.ChineseLabRoleplay
   });
 })(typeof window!=='undefined'?window:globalThis);

@@ -587,6 +587,56 @@
 .quest-scene-recap p{font:450 15px/1.6 Arial,sans-serif;margin:5px 0 0}
 @media(max-width:600px){.quest-scene-recap{padding:12px 14px}.quest-scene-recap p{font-size:14px}}
 </style>
+
+<style id="chinese-lab-roleplay-v1">
+.quest-rp-start{border:2px solid var(--ink);padding:clamp(18px,3vw,30px);background:#fff;max-width:790px}
+.quest-rp-start-label{font:900 11px/1.5 Arial,sans-serif;letter-spacing:.1em;color:var(--muted)}
+.quest-rp-start h4{font:900 clamp(29px,4vw,45px)/1.1 var(--font-head);margin:13px 0}
+.quest-rp-start p{font-size:16px;line-height:1.7;max-width:65ch}
+.quest-rp-start-question{background:#d7ff29;border:2px solid var(--ink);padding:15px;font:600 23px/1.55 var(--han);margin:20px 0}
+.quest-rp-start small{display:block;font-size:12px;color:var(--muted);margin-top:12px;line-height:1.55}
+.quest-rp{max-width:1000px}
+.quest-rp-scene{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(230px,.75fr);border:2px solid var(--ink);background:#fff}
+.quest-rp-scene img{width:100%;height:100%;min-height:200px;max-height:300px;object-fit:cover}
+.quest-rp-scene>div{padding:17px;display:flex;flex-direction:column;justify-content:center}
+.quest-rp-scene b{font-size:11px;font-weight:900;letter-spacing:.06em}
+.quest-rp-scene p{font-size:14px;line-height:1.65;margin:9px 0 0}
+.quest-rp-progress{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:19px 0 9px;font-size:12px;font-weight:850;letter-spacing:.03em}
+.quest-rp-progress span{font-variant-numeric:tabular-nums}
+.quest-rp-topics{display:flex;flex-wrap:wrap;gap:7px;margin:0 0 16px}
+.quest-rp-goal{background:#fff;border:1px solid var(--ink);padding:10px 12px;text-align:left;font-size:11px;font-weight:750;display:flex;gap:8px;align-items:center;max-width:100%}
+.quest-rp-goal.current{background:var(--acid);border-width:2px}
+.quest-rp-goal.done{background:#e8eddc;color:#334235}
+.quest-rp-goal:disabled:not(.done){opacity:.42;cursor:not-allowed}
+.quest-rp-history{border:1px solid var(--line);background:#fff;padding:13px;margin-bottom:15px}
+.quest-rp-history summary{cursor:pointer;font-size:12px;font-weight:800}
+.quest-rp-history-item{border-bottom:1px solid var(--line);padding:12px 0;display:grid;gap:7px}
+.quest-rp-history-item div{display:flex;flex-wrap:wrap;gap:9px;align-items:center}
+.quest-rp-history-item b{font-size:10px;min-width:32px}
+.quest-rp-history-item span{font-size:18px;font-family:var(--han)}
+.quest-rp-turn{border:2px solid var(--ink);background:#fff;padding:clamp(16px,3vw,25px)}
+.quest-rp-dialogue{background:#edf2e2;border-left:4px solid var(--ink);padding:16px;margin-bottom:15px}
+.quest-rp-name,.quest-rp-task b,.quest-rp-compose label,.quest-rp-feedback b{display:block;font-size:11px;font-weight:900;letter-spacing:.06em;margin-bottom:9px}
+.quest-rp-teacher{font:600 clamp(19px,2.8vw,25px)/1.6 var(--han)}
+.quest-rp-dialogue p{font-size:13px;color:#454545;margin:8px 0 0}
+.quest-rp-task{border-bottom:1px solid var(--line);margin-bottom:17px;padding-bottom:13px}
+.quest-rp-task p{font-size:15px;line-height:1.6;margin:0}
+.quest-rp-compose textarea{width:100%;resize:vertical;font:500 23px/1.5 var(--han);padding:12px;border:2px solid var(--ink);background:#fafbf8;min-height:90px}
+.quest-rp-compose textarea:focus{outline:3px solid var(--acid-dark)}
+.quest-rp-controls{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:11px}
+.quest-rp-link{border:0;background:transparent;padding:8px 0;text-decoration:underline;font:800 11px/1.5 Arial,sans-serif;cursor:pointer}
+.quest-rp-bank{margin-top:14px;border:1px solid var(--ink);padding:14px;background:#f5f6ef}
+.quest-rp-bank p{font-size:13px;line-height:1.5;margin:0 0 11px}
+.quest-rp-bank>div{display:flex;flex-wrap:wrap;gap:8px}
+.quest-rp-bank>div button{border:1px solid var(--ink);padding:9px 11px;background:#fff;font:600 20px/1.5 var(--han)}
+.quest-rp-bank>div button:hover{background:var(--acid)}
+.quest-rp-feedback{padding:16px;margin:13px 0;border-left:4px solid var(--ink);background:#e9f4de}
+.quest-rp-feedback.retry{background:#fff1e0}
+.quest-rp-feedback>div{font:650 20px/1.5 var(--han)}
+.quest-rp-feedback p{font-size:13px;line-height:1.5;margin:7px 0 0}
+.quest-rp-sample{background:#fff;padding:10px;font:600 20px/1.5 var(--han)}
+@media(max-width:640px){.quest-rp-scene{display:block}.quest-rp-scene img{min-height:0;max-height:200px;object-fit:cover}.quest-rp-scene>div{padding:12px 14px}.quest-rp-goal{font-size:10px}.quest-rp-start p{font-size:14px}.quest-rp-start-question{font-size:20px}.quest-rp-controls .action-btn{font-size:11px}}
+</style>
 </head>
 <body>
   <div class="site-frame">
@@ -645,7 +695,9 @@ window.chineseLabLessonFetch=async url=>{
 <script src="./js/sentence-tiles.js"></script>
 <script src="./js/exercise-sessions.js"></script>
 <script src="./js/quest-mnemonics.js?v=20261109-2"></script>
-<script src="./js/quest-branches.js?v=20261109-4"></script>
+<script src="./js/quest-roleplay.js?v=20261109-1"></script>
+<script src="./js/quest-roleplay-view.js?v=20261109-1"></script>
+<script src="./js/quest-branches.js?v=20261109-5"></script>
 <script>
 const sceneURL = name => window.__offlineScenes[name] || ("assets/"+name+".svg");
 const $ = (selector) => document.querySelector(selector);
@@ -794,7 +846,7 @@ function initQuest(){
   const q=lesson().quest;
   state.game={isQuest:true,questSchema:q.schemaVersion||1,routeChoices:[],status:'intro',stage:0,seen:[],items:[],tokens:[],selected:[],ready:false,answer:null,
     feedback:null,points:0,time:q.startTime,trust:2,choices:[],showRu:false,zoom:false,hint:false,usedHint:false,flags:{},tokenOrder:null,analysisKey:null,
-   revealed:[],mnemonicWord:null,mnemonicMode:'hint',missionOpen:true,missionStage:0,missionResult:null,missionNotice:'',missionShowRu:false};
+   revealed:[],roleplay:{done:[],active:'purpose',draft:'',hint:false,example:false,feedback:null,history:[],showTranslation:false},mnemonicWord:null,mnemonicMode:'hint',missionOpen:true,missionStage:0,missionResult:null,missionNotice:'',missionShowRu:false};
  state.progress.questWords ||= {};
  state.progress.questWords[lesson().id] ||= {};
 }
@@ -998,6 +1050,11 @@ function questEnding(){
  const end=q.endings[stateName];
  return `${header('СЮЖЕТ ЗАВЕРШЁН','Твои решения повлияли на результат. Можно повторить игру другим маршрутом.','MISSION / COMPLETE')}<div class="quest-end"><div class="quest-end-num">${stateName==='good'?'✓':stateName==='tight'?'!':'↻'}</div><div><span class="quest-kicker">${esc(end.kicker)}</span><h4>${esc(q.title)}</h4><div class="quest-result-zh" lang="zh-CN">${tapText(end.zh)} ${speakButton(end.zh)}</div>${questGloss('end',end.ru)}<div class="quest-end-score">${g.points} XP · ДОВЕРИЕ ${g.trust}/6 · ОСТАЛОСЬ ${g.time} МИН</div><div class="quest-end-links"><button type="button" class="action-btn" data-action="quest-restart">ИГРАТЬ ДРУГИМ МАРШРУТОМ ↻</button><button type="button" class="action-btn secondary" data-action="mode" data-id="input">ЧИТАТЬ ИСТОРИЮ →</button></div></div></div>${questMissionBox()}${questInventory()}`;
 }
+function questRoleplay(s){
+ const g=state.game;
+ if(!g.roleplay)g.roleplay={done:[],active:'purpose',draft:'',hint:false,example:false,feedback:null,history:[],showTranslation:false};
+ return window.ChineseLabRoleplayView.render({game:g,speakButton,sceneURL});
+}
 function questOpening(q){
  const intro=q.opening;
  if(!intro?.panels?.length)return `<div lang="zh-CN" class="quest-big-zh">${tapText(q.introZh)} ${speakButton(q.introZh)}</div>`;
@@ -1010,15 +1067,19 @@ function questOpening(q){
 
 function renderStory(){
  const g=state.game,q=lesson().quest;
+ if(g.status==='intro'&&q.playFirst){
+  $('#game-panel').innerHTML=`${header('СИМУЛЯЦИЯ / СТУДЕНЧЕСКИЙ ЦЕНТР','Здесь ты сама разговариваешь на китайском. Преподавательница отвечает на твои реплики.','УРОК 01 / ЖИВАЯ ПРАКТИКА')}<div class="quest-rp-start"><div class="quest-rp-start-label">01 / ПЕРВЫЙ ДЕНЬ В УНИВЕРСИТЕТЕ</div><h4>ТВОЙ ПЕРВЫЙ РАЗГОВОР</h4><p>Ты — Анна. Приехала в Китай учиться в магистратуре и хочешь подать заявку на стипендию. Впервые заходишь в студенческий центр. Тебя встречает преподавательница Ван.</p><div class="quest-rp-start-question" lang="zh-CN">王老师：你好！你需要什么帮助？ ${speakButton('你好！你需要什么帮助？')}</div><p>Твоя задача — самой выяснить, как подать документы. Можно написать китайскую реплику или собрать её из слов, если понадобится помощь.</p><button type="button" data-action="quest-start" class="action-btn">ОТВЕТИТЬ ПРЕПОДАВАТЕЛЬНИЦЕ →</button><small>Ошибаться можно: преподавательница попросит объяснить иначе. Затем ты сможешь исследовать университет, искать документ и принимать решения.</small></div>`;
+  return;
+ }
  if(g.status==='intro'){
-  $('#game-panel').innerHTML=`${header('КВЕСТ / ТЫ ВНУТРИ ИСТОРИИ','Каждый выбор меняет следующую сцену и ведёт к одному из нескольких финалов.','INTERACTIVE FICTION')}<div class="quest-intro-v7"><div class="quest-kicker">CHINESE LAB · КВЕСТ v8 / ${String(lesson().id).padStart(2,'0')} · ${q.steps.length} СЦЕН</div><h4>${esc(q.title)}</h4><p>${esc(q.tagline)}</p>${questOpening(q)}<div class="quest-objective-v7"><b>МИССИЯ</b><span>${esc(q.objective)}</span></div>
+  $('#game-panel').innerHTML=`${header('КВЕСТ / ТЫ ВНУТРИ ИСТОРИИ','Каждый выбор меняет следующую сцену и ведёт к одному из нескольких финалов.','INTERACTIVE FICTION')}<div class="quest-intro-v7"><div class="quest-kicker">CHINESE LAB · КВЕСТ v9 / ${String(lesson().id).padStart(2,'0')} · ${q.steps.length} СЦЕН</div><h4>${esc(q.title)}</h4><p>${esc(q.tagline)}</p>${questOpening(q)}<div class="quest-objective-v7"><b>МИССИЯ</b><span>${esc(q.objective)}</span></div>
 ${q.steps.some(s=>s.type==='explore')? `<div class="quest-preview-location"><img src="${sceneURL(q.steps.find(s=>s.type==='explore').image)}" alt="Первая локация квеста — осмотри предметы после начала игры" loading="eager"><p>ПЕРВАЯ ЛОКАЦИЯ · нажми «Начать квест», затем исследуй предметы со знаками вопроса</p></div>`:''}
 ${lesson().id===1?`<div class="quest-mnemonic-intro"><b>ПРОВЕРЬ, КАК РАБОТАЮТ МНЕМОНИКИ</b><p>Увидишь слово <span lang="zh-CN">证件</span> на предметах. Открой короткую ассоциацию, затем попробуй вспомнить значение самостоятельно.</p>${questMnemonic('证件')}</div>`:''}
 <div class="quest-intro-buttons"><button type="button" class="action-btn" data-action="quest-start">НАЧАТЬ КВЕСТ →</button><button type="button" class="action-btn secondary" data-action="mode" data-id="input">СНАЧАЛА ПОЧИТАТЬ</button></div><small>Прочитай начало истории, исследуй три локации, поговори с персонажами и реши, как Анна поступит. Твои действия меняют развязку. Предметы подписаны по-китайски. После нажатия на предмет появится объяснение и мнемоника.</small></div>`;return;
  }
  if(g.status==='complete'){$('#game-panel').innerHTML=questEnding();return;}
- const s=questStep(),body=s.type==='explore'?questExplore(s):s.type==='compose'?questCompose(s):s.type==='pick'?questPick(s):questOptions(s);
- $('#game-panel').innerHTML=`${header('КВЕСТ / ИСТОРИЯ АННЫ','Выбирай действия, а затем составляй фразы на китайском. Последствия меняют следующую сцену.',`ЭТАП ${g.stage+1} / ${q.steps.length}`)}${questHud()}<section class="quest-scene"><div class="quest-scene-heading"><span>${esc(s.tag)}</span><h4>${esc(s.title)}</h4></div>${s.type==='compose'?'':questNarrative(s)}${body}</section>${questMissionBox()}${questInventory()}`;
+ const s=questStep(),body=s.type==='roleplay'?questRoleplay(s):s.type==='explore'?questExplore(s):s.type==='compose'?questCompose(s):s.type==='pick'?questPick(s):questOptions(s);
+ $('#game-panel').innerHTML=`${header('КВЕСТ / ИСТОРИЯ АННЫ','Выбирай действия, а затем составляй фразы на китайском. Последствия меняют следующую сцену.',`ЭТАП ${g.stage+1} / ${q.steps.length}`)}${questHud()}<section class="quest-scene"><div class="quest-scene-heading"><span>${esc(s.tag)}</span><h4>${esc(s.title)}</h4></div>${s.type==='compose'||s.type==='roleplay'?'':questNarrative(s)}${body}</section>${questMissionBox()}${questInventory()}`;
 }
 function questAction(action,btn){
  const g=state.game;if(!g?.isQuest)return;
@@ -1052,6 +1113,43 @@ function questAction(action,btn){
  if(action==='quest-analyze'){g.analysisKey=g.analysisKey===btn.dataset.key?null:btn.dataset.key;renderStory();return;}
  if(g.status!=='play')return;
  const s=questStep(),index=Number(btn.dataset.index),id=btn.dataset.id;
+ if(s.type==='roleplay'&&action.startsWith('quest-roleplay-')){
+   const rp=g.roleplay,engine=window.ChineseLabRoleplay;
+   if(!rp||!engine)return;
+   const previous=document.getElementById('quest-roleplay-input');
+   if(previous)rp.draft=previous.value;
+   if(action==='quest-roleplay-translate')rp.showTranslation=!rp.showTranslation;
+   if(action==='quest-roleplay-topic'){
+     const next=engine.byId(id);
+     if(next&&!rp.done.includes(id)&&(rp.done.includes('purpose')||id==='purpose')){
+       rp.active=id;rp.draft='';rp.hint=false;rp.example=false;rp.feedback=null;rp.showTranslation=false;
+     }
+   }
+   if(action==='quest-roleplay-next'){
+     const next=engine.missions.find(m=>!rp.done.includes(m.id));
+     if(next){rp.active=next.id;rp.draft='';rp.hint=false;rp.example=false;rp.feedback=null;rp.showTranslation=false;}
+   }
+   if(action==='quest-roleplay-hint')rp.hint=!rp.hint;
+   if(action==='quest-roleplay-example'&&rp.hint)rp.example=!rp.example;
+   if(action==='quest-roleplay-clear')rp.draft='';
+   if(action==='quest-roleplay-tile'&&rp.hint&&!rp.done.includes(rp.active))rp.draft+=(btn.dataset.token||'');
+   if(action==='quest-roleplay-send'&&!rp.done.includes(rp.active)){
+     const result=engine.evaluate(rp.active,rp.draft);
+     rp.feedback=result;
+     if(result.ok){
+       rp.done.push(rp.active);
+       rp.history.push({student:rp.draft,teacher:result.reply,topic:rp.active});
+       if(rp.active==='papers')g.flags.missingDocument=true;
+       if(rp.active==='deadline')g.flags.deadlineKnown=true;
+       questEarn(18,'РАЗГОВОР НА КИТАЙСКОМ');
+       speech(result.reply);
+       if(rp.done.length===engine.missions.length){g.ready=true;g.feedback=null;}
+     }else{
+       speech(result.reply);
+     }
+   }
+   renderStory();return;
+ }
  if(action==='quest-translation'){g.showRu=!g.showRu;renderStory();return;}
  if(action==='quest-zoom'){g.zoom=!g.zoom;renderStory();return;}
  if(action==='quest-spot'&&s.type==='explore'){
@@ -1665,7 +1763,7 @@ document.addEventListener('click', event => {
      window.confirm('Начать этот режим заново? Текущая серия заданий будет сброшена, но XP и общий прогресс сохранятся.'))
      activateMode(state.mode, true);
    break;
- case 'quest-memory':case 'quest-memory-test':case 'quest-memory-answer':case 'quest-memory-back':case 'quest-gloss':case 'quest-analyze':case 'quest-mission-toggle':case 'quest-mission-select':case 'quest-mission-pick':case 'quest-mission-next':case 'quest-spot':case 'quest-choice':case 'quest-token':case 'quest-token-remove':case 'quest-pick':case 'quest-check':case 'quest-clear':case 'quest-hint':case 'quest-translation':case 'quest-zoom':case 'quest-start':case 'quest-next':case 'quest-restart':questAction(action,btn);break;
+ case 'quest-memory':case 'quest-memory-test':case 'quest-memory-answer':case 'quest-memory-back':case 'quest-roleplay-topic':case 'quest-roleplay-next':case 'quest-roleplay-hint':case 'quest-roleplay-example':case 'quest-roleplay-clear':case 'quest-roleplay-tile':case 'quest-roleplay-send':case 'quest-roleplay-translate':case 'quest-gloss':case 'quest-analyze':case 'quest-mission-toggle':case 'quest-mission-select':case 'quest-mission-pick':case 'quest-mission-next':case 'quest-spot':case 'quest-choice':case 'quest-token':case 'quest-token-remove':case 'quest-pick':case 'quest-check':case 'quest-clear':case 'quest-hint':case 'quest-translation':case 'quest-zoom':case 'quest-start':case 'quest-next':case 'quest-restart':questAction(action,btn);break;
  case 'sentence-add':case 'sentence-remove':case 'sentence-clear':case 'sentence-hint':case 'sentence-check':case 'sentence-next':sentenceAction(action,btn.dataset.id);break;
  case 'pair':pairPick(btn.dataset.side,btn.dataset.id);break;
  case 'quiz-pick':quizPick(Number(btn.dataset.index));break;

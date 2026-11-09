@@ -4,6 +4,9 @@ import {readFileSync} from 'node:fs';
 import {join,dirname} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import '../../chinese/js/quest-roleplay.js';
+import '../../chinese/js/quest-roleplay-extended.js';
+import '../../chinese/js/quest-lesson3.js';
+import '../../chinese/js/quest-lesson4.js';
 import '../../chinese/js/quest-branches.js';
 
 const root=join(dirname(fileURLToPath(import.meta.url)),'..','..');
@@ -119,3 +122,47 @@ test('Lesson 2 uses its own landlord conversation and rejects wrong-topic answer
  const covered=rentalLesson.words.filter(w=>corpus.includes(w.hanzi));
  assert.ok(covered.length>=Math.ceil(rentalLesson.words.length/2),'Lesson 2 quest has '+covered.length+' words');
 });
+
+
+for(const lessonId of [3,4]){
+ test('Lesson '+lessonId+' has a playable conversation, accepted meaning and graded Chinese',()=>{
+   const l=data('lesson'+lessonId+'.json'),ch=data('readings.json')[lessonId];
+   const q=globalThis.ChineseLabQuestBranches.build(l,ch);
+   const engine=role.forLesson(lessonId);
+   assert.equal(q.playFirst,true);
+   assert.equal(q.steps[0].type,'roleplay');
+   assert.equal(engine.missions.length,4);
+   for(const m of engine.missions)assert.equal(engine.evaluate(m.id,m.sample).ok,true,m.id);
+   const bad=lessonId===3?[
+     ['purpose','我不想买咖啡。'],
+     ['purpose','我想买车票。'],
+     ['payment','我喜欢咖啡。'],
+     ['check','我想去学校。']
+    ]:[
+     ['purpose','我想买咖啡。'],
+     ['phone','我的手机有信号。'],
+     ['help','我不需要帮助。'],
+     ['thanks','我喜欢咖啡。']
+    ];
+   for(const [id,sentence] of bad)assert.equal(engine.evaluate(id,sentence).ok,false,id+': '+sentence);
+   const allowed=new Set([...base,...Array.from({length:lessonId},(_,i)=>data('lesson'+(i+1)+'.json'))
+     .flatMap(item=>item.words.map(w=>w.hanzi))]);
+   for(const m of engine.missions)for(const sentence of [m.teacher,m.sample,m.reply]){
+     assert.equal(unknownChinese(sentence,allowed),null,m.id+': '+sentence);
+   }
+   const main=[
+     ...engine.missions.flatMap(m=>[m.teacher,m.sample,m.reply]),
+     ...q.steps.flatMap(st=>[st.contextZh,
+       ...(st.spots||[]).flatMap(x=>[x.word,x.clueZh]),
+       ...(st.setupLines||[]).map(x=>x[0]),
+       ...(st.branchContexts||[]).map(x=>x.zh),
+       ...(st.options||[]).flatMap(x=>[x.zh,x.outcomeZh]),
+       ...(st.branchOptions||[]).flatMap(group=>group.flatMap(x=>[x.zh,x.outcomeZh])),
+       st.successZh])
+   ].join(' ');
+   const covered=l.words.filter(w=>main.includes(w.hanzi));
+   assert.ok(covered.length>=Math.ceil(l.words.length/2),
+     'Lesson '+lessonId+' main quest uses '+covered.length+' of '+l.words.length+' words');
+   assert.equal(q.branchEndings.flatMap(e=>e.variants).length,8);
+ });
+}

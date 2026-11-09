@@ -17,39 +17,50 @@ try {
   const page=await context.newPage();
   page.on('pageerror',error=>errors.push(error.message));
   await page.goto(pathToFileURL(resolve('chinese/index.html')).href,{waitUntil:'domcontentloaded'});
-  await page.waitForSelector('#game-panel .quest-intro-v7',{timeout:15000});
-
+  await page.waitForSelector('#game-panel .quest-rp-start',{timeout:15000});
   const intro=await page.locator('#game-panel').innerText();
-  assert.match(intro,/КВЕСТ v8/,'New quest must display a recognizable version on the intro');
-  assert.match(intro,/Анна приехала в Китай/,'First-time player must see Anna’s background before investigation');
-  assert.match(intro,/стипендию/,'First-time player must understand why scholarship matters');
-  assert.match(intro,/17:00/,'First-time player must understand the deadline');
-  assert.equal(await page.locator('.quest-opening-beat').count(),4,'Full opening must be told in four chronological parts');
-  const beats=await page.locator('.quest-opening-beat-label').allInnerTexts();
-  assert.match(beats[0],/АННА ПРИЕХАЛА/);
-  assert.match(beats[1],/СТИПЕНДИЯ/);
-  assert.match(beats[2],/ПРОВЕРКА/);
-  assert.match(beats[3],/14:30/);
-  await page.locator('.quest-opening-beat [data-action="quest-gloss"]').first().click();
-  assert.match(await page.locator('.quest-opening-beat .quest-reveal-text').first().innerText(),/Анна приехала в Китай/);
-  assert.match(intro,/МНЕМОНИКИ/,'Mnemonic hint must be available before starting');
-
-  const preview=page.locator('.quest-preview-location img');
-  await preview.waitFor({state:'visible',timeout:10000});
-  assert.ok(await preview.evaluate(el=>el.complete&&el.naturalWidth>0),'First location must render an actual illustration');
-
-  await page.locator('.quest-mnemonic-intro [data-action="quest-memory"]').click();
-  assert.match(await page.locator('.quest-mnemonic-intro .quest-memory-body').innerText(),/пропавшее удостоверение/);
-  await page.locator('.quest-mnemonic-intro [data-action="quest-memory-test"]').click();
-  assert.match(await page.locator('.quest-mnemonic-intro .quest-memory-body').innerText(),/ПРОВЕРКА СЕБЯ/);
-  await page.locator('.quest-mnemonic-intro [data-action="quest-memory-answer"]').click();
-  assert.match(await page.locator('.quest-mnemonic-intro .quest-memory-body').innerText(),/zhèngjiàn/);
-
+  assert.match(intro,/СИМУЛЯЦИЯ/);
+  assert.match(intro,/ТВОЙ ПЕРВЫЙ РАЗГОВОР/);
+  assert.match(intro,/Тебя встречает преподавательница Ван/);
+  assert.equal(await page.locator('.quest-opening-beat').count(),0,'Starting an interactive quest must not force a long story to read');
   await page.locator('[data-action="quest-start"]').click();
+  await page.locator('.quest-rp-teacher').waitFor();
+  assert.match(await page.locator('.quest-rp-teacher').innerText(),/你好/);
+  assert.equal(await page.locator('.quest-rp-goal').count(),5);
+  assert.ok(await page.locator('.quest-rp-scene img').evaluate(el=>el.complete&&el.naturalWidth>0));
+
+  await page.locator('#quest-roleplay-input').fill('我想吃面条。');
+  await page.locator('[data-action="quest-roleplay-send"]').click();
+  assert.match(await page.locator('.quest-rp-feedback').innerText(),/没听懂/,'Wrong-topic Chinese must be met with clarification');
+  await page.locator('#quest-roleplay-input').fill('我想申请奖学金。');
+  await page.locator('[data-action="quest-roleplay-send"]').click();
+  assert.match(await page.locator('.quest-rp-feedback').innerText(),/申请奖学金需要一些材料/);
+  await page.locator('[data-action="quest-roleplay-next"]').click();
+
+  await page.locator('[data-action="quest-roleplay-hint"]').click();
+  assert.ok(await page.locator('.quest-rp-bank [data-action="quest-roleplay-tile"]').count()>=5,'Optional Chinese word tiles should help phrase construction');
+  await page.locator('#quest-roleplay-input').fill('我的专业是国际贸易。');
+  await page.locator('[data-action="quest-roleplay-send"]').click();
+  assert.match(await page.locator('.quest-rp-feedback').innerText(),/研究生/);
+  await page.locator('[data-action="quest-roleplay-next"]').click();
+
+  await page.locator('#quest-roleplay-input').fill('我想减轻家里的经济压力。');
+  await page.locator('[data-action="quest-roleplay-send"]').click();
+  await page.locator('[data-action="quest-roleplay-next"]').click();
+
+  await page.locator('#quest-roleplay-input').fill('我的证件找不到了。');
+  await page.locator('[data-action="quest-roleplay-send"]').click();
+  await page.locator('[data-action="quest-roleplay-next"]').click();
+
+  await page.locator('#quest-roleplay-input').fill('请问，今天几点以前要交材料？');
+  await page.locator('[data-action="quest-roleplay-send"]').click();
+  assert.match(await page.locator('.quest-rp-feedback').innerText(),/五点/);
+  assert.match(await page.locator('.quest-rp-progress').innerText(),/5 \/ 5/);
+  await page.locator('.quest-ready [data-action="quest-next"]').click();
   await page.locator('.quest-canvas img').waitFor({state:'visible',timeout:10000});
-  assert.ok(await page.locator('.quest-canvas img').evaluate(el=>el.complete&&el.naturalWidth>0),'Location must be drawn in the game');
-  assert.ok(await page.locator('.quest-hotspot').count()>=6,'First scene must contain clickable illustrated evidence');
-  assert.ok(await page.locator('.quest-hotspot-word').count()>=6,'Objects on the picture must have Chinese labels');
+  assert.ok(await page.locator('.quest-canvas img').evaluate(el=>el.complete&&el.naturalWidth>0),'First illustrated investigation must appear after real conversation');
+  assert.ok(await page.locator('.quest-hotspot').count()>=6);
+  assert.ok(await page.locator('.quest-hotspot-word').count()>=6);
 
   const poster=page.locator('.quest-hotspot[data-id="poster"]');
   await poster.click();
@@ -93,7 +104,7 @@ try {
   assert.match(await page.locator('.quest-end').innerText(),/ЗАЯВЛЕНИЕ ПРИНЯТО/,'A complete route must reach its earned ending');
 
   assert.equal(errors.length,0,'Browser errors: '+errors.join(' ; '));
-  console.log('PASS mobile browser: full opening, campus investigation, cafeteria search, permission dialogue, document recovery, submission scene and route-specific ending.');
+  console.log('PASS mobile browser: meaningful Chinese teacher roleplay, errors, spoken responses and optional word hints, followed by illustrated campus, cafeteria and submission route.');
 } finally {
  await browser.close();
 }

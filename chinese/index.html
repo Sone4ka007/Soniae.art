@@ -695,9 +695,9 @@ window.chineseLabLessonFetch=async url=>{
 <script src="./js/sentence-tiles.js"></script>
 <script src="./js/exercise-sessions.js"></script>
 <script src="./js/quest-mnemonics.js?v=20261109-2"></script>
-<script src="./js/quest-roleplay.js?v=20261109-3"></script>
-<script src="./js/quest-roleplay-view.js?v=20261109-3"></script>
-<script src="./js/quest-branches.js?v=20261109-5"></script>
+<script src="./js/quest-roleplay.js?v=20261110-1"></script>
+<script src="./js/quest-roleplay-view.js?v=20261110-1"></script>
+<script src="./js/quest-branches.js?v=20261110-1"></script>
 <script>
 const sceneURL = name => window.__offlineScenes[name] || ("assets/"+name+".svg");
 const $ = (selector) => document.querySelector(selector);
@@ -1053,7 +1053,7 @@ function questEnding(){
 function questRoleplay(s){
  const g=state.game;
  if(!g.roleplay)g.roleplay={done:[],active:'purpose',draft:'',hint:false,example:false,feedback:null,history:[],showTranslation:false};
- return window.ChineseLabRoleplayView.render({game:g,speakButton,sceneURL});
+ return window.ChineseLabRoleplayView.render({game:g,speakButton,sceneURL,lessonId:lesson().id});
 }
 function questOpening(q){
  const intro=q.opening;
@@ -1068,6 +1068,18 @@ function questOpening(q){
 function renderStory(){
  const g=state.game,q=lesson().quest;
  if(g.status==='intro'&&q.playFirst){
+  if(lesson().id===2){
+    $('#game-panel').innerHTML=header('СИМУЛЯЦИЯ / ПРОСМОТР КВАРТИРЫ',
+      'Ты разговариваешь с хозяйкой по-китайски, затем проверяешь квартиру и район.',
+      'УРОК 02 / ЖИВАЯ ПРАКТИКА')+
+      '<div class="quest-rp-start"><div class="quest-rp-start-label">02 / СМОТРИМ КВАРТИРУ</div><h4>ТЫ — АННА. НАЧНИ РАЗГОВОР</h4>'+
+      '<p>После оформления документов на стипендию Анна ищет квартиру возле университета. Сяолинь нашёл объявление: светлая гостиная, аренда 3000 юаней. Анна учится, не получает зарплату и обычно занимается вечером. Она пришла на просмотр к госпоже Чэнь. Пока она не знает, тихо ли здесь вечером и когда можно заселиться.</p>'+
+      '<div class="quest-rp-start-question" lang="zh-CN">陈阿姨：你好！你来看房子吗？ '+speakButton('你好！你来看房子吗？')+'</div>'+
+      '<p>Отвечай своими китайскими фразами. Если не получается, открой блоки-подсказки. Затем исследуй изображения и выбери, как действовать.</p>'+
+      '<button type="button" data-action="quest-start" class="action-btn">ОТВЕТИТЬ ХОЗЯЙКЕ →</button>'+
+      '<small>Хозяйка отвечает на смысл понятных ей китайских конструкций. Ошибочная фраза не завершает разговор.</small></div>';
+    return;
+  }
   $('#game-panel').innerHTML=`${header('СИМУЛЯЦИЯ / СТУДЕНЧЕСКИЙ ЦЕНТР','Здесь ты сама разговариваешь на китайском. Преподавательница отвечает на твои реплики.','УРОК 01 / ЖИВАЯ ПРАКТИКА')}<div class="quest-rp-start"><div class="quest-rp-start-label">01 / ПЕРВЫЙ ДЕНЬ В УНИВЕРСИТЕТЕ</div><h4>ТВОЙ ПЕРВЫЙ РАЗГОВОР</h4><p>Ты — Анна. Приехала в Китай учиться в магистратуре и хочешь подать заявку на стипендию. Впервые заходишь в студенческий центр. Тебя встречает преподавательница Ван.</p><div class="quest-rp-start-question" lang="zh-CN">王老师：你好！你需要什么帮助？ ${speakButton('你好！你需要什么帮助？')}</div><p>Твоя задача — самой выяснить, как подать документы. Можно написать китайскую реплику или собрать её из слов, если понадобится помощь.</p><button type="button" data-action="quest-start" class="action-btn">ОТВЕТИТЬ ПРЕПОДАВАТЕЛЬНИЦЕ →</button><small>Ошибаться можно: преподавательница попросит объяснить иначе. Затем ты сможешь исследовать университет, искать документ и принимать решения.</small></div>`;
   return;
  }
@@ -1114,7 +1126,7 @@ function questAction(action,btn){
  if(g.status!=='play')return;
  const s=questStep(),index=Number(btn.dataset.index),id=btn.dataset.id;
  if(s.type==='roleplay'&&action.startsWith('quest-roleplay-')){
-   const rp=g.roleplay,engine=window.ChineseLabRoleplay;
+   const rp=g.roleplay,engine=window.ChineseLabRoleplay.forLesson(lesson().id);
    if(!rp||!engine)return;
    const previous=document.getElementById('quest-roleplay-input');
    if(previous)rp.draft=previous.value;

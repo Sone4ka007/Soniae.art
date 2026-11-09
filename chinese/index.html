@@ -581,6 +581,12 @@
 .quest-opening-instruction{color:var(--muted);font:450 13px/1.6 var(--font);margin:13px 0 0}
 @media(max-width:750px){.quest-opening-list{grid-template-columns:1fr}.quest-opening-lede{padding:15px}.quest-opening-lede>p{font-size:14px}.quest-opening-beat{padding:13px}.quest-opening-chinese{font-size:17px}}
 </style>
+<style id="chinese-lab-scene-context">
+.quest-scene-recap{padding:15px 18px;background:#f2f3ed;border-left:4px solid #141414;margin:0 0 14px}
+.quest-scene-recap>b{display:block;font:850 11px/1.4 Arial,sans-serif;letter-spacing:.06em}
+.quest-scene-recap p{font:450 15px/1.6 Arial,sans-serif;margin:5px 0 0}
+@media(max-width:600px){.quest-scene-recap{padding:12px 14px}.quest-scene-recap p{font-size:14px}}
+</style>
 </head>
 <body>
   <div class="site-frame">
@@ -639,7 +645,7 @@ window.chineseLabLessonFetch=async url=>{
 <script src="./js/sentence-tiles.js"></script>
 <script src="./js/exercise-sessions.js"></script>
 <script src="./js/quest-mnemonics.js?v=20261109-2"></script>
-<script src="./js/quest-branches.js?v=20261109-3"></script>
+<script src="./js/quest-branches.js?v=20261109-4"></script>
 <script>
 const sceneURL = name => window.__offlineScenes[name] || ("assets/"+name+".svg");
 const $ = (selector) => document.querySelector(selector);
@@ -802,6 +808,7 @@ function questStep(){
  const context=step.branchContexts[key]||step.branchContexts[0];
  return {...step,
    contextZh:context.zh,contextRu:context.ru,
+   sceneSummaryRu:context.summaryRu||step.sceneSummaryRu,
    setupLines:context.setupLines||step.setupLines||[],
    options:step.branchOptions?.[key]||step.options
  };
@@ -939,7 +946,7 @@ function questInventory(){
 function questNarrative(s){
  const g=state.game;
  const earlier=(s.setupLines||[]).map(([zh,ru],i)=>`<div class="quest-story-evidence"><div lang="zh-CN" class="quest-story-evidence-zh">${tapText(zh)} ${speakButton(zh,'Прослушать предысторию')}</div>${g.showRu?`<p>${esc(ru)}</p>`:''}</div>`).join('');
- return `<div class="quest-narrative"><div class="quest-narrative-label">${esc(s.tag)} <button type="button" class="quest-plain" data-action="quest-translation">${g.showRu?'СКРЫТЬ ПЕРЕВОД':'ПОКАЗАТЬ ПЕРЕВОД'}</button></div>${earlier?`<div class="quest-story-evidence-list">${earlier}</div>`:''}<div class="quest-narrative-zh" lang="zh-CN">${tapText(s.contextZh)} ${speakButton(s.contextZh,'Прослушать ситуацию')}</div>${g.showRu?`<p>${esc(s.contextRu)}</p>`:''}</div>`;
+ return `<div class="quest-narrative">${s.sceneSummaryRu?`<div class="quest-scene-recap"><b>ЧТО ПРОИСХОДИТ</b><p>${esc(s.sceneSummaryRu)}</p></div>`:''}<div class="quest-narrative-label">${esc(s.tag)} <button type="button" class="quest-plain" data-action="quest-translation">${g.showRu?'СКРЫТЬ ПЕРЕВОД':'ПОКАЗАТЬ ПЕРЕВОД'}</button></div>${earlier?`<div class="quest-story-evidence-list">${earlier}</div>`:''}<div class="quest-narrative-zh" lang="zh-CN">${tapText(s.contextZh)} ${speakButton(s.contextZh,'Прослушать ситуацию')}</div>${g.showRu?`<p>${esc(s.contextRu)}</p>`:''}</div>`;
 }
 function questFeedback(){const g=state.game;if(!g.feedback)return '';
  const f=g.feedback;
@@ -1004,10 +1011,10 @@ function questOpening(q){
 function renderStory(){
  const g=state.game,q=lesson().quest;
  if(g.status==='intro'){
-  $('#game-panel').innerHTML=`${header('КВЕСТ / ТЫ ВНУТРИ ИСТОРИИ','Каждый выбор меняет следующую сцену и ведёт к одному из нескольких финалов.','INTERACTIVE FICTION')}<div class="quest-intro-v7"><div class="quest-kicker">CHINESE LAB · КВЕСТ v7 / ${String(lesson().id).padStart(2,'0')} · ${q.steps.length} СЦЕН</div><h4>${esc(q.title)}</h4><p>${esc(q.tagline)}</p>${questOpening(q)}<div class="quest-objective-v7"><b>МИССИЯ</b><span>${esc(q.objective)}</span></div>
+  $('#game-panel').innerHTML=`${header('КВЕСТ / ТЫ ВНУТРИ ИСТОРИИ','Каждый выбор меняет следующую сцену и ведёт к одному из нескольких финалов.','INTERACTIVE FICTION')}<div class="quest-intro-v7"><div class="quest-kicker">CHINESE LAB · КВЕСТ v8 / ${String(lesson().id).padStart(2,'0')} · ${q.steps.length} СЦЕН</div><h4>${esc(q.title)}</h4><p>${esc(q.tagline)}</p>${questOpening(q)}<div class="quest-objective-v7"><b>МИССИЯ</b><span>${esc(q.objective)}</span></div>
 ${q.steps.some(s=>s.type==='explore')? `<div class="quest-preview-location"><img src="${sceneURL(q.steps.find(s=>s.type==='explore').image)}" alt="Первая локация квеста — осмотри предметы после начала игры" loading="eager"><p>ПЕРВАЯ ЛОКАЦИЯ · нажми «Начать квест», затем исследуй предметы со знаками вопроса</p></div>`:''}
 ${lesson().id===1?`<div class="quest-mnemonic-intro"><b>ПРОВЕРЬ, КАК РАБОТАЮТ МНЕМОНИКИ</b><p>Увидишь слово <span lang="zh-CN">证件</span> на предметах. Открой короткую ассоциацию, затем попробуй вспомнить значение самостоятельно.</p>${questMnemonic('证件')}</div>`:''}
-<div class="quest-intro-buttons"><button type="button" class="action-btn" data-action="quest-start">НАЧАТЬ КВЕСТ →</button><button type="button" class="action-btn secondary" data-action="mode" data-id="input">СНАЧАЛА ПОЧИТАТЬ</button></div><small>Осмотри две картинки и собери улики, затем прими три решения и составь китайские предложения. Предметы подписаны по-китайски. После нажатия на предмет появится объяснение и мнемоника.</small></div>`;return;
+<div class="quest-intro-buttons"><button type="button" class="action-btn" data-action="quest-start">НАЧАТЬ КВЕСТ →</button><button type="button" class="action-btn secondary" data-action="mode" data-id="input">СНАЧАЛА ПОЧИТАТЬ</button></div><small>Прочитай начало истории, исследуй три локации, поговори с персонажами и реши, как Анна поступит. Твои действия меняют развязку. Предметы подписаны по-китайски. После нажатия на предмет появится объяснение и мнемоника.</small></div>`;return;
  }
  if(g.status==='complete'){$('#game-panel').innerHTML=questEnding();return;}
  const s=questStep(),body=s.type==='explore'?questExplore(s):s.type==='compose'?questCompose(s):s.type==='pick'?questPick(s):questOptions(s);

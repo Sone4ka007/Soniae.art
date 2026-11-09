@@ -564,6 +564,23 @@
 .quest-mnemonic-intro>p{font:450 13px/1.5 var(--font);margin:7px 0}
 .quest-mnemonic-intro>p span{font:650 17px/1.3 var(--han)}
 </style>
+
+<style id="chinese-lab-story-opening">
+.quest-opening{margin:18px 0 16px}
+.quest-opening-lede{background:#f2ffd8;border:2px solid var(--ink);padding:18px 19px;line-height:1.65}
+.quest-opening-lede>b{font:850 11px/1.4 var(--font);letter-spacing:.08em}
+.quest-opening-lede>p{font-size:15px;line-height:1.7;margin:9px 0 0;max-width:72ch}
+.quest-opening-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:15px}
+.quest-opening-beat{border:1.5px solid var(--ink);background:#fff;padding:15px;min-width:0;overflow-wrap:anywhere}
+.quest-opening-beat-label{display:flex;gap:9px;align-items:center;border-bottom:1px solid var(--line);padding-bottom:9px;line-height:1.4}
+.quest-opening-beat-label>b{font:800 11px/1.4 var(--font);white-space:nowrap}
+.quest-opening-beat-label>span{font:800 11px/1.35 var(--font);letter-spacing:.02em}
+.quest-opening-chinese{font:500 18px/1.65 var(--han);padding:9px 0 0}
+.quest-opening-chinese p{margin:0 0 9px}
+.quest-opening-chinese .tap-chinese{font:inherit}
+.quest-opening-instruction{color:var(--muted);font:450 13px/1.6 var(--font);margin:13px 0 0}
+@media(max-width:750px){.quest-opening-list{grid-template-columns:1fr}.quest-opening-lede{padding:15px}.quest-opening-lede>p{font-size:14px}.quest-opening-beat{padding:13px}.quest-opening-chinese{font-size:17px}}
+</style>
 </head>
 <body>
   <div class="site-frame">
@@ -622,7 +639,7 @@ window.chineseLabLessonFetch=async url=>{
 <script src="./js/sentence-tiles.js"></script>
 <script src="./js/exercise-sessions.js"></script>
 <script src="./js/quest-mnemonics.js?v=20261109-2"></script>
-<script src="./js/quest-branches.js?v=20261109-2"></script>
+<script src="./js/quest-branches.js?v=20261109-3"></script>
 <script>
 const sceneURL = name => window.__offlineScenes[name] || ("assets/"+name+".svg");
 const $ = (selector) => document.querySelector(selector);
@@ -974,10 +991,20 @@ function questEnding(){
  const end=q.endings[stateName];
  return `${header('СЮЖЕТ ЗАВЕРШЁН','Твои решения повлияли на результат. Можно повторить игру другим маршрутом.','MISSION / COMPLETE')}<div class="quest-end"><div class="quest-end-num">${stateName==='good'?'✓':stateName==='tight'?'!':'↻'}</div><div><span class="quest-kicker">${esc(end.kicker)}</span><h4>${esc(q.title)}</h4><div class="quest-result-zh" lang="zh-CN">${tapText(end.zh)} ${speakButton(end.zh)}</div>${questGloss('end',end.ru)}<div class="quest-end-score">${g.points} XP · ДОВЕРИЕ ${g.trust}/6 · ОСТАЛОСЬ ${g.time} МИН</div><div class="quest-end-links"><button type="button" class="action-btn" data-action="quest-restart">ИГРАТЬ ДРУГИМ МАРШРУТОМ ↻</button><button type="button" class="action-btn secondary" data-action="mode" data-id="input">ЧИТАТЬ ИСТОРИЮ →</button></div></div></div>${questMissionBox()}${questInventory()}`;
 }
+function questOpening(q){
+ const intro=q.opening;
+ if(!intro?.panels?.length)return `<div lang="zh-CN" class="quest-big-zh">${tapText(q.introZh)} ${speakButton(q.introZh)}</div>`;
+ const beats=intro.panels.map((beat,i)=>{
+   const ru=beat.lines.map(line=>line[1]).join(' ');
+   return `<article class="quest-opening-beat"><div class="quest-opening-beat-label"><b>${String(i+1).padStart(2,'0')} / ${String(intro.panels.length).padStart(2,'0')}</b><span>${esc(beat.title)}</span></div><div class="quest-opening-chinese" lang="zh-CN">${beat.lines.map(([line])=>`<p>${tapText(line)} ${speakButton(line,'Прослушать предложение')}</p>`).join('')}</div>${questGloss('opening-'+i,ru)}</article>`;
+ }).join('');
+ return `<section class="quest-opening"><div class="quest-opening-lede"><b>СНАЧАЛА — ИСТОРИЯ</b><p>${esc(intro.summaryRu)}</p></div><div class="quest-opening-list">${beats}</div><p class="quest-opening-instruction">Прочитай начало истории, затем перейди к первой локации. Китайские предложения можно слушать, а перевод каждой части открыть отдельно.</p></section>`;
+}
+
 function renderStory(){
  const g=state.game,q=lesson().quest;
  if(g.status==='intro'){
-  $('#game-panel').innerHTML=`${header('КВЕСТ / ТЫ ВНУТРИ ИСТОРИИ','Каждый выбор меняет следующую сцену и ведёт к одному из нескольких финалов.','INTERACTIVE FICTION')}<div class="quest-intro-v7"><div class="quest-kicker">CHINESE LAB · КВЕСТ v6 / ${String(lesson().id).padStart(2,'0')} · ${q.steps.length} СЦЕН</div><h4>${esc(q.title)}</h4><p>${esc(q.tagline)}</p><div lang="zh-CN" class="quest-big-zh">${tapText(q.introZh)} ${speakButton(q.introZh)}</div><div class="quest-objective-v7"><b>МИССИЯ</b><span>${esc(q.objective)}</span></div>
+  $('#game-panel').innerHTML=`${header('КВЕСТ / ТЫ ВНУТРИ ИСТОРИИ','Каждый выбор меняет следующую сцену и ведёт к одному из нескольких финалов.','INTERACTIVE FICTION')}<div class="quest-intro-v7"><div class="quest-kicker">CHINESE LAB · КВЕСТ v7 / ${String(lesson().id).padStart(2,'0')} · ${q.steps.length} СЦЕН</div><h4>${esc(q.title)}</h4><p>${esc(q.tagline)}</p>${questOpening(q)}<div class="quest-objective-v7"><b>МИССИЯ</b><span>${esc(q.objective)}</span></div>
 ${q.steps.some(s=>s.type==='explore')? `<div class="quest-preview-location"><img src="${sceneURL(q.steps.find(s=>s.type==='explore').image)}" alt="Первая локация квеста — осмотри предметы после начала игры" loading="eager"><p>ПЕРВАЯ ЛОКАЦИЯ · нажми «Начать квест», затем исследуй предметы со знаками вопроса</p></div>`:''}
 ${lesson().id===1?`<div class="quest-mnemonic-intro"><b>ПРОВЕРЬ, КАК РАБОТАЮТ МНЕМОНИКИ</b><p>Увидишь слово <span lang="zh-CN">证件</span> на предметах. Открой короткую ассоциацию, затем попробуй вспомнить значение самостоятельно.</p>${questMnemonic('证件')}</div>`:''}
 <div class="quest-intro-buttons"><button type="button" class="action-btn" data-action="quest-start">НАЧАТЬ КВЕСТ →</button><button type="button" class="action-btn secondary" data-action="mode" data-id="input">СНАЧАЛА ПОЧИТАТЬ</button></div><small>Осмотри две картинки и собери улики, затем прими три решения и составь китайские предложения. Предметы подписаны по-китайски. После нажатия на предмет появится объяснение и мнемоника.</small></div>`;return;

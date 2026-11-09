@@ -695,9 +695,12 @@ window.chineseLabLessonFetch=async url=>{
 <script src="./js/sentence-tiles.js"></script>
 <script src="./js/exercise-sessions.js"></script>
 <script src="./js/quest-mnemonics.js?v=20261109-2"></script>
-<script src="./js/quest-roleplay.js?v=20261110-1"></script>
-<script src="./js/quest-roleplay-view.js?v=20261110-1"></script>
-<script src="./js/quest-branches.js?v=20261110-1"></script>
+<script src="./js/quest-roleplay.js?v=20261110-2"></script>
+<script src="./js/quest-roleplay-extended.js?v=20261110-1"></script>
+<script src="./js/quest-roleplay-view.js?v=20261110-2"></script>
+<script src="./js/quest-lesson3.js?v=20261110-1"></script>
+<script src="./js/quest-lesson4.js?v=20261110-1"></script>
+<script src="./js/quest-branches.js?v=20261110-2"></script>
 <script>
 const sceneURL = name => window.__offlineScenes[name] || ("assets/"+name+".svg");
 const $ = (selector) => document.querySelector(selector);
@@ -1068,6 +1071,26 @@ function questOpening(q){
 function renderStory(){
  const g=state.game,q=lesson().quest;
  if(g.status==='intro'&&q.playFirst){
+  if(lesson().id===3||lesson().id===4){
+   const scenario=lesson().id===3?{
+     name:'КАФЕ · ВОПРОС КАССИРУ',title:'НЕ ПЛАТИ, ПОКА НЕ ПРОВЕРИЛА',
+     description:'В субботу Анна и Сяолинь заходят выпить кофе. На кассе можно заплатить наличными или телефоном. Но на стойке есть два QR-кода: один возле кассы, другой на неизвестной наклейке. Тебе нужно узнать цену и договориться об оплате на китайском. Позже Анна закажет книгу, а неизвестный отправитель попросит у неё пароль.',
+     question:'服务员：你好！你想买什么？',button:'ЗАКАЗАТЬ КОФЕ →',
+     footer:'После разговора исследуй QR-коды и чек, затем проверь онлайн-заказ и свои данные.'}:
+     {name:'МЕТРО · ПРОСЬБА О ПОМОЩИ',title:'БИЛЕТ БЕЗ ТЕЛЕФОНА',
+     description:'Анна едет в университет на мероприятие. Но телефон без связи: она забыла оплатить мобильный тариф. Наличных для билета тоже нет. Незнакомая пассажирка предлагает помощь. Нужно объяснить ей проблему, купить билет, а затем решить, как поступить с соседкой, которая несёт тяжёлые сумки.',
+     question:'乘客：你好！你需要帮助吗？',button:'ПОПРОСИТЬ ПОМОЩИ →',
+     footer:'После диалога проверь станцию, реши вопрос с билетом и изучи места, где можно получить помощь.'};
+   $('#game-panel').innerHTML=header('СИМУЛЯЦИЯ / КИТАЙСКИЙ В ДЕЙСТВИИ',
+      'Сама разговаривай с персонажем, исследуй предметы и принимай решения.', 'УРОК '+String(lesson().id).padStart(2,'0')+' / ЖИВАЯ ПРАКТИКА')+
+      '<div class="quest-rp-start"><div class="quest-rp-start-label">'+esc(scenario.name)+'</div>'+
+      '<h4>'+esc(scenario.title)+'</h4><p>'+esc(scenario.description)+'</p>'+
+      '<div class="quest-rp-start-question" lang="zh-CN">'+esc(scenario.question)+' '+speakButton(scenario.question)+'</div>'+
+      '<p>Отвечай на китайском своими словами. Подсказка со словами появится только по нажатию.</p>'+
+      '<button type="button" data-action="quest-start" class="action-btn">'+esc(scenario.button)+'</button>'+
+      '<small>'+esc(scenario.footer)+'</small></div>';
+   return;
+  }
   if(lesson().id===2){
     $('#game-panel').innerHTML=header('СИМУЛЯЦИЯ / ПРОСМОТР КВАРТИРЫ',
       'Ты разговариваешь с хозяйкой по-китайски, затем проверяешь квартиру и район.',

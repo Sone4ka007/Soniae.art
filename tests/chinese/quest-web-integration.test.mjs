@@ -36,9 +36,9 @@ test('Chinese Lab connects route-aware story quests with reading chapters',()=>{
  assert.match(html,/upcoming\?\.skipWhenRoute\?\.every/);
  assert.match(html,/questExplore\(s\)/);
  assert.match(html,/quest-roleplay\.js\?v=20261110-2/);
- assert.match(html,/quest-roleplay-extended\.js\?v=20261110-1/);
+ assert.match(html,/quest-roleplay-extended\.js\?v=20261110-2/);
  assert.match(html,/quest-lesson3\.js\?v=20261110-1/);
- assert.match(html,/quest-lesson4\.js\?v=20261110-1/);
+ assert.match(html,/quest-lesson4\.js\?v=20261110-2/);
  assert.match(html,/lesson\(\)\.id===3\|\|lesson\(\)\.id===4/);
  assert.match(html,/quest-roleplay-view\.js\?v=20261110-2/);
  assert.match(html,/function questRoleplay\(s\)/);

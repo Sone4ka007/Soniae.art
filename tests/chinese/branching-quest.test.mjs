@@ -46,7 +46,7 @@ for(const lesson of lessonData){
  test(`lesson ${lesson.id}: three linked chapters, four distinct endings and graded vocabulary`,()=>{
    const chapters=readings[lesson.id];
    const result=globalThis.ChineseLabQuestBranches.build(lesson,chapters);
-   assert.equal(result.schemaVersion,6);
+   assert.equal(result.schemaVersion,7);
    assert.equal(result.steps.length,8);
    assert.deepEqual(result.steps.map(x=>x.type),['explore','choice','compose','choice','compose','explore','choice','compose']);
    const decisions=result.steps.filter(s=>s.type==='choice');
@@ -63,7 +63,21 @@ for(const lesson of lessonData){
      assert.ok(scene.spots.every(s=>s.word && s.clueZh && s.clueRu),
        'Image hotspots need an object name and a matching explanatory clue');
    }
+   assert.ok(result.opening?.summaryRu?.length>50,'Every quest must introduce its setup before the first investigation');
+   assert.ok(result.opening?.panels?.length>=2,'Chronological opening requires multiple scenes');
+   assert.ok(result.opening.panels.every(p=>p.lines.length>0),'Every opening card has Chinese and translated reading text');
    if(lesson.id===1){
+     assert.equal(result.opening.panels.length,4,'First quest must restore all four opening narrative beats');
+     assert.match(result.opening.summaryRu,/магистратуре/);
+     assert.match(result.opening.summaryRu,/17:00/);
+     const openingLines=result.opening.panels.flatMap(p=>p.lines).map(x=>x[0]);
+     assert.ok(openingLines.some(x=>x.includes('安娜来中国读硕士')),'Anna must be introduced from her first chapter line');
+     assert.ok(openingLines.some(x=>x.includes('经济压力')),'Scholarship motivation must appear before the investigation');
+     assert.ok(openingLines.some(x=>x.includes('找不到了')),'The missing document must be explained');
+     assert.ok(openingLines.some(x=>x.includes('五点')),'The exact deadline must be clear');
+     const firstChoice=result.steps.find(s=>s.type==='choice');
+     assert.ok(firstChoice.setupLines.some(x=>x[0].includes('小林来了')),'Xiaolin must enter the story before his cafeteria clue');
+     assert.ok(!illustrations[0].spots.find(s=>s.id==='canteen').clueZh.includes('小林'),'A cafeteria sign cannot reveal something a character has not told Anna');
      assert.deepEqual(illustrations[0].spots.map(s=>s.word),['奖学金','材料','证件','教师','课程','食堂']);
      assert.equal(illustrations[1].image,'printer-notice');
      assert.equal(illustrations[1].spots.find(s=>s.id==='copy').word,'入学通知');

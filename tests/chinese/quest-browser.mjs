@@ -29,7 +29,14 @@ try {
   assert.equal(await page.locator('.quest-rp-goal').count(),5);
   assert.ok(await page.locator('.quest-rp-scene img').evaluate(el=>el.complete&&el.naturalWidth>0));
 
-  await page.locator('#quest-roleplay-input').fill('我想吃面条。');
+  await page.locator('#quest-roleplay-input').fill('请您再说一遍。');
+  await page.locator('[data-action="quest-roleplay-send"]').click();
+  assert.match(await page.locator('.quest-rp-feedback').innerText(),/ПРЕПОДАВАТЕЛЬНИЦА ПОВТОРИЛА/,'Requesting repetition must not count as failure');
+  assert.match(await page.locator('.quest-rp-feedback').innerText(),/你好/);
+  await page.locator('#quest-roleplay-input').fill('我不想申请奖学金。');
+  await page.locator('[data-action="quest-roleplay-send"]').click();
+  assert.match(await page.locator('.quest-rp-feedback').innerText(),/你不想申请/,'A negated intention must produce a different response');
+    await page.locator('#quest-roleplay-input').fill('我想吃面条。');
   await page.locator('[data-action="quest-roleplay-send"]').click();
   assert.match(await page.locator('.quest-rp-feedback').innerText(),/没听懂/,'Wrong-topic Chinese must be met with clarification');
   await page.locator('#quest-roleplay-input').fill('我想申请奖学金。');

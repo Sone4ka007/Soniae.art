@@ -20,7 +20,18 @@ try {
   await page.waitForSelector('#game-panel .quest-intro-v7',{timeout:15000});
 
   const intro=await page.locator('#game-panel').innerText();
-  assert.match(intro,/КВЕСТ v6/,'New quest must display a recognizable version on the intro');
+  assert.match(intro,/КВЕСТ v7/,'New quest must display a recognizable version on the intro');
+  assert.match(intro,/Анна приехала в Китай/,'First-time player must see Anna’s background before investigation');
+  assert.match(intro,/стипендию/,'First-time player must understand why scholarship matters');
+  assert.match(intro,/17:00/,'First-time player must understand the deadline');
+  assert.equal(await page.locator('.quest-opening-beat').count(),4,'Full opening must be told in four chronological parts');
+  const beats=await page.locator('.quest-opening-beat-label').allInnerTexts();
+  assert.match(beats[0],/АННА ПРИЕХАЛА/);
+  assert.match(beats[1],/СТИПЕНДИЯ/);
+  assert.match(beats[2],/ПРОВЕРКА/);
+  assert.match(beats[3],/14:30/);
+  await page.locator('.quest-opening-beat [data-action="quest-gloss"]').first().click();
+  assert.match(await page.locator('.quest-opening-beat .quest-reveal-text').first().innerText(),/Анна приехала в Китай/);
   assert.match(intro,/МНЕМОНИКИ/,'Mnemonic hint must be available before starting');
 
   const preview=page.locator('.quest-preview-location img');
@@ -48,6 +59,12 @@ try {
   await page.locator('.quest-hotspot[data-id="folder"]').click();
   await page.locator('.quest-hotspot[data-id="canteen"]').click();
   await page.locator('.quest-ready').waitFor({state:'visible',timeout:10000});
+  await page.locator('.quest-ready [data-action="quest-next"]').click();
+  const dialogue=await page.locator('.quest-story-evidence-list').innerText();
+  assert.match(dialogue,/小林/,'After investigation, Xiaolin must be introduced in the story');
+  assert.match(dialogue,/证件/,'The dialogue must explain what Anna is looking for');
+  assert.match(await page.locator('.quest-narrative').innerText(),/食堂/,'Only after meeting Xiaolin does the player receive the cafeteria clue');
+
 
   assert.equal(errors.length,0,'Browser errors: '+errors.join(' ; '));
   console.log('PASS mobile browser: first location illustration, six Chinese object labels, mnemonic buttons, self-recall, clickable evidence and quest continuation.');

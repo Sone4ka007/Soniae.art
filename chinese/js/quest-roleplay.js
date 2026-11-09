@@ -60,7 +60,14 @@
         reason:'Это отрицание — преподавательница поняла, что ты не собираешься подавать заявку. Уточни намерение.'};
     }
     const hit=m.require.every(group=>group.some(token=>text.includes(token)));
-    return hit?{ok:true,reply:m.reply,replyRu:m.replyRu,keywords:m.keywords}:
+    const negatives={
+      purpose:[/不想申请奖学金/,/不申请奖学金/,/不要奖学金/,/不需要奖学金/],
+      major:[/不是.{0,3}国际贸易/,/不学国际贸易/],
+      reason:[/没有经济压力/,/不想减轻.{0,4}压力/],
+      papers:[/证件找到了/,/证件在这里/,/证件带来了/]
+    };
+    const contradicted=(negatives[id]||[]).some(re=>re.test(text));
+    return hit&&!contradicted?{ok:true,reply:m.reply,replyRu:m.replyRu,keywords:m.keywords}:
       {ok:false,reply:'不好意思，我没听懂。你可以再说一次吗？',replyRu:'Извини, я не поняла. Можешь сказать ещё раз?',reason:m.problem};
   }
   global.ChineseLabRoleplay=Object.freeze({

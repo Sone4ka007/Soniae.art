@@ -46,10 +46,10 @@ for(const lesson of lessonData){
  test(`lesson ${lesson.id}: three linked chapters, four distinct endings and graded vocabulary`,()=>{
    const chapters=readings[lesson.id];
    const result=globalThis.ChineseLabQuestBranches.build(lesson,chapters);
-   assert.equal(result.schemaVersion,lesson.id===1?8:7);
-   assert.equal(result.steps.length,lesson.id===1?7:8);
+   assert.equal(result.schemaVersion,lesson.id===1?9:7);
+   assert.equal(result.steps.length,lesson.id===1?8:8);
    assert.deepEqual(result.steps.map(x=>x.type),lesson.id===1
-     ?['explore','choice','explore','compose','choice','explore','choice']
+     ?['roleplay','explore','choice','explore','compose','choice','explore','choice']
      :['explore','choice','compose','choice','compose','explore','choice','compose']);
    const decisions=result.steps.filter(s=>s.type==='choice');
    const illustrations=result.steps.filter(s=>s.type==='explore');
@@ -71,6 +71,8 @@ for(const lesson of lessonData){
    assert.ok(result.opening.panels.every(p=>p.lines.length>0),'Every opening card has Chinese and translated reading text');
    if(lesson.id===1){
      assert.equal(result.opening.panels.length,4,'First quest must restore all four opening narrative beats');
+     assert.equal(result.steps[0].type,'roleplay','The first interaction must be a live conversation, not a reading');
+     assert.equal(result.playFirst,true,'Lesson 1 should start with gameplay rather than narrative panels');
      assert.match(result.opening.summaryRu,/магистратуре/);
      assert.match(result.opening.summaryRu,/17:00/);
      const openingLines=result.opening.panels.flatMap(p=>p.lines).map(x=>x[0]);

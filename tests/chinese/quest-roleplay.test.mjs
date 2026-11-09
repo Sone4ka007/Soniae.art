@@ -86,3 +86,36 @@ test('Actual browser code must route Chinese input and roleplay actions, not mer
  assert.match(html,/q\.playFirst/);
  assert.match(html,/s\.type==='roleplay'\?questRoleplay\(s\)/);
 });
+
+
+test('Lesson 2 uses its own landlord conversation and rejects wrong-topic answers',()=>{
+ const rentalLesson=data('lesson2.json'), rentalChapters=data('readings.json')[2];
+ const q=globalThis.ChineseLabQuestBranches.build(rentalLesson,rentalChapters);
+ const engine=role.forLesson(2);
+ assert.equal(q.playFirst,true);
+ assert.equal(q.steps[0].type,'roleplay');
+ assert.deepEqual(engine.missions.map(x=>x.id),['purpose','price','quiet','move']);
+ assert.notEqual(engine.missions[0].teacher,role.missions[0].teacher);
+ for(const mission of engine.missions){
+   assert.equal(engine.evaluate(mission.id,mission.sample).ok,true,mission.id);
+ }
+ for(const [id,wrong] of [
+   ['purpose','我不想租这个房子。'],
+   ['purpose','我想吃面条。'],
+   ['price','我平常晚上学习。'],
+   ['quiet','这个房子的位置很好。'],
+   ['move','我不想入住。']
+ ])assert.equal(engine.evaluate(id,wrong).ok,false,id+': '+wrong);
+ const allowed=new Set([...base,...lesson.words.map(w=>w.hanzi),...rentalLesson.words.map(w=>w.hanzi)]);
+ for(const mission of engine.missions)for(const statement of [mission.teacher,mission.sample,mission.reply]){
+   assert.equal(unknownChinese(statement,allowed),null,mission.id+': '+statement);
+ }
+ const corpus=[...engine.missions.flatMap(x=>[x.teacher,x.sample,x.reply]),
+   ...q.steps.flatMap(s=>[s.contextZh,...(s.setupLines||[]).map(x=>x[0]),
+     ...(s.spots||[]).flatMap(x=>[x.word,x.clueZh]),
+     ...(s.options||[]).flatMap(x=>[x.zh,x.outcomeZh]),
+     ...(s.branchContexts||[]).map(x=>x.zh),
+     ...(s.branchOptions||[]).flatMap(g=>g.flatMap(o=>[o.zh,o.outcomeZh]))])].join(' ');
+ const covered=rentalLesson.words.filter(w=>corpus.includes(w.hanzi));
+ assert.ok(covered.length>=Math.ceil(rentalLesson.words.length/2),'Lesson 2 quest has '+covered.length+' words');
+});

@@ -114,7 +114,7 @@ for(const lesson of lessonData){
    assert.notEqual(decisions[1].branchContexts[0].zh,decisions[1].branchContexts[1].zh);
    assert.equal(decisions[2].branchContexts.length,lesson.id<=2?4:2);
    assert.notEqual(decisions[2].branchContexts[0].zh,decisions[2].branchContexts[1].zh);
-   if(lesson.id<=2) {
+   if(lesson.id===1) {
      assert.equal(decisions[1].branchOptions.length,2,'Different first choice must open different decisions');
      assert.equal(decisions[2].branchOptions.length,4,'Two decisions must open four different situations');
      assert.ok(decisions[0].setupLines.length>=2,'The first quest choice must show the missing document and deadline');

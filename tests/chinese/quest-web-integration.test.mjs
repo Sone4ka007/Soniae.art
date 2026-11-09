@@ -28,13 +28,19 @@ test('printed notice art is updated from visa copy to enrollment notice',()=>{
  assert.ok(!drawing.includes('签证复印件'),'The old visa copy should not remain in the picture');
 });
 test('Chinese Lab connects route-aware story quests with reading chapters',()=>{
- assert.match(html,/quest-branches\.js\?v=20261109-4/);
+ assert.match(html,/quest-branches\.js\?v=20261109-5/);
  assert.match(html,/ChineseLabQuestBranches\.build\(l,state\.readings\[String\(l\.id\)\]\)/);
  assert.match(html,/g\.routeChoices\[option\.branchAt\]=option\.branchValue/);
  assert.match(html,/step\.branchContexts/);
  assert.match(html,/step\.branchOptions\?\.\[key\]/);
  assert.match(html,/upcoming\?\.skipWhenRoute\?\.every/);
  assert.match(html,/questExplore\(s\)/);
+ assert.match(html,/quest-roleplay\.js\?v=20261109-1/);
+ assert.match(html,/quest-roleplay-view\.js\?v=20261109-1/);
+ assert.match(html,/function questRoleplay\(s\)/);
+ assert.match(html,/data-action="quest-start"/);
+ assert.match(html,/questRoleplay\(s\)/);
+ for(const action of ['quest-roleplay-send','quest-roleplay-topic','quest-roleplay-hint'])assert.match(html,new RegExp("case '"+action+"':"));
  assert.match(html,/quest-hotspot/);
  assert.match(html,/quest-preview-location/,'First location artwork needs to be visible on the intro');
  assert.match(html,/function questOpening\(q\)/,'Reading must start with a full beginning');

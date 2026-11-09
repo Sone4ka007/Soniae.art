@@ -46,20 +46,23 @@ for(const lesson of lessonData){
  test(`lesson ${lesson.id}: three linked chapters, four distinct endings and graded vocabulary`,()=>{
    const chapters=readings[lesson.id];
    const result=globalThis.ChineseLabQuestBranches.build(lesson,chapters);
-   assert.equal(result.schemaVersion,7);
-   assert.equal(result.steps.length,8);
-   assert.deepEqual(result.steps.map(x=>x.type),['explore','choice','compose','choice','compose','explore','choice','compose']);
+   assert.equal(result.schemaVersion,lesson.id===1?8:7);
+   assert.equal(result.steps.length,lesson.id===1?7:8);
+   assert.deepEqual(result.steps.map(x=>x.type),lesson.id===1
+     ?['explore','choice','explore','compose','choice','explore','choice']
+     :['explore','choice','compose','choice','compose','explore','choice','compose']);
    const decisions=result.steps.filter(s=>s.type==='choice');
    const illustrations=result.steps.filter(s=>s.type==='explore');
-   assert.equal(illustrations.length,2,'Every quest must include two illustrated investigations');
+   assert.equal(illustrations.length,lesson.id===1?3:2,'Lesson 1 must show the missing cafeteria investigation');
    for(const scene of illustrations){
      assert.ok(scene.image&&scene.spots.length>=3,'Illustrations must have hotspots');
      assert.ok(scene.required.every(id=>scene.spots.some(s=>s.id===id)),'Every required clue must be on scene');
      assert.ok(scene.spots.every(s=>s.clueZh&&s.clueRu),'Every clue has Chinese and Russian');
      assert.equal(new Set(scene.spots.map(s=>s.id)).size,scene.spots.length);
      const original=lesson.quest.steps.filter(s=>s.type==='explore')[illustrations.indexOf(scene)];
-     assert.deepEqual(scene.spots.map(s=>s.id),original.spots.map(s=>s.id),
-       'Each hotspot must still point to its originally illustrated object');
+     if(original && (lesson.id!==1 || illustrations.indexOf(scene)===0))
+       assert.deepEqual(scene.spots.map(s=>s.id),original.spots.map(s=>s.id),
+         'Original illustration hotspots must remain attached to the same objects');
      assert.ok(scene.spots.every(s=>s.word && s.clueZh && s.clueRu),
        'Image hotspots need an object name and a matching explanatory clue');
    }
@@ -79,8 +82,14 @@ for(const lesson of lessonData){
      assert.ok(firstChoice.setupLines.some(x=>x[0].includes('小林来了')),'Xiaolin must enter the story before his cafeteria clue');
      assert.ok(!illustrations[0].spots.find(s=>s.id==='canteen').clueZh.includes('小林'),'A cafeteria sign cannot reveal something a character has not told Anna');
      assert.deepEqual(illustrations[0].spots.map(s=>s.word),['奖学金','材料','证件','教师','课程','食堂']);
-     assert.equal(illustrations[1].image,'printer-notice');
-     assert.equal(illustrations[1].spots.find(s=>s.id==='copy').word,'入学通知');
+     assert.deepEqual(illustrations.map(s=>s.image),['campus','cafeteria-search','campus-submit']);
+     assert.ok(illustrations[1].spots.some(s=>s.id==='bags'&&s.word==='包'), 'Bags must be labelled as bags');
+     assert.ok(illustrations[1].spots.some(s=>s.id==='chen'&&s.word==='本科'), 'Student badge should match noun 本科');
+     assert.ok(illustrations[2].spots.some(s=>s.id==='notice'&&s.word==='通知'), 'Phone must have admission notice');
+     for(const image of ['cafeteria-search','campus-submit']){
+       const art=readFileSync(join(dataDir,'..','assets',image+'.svg'),'utf8');
+       assert.ok(art.includes('<svg ')&&art.includes('viewBox="0 0 1080 620"'));
+     }
      assert.ok(illustrations[0].spots.find(s=>s.id==='canteen').clueZh.includes('食堂'));
      assert.ok(illustrations[0].spots.find(s=>s.id==='folder').clueZh.includes('证'));
    }

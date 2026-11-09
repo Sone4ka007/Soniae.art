@@ -6,7 +6,7 @@
   3:[
    {id:'purpose',title:'ЗАКАЖИ КОФЕ',goal:'Самостоятельно скажи, что хочешь купить кофе.',
     teacher:'你好！你想买什么？',teacherRu:'Здравствуйте! Что хотите купить?',
-    sample:'你好，我想买一杯咖啡。',tiles:['你好，','我','想','买','一','杯','咖啡','。'],
+    sample:'你好，我想买咖啡。',tiles:['你好，','我','想','买','咖啡','。'],
     require:[['咖啡'],['买','想','要']],problem:'Назови кофе и намерение купить или заказать его.',
     reply:'好的。你还想买什么？',replyRu:'Хорошо. Хотите ещё что-нибудь?',
     keywords:['购物','买','咖啡']},
@@ -84,7 +84,7 @@
     return {ok:false,clarified:true,reply:'好的，我再说一次。'+m.teacher,
      replyRu:'Повторю: '+m.teacherRu,reason:'Ты попросила повторить. Теперь можешь ответить.'};
    const negative3=id==='purpose'&&/不想买咖啡|不要咖啡|不买咖啡/.test(t);
-   const negative4=(id==='phone'&&/有信号|有现金|手机可以用/.test(t))||
+   const negative4=(id==='phone'&&/(?:^|[^没])有信号|(?:^|[^没])有现金|手机可以用/.test(t))||
        (id==='help'&&/不需要帮助|不用帮|不要买票/.test(t));
    const ok=m.require.every(group=>group.some(token=>t.includes(token)));
    if(ok&&!negative3&&!negative4)

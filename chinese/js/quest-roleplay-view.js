@@ -1,0 +1,38 @@
+(function(global){
+'use strict';
+function esc(value){return String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function render(opts){
+ const {game,speakButton,sceneURL}=opts, rp=game.roleplay, mod=global.ChineseLabRoleplay;
+ const mission=mod?.byId(rp.active);
+ if(!mission)return '<p>Диалог пока недоступен.</p>';
+ const done=rp.done.length,finished=rp.done.includes(rp.active),intro=done===0;
+ const tasks=mod.missions.map(m=>{
+   const completed=rp.done.includes(m.id),unlocked=rp.done.includes('purpose')||m.id==='purpose';
+   return '<button type="button" data-action="quest-roleplay-topic" data-id="'+esc(m.id)+'" class="quest-rp-goal'+(completed?' done':'')+(rp.active===m.id?' current':'')+'" '+(!unlocked||completed?'disabled':'')+'><span>'+(completed?'✓':'○')+'</span>'+esc(m.title)+'</button>';
+ }).join('');
+ const transcript=rp.history.slice(-4).map(entry=>
+   '<div class="quest-rp-history-item"><div><b>ТЫ</b><span lang="zh-CN">'+esc(entry.student)+'</span>'+speakButton(entry.student)+'</div><div><b>ВАН</b><span lang="zh-CN">'+esc(entry.teacher)+'</span>'+speakButton(entry.teacher)+'</div></div>'
+ ).join('');
+ const stateLine=rp.feedback?'<div class="quest-rp-feedback '+(rp.feedback.ok?'good':'retry')+'" role="status"><b>'+(rp.feedback.ok?'ТЕБЯ ПОНЯЛИ':'ПРЕПОДАВАТЕЛЬНИЦА НЕ ПОНЯЛА')+'</b><div lang="zh-CN">'+esc(rp.feedback.reply)+'</div>'+speakButton(rp.feedback.reply)+(rp.showTranslation?'<p>'+esc(rp.feedback.replyRu)+'</p>':'')+(rp.feedback.ok?'':'<p>'+esc(rp.feedback.reason)+'</p>')+'</div>':'';
+ const tileBank=rp.hint&&!finished?'<div class="quest-rp-bank"><p>Собери реплику из слов или напиши собственную фразу. Порядок нужно выбрать самостоятельно.</p><div>'+mission.tiles.slice().sort((a,b)=>a.localeCompare(b,'zh')).map(token=>
+   '<button type="button" data-action="quest-roleplay-tile" data-token="'+esc(token)+'" lang="zh-CN">'+esc(token)+'</button>'
+ ).join('')+'</div><button type="button" class="quest-rp-link" data-action="quest-roleplay-example">ПОКАЗАТЬ ПРИМЕР ФРАЗЫ</button>'+(rp.example?'<p class="quest-rp-sample" lang="zh-CN">'+esc(mission.sample)+'</p>':'')+'</div>':'';
+ let actions='';
+ if(done===mod.missions.length){
+   actions='<div class="quest-ready"><span>✓ ТЫ САМА ВЫЯСНИЛА ВСЕ УСЛОВИЯ У ПРЕПОДАВАТЕЛЬНИЦЫ.</span><button type="button" class="action-btn" data-action="quest-next">ПРОВЕРИТЬ ДОКУМЕНТЫ →</button></div>';
+ }else if(finished){
+   actions='<button type="button" data-action="quest-roleplay-next" class="action-btn">ПРОДОЛЖИТЬ РАЗГОВОР →</button>';
+ }else{
+   actions='<div class="quest-rp-compose"><label for="quest-roleplay-input">ТВОЯ РЕПЛИКА НА КИТАЙСКОМ</label><textarea id="quest-roleplay-input" rows="2" maxlength="200" lang="zh-CN" placeholder="Напиши, что скажешь преподавательнице…">'+esc(rp.draft||'')+'</textarea><div class="quest-rp-controls"><button type="button" class="action-btn" data-action="quest-roleplay-send">СКАЗАТЬ ПРЕПОДАВАТЕЛЬНИЦЕ →</button><button type="button" data-action="quest-roleplay-hint" class="action-btn secondary">'+(rp.hint?'СКРЫТЬ БЛОКИ':'ПОМОЩЬ СО СЛОВАМИ')+'</button><button type="button" class="quest-rp-link" data-action="quest-roleplay-clear">ОЧИСТИТЬ</button></div>'+tileBank+'</div>';
+ }
+ return '<div class="quest-rp">'+
+  '<div class="quest-rp-scene"><img src="'+esc(sceneURL('campus-submit'))+'" alt="Студенческий центр, госпожа Ван за стойкой и документы"/><div><b>ТВОЯ РОЛЬ — АННА</b><p>Ты приехала в Китай учиться в магистратуре. Сегодня впервые обращаешься в университетский центр. Стипендия поможет семье. Тебе нужно решить вопрос самой, разговаривая по-китайски.</p></div></div>'+
+  '<div class="quest-rp-progress"><b>РАЗГОВОР С ПРЕПОДАВАТЕЛЬНИЦЕЙ</b><span>'+done+' / '+mod.missions.length+' ЗАДАЧ</span></div>'+
+  '<div class="quest-rp-topics">'+tasks+'</div>'+
+  (transcript?'<details class="quest-rp-history"><summary>ПРЕДЫДУЩИЕ РЕПЛИКИ ('+rp.history.length+')</summary>'+transcript+'</details>':'')+
+  '<section class="quest-rp-turn"><div class="quest-rp-dialogue"><div class="quest-rp-name">王老师 · ГОСПОЖА ВАН</div><div class="quest-rp-teacher" lang="zh-CN">'+esc(mission.teacher)+' '+speakButton(mission.teacher)+'</div><button type="button" data-action="quest-roleplay-translate" class="quest-rp-link">'+(rp.showTranslation?'СКРЫТЬ ПЕРЕВОД':'ПЕРЕВОД РЕПЛИКИ')+'</button>'+(rp.showTranslation?'<p>'+esc(mission.teacherRu)+'</p>':'')+'</div>'+
+  '<div class="quest-rp-task"><b>ТВОЯ ЗАДАЧА</b><p>'+esc(mission.goal)+'</p></div>'+
+  stateLine+actions+'</section></div>';
+}
+global.ChineseLabRoleplayView=Object.freeze({render});
+})(typeof window!=='undefined'?window:globalThis);

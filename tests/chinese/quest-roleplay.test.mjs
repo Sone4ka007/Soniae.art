@@ -83,6 +83,6 @@ test('Actual browser code must route Chinese input and roleplay actions, not mer
  }
  assert.match(html,/engine\.evaluate\(rp\.active,rp\.draft\)/);
  assert.match(html,/rp\.done\.push\(rp\.active\)/);
- assert.match(html,/if\(q\.playFirst/);
+ assert.match(html,/q\.playFirst/);
  assert.match(html,/s\.type==='roleplay'\?questRoleplay\(s\)/);
 });

@@ -28,7 +28,7 @@ test('printed notice art is updated from visa copy to enrollment notice',()=>{
  assert.ok(!drawing.includes('签证复印件'),'The old visa copy should not remain in the picture');
 });
 test('Chinese Lab connects route-aware story quests with reading chapters',()=>{
- assert.match(html,/quest-branches\.js\?v=20261109-2/);
+ assert.match(html,/quest-branches\.js\?v=20261109-3/);
  assert.match(html,/ChineseLabQuestBranches\.build\(l,state\.readings\[String\(l\.id\)\]\)/);
  assert.match(html,/g\.routeChoices\[option\.branchAt\]=option\.branchValue/);
  assert.match(html,/step\.branchContexts/);
@@ -37,6 +37,10 @@ test('Chinese Lab connects route-aware story quests with reading chapters',()=>{
  assert.match(html,/questExplore\(s\)/);
  assert.match(html,/quest-hotspot/);
  assert.match(html,/quest-preview-location/,'First location artwork needs to be visible on the intro');
+ assert.match(html,/function questOpening\(q\)/,'Reading must start with a full beginning');
+ assert.match(html,/questOpening\(q\)/,'Quest opening must render in intro');
+ assert.match(html,/quest-opening-beat/,'Each narrative beat should be readable separately');
+ assert.match(html,/СНАЧАЛА — ИСТОРИЯ/,'Intro should clearly introduce story before quest');
  assert.ok(html.includes('"printer-notice":"data:image/svg+xml;base64,'), 'Updated illustration must contain enrollment notice art');
  assert.match(html,/quest-story-evidence-list/);
  assert.match(html,/ending\.variants\?\.\[third\]/);

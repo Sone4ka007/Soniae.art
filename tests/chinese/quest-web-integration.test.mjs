@@ -28,7 +28,7 @@ test('printed notice art is updated from visa copy to enrollment notice',()=>{
  assert.ok(!drawing.includes('签证复印件'),'The old visa copy should not remain in the picture');
 });
 test('Chinese Lab connects route-aware story quests with reading chapters',()=>{
- assert.match(html,/quest-branches\.js\?v=20261109-3/);
+ assert.match(html,/quest-branches\.js\?v=20261109-4/);
  assert.match(html,/ChineseLabQuestBranches\.build\(l,state\.readings\[String\(l\.id\)\]\)/);
  assert.match(html,/g\.routeChoices\[option\.branchAt\]=option\.branchValue/);
  assert.match(html,/step\.branchContexts/);

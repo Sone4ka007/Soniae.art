@@ -559,8 +559,15 @@
   function withIllustratedScenes(lesson,chapters,quest) {
     const [first,second]=[0,1].map(i=>illustratedScene(lesson,chapters,i));
     if(lesson.id===1){
-      return {...quest,schemaVersion:8,
-        steps:[first,quest.steps[0],lessonOneCafeteria(),lessonOnePhrase(),
+      return {...quest,schemaVersion:9,playFirst:true,
+        steps:[{
+          type:'roleplay',
+          title:'СТУДЕНЧЕСКИЙ ЦЕНТР · РАЗГОВОР С ВАН',
+          tag:'ЖИВАЯ ПРАКТИКА · ТЫ ГОВОРИШЬ ПО-КИТАЙСКИ',
+          image:'campus-submit',
+          contextZh:'王老师：你好！你需要什么帮助？',
+          contextRu:'Сегодня первый день Анны в университете. Ты пришла к госпоже Ван, чтобы подать заявление на стипендию. Ты должна сама говорить с преподавательницей.'
+        },first,quest.steps[0],lessonOneCafeteria(),lessonOnePhrase(),
           quest.steps[2],lessonOneSubmission(),quest.steps[4]]
       };
     }

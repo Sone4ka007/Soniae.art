@@ -291,7 +291,9 @@
 .quest-token-bank{display:flex;flex-wrap:wrap;gap:9px;background:#effcd5;padding:17px;margin:13px 0}
 .quest-token-bank button{background:var(--acid)}.quest-token-bank button:disabled{opacity:.23;cursor:default}
 .quest-compose-actions{display:flex;flex-wrap:wrap;gap:9px;margin:20px 0}.quest-compose-actions button:disabled{opacity:.4}
-.quest-hint{padding:13px 16px;background:#f9edce;font:600 15px/1.5 var(--han)}
+.quest-hint{padding:16px;background:#f9edce;font:500 15px/1.55 var(--font);border-left:4px solid var(--ink)}
+.quest-hint b{font-size:12px;letter-spacing:.05em}.quest-hint p{margin:9px 0 0}.quest-hint-zh{font:700 clamp(24px,3vw,34px)/1.6 var(--han);margin:10px 0}
+.quest-compose-help{font-size:12px;color:var(--muted);line-height:1.5;margin:4px 0 14px}.quest-compose-notice{padding:14px 16px;border:2px solid var(--ink);background:#fff4d8;font-size:14px;line-height:1.6}
 .quest-pick-note{font-size:13px;font-weight:900;letter-spacing:.09em;margin:10px 0}.quest-cards .quest-choice{min-height:110px}
 .quest-feedback{border:2px solid var(--ink);padding:20px;background:var(--acid);margin:20px 0}
 .quest-feedback-kicker{font-size:11px;font-weight:900;letter-spacing:.1em}
@@ -848,7 +850,7 @@ function renderGame() {
 function initQuest(){
   const q=lesson().quest;
   state.game={isQuest:true,questSchema:q.schemaVersion||1,routeChoices:[],status:'intro',stage:0,seen:[],items:[],tokens:[],selected:[],ready:false,answer:null,
-    feedback:null,points:0,time:q.startTime,trust:2,choices:[],showRu:false,zoom:false,hint:false,usedHint:false,flags:{},tokenOrder:null,analysisKey:null,
+    feedback:null,points:0,time:q.startTime,trust:2,choices:[],showRu:false,zoom:false,hint:false,hintLevel:0,usedHint:false,flags:{},tokenOrder:null,analysisKey:null,
    revealed:[],roleplay:{done:[],active:'purpose',draft:'',hint:false,example:false,feedback:null,history:[],showTranslation:false},mnemonicWord:null,mnemonicMode:'hint',missionOpen:true,missionStage:0,missionResult:null,missionNotice:'',missionShowRu:false};
  state.progress.questWords ||= {};
  state.progress.questWords[lesson().id] ||= {};
@@ -1022,11 +1024,32 @@ function questOptions(s){
  const g=state.game;
  return `<div class="quest-choice-grid">${s.options.map((o,i)=>`<div class="quest-option-card"><button type="button" class="quest-choice ${g.answer===i?'chosen':''}" data-action="quest-choice" data-index="${i}" ${g.ready?'disabled':''}><span class="quest-choice-num">${String(i+1).padStart(2,'0')}</span><strong lang="zh-CN">${esc(o.zh)}</strong><small>${g.showRu?esc(o.ru):'Нажми, чтобы выбрать и услышать'}</small></button>${questAnalysis('choice-'+i,o.zh,o.ru)}</div>`).join('')}</div>${questFeedback()}`;
 }
-function questCompose(s){
+function questCompose(s) {
  const g=state.game;
- const answer=g.tokens.map(i=>s.tokens[i]);
  g.tokenOrder ||= shuffledIndices(s.tokens.length);
- return `<div class="quest-task"><div class="quest-task-label">ПЕРЕВЕДИ НА КИТАЙСКИЙ</div><p>${esc(s.prompt)}</p></div><div class="quest-built" aria-label="Твоё предложение">${g.tokens.length?g.tokens.map((i,position)=>`<button type="button" data-action="quest-token-remove" data-index="${position}" ${g.ready?'disabled':''}>${esc(s.tokens[i])} <small>×</small></button>`).join(''):'<span>Собирай реплику здесь, нажимая на фрагменты ↓</span>'}</div><div class="quest-token-bank">${g.tokenOrder.map(i=>`<button type="button" data-action="quest-token" data-index="${i}" ${g.tokens.includes(i)||g.ready?'disabled':''}>${esc(s.tokens[i])}</button>`).join('')}</div><div class="quest-compose-actions"><button type="button" class="action-btn" data-action="quest-check" ${g.ready?'disabled':''}>ПРОВЕРИТЬ ФРАЗУ →</button><button type="button" class="action-btn secondary" data-action="quest-clear" ${g.ready?'disabled':''}>СБРОСИТЬ</button><button type="button" class="action-btn secondary" data-action="quest-hint">${g.hint?'ПОДСКАЗКА ОТКРЫТА':'ПОДСКАЗКА'}</button></div>${g.hint?`<div class="quest-hint">${esc(s.hint)}</div>`:''}${g.feedback?questFeedback():''}`;
+ const expected=s.answers?.[0]||s.tokens;
+ const hintLevel=Math.max(0,Math.min(3,Number(g.hintLevel)||0));
+ const middle=Math.min(expected.length,Math.max(2,Math.ceil(expected.length/2)));
+ const hintContent=hintLevel===1
+  ? `<b>ШАГ 1 · КАК НАЧАТЬ</b><p>${esc(s.hint||'Сначала назови участника или тему, затем действие и его уточнения.')}</p><p>Начни с карточки <strong lang="zh-CN">${esc(expected[0]||'')}</strong>. Потом собери остальное сама.</p>`
+  :hintLevel===2
+   ? `<b>ШАГ 2 · НАЧАЛО ПРЕДЛОЖЕНИЯ</b><div class="quest-hint-zh" lang="zh-CN">${tapText(expected.slice(0,middle).join(''))} ${speakButton(expected.slice(0,middle).join(''),'Прослушать начало')}</div><p>Это первые ${middle} из ${expected.length} блоков. Попробуй расставить оставшиеся.</p>`
+   :hintLevel===3
+    ? `<b>ШАГ 3 · ОБРАЗЕЦ ОТВЕТА</b><div class="quest-hint-zh" lang="zh-CN">${tapText(expected.join(''))} ${speakButton(expected.join(''),'Прослушать правильную фразу')}</div><p>Разбери слова и повтори фразу вслух. Затем собери её самостоятельно или пропусти задание.</p>`
+    :'';
+ const hintBox=hintLevel?`<section class="quest-hint" aria-label="Пошаговая подсказка">${hintContent}</section>`:'';
+ return `<div class="quest-task"><div class="quest-task-label">ПЕРЕВЕДИ НА КИТАЙСКИЙ</div><p>${esc(s.prompt)}</p></div>
+  <div class="quest-built" aria-label="Твоё предложение">${g.tokens.length?g.tokens.map((i,position)=>`<button type="button" data-action="quest-token-remove" data-index="${position}" ${g.ready?'disabled':''}>${esc(s.tokens[i])} <small>×</small></button>`).join(''):'<span>Собирай реплику здесь, нажимая на слова ниже ↓</span>'}</div>
+  <div class="quest-token-bank">${g.tokenOrder.map(i=>`<button type="button" data-action="quest-token" data-index="${i}" ${g.tokens.includes(i)||g.ready?'disabled':''}>${esc(s.tokens[i])}</button>`).join('')}</div>
+  <div class="quest-compose-actions">
+   <button type="button" class="action-btn" data-action="quest-check" ${g.ready?'disabled':''}>ПРОВЕРИТЬ ФРАЗУ →</button>
+   <button type="button" class="action-btn secondary" data-action="quest-clear" ${g.ready?'disabled':''}>СБРОСИТЬ</button>
+   <button type="button" class="action-btn secondary" data-action="quest-hint" ${g.ready||hintLevel>=3?'disabled':''}>${hintLevel===0?'ПОДСКАЗКА 1/3':hintLevel>=3?'ВСЕ ПОДСКАЗКИ ОТКРЫТЫ':`СЛЕДУЮЩАЯ ПОДСКАЗКА ${hintLevel+1}/3`}</button>
+   <button type="button" class="action-btn secondary" data-action="quest-skip" ${g.ready?'disabled':''}>ПРОПУСТИТЬ И ИДТИ ДАЛЬШЕ →</button>
+  </div>
+  <p class="quest-compose-help">Подсказки бесплатны. За ошибки и пропуск время не списывается; за пропущенную фразу XP не начисляется.</p>
+  ${hintBox}
+  ${g.feedback?(g.ready?questFeedback():`<div class="quest-compose-notice" role="status">${esc(g.feedback.ru||'Попробуй ещё раз.')}</div>`):''}`;
 }
 function questPick(s){
  const g=state.game;
@@ -1207,7 +1230,7 @@ function questAction(action,btn){
  if(action==='quest-token-remove'&&s.type==='compose'&&!g.ready){
    if(index>=0&&index<g.tokens.length){g.tokens.splice(index,1);renderStory();}return;
  }
- if(action==='quest-hint'&&s.type==='compose'){g.hint=!g.hint;if(g.hint&&!g.usedHint){g.usedHint=true;g.time-=1;}renderStory();return;}
+ if(action==='quest-hint'&&s.type==='compose'&&!g.ready){g.hintLevel=Math.min(3,(g.hintLevel||0)+1);renderStory();return;}
  if(action==='quest-pick'&&s.type==='pick'&&!g.ready){
    const o=s.options.find(x=>x.id===id);if(!o)return;
    speech(o.zh);
@@ -1219,7 +1242,16 @@ function questAction(action,btn){
    if(s.type==='compose'){
      const response=g.tokens.map(i=>s.tokens[i]);
      const good=s.answers.some(answer=>answer.length===response.length&&answer.every((t,i)=>t===response[i]));
-     if(good){questEarn(28,'ЖИВАЯ РЕЧЬ');g.feedback={zh:s.successZh,ru:s.successRu};g.ready=true;speech(s.successZh);}else{g.time-=2;g.feedback={zh:'再试一次。',ru:'Порядок пока неверный. Переставь фрагменты или открой подсказку (−2 мин).'};miss();}
+     if(good){questEarn(28,'ЖИВАЯ РЕЧЬ');g.feedback={zh:s.successZh,ru:s.successRu};g.ready=true;speech(s.successZh);}else{
+        const expected=s.answers[0]||[];
+        let wrong=0;
+        while(wrong<response.length&&wrong<expected.length&&response[wrong]===expected[wrong])wrong++;
+        const previous=wrong?expected.slice(Math.max(0,wrong-2),wrong).join(''):'';
+        const next=expected[wrong];
+        const clue=next?(previous?'После «'+previous+'» попробуй поставить «'+next+'».':'Начни со слова «'+next+'».'):'Проверь, все ли блоки стоят на своих местах.';
+        g.feedback={zh:'',ru:'Ещё не совсем верно. '+clue+' Можно попробовать снова или открыть пошаговую подсказку. Штрафа за ошибку нет.'};
+        miss();
+      }
    } else if(s.type==='pick'){
      if(g.selected.length!==s.need)return;
      const good=s.right.length===g.selected.length&&s.right.every(x=>g.selected.includes(x));
@@ -1227,14 +1259,16 @@ function questAction(action,btn){
    }
    renderStory();return;
  }
- if(action==='quest-next'&&g.ready){
+ if((action==='quest-next'&&g.ready)||(action==='quest-skip'&&s.type==='compose'&&!g.ready)){
+   const skipped=action==='quest-skip';
+   if(skipped)g.skippedCompose=(g.skippedCompose||0)+1;
    g.stage++;
    g.mnemonicWord=null;g.mnemonicMode='hint';
    const upcoming=lesson().quest.steps[g.stage];
    if(upcoming?.skipWhenRoute?.every((value,i)=>g.routeChoices?.[i]===value))g.stage++;
-   g.ready=false;g.seen=[];g.tokens=[];g.selected=[];g.answer=null;g.feedback=null;g.hint=false;g.usedHint=false;g.zoom=false;g.showRu=false;g.revealed=[];g.tokenOrder=null;g.analysisKey=null;g.missionStage=Math.min(g.stage,6);g.missionResult=null;g.missionNotice='';
+   g.ready=false;g.seen=[];g.tokens=[];g.selected=[];g.answer=null;g.feedback=null;g.hint=false;g.hintLevel=0;g.usedHint=false;g.zoom=false;g.showRu=false;g.revealed=[];g.tokenOrder=null;g.analysisKey=null;g.missionStage=Math.min(g.stage,6);g.missionResult=null;g.missionNotice='';
    if(g.stage>=lesson().quest.steps.length){g.status='complete';state.progress.stories[lesson().id]=(state.progress.stories[lesson().id]||0)+1;questEarn(35,'ДЕЛО ЗАКРЫТО');save();renderShell();}
-   renderStory();$('#game-panel')?.scrollIntoView({behavior:'smooth',block:'start'});return;
+   renderStory();if(skipped)toast('ФРАЗА ПРОПУЩЕНА · ПЕРЕХОД К СЛЕДУЮЩЕЙ СЦЕНЕ');$('#game-panel')?.scrollIntoView({behavior:'smooth',block:'start'});return;
  }
 }
 
@@ -1798,7 +1832,7 @@ document.addEventListener('click', event => {
      window.confirm('Начать этот режим заново? Текущая серия заданий будет сброшена, но XP и общий прогресс сохранятся.'))
      activateMode(state.mode, true);
    break;
- case 'quest-memory':case 'quest-memory-test':case 'quest-memory-answer':case 'quest-memory-back':case 'quest-roleplay-topic':case 'quest-roleplay-next':case 'quest-roleplay-hint':case 'quest-roleplay-example':case 'quest-roleplay-clear':case 'quest-roleplay-tile':case 'quest-roleplay-send':case 'quest-roleplay-translate':case 'quest-gloss':case 'quest-analyze':case 'quest-mission-toggle':case 'quest-mission-select':case 'quest-mission-pick':case 'quest-mission-next':case 'quest-spot':case 'quest-choice':case 'quest-token':case 'quest-token-remove':case 'quest-pick':case 'quest-check':case 'quest-clear':case 'quest-hint':case 'quest-translation':case 'quest-zoom':case 'quest-start':case 'quest-next':case 'quest-restart':questAction(action,btn);break;
+ case 'quest-memory':case 'quest-memory-test':case 'quest-memory-answer':case 'quest-memory-back':case 'quest-roleplay-topic':case 'quest-roleplay-next':case 'quest-roleplay-hint':case 'quest-roleplay-example':case 'quest-roleplay-clear':case 'quest-roleplay-tile':case 'quest-roleplay-send':case 'quest-roleplay-translate':case 'quest-gloss':case 'quest-analyze':case 'quest-mission-toggle':case 'quest-mission-select':case 'quest-mission-pick':case 'quest-mission-next':case 'quest-spot':case 'quest-choice':case 'quest-token':case 'quest-token-remove':case 'quest-pick':case 'quest-check':case 'quest-clear':case 'quest-hint':case 'quest-skip':case 'quest-translation':case 'quest-zoom':case 'quest-start':case 'quest-next':case 'quest-restart':questAction(action,btn);break;
  case 'sentence-add':case 'sentence-remove':case 'sentence-clear':case 'sentence-hint':case 'sentence-check':case 'sentence-next':sentenceAction(action,btn.dataset.id);break;
  case 'pair':pairPick(btn.dataset.side,btn.dataset.id);break;
  case 'quiz-pick':quizPick(Number(btn.dataset.index));break;

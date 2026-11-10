@@ -1,0 +1,29 @@
+/* Chinese Lab — daily learning streak. Uses existing monochrome/lime palette. */
+.streak-header{display:inline-flex;align-items:center;gap:4px;border:1px solid var(--ink);border-radius:0;background:var(--white);color:var(--ink);padding:5px 7px;font:800 14px/1 var(--font);white-space:nowrap;cursor:pointer}
+.streak-header:hover,.streak-header:focus-visible{background:var(--acid)}
+.streak-header span:first-child{font-size:16px}
+.streak-header.is-complete{background:var(--acid)}
+.streak-panel{border:2px solid var(--ink);padding:18px;background:var(--white);display:grid;gap:15px}
+.streak-head{display:flex;justify-content:space-between;align-items:start;gap:10px}
+.streak-kicker{font-size:10px;font-weight:900;letter-spacing:.1em;margin:0 0 5px}
+.streak-head h4{margin:0;font:clamp(22px,3vw,32px)/1 var(--font-head);letter-spacing:.03em}
+.streak-label{font-size:10px;font-weight:900;border:1px solid var(--ink);padding:7px 9px;text-align:center}
+.streak-metrics{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.streak-metrics>div{background:var(--paper);border:1px solid var(--line);padding:14px;display:grid;gap:5px}
+.streak-metrics strong{font:clamp(36px,5vw,52px)/1 var(--font-head);font-variant-numeric:tabular-nums}
+.streak-metrics span{font-size:11px;font-weight:900;letter-spacing:.05em}
+.streak-goal>div:first-child{display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:12px}
+.streak-goal b{font-size:11px;letter-spacing:.06em}
+.streak-track{height:11px;background:var(--soft);border:1px solid var(--ink);margin:8px 0}
+.streak-track i{height:100%;display:block;background:#9dca00}
+.streak-goal p,.streak-note{margin:6px 0 0;font-size:12px;line-height:1.5;color:var(--muted)}
+.streak-calendar-title{font-size:11px;font-weight:900;letter-spacing:.08em;margin-top:4px}
+.streak-weekdays,.streak-calendar{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px;text-align:center}
+.streak-weekdays span{font-size:10px;font-weight:800;color:var(--muted)}
+.streak-day{display:flex;align-items:center;justify-content:center;min-height:36px;border:1px solid var(--line);background:var(--paper);font-size:12px;font-weight:800;font-variant-numeric:tabular-nums}
+.streak-day.is-complete{background:var(--acid);border-color:var(--ink)}
+.streak-day.is-partial{background:#e4efbd;border-color:#a9bf78}
+.streak-day.is-today{outline:2px solid var(--ink);outline-offset:-3px}
+.streak-day.is-padding{visibility:hidden}
+@media(max-width:820px){body .site-frame>header.topbar .scoreboard{gap:5px} .streak-header{padding:5px;font-size:13px}}
+@media(max-width:450px){.streak-panel{padding:12px}.streak-head{flex-wrap:wrap}.streak-day{min-height:30px}.streak-weekdays,.streak-calendar{gap:3px} .streak-label{font-size:9px}}

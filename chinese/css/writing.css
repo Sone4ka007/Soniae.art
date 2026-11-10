@@ -61,3 +61,30 @@
 .writing-guide-foot{border-top:1px solid var(--line,#c7c9c2);padding-top:12px;margin-top:16px!important}
 .writing-guide-foot a{text-decoration:underline}
 @media(max-width:540px){.writing-breakdown{padding:16px}.writing-component{min-width:62px;padding:8px}}
+
+
+/* Single-word repetition, voice and adjustable partially prewritten strokes. */
+.writing-large-word{font-family:var(--han,'Noto Sans SC',sans-serif);font-size:clamp(56px,12vw,91px);font-weight:600;line-height:1.25;letter-spacing:.015em;margin:12px 0}
+.writing-label{display:block;font-size:12px;font-weight:800;margin-bottom:12px;color:var(--muted,#626660)}
+.writing-select{display:block;max-width:100%;width:100%;border:2px solid var(--ink,#111);border-radius:0;background:#fff;color:var(--ink,#111);font:600 15px var(--font,Arial,sans-serif);padding:13px 14px;min-height:50px}
+.writing-breakdowns{display:grid;grid-template-columns:repeat(auto-fit,minmax(235px,1fr));gap:12px;margin:24px 0 0}
+.writing-breakdowns .writing-breakdown{margin:0}
+.writing-breakdown-char{font-size:32px;font-weight:600;margin:0 0 16px;font-family:var(--han,'Noto Sans SC',sans-serif)}
+.writing-breakdown-char small{font-size:12px;font-family:var(--font,Arial,sans-serif);color:var(--muted,#626660)}
+.writing-prefill-controls{margin:14px auto 20px;max-width:540px;background:var(--soft,#efefe8);border:1px solid var(--line,#c7c9c2);padding:14px 18px;font-size:12px;line-height:1.5}
+.writing-prefill-label{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px;flex-wrap:wrap}
+.writing-prefill-label strong{font-size:13px}
+.writing-prefill-input{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.writing-prefill-input .writing-choice{font-size:11px;padding:10px;min-height:38px}
+.writing-prefill-input label{font-size:11px;font-weight:900}
+.writing-prefill-input input{min-width:110px;flex:1;accent-color:#91ae00}
+.writing-prefill-input output{min-width:25px;text-align:right;font-variant-numeric:tabular-nums;font-weight:900;font-size:14px}
+.writing-sound-row{margin-top:14px}
+.writing-root>.writing-primary{display:block;width:100%;margin-top:24px}
+@media(max-width:540px){
+  .writing-breakdowns{grid-template-columns:1fr}
+  .writing-prefill-controls{padding:12px}
+  .writing-prefill-input{gap:8px}
+  .writing-prefill-input input{flex:1 1 130px}
+  .writing-large-word{font-size:64px}
+}

@@ -1,68 +1,86 @@
-/* Chinese Lab — handwriting practice, lesson-based and account-aware. */
+/* Chinese Lab — one vocabulary word, 10 progressive handwriting repetitions. */
 (function (global) {
   'use strict';
-  const VERSION = 1;
+  const VERSION = 2;
   const HAN = /[\u3400-\u9fff]/u;
   const LIBRARY = 'https://cdn.jsdelivr.net/npm/hanzi-writer@3.7.3/dist/hanzi-writer.min.js';
   let ctx = null, writer = null, renderToken = 0, libraryPromise = null;
   let characterData = null, dataPromise = null;
+  const strokeData = new Map();
   const byId = id => document.getElementById(id);
   const safe = value => ctx.esc(value ?? '');
-  const integer = (value, fallback) => Number.isFinite(Number(value)) ? Math.trunc(Number(value)) : fallback;
-
+  const integer = (v, fallback) => Number.isFinite(Number(v)) ? Math.trunc(Number(v)) : fallback;
+  const hanziChars = value => Array.from(String(value || '')).filter(c => HAN.test(c));
 
   function settings() {
     const p = ctx.state.progress;
     if (!p.writing || typeof p.writing !== 'object' || Array.isArray(p.writing)) p.writing = {};
     const w = p.writing;
     if (!w.srs || typeof w.srs !== 'object' || Array.isArray(w.srs)) w.srs = {};
+    if (!w.history || typeof w.history !== 'object' || Array.isArray(w.history)) w.history = {};
     if (!Array.isArray(w.lessonIds)) w.lessonIds = [ctx.state.lessonId];
     w.lessonIds = [...new Set(w.lessonIds.map(Number).filter(id => ctx.state.lessons.some(l => l.id === id)))];
     if (!w.lessonIds.length) w.lessonIds = [ctx.state.lessonId];
-    // Short, deliberate sessions: the learner writes no more than two characters.
-    w.goal = 'words';
-    if (![1, 2].includes(w.wordCount)) w.wordCount = 1;
-    w.completed = Math.max(0, integer(w.completed, 0));
-    w.success = Math.max(0, integer(w.success, 0));
+    w.repetitions = [5, 10].includes(Number(w.repetitions)) ? Number(w.repetitions) : 10;
+    if (!['auto', 'manual'].includes(w.prefillMode)) w.prefillMode = 'auto';
+    w.prefillCount = Math.max(0, integer(w.prefillCount, 0));
+    if (typeof w.autoSound !== 'boolean') w.autoSound = true;
+    w.completedWords = Math.max(0, integer(w.completedWords, 0));
+    // Keep historic writing.srs and writing.completed (old per-character counts) intact.
     return w;
   }
-  function current() {
-    const s = ctx.state.progress.writingSession;
-    if (!s || s.version !== VERSION || !Array.isArray(s.queue) || !s.queue.length ||
-        !Number.isInteger(s.index) || s.index < 0 || s.index >= s.queue.length) return null;
-    // Migrate unfinished old 10/20/30-character sessions without deleting their review history.
-    if (s.queue.length > 2) {
-      s.queue = s.queue.slice(s.index, s.index + 2);
-      s.index = 0;
-      s.goal = 'words';
-      s.stage = 'study';
-      s.hintUsed = false;
-      ctx.save();
-    }
-    return s;
-  }
-  function lessonsPool() {
+  function wordPool() {
     const w = settings();
-    const byCharacter = new Map();
-    ctx.state.lessons.filter(l => w.lessonIds.includes(l.id)).forEach(l => {
-      (l.words || []).forEach(word => {
-        const characters = Array.from(String(word.hanzi || ''));
-        characters.forEach((char, index) => {
-          if (!HAN.test(char) || byCharacter.has(char)) return;
-          byCharacter.set(char, { char, word: word.hanzi, pinyin: word.pinyin || '',
-            ru: word.ru || '', position: index + 1, length: characters.length, lesson: l.id });
-        });
-      });
-    });
-    const now = Date.now(), reviews = w.srs;
-    return [...byCharacter.values()].sort((a, b) => {
-      const rank = item => {
-        const r = reviews[item.char];
-        if (!r) return 1e13 + item.lesson * 1000;
-        return Number(r.due) <= now ? Number(r.due) || 0 : 2e13 + Number(r.due);
+    const unique = new Map();
+    ctx.state.lessons.filter(l => w.lessonIds.includes(l.id)).forEach(l => (l.words || []).forEach(entry => {
+      const hanzi = String(entry.hanzi || '').trim();
+      const chars = hanziChars(hanzi);
+      if (!hanzi || chars.length !== Array.from(hanzi).length || unique.has(hanzi)) return;
+      unique.set(hanzi, { hanzi, chars, pinyin: entry.pinyin || '',
+        ru: entry.ru || '', lesson: l.id });
+    }));
+    const values = [...unique.values()];
+    const now = Date.now();
+    return values.sort((a, b) => {
+      const rank = word => {
+        const records = word.chars.map(char => w.srs[char]).filter(Boolean);
+        if (!records.length) return 1e13 + word.lesson * 1000;
+        const next = Math.min(...records.map(rec => Number(rec.due) || 0));
+        return next <= now ? next : 2e13 + next;
       };
       return rank(a) - rank(b);
     });
+  }
+  function chosenWord(pool = wordPool()) {
+    const selected = settings().selectedWord;
+    return pool.find(w => w.hanzi === selected) || pool[0] || null;
+  }
+  function persist() { ctx.save(); }
+
+  function current() {
+    const p = ctx.state.progress;
+    let s = p.writingSession;
+    if (s?.version === 1 && Array.isArray(s.queue) && s.queue.length) {
+      const oldWord = s.queue[Math.max(0, Math.min(s.index || 0, s.queue.length - 1))];
+      const candidate = wordPool().find(w => w.hanzi === oldWord?.word);
+      const oldHanzi = String(oldWord?.word || oldWord?.char || '');
+      const chars = hanziChars(oldHanzi);
+      if (!chars.length) { delete p.writingSession; persist(); return null; }
+      const word = candidate || { hanzi: oldHanzi, chars, pinyin: oldWord.pinyin || '',
+        ru: oldWord.ru || '', lesson: oldWord.lesson || ctx.state.lessonId };
+      // Preserve review history. A partially drawn old quiz cannot resume exact pointer strokes.
+      s = {version: VERSION, word, attempt: 0, charIndex: 0, rounds: 10,
+        stage: 'study', startedAt: Date.now(), completedRounds: 0, cleanRounds: 0,
+        mistakes: 0, skipped: 0, roundMistakes: 0, roundHelp: false, roundPrefilled: 0,
+        recent: [], showStructure: false, showAnswer: false};
+      p.writingSession = s; persist();
+    }
+    if (!s || s.version !== VERSION || !s.word || !Array.isArray(s.word.chars) ||
+      !s.word.chars.length || !Number.isInteger(s.attempt) ||
+      s.attempt < 0 || s.attempt >= s.rounds ||
+      !Number.isInteger(s.charIndex) || s.charIndex < 0 ||
+      s.charIndex >= s.word.chars.length) return null;
+    return s;
   }
 
   // Russian learning cues for selected common characters. These are NOT historical proof.
@@ -177,6 +195,7 @@
       'Источник: <a href="https://github.com/skishore/makemeahanzi" target="_blank" rel="noopener noreferrer">Make Me a Hanzi</a>.</p>';
   }
 
+
   function loadLibrary() {
     if (global.HanziWriter) return Promise.resolve(global.HanziWriter);
     if (libraryPromise) return libraryPromise;
@@ -190,208 +209,327 @@
     }).catch(error => { libraryPromise = null; throw error; });
     return libraryPromise;
   }
+  function loadStrokes(library, char) {
+    if (strokeData.has(char)) return Promise.resolve(strokeData.get(char));
+    if (typeof library.loadCharacterData !== 'function') return Promise.reject(new Error('Hanzi Writer не поддерживает данные черт'));
+    return library.loadCharacterData(char).then(data => {
+      if (!data || !Array.isArray(data.strokes) || !data.strokes.length) throw new Error('Нет черт для ' + char);
+      strokeData.set(char, data);
+      return data;
+    });
+  }
   function clearWriter() {
     if (writer) { try { writer.cancelQuiz(); } catch (_) {} }
     writer = null;
+  }
+  function speakWord() {
+    if (!current() || typeof ctx?.speech !== 'function') return;
+    ctx.speech(current().word.hanzi);
+  }
+  function autoSound() {
+    if (settings().autoSound) speakWord();
+  }
+  function choice(label, action, value, selected) {
+    return '<button type="button" class="writing-choice' + (selected ? ' is-on' : '') +
+      '" data-action="' + action + '" data-value="' + safe(value) +
+      '" aria-pressed="' + String(!!selected) + '">' + safe(label) + '</button>';
   }
   function render() {
     if (!ctx || ctx.state.mode !== 'writing') return;
     ++renderToken;
     clearWriter();
-    const session = current();
-    if (session) drawTask(session);
-    else drawSettings();
-  }
-  function choice(label, action, value, active) {
-    return '<button type="button" class="writing-choice' + (active ? ' is-on' : '') +
-      '" data-action="' + action + '" data-value="' + safe(value) + '" aria-pressed="' +
-      String(!!active) + '">' + safe(label) + '</button>';
+    const s = current();
+    if (!s) return drawSettings();
+    if (s.stage === 'study') return drawStudy(s);
+    if (s.stage === 'roundEnd') return drawRoundEnd(s);
+    drawPractice(s);
   }
   function drawSettings() {
     const w = settings();
-    const lessons = ctx.state.lessons;
-    const pool = lessonsPool();
-    const due = pool.filter(item => w.srs[item.char] && Number(w.srs[item.char].due) <= Date.now()).length;
-    const panel = byId('game-panel');
-    panel.innerHTML = '<div class="writing-root">' +
-      '<div class="panel-head"><div><div class="eyebrow">写汉字 / НОВЫЙ РЕЖИМ</div><h3>ПИШИ ИЕРОГЛИФЫ</h3>' +
-      '<p class="panel-desc">Сначала изучи черты, затем обведи и напиши знак по памяти. Пальцем или мышью.</p></div>' +
-      '<span class="chip">ОТДЕЛЬНЫЙ ПРОГРЕСС</span></div>' +
-      '<div class="writing-stats"><span>ЗНАКОВ НА ВЫБОР: <b>' + pool.length + '</b></span><span>К ПОВТОРЕНИЮ: <b>' + due +
-      '</b></span><span>НАПИСАНО: <b>' + w.completed + '</b></span></div>' +
+    const pool = wordPool();
+    const chosen = chosenWord(pool);
+    const due = pool.filter(word => word.chars.some(ch => w.srs[ch] && Number(w.srs[ch].due) <= Date.now())).length;
+    byId('game-panel').innerHTML = '<div class="writing-root">' +
+      '<div class="panel-head"><div><div class="eyebrow">写汉字 / НАПИСАНИЕ</div><h3>ОДНО СЛОВО · 10 РАЗ</h3>' +
+      '<p class="panel-desc">Разбери состав одного слова, затем пропиши его несколько раз. ' +
+      'Первые черты постепенно исчезают — к концу пишешь самостоятельно.</p></div></div>' +
+      '<div class="writing-stats"><span>СЛОВ В УРОКАХ: <b>' + pool.length + '</b></span>' +
+      '<span>К ПОВТОРЕНИЮ: <b>' + due + '</b></span>' +
+      '<span>ОСВОЕНО ЗА ЗАНЯТИЯ: <b>' + w.completedWords + '</b></span></div>' +
       '<div class="writing-setting"><h4>01 / ВЫБЕРИ УРОКИ</h4><div class="writing-lessons">' +
-      lessons.map(l => choice('Урок ' + String(l.id).padStart(2, '0'), 'writing-lesson', l.id,
-        w.lessonIds.includes(l.id))).join('') + '</div></div>' +
-      '<div class="writing-setting"><h4>02 / СКОЛЬКО ИЕРОГЛИФОВ?</h4><p class="writing-note">Лучше подробно изучить один-два знака и написать их по памяти, чем быстро обвести десяток.</p><div class="writing-choices">' +
-      choice('1 иероглиф', 'writing-count', 1, w.wordCount === 1) +
-      choice('2 иероглифа', 'writing-count', 2, w.wordCount === 2) +
-      '</div></div>' +
-      '<button type="button" class="action-btn writing-primary" data-action="writing-start" ' +
-      (!pool.length ? 'disabled' : '') + '>НАЧАТЬ ПИСАТЬ →</button>' +
-      '<p class="writing-note">Первые загрузки анимации и данных черт требуют интернета. Результаты сохраняются в профиле Chinese Lab и резервной копии.</p>' +
-      (ctx.state.progress.writingLastResult ? '<p class="writing-note">Последняя тренировка: ' +
-       safe(ctx.state.progress.writingLastResult.done) + ' знаков, без подсказок: ' +
-       safe(ctx.state.progress.writingLastResult.clean) + '.</p>' : '') + '</div>';
+      ctx.state.lessons.map(l => choice('Урок ' + String(l.id).padStart(2, '0'),
+        'writing-lesson', l.id, w.lessonIds.includes(l.id))).join('') + '</div></div>' +
+      '<div class="writing-setting"><h4>02 / ОДНО СЛОВО</h4>' +
+      '<label class="writing-label" for="writing-word-select">Выбери слово или оставь первое из очереди повторения</label>' +
+      '<select id="writing-word-select" class="writing-select">' +
+      '<option value="">Следующее к повторению' + (pool.length ? ': ' + safe(pool[0].hanzi) : '') + '</option>' +
+      pool.map(item => '<option value="' + safe(item.hanzi) + '"' +
+        (w.selectedWord === item.hanzi ? ' selected' : '') + '>' +
+        safe(item.hanzi + ' · ' + item.pinyin + ' · ' + item.ru) + '</option>').join('') +
+      '</select><p class="writing-note">В многознаковом слове ты пропишешь каждый иероглиф по порядку.</p></div>' +
+      '<div class="writing-setting"><h4>03 / СКОЛЬКО РАЗ?</h4><div class="writing-choices">' +
+      choice('5 раз', 'writing-repetitions', 5, w.repetitions === 5) +
+      choice('10 раз', 'writing-repetitions', 10, w.repetitions === 10) + '</div></div>' +
+      '<div class="writing-setting"><h4>04 / ПОДСКАЗКИ И ЗВУК</h4><div class="writing-choices">' +
+      choice('Постепенно убирать черты', 'writing-prefill-auto', 'auto', w.prefillMode === 'auto') +
+      choice('Выбирать число черт вручную', 'writing-prefill-manual', 'manual', w.prefillMode === 'manual') +
+      '</div><div class="writing-choices writing-sound-row">' +
+      choice('Озвучивать слово: ' + (w.autoSound ? 'ВКЛ' : 'ВЫКЛ'),
+        'writing-sound-toggle', 'sound', w.autoSound) + '</div></div>' +
+      '<button type="button" data-action="writing-start" class="writing-primary" ' +
+      (!chosen ? 'disabled' : '') + '>ИЗУЧИТЬ И НАЧАТЬ →</button>' +
+      '<p class="writing-note">Проверка черт и порядок написания работают через Hanzi Writer. ' +
+      'Текущий подход сохраняется; незаконченный знак после перезагрузки начинается заново.</p>' +
+      (ctx.state.progress.writingLastResult ? '<p class="writing-note">Последняя практика: ' +
+       safe(ctx.state.progress.writingLastResult.word || '') + ', ' +
+       safe(ctx.state.progress.writingLastResult.done) + ' прописываний.</p>' : '') + '</div>';
   }
-  function progressLabel(s) {
-    const progress = s.index + 1;
-    const target = s.queue.length;
-    return progress + ' / ' + target;
+  function wordHeader(s, heading) {
+    return '<div class="writing-progress-head"><b>ПИСЬМО · ' + safe(heading) + '</b>' +
+      '<span>' + (s.stage === 'study' ? 'ПОДГОТОВКА' : (s.attempt + 1) + ' / ' + s.rounds) + '</span></div>' +
+      '<div class="writing-progress-track"><span style="width:' +
+      Math.round(100 * s.completedRounds / s.rounds) + '%"></span></div>';
   }
-  function drawTask(s) {
-    const u = s.queue[s.index];
-    if (!u || !HAN.test(u.char)) { stepNext(); return; }
-    const stage = s.stage;
-    const showGuide = stage !== 'recall' || !!s.showStructure;
-    const sourcePronunciation = characterData?.[u.char]?.pinyin?.join(', ');
-    const wordPlace = u.length > 1 ? ' · ' + u.position + '-й знак из ' + u.length : '';
-    const phase = {study:'ИЗУЧИ', trace:'ОБВЕДИ', recall:'НАПИШИ ПО ПАМЯТИ', result:'РЕЗУЛЬТАТ'}[stage] || 'ИЗУЧИ';
-    const display = stage === 'study' || stage === 'result' ? '<span lang="zh-CN">' + safe(u.char) + '</span>' : '';
-    const prompt = stage === 'recall' ? 'Не показываем иероглиф до ответа.' :
-      stage === 'trace' ? 'Следуй бледному контуру. Порядок черт проверяется.' :
-      stage === 'study' ? 'Посмотри на форму и порядок черт.' : 'Иероглиф записан в историю повторения.';
-    const controls = stage === 'study' ?
-      '<button class="writing-secondary" type="button" data-action="writing-animate">АНИМАЦИЯ ЧЕРТ</button>' +
-      '<button class="writing-primary" type="button" data-action="writing-trace">ОБВЕСТИ →</button>' +
-      '<button class="writing-minor" type="button" data-action="writing-recall">Сразу по памяти</button>'
-      : stage === 'trace' ? '<button class="writing-secondary" type="button" data-action="writing-animate">ПОКАЗАТЬ ЧЕРТЫ</button>' +
-        '<button class="writing-minor" type="button" data-action="writing-recall">Без контура →</button>'
-      : stage === 'recall' ? '<button class="writing-secondary" type="button" data-action="writing-structure">СОСТАВ И ПОДСКАЗКА</button>' +
-        '<button class="writing-secondary" type="button" data-action="writing-hint">КОНТУР</button>' +
-        '<button class="writing-secondary" type="button" data-action="writing-restart">СТЕРЕТЬ И НАЧАТЬ ЗАНОВО</button>' +
-        '<button class="writing-minor" type="button" data-action="writing-reveal">ПОКАЗАТЬ ОТВЕТ</button>'
-      : '<button class="writing-primary" type="button" data-action="writing-next">СЛЕДУЮЩИЙ ЗНАК →</button>';
-    byId('game-panel').innerHTML = '<div class="writing-root"><div class="writing-progress-head"><b>ПИСЬМО · ' +
-      safe(phase) + '</b><span>' + safe(progressLabel(s)) + '</span></div>' +
-      '<div class="writing-progress-track"><span style="width:' + Math.round(100 * s.index / s.queue.length) + '%"></span></div>' +
-      '<div class="writing-prompt"><div class="writing-meaning">' + safe(u.ru) + '</div>' +
-      '<div class="writing-pronunciation">' + safe(sourcePronunciation || u.pinyin) +
-      ' · Урок ' + u.lesson + '</div>' +
-      (stage !== 'recall' ? '<div class="writing-context">В слове <b lang="zh-CN">' + safe(u.word) +
-        '</b> (' + safe(u.pinyin) + ')' + wordPlace + '</div>' : '') +
-      '<p>' + prompt + '</p></div>' +
-      '<div class="writing-paper"><div class="writing-grid"><div id="writing-canvas" class="writing-canvas" role="img" ' +
-      'aria-label="Поле для написания иероглифа пальцем или мышью">' + display + '</div></div></div>' +
-      (stage === 'result' ? '<div class="writing-feedback" aria-live="polite">' +
-        (s.lastResult?.revealed ? 'ОТВЕТ ПОКАЗАН · ПОВТОРИ ПОЗЖЕ' : 'НАПИСАНО · ' +
-          (s.lastResult?.mistakes || 0) + ' ОШИБОК В ЧЕРТАХ') + '</div>' : '') +
-      '<div class="writing-actions">' + controls + '</div>' +
-      '<section id="writing-breakdown" class="writing-breakdown" ' +
-      (showGuide ? '' : 'hidden') + '>' + characterGuide(u) + '</section>' +
+  function drawStudy(s) {
+    const w = s.word;
+    const chars = w.chars;
+    byId('game-panel').innerHTML = '<div class="writing-root">' + wordHeader(s, 'ИЗУЧИ СЛОВО') +
+      '<div class="writing-prompt"><div class="writing-large-word" lang="zh-CN">' + safe(w.hanzi) + '</div>' +
+      '<div class="writing-meaning">' + safe(w.ru) + '</div>' +
+      '<div class="writing-pronunciation">' + safe(w.pinyin) + ' · Урок ' + safe(w.lesson) + '</div>' +
+      '<p>Нажми на звук, посмотри компоненты и порядок черт. Затем пропиши слово ' +
+      s.rounds + ' раз.</p></div>' +
+      '<div class="writing-actions"><button type="button" class="writing-secondary" data-action="writing-speak">◖)) ПРОИЗНЕСТИ</button>' +
+      '<button type="button" class="writing-primary" data-action="writing-begin">НАЧАТЬ ПРОПИСЫВАТЬ →</button></div>' +
+      '<div class="writing-breakdowns">' + chars.map((ch, i) => '<section class="writing-breakdown">' +
+        '<h3 class="writing-breakdown-char" lang="zh-CN">' + safe(ch) + ' <small>' + (i + 1) +
+        '/' + chars.length + '</small></h3>' + characterGuide({char: ch}) + '</section>').join('') + '</div>' +
+      '<button type="button" class="writing-stop" data-action="writing-stop">ЗАКОНЧИТЬ ЗАНЯТИЕ</button></div>';
+  }
+  function prefillCount(s, strokes) {
+    const max = Math.max(0, strokes - 1); // always require at least one drawn stroke
+    const w = settings();
+    if (w.prefillMode === 'manual') return Math.min(w.prefillCount, max);
+    return Math.max(0, Math.min(max, Math.round(max * (1 - s.attempt / Math.max(1, s.rounds - 1)))));
+  }
+  function drawPractice(s) {
+    const char = s.word.chars[s.charIndex];
+    byId('game-panel').innerHTML = '<div class="writing-root">' + wordHeader(s, 'ПРОПИСЫВАНИЕ') +
+      '<div class="writing-prompt"><div class="writing-meaning">' + safe(s.word.ru) + '</div>' +
+      '<div class="writing-pronunciation">' + safe(s.word.pinyin) +
+      ' · Знак ' + (s.charIndex + 1) + ' из ' + s.word.chars.length + '</div>' +
+      '<p>Допиши недостающие черты в правильном порядке. Произношение — по кнопке или в начале каждого повтора.</p></div>' +
+      '<div class="writing-paper"><div class="writing-grid"><div id="writing-canvas" class="writing-canvas" ' +
+      'role="img" aria-label="Напиши черты иероглифа пальцем или мышью"></div></div></div>' +
+      '<div id="writing-prefill-controls" class="writing-prefill-controls" aria-live="polite">' +
+      'Загружаем данные черт…</div>' +
+      '<div class="writing-actions"><button type="button" class="writing-secondary" data-action="writing-speak">◖)) ПРОИЗНЕСТИ</button>' +
+      '<button type="button" class="writing-secondary" data-action="writing-structure">СОСТАВ И ПОДСКАЗКА</button>' +
+      '<button type="button" class="writing-secondary" data-action="writing-hint">ПОКАЗАТЬ КОНТУР</button>' +
+      '<button type="button" class="writing-minor" data-action="writing-restart">СТЕРЕТЬ И ПОВТОРИТЬ</button>' +
+      '<button type="button" class="writing-minor" data-action="writing-reveal">ПОСМОТРЕТЬ ОБРАЗЕЦ</button></div>' +
+      '<section id="writing-breakdown" class="writing-breakdown"' + (s.showStructure ? '' : ' hidden') + '>' +
+      (s.showAnswer ? '<div class="writing-large-word" lang="zh-CN">' + safe(char) + '</div>' : '') +
+      characterGuide({char}) + '</section>' +
       '<div id="writing-status" class="writing-note" aria-live="polite"></div>' +
-      '<button type="button" data-action="writing-stop" class="writing-stop">ЗАКОНЧИТЬ ЗАНЯТИЕ</button></div>';
-    if (stage !== 'result') initCanvas(s, u, stage, renderToken);
+      '<button type="button" class="writing-stop" data-action="writing-stop">ЗАКОНЧИТЬ ЗАНЯТИЕ</button></div>';
+    initCanvas(s, char, renderToken);
   }
-  async function initCanvas(s, u, stage, token) {
-    const status = byId('writing-status');
-    if (status) status.textContent = 'Загружаем данные черт…';
-    let library;
-    try { library = await loadLibrary(); }
-    catch (error) { showError(token, 'Библиотека письма не загрузилась. Проверь соединение с интернетом.'); return; }
-    if (token !== renderToken || ctx.state.mode !== 'writing' || current() !== s) return;
-    const canvas = byId('writing-canvas');
-    if (!canvas) return;
-    canvas.innerHTML = '';
-    const isTrace = stage === 'trace', isRecall = stage === 'recall';
-    const width = Math.min(284, Math.max(220, canvas.clientWidth || 284));
+  function setPrefillControls(s, total, count) {
+    const el = byId('writing-prefill-controls');
+    if (!el) return;
+    const w = settings();
+    const max = Math.max(0, total - 1);
+    el.innerHTML = '<div class="writing-prefill-label"><strong>НАПИСАНО ЗАРАНЕЕ: ' +
+      count + ' ИЗ ' + total + ' ЧЕРТ</strong>' +
+      '<span>Тебе осталось ' + (total - count) + '</span></div>' +
+      '<div class="writing-prefill-input">' +
+      '<button type="button" class="writing-choice' + (w.prefillMode === 'auto' ? ' is-on' : '') +
+      '" data-action="writing-prefill-auto" aria-pressed="' + (w.prefillMode === 'auto') +
+      '">АВТОМАТИЧЕСКИ</button>' +
+      '<label for="writing-prefill-range">СВОЙ ВАРИАНТ</label>' +
+      '<input type="range" id="writing-prefill-range" min="0" max="' + max +
+      '" value="' + count + '" step="1" aria-label="Сколько первых черт показать заранее">' +
+      '<output>' + count + '</output></div>' +
+      '<p class="writing-note">0 — чистый лист; ' + max +
+      ' — почти готовый иероглиф. В автоматическом режиме подсказка уменьшается при каждом повторе.</p>';
+  }
+  async function initCanvas(s, char, token) {
+    const el = byId('writing-status');
+    if (el) el.textContent = 'Загружаем иероглиф…';
     try {
-      writer = library.create(canvas, u.char, {
-        width, height: width, padding: 15, showCharacter: stage === 'study',
-        showOutline: isTrace, strokeColor: '#111511', outlineColor: '#d0d4c7',
-        drawingColor: '#252b1d', highlightColor: '#a9d600', showHintAfterMisses: 3,
+      const library = await loadLibrary();
+      const data = await loadStrokes(library, char);
+      if (token !== renderToken || ctx.state.mode !== 'writing' || current() !== s ||
+        s.stage !== 'practice' || s.word.chars[s.charIndex] !== char) return;
+      const canvas = byId('writing-canvas');
+      if (!canvas) return;
+      const count = prefillCount(s, data.strokes.length);
+      setPrefillControls(s, data.strokes.length, count);
+      const width = Math.min(284, Math.max(220, canvas.clientWidth || 284));
+      writer = library.create(canvas, char, {
+        width, height: width, padding: 15, showCharacter: false, showOutline: false,
+        strokeColor: '#111511', outlineColor: '#d0d4c7', drawingColor: '#252b1d',
+        highlightColor: '#a9d600', showHintAfterMisses: 3,
+        charDataLoader: (_character, onLoad) => onLoad(data),
         onLoadCharDataSuccess: () => { if (token === renderToken && byId('writing-status')) byId('writing-status').textContent = ''; },
-        onLoadCharDataError: () => showError(token, 'Нет данных черт для этого иероглифа. Перейди к следующему знаку.')
+        onLoadCharDataError: () => showError(token, 'Нет данных черт. Проверь интернет.')
       });
-      if (isTrace || isRecall) {
-        writer.quiz({
-          showHintAfterMisses: 3,
-          onMistake: data => {
-            if (token === renderToken && byId('writing-status')) byId('writing-status').textContent =
-              'Неточная черта — попробуй ещё раз. Ошибок: ' + (data.totalMistakes || 0);
-          },
-          onComplete: data => {
-            if (token !== renderToken || ctx.state.mode !== 'writing' || current() !== s) return;
-            if (isTrace) { s.stage = 'recall'; ctx.save(); render(); }
-            else finishCharacter(Math.max(0, integer(data.totalMistakes, 0)), false);
-          }
-        });
-      }
-    } catch (error) { showError(token, 'Не удалось открыть упражнение для этого иероглифа.'); }
+      writer.quiz({
+        quizStartStrokeNum: count,
+        showHintAfterMisses: 3,
+        onMistake: details => {
+          if (token === renderToken && byId('writing-status')) byId('writing-status').textContent =
+            'Неточная черта. Ошибок: ' + (details.totalMistakes || 0);
+        },
+        onComplete: details => {
+          if (token !== renderToken || ctx.state.mode !== 'writing' || current() !== s ||
+            s.stage !== 'practice') return;
+          completeCharacter(s, Math.max(0, integer(details.totalMistakes, 0)), count, false);
+        }
+      });
+    } catch (error) { showError(token, 'Не удалось загрузить черты этого знака. Повтори попытку или пропусти его.'); }
   }
   function showError(token, message) {
     if (token !== renderToken) return;
     const el = byId('writing-status');
     if (el) el.textContent = message;
   }
-  function persist() { ctx.save(); }
-  function finishCharacter(mistakes, revealed) {
-    const s = current();
-    if (!s || s.stage === 'result') return;
-    const u = s.queue[s.index], w = settings();
-    const grade = revealed ? 1 : (s.hintUsed || mistakes >= 3 ? 2 : mistakes >= 1 ? 3 : 4);
-    const now = Date.now();
-    const previous = w.srs[u.char] || null;
-    if (global.ChineseLabFSRS6?.next) w.srs[u.char] = global.ChineseLabFSRS6.next(previous, grade, now);
-    else w.srs[u.char] = { due: now + (grade <= 2 ? 86400000 : 3 * 86400000), last: now, interval: grade <= 2 ? 1 : 3 };
-    w.completed++; s.done++;
-    if (!revealed && !s.hintUsed && mistakes === 0) { w.success++; s.clean++; ctx.award(3, 'ИЕРОГЛИФ НАПИСАН'); }
-    s.lastResult = { mistakes, revealed, grade };
-    s.stage = 'result';
-    persist();
-    render();
+  function completeCharacter(s, mistakes, prefilled, skipped) {
+    if (current() !== s || s.stage !== 'practice') return;
+    s.roundMistakes += mistakes;
+    s.roundPrefilled += prefilled;
+    if (skipped) { s.skipped++; s.roundHelp = true; }
+    if (s.charIndex + 1 < s.word.chars.length) {
+      s.charIndex++;
+      s.showStructure = false; s.showAnswer = false;
+      persist(); render();
+    } else {
+      s.completedRounds++;
+      s.mistakes += s.roundMistakes;
+      if (s.roundMistakes === 0 && s.roundPrefilled === 0 && !s.roundHelp) s.cleanRounds++;
+      s.recent.push({mistakes: s.roundMistakes, prefilled: s.roundPrefilled,
+        helped: s.roundHelp, skipped});
+      s.stage = 'roundEnd';
+      persist(); render();
+    }
   }
-  function stepNext() {
-    const s = current();
-    if (!s) { render(); return; }
-    if (s.index + 1 >= s.queue.length) { endSession(); return; }
-    s.index++;
-    s.stage = 'study'; s.hintUsed = false; s.showStructure = false; s.lastResult = null;
-    persist(); render();
+  function drawRoundEnd(s) {
+    const finished = s.completedRounds >= s.rounds;
+    const last = s.recent[s.recent.length - 1] || {};
+    byId('game-panel').innerHTML = '<div class="writing-root">' + wordHeader(s, 'ПОВТОР ЗАВЕРШЁН') +
+      '<div class="writing-prompt"><div class="writing-large-word" lang="zh-CN">' + safe(s.word.hanzi) + '</div>' +
+      '<div class="writing-meaning">' + safe(s.word.ru) + '</div>' +
+      '<div class="writing-pronunciation">' + safe(s.word.pinyin) + '</div></div>' +
+      '<div class="writing-feedback">' + s.completedRounds + ' ИЗ ' + s.rounds + ' ПРОПИСЫВАНИЙ · ' +
+      (last.mistakes || 0) + ' ОШИБОК · ' + (last.prefilled || 0) + ' ГОТОВЫХ ЧЕРТ</div>' +
+      '<div class="writing-actions">' +
+      '<button type="button" class="writing-secondary" data-action="writing-speak">◖)) ПРОИЗНЕСТИ</button>' +
+      '<button type="button" class="writing-primary" data-action="' +
+      (finished ? 'writing-finish' : 'writing-next-round') + '">' +
+      (finished ? 'ЗАВЕРШИТЬ ЗАНЯТИЕ →' : 'ПРОПИСАТЬ ЕЩЁ РАЗ →') + '</button>' +
+      '</div><button type="button" class="writing-stop" data-action="writing-stop">ЗАКОНЧИТЬ ЗАНЯТИЕ</button></div>';
   }
-  function endSession() {
-    const s = current();
+  function startPractice(s) {
     if (!s) return;
-    ctx.state.progress.writingLastResult = { done: s.done, clean: s.clean, endedAt: Date.now() };
+    s.stage = 'practice';
+    s.charIndex = 0;
+    s.roundMistakes = 0; s.roundPrefilled = 0; s.roundHelp = false;
+    s.showStructure = false; s.showAnswer = false;
+    persist(); render();
+    autoSound();
+  }
+  function finalize(s, completed) {
+    const w = settings();
+    const recent = (s.recent || []).slice(-Math.min(3, s.rounds));
+    const fullyIndependent = recent.length >= 2 && recent.every(r =>
+      !r.helped && !r.skipped && r.mistakes === 0 && r.prefilled === 0);
+    const anyMissed = s.skipped > 0;
+    const grade = !completed || anyMissed ? 1 :
+      fullyIndependent ? 4 : recent.some(r => r.mistakes >= 3 || r.helped) ? 2 : 3;
+    if (completed) {
+      const now = Date.now();
+      // One spaced-repetition rating per character and session, not ten artificial reviews.
+      for (const ch of new Set(s.word.chars)) {
+        if (global.ChineseLabFSRS6?.next) w.srs[ch] = global.ChineseLabFSRS6.next(w.srs[ch] || null, grade, now);
+        else w.srs[ch] = {last: now, due: now + (grade <= 2 ? 86400000 : 3 * 86400000),
+          interval: grade <= 2 ? 1 : 3};
+      }
+      w.completedWords++;
+      w.history[s.word.hanzi] = {last: now, rounds: s.completedRounds,
+        clean: s.cleanRounds, grade, mistakes: s.mistakes};
+      if (grade >= 3) ctx.award(5, 'СЛОВО ПРОПИСАНО');
+    }
+    ctx.state.progress.writingLastResult = {word: s.word.hanzi,
+      done: s.completedRounds, clean: s.cleanRounds, endedAt: Date.now()};
     delete ctx.state.progress.writingSession;
-    persist();
-    render();
+    persist(); render();
   }
   function startSession() {
-    const w = settings(), pool = lessonsPool();
-    if (!pool.length) return;
-    const selected = pool.slice(0, w.wordCount);
-    ctx.state.progress.writingSession = {
-      version: VERSION, queue: selected, index: 0, stage: 'study', startedAt: Date.now(),
-      goal: 'words', done: 0, clean: 0, hintUsed: false, showStructure: false, lastResult: null
-    };
+    const pool = wordPool(), w = settings(), word = chosenWord(pool);
+    if (!word) return;
+    ctx.state.progress.writingSession = {version: VERSION, word, attempt: 0, charIndex: 0,
+      rounds: w.repetitions, stage: 'study', startedAt: Date.now(),
+      completedRounds: 0, cleanRounds: 0, mistakes: 0, skipped: 0,
+      roundMistakes: 0, roundHelp: false, roundPrefilled: 0,
+      recent: [], showStructure: false, showAnswer: false};
     persist(); render();
+    autoSound();
   }
   function act(action, button) {
     if (!ctx || ctx.state.mode !== 'writing') return false;
-    const w = settings(), s = current();
-    const n = Number(button.dataset.value);
+    const w = settings(), s = current(), value = button.dataset.value;
     if (action === 'writing-lesson') {
-      if (w.lessonIds.includes(n) && w.lessonIds.length > 1) w.lessonIds = w.lessonIds.filter(id => id !== n);
-      else if (!w.lessonIds.includes(n) && ctx.state.lessons.some(l => l.id === n)) w.lessonIds.push(n);
+      const id = Number(value);
+      if (w.lessonIds.includes(id) && w.lessonIds.length > 1) w.lessonIds = w.lessonIds.filter(n => n !== id);
+      else if (!w.lessonIds.includes(id) && ctx.state.lessons.some(l => l.id === id)) w.lessonIds.push(id);
+      if (!wordPool().some(item => item.hanzi === w.selectedWord)) w.selectedWord = '';
       persist(); render();
-    } else if (action === 'writing-count') { if ([1, 2].includes(n)) w.wordCount = n; persist(); render(); }
-    else if (action === 'writing-start') startSession();
-    else if (action === 'writing-stop') endSession();
-    else if (action === 'writing-animate' && writer) writer.animateCharacter();
-    else if (action === 'writing-trace' && s) { s.stage = 'trace'; persist(); render(); }
-    else if (action === 'writing-recall' && s) { s.stage = 'recall'; s.showStructure = false; persist(); render(); }
-    else if (action === 'writing-structure' && s) {
-      s.hintUsed = true; s.showStructure = !s.showStructure;
-      const guide = byId('writing-breakdown');
-      if (guide) guide.hidden = !s.showStructure;
+    } else if (action === 'writing-repetitions') {
+      if ([5, 10].includes(Number(value))) w.repetitions = Number(value);
+      persist(); render();
+    } else if (action === 'writing-sound-toggle') {
+      w.autoSound = !w.autoSound; persist(); render();
+    } else if (action === 'writing-prefill-auto') {
+      w.prefillMode = 'auto'; persist(); render();
+    } else if (action === 'writing-prefill-manual') {
+      w.prefillMode = 'manual'; persist(); render();
+    } else if (action === 'writing-start') startSession();
+    else if (action === 'writing-begin' && s) startPractice(s);
+    else if (action === 'writing-next-round' && s && s.stage === 'roundEnd') {
+      s.attempt++; startPractice(s);
+    } else if (action === 'writing-finish' && s && s.stage === 'roundEnd') finalize(s, true);
+    else if (action === 'writing-stop' && s) finalize(s, false);
+    else if (action === 'writing-speak') speakWord();
+    else if (action === 'writing-structure' && s && s.stage === 'practice') {
+      s.roundHelp = true; s.showStructure = !s.showStructure;
+      const el = byId('writing-breakdown'); if (el) el.hidden = !s.showStructure;
       persist();
+    } else if (action === 'writing-hint' && s && s.stage === 'practice' && writer) {
+      s.roundHelp = true; writer.showOutline(); persist();
+    } else if (action === 'writing-restart' && s && s.stage === 'practice') {
+      s.roundHelp = true; persist(); render();
+    } else if (action === 'writing-reveal' && s && s.stage === 'practice') {
+      s.roundHelp = true; s.showStructure = true; s.showAnswer = true; persist(); render();
     }
-    else if (action === 'writing-hint' && s && writer) { s.hintUsed = true; writer.showOutline(); persist(); }
-    else if (action === 'writing-restart' && s) { s.hintUsed = true; render(); }
-    else if (action === 'writing-reveal' && s) finishCharacter(0, true);
-    else if (action === 'writing-next') stepNext();
     return true;
   }
+  function change(event) {
+    if (!ctx || ctx.state.mode !== 'writing') return;
+    const target = event.target;
+    if (target?.id === 'writing-word-select' && !current()) {
+      settings().selectedWord = target.value;
+      persist(); render();
+    } else if (target?.id === 'writing-prefill-range' && current()?.stage === 'practice') {
+      const w = settings();
+      const max = Math.max(0, (strokeData.get(current().word.chars[current().charIndex])?.strokes?.length || 1) - 1);
+      w.prefillMode = 'manual';
+      w.prefillCount = Math.max(0, Math.min(max, integer(target.value, 0)));
+      current().roundHelp = true; // user explicitly requested extra guidance
+      persist(); render();
+    }
+  }
+  document.addEventListener('change', change);
   function mount(context) {
     ctx = context;
     render();
@@ -399,5 +537,5 @@
       if (data && ctx?.state.mode === 'writing') render();
     });
   }
-  global.ChineseLabWriting = Object.freeze({ mount, action: act, render });
+  global.ChineseLabWriting = Object.freeze({mount, action: act, render});
 })(window);

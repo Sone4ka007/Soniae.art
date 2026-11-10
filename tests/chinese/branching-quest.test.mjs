@@ -7,6 +7,7 @@ import '../../chinese/js/quest-lesson3.js';
 import '../../chinese/js/quest-lesson4.js';
 import '../../chinese/js/quest-lesson5.js';
 import '../../chinese/js/quest-lesson6.js';
+import '../../chinese/js/quest-lessons7-10.js';
 import '../../chinese/js/quest-branches.js';
 
 const dataDir=join(dirname(fileURLToPath(import.meta.url)),'../../chinese/data');
@@ -50,11 +51,11 @@ for(const lesson of lessonData){
  test(`lesson ${lesson.id}: three linked chapters, four distinct endings and graded vocabulary`,()=>{
    const chapters=readings[lesson.id];
    const result=globalThis.ChineseLabQuestBranches.build(lesson,chapters);
-   assert.equal(result.schemaVersion,lesson.id<=6?9:7);
+   assert.equal(result.schemaVersion,9);
    assert.equal(result.steps.length,lesson.id===1?8:8);
    assert.deepEqual(result.steps.map(x=>x.type),lesson.id===1
      ?['roleplay','explore','choice','explore','compose','choice','explore','choice']
-     :[2,3,5,6].includes(lesson.id)
+     :[2,3,5,6,7,8,9,10].includes(lesson.id)
        ?['roleplay','explore','choice','explore','compose','choice','compose','choice']
        :lesson.id===4
          ?['roleplay','explore','choice','compose','choice','explore','compose','choice']
@@ -118,7 +119,7 @@ for(const lesson of lessonData){
    assert.equal(new Set(result.branchEndings.map(e=>e.ru)).size,4,'Different choices must produce different outcomes');
    assert.equal(decisions[1].branchContexts.length,2);
    assert.notEqual(decisions[1].branchContexts[0].zh,decisions[1].branchContexts[1].zh);
-   assert.equal(decisions[2].branchContexts.length,lesson.id<=6?4:2);
+   assert.equal(decisions[2].branchContexts.length,4);
    assert.notEqual(decisions[2].branchContexts[0].zh,decisions[2].branchContexts[1].zh);
    if(lesson.id===1) {
      assert.equal(decisions[1].branchOptions.length,2,'Different first choice must open different decisions');
@@ -177,6 +178,26 @@ for(const lesson of lessonData){
        assert.deepEqual(illustrations[0].required,['registration','nurse','queue']);
        assert.deepEqual(illustrations[1].required,['thermometer','test','cabinet']);
      }
+   }
+   if(lesson.id>=7) {
+     assert.equal(result.playFirst,true,'Later lessons must start in dialogue, not a passive reader');
+     assert.equal(result.steps[0].type,'roleplay');
+     assert.equal(result.opening.panels.length,4);
+     assert.equal(result.branchEndings.flatMap(e=>e.variants).length,8);
+     assert.equal(new Set(result.branchEndings.flatMap(e=>e.variants.map(v=>v.ru))).size,8);
+     assert.equal(decisions[1].branchOptions.length,2,'Middle decision follows first route');
+     assert.equal(decisions[2].branchOptions.length,4,'Final decision follows first and second routes');
+     const original=lesson.quest.steps.filter(s=>s.type==='explore');
+     assert.deepEqual(illustrations.map(s=>s.spots.map(p=>p.id)),original.map(s=>s.spots.map(p=>p.id)),
+       'Existing illustrated hotspots must survive the rewrite');
+     const req={
+       7:[['plan','clients','computer'],['forms','chart','sample']],
+       8:[['schedule','sleep','clock'],['path','view','air']],
+       9:[['folder','names','camera'],['sketchbook','permission','phone']],
+       10:[['weather','route','note'],['coat','map','cup']]
+     };
+     assert.deepEqual(illustrations.map(s=>s.required),req[lesson.id]);
+     assert.ok(result.opening.summaryRu.length>200,'A new player needs the full situation');
    }
    const outcomes=[];
    for(let a=0;a<2;a++)for(let b=0;b<2;b++)for(let c=0;c<2;c++) {

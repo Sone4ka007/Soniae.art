@@ -58703,7 +58703,7 @@
       "address": "",
       "price": 0,
       "price_text": "Бесплатно",
-      "registration": null,
+      "registration": false,
       "categories": [
         "выставка"
       ],
@@ -58718,7 +58718,14 @@
       "ticket_required": false,
       "availability": "unknown",
       "availability_checked_at": "",
-      "start_date": "2026-11-10"
+      "start_date": "2026-11-10",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "spb-2026-11-10-7f2b709969",
@@ -58979,7 +58986,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "выставка"
       ],
@@ -58994,7 +59001,14 @@
       "ticket_required": false,
       "availability": "unknown",
       "availability_checked_at": "",
-      "start_date": "2026-11-10"
+      "start_date": "2026-11-10",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "spb-2026-11-10-be0683f6be",
@@ -60651,7 +60665,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "лекция"
       ],
@@ -60665,7 +60679,14 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-11-11-36bb21f564",
@@ -61032,7 +61053,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "наброски"
       ],
@@ -61046,7 +61067,14 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-11-11-df532ffc89",
@@ -63147,7 +63175,7 @@
       "address": "",
       "price": 600,
       "price_text": "600 ₽",
-      "registration": null,
+      "registration": false,
       "categories": [
         "кинопоказ"
       ],
@@ -63161,7 +63189,14 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-11-14-9f84af6814",
@@ -66453,7 +66488,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "спецпоказ"
       ],
@@ -66467,7 +66502,14 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-11-18-ad5480ce53",
@@ -68018,7 +68060,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "выставка"
       ],
@@ -68033,7 +68075,14 @@
       "ticket_required": false,
       "availability": "unknown",
       "availability_checked_at": "",
-      "start_date": "2026-11-20"
+      "start_date": "2026-11-20",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "spb-2026-11-20-432be7b5fd",
@@ -70117,7 +70166,7 @@
       "address": "",
       "price": 300,
       "price_text": "300 ₽",
-      "registration": null,
+      "registration": false,
       "categories": [
         "встреча"
       ],
@@ -70131,7 +70180,14 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "international-2026-11-23-9a93613704",
@@ -70587,7 +70643,7 @@
       "address": "Москва, ул. Пятницкая, 71/5, строение 2, офис 503",
       "price": 750,
       "price_text": "750 ₽",
-      "registration": null,
+      "registration": false,
       "categories": [
         "наброски"
       ],
@@ -70602,7 +70658,14 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-11-24-e729e1a012",

@@ -64,6 +64,119 @@
       return rank(a) - rank(b);
     });
   }
+
+  // Russian learning cues for selected common characters. These are NOT historical proof.
+  const memoryCues = {
+    '签':'Сверху ⺮ «бамбук», снизу 佥 — фонетическая часть. В прошлом бамбуковые планки использовались для записей.',
+    '证':'讠 связан с речью, 正 — с правильностью. Запомни «подтвердить правильными словами». Это мнемоника.',
+    '入':'Форма помогает представить движение внутрь. Древнее происхождение знака сложнее, чем простая картинка.',
+    '学':'Снизу 子 «ребёнок», сверху элементы, связанные с местом обучения. Удобная мнемоника: ребёнок учится под крышей.',
+    '好':'В современной форме слева 女, справа 子. Для запоминания: «женщина и ребёнок»; культурные трактовки не следует выдавать за буквальное значение.',
+    '妈':'女 связана со значением, 马 служит звуковой подсказкой. Это один из типичных смысло-звуковых знаков.',
+    '休':'亻 «человек» + 木 «дерево»: человек прислонился к дереву, чтобы отдохнуть.',
+    '明':'日 «солнце» и 月 «луна»; обе части помогают запомнить понятие света.',
+    '林':'Два 木 «дерево»: несколько деревьев складываются в лес.',
+    '感':'Внизу 心 «сердце», сверху 咸. Сердце помогает вспомнить связь с чувствами.',
+    '未':'Сравни с 末: у 未 верхняя горизонтальная черта короче нижней. Это зрительная подсказка, не объяснение происхождения.',
+    '末':'木 «дерево» и верхняя длинная черта — условная отметка вершины.',
+    '材':'木 указывает на дерево/материал, 才 — звуковая часть.',
+    '校':'木 — смысловая часть, 交 — историческая звуковая подсказка; современное чтение изменилось.',
+    '料':'米 «рис» и 斗 «мера»: удобно представить измерение крупы.',
+    '减':'冫 «лёд/холод» — смысловая часть в источнике, 咸 — историческая звуковая.',
+    '轻':'车 «повозка», 工 в составе правой части связан с историческим звучанием.',
+    '通':'辶 «движение», 甬 — звуковой компонент.',
+    '识':'讠 «речь», 只 — историческая звуковая часть.',
+    '奖':'Смысловая и фонетическая роли исторически сложнее, чем современная видимая форма. Не разбирай знак лишь как набор современных значений.',
+    '知':'口 «рот/речь», 矢 — фонетическая часть по источнику. Сегодня чтение частей может не совпадать.',
+    '言':'Древний знак связан с речью; в упрощённых иероглифах часто встречается как 讠.',
+    '口':'Пиктограмма рта в сильно упрощённой квадратной форме.',
+    '日':'Пиктограмма солнца: первоначальная круглая форма стала прямоугольной.',
+    '月':'Пиктограмма луны; современные компоненты 月 в разных знаках могут иметь и другое историческое происхождение.',
+    '木':'Пиктограмма дерева с ветвями, стволом и корнями.',
+    '山':'Пиктограмма горных вершин.',
+    '人':'Пиктограмма человека. Нынешний знак очень схематичен.',
+    '女':'Упрощённый контур человека в древних формах; не пытайся объяснять отдельные современные черты буквально.',
+    '子':'В ранних формах изображает ребёнка.',
+    '上':'Горизонтальная черта отмечает опору, другая — положение над ней.',
+    '下':'Горизонтальная черта отмечает опору, другая — положение под ней.'
+  };
+  const componentNames = {
+    '⺮':'бамбук','竹':'бамбук','讠':'речь / слова','言':'речь','辶':'движение',
+    '忄':'чувства / сердце','心':'сердце','扌':'рука','手':'рука','木':'дерево',
+    '氵':'вода','水':'вода','灬':'огонь','火':'огонь','艹':'трава / растения',
+    '亻':'человек','人':'человек','女':'женщина','子':'ребёнок',
+    '口':'рот / речь','贝':'раковина / деньги','车':'повозка','日':'солнце / день',
+    '月':'луна / месяц','纟':'нить / шёлк','冫':'лёд / холод','土':'земля',
+    '石':'камень','米':'рис','力':'сила','山':'гора','刂':'нож',
+    '目':'глаз','金':'металл / золото','钅':'металл','雨':'дождь','足':'нога',
+    '⺍':'часть верхнего компонента','冖':'крышка','田':'поле','刀':'нож'
+  };
+  const compositionNames = {
+    '⿰':'слева направо','⿱':'сверху вниз','⿲':'три части по горизонтали',
+    '⿳':'три части по вертикали','⿴':'внутри рамки','⿵':'окружение сверху',
+    '⿶':'окружение снизу','⿷':'окружение слева','⿸':'окружение сверху слева',
+    '⿹':'окружение сверху справа','⿺':'окружение снизу слева','⿻':'перекрывающиеся элементы'
+  };
+
+  function loadCharacterData() {
+    if (characterData) return Promise.resolve(characterData);
+    if (!dataPromise) {
+      dataPromise = fetch('./data/character-components.json')
+        .then(response => { if (!response.ok) throw new Error('Не удалось загрузить разбор'); return response.json(); })
+        .then(data => { characterData = data.characters || {}; return characterData; })
+        .catch(error => {
+          console.warn('Chinese Lab character etymology unavailable', error);
+          // Retry on a future mode switch if network failure was temporary.
+          dataPromise = null;
+          return null;
+        });
+    }
+    return dataPromise;
+  }
+
+  function characterGuide(u) {
+    const info = characterData?.[u.char];
+    if (!characterData) return '<p class="writing-guide-note">Загружаем разбор компонентов…</p>';
+    if (!info) return '<p class="writing-guide-note">Проверенных данных о составе этого знака пока нет.</p>';
+    const raw = String(info.decomposition || '');
+    const valid = raw && !raw.startsWith('？');
+    const knownPieces = valid ? Array.from(raw).filter(c => !compositionNames[c] && c !== '？') : [];
+    const pieces = knownPieces.length ? '<div class="writing-components">' + knownPieces.map(c =>
+      '<span class="writing-component"><b lang="zh-CN">' + safe(c) + '</b><small>' +
+      safe(componentNames[c] || 'компонент') + '</small></span>').join('') + '</div>' : '';
+    const layout = compositionNames[Array.from(raw)[0]];
+    const etym = info.etymology || {};
+    let historical = '';
+    if (etym.type === 'pictophonetic') {
+      historical = 'По словарю, это смысло-звуковой знак.';
+      if (etym.semantic) historical += ' Смысловой компонент: ' + etym.semantic +
+        (componentNames[etym.semantic] ? ' (' + componentNames[etym.semantic] + ')' : '') + '.';
+      if (etym.phonetic) historical += ' Фонетический компонент: ' + etym.phonetic +
+        '. Современное произношение может отличаться.';
+    } else if (etym.type === 'ideographic') {
+      historical = 'Источник относит знак к смысловым образованиям. Значение может объясняться сочетанием частей.';
+    } else if (etym.type === 'pictographic') {
+      historical = 'Источник относит знак к пиктограммам: его ранние формы представляли изображение.';
+    } else {
+      historical = 'Источник не даёт надёжной классификации происхождения этого знака.';
+    }
+    return '<h4>ИЗ ЧЕГО СОСТОИТ</h4>' +
+      (valid ? '<div class="writing-ids"><span lang="zh-CN">' + safe(raw) + '</span>' +
+        (layout ? '<small>' + safe(layout) + '</small>' : '') +
+        (raw.includes('？') ? '<small>часть структуры пока не определена</small>' : '') + '</div>' + pieces
+        : '<p class="writing-guide-note">Для этого знака нет полного подтверждённого разложения.</p>') +
+      '<p class="writing-guide-note">Словарный ключ: <strong lang="zh-CN">' +
+      safe(info.radical || '—') + '</strong>. Ключ не всегда равен смысловой части.</p>' +
+      '<h4>ПРОИСХОЖДЕНИЕ · ПОДСКАЗКА</h4>' +
+      '<p>' + safe(historical) + '</p>' +
+      (memoryCues[u.char] ? '<p class="writing-memory"><strong>Как запомнить:</strong> ' +
+        safe(memoryCues[u.char]) + '</p>' : '') +
+      (etym.hint ? '<details class="writing-source"><summary>Комментарий источника (англ.)</summary>' +
+        '<p>' + safe(etym.hint) + '</p></details>' : '') +
+      '<p class="writing-guide-foot">Графический состав не всегда совпадает с исторической этимологией. ' +
+      'Источник: <a href="https://github.com/skishore/makemeahanzi" target="_blank" rel="noopener noreferrer">Make Me a Hanzi</a>.</p>';
+  }
+
   function loadLibrary() {
     if (global.HanziWriter) return Promise.resolve(global.HanziWriter);
     if (libraryPromise) return libraryPromise;
@@ -129,6 +242,8 @@
     const u = s.queue[s.index];
     if (!u || !HAN.test(u.char)) { stepNext(); return; }
     const stage = s.stage;
+    const showGuide = stage !== 'recall' || !!s.showStructure;
+    const sourcePronunciation = characterData?.[u.char]?.pinyin?.join(', ');
     const wordPlace = u.length > 1 ? ' · ' + u.position + '-й знак из ' + u.length : '';
     const phase = {study:'ИЗУЧИ', trace:'ОБВЕДИ', recall:'НАПИШИ ПО ПАМЯТИ', result:'РЕЗУЛЬТАТ'}[stage] || 'ИЗУЧИ';
     const display = stage === 'study' || stage === 'result' ? '<span lang="zh-CN">' + safe(u.char) + '</span>' : '';
@@ -141,7 +256,8 @@
       '<button class="writing-minor" type="button" data-action="writing-recall">Сразу по памяти</button>'
       : stage === 'trace' ? '<button class="writing-secondary" type="button" data-action="writing-animate">ПОКАЗАТЬ ЧЕРТЫ</button>' +
         '<button class="writing-minor" type="button" data-action="writing-recall">Без контура →</button>'
-      : stage === 'recall' ? '<button class="writing-secondary" type="button" data-action="writing-hint">КОНТУР / ПОДСКАЗКА</button>' +
+      : stage === 'recall' ? '<button class="writing-secondary" type="button" data-action="writing-structure">СОСТАВ И ПОДСКАЗКА</button>' +
+        '<button class="writing-secondary" type="button" data-action="writing-hint">КОНТУР</button>' +
         '<button class="writing-secondary" type="button" data-action="writing-restart">СТЕРЕТЬ И НАЧАТЬ ЗАНОВО</button>' +
         '<button class="writing-minor" type="button" data-action="writing-reveal">ПОКАЗАТЬ ОТВЕТ</button>'
       : '<button class="writing-primary" type="button" data-action="writing-next">СЛЕДУЮЩИЙ ЗНАК →</button>';
@@ -149,14 +265,19 @@
       safe(phase) + '</b><span>' + safe(progressLabel(s)) + '</span></div>' +
       '<div class="writing-progress-track"><span style="width:' + Math.round(100 * s.index / s.queue.length) + '%"></span></div>' +
       '<div class="writing-prompt"><div class="writing-meaning">' + safe(u.ru) + '</div>' +
-      '<div class="writing-pronunciation">' + safe(u.pinyin) + wordPlace +
-      ' · Урок ' + u.lesson + '</div><p>' + prompt + '</p></div>' +
+      '<div class="writing-pronunciation">' + safe(sourcePronunciation || u.pinyin) +
+      ' · Урок ' + u.lesson + '</div>' +
+      (stage !== 'recall' ? '<div class="writing-context">В слове <b lang="zh-CN">' + safe(u.word) +
+        '</b> (' + safe(u.pinyin) + ')' + wordPlace + '</div>' : '') +
+      '<p>' + prompt + '</p></div>' +
       '<div class="writing-paper"><div class="writing-grid"><div id="writing-canvas" class="writing-canvas" role="img" ' +
       'aria-label="Поле для написания иероглифа пальцем или мышью">' + display + '</div></div></div>' +
       (stage === 'result' ? '<div class="writing-feedback" aria-live="polite">' +
         (s.lastResult?.revealed ? 'ОТВЕТ ПОКАЗАН · ПОВТОРИ ПОЗЖЕ' : 'НАПИСАНО · ' +
           (s.lastResult?.mistakes || 0) + ' ОШИБОК В ЧЕРТАХ') + '</div>' : '') +
       '<div class="writing-actions">' + controls + '</div>' +
+      '<section id="writing-breakdown" class="writing-breakdown" ' +
+      (showGuide ? '' : 'hidden') + '>' + characterGuide(u) + '</section>' +
       '<div id="writing-status" class="writing-note" aria-live="polite"></div>' +
       '<button type="button" data-action="writing-stop" class="writing-stop">ЗАКОНЧИТЬ ЗАНЯТИЕ</button></div>';
     if (stage !== 'result') initCanvas(s, u, stage, renderToken);
@@ -224,7 +345,7 @@
     if (!s) { render(); return; }
     if (s.index + 1 >= s.queue.length) { endSession(); return; }
     s.index++;
-    s.stage = 'study'; s.hintUsed = false; s.lastResult = null;
+    s.stage = 'study'; s.hintUsed = false; s.showStructure = false; s.lastResult = null;
     persist(); render();
   }
   function endSession() {
@@ -241,7 +362,7 @@
     const selected = pool.slice(0, w.wordCount);
     ctx.state.progress.writingSession = {
       version: VERSION, queue: selected, index: 0, stage: 'study', startedAt: Date.now(),
-      goal: 'words', done: 0, clean: 0, hintUsed: false, lastResult: null
+      goal: 'words', done: 0, clean: 0, hintUsed: false, showStructure: false, lastResult: null
     };
     persist(); render();
   }
@@ -258,13 +379,25 @@
     else if (action === 'writing-stop') endSession();
     else if (action === 'writing-animate' && writer) writer.animateCharacter();
     else if (action === 'writing-trace' && s) { s.stage = 'trace'; persist(); render(); }
-    else if (action === 'writing-recall' && s) { s.stage = 'recall'; persist(); render(); }
+    else if (action === 'writing-recall' && s) { s.stage = 'recall'; s.showStructure = false; persist(); render(); }
+    else if (action === 'writing-structure' && s) {
+      s.hintUsed = true; s.showStructure = !s.showStructure;
+      const guide = byId('writing-breakdown');
+      if (guide) guide.hidden = !s.showStructure;
+      persist();
+    }
     else if (action === 'writing-hint' && s && writer) { s.hintUsed = true; writer.showOutline(); persist(); }
     else if (action === 'writing-restart' && s) { s.hintUsed = true; render(); }
     else if (action === 'writing-reveal' && s) finishCharacter(0, true);
     else if (action === 'writing-next') stepNext();
     return true;
   }
-  function mount(context) { ctx = context; render(); }
+  function mount(context) {
+    ctx = context;
+    render();
+    if (!characterData) loadCharacterData().then(data => {
+      if (data && ctx?.state.mode === 'writing') render();
+    });
+  }
   global.ChineseLabWriting = Object.freeze({ mount, action: act, render });
 })(window);

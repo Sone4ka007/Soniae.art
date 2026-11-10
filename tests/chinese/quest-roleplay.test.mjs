@@ -7,6 +7,8 @@ import '../../chinese/js/quest-roleplay.js';
 import '../../chinese/js/quest-roleplay-extended.js';
 import '../../chinese/js/quest-lesson3.js';
 import '../../chinese/js/quest-lesson4.js';
+import '../../chinese/js/quest-lesson5.js';
+import '../../chinese/js/quest-lesson6.js';
 import '../../chinese/js/quest-branches.js';
 
 const root=join(dirname(fileURLToPath(import.meta.url)),'..','..');
@@ -124,7 +126,7 @@ test('Lesson 2 uses its own landlord conversation and rejects wrong-topic answer
 });
 
 
-for(const lessonId of [3,4]){
+for(const lessonId of [3,4,5,6]){
  test('Lesson '+lessonId+' has a playable conversation, accepted meaning and graded Chinese',()=>{
    const l=data('lesson'+lessonId+'.json'),ch=data('readings.json')[lessonId];
    const q=globalThis.ChineseLabQuestBranches.build(l,ch);
@@ -133,17 +135,32 @@ for(const lessonId of [3,4]){
    assert.equal(q.steps[0].type,'roleplay');
    assert.equal(engine.missions.length,4);
    for(const m of engine.missions)assert.equal(engine.evaluate(m.id,m.sample).ok,true,m.id);
-   const bad=lessonId===3?[
-     ['purpose','我不想买咖啡。'],
-     ['purpose','我想买车票。'],
-     ['payment','我喜欢咖啡。'],
-     ['check','我想去学校。']
-    ]:[
-     ['purpose','我想买咖啡。'],
-     ['phone','我的手机有信号。'],
-     ['help','我不需要帮助。'],
-     ['thanks','我喜欢咖啡。']
-    ];
+   const bad={
+     3:[
+       ['purpose','我不想买咖啡。'],
+       ['purpose','我想买车票。'],
+       ['payment','我喜欢咖啡。'],
+       ['check','我想去学校。']
+     ],
+     4:[
+       ['purpose','我想买咖啡。'],
+       ['phone','我的手机有信号。'],
+       ['help','我不需要帮助。'],
+       ['thanks','我喜欢咖啡。']
+     ],
+     5:[
+       ['purpose','我想去学校。'],
+       ['spice','我今天想看电视。'],
+       ['amount','我喜欢吃鱼。'],
+       ['bill','我们不想各付各的。']
+     ],
+     6:[
+       ['purpose','我不想挂号。'],
+       ['symptoms','我没有咳嗽，身体很好。'],
+       ['form','我不需要写表。'],
+       ['fee','我的房租很便宜。']
+     ]
+   }[lessonId];
    for(const [id,sentence] of bad)assert.equal(engine.evaluate(id,sentence).ok,false,id+': '+sentence);
    const allowed=new Set([...base,...Array.from({length:lessonId},(_,i)=>data('lesson'+(i+1)+'.json'))
      .flatMap(item=>item.words.map(w=>w.hanzi))]);

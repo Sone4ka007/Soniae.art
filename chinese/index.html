@@ -698,11 +698,13 @@ window.chineseLabLessonFetch=async url=>{
 <script src="./js/exercise-sessions.js"></script>
 <script src="./js/quest-mnemonics.js?v=20261109-2"></script>
 <script src="./js/quest-roleplay.js?v=20261110-2"></script>
-<script src="./js/quest-roleplay-extended.js?v=20261110-2"></script>
-<script src="./js/quest-roleplay-view.js?v=20261110-2"></script>
+<script src="./js/quest-roleplay-extended.js?v=20261110-3"></script>
+<script src="./js/quest-roleplay-view.js?v=20261110-3"></script>
 <script src="./js/quest-lesson3.js?v=20261110-1"></script>
 <script src="./js/quest-lesson4.js?v=20261110-2"></script>
-<script src="./js/quest-branches.js?v=20261110-2"></script>
+<script src="./js/quest-lesson5.js?v=20261110-1"></script>
+<script src="./js/quest-lesson6.js?v=20261110-1"></script>
+<script src="./js/quest-branches.js?v=20261110-3"></script>
 <script>
 const sceneURL = name => window.__offlineScenes[name] || ("assets/"+name+".svg");
 const $ = (selector) => document.querySelector(selector);
@@ -1094,6 +1096,27 @@ function questOpening(q){
 function renderStory(){
  const g=state.game,q=lesson().quest;
  if(g.status==='intro'&&q.playFirst){
+  if(lesson().id===5||lesson().id===6){
+   const scenario=lesson().id===5?{
+     name:'УЖИН С ДРУЗЬЯМИ',title:'ЗАКАЖИ ТО, ЧТО ТЕБЕ ПОДХОДИТ',
+     description:'Сяолинь пригласил Анну на ужин с друзьями. В прошлый раз от слишком острой еды у неё болел живот. Сегодня нужно выбрать блюда, изучить меню, а позднее помочь хозяину вечера разобраться с карточками мест. Это дружеская встреча, но важно уважать пожелания друг друга.',
+     question:'服务员：你好！你想点什么？',button:'ПОГОВОРИТЬ С ОФИЦИАНТОМ →',
+     footer:'После разговора проверь значки остроты на меню, карточки мест и способ оплаты.'}:
+     {name:'ПЕРВЫЙ ПРИЁМ В БОЛЬНИЦЕ',title:'ОБЪЯСНИ СИМПТОМЫ НА КИТАЙСКОМ',
+     description:'После ужина Анна сильно кашляла, плохо спала и проснулась с жаром. Сяолинь предлагает пойти в больницу и помочь с переводом. Ты впервые в китайской больнице: нужно зарегистрироваться, заполнить анкету, объяснить состояние и понять объяснение врача.',
+     question:'护士：你好！你要挂号吗？',button:'ПОГОВОРИТЬ С МЕДСЕСТРОЙ →',
+     footer:'После разговора исследуй холл и кабинет врача, уточни непонятные медицинские инструкции.'};
+   $('#game-panel').innerHTML=header('КВЕСТ / КИТАЙСКИЙ В РЕАЛЬНОЙ СИТУАЦИИ',
+     'Разговаривай сама, исследуй предметы и выбирай действия с последствиями.',
+     'УРОК '+String(lesson().id).padStart(2,'0')+' / ЖИВАЯ ПРАКТИКА')+
+     '<div class="quest-rp-start"><div class="quest-rp-start-label">'+esc(scenario.name)+'</div>'+
+     '<h4>'+esc(scenario.title)+'</h4><p>'+esc(scenario.description)+'</p>'+
+     '<div class="quest-rp-start-question" lang="zh-CN">'+esc(scenario.question)+' '+speakButton(scenario.question)+'</div>'+
+     '<p>Отвечай своими китайскими фразами. Можно открыть блоки с отдельными словами, если нужна подсказка.</p>'+
+     '<button type="button" data-action="quest-start" class="action-btn">'+esc(scenario.button)+'</button>'+
+     '<small>'+esc(scenario.footer)+'</small></div>';
+   return;
+  }
   if(lesson().id===3||lesson().id===4){
    const scenario=lesson().id===3?{
      name:'КАФЕ · ВОПРОС КАССИРУ',title:'НЕ ПЛАТИ, ПОКА НЕ ПРОВЕРИЛА',

@@ -38291,7 +38291,7 @@
       "reviewed_at": "2026-10-17",
       "availability": "unknown",
       "availability_checked_at": "",
-      "registration": false,
+      "registration": null,
       "price": null,
       "price_text": "",
       "price_type": "paid",
@@ -38317,7 +38317,7 @@
         "status": "approved",
         "telegram_include": false,
         "instagram_include": false,
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -41054,7 +41054,7 @@
       "address": "1-й Голутвинский переулок, 16, стр. 1",
       "price": 850,
       "price_text": "850 ₽; льготный — 650 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -41081,7 +41081,7 @@
       "time_evidence": "24 октября 2026 14:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
       "editor_overrides": {
-        "registration": false
+        "registration": null
       }
     },
     {
@@ -49427,7 +49427,7 @@
       "address": "Лаврушинский переулок, 12",
       "price": 650,
       "price_text": "650 ₽; онлайн — 700 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -49444,7 +49444,7 @@
         "telegram_include": false,
         "instagram_include": false,
         "status": "approved",
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -51674,14 +51674,16 @@
       "price": 0,
       "price_text": "",
       "registration": false,
-      "categories": [],
+      "categories": [
+        "выставка"
+      ],
       "description": "На метро Музей AZ находится между станциями метро «Маяковская» и «Белорусская» (кольцевая). Мы рекомендуем идти в Музей от станции «Маяковская». Вам нужен Выход №1 на 1-я Тверская-Ямская улица, 2-я Тверская-Ямская улица.",
       "url": "https://museum-az.com/event/territoriya-svobody-nonkonformisty-v-taruse/",
       "source": "Музей AZ — выставки и события",
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-10-20",
-      "price_type": "paid",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-10-25",
       "editor_overrides": {
@@ -55219,7 +55221,7 @@
       "address": "",
       "price_type": "free",
       "price_text": "бесплатно по регистрации",
-      "registration": false,
+      "registration": true,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -57133,7 +57135,7 @@
       "address": "",
       "price_type": "free",
       "price_text": "бесплатно по регистрации",
-      "registration": false,
+      "registration": true,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -58538,6 +58540,218 @@
       }
     },
     {
+      "id": "spb-2026-11-10-bee663d9f3",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-10",
+      "time": "",
+      "title": "«Литфонд» выставит на торги наследие музыкального и литературного андеграунда",
+      "venue": "",
+      "address": "",
+      "price": 400000,
+      "price_text": "400000 ₽",
+      "registration": null,
+      "categories": [
+        "игра"
+      ],
+      "description": "«Кузьминский сохранил целое поколение, которое официальная культура не замечала: он фотографировал картины, перепечатывал стихи и вывозил их, когда это было опасно. Этим аукционом мы хотим показать, что неофициальное искусство Ленинграда давно стало частью большой истории русской культуры XX века», - отмечает генеральный директор Аукционного дома «Литфонд» Сергей Бурмистров.",
+      "url": "https://spbcult.ru/news/anonsy/litfond-vystavit-na-torgi-nasledie-muzykalnogo-i-literaturnogo-andegraunda/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-10",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "spb-2026-11-10-4407808e6c",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-10",
+      "time": "",
+      "title": "«Сильфиду» в Мариинском посвятят 190-летию со дня мировой премьеры",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "14 и 15 ноября на исторической сцене Мариинского театра состоятся показы балета «Сильфида» Хермана Левенскьольда. Предстоящие спектакли, приуроченные к 190-летию мировой премьеры, будут отмечены яркими дебютами молодых солистов. 14 и 15 ноября на исторической сцене Мариинского театра состоятся показы балета «Сильфида» Хермана Левенскьольда.",
+      "url": "https://spbcult.ru/news/anonsy/silfidu-v-mariinskom-posvyatyat-190-letiyu-so-dnya-mirovoy-premery-/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-10",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "discovery-1b76568da85e96",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-10",
+      "start_date": "2026-11-10",
+      "end_date": "",
+      "time": "",
+      "title": "АРХ Москва",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "price_type": "unknown",
+      "registration": false,
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-13",
+      "categories": [
+        "фестиваль",
+        "архитектура"
+      ],
+      "description": "",
+      "url": "https://archmoscow.ru/",
+      "source": "АРХ Москва — официальный сайт",
+      "checked_at": "",
+      "review_reason": "special_event_discovery",
+      "editor_note": "Обнаружено мониторингом ежегодных фестивалей/дизайн-событий; требуется редакторская проверка.",
+      "discovered_at": "2026-10-13",
+      "reviewed_at": "2026-10-13",
+      "sheet_synced_description": "",
+      "instagram_image": "",
+      "social_title": "",
+      "social_description": "",
+      "social_priority": null,
+      "instagram_include": false,
+      "telegram_include": false,
+      "editor_overrides": {
+        "registration": false
+      },
+      "time_verification": "unverified",
+      "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
+      "id": "spb-2026-11-10-74b887434e",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-10",
+      "time": "",
+      "title": "Библиотека Гоголя представляет повесть «Нос» на девяти языках народов России",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лаборатория"
+      ],
+      "description": "Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами! Также вы можете отправить статью в социальной сети или мессенджере Если у вас есть чем поделиться с нашими читателями, вы можете предложить свою статью.",
+      "url": "https://spbcult.ru/news/anonsy/biblioteka-gogolya-predstavlyaet-povest-nos-na-devyati-yazykakh-narodov-rossii/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-10",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "spb-2026-11-10-f82c6b079e",
+      "status": "new",
+      "kind": "exhibition",
+      "city": "spb",
+      "date": "2026-11-10",
+      "time": "",
+      "title": "В Музее железных дорог России покажут «Дорогу, изменившую страну»",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "выставка"
+      ],
+      "description": "13 ноября , в день 175-летия с начала железнодорожного движения между Санкт-Петербургом и Москвой, в зале временных выставок Музея железных дорог России состоится открытие выставки «Дорога, изменившая страну».",
+      "url": "https://spbcult.ru/news/anonsy/v-muzee-zheleznykh-dorog-rossii-pokazhut-dorogu-izmenivshuyu-stranu/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-10",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "start_date": "2026-11-10"
+    },
+    {
+      "id": "spb-2026-11-10-fe79ec62c0",
+      "status": "new",
+      "kind": "exhibition",
+      "city": "spb",
+      "date": "2026-11-10",
+      "time": "",
+      "title": "В Музее музыки расскажут про «Долгую счастливую жизнь художника Дмитриева»",
+      "venue": "",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [
+        "выставка"
+      ],
+      "description": "Правообладатель фото: пресс-служба Музея театрального и музыкального искусства. «Конечно, всё, что происходило, было необыкновенным, и я становлюсь героем богемы, таинственного мира, магического царства. Я знаю секрет, – думал я, – я знаю секрет претворения жизни в подлинную фантастику», - Правообладатель фото: пресс-служба Музея театрального и музыкального искусства.",
+      "url": "https://spbcult.ru/news/anonsy/v-muzee-muzyki-rasskazhut-pro-dolguyu-schastlivuyu-zhizn-khudozhnika-dmitrieva/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-10",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "start_date": "2026-11-10"
+    },
+    {
+      "id": "spb-2026-11-10-7f2b709969",
+      "status": "new",
+      "kind": "exhibition",
+      "city": "spb",
+      "date": "2026-11-10",
+      "time": "",
+      "title": "В Шереметевском дворце откроют новую жизнь",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "выставка"
+      ],
+      "description": "13 ноября в Шереметевском дворце – Музее музыки откроется выставка «Долгая счастливая жизнь художника Дмитриева. Она посвящена театральному художнику, который работал с Мейерхольдом, Станиславским и Немировичем-Данченко и был, как называли его современники, абсолютным гением.",
+      "url": "https://spbcult.ru/news/anonsy/v-sheremetevskom-dvortse-otkroyut-novuyu-zhizn-/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-10",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "start_date": "2026-11-10"
+    },
+    {
       "id": "spb-2026-11-10-5995f84169",
       "status": "new",
       "kind": "event",
@@ -58561,7 +58775,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-10-422be2d050",
@@ -58737,7 +58953,7 @@
         "игра",
         "выставка"
       ],
-      "description": "Первая легальная галерея уличного искусства НЕТСТЕН располагается по дороге к арт-кластеру ЦСИ Винзавод и с 2022 года два раза в год обновляет экспозицию. Идея проекта в создании пространства знакомства аудитории с искусством без барьеров и препятствий, эта идея нашла отражение и в названии проекта. Яркие высказыванияхудожников вовлекают широкую аудиторию во взаимодействие с искусством.",
+      "description": "",
       "url": "https://www.winzavod.ru/calendar/exhibitions/mesto-dlya-igr/",
       "source": "ЦСИ Винзавод",
       "checked_at": "",
@@ -58748,6 +58964,93 @@
       "price_type": "free",
       "availability_evidence": "",
       "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
+    },
+    {
+      "id": "spb-2026-11-10-483bee69aa",
+      "status": "new",
+      "kind": "exhibition",
+      "city": "spb",
+      "date": "2026-11-10",
+      "time": "",
+      "title": "Молодые художники показали культурное многообразие нашей страны",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "выставка"
+      ],
+      "description": "Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами! Также вы можете отправить статью в социальной сети или мессенджере Если у вас есть чем поделиться с нашими читателями, вы можете предложить свою статью.",
+      "url": "https://spbcult.ru/news/anonsy/molodye-khudozhniki-pokazali-kulturnoe-mnogoobrazie-rossii-v-tryekh-ekspozitsiyakh/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-10",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "start_date": "2026-11-10"
+    },
+    {
+      "id": "spb-2026-11-10-be0683f6be",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-10",
+      "time": "",
+      "title": "На киноэкраны выходит фильм «Лиля», рассказывающий о музе Маяковского",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "фестиваль"
+      ],
+      "description": "Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами! Также вы можете отправить статью в социальной сети или мессенджере Если у вас есть чем поделиться с нашими читателями, вы можете предложить свою статью.",
+      "url": "https://spbcult.ru/news/anonsy/lilya-stanet-glavnoy-muzoy-mayakovskogo-na-kinoekranakh/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-10",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "spb-2026-11-10-4e20a63e83",
+      "status": "new",
+      "kind": "open_call",
+      "city": "spb",
+      "date": "2026-11-10",
+      "time": "",
+      "title": "Объявлен приём заявок на «Молодёжную премию Санкт‑Петербурга»",
+      "venue": "",
+      "address": "",
+      "price": 75000,
+      "price_text": "75000 ₽",
+      "registration": null,
+      "categories": [
+        "open-call"
+      ],
+      "description": "Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами! Также вы можете отправить статью в социальной сети или мессенджере Если у вас есть чем поделиться с нашими читателями, вы можете предложить свою статью.",
+      "url": "https://spbcult.ru/news/anonsy/obyavlen-priem-zayavok-na-molodyezhnuyu-premiyu-sankt-peterburga/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-10",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
       "availability": "unknown",
       "availability_checked_at": ""
     },
@@ -58787,6 +59090,34 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": "2026-10-24"
+    },
+    {
+      "id": "spb-2026-11-10-b5dfb72e67",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-10",
+      "time": "",
+      "title": "Президентская библиотека посвятит вебинар создателю Толкового словаря",
+      "venue": "",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [
+        "лаборатория"
+      ],
+      "description": "11 ноября в разделе «ТВ-канал» на портале Президентской библиотеки будет транслироваться онлайн-вебинар «К 225-летию со дня рождения Владимира Ивановича Даля». Трансляция мероприятия будет доступна всем пользователям из любой точки мира.",
+      "url": "https://spbcult.ru/news/anonsy/prezidentskaya-biblioteka-posvyatit-vebinar-sozdatelyu-tolkovogo-slovarya/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-10",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-10-b4f4229159",
@@ -58873,82 +59204,6 @@
       "availability_checked_at": "",
       "editor_note": "",
       "reviewed_at": ""
-    },
-    {
-      "id": "moscow-2026-10-25-c40e7952b7",
-      "status": "rejected",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-11-10",
-      "time": "10:00",
-      "title": "Воркшопы",
-      "venue": "ЦСИ Винзавод",
-      "address": "",
-      "price": 0,
-      "price_text": "Бесплатно",
-      "registration": false,
-      "categories": [
-        "лекция"
-      ],
-      "description": "",
-      "url": "https://www.winzavod.ru/calendar/workshops/",
-      "source": "ЦСИ Винзавод",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-10-25",
-      "price_type": "free",
-      "availability_evidence": "",
-      "ticket_required": true,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false,
-        "status": "rejected"
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": "2026-10-27"
-    },
-    {
-      "id": "moscow-2026-10-25-fefbfbd35d",
-      "status": "rejected",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-11-10",
-      "time": "10:00",
-      "title": "Курсы",
-      "venue": "ЦСИ Винзавод",
-      "address": "",
-      "price": 0,
-      "price_text": "Бесплатно",
-      "registration": false,
-      "categories": [
-        "лекция"
-      ],
-      "description": "",
-      "url": "https://www.winzavod.ru/calendar/course/",
-      "source": "ЦСИ Винзавод",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-10-25",
-      "price_type": "free",
-      "availability_evidence": "",
-      "ticket_required": true,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false,
-        "status": "rejected"
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": "2026-10-27"
     },
     {
       "id": "moscow-2026-11-10-b9a5fe1f3d",
@@ -59288,6 +59543,34 @@
       "reviewed_at": ""
     },
     {
+      "id": "spb-2026-11-10-e34056159f",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-10",
+      "time": "18:30",
+      "title": "Дни индийской культуры пройдут в музее Рерихов",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "11 ноября в Музее-институте семьи Рерихов состоится торжественное открытие Дней индийской культуры, организуемых Культурным центром имени Джавахарлала Неру при Посольстве Индии в Москве.",
+      "url": "https://spbcult.ru/news/anonsy/den-indiyskoy-kultury-proydyet-v-muzee-rerikhov/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-10",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-10-6de6981347",
       "status": "rejected",
       "kind": "event",
@@ -59490,8 +59773,8 @@
       "price_type": "unknown",
       "availability_evidence": "",
       "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": "",
+      "availability": "sold_out",
+      "availability_checked_at": "2026-11-10",
       "editor_overrides": {
         "telegram_include": false,
         "instagram_include": false,
@@ -59765,7 +60048,9 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-11-11-533523acf3",
@@ -60136,6 +60421,82 @@
       "reviewed_at": ""
     },
     {
+      "id": "moscow-2026-10-25-c40e7952b7",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-11",
+      "time": "10:00",
+      "title": "Воркшопы",
+      "venue": "ЦСИ Винзавод",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "",
+      "url": "https://www.winzavod.ru/calendar/workshops/",
+      "source": "ЦСИ Винзавод",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-25",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false,
+        "status": "rejected"
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": "2026-10-27"
+    },
+    {
+      "id": "moscow-2026-10-25-fefbfbd35d",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-11",
+      "time": "10:00",
+      "title": "Курсы",
+      "venue": "ЦСИ Винзавод",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "",
+      "url": "https://www.winzavod.ru/calendar/course/",
+      "source": "ЦСИ Винзавод",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-25",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false,
+        "status": "rejected"
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": "2026-10-27"
+    },
+    {
       "id": "moscow-2026-11-11-d4ed4734f6",
       "status": "approved",
       "kind": "event",
@@ -60279,6 +60640,34 @@
       "availability_checked_at": "",
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "moscow-2026-11-11-82baaa4f1a",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-11",
+      "time": "12:30",
+      "title": "Арт-резиденция: до, во время и после",
+      "venue": "ЦСИ Винзавод",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "",
+      "url": "https://www.winzavod.ru/calendar/round-table/art-rezidentsiya-do-vo-vremya-i-posle-winzavod/",
+      "source": "ЦСИ Винзавод",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-10",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-11-36bb21f564",
@@ -60632,6 +61021,34 @@
       "telegram_include": false,
       "instagram_include": false,
       "reviewed_at": "2026-10-27"
+    },
+    {
+      "id": "moscow-2026-11-11-ef9e999d09-1900",
+      "status": "check",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-11",
+      "time": "19:00",
+      "title": "Наброски — Pick Me Art Studio",
+      "venue": "Pick Me Art Studio",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "наброски"
+      ],
+      "description": "завтра, 11.11 в 19:00 ждём вас в мастерской на набросочки 👀",
+      "url": "https://t.me/pickmeartstudio/307",
+      "source": "Pick Me Art Studio — наброски",
+      "checked_at": "",
+      "review_reason": "sketch_post_verify_date_time",
+      "discovered_at": "2026-11-10",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-11-df532ffc89",
@@ -62261,6 +62678,34 @@
       "reviewed_at": "2026-11-06"
     },
     {
+      "id": "moscow-2026-11-13-e522f65264",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-13",
+      "time": "14:00",
+      "title": "Лекция-экскурсия «Б.Ю.Поплавский: “Дионис” русского зарубежья»",
+      "venue": "Дом русского зарубежья им. А. Солженицына",
+      "address": "",
+      "price": 300,
+      "price_text": "300 ₽",
+      "registration": true,
+      "categories": [
+        "лекция"
+      ],
+      "description": "13 ноября 2026 года в 14 часов приглашаем на лекцию-экскурсию «Б.Ю.Поплавский: “Дионис” русского зарубежья». Лекция-экскурсия посвящена жизни и творчеству одного из самых талантливых поэтов российской эмиграции.",
+      "url": "https://www.domrz.ru/event/70703_lektsiya_ekskursiya_b_yu_poplavskiy_dionis_russkogo_zarubezhya/",
+      "source": "Дом русского зарубежья — афиша",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-11-10",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "sold_out",
+      "availability_checked_at": "2026-11-10"
+    },
+    {
       "id": "moscow-2026-11-13-aa8503e63c",
       "status": "new",
       "kind": "event",
@@ -62691,6 +63136,34 @@
       "availability_checked_at": "",
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "moscow-2026-11-13-bafe231f84",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-13",
+      "time": "19:30",
+      "title": "Кинопоказ «Иллюзия реальности»",
+      "venue": "Музей «Гараж»",
+      "address": "",
+      "price": 600,
+      "price_text": "600 ₽",
+      "registration": null,
+      "categories": [
+        "кинопоказ"
+      ],
+      "description": "Девять короткометражных фильмов из двух экспериментальных программ кинофестиваля «Послание к человеку». Еще недавно воображаемое было послушным и существовало в отведенных ему границах. Сейчас человечество стоит на пороге переселения в воображаемый мир.",
+      "url": "https://garagemca.org/event/film-screening-illusion-of-reality",
+      "source": "Музей современного искусства «Гараж»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-10",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-14-9f84af6814",
@@ -64179,6 +64652,34 @@
       "instagram_include": false,
       "telegram_include": false,
       "sheet_synced_description": "Пушкинский музей представляет выставку «Фабрицио Плесси. Вертикальные моря», приуроченную к 10-летию работы музея с медиаискусством. Проект позволит зрителям впервые увидеть произведение итальянского художника, одного из “пионеров” медиа-арта Фабрицио Плесси, созданное специально для музея."
+    },
+    {
+      "id": "moscow-2026-11-15-270c09e764",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-15",
+      "time": "",
+      "title": "Экскурсии в День рождения музея",
+      "venue": "Еврейский музей и центр толерантности",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "15 ноября в Еврейском музее и центре толерантности — празднование четырнадцатого Дня рождения. В этот день мы приглашаем посетить обзорные и тематические экскурсии по основной экспозиции и выставкам \"Век Майи Плисецкой\", “Весть 2.0”. 15 ноября в Еврейском музее и центре толерантности — празднование четырнадцатого Дня рождения.",
+      "url": "https://www.jewish-museum.ru/events/ekskursii-v-den-rozhdeniya-muzeya/",
+      "source": "Еврейский музей и центр толерантности",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-11-10",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "spb-2026-11-15-cc49137983",
@@ -65820,6 +66321,34 @@
       "instagram_include": false
     },
     {
+      "id": "moscow-2026-11-17-badeea74a0",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-17",
+      "time": "15:00",
+      "title": "Ценности объединяют: программа «Место историй»",
+      "venue": "Еврейский музей и центр толерантности",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [
+        "перформанс"
+      ],
+      "description": "Интерактивная программа для подростков, в которой история и культура оживают через экскурсию, тренинг и плейбэк-театр. Часть программы Недели толерантности 2026. «Место историй» — программа Центра толерантности о ценностях, которые проходят через поколения.",
+      "url": "https://www.jewish-museum.ru/events/tsennosti-obedinyayut-programma-mesto-istoriy/",
+      "source": "Еврейский музей и центр толерантности",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-10",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "spb-2026-11-17-e261866824",
       "status": "check",
       "kind": "event",
@@ -65915,6 +66444,34 @@
       "reviewed_at": "2026-11-03"
     },
     {
+      "id": "moscow-2026-11-17-8c96310888",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-17",
+      "time": "20:30",
+      "title": "Специальный показ. Пыль",
+      "venue": "Центр Зотов",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "спецпоказ"
+      ],
+      "description": "",
+      "url": "https://centrezotov.ru/events/mamonov/speczialnyj-pokaz-pyl/",
+      "source": "Центр Зотов",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-10",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-18-ad5480ce53",
       "status": "rejected",
       "kind": "event",
@@ -65979,43 +66536,6 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": "2026-11-03"
-    },
-    {
-      "id": "spb-2026-11-18-6cf155bd99",
-      "status": "approved",
-      "kind": "event",
-      "city": "spb",
-      "date": "2026-11-18",
-      "time": "",
-      "title": "Конференция «Фотография. Изображение. Документ» 2026",
-      "venue": "РОСФОТО",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": true,
-      "categories": [
-        "диалог"
-      ],
-      "description": "Государственный музейно-выставочный центр «РОСФОТО» приглашает специалистов государственных музеев, архивов и библиотек, а также культурологов, историков искусства, ученых, разрабатывающих средства и методы анализа фотографических и рукописных памятников, экспертов в области культурных ценностей, специалистов в области цифровой археологии принять участие в ежегодной конференции «Фотография.",
-      "url": "https://rosphoto.org/events/konferenciya-fotografiya-izobrazhenie-dokument-2026/",
-      "source": "РОСФОТО",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-11-06",
-      "price_type": "unknown",
-      "availability_evidence": "",
-      "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "telegram_include": false,
-        "instagram_include": false,
-        "status": "approved"
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": "2026-11-09"
     },
     {
       "id": "moscow-2026-11-18-63fe896aa8",
@@ -66142,6 +66662,43 @@
       "telegram_include": false,
       "instagram_include": false,
       "reviewed_at": "2026-11-05"
+    },
+    {
+      "id": "spb-2026-11-18-6cf155bd99",
+      "status": "approved",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-18",
+      "time": "11:00",
+      "title": "Конференция «Фотография. Изображение. Документ» 2026",
+      "venue": "РОСФОТО",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": true,
+      "categories": [
+        "диалог"
+      ],
+      "description": "Государственный музейно-выставочный центр «РОСФОТО» приглашает специалистов государственных музеев, архивов и библиотек, а также культурологов, историков искусства, ученых, разрабатывающих средства и методы анализа фотографических и рукописных памятников, экспертов в области культурных ценностей, специалистов в области цифровой археологии принять участие в ежегодной конференции «Фотография.",
+      "url": "https://rosphoto.org/events/konferenciya-fotografiya-izobrazhenie-dokument-2026/",
+      "source": "РОСФОТО",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-06",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false,
+        "status": "approved"
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": "2026-11-09"
     },
     {
       "id": "moscow-2026-11-18-9dfc8f92b3",
@@ -67227,7 +67784,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-11-20-eb6d01d91a",
@@ -67448,6 +68007,35 @@
       "reviewed_at": "2026-10-24",
       "time_verification": "unverified",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
+      "id": "spb-2026-11-20-07ea075b9b",
+      "status": "new",
+      "kind": "exhibition",
+      "city": "spb",
+      "date": "2026-11-20",
+      "time": "",
+      "title": "Диагноз: фоторепортер 80 лет спустя подтвердился",
+      "venue": "РОСФОТО",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "выставка"
+      ],
+      "description": "РОСФОТО представляет юбилейную выставку Павла Михайловича Маркина (07.10.1946) — легендарного петербургского фотокорреспондента и декана Фотофакультета имени Ю. Проект охватывает более 70 лет его работы — от самого раннего сохранившегося снимка 1952 года. Это непрерывная хроника времени, созданная одним автором.",
+      "url": "https://rosphoto.org/events/diagnoz_podtverdilsya/",
+      "source": "РОСФОТО",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-10",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "start_date": "2026-11-20"
     },
     {
       "id": "spb-2026-11-20-432be7b5fd",
@@ -68065,7 +68653,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-20-d6c3449b67",
@@ -68140,38 +68730,6 @@
       "telegram_include": false,
       "instagram_include": false,
       "reviewed_at": "2026-11-09"
-    },
-    {
-      "id": "moscow-2026-11-21-9234452fcd",
-      "status": "new",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-11-21",
-      "time": "",
-      "title": "Ceramania Новогодняя",
-      "venue": "ЦСИ Винзавод",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": null,
-      "categories": [
-        "лекция"
-      ],
-      "description": "",
-      "url": "https://www.winzavod.ru/calendar/festivals/ceramania-novogodnyaya/",
-      "source": "ЦСИ Винзавод",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-11-09",
-      "start_date": "2026-11-21",
-      "end_date": "2026-11-22",
-      "price_type": "paid",
-      "availability_evidence": "",
-      "ticket_required": true,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_note": "",
-      "reviewed_at": ""
     },
     {
       "id": "international-2026-11-21-58b55a0cdf",
@@ -68423,6 +68981,38 @@
       "instagram_include": false,
       "reviewed_at": "2026-11-10",
       "editor_note": ""
+    },
+    {
+      "id": "moscow-2026-11-21-9234452fcd",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-21",
+      "time": "12:30",
+      "title": "Ceramania Новогодняя",
+      "venue": "ЦСИ Винзавод",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "",
+      "url": "https://www.winzavod.ru/calendar/festivals/ceramania-novogodnyaya/",
+      "source": "ЦСИ Винзавод",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-09",
+      "start_date": "2026-11-21",
+      "end_date": "2026-11-22",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-21-fa57738587",
@@ -68821,6 +69411,35 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": "2026-10-24"
+    },
+    {
+      "id": "spb-2026-11-22-f37b669410",
+      "status": "new",
+      "kind": "exhibition",
+      "city": "spb",
+      "date": "2026-11-22",
+      "time": "",
+      "title": "«В образах Петербурга». Музей изобразительных искусств Карелии - Выставки",
+      "venue": "Музей искусства Санкт-Петербурга XX–XXI веков",
+      "address": "",
+      "price": 400,
+      "price_text": "400 ₽",
+      "registration": null,
+      "categories": [
+        "выставка"
+      ],
+      "description": "",
+      "url": "https://mispxx-xxi.ru/exhibitions/v-obrazakh-peterburga-muzey-izobrazitelnykh-iskusstv-karelii/",
+      "source": "Музей искусства Санкт-Петербурга XX–XXI веков — выставки",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-10",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "start_date": "2026-11-22"
     },
     {
       "id": "moscow-2026-11-22-605fcecce6",
@@ -69489,6 +70108,34 @@
       "reviewed_at": "2026-11-09"
     },
     {
+      "id": "spb-2026-11-22-e83aa45bd5",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-22",
+      "time": "19:00",
+      "title": "Кружок рисования в «Сообществе»",
+      "venue": "Новая Голландия",
+      "address": "",
+      "price": 300,
+      "price_text": "300 ₽",
+      "registration": null,
+      "categories": [
+        "встреча"
+      ],
+      "description": "В «Сообществе» начинает новый сезон кружок рисования — продолжение нашего кружка скетчинга. Мы сохраняем лёгкость и свободу быстрых набросков, но расширяем возможности: от простых зарисовок предметов до работы с цветом, композицией и атмосферой.",
+      "url": "https://www.newhollandsp.ru/events/education/drawing-club/",
+      "source": "Новая Голландия — Сообщество и образование",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-10",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "international-2026-11-23-9a93613704",
       "status": "rejected",
       "kind": "open_call",
@@ -69929,6 +70576,35 @@
       "start_date": "2026-11-24",
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "moscow-2026-11-24-b9a5fe1f3d",
+      "status": "check",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-24",
+      "time": "10:30",
+      "title": "Тематические наброски",
+      "venue": "Простая школа",
+      "address": "Москва, ул. Пятницкая, 71/5, строение 2, офис 503",
+      "price": 750,
+      "price_text": "750 ₽",
+      "registration": null,
+      "categories": [
+        "наброски"
+      ],
+      "description": "Те же наброски, но с темой, которую задает ведущий.Ищем новые выразительные средства и пластические решения. Тема не обязательство — рисуем, что интересно.",
+      "url": "https://prostaya.ru/praktiki",
+      "source": "Простая школа — открытые практики",
+      "checked_at": "",
+      "review_reason": "recurring_schedule_confirm_specific_date",
+      "discovered_at": "2026-11-10",
+      "editor_note": "По еженедельному расписанию школы; проверить отмены и анонс конкретной даты.",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-24-e729e1a012",
@@ -70772,7 +71448,7 @@
     },
     {
       "id": "international-2026-11-27-09aed3613d",
-      "status": "check",
+      "status": "approved",
       "kind": "open_call",
       "city": "international",
       "date": "2026-11-27",
@@ -70790,7 +71466,7 @@
       "url": "https://www.curatorspace.com/opportunities/detail/open-call-for-artists-and-writers--all-about-me-using-metaphors-to-explore-identity/11332",
       "source": "CuratorSpace — opportunities",
       "checked_at": "",
-      "review_reason": "primary_source_required",
+      "review_reason": "discovery_source_needs_primary_verification",
       "discovered_at": "2026-11-10",
       "audience_text": "Opportunity details | OPEN CALL for artists and writers - \"All about me, using metaphors to explore identity\" | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register OPEN CALL for artists and writers - \"All about me, using metaphors to explore identity\" Deadline: 27/11/2026 City: Worldwide! | Jenna Fox Report this? Description Opportunity FAQs Make a submission Contact curator Art and written open call submissions \"All about me - using metaphors to explore identity\" for Issue 77 of Haus-a-rest Haus-a-rest Zine — www.haus-a-rest.com Deadline: 27th November 2026 Who are you, beyond the labels, appearances and stories that define you? We are inviting artists and writers to submit work for an exciting exhibition exploring the theme ‘All About Me: Using Metaphors to Explore Identity’. Identity is complex, layered and constantly evolving. It is shaped by our experiences, memories, relationships, cultures, dreams, emotions and the ways we see ourselves and are seen by others. But how can we express something as personal and multifaceted as identity through our creative practice? This exhibition invites you to explore who you are through the language of metaphor . Think beyond literal self-portraits and consider how objects, animals, landscapes, colours, patterns, symbols and everyday things might represent different aspects of your identity. We want to see how you translate your personal experiences, thoughts and feelings into visual, material or conceptual expressions. Your work might be playful, reflective, abstract, humorous, challenging or deeply personal. There is no single right way to explore identity. What are we looking for? We welcome submissions in a variety of media, including: Painting, drawing and illustration Photography and digital art Sculpture and 3D work Textiles, collage and mixed media Printmaking and ceramics Installation and conceptual art Other creative and experimental approaches Artists of all backgrounds and experience levels are encouraged to apply - BUT THE WORK MUST BE RESOLVED, NOT GENERATED BY AI, AND YOU NEED TO INCLUDE WRITTEN CONTEXT AND AN INSTAGRAM TAG. How to take part Submit an artwork that responds to the theme ‘All About Me: Using Metaphors to Explore Identity’. Alongside your artwork, please include a short statement explaining the metaphor behind your work and what it reveals about your identity. Artists, we need an INSTAGRAM tag that is set to public. Submission details: You don't have to show us exactly who you are. Instead, show us what represents you. Use metaphor, imagination and creativity to tell your story in unexpected ways. We look forward to seeing the world through your eyes! There are no submission fees to enter or if you are selected! Submission Please submit: 1–3 artworks Artist name and location Artwork title, year and medium Dimensions / duration where applicable A short artist statement or description of the submitted work - THIS IS A MUST for the application. Instagram tag - A MUST No AI generated work Website optional Selection Works will be selected based on their conceptual engagement, originality, artistic quality and relevance to the exhibition theme. The exhibition will bring together different approaches and media, creating a conversation between works. Online Exhibition Selected works will be presented in a curated online group exhibition, accompanied by artist names, artwork information and selected statements shared across our social media platform of 11k followers. And on www.haus-a-rest.com Important Dates: Submission deadline: 27th November 2026 Exhibition duration: December 2026 For Writers: Genres: Short stories, essays, poetry, experimental writing, and cross-genre works Length: Up to 1,000 words for prose; up to 3 poems Format: Word document only Synopsis: A brief summary of the piece (50 words) explaining how it connects to the theme. Terms and Conditions All submissions must be original works created by the applicant. Selected works will be featured in an online exhibition and/or a publication. By submitting, you grant us the right to display, publish, and promote your work as part of this project. Typically, the works are online for six months, but this is not guaranteed. Artists and writers retain all rights to their work. We look forward to your submission. WHO WE ARE Haus-a-rest is an independent online zine dedicated to showcasing creative voices worldwide, with over 10k social media followers. We highlight visual art, literature, experimental work, and cross-disciplinary practice. Every issue is curated around a theme that asks artists and writers to push their boundaries and explore new ways of seeing. @haus_a_rest www.haus-a-rest.com EDITORS: @jennafox.artist and @nicholarodgers.artist Image courtesy of @jennafoxartist Make a submission Contact the curator Who is eligible for this opportunity? Artists and writers of any stage of their journey. The work must be resolved and meet the theme of the open call. You must have an Instagram account. When is the deadline? 27th November 2026 for the December issue. How many works can I submit? There is no limit but we will only select one per artist as a maxium. How much does it cost? FREE! No fees to enter or if you are selected. How amazing is that!! Are there payments to artists? No. What publicity will be provided as part of the opportunity? Online across our social media and email to our db. You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Other opportunities Open Call for Artists - 32nd Community Art Exhibition Exhibit your artwork at Circular ArtSpace – East Bristol's vibrant gallery supporting emerging... The Unfinished CISTA ARTS invites artists worldwide to submit work for The Unfinished, an international online... Craft Open and Market Are you a craft maker, artist or creative? Do you sew, knit, crochet, make jewellery, create... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
       "price_type": "unknown",
@@ -70801,10 +71477,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "reviewed_at": "2026-11-10",
+      "editor_note": ""
     },
     {
       "id": "international-2026-11-27-3655b3a3a6",
@@ -71316,7 +71995,7 @@
       "price_text": "",
       "registration": null,
       "categories": [],
-      "description": "",
+      "description": "Детская площадка «Фрегат» закрыта 11 ноября. Приносим извинения за возможные неудобства. С 12 ноября верхний ярус «Фрегата» закрыт на зиму.",
       "url": "https://www.newhollandsp.ru/events/concerts/",
       "source": "Новая Голландия — Сообщество и образование",
       "checked_at": "",
@@ -71326,7 +72005,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-28-8cb3f8d42f",
@@ -72091,6 +72772,34 @@
       "reviewed_at": "2026-11-01"
     },
     {
+      "id": "spb-2026-11-30-5bd3d8d4c8",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-30",
+      "time": "19:00",
+      "title": "Творческая встреча с Захаром Прилепиным . Презентация книги избранных сочинений Гайто Газданова",
+      "venue": "Российская национальная библиотека",
+      "address": "Московский пр., д. 165, корп. 2",
+      "price": null,
+      "price_text": "",
+      "registration": true,
+      "categories": [
+        "презентация"
+      ],
+      "description": "",
+      "url": "https://nlr.ru/nlr_visit/event/3760",
+      "source": "Российская национальная библиотека — афиша",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-10",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-30-9f582f94c1",
       "status": "approved",
       "kind": "event",
@@ -72623,7 +73332,7 @@
     },
     {
       "id": "moscow-2026-12-10-ceca5c9467",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-12-10",
@@ -72652,10 +73361,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "rejected"
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "reviewed_at": "2026-11-10",
+      "editor_note": ""
     },
     {
       "id": "spb-2026-12-11-d7eb167bdb",
@@ -73328,7 +74040,7 @@
     },
     {
       "id": "international-2027-01-11-b3606147e2",
-      "status": "check",
+      "status": "rejected",
       "kind": "open_call",
       "city": "international",
       "date": "2027-01-11",
@@ -73346,7 +74058,7 @@
       "url": "https://www.curatorspace.com/opportunities/detail/knockengorroch-festival---open-call-for-siteresponsive-performance/11333",
       "source": "CuratorSpace — opportunities",
       "checked_at": "",
-      "review_reason": "primary_source_required",
+      "review_reason": "discovery_source_needs_primary_verification",
       "discovered_at": "2026-11-10",
       "audience_text": "Opportunity details | Knockengorroch Festival 2027 - Open Call for Site-Responsive Performance | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register Knockengorroch Festival 2027 - Open Call for Site-Responsive Performance Deadline: 11/01/2027 City: Carsphairn | Country: United Kingdom | Alex Rigg Expenses paid Report this? Description Opportunity FAQs Make a submission Contact curator Knockengorroch Festival is offering a unique opportunity for you to bring your work to a fabulous location in South West Scotland. We invite you to develop a new work, or to re-imagine an existing work within the context of the Glen and its river The Water of Deugh. Open Call for Site-Responsive Performance Knockengorroch Festival 2027 is inviting submissions for site-responsive, live performance in the landscape on and around the festival site. This opportunity is open to artists at all stages in their careers and can be solo or group work. We are looking for a genuine commitment that engages with the land and community. Your performance will be shown outdoors and be able to adapt to variable weather conditions. This first performance call-out for Knockengorroch offers a limited number of artists the opportunity to present work of a high standard. * Background Knockengorroch was the first greenfield festival of its type in Scotland and began in 1998. The Festival now attracts people from all over Scotland, the UK, and beyond. Knockengorroch Festival promotes multi-cultural forms and musical genres, highlighting the connection between roots music, the lands, the people that have lived there and the people and all living things that still do. What the festival can provide: A residency of up to five days, including the festival weekend. Stage-management support for your performance during the the festival. Camping accommodation on-site. Mentoring from Alex Rigg of Oceanallover. Crew meals during the festival. Access to an audience pool of over three thousand people. Some limited help with travel costs. Marketing and publicity through the festival. On-site marketing and information for the festival audience. Photographic documentation of your performance. *This opportunity is not a commission. We hope to be able to offer funded opportunities in the future. How to apply Please send a simple pitch telling us: Who you are. Include as many links to your work as you wish but no large attachments in your email. How many people will be in your team and their roles. What you’d like to do - is it an existing piece of work or something new you want to try out? How do you envision it working on our site? Your experience relating to Knockengorroch festival, if any. Where you’d be travelling from. Please keep your pitch to us clear and concise. Make a submission Contact the curator Who is eligible for this opportunity? This call is open to all artists. We are inviting proposals that are clear, creative and original and will be selecting work from artists that can show a track record of work made to a high standard. When is the deadline? 5pm on the 11th of January 2027. How many works can I submit? One submission per artist or group. When is the delivery date? 27th - 30th May 2027. How much does it cost? There is no charge to enter. Are there payments to artists? There are some small bursaries available to help with travel. Is there a private view / opening? Yes, there will be an opening event for the overall festival. Artists will be invited to take part. What are the exhibition opening hours? This is a festival site and will be open from early till late for the duration of the festival. Your live performances will be timetabled within the overall festival programming. Does the location have disabled access? Yes, but with some limitations due to the nature of the site. What publicity will be provided as part of the opportunity? Your work will be marketed through the Knockengorroch festival web-site and social media posts. It will also be advertised during the festival on information boards across the site. Do I need to be present? This is an opportunity to present live work. Where will my venue be listed? Knockengorroch festival is a well establshed festival with an annual attentance of 3000 people. How do you decide on proposals? Proposals will be reviewed by a small committee headed by Alex Rigg of Oceanallover working alongside Katch Holmes, Festival Director. What happens if my proposal is chosen? You will be invited to liaise with Alex Rigg who will help you to gain a more in-depth concept of the site itself. You will also have the opportunity to visit the site in person, or via a virtual tour. What are the selection criteria? An excellent idea for a site-responsive work that can work well in the context of Knockengorroch Festival. A strong track record of work that can demonstrate an ability to realise concepts to a high standard. You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Other opportunities Open Call for Artists - 32nd Community Art Exhibition Exhibit your artwork at Circular ArtSpace – East Bristol's vibrant gallery supporting emerging... The Unfinished CISTA ARTS invites artists worldwide to submit work for The Unfinished, an international online... Craft Open and Market Are you a craft maker, artist or creative? Do you sew, knit, crochet, make jewellery, create... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
       "price_type": "unknown",
@@ -73357,10 +74069,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "rejected"
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "reviewed_at": "2026-11-10",
+      "editor_note": ""
     },
     {
       "id": "international-2027-01-12-fdba99f20b",

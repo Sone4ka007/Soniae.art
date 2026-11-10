@@ -16,7 +16,7 @@ permissions:
 
 concurrency:
   group: "pages"
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   deploy:
@@ -34,11 +34,29 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
+      # Keep only published content; do not deploy tests, source scripts or old exports.
+      - name: Prepare published site
+        run: |
+          mkdir -p "$RUNNER_TEMP/site"
+          rsync -a \
+            --exclude='.git/' \
+            --exclude='.github/' \
+            --exclude='tests/' \
+            --exclude='scripts/' \
+            --exclude='worker/' \
+            --exclude='site_optimized_for_github (1)/' \
+            ./ "$RUNNER_TEMP/site/"
+
       - name: Upload site
         uses: actions/upload-pages-artifact@v4
         with:
-          path: "."
+          name: github-pages-${{ github.run_id }}-${{ github.run_attempt }}
+          path: "${{ runner.temp }}/site"
+
 
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          artifact_name: github-pages-${{ github.run_id }}-${{ github.run_attempt }}
+          timeout: 1800000

@@ -758,6 +758,8 @@
     if(lesson.id===2)return secondLessonQuest(lesson,chapters,first,second);
     if(lesson.id===3&&global.ChineseLabQuestScenario3)return global.ChineseLabQuestScenario3.build(lesson,chapters,first,second,tiles,readingMissionGroups);
     if(lesson.id===4&&global.ChineseLabQuestScenario4)return global.ChineseLabQuestScenario4.build(lesson,chapters,first,second,tiles,readingMissionGroups);
+    if(lesson.id===5&&global.ChineseLabQuestScenario5)return global.ChineseLabQuestScenario5.build(lesson,chapters,first,second,tiles,readingMissionGroups);
+    if(lesson.id===6&&global.ChineseLabQuestScenario6)return global.ChineseLabQuestScenario6.build(lesson,chapters,first,second,tiles,readingMissionGroups);
     return {...quest,schemaVersion:7,
       steps:[first,...quest.steps.slice(0,4),second,...quest.steps.slice(4)]
     };

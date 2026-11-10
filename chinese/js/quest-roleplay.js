@@ -127,6 +127,6 @@
     missions:Object.freeze(missions.map(m=>Object.freeze(m))),
     byId:(id)=>byId[id]||null,
     normalize,evaluate,
-    forLesson:(id)=>Number(id)===2?rentalEngine:(global.ChineseLabExtraRoleplay?.forLesson(id)||global.ChineseLabRoleplay)
+    forLesson:(id)=>Number(id)===2?rentalEngine:(global.ChineseLabRoleplayRemaining?.forLesson(id)||global.ChineseLabExtraRoleplay?.forLesson(id)||global.ChineseLabRoleplay)
   });
 })(typeof window!=='undefined'?window:globalThis);

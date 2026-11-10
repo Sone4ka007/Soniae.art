@@ -303,8 +303,31 @@
       '<button type="button" class="writing-primary" data-action="writing-begin">НАЧАТЬ ПРОПИСЫВАТЬ →</button></div>' +
       '<div class="writing-breakdowns">' + chars.map((ch, i) => '<section class="writing-breakdown">' +
         '<h3 class="writing-breakdown-char" lang="zh-CN">' + safe(ch) + ' <small>' + (i + 1) +
-        '/' + chars.length + '</small></h3>' + characterGuide({char: ch}) + '</section>').join('') + '</div>' +
+        '/' + chars.length + '</small></h3>' + characterGuide({char: ch}) +
+        '<button type="button" class="writing-secondary writing-demo-btn" data-action="writing-demo" data-value="' +
+        i + '">▶ ПОРЯДОК ЧЕРТ</button><div class="writing-demo-canvas" id="writing-demo-' + i + '"></div></section>').join('') + '</div>' +
       '<button type="button" class="writing-stop" data-action="writing-stop">ЗАКОНЧИТЬ ЗАНЯТИЕ</button></div>';
+  }
+  async function demoStrokes(s, index) {
+    if (s.stage !== 'study' || !Number.isInteger(index) || index < 0 || index >= s.word.chars.length) return;
+    const token = renderToken, char = s.word.chars[index];
+    try {
+      const lib = await loadLibrary();
+      const data = await loadStrokes(lib, char);
+      if (token !== renderToken || current() !== s || ctx?.state.mode !== 'writing') return;
+      const el = byId('writing-demo-' + index);
+      if (!el) return;
+      clearWriter();
+      el.innerHTML = '';
+      writer = lib.create(el, char, {width: 180, height: 180, padding: 10,
+        showCharacter: false, showOutline: true, strokeAnimationSpeed: 1.5,
+        strokeColor: '#111511', outlineColor: '#d0d4c7',
+        charDataLoader: (_char, complete) => complete(data)});
+      writer.animateCharacter();
+    } catch (error) {
+      const el = byId('writing-demo-' + index);
+      if (el && token === renderToken) el.textContent = 'Порядок черт недоступен. Попробуй позже.';
+    }
   }
   function prefillCount(s, strokes) {
     const max = Math.max(0, strokes - 1); // always require at least one drawn stroke
@@ -497,6 +520,7 @@
       w.prefillMode = 'manual'; persist(); render();
     } else if (action === 'writing-start') startSession();
     else if (action === 'writing-begin' && s) startPractice(s);
+    else if (action === 'writing-demo' && s && s.stage === 'study') demoStrokes(s, Number(value));
     else if (action === 'writing-next-round' && s && s.stage === 'roundEnd') {
       s.attempt++; startPractice(s);
     } else if (action === 'writing-finish' && s && s.stage === 'roundEnd') finalize(s, true);
@@ -537,7 +561,17 @@
     ctx = context;
     render();
     if (!characterData) loadCharacterData().then(data => {
-      if (data && ctx?.state.mode === 'writing') render();
+      if (!data || ctx?.state.mode !== 'writing') return;
+      const active = current();
+      // Never erase a partly written character when the background glossary finishes loading.
+      if (!active || active.stage === 'study' || active.stage === 'roundEnd') render();
+      else {
+        const guide = byId('writing-breakdown');
+        if (guide) guide.innerHTML = (active.showAnswer
+          ? '<div class="writing-large-word" lang="zh-CN">' +
+            safe(active.word.chars[active.charIndex]) + '</div>' : '') +
+          characterGuide({char: active.word.chars[active.charIndex]});
+      }
     });
   }
   global.ChineseLabWriting = Object.freeze({mount, action: act, render});

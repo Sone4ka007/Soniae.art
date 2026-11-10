@@ -38291,7 +38291,7 @@
       "reviewed_at": "2026-10-17",
       "availability": "unknown",
       "availability_checked_at": "",
-      "registration": false,
+      "registration": null,
       "price": null,
       "price_text": "",
       "price_type": "paid",
@@ -38317,7 +38317,7 @@
         "status": "approved",
         "telegram_include": false,
         "instagram_include": false,
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -41054,7 +41054,7 @@
       "address": "1-й Голутвинский переулок, 16, стр. 1",
       "price": 850,
       "price_text": "850 ₽; льготный — 650 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -41081,7 +41081,7 @@
       "time_evidence": "24 октября 2026 14:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
       "editor_overrides": {
-        "registration": false
+        "registration": null
       }
     },
     {
@@ -49427,7 +49427,7 @@
       "address": "Лаврушинский переулок, 12",
       "price": 650,
       "price_text": "650 ₽; онлайн — 700 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -49444,7 +49444,7 @@
         "telegram_include": false,
         "instagram_include": false,
         "status": "approved",
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -51674,14 +51674,16 @@
       "price": 0,
       "price_text": "",
       "registration": false,
-      "categories": [],
+      "categories": [
+        "выставка"
+      ],
       "description": "На метро Музей AZ находится между станциями метро «Маяковская» и «Белорусская» (кольцевая). Мы рекомендуем идти в Музей от станции «Маяковская». Вам нужен Выход №1 на 1-я Тверская-Ямская улица, 2-я Тверская-Ямская улица.",
       "url": "https://museum-az.com/event/territoriya-svobody-nonkonformisty-v-taruse/",
       "source": "Музей AZ — выставки и события",
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-10-20",
-      "price_type": "paid",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-10-25",
       "editor_overrides": {
@@ -55219,7 +55221,7 @@
       "address": "",
       "price_type": "free",
       "price_text": "бесплатно по регистрации",
-      "registration": false,
+      "registration": true,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -57133,7 +57135,7 @@
       "address": "",
       "price_type": "free",
       "price_text": "бесплатно по регистрации",
-      "registration": false,
+      "registration": true,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -58538,6 +58540,32 @@
       }
     },
     {
+      "id": "spb-2026-11-10-5995f84169",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-10",
+      "time": "",
+      "title": "Государственный Эрмитаж",
+      "venue": "Государственный Эрмитаж",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "",
+      "url": "https://hermitagemuseum.org/what-s-on/afisha_mincult/?lng=ru",
+      "source": "Государственный Эрмитаж — выставки и события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-10",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-10-422be2d050",
       "status": "rejected",
       "kind": "event",
@@ -58695,6 +58723,37 @@
       }
     },
     {
+      "id": "moscow-2026-11-10-b137a9cac0",
+      "status": "new",
+      "kind": "exhibition",
+      "city": "moscow",
+      "date": "2026-11-10",
+      "time": "",
+      "title": "Место для игр",
+      "venue": "ЦСИ Винзавод",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [
+        "игра",
+        "выставка"
+      ],
+      "description": "Первая легальная галерея уличного искусства НЕТСТЕН располагается по дороге к арт-кластеру ЦСИ Винзавод и с 2022 года два раза в год обновляет экспозицию. Идея проекта в создании пространства знакомства аудитории с искусством без барьеров и препятствий, эта идея нашла отражение и в названии проекта. Яркие высказыванияхудожников вовлекают широкую аудиторию во взаимодействие с искусством.",
+      "url": "https://www.winzavod.ru/calendar/exhibitions/mesto-dlya-igr/",
+      "source": "ЦСИ Винзавод",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-10",
+      "start_date": "2026-11-10",
+      "end_date": "2027-04-01",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "russia-2026-11-10-567cf4347f",
       "status": "rejected",
       "kind": "open_call",
@@ -58782,32 +58841,6 @@
       "price_type": "paid",
       "availability_evidence": "",
       "ticket_required": true,
-      "availability": "unknown",
-      "availability_checked_at": ""
-    },
-    {
-      "id": "moscow-2026-11-10-0024e9be7d",
-      "status": "new",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-11-10",
-      "time": "",
-      "title": "Эффективное наставничество: опыт Новосибирской областной молодёжной библиотеки",
-      "venue": "РГБМ",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": null,
-      "categories": [],
-      "description": "10 ноября 2026 11:00 Мероприятие пройдёт онлайн 2026-11-10 11:00 2026-11-10 11:00 Europe/Moscow Эффективное наставничество: опыт Новосибирской областной молодёжной библиотеки Цикл профессиональных вебинаров-практикумов РГБМ, Мероприятие пройдёт онлайн РГБМ info@rgub.ru VK RUTUBE Начальник отдела литературных программ Новосибирской областной молодёжной библиотеки Татьяна Синицына расскажет, как организовано наставничество в учреждении, поделится практическими подходами и поговорит о роли наставника в профессиональной адаптации и развитии сотрудников. Отдельное внимание уделим тому, как наставничество влияет на взаимодействие внутри коллектива, помогает выстраивать рабочие отношения и способствует формированию здоровой корпоративной среды. Ведущий: Фёдор Замыцкий, ведущий методист Всероссийского центра библиотечного кадрового потенциала РГБМ",
-      "url": "https://rgub.ru/schedule/item.php?new_id=50130",
-      "source": "Российская государственная библиотека для молодёжи — афиша",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-11-02",
-      "price_type": "unknown",
-      "availability_evidence": "",
-      "ticket_required": false,
       "availability": "unknown",
       "availability_checked_at": "",
       "editor_note": "",
@@ -58984,6 +59017,34 @@
       "ticket_required": true,
       "availability": "unknown",
       "availability_checked_at": ""
+    },
+    {
+      "id": "moscow-2026-11-10-0024e9be7d",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-10",
+      "time": "11:00",
+      "title": "Эффективное наставничество: опыт Новосибирской областной молодёжной библиотеки",
+      "venue": "РГБМ",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "10 ноября 2026 11:00 Мероприятие пройдёт онлайн VK RUTUBE Начальник отдела литературных программ Новосибирской областной молодёжной библиотеки Татьяна Синицына расскажет, как организовано наставничество в учреждении, поделится практическими подходами и поговорит о роли наставника в профессиональной адаптации и развитии сотрудников. Отдельное внимание уделим тому, как наставничество влияет на взаимодействие внутри коллектива, помогает выстраивать рабочие отношения и способствует формированию здоровой корпоративной среды. Ведущий: Фёдор Замыцкий, ведущий методист Всероссийского центра библиотечного кадрового потенциала РГБМ",
+      "url": "https://rgub.ru/schedule/item.php?new_id=50130",
+      "source": "Российская государственная библиотека для молодёжи — афиша",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-02",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-10-5bad11a84a",
@@ -59372,7 +59433,7 @@
     },
     {
       "id": "moscow-2026-11-10-4d10a2d654-1900",
-      "status": "check",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-10",
@@ -59400,12 +59461,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-11-10"
     },
     {
       "id": "moscow-2026-11-10-7874148c04",
@@ -59678,6 +59740,34 @@
       "availability_checked_at": "",
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "spb-2026-11-11-47abe402ac",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-11",
+      "time": "",
+      "title": "Dom Radio",
+      "venue": "Дом Радио",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": true,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Что будет, если полностью отказаться от театральных правил? Получится мир режиссера Роберта Уилсона. В карусели — сцены из его спектаклей «Травиата», «Орфей и Эвридика», «Сказки Пушкина» и «Пеллеас и Мелизанда». эти и другие работы визионера, а также увидим премьеру документальной ленты «Роберт Уилсон: Красота – в загадке». Показ представит Юлия Клейман — театровед и программный директор площадки «Узел». Однажды на фестивале Draama в Тарту она столкнулась с гением Роберта Уилсона: «В программе была его лекция. Вход — даже для нас, членов жюри и приглашенных критиков — оказался строго платным и",
+      "url": "https://clck.ru/3WvRxW",
+      "source": "Дом Радио — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-11-10",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "international-2026-11-11-533523acf3",
@@ -60950,7 +61040,9 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-12-734741274c",
@@ -63473,7 +63565,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-14-ad0e014527",
@@ -63670,12 +63764,14 @@
       "checked_at": "",
       "review_reason": "primary_source_required",
       "discovered_at": "2026-11-09",
-      "audience_text": "Opportunity details | Screening Opportunity for Moving Image Works - Temperature Check | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register Screening Opportunity for Moving Image Works - Temperature Check Deadline: 15/11/2026 City: London | Country: United Kingdom | Deep Focus Report this? Description Opportunity FAQs Make a submission Contact curator We are welcoming submissions of Moving Image works and Artist Films showing, questioning, employing or relating to energy, its usage and its products. Deep Focus’ Winter programme aims to conduct a temperature check for the present, presenting works that will respond to three main concepts: HEAT – movement, presence, an abundance of energy; COLD – absence and stillness, a lack of energy or the refusal to produce energy at all; THERMAL EQUILIBRIUM – bodies touching and adjusting their energy exchange until they reach the same temperature. Deep Focus welcomes submissions of moving image works under 10 minutes for the winter/spring program, showing, questioning, employing or relating to energy, its usage and its products. We want to see how moving image as a practice can be used to conduct a temperature check for the present, presenting works that will respond to three main concepts: HEAT – movement, presence, an abundance of energy; COLD – absence and stillness, a lack of energy or the refusal to produce energy at all; THERMAL EQUILIBRIUM – bodies touching and adjusting their energy exchange until they reach the same temperature. You can submit films up to 10 minutes long, shorter videos and excerpts are encouraged. Please only submit one film as multiple submissions from the same artist will not be considered. Screenings will be held on 20 January, 19 February and 19 March 2027 at the RHB Cinema, Goldsmiths, London, UK (subject to change). Note that we are unable to review more than one submission per artist. Any subsequent submission will be ignored. By filling out and submitting your work you agree that we will use excerpts and stills of your works to promote the event. We can provide letters of support to shortlisted artists, to aid them seeking out funding for travel and other expenses (since we ourselves are volunteer-run and non-funded). FAQ are available here: https://docs.google.com/document/d/1-a8lIE0BOez_AyWb8G2mBxi8hdqTTT8CideLBlBkimk/edit?tab=t.0#heading=h.h6ah7zvdgngg Make a submission Contact the curator Who is eligible for this opportunity? There are no restrictions on who can submit. When is the deadline? Midnight on 15 November, 2026. How many works can I submit? 1 When is the delivery date? The film needs to be ready at the time of submission. When do I need to collect my work? N/A How much does it cost? It is free. Are there payments to artists? No, the project is volunteer-run and unfunded, yet we are more than happy to provide letters of support to aid the artist securing travel grants. What time is the screening? The event starts at 7 pm and will run until 9 pm. Does the location have disabled access? Yes, but do let organisers know if you have any access needs, so they can arrange appropriate support. What publicity will be provided as part of the opportunity? Yes. Do I need to be present? These is a strong preference for artists to attend the screening. Where will my venue be listed? Deep Focus Newsletter, Deep Focus Arts instagram, in appropriate London's Artist Newsletters and Screening announcement portals, as well as local arts social media promoters. How do you decide on proposals? Proposals are reviewed by Deep Focus co-founders, who then marks them against the selection criteria. The curator makes the final selection. What happens if my proposal is chosen? You will be contacted via email with the date of the screening picked for your film (this cycle has three screening dates set). What kind of proposals are you looking for? We look for experimental works with engaging and unique approach to moving image format. What are the selection criteria? We decide on the films to show based on the fit to the theme and the curatorial selection, we also consider originality and how engaging the work is to watch. The theme is approached very loosely and we encourage the artist to submit, even if the connection to the theme is not apparent - we watch all the films and even if not selected, we keep them in our Artist Archive (as long as we have your consent to do so) and keep them in mind for future screenings and other showcasing opportunities. You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Other opportunities If/Then: Chance and Creativity - Vol. 2: Ritual For the second volume of If/Then: Chance and Creativity, we are looking for artists, writers and... Parkscapes II London gallery is holding a Festive Season Exhibition, 3rd - 19th December 2026. We’re... Animal Group Exhibition No. 35 Gallery invites artists worldwide to submit work for Animal—International Online Group... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
+      "audience_text": "Opportunity details | Screening Opportunity for Moving Image Works - Temperature Check | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register Screening Opportunity for Moving Image Works - Temperature Check Deadline: 15/11/2026 City: London | Country: United Kingdom | Deep Focus Report this? Description Opportunity FAQs Make a submission Contact curator We are welcoming submissions of Moving Image works and Artist Films showing, questioning, employing or relating to energy, its usage and its products. Deep Focus’ Winter programme aims to conduct a temperature check for the present, presenting works that will respond to three main concepts: HEAT – movement, presence, an abundance of energy; COLD – absence and stillness, a lack of energy or the refusal to produce energy at all; THERMAL EQUILIBRIUM – bodies touching and adjusting their energy exchange until they reach the same temperature. Deep Focus welcomes submissions of moving image works under 10 minutes for the winter/spring program, showing, questioning, employing or relating to energy, its usage and its products. We want to see how moving image as a practice can be used to conduct a temperature check for the present, presenting works that will respond to three main concepts: HEAT – movement, presence, an abundance of energy; COLD – absence and stillness, a lack of energy or the refusal to produce energy at all; THERMAL EQUILIBRIUM – bodies touching and adjusting their energy exchange until they reach the same temperature. You can submit films up to 10 minutes long, shorter videos and excerpts are encouraged. Please only submit one film as multiple submissions from the same artist will not be considered. Screenings will be held on 20 January, 19 February and 19 March 2027 at the RHB Cinema, Goldsmiths, London, UK (subject to change). Note that we are unable to review more than one submission per artist. Any subsequent submission will be ignored. By filling out and submitting your work you agree that we will use excerpts and stills of your works to promote the event. We can provide letters of support to shortlisted artists, to aid them seeking out funding for travel and other expenses (since we ourselves are volunteer-run and non-funded). FAQ are available here: https://docs.google.com/document/d/1-a8lIE0BOez_AyWb8G2mBxi8hdqTTT8CideLBlBkimk/edit?tab=t.0#heading=h.h6ah7zvdgngg Make a submission Contact the curator Who is eligible for this opportunity? There are no restrictions on who can submit. When is the deadline? Midnight on 15 November, 2026. How many works can I submit? 1 When is the delivery date? The film needs to be ready at the time of submission. When do I need to collect my work? N/A How much does it cost? It is free. Are there payments to artists? No, the project is volunteer-run and unfunded, yet we are more than happy to provide letters of support to aid the artist securing travel grants. What time is the screening? The event starts at 7 pm and will run until 9 pm. Does the location have disabled access? Yes, but do let organisers know if you have any access needs, so they can arrange appropriate support. What publicity will be provided as part of the opportunity? Yes. Do I need to be present? These is a strong preference for artists to attend the screening. Where will my venue be listed? Deep Focus Newsletter, Deep Focus Arts instagram, in appropriate London's Artist Newsletters and Screening announcement portals, as well as local arts social media promoters. How do you decide on proposals? Proposals are reviewed by Deep Focus co-founders, who then marks them against the selection criteria. The curator makes the final selection. What happens if my proposal is chosen? You will be contacted via email with the date of the screening picked for your film (this cycle has three screening dates set). What kind of proposals are you looking for? We look for experimental works with engaging and unique approach to moving image format. What are the selection criteria? We decide on the films to show based on the fit to the theme and the curatorial selection, we also consider originality and how engaging the work is to watch. The theme is approached very loosely and we encourage the artist to submit, even if the connection to the theme is not apparent - we watch all the films and even if not selected, we keep them in our Artist Archive (as long as we have your consent to do so) and keep them in mind for future screenings and other showcasing opportunities. You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Other opportunities Open Call for Artists - 32nd Community Art Exhibition Exhibit your artwork at Circular ArtSpace – East Bristol's vibrant gallery supporting emerging... The Unfinished CISTA ARTS invites artists worldwide to submit work for The Unfinished, an international online... Craft Open and Market Are you a craft maker, artist or creative? Do you sew, knit, crochet, make jewellery, create... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
       "price_type": "unknown",
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-11-15-5fb181d2e2",
@@ -64540,7 +64636,7 @@
     },
     {
       "id": "spb-2026-11-15-23abff78ff",
-      "status": "check",
+      "status": "approved",
       "kind": "event",
       "city": "spb",
       "date": "2026-11-15",
@@ -64568,12 +64664,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-11-10"
     },
     {
       "id": "spb-2026-11-15-489997f0c8",
@@ -64762,7 +64859,9 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "russia-2026-11-16-b6f0d00beb",
@@ -65054,7 +65153,9 @@
       "ticket_required": true,
       "availability": "unknown",
       "availability_checked_at": "",
-      "start_date": "2026-11-16"
+      "start_date": "2026-11-16",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-16-eebb063dbc",
@@ -65266,7 +65367,7 @@
     },
     {
       "id": "moscow-2026-11-16-856fb9759b",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-16",
@@ -65294,10 +65395,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "rejected"
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "reviewed_at": "2026-11-10",
+      "editor_note": ""
     },
     {
       "id": "spb-2026-11-16-780d1ce5b6",
@@ -66619,7 +66723,7 @@
     },
     {
       "id": "spb-2026-11-19-3e0efe83c5",
-      "status": "check",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-11-19",
@@ -66647,10 +66751,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "rejected"
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "reviewed_at": "2026-11-10",
+      "editor_note": ""
     },
     {
       "id": "moscow-2026-11-19-b485ac3446",
@@ -67094,6 +67201,35 @@
       "time_verification": "verified",
       "time_evidence": "19 ноя 2026, 19:30",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
+      "id": "international-2026-11-20-6973f5f8bc",
+      "status": "check",
+      "kind": "open_call",
+      "city": "international",
+      "date": "2026-11-20",
+      "time": "",
+      "title": "BTB10: The Harris Interactive Commissio",
+      "venue": "CuratorSpace",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "open-call"
+      ],
+      "description": "In 2027, BTB will mark ten years of commissioning with a major survey exhibition at The Harris, Preston. Bringing together works and stories from across BTB’s programme, the exhibition will reflect on a decade of artistic responses to textiles, labour, place, materials and making, while looking towards the future and bringing contemporary art to new audiences. As part of the exhibition, British Textile Biennial and The Harris are seeking to co- commission a new interactive artwork incorporating textiles for audienc",
+      "url": "https://www.curatorspace.com/opportunities/detail/btb-the-harris-interactive-commission/11335",
+      "source": "CuratorSpace — opportunities",
+      "checked_at": "",
+      "review_reason": "primary_source_required",
+      "discovered_at": "2026-11-10",
+      "audience_text": "Opportunity details | BTB10: The Harris Interactive Commission | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register BTB10: The Harris Interactive Commission Deadline: 20/11/2026 City: Preston | Region: Lancashire | Country: United Kingdom | Jack Bolton Paid opportunity Report this? Description Opportunity FAQs Make a submission Contact curator In 2027, BTB will mark ten years of commissioning with a major survey exhibition at The Harris, Preston. Bringing together works and stories from across BTB’s programme, the exhibition will reflect on a decade of artistic responses to textiles, labour, place, materials and making, while looking towards the future and bringing contemporary art to new audiences. As part of the exhibition, British Textile Biennial and The Harris are seeking to co- commission a new interactive artwork incorporating textiles for audiences of all ages, creating a playful and participatory way into the ideas explored throughout the exhibition. We are looking for an artist, designer or collective to develop an ambitious interactive work of scale that responds to the themes and ideas running through ten years of British Textile Biennial. Across its programme, BTB has used textiles as a way of exploring wider questions about people, place and the world around us – from global connections, labour and making to fashion and consumption, migration, sustainability, traditional knowledge, technological innovation and our changing relationships with materials. We are interested in how these ideas might be encountered differently through participation. The commission must incorporate textiles, but its form and approach are open. The work might be sculptural, spatial, sensory, digital and/or immersive, or bring together several of these approaches. It could invite visitors to play, explore, assemble, manipulate or contribute; evolve through participation over the course of the exhibition; or propose an entirely different form of interaction. The commission will occupy a dedicated space in the central room of the exhibition, measuring 3 m × 6.6 m, with two walls available for hanging work to a height of 4.1 m. Proposals should be developed with this space in mind, considering how visitors will enter, move through and interact with the work.We are particularly interested in proposals that: encourage open-ended play, experimentation and participation; create an engaging experience for audiences across generations; consider accessibility as an integral part of the work. These prompts leave space for artists to interpret the opportunity through their own practice. We are interested in ideas that we haven’t anticipated. Applicants do not need to identify as textile artists . We welcome artists and creatives working across disciplines who can incorporate textiles imaginatively into their response. The commission The successful artist or collective will receive: A commissioning budget of £10,000, to cover artist fees, materials, fabrication, travel and other project expenses. Curatorial and production support from British Textile Biennial and The Harris. Support around access, participation and the practical requirements of creating the work. Professional documentation of the completed work. Inclusion within the wider BTB 10 Year Survey exhibition and associated communications and events programme. The work will be presented at The Harris, Preston, from 29th May – 31st August 2027. As the commission is intended for regular interaction, proposals should consider how the work will remain safe, accessible and engaging throughout the exhibition. Depending on its form, this may include durability, technical support, maintenance or the replacement and replenishment of materials. We also welcome ideas for how the commission might have a meaningful life beyond the exhibition, whether through future presentations, adaptation, shared resources or continued audience engagement. Any opportunities for its future use or presentation would be explored with the selected artist as the work develops. Who can apply? We welcome applications from individual artists, designers and makers, as well as collaborative practices and collectives. We are particularly interested in practitioners with experience of creating participatory, interactive or public-facing work and engaging a broad range of audiences. Previous experience of delivering a commission at this scale is useful but not essential. We are equally interested in strong ideas from practitioners whose previous work demonstrates the potential to develop the commission successfully with support from the BTB and Harris teams. How to apply Please send us: A short outline of why this commission interests you and how it connects with your practice. An initial proposal for how you might approach the commission, including how you would incorporate textiles and respond to the allocated space. We are interested in your ideas and approach rather than a fully resolved design at this stage. Examples of no more than four previous projects that demonstrate why your practice is relevant to the opportunity, including images and/or links to film, sound or other documentation where appropriate. A simple outline budget, including artist fees/daily rates and indicative costs for materials, fabrication, travel and other expenses. If selected, we will work with you to develop a detailed project budget. Details of any access requirements for the application or interview process. Please combine the above into one compressed PDF document. Application deadline: 12 noon, Friday 20th November Interviews: Early December Development and delivery: December 2026 – April 2027 Installation: May 2027 Public presentation: 29th May - 31st Aug 2027 Make a submission Contact the curator When is the deadline? Noon, Friday 20th November 2026 Does the location have disabled access? Yes You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Other opportunities Open Call for Artists - 32nd Community Art Exhibition Exhibit your artwork at Circular ArtSpace – East Bristol's vibrant gallery supporting emerging... The Unfinished CISTA ARTS invites artists worldwide to submit work for The Unfinished, an international online... Craft Open and Market Are you a craft maker, artist or creative? Do you sew, knit, crochet, make jewellery, create... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "international-2026-11-20-eb6d01d91a",
@@ -67906,6 +68042,34 @@
       "instagram_include": false
     },
     {
+      "id": "spb-2026-11-20-378b993b6a",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-20",
+      "time": "18:30",
+      "title": "ÐÑÐ¾Ð²ÐµÑÐºÐ° Ð±ÑÐ°ÑÐ·ÐµÑÐ° Ð¿ÐµÑÐµÐ´ Ð¿ÐµÑÐµÑ Ð¾Ð´Ð¾Ð¼ Ð½Ð° otkrytaya-gostinaya.timepad.ru",
+      "venue": "Открытая гостиная",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "встреча"
+      ],
+      "description": "Хобби — это не только развлечение, но и способ самовыражения, источник внутренней гармонии и радости. Но как найти хобби по душе и как найти на него время? Обсудим на нашей встрече любимые хобби и увлечения! Мероприятие пройдёт на немецком языке. Желаемый уровень знаний для участия — А2. Ведущая — Ольга Обрывалина, преподаватель немецкого языка, лингвист-переводчик и автор канала о языках",
+      "url": "https://otkrytaya-gostinaya.timepad.ru/event/4295533/",
+      "source": "Открытая гостиная — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-11-10",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "spb-2026-11-20-d6c3449b67",
       "status": "approved",
       "kind": "event",
@@ -68007,7 +68171,9 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-11-21-58b55a0cdf",
@@ -68224,7 +68390,7 @@
     },
     {
       "id": "moscow-2026-11-21-8c1680b942",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-21",
@@ -68252,10 +68418,13 @@
       "availability_checked_at": "",
       "editor_overrides": {
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "rejected"
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "reviewed_at": "2026-11-10",
+      "editor_note": ""
     },
     {
       "id": "moscow-2026-11-21-fa57738587",
@@ -69523,7 +69692,7 @@
     },
     {
       "id": "moscow-2026-11-23-5f73160fd7",
-      "status": "check",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-23",
@@ -69552,10 +69721,12 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "reviewed_at": "2026-11-10"
     },
     {
       "id": "moscow-2026-11-24-fbd139fcfa",
@@ -69976,7 +70147,7 @@
     },
     {
       "id": "moscow-2026-11-25-82ebe5e398",
-      "status": "new",
+      "status": "rejected",
       "kind": "open_call",
       "city": "moscow",
       "date": "2026-11-25",
@@ -70005,10 +70176,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "rejected"
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "reviewed_at": "2026-11-10",
+      "editor_note": ""
     },
     {
       "id": "moscow-2026-11-25-36f3f9e5b0",
@@ -70599,6 +70773,35 @@
       "reviewed_at": "2026-10-24"
     },
     {
+      "id": "international-2026-11-27-09aed3613d",
+      "status": "check",
+      "kind": "open_call",
+      "city": "international",
+      "date": "2026-11-27",
+      "time": "",
+      "title": "OPEN CALL for artists and writers - \"All about me, using metaphors to explore identity\"",
+      "venue": "CuratorSpace",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "open-call"
+      ],
+      "description": "Art and written open call submissions \"All about me - using metaphors to explore identity\" for Issue 77 of Haus-a-rest",
+      "url": "https://www.curatorspace.com/opportunities/detail/open-call-for-artists-and-writers--all-about-me-using-metaphors-to-explore-identity/11332",
+      "source": "CuratorSpace — opportunities",
+      "checked_at": "",
+      "review_reason": "primary_source_required",
+      "discovered_at": "2026-11-10",
+      "audience_text": "Opportunity details | OPEN CALL for artists and writers - \"All about me, using metaphors to explore identity\" | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register OPEN CALL for artists and writers - \"All about me, using metaphors to explore identity\" Deadline: 27/11/2026 City: Worldwide! | Jenna Fox Report this? Description Opportunity FAQs Make a submission Contact curator Art and written open call submissions \"All about me - using metaphors to explore identity\" for Issue 77 of Haus-a-rest Haus-a-rest Zine — www.haus-a-rest.com Deadline: 27th November 2026 Who are you, beyond the labels, appearances and stories that define you? We are inviting artists and writers to submit work for an exciting exhibition exploring the theme ‘All About Me: Using Metaphors to Explore Identity’. Identity is complex, layered and constantly evolving. It is shaped by our experiences, memories, relationships, cultures, dreams, emotions and the ways we see ourselves and are seen by others. But how can we express something as personal and multifaceted as identity through our creative practice? This exhibition invites you to explore who you are through the language of metaphor . Think beyond literal self-portraits and consider how objects, animals, landscapes, colours, patterns, symbols and everyday things might represent different aspects of your identity. We want to see how you translate your personal experiences, thoughts and feelings into visual, material or conceptual expressions. Your work might be playful, reflective, abstract, humorous, challenging or deeply personal. There is no single right way to explore identity. What are we looking for? We welcome submissions in a variety of media, including: Painting, drawing and illustration Photography and digital art Sculpture and 3D work Textiles, collage and mixed media Printmaking and ceramics Installation and conceptual art Other creative and experimental approaches Artists of all backgrounds and experience levels are encouraged to apply - BUT THE WORK MUST BE RESOLVED, NOT GENERATED BY AI, AND YOU NEED TO INCLUDE WRITTEN CONTEXT AND AN INSTAGRAM TAG. How to take part Submit an artwork that responds to the theme ‘All About Me: Using Metaphors to Explore Identity’. Alongside your artwork, please include a short statement explaining the metaphor behind your work and what it reveals about your identity. Artists, we need an INSTAGRAM tag that is set to public. Submission details: You don't have to show us exactly who you are. Instead, show us what represents you. Use metaphor, imagination and creativity to tell your story in unexpected ways. We look forward to seeing the world through your eyes! There are no submission fees to enter or if you are selected! Submission Please submit: 1–3 artworks Artist name and location Artwork title, year and medium Dimensions / duration where applicable A short artist statement or description of the submitted work - THIS IS A MUST for the application. Instagram tag - A MUST No AI generated work Website optional Selection Works will be selected based on their conceptual engagement, originality, artistic quality and relevance to the exhibition theme. The exhibition will bring together different approaches and media, creating a conversation between works. Online Exhibition Selected works will be presented in a curated online group exhibition, accompanied by artist names, artwork information and selected statements shared across our social media platform of 11k followers. And on www.haus-a-rest.com Important Dates: Submission deadline: 27th November 2026 Exhibition duration: December 2026 For Writers: Genres: Short stories, essays, poetry, experimental writing, and cross-genre works Length: Up to 1,000 words for prose; up to 3 poems Format: Word document only Synopsis: A brief summary of the piece (50 words) explaining how it connects to the theme. Terms and Conditions All submissions must be original works created by the applicant. Selected works will be featured in an online exhibition and/or a publication. By submitting, you grant us the right to display, publish, and promote your work as part of this project. Typically, the works are online for six months, but this is not guaranteed. Artists and writers retain all rights to their work. We look forward to your submission. WHO WE ARE Haus-a-rest is an independent online zine dedicated to showcasing creative voices worldwide, with over 10k social media followers. We highlight visual art, literature, experimental work, and cross-disciplinary practice. Every issue is curated around a theme that asks artists and writers to push their boundaries and explore new ways of seeing. @haus_a_rest www.haus-a-rest.com EDITORS: @jennafox.artist and @nicholarodgers.artist Image courtesy of @jennafoxartist Make a submission Contact the curator Who is eligible for this opportunity? Artists and writers of any stage of their journey. The work must be resolved and meet the theme of the open call. You must have an Instagram account. When is the deadline? 27th November 2026 for the December issue. How many works can I submit? There is no limit but we will only select one per artist as a maxium. How much does it cost? FREE! No fees to enter or if you are selected. How amazing is that!! Are there payments to artists? No. What publicity will be provided as part of the opportunity? Online across our social media and email to our db. You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Other opportunities Open Call for Artists - 32nd Community Art Exhibition Exhibit your artwork at Circular ArtSpace – East Bristol's vibrant gallery supporting emerging... The Unfinished CISTA ARTS invites artists worldwide to submit work for The Unfinished, an international online... Craft Open and Market Are you a craft maker, artist or creative? Do you sew, knit, crochet, make jewellery, create... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "international-2026-11-27-3655b3a3a6",
       "status": "check",
       "kind": "open_call",
@@ -70620,7 +70823,7 @@
       "checked_at": "",
       "review_reason": "primary_source_required",
       "discovered_at": "2026-11-05",
-      "audience_text": "Opportunity details | Wilderness | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register Wilderness Deadline: 27/11/2026 City: Tbilisi | Country: Georgia | Collect Art Report this? Description Opportunity FAQs Make a submission Contact curator Collect Art invites artists worldwide to submit their work for the upcoming online exhibition and special edition, themed “Wilderness” Wilderness is not just a place on a map. It is a state of being — raw, untamed, unfiltered, and free from control. It is the dense forest we have never entered, the desert that swallows all traces, the ocean depths, the mountain silence, but also the wildness that lives inside us: instinct, memory, fear, desire, and the part of the self that refuses to be domesticated… Collect Art invites artists worldwide to submit their work for the upcoming online exhibition and special edition, themed “Wilderness”. Wilderness is not just a place on a map. It is a state of being — raw, untamed, unfiltered, and free from control. It is the dense forest we have never entered, the desert that swallows all traces, the ocean depths, the mountain silence, but also the wildness that lives inside us: instinct, memory, fear, desire, and the part of the self that refuses to be domesticated… Open to artists worldwide, aged 18 and above, working in various media, including painting, drawing, collage, installation, illustration, photography, sculpture, ceramics, textiles, assemblage, fiber art, paper art, printmaking, 3D digital art, glass art, metalwork, and more.​ We invite works exploring Wilderness in all its forms — from untamed landscapes, natural forces, forests, deserts, oceans and mountains to themes of human-nature relationships, ecological fragility and resilience, solitude, survival, freedom, animal instinct, the feral and primitive, inner wilderness, bodies as landscapes, mythological wilds, and the edge between civilization and chaos. Your interpretation can be literal, symbolic, emotional, political or deeply personal, vast or intimate, quiet or violent, sacred or threatening — approach it through your own unique visual language.. Selected artists will have the privilege of being showcased in a month-long online exhibition and will receive a 2-6 page spread in both print and digital magazines. This feature will encompass a biography, artist statement, interview, website link, and 2-10 featured artworks. Moreover, all published artists will receive a complimentary digital issue of the magazine, which will be actively promoted on our website and social media platforms. Additionally, artists will be provided with a link to order the printed version of the magazine. Moreover, the curatorial team will select a few exceptional artists for inclusion in their upcoming book edition titled '101 Contemporary Artists and More...' ​ Submission requirements: Up to 12 photos; details of the work (title, medium, size, year, description is optional); brief biography; artist statement (min 100 words each); website; and social media links. Deadline: November 27, 2026 Application Fee: No Fee The participation fee is 55 EUR (in case of acceptance) Promotional Coverage: 1 dedicated post on the ‘NEWS’ page of our website 2 to 5 individual posts on Facebook and Instagram An announcement post featuring the magazine cover and the names of all published artists 3 group posts on Facebook and Instagram, each including one artwork from every featured artist Email outreach to our network of artists, gallerists, collectors, readers, and art professionals. Our Reach and Exposure: More than 1.2 million readers on Yumpu Over 682,274 readers on Scribd More than 150 printed copies sold per edition Each edition is now showcased at our newly opened Art Gallery in Tbilisi, Georgia, and is also featured in exhibitions and art events. To date, we have published 128 Seasonal and Special Editions of our magazine, featuring over 2,000 artists from around the world. Further Opportunities: Our curatorial team will also select several outstanding artists for inclusion in the upcoming book edition titled “101 Contemporary Artists and More…”. Selection is based on the overall vision for the book and available space. However, we aim to feature as many artists as possible from our previous magazine editions. Additionally, with each edition, our curators highlight a select group of artists for future exhibitions at our new 170 sq. m professionally curated art gallery in the prestigious centre of Tbilisi, Georgia. The gallery is dedicated to modern and contemporary art, providing a powerful platform for international exposure, including painting, drawing, photography, sculpture, ceramics, textile, installation, New media, mixed media works, etc. Make a submission Contact the curator Who is eligible for this opportunity? Open to artists worldwide, aged 18 and above, working in various media, including painting, drawing, collage, installation, illustration, photography, sculpture, ceramics, textiles, assemblage, fiber art, paper art, printmaking, 3D digital art, glass art, metalwork, and more.​ When is the deadline? November 27, 2026 How many works can I submit? Up to 12 artoworks How much does it cost? Application Fee: No Fee The participation fee is 55 EUR (in case of acceptance) You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Other opportunities If/Then: Chance and Creativity - Vol. 2: Ritual For the second volume of If/Then: Chance and Creativity, we are looking for artists, writers and... Parkscapes II London gallery is holding a Festive Season Exhibition, 3rd - 19th December 2026. We’re... Animal Group Exhibition No. 35 Gallery invites artists worldwide to submit work for Animal—International Online Group... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
+      "audience_text": "Opportunity details | Wilderness | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register Wilderness Deadline: 27/11/2026 City: Tbilisi | Country: Georgia | Collect Art Report this? Description Opportunity FAQs Make a submission Contact curator Collect Art invites artists worldwide to submit their work for the upcoming online exhibition and special edition, themed “Wilderness” Wilderness is not just a place on a map. It is a state of being — raw, untamed, unfiltered, and free from control. It is the dense forest we have never entered, the desert that swallows all traces, the ocean depths, the mountain silence, but also the wildness that lives inside us: instinct, memory, fear, desire, and the part of the self that refuses to be domesticated… Collect Art invites artists worldwide to submit their work for the upcoming online exhibition and special edition, themed “Wilderness”. Wilderness is not just a place on a map. It is a state of being — raw, untamed, unfiltered, and free from control. It is the dense forest we have never entered, the desert that swallows all traces, the ocean depths, the mountain silence, but also the wildness that lives inside us: instinct, memory, fear, desire, and the part of the self that refuses to be domesticated… Open to artists worldwide, aged 18 and above, working in various media, including painting, drawing, collage, installation, illustration, photography, sculpture, ceramics, textiles, assemblage, fiber art, paper art, printmaking, 3D digital art, glass art, metalwork, and more.​ We invite works exploring Wilderness in all its forms — from untamed landscapes, natural forces, forests, deserts, oceans and mountains to themes of human-nature relationships, ecological fragility and resilience, solitude, survival, freedom, animal instinct, the feral and primitive, inner wilderness, bodies as landscapes, mythological wilds, and the edge between civilization and chaos. Your interpretation can be literal, symbolic, emotional, political or deeply personal, vast or intimate, quiet or violent, sacred or threatening — approach it through your own unique visual language.. Selected artists will have the privilege of being showcased in a month-long online exhibition and will receive a 2-6 page spread in both print and digital magazines. This feature will encompass a biography, artist statement, interview, website link, and 2-10 featured artworks. Moreover, all published artists will receive a complimentary digital issue of the magazine, which will be actively promoted on our website and social media platforms. Additionally, artists will be provided with a link to order the printed version of the magazine. Moreover, the curatorial team will select a few exceptional artists for inclusion in their upcoming book edition titled '101 Contemporary Artists and More...' ​ Submission requirements: Up to 12 photos; details of the work (title, medium, size, year, description is optional); brief biography; artist statement (min 100 words each); website; and social media links. Deadline: November 27, 2026 Application Fee: No Fee The participation fee is 55 EUR (in case of acceptance) Promotional Coverage: 1 dedicated post on the ‘NEWS’ page of our website 2 to 5 individual posts on Facebook and Instagram An announcement post featuring the magazine cover and the names of all published artists 3 group posts on Facebook and Instagram, each including one artwork from every featured artist Email outreach to our network of artists, gallerists, collectors, readers, and art professionals. Our Reach and Exposure: More than 1.2 million readers on Yumpu Over 682,274 readers on Scribd More than 150 printed copies sold per edition Each edition is now showcased at our newly opened Art Gallery in Tbilisi, Georgia, and is also featured in exhibitions and art events. To date, we have published 128 Seasonal and Special Editions of our magazine, featuring over 2,000 artists from around the world. Further Opportunities: Our curatorial team will also select several outstanding artists for inclusion in the upcoming book edition titled “101 Contemporary Artists and More…”. Selection is based on the overall vision for the book and available space. However, we aim to feature as many artists as possible from our previous magazine editions. Additionally, with each edition, our curators highlight a select group of artists for future exhibitions at our new 170 sq. m professionally curated art gallery in the prestigious centre of Tbilisi, Georgia. The gallery is dedicated to modern and contemporary art, providing a powerful platform for international exposure, including painting, drawing, photography, sculpture, ceramics, textile, installation, New media, mixed media works, etc. Make a submission Contact the curator Who is eligible for this opportunity? Open to artists worldwide, aged 18 and above, working in various media, including painting, drawing, collage, installation, illustration, photography, sculpture, ceramics, textiles, assemblage, fiber art, paper art, printmaking, 3D digital art, glass art, metalwork, and more.​ When is the deadline? November 27, 2026 How many works can I submit? Up to 12 artoworks How much does it cost? Application Fee: No Fee The participation fee is 55 EUR (in case of acceptance) You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Other opportunities Open Call for Artists - 32nd Community Art Exhibition Exhibit your artwork at Circular ArtSpace – East Bristol's vibrant gallery supporting emerging... The Unfinished CISTA ARTS invites artists worldwide to submit work for The Unfinished, an international online... Craft Open and Market Are you a craft maker, artist or creative? Do you sew, knit, crochet, make jewellery, create... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
       "price_type": "unknown",
       "availability_evidence": "",
       "ticket_required": false,
@@ -71254,12 +71457,14 @@
       "checked_at": "",
       "review_reason": "primary_source_required",
       "discovered_at": "2026-11-09",
-      "audience_text": "Opportunity details | Inside/Outside; Photography Exhibition | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register Inside/Outside; Photography Exhibition Deadline: 29/11/2026 Country: United Kingdom | Solas Shadow Report this? Description Opportunity FAQs Make a submission Contact curator Our exhibitions will explore the polarities of our lives and the world around us. These themes, shaped by your involvement, will give rise to exhibitions that are engaging, reflective, and thought-provoking. For this exhibition, we have chosen the theme, Inside / Outside. The Exhibition will take place in March 2027 Inside / Outside, the polarity being explored in this exhibition is between the outside world and the inner domain. How something looks on the outside can be very different on the inside. This can be a literal interpretation: the difference between internal and external architecture, domestic and public spaces. Or our private and public selves, for example. It can also be a deeper exploration of the inner and outer self, how we present ourselves to the outside world and how we feel or think of ourselves on the inside, is it the same? What are the differences? How it feels to be on the inside or the outside of a group or society, the theme is open to explore many possibilities. Photographers are asked to explore this theme however they wish, whether focusing on one aspect or both in their submissions. Submission Deadline: 29th November 2026 Exhibition start date: March 2027 Solas / Shadow is an online international photography gallery dedicated to showcasing the work of photographers from around the world through engaging, thoughtfully curated exhibitions. Starting in late January/early February 2026, we are still in the early days of the gallery, with over 600 followers on our Instagram account. Currently, the average number of monthly visitors to our website is 1,000 and with tens of thousands of views across our social media, with visitors from all over the world, from USA, South America, all over Europe and Asia. Founded on the belief that powerful photography exists beyond traditional gatekeeping, and with over 10 years experience in both photography and exhibition curation, Solas / Shadow aims to create space for voices that have not always had the opportunity to exhibit their work. We are particularly committed to supporting emerging and underrepresented photographers, while remaining open to artists at all stages of their practice. Our exhibitions will explore the polarities of our lives and the world around us. These themes, shaped by your involvement, will give rise to exhibitions that are engaging, reflective, and thought-provoking. As we grow, we look forward to expanding our platform and offering more opportunities for photographers. Solas / Shadow is not just a gallery, but a growing community built on collaboration, inclusion, and a shared passion for photography. Participants will: Have their work displayed in an online gallery on our website. Receive a digital certificate of participation. See their work featured on the gallery's social media. Have their work featured in a digital Exhibition Catalogue. All those interested in the purchase of your work will be instructed to contact the photographer directly. How to Submit Submit up to 5 images. Please submit your files in JPG format. Please include in your submission: Your name and surname. Your Location and/or Nationality Your social media and/or website links. A short biography, no more than a couple of sentences. Title of your images There is no submission fee; it is free to submit. If selected to participate in an exhibition, you will be asked to pay a participation fee. The participation fee will be based on the number of images selected for the exhibition: £16 for 1 image. £22 for 2 or more images. Submissions are open to: Photographers worldwide. Participants 18 years of age or older. Artists retain the copyright to their submitted works. By submitting, artists grant permission for the Gallery to use their image(s) to promote the exhibition, for display on the SOLAS / SHADOW webpage, for inclusion on social media, and for any advertising, promotional materials and publications. Make a submission Contact the curator Who is eligible for this opportunity? Everyone over the age of 18. When is the deadline? 29th November 2026. How many works can I submit? Up to 5 images, either individual images or as part of a series. How much does it cost? Free to submit, if selected participants are asked to pay a fee based on the number of images selected. You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Other opportunities If/Then: Chance and Creativity - Vol. 2: Ritual For the second volume of If/Then: Chance and Creativity, we are looking for artists, writers and... Parkscapes II London gallery is holding a Festive Season Exhibition, 3rd - 19th December 2026. We’re... Animal Group Exhibition No. 35 Gallery invites artists worldwide to submit work for Animal—International Online Group... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
+      "audience_text": "Opportunity details | Inside/Outside; Photography Exhibition | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register Inside/Outside; Photography Exhibition Deadline: 29/11/2026 Country: United Kingdom | Solas Shadow Report this? Description Opportunity FAQs Make a submission Contact curator Our exhibitions will explore the polarities of our lives and the world around us. These themes, shaped by your involvement, will give rise to exhibitions that are engaging, reflective, and thought-provoking. For this exhibition, we have chosen the theme, Inside / Outside. The Exhibition will take place in March 2027 Inside / Outside, the polarity being explored in this exhibition is between the outside world and the inner domain. How something looks on the outside can be very different on the inside. This can be a literal interpretation: the difference between internal and external architecture, domestic and public spaces. Or our private and public selves, for example. It can also be a deeper exploration of the inner and outer self, how we present ourselves to the outside world and how we feel or think of ourselves on the inside, is it the same? What are the differences? How it feels to be on the inside or the outside of a group or society, the theme is open to explore many possibilities. Photographers are asked to explore this theme however they wish, whether focusing on one aspect or both in their submissions. Submission Deadline: 29th November 2026 Exhibition start date: March 2027 Solas / Shadow is an online international photography gallery dedicated to showcasing the work of photographers from around the world through engaging, thoughtfully curated exhibitions. Starting in late January/early February 2026, we are still in the early days of the gallery, with over 600 followers on our Instagram account. Currently, the average number of monthly visitors to our website is 1,000 and with tens of thousands of views across our social media, with visitors from all over the world, from USA, South America, all over Europe and Asia. Founded on the belief that powerful photography exists beyond traditional gatekeeping, and with over 10 years experience in both photography and exhibition curation, Solas / Shadow aims to create space for voices that have not always had the opportunity to exhibit their work. We are particularly committed to supporting emerging and underrepresented photographers, while remaining open to artists at all stages of their practice. Our exhibitions will explore the polarities of our lives and the world around us. These themes, shaped by your involvement, will give rise to exhibitions that are engaging, reflective, and thought-provoking. As we grow, we look forward to expanding our platform and offering more opportunities for photographers. Solas / Shadow is not just a gallery, but a growing community built on collaboration, inclusion, and a shared passion for photography. Participants will: Have their work displayed in an online gallery on our website. Receive a digital certificate of participation. See their work featured on the gallery's social media. Have their work featured in a digital Exhibition Catalogue. All those interested in the purchase of your work will be instructed to contact the photographer directly. How to Submit Submit up to 5 images. Please submit your files in JPG format. Please include in your submission: Your name and surname. Your Location and/or Nationality Your social media and/or website links. A short biography, no more than a couple of sentences. Title of your images There is no submission fee; it is free to submit. If selected to participate in an exhibition, you will be asked to pay a participation fee. The participation fee will be based on the number of images selected for the exhibition: £16 for 1 image. £22 for 2 or more images. Submissions are open to: Photographers worldwide. Participants 18 years of age or older. Artists retain the copyright to their submitted works. By submitting, artists grant permission for the Gallery to use their image(s) to promote the exhibition, for display on the SOLAS / SHADOW webpage, for inclusion on social media, and for any advertising, promotional materials and publications. Make a submission Contact the curator Who is eligible for this opportunity? Everyone over the age of 18. When is the deadline? 29th November 2026. How many works can I submit? Up to 5 images, either individual images or as part of a series. How much does it cost? Free to submit, if selected participants are asked to pay a fee based on the number of images selected. You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Other opportunities Open Call for Artists - 32nd Community Art Exhibition Exhibit your artwork at Circular ArtSpace – East Bristol's vibrant gallery supporting emerging... The Unfinished CISTA ARTS invites artists worldwide to submit work for The Unfinished, an international online... Craft Open and Market Are you a craft maker, artist or creative? Do you sew, knit, crochet, make jewellery, create... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
       "price_type": "unknown",
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-11-29-dcc4250c79",
@@ -72412,6 +72617,35 @@
       "editor_note": ""
     },
     {
+      "id": "moscow-2026-12-10-ceca5c9467",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-12-10",
+      "time": "18:00",
+      "title": "Текстильный клуб",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/textile-club",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-10",
+      "audience_text": "› Ателье Проект : Натюрморт. Портрет. Пейзаж. После жанра Дата: 3 ноя 2026– 21 янв 2027 Возраст: от 16 Тип: Серия мастер-классов Место: Ателье Возрастные ограничения 6+ Встречи, посвященные работе с портретом, пейзажем и натюрмортом через ткачество, вышивку и смешанные техники. Программа  {\"points\":[{\"id\":4,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":6,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.4,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":5,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} T Выставка « Натюрморт. Портрет. Пейзаж. После жанра » показывает, как живописные жанры взаимодействуют друг с другом и находят новые формы в современном искусстве. Приглашаем на серию встреч, посвященных текстилю и новым способам работы с привычными жанрами. Клуб объединяет художниц Лизу Ольшанскую, Александру Островскую и Кристину Пашкову, которые работают с текстилем в искусстве и образовании. Фото: Вадим Штэйн Мы обратимся к натюрморту, портрету и пейзажу, прибегая к использованию ткани, нитей, ткачества, методам вышивки, коллажа и переработки старых материалов. Попробуем разные техники, поработаем за ткацким станком и будем внимательны к фактурам, повседневным предметам и личным историям. Обратим внимание не только на результат, но и на процесс: возможность замедлиться и взглянуть на знакомые вещи по-новому. Программа Встречи клуба разделены на три тематических блока, каждый из которых посвящен отдельному жанру. Регистрация открывается за неделю до каждой встречи*. Можно посетить весь цикл или выбрать отдельные события. Портрет Ведущая Кристина Пашкова 3 ноя, вторник, 18:00–20:00 Ткацкая схема Знакомимся с основами создания ткацких схем и базовыми узорами, придумываем собственные. 5 ноя, четверг, 18:00–20:00 Шифрование Зашифровываем собственное имя в тканой схеме и создаем графические листы на основе разработанных знаков и узоров. 10 ноя, вторник, 18:00–20:00 Автопортрет Регистрация {\"points\":[{\"id\":1,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":3,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.4,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":2,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origi",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "spb-2026-12-11-d7eb167bdb",
       "status": "rejected",
       "kind": "exhibition",
@@ -73079,6 +73313,35 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": "2026-11-05"
+    },
+    {
+      "id": "international-2027-01-11-b3606147e2",
+      "status": "check",
+      "kind": "open_call",
+      "city": "international",
+      "date": "2027-01-11",
+      "time": "",
+      "title": "Knockengorroch Festival 2027 - Open Call for Site-Responsive Performance",
+      "venue": "CuratorSpace",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "open-call"
+      ],
+      "description": "Knockengorroch Festival is offering a unique opportunity for you to bring your work to a fabulous location in South West Scotland. We invite you to develop a new work, or to re-imagine an existing work within the context of the Glen and its river The Water of Deugh.",
+      "url": "https://www.curatorspace.com/opportunities/detail/knockengorroch-festival---open-call-for-siteresponsive-performance/11333",
+      "source": "CuratorSpace — opportunities",
+      "checked_at": "",
+      "review_reason": "primary_source_required",
+      "discovered_at": "2026-11-10",
+      "audience_text": "Opportunity details | Knockengorroch Festival 2027 - Open Call for Site-Responsive Performance | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register Knockengorroch Festival 2027 - Open Call for Site-Responsive Performance Deadline: 11/01/2027 City: Carsphairn | Country: United Kingdom | Alex Rigg Expenses paid Report this? Description Opportunity FAQs Make a submission Contact curator Knockengorroch Festival is offering a unique opportunity for you to bring your work to a fabulous location in South West Scotland. We invite you to develop a new work, or to re-imagine an existing work within the context of the Glen and its river The Water of Deugh. Open Call for Site-Responsive Performance Knockengorroch Festival 2027 is inviting submissions for site-responsive, live performance in the landscape on and around the festival site. This opportunity is open to artists at all stages in their careers and can be solo or group work. We are looking for a genuine commitment that engages with the land and community. Your performance will be shown outdoors and be able to adapt to variable weather conditions. This first performance call-out for Knockengorroch offers a limited number of artists the opportunity to present work of a high standard. * Background Knockengorroch was the first greenfield festival of its type in Scotland and began in 1998. The Festival now attracts people from all over Scotland, the UK, and beyond. Knockengorroch Festival promotes multi-cultural forms and musical genres, highlighting the connection between roots music, the lands, the people that have lived there and the people and all living things that still do. What the festival can provide: A residency of up to five days, including the festival weekend. Stage-management support for your performance during the the festival. Camping accommodation on-site. Mentoring from Alex Rigg of Oceanallover. Crew meals during the festival. Access to an audience pool of over three thousand people. Some limited help with travel costs. Marketing and publicity through the festival. On-site marketing and information for the festival audience. Photographic documentation of your performance. *This opportunity is not a commission. We hope to be able to offer funded opportunities in the future. How to apply Please send a simple pitch telling us: Who you are. Include as many links to your work as you wish but no large attachments in your email. How many people will be in your team and their roles. What you’d like to do - is it an existing piece of work or something new you want to try out? How do you envision it working on our site? Your experience relating to Knockengorroch festival, if any. Where you’d be travelling from. Please keep your pitch to us clear and concise. Make a submission Contact the curator Who is eligible for this opportunity? This call is open to all artists. We are inviting proposals that are clear, creative and original and will be selecting work from artists that can show a track record of work made to a high standard. When is the deadline? 5pm on the 11th of January 2027. How many works can I submit? One submission per artist or group. When is the delivery date? 27th - 30th May 2027. How much does it cost? There is no charge to enter. Are there payments to artists? There are some small bursaries available to help with travel. Is there a private view / opening? Yes, there will be an opening event for the overall festival. Artists will be invited to take part. What are the exhibition opening hours? This is a festival site and will be open from early till late for the duration of the festival. Your live performances will be timetabled within the overall festival programming. Does the location have disabled access? Yes, but with some limitations due to the nature of the site. What publicity will be provided as part of the opportunity? Your work will be marketed through the Knockengorroch festival web-site and social media posts. It will also be advertised during the festival on information boards across the site. Do I need to be present? This is an opportunity to present live work. Where will my venue be listed? Knockengorroch festival is a well establshed festival with an annual attentance of 3000 people. How do you decide on proposals? Proposals will be reviewed by a small committee headed by Alex Rigg of Oceanallover working alongside Katch Holmes, Festival Director. What happens if my proposal is chosen? You will be invited to liaise with Alex Rigg who will help you to gain a more in-depth concept of the site itself. You will also have the opportunity to visit the site in person, or via a virtual tour. What are the selection criteria? An excellent idea for a site-responsive work that can work well in the context of Knockengorroch Festival. A strong track record of work that can demonstrate an ability to realise concepts to a high standard. You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Other opportunities Open Call for Artists - 32nd Community Art Exhibition Exhibit your artwork at Circular ArtSpace – East Bristol's vibrant gallery supporting emerging... The Unfinished CISTA ARTS invites artists worldwide to submit work for The Unfinished, an international online... Craft Open and Market Are you a craft maker, artist or creative? Do you sew, knit, crochet, make jewellery, create... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "international-2027-01-12-fdba99f20b",

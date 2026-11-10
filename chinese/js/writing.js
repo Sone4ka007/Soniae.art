@@ -181,7 +181,7 @@
               'Неточная черта — попробуй ещё раз. Ошибок: ' + (data.totalMistakes || 0);
           },
           onComplete: data => {
-            if (token !== renderToken || current() !== s) return;
+            if (token !== renderToken || ctx.state.mode !== 'writing' || current() !== s) return;
             if (isTrace) { s.stage = 'recall'; ctx.save(); render(); }
             else finishCharacter(Math.max(0, integer(data.totalMistakes, 0)), false);
           }

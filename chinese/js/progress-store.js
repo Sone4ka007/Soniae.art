@@ -9,7 +9,7 @@
   const accountKey = userId => userId ? STORAGE_KEY + '-user-' + String(userId) : STORAGE_KEY;
   const EXPORT_FORMAT = 'chinese-lab-progress';
   const EXPORT_VERSION = 1;
-  const OBJECT_FIELDS = ['stories', 'weak', 'saved', 'srs', 'ciDone', 'questWords', 'sessions'];
+  const OBJECT_FIELDS = ['stories', 'weak', 'saved', 'srs', 'ciDone', 'questWords', 'sessions', 'dailyActivity'];
   const COUNTERS = ['xp', 'correct', 'attempts'];
 
   function isRecord(value) {

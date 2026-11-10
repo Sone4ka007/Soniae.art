@@ -5,6 +5,8 @@ import {join,dirname} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import '../../chinese/js/quest-lesson3.js';
 import '../../chinese/js/quest-lesson4.js';
+import '../../chinese/js/quest-lesson5.js';
+import '../../chinese/js/quest-lesson6.js';
 import '../../chinese/js/quest-branches.js';
 
 const dataDir=join(dirname(fileURLToPath(import.meta.url)),'../../chinese/data');
@@ -48,11 +50,11 @@ for(const lesson of lessonData){
  test(`lesson ${lesson.id}: three linked chapters, four distinct endings and graded vocabulary`,()=>{
    const chapters=readings[lesson.id];
    const result=globalThis.ChineseLabQuestBranches.build(lesson,chapters);
-   assert.equal(result.schemaVersion,lesson.id<=4?9:7);
+   assert.equal(result.schemaVersion,lesson.id<=6?9:7);
    assert.equal(result.steps.length,lesson.id===1?8:8);
    assert.deepEqual(result.steps.map(x=>x.type),lesson.id===1
      ?['roleplay','explore','choice','explore','compose','choice','explore','choice']
-     :lesson.id===2||lesson.id===3
+     :[2,3,5,6].includes(lesson.id)
        ?['roleplay','explore','choice','explore','compose','choice','compose','choice']
        :lesson.id===4
          ?['roleplay','explore','choice','compose','choice','explore','compose','choice']
@@ -116,7 +118,7 @@ for(const lesson of lessonData){
    assert.equal(new Set(result.branchEndings.map(e=>e.ru)).size,4,'Different choices must produce different outcomes');
    assert.equal(decisions[1].branchContexts.length,2);
    assert.notEqual(decisions[1].branchContexts[0].zh,decisions[1].branchContexts[1].zh);
-   assert.equal(decisions[2].branchContexts.length,lesson.id<=4?4:2);
+   assert.equal(decisions[2].branchContexts.length,lesson.id<=6?4:2);
    assert.notEqual(decisions[2].branchContexts[0].zh,decisions[2].branchContexts[1].zh);
    if(lesson.id===1) {
      assert.equal(decisions[1].branchOptions.length,2,'Different first choice must open different decisions');
@@ -155,6 +157,25 @@ for(const lesson of lessonData){
      }else{
        assert.deepEqual(illustrations[0].required,['tickets','desk','map']);
        assert.deepEqual(illustrations[1].required,['umbrella','charge','flowers','breakfast']);
+     }
+   }
+   if(lesson.id===5||lesson.id===6) {
+     assert.equal(result.playFirst,true,'Lessons 5 and 6 start with interactive speaking');
+     assert.equal(result.steps[0].type,'roleplay');
+     assert.equal(result.opening.panels.length,4);
+     assert.equal(result.steps.length,8);
+     const expected=lesson.id===5?['restaurant_menu','banquet_table']:['hospital_lobby','hospital_room'];
+     assert.deepEqual(illustrations.map(x=>x.image),expected);
+     assert.equal(result.branchEndings.flatMap(x=>x.variants).length,8);
+     assert.equal(new Set(result.branchEndings.flatMap(x=>x.variants.map(v=>v.ru))).size,8);
+     assert.equal(decisions[1].branchOptions.length,2);
+     assert.equal(decisions[2].branchOptions.length,4);
+     if(lesson.id===5) {
+       assert.deepEqual(illustrations[0].required,['menu','pepper','soup']);
+       assert.deepEqual(illustrations[1].required,['namecards','notice','host']);
+     }else{
+       assert.deepEqual(illustrations[0].required,['registration','nurse','queue']);
+       assert.deepEqual(illustrations[1].required,['thermometer','test','cabinet']);
      }
    }
    const outcomes=[];

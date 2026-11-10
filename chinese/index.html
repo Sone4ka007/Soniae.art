@@ -697,14 +697,16 @@ window.chineseLabLessonFetch=async url=>{
 <script src="./js/sentence-tiles.js"></script>
 <script src="./js/exercise-sessions.js"></script>
 <script src="./js/quest-mnemonics.js?v=20261109-2"></script>
-<script src="./js/quest-roleplay.js?v=20261110-2"></script>
+<script src="./js/quest-roleplay.js?v=20261110-4"></script>
 <script src="./js/quest-roleplay-extended.js?v=20261110-3"></script>
-<script src="./js/quest-roleplay-view.js?v=20261110-3"></script>
+<script src="./js/quest-roleplay-remaining.js?v=20261110-1"></script>
+<script src="./js/quest-roleplay-view.js?v=20261110-4"></script>
 <script src="./js/quest-lesson3.js?v=20261110-1"></script>
 <script src="./js/quest-lesson4.js?v=20261110-2"></script>
 <script src="./js/quest-lesson5.js?v=20261110-1"></script>
 <script src="./js/quest-lesson6.js?v=20261110-1"></script>
-<script src="./js/quest-branches.js?v=20261110-3"></script>
+<script src="./js/quest-lessons7-10.js?v=20261110-1"></script>
+<script src="./js/quest-branches.js?v=20261110-4"></script>
 <script>
 const sceneURL = name => window.__offlineScenes[name] || ("assets/"+name+".svg");
 const $ = (selector) => document.querySelector(selector);
@@ -1096,6 +1098,36 @@ function questOpening(q){
 function renderStory(){
  const g=state.game,q=lesson().quest;
  if(g.status==='intro'&&q.playFirst){
+  if(lesson().id>=7&&lesson().id<=10){
+   const scenario={
+     7:{name:'ИССЛЕДОВАНИЕ РЫНКА',title:'ТРИ ДНЯ НА ЧЕСТНЫЙ ОТЧЁТ',
+       description:'После болезни Анна пришла на практику в компанию. Руководитель дал три дня на исследование рынка. Нужно опросить десять клиентов и разобраться, чем полезен продукт и что людям не нравится. Первым делом уточни задачу по-китайски.',
+       question:'王经理：安娜，你知道今天有什么任务吗？',
+       button:'СПРОСИТЬ О ЗАДАНИИ →'},
+     8:{name:'ОТДЫХ ПОСЛЕ РАБОТЫ',title:'ВЫХОДНЫЕ БЕЗ НОВОЙ ГОНКИ',
+       description:'После исследования рынка Анна всю неделю перерабатывала и спала слишком мало. На выходные у неё снова масса планов. Сяолинь предлагает выбраться на природу. Объясни, что с тобой происходит, и реши, как отдыхать.',
+       question:'小林：安娜，你最近怎么这么累呀？',
+       button:'ПОГОВОРИТЬ С СЯОЛИНЕМ →'},
+     9:{name:'ВЫСТАВКА И ПУБЛИКАЦИЯ',title:'ЧЬЯ ЭТО КАРТИНА?',
+       description:'На студенческой художественной встрече Анна неожиданно видит Сяо Чэнь, которая раньше помогла ей. Девушки разговаривают о картинах и семейных историях. Но кто-то выложил рисунок Сяо Чэнь в интернет без согласия. Прежде всего поговори с самой художницей.',
+       question:'小陈：安娜！真幸运！今天又见面了。',
+       button:'ПОЗДОРОВАТЬСЯ С СЯО ЧЭНЬ →'},
+     10:{name:'ЗИМНЯЯ ПОЕЗДКА',title:'МИНУС ВОСЕМНАДЦАТЬ',
+       description:'Анна и друзья едут из тёплого Гуанчжоу в морозный Харбин. Там ожидается −18 °C, а один из попутчиков собрался с тонкой курткой. Помоги ему сравнить погоду, подготовиться и выбрать маршрут. Позже вы окажетесь на экологической акции.',
+       question:'小伙子：哈尔滨真的很冷吗？',
+       button:'ОБЪЯСНИТЬ ПОГОДУ →'}
+   }[lesson().id];
+   $('#game-panel').innerHTML=header('КВЕСТ / СИМУЛЯЦИЯ',
+     'Живой диалог, поиски предметов, три решения и разные концовки.',
+     'УРОК '+String(lesson().id).padStart(2,'0')+' / СИТУАЦИЯ')+
+     '<div class="quest-rp-start"><div class="quest-rp-start-label">'+esc(scenario.name)+'</div>'+
+     '<h4>'+esc(scenario.title)+'</h4><p>'+esc(scenario.description)+'</p>'+
+     '<div class="quest-rp-start-question" lang="zh-CN">'+esc(scenario.question)+' '+speakButton(scenario.question)+'</div>'+
+     '<p>Отвечай сама по-китайски. Если нужно, открой подсказку из отдельных слов. Затем исследуй иллюстрации и принимай решения.</p>'+
+     '<button type="button" data-action="quest-start" class="action-btn">'+esc(scenario.button)+'</button>'+
+     '<small>Не каждый выбор приведёт к успеху. Последствия зависят от твоих решений на предыдущих этапах.</small></div>';
+   return;
+  }
   if(lesson().id===5||lesson().id===6){
    const scenario=lesson().id===5?{
      name:'УЖИН С ДРУЗЬЯМИ',title:'ЗАКАЖИ ТО, ЧТО ТЕБЕ ПОДХОДИТ',

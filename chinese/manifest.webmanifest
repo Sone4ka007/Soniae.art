@@ -1,0 +1,32 @@
+{
+  "id": "/chinese/",
+  "name": "HSK4 Chinese lab",
+  "short_name": "HSK4 Chinese lab",
+  "description": "Практика китайского языка по программе HSK 4",
+  "lang": "ru",
+  "start_url": "/chinese/",
+  "scope": "/chinese/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#d7ff29",
+  "icons": [
+    {
+      "src": "/chinese/icons/duck.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/chinese/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/chinese/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

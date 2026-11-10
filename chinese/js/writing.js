@@ -310,7 +310,7 @@
     const max = Math.max(0, strokes - 1); // always require at least one drawn stroke
     const w = settings();
     if (w.prefillMode === 'manual') return Math.min(w.prefillCount, max);
-    return Math.max(0, Math.min(max, Math.round(max * (1 - s.attempt / Math.max(1, s.rounds - 1)))));
+    return Math.max(0, Math.min(max, Math.round(max * (1 - Math.min(1, s.attempt / Math.max(1, s.rounds - 2))))));
   }
   function drawPractice(s) {
     const char = s.word.chars[s.charIndex];
@@ -327,7 +327,8 @@
       '<button type="button" class="writing-secondary" data-action="writing-structure">СОСТАВ И ПОДСКАЗКА</button>' +
       '<button type="button" class="writing-secondary" data-action="writing-hint">ПОКАЗАТЬ КОНТУР</button>' +
       '<button type="button" class="writing-minor" data-action="writing-restart">СТЕРЕТЬ И ПОВТОРИТЬ</button>' +
-      '<button type="button" class="writing-minor" data-action="writing-reveal">ПОСМОТРЕТЬ ОБРАЗЕЦ</button></div>' +
+      '<button type="button" class="writing-minor" data-action="writing-reveal">ПОСМОТРЕТЬ ОБРАЗЕЦ</button>' +
+      '<button type="button" class="writing-minor" data-action="writing-skip">ПРОПУСТИТЬ ЗНАК</button></div>' +
       '<section id="writing-breakdown" class="writing-breakdown"' + (s.showStructure ? '' : ' hidden') + '>' +
       (s.showAnswer ? '<div class="writing-large-word" lang="zh-CN">' + safe(char) + '</div>' : '') +
       characterGuide({char}) + '</section>' +
@@ -511,6 +512,8 @@
       s.roundHelp = true; persist(); render();
     } else if (action === 'writing-reveal' && s && s.stage === 'practice') {
       s.roundHelp = true; s.showStructure = true; s.showAnswer = true; persist(); render();
+    } else if (action === 'writing-skip' && s && s.stage === 'practice') {
+      completeCharacter(s, 3, 0, true);
     }
     return true;
   }

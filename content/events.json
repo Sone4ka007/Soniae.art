@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-09",
+  "updated_at": "2026-11-10",
   "events": [
     {
       "id": "moscow-2025-09-03-6b54dbdbf3",
@@ -38291,7 +38291,7 @@
       "reviewed_at": "2026-10-17",
       "availability": "unknown",
       "availability_checked_at": "",
-      "registration": false,
+      "registration": null,
       "price": null,
       "price_text": "",
       "price_type": "paid",
@@ -38317,7 +38317,7 @@
         "status": "approved",
         "telegram_include": false,
         "instagram_include": false,
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -41054,7 +41054,7 @@
       "address": "1-й Голутвинский переулок, 16, стр. 1",
       "price": 850,
       "price_text": "850 ₽; льготный — 650 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -41081,7 +41081,7 @@
       "time_evidence": "24 октября 2026 14:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
       "editor_overrides": {
-        "registration": false
+        "registration": null
       }
     },
     {
@@ -49427,7 +49427,7 @@
       "address": "Лаврушинский переулок, 12",
       "price": 650,
       "price_text": "650 ₽; онлайн — 700 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -49444,7 +49444,7 @@
         "telegram_include": false,
         "instagram_include": false,
         "status": "approved",
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -51674,14 +51674,16 @@
       "price": 0,
       "price_text": "",
       "registration": false,
-      "categories": [],
+      "categories": [
+        "выставка"
+      ],
       "description": "На метро Музей AZ находится между станциями метро «Маяковская» и «Белорусская» (кольцевая). Мы рекомендуем идти в Музей от станции «Маяковская». Вам нужен Выход №1 на 1-я Тверская-Ямская улица, 2-я Тверская-Ямская улица.",
       "url": "https://museum-az.com/event/territoriya-svobody-nonkonformisty-v-taruse/",
       "source": "Музей AZ — выставки и события",
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-10-20",
-      "price_type": "paid",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-10-25",
       "editor_overrides": {
@@ -52951,7 +52953,7 @@
       "title": "Коллективная выставка Арт-шаффл 43.0",
       "venue": "ЦСИ Винзавод",
       "address": "",
-      "price": 12000,
+      "price": 0,
       "price_text": "12000 ₽",
       "registration": null,
       "categories": [
@@ -52965,7 +52967,7 @@
       "discovered_at": "2026-11-03",
       "start_date": "2026-11-03",
       "end_date": "2026-11-15",
-      "price_type": "paid",
+      "price_type": "free",
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
@@ -55219,7 +55221,7 @@
       "address": "",
       "price_type": "free",
       "price_text": "бесплатно по регистрации",
-      "registration": false,
+      "registration": true,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -57133,7 +57135,7 @@
       "address": "",
       "price_type": "free",
       "price_text": "бесплатно по регистрации",
-      "registration": false,
+      "registration": true,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -58423,174 +58425,6 @@
       "reviewed_at": "2026-10-24"
     },
     {
-      "id": "spb-2026-11-09-ff6242f3c1",
-      "status": "new",
-      "kind": "event",
-      "city": "spb",
-      "date": "2026-11-09",
-      "time": "",
-      "title": "«Баркемп 20.35» соберёт разработчиков экотехнологий и представителей бизнеса",
-      "venue": "",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": null,
-      "categories": [
-        "игра"
-      ],
-      "description": "11 и 12 ноября в Санкт-Петербурге пройдёт XI форум по реализации национальной технологической инициативы «Баркемп 20.35» . В этом году центральной темой мероприятия станут экотехнологии, природопользование и внедрение инновационных решений в городскую и отраслевую среду.",
-      "url": "https://spbcult.ru/news/anonsy/barkemp-20-35-soberyet-razrabotchikov-ekotekhnologiy-i-predstaviteley-biznesa/",
-      "source": "Петербургский дневник культуры — анонсы",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-11-09",
-      "price_type": "unknown",
-      "availability_evidence": "",
-      "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": ""
-    },
-    {
-      "id": "spb-2026-11-09-0ca330cc2d",
-      "status": "new",
-      "kind": "event",
-      "city": "spb",
-      "date": "2026-11-09",
-      "time": "",
-      "title": "В Петербурге пройдёт фестиваль студенческих фильмов «ПитерКит»",
-      "venue": "",
-      "address": "",
-      "price": 0,
-      "price_text": "Бесплатно",
-      "registration": true,
-      "categories": [
-        "мастер-класс"
-      ],
-      "description": "С 12 по 19 ноября в Санкт-Петербурге пройдёт XXVI Международный фестиваль студенческих фильмов «ПитерКит». В этом году проект посвящён 100‑летию со дня рождения легендарного оператора, народного артиста Российской Федерации Эдуарда Розовского.",
-      "url": "https://spbcult.ru/news/anonsy/v-peterburge-proydet-festival-studencheskikh-filmov-piterkit-/",
-      "source": "Петербургский дневник культуры — анонсы",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-11-09",
-      "price_type": "free",
-      "availability_evidence": "",
-      "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": ""
-    },
-    {
-      "id": "spb-2026-11-09-1ec7389196",
-      "status": "new",
-      "kind": "event",
-      "city": "spb",
-      "date": "2026-11-09",
-      "time": "",
-      "title": "Герценовский университет впервые организует новогодний праздник для петербуржцев",
-      "venue": "",
-      "address": "",
-      "price": 0,
-      "price_text": "Бесплатно",
-      "registration": null,
-      "categories": [
-        "событие"
-      ],
-      "description": "Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами! Также вы можете отправить статью в социальной сети или мессенджере Если у вас есть чем поделиться с нашими читателями, вы можете предложить свою статью.",
-      "url": "https://spbcult.ru/news/anonsy/gertsenovskiy-universitet-vpervye-provedet-novyy-god-dlya-peterburzhtsev/",
-      "source": "Петербургский дневник культуры — анонсы",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-11-09",
-      "price_type": "free",
-      "availability_evidence": "",
-      "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": ""
-    },
-    {
-      "id": "moscow-2026-11-09-3c94697fb2",
-      "status": "new",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-11-09",
-      "time": "",
-      "title": "Го без границ",
-      "venue": "РГБМ",
-      "address": "",
-      "price": 0,
-      "price_text": "Бесплатно",
-      "registration": null,
-      "categories": [
-        "встреча"
-      ],
-      "description": "Го без границ 12+ 9 ноября 2026 (понедельник) 19:00 Малый зал (Вход № 2) Вход свободный 2026-11-9 19:00 2026-11-9 19:00 Europe/Moscow Го без границ Инклюзивный го-клуб от Школы Вадима Филиппова РГБМ, Малый зал (Вход № 2) РГБМ info@rgub.ru Инклюзивный го-клуб от Школы Вадима Филиппова Игра го — тренажёр для ума, пришедший из Древнего Китая. История игры насчитывает более 2000 лет, а её создание приписывают легендарному императору Яо. В наше время го очень популярна как среди политиков и бизнесменов, так и у обычных горожан. В Клубе каждый найдёт для себя комфортный уровень игры: пришедшим впервые преподаватели индивидуально объяснят правила и подберут соперника, с которым можно применить новые знания и навыки на практике. У игроков среднего уровня будет возможность разобрать теорию с педагогом или друг с другом, а у продвинутых игроков — посостязаться, выступить в качестве наставников новым участникам и помощников ведущему. Проект «Го без границ» в Библиотеке для молодёжи — один из флагманов инклюзивного интеллектуального спорта. Это первое и на данный момент единственное место в нашей стране, где встречаются игроки с различными возможностями слуха и зрения. В клубе работают первые российские преподаватели го, владеющие русским жестовым языком, — CODA и билингвы. Для самостоятельного изучения правил игры го мы записали обучающий курс на русском языке и на РЖЯ с субтитрами. Во время игр присутствует переводчик РЖЯ. Одно из недавних достижений клуба — возможность проводить игры на первых отечественных тактильных досках для игроков с особенностями зрения. Их разработали в Лаборатории цифрового производства ФАБЛАБ МИСИС совместно со Школой игры го Вадима Филиппова и при активном участии московских школьников. Ведущий: Вадим Филиппов, мастер спорта России, чемпион России и двукратный чемпион Москвы в команде, обладатель 4 дана Российской федерации го и Европейской федерации го, главный тренер сборной МГУ им. М.В. Ломоносова по го и го-клуба МГУ",
-      "url": "https://rgub.ru/schedule/item.php?new_id=49767",
-      "source": "Российская государственная библиотека для молодёжи — афиша",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-11-01",
-      "price_type": "free",
-      "availability_evidence": "",
-      "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_note": "",
-      "reviewed_at": ""
-    },
-    {
-      "id": "spb-2026-11-09-5995f84169",
-      "status": "new",
-      "kind": "event",
-      "city": "spb",
-      "date": "2026-11-09",
-      "time": "",
-      "title": "Государственный Эрмитаж",
-      "venue": "Государственный Эрмитаж",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": null,
-      "categories": [],
-      "description": "",
-      "url": "https://hermitagemuseum.org/what-s-on/afisha_mincult/?lng=ru",
-      "source": "Государственный Эрмитаж — выставки и события",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-11-09",
-      "price_type": "unknown",
-      "availability_evidence": "",
-      "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": ""
-    },
-    {
-      "id": "spb-2026-11-09-4b8641891d",
-      "status": "new",
-      "kind": "event",
-      "city": "spb",
-      "date": "2026-11-09",
-      "time": "",
-      "title": "Инклюзивный форум предлагает участникам освоить ораторское искусство, медиа и театральное мастерство",
-      "venue": "",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": null,
-      "categories": [
-        "презентация"
-      ],
-      "description": "Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами! Также вы можете отправить статью в социальной сети или мессенджере Если у вас есть чем поделиться с нашими читателями, вы можете предложить свою статью.",
-      "url": "https://spbcult.ru/news/anonsy/inklyuzivnyy-forum-predlagaet-uchastnikam-osvoit-oratorskoe-iskusstvo-media-i-teatralnoe-masterstvo/",
-      "source": "Петербургский дневник культуры — анонсы",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-11-09",
-      "price_type": "unknown",
-      "availability_evidence": "",
-      "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": ""
-    },
-    {
       "id": "moscow-2026-11-09-7a4c68420f",
       "status": "approved",
       "kind": "event",
@@ -58629,229 +58463,6 @@
       "editor_note": ""
     },
     {
-      "id": "spb-2026-11-09-c28be8eba5",
-      "status": "new",
-      "kind": "event",
-      "city": "spb",
-      "date": "2026-11-09",
-      "time": "",
-      "title": "Милош Бикович и Настасья Самбурская станут «Бандой»",
-      "venue": "",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": null,
-      "categories": [],
-      "description": "Кинокомпания СТВ и киностудия Петра Буслова объявили о начале съёмок криминальной драмы «Банда». «Банда» — о людях, для которых 1995 год стал последним шансом всё изменить. Андрей, Ирина, только что вышедший из тюрьмы Манга, Борис и домоправительница Полетиха собираются ради одной цели: пять миллионов долларов должны открыть каждому из них дверь в другую жизнь.",
-      "url": "https://spbcult.ru/news/anonsy/milosh-bikovich-i-nastasya-samburskaya-stanut-bandoy-/",
-      "source": "Петербургский дневник культуры — анонсы",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-11-09",
-      "price_type": "unknown",
-      "availability_evidence": "",
-      "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": ""
-    },
-    {
-      "id": "moscow-2026-11-09-cae66e6a6b",
-      "status": "new",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-11-09",
-      "time": "",
-      "title": "По ролям",
-      "venue": "РГБМ",
-      "address": "",
-      "price": 0,
-      "price_text": "Бесплатно",
-      "registration": null,
-      "categories": [],
-      "description": "По ролям 16+ 9 ноября 2026 (понедельник) 19:00 Зал «Музыкальный подвал» Вход свободный 2026-11-9 19:00 2026-11-9 19:00 Europe/Moscow По ролям Импровизированные читки мировой драматургии РГБМ, Зал «Музыкальный подвал» РГБМ info@rgub.ru Импровизированные читки мировой драматургии Знакомимся с «Провинциальными анекдотами» Александра Вампилова — дилогией из одноактных пьес «История с метранпажем» и «Двадцать минут с ангелом», написанных в 1960-е годы. И заодно начнём готовиться к юбилею замечательного прозаика и драматурга. В 2027 году автору «Утиной охоты», «Старшего сына», «Прощания в июне» и других произведений могло бы исполниться 90 лет. Ведущая: Анна Харитонова, поэт и филолог",
-      "url": "https://rgub.ru/schedule/item.php?new_id=49768",
-      "source": "Российская государственная библиотека для молодёжи — афиша",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-11-01",
-      "price_type": "free",
-      "availability_evidence": "",
-      "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_note": "",
-      "reviewed_at": ""
-    },
-    {
-      "id": "moscow-2026-10-25-c40e7952b7",
-      "status": "rejected",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-11-09",
-      "time": "10:00",
-      "title": "Воркшопы",
-      "venue": "ЦСИ Винзавод",
-      "address": "",
-      "price": 0,
-      "price_text": "Бесплатно",
-      "registration": false,
-      "categories": [
-        "лекция"
-      ],
-      "description": "",
-      "url": "https://www.winzavod.ru/calendar/workshops/",
-      "source": "ЦСИ Винзавод",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-10-25",
-      "price_type": "free",
-      "availability_evidence": "",
-      "ticket_required": true,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false,
-        "status": "rejected"
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": "2026-10-27"
-    },
-    {
-      "id": "moscow-2026-10-25-fefbfbd35d",
-      "status": "rejected",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-11-09",
-      "time": "10:00",
-      "title": "Курсы",
-      "venue": "ЦСИ Винзавод",
-      "address": "",
-      "price": 0,
-      "price_text": "Бесплатно",
-      "registration": false,
-      "categories": [
-        "лекция"
-      ],
-      "description": "",
-      "url": "https://www.winzavod.ru/calendar/course/",
-      "source": "ЦСИ Винзавод",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-10-25",
-      "price_type": "free",
-      "availability_evidence": "",
-      "ticket_required": true,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false,
-        "status": "rejected"
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": "2026-10-27"
-    },
-    {
-      "id": "spb-2026-11-09-58133ba6c2",
-      "status": "new",
-      "kind": "event",
-      "city": "spb",
-      "date": "2026-11-09",
-      "time": "18:00",
-      "title": "Х/ф «Скажите ей, что я ее люблю» (Франция, 1977; психологическая драма по роману П. Хайсмит)",
-      "venue": "Российская национальная библиотека",
-      "address": "Московский пр., д. 165, корп. 2",
-      "price": null,
-      "price_text": "",
-      "registration": true,
-      "categories": [],
-      "description": "Режиссер — К. Миллер В главных ролях: Ж. Депардье, Миу-Миу, Д. Лаффен, К. Клавье Автор и ведущий цикла — киновед Ф. Ю. Коркин Дата начала регистрации — 2 ноября",
-      "url": "https://nlr.ru/nlr_visit/event/3741",
-      "source": "Российская национальная библиотека — афиша",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-10-30",
-      "price_type": "unknown",
-      "availability_evidence": "",
-      "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_note": "",
-      "reviewed_at": ""
-    },
-    {
-      "id": "spb-2026-11-09-86bea8a444",
-      "status": "check",
-      "kind": "event",
-      "city": "spb",
-      "date": "2026-11-09",
-      "time": "18:30",
-      "title": "Как наши реакции превращаются в привычки, а поведение становится управляемым?",
-      "venue": "Открытая гостиная",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [
-        "лекция"
-      ],
-      "description": "Мы поговорим о том, как Джон Уотсон предложил сделать психологию объективной, и разберем эксперимент с «маленьким Альбертом». - Вы узнаете, чем отличается классическое обусловливание Павлова от оперантного научения Скиннера, а также познакомитесь с теорией когнитивных карт Толмена, который доказал, что между стимулом и реакцией есть важная «промежуточная переменная». - Отдельное внимание уделим идеям Николая Бернштейна о «рефлекторном кольце» и внутренней активности субъекта. - В завершение мы проследим, как строгий бихевиоризм трансформировался в современный подход когнитивно-поведенческой те",
-      "url": "https://otkrytaya-gostinaya.timepad.ru/event/4254580/",
-      "source": "Открытая гостиная — официальный Telegram",
-      "checked_at": "",
-      "review_reason": "curated_telegram_source",
-      "discovered_at": "2026-10-29",
-      "price_type": "unknown",
-      "availability_evidence": "",
-      "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": ""
-    },
-    {
-      "id": "spb-2026-11-09-fea7e4df74",
-      "status": "new",
-      "kind": "event",
-      "city": "spb",
-      "date": "2026-11-09",
-      "time": "19:00",
-      "title": "В СПбГУ стартует кинофестиваль «Влюбленные в искусство»",
-      "venue": "",
-      "address": "",
-      "price": 0,
-      "price_text": "Бесплатно",
-      "registration": null,
-      "categories": [
-        "фестиваль"
-      ],
-      "description": "Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами! Также вы можете отправить статью в социальной сети или мессенджере Если у вас есть чем поделиться с нашими читателями, вы можете предложить свою статью.",
-      "url": "https://spbcult.ru/news/anonsy/v-spbgu-startuet-kinofestival-vlyublennye-v-iskusstvo/",
-      "source": "Петербургский дневник культуры — анонсы",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-11-09",
-      "price_type": "free",
-      "availability_evidence": "",
-      "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": ""
-    },
-    {
       "id": "moscow-2026-11-09-5f73160fd7",
       "status": "approved",
       "kind": "event",
@@ -58888,71 +58499,6 @@
       "telegram_include": false,
       "instagram_include": false,
       "reviewed_at": "2026-10-30"
-    },
-    {
-      "id": "spb-2026-11-09-e9b598f406",
-      "status": "new",
-      "kind": "event",
-      "city": "spb",
-      "date": "2026-11-09",
-      "time": "19:00",
-      "title": "Наступление осени: тексты о Коломне. Чтение третье",
-      "venue": "Новая Голландия",
-      "address": "",
-      "price": 300,
-      "price_text": "300 ₽",
-      "registration": null,
-      "categories": [
-        "встреча"
-      ],
-      "description": "На третьей встрече книжного клуба, посвящённого текстам о Коломне, мы поговорим о рассказе Бориса Рохлина «Новая Голландия» . Этот текст, созданный в 1960-е одним из представителей ленинградского андеграунда, станет для нас ориентиром для разговора о том, как фланёры, создававшие в 1950–1970-е годы неофициальную литературу, оказывались у нашего острова.",
-      "url": "https://www.newhollandsp.ru/events/education/kolomna-text-3/",
-      "source": "Новая Голландия — Сообщество и образование",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-10-30",
-      "price_type": "paid",
-      "availability_evidence": "",
-      "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_note": "",
-      "reviewed_at": ""
-    },
-    {
-      "id": "moscow-2026-11-09-ef1da61150",
-      "status": "new",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-11-09",
-      "time": "19:30",
-      "title": "Специальный показ и обсуждение: «Новый дом»",
-      "venue": "Музей «Гараж»",
-      "address": "",
-      "price": 500,
-      "price_text": "500 ₽",
-      "registration": false,
-      "categories": [
-        "кинопоказ"
-      ],
-      "description": "История о женщине, которая строит свою жизнь заново и помогает в этом другим. Премьера полнометражного дебюта Никиты Грушина состоялась в конкурсной программе фестиваля актуального российского кино «Маяк» в 2026 году. После семи лет в тюрьме Анна (Дарья Савельева) выходит на свободу — без денег, близких и плана на будущее.",
-      "url": "https://garagemca.org/event/special-screening-new-home",
-      "source": "Музей современного искусства «Гараж»",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-11-09",
-      "price_type": "paid",
-      "availability_evidence": "",
-      "ticket_required": true,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false
-      },
-      "telegram_include": false,
-      "instagram_include": false
     },
     {
       "id": "international-2026-11-10-a442cf41fe",
@@ -59216,6 +58762,32 @@
       "availability_checked_at": ""
     },
     {
+      "id": "moscow-2026-11-10-1405247759",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-10",
+      "time": "",
+      "title": "Студия «Шерлоковедение»",
+      "venue": "Еврейский музей и центр толерантности",
+      "address": "",
+      "price": 1100,
+      "price_text": "1100 ₽",
+      "registration": null,
+      "categories": [],
+      "description": "Как передать зашифрованное сообщение напарнику, если он находится на другом конце секретной базы? Зачем профессиональному сыщику может понадобиться собственный рупор и как собрать его своими руками из простых материалов? Проверим свой слух и зоркость в серии динамичных шпионских игр.",
+      "url": "https://www.jewish-museum.ru/events/studiya-sherlokovedenie/",
+      "source": "Еврейский музей и центр толерантности",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-09",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-10-0024e9be7d",
       "status": "new",
       "kind": "event",
@@ -59272,6 +58844,82 @@
       "availability_checked_at": "",
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "moscow-2026-10-25-c40e7952b7",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-10",
+      "time": "10:00",
+      "title": "Воркшопы",
+      "venue": "ЦСИ Винзавод",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "",
+      "url": "https://www.winzavod.ru/calendar/workshops/",
+      "source": "ЦСИ Винзавод",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-25",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false,
+        "status": "rejected"
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": "2026-10-27"
+    },
+    {
+      "id": "moscow-2026-10-25-fefbfbd35d",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-10",
+      "time": "10:00",
+      "title": "Курсы",
+      "venue": "ЦСИ Винзавод",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "",
+      "url": "https://www.winzavod.ru/calendar/course/",
+      "source": "ЦСИ Винзавод",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-25",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false,
+        "status": "rejected"
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": "2026-10-27"
     },
     {
       "id": "moscow-2026-11-10-b9a5fe1f3d",
@@ -59467,7 +59115,7 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "sold_out",
-      "availability_checked_at": "2026-11-09"
+      "availability_checked_at": "2026-11-10"
     },
     {
       "id": "spb-2026-11-10-4df1eb99df",
@@ -59862,7 +59510,7 @@
     },
     {
       "id": "moscow-2026-11-10-8518475e7c",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-10",
@@ -59890,10 +59538,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "reviewed_at": "2026-11-09",
+      "editor_note": ""
     },
     {
       "id": "spb-2026-11-10-bf27d9010f",
@@ -60569,7 +60220,7 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "sold_out",
-      "availability_checked_at": "2026-11-09"
+      "availability_checked_at": "2026-11-10"
     },
     {
       "id": "spb-2026-11-11-6274d9b2ae",
@@ -60707,7 +60358,7 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "sold_out",
-      "availability_checked_at": "2026-11-09"
+      "availability_checked_at": "2026-11-10"
     },
     {
       "id": "moscow-2026-11-11-6b98848171",
@@ -60824,7 +60475,7 @@
     },
     {
       "id": "moscow-2026-11-11-970a937f51",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-11",
@@ -60852,10 +60503,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "reviewed_at": "2026-11-09",
+      "editor_note": ""
     },
     {
       "id": "spb-2026-11-11-d3d4a393a3",
@@ -61273,6 +60927,34 @@
       "reviewed_at": "2026-11-06"
     },
     {
+      "id": "moscow-2026-11-12-5bf68881ae",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-12",
+      "time": "",
+      "title": "Сокровища и чудовища древнего мира",
+      "venue": "Еврейский музей и центр толерантности",
+      "address": "",
+      "price": 1100,
+      "price_text": "1100 ₽",
+      "registration": null,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "1 100 ₽ - разовое занятие 4 000 ₽ - абонемент на четыре занятия Сентябрь посвятим таинственной Египетской цивилизации: три занятия с мастер-классами для детей 5 – 7 лет, где дети познакомятся с древней историей Египта!",
+      "url": "https://www.jewish-museum.ru/events/sokrovishcha-i-chudovishcha-drevnego-mira/",
+      "source": "Еврейский музей и центр толерантности",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-09",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-12-734741274c",
       "status": "rejected",
       "kind": "event",
@@ -61574,7 +61256,7 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "sold_out",
-      "availability_checked_at": "2026-11-09"
+      "availability_checked_at": "2026-11-10"
     },
     {
       "id": "spb-2026-11-12-36feec5499",
@@ -61638,7 +61320,7 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "sold_out",
-      "availability_checked_at": "2026-11-09"
+      "availability_checked_at": "2026-11-10"
     },
     {
       "id": "moscow-2026-11-12-7fffb56c23",
@@ -61704,7 +61386,7 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "sold_out",
-      "availability_checked_at": "2026-11-09"
+      "availability_checked_at": "2026-11-10"
     },
     {
       "id": "moscow-2026-11-12-ceca5c9467",
@@ -61815,7 +61497,7 @@
     },
     {
       "id": "moscow-2026-11-12-a95476fed6",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-12",
@@ -61843,14 +61525,17 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "reviewed_at": "2026-11-09",
+      "editor_note": ""
     },
     {
       "id": "moscow-2026-11-12-cc8408b8d7",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-12",
@@ -61877,10 +61562,13 @@
       "availability_checked_at": "",
       "editor_overrides": {
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "reviewed_at": "2026-11-09",
+      "editor_note": ""
     },
     {
       "id": "spb-2026-11-12-45f610f9e6",
@@ -62146,7 +61834,7 @@
     },
     {
       "id": "spb-2026-11-13-e67cd97edb",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-11-13",
@@ -62174,10 +61862,12 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "rejected"
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "reviewed_at": "2026-11-09"
     },
     {
       "id": "moscow-2026-11-13-4795cc2cce",
@@ -62870,7 +62560,7 @@
       "discovered_at": "2026-10-19",
       "price_type": "free",
       "availability": "sold_out",
-      "availability_checked_at": "2026-11-09",
+      "availability_checked_at": "2026-11-10",
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
@@ -63425,7 +63115,9 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-14-06df8f7e16",
@@ -63656,7 +63348,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-14-e7d09106e5",
@@ -63758,6 +63452,32 @@
       "availability_checked_at": ""
     },
     {
+      "id": "spb-2026-11-14-e9cd9a7c0c",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-14",
+      "time": "17:00",
+      "title": "Неочевидный Рим",
+      "venue": "Библиотека Маяковского",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [],
+      "description": "За свою двухтысячелетнюю историю Рим накопил немало сокровищ. Некоторые из них всем хорошо известны: Колизей, Римский форум, Пантеон, галерея Боргезе. Другие же не столь очевидны: они прячутся за сдержанными фасадами римских палаццо и в полутёмных капеллах маленьких церквей. Мы совершим виртуальную прогулку по Вечному городу: побродим вокруг пьяцца Навона, пройдём по виа дель Корсо и остановимся на Квиринальском холме. Будем говорить о малоизвестных достопримечательностях Рима: узнаем, где можно совершенно бесплатно любоваться картинами Караваджо, где хранится лучший из когда-либо созданных по",
+      "url": "https://t.me/mayakovka/2141",
+      "source": "Библиотека Маяковского — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-11-10",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-14-ad0e014527",
       "status": "new",
       "kind": "event",
@@ -63773,7 +63493,7 @@
       "categories": [
         "кинопоказ"
       ],
-      "description": "",
+      "description": "Марк Корнаков — музыкант, студент направления «Саунд-арт и саунд-дизайн» в Школе дизайна НИУ ВШЭ. В своей практике Марк исследует границы между звуком, пространством и повествованием. Он создает погружающие звуковые переживания для инсталляций, перформансов и медиа-проектов.",
       "url": "https://www.jewish-museum.ru/events/prokazhennaya-kinopokaz-i-muzykalnoe-soprovozhdenie/",
       "source": "Еврейский музей и центр толерантности",
       "checked_at": "",
@@ -63929,6 +63649,35 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": "2026-11-09"
+    },
+    {
+      "id": "international-2026-11-15-f7f8f4a3e1",
+      "status": "check",
+      "kind": "open_call",
+      "city": "international",
+      "date": "2026-11-15",
+      "time": "",
+      "title": "Screening Opportunity for Moving Image Works - Temperature Check",
+      "venue": "CuratorSpace",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "open-call"
+      ],
+      "description": "We are welcoming submissions of Moving Image works and Artist Films showing, questioning, employing or relating to energy, its usage and its products. Deep Focus’ Winter programme aims to conduct a temperature check for the present, presenting works that will respond to three main concepts: HEAT – movement, presence, an abundance of energy; COLD – absence and stillness, a lack of energy or the refusal to produce energy at all; THERMAL EQUILIBRIUM – bodies touching and adjusting their energy exchange until they reac",
+      "url": "https://www.curatorspace.com/opportunities/detail/screening-opportunity-for-moving-image-works--temperature-check/11327",
+      "source": "CuratorSpace — opportunities",
+      "checked_at": "",
+      "review_reason": "primary_source_required",
+      "discovered_at": "2026-11-09",
+      "audience_text": "Opportunity details | Screening Opportunity for Moving Image Works - Temperature Check | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register Screening Opportunity for Moving Image Works - Temperature Check Deadline: 15/11/2026 City: London | Country: United Kingdom | Deep Focus Report this? Description Opportunity FAQs Make a submission Contact curator We are welcoming submissions of Moving Image works and Artist Films showing, questioning, employing or relating to energy, its usage and its products. Deep Focus’ Winter programme aims to conduct a temperature check for the present, presenting works that will respond to three main concepts: HEAT – movement, presence, an abundance of energy; COLD – absence and stillness, a lack of energy or the refusal to produce energy at all; THERMAL EQUILIBRIUM – bodies touching and adjusting their energy exchange until they reach the same temperature. Deep Focus welcomes submissions of moving image works under 10 minutes for the winter/spring program, showing, questioning, employing or relating to energy, its usage and its products. We want to see how moving image as a practice can be used to conduct a temperature check for the present, presenting works that will respond to three main concepts: HEAT – movement, presence, an abundance of energy; COLD – absence and stillness, a lack of energy or the refusal to produce energy at all; THERMAL EQUILIBRIUM – bodies touching and adjusting their energy exchange until they reach the same temperature. You can submit films up to 10 minutes long, shorter videos and excerpts are encouraged. Please only submit one film as multiple submissions from the same artist will not be considered. Screenings will be held on 20 January, 19 February and 19 March 2027 at the RHB Cinema, Goldsmiths, London, UK (subject to change). Note that we are unable to review more than one submission per artist. Any subsequent submission will be ignored. By filling out and submitting your work you agree that we will use excerpts and stills of your works to promote the event. We can provide letters of support to shortlisted artists, to aid them seeking out funding for travel and other expenses (since we ourselves are volunteer-run and non-funded). FAQ are available here: https://docs.google.com/document/d/1-a8lIE0BOez_AyWb8G2mBxi8hdqTTT8CideLBlBkimk/edit?tab=t.0#heading=h.h6ah7zvdgngg Make a submission Contact the curator Who is eligible for this opportunity? There are no restrictions on who can submit. When is the deadline? Midnight on 15 November, 2026. How many works can I submit? 1 When is the delivery date? The film needs to be ready at the time of submission. When do I need to collect my work? N/A How much does it cost? It is free. Are there payments to artists? No, the project is volunteer-run and unfunded, yet we are more than happy to provide letters of support to aid the artist securing travel grants. What time is the screening? The event starts at 7 pm and will run until 9 pm. Does the location have disabled access? Yes, but do let organisers know if you have any access needs, so they can arrange appropriate support. What publicity will be provided as part of the opportunity? Yes. Do I need to be present? These is a strong preference for artists to attend the screening. Where will my venue be listed? Deep Focus Newsletter, Deep Focus Arts instagram, in appropriate London's Artist Newsletters and Screening announcement portals, as well as local arts social media promoters. How do you decide on proposals? Proposals are reviewed by Deep Focus co-founders, who then marks them against the selection criteria. The curator makes the final selection. What happens if my proposal is chosen? You will be contacted via email with the date of the screening picked for your film (this cycle has three screening dates set). What kind of proposals are you looking for? We look for experimental works with engaging and unique approach to moving image format. What are the selection criteria? We decide on the films to show based on the fit to the theme and the curatorial selection, we also consider originality and how engaging the work is to watch. The theme is approached very loosely and we encourage the artist to submit, even if the connection to the theme is not apparent - we watch all the films and even if not selected, we keep them in our Artist Archive (as long as we have your consent to do so) and keep them in mind for future screenings and other showcasing opportunities. You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Other opportunities If/Then: Chance and Creativity - Vol. 2: Ritual For the second volume of If/Then: Chance and Creativity, we are looking for artists, writers and... Parkscapes II London gallery is holding a Festive Season Exhibition, 3rd - 19th December 2026. We’re... Animal Group Exhibition No. 35 Gallery invites artists worldwide to submit work for Animal—International Online Group... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "international-2026-11-15-5fb181d2e2",
@@ -64402,7 +64151,9 @@
         "registration": false,
         "telegram_include": false,
         "instagram_include": false
-      }
+      },
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-15-020d3b2f98",
@@ -64601,7 +64352,7 @@
     },
     {
       "id": "moscow-2026-11-15-1a8b99988b",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-15",
@@ -64629,10 +64380,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "rejected"
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "reviewed_at": "2026-11-09",
+      "editor_note": ""
     },
     {
       "id": "moscow-2026-11-15-c689e645e9",
@@ -64884,7 +64638,9 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-15-98f4534d25",
@@ -64973,6 +64729,34 @@
       "description": "",
       "url": "https://centrezotov.ru/events/zastolya/paczany/",
       "source": "Центр Зотов",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-09",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
+    },
+    {
+      "id": "moscow-2026-11-16-c3cb427dd4",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-16",
+      "time": "",
+      "title": "Арт-территория «Контур»",
+      "venue": "Еврейский музей и центр толерантности",
+      "address": "",
+      "price": 1100,
+      "price_text": "1100 ₽",
+      "registration": null,
+      "categories": [],
+      "description": "1 100 ₽ - разовый билет 4 000 ₽ - абонемент на 4 занятия Отправимся в путешествие по главным эпохам и направлениям европейского искусства: от Возрождения до искусства XX века. Будем рисовать музыку, собирать картины из геометрических фигур, придумывать несуществующих животных, искать цвета настроения и создавать собственный художественный язык.",
+      "url": "https://www.jewish-museum.ru/events/art-territoriya-kontur-/",
+      "source": "Еврейский музей и центр толерантности",
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-11-09",
@@ -65246,6 +65030,35 @@
       "reviewed_at": ""
     },
     {
+      "id": "moscow-2026-11-16-1d732645b7",
+      "status": "new",
+      "kind": "exhibition",
+      "city": "moscow",
+      "date": "2026-11-16",
+      "time": "",
+      "title": "Традиции объединяют: открытие выставки «Контекст. Культурный код»",
+      "venue": "Еврейский музей и центр толерантности",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "выставка"
+      ],
+      "description": "Новое прочтение традиционного костюма в современном дизайне: 16 авторских костюмов, созданных студентами Британской высшей школы дизайна. Часть программы Недели толерантности 2026. Традицию легко свести к набору узнаваемых орнаментов и перенести их на современную одежду.",
+      "url": "https://www.jewish-museum.ru/events/traditsii-obedinyayut-otkrytie-vystavki-kontekst-kulturnyy-kod/",
+      "source": "Еврейский музей и центр толерантности",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-09",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "start_date": "2026-11-16"
+    },
+    {
       "id": "moscow-2026-11-16-eebb063dbc",
       "status": "new",
       "kind": "event",
@@ -65452,6 +65265,34 @@
       "telegram_include": false,
       "instagram_include": false,
       "reviewed_at": "2026-11-03"
+    },
+    {
+      "id": "moscow-2026-11-16-856fb9759b",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-16",
+      "time": "19:00",
+      "title": "Специальный показ. Увидеть всё / You Can See Everything",
+      "venue": "Центр Зотов",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "спецпоказ"
+      ],
+      "description": "",
+      "url": "https://centrezotov.ru/events/speczialnyj-pokaz-uvidet-vsyo-you-can-see-everything/",
+      "source": "Центр Зотов",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-09",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "spb-2026-11-16-780d1ce5b6",
@@ -66766,6 +66607,34 @@
       "review_reason": "excluded_tour_mediation",
       "discovered_at": "2026-11-01",
       "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "spb-2026-11-19-3e0efe83c5",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-19",
+      "time": "",
+      "title": "лекция психолога Елизаветы Сергачевой на тему «\"Всех нормальных разобрали\" или почему я не могу встретить своего человека».",
+      "venue": "Открытая гостиная",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "в Открытой гостиной состоится В современном мире есть множество способов познакомиться. Но вот построить близость становится все сложнее. В чем же дело? И как не только найти своего человека, но и остаться с ним? Почему познакомиться стало легко, а сблизиться трудно, и что на самом деле делает с нами избыток выбора Как отказ, игнор или исчезновение попадают в старые раны и превращаются в «подтверждение», что с нами что-то не так Чем «химия» отличается от безопасности и почему тревога иногда маскируется под сильное притяжение",
+      "url": "https://otkrytaya-gostinaya.timepad.ru/event/4291694/",
+      "source": "Открытая гостиная — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-11-10",
+      "price_type": "unknown",
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
@@ -68099,6 +67968,36 @@
       "reviewed_at": "2026-11-09"
     },
     {
+      "id": "moscow-2026-11-21-9234452fcd",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-21",
+      "time": "",
+      "title": "Ceramania Новогодняя",
+      "venue": "ЦСИ Винзавод",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "",
+      "url": "https://www.winzavod.ru/calendar/festivals/ceramania-novogodnyaya/",
+      "source": "ЦСИ Винзавод",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-09",
+      "start_date": "2026-11-21",
+      "end_date": "2026-11-22",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "international-2026-11-21-58b55a0cdf",
       "status": "check",
       "kind": "open_call",
@@ -68310,6 +68209,35 @@
       "telegram_include": false,
       "instagram_include": false,
       "reviewed_at": "2026-11-06"
+    },
+    {
+      "id": "moscow-2026-11-21-8c1680b942",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-21",
+      "time": "12:00",
+      "title": "Субботние игры на Платформах",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": true,
+      "categories": [
+        "игра"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/saturday-games",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-09",
+      "audience_text": "› Дети и подростки Проект : Давай играть! Дата: 5 сен– 28 ноя 2026 Возраст: от 7 Тип: Игра Место: Правая платформа , Верхняя платформа Возрастные ограничения 6+ Территория свободного общения, творчества, веселья и отдыха для детей и их родителей. Расписание  {\"points\":[{\"id\":4,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":6,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.4,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":5,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} T Игры бывают разные — настольные, словесные, активные, логические... Иногда хочется попробовать все и сразу, но вот незадача — то компании нет, то места. Теперь есть и то, и другое. По субботам Проспект « ГЭС-2 » объявляется пространством игры. Утром вспоминаем игры, для которых нужна большая компания, затем всей семьей сражаемся в настолки и решаем головоломки, а вечером осваиваем игрушки, развивающие ловкость и мелкую моторику. Ближайшие игры 5, 12, 19 и 26 сен, 3, 10, 24 и 31 окт, 7, 14, 21 и 28 ноя Обратите внимание , что игры 21 и 28 ноября пройдут на Правой платформе. Настольные игры 12 и 26 сентября, 10 и 24 октября, 7 и 21 ноября будут адаптированы для незрячих и слабовидящих посетителей. Чтобы зарегистрироваться на них, напишите нам по телефону +7 (963) 996 3687 ( SMS , Telegram ). Чтобы зарегистрироваться на встречу с переводом на РЖЯ , напишите* в Telegram на @ges2access не позднее чем за три дня до выбранного события. Иллюстрация: Лида Павлюченкова На каждой станции вас ждут ведущие. Они не придумывают программу заранее, а предоставляют посетителям выбор, поэтому каждая сессия становится уникальной — такой, какую хотите именно вы! Родители могут активно включиться в процесс или немного отдохнуть и понаблюдать за игрой детей со стороны. Главное, чтобы все участники отлично провели время и нашли новых друзей. * Пожалуйста, обратите внимание, что, сообщая нам свои личные данные, вы даете согласие на их обработку в соответствии с нашей Политикой в отношении обработки и защиты персональных данных . Фото: Анна Завозяева, Вадим Штэйн Расписание Совместные игры для детей 7–12 лет Пришло время поиграть большой компанией! Все вместе тренируем внимание, реакцию, умение работать в команде и сообразительность. Приводите друзей или приходите в одиночку — у нас точно найдутся напарники. Регистрация {\"",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-21-fa57738587",
@@ -69576,6 +69504,35 @@
       "reviewed_at": ""
     },
     {
+      "id": "moscow-2026-11-23-5f73160fd7",
+      "status": "check",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-23",
+      "time": "19:00",
+      "title": "Вечерние наброски",
+      "venue": "Простая школа",
+      "address": "Москва, ул. Пятницкая, 71/5, строение 2, офис 503",
+      "price": 800,
+      "price_text": "800 ₽",
+      "registration": null,
+      "categories": [
+        "наброски"
+      ],
+      "description": "Рисуем обнаженную модель. Три сеанса по 45 минут. Позы от 20 минут до минуты.",
+      "url": "https://prostaya.ru/praktiki",
+      "source": "Простая школа — открытые практики",
+      "checked_at": "",
+      "review_reason": "recurring_schedule_confirm_specific_date",
+      "discovered_at": "2026-11-10",
+      "editor_note": "По еженедельному расписанию школы; проверить отмены и анонс конкретной даты.",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-24-fbd139fcfa",
       "status": "approved",
       "kind": "event",
@@ -69991,6 +69948,35 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": "2026-10-27"
+    },
+    {
+      "id": "moscow-2026-11-25-82ebe5e398",
+      "status": "new",
+      "kind": "open_call",
+      "city": "moscow",
+      "date": "2026-11-25",
+      "time": "",
+      "title": "Опен-колл на участие в книжном клубе",
+      "venue": "Музей «Гараж»",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "кинопоказ",
+        "open-call"
+      ],
+      "description": "Книжный клуб посвящен обсуждению двух книг — фоторомана «Сюзанна и Луиза» (1980) Эрве Гибера и романа «Слуховая трубка» (1974) Леоноры Каррингтон. Встречи книжного клуба обрамляют программу кинопоказов «Обнажая возраст» , посвященную отношениям женщины и возраста. Встречи проведет писательница и независимая исследовательница Алина Моисеева.",
+      "url": "https://garagemca.org/event/open-call-for-participation-in-a-book-club",
+      "source": "Музей современного искусства «Гараж»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-09",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-25-36f3f9e5b0",
@@ -70602,7 +70588,7 @@
       "checked_at": "",
       "review_reason": "primary_source_required",
       "discovered_at": "2026-11-05",
-      "audience_text": "Opportunity details | Wilderness | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register Wilderness Deadline: 27/11/2026 City: Tbilisi | Country: Georgia | Collect Art Report this? Description Opportunity FAQs Make a submission Contact curator Collect Art invites artists worldwide to submit their work for the upcoming online exhibition and special edition, themed “Wilderness” Wilderness is not just a place on a map. It is a state of being — raw, untamed, unfiltered, and free from control. It is the dense forest we have never entered, the desert that swallows all traces, the ocean depths, the mountain silence, but also the wildness that lives inside us: instinct, memory, fear, desire, and the part of the self that refuses to be domesticated… Collect Art invites artists worldwide to submit their work for the upcoming online exhibition and special edition, themed “Wilderness”. Wilderness is not just a place on a map. It is a state of being — raw, untamed, unfiltered, and free from control. It is the dense forest we have never entered, the desert that swallows all traces, the ocean depths, the mountain silence, but also the wildness that lives inside us: instinct, memory, fear, desire, and the part of the self that refuses to be domesticated… Open to artists worldwide, aged 18 and above, working in various media, including painting, drawing, collage, installation, illustration, photography, sculpture, ceramics, textiles, assemblage, fiber art, paper art, printmaking, 3D digital art, glass art, metalwork, and more.​ We invite works exploring Wilderness in all its forms — from untamed landscapes, natural forces, forests, deserts, oceans and mountains to themes of human-nature relationships, ecological fragility and resilience, solitude, survival, freedom, animal instinct, the feral and primitive, inner wilderness, bodies as landscapes, mythological wilds, and the edge between civilization and chaos. Your interpretation can be literal, symbolic, emotional, political or deeply personal, vast or intimate, quiet or violent, sacred or threatening — approach it through your own unique visual language.. Selected artists will have the privilege of being showcased in a month-long online exhibition and will receive a 2-6 page spread in both print and digital magazines. This feature will encompass a biography, artist statement, interview, website link, and 2-10 featured artworks. Moreover, all published artists will receive a complimentary digital issue of the magazine, which will be actively promoted on our website and social media platforms. Additionally, artists will be provided with a link to order the printed version of the magazine. Moreover, the curatorial team will select a few exceptional artists for inclusion in their upcoming book edition titled '101 Contemporary Artists and More...' ​ Submission requirements: Up to 12 photos; details of the work (title, medium, size, year, description is optional); brief biography; artist statement (min 100 words each); website; and social media links. Deadline: November 27, 2026 Application Fee: No Fee The participation fee is 55 EUR (in case of acceptance) Promotional Coverage: 1 dedicated post on the ‘NEWS’ page of our website 2 to 5 individual posts on Facebook and Instagram An announcement post featuring the magazine cover and the names of all published artists 3 group posts on Facebook and Instagram, each including one artwork from every featured artist Email outreach to our network of artists, gallerists, collectors, readers, and art professionals. Our Reach and Exposure: More than 1.2 million readers on Yumpu Over 682,274 readers on Scribd More than 150 printed copies sold per edition Each edition is now showcased at our newly opened Art Gallery in Tbilisi, Georgia, and is also featured in exhibitions and art events. To date, we have published 128 Seasonal and Special Editions of our magazine, featuring over 2,000 artists from around the world. Further Opportunities: Our curatorial team will also select several outstanding artists for inclusion in the upcoming book edition titled “101 Contemporary Artists and More…”. Selection is based on the overall vision for the book and available space. However, we aim to feature as many artists as possible from our previous magazine editions. Additionally, with each edition, our curators highlight a select group of artists for future exhibitions at our new 170 sq. m professionally curated art gallery in the prestigious centre of Tbilisi, Georgia. The gallery is dedicated to modern and contemporary art, providing a powerful platform for international exposure, including painting, drawing, photography, sculpture, ceramics, textile, installation, New media, mixed media works, etc. Make a submission Contact the curator Who is eligible for this opportunity? Open to artists worldwide, aged 18 and above, working in various media, including painting, drawing, collage, installation, illustration, photography, sculpture, ceramics, textiles, assemblage, fiber art, paper art, printmaking, 3D digital art, glass art, metalwork, and more.​ When is the deadline? November 27, 2026 How many works can I submit? Up to 12 artoworks How much does it cost? Application Fee: No Fee The participation fee is 55 EUR (in case of acceptance) You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Other opportunities If/Then: Chance and Creativity - Vol. 2: Ritual For the second volume of If/Then: Chance and Creativity, we are looking for artists, writers and... Animal Group Exhibition No. 35 Gallery invites artists worldwide to submit work for Animal—International Online Group... Open Call for Artists - 32nd Community Art Exhibition Exhibit your artwork at Circular ArtSpace – East Bristol's vibrant gallery supporting emerging... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
+      "audience_text": "Opportunity details | Wilderness | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register Wilderness Deadline: 27/11/2026 City: Tbilisi | Country: Georgia | Collect Art Report this? Description Opportunity FAQs Make a submission Contact curator Collect Art invites artists worldwide to submit their work for the upcoming online exhibition and special edition, themed “Wilderness” Wilderness is not just a place on a map. It is a state of being — raw, untamed, unfiltered, and free from control. It is the dense forest we have never entered, the desert that swallows all traces, the ocean depths, the mountain silence, but also the wildness that lives inside us: instinct, memory, fear, desire, and the part of the self that refuses to be domesticated… Collect Art invites artists worldwide to submit their work for the upcoming online exhibition and special edition, themed “Wilderness”. Wilderness is not just a place on a map. It is a state of being — raw, untamed, unfiltered, and free from control. It is the dense forest we have never entered, the desert that swallows all traces, the ocean depths, the mountain silence, but also the wildness that lives inside us: instinct, memory, fear, desire, and the part of the self that refuses to be domesticated… Open to artists worldwide, aged 18 and above, working in various media, including painting, drawing, collage, installation, illustration, photography, sculpture, ceramics, textiles, assemblage, fiber art, paper art, printmaking, 3D digital art, glass art, metalwork, and more.​ We invite works exploring Wilderness in all its forms — from untamed landscapes, natural forces, forests, deserts, oceans and mountains to themes of human-nature relationships, ecological fragility and resilience, solitude, survival, freedom, animal instinct, the feral and primitive, inner wilderness, bodies as landscapes, mythological wilds, and the edge between civilization and chaos. Your interpretation can be literal, symbolic, emotional, political or deeply personal, vast or intimate, quiet or violent, sacred or threatening — approach it through your own unique visual language.. Selected artists will have the privilege of being showcased in a month-long online exhibition and will receive a 2-6 page spread in both print and digital magazines. This feature will encompass a biography, artist statement, interview, website link, and 2-10 featured artworks. Moreover, all published artists will receive a complimentary digital issue of the magazine, which will be actively promoted on our website and social media platforms. Additionally, artists will be provided with a link to order the printed version of the magazine. Moreover, the curatorial team will select a few exceptional artists for inclusion in their upcoming book edition titled '101 Contemporary Artists and More...' ​ Submission requirements: Up to 12 photos; details of the work (title, medium, size, year, description is optional); brief biography; artist statement (min 100 words each); website; and social media links. Deadline: November 27, 2026 Application Fee: No Fee The participation fee is 55 EUR (in case of acceptance) Promotional Coverage: 1 dedicated post on the ‘NEWS’ page of our website 2 to 5 individual posts on Facebook and Instagram An announcement post featuring the magazine cover and the names of all published artists 3 group posts on Facebook and Instagram, each including one artwork from every featured artist Email outreach to our network of artists, gallerists, collectors, readers, and art professionals. Our Reach and Exposure: More than 1.2 million readers on Yumpu Over 682,274 readers on Scribd More than 150 printed copies sold per edition Each edition is now showcased at our newly opened Art Gallery in Tbilisi, Georgia, and is also featured in exhibitions and art events. To date, we have published 128 Seasonal and Special Editions of our magazine, featuring over 2,000 artists from around the world. Further Opportunities: Our curatorial team will also select several outstanding artists for inclusion in the upcoming book edition titled “101 Contemporary Artists and More…”. Selection is based on the overall vision for the book and available space. However, we aim to feature as many artists as possible from our previous magazine editions. Additionally, with each edition, our curators highlight a select group of artists for future exhibitions at our new 170 sq. m professionally curated art gallery in the prestigious centre of Tbilisi, Georgia. The gallery is dedicated to modern and contemporary art, providing a powerful platform for international exposure, including painting, drawing, photography, sculpture, ceramics, textile, installation, New media, mixed media works, etc. Make a submission Contact the curator Who is eligible for this opportunity? Open to artists worldwide, aged 18 and above, working in various media, including painting, drawing, collage, installation, illustration, photography, sculpture, ceramics, textiles, assemblage, fiber art, paper art, printmaking, 3D digital art, glass art, metalwork, and more.​ When is the deadline? November 27, 2026 How many works can I submit? Up to 12 artoworks How much does it cost? Application Fee: No Fee The participation fee is 55 EUR (in case of acceptance) You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Other opportunities If/Then: Chance and Creativity - Vol. 2: Ritual For the second volume of If/Then: Chance and Creativity, we are looking for artists, writers and... Parkscapes II London gallery is holding a Festive Season Exhibition, 3rd - 19th December 2026. We’re... Animal Group Exhibition No. 35 Gallery invites artists worldwide to submit work for Animal—International Online Group... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
       "price_type": "unknown",
       "availability_evidence": "",
       "ticket_required": false,
@@ -70964,7 +70950,7 @@
       "checked_at": "",
       "review_reason": "primary_source_required",
       "discovered_at": "2026-11-05",
-      "audience_text": "Opportunity details | State of the Art | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register State of the Art Deadline: 28/11/2026 City: Tbilisi | Country: Georgia | Collect Art Report this? Description Opportunity FAQs Make a submission Contact curator We invite artists from around the world to submit their work for our upcoming international digital publication, STATE OF THE ART. This theme is an invitation to capture the present. Not the future we imagine, not the past we nostalgize — but the complex, contradictory, hyper-accelerated now we are actually living in. What does it mean to be contemporary? What image, object, gesture, or glitch best represents the state of our art — and the art of our state? We invite artists from around the world to submit their work for our upcoming international digital publication, STATE OF THE ART. This theme is an invitation to capture the present. Not the future we imagine, not the past we nostalgize — but the complex, contradictory, hyper-accelerated now we are actually living in. What does it mean to be contemporary? What image, object, gesture, or glitch best represents the state of our art — and the art of our state? ​ Open to visual artists worldwide, aged 18 and above, working in various media, including painting, drawing, collage, installation, illustration, photography, sculpture, ceramics, textiles, assemblage, fiber art, paper art, printmaking, 3D digital art, glass art, metalwork, and more.​ ​ The theme for this edition is the “State of the Art”. We are seeking visual testimonies of the texture of life in 2026. If a future archaeologist found only your work, what would they understand about what it felt like to be alive right now? Your interpretation can be literal, documentary, symbolic, abstract, speculative or deeply personal, exploring technology and humanity, digital identity, the body, ecology and collapse, present-day politics, new rituals and intimacies, information overload, resilience, or simply the quiet poetry of an ordinary day in this extraordinary time. ​ Each participant will receive a 2-6 page spread in print and digital magazines including a biography, statement, interview, QR code linked to their website and/or social media, and 2-10 featured artworks. All participants will receive a complimentary digital issue of the magazine which will be promoted on our website/social media. In addition, you will receive the link for ordering the printed magazine. Moreover, the curatorial team will select a few exceptional artists for inclusion in their upcoming book edition titled '101 Contemporary Artists and More...' ​ Submission requirements: Up to 12 photos, details of the work (title, medium, size, year, description is optional), brief biography, artist statement (min 100 words each), website, and social media links. Deadline: November 28, 2026 Application Fee: No Fee The participation fee is 25 EUR (in case of acceptance) Promotional Coverage: 1 dedicated post on the ‘NEWS’ page of our website 2 to 5 individual posts on Facebook and Instagram An announcement post featuring the magazine cover and the names of all published artists 3 group posts on Facebook and Instagram, each including one artwork from every featured artist Email outreach to our network of artists, gallerists, collectors, readers, and art professionals. Our Reach and Exposure: More than 1.2 million readers on Yump Over 682,274 readers on Scribd More than 150 printed copies sold per edition Each edition is now showcased at our newly opened Art Gallery in Tbilisi, Georgia, and is also featured in exhibitions and art events. To date, we have published 128 Seasonal and Special Editions of our magazine, featuring over 2,000 artists from around the world. Further Opportunities : Our curatorial team will also select several outstanding artists for inclusion in the upcoming book edition titled “101 Contemporary Artists and More…”. Selection is based on the overall vision for the book and available space. However, we aim to feature as many artists as possible from our previous magazine editions. Additionally, with each edition, our curators highlight a select group of artists for future exhibitions at our new 170 sq. m professionally curated art gallery in the prestigious centre of Tbilisi, Georgia. The gallery is dedicated to modern and contemporary art, providing a powerful platform for international exposure, including painting, drawing, photography, sculpture, ceramics, textile, installation, New media, mixed media works, etc. Make a submission Contact the curator Who is eligible for this opportunity? Open to visual artists worldwide, aged 18 and above, working in various media, including painting, drawing, collage, installation, illustration, photography, sculpture, ceramics, textiles, assemblage, fiber art, paper art, printmaking, 3D digital art, glass art, metalwork, and more.​ When is the deadline? November 28 How many works can I submit? Up to 12 artworks How much does it cost? Application Fee: No Fee The participation fee is 25 EUR (in case of acceptance) You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Other opportunities If/Then: Chance and Creativity - Vol. 2: Ritual For the second volume of If/Then: Chance and Creativity, we are looking for artists, writers and... Animal Group Exhibition No. 35 Gallery invites artists worldwide to submit work for Animal—International Online Group... Open Call for Artists - 32nd Community Art Exhibition Exhibit your artwork at Circular ArtSpace – East Bristol's vibrant gallery supporting emerging... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
+      "audience_text": "Opportunity details | State of the Art | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register State of the Art Deadline: 28/11/2026 City: Tbilisi | Country: Georgia | Collect Art Report this? Description Opportunity FAQs Make a submission Contact curator We invite artists from around the world to submit their work for our upcoming international digital publication, STATE OF THE ART. This theme is an invitation to capture the present. Not the future we imagine, not the past we nostalgize — but the complex, contradictory, hyper-accelerated now we are actually living in. What does it mean to be contemporary? What image, object, gesture, or glitch best represents the state of our art — and the art of our state? We invite artists from around the world to submit their work for our upcoming international digital publication, STATE OF THE ART. This theme is an invitation to capture the present. Not the future we imagine, not the past we nostalgize — but the complex, contradictory, hyper-accelerated now we are actually living in. What does it mean to be contemporary? What image, object, gesture, or glitch best represents the state of our art — and the art of our state? ​ Open to visual artists worldwide, aged 18 and above, working in various media, including painting, drawing, collage, installation, illustration, photography, sculpture, ceramics, textiles, assemblage, fiber art, paper art, printmaking, 3D digital art, glass art, metalwork, and more.​ ​ The theme for this edition is the “State of the Art”. We are seeking visual testimonies of the texture of life in 2026. If a future archaeologist found only your work, what would they understand about what it felt like to be alive right now? Your interpretation can be literal, documentary, symbolic, abstract, speculative or deeply personal, exploring technology and humanity, digital identity, the body, ecology and collapse, present-day politics, new rituals and intimacies, information overload, resilience, or simply the quiet poetry of an ordinary day in this extraordinary time. ​ Each participant will receive a 2-6 page spread in print and digital magazines including a biography, statement, interview, QR code linked to their website and/or social media, and 2-10 featured artworks. All participants will receive a complimentary digital issue of the magazine which will be promoted on our website/social media. In addition, you will receive the link for ordering the printed magazine. Moreover, the curatorial team will select a few exceptional artists for inclusion in their upcoming book edition titled '101 Contemporary Artists and More...' ​ Submission requirements: Up to 12 photos, details of the work (title, medium, size, year, description is optional), brief biography, artist statement (min 100 words each), website, and social media links. Deadline: November 28, 2026 Application Fee: No Fee The participation fee is 25 EUR (in case of acceptance) Promotional Coverage: 1 dedicated post on the ‘NEWS’ page of our website 2 to 5 individual posts on Facebook and Instagram An announcement post featuring the magazine cover and the names of all published artists 3 group posts on Facebook and Instagram, each including one artwork from every featured artist Email outreach to our network of artists, gallerists, collectors, readers, and art professionals. Our Reach and Exposure: More than 1.2 million readers on Yump Over 682,274 readers on Scribd More than 150 printed copies sold per edition Each edition is now showcased at our newly opened Art Gallery in Tbilisi, Georgia, and is also featured in exhibitions and art events. To date, we have published 128 Seasonal and Special Editions of our magazine, featuring over 2,000 artists from around the world. Further Opportunities : Our curatorial team will also select several outstanding artists for inclusion in the upcoming book edition titled “101 Contemporary Artists and More…”. Selection is based on the overall vision for the book and available space. However, we aim to feature as many artists as possible from our previous magazine editions. Additionally, with each edition, our curators highlight a select group of artists for future exhibitions at our new 170 sq. m professionally curated art gallery in the prestigious centre of Tbilisi, Georgia. The gallery is dedicated to modern and contemporary art, providing a powerful platform for international exposure, including painting, drawing, photography, sculpture, ceramics, textile, installation, New media, mixed media works, etc. Make a submission Contact the curator Who is eligible for this opportunity? Open to visual artists worldwide, aged 18 and above, working in various media, including painting, drawing, collage, installation, illustration, photography, sculpture, ceramics, textiles, assemblage, fiber art, paper art, printmaking, 3D digital art, glass art, metalwork, and more.​ When is the deadline? November 28 How many works can I submit? Up to 12 artworks How much does it cost? Application Fee: No Fee The participation fee is 25 EUR (in case of acceptance) You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Other opportunities If/Then: Chance and Creativity - Vol. 2: Ritual For the second volume of If/Then: Chance and Creativity, we are looking for artists, writers and... Parkscapes II London gallery is holding a Festive Season Exhibition, 3rd - 19th December 2026. We’re... Animal Group Exhibition No. 35 Gallery invites artists worldwide to submit work for Animal—International Online Group... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
       "price_type": "unknown",
       "availability_evidence": "",
       "ticket_required": false,
@@ -71213,6 +71199,35 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": "2026-11-03"
+    },
+    {
+      "id": "international-2026-11-29-e272fef6c8",
+      "status": "check",
+      "kind": "open_call",
+      "city": "international",
+      "date": "2026-11-29",
+      "time": "",
+      "title": "Inside/Outside; Photography Exhibitio",
+      "venue": "CuratorSpace",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "open-call"
+      ],
+      "description": "Our exhibitions will explore the polarities of our lives and the world around us. These themes, shaped by your involvement, will give rise to exhibitions that are engaging, reflective, and thought-provoking. For this exhibition, we have chosen the theme, Inside / Outside. The Exhibition will take place in March 2027",
+      "url": "https://www.curatorspace.com/opportunities/detail/insideoutside-photography-exhibition/11326",
+      "source": "CuratorSpace — opportunities",
+      "checked_at": "",
+      "review_reason": "primary_source_required",
+      "discovered_at": "2026-11-09",
+      "audience_text": "Opportunity details | Inside/Outside; Photography Exhibition | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register Inside/Outside; Photography Exhibition Deadline: 29/11/2026 Country: United Kingdom | Solas Shadow Report this? Description Opportunity FAQs Make a submission Contact curator Our exhibitions will explore the polarities of our lives and the world around us. These themes, shaped by your involvement, will give rise to exhibitions that are engaging, reflective, and thought-provoking. For this exhibition, we have chosen the theme, Inside / Outside. The Exhibition will take place in March 2027 Inside / Outside, the polarity being explored in this exhibition is between the outside world and the inner domain. How something looks on the outside can be very different on the inside. This can be a literal interpretation: the difference between internal and external architecture, domestic and public spaces. Or our private and public selves, for example. It can also be a deeper exploration of the inner and outer self, how we present ourselves to the outside world and how we feel or think of ourselves on the inside, is it the same? What are the differences? How it feels to be on the inside or the outside of a group or society, the theme is open to explore many possibilities. Photographers are asked to explore this theme however they wish, whether focusing on one aspect or both in their submissions. Submission Deadline: 29th November 2026 Exhibition start date: March 2027 Solas / Shadow is an online international photography gallery dedicated to showcasing the work of photographers from around the world through engaging, thoughtfully curated exhibitions. Starting in late January/early February 2026, we are still in the early days of the gallery, with over 600 followers on our Instagram account. Currently, the average number of monthly visitors to our website is 1,000 and with tens of thousands of views across our social media, with visitors from all over the world, from USA, South America, all over Europe and Asia. Founded on the belief that powerful photography exists beyond traditional gatekeeping, and with over 10 years experience in both photography and exhibition curation, Solas / Shadow aims to create space for voices that have not always had the opportunity to exhibit their work. We are particularly committed to supporting emerging and underrepresented photographers, while remaining open to artists at all stages of their practice. Our exhibitions will explore the polarities of our lives and the world around us. These themes, shaped by your involvement, will give rise to exhibitions that are engaging, reflective, and thought-provoking. As we grow, we look forward to expanding our platform and offering more opportunities for photographers. Solas / Shadow is not just a gallery, but a growing community built on collaboration, inclusion, and a shared passion for photography. Participants will: Have their work displayed in an online gallery on our website. Receive a digital certificate of participation. See their work featured on the gallery's social media. Have their work featured in a digital Exhibition Catalogue. All those interested in the purchase of your work will be instructed to contact the photographer directly. How to Submit Submit up to 5 images. Please submit your files in JPG format. Please include in your submission: Your name and surname. Your Location and/or Nationality Your social media and/or website links. A short biography, no more than a couple of sentences. Title of your images There is no submission fee; it is free to submit. If selected to participate in an exhibition, you will be asked to pay a participation fee. The participation fee will be based on the number of images selected for the exhibition: £16 for 1 image. £22 for 2 or more images. Submissions are open to: Photographers worldwide. Participants 18 years of age or older. Artists retain the copyright to their submitted works. By submitting, artists grant permission for the Gallery to use their image(s) to promote the exhibition, for display on the SOLAS / SHADOW webpage, for inclusion on social media, and for any advertising, promotional materials and publications. Make a submission Contact the curator Who is eligible for this opportunity? Everyone over the age of 18. When is the deadline? 29th November 2026. How many works can I submit? Up to 5 images, either individual images or as part of a series. How much does it cost? Free to submit, if selected participants are asked to pay a fee based on the number of images selected. You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Other opportunities If/Then: Chance and Creativity - Vol. 2: Ritual For the second volume of If/Then: Chance and Creativity, we are looking for artists, writers and... Parkscapes II London gallery is holding a Festive Season Exhibition, 3rd - 19th December 2026. We’re... Animal Group Exhibition No. 35 Gallery invites artists worldwide to submit work for Animal—International Online Group... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "international-2026-11-29-dcc4250c79",
@@ -72071,7 +72086,7 @@
       "audience_text": "Opportunity details | Open Call for JustArt Newspaper Club Issue 9 | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register Open Call for JustArt Newspaper Club Issue 9 Deadline: 05/12/2026 Jenny Ping Lam Lin Report this? Description Make a submission Contact curator Open Call - Issue 9 Digital Residues In an era of technological hyper-acceleration, we leave behind an expanding landscape of digital detritus: obsolete formats, corrupted data, forgotten archives and emotional traces embedded within our screens. For Issue 9, Digital Residues, JustArt invites artists, curators and writers to examine the blind spots of the virtual world and explore what remains when digital promises of seamless connectivity and permanence begin to fracture. We are particularly interested in the shifting relationship between human creativity and artificial intelligence. As generative technologies reshape artistic practice, how do we negotiate authorship, agency, and creative freedom? Should we defend the boundaries of human craftsmanship, or embrace collaboration with intelligent systems to expand the possibilities of expression? We welcome submissions that investigate the material, cultural, and psychological tensions between human expression and machine learning. From digital decay and forgotten archives to algorithmic aesthetics, technological memory and acts of creative resistance, we invite you to reconsider the remnants of our increasingly automated world. What does it mean to create, remember, and resist in a world shaped by machines? What We’re Looking For: Artists: Submit 5-8 images of your artwork, along with a description of your work, your bio, and an artist statement. Curators: Share your past projects, project concepts, and your bio, along with 5-8 accompanying images Participation Fee: £38 (Required for selected participants) - Includes a digital copy Social Media Exposure: Your work will be highlighted on our platforms - JustArt Collective Instagram and website. 5K+ Followers on Instagram, and we are growing! Monthly reviewers on Instagram: 50K+ Distribution: The newspaper will be distributed at various art exhibitions and bookshops across the UK. Bookshops: NewBridge Books (Newcastle Upon Tyne) Kafka Bookshop (London) Good Press (Glasgow) Books From Below (Newcastle Upon Tyne) The JustArt newspaper club (Print) ISSN 2979-5494 The JustArt newspaper club (Online) ISSN 2979-5508 We will feature participants on JustArt Collective social media. As a member of the JustArt community, we will select 1-2 participants for free exhibitions with JustArt. Past selected artists for free exhibitions: Jingyun Guan (Issue1): The Hechyeomoyeo 17 Exhibition in Dublin Aitor Moncho Tudanca (Collective Voices 1st Edition) and Anthony Hodgson(Collective Voices 1st Edition): HCMY Mexicali 2026 in Mexico Jingyun Guan (Issue 1) and Bahar Talebi Najafabadi (Issue 3): Human Voyage: The Day We Leave the Shore Exhibition in London Jenny Ping Lam Lin (Issue 4) and Esther Xiang (Issue 3): The Hechyeomoyeo 13 Exhibition in Thailand Sarah Muwanga (Issue 2) and Chaeyeon Kang (Issue 3): The Shape of Anxiety Exhibition in London Sean BW Parker and Sarah Muwanga (Issue 2): Borderlines Exhibition in London About US: Additional Opportunity Artists participating in this program will be prioritised for invitations to participate in JustArt Collective’s future art exhibitions. About JustArt Collective: JustArt Collective is a dynamic group of artists and curators united by a shared passion for the arts. Originally founded in Hong Kong, the collective is now actively engaged in the UK. Throughout our creative journey, we have recognised the vital role of community within the art world. Our mission is to bring together everyone involved in JustArt projects to form a vibrant new community. We encourage open dialogue and the exchange of ideas on a wide range of art-related topics. This includes not only discussions about artistic practices but also the exploration of how to make art more accessible and visible to a broader audience. By fostering these conversations, we aim to inspire fresh perspectives and a deeper appreciation for art among our community and the wider public. Through collaboration and sharing, we hope to cultivate an environment where creativity thrives and everyone's voice is heard. Join us as we work to redefine the art community and enrich our collective experience. For our newspaper, the first print run will be 50 copies. After we sell out the first round (normally sold out during preorder). We will do 30-50 copies for the second round (distributed at bookshops and exhibitions). More information about JustArt Collective can be found on our official website and Instagram account: @Justart_Collective Make a submission Contact the curator You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Advertisement Other opportunities The 17th Annual Pound Arts Open Exhibition Thank you for submitting your work to the 17th annual Pound Arts Open Exhibition. Please read... Revolution: Open Call for artists in any medium REVOLUTION What is REVOLUTION? Your ideas may be framed in terms of change, transformation, ... Life models wanted in Durham and Hartlepool Looking for life models for regular monthly in-person sessions in Durham, North East England.... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
       "price_type": "unknown",
       "availability": "sold_out",
-      "availability_checked_at": "2026-11-09",
+      "availability_checked_at": "2026-11-10",
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
@@ -72330,7 +72345,7 @@
     },
     {
       "id": "moscow-2026-12-09-dcb6e4c97a",
-      "status": "check",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-12-09",
@@ -72356,10 +72371,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "reviewed_at": "2026-11-09",
+      "editor_note": ""
     },
     {
       "id": "spb-2026-12-11-d7eb167bdb",

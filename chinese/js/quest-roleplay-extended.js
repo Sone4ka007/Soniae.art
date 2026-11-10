@@ -149,7 +149,8 @@
     replyRu:'Регистрация стоит 30 юаней. Можно оплатить по QR-коду.',
     keywords:['挂号','收费','支付']}
   ] };
- function make(id){
+ function make(lessonId){
+  const id=lessonId;
   const missions=sets[id],byId=Object.fromEntries(missions.map(m=>[m.id,m]));
   function normalize(s){return String(s||'').normalize('NFKC').replace(/[\s\u3000，,。？！?!；;：:、"“”‘’'（）()]/g,'');}
   function evaluate(id,response){
@@ -162,8 +163,12 @@
    const negative3=id==='purpose'&&/不想买咖啡|不要咖啡|不买咖啡/.test(t);
    const negative4=(id==='phone'&&/(?:^|[^没])有信号|(?:^|[^没])有现金|手机可以用/.test(t))||
        (id==='help'&&/不需要帮助|不用帮|不要买票/.test(t));
+   const contradicted=(lessonId===6&&id==='purpose'&&/不想挂号|不要挂号|不需要挂号/.test(t))||
+     (lessonId===6&&id==='symptoms'&&/没有咳嗽|不咳嗽/.test(t))||
+     (lessonId===6&&id==='form'&&/不需要写表|不用写表/.test(t))||
+     (lessonId===5&&id==='bill'&&/不想各付各的|不可以各付各的/.test(t));
    const ok=m.require.every(group=>group.some(token=>t.includes(token)));
-   if(ok&&!negative3&&!negative4)
+   if(ok&&!negative3&&!negative4&&!contradicted)
     return {ok:true,reply:m.reply,replyRu:m.replyRu,keywords:m.keywords};
    return {ok:false,reply:'不好意思，我没听懂。你可以再说一次吗？',
     replyRu:'Извините, не поняла. Можете сказать иначе?',reason:m.problem};

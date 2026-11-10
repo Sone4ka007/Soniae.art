@@ -37,3 +37,27 @@
 .writing-feedback{border:2px solid #9bbd20;background:#f3f8dd;text-align:center;font-size:12px;font-weight:900;letter-spacing:.04em;padding:13px}
 .writing-stop{display:block;margin:26px auto 0;padding:9px 12px;border:0;background:transparent;text-decoration:underline;color:var(--muted,#626660);font-size:12px}
 @media(max-width:540px){.writing-root .panel-head{flex-direction:column}.writing-choice{flex:1 1 auto}.writing-choices .writing-choice{flex:1 1 29%}.writing-actions button{flex:1 1 100%}.writing-grid{width:min(100%,286px)}.writing-canvas>span{font-size:165px}}
+
+/* Character composition and sourced etymology, hidden during recall until requested. */
+.writing-context{margin:8px 0 0;color:#434640;font-size:13px}
+.writing-context b{font-size:21px;font-family:var(--han,'Noto Sans SC',sans-serif);font-weight:700}
+.writing-breakdown{margin:22px 0 0;padding:22px;background:var(--soft,#efefe8);border:1px solid var(--line,#c7c9c2);line-height:1.55}
+.writing-breakdown[hidden]{display:none!important}
+.writing-breakdown h4{font-size:12px;font-weight:900;letter-spacing:.08em;margin:0 0 11px}
+.writing-breakdown h4:not(:first-child){margin-top:18px}
+.writing-breakdown p{font-size:13px;margin:10px 0}
+.writing-ids{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:8px 0}
+.writing-ids>span{font:26px var(--han,'Noto Sans SC',sans-serif);letter-spacing:.04em}
+.writing-ids small{font-size:12px;color:var(--muted,#626660)}
+.writing-components{display:flex;flex-wrap:wrap;gap:9px;margin:14px 0 10px}
+.writing-component{background:#fff;border:1px solid var(--line,#c7c9c2);display:flex;align-items:center;flex-direction:column;min-width:70px;max-width:128px;padding:8px 12px;gap:6px;text-align:center}
+.writing-component b{font:32px var(--han,'Noto Sans SC',sans-serif)}
+.writing-component small{font-size:10px;color:var(--muted,#626660);line-height:1.2}
+.writing-memory{border-left:4px solid #a9cf00;padding:10px 12px!important;background:#fff}
+.writing-guide-note,.writing-guide-foot{font-size:12px!important;color:var(--muted,#626660)}
+.writing-source{font-size:12px;border-top:1px solid var(--line,#c7c9c2);padding-top:12px;margin-top:15px}
+.writing-source summary{cursor:pointer;font-weight:700}
+.writing-source p{margin:7px 0 0;color:var(--muted,#626660)}
+.writing-guide-foot{border-top:1px solid var(--line,#c7c9c2);padding-top:12px;margin-top:16px!important}
+.writing-guide-foot a{text-decoration:underline}
+@media(max-width:540px){.writing-breakdown{padding:16px}.writing-component{min-width:62px;padding:8px}}

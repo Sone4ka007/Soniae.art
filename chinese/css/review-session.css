@@ -1,0 +1,78 @@
+/* Chinese Lab — multiselect and session caps for interval reviews. */
+.review-session-settings {
+  background: #f7f7f1;
+  border: 2px solid var(--ink);
+  padding: clamp(14px, 3vw, 22px);
+  margin-bottom: 20px;
+}
+.review-session-settings h4 {
+  font-size: 14px;
+  letter-spacing: .04em;
+  font-weight: 900;
+  margin: 6px 0 12px;
+}
+.review-session-settings h4:not(:first-child) { margin-top: 25px; }
+.review-option-buttons,
+.review-lesson-options {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+.review-option-buttons button,
+.review-lesson-options button {
+  flex: 1 1 auto;
+  padding: 11px 14px;
+  min-height: 45px;
+  background: #fff;
+  color: var(--ink);
+  border: 2px solid var(--ink);
+  font: 900 12px/1.2 var(--font);
+  letter-spacing: .02em;
+  cursor: pointer;
+}
+.review-lesson-options button { flex: 1 1 calc(20% - 8px); min-width: 95px; }
+.review-option-buttons button.is-active,
+.review-lesson-options button.is-active {
+  background: var(--acid);
+  box-shadow: inset 0 0 0 1px var(--ink);
+}
+.review-option-buttons button:focus-visible,
+.review-lesson-options button:focus-visible {
+  outline: 3px solid #555;
+  outline-offset: 3px;
+}
+.review-config-note {
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--muted);
+  margin: 9px 0 16px;
+}
+.review-start { width: min(100%, 500px); margin: 18px auto 24px; display: block; }
+.review-live-bar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 14px 0 19px;
+  border: 2px solid var(--ink);
+  padding: 10px 13px;
+  font-size: 12px;
+  font-weight: 900;
+}
+.review-live-bar > span { flex: 1 1 auto; white-space: nowrap; }
+.review-live-bar button {
+  color: var(--ink);
+  background: #fff;
+  border: 2px solid var(--ink);
+  padding: 8px 10px;
+  font: 900 11px var(--font);
+}
+.review-live-bar button:hover { background: var(--acid); }
+@media(max-width:600px) {
+  .review-session-settings { padding: 14px 12px; }
+  .review-option-buttons button { min-width: 100px; padding: 10px 8px; }
+  .review-lesson-options button { flex-basis: calc(33.333% - 7px); min-width: 75px; padding: 11px 6px; }
+  .review-grades { gap: 5px; }
+  .review-grades button { font-size: 11px; padding: 9px 4px; }
+}

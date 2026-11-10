@@ -643,6 +643,7 @@
   <link rel="manifest" href="./manifest.webmanifest">
   <link rel="apple-touch-icon" href="./icons/icon-192.png">
 <link rel="stylesheet" href="./css/review-session.css?v=20261110-1">
+<link rel="stylesheet" href="./css/writing.css?v=20261111-1">
 </head>
 <body>
   <div class="site-frame">
@@ -712,6 +713,7 @@ window.chineseLabLessonFetch=async url=>{
 <script src="./js/quest-lesson6.js?v=20261110-1"></script>
 <script src="./js/quest-lessons7-10.js?v=20261110-3"></script>
 <script src="./js/quest-branches.js?v=20261110-4"></script>
+<script src="./js/writing.js?v=20261111-1"></script>
 <script>
 const sceneURL = name => window.__offlineScenes[name] || ("assets/"+name+".svg");
 const $ = (selector) => document.querySelector(selector);
@@ -723,6 +725,7 @@ const modeInfo = [
   { id: 'build', icon: '▦', title: 'СОБЕРИ СЛОВО' },
   { id: 'sentence', icon: '句', title: 'СОБЕРИ ПРЕДЛОЖЕНИЕ' },
   { id: 'review', icon: '◴', title: 'ПОВТОРЕНИЕ · ANKI' },
+  { id: 'writing', icon: '✎', title: 'ПИСЬМО · ИЕРОГЛИФЫ' },
   { id: 'input', icon: '文', title: 'ИСТОРИИ · ПО ГЛАВАМ' },
   { id: 'words', icon: '◖', title: 'СЛОВАРЬ + ЗВУК' },
   { id: 'video', icon: '▷', title: 'ВИДЕО' },
@@ -833,6 +836,7 @@ function activateMode(mode, reset = false) {
   if (mode === 'build') initBuild();
   if (mode === 'sentence') initSentence();
   if (mode === 'review') initReview();
+  if (mode === 'writing') state.game = {};
   if (mode === 'input') initCI();
   if (mode === 'words' || mode === 'video' || mode === 'progress') state.game = {};
   if (!reset && ChineseLabSessions.modes.has(mode)) restoreActiveSession(mode);
@@ -861,6 +865,7 @@ function renderGame() {
   if (kind === 'build') renderBuild();
   if (kind === 'sentence') renderSentence();
   if (kind === 'review') renderReview();
+  if (kind === 'writing') ChineseLabWriting.mount({state, save, award, esc});
   if (kind === 'input') renderCI();
   if (kind === 'words') renderWords();
   if (kind === 'video') renderVideo();
@@ -1889,6 +1894,7 @@ document.addEventListener('click', event => {
  state.interacted=true;
  if(btn.dataset.speak) speech(btn.dataset.speak);
  const action=btn.dataset.action; if(!action)return;
+ if (action.startsWith('writing-')) { ChineseLabWriting.action(action, btn); return; }
  switch(action){
  case 'lesson':activateLesson(Number(btn.dataset.id));break;
  case 'progress-lesson':{const id=Number(btn.dataset.id);if(state.lessons.some(l=>l.id===id)){activateLesson(id);state.progress.reviewScope='lesson:'+id;save();activateMode('review');}break;}

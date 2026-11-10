@@ -88,3 +88,8 @@
   .writing-prefill-input input{flex:1 1 130px}
   .writing-large-word{font-size:64px}
 }
+
+
+.writing-demo-btn{display:block;margin:15px 0 7px;width:100%;min-height:42px;font-size:11px}
+.writing-demo-canvas{display:flex;justify-content:center;min-height:0;align-items:center}
+.writing-demo-canvas:not(:empty){margin-top:10px;min-height:180px;border:1px solid var(--line,#c7c9c2);background:#fff}

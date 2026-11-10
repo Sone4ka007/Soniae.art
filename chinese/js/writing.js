@@ -214,9 +214,9 @@
   function stepNext() {
     const s = current();
     if (!s) { render(); return; }
-    s.index++;
     const timedOut = s.goal === 'minutes' && Date.now() - s.startedAt >= s.minutes * 60000;
-    if (s.index >= s.queue.length || timedOut) { endSession(); return; }
+    if (s.index + 1 >= s.queue.length || timedOut) { endSession(); return; }
+    s.index++;
     s.stage = 'study'; s.hintUsed = false; s.lastResult = null;
     persist(); render();
   }

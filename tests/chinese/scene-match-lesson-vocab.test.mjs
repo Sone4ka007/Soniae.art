@@ -57,6 +57,12 @@ test('lesson 8 replaces generic room with four genuine lesson words',()=>{
   assert(svg.startsWith('<svg') && svg.includes('viewBox="0 0 1080 620"'));
 });
 
+test('lessons 9–11 use topic-appropriate matching scenes',()=>{
+  assert.equal(engine.init(lessons[8]).scene,'gallery-studio');
+  assert.equal(engine.init(lessons[9]).scene,'winter-plan');
+  assert.equal(engine.init(lessons[10]).scene,'lesson11-vocabulary');
+});
+
 test('lesson 18 uses its own technology picture, not the generic room',()=>{
   const game=engine.init(lessons[17]);
   assert.equal(game.scene,'tech-bike');
@@ -76,9 +82,9 @@ test('stale snapshots with foreign words are rejected, without wiping unrelated 
 
 test('new asset and cache references are versioned for offline devices',()=>{
   const html=read('chinese/index.html'),sw=read('chinese/sw.js');
-  assert(html.includes('scene-match.js?v=20261111-4'));
-  assert(html.includes('exercise-sessions.js?v=20261111-2'));
-  assert(sw.includes('scene-match.js?v=20261111-4'));
+  assert(html.includes('scene-match.js?v=20261111-5'));
+  assert(html.includes('exercise-sessions.js?v=20261111-3'));
+  assert(sw.includes('scene-match.js?v=20261111-5'));
   assert(sw.includes('lesson8-vocabulary.svg'));
-  assert(sw.includes('hsk4-chinese-lab-pwa-v23'));
+  assert(sw.includes('hsk4-chinese-lab-pwa-v24'));
 });

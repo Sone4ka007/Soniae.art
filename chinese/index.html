@@ -719,22 +719,22 @@ window.chineseLabLessonFetch=async url=>{
 const sceneURL = name => window.__offlineScenes[name] || ("assets/"+name+".svg");
 const $ = (selector) => document.querySelector(selector);
 const modeInfo = [
-  { id: 'story', icon: '◎', title: 'СЮЖЕТ · КВЕСТ' },
+  { id: 'words', icon: '◖', title: 'СЛОВАРЬ + ЗВУК' },
   { id: 'pairs', icon: '↔', title: 'ПАРЫ' },
   { id: 'translate', icon: '中', title: 'ИЕРОГЛИФ → ПЕРЕВОД' },
   { id: 'reverse', icon: 'Я', title: 'ПЕРЕВОД → ИЕРОГЛИФ' },
   { id: 'build', icon: '▦', title: 'СОБЕРИ СЛОВО' },
-  { id: 'sentence', icon: '句', title: 'СОБЕРИ ПРЕДЛОЖЕНИЕ' },
   { id: 'review', icon: '◴', title: 'ПОВТОРЕНИЕ · ANKI' },
-  { id: 'writing', icon: '✎', title: 'ПИСЬМО · ИЕРОГЛИФЫ' },
   { id: 'input', icon: '文', title: 'ИСТОРИИ · ПО ГЛАВАМ' },
-  { id: 'words', icon: '◖', title: 'СЛОВАРЬ + ЗВУК' },
+  { id: 'story', icon: '◎', title: 'СЮЖЕТ · КВЕСТ' },
+  { id: 'sentence', icon: '句', title: 'СОБЕРИ ПРЕДЛОЖЕНИЕ' },
+  { id: 'writing', icon: '✎', title: 'ПИСЬМО · ИЕРОГЛИФЫ' },
   { id: 'video', icon: '▷', title: 'ВИДЕО' },
   { id: 'progress', icon: '◫', title: 'МОЙ ПРОГРЕСС' },
 ];
-const progressDefaults = { xp: 0, correct: 0, attempts: 0, stories: {}, weak: {}, sound: true, rate: 0.9, saved: {}, srs: {}, ciDone: {}, questWords: {}, mnemonicSeen: {}, reviewDir: "hanzi", reviewScope: "all", lastLessonId: 1, lastMode: "story" };
+const progressDefaults = { xp: 0, correct: 0, attempts: 0, stories: {}, weak: {}, sound: true, rate: 0.9, saved: {}, srs: {}, ciDone: {}, questWords: {}, mnemonicSeen: {}, reviewDir: "hanzi", reviewScope: "all", lastLessonId: 1, lastMode: "words" };
 const stored = ChineseLabProgress.load(progressDefaults);
-const state = { lessons: [], manifest: null, cloudUserId:null, lessonId: Number(stored.lastLessonId) || 1, mode: 'story', game: null, interacted: false, progress: stored, pendingToast: 0, highlightedWords: new Set(), wordsSection:'lesson' };
+const state = { lessons: [], manifest: null, cloudUserId:null, lessonId: Number(stored.lastLessonId) || 1, mode: 'words', game: null, interacted: false, progress: stored, pendingToast: 0, highlightedWords: new Set(), wordsSection:'lesson' };
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const shuffle = source => {
  const a=[...source];
@@ -927,6 +927,8 @@ function questVocabDone(){
 }
 function questMissionBox(){
  const g=state.game,groups=lesson().quest.vocabMissions||[],done=questVocabDone(),total=groups.reduce((n,x)=>n+x.tasks.length,0);
+ g.missionStage=Number.isInteger(g.missionStage)&&g.missionStage>=0&&g.missionStage<groups.length?g.missionStage:0;
+ g.missionOpen ??= true;g.revealed ||= [];g.mnemonicMode ||= 'hint';
  if(!groups.length)return '';
  const doneCount=groups.reduce((n,x)=>n+x.tasks.filter(t=>done[t.word]).length,0);
  const current=groups[g.missionStage]||groups[0];
@@ -966,24 +968,25 @@ function questMissionBox(){
     ${g.missionNotice?`<div class="quest-mission-notice" role="status">${esc(g.missionNotice)}</div>`:''}
     <div class="quest-mission-small">${isAudio?'Сначала слушай, потом выбирай.':isRussian?'Это задача на перевод — значение дано как вопрос.':'Сначала попробуй прочитать предложение по-китайски.'} Нажми на правильный вариант.</div>`;
  }
- return `<section class="quest-mission" aria-label="Словарные миссии"><div class="quest-mission-top"><div><small>ПОБОЧНАЯ МИССИЯ · СЛОВА В ДЕЙСТВИИ</small><h4>СОБЕРИ ВСЮ ЛЕКСИКУ <em>${doneCount}/${total}</em></h4></div><button type="button" data-action="quest-mission-toggle" class="quest-reveal" aria-expanded="${g.missionOpen}">${g.missionOpen?'СВЕРНУТЬ ↑':'ОТКРЫТЬ ЗАДАНИЯ ↓'}</button></div><div class="quest-mission-meter"><div style="width:${Math.round(doneCount*100/total)}%"></div></div>${g.missionOpen?`<p class="quest-mission-small">${groups.length} групп заданий. В каждой — лексика урока в живых фразах. Их можно проходить в любом порядке, даже после финала.</p><div class="quest-mission-tabs">${tabs}</div>`:''}${content}</section>`;
+ return `<section class="quest-mission" aria-label="Словарные миссии"><div class="quest-mission-top"><div><small>САЙД-КВЕСТ · СЛОВА В ПРЕДЛОЖЕНИЯХ</small><h4>СОБЕРИ ВСЮ ЛЕКСИКУ <em>${doneCount}/${total}</em></h4></div><button type="button" data-action="quest-mission-toggle" class="quest-reveal" aria-expanded="${g.missionOpen}">${g.missionOpen?'СВЕРНУТЬ ↑':'ОТКРЫТЬ ЗАДАНИЯ ↓'}</button></div><div class="quest-mission-meter"><div style="width:${Math.round(doneCount*100/total)}%"></div></div>${g.missionOpen?`<p class="quest-mission-small">${groups.length} групп заданий. В каждой — лексика урока в живых фразах. Их можно проходить в любом порядке, даже после финала.</p><div class="quest-mission-tabs">${tabs}</div>`:''}${content}</section>`;
 }
+function renderMissionParent(){if(state.mode==='sentence')renderSentence();else renderStory();}
 function questMissionAction(action,btn){
  const g=state.game,groups=lesson().quest.vocabMissions||[],done=questVocabDone();
- if(action==='quest-mission-toggle'){g.missionOpen=!g.missionOpen;renderStory();return;}
+ if(action==='quest-mission-toggle'){g.missionOpen=!g.missionOpen;renderMissionParent();return;}
  if(action==='quest-mission-select'){
   const i=Number(btn.dataset.stage);if(!groups[i])return;
-  g.missionOpen=true;g.missionStage=i;g.missionResult=null;g.missionNotice='';renderStory();return;
+  g.missionOpen=true;g.missionStage=i;g.missionResult=null;g.missionNotice='';renderMissionParent();return;
  }
- if(action==='quest-mission-next'){g.missionResult=null;g.missionNotice='';renderStory();return;}
+ if(action==='quest-mission-next'){g.missionResult=null;g.missionNotice='';renderMissionParent();return;}
  if(action==='quest-mission-pick'){
   if(g.missionResult)return;
   const next=groups[g.missionStage]?.tasks.find(t=>!done[t.word]);if(!next)return;
   if(btn.dataset.word===next.word){
-    done[next.word]=true;save();questEarn(8,'ЛЕКСИКА КВЕСТА');
+    done[next.word]=true;save();if(state.mode==='story')questEarn(8,'ЛЕКСИКА КВЕСТА');else award(8,'ЛЕКСИКА КВЕСТА');
     g.missionResult=next;g.missionNotice='';speech(next.sentence);
   }else{g.missionNotice='Пока не подходит. Попробуй ещё раз, ориентируясь на ситуацию и звук.';miss(next.word);}
-  renderStory();return;
+  renderMissionParent();return;
  }
 }
 
@@ -1099,11 +1102,11 @@ function questEnding(){
   const endRu=variant?variant.ru:ending.ru+(lastOption?.outcomeRu?' '+lastOption.outcomeRu:'');
   const total=ending.variants?8:4;
   const number=ending.variants?route*2+third+1:route+1;
-  return `${header('ТВОЯ КОНЦОВКА','Выбранные действия меняли следующие сцены. В каждом уроке доступны разные исходы.','МАРШРУТ / '+number)}<div class="quest-end"><div class="quest-end-num">✦</div><div><span class="quest-kicker">${esc(final.kicker)}</span><h4>${esc(q.title)}</h4><div class="quest-result-zh" lang="zh-CN">${tapText(endZh)} ${speakButton(endZh)}</div>${questGloss('branch-end',endRu)}<div class="quest-end-score">${g.points} XP · ${g.routeChoices?.length||0} РЕШЕНИЯ · ФИНАЛ ${number}/${total}</div><div class="quest-end-links"><button type="button" class="action-btn" data-action="quest-restart">ВЫБРАТЬ ДРУГОЙ ПУТЬ ↻</button><button type="button" class="action-btn secondary" data-action="mode" data-id="input">ЧИТАТЬ ИСТОРИЮ →</button></div></div></div>${questMissionBox()}${questInventory()}`;
+  return `${header('ТВОЯ КОНЦОВКА','Выбранные действия меняли следующие сцены. В каждом уроке доступны разные исходы.','МАРШРУТ / '+number)}<div class="quest-end"><div class="quest-end-num">✦</div><div><span class="quest-kicker">${esc(final.kicker)}</span><h4>${esc(q.title)}</h4><div class="quest-result-zh" lang="zh-CN">${tapText(endZh)} ${speakButton(endZh)}</div>${questGloss('branch-end',endRu)}<div class="quest-end-score">${g.points} XP · ${g.routeChoices?.length||0} РЕШЕНИЯ · ФИНАЛ ${number}/${total}</div><div class="quest-end-links"><button type="button" class="action-btn" data-action="quest-restart">ВЫБРАТЬ ДРУГОЙ ПУТЬ ↻</button><button type="button" class="action-btn secondary" data-action="mode" data-id="input">ЧИТАТЬ ИСТОРИЮ →</button></div></div></div>${questInventory()}`;
  }
  const stateName=g.time<0||g.flags.unfixed||g.flags.rushed?'fail':g.trust>=4&&g.time>=0?'good':'tight';
  const end=q.endings[stateName];
- return `${header('СЮЖЕТ ЗАВЕРШЁН','Твои решения повлияли на результат. Можно повторить игру другим маршрутом.','MISSION / COMPLETE')}<div class="quest-end"><div class="quest-end-num">${stateName==='good'?'✓':stateName==='tight'?'!':'↻'}</div><div><span class="quest-kicker">${esc(end.kicker)}</span><h4>${esc(q.title)}</h4><div class="quest-result-zh" lang="zh-CN">${tapText(end.zh)} ${speakButton(end.zh)}</div>${questGloss('end',end.ru)}<div class="quest-end-score">${g.points} XP · ДОВЕРИЕ ${g.trust}/6 · ОСТАЛОСЬ ${g.time} МИН</div><div class="quest-end-links"><button type="button" class="action-btn" data-action="quest-restart">ИГРАТЬ ДРУГИМ МАРШРУТОМ ↻</button><button type="button" class="action-btn secondary" data-action="mode" data-id="input">ЧИТАТЬ ИСТОРИЮ →</button></div></div></div>${questMissionBox()}${questInventory()}`;
+ return `${header('СЮЖЕТ ЗАВЕРШЁН','Твои решения повлияли на результат. Можно повторить игру другим маршрутом.','MISSION / COMPLETE')}<div class="quest-end"><div class="quest-end-num">${stateName==='good'?'✓':stateName==='tight'?'!':'↻'}</div><div><span class="quest-kicker">${esc(end.kicker)}</span><h4>${esc(q.title)}</h4><div class="quest-result-zh" lang="zh-CN">${tapText(end.zh)} ${speakButton(end.zh)}</div>${questGloss('end',end.ru)}<div class="quest-end-score">${g.points} XP · ДОВЕРИЕ ${g.trust}/6 · ОСТАЛОСЬ ${g.time} МИН</div><div class="quest-end-links"><button type="button" class="action-btn" data-action="quest-restart">ИГРАТЬ ДРУГИМ МАРШРУТОМ ↻</button><button type="button" class="action-btn secondary" data-action="mode" data-id="input">ЧИТАТЬ ИСТОРИЮ →</button></div></div></div>${questInventory()}`;
 }
 function questRoleplay(s){
  const g=state.game;
@@ -1217,15 +1220,15 @@ ${lesson().id===1?`<div class="quest-mnemonic-intro"><b>ПРОВЕРЬ, КАК �
  }
  if(g.status==='complete'){$('#game-panel').innerHTML=questEnding();return;}
  const s=questStep(),body=s.type==='roleplay'?questRoleplay(s):s.type==='explore'?questExplore(s):s.type==='compose'?questCompose(s):s.type==='pick'?questPick(s):questOptions(s);
- $('#game-panel').innerHTML=`${header('КВЕСТ / ИСТОРИЯ АННЫ','Выбирай действия, а затем составляй фразы на китайском. Последствия меняют следующую сцену.',`ЭТАП ${g.stage+1} / ${q.steps.length}`)}${questHud()}<section class="quest-scene"><div class="quest-scene-heading"><span>${esc(s.tag)}</span><h4>${esc(s.title)}</h4></div>${s.type==='compose'||s.type==='roleplay'?'':questNarrative(s)}${body}</section>${questMissionBox()}${questInventory()}`;
+ $('#game-panel').innerHTML=`${header('КВЕСТ / ИСТОРИЯ АННЫ','Выбирай действия, а затем составляй фразы на китайском. Последствия меняют следующую сцену.',`ЭТАП ${g.stage+1} / ${q.steps.length}`)}${questHud()}<section class="quest-scene"><div class="quest-scene-heading"><span>${esc(s.tag)}</span><h4>${esc(s.title)}</h4></div>${s.type==='compose'||s.type==='roleplay'?'':questNarrative(s)}${body}</section>${questInventory()}`;
 }
 function questAction(action,btn){
- const g=state.game;if(!g?.isQuest)return;
- if(action==='quest-restart'){initQuest();renderStory();return;}
- if(action==='quest-start'){if(g.status==='intro'){g.status='play';renderStory();}return;}
+ const g=state.game;if(!g||(!g.isQuest&&state.mode!=='sentence'))return;
+ if(action==='quest-restart'){initQuest();renderMissionParent();return;}
+ if(action==='quest-start'){if(g.status==='intro'){g.status='play';renderMissionParent();}return;}
  if(action==='quest-gloss'){
    const key=btn.dataset.key; if(!key)return;
-   g.revealed=g.revealed.includes(key)?g.revealed.filter(x=>x!==key):[...g.revealed,key];renderStory();return;
+   g.revealed=g.revealed.includes(key)?g.revealed.filter(x=>x!==key):[...g.revealed,key];renderMissionParent();return;
  }
  
  if(action==='quest-memory'){
@@ -1240,15 +1243,15 @@ function questAction(action,btn){
        state.progress.mnemonicSeen[lesson().id][word]=true;save();
      }
    }
-   renderStory();return;
+   renderMissionParent();return;
  }
  if(['quest-memory-test','quest-memory-answer','quest-memory-back'].includes(action)){
    if(g.mnemonicWord!==btn.dataset.word)return;
    g.mnemonicMode=action==='quest-memory-test'?'test':action==='quest-memory-answer'?'answer':'hint';
-   renderStory();return;
+   renderMissionParent();return;
  }
  if(action.startsWith('quest-mission-')){questMissionAction(action,btn);return;}
- if(action==='quest-analyze'){g.analysisKey=g.analysisKey===btn.dataset.key?null:btn.dataset.key;renderStory();return;}
+ if(action==='quest-analyze'){g.analysisKey=g.analysisKey===btn.dataset.key?null:btn.dataset.key;renderMissionParent();return;}
  if(g.status!=='play')return;
  const s=questStep(),index=Number(btn.dataset.index),id=btn.dataset.id;
  if(s.type==='roleplay'&&action.startsWith('quest-roleplay-')){
@@ -1286,10 +1289,10 @@ function questAction(action,btn){
        speech(result.reply);
      }
    }
-   renderStory();return;
+   renderMissionParent();return;
  }
- if(action==='quest-translation'){g.showRu=!g.showRu;renderStory();return;}
- if(action==='quest-zoom'){g.zoom=!g.zoom;renderStory();return;}
+ if(action==='quest-translation'){g.showRu=!g.showRu;renderMissionParent();return;}
+ if(action==='quest-zoom'){g.zoom=!g.zoom;renderMissionParent();return;}
  if(action==='quest-spot'&&s.type==='explore'){
    const o=s.spots.find(x=>x.id===id);if(!o)return;
    const scroll=$('#quest-pan')?.scrollLeft||0;
@@ -1297,27 +1300,27 @@ function questAction(action,btn){
    if(!g.seen.includes(id)){
      g.seen.push(id);questEarn(o.critical?12:3,o.critical?'УЛИКА':'ИССЛЕДОВАНИЕ');questRemember(o.item);
    }
-   g.ready=s.required.every(x=>g.seen.includes(x));renderStory();if($('#quest-pan'))$('#quest-pan').scrollLeft=scroll;
+   g.ready=s.required.every(x=>g.seen.includes(x));renderMissionParent();if($('#quest-pan'))$('#quest-pan').scrollLeft=scroll;
    return;
  }
  if(action==='quest-choice'&&(s.type==='choice'||s.type==='dialogue')){
    if(g.ready||!s.options[index])return;
-   g.answer=index;const o=s.options[index];speech(o.zh);questApply(o);renderStory();return;
+   g.answer=index;const o=s.options[index];speech(o.zh);questApply(o);renderMissionParent();return;
  }
  if(action==='quest-token'&&s.type==='compose'&&!g.ready){
-   if(index>=0&&index<s.tokens.length&&!g.tokens.includes(index)){g.tokens.push(index);renderStory();}return;
+   if(index>=0&&index<s.tokens.length&&!g.tokens.includes(index)){g.tokens.push(index);renderMissionParent();}return;
  }
  if(action==='quest-token-remove'&&s.type==='compose'&&!g.ready){
-   if(index>=0&&index<g.tokens.length){g.tokens.splice(index,1);renderStory();}return;
+   if(index>=0&&index<g.tokens.length){g.tokens.splice(index,1);renderMissionParent();}return;
  }
- if(action==='quest-hint'&&s.type==='compose'&&!g.ready){g.hintLevel=Math.min(3,(g.hintLevel||0)+1);renderStory();return;}
+ if(action==='quest-hint'&&s.type==='compose'&&!g.ready){g.hintLevel=Math.min(3,(g.hintLevel||0)+1);renderMissionParent();return;}
  if(action==='quest-pick'&&s.type==='pick'&&!g.ready){
    const o=s.options.find(x=>x.id===id);if(!o)return;
    speech(o.zh);
    if(g.selected.includes(id))g.selected=g.selected.filter(x=>x!==id);else if(g.selected.length<s.need)g.selected.push(id);else {toast('МОЖНО ВЫБРАТЬ ТОЛЬКО '+s.need);return;}
-   g.feedback=null;renderStory();return;
+   g.feedback=null;renderMissionParent();return;
  }
- if(action==='quest-clear'&&!g.ready){g.tokens=[];g.selected=[];g.feedback=null;renderStory();return;}
+ if(action==='quest-clear'&&!g.ready){g.tokens=[];g.selected=[];g.feedback=null;renderMissionParent();return;}
  if(action==='quest-check'&&!g.ready){
    if(s.type==='compose'){
      const response=g.tokens.map(i=>s.tokens[i]);
@@ -1337,7 +1340,7 @@ function questAction(action,btn){
      const good=s.right.length===g.selected.length&&s.right.every(x=>g.selected.includes(x));
      if(good){questEarn(30,'ВНИМАНИЕ К ДЕТАЛЯМ');g.feedback={zh:s.successZh,ru:s.successRu};g.ready=true;speech(s.successZh);}else{g.time-=3;g.feedback={zh:'请再检查一下。',ru:'Часть выбранных пунктов не относится к ситуации. Проверь и измени набор (−3 мин).'};miss();}
    }
-   renderStory();return;
+   renderMissionParent();return;
  }
  if((action==='quest-next'&&g.ready)||(action==='quest-skip'&&s.type==='compose'&&!g.ready)){
    const skipped=action==='quest-skip';
@@ -1348,7 +1351,7 @@ function questAction(action,btn){
    if(upcoming?.skipWhenRoute?.every((value,i)=>g.routeChoices?.[i]===value))g.stage++;
    g.ready=false;g.seen=[];g.tokens=[];g.selected=[];g.answer=null;g.feedback=null;g.hint=false;g.hintLevel=0;g.usedHint=false;g.zoom=false;g.showRu=false;g.revealed=[];g.tokenOrder=null;g.analysisKey=null;g.missionStage=Math.min(g.stage,6);g.missionResult=null;g.missionNotice='';
    if(g.stage>=lesson().quest.steps.length){g.status='complete';state.progress.stories[lesson().id]=(state.progress.stories[lesson().id]||0)+1;questEarn(35,'ДЕЛО ЗАКРЫТО');save();renderShell();}
-   renderStory();if(skipped)toast('ФРАЗА ПРОПУЩЕНА · ПЕРЕХОД К СЛЕДУЮЩЕЙ СЦЕНЕ');$('#game-panel')?.scrollIntoView({behavior:'smooth',block:'start'});return;
+   renderMissionParent();if(skipped)toast('ФРАЗА ПРОПУЩЕНА · ПЕРЕХОД К СЛЕДУЮЩЕЙ СЦЕНЕ');$('#game-panel')?.scrollIntoView({behavior:'smooth',block:'start'});return;
  }
 }
 
@@ -1402,8 +1405,20 @@ function tileAction(action,id){const g=state.game,w=g.questions[g.index];if(!w||
  if(action==='build-next'){g.index++;prepareTiles();}
  renderBuild();
 }
+function sentenceQuestionPool(){
+ const usual=lesson().sentences.map(q=>({...q,source:'lesson'}));
+ // Quest dialogue has author-curated word tiles: don't split Chinese text automatically.
+ const questPhrases=(lesson().quest?.steps||[])
+  .filter(step=>step.type==='compose'&&Array.isArray(step.answers?.[0])&&step.answers[0].length)
+  .map(step=>({ru:step.prompt||step.contextRu,parts:step.answers[0],
+   zh:step.successZh||step.answers[0].join(''),variants:step.answers,
+   targets:[],explain:step.successRu||step.hint||'',source:'quest'}));
+ const seen=new Set(usual.map(q=>q.zh));
+ return [...usual,...questPhrases.filter(q=>{if(seen.has(q.zh))return false;seen.add(q.zh);return true;})];
+}
 function initSentence(){
- state.game={questions:shuffle(lesson().sentences),index:0,selected:[],correct:0,done:false,notice:'',tries:0,hint:false};
+ state.game={questions:shuffle(sentenceQuestionPool()),index:0,selected:[],correct:0,done:false,notice:'',tries:0,hint:false,
+   missionOpen:true,missionStage:0,missionResult:null,missionNotice:'',revealed:[],mnemonicWord:null,mnemonicMode:'hint'};
  prepareSentence();
 }
 function prepareSentence(){
@@ -1417,7 +1432,7 @@ function prepareSentence(){
 }
 function renderSentence(){
  const g=state.game;
- if(g.index>=g.questions.length){$('#game-panel').innerHTML=completedBlock('ПРЕДЛОЖЕНИЯ СОБРАНЫ',`Правильных переводов: ${g.correct} из ${g.questions.length}.`,'sentence');return;}
+ if(g.index>=g.questions.length){$('#game-panel').innerHTML=completedBlock('ПРЕДЛОЖЕНИЯ СОБРАНЫ',`Правильных переводов: ${g.correct} из ${g.questions.length}.`,'sentence')+questMissionBox();return;}
  const q=g.questions[g.index];const chosen=g.selected.map(id=>g.bank.find(x=>x.id===id));
  const chip=(x,inBank)=>{
   const zh=x.zh.replace(/[^\u3400-\u9fff]/gu,'');
@@ -1425,7 +1440,7 @@ function renderSentence(){
  };
  const answer=chosen.map(x=>chip(x,false)).join('');
  const tiles=g.bank.filter(x=>!g.selected.includes(x.id)).map(x=>chip(x,true)).join('');
- $('#game-panel').innerHTML=`${header('ПЕРЕВЕДИ И СОБЕРИ ПРЕДЛОЖЕНИЕ','Прочитай фразу по-русски. Составь естественное предложение из китайских слов, нажимая на плитки.',`ФРАЗА ${g.index+1}/${g.questions.length}`)}<div class="quiz-layout"><div class="progress-track"><div style="width:${100*g.index/g.questions.length}%"></div></div><div class="sentence-question"><span class="eyebrow">ПЕРЕВЕДИ НА КИТАЙСКИЙ</span><p>${esc(q.ru)}</p></div><div class="sentence-targets"><span>СЛОВА ЭТОГО УРОКА:</span> ${(q.targets||[]).map(zh=>`<button type="button" data-action="inspect" data-zh="${esc(zh)}" class="target-word">${esc(zh)} ◖))</button>`).join('')}</div><div class="sentence-subtitle">ТВОЙ ОТВЕТ ${g.hint?`· НАЧНИ С «${g.starts.map(esc).join('» ИЛИ «')}»`:''}</div><div class="sentence-answer" aria-label="Собранное предложение">${answer}${chosen.length?'':'<span class="sentence-placeholder">Нажимай на иероглифы ниже ↓</span>'}</div><div class="sentence-bank">${tiles}</div><div class="sentence-tip">Нажми плитку, чтобы добавить в ответ. «?» рядом со словом открывает его произношение и перевод по нажатию.</div><div class="sentence-controls"><button type="button" class="action-btn secondary" data-action="sentence-clear" ${g.done?'disabled':''}>ОЧИСТИТЬ</button><button type="button" class="action-btn secondary" data-action="sentence-hint" ${g.done?'disabled':''}>ПОДСКАЗКА</button><button type="button" class="action-btn" data-action="sentence-check" ${chosen.length!==g.bank.length||g.done?'disabled':''}>ПРОВЕРИТЬ →</button>${g.done?'<button type="button" class="action-btn" data-action="sentence-next">ДАЛЬШЕ →</button>':''}</div>${g.notice?`<div class="feedback ${g.done?'':'is-error'} stage-done">${g.done?`<div class="sentence-correct">${tapText(q.zh)} ${speakButton(q.zh,'Прослушать предложение')}</div><p>${esc(q.explain)} ${q.variants?.length>1?'Временное обстоятельство можно ставить перед или после подлежащего, но перед глаголом.':''}</p>`:`<strong>${esc(g.notice)}</strong>`}</div>`:''}<p class="audio-note">После правильного ответа предложение прозвучит по-китайски. Нажми на фразу, чтобы повторить.</p></div>`;
+ $('#game-panel').innerHTML=`${header('ПЕРЕВЕДИ И СОБЕРИ ПРЕДЛОЖЕНИЕ','Прочитай фразу по-русски. Составь естественное предложение из китайских слов, нажимая на плитки.',`ФРАЗА ${g.index+1}/${g.questions.length}`)}<div class="quiz-layout"><div class="progress-track"><div style="width:${100*g.index/g.questions.length}%"></div></div><div class="sentence-question"><span class="eyebrow">${q.source==='quest'?'ФРАЗА ИЗ КВЕСТА':'ФРАЗА К ИСТОРИИ И УРОКУ'}</span><p>${esc(q.ru)}</p></div><div class="sentence-targets"><span>СЛОВА ЭТОГО УРОКА:</span> ${(q.targets||[]).map(zh=>`<button type="button" data-action="inspect" data-zh="${esc(zh)}" class="target-word">${esc(zh)} ◖))</button>`).join('')}</div><div class="sentence-subtitle">ТВОЙ ОТВЕТ ${g.hint?`· НАЧНИ С «${g.starts.map(esc).join('» ИЛИ «')}»`:''}</div><div class="sentence-answer" aria-label="Собранное предложение">${answer}${chosen.length?'':'<span class="sentence-placeholder">Нажимай на иероглифы ниже ↓</span>'}</div><div class="sentence-bank">${tiles}</div><div class="sentence-tip">Нажми плитку, чтобы добавить в ответ. «?» рядом со словом открывает его произношение и перевод по нажатию.</div><div class="sentence-controls"><button type="button" class="action-btn secondary" data-action="sentence-clear" ${g.done?'disabled':''}>ОЧИСТИТЬ</button><button type="button" class="action-btn secondary" data-action="sentence-hint" ${g.done?'disabled':''}>ПОДСКАЗКА</button><button type="button" class="action-btn" data-action="sentence-check" ${chosen.length!==g.bank.length||g.done?'disabled':''}>ПРОВЕРИТЬ →</button>${g.done?'<button type="button" class="action-btn" data-action="sentence-next">ДАЛЬШЕ →</button>':''}</div>${g.notice?`<div class="feedback ${g.done?'':'is-error'} stage-done">${g.done?`<div class="sentence-correct">${tapText(q.zh)} ${speakButton(q.zh,'Прослушать предложение')}</div><p>${esc(q.explain)} ${q.variants?.length>1?'Временное обстоятельство можно ставить перед или после подлежащего, но перед глаголом.':''}</p>`:`<strong>${esc(g.notice)}</strong>`}</div>`:''}<p class="audio-note">После правильного ответа предложение прозвучит по-китайски. Нажми на фразу, чтобы повторить.</p></div>${questMissionBox()}`;
 }
 function sentenceAction(action,id){
  const g=state.game;const q=g.questions[g.index];if(!q)return;
@@ -1784,7 +1799,7 @@ function applyAccountProgress(progress) {
   if(state.lessons.length && !state.lessons.some(l=>l.id===state.lessonId))state.lessonId=state.lessons[0].id;
   state.game=null;
   save();
-  if(state.lessons.length) activateMode(state.progress.lastMode || 'story');
+  if(state.lessons.length) activateMode(state.progress.lastMode || 'words');
 }
 function onCloudIdentity(user) {
   state.cloudUserId=user?.id||null;
@@ -1793,7 +1808,7 @@ function onCloudIdentity(user) {
   if(state.lessons.length){
     if(!state.lessons.some(l=>l.id===state.lessonId))state.lessonId=state.lessons[0].id;
     state.game=null; // Prevent stale exercise state from the previous account.
-    activateMode(state.progress.lastMode || 'story');
+    activateMode(state.progress.lastMode || 'words');
   }
   renderAuthControls();
 }
@@ -1951,7 +1966,7 @@ async function bootstrap(){try{
  const rContext=await window.chineseLabLessonFetch('./data/context-glossary.json');state.contextWords=rContext.ok?await rContext.json():[];
  if(!state.lessons.some(l=>l.id===state.lessonId))state.lessonId=state.lessons[0]?.id||1;
  $('#hero-lessons').textContent=`${state.lessons.map(l=>String(l.id).padStart(2,'0')).join('—')} / УРОКИ В ПРОГРАММЕ`;
- activateMode(state.progress.lastMode || 'story');
+ activateMode(state.progress.lastMode || 'words');
  await ChineseLabCloud.init({
   getProgress:()=>state.progress,
   getGuestProgress:()=>ChineseLabProgress.load(progressDefaults),

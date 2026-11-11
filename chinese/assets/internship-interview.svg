@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 620" role="img" aria-label="我去应聘了 · 面试准备">
+<style>
+text{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;fill:#192019}
+.title{font-size:31px;font-weight:700}.label{font-size:25px;font-weight:650}.small{font-size:18px}.tiny{font-size:15px}
+.line{stroke:#192019;stroke-width:3;stroke-linejoin:round;stroke-linecap:round}.thin{stroke:#192019;stroke-width:1.8}
+</style>
+<rect width="1080" height="620" fill="#f8f9f4"/>
+<rect width="1080" height="104" fill="#e9ece3"/>
+<text x="43" y="65" class="title">我去应聘了 · 面试准备</text><text x="880" y="62" class="small">15 / 02</text>
+<path d="M38 105H1040" class="line"/>
+<!-- invitation SMS -->
+<rect x="98" y="167" width="315" height="223" rx="13" fill="#fff" class="line"/>
+<rect x="119" y="188" width="276" height="53" rx="7" fill="#d9f55e" class="thin"/>
+<text x="183" y="224" class="label">短信</text>
+<rect x="144" y="266" width="224" height="81" rx="12" fill="#e8efe0" class="thin"/>
+<text x="161" y="300" class="small">明天上午十点</text>
+<text x="169" y="329" class="label">面试</text>
+<!-- preparation notes -->
+<rect x="449" y="171" width="266" height="225" rx="14" fill="#fff" class="line"/>
+<rect x="468" y="191" width="229" height="52" rx="6" fill="#d9f55e" class="thin"/>
+<text x="523" y="226" class="label">答案</text>
+<text x="478" y="280" class="small">自我介绍</text>
+<path d="M473 304H690M473 329H690M473 354H629" class="thin"/>
+<circle cx="666" cy="352" r="15" fill="#d9f55e" class="thin"/>
+<text x="662" y="360" class="small">?</text>
+<!-- mirror for rehearsal -->
+<rect x="775" y="164" width="240" height="267" rx="113" fill="#e5ece7" class="line"/>
+<ellipse cx="895" cy="284" rx="60" ry="70" fill="#fff7e9" class="line"/>
+<path d="M835 268Q849 205 897 216Q950 211 957 268L948 259Q895 232 843 260Z" fill="#313c37" class="line"/>
+<path d="M813 423Q815 355 891 353Q970 354 980 423" fill="#9abca7" class="line"/>
+<text x="864" y="480" class="label">镜子</text>
+<!-- extra task cue, near lower-left -->
+<rect x="155" y="464" width="366" height="104" rx="11" fill="#edf1e8" class="thin"/>
+<text x="183" y="510" class="label">先准备，再练习</text>
+<text x="183" y="543" class="small">注意细节</text>
+<path d="M39 585H1040" class="thin"/>
+<text x="63" y="611" class="small">检查短信、问题，再练习自我介绍。</text>
+</svg>

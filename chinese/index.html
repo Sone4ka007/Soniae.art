@@ -748,6 +748,8 @@ function restoreActiveSession(mode) {
   const snapshot = ChineseLabSessions.restore(state.progress, state.lessonId, mode, lesson());
   // Quest content versions change when scenes or mnemonic interactions change.
   // An older snapshot is incompatible; XP and completed vocabulary are retained.
+  // Do not resume the old generic image after replacing lesson 1 with author art.
+  if (snapshot && mode === 'sceneMatch' && state.lessonId === 1 && snapshot.artVersion !== 1) return;
   if (snapshot && (mode !== 'story' || snapshot.questSchema === lesson().quest.schemaVersion)) state.game = snapshot;
 }
 state.progress.saved ||= {}; state.progress.srs ||= {};
@@ -1925,6 +1927,14 @@ document.addEventListener('click', event => {
  case 'sentence-add':case 'sentence-remove':case 'sentence-clear':case 'sentence-hint':case 'sentence-check':case 'sentence-next':sentenceAction(action,btn.dataset.id);break;
  case 'scene-spot':case 'scene-word':case 'scene-hint':
    ChineseLabSceneMatch.action(action,btn,state.game,{award,miss,speech,render:renderSceneMatch});break;
+ case 'scene-next':
+   if (state.mode === 'sceneMatch' && state.lessonId === 1 &&
+       state.game?.artVersion === 1 && state.game.artRound === 0 &&
+       state.game.matched.length === state.game.pairs.length) {
+     state.game = ChineseLabSceneMatch.init(lesson(), 1);
+     renderSceneMatch();
+   }
+   break;
  case 'pair':pairPick(btn.dataset.side,btn.dataset.id);break;
  case 'quiz-pick':quizPick(Number(btn.dataset.index));break;
  case 'quiz-analyze':{const g=state.game;const i=Number(btn.dataset.index);g.analysisIndex=g.analysisIndex===i?-1:i;renderQuiz();break;}

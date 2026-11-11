@@ -154,47 +154,13 @@
 
   function characterGuide(u) {
     const info = characterData?.[u.char];
-    if (!characterData) return '<p class="writing-guide-note">Загружаем разбор компонентов…</p>';
-    if (!info) return '<p class="writing-guide-note">Проверенных данных о составе этого знака пока нет.</p>';
-    const raw = String(info.decomposition || '');
-    const valid = raw && !raw.startsWith('？');
-    const knownPieces = valid ? Array.from(raw).filter(c => !compositionNames[c] && c !== '？') : [];
-    const pieces = knownPieces.length ? '<div class="writing-components">' + knownPieces.map(c =>
-      '<span class="writing-component"><b lang="zh-CN">' + safe(c) + '</b><small>' +
-      safe(componentNames[c] || 'компонент') + '</small></span>').join('') + '</div>' : '';
-    const layout = compositionNames[Array.from(raw)[0]];
-    const etym = info.etymology || {};
-    let historical = '';
-    if (etym.type === 'pictophonetic') {
-      historical = 'По словарю, это смысло-звуковой знак.';
-      if (etym.semantic) historical += ' Смысловой компонент: ' + etym.semantic +
-        (componentNames[etym.semantic] ? ' (' + componentNames[etym.semantic] + ')' : '') + '.';
-      if (etym.phonetic) historical += ' Фонетический компонент: ' + etym.phonetic +
-        '. Современное произношение может отличаться.';
-    } else if (etym.type === 'ideographic') {
-      historical = 'Источник относит знак к смысловым образованиям. Значение может объясняться сочетанием частей.';
-    } else if (etym.type === 'pictographic') {
-      historical = 'Источник относит знак к пиктограммам: его ранние формы представляли изображение.';
-    } else {
-      historical = 'Источник не даёт надёжной классификации происхождения этого знака.';
-    }
-    return '<h4>ИЗ ЧЕГО СОСТОИТ</h4>' +
-      (valid ? '<div class="writing-ids"><span lang="zh-CN">' + safe(raw) + '</span>' +
-        (layout ? '<small>' + safe(layout) + '</small>' : '') +
-        (raw.includes('？') ? '<small>часть структуры пока не определена</small>' : '') + '</div>' + pieces
-        : '<p class="writing-guide-note">Для этого знака нет полного подтверждённого разложения.</p>') +
-      '<p class="writing-guide-note">Словарный ключ: <strong lang="zh-CN">' +
-      safe(info.radical || '—') + '</strong>. Ключ не всегда равен смысловой части.</p>' +
-      '<h4>ПРОИСХОЖДЕНИЕ · ПОДСКАЗКА</h4>' +
-      '<p>' + safe(historical) + '</p>' +
-      (memoryCues[u.char] ? '<p class="writing-memory"><strong>Как запомнить:</strong> ' +
-        safe(memoryCues[u.char]) + '</p>' : '') +
-      (etym.hint ? '<details class="writing-source"><summary>Комментарий источника (англ.)</summary>' +
-        '<p>' + safe(etym.hint) + '</p></details>' : '') +
-      '<p class="writing-guide-foot">Графический состав не всегда совпадает с исторической этимологией. ' +
-      'Источник: <a href="https://github.com/skishore/makemeahanzi" target="_blank" rel="noopener noreferrer">Make Me a Hanzi</a>.</p>';
+    if (!characterData) return '<p class="writing-guide-note">Загружаем русский разбор иероглифа…</p>';
+    if (!global.ChineseLabWritingGuideRU) return '<p class="writing-guide-note">Словарь пока недоступен. Попробуй обновить страницу.</p>';
+    const currentWord = current()?.word;
+    return global.ChineseLabWritingGuideRU.render(u.char, info || null, {
+      lessons: ctx.state.lessons, lessonId: currentWord?.lesson || ctx.state.lessonId
+    });
   }
-
 
   function loadLibrary() {
     if (global.HanziWriter) return Promise.resolve(global.HanziWriter);

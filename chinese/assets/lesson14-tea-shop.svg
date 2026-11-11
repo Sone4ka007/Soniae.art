@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 620" role="img" aria-label="茶叶店 · 选茶">
+<style>
+text{font-family:"Noto Sans CJK SC","Microsoft YaHei","PingFang SC",sans-serif;fill:#151a16}
+.heading{font-size:29px;font-weight:700}.label{font-size:23px;font-weight:700}.sub{font-size:17px}
+.outline{stroke:#172019;stroke-width:4;stroke-linejoin:round;stroke-linecap:round}
+.line{stroke:#172019;stroke-width:2;stroke-linejoin:round}
+</style>
+<rect width="1080" height="620" fill="#f7f8f2"/>
+<rect width="1080" height="102" fill="#e9ede4"/>
+<text x="44" y="63" class="heading">茶叶店 · 选茶</text>
+<text x="812" y="61" class="sub">第14课 / 01</text>
+<path d="M34 104H1041" class="outline"/>
+<!-- left: display for tea choices -->
+<rect x="95" y="161" width="327" height="227" rx="14" fill="#fffefa" class="outline"/>
+<rect x="121" y="182" width="278" height="51" rx="7" fill="#d9f55e" class="line"/>
+<text x="206" y="218" class="label">茶叶</text>
+<rect x="137" y="253" width="107" height="104" rx="14" fill="#d5e0bc" class="outline"/>
+<rect x="258" y="253" width="104" height="104" rx="14" fill="#c99c73" class="outline"/>
+<path d="M137 283H244M258 283H362" class="line"/>
+<text x="149" y="327" class="label">绿茶</text>
+<text x="269" y="327" class="label">红茶</text>
+<!-- scale center -->
+<rect x="455" y="186" width="248" height="206" rx="12" fill="#fff" class="outline"/>
+<path d="M485 274H679M584 222V355M506 288L474 344H536ZM653 288L622 344H685Z" class="outline" fill="none"/>
+<rect x="525" y="348" width="118" height="40" rx="8" fill="#d9f55e" class="line"/>
+<text x="554" y="378" class="label">六两</text>
+<text x="529" y="211" class="sub">茶叶重量</text>
+<!-- gift boxes right -->
+<rect x="765" y="211" width="236" height="154" rx="14" fill="#e7d8bc" class="outline"/>
+<rect x="751" y="187" width="265" height="53" rx="8" fill="#d9f55e" class="outline"/>
+<path d="M877 191V363" class="outline"/>
+<path d="M846 186C820 175 825 151 847 155C863 156 875 177 877 188M904 186C932 171 920 148 900 158C886 165 879 184 877 188" fill="none" class="outline"/>
+<text x="796" y="307" class="label">盒子</text>
+<!-- small seller with tea sample lower center -->
+<rect x="340" y="439" width="372" height="133" rx="13" fill="#f1f3ec" class="line"/>
+<ellipse cx="452" cy="516" rx="75" ry="25" fill="#fff" class="outline"/>
+<ellipse cx="452" cy="512" rx="56" ry="17" fill="#acc886" class="line"/>
+<path d="M407 510Q435 480 454 514Q478 484 501 511" fill="none" stroke="#486b32" stroke-width="6"/>
+<text x="558" y="506" class="label">顾客</text>
+<text x="551" y="542" class="sub">闻一闻</text>
+<path d="M38 591H1041" class="line"/>
+<text x="45" y="612" class="sub">比较茶叶种类、重量和盒子，然后决定买什么。</text>
+</svg>

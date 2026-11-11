@@ -1,5 +1,5 @@
 /* HSK4 Chinese lab — scoped offline support. Network-first keeps course data fresh. */
-const CACHE_NAME = 'hsk4-chinese-lab-pwa-v18';
+const CACHE_NAME = 'hsk4-chinese-lab-pwa-v19';
 const CORE_URLS = [
   "/chinese/",
   "/chinese/index.html",
@@ -19,6 +19,8 @@ const CORE_URLS = [
   "/chinese/js/pinyin-chars.js",
   "/chinese/js/sentence-tiles.js",
   "/chinese/js/exercise-sessions.js",
+  "/chinese/js/object-match.js?v=20261111-1",
+  "/chinese/css/object-match.css?v=20261111-1",
   "/chinese/js/quest-mnemonics.js?v=20261109-2",
   "/chinese/js/quest-roleplay.js?v=20261110-4",
   "/chinese/js/quest-roleplay-extended.js?v=20261110-3",

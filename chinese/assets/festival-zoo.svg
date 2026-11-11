@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 620" role="img" aria-label="动物园 / 找老虎">
+<style>
+text{font-family:"Noto Sans CJK SC","PingFang SC","Microsoft YaHei",sans-serif;fill:#181c17}
+.title{font-size:30px;font-weight:700}.label{font-size:22px;font-weight:600}.small{font-size:17px}
+.stroke{stroke:#1c211a;stroke-width:4;stroke-linejoin:round;stroke-linecap:round}
+.line{stroke:#1c211a;stroke-width:2;stroke-linejoin:round;stroke-linecap:round}
+</style>
+<rect width="1080" height="620" fill="#f7f8f3"/>
+<rect width="1080" height="99" fill="#ebeee5"/>
+<text x="42" y="60" class="title">动物园 / 找老虎</text>
+<text x="795" y="60" class="small">美好的日子 · 01</text>
+<path d="M40 104H1040" class="stroke" fill="none"/>
+<!-- map: x 90-395, y 160-365 -->
+<rect x="102" y="159" width="306" height="223" rx="14" fill="#fff" class="stroke"/>
+<rect x="123" y="179" width="262" height="49" rx="7" fill="#d9f55e"/>
+<text x="159" y="211" class="label">景区地图</text>
+<path d="M143 337C181 282 237 340 270 286S347 278 370 316" fill="none" stroke="#8fbb65" stroke-width="24" stroke-linecap="round"/>
+<path d="M143 337C181 282 237 340 270 286S347 278 370 316" fill="none" stroke="#27362a" stroke-width="3" stroke-dasharray="9 9"/>
+<circle cx="177" cy="309" r="14" fill="#d9f55e" class="line"/>
+<circle cx="341" cy="294" r="14" fill="#d9f55e" class="line"/>
+<text x="147" y="363" class="small">树 林</text>
+<!-- warning rules: 427-710 -->
+<rect x="431" y="156" width="270" height="220" rx="14" fill="#fff" class="stroke"/>
+<rect x="455" y="181" width="224" height="56" rx="8" fill="#d9f55e"/>
+<text x="501" y="217" class="label">安全</text>
+<circle cx="489" cy="284" r="25" fill="#fff" class="stroke"/>
+<path d="M474 296L507 269M480 274l23 21" class="stroke" fill="none"/>
+<text x="532" y="283" class="label">千万别下车</text>
+<text x="532" y="329" class="small">不要大声喊</text>
+<!-- tiger -->
+<rect x="753" y="167" width="262" height="236" rx="14" fill="#e9eee1" class="stroke"/>
+<path d="M778 304C783 240 824 224 865 254C910 224 970 248 980 316V356H784Z" fill="#edb978" class="stroke"/>
+<path d="M810 266L830 310M858 258L855 306M908 262L891 309M954 272L927 316" class="stroke" fill="none"/>
+<path d="M791 250L803 218L833 244M943 249L965 217L984 253" fill="#edb978" class="stroke"/>
+<circle cx="841" cy="317" r="7" fill="#222"/><circle cx="916" cy="317" r="7" fill="#222"/>
+<path d="M873 336L888 337L880 348Z" fill="#222"/>
+<text x="821" y="385" class="label">东北虎</text>
+<!-- bear and scenery -->
+<rect x="125" y="420" width="309" height="145" rx="12" fill="#ecf0e5" class="line"/>
+<path d="M182 509C171 488 185 462 208 470C225 449 258 453 274 474C307 476 320 496 307 528H185Z" fill="#977b60" class="stroke"/>
+<circle cx="207" cy="470" r="14" fill="#977b60" class="stroke"/><circle cx="264" cy="465" r="14" fill="#977b60" class="stroke"/>
+<circle cx="220" cy="495" r="4" fill="#181c17"/><circle cx="274" cy="495" r="4" fill="#181c17"/>
+<text x="329" y="519" class="label">熊</text>
+<path d="M499 518L520 458L541 518ZM586 518L612 435L638 518ZM692 518L716 465L742 518Z" fill="#bed9a4" class="stroke"/>
+<text x="485" y="552" class="label">树林</text>
+<path d="M37 582H1040" class="line"/>
+<text x="55" y="606" class="small">先找地图，再看规则。不要下车。</text>
+</svg>

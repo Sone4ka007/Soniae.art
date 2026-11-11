@@ -38291,7 +38291,7 @@
       "reviewed_at": "2026-10-17",
       "availability": "unknown",
       "availability_checked_at": "",
-      "registration": false,
+      "registration": null,
       "price": null,
       "price_text": "",
       "price_type": "paid",
@@ -38317,7 +38317,7 @@
         "status": "approved",
         "telegram_include": false,
         "instagram_include": false,
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -41054,7 +41054,7 @@
       "address": "1-й Голутвинский переулок, 16, стр. 1",
       "price": 850,
       "price_text": "850 ₽; льготный — 650 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -41081,7 +41081,7 @@
       "time_evidence": "24 октября 2026 14:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
       "editor_overrides": {
-        "registration": false
+        "registration": null
       }
     },
     {
@@ -49427,7 +49427,7 @@
       "address": "Лаврушинский переулок, 12",
       "price": 650,
       "price_text": "650 ₽; онлайн — 700 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -49444,7 +49444,7 @@
         "telegram_include": false,
         "instagram_include": false,
         "status": "approved",
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -51674,14 +51674,16 @@
       "price": 0,
       "price_text": "",
       "registration": false,
-      "categories": [],
+      "categories": [
+        "выставка"
+      ],
       "description": "На метро Музей AZ находится между станциями метро «Маяковская» и «Белорусская» (кольцевая). Мы рекомендуем идти в Музей от станции «Маяковская». Вам нужен Выход №1 на 1-я Тверская-Ямская улица, 2-я Тверская-Ямская улица.",
       "url": "https://museum-az.com/event/territoriya-svobody-nonkonformisty-v-taruse/",
       "source": "Музей AZ — выставки и события",
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-10-20",
-      "price_type": "paid",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-10-25",
       "editor_overrides": {
@@ -52951,7 +52953,7 @@
       "title": "Коллективная выставка Арт-шаффл 43.0",
       "venue": "ЦСИ Винзавод",
       "address": "",
-      "price": 0,
+      "price": 1800,
       "price_text": "12000 ₽",
       "registration": null,
       "categories": [
@@ -52965,7 +52967,7 @@
       "discovered_at": "2026-11-03",
       "start_date": "2026-11-03",
       "end_date": "2026-11-15",
-      "price_type": "free",
+      "price_type": "paid",
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
@@ -55219,7 +55221,7 @@
       "address": "",
       "price_type": "free",
       "price_text": "бесплатно по регистрации",
-      "registration": false,
+      "registration": true,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -57133,7 +57135,7 @@
       "address": "",
       "price_type": "free",
       "price_text": "бесплатно по регистрации",
-      "registration": false,
+      "registration": true,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -59544,6 +59546,35 @@
       }
     },
     {
+      "id": "spb-2026-11-11-e634be59ed",
+      "status": "new",
+      "kind": "exhibition",
+      "city": "spb",
+      "date": "2026-11-11",
+      "time": "",
+      "title": "«Розмысл сердечный» - выставка к 120-летию Дмитрия Лихачёва открывается в Комарово",
+      "venue": "",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [
+        "выставка"
+      ],
+      "description": "20 ноября в музее «Келломяки-Комарово» открывается выставка «Розмысл сердечный: к 120-летию Д. Выставка посвящена выдающемуся советскому и российскому филологу, культурологу, искусствоведу, внёсшему огромный вклад в изучение древнерусской литературы.",
+      "url": "https://spbcult.ru/news/anonsy/rozmysl-serdechnyy-vystavka-k-120-letiyu-dmitriya-likhachyeva-otkryvaetsya-v-komarovo/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-11",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "start_date": "2026-11-11"
+    },
+    {
       "id": "spb-2026-11-11-8bf6f09ff1",
       "status": "new",
       "kind": "event",
@@ -59561,6 +59592,64 @@
       ],
       "description": "Правообладатель фото: пресс-служба ЦБС Василеостровского района. Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами!",
       "url": "https://spbcult.ru/news/anonsy/biblioteka-tolstogo-prevratitsya-v-remeslennuyu-masterskuyu-/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-11",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
+    },
+    {
+      "id": "spb-2026-11-11-f360b88582",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-11",
+      "time": "",
+      "title": "В Мальтийской капелле исполнят Баха и Сибелиуса",
+      "venue": "",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [
+        "диалог"
+      ],
+      "description": "Правообладатель: Международный Музыкальный Конкурс Форте Форум. В начале творческой карьеры Ян Сибелиус создавал камерные сочинения. Однако в период обучения в Вене молодой финский композитор познакомился с симфоническими творениями своих современников и решил последовать их примеру — писать для оркестра.",
+      "url": "https://spbcult.ru/news/anonsy/v-maltiyskoy-kapelle-ispolnyat-bakha-i-sibeliusa-/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-11",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "spb-2026-11-11-846720d3b2",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-11",
+      "time": "",
+      "title": "В Петербурге презентуют альбом об императорском балете",
+      "venue": "",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [
+        "презентация"
+      ],
+      "description": "18 ноября в Президентской библиотеке состоится презентация нового издания Академии русского балета имени Вагановой «Балет в дни коронации Николая I», посвящённого 250-летию Большого театра России.",
+      "url": "https://spbcult.ru/news/anonsy/v-peterburge-prezentuyut-albom-ob-imperatorskom-balete/",
       "source": "Петербургский дневник культуры — анонсы",
       "checked_at": "",
       "review_reason": "",
@@ -59595,7 +59684,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-11-51f13df091",
@@ -59611,7 +59702,7 @@
       "price_text": "Бесплатно",
       "registration": null,
       "categories": [],
-      "description": "Дискуссионный клуб молодых поэтов «Кашалот» 16+ 11 ноября 2026 (среда) 19:00 Зал «Музыкальный подвал» Вход свободный 2026-11-11 19:00 2026-11-11 19:00 Europe/Moscow Дискуссионный клуб молодых поэтов «Кашалот» На ноябрьском заседании поговорим о том, зачем поэтам бумажные книги РГБМ, Зал «Музыкальный подвал» РГБМ info@rgub.ru На ноябрьском заседании поговорим о том, зачем поэтам бумажные книги Попытаемся разобраться, почему в нашу эпоху поэты всё реже издают бумажные книги? Также выясним, может ли бездушный экран окончательно заменить шелест страниц и сколько стоит сегодня издать поэтический сборник? «Кашалот» — совместный проект Союза литераторов России и РГБМ. Ведущий: Дмитрий Ерохин, поэт, член Правления Союза литераторов России",
+      "description": "Дискуссионный клуб молодых поэтов «Кашалот» 16+ 11 ноября 2026 (среда) 19:00 Зал «Музыкальный подвал» Вход свободный На ноябрьском заседании поговорим о том, зачем поэтам бумажные книги Попытаемся разобраться, почему в нашу эпоху поэты всё реже издают бумажные книги? Также выясним, может ли бездушный экран окончательно заменить шелест страниц и сколько стоит сегодня издать поэтический сборник? «Кашалот» — совместный проект Союза литераторов России и РГБМ. Ведущий: Дмитрий Ерохин, поэт, член Правления Союза литераторов России",
       "url": "https://rgub.ru/schedule/item.php?new_id=49775",
       "source": "Российская государственная библиотека для молодёжи — афиша",
       "checked_at": "",
@@ -59805,7 +59896,7 @@
       "categories": [
         "встреча"
       ],
-      "description": "Мой внутренний дом: где я чувствую себя собой? 18+ 11 ноября 2026 (среда) 19:30 Малый зал (Вход № 2) Вход свободный 2026-11-11 19:30 2026-11-11 19:30 Europe/Moscow Мой внутренний дом: где я чувствую себя собой? Встреча клуба #ВгостяхУдядюшкиЮнга РГБМ, Малый зал (Вход № 2) РГБМ info@rgub.ru Встреча клуба #ВгостяхУдядюшкиЮнга У каждого из нас есть места, люди и обстоятельства, рядом с которыми проще быть собой. Но ощущение «я дома» связано не только с конкретным местом или другими людьми. Постепенно мы создаём и внутреннее пространство — собственные правила, ценности, границы, привычные способы поддерживать себя и то отношение к себе, к которому можем возвращаться в сложные периоды. Иногда этот внутренний дом устойчив. Но порой мы замечаем, насколько сильно наше состояние зависит от внешнего одобрения, отношений, обстоятельств или ощущения. Будем исследовать: что для нас означает чувствовать себя «дома» — не только физически, но и психологически; рядом с кем и в каких обстоятельствах нам легче оставаться собой; из чего складывается ощущение внутренней устойчивости и принадлежности самому себе; что происходит, когда мы слишком сильно ориентируемся на ожидания и оценки окружающих; какие отношения, правила, привычки и способы обращаться с собой создают наше собственное внутреннее пространство. Через психологические упражнения и обсуждение попробуем рассмотреть свой «внутренний дом»: что в нём уже есть, чего не хватает и что помогает возвращаться к себе, когда внешние обстоятельства меняются. Ведущая: Мария Ефимова, психолог РГБМ, основатель психологического клуба #ВгостяхУдядюшкиЮнга",
+      "description": "Мой внутренний дом: где я чувствую себя собой? 18+ 11 ноября 2026 (среда) 19:30 Малый зал (Вход № 2) Вход свободный Встреча клуба #ВгостяхУдядюшкиЮнга У каждого из нас есть места, люди и обстоятельства, рядом с которыми проще быть собой. Но ощущение «я дома» связано не только с конкретным местом или другими людьми. Постепенно мы создаём и внутреннее пространство — собственные правила, ценности, границы, привычные способы поддерживать себя и то отношение к себе, к которому можем возвращаться в сложные периоды. Иногда этот внутренний дом устойчив. Но порой мы замечаем, насколько сильно наше состояние зависит от внешнего одобрения, отношений, обстоятельств или ощущения. Будем исследовать: что для нас означает чувствовать себя «дома» — не только физически, но и психологически; рядом с кем и в каких обстоятельствах нам легче оставаться собой; из чего складывается ощущение внутренней устойчивости и принадлежности самому себе; что происходит, когда мы слишком сильно ориентируемся на ожидания и оценки окружающих; какие отношения, правила, привычки и способы обращаться с собой создают наше собственное внутреннее пространство. Через психологические упражнения и обсуждение попробуем рассмотреть свой «внутренний дом»: что в нём уже есть, чего не хватает и что помогает возвращаться к себе, когда внешние обстоятельства меняются. Ведущая: Мария Ефимова, психолог РГБМ, основатель психологического клуба #ВгостяхУдядюшкиЮнга",
       "url": "https://rgub.ru/schedule/item.php?new_id=49776",
       "source": "Российская государственная библиотека для молодёжи — афиша",
       "checked_at": "",
@@ -59845,7 +59936,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-11-a09cc1df72",
@@ -59857,8 +59950,8 @@
       "title": "На канале Грибоедова откроют «Остров Траугот»",
       "venue": "",
       "address": "",
-      "price": null,
-      "price_text": "",
+      "price": 0,
+      "price_text": "Бесплатно",
       "registration": null,
       "categories": [
         "выставка"
@@ -59869,12 +59962,40 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-11-11",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
       "availability_checked_at": "",
-      "start_date": "2026-11-11"
+      "start_date": "2026-11-11",
+      "editor_note": "",
+      "reviewed_at": ""
+    },
+    {
+      "id": "spb-2026-11-11-39e247098d",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-11",
+      "time": "",
+      "title": "Наши события",
+      "venue": "Международная школа дизайна — Петербург",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "Преподаватель Международной Школы Дизайна Ольга Владимировна Горичева рассказала РБК о том, как сад влияет на состояние человека и почему в городской среде так важно возвращать контакт с природой. Эксперт объяснила, что в мегаполисе человек часто перестает замечать то, что его окружает, и это приводит к «природной слепоте».",
+      "url": "https://spb.designschool.ru/category/lifeschool/",
+      "source": "Международная школа дизайна — Петербург",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-11",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "spb-2026-11-11-74d1c43255",
@@ -59903,7 +60024,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-11-c989c3b8ef",
@@ -59947,6 +60070,34 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
+      "id": "spb-2026-11-11-b91f90775d",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-11",
+      "time": "",
+      "title": "Преподаватель МШД о причинах роста спроса на ландшафтный дизайн",
+      "venue": "Международная школа дизайна — Петербург",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "Преподаватель Международной Школы Дизайна Ольга Владимировна Горичева рассказала РБК о том, как сад влияет на состояние человека и почему в городской среде так важно возвращать контакт с природой. Эксперт объяснила, что в мегаполисе человек часто перестает замечать то, что его окружает, и это приводит к «природной слепоте».",
+      "url": "https://spb.designschool.ru/2026/11/11/prepodavatel-mshd-o-prichinax-rosta-sprosa-na-landshaftnyj-dizajn/",
+      "source": "Международная школа дизайна — Петербург",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-11",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "spb-2026-11-11-b7539b75ea",
       "status": "new",
       "kind": "event",
@@ -59956,8 +60107,8 @@
       "title": "Стала известна программа фестиваля «Вечера с Петром Великим» — 2026",
       "venue": "",
       "address": "",
-      "price": null,
-      "price_text": "",
+      "price": 0,
+      "price_text": "Бесплатно",
       "registration": null,
       "categories": [
         "лекция"
@@ -59968,11 +60119,13 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-11-11",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-11-45f410b488",
@@ -59984,8 +60137,8 @@
       "title": "Театр имени Ленсовета покажет четыре спектакля с тифлокомментированием",
       "venue": "",
       "address": "",
-      "price": null,
-      "price_text": "",
+      "price": 0,
+      "price_text": "Бесплатно",
       "registration": null,
       "categories": [
         "встреча"
@@ -59996,11 +60149,13 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-11-11",
-      "price_type": "unknown",
+      "price_type": "free",
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-11-eb8c6a6c36",
@@ -60025,6 +60180,34 @@
       "review_reason": "excluded_tour_mediation",
       "discovered_at": "2026-11-11",
       "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "spb-2026-11-11-aa66a1a5c3",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-11",
+      "time": "",
+      "title": "Филармония представит российскую премьеру «Полифония Сан-Франциско» Лигети",
+      "venue": "",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "13 ноября в Филармонии впервые в России прозвучит сочинение «Полифония Сан-Франциско» Дьёрдя Лигети - широкой публике он известен в первую очередь как автор музыки, звучащей в фильмах Стэнли Кубрика «Космическая одиссея 2001 года» и «Сияние».",
+      "url": "https://spbcult.ru/news/anonsy/filarmoniya-predstavit-rossiyskuyu-premeru-polifoniya-san-frantsisko-ligeti-/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-11",
+      "price_type": "free",
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
@@ -60094,7 +60277,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-11-994b6bdb08",
@@ -60110,7 +60295,7 @@
       "price_text": "",
       "registration": null,
       "categories": [],
-      "description": "Этнографический диктант — 2026 16+ 11 ноября 2026 (среда) 15:00 Малый зал (Вход № 2) Необходима регистрация 2026-11-11 15:00 2026-11-11 15:00 Europe/Moscow Этнографический диктант — 2026 Проверьте свои знания о народах России РГБМ, Малый зал (Вход № 2) РГБМ info@rgub.ru Проверьте свои знания о народах России В этом году просветительская акция пройдёт в одиннадцатый раз. Присоединиться к ней можно в РГБМ. Акция приурочена к Году единства народов России и направлена на знакомство с культурой, традициями, языками и историей народов нашей страны. Принять участие может любой желающий независимо от образования, национальности и места проживания. Участникам предстоит ответить на вопросы за 45 минут. Максимальный результат — 100 баллов. Правильные ответы опубликуют 13 ноября, а итоги акции подведут 12 декабря — в День Конституции Российской Федерации. Регистрируйтесь здесь . Количество мест ограничено.",
+      "description": "Этнографический диктант — 2026 16+ 11 ноября 2026 (среда) 15:00 Малый зал (Вход № 2) Необходима регистрация Проверьте свои знания о народах России В этом году просветительская акция пройдёт в одиннадцатый раз. Присоединиться к ней можно в РГБМ. Акция приурочена к Году единства народов России и направлена на знакомство с культурой, традициями, языками и историей народов нашей страны. Принять участие может любой желающий независимо от образования, национальности и места проживания. Участникам предстоит ответить на вопросы за 45 минут. Максимальный результат — 100 баллов. Правильные ответы опубликуют 13 ноября, а итоги акции подведут 12 декабря — в День Конституции Российской Федерации. Регистрируйтесь здесь . Количество мест ограничено.",
       "url": "https://rgub.ru/schedule/item.php?new_id=50129",
       "source": "Российская государственная библиотека для молодёжи — афиша",
       "checked_at": "",
@@ -60125,80 +60310,61 @@
       "reviewed_at": ""
     },
     {
-      "id": "moscow-2026-10-25-c40e7952b7",
-      "status": "rejected",
-      "kind": "event",
-      "city": "moscow",
+      "id": "spb-2026-11-11-29dc36dec2",
+      "status": "new",
+      "kind": "exhibition",
+      "city": "spb",
       "date": "2026-11-11",
-      "time": "10:00",
-      "title": "Воркшопы",
-      "venue": "ЦСИ Винзавод",
+      "time": "",
+      "title": "Юбилейная выставка Павла Маркина открывается в РОСФОТО",
+      "venue": "",
       "address": "",
       "price": 0,
       "price_text": "Бесплатно",
-      "registration": false,
+      "registration": null,
       "categories": [
-        "лекция"
+        "выставка"
       ],
-      "description": "",
-      "url": "https://www.winzavod.ru/calendar/workshops/",
-      "source": "ЦСИ Винзавод",
+      "description": "20 ноября центр РОСФОТО представит юбилейную выставку Павла Михайловича Маркина — легендарного петербургского фотокорреспондента. Проект охватывает более 70 лет его работы — от самого раннего сохранившегося снимка 1952 года. Это непрерывная хроника времени, созданная одним автором.",
+      "url": "https://spbcult.ru/news/anonsy/yubileynaya-vystavka-pavla-markina-otkryvaetsya-v-rosfoto/",
+      "source": "Петербургский дневник культуры — анонсы",
       "checked_at": "",
       "review_reason": "",
-      "discovered_at": "2026-10-25",
+      "discovered_at": "2026-11-11",
       "price_type": "free",
       "availability_evidence": "",
-      "ticket_required": true,
+      "ticket_required": false,
       "availability": "unknown",
       "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false,
-        "status": "rejected"
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": "2026-10-27"
+      "start_date": "2026-11-11"
     },
     {
-      "id": "moscow-2026-10-25-fefbfbd35d",
-      "status": "rejected",
+      "id": "spb-2026-11-11-20e0ca020d",
+      "status": "new",
       "kind": "event",
-      "city": "moscow",
+      "city": "spb",
       "date": "2026-11-11",
-      "time": "10:00",
-      "title": "Курсы",
-      "venue": "ЦСИ Винзавод",
+      "time": "10:30",
+      "title": "В «Заневском» пройдут бесплатные показы ко Дню матери",
+      "venue": "",
       "address": "",
       "price": 0,
       "price_text": "Бесплатно",
-      "registration": false,
+      "registration": null,
       "categories": [
-        "лекция"
+        "программа"
       ],
-      "description": "",
-      "url": "https://www.winzavod.ru/calendar/course/",
-      "source": "ЦСИ Винзавод",
+      "description": "Правообладатель фото: Пресс-служба кинотеатре «Заневский». Советская лирическая комедия режиссёров Анатолия Эфроса и Георгия Натансона, снятая по пьесе Виктора Розова «В поисках радости». Большая московская семья: мать и четверо взрослых детей, чья привычная жизнь нарушается после женитьбы старшего сына.",
+      "url": "https://spbcult.ru/news/anonsy/v-zanevskom-proydut-besplatnye-pokazy-ko-dnyu-materi-/",
+      "source": "Петербургский дневник культуры — анонсы",
       "checked_at": "",
       "review_reason": "",
-      "discovered_at": "2026-10-25",
+      "discovered_at": "2026-11-11",
       "price_type": "free",
       "availability_evidence": "",
-      "ticket_required": true,
+      "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false,
-        "status": "rejected"
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": "2026-10-27"
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-11-d4ed4734f6",
@@ -60342,43 +60508,6 @@
       "ticket_required": false,
       "availability": "unknown",
       "availability_checked_at": "",
-      "editor_note": "",
-      "reviewed_at": ""
-    },
-    {
-      "id": "moscow-2026-11-11-82baaa4f1a",
-      "status": "new",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-11-11",
-      "time": "12:30",
-      "title": "Арт-резиденция: до, во время и после",
-      "venue": "ЦСИ Винзавод",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [
-        "лекция"
-      ],
-      "description": "",
-      "url": "https://www.winzavod.ru/calendar/round-table/art-rezidentsiya-do-vo-vremya-i-posle-winzavod/",
-      "source": "ЦСИ Винзавод",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-11-10",
-      "price_type": "paid",
-      "availability_evidence": "",
-      "ticket_required": true,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false
-      },
-      "telegram_include": false,
-      "instagram_include": false,
       "editor_note": "",
       "reviewed_at": ""
     },
@@ -61233,7 +61362,7 @@
       "discovered_at": "2026-10-29",
       "price_type": "unknown",
       "availability_evidence": "",
-      "ticket_required": false,
+      "ticket_required": true,
       "availability": "unknown",
       "availability_checked_at": "",
       "editor_overrides": {
@@ -61270,11 +61399,87 @@
       "discovered_at": "2026-11-07",
       "price_type": "unknown",
       "availability_evidence": "",
-      "ticket_required": false,
+      "ticket_required": true,
       "availability": "unknown",
       "availability_checked_at": "",
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "moscow-2026-10-25-c40e7952b7",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-12",
+      "time": "10:00",
+      "title": "Воркшопы",
+      "venue": "ЦСИ Винзавод",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "",
+      "url": "https://www.winzavod.ru/calendar/workshops/",
+      "source": "ЦСИ Винзавод",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-25",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false,
+        "status": "rejected"
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": "2026-10-27"
+    },
+    {
+      "id": "moscow-2026-10-25-fefbfbd35d",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-12",
+      "time": "10:00",
+      "title": "Курсы",
+      "venue": "ЦСИ Винзавод",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "",
+      "url": "https://www.winzavod.ru/calendar/course/",
+      "source": "ЦСИ Винзавод",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-25",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false,
+        "status": "rejected"
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": "2026-10-27"
     },
     {
       "id": "moscow-2026-11-12-b485ac3446",
@@ -61421,6 +61626,43 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": "2026-11-04"
+    },
+    {
+      "id": "moscow-2026-11-11-82baaa4f1a",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-12",
+      "time": "12:30",
+      "title": "Арт-резиденция: до, во время и после",
+      "venue": "ЦСИ Винзавод",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "",
+      "url": "https://www.winzavod.ru/calendar/round-table/art-rezidentsiya-do-vo-vremya-i-posle-winzavod/",
+      "source": "ЦСИ Винзавод",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-10",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-12-6274d9b2ae",
@@ -61796,6 +62038,34 @@
       "instagram_include": false,
       "reviewed_at": "2026-11-09",
       "editor_note": ""
+    },
+    {
+      "id": "moscow-2026-11-12-5ed78ae749",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-12",
+      "time": "19:00",
+      "title": "От идеи до рекламной кампании с помощью ИИ 12 ноября, Чт Начало в 19:00",
+      "venue": "Британская высшая школа дизайна",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": true,
+      "categories": [
+        "встреча"
+      ],
+      "description": "Как создать рекламную кампанию с нуля — от первой идеи до готовых визуалов и видео с помощью нейросетей. Как создать рекламную кампанию с нуля — от первой идеи до готовых визуалов и видео с помощью нейросетей.",
+      "url": "https://britishdesign.ru/about/events/401648/",
+      "source": "Британская высшая школа дизайна — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-11",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "spb-2026-11-12-45f610f9e6",
@@ -62203,6 +62473,45 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": "2026-11-03"
+    },
+    {
+      "id": "moscow-2026-11-13-6030ba6ad6",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-13",
+      "time": "",
+      "title": "Лекция-экскурсия «Михаил Федоров — меценат и просветитель русского зарубежья»",
+      "venue": "Дом русского зарубежья им. А. Солженицына",
+      "address": "",
+      "price": 300,
+      "price_text": "300 ₽",
+      "registration": true,
+      "categories": [
+        "лекция"
+      ],
+      "description": "7 октября 2026 года в 16 часов приглашаем на лекцию-экскурсию «Михаил Федоров — меценат и просветитель русского зарубежья». Лекция-экскурсия посвящена Михаилу Михайловичу Федорову (1858–1949), российскому экономисту, общественному деятелю и меценату.",
+      "url": "https://www.domrz.ru/event/70295_lektsiya_ekskursiya_mikhail_fedorov_metsenat_i_prosvetitel_russkogo_zarubezhya6103/",
+      "source": "Дом русского зарубежья — афиша",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-04",
+      "price_type": "paid",
+      "availability": "sold_out",
+      "availability_checked_at": "2026-11-11",
+      "sheet_synced_description": "7 октября 2026 года в 16 часов приглашаем на лекцию-экскурсию «Михаил Федоров — меценат и просветитель русского зарубежья». Лекция-экскурсия посвящена Михаилу Михайловичу Федорову (1858–1949), российскому экономисту, общественному деятелю и меценату.",
+      "telegram_include": false,
+      "social_priority": null,
+      "editor_note": "",
+      "social_description": "",
+      "instagram_include": false,
+      "instagram_image": "",
+      "social_title": "",
+      "time_verification": "unverified",
+      "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
+      "editor_overrides": {
+        "time": ""
+      }
     },
     {
       "id": "moscow-2026-11-13-b029e967f1",
@@ -63133,6 +63442,32 @@
       "availability_checked_at": ""
     },
     {
+      "id": "moscow-2026-11-14-ca97a158d6",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-14",
+      "time": "",
+      "title": "Художницы Школы дизайна обсудят влияние среды на искусство в галерее «Гридчинхолл»",
+      "venue": "Школа дизайна НИУ ВШЭ",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": true,
+      "categories": [],
+      "description": "14 ноября в загородной галерее и арт-резиденции «Гридчинхолл» пройдет артист-ток «Место действия». В дискуссии примут участие пять художниц, чье творчество тесно связано со Школой дизайна НИУ ВШЭ: все они являются выпускницами или преподавателями Школы, а их работы ранее экспонировались в Галерее Школы дизайна НИУ ВШЭ. 14 ноября 2026",
+      "url": "https://design.hse.ru/news/7398",
+      "source": "Школа дизайна НИУ ВШЭ",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-11",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-14-3fe6d8213b",
       "status": "new",
       "kind": "event",
@@ -63479,6 +63814,34 @@
       "availability_checked_at": "",
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "moscow-2026-11-14-baacebce09",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-14",
+      "time": "14:00",
+      "title": "Бесплатная интерактивная программа «Золотая хохлома»",
+      "venue": "Дом русского зарубежья им. А. Солженицына",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": true,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "14 ноября 2026 года в 14 часов приглашаем на бесплатную интерактивную программу «Золотая хохлома». У современного российского человека слово «хохлома» вызывает много разных ассоциаций.",
+      "url": "https://www.domrz.ru/event/70656_besplatnaya_interaktivnaya_programma_zolotaya_khokhloma/",
+      "source": "Дом русского зарубежья — афиша",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-11",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "sold_out",
+      "availability_checked_at": "2026-11-11"
     },
     {
       "id": "moscow-2026-11-14-e5682e426b",
@@ -64436,7 +64799,7 @@
       "discovered_at": "2026-11-03",
       "price_type": "unknown",
       "availability_evidence": "",
-      "ticket_required": true,
+      "ticket_required": false,
       "availability": "unknown",
       "availability_checked_at": "",
       "editor_note": "",
@@ -64503,7 +64866,7 @@
       "discovered_at": "2026-11-03",
       "price_type": "unknown",
       "availability_evidence": "",
-      "ticket_required": false,
+      "ticket_required": true,
       "availability": "unknown",
       "availability_checked_at": "",
       "editor_note": "",
@@ -64969,6 +65332,32 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": "2026-11-06"
+    },
+    {
+      "id": "spb-2026-11-15-8fc4c1b968",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-15",
+      "time": "19:00",
+      "title": "Продолжаем знакомство с фильмами ‘Маяка’. Еще один показ совместно c",
+      "venue": "Лекторий’порт",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "— арктический роуд-муви Тимофея Анисимова, отмеченный на фестивале наградой за лучший дебют. Это баллада о поиске, памяти, одиночестве и неожиданной близости, возникающей там, где, кажется, нет ничего кроме холода и бескрайнего севера.",
+      "url": "https://63fcd4aad1926c992f8fd264.ticketscloud.org/e/6ae47d294bb843cc4937b766?partner_id=63fcd4aad1926c992f8fd264",
+      "source": "Лекторий’порт — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-11-11",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-15-943a414eaf",
@@ -65596,6 +65985,34 @@
       "reviewed_at": "2026-11-03"
     },
     {
+      "id": "moscow-2026-11-16-7113621f6b",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-16",
+      "time": "19:00",
+      "title": "Онлайн-презентация программы «Дизайн мебели» и Q&A с куратором 16 ноября, Пн Начало в 19:00",
+      "venue": "Британская высшая школа дизайна",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": true,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "Как превратить интерес к предметному дизайну в профессиональный навык и создавать мебель, которая становится частью коллекций российских брендов? На онлайн-встрече познакомимся с программой «Дизайн мебели» в Британке, узнаем, как устроено обучение и как поступить. 105120, Россия, Москва, Центр дизайна Artplay, ул.",
+      "url": "https://britishdesign.ru/about/events/401836/",
+      "source": "Британская высшая школа дизайна — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-11",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-16-856fb9759b",
       "status": "rejected",
       "kind": "event",
@@ -65882,6 +66299,32 @@
       "price_type": "paid",
       "availability_evidence": "",
       "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "moscow-2026-11-17-1405247759",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-17",
+      "time": "",
+      "title": "Студия «Шерлоковедение»",
+      "venue": "Еврейский музей и центр толерантности",
+      "address": "",
+      "price": 1100,
+      "price_text": "1100 ₽",
+      "registration": null,
+      "categories": [],
+      "description": "1 декабря | Полет диска: изобретаем шпионскую фрисби-тарелку и сканируем пространство Как бесшумно перебросить важное послание через охраняемый периметр или запустить передатчик на дальнее расстояние? Изучим секреты парения в воздухе и сконструируем настоящую аэродинамическую фрисби-тарелку для дальних бросков!",
+      "url": "https://www.jewish-museum.ru/events/studiya-sherlokovedenie/",
+      "source": "Еврейский музей и центр толерантности",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-11",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
       "availability": "unknown",
       "availability_checked_at": ""
     },
@@ -66312,7 +66755,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-18-63fe896aa8",
@@ -66375,7 +66820,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-18-9a98188961",
@@ -66701,6 +67148,34 @@
       "instagram_include": false
     },
     {
+      "id": "moscow-2026-11-18-09b2d1f923",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-18",
+      "time": "19:00",
+      "title": "Наука объединяет: лекция «Как мы становимся теми, кто мы есть, и почему мы такие разные?»",
+      "venue": "Еврейский музей и центр толерантности",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Откуда берется чувство «свои — чужие» и что помогает людям с разными культурными идентичностями находить общий язык. Часть программы Недели толерантности 2026. Мы легко делим мир на «своих» и «чужих» и почти не задумываемся, откуда взялось это деление.",
+      "url": "https://www.jewish-museum.ru/events/nauka-obedinyaet-lektsiya-kak-my-stanovimsya-temi-kto-my-est-i-pochemu-my-takie-raznye-/",
+      "source": "Еврейский музей и центр толерантности",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-11",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "spb-2026-11-18-ad34c09f76",
       "status": "check",
       "kind": "event",
@@ -66724,7 +67199,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-18-0ed59cb5cb",
@@ -69200,7 +69677,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-21-d709f81e9f",
@@ -70671,7 +71150,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-11-25-ef39cd57a5",
@@ -70917,6 +71398,35 @@
       "editor_note": ""
     },
     {
+      "id": "moscow-2026-11-25-d4ed4734f6",
+      "status": "check",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-25",
+      "time": "10:30",
+      "title": "Медленные наброски",
+      "venue": "Простая школа",
+      "address": "Москва, ул. Пятницкая, 71/5, строение 2, офис 503",
+      "price": 750,
+      "price_text": "750 ₽",
+      "registration": null,
+      "categories": [
+        "наброски"
+      ],
+      "description": "Рисуем обнаженную модель. Три сеанса по 45 минут. Позы по 20 - 45 минут.",
+      "url": "https://prostaya.ru/praktiki",
+      "source": "Простая школа — открытые практики",
+      "checked_at": "",
+      "review_reason": "recurring_schedule_confirm_specific_date",
+      "discovered_at": "2026-11-11",
+      "editor_note": "По еженедельному расписанию школы; проверить отмены и анонс конкретной даты.",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-25-8c7ac32fc5",
       "status": "new",
       "kind": "event",
@@ -70991,6 +71501,35 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "moscow-2026-11-25-588b1b9599",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-25",
+      "time": "15:00",
+      "title": "Медиация с художниками в «Сводах»",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "встреча"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/mediation-with-artists-at-the-vaults",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-11-11",
+      "audience_text": "› Медиация › Туры Дата: с 22 мая 2025 Регистрация начнется позже Возраст: от 18 Тип: Медиаторский тур Место: Своды , Студии «Сводов» Возрастные ограничения 18+ Туры по мастерским «Сводов», встречи с художниками и совместные чаепития. Встреча группы с медиатором — у входа в «Своды». T Обратите внимание: для посещения «Сводов» необходимо иметь при себе паспорт, также в Центре художественного производства можно находиться только в закрытой обуви. Центр художественного производства «Своды» — это пространство для творческой работы в самом центре Москвы. Под одной крышей объединены восемь мастерских — от пространства для шелкографической печати до студии звукозаписи. Каждая студия оснащена профессиональным, а в некоторых случаях и уникальным для России оборудованием, предназначенным для экспериментов с материалами и техниками. Фото: Анна Завозяева В основе концепции «Сводов» лежит идея о лаборатории, где происходит обмен знаниями и взглядами на современные технологии художественного производства. Именно поэтому здесь особенно важны встречи людей с разным опытом: художников, архитекторов, дизайнеров, композиторов, а также членов команды проекта и мастеров, которые трудятся с ними бок о бок. Официальный партнер направления медиации Дома культуры « ГЭС-2 » Мы приглашаем познакомиться с авторами и специалистами, работающими в Центре художественного производства, обсудить проекты на стадии создания и нюансы оборудования. Каждая встреча включает прогулку по мастерским и беседу с художниками, а еще совместное чаепитие. 19 и 22 марта встречи пройдут в Студиях «Сводов» — новом пространстве Центра художественного производства, расположившемся в здании бывшей прачечной Дома на набережной. Расписание Некоторые встречи проходят в Студиях «Сводов» — новом пространстве Центра художественного производства, расположившемся в здании бывшей прачечной Дома на набережной. 18 ноя, 15:00–17:00 Встреча с художником Антоном Беловым в нескольких мастерских «Сводов». Познакомимся с его практикой и поговорим о проекте нарративной вселенной «Зефир» — многолетнем цикле, где цифровое искусство соединяется с дизайном. Медиатор Юлия Карпенкова 19 ноя , 15:00–17:00 Встреча с Алиной Бровиной, в ходе которой участники познакомятся с работами художницы и узнают, как скульптура, растения и научные данные становятся способом говорить о памяти, телесности и среде, в которой мы живем. Медиатор Василий Еленкин 25 ноя, 15:00–17:00 На событии с Дианой Мачулиной в нескольких мастерских посетители узнают, к",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "spb-2026-11-25-5920084eb3",
@@ -74212,6 +74751,35 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": "2026-11-09"
+    },
+    {
+      "id": "international-2027-01-29-b9b98aea2f",
+      "status": "check",
+      "kind": "open_call",
+      "city": "international",
+      "date": "2027-01-29",
+      "time": "",
+      "title": "Gwen May Trust Recent Graduate Award",
+      "venue": "CuratorSpace",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "open-call"
+      ],
+      "description": "The Royal Society of Painter-Printmakers (RE) is offering a student membership of two years plus £1000 from the Gwen May Trust to two recent printmaking graduates.",
+      "url": "https://www.curatorspace.com/opportunities/detail/gwen-may-trust-recent-graduate-award/11221",
+      "source": "CuratorSpace — opportunities",
+      "checked_at": "",
+      "review_reason": "primary_source_required",
+      "discovered_at": "2026-11-11",
+      "audience_text": "Opportunity details | Gwen May Trust Recent Graduate Award | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register Gwen May Trust Recent Graduate Award Deadline: 29/01/2027 Country: United Kingdom | RE Royal Society of Painter-Printmakers Paid opportunity Report this? Description Opportunity FAQs Make a submission Contact curator The Royal Society of Painter-Printmakers (RE) is offering a student membership of two years plus £1000 from the Gwen May Trust to two recent printmaking graduates. Membership to the society includes the opportunity to participate in RE exhibitions for two years both nationally and internationally. Any printmaking graduate who has graduated in 2026 can apply, there will be two winners. The award is open to anyone who has studied printmaking on an undergraduate or postgraduate course (textile submissions are not eligible). All applicants must submit the following to be considered: Six high-quality JPEGs of your work in printmaking, including full image details A brief CV Winners will be asked to provide proof of their 2026 graduation from their institution before receiving the prize. You must ensure the submitted image consists solely of the printed work. You will have the opportunity to exhibit at Bankside Gallery and other exhibition venues both nationally and internationally. Make a submission Contact the curator Who is eligible for this opportunity? The award is open to anyone who has studied printmaking on an undergraduate or postgraduate course (textile submissions are not eligible). All applicants must submit the requested documents of 6x images with image details and a CV to be considered. Winners will be asked to provide proof of their 2026 graduation from their institution before receiving the prize. When is the deadline? 29th January 2027. How many works can I submit? You must submit six high quality images of your work in printmaking including image details. Applicants must ensure the submitted image consists solely of the printed work. How much does it cost? Free to enter Are there payments to artists? There is a payment of £1000 to the two winning artists. What publicity will be provided as part of the opportunity? Instagram, RE website and the opportunity to exhibit at Bankside Gallery and other exhibition venues both nationally and internationally. What are the selection criteria? Creativity Technical excellence Attention to detail Originality of theme or concept in printmaking How do you decide on proposals? A panel of RE member artists will vote on eligible submissions. You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Other opportunities The Unfinished CISTA ARTS invites artists worldwide to submit work for The Unfinished, an international online... Craft Open and Market Are you a craft maker, artist or creative? Do you sew, knit, crochet, make jewellery, create... Exhibition Open Call - Hand Me Down No Limits Gallery invites visual artists to submit work for Hand Me Down, a two-month show... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "russia-2027-01-31-a35dbe3875",

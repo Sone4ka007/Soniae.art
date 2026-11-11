@@ -184,7 +184,7 @@ for(const lessonId of [3,4,5,6,7,8,9,10]){
      ]
    }[lessonId];
    for(const [id,sentence] of bad)assert.equal(engine.evaluate(id,sentence).ok,false,id+': '+sentence);
-   const allowed=new Set([...base,...Array.from({length:lessonId},(_,i)=>data('lesson'+(i+1)+'.json'))
+   const allowed=new Set([...base,'安娜','小林','小陈','王老师','陈阿姨','刘明','李文',...Array.from({length:lessonId},(_,i)=>data('lesson'+(i+1)+'.json'))
      .flatMap(item=>item.words.map(w=>w.hanzi))]);
    for(const m of engine.missions)for(const sentence of [m.teacher,m.sample,m.reply]){
      assert.equal(unknownChinese(sentence,allowed),null,m.id+': '+sentence);

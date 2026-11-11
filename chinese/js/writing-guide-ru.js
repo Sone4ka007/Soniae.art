@@ -56,6 +56,7 @@
     '小':'маленький','中':'середина','国':'страна','学':'учиться',
     '生':'рождаться, жизнь','知':'знать','识':'знать, распознавать',
     '证':'доказательство, удостоверение','签':'подписывать, подписной знак',
+    '置':'помещать, класть, ставить','位':'место, положение',
     '减':'уменьшать','轻':'лёгкий','感':'чувствовать','料':'материал',
     '奖':'награда','师':'учитель','教':'обучать','通':'проходить, сообщаться',
     '明':'светлый','休':'отдыхать','好':'хороший','妈':'мама',
@@ -84,7 +85,7 @@
   // Concise study aids. The "memory" field is deliberately a mnemonic,
   // not a claim about ancient graphic origins.
   const EXPLAINED = {
-    '置':{memory:'Верхняя часть — «сетка», сокращённая форма 网. Под ней 直 — «прямой». Пиши два блока сверху вниз; звук исторически связан с 直.'},
+    '置':{memory:'Представь, как сеть ровно расправляют и кладут на нужное место. Сначала напиши 罒, затем 直. Это придуманный образ для памяти, а не история происхождения.'},
     '休':{origin:'Традиционное объяснение связывает форму с человеком, прислонившимся к дереву. Такое толкование приводят словари; оно не заменяет научную реконструкцию всех ранних употреблений.',memory:'Слева человек 亻, справа дерево 木. Представь, как человек остановился у дерева отдохнуть.'},
     '人':{origin:'Знак относят к древним изображениям человека; в современной форме остались две расходящиеся черты.',memory:'Одна нисходящая черта и вторая опора: силуэт человека.'},
     '木':{origin:'Знак восходит к изображению дерева с ветвями и корнями.',memory:'Вертикаль — ствол; сверху горизонталь — ветви; диагонали расходятся, как корни.'},
@@ -221,6 +222,43 @@
     '公':'общественный','斤':'топор','良':'хороший',
     '父':'отец','母':'мать','甬':'проход',
   });
+
+  // Teach the modern meaning first, then distinguish it from visual parts and
+  // historical analysis. These are purpose-written learning explanations.
+  const MEANING_BRIDGES = Object.freeze({
+    '置':'置 — это действие: поставить, положить, поместить. В 位置 (wèizhì) речь о месте, где что-то находится. Слова «сеть» и «прямой» не складываются в перевод «местоположение». История знака сложнее: старые словари отмечают и значение «освобождать».',
+    '位':'位 — место или положение. В 位置 первый знак подсказывает идею «места», а весь двузнаковый термин значит «местоположение».',
+    '签':'Подписывать, ставить отметку. В 签证 (qiānzhèng) речь о визе как официально оформленном разрешении. Бамбук в составе связан с древними письменными материалами; это не буквальный перевод слова «виза».',
+    '证':'Знак связан с подтверждением и документами. В 签证 (qiānzhèng) это часть слова «виза»; в 证件 (zhèngjiàn) — «документ».',
+    '学':'Учиться, изучать. В 入学 (rùxué) — «поступить на учёбу». Ребёнок 子 внизу — удобная опора для запоминания написания.',
+    '入':'Входить, вступать. В 入学 (rùxué) это идея «войти в учебное заведение», то есть поступить.',
+    '通':'Проходить, соединять, сообщать. В 通知 (tōngzhī) — «уведомлять». Часть 辶 часто встречается в знаках движения и пути.',
+    '知':'Знать, быть осведомлённым. В 通知 (tōngzhī) — «сообщить, дать знать». Не пытайся буквально переводить 矢 и 口 как «стрела + рот».',
+    '料':'Материал, вещества. В 材料 (cáiliào) — «материалы». Сочетание 米 и 斗 легко связать с измерением крупы — это опора для формы.',
+    '材':'Материал, древесина. В 材料 (cáiliào) — «материалы». Слева 木 — дерево, поэтому связь с материалом здесь наглядна.',
+    '减':'Уменьшать, сокращать. В 减轻 (jiǎnqīng) — «облегчать, уменьшать». Рядом стоящие знаки передают идею сделать меньше и легче.',
+    '轻':'Лёгкий, нетяжёлый. В 减轻 (jiǎnqīng) — «облегчать». Часть 车 — повозка; из её современного значения не нужно выводить буквальный перевод «лёгкий».',
+    '感':'Чувствовать, ощущать. В словах 感觉 и 感受 — чувство или ощущение. 心 внизу помогает связать этот знак с внутренним переживанием.',
+    '休':'Отдыхать, делать перерыв. Человек 亻 у дерева 木 — классический образ отдыха: в этом случае видимые части действительно помогают связать форму со смыслом.',
+    '好':'Хороший; нравиться. 女 и 子 помогают запомнить форму, но не стоит объяснять ими буквально современное значение «хороший».',
+    '明':'Светлый, ясный. 日 (солнце) и 月 (луна) — наглядная опора для идеи света; это учебный образ современной формы.',
+    '安':'Спокойный, безопасный. В 安全 (ānquán) — «безопасность». Крыша 宀 и 女 дают удобный зрительный образ покоя, а не буквальное доказательство происхождения.',
+    '全':'Целый, полный, весь. В 安全 (ānquán) — «безопасный»; слово в целом важно учить как единицу.',
+    '请':'Просить, приглашать; пожалуйста. Слева 讠 — часть, часто встречающаяся в знаках, связанных с речью.',
+    '语':'Язык, речь. В 汉语 (Hànyǔ) — «китайский язык». Слева 讠 напоминает о связи с речью.',
+    '问':'Спрашивать. Внутри 门 (дверь) написано 口 (рот). Запомнить можно как «спросить у двери» — это мнемоника.',
+    '课':'Урок, занятие. В 课程 (kèchéng) — «учебный курс». Слева 讠 — речь; справа 果, но современный перевод знака не получается простым сложением переводов.',
+    '书':'Книга, письменный текст. Из современных отдельных черт нельзя надёжно вывести значение: полезнее связать общий силуэт с книгой и повторять порядок написания.',
+    '字':'Знак письменности, иероглиф. Под крышей 宀 — 子 (ребёнок). Можешь представить, что ребёнок учится писать дома; это образ для памяти.',
+    '看':'Смотреть, видеть. Сверху рука, снизу 目 (глаз). Представь руку, приложенную ко лбу, чтобы смотреть вдаль.',
+    '写':'Писать. Внешний силуэт лучше запомнить как две основные части: верхнее покрытие 冖 и нижнюю 与.',
+    '田':'Поле. Форма напоминает участок земли, разделённый на части.',
+    '林':'Лес. Два дерева 木 рядом — один из самых понятных знаков, где состав помогает запомнить смысл.'
+  });
+  const EXTRA_ORIGINS = Object.freeze({
+    '置':'В источниках встречаются разные объяснения раннего значения. Современное значение «помещать» надёжно, а объяснять его как «сеть + прямой» некорректно.',
+  });
+
   function componentName(part) {
     return MEANINGS[part] || RADICAL_NAMES[part] ||
       COMPONENT_NAMES[part] || SINGLE[part] || '';
@@ -282,26 +320,29 @@
     }));
     return {pieces, layout:positions.length ? positions.join(' / ') : 'составной знак'};
   }
-  function roleLine(info) {
+
+  // An explanatory note rather than a glossary of graph-formation terminology.
+  function roleLine(info, char, relatedData) {
     const e = info?.etymology;
-    if (!e || !e.type) return '';
+    if (!e) return '';
+    const q = text => '<strong class="writing-ru-inline-glyph">' + glyphHtml(text) + '</strong>';
     if (e.type === 'pictophonetic') {
-      const semantic = e.semantic ? '<strong class="writing-ru-inline-glyph">' + glyphHtml(e.semantic) +
-        '</strong>' + (componentName(e.semantic) ? ' («' + escapeHtml(componentName(e.semantic)) + '»)' : '') : '';
-      const phonetic = e.phonetic ? '<strong class="writing-ru-inline-glyph">' + glyphHtml(e.phonetic) +
-        '</strong>' + (componentName(e.phonetic) ? ' («' + escapeHtml(componentName(e.phonetic)) + '»)' : '') : '';
-      if (semantic && phonetic) return 'Это <strong>смысло-звуковой</strong> знак: ' +
-        semantic + ' относится к области значения, а ' + phonetic +
-        ' исторически подсказывал произношение. Сегодня его звучание может отличаться.';
-      if (semantic) return 'В словаре отмечена смысловая часть ' + semantic +
-        '. Точная звуковая связь требует отдельной проверки.';
-      if (phonetic) return 'В словаре отмечена звуковая часть ' + phonetic +
-        '. Современное звучание не обязано совпадать.';
+      const semantic = e.semantic ? q(e.semantic) : '';
+      const phonetic = e.phonetic ? q(e.phonetic) : '';
+      if (semantic && phonetic) {
+        const semanticName = componentName(e.semantic);
+        const soundName = e.phonetic === '直' && char === '置'
+          ? 'Сегодня 直 читается zhí, а 置 — zhì: они похожи по звучанию.'
+          : 'В древнем языке звуковая связь могла быть заметнее, чем сегодня.';
+        return 'В традиционном разборе ' + semantic + (semanticName
+          ? ' («' + escapeHtml(semanticName) + '»)' : '') +
+          ' связан с тематикой значения, а ' + phonetic +
+          ' помогает понять историческое звучание. ' + soundName;
+      }
+      if (phonetic) return 'В словаре отмечена часть ' + phonetic +
+        ', связанная с историческим звучанием; это не перевод иероглифа.';
     }
-    if (e.type === 'pictographic') return 'Источник относит знак к <strong>древним изображениям</strong>. ' +
-      'Современная форма может сильно отличаться от первоначального рисунка.';
-    if (e.type === 'ideographic') return 'В источнике знак описан как <strong>смысловое образование</strong>. ' +
-      'Это классификация, а не подробная история его возникновения.';
+    if (e.type === 'pictographic') return 'Ранние формы были более похожи на рисунок, а современная форма стала условной.';
     return '';
   }
   function examples(character, lessons, currentLesson) {
@@ -319,57 +360,70 @@
     }
     return found;
   }
+
   function render(character, info, options) {
     const c = String(character || '');
     const note = EXPLAINED[c] || {};
     const pieces = structure(info);
     const related = examples(c, options?.lessons || [], options?.lessonId || 1);
-    const pinyin = Array.isArray(info?.pinyin) ? info.pinyin.slice(0,3).join(', ') : '';
-    const singleMeaning = SINGLE[c] || '';
-    const title = singleMeaning
-      ? '<div class="writing-guide-meaning">' + escapeHtml(singleMeaning) + '</div>' : '';
-    const shape = pieces
-      ? '<div class="writing-ru-parts">' + pieces.pieces.map(p =>
-          '<div class="writing-ru-part"><span class="writing-ru-part-place">' +
+    const pinyin = Array.isArray(info?.pinyin) ? info.pinyin.slice(0, 3).join(', ') : '';
+    const meaning = SINGLE[c] || '';
+    const origin = EXTRA_ORIGINS[c] || note.origin || '';
+    const sense = MEANING_BRIDGES[c] || '';
+    const hint = note.memory || (pieces?.pieces.length === 2 ?
+      'Для письма запомни две части: ' + pieces.pieces[0].position + ' — ' +
+      pieces.pieces[0].glyph + ', ' + pieces.pieces[1].position + ' — ' +
+      pieces.pieces[1].glyph + '. Это подсказка к форме, не перевод значения.' :
+      'Посмотри на порядок черт, затем попробуй написать знак без образца.');
+    const title = meaning
+      ? '<div class="writing-guide-meaning">' + escapeHtml(meaning) + '</div>' :
+      (related.length ? '<div class="writing-guide-meaning">В слове ' +
+        escapeHtml(related[0].hanzi) + ' — «' + escapeHtml(related[0].ru) + '»</div>' : '');
+    const graphic = pieces ?
+      '<div class="writing-ru-parts">' + pieces.pieces.map(p => {
+        const etym = info?.etymology || {};
+        const role = etym.semantic === p.glyph ? 'Связан со значением' :
+          etym.phonetic === p.glyph ? 'Историческая подсказка к звучанию' : '';
+        return '<div class="writing-ru-part"><span class="writing-ru-part-place">' +
           escapeHtml(p.position) + '</span><b class="writing-ru-part-glyph">' +
           glyphHtml(p.glyph) + '</b>' +
           '<span class="writing-ru-part-meaning">' +
-          escapeHtml(p.meaning || (p.nested ? 'сложный компонент' : 'отдельный графический элемент')) +
-          '</span></div>').join('') + '</div>'
-      : '<p>Этот знак удобнее сначала запомнить целиком: полного надёжного разбора современной формы в базе нет.</p>';
-    let memory = note.memory || '';
-    if (!memory && pieces) {
-      const p = pieces.pieces;
-      if (p.length === 2) memory = 'Чтобы не потерять форму: сначала ' + p[0].position +
-        ' напиши ' + p[0].glyph + ', затем ' + p[1].position + ' — ' + p[1].glyph + '.';
-      else memory = 'Запомни основные блоки по порядку: ' +
-        p.map(x => x.glyph).join(' → ') + '.';
-    }
-    if (!memory) memory = 'Проследи за порядком черт в анимации и повтори форму без контура.';
-    const formation = note.origin || roleLine(info);
+          escapeHtml(p.meaning || (p.nested ? 'составная часть знака' : 'элемент написания')) +
+          '</span>' + (role ? '<small class="writing-ru-role">' + role + '</small>' : '') +
+          '</div>';
+      }).join('') + '</div>' :
+      '<p class="writing-guide-note">Для этого знака нет полного проверенного разбора частей. Запоминай форму целиком и следуй анимации.</p>';
+    const formation = origin || roleLine(info, c, related);
+    const contextual = sense || (meaning ?
+      'В современном китайском ' + c + ' означает «' + meaning +
+        '». Не каждый знак можно перевести простым сложением значений его частей.' :
+      'Посмотри на значение слова ниже. Самостоятельный перевод этого компонента ' +
+        'по современным частям не всегда возможен.');
     const wiktionary = 'https://ru.wiktionary.org/wiki/' + encodeURIComponent(c);
+    const extraReference = c === '置'
+      ? ' <a href="https://dict.variants.moe.edu.tw/dictView.jsp?ID=34344&la=1" ' +
+        'target="_blank" rel="noopener noreferrer">Словарь Министерства образования Тайваня</a>.'
+      : '';
     return '<div class="writing-ru-guide">' +
-      '<div class="writing-guide-heading"><span class="writing-guide-tag">РАЗБОР ИЕРОГЛИФА</span>' +
-      (title || (related[0] ? '<div class="writing-guide-meaning">В слове «' +
-        escapeHtml(related[0].hanzi) + '» — ' + escapeHtml(related[0].ru) + '</div>' : '')) +
-      (pinyin ? '<small>' + escapeHtml(pinyin) + '</small>' : '') + '</div>' +
-      '<h4>1. Как устроен</h4>' + shape +
+      '<div class="writing-guide-heading"><span class="writing-guide-tag">ЧТО ЗНАЧИТ ИЕРОГЛИФ</span>' +
+      title + (pinyin ? '<small>' + escapeHtml(pinyin) + '</small>' : '') + '</div>' +
+      '<div class="writing-ru-sense">' + escapeHtml(contextual) + '</div>' +
+      '<h4>Как это запомнить</h4><p class="writing-ru-memory">' +
+        escapeHtml(hint) + '</p>' +
+      '<h4>Из каких частей состоит</h4>' + graphic +
       (info?.radical ? '<p class="writing-ru-key">Словарный ключ: <b class="writing-ru-inline-glyph">' +
-        glyphHtml(info.radical) + '</b>' +
-        ' — <strong>' + escapeHtml(componentName(info.radical) || 'название не уточнено') +
-        '</strong>. Ключ помогает искать знак в словаре, но не всегда раскрывает его происхождение.</p>' : '') +
-      (formation ? '<h4>2. Что известно о происхождении</h4><p>' + formation + '</p>' :
-        '<h4>2. Что известно о происхождении</h4><p>Для этого знака пока нет проверенного объяснения происхождения на русском. Современные части показаны выше, но они не обязательно повторяют древнюю форму.</p>') +
-      '<h4>3. Как запомнить</h4><p class="writing-ru-memory">' +
-      escapeHtml(memory) + '</p>' +
-      (related.length ? '<h4>4. В словах из твоих уроков</h4><div class="writing-ru-examples">' +
-        related.map(w => '<div class="writing-ru-example"><b lang="zh-CN">' + escapeHtml(w.hanzi) +
-          '</b><span>' + escapeHtml(w.pinyin) + '</span><span>' +
-          escapeHtml(w.ru) + '</span></div>').join('') + '</div>' : '') +
-      '<div class="writing-ru-sources">Состав и тип образования: <a href="https://github.com/skishore/makemeahanzi" target="_blank" rel="noopener noreferrer">Make Me a Hanzi</a>. ' +
-      'Русская справка: <a href="' + escapeHtml(wiktionary) +
-      '" target="_blank" rel="noopener noreferrer">Викисловарь</a>. ' +
-      'Образы для памяти не равны научной этимологии.</div></div>';
+        glyphHtml(info.radical) + '</b> — ' +
+        escapeHtml(componentName(info.radical) || 'значение не уточнено') + '.</p>' : '') +
+      (formation ? '<details class="writing-ru-history"><summary>Подробнее о происхождении и звучании</summary>' +
+        '<p>' + (origin ? escapeHtml(origin) : formation) +
+        '</p></details>' : '') +
+      (related.length ? '<h4>Примеры из твоих уроков</h4><div class="writing-ru-examples">' +
+        related.map(w => '<div class="writing-ru-example"><b lang="zh-CN">' +
+          escapeHtml(w.hanzi) + '</b><span>' + escapeHtml(w.pinyin) +
+          '</span><span>' + escapeHtml(w.ru) + '</span></div>').join('') + '</div>' : '') +
+      '<div class="writing-ru-sources">Структура: <a href="https://github.com/skishore/makemeahanzi" target="_blank" rel="noopener noreferrer">Make Me a Hanzi</a>. ' +
+        'Русский словарь: <a href="' + escapeHtml(wiktionary) + '" target="_blank" rel="noopener noreferrer">Викисловарь</a>.' +
+        extraReference + ' Мнемоника — не доказательство происхождения.</div></div>';
   }
   global.ChineseLabWritingGuideRU = Object.freeze({render,parseIDS,structure,examples,componentName});
 })(window);

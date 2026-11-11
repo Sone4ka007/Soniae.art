@@ -88,7 +88,7 @@
       sceneCount:LESSON_ONE_ART.length,
       pairs:scene.spots.map(p=>({...p,ru:wordLookup.get(p.word)})),
       order:shuffle(scene.spots.map(p=>p.word)),
-      matched:[],chosenSpot:null,chosenWord:null,hintWord:null,
+      matched:[],chosenSpot:null,chosenWord:null,hintWord:null,zoom:false,
       notice:'Выбери рисунок и соответствующее китайское слово.'
     };
   }
@@ -107,7 +107,7 @@
       })),
       order:shuffle(scene.spots.map(p=>p.word)),
       matched:[], chosenSpot:null,chosenWord:null,
-      hintWord:null,notice:'Выбери предмет на иллюстрации и его название по-китайски.'
+      hintWord:null,zoom:false,notice:'Выбери предмет на иллюстрации и его название по-китайски.'
     };
   }
   function render(lesson, game, helpers) {
@@ -152,9 +152,14 @@
       '<div class="exercise-resume-bar"><span>АВТОСОХРАНЕНИЕ ЗАДАНИЙ</span>'+
       '<button type="button" data-action="exercise-restart">НАЧАТЬ ЗАНОВО ↻</button></div>'+
       '<div class="progress-track"><div style="width:'+(100*done/total)+'%"></div></div>'+
-      '<div class="scene-match-board" id="scene-match-board">'+
-      '<div class="scene-match-picture"><img src="'+esc(helpers.sceneURL(game.scene))+
-      '" alt="'+esc(game.sceneTitle)+'" draggable="false">'+spots+'</div>'+
+      '<div class="scene-match-toolbar">'+
+      '<button type="button" class="scene-match-zoom" data-action="scene-zoom" aria-pressed="'+
+      Boolean(game.zoom)+'">'+(game.zoom?'УМЕНЬШИТЬ −':'ЕЩЁ КРУПНЕЕ +')+'</button>'+
+      '<span class="scene-match-pan-hint">← ПРОКРУЧИВАЙ РИСУНОК В СТОРОНЫ →</span></div>'+
+      '<div class="scene-match-board'+(game.zoom?' is-zoomed':'')+'" id="scene-match-board">'+
+      '<div class="scene-match-picture" data-scene="'+esc(game.scene)+'">'+
+      '<div class="scene-match-canvas"><img src="'+esc(helpers.sceneURL(game.scene))+
+      '" alt="'+esc(game.sceneTitle)+'" draggable="false">'+spots+'</div></div>'+
       '<div class="scene-match-words"><p class="scene-match-caption">СОЕДИНИ СО СЛОВОМ</p>'+labels+'</div>'+
       '<svg class="scene-match-wires" aria-hidden="true" preserveAspectRatio="none"></svg></div>'+
       '<div class="scene-match-footer"><p class="scene-match-status" role="status">'+
@@ -185,6 +190,8 @@
       const right=[...board.querySelectorAll('.scene-match-word')].find(el=>el.dataset.sceneWord===pair.word);
       if(!left||!right)continue;
       const a=left.getBoundingClientRect(),b=right.getBoundingClientRect();
+      const viewport=board.querySelector('.scene-match-picture')?.getBoundingClientRect();
+      if(viewport && (a.right<=viewport.left || a.left>=viewport.right))continue;
       const x1=a.left+a.width/2-rect.left, y1=a.top+a.height/2-rect.top;
       const x2=b.left+b.width/2-rect.left, y2=b.top+b.height/2-rect.top;
       const line=document.createElementNS('http://www.w3.org/2000/svg','line');
@@ -194,6 +201,11 @@
   }
   function action(type, btn, game, helpers) {
     if(!game)return;
+    if(type==='scene-zoom') {
+      game.zoom=!game.zoom;
+      helpers.render();
+      return;
+    }
     if(type==='scene-next') {
       if(!helpers.lesson || helpers.lesson.id!==1 ||
         !Number.isInteger(game.sceneIndex) ||

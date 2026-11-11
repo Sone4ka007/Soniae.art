@@ -218,7 +218,7 @@ for(const lesson of lessonData){
      assert.ok(task.sentence.includes(task.word));
    }
    for(const step of result.steps.filter(s=>s.type==='choice')){
-     assert.ok(step.branchContexts?.length||step.setupLines?.length,'Decision needs an explicit context');
+     assert.ok(step.branchContexts?.length||step.setupLines?.length||step.contextZh?.length,'Decision needs an explicit context');
    }
    for(const step of result.steps.filter(s=>s.type==='compose')){
      assert.ok(step.tokens.length>=2);

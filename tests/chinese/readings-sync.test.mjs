@@ -6,6 +6,7 @@ import { dirname, join } from 'node:path';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..', '..');
 const index = readFileSync(join(root, 'chinese/index.html'), 'utf8');
+const offline = readFileSync(join(root, 'chinese/js/offline-bundle.js'), 'utf8');
 const liveReadings = JSON.parse(readFileSync(join(root, 'chinese/data/readings.json'), 'utf8'));
 
 function embeddedReadings(source) {
@@ -36,7 +37,7 @@ function embeddedReadings(source) {
 }
 
 test('website embedded fallback agrees with published chapters; newly published lessons may be external only', () => {
-  const embedded=embeddedReadings(index);
+  const embedded=embeddedReadings(offline);
   for(const [id, chapters] of Object.entries(embedded)) {
     assert.deepEqual(chapters, liveReadings[id], `Offline reading for lesson ${id} differs from published data`);
   }
@@ -47,6 +48,7 @@ test('website embedded fallback agrees with published chapters; newly published 
   }
 });
 test('website checks live JSON before using embedded offline copy', () => {
-  assert.match(index, /await fetch\(url,\{cache:"no-store"\}\)/);
-  assert.match(index, /window\.chineseLabLessonFetch=async url=>/);
+  assert.match(index, /<script src="\.\/js\/offline-bundle\.js"><\/script>/);
+  assert.match(offline, /await fetch\(url,\{cache:"no-store"\}\)/);
+  assert.match(offline, /window\.chineseLabLessonFetch=async url=>/);
 });

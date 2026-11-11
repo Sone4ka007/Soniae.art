@@ -7,6 +7,7 @@ on:
       - 'chinese/index.html'
       - 'chinese/data/**'
       - 'chinese/js/**'
+      - 'chinese/css/**'
       - 'tests/chinese/**'
       - '.github/workflows/chinese-content-checks.yml'
   workflow_dispatch:
@@ -23,7 +24,7 @@ jobs:
         with:
           node-version: '22'
       - name: Validate reading levels, branching quests and site content
-        run: node --test tests/chinese/graded-reading-level.test.mjs tests/chinese/readings-sync.test.mjs tests/chinese/branching-quest.test.mjs tests/chinese/quest-web-integration.test.mjs tests/chinese/quest-mnemonics.test.mjs tests/chinese/quest-roleplay.test.mjs
+        run: node --test tests/chinese/graded-reading-level.test.mjs tests/chinese/readings-sync.test.mjs tests/chinese/branching-quest.test.mjs tests/chinese/quest-web-integration.test.mjs tests/chinese/quest-mnemonics.test.mjs tests/chinese/quest-roleplay.test.mjs tests/chinese/object-match.test.mjs
       - name: Install Chromium browser test dependency
         run: npm install --no-save --no-package-lock --no-audit --no-fund playwright-core@1.56.1
       - name: Test first quest on mobile Chromium

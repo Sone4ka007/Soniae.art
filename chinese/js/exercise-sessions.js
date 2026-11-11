@@ -29,6 +29,16 @@
         Array.isArray(game.matched);
     }
     if (mode === 'sceneMatch') {
+      // Saved rounds must not bypass lesson-specific vocabulary restrictions.
+      // Discard outdated generic-room sessions while preserving XP elsewhere.
+      const lessonWords = new Set((lesson?.words || []).map(word => word.hanzi));
+      if (!lessonWords.size ||
+          !Array.isArray(game.pairs) ||
+          !game.pairs.every(pair => pair && lessonWords.has(pair.word)) ||
+          !Array.isArray(game.order) ||
+          !game.order.every(word => lessonWords.has(word))) return false;
+      if (lesson?.id === 8 && game.scene !== 'lesson8-vocabulary') return false;
+      if (lesson?.id === 18 && !['tech-bike', 'tech-video'].includes(game.scene)) return false;
       // Discard old lesson-one matching rounds after switching to the author's
       // two-scene artwork; XP and all other modes remain unchanged.
       if (lesson?.id === 1 &&

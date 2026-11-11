@@ -132,3 +132,14 @@
 .writing-ru-inline-glyph{display:inline-flex;align-items:baseline;vertical-align:baseline;gap:2px;font-family:var(--han,'Noto Sans SC',sans-serif)}
 .writing-ru-inline-glyph .writing-net-radical{width:1em;height:.75em;vertical-align:middle}
 .writing-ru-part-glyph .writing-net-radical{width:1.3em;height:1em}
+
+
+/* Meaning-first educational explanations. Writing controls and canvas unchanged. */
+.writing-ru-sense{background:#fff;padding:15px 16px;border-left:4px solid #9dca00;font-size:14px;line-height:1.65;font-weight:550}
+.writing-ru-role{display:block;font-size:10px;font-weight:700;letter-spacing:0;color:#4d5e0d;margin-top:auto;padding-top:9px;line-height:1.35}
+.writing-ru-guide .writing-ru-memory{background:transparent;border-left:0;padding:0;font-weight:500}
+.writing-ru-history{border-top:1px solid var(--line,#c7c9c2);border-bottom:1px solid var(--line,#c7c9c2);padding:13px 0;margin:15px 0;font-size:12px;line-height:1.6}
+.writing-ru-history summary{cursor:pointer;font-weight:800;text-decoration:underline;text-underline-offset:3px}
+.writing-ru-history p{font-size:12px;line-height:1.6;margin:10px 0 0}
+.writing-ru-guide .writing-ru-key{margin:13px 0!important}
+@media(max-width:540px){.writing-ru-sense{padding:12px 14px;font-size:13px}}

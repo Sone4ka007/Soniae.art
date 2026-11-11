@@ -1,0 +1,177 @@
+/* Chinese Lab — illustrated object-to-word matching. */
+(function (global) {
+  'use strict';
+  const BASE_RU = Object.freeze({
+    '书':'книга', '手机':'мобильный телефон', '杯子':'чашка',
+    '椅子':'стул', '电脑':'компьютер', '桌子':'стол',
+    '包':'сумка', '老师':'преподаватель', '时间':'время'
+  });
+  const ASSETS = new Set([
+    'cafeteria-search','campus-submit','family-room','family-shop',
+    'festival-home','festival-zoo','fitness-gym','fitness-training',
+    'gallery-friends','gallery-studio','internship-interview',
+    'internship-notice','lesson14-shoes','lesson14-tea-shop',
+    'park-rest','plans-desk','plans-office','rest-plan',
+    'winter-plan','winter-station','word-search-room'
+  ]);
+  const FALLBACK = Object.freeze({
+    image:'word-search-room', title:'Комната студента',
+    spots:[
+      {id:'book',word:'书',x:9,y:39,w:24,h:27},
+      {id:'computer',word:'电脑',x:40,y:18,w:28,h:34},
+      {id:'cup',word:'杯子',x:72,y:43,w:18,h:23},
+      {id:'phone',word:'手机',x:48,y:58,w:15,h:19},
+      {id:'chair',word:'椅子',x:13,y:66,w:23,h:29}
+    ]
+  });
+  const shuffle = values => {
+    const copy = values.slice();
+    for (let i=copy.length-1;i>0;i--) {
+      const j=Math.floor(Math.random()*(i+1));
+      const old=copy[i];copy[i]=copy[j];copy[j]=old;
+    }
+    return copy;
+  };
+  function sceneFor(lesson) {
+    const newWords=new Set((lesson.words||[]).map(w=>w.hanzi));
+    const permitted=new Set([...newWords,...Object.keys(BASE_RU)]);
+    const possible=(lesson.quest?.steps||[])
+      .filter(s=>s.type==='explore' && s.image && Array.isArray(s.spots)
+        && (global.__offlineScenes?.[s.image] || ASSETS.has(s.image)))
+      .map(s=>{
+        const seen=new Set();
+        const spots=s.spots.filter(p=>{
+          const okay=p.word && permitted.has(p.word) && !seen.has(p.word) &&
+            Number.isFinite(Number(p.x)) && Number.isFinite(Number(p.y)) &&
+            Number(p.w)>0 && Number(p.h)>0;
+          if(okay) seen.add(p.word);
+          return okay;
+        }).slice(0,6);
+        return {image:s.image,title:s.title||lesson.topic,spots,
+          score:spots.length+spots.filter(p=>newWords.has(p.word)).length/10};
+      })
+      .filter(s=>s.spots.length>=3)
+      .sort((a,b)=>b.score-a.score);
+    return possible[0]||FALLBACK;
+  }
+  function init(lesson) {
+    const scene=sceneFor(lesson);
+    const words=new Map((lesson.words||[]).map(w=>[w.hanzi,w.ru]));
+    return {
+      scene:scene.image,
+      sceneTitle:scene.title,
+      pairs:scene.spots.map(p=>({
+        id:String(p.id),word:p.word,
+        ru:words.get(p.word)||BASE_RU[p.word]||'',
+        x:Number(p.x),y:Number(p.y),w:Number(p.w),h:Number(p.h)
+      })),
+      order:shuffle(scene.spots.map(p=>p.word)),
+      matched:[], chosenSpot:null,chosenWord:null,
+      hintWord:null,notice:'Выбери предмет на иллюстрации и его название по-китайски.'
+    };
+  }
+  function render(lesson, game, helpers) {
+    const esc=helpers.esc;
+    if (!game||!Array.isArray(game.pairs)) return '';
+    const total=game.pairs.length, done=game.matched.length;
+    const spots=game.pairs.map((p,i)=>{
+      const matched=game.matched.includes(p.id);
+      const active=game.chosenSpot===p.id;
+      return '<button type="button" class="scene-match-spot'+
+        (matched?' is-matched':'')+(active?' is-selected':'')+
+        '" style="left:'+p.x+'%;top:'+p.y+'%;width:'+p.w+'%;height:'+p.h+
+        '%" data-action="scene-spot" data-scene-id="'+esc(p.id)+
+        '" aria-pressed="'+active+'" aria-label="'+
+        (matched?'Уже найдено: '+esc(p.word):'Выбрать объект '+(i+1))+
+        '" '+(matched?'disabled':'')+
+        '><span class="scene-match-target" aria-hidden="true">'+(matched?'✓':'+')+'</span></button>';
+    }).join('');
+    const labels=game.order.map(word=>{
+      const pair=game.pairs.find(p=>p.word===word);
+      if (!pair) return '';
+      const matched=game.matched.includes(pair.id);
+      const active=game.chosenWord===word;
+      return '<button type="button" class="scene-match-word'+
+        (matched?' is-matched':'')+(active?' is-selected':'')+
+        '" data-action="scene-word" data-scene-word="'+esc(word)+
+        '" aria-pressed="'+active+'" '+(matched?'disabled':'')+
+        '><span lang="zh-CN">'+esc(word)+'</span><span class="scene-match-speaker" aria-hidden="true">◖))</span></button>';
+    }).join('');
+    const hint=game.hintWord ? game.pairs.find(p=>p.word===game.hintWord):null;
+    const finished=done===total;
+    return '<div class="panel-head"><div><div class="eyebrow">'+esc(lesson.label.toUpperCase())+
+      ' / ВИЗУАЛЬНЫЙ СЛОВАРЬ</div><h3>НАЙДИ И СОЕДИНИ</h3>'+
+      '<p class="panel-desc">Найди предмет на картинке, затем выбери китайское слово. Перевод скрыт, пока не запросишь подсказку.</p></div>'+
+      '<span class="chip">СОВПАДЕНИЙ '+done+' / '+total+'</span></div>'+
+      '<div class="exercise-resume-bar"><span>АВТОСОХРАНЕНИЕ ЗАДАНИЙ</span>'+
+      '<button type="button" data-action="exercise-restart">НАЧАТЬ ЗАНОВО ↻</button></div>'+
+      '<div class="progress-track"><div style="width:'+(100*done/total)+'%"></div></div>'+
+      '<div class="scene-match-board" id="scene-match-board">'+
+      '<div class="scene-match-picture"><img src="'+esc(helpers.sceneURL(game.scene))+
+      '" alt="'+esc(game.sceneTitle)+'" draggable="false">'+spots+'</div>'+
+      '<div class="scene-match-words"><p class="scene-match-caption">СОЕДИНИ СО СЛОВОМ</p>'+labels+'</div>'+
+      '<svg class="scene-match-wires" aria-hidden="true" preserveAspectRatio="none"></svg></div>'+
+      '<div class="scene-match-footer"><p class="scene-match-status" role="status">'+
+      esc(finished?'Все предметы найдены! Можно начать новый раунд.':game.notice)+
+      '</p><button type="button" class="action-btn secondary" data-action="scene-hint"'+
+      (finished?' disabled':'')+'>ПЕРЕВОД ПО ПОДСКАЗКЕ</button></div>'+
+      (hint?'<p class="scene-match-hint"><span lang="zh-CN">'+esc(hint.word)+
+        '</span> — '+esc(hint.ru||'Значение смотри в словаре урока')+'</p>':'')+
+      (finished?'<div class="feedback is-success">РАУНД ЗАВЕРШЁН · '+total+
+        ' ПРЕДМЕТОВ НАЙДЕНО</div>':'');
+  }
+  function paint(game) {
+    const board=document.getElementById('scene-match-board');
+    const svg=board?.querySelector('.scene-match-wires');
+    if(!board||!svg||!game)return;
+    const rect=board.getBoundingClientRect();
+    if(!rect.width||!rect.height)return;
+    svg.setAttribute('viewBox','0 0 '+rect.width+' '+rect.height);
+    svg.replaceChildren();
+    for(const id of game.matched) {
+      const pair=game.pairs.find(p=>p.id===id);
+      if(!pair)continue;
+      const left=[...board.querySelectorAll('.scene-match-spot')].find(el=>el.dataset.sceneId===id);
+      const right=[...board.querySelectorAll('.scene-match-word')].find(el=>el.dataset.sceneWord===pair.word);
+      if(!left||!right)continue;
+      const a=left.getBoundingClientRect(),b=right.getBoundingClientRect();
+      const x1=a.left+a.width/2-rect.left, y1=a.top+a.height/2-rect.top;
+      const x2=b.left+b.width/2-rect.left, y2=b.top+b.height/2-rect.top;
+      const line=document.createElementNS('http://www.w3.org/2000/svg','line');
+      for(const [key,value] of Object.entries({x1,y1,x2,y2}))line.setAttribute(key,value);
+      svg.appendChild(line);
+    }
+  }
+  function action(type, btn, game, helpers) {
+    if(!game||game.matched.length===game.pairs.length)return;
+    if(type==='scene-spot') {
+      const id=btn.dataset.sceneId;
+      if(!game.pairs.some(p=>p.id===id)||game.matched.includes(id))return;
+      game.chosenSpot=id;
+    } else if(type==='scene-word') {
+      const word=btn.dataset.sceneWord;
+      if(!game.pairs.some(p=>p.word===word)||game.matched.some(id=>game.pairs.find(p=>p.id===id)?.word===word))return;
+      game.chosenWord=word;
+      helpers.speech(word);
+    } else if(type==='scene-hint') {
+      game.hintWord=game.chosenWord||null;
+      game.notice=game.chosenWord?'Перевод открыт. Найди соответствующий предмет.':'Сначала выбери китайское слово, затем нажми «Перевод по подсказке».';
+    } else return;
+    if(game.chosenSpot&&game.chosenWord) {
+      const pair=game.pairs.find(p=>p.id===game.chosenSpot);
+      if(pair.word===game.chosenWord) {
+        game.matched.push(pair.id);
+        game.notice='Верно! '+pair.word+' — '+pair.ru+'.';
+        game.chosenSpot=null;game.chosenWord=null;game.hintWord=null;
+        helpers.award(8,'ПРЕДМЕТ НАЙДЕН');
+      } else {
+        game.notice='Это другой предмет. Попробуй ещё раз.';
+        game.chosenSpot=null;
+        helpers.miss(game.chosenWord);
+      }
+    }
+    helpers.render();
+  }
+  global.ChineseLabSceneMatch=Object.freeze({init,render,paint,action});
+  global.addEventListener('resize',()=>global.ChineseLabSceneMatch.paint(global.__chineseLabSceneMatchGame));
+})(window);

@@ -124,3 +124,11 @@
   .writing-ru-example span:last-child{grid-column:1/-1}
   .writing-guide-meaning{font-size:16px}
 }
+
+
+/* Named radicals: include a font-independent drawing for 罒 on Android. */
+.writing-ru-part-glyph{display:flex;align-items:center;min-height:44px}
+.writing-net-radical{display:inline-block;width:1.1em;height:.85em;vertical-align:-.08em;flex-shrink:0;overflow:visible}
+.writing-ru-inline-glyph{display:inline-flex;align-items:baseline;vertical-align:baseline;gap:2px;font-family:var(--han,'Noto Sans SC',sans-serif)}
+.writing-ru-inline-glyph .writing-net-radical{width:1em;height:.75em;vertical-align:middle}
+.writing-ru-part-glyph .writing-net-radical{width:1.3em;height:1em}

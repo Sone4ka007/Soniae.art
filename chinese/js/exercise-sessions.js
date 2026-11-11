@@ -5,7 +5,7 @@
  */
 (function (global) {
   'use strict';
-  const MODES = new Set(['story', 'pairs', 'translate', 'reverse', 'build', 'sentence']);
+  const MODES = new Set(['story', 'pairs', 'sceneMatch', 'translate', 'reverse', 'build', 'sentence']);
   const MAX_SNAPSHOT_LENGTH = 250000;
   const isObject = value => value !== null && typeof value === 'object' && !Array.isArray(value);
   const validIndex = (value, count) => Number.isInteger(value) && value >= 0 && value <= count;
@@ -27,6 +27,15 @@
       return Array.isArray(game.pairs) && game.pairs.length > 0 &&
         Array.isArray(game.left) && Array.isArray(game.right) &&
         Array.isArray(game.matched);
+    }
+    if (mode === 'sceneMatch') {
+      return typeof game.scene === 'string' &&
+        Array.isArray(game.pairs) && game.pairs.length >= 3 && game.pairs.length <= 6 &&
+        game.pairs.every(p => p && typeof p.id === 'string' && typeof p.word === 'string') &&
+        Array.isArray(game.order) && game.order.length === game.pairs.length &&
+        Array.isArray(game.matched) && game.matched.every(id => game.pairs.some(p => p.id === id)) &&
+        (game.chosenSpot === null || game.pairs.some(p => p.id === game.chosenSpot)) &&
+        (game.chosenWord === null || game.pairs.some(p => p.word === game.chosenWord));
     }
     if (!Array.isArray(game.questions) || !validIndex(game.index, game.questions.length)) return false;
     if (mode === 'translate' || mode === 'reverse') {

@@ -10,7 +10,7 @@ const readings = load('readings.json');
 const hsk3 = load('hsk3-base.json').words;
 const manifest = load('manifest.json');
 const lessonIds = manifest.lessons.map(file => Number(file.match(/lesson(\d+)\.json/)[1]));
-const knownNames = ['安娜','小林','小陈','王老师','陈阿姨','刘明','李文','王','陈','林','刘','北京','上海','中国','贵州','广州','哈尔滨','长城','故宫'];
+const knownNames = ['安娜','小林','小明','小陈','王老师','陈阿姨','刘明','李文','王','陈','林','刘','北京','上海','中国','贵州','广州','哈尔滨','长城','故宫'];
 const vocab = new Map(lessonIds.map(id => [id, load(`lesson${id}.json`).words.map(word=>word.hanzi)]));
 
 function hasOnlyKnownWords(text, known) {

@@ -644,6 +644,7 @@
   <link rel="apple-touch-icon" href="./icons/icon-192.png">
 <link rel="stylesheet" href="./css/review-session.css?v=20261110-1">
 <link rel="stylesheet" href="./css/writing.css?v=20261111-8">
+<link rel="stylesheet" href="./css/scene-match.css?v=20261111-1">
 </head>
 <body>
   <div class="site-frame">
@@ -698,12 +699,14 @@
 <script src="./js/quest-branches.js?v=20261110-4"></script>
 <script src="./js/writing-guide-ru.js?v=20261111-4"></script>
 <script src="./js/writing.js?v=20261111-5"></script>
+<script src="./js/scene-match.js?v=20261111-1"></script>
 <script>
 const sceneURL = name => window.__offlineScenes[name] || ("assets/"+name+".svg");
 const $ = (selector) => document.querySelector(selector);
 const modeInfo = [
   { id: 'words', icon: '◖', title: 'СЛОВАРЬ + ЗВУК' },
   { id: 'pairs', icon: '↔', title: 'ПАРЫ' },
+  { id: 'sceneMatch', icon: '▤', title: 'НАЙДИ И СОЕДИНИ' },
   { id: 'translate', icon: '中', title: 'ИЕРОГЛИФ → ПЕРЕВОД' },
   { id: 'reverse', icon: 'Я', title: 'ПЕРЕВОД → ИЕРОГЛИФ' },
   { id: 'build', icon: '▦', title: 'СОБЕРИ СЛОВО' },
@@ -816,6 +819,7 @@ function activateMode(mode, reset = false) {
   if (reset && ChineseLabSessions.clear(state.progress, state.lessonId, mode)) save();
   if (mode === 'story') initQuest();
   if (mode === 'pairs') initPairs();
+  if (mode === 'sceneMatch') state.game = ChineseLabSceneMatch.init(lesson());
   if (mode === 'translate' || mode === 'reverse') initQuiz();
   if (mode === 'build') initBuild();
   if (mode === 'sentence') initSentence();
@@ -845,6 +849,7 @@ function renderGame() {
   const kind = state.mode;
   if (kind === 'story') renderStory();
   if (kind === 'pairs') renderPairs();
+  if (kind === 'sceneMatch') renderSceneMatch();
   if (kind === 'translate' || kind === 'reverse') renderQuiz();
   if (kind === 'build') renderBuild();
   if (kind === 'sentence') renderSentence();
@@ -1339,6 +1344,11 @@ function questAction(action,btn){
 }
 
 
+function renderSceneMatch(){
+  window.__chineseLabSceneMatchGame=state.game;
+  $('#game-panel').innerHTML=ChineseLabSceneMatch.render(lesson(),state.game,{esc,sceneURL});
+  ChineseLabSceneMatch.paint(state.game);
+}
 function initPairs(){const pairs=sample(lesson().words,6);state.game={pairs,left:shuffle(pairs),right:shuffle(pairs),chosenLeft:null,chosenRight:null,matched:[],notice:''};}
 function pairPick(side,wordHanzi){
   const g=state.game;if(g.matched.includes(wordHanzi))return;
@@ -1913,6 +1923,8 @@ document.addEventListener('click', event => {
    break;
  case 'quest-memory':case 'quest-memory-test':case 'quest-memory-answer':case 'quest-memory-back':case 'quest-roleplay-topic':case 'quest-roleplay-next':case 'quest-roleplay-hint':case 'quest-roleplay-example':case 'quest-roleplay-clear':case 'quest-roleplay-tile':case 'quest-roleplay-send':case 'quest-roleplay-translate':case 'quest-gloss':case 'quest-analyze':case 'quest-mission-toggle':case 'quest-mission-select':case 'quest-mission-pick':case 'quest-mission-next':case 'quest-spot':case 'quest-choice':case 'quest-token':case 'quest-token-remove':case 'quest-pick':case 'quest-check':case 'quest-clear':case 'quest-hint':case 'quest-skip':case 'quest-translation':case 'quest-zoom':case 'quest-start':case 'quest-next':case 'quest-restart':questAction(action,btn);break;
  case 'sentence-add':case 'sentence-remove':case 'sentence-clear':case 'sentence-hint':case 'sentence-check':case 'sentence-next':sentenceAction(action,btn.dataset.id);break;
+ case 'scene-spot':case 'scene-word':case 'scene-hint':
+   ChineseLabSceneMatch.action(action,btn,state.game,{award,miss,speech,render:renderSceneMatch});break;
  case 'pair':pairPick(btn.dataset.side,btn.dataset.id);break;
  case 'quiz-pick':quizPick(Number(btn.dataset.index));break;
  case 'quiz-analyze':{const g=state.game;const i=Number(btn.dataset.index);g.analysisIndex=g.analysisIndex===i?-1:i;renderQuiz();break;}

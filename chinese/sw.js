@@ -1,5 +1,5 @@
 /* HSK4 Chinese lab — scoped offline support. Network-first keeps course data fresh. */
-const CACHE_NAME = 'hsk4-chinese-lab-pwa-v22';
+const CACHE_NAME = 'hsk4-chinese-lab-pwa-v23';
 const CORE_URLS = [
   "/chinese/",
   "/chinese/index.html",
@@ -13,7 +13,7 @@ const CORE_URLS = [
   "/chinese/css/scene-match.css?v=20261111-2",
   "/chinese/js/writing-guide-ru.js?v=20261111-4",
   "/chinese/js/writing.js?v=20261111-5",
-  "/chinese/js/scene-match.js?v=20261111-3",
+  "/chinese/js/scene-match.js?v=20261111-4",
   "/chinese/js/offline-bundle.js",
   "/chinese/js/progress-store.js",
   "/chinese/js/streak.js?v=20261110-1",
@@ -21,7 +21,7 @@ const CORE_URLS = [
   "/chinese/js/google-auth.js",
   "/chinese/js/pinyin-chars.js",
   "/chinese/js/sentence-tiles.js",
-  "/chinese/js/exercise-sessions.js",
+  "/chinese/js/exercise-sessions.js?v=20261111-2",
   "/chinese/js/quest-mnemonics.js?v=20261109-2",
   "/chinese/js/quest-roleplay.js?v=20261110-4",
   "/chinese/js/quest-roleplay-extended.js?v=20261110-3",
@@ -55,6 +55,7 @@ const CORE_URLS = [
   "/chinese/data/lesson18.json",
   "/chinese/assets/sonya-lesson1-documents.svg",
   "/chinese/assets/sonya-lesson1-campus.svg",
+  "/chinese/assets/lesson8-vocabulary.svg",
   "/chinese/assets/word-search-room.svg",
   "/chinese/assets/tech-bike.svg",
   "/chinese/assets/tech-video.svg",

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 620" role="img" aria-label="商场 · 选鞋">
+<style>
+text{font-family:"Noto Sans CJK SC","Microsoft YaHei","PingFang SC",sans-serif;fill:#151a16}
+.heading{font-size:29px;font-weight:700}.label{font-size:23px;font-weight:700}.sub{font-size:17px}
+.outline{stroke:#172019;stroke-width:4;stroke-linejoin:round;stroke-linecap:round}
+.line{stroke:#172019;stroke-width:2;stroke-linejoin:round}
+</style>
+<rect width="1080" height="620" fill="#f7f8f2"/>
+<rect width="1080" height="102" fill="#e9ede4"/>
+<text x="44" y="63" class="heading">商场 · 选鞋</text>
+<text x="812" y="61" class="sub">第14课 / 02</text>
+<path d="M34 104H1041" class="outline"/>
+<!-- left poster -->
+<rect x="92" y="161" width="326" height="234" rx="14" fill="#fffefa" class="outline"/>
+<rect x="120" y="180" width="270" height="60" rx="8" fill="#d9f55e" class="line"/>
+<text x="170" y="221" class="heading">促销 · 降价</text>
+<text x="143" y="286" class="label">以前 500 元</text>
+<text x="143" y="332" class="heading">现在 300 元</text>
+<path d="M142 350H383" class="line"/>
+<text x="176" y="380" class="sub">广告 / 价钱</text>
+<!-- center shoe -->
+<rect x="453" y="176" width="259" height="211" rx="14" fill="#f0f1ed" class="outline"/>
+<path d="M477 315C499 309 519 276 528 255L583 258C594 278 618 291 654 294L694 326V354H479Z" fill="#d9f55e" class="outline"/>
+<path d="M478 343H697" class="outline"/>
+<path d="M533 270H604M530 288H620M528 307H630" class="line"/>
+<text x="541" y="378" class="label">样式</text>
+<!-- right size chart -->
+<rect x="772" y="170" width="244" height="224" rx="12" fill="#fff" class="outline"/>
+<rect x="792" y="193" width="205" height="51" fill="#d9f55e" class="line"/>
+<text x="840" y="227" class="label">大小</text>
+<path d="M799 268H989M799 301H989M799 334H989M854 260V368M930 260V368" class="line"/>
+<text x="810" y="294" class="sub">37</text><text x="873" y="294" class="sub">38</text><text x="948" y="294" class="sub">39</text>
+<text x="812" y="328" class="sub">40</text><text x="873" y="328" class="sub">41</text><text x="948" y="328" class="sub">42</text>
+<!-- lower rack with coat and socks -->
+<path d="M148 444H389M208 444V468M325 444V468" class="outline"/>
+<path d="M208 468L166 486L146 549L176 557L196 525V572H273V525L292 557L322 549L300 486L260 468L241 491H226Z" fill="#c3d2cf" class="outline"/>
+<text x="340" y="530" class="label">外套</text>
+<rect x="675" y="465" width="86" height="100" rx="10" fill="#e4dfd4" class="line"/>
+<path d="M708 478V523Q708 542 727 542H744" fill="none" class="outline"/>
+<text x="784" y="526" class="label">袜子</text>
+<path d="M34 588H1041" class="line"/>
+<text x="50" y="613" class="sub">先看广告，再看鞋的样式、质量和大小。</text>
+</svg>

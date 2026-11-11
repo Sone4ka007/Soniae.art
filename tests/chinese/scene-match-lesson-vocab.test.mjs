@@ -9,7 +9,7 @@ const root=join(dirname(fileURLToPath(import.meta.url)), '..', '..');
 const read=path=>readFileSync(join(root,path),'utf8');
 const offline=read('chinese/js/offline-bundle.js');
 const offlineSceneNames=new Set(
-  [...offline.matchAll(/"([^"]+)":"data:image\\/svg\\+xml;base64,/g)].map(match=>match[1])
+  [...offline.matchAll(/"([^"]+)":"data:image\/svg\+xml;base64,/g)].map(match=>match[1])
 );
 const browser={
   addEventListener(){},

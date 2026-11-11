@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 620" role="img" aria-label="计划赶不上变化 · 会议"><style>text{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;fill:#182019}.head{font-size:29px;font-weight:700}.label{font-size:25px;font-weight:650}.small{font-size:18px}.tiny{font-size:15px}.line{stroke:#202b20;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:#202b20;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}</style><rect width="1080" height="620" fill="#f8f9f4"/><rect width="1080" height="100" fill="#ebeee7"/><text x="42" y="64" class="head">计划赶不上变化 · 会议</text><text x="866" y="62" class="small">16 / 02</text><path d="M38 103H1040" class="line"/>
+<!-- change notice left -->
+<rect x="96" y="157" width="307" height="247" rx="13" fill="#fff" class="line"/>
+<rect x="118" y="178" width="261" height="53" rx="7" fill="#d9f55e"/>
+<text x="179" y="214" class="label">推迟</text>
+<text x="135" y="275" class="label">会议时间</text>
+<path d="M138 300H361M138 336H364" class="thin"/>
+<text x="146" y="374" class="small">下星期 · 调整</text>
+<!-- report pages middle -->
+<rect x="445" y="171" width="276" height="238" rx="12" fill="#fff" class="line" transform="rotate(-3 580 290)"/>
+<rect x="471" y="182" width="218" height="53" rx="5" fill="#d9f55e"/>
+<text x="536" y="219" class="label">错误</text>
+<path d="M477 260H688M477 291H688M477 321H688M477 353H661" class="thin"/>
+<circle cx="657" cy="322" r="24" stroke="#af554a" stroke-width="5" fill="none"/>
+<path d="M644 309L671 338M671 309L644 338" stroke="#af554a" stroke-width="5"/>
+<!-- agenda examples right -->
+<rect x="778" y="163" width="230" height="248" rx="14" fill="#fff" class="line"/>
+<rect x="799" y="184" width="191" height="51" rx="7" fill="#d9f55e"/>
+<text x="852" y="220" class="label">增加</text>
+<text x="824" y="277" class="label">例子 1</text>
+<path d="M818 294H977" class="thin"/>
+<text x="824" y="342" class="label">例子 2</text>
+<path d="M818 359H977" class="thin"/>
+<!-- extra fourth clue -->
+<rect x="236" y="457" width="507" height="110" rx="13" fill="#eff2e8" class="thin"/>
+<text x="273" y="502" class="label">关键：时间、内容</text>
+<text x="273" y="542" class="small">请检查得详细一点。</text>
+<path d="M40 587H1040" class="thin"/><text x="50" y="612" class="small">查看时间、错误和需要增加的例子。</text>
+</svg>

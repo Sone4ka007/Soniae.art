@@ -112,9 +112,9 @@ test('illustrations have a larger pannable surface, zoom, and preserve game prog
 test('site entry and cache include the new artwork while other lesson data stays intact',()=>{
  const html=read('chinese/index.html'),sw=read('chinese/sw.js');
  assert(html.includes('scene-next'));
- assert(html.includes('./js/scene-match.js?v=20261111-4'));
+ assert(html.includes('./js/scene-match.js?v=20261111-5'));
  assert(sw.includes('sonya-lesson1-documents.svg'));
  assert(sw.includes('sonya-lesson1-campus.svg'));
- assert(sw.includes('scene-match.js?v=20261111-3'));
+ assert(sw.includes('scene-match.js?v=20261111-5'));
  assert(!lesson.words.some(w=>w.hanzi==='护照'||w.hanzi==='课程表'));
 });

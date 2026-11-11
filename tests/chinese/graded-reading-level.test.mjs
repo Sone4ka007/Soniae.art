@@ -17,7 +17,7 @@ function hasOnlyKnownWords(text, known) {
   // Protect course vocabulary containing Latin letters or digits (AI眼镜, 3D打印机)
   // before segmenting contiguous Han runs; otherwise a valid word is split apart.
   let source = text;
-  for (const word of [...known].filter(w => /[A-Za-z0-9]/.test(w)).sort((a,b)=>b.length-a.length))
+  for (const word of [...known].filter(w => /[A-Za-z0-9·]/.test(w)).sort((a,b)=>b.length-a.length))
     source=source.split(word).join(' ');
   for (const match of source.matchAll(/[\p{Script=Han}]+/gu)) {
     const run=match[0], dp=Array(run.length+1).fill(false);

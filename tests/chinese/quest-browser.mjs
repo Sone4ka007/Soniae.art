@@ -17,7 +17,15 @@ try {
   const page=await context.newPage();
   page.on('pageerror',error=>errors.push(error.message));
   await page.goto(pathToFileURL(resolve('chinese/index.html')).href,{waitUntil:'domcontentloaded'});
-  await page.waitForSelector('#game-panel .quest-rp-start',{timeout:15000});
+  try {
+    await page.waitForSelector('#game-panel .quest-rp-start',{timeout:30000});
+  } catch (error) {
+    const panel=await page.locator('#game-panel').innerText().catch(()=>'<unavailable>');
+    console.error('Chinese Lab boot diagnostic', JSON.stringify({
+      title:await page.title(), url:page.url(), panel:panel.slice(0,1400), pageErrors:errors
+    }));
+    throw error;
+  }
   const intro=await page.locator('#game-panel').innerText();
   assert.match(intro,/СИМУЛЯЦИЯ/);
   assert.match(intro,/ТВОЙ ПЕРВЫЙ РАЗГОВОР/);

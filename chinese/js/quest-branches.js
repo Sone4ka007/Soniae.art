@@ -767,6 +767,9 @@
   }
 
   function build(lesson,chapters) {
+    // Lessons 11+ currently use their own standalone branching quest data.
+    // Do not run the legacy 1–10 chapter rewriter without mapped endings.
+    if(lesson.id>10)return lesson.quest;
     if(!Array.isArray(chapters)||chapters.length!==3)return lesson.quest;
     if(lesson.id===1)return withIllustratedScenes(lesson,chapters,firstLessonQuest(lesson,chapters));
     const old=lesson.quest;

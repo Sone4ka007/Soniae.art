@@ -14,14 +14,14 @@
 <!-- desk and exam calendar at left -->
 <rect x="116" y="177" width="275" height="220" rx="12" class="paper stroke"/>
 <rect x="116" y="177" width="275" height="54" class="lime stroke"/>
-<text x="162" y="212" class="caption">考试安排</text>
+<text x="162" y="212" class="caption">考试时间</text>
 <text x="164" y="276" class="headline">下 星期</text>
 <path d="M154 303H353M154 335H340M154 362H321" class="thin"/>
 <rect x="66" y="414" width="340" height="24" fill="#d9dad4" class="stroke"/>
 <path d="M86 438V565M386 438V565" class="stroke"/>
 <!-- grandma's note -->
 <rect x="484" y="174" width="280" height="239" rx="10" class="paper stroke" transform="rotate(3 624 294)"/>
-<text x="533" y="219" class="caption">奶奶的纸条</text>
+<text x="533" y="219" class="caption">奶奶的话</text>
 <path d="M515 252H727M515 286H711M515 321H720" class="thin"/>
 <text x="523" y="367" class="headline">伤 心</text>
 <!-- phone -->
@@ -30,7 +30,7 @@
 <text x="862" y="356" class="caption">发给奶奶</text>
 <rect x="854" y="386" width="132" height="72" rx="10" class="lime"/>
 <text x="871" y="426" class="caption">对不起！</text>
-<text x="873" y="482" class="small">还没发出</text>
+<text x="873" y="482" class="small">还没告诉奶奶</text>
 <!-- coat on left lower: hanger -->
 <path d="M265 425V467M265 467L198 508H332L265 467" class="stroke" fill="none"/>
 <path d="M218 515L186 534L180 592H353L348 534L318 515" fill="#e5e7e2" class="stroke"/>

@@ -72,6 +72,6 @@ test('offline fallback is loaded before application scripts and included in PWA 
  const fallback=html.indexOf('<script src="./js/offline-bundle.js"></script>');
  const progress=html.indexOf('<script src="./js/progress-store.js"></script>');
  assert.ok(fallback>=0 && progress>fallback,'Offline data must load before the app');
- assert.match(sw, /"\\/chinese\\/js\\/offline-bundle\\.js"/);
- assert.match(offlineBundle, /window\\.chineseLabLessonFetch=async url=>/);
+ assert.ok(sw.includes('"/chinese/js/offline-bundle.js"'),'Service worker must precache offline fallback');
+ assert.ok(offlineBundle.includes('window.chineseLabLessonFetch=async url=>'),'Offline fetch fallback must stay intact');
 });

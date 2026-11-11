@@ -37,8 +37,12 @@
           !game.pairs.every(pair => pair && lessonWords.has(pair.word)) ||
           !Array.isArray(game.order) ||
           !game.order.every(word => lessonWords.has(word))) return false;
-      if (lesson?.id === 8 && game.scene !== 'lesson8-vocabulary') return false;
-      if (lesson?.id === 18 && !['tech-bike', 'tech-video'].includes(game.scene)) return false;
+      const activeSceneByLesson = {
+        8:'lesson8-vocabulary',9:'gallery-studio',
+        10:'winter-plan',11:'lesson11-vocabulary',18:'tech-bike'
+      };
+      const expectedScene = activeSceneByLesson[lesson?.id];
+      if (expectedScene && game.scene !== expectedScene) return false;
       // Discard old lesson-one matching rounds after switching to the author's
       // two-scene artwork; XP and all other modes remain unchanged.
       if (lesson?.id === 1 &&

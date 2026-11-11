@@ -30,3 +30,6 @@
  .scene-match-target{width:20px;height:20px;font-size:13px}
  .scene-match-wires line{stroke-width:2.5}
 }
+
+/* User-drawn lesson 1: keep bonus vocabulary distinguished from core words. */
+.scene-match-word .scene-match-bonus{font-size:9px;line-height:1;letter-spacing:.07em;font-family:Arial,sans-serif;color:#617835;border:1px solid #9abc65;padding:3px 4px;margin-left:auto}

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 620" role="img" aria-label="Практика за компьютером: видеоплеер, веб-страница, тетрадь и числа">
+<rect width="1080" height="620" fill="#f8f8f5"/>
+<text x="36" y="62" fill="#171817" font-size="29" font-family="Arial,sans-serif" font-weight="700">УРОК 11 · УЧИТЬСЯ В ЛЮБОМ ВОЗРАСТЕ</text>
+<path d="M35 82H1045" stroke="#161616" stroke-width="4"/>
+<g stroke="#171817" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+<rect x="18" y="110" width="247" height="437" rx="10" fill="#eff1ea"/>
+<rect x="283" y="110" width="247" height="437" rx="10" fill="#f1f4eb"/>
+<rect x="548" y="110" width="247" height="437" rx="10" fill="#eef0ea"/>
+<rect x="813" y="110" width="247" height="437" rx="10" fill="#f2f0e9"/>
+<!-- Video: video player with big play triangle and timeline -->
+<rect x="42" y="223" width="198" height="169" rx="12" fill="#343d36"/>
+<rect x="52" y="233" width="178" height="130" rx="5" fill="#c3d7bd"/>
+<circle cx="141" cy="296" r="45" fill="#d7ff29"/>
+<path d="M129 272L167 296L129 320Z" fill="#202820"/>
+<rect x="59" y="373" width="161" height="6" rx="3" fill="#fff"/>
+<rect x="59" y="373" width="91" height="6" rx="3" fill="#d7ff29" stroke="none"/>
+<path d="M70 415H205" stroke-width="6"/>
+<!-- Webpage: browser with address bar, blocks and link chips -->
+<rect x="300" y="195" width="212" height="252" rx="10" fill="#fff"/>
+<rect x="300" y="195" width="212" height="43" rx="10" fill="#d7ff29"/>
+<circle cx="317" cy="215" r="5" fill="#333"/><circle cx="334" cy="215" r="5" fill="#333"/>
+<rect x="351" y="207" width="144" height="16" rx="6" fill="#fff"/>
+<path d="M325 260H486M325 279H448" stroke="#5c7769" stroke-width="9"/>
+<rect x="324" y="303" width="72" height="81" fill="#cad7ca"/>
+<path d="M414 308H489M414 330H480M414 350H485M325 407H487" fill="none" stroke="#536f5b" stroke-width="8"/>
+<!-- Notebook: open pages with pen, lines, and spiral binding -->
+<path d="M574 206H671Q687 206 689 221Q691 206 712 206H776V460H705Q690 459 689 472Q689 459 672 460H574Z" fill="#fff"/>
+<path d="M689 220V465" fill="none" stroke="#506452" stroke-width="5"/>
+<path d="M589 244H667M589 278H663M589 314H667M589 348H660M711 242H762M711 277H762M711 312H756M711 347H762" fill="none" stroke="#8eb49c" stroke-width="5"/>
+<path d="M726 424L771 354L784 364L740 437Z" fill="#d7ff29"/>
+<path d="M726 424L716 447L740 437" fill="#45423a"/>
+<!-- Numerals: large arithmetic marks on a learning card -->
+<rect x="834" y="196" width="205" height="254" rx="14" fill="#fff"/>
+<text x="855" y="304" font-family="Arial,sans-serif" fill="#2b3d31" stroke="none" font-size="68" font-weight="700">1 2 3</text>
+<path d="M853 329H1023" stroke="#99b8a2" stroke-width="7"/>
+<text x="850" y="406" font-family="Arial,sans-serif" fill="#425c49" stroke="none" font-size="54" font-weight="700">4 5 6</text>
+</g>
+<text x="541" y="593" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#5a5e58" letter-spacing="2">CHINESE LAB  /  FIND &amp; MATCH</text>
+</svg>

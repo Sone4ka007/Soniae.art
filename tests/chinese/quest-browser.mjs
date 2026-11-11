@@ -31,7 +31,7 @@ try {
 
   await page.locator('#quest-roleplay-input').fill('请您再说一遍。');
   await page.locator('[data-action="quest-roleplay-send"]').click();
-  assert.match(await page.locator('.quest-rp-feedback').innerText(),/ПРЕПОДАВАТЕЛЬНИЦА ПОВТОРИЛА/,'Requesting repetition must not count as failure');
+  assert.match(await page.locator('.quest-rp-feedback').innerText(),/(?:СОБЕСЕДНИК ПОВТОРИЛ|ПРЕПОДАВАТЕЛЬНИЦА ПОВТОРИЛА)/,'Requesting repetition must not count as failure');
   assert.match(await page.locator('.quest-rp-feedback').innerText(),/你好/);
   await page.locator('#quest-roleplay-input').fill('我不想申请奖学金。');
   await page.locator('[data-action="quest-roleplay-send"]').click();

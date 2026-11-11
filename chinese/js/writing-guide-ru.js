@@ -152,6 +152,88 @@
     '热':{memory:'Снизу 灬 «огонь», сверху составная часть. Сначала вспомни верх, затем четыре точки огня.'},
     '收':{memory:'В правой части 攵 — действие рукой. Две части помогают удерживать рисунок в памяти.'}
   };
+
+  // Names of all otherwise unnamed dictionary keys used in the current 473-character syllabus.
+  // These are readable component/radical labels, not assertions of original etymology.
+  const RADICAL_NAMES = Object.freeze({
+    '广':'навес, крыша','厂':'утёс, скальный выступ','禾':'злак','丶':'точка',
+    '儿':'ноги человека','干':'сухой; щит (название знака)','戈':'копьё',
+    '止':'остановка, стопа','⺼':'мясо, плоть (форма 肉)','见':'видеть',
+    '丨':'вертикальная черта','丿':'откидная черта','入':'входить',
+    '尢':'хромой (древнее значение)','尸':'тело, труп','弓':'лук',
+    '户':'дверь','曰':'говорить','比':'сравнивать','而':'и; борода (древнее значение)',
+    '辛':'горький, острый','酉':'винный сосуд','食':'пища',
+    '乚':'изогнутая черта','亅':'вертикальная черта с крюком',
+    '冂':'открытая рамка','凵':'открытая коробка','夂':'идти, шаг',
+    '匸':'скрывать, прятать','卩':'печать, колено','川':'река',
+    '幺':'тонкая нить','廾':'две руки','弋':'метательное копьё',
+    '⺌':'маленький (форма 小)','彡':'волосы, штрихи','支':'ветка',
+    '旡':'нехватка','殳':'оружие, рука с палкой','毛':'шерсть',
+    '氏':'род, клан','气':'воздух, пар','爫':'когти (форма 爪)',
+    '玄':'тёмный, тайный','甘':'сладкий','用':'использовать',
+    '疒':'болезнь','矢':'стрела','禸':'след животного','穴':'пещера',
+    '缶':'глиняный сосуд','网':'сеть','罒':'сеть (верхняя форма 网)',
+    '羽':'перья','肉':'мясо, плоть','自':'сам; первоначально нос',
+    '至':'достигать','色':'цвет','行':'идти; перекрёсток',
+    '覀':'покрытие (форма 襾)','角':'рог','豕':'свинья',
+    '身':'тело','釆':'разделять, различать','长':'длинный',
+    '面':'лицо','风':'ветер','首':'голова','黑':'чёрный',
+    '鼠':'мышь','齿':'зуб',
+  });
+  const COMPONENT_NAMES = Object.freeze({
+    '直':'прямой, прямо','舌':'язык','丷':'две расходящиеся точки',
+    '乂':'пересекать','尤':'особенный','云':'облако','兄':'старший брат',
+    '及':'достигать','勿':'не делать','己':'сам, себя','匕':'ложка',
+    '卜':'гадать','七':'семь','乛':'изогнутая черта с крюком',
+    '头':'голова','合':'соединять','尚':'ценить, ещё','了':'закончить',
+    '开':'открывать','聿':'кисть для письма','彐':'голова свиньи (традиционное название)',
+    '夬':'решать, разделять','巨':'большой','寺':'храм',
+    '勺':'ложка, ковш','几':'низкий столик','化':'изменять',
+    '束':'связка','咅':'звуковой компонент','令':'приказ',
+    '⺊':'гадание (форма 卜)','亚':'Азия; второй','兴':'поднимать, радоваться',
+    '北':'север','六':'шесть','介':'между','壬':'девятый небесный ствол',
+    '氐':'основание','吏':'чиновник','共':'вместе','更':'изменять',
+    '呆':'неподвижный','到':'достигать','叚':'заимствовать',
+    '亭':'павильон','禺':'угол; древнее название существа',
+    '允':'разрешать','兀':'неподвижный','冉':'медленно',
+    '屮':'росток','刖':'отсечение ступни','乘':'ехать',
+    '尃':'распространять','万':'десять тысяч','豆':'боб, сосуд для пищи',
+    '亦':'также','凡':'обычный','牙':'клык','亥':'двенадцатая земная ветвь',
+    '戊':'пятый небесный ствол','阿':'приставка к именам',
+    '恩':'милость, благодарность','韦':'выделанная кожа',
+    '也':'тоже','从':'следовать','成':'становиться','句':'фраза',
+    '多':'много','夫':'мужчина, муж','吕':'созвучный знак Люй',
+    '丰':'обильный','谷':'долина','奇':'необычный','宓':'спокойный',
+    '酋':'вождь','尺':'мера длины','⺀':'две точки','丄':'верхняя черта',
+    '冒':'рисковать','予':'давать','廿':'двадцать','坐':'сидеть',
+    '廷':'двор','井':'колодец','已':'уже','巳':'шестая земная ветвь',
+    '足':'нога','虫':'насекомое','果':'плод','吾':'я','兑':'обменивать',
+    '犭':'животное (форма 犬)','禾':'злак','⺼':'мясо, плоть',
+    '⺌':'маленький (форма 小)','罒':'сеть (верхняя форма 网)',
+    '网':'сеть','罓':'сеть (вариант 网)','丬':'половина доски',
+    '甫':'начало','立':'стоять','每':'каждый','分':'делить',
+    '贝':'раковина, деньги','羊':'овца','巴':'хвост; имя Ба',
+    '古':'старый','旁':'рядом','白':'белый','寺':'храм',
+    '成':'становиться','石':'камень','弟':'младший брат',
+    '方':'сторона, направление','刃':'лезвие','⺍':'верхние точки',
+    '禾':'зерновое растение','午':'полдень','高':'высокий',
+    '公':'общественный','斤':'топор','良':'хороший',
+    '父':'отец','母':'мать','甬':'проход',
+  });
+  function componentName(part) {
+    return MEANINGS[part] || RADICAL_NAMES[part] ||
+      COMPONENT_NAMES[part] || SINGLE[part] || '';
+  }
+  function glyphHtml(char) {
+    // Some Android system fonts render the variant radical 罒 as missing-glyph squares.
+    // Use a small vector for the *same* component, not a visually different surrogate 四.
+    if (char === '罒') return '<svg class="writing-net-radical" viewBox="0 0 48 34" ' +
+      'role="img" aria-label="罒, сетка" xmlns="http://www.w3.org/2000/svg">' +
+      '<path d="M3 4H45V30H3Z M17 4V30 M31 4V30" fill="none" ' +
+      'stroke="currentColor" stroke-width="4" stroke-linejoin="round"/></svg>';
+    return '<span lang="zh-CN">' + escapeHtml(char) + '</span>';
+  }
+
   function escapeHtml(value) {
     return String(value ?? '').replace(/[&<>"']/g, c =>
       ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -182,10 +264,11 @@
     return node.children.map(glyph).join('');
   }
   function humanMeaning(part) {
-    if (MEANINGS[part]) return MEANINGS[part];
+    const full = componentName(part);
+    if (full) return full;
     const ch = Array.from(part);
-    if (ch.length === 2 && MEANINGS[ch[0]] && MEANINGS[ch[1]])
-      return MEANINGS[ch[0]] + ' и ' + MEANINGS[ch[1]];
+    if (ch.length > 1 && ch.length <= 3 && ch.every(c => componentName(c)))
+      return ch.map(c => componentName(c)).join(' + ');
     return '';
   }
   function structure(info) {
@@ -202,9 +285,10 @@
     const e = info?.etymology;
     if (!e || !e.type) return '';
     if (e.type === 'pictophonetic') {
-      const semantic = e.semantic ? '<strong lang="zh-CN">' + escapeHtml(e.semantic) +
-        '</strong>' + (MEANINGS[e.semantic] ? ' («' + escapeHtml(MEANINGS[e.semantic]) + '»)' : '') : '';
-      const phonetic = e.phonetic ? '<strong lang="zh-CN">' + escapeHtml(e.phonetic) + '</strong>' : '';
+      const semantic = e.semantic ? '<strong class="writing-ru-inline-glyph">' + glyphHtml(e.semantic) +
+        '</strong>' + (componentName(e.semantic) ? ' («' + escapeHtml(componentName(e.semantic)) + '»)' : '') : '';
+      const phonetic = e.phonetic ? '<strong class="writing-ru-inline-glyph">' + glyphHtml(e.phonetic) +
+        '</strong>' + (componentName(e.phonetic) ? ' («' + escapeHtml(componentName(e.phonetic)) + '»)' : '') : '';
       if (semantic && phonetic) return 'Это <strong>смысло-звуковой</strong> знак: ' +
         semantic + ' относится к области значения, а ' + phonetic +
         ' исторически подсказывал произношение. Сегодня его звучание может отличаться.';
@@ -246,9 +330,11 @@
     const shape = pieces
       ? '<div class="writing-ru-parts">' + pieces.pieces.map(p =>
           '<div class="writing-ru-part"><span class="writing-ru-part-place">' +
-          escapeHtml(p.position) + '</span><b lang="zh-CN">' + escapeHtml(p.glyph) + '</b>' +
-          '<span class="writing-ru-part-meaning">' + escapeHtml(p.meaning ||
-          (p.nested ? 'группа нескольких элементов' : 'часть написания')) + '</span></div>').join('') + '</div>'
+          escapeHtml(p.position) + '</span><b class="writing-ru-part-glyph">' +
+          glyphHtml(p.glyph) + '</b>' +
+          '<span class="writing-ru-part-meaning">' +
+          escapeHtml(p.meaning || (p.nested ? 'сложный компонент' : 'отдельный графический элемент')) +
+          '</span></div>').join('') + '</div>'
       : '<p>Этот знак удобнее сначала запомнить целиком: полного надёжного разбора современной формы в базе нет.</p>';
     let memory = note.memory || '';
     if (!memory && pieces) {
@@ -267,10 +353,10 @@
         escapeHtml(related[0].hanzi) + '» — ' + escapeHtml(related[0].ru) + '</div>' : '')) +
       (pinyin ? '<small>' + escapeHtml(pinyin) + '</small>' : '') + '</div>' +
       '<h4>1. Как устроен</h4>' + shape +
-      (info?.radical ? '<p class="writing-ru-key">Словарный ключ: <b lang="zh-CN">' +
-        escapeHtml(info.radical) + '</b>' + (MEANINGS[info.radical] ?
-        ' · ' + escapeHtml(MEANINGS[info.radical]) : '') +
-        '. Ключ помогает искать знак в словаре, но не всегда раскрывает его происхождение.</p>' : '') +
+      (info?.radical ? '<p class="writing-ru-key">Словарный ключ: <b class="writing-ru-inline-glyph">' +
+        glyphHtml(info.radical) + '</b>' +
+        ' — <strong>' + escapeHtml(componentName(info.radical) || 'название не уточнено') +
+        '</strong>. Ключ помогает искать знак в словаре, но не всегда раскрывает его происхождение.</p>' : '') +
       (formation ? '<h4>2. Что известно о происхождении</h4><p>' + formation + '</p>' :
         '<h4>2. Что известно о происхождении</h4><p>Для этого знака пока нет проверенного объяснения происхождения на русском. Современные части показаны выше, но они не обязательно повторяют древнюю форму.</p>') +
       '<h4>3. Как запомнить</h4><p class="writing-ru-memory">' +
@@ -284,5 +370,5 @@
       '" target="_blank" rel="noopener noreferrer">Викисловарь</a>. ' +
       'Образы для памяти не равны научной этимологии.</div></div>';
   }
-  global.ChineseLabWritingGuideRU = Object.freeze({render,parseIDS,structure,examples});
+  global.ChineseLabWritingGuideRU = Object.freeze({render,parseIDS,structure,examples,componentName});
 })(window);

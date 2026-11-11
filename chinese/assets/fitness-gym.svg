@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 620" role="img" aria-label="健身房 · 先了解">
+<style>
+text{font-family:"Noto Sans CJK SC","Microsoft YaHei","PingFang SC",sans-serif;fill:#172018}.title{font-size:31px;font-weight:700}.label{font-size:24px;font-weight:650}.mini{font-size:17px}.outline{stroke:#1a261b;stroke-width:4;stroke-linejoin:round;stroke-linecap:round}.stroke{stroke:#1a261b;stroke-width:2;stroke-linejoin:round;stroke-linecap:round}
+</style>
+<rect width="1080" height="620" fill="#f8f9f4"/>
+<rect width="1080" height="104" fill="#e9eee5"/>
+<text x="42" y="66" class="title">健身房 · 先了解</text><text x="852" y="64" class="mini">第17课 / 01</text>
+<path d="M38 105H1040" class="outline"/>
+<!-- membership wall left: 10-38% -->
+<rect x="96" y="158" width="329" height="235" rx="16" fill="#fff" class="outline"/>
+<rect x="119" y="177" width="283" height="60" rx="6" fill="#d8f457" class="stroke"/>
+<text x="207" y="217" class="title">会员</text>
+<rect x="144" y="263" width="240" height="86" rx="11" fill="#edf2e8" class="stroke"/>
+<text x="160" y="308" class="label">会员卡  /  打折</text>
+<text x="175" y="375" class="mini">先问价钱</text>
+<!-- timetable center: 40-67% -->
+<rect x="458" y="158" width="255" height="235" rx="14" fill="#fff" class="outline"/>
+<rect x="481" y="177" width="211" height="58" rx="7" fill="#d8f457" class="stroke"/>
+<text x="534" y="215" class="label">时间表</text>
+<path d="M491 266H680M491 309H680M491 351H680" class="stroke"/>
+<text x="495" y="297" class="label">18:00</text><text x="495" y="343" class="label">21:00</text>
+<text x="538" y="377" class="mini">健身房</text>
+<!-- coach center right: 72-95% -->
+<rect x="774" y="164" width="245" height="240" rx="15" fill="#e5eddf" class="outline"/>
+<circle cx="893" cy="224" r="36" fill="#f1d5b6" class="outline"/>
+<path d="M864 206Q890 183 922 207" fill="none" class="outline"/>
+<path d="M854 274Q889 254 929 275L948 336L920 348L904 311V375H876V311L859 348L833 338Z" fill="#a6bbad" class="outline"/>
+<path d="M858 303H930" class="stroke"/>
+<text x="852" y="394" class="label">教练</text>
+<!-- equipment lower-left: treadmill -->
+<rect x="182" y="460" width="400" height="123" rx="12" fill="#eff2eb" class="stroke"/>
+<path d="M242 550H464L505 520H297Z" fill="#bdc8bb" class="outline"/>
+<path d="M315 515L344 465H415M344 465V508" fill="none" class="outline"/>
+<text x="525" y="547" class="label">设备</text>
+<!-- message -->
+<rect x="694" y="474" width="275" height="89" rx="13" fill="#d8f457" class="stroke"/>
+<text x="719" y="517" class="label">先看，再决定</text>
+<text x="714" y="541" class="mini">有问题可以先问教练</text>
+<path d="M40 590H1040" class="stroke"/>
+</svg>

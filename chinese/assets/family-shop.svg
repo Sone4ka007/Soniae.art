@@ -15,7 +15,7 @@
 <rect x="113" y="170" width="290" height="205" rx="12" class="paper stroke"/>
 <rect x="140" y="193" width="240" height="59" rx="6" class="lime thin"/>
 <text x="191" y="232" class="headline">打 折</text>
-<text x="154" y="302" class="caption">原价 400 元</text>
+<text x="154" y="302" class="caption">以前 400 元</text>
 <text x="154" y="344" class="headline">现在 280 元</text>
 <!-- quality tags at center -->
 <path d="M455 153H710" class="stroke" fill="none"/>
@@ -23,7 +23,7 @@
 <rect x="468" y="188" width="195" height="165" rx="11" class="paper stroke"/>
 <text x="498" y="238" class="headline">质量</text>
 <path d="M492 266H635M492 293H626" class="thin" fill="none"/>
-<text x="490" y="326" class="caption">材料：羊毛</text>
+<text x="490" y="326" class="caption">这件毛衣质量好</text>
 <!-- two sweaters, right -->
 <path d="M742 144H1043M804 144V184M960 144V184" class="stroke" fill="none"/>
 <path d="M783 183L730 218L690 295L751 312L779 265V441H917V265L944 312L1005 295L965 218L915 183L885 212H813Z" fill="#ebedef" class="stroke"/>

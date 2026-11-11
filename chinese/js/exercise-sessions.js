@@ -29,6 +29,11 @@
         Array.isArray(game.matched);
     }
     if (mode === 'sceneMatch') {
+      // Discard old lesson-one matching rounds after switching to the author's
+      // two-scene artwork; XP and all other modes remain unchanged.
+      if (lesson?.id === 1 &&
+          !(game.sceneIndex === 0 && game.scene === 'sonya-lesson1-documents' ||
+            game.sceneIndex === 1 && game.scene === 'sonya-lesson1-campus') ) return false;
       return typeof game.scene === 'string' &&
         Array.isArray(game.pairs) && game.pairs.length >= 3 && game.pairs.length <= 6 &&
         game.pairs.every(p => p && typeof p.id === 'string' && typeof p.word === 'string') &&

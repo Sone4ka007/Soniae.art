@@ -30,3 +30,5 @@
  .scene-match-target{width:20px;height:20px;font-size:13px}
  .scene-match-wires line{stroke-width:2.5}
 }
+
+.scene-match-stage{margin:8px 0 14px;font-size:12px;font-weight:850;letter-spacing:.06em;color:var(--muted)}

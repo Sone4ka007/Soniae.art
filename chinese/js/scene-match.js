@@ -14,6 +14,30 @@
     'park-rest','plans-desk','plans-office','rest-plan',
     'winter-plan','winter-station','word-search-room'
   ]);
+  // Original pen-and-ink drawings supplied by Sonya. The schedule (课程表)
+  // and passport (护照) are deliberately excluded: neither is lesson-1 vocabulary.
+  const LESSON_ONE_ART = Object.freeze([
+    {
+      image:'sonya-lesson1-documents',
+      title:'Документы на стипендию',
+      spots:[
+        {id:'sonya-visa',word:'签证',x:3.52,y:5.97,w:24.81,h:49.68},
+        {id:'sonya-materials',word:'材料',x:37.96,y:0.65,w:18.89,h:47.74},
+        {id:'sonya-student-id',word:'证件',x:16.02,y:54.84,w:26.39,h:34.84},
+        {id:'sonya-scholarship',word:'奖学金',x:57.31,y:52.9,w:26.57,h:42.26}
+      ]
+    },
+    {
+      image:'sonya-lesson1-campus',
+      title:'Университетская жизнь',
+      spots:[
+        {id:'sonya-teacher',word:'教师',x:5.28,y:0.65,w:21.2,h:49.19},
+        {id:'sonya-course',word:'课程',x:34.91,y:5.97,w:25.37,h:42.1},
+        {id:'sonya-canteen',word:'食堂',x:68.15,y:10.48,w:27.78,h:32.42},
+        {id:'sonya-activity',word:'活动',x:9.54,y:51.94,w:33.06,h:44.52}
+      ]
+    }
+  ]);
   const FALLBACK = Object.freeze({
     image:'word-search-room', title:'Комната студента',
     spots:[
@@ -54,7 +78,23 @@
       .sort((a,b)=>b.score-a.score);
     return possible[0]||FALLBACK;
   }
+  function sonyaRound(lesson, sceneIndex) {
+    const scene=LESSON_ONE_ART[sceneIndex];
+    if (!scene || lesson?.id !== 1) return null;
+    const wordLookup=new Map((lesson.words||[]).map(w=>[w.hanzi,w.ru]));
+    if (!scene.spots.every(spot=>wordLookup.has(spot.word))) return null;
+    return {
+      scene:scene.image, sceneTitle:scene.title, sceneIndex,
+      sceneCount:LESSON_ONE_ART.length,
+      pairs:scene.spots.map(p=>({...p,ru:wordLookup.get(p.word)})),
+      order:shuffle(scene.spots.map(p=>p.word)),
+      matched:[],chosenSpot:null,chosenWord:null,hintWord:null,
+      notice:'Выбери рисунок и соответствующее китайское слово.'
+    };
+  }
   function init(lesson) {
+    const firstRound=sonyaRound(lesson,0);
+    if (firstRound) return firstRound;
     const scene=sceneFor(lesson);
     const words=new Map((lesson.words||[]).map(w=>[w.hanzi,w.ru]));
     return {
@@ -74,6 +114,12 @@
     const esc=helpers.esc;
     if (!game||!Array.isArray(game.pairs)) return '';
     const total=game.pairs.length, done=game.matched.length;
+    const isSonya=lesson.id===1 && Number.isInteger(game.sceneIndex) &&
+      game.sceneCount===LESSON_ONE_ART.length;
+    const finalScene=isSonya && game.sceneIndex===LESSON_ONE_ART.length-1;
+    const nextScene=isSonya && !finalScene && done===total;
+    const stage=isSonya?'<p class="scene-match-stage">СЦЕНА '+(game.sceneIndex+1)+' / '+
+      game.sceneCount+' · '+esc(game.sceneTitle)+'</p>':'';
     const spots=game.pairs.map((p,i)=>{
       const matched=game.matched.includes(p.id);
       const active=game.chosenSpot===p.id;
@@ -102,7 +148,7 @@
     return '<div class="panel-head"><div><div class="eyebrow">'+esc(lesson.label.toUpperCase())+
       ' / ВИЗУАЛЬНЫЙ СЛОВАРЬ</div><h3>НАЙДИ И СОЕДИНИ</h3>'+
       '<p class="panel-desc">Найди предмет на картинке, затем выбери китайское слово. Перевод скрыт, пока не запросишь подсказку.</p></div>'+
-      '<span class="chip">СОВПАДЕНИЙ '+done+' / '+total+'</span></div>'+
+      '<span class="chip">СОВПАДЕНИЙ '+done+' / '+total+'</span></div>'+stage+
       '<div class="exercise-resume-bar"><span>АВТОСОХРАНЕНИЕ ЗАДАНИЙ</span>'+
       '<button type="button" data-action="exercise-restart">НАЧАТЬ ЗАНОВО ↻</button></div>'+
       '<div class="progress-track"><div style="width:'+(100*done/total)+'%"></div></div>'+
@@ -112,13 +158,17 @@
       '<div class="scene-match-words"><p class="scene-match-caption">СОЕДИНИ СО СЛОВОМ</p>'+labels+'</div>'+
       '<svg class="scene-match-wires" aria-hidden="true" preserveAspectRatio="none"></svg></div>'+
       '<div class="scene-match-footer"><p class="scene-match-status" role="status">'+
-      esc(finished?'Все предметы найдены! Можно начать новый раунд.':game.notice)+
+      esc(finished?(nextScene?'Все четыре предмета найдены! Переходи к следующей сцене.':
+        finalScene?'Все восемь рисунков найдены! Первый урок завершён.':
+        'Все предметы найдены! Можно начать новый раунд.'):game.notice)+
       '</p><button type="button" class="action-btn secondary" data-action="scene-hint"'+
       (finished?' disabled':'')+'>ПЕРЕВОД ПО ПОДСКАЗКЕ</button></div>'+
+      (nextScene?'<button type="button" class="action-btn" data-action="scene-next">СЛЕДУЮЩАЯ СЦЕНА →</button>':'')+
       (hint?'<p class="scene-match-hint"><span lang="zh-CN">'+esc(hint.word)+
         '</span> — '+esc(hint.ru||'Значение смотри в словаре урока')+'</p>':'')+
-      (finished?'<div class="feedback is-success">РАУНД ЗАВЕРШЁН · '+total+
-        ' ПРЕДМЕТОВ НАЙДЕНО</div>':'');
+      (finished?'<div class="feedback is-success">'+
+        (finalScene?'УРОК 01 · 8 РИСУНКОВ НАЙДЕНО':
+          'РАУНД ЗАВЕРШЁН · '+total+' ПРЕДМЕТОВ НАЙДЕНО')+'</div>':'');
   }
   function paint(game) {
     const board=document.getElementById('scene-match-board');
@@ -143,7 +193,19 @@
     }
   }
   function action(type, btn, game, helpers) {
-    if(!game||game.matched.length===game.pairs.length)return;
+    if(!game)return;
+    if(type==='scene-next') {
+      if(!helpers.lesson || helpers.lesson.id!==1 ||
+        !Number.isInteger(game.sceneIndex) ||
+        game.matched.length!==game.pairs.length ||
+        game.sceneIndex>=LESSON_ONE_ART.length-1)return;
+      const next=sonyaRound(helpers.lesson,game.sceneIndex+1);
+      if (!next) return;
+      Object.assign(game,next);
+      helpers.render();
+      return;
+    }
+    if(game.matched.length===game.pairs.length)return;
     if(type==='scene-spot') {
       const id=btn.dataset.sceneId;
       if(!game.pairs.some(p=>p.id===id)||game.matched.includes(id))return;

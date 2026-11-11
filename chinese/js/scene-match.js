@@ -7,7 +7,7 @@
     'gallery-friends','gallery-studio','internship-interview',
     'internship-notice','lesson14-shoes','lesson14-tea-shop',
     'park-rest','plans-desk','plans-office','rest-plan',
-    'winter-plan','winter-station','tech-bike','tech-video','lesson8-vocabulary'
+    'winter-plan','winter-station','tech-bike','tech-video','lesson8-vocabulary','lesson11-vocabulary'
   ]);
   // Original pen-and-ink drawings supplied by Sonya. The schedule (课程表)
   // and passport (护照) are deliberately excluded: neither is lesson-1 vocabulary.
@@ -35,14 +35,43 @@
   ]);
   // This round uses only lesson-8 vocabulary. The four zones correspond
   // to distinct drawings, so no generic HSK-3 objects can leak into it.
-  const LESSON_EIGHT_ART = Object.freeze({
-    image:'lesson8-vocabulary', title:'Отдых и путешествия',
-    spots:[
-      {id:'lesson8-hat',word:'帽子',x:2,y:18,w:22.4,h:70},
-      {id:'lesson8-nature',word:'大自然',x:26.2,y:18,w:22.4,h:70},
-      {id:'lesson8-wall',word:'长城',x:50.7,y:18,w:22.4,h:70},
-      {id:'lesson8-palace',word:'故宫',x:75.2,y:18,w:22.4,h:70}
-    ]
+  const LESSON_ART = Object.freeze({
+    8:Object.freeze({
+      image:'lesson8-vocabulary', title:'Отдых и путешествия',
+      spots:[
+        {id:'lesson8-hat',word:'帽子',x:2,y:18,w:22.4,h:70},
+        {id:'lesson8-nature',word:'大自然',x:26.2,y:18,w:22.4,h:70},
+        {id:'lesson8-wall',word:'长城',x:50.7,y:18,w:22.4,h:70},
+        {id:'lesson8-palace',word:'故宫',x:75.2,y:18,w:22.4,h:70}
+      ]
+    }),
+    9:Object.freeze({
+      image:'gallery-studio', title:'Друзья и воспоминания',
+      spots:[
+        {id:'lesson9-responsibility',word:'责任',x:54,y:22,w:32,h:32},
+        {id:'lesson9-chocolate',word:'巧克力',x:10,y:64,w:23,h:23},
+        {id:'lesson9-feeling',word:'感受',x:38,y:61,w:15,h:28},
+        {id:'lesson9-wish',word:'祝',x:69,y:60,w:21,h:29}
+      ]
+    }),
+    10:Object.freeze({
+      image:'winter-plan', title:'Подготовка к зимней поездке',
+      spots:[
+        {id:'lesson10-temp',word:'气温',x:11,y:24,w:29,h:36},
+        {id:'lesson10-distance',word:'公里',x:56,y:23,w:30,h:33},
+        {id:'lesson10-difference',word:'差别',x:36,y:64,w:24,h:22},
+        {id:'lesson10-plant',word:'植物',x:80,y:59,w:13,h:30}
+      ]
+    }),
+    11:Object.freeze({
+      image:'lesson11-vocabulary', title:'Учебные инструменты',
+      spots:[
+        {id:'lesson11-video',word:'视频',x:2,y:18,w:22.4,h:70},
+        {id:'lesson11-web',word:'网页',x:26.2,y:18,w:22.4,h:70},
+        {id:'lesson11-notes',word:'记录',x:50.7,y:18,w:22.4,h:70},
+        {id:'lesson11-numbers',word:'数字',x:75.2,y:18,w:22.4,h:70}
+      ]
+    })
   });
   const shuffle = values => {
     const copy = values.slice();
@@ -54,8 +83,8 @@
   };
   function sceneFor(lesson) {
     const newWords=new Set((lesson.words||[]).map(w=>w.hanzi));
-    if (lesson.id===8 && LESSON_EIGHT_ART.spots.every(p=>newWords.has(p.word)))
-      return LESSON_EIGHT_ART;
+    const curated=LESSON_ART[lesson.id];
+    if (curated && curated.spots.every(p=>newWords.has(p.word))) return curated;
     const permitted=newWords;
     const possible=(lesson.quest?.steps||[])
       .filter(s=>s.type==='explore' && s.image && Array.isArray(s.spots)

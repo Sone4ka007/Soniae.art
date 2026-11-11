@@ -5,6 +5,15 @@ on:
     branches: [main]
     paths:
       - 'chinese/index.html'
+      - 'chinese/sw.js'
+      - 'chinese/data/**'
+      - 'chinese/js/**'
+      - 'tests/chinese/**'
+      - '.github/workflows/chinese-content-checks.yml'
+  pull_request:
+    paths:
+      - 'chinese/index.html'
+      - 'chinese/sw.js'
       - 'chinese/data/**'
       - 'chinese/js/**'
       - 'tests/chinese/**'

@@ -17,6 +17,8 @@ try {
   const page=await context.newPage();
   page.on('pageerror',error=>errors.push(error.message));
   await page.goto(pathToFileURL(resolve('chinese/index.html')).href,{waitUntil:'domcontentloaded'});
+  // The course now opens with the dictionary. Enter the story mode explicitly.
+  await page.locator('#mode-nav [data-action="mode"][data-id="story"]').click({timeout:20000});
   try {
     await page.waitForSelector('#game-panel .quest-rp-start',{timeout:30000});
   } catch (error) {

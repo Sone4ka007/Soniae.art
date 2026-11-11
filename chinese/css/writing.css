@@ -1,9 +1,9 @@
 /* Chinese Lab — handwriting panel, shared monochrome + lime design */
 .writing-root{max-width:890px;margin:auto;color:var(--ink,#101110)}
 .writing-root .panel-head{margin-bottom:20px}
-.writing-root .panel-head h3{font-family:var(--font-head,Impact,sans-serif);font-size:clamp(32px,5vw,48px);line-height:1.05;margin:8px 0}
+.writing-root .panel-head h3{font-family:var(--font-head,Arial,sans-serif);font-size:clamp(32px,5vw,48px);line-height:1.05;margin:8px 0}
 .writing-stats{display:flex;gap:12px 25px;flex-wrap:wrap;background:var(--soft,#efefe8);padding:16px 20px;border:1px solid var(--line,#c7c9c2);font-size:12px;font-weight:800;letter-spacing:.02em}
-.writing-stats b{font-size:21px;font-family:var(--font-head,Impact,sans-serif);vertical-align:middle;margin-left:4px}
+.writing-stats b{font-size:21px;font-family:var(--font-head,Arial,sans-serif);vertical-align:middle;margin-left:4px}
 .writing-setting{padding:22px 0;border-bottom:1px solid var(--line,#c7c9c2)}
 .writing-setting h4{font-size:13px;letter-spacing:.09em;margin:0 0 14px}
 .writing-lessons,.writing-choices{display:flex;gap:8px;flex-wrap:wrap}

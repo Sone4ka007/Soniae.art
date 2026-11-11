@@ -33,6 +33,31 @@
       ]
     }
   ]);
+
+  // Original sketches by Sonya. Every target is an exact lesson-2 textbook word.
+  // 亮 (bright) is represented by a brightly lit stage, not by the noun 灯.
+  const LESSON_TWO_ART = Object.freeze([
+    {
+      image:'sonya-lesson2-apartment',
+      title:'Осмотр квартиры',
+      spots:[
+        {id:'sonya-lesson2-kitchen',word:'厨房',x:9.35,y:2.26,w:31.20,h:45.81},
+        {id:'sonya-lesson2-living',word:'客厅',x:56.39,y:2.42,w:36.76,h:48.39},
+        {id:'sonya-lesson2-towel',word:'毛巾',x:17.50,y:49.84,w:19.07,h:47.10},
+        {id:'sonya-lesson2-bright',word:'亮',x:59.26,y:49.35,w:30.74,h:47.74}
+      ]
+    },
+    {
+      image:'sonya-lesson2-details',
+      title:'Вещи и повседневные дела',
+      spots:[
+        {id:'sonya-lesson2-price',word:'价格',x:7.59,y:2.10,w:31.94,h:60.48},
+        {id:'sonya-lesson2-diary',word:'日记',x:53.43,y:3.06,w:38.15,h:48.71},
+        {id:'sonya-lesson2-planting',word:'种',x:39.35,y:50.32,w:25.74,h:48.87}
+      ]
+    }
+  ]);
+  const AUTHOR_ART = Object.freeze({1:LESSON_ONE_ART,2:LESSON_TWO_ART});
   // This round uses only lesson-8 vocabulary. The four zones correspond
   // to distinct drawings, so no generic HSK-3 objects can leak into it.
   const LESSON_EIGHT_ART = Object.freeze({
@@ -77,13 +102,14 @@
     return possible[0]||null;
   }
   function sonyaRound(lesson, sceneIndex) {
-    const scene=LESSON_ONE_ART[sceneIndex];
-    if (!scene || lesson?.id !== 1) return null;
+    const scenes=AUTHOR_ART[lesson?.id] || [];
+    const scene=scenes[sceneIndex];
+    if (!scene) return null;
     const wordLookup=new Map((lesson.words||[]).map(w=>[w.hanzi,w.ru]));
     if (!scene.spots.every(spot=>wordLookup.has(spot.word))) return null;
     return {
       scene:scene.image, sceneTitle:scene.title, sceneIndex,
-      sceneCount:LESSON_ONE_ART.length,
+      sceneCount:scenes.length,
       pairs:scene.spots.map(p=>({...p,ru:wordLookup.get(p.word)})),
       order:shuffle(scene.spots.map(p=>p.word)),
       matched:[],chosenSpot:null,chosenWord:null,hintWord:null,zoom:false,
@@ -114,9 +140,12 @@
     const esc=helpers.esc;
     if (!game||!Array.isArray(game.pairs)) return '<section class="panel-head"><div><div class="eyebrow">ВИЗУАЛЬНЫЙ СЛОВАРЬ</div><h3>НЕТ ПОДХОДЯЩЕЙ СЦЕНЫ</h3><p class="panel-desc">Для этого урока пока нет иллюстрации со словами из словаря урока.</p></div></section>';
     const total=game.pairs.length, done=game.matched.length;
-    const isSonya=lesson.id===1 && Number.isInteger(game.sceneIndex) &&
-      game.sceneCount===LESSON_ONE_ART.length;
-    const finalScene=isSonya && game.sceneIndex===LESSON_ONE_ART.length-1;
+    const authorScenes=AUTHOR_ART[lesson.id] || [];
+    const isSonya=Number.isInteger(game.sceneIndex) &&
+      game.sceneCount===authorScenes.length &&
+      game.scene===authorScenes[game.sceneIndex]?.image;
+    const finalScene=isSonya && game.sceneIndex===authorScenes.length-1;
+    const totalArt=isSonya?authorScenes.reduce((sum,x)=>sum+x.spots.length,0):total;
     const nextScene=isSonya && !finalScene && done===total;
     const stage=isSonya?'<p class="scene-match-stage">СЦЕНА '+(game.sceneIndex+1)+' / '+
       game.sceneCount+' · '+esc(game.sceneTitle)+'</p>':'';
@@ -164,7 +193,7 @@
       '<svg class="scene-match-wires" aria-hidden="true" preserveAspectRatio="none"></svg></div>'+
       '<div class="scene-match-footer"><p class="scene-match-status" role="status">'+
       esc(finished?(nextScene?'Все четыре предмета найдены! Переходи к следующей сцене.':
-        finalScene?'Все восемь рисунков найдены! Первый урок завершён.':
+        finalScene?'Все '+totalArt+' рисунков найдены! Урок завершён.':
         'Все предметы найдены! Можно начать новый раунд.'):game.notice)+
       '</p><button type="button" class="action-btn secondary" data-action="scene-hint"'+
       (finished?' disabled':'')+'>ПЕРЕВОД ПО ПОДСКАЗКЕ</button></div>'+
@@ -172,7 +201,7 @@
       (hint?'<p class="scene-match-hint"><span lang="zh-CN">'+esc(hint.word)+
         '</span> — '+esc(hint.ru||'Значение смотри в словаре урока')+'</p>':'')+
       (finished?'<div class="feedback is-success">'+
-        (finalScene?'УРОК 01 · 8 РИСУНКОВ НАЙДЕНО':
+        (finalScene?'УРОК '+String(lesson.id).padStart(2,'0')+' · '+totalArt+' РИСУНКОВ НАЙДЕНО':
           'РАУНД ЗАВЕРШЁН · '+total+' ПРЕДМЕТОВ НАЙДЕНО')+'</div>':'');
   }
   function paint(game) {
@@ -207,10 +236,11 @@
       return;
     }
     if(type==='scene-next') {
-      if(!helpers.lesson || helpers.lesson.id!==1 ||
-        !Number.isInteger(game.sceneIndex) ||
+      const scenes=AUTHOR_ART[helpers.lesson?.id] || [];
+      if(!scenes.length || !Number.isInteger(game.sceneIndex) ||
+        game.scene!==scenes[game.sceneIndex]?.image ||
         game.matched.length!==game.pairs.length ||
-        game.sceneIndex>=LESSON_ONE_ART.length-1)return;
+        game.sceneIndex>=scenes.length-1)return;
       const next=sonyaRound(helpers.lesson,game.sceneIndex+1);
       if (!next) return;
       Object.assign(game,next);

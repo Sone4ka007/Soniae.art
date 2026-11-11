@@ -1,0 +1,38 @@
+/* Chinese Lab — illustrated object matching, responsive and keyboard accessible. */
+.object-match{display:grid;gap:15px;max-width:100%}
+.object-match-meter{display:flex;align-items:center;gap:14px;font-size:11px;font-weight:850;letter-spacing:.06em}
+.object-match-meter .progress-track{flex:1;margin:0}
+.object-match-meter>span{flex-shrink:0;font-variant-numeric:tabular-nums}
+.object-match-instruction{margin:0;font-size:clamp(15px,1.6vw,19px);font-weight:700;line-height:1.5}
+.object-match-controls{display:flex;flex-wrap:wrap;gap:8px}
+.object-match-control{border:1.5px solid var(--ink);background:var(--white);padding:11px 14px;min-height:44px;font-size:12px;font-weight:800;letter-spacing:.025em}
+.object-match-control:hover,.object-match-control:focus-visible{background:var(--acid)}
+.object-match-viewport{max-width:100%;overflow-x:auto;overscroll-behavior-inline:contain;scrollbar-color:var(--ink) var(--soft)}
+.object-match-scene{position:relative;width:100%;aspect-ratio:1080/620;overflow:hidden;border:2px solid var(--ink);background:#f0eee4}
+.object-match-viewport.is-zoomed .object-match-scene{min-width:800px}
+.object-match-scene img{display:block;width:100%;height:100%;object-fit:fill;pointer-events:none;user-select:none}
+.object-match-spot{position:absolute;display:flex;justify-content:center;align-items:center;border:2px solid transparent;background:transparent;border-radius:6px;padding:0;cursor:crosshair;touch-action:manipulation;min-width:26px;min-height:26px}
+.object-match-spot:hover,.object-match-spot:focus-visible{background:rgba(215,255,41,.18);border-color:#718a00;outline-offset:1px}
+.object-match-spot.is-guided{border:3px dashed #212900;background:rgba(215,255,41,.4);animation:object-match-pulse 1.3s ease-in-out infinite}
+.object-match-spot.is-matched{border:2px solid #718a00;background:rgba(215,255,41,.42);color:#1d2500;cursor:default;font-size:clamp(18px,3vw,32px);font-weight:900;opacity:1}
+.object-match-spot:disabled{pointer-events:none}
+.object-match-words{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}
+.object-match-word{display:flex;position:relative;flex-direction:column;justify-content:center;align-items:flex-start;gap:3px;min-height:77px;padding:11px 34px 11px 13px;text-align:left;border:1.5px solid var(--ink);background:var(--white);min-width:0}
+.object-match-word:hover,.object-match-word:focus-visible{border-color:#718a00;background:#f5f9e8}
+.object-match-word.is-selected{border:2px solid var(--ink);background:var(--acid)}
+.object-match-word.is-matched{background:#f0f4e4;border-color:#96ac65;color:#3c523a;opacity:1}
+.object-match-hanzi{font-family:var(--han);font-size:clamp(20px,2.5vw,28px);font-weight:600;line-height:1.25;word-break:keep-all}
+.object-match-pinyin{font-size:12px;line-height:1.4}
+.object-match-ru{font-size:12px;line-height:1.4;overflow-wrap:anywhere}
+.object-match-mark{position:absolute;right:10px;top:12px;font-size:20px;line-height:1}
+.object-match-notice{margin:0;min-height:35px;font-size:13px;line-height:1.5;color:var(--muted)}
+@keyframes object-match-pulse{0%,100%{outline:0 solid transparent}50%{outline:4px solid rgba(215,255,41,.5)}}
+@media(max-width:600px){
+ .object-match-words{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
+ .object-match-word{min-height:75px;padding:10px 28px 10px 10px}
+ .object-match-mark{right:7px;top:10px}
+ .object-match-control{flex:1}
+ .object-match-instruction{font-size:15px}
+ .object-match-spot{border-radius:4px}
+}
+@media(prefers-reduced-motion:reduce){.object-match-spot.is-guided{animation:none}}

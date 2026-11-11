@@ -95,6 +95,8 @@ try {
   await page.locator('.quest-choice').first().click();
   await page.locator('.quest-feedback [data-action="quest-next"]').click();
   await page.locator('.quest-canvas img').waitFor({state:'visible',timeout:10000});
+  // SVG scene loading is asynchronous; visibility alone does not mean the image decoded.
+  await page.locator('.quest-canvas img').evaluate(img=>img.decode());
   const cafeteriaImage=await page.locator('.quest-canvas img').getAttribute('src');
   assert.match(cafeteriaImage,/cafeteria-search/,'Cafeteria must be a real scene instead of a skipped plot event');
   assert.equal(await page.locator('.quest-hotspot[data-id="bags"]').count(),1,'Two matching bags must be inspectable');

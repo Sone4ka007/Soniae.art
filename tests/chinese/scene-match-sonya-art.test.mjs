@@ -44,7 +44,7 @@ test('first round covers four genuine lesson-one words and no extra vocabulary',
  assert.equal(game.sceneIndex,0);
  assert.equal(game.sceneCount,2);
  assert.equal(game.pairs.length,4);
- assert.deepEqual(game.pairs.map(p=>p.word).sort(),docs);
+ assert.deepEqual(Array.from(game.pairs,p=>p.word).sort(),docs);
  assert(!game.pairs.some(p=>['护照','课程表'].includes(p.word)));
  const known=new Set(lesson.words.map(w=>w.hanzi));
  for(const p of game.pairs){
@@ -65,7 +65,7 @@ test('correct pairs unlock second scene and finish all eight artworks',()=>{
  assert.equal(game.scene,'sonya-lesson1-campus');
  assert.equal(game.sceneIndex,1);
  assert.equal(game.matched.length,0);
- assert.deepEqual(game.pairs.map(p=>p.word).sort(),campus);
+ assert.deepEqual(Array.from(game.pairs,p=>p.word).sort(),campus);
  assert(rendered(game).includes('sonya-lesson1-campus.svg'));
  for(const pair of game.pairs.map(x=>({...x})))pick(game,pair,h);
  assert.equal(h.xp,64);

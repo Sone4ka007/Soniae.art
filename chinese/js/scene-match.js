@@ -4,7 +4,8 @@
   const BASE_RU = Object.freeze({
     '书':'книга', '手机':'мобильный телефон', '杯子':'чашка',
     '椅子':'стул', '电脑':'компьютер', '桌子':'стол',
-    '包':'сумка', '老师':'преподаватель', '时间':'время'
+    '包':'сумка', '老师':'преподаватель', '时间':'время',
+    '护照':'паспорт', '课程表':'расписание занятий'
   });
   const ASSETS = new Set([
     'cafeteria-search','campus-submit','family-room','family-shop',
@@ -12,7 +13,8 @@
     'gallery-friends','gallery-studio','internship-interview',
     'internship-notice','lesson14-shoes','lesson14-tea-shop',
     'park-rest','plans-desk','plans-office','rest-plan',
-    'winter-plan','winter-station','word-search-room'
+    'winter-plan','winter-station','word-search-room',
+    'sonya-lesson1-documents','sonya-lesson1-campus'
   ]);
   const FALLBACK = Object.freeze({
     image:'word-search-room', title:'Комната студента',
@@ -24,6 +26,33 @@
       {id:'chair',word:'椅子',x:13,y:66,w:23,h:29}
     ]
   });
+
+  // Original hand-drawn artwork by the Chinese Lab author. These two
+  // illustrated rounds use the exact words represented by each drawing.
+  // 课程 (class/course) and 课程表 (schedule) remain separate concepts.
+  const AUTHOR_SCENES = Object.freeze([
+    {
+      image: 'sonya-lesson1-documents', title: 'Документы · рисунки автора',
+      spots: [
+        {id:'sonya-visa',word:'签证',x:3.52,y:5.97,w:24.81,h:49.68},
+        {id:'sonya-materials',word:'材料',x:37.96,y:0.65,w:18.89,h:47.74},
+        {id:'sonya-passport',word:'护照',x:72.59,y:2.90,w:15.56,h:45.00},
+        {id:'sonya-student-id',word:'证件',x:16.02,y:54.84,w:26.39,h:34.84},
+        {id:'sonya-scholarship',word:'奖学金',x:57.31,y:52.90,w:26.57,h:42.26}
+      ]
+    },
+    {
+      image: 'sonya-lesson1-campus', title: 'Университет · рисунки автора',
+      spots: [
+        {id:'sonya-teacher',word:'教师',x:5.00,y:0.65,w:21.85,h:49.19},
+        {id:'sonya-course',word:'课程',x:34.91,y:5.32,w:25.37,h:43.55},
+        {id:'sonya-canteen',word:'食堂',x:68.15,y:10.48,w:27.78,h:32.42},
+        {id:'sonya-activity',word:'活动',x:10.09,y:51.94,w:32.04,h:44.52},
+        {id:'sonya-schedule',word:'课程表',x:55.83,y:52.42,w:34.63,h:42.42}
+      ]
+    }
+  ]);
+
   const shuffle = values => {
     const copy = values.slice();
     for (let i=copy.length-1;i>0;i--) {
@@ -32,7 +61,8 @@
     }
     return copy;
   };
-  function sceneFor(lesson) {
+  function sceneFor(lesson, round=0) {
+    if (lesson.id === 1) return AUTHOR_SCENES[round === 1 ? 1 : 0];
     const newWords=new Set((lesson.words||[]).map(w=>w.hanzi));
     const permitted=new Set([...newWords,...Object.keys(BASE_RU)]);
     const possible=(lesson.quest?.steps||[])
@@ -54,12 +84,14 @@
       .sort((a,b)=>b.score-a.score);
     return possible[0]||FALLBACK;
   }
-  function init(lesson) {
-    const scene=sceneFor(lesson);
+  function init(lesson, round=0) {
+    const scene=sceneFor(lesson, round);
     const words=new Map((lesson.words||[]).map(w=>[w.hanzi,w.ru]));
     return {
       scene:scene.image,
       sceneTitle:scene.title,
+      artVersion:lesson.id === 1 ? 1 : null,
+      artRound:lesson.id === 1 ? (round === 1 ? 1 : 0) : null,
       pairs:scene.spots.map(p=>({
         id:String(p.id),word:p.word,
         ru:words.get(p.word)||BASE_RU[p.word]||'',
@@ -95,7 +127,9 @@
         (matched?' is-matched':'')+(active?' is-selected':'')+
         '" data-action="scene-word" data-scene-word="'+esc(word)+
         '" aria-pressed="'+active+'" '+(matched?'disabled':'')+
-        '><span lang="zh-CN">'+esc(word)+'</span><span class="scene-match-speaker" aria-hidden="true">◖))</span></button>';
+        '><span lang="zh-CN">'+esc(word)+'</span>'+
+        (word === '课程表' ? '<small class="scene-match-bonus">БОНУС</small>' : '')+
+        '<span class="scene-match-speaker" aria-hidden="true">◖))</span></button>';
     }).join('');
     const hint=game.hintWord ? game.pairs.find(p=>p.word===game.hintWord):null;
     const finished=done===total;
@@ -115,6 +149,8 @@
       esc(finished?'Все предметы найдены! Можно начать новый раунд.':game.notice)+
       '</p><button type="button" class="action-btn secondary" data-action="scene-hint"'+
       (finished?' disabled':'')+'>ПЕРЕВОД ПО ПОДСКАЗКЕ</button></div>'+
+      (finished && game.artVersion === 1 && game.artRound === 0 ?
+        '<button type="button" class="action-btn" data-action="scene-next">СЛЕДУЮЩАЯ ИЛЛЮСТРАЦИЯ →</button>' : '')+
       (hint?'<p class="scene-match-hint"><span lang="zh-CN">'+esc(hint.word)+
         '</span> — '+esc(hint.ru||'Значение смотри в словаре урока')+'</p>':'')+
       (finished?'<div class="feedback is-success">РАУНД ЗАВЕРШЁН · '+total+
@@ -172,6 +208,6 @@
     }
     helpers.render();
   }
-  global.ChineseLabSceneMatch=Object.freeze({init,render,paint,action});
+  global.ChineseLabSceneMatch=Object.freeze({init,render,paint,action,authorScenes:AUTHOR_SCENES});
   global.addEventListener('resize',()=>global.ChineseLabSceneMatch.paint(global.__chineseLabSceneMatchGame));
 })(window);

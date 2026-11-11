@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 620" role="img" aria-label="我去应聘了 · 招聘信息">
+<style>
+text{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;fill:#192019}
+.title{font-size:31px;font-weight:700}.label{font-size:25px;font-weight:650}.small{font-size:18px}.tiny{font-size:15px}
+.line{stroke:#192019;stroke-width:3;stroke-linejoin:round;stroke-linecap:round}.thin{stroke:#192019;stroke-width:1.8}
+</style>
+<rect width="1080" height="620" fill="#f8f9f4"/>
+<rect width="1080" height="104" fill="#e9ece3"/>
+<text x="43" y="65" class="title">我去应聘了 · 招聘信息</text><text x="880" y="62" class="small">15 / 01</text>
+<path d="M38 105H1040" class="line"/>
+<!-- three discoverable bulletin-board documents -->
+<rect x="92" y="152" width="330" height="238" rx="12" fill="#ffffff" class="line"/>
+<rect x="111" y="171" width="290" height="56" rx="6" fill="#d9f55e" class="thin"/>
+<text x="186" y="209" class="title">招聘</text>
+<text x="132" y="274" class="label">医药公司</text>
+<text x="135" y="316" class="small">招聘学生来实习</text>
+<path d="M130 342H381M130 364H310" class="thin"/>
+<rect x="450" y="159" width="261" height="229" rx="12" fill="#fff" class="line"/>
+<rect x="473" y="177" width="212" height="55" rx="7" fill="#d9f55e" class="thin"/>
+<text x="535" y="215" class="label">报名</text>
+<text x="490" y="268" class="label">星期五以前</text>
+<path d="M486 300H677M486 326H677" class="thin"/>
+<text x="492" y="360" class="small">填写信息</text>
+<rect x="757" y="161" width="250" height="228" rx="12" fill="#fff" class="line"/>
+<rect x="780" y="180" width="203" height="54" rx="7" fill="#d9f55e" class="thin"/>
+<text x="842" y="216" class="label">部门</text>
+<text x="805" y="276" class="label">负责人</text>
+<path d="M790 301H978M790 323H978" class="thin"/>
+<text x="804" y="359" class="small">公司</text>
+<!-- lower contextual office details -->
+<path d="M62 470H1016" class="line"/>
+<rect x="118" y="480" width="242" height="86" rx="8" fill="#eef2ea" class="thin"/>
+<text x="144" y="527" class="label">毕业生</text>
+<text x="144" y="552" class="tiny">也可以报名</text>
+<rect x="408" y="478" width="238" height="88" rx="8" fill="#edf2e7" class="thin"/>
+<text x="432" y="529" class="label">实习经历</text>
+<rect x="691" y="478" width="230" height="88" rx="8" fill="#e6ede4" class="thin"/>
+<text x="738" y="529" class="label">工厂</text>
+<path d="M45 581H1037" class="thin"/>
+<text x="64" y="610" class="small">先了解招聘的工作内容，再报名。</text>
+</svg>

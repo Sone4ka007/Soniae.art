@@ -5,7 +5,7 @@
  */
 (function (global) {
   'use strict';
-  const MODES = new Set(['story', 'pairs', 'translate', 'reverse', 'build', 'sentence']);
+  const MODES = new Set(['story', 'pairs', 'objects', 'translate', 'reverse', 'build', 'sentence']);
   const MAX_SNAPSHOT_LENGTH = 250000;
   const isObject = value => value !== null && typeof value === 'object' && !Array.isArray(value);
   const validIndex = (value, count) => Number.isInteger(value) && value >= 0 && value <= count;
@@ -23,6 +23,7 @@
         Array.isArray(game.choices) && Array.isArray(game.revealed) &&
         isObject(game.flags);
     }
+    if (mode === 'objects') return global.ChineseLabObjectMatch?.valid(game, lesson) === true;
     if (mode === 'pairs') {
       return Array.isArray(game.pairs) && game.pairs.length > 0 &&
         Array.isArray(game.left) && Array.isArray(game.right) &&

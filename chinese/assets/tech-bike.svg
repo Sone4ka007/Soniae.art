@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 620" role="img">
+<defs><linearGradient id="bg" x2="0" y2="1"><stop stop-color="#edf3de"/><stop offset="1" stop-color="#c7d4b7"/></linearGradient></defs>
+<rect width="1080" height="620" fill="url(#bg)"/>
+<rect x="0" y="0" width="1080" height="125" fill="#203b33"/>
+<text x="55" y="77" fill="#fff" font-size="47" font-family="sans-serif" font-weight="700">校园单车站 · 科技改变生活</text>
+<rect x="55" y="165" width="307" height="310" rx="18" fill="#fff" stroke="#7b9e77" stroke-width="4"/>
+<text x="82" y="216" font-family="sans-serif" font-size="32" font-weight="700">共享单车</text>
+<circle cx="141" cy="391" r="50" fill="none" stroke="#263c33" stroke-width="9"/><circle cx="287" cy="391" r="50" fill="none" stroke="#263c33" stroke-width="9"/>
+<path d="M141 391L201 302L245 391L141 391 M201 302H277L287 391 M245 391L201 302" fill="none" stroke="#297c78" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M183 286L214 286M263 289L285 289" stroke="#263c33" stroke-width="9" stroke-linecap="round"/>
+<rect x="396" y="165" width="285" height="310" rx="18" fill="#fff" stroke="#7b9e77" stroke-width="4"/>
+<text x="421" y="214" font-size="33" font-family="sans-serif" font-weight="700">二维码</text>
+<rect x="488" y="246" width="110" height="166" rx="15" fill="#23382e"/>
+<rect x="498" y="261" width="90" height="125" fill="#fff"/>
+<path d="M507 269h23v23h-23zM554 269h23v23h-23zM507 342h23v23h-23z" stroke="#23382e" stroke-width="8" fill="#fff"/>
+<path d="M542 305h13v15h-13zM564 335h14v16h-14zM543 352h11v11h-11z" fill="#23382e"/>
+<circle cx="543" cy="396" r="6" fill="#bdc5b1"/>
+<rect x="713" y="165" width="312" height="310" rx="18" fill="#fff" stroke="#7b9e77" stroke-width="4"/>
+<text x="740" y="214" font-family="sans-serif" font-size="33" font-weight="700">出口 / 说明</text>
+<rect x="761" y="268" width="222" height="117" rx="10" fill="#d9ebdd"/>
+<text x="790" y="317" font-family="sans-serif" font-size="30" fill="#1d4a38">出口 EXIT</text>
+<path d="M791 349h165" stroke="#1b6045" stroke-width="10" stroke-linecap="round"/>
+<path d="M934 336l23 13-23 13" fill="none" stroke="#1b6045" stroke-width="7"/>
+<rect x="60" y="522" width="960" height="54" rx="18" fill="#203b33"/>
+<text x="89" y="559" font-family="sans-serif" font-size="27" fill="#fff">第一次使用：先看说明，再注册，最后扫码开锁。</text></svg>

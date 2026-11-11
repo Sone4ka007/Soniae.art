@@ -35,8 +35,16 @@ function embeddedReadings(source) {
   throw Error('Incomplete embedded readings JSON');
 }
 
-test('website embedded stories equal external published readings.json', () => {
-  assert.deepEqual(embeddedReadings(index), liveReadings);
+test('website embedded fallback agrees with published chapters; newly published lessons may be external only', () => {
+  const embedded=embeddedReadings(index);
+  for(const [id, chapters] of Object.entries(embedded)) {
+    assert.deepEqual(chapters, liveReadings[id], `Offline reading for lesson ${id} differs from published data`);
+  }
+  const manifest=JSON.parse(readFileSync(join(root, 'chinese/data/manifest.json'), 'utf8'));
+  for(const name of manifest.lessons){
+    const id=name.match(/lesson(\d+)\.json/)?.[1];
+    assert.ok(id && Array.isArray(liveReadings[id]) && liveReadings[id].length===3,`Published lesson ${name} must have three chapters`);
+  }
 });
 test('website checks live JSON before using embedded offline copy', () => {
   assert.match(index, /await fetch\(url,\{cache:"no-store"\}\)/);

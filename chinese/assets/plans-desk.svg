@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 620" role="img" aria-label="计划赶不上变化 · 旅行计划"><style>text{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;fill:#182019}.head{font-size:29px;font-weight:700}.label{font-size:25px;font-weight:650}.small{font-size:18px}.tiny{font-size:15px}.line{stroke:#202b20;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:#202b20;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}</style><rect width="1080" height="620" fill="#f8f9f4"/><rect width="1080" height="100" fill="#ebeee7"/><text x="42" y="64" class="head">计划赶不上变化 · 旅行计划</text><text x="866" y="62" class="small">16 / 01</text><path d="M38 103H1040" class="line"/>
+<!-- train ticket left -->
+<rect x="97" y="169" width="307" height="229" rx="13" fill="#fff" class="line"/>
+<path d="M96 248H402" class="thin" stroke-dasharray="8 8"/>
+<rect x="121" y="189" width="264" height="42" rx="5" fill="#d9f55e"/>
+<text x="181" y="218" class="label">火车票</text>
+<text x="130" y="291" class="label">上海</text><text x="283" y="291" class="label">07:00</text>
+<path d="M130 318H375M130 354H370" class="thin"/>
+<text x="135" y="381" class="small">早晨 · 赶上</text>
+<!-- itinerary center -->
+<rect x="448" y="153" width="271" height="246" rx="13" fill="#fff" class="line"/>
+<rect x="470" y="170" width="226" height="50" rx="6" fill="#d9f55e"/>
+<text x="519" y="204" class="label">时间表</text>
+<text x="479" y="257" class="small">星期六 早晨</text>
+<path d="M480 276H686M480 302H681M480 328H670" class="thin"/>
+<text x="498" y="360" class="label">旅行</text>
+<!-- message phone right -->
+<rect x="776" y="158" width="239" height="280" rx="27" fill="#1f2b22" class="line"/>
+<rect x="794" y="183" width="202" height="229" rx="16" fill="#fff"/>
+<rect x="807" y="218" width="175" height="100" rx="14" fill="#d9f55e"/>
+<text x="824" y="254" class="small">朋友：</text><text x="821" y="286" class="label">周六见吧！</text>
+<text x="837" y="365" class="label">约好了</text>
+<circle cx="896" cy="422" r="5" fill="#d9f55e"/>
+<!-- fourth prop map lower -->
+<rect x="158" y="464" width="354" height="103" rx="9" fill="#ebf0e5" class="thin"/>
+<path d="M188 548C233 489 251 537 294 499S382 535 447 483" stroke="#8eb576" stroke-width="16" fill="none"/>
+<circle cx="294" cy="499" r="9" fill="#d9f55e" class="thin"/>
+<text x="328" y="535" class="label">公园</text>
+<path d="M40 586H1040" class="thin"/><text x="50" y="613" class="small">找到车票、时间表和朋友的消息。</text>
+</svg>

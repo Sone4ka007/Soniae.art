@@ -1,18 +1,13 @@
 /* Chinese Lab — illustrated object-to-word matching. */
 (function (global) {
   'use strict';
-  const BASE_RU = Object.freeze({
-    '书':'книга', '手机':'мобильный телефон', '杯子':'чашка',
-    '椅子':'стул', '电脑':'компьютер', '桌子':'стол',
-    '包':'сумка', '老师':'преподаватель', '时间':'время'
-  });
   const ASSETS = new Set([
     'cafeteria-search','campus-submit','family-room','family-shop',
     'festival-home','festival-zoo','fitness-gym','fitness-training',
     'gallery-friends','gallery-studio','internship-interview',
     'internship-notice','lesson14-shoes','lesson14-tea-shop',
     'park-rest','plans-desk','plans-office','rest-plan',
-    'winter-plan','winter-station','word-search-room'
+    'winter-plan','winter-station','tech-bike','tech-video','lesson8-vocabulary'
   ]);
   // Original pen-and-ink drawings supplied by Sonya. The schedule (课程表)
   // and passport (护照) are deliberately excluded: neither is lesson-1 vocabulary.
@@ -38,14 +33,15 @@
       ]
     }
   ]);
-  const FALLBACK = Object.freeze({
-    image:'word-search-room', title:'Комната студента',
+  // This round uses only lesson-8 vocabulary. The four zones correspond
+  // to distinct drawings, so no generic HSK-3 objects can leak into it.
+  const LESSON_EIGHT_ART = Object.freeze({
+    image:'lesson8-vocabulary', title:'Отдых и путешествия',
     spots:[
-      {id:'book',word:'书',x:9,y:39,w:24,h:27},
-      {id:'computer',word:'电脑',x:40,y:18,w:28,h:34},
-      {id:'cup',word:'杯子',x:72,y:43,w:18,h:23},
-      {id:'phone',word:'手机',x:48,y:58,w:15,h:19},
-      {id:'chair',word:'椅子',x:13,y:66,w:23,h:29}
+      {id:'lesson8-hat',word:'帽子',x:2,y:18,w:22.4,h:70},
+      {id:'lesson8-nature',word:'大自然',x:26.2,y:18,w:22.4,h:70},
+      {id:'lesson8-wall',word:'长城',x:50.7,y:18,w:22.4,h:70},
+      {id:'lesson8-palace',word:'故宫',x:75.2,y:18,w:22.4,h:70}
     ]
   });
   const shuffle = values => {
@@ -58,7 +54,9 @@
   };
   function sceneFor(lesson) {
     const newWords=new Set((lesson.words||[]).map(w=>w.hanzi));
-    const permitted=new Set([...newWords,...Object.keys(BASE_RU)]);
+    if (lesson.id===8 && LESSON_EIGHT_ART.spots.every(p=>newWords.has(p.word)))
+      return LESSON_EIGHT_ART;
+    const permitted=newWords;
     const possible=(lesson.quest?.steps||[])
       .filter(s=>s.type==='explore' && s.image && Array.isArray(s.spots)
         && (global.__offlineScenes?.[s.image] || ASSETS.has(s.image)))
@@ -76,7 +74,7 @@
       })
       .filter(s=>s.spots.length>=3)
       .sort((a,b)=>b.score-a.score);
-    return possible[0]||FALLBACK;
+    return possible[0]||null;
   }
   function sonyaRound(lesson, sceneIndex) {
     const scene=LESSON_ONE_ART[sceneIndex];
@@ -96,13 +94,15 @@
     const firstRound=sonyaRound(lesson,0);
     if (firstRound) return firstRound;
     const scene=sceneFor(lesson);
+    // Prefer no round over mis-teaching unrelated vocabulary.
+    if (!scene) return null;
     const words=new Map((lesson.words||[]).map(w=>[w.hanzi,w.ru]));
     return {
       scene:scene.image,
       sceneTitle:scene.title,
       pairs:scene.spots.map(p=>({
         id:String(p.id),word:p.word,
-        ru:words.get(p.word)||BASE_RU[p.word]||'',
+        ru:words.get(p.word)||'',
         x:Number(p.x),y:Number(p.y),w:Number(p.w),h:Number(p.h)
       })),
       order:shuffle(scene.spots.map(p=>p.word)),
@@ -112,7 +112,7 @@
   }
   function render(lesson, game, helpers) {
     const esc=helpers.esc;
-    if (!game||!Array.isArray(game.pairs)) return '';
+    if (!game||!Array.isArray(game.pairs)) return '<section class="panel-head"><div><div class="eyebrow">ВИЗУАЛЬНЫЙ СЛОВАРЬ</div><h3>НЕТ ПОДХОДЯЩЕЙ СЦЕНЫ</h3><p class="panel-desc">Для этого урока пока нет иллюстрации со словами из словаря урока.</p></div></section>';
     const total=game.pairs.length, done=game.matched.length;
     const isSonya=lesson.id===1 && Number.isInteger(game.sceneIndex) &&
       game.sceneCount===LESSON_ONE_ART.length;

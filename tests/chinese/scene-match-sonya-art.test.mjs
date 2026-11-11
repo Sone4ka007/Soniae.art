@@ -88,12 +88,33 @@ test('mistakes earn no XP; partial progress persists across reloads',()=>{
  const incompatible={...game,scene:'word-search-room'};
  assert(!sessions.restore({sessions:{'1':{sceneMatch:{version:1,game:incompatible}}}},1,'sceneMatch',lesson));
 });
+test('illustrations have a larger pannable surface, zoom, and preserve game progress',()=>{
+ const game=engine.init(lesson),h=handlers();
+ assert.equal(game.zoom,false);
+ assert(rendered(game).includes('scene-match-canvas'));
+ assert(rendered(game).includes('data-action="scene-zoom"'));
+ engine.action('scene-zoom',{dataset:{}},game,h);
+ assert.equal(game.zoom,true);
+ assert(rendered(game).includes('is-zoomed'));
+ assert.equal(h.xp,0);
+ const p={sessions:{}};
+ assert(sessions.persist(p,1,'sceneMatch',game,lesson));
+ assert.equal(sessions.restore(p,1,'sceneMatch',lesson)?.zoom,true);
+ engine.action('scene-zoom',{dataset:{}},game,h);
+ assert.equal(game.zoom,false);
+ const css=read('chinese/css/scene-match.css');
+ assert(css.includes('scene-match-canvas'));
+ assert(css.includes('580px')&&css.includes('880px'));
+ const html=read('chinese/index.html');
+ assert(html.includes("picture.addEventListener('scroll'"));
+ assert(html.includes("case 'scene-zoom'"));
+});
 test('site entry and cache include the new artwork while other lesson data stays intact',()=>{
  const html=read('chinese/index.html'),sw=read('chinese/sw.js');
  assert(html.includes('scene-next'));
- assert(html.includes('./js/scene-match.js?v=20261111-2'));
+ assert(html.includes('./js/scene-match.js?v=20261111-3'));
  assert(sw.includes('sonya-lesson1-documents.svg'));
  assert(sw.includes('sonya-lesson1-campus.svg'));
- assert(sw.includes('scene-match.js?v=20261111-2'));
+ assert(sw.includes('scene-match.js?v=20261111-3'));
  assert(!lesson.words.some(w=>w.hanzi==='护照'||w.hanzi==='课程表'));
 });

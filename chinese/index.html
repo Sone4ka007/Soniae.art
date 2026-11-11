@@ -644,7 +644,7 @@
   <link rel="apple-touch-icon" href="./icons/icon-192.png">
 <link rel="stylesheet" href="./css/review-session.css?v=20261110-1">
 <link rel="stylesheet" href="./css/writing.css?v=20261111-8">
-<link rel="stylesheet" href="./css/scene-match.css?v=20261111-1">
+<link rel="stylesheet" href="./css/scene-match.css?v=20261111-2">
 </head>
 <body>
   <div class="site-frame">
@@ -699,7 +699,7 @@
 <script src="./js/quest-branches.js?v=20261110-4"></script>
 <script src="./js/writing-guide-ru.js?v=20261111-4"></script>
 <script src="./js/writing.js?v=20261111-5"></script>
-<script src="./js/scene-match.js?v=20261111-2"></script>
+<script src="./js/scene-match.js?v=20261111-3"></script>
 <script>
 const sceneURL = name => window.__offlineScenes[name] || ("assets/"+name+".svg");
 const $ = (selector) => document.querySelector(selector);
@@ -1345,8 +1345,19 @@ function questAction(action,btn){
 
 
 function renderSceneMatch(){
+  const previous=$('#scene-match-board .scene-match-picture');
+  const sameScene=previous?.dataset.scene===state.game?.scene;
+  const centered=previous && previous.scrollWidth?
+    (previous.scrollLeft+previous.clientWidth/2)/previous.scrollWidth:0;
   window.__chineseLabSceneMatchGame=state.game;
   $('#game-panel').innerHTML=ChineseLabSceneMatch.render(lesson(),state.game,{esc,sceneURL});
+  const picture=$('#scene-match-board .scene-match-picture');
+  if(picture){
+    if(sameScene) picture.scrollLeft=Math.max(0,centered*picture.scrollWidth-picture.clientWidth/2);
+    picture.addEventListener('scroll',()=>ChineseLabSceneMatch.paint(state.game),{passive:true});
+    const img=picture.querySelector('img');
+    if(img&&!img.complete)img.addEventListener('load',()=>ChineseLabSceneMatch.paint(state.game),{once:true});
+  }
   ChineseLabSceneMatch.paint(state.game);
 }
 function initPairs(){const pairs=sample(lesson().words,6);state.game={pairs,left:shuffle(pairs),right:shuffle(pairs),chosenLeft:null,chosenRight:null,matched:[],notice:''};}
@@ -1923,7 +1934,7 @@ document.addEventListener('click', event => {
    break;
  case 'quest-memory':case 'quest-memory-test':case 'quest-memory-answer':case 'quest-memory-back':case 'quest-roleplay-topic':case 'quest-roleplay-next':case 'quest-roleplay-hint':case 'quest-roleplay-example':case 'quest-roleplay-clear':case 'quest-roleplay-tile':case 'quest-roleplay-send':case 'quest-roleplay-translate':case 'quest-gloss':case 'quest-analyze':case 'quest-mission-toggle':case 'quest-mission-select':case 'quest-mission-pick':case 'quest-mission-next':case 'quest-spot':case 'quest-choice':case 'quest-token':case 'quest-token-remove':case 'quest-pick':case 'quest-check':case 'quest-clear':case 'quest-hint':case 'quest-skip':case 'quest-translation':case 'quest-zoom':case 'quest-start':case 'quest-next':case 'quest-restart':questAction(action,btn);break;
  case 'sentence-add':case 'sentence-remove':case 'sentence-clear':case 'sentence-hint':case 'sentence-check':case 'sentence-next':sentenceAction(action,btn.dataset.id);break;
- case 'scene-next':case 'scene-spot':case 'scene-word':case 'scene-hint':
+ case 'scene-next':case 'scene-spot':case 'scene-word':case 'scene-hint':case 'scene-zoom':
    ChineseLabSceneMatch.action(action,btn,state.game,{award,miss,speech,render:renderSceneMatch,lesson:lesson()});break;
  case 'pair':pairPick(btn.dataset.side,btn.dataset.id);break;
  case 'quiz-pick':quizPick(Number(btn.dataset.index));break;

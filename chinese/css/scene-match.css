@@ -32,3 +32,30 @@
 }
 
 .scene-match-stage{margin:8px 0 14px;font-size:12px;font-weight:850;letter-spacing:.06em;color:var(--muted)}
+
+/* Larger author illustrations: give the drawing the full game width.
+ * On narrow screens, pan the magnified canvas without shifting hotspots. */
+.scene-match-board{display:block}
+.scene-match-picture{overflow-x:auto;overflow-y:hidden;overscroll-behavior-x:contain;scrollbar-width:auto;scrollbar-color:#718a00 #f1f1ea;-webkit-overflow-scrolling:touch}
+.scene-match-canvas{position:relative;width:100%;aspect-ratio:1080/620;min-width:0}
+.scene-match-canvas img{width:100%;height:100%;display:block;object-fit:fill;aspect-ratio:auto}
+.scene-match-toolbar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin:12px 0 4px}
+.scene-match-zoom{min-height:44px;border:2px solid var(--ink);background:var(--acid);color:var(--ink);font-size:12px;font-weight:850;padding:10px 15px}
+.scene-match-pan-hint{font-size:11px;color:var(--muted);font-weight:750;letter-spacing:.03em}
+.scene-match-words{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:17px}
+.scene-match-caption{grid-column:1/-1;margin:0}
+.scene-match-word{min-height:68px;padding:12px 14px}
+.scene-match-word span[lang]{font-size:clamp(24px,2.5vw,33px)}
+.scene-match-target{width:30px;height:30px;font-size:18px}
+@media (min-width:701px){
+ .scene-match-board.is-zoomed .scene-match-canvas{width:140%}
+}
+@media (max-width:700px){
+ .scene-match-canvas{width:max(100%,580px)}
+ .scene-match-board.is-zoomed .scene-match-canvas{width:max(100%,880px)}
+ .scene-match-words{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+ .scene-match-word{min-height:62px;padding:10px 12px}
+ .scene-match-word span[lang]{font-size:27px}
+ .scene-match-target{width:28px;height:28px;font-size:17px}
+ .scene-match-pan-hint{flex:1;min-width:150px;text-align:right}
+}

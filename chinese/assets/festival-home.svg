@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 620" role="img" aria-label="中秋节 / 团圆">
+<style>
+text{font-family:"Noto Sans CJK SC","PingFang SC","Microsoft YaHei",sans-serif;fill:#181c17}
+.title{font-size:30px;font-weight:700}.label{font-size:22px;font-weight:600}.small{font-size:17px}
+.stroke{stroke:#1c211a;stroke-width:4;stroke-linejoin:round;stroke-linecap:round}
+.line{stroke:#1c211a;stroke-width:2;stroke-linejoin:round;stroke-linecap:round}
+</style>
+<rect width="1080" height="620" fill="#f7f8f3"/>
+<rect width="1080" height="99" fill="#ebeee5"/>
+<text x="42" y="60" class="title">中秋节 / 团圆</text>
+<text x="795" y="60" class="small">美好的日子 · 02</text>
+<path d="M40 104H1040" class="stroke" fill="none"/>
+<!-- mooncakes -->
+<rect x="96" y="165" width="310" height="215" rx="15" fill="#fff" class="stroke"/>
+<ellipse cx="248" cy="299" rx="118" ry="39" fill="#dbb175" class="stroke"/>
+<ellipse cx="204" cy="273" rx="58" ry="39" fill="#eecb8e" class="stroke"/>
+<ellipse cx="279" cy="265" rx="60" ry="40" fill="#eecb8e" class="stroke"/>
+<path d="M172 271H237M200 247V296M248 270H311M278 243V294" class="line"/>
+<text x="211" y="360" class="label">月饼</text>
+<!-- grapes -->
+<rect x="432" y="169" width="279" height="213" rx="15" fill="#fff" class="stroke"/>
+<path d="M567 213L595 196M575 220C602 205 631 216 644 230" fill="none" stroke="#759a4c" stroke-width="10"/>
+<circle cx="563" cy="237" r="25" fill="#8f80b1" class="line"/><circle cx="597" cy="233" r="25" fill="#8f80b1" class="line"/><circle cx="631" cy="251" r="25" fill="#8f80b1" class="line"/><circle cx="549" cy="264" r="25" fill="#8f80b1" class="line"/><circle cx="587" cy="268" r="25" fill="#8f80b1" class="line"/><circle cx="620" cy="284" r="25" fill="#8f80b1" class="line"/><circle cx="570" cy="303" r="25" fill="#8f80b1" class="line"/><circle cx="603" cy="314" r="25" fill="#8f80b1" class="line"/><circle cx="589" cy="345" r="25" fill="#8f80b1" class="line"/>
+<text x="470" y="361" class="label">葡萄</text>
+<!-- ticket -->
+<rect x="785" y="164" width="260" height="219" rx="15" fill="#fff" class="stroke"/>
+<rect x="808" y="188" width="215" height="44" rx="6" fill="#d9f55e"/>
+<text x="854" y="218" class="label">铁路</text>
+<path d="M814 257H1019M814 301H1019M814 333H1019" class="line"/>
+<text x="825" y="290" class="label">19:00</text>
+<text x="829" y="365" class="small">爸爸的车票</text>
+<!-- tea -->
+<rect x="369" y="435" width="265" height="143" rx="12" fill="#eff1e9" class="line"/>
+<path d="M447 474H567L555 542Q508 570 460 542Z" fill="#fff" class="stroke"/>
+<path d="M567 491Q625 489 601 528L561 529" class="stroke" fill="none"/>
+<path d="M482 453C471 437 492 435 484 422M532 452C520 434 540 433 532 420" class="line" fill="none"/>
+<text x="411" y="567" class="small">茶真香</text>
+<text x="702" y="482" class="label">大约八点</text>
+<text x="702" y="523" class="label">一家人团圆</text>
+<path d="M37 590H1040" class="line"/>
+</svg>

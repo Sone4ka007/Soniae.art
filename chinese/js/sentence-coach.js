@@ -8,9 +8,26 @@
   const normalize = parts => (Array.isArray(parts)?parts.join(''):String(parts??'')).replace(/[^\u3400-\u9fff]/gu,'');
   const sameBag = (a,b) => a.length===b.length &&
     a.map(pure).sort().join('\u0000')===b.map(pure).sort().join('\u0000');
-  const TIME = new Set(['今天','明天','昨天','后天','现在','早上','上午','中午','下午','晚上','今晚','明早','明晚','周末','下周','下个月','明年','今年','去年']);
-  const SUBJECT = new Set(['我','你','您','他','她','我们','你们','他们','她们','大家','老师','同学']);
+  const TIME = new Set(['今天','明天','昨天','后天','现在','早上','上午','中午','下午','晚上','今晚','明早','明晚','周末','下周','下个月','明年','今年','去年','最近','以前','以后','刚才','每天','平时','星期一','星期二','星期三','星期四','星期五','星期六','星期日','星期天','下星期','上星期','这星期','上周','明天','今天','工作日']);
+  const DAY = new Set(['今天','明天','昨天','后天','这星期','上星期','下星期','工作日','周末']);
+  const PERIOD = new Set(['早上','上午','中午','下午','晚上','夜里']);
+  const SUBJECT = new Set(['我','你','您','他','她','我们','你们','他们','她们','大家','老师','同学','安娜','小林','房东','学校','经理','医生','客人','朋友','爸爸','妈妈','姐姐','弟弟','学生','商家','地铁','司机','店员','服务员','快递员','老板','同事']);
+  const KIN = new Set(['奶奶','爷爷','爸爸','妈妈','姐姐','妹妹','弟弟','哥哥','朋友']);
   const INTENTION = new Set(['打算','想','准备','要']);
+  function timeLength(words,i) {
+    if(!TIME.has(words[i]))return 0;
+    return DAY.has(words[i]) && PERIOD.has(words[i+1]) ? 2 : 1;
+  }
+  function subjectLength(words,i) {
+    if(SUBJECT.has(words[i])) {
+      if(['我','你','他','她','我们'].includes(words[i])&&KIN.has(words[i+1]))return 2;
+      return 1;
+    }
+    // Fixed nominal subjects. Never infer subject boundaries in arbitrary prose.
+    if(['这','那'].includes(words[i]) && ['条','家'].includes(words[i+1]) &&
+       ['街','店'].includes(words[i+2])) return 3;
+    return 0;
+  }
   function allowedWords(base,lessons,lessonId) {
     const known=new Set(Array.isArray(base)?base:[]);
     // 没 and 得 are standard HSK1–3 grammar forms, though the supplied base
@@ -60,27 +77,46 @@
     return result.length>=2?result:null;
   }
   function generatedTimeVariants(parts) {
-    const output=[];
-    const clean=parts.map(pure);
-    const pushOrder=order=>{
-      // Keep punctuation attached to the last tile so the display stays tidy.
-      const tokens=order.map(i=>parts[i]);
-      if(!sameBag(parts,tokens))return;
-      output.push(tokens);
+    const words=parts.map(pure),output=[];
+    // A comma belongs to its phrase and cannot be moved without editing
+    // punctuation. Do not produce invalid variants by carrying it elsewhere.
+    const safeMove=ids=>ids.every((original,newIndex)=>original===newIndex || !/[,，。！？!?:；;]/u.test(parts[original]||''));
+    const push=indices=>{
+      if(indices.length!==parts.length||!safeMove(indices))return;
+      const next=indices.map(i=>parts[i]);
+      if(sameBag(parts,next)&&normalize(parts)!==normalize(next))output.push(next);
     };
-    if(clean.length<4)return output;
-    // 今天我工作 / 我今天工作: moving a fronted time expression around
-    // a simple subject is grammatical without changing the proposition.
-    if(TIME.has(clean[0])&&SUBJECT.has(clean[1])){
-      pushOrder([1,0,...clean.slice(2).map((_,i)=>i+2)]);
-    } else if(SUBJECT.has(clean[0])&&TIME.has(clean[1])){
-      pushOrder([1,0,...clean.slice(2).map((_,i)=>i+2)]);
-      // 我明天打算下载... / 我打算明天下载... have the same intent.
-      if(INTENTION.has(clean[2])&&clean.length>4)
-        pushOrder([0,2,1,...clean.slice(3).map((_,i)=>i+3)]);
-    } else if(SUBJECT.has(clean[0])&&INTENTION.has(clean[1])&&TIME.has(clean[2])){
-      pushOrder([0,2,1,...clean.slice(3).map((_,i)=>i+3)]);
-      pushOrder([2,0,1,...clean.slice(3).map((_,i)=>i+3)]);
+    if(words.length<4)return output;
+    const tail=(from)=>Array.from({length:words.length-from},(_,i)=>i+from);
+    const range=(from,count)=>Array.from({length:count},(_,i)=>from+i);
+    const timeFirst=timeLength(words,0);
+    if(timeFirst) {
+      const subject=subjectLength(words,timeFirst);
+      if(subject) {
+        const end=timeFirst+subject;
+        push([...range(timeFirst,subject),...range(0,timeFirst),...tail(end)]);
+        if(INTENTION.has(words[end])&&end+1<words.length-1)
+          push([...range(timeFirst,subject),end,...range(0,timeFirst),...tail(end+1)]);
+      }
+    }
+    const subjectFirst=subjectLength(words,0);
+    if(subjectFirst) {
+      const timeAfterSubject=timeLength(words,subjectFirst);
+      if(timeAfterSubject) {
+        const end=subjectFirst+timeAfterSubject;
+        push([...range(subjectFirst,timeAfterSubject),...range(0,subjectFirst),...tail(end)]);
+        if(INTENTION.has(words[end])&&end+1<words.length-1)
+          push([...range(0,subjectFirst),end,...range(subjectFirst,timeAfterSubject),...tail(end+1)]);
+      }
+      const intentionAt=subjectFirst;
+      if(INTENTION.has(words[intentionAt])) {
+        const afterIntention=timeLength(words,intentionAt+1);
+        if(afterIntention && intentionAt+afterIntention+1<words.length-1) {
+          const end=intentionAt+1+afterIntention;
+          push([...range(0,subjectFirst),...range(intentionAt+1,afterIntention),intentionAt,...tail(end)]);
+          push([...range(intentionAt+1,afterIntention),...range(0,subjectFirst),intentionAt,...tail(end)]);
+        }
+      }
     }
     return output;
   }
@@ -99,7 +135,10 @@
     for(const original of q.variants||[])add(segment(original,known));
     // Generate only two tightly bounded, grammar-tested time patterns,
     // never arbitrary permutations. Other alternatives must be curated.
-    for(const variant of [...variants])for(const alternative of generatedTimeVariants(variant))add(alternative);
+    // Closure over tightly constrained, reversible movements of time phrases.
+    // New variants can enable an additional safe move: 明天我打算 -> 我打算明天.
+    for(let i=0;i<variants.length && variants.length<32;i++)
+      for(const alternative of generatedTimeVariants(variants[i]))add(alternative);
     return {...q,parts,variants};
   }
   function accepted(q,selected) {
@@ -131,5 +170,17 @@
     }
     return 'Один правильный вариант: '+q.zh+' Можно прослушать его и перейти к следующему заданию.';
   }
-  global.ChineseLabSentenceCoach=Object.freeze({allowedWords,translations,segment,prepareQuestion,accepted,diagnose,hint,pure,normalize,generatedTimeVariants});
+  function noteCandidate(progress,lessonId,question,selected) {
+    const answer=normalize(selected);
+    if(!answer||!question?.zh||normalize(question.zh)===answer)return false;
+    if(!progress || typeof progress!=='object')return false;
+    const prior=Array.isArray(progress.sentenceSuggestions)?progress.sentenceSuggestions:[];
+    if(prior.some(r=>r.lessonId===lessonId&&r.source===question.zh&&r.answer===answer))return false;
+    progress.sentenceSuggestions=[...prior.slice(-49),{
+      lessonId,source:question.zh,translation:question.ru||'',answer,
+      at:new Date().toISOString(),status:'unverified'
+    }];
+    return true;
+  }
+  global.ChineseLabSentenceCoach=Object.freeze({allowedWords,translations,segment,prepareQuestion,accepted,diagnose,hint,pure,normalize,generatedTimeVariants,noteCandidate});
 })(window);

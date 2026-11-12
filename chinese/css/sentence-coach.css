@@ -7,3 +7,8 @@
 .sentence-solution p{color:var(--muted);font-size:12px}
 .sentence-controls button:focus-visible{outline:3px solid var(--acid-dark)}
 @media(max-width:640px){.sentence-controls .action-btn{font-size:11px;min-height:43px;padding:10px 12px}.sentence-controls .sentence-skip{margin-left:0}.sentence-solution{padding:13px}}
+
+.sentence-candidate{background:var(--paper);border:1px solid var(--line);padding:13px 16px;margin:13px 0;display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.sentence-candidate p{width:100%;margin:0;line-height:1.5;font-size:13px}
+.sentence-candidate small{font-size:11px;line-height:1.5;color:var(--muted)}
+.sentence-candidate button{min-height:44px}

@@ -36,6 +36,33 @@ try{
   await page.locator('#mode-subnav [data-id="sentence"].is-active').waitFor({timeout:30000});
   const persisted=await page.locator('#game-panel .chip').innerText();
   assert.equal(persisted,after,'page reload should resume from the next sentence after a skip');
+  // A plausible but unlisted order must not be recorded as an error.
+  // Use a real scrambled selection guaranteed not to match any accepted variant.
+  const before=await page.evaluate(()=>({xp:state.progress.xp,attempts:state.progress.attempts}));
+  const wrongIds=await page.evaluate(()=>{
+    const g=state.game,q=g.questions[g.index],bank=g.bank.slice();
+    const candidates=[bank.slice().reverse(),bank.slice()];
+    for(let i=0;i<bank.length;i++)
+      for(let j=i+1;j<bank.length;j++){
+        const changed=bank.slice();[changed[i],changed[j]]=[changed[j],changed[i]];
+        candidates.push(changed);
+      }
+    const invalid=candidates.find(xs=>!ChineseLabSentenceCoach.accepted(q,xs.map(x=>x.zh)));
+    return invalid?.map(x=>x.id)||[];
+  });
+  assert(wrongIds.length>=2,'Should find an unrecognized tile ordering');
+  for(const id of wrongIds)
+    await page.locator('.sentence-bank [data-action="sentence-add"][data-id="'+id+'"]').click();
+  await page.locator('[data-action="sentence-check"]').click();
+  assert(await page.locator('[data-action="sentence-suggest"]').isVisible());
+  const afterCheck=await page.evaluate(()=>({xp:state.progress.xp,attempts:state.progress.attempts}));
+  assert.deepEqual(afterCheck,before,'Unverified word orders must not lose XP or accrue wrong answers');
+  await page.locator('[data-action="sentence-suggest"]').click();
+  assert.equal(await page.evaluate(()=>state.progress.sentenceSuggestions?.length),1);
+  assert(await page.locator('[data-action="sentence-suggest"]').isDisabled());
+  await page.reload({waitUntil:'domcontentloaded'});
+  await page.locator('#mode-subnav [data-id="sentence"].is-active').waitFor({timeout:30000});
+  assert.equal(await page.evaluate(()=>state.progress.sentenceSuggestions?.length),1);
   assert.deepEqual(errors,[]);
   console.log('Mobile sentence coach: hint ladder, reveal, skip and resume OK');
 }finally{await browser.close();}

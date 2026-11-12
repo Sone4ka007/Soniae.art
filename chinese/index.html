@@ -837,10 +837,13 @@ function activateMode(mode, reset = false) {
   if (mode === 'input') initCI();
   if (mode === 'words' || mode === 'video' || mode === 'progress' || mode === 'today') state.game = {};
   if (!reset && ChineseLabSessions.modes.has(mode)) restoreActiveSession(mode);
-  if (mode==='sentence' && state.game?.questions?.some(q =>
-      !ChineseLabSentenceCoach.prepareQuestion(q,sentenceAllowedWords(),sentenceGlossary()))) {
+  if (mode==='sentence' && state.game?.questions?.some(q => {
+      const safe=ChineseLabSentenceCoach.prepareQuestion(q,sentenceAllowedWords(),sentenceGlossary());
+      return !safe || JSON.stringify(q.parts)!==JSON.stringify(safe.parts) ||
+        JSON.stringify(q.variants||[])!==JSON.stringify(safe.variants);
+    })) {
     if(ChineseLabSessions.clear(state.progress,state.lessonId,'sentence'))save();
-    initSentence(); // An older snapshot may contain vocabulary from future lessons.
+    initSentence(); // Migrate old word tiles without losing XP or progress in other modes.
   }
   if (mode !== 'today' && mode !== 'progress') {
     state.progress.lastStudyMode = mode;

@@ -5,7 +5,7 @@
  */
 (function (global) {
   'use strict';
-  const MODES = new Set(['story', 'pairs', 'sceneMatch', 'translate', 'reverse', 'build', 'sentence']);
+  const MODES = new Set(['story', 'pairs', 'sceneMatch', 'translate', 'reverse', 'build', 'sentence', 'substitute']);
   const MAX_SNAPSHOT_LENGTH = 250000;
   const isObject = value => value !== null && typeof value === 'object' && !Array.isArray(value);
   const validIndex = (value, count) => Number.isInteger(value) && value >= 0 && value <= count;
@@ -58,6 +58,16 @@
         Array.isArray(game.matched) && game.matched.every(id => game.pairs.some(p => p.id === id)) &&
         (game.chosenSpot === null || game.pairs.some(p => p.id === game.chosenSpot)) &&
         (game.chosenWord === null || game.pairs.some(p => p.word === game.chosenWord));
+    }
+    if (mode === 'substitute') {
+      const groups = lesson?.quest?.vocabMissions || [];
+      return Number.isInteger(game.missionStage) &&
+        game.missionStage >= 0 &&
+        game.missionStage < Math.max(1, groups.length) &&
+        typeof game.missionOpen === 'boolean' &&
+        typeof game.missionNotice === 'string' &&
+        Array.isArray(game.revealed) &&
+        (game.missionResult === null || isObject(game.missionResult));
     }
     if (!Array.isArray(game.questions) || !validIndex(game.index, game.questions.length)) return false;
     if (mode === 'translate' || mode === 'reverse') {

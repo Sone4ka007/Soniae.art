@@ -17,10 +17,11 @@ test('five stages preserve every study mode and legacy progress access',()=>{
   assert.equal(path.STAGES.length,5);
   assert.deepEqual(Array.from(path.STAGES,stage=>stage.id),['words','games','input','story','practice']);
   const modes=path.STAGES.flatMap(stage=>stage.modes);
-  assert.equal(new Set(modes).size,12);
-  assert(['sentence','review','sceneMatch','writing','video'].every(id=>modes.includes(id)));
+  assert.equal(new Set(modes).size,13);
+  assert(['sentence','substitute','review','sceneMatch','writing','video'].every(id=>modes.includes(id)));
   assert.equal(path.stageForMode('review'),'games');
   assert.equal(path.stageForMode('sentence'),'games');
+  assert.equal(path.stageForMode('substitute'),'games');
   assert.equal(path.stageForMode('today'),null);
   assert.equal(path.stageForMode('progress'),null);
 });
@@ -33,6 +34,7 @@ test('navigation renders five stage buttons and only exercises in current stage'
   assert.match(nav.stages,/data-action="stage" data-id="games"/);
   assert.match(nav.modes,/data-id="sceneMatch"/);
   assert.match(nav.modes,/data-id="review"/);
+  assert.match(nav.modes,/data-id="substitute"/);
   assert.doesNotMatch(nav.modes,/data-id="writing"/);
   assert.equal(path.modeForStage('games',state),'sentence');
   assert.equal(path.modeForStage('practice',state),'video');
@@ -56,9 +58,9 @@ test('navigation styles and scripts are offline cached without changing progress
   assert.match(html,/id="lesson-select"/);
   assert.match(html,/id="today-entry"/);
   assert.match(html,/id="mode-subnav"/);
-  assert.match(html,/learning-path\.js\?v=20261112-1/);
+  assert.match(html,/learning-path\.js\?v=20261112-2/);
   assert.match(html,/learning-path\.css\?v=20261112-1/);
-  assert.match(sw,/learning-path\.js\?v=20261112-1/);
+  assert.match(sw,/learning-path\.js\?v=20261112-2/);
   assert.match(sw,/learning-path\.css\?v=20261112-1/);
   assert.match(sw,/hsk4-chinese-lab-pwa-v\d+/);
   assert.match(read('chinese/js/progress-store.js'),/sonya-chinese-lab-progress-v1/);

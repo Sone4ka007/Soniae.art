@@ -837,13 +837,17 @@ function activateMode(mode, reset = false) {
   if (mode === 'input') initCI();
   if (mode === 'words' || mode === 'video' || mode === 'progress' || mode === 'today') state.game = {};
   if (!reset && ChineseLabSessions.modes.has(mode)) restoreActiveSession(mode);
-  if (mode==='sentence' && state.game?.questions?.some(q => {
-      const safe=ChineseLabSentenceCoach.prepareQuestion(q,sentenceAllowedWords(),sentenceGlossary());
-      return !safe || JSON.stringify(q.parts)!==JSON.stringify(safe.parts) ||
-        JSON.stringify(q.variants||[])!==JSON.stringify(safe.variants);
-    })) {
-    if(ChineseLabSessions.clear(state.progress,state.lessonId,'sentence'))save();
-    initSentence(); // Migrate old word tiles without losing XP or progress in other modes.
+  if (mode==='sentence' && state.game?.questions) {
+    const known=sentenceAllowedWords(),gloss=sentenceGlossary();
+    const revised=state.game.questions.map(q=>ChineseLabSentenceCoach.prepareQuestion(q,known,gloss));
+    if(revised.some((q,i)=>!q||JSON.stringify(q.parts)!==JSON.stringify(state.game.questions[i].parts))) {
+      if(ChineseLabSessions.clear(state.progress,state.lessonId,'sentence'))save();
+      initSentence(); // Invalid older word tiles need a new bank.
+    } else {
+      // New accepted orders must not reset the current round or selection.
+      const changed=revised.some((q,i)=>JSON.stringify(q.variants)!==JSON.stringify(state.game.questions[i].variants));
+      if(changed){state.game.questions=revised;saveActiveSession();}
+    }
   }
   if (mode !== 'today' && mode !== 'progress') {
     state.progress.lastStudyMode = mode;
@@ -1476,7 +1480,7 @@ function prepareSentence(){
  const parts=ChineseLabSentenceTiles.split(q.parts,vocabulary);
  g.bank=shuffle(parts.map((zh,i)=>({id:`p${i}`,zh})));
  g.starts=[...new Set((q.variants||[q.parts]).map(v=>ChineseLabSentenceTiles.split(v,vocabulary)[0]))];
- g.selected=[];g.done=false;g.notice='';g.tries=0;g.hint=false;g.hintLevel=0;g.showSolution=false;g.feedbackError=false;
+ g.selected=[];g.done=false;g.notice='';g.tries=0;g.hint=false;g.hintLevel=0;g.showSolution=false;g.feedbackError=false;g.suggestionSaved=false;
 }
 function renderSentence(){
  const g=state.game;
@@ -1511,6 +1515,12 @@ function renderSentence(){
    '<button type="button" class="action-btn secondary sentence-skip" data-action="sentence-skip">ПРОПУСТИТЬ →</button>')+
    '</div>';
  const notice=g.notice?'<div class="feedback '+(g.feedbackError?'is-error ':'')+'stage-done" role="status">'+esc(g.notice)+'</div>':'';
+ const candidate=(!g.done&&g.tries>0)?
+   '<div class="sentence-candidate"><p>Этот порядок не распознан среди проверенных вариантов. Возможно, он допустим.</p>'+
+   '<button type="button" class="action-btn secondary" data-action="sentence-suggest" '+
+   (g.suggestionSaved?'disabled':'')+'>'+
+   (g.suggestionSaved?'ВАРИАНТ СОХРАНЁН':'СОХРАНИТЬ МОЙ ВАРИАНТ ДЛЯ ПРОВЕРКИ')+'</button>'+
+   '<small>Сохраняется в твоём прогрессе, автоматически правильным не считается.</small></div>':'';
  const solution=g.showSolution?'<div class="sentence-solution"><strong>Один естественный вариант:</strong>'+
    '<div class="sentence-correct" lang="zh-CN">'+tapText(q.zh)+' '+speakButton(q.zh,'Прослушать предложение')+
    '</div><p>Можно разобрать отдельные слова или нажать «Пропустить» — без штрафа.</p></div>':'';
@@ -1530,7 +1540,7 @@ function renderSentence(){
    (chosen.length?'':'<span class="sentence-placeholder">Нажимай на слова ниже ↓</span>')+'</div>'+
    '<div class="sentence-bank">'+tiles+'</div>'+
    '<div class="sentence-tip">Каждая плитка — отдельное слово. Нажми «?» рядом с плиткой, чтобы увидеть перевод. Открытие подсказки не обнуляет прогресс.</div>'+
-   controls+notice+solution+success+
+   controls+notice+candidate+solution+success+
    '<p class="audio-note">После верного ответа предложение прозвучит по-китайски. Произношение также можно включить вручную.</p></div>'+questMissionBox();
 }
 function sentenceAction(action,id){
@@ -1566,11 +1576,18 @@ function sentenceAction(action,id){
      g.done=true;g.correct++;g.notice='';g.feedbackError=false;
      award((g.hintLevel||g.showSolution)?12:24,'ПРЕДЛОЖЕНИЕ');speech(q.zh);
    }else{
-     g.tries++;g.feedbackError=true;
+     g.tries++;g.feedbackError=false;g.suggestionSaved=false;
      g.notice=ChineseLabSentenceCoach.diagnose(q,selected);
      if(g.tries>=3)g.showSolution=true;
-     miss(q.zh);
+     // An unrecognized order might be valid. Do not mark it wrong or weak.
    }
+ }
+ if(action==='sentence-suggest'&&g.tries>0){
+   const selected=g.selected.map(i=>g.bank.find(x=>x.id===i)?.zh||'');
+   ChineseLabSentenceCoach.noteCandidate(state.progress,state.lessonId,q,selected);
+   g.suggestionSaved=true;g.feedbackError=false;
+   g.notice='Твой вариант сохранён для проверки в прогрессе. Он пока не подтверждён; можно перейти к следующему заданию без штрафа.';
+   save();
  }
  renderSentence();
 }
@@ -2073,7 +2090,7 @@ document.addEventListener('click', event => {
      activateMode(state.mode, true);
    break;
  case 'quest-memory':case 'quest-memory-test':case 'quest-memory-answer':case 'quest-memory-back':case 'quest-roleplay-topic':case 'quest-roleplay-next':case 'quest-roleplay-hint':case 'quest-roleplay-example':case 'quest-roleplay-clear':case 'quest-roleplay-tile':case 'quest-roleplay-send':case 'quest-roleplay-translate':case 'quest-gloss':case 'quest-analyze':case 'quest-mission-toggle':case 'quest-mission-select':case 'quest-mission-pick':case 'quest-mission-next':case 'quest-spot':case 'quest-choice':case 'quest-token':case 'quest-token-remove':case 'quest-pick':case 'quest-check':case 'quest-clear':case 'quest-hint':case 'quest-skip':case 'quest-translation':case 'quest-zoom':case 'quest-start':case 'quest-next':case 'quest-restart':questAction(action,btn);break;
- case 'sentence-add':case 'sentence-remove':case 'sentence-clear':case 'sentence-hint':case 'sentence-reveal':case 'sentence-skip':case 'sentence-check':case 'sentence-next':sentenceAction(action,btn.dataset.id);break;
+ case 'sentence-suggest':case 'sentence-add':case 'sentence-remove':case 'sentence-clear':case 'sentence-hint':case 'sentence-reveal':case 'sentence-skip':case 'sentence-check':case 'sentence-next':sentenceAction(action,btn.dataset.id);break;
  case 'scene-next':case 'scene-spot':case 'scene-word':case 'scene-hint':case 'scene-zoom':
    ChineseLabSceneMatch.action(action,btn,state.game,{award,miss,speech,render:renderSceneMatch,lesson:lesson()});break;
  case 'pair':pairPick(btn.dataset.side,btn.dataset.id);break;

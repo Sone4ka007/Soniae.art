@@ -7,7 +7,8 @@
     'gallery-friends','gallery-studio','internship-interview',
     'internship-notice','lesson14-shoes','lesson14-tea-shop',
     'park-rest','plans-desk','plans-office','rest-plan',
-    'winter-plan','winter-station','tech-bike','tech-video','lesson8-vocabulary','lesson11-vocabulary'
+    'winter-plan','winter-station','tech-bike','tech-video','lesson8-vocabulary','lesson11-vocabulary',
+    'arts-rehearsal','arts-opera','travel-train','travel-airport'
   ]);
   // Original pen-and-ink drawings supplied by Sonya. The schedule (课程表)
   // and passport (护照) are deliberately excluded: neither is lesson-1 vocabulary.

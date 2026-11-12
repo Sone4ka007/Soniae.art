@@ -2,14 +2,17 @@ name: Chinese Lab content checks
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
+      - 'chinese-lab/**'
     paths:
       - 'chinese/index.html'
       - 'chinese/sw.js'
       - 'chinese/data/**'
       - 'chinese/js/**'
       - 'chinese/css/**'
-      - 'chinese/assets/sonya-lesson*-*.svg'
+      - 'chinese/assets/**'
+      - 'chinese/scripts/**'
       - 'tests/chinese/**'
       - '.github/workflows/chinese-content-checks.yml'
   pull_request:
@@ -19,7 +22,8 @@ on:
       - 'chinese/data/**'
       - 'chinese/js/**'
       - 'chinese/css/**'
-      - 'chinese/assets/sonya-lesson*-*.svg'
+      - 'chinese/assets/**'
+      - 'chinese/scripts/**'
       - 'tests/chinese/**'
       - '.github/workflows/chinese-content-checks.yml'
   workflow_dispatch:
@@ -28,16 +32,24 @@ permissions:
   contents: read
 
 jobs:
-  graded-readings:
+  node-tests:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Validate reading levels, branching quests and site content
-        run: node --test tests/chinese/graded-reading-level.test.mjs tests/chinese/readings-sync.test.mjs tests/chinese/branching-quest.test.mjs tests/chinese/quest-web-integration.test.mjs tests/chinese/quest-mnemonics.test.mjs tests/chinese/quest-roleplay.test.mjs tests/chinese/scene-match-sonya-art.test.mjs tests/chinese/scene-match-sonya-lesson2.test.mjs
+      - name: Run all Chinese Lab Node tests
+        run: node --test tests/chinese/*.test.mjs
+
+  mobile-browser:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
       - name: Install Chromium browser test dependency
-        run: npm install --no-save --no-package-lock --no-audit --no-fund playwright-core@1.56.1
+        run: npm install --no-save --package-lock=false --no-audit --no-fund playwright-core@1.56.1
       - name: Test first quest on mobile Chromium
         run: node tests/chinese/quest-browser.mjs

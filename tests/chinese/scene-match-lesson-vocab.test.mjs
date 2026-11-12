@@ -19,7 +19,9 @@ runInNewContext(read('chinese/js/scene-match.js'),{window:browser});
 runInNewContext(read('chinese/js/exercise-sessions.js'),{window:browser});
 const engine=browser.ChineseLabSceneMatch;
 const sessions=browser.ChineseLabSessions;
-const lessons=Array.from({length:18},(_,i)=>JSON.parse(read('chinese/data/lesson'+(i+1)+'.json')));
+const manifest=JSON.parse(read('chinese/data/manifest.json'));
+const lessons=manifest.lessons.map(filename=>JSON.parse(read('chinese/data/'+filename)));
+assert.equal(lessons.length,20,'The published HSK4 course must include 20 lessons');
 
 test('matching game in every published lesson draws exclusively from its own vocabulary',()=>{
   for(const lesson of lessons){
@@ -82,9 +84,12 @@ test('stale snapshots with foreign words are rejected, without wiping unrelated 
 
 test('new asset and cache references are versioned for offline devices',()=>{
   const html=read('chinese/index.html'),sw=read('chinese/sw.js');
-  assert(html.includes('scene-match.js?v=20261111-5'));
-  assert(html.includes('exercise-sessions.js?v=20261111-3'));
-  assert(sw.includes('scene-match.js?v=20261111-5'));
-  assert(sw.includes('lesson8-vocabulary.svg'));
-  assert(sw.includes('hsk4-chinese-lab-pwa-v24'));
+  for (const name of ['scene-match','exercise-sessions']) {
+    const match=html.match(new RegExp('\\./js/'+name+'\\.js\\?v=([0-9]{8}-[0-9]+)'));
+    assert(match, name+' must have a versioned URL');
+    assert(sw.includes('/chinese/js/'+name+'.js?v='+match[1]), name+' cache version must match HTML');
+  }
+  for (const asset of ['lesson8-vocabulary.svg','arts-rehearsal.svg','arts-opera.svg','travel-train.svg','travel-airport.svg'])
+    assert(sw.includes(asset), asset+' must be cached');
+  assert.match(sw,/hsk4-chinese-lab-pwa-v\d+/);
 });

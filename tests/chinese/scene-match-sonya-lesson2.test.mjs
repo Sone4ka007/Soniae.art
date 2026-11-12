@@ -88,8 +88,8 @@ test('lesson 2 progress and zoom persist without changing lesson 1 behavior',()=
 
 test('lesson 2 assets and updated matching version are offline cached',()=>{
  const html=read('chinese/index.html'),sw=read('chinese/sw.js');
- assert(html.includes('scene-match.js?v=20261111-6'));
- assert(sw.includes('scene-match.js?v=20261111-6'));
+ assert(html.includes('scene-match.js?v=20261112-1'));
+ assert(sw.includes('scene-match.js?v=20261112-1'));
  assert(sw.includes('sonya-lesson2-apartment.svg'));
  assert(sw.includes('sonya-lesson2-details.svg'));
 });

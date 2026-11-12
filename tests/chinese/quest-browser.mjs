@@ -17,7 +17,23 @@ try {
   const page=await context.newPage();
   page.on('pageerror',error=>errors.push(error.message));
   await page.goto(pathToFileURL(resolve('chinese/index.html')).href,{waitUntil:'domcontentloaded'});
-  // The course now opens with the dictionary. Enter the story mode explicitly.
+  // Five-step navigation and the Today dashboard must work on mobile.
+  await page.locator('#lesson-select option').first().waitFor({timeout:20000});
+  assert.equal(await page.locator('#lesson-select option').count(),20);
+  assert.equal(await page.locator('#mode-nav .learning-step').count(),5);
+  await page.locator('#today-entry').click();
+  assert.match(await page.locator('#game-panel').innerText(),/ПРОДОЛЖИТЬ ОБУЧЕНИЕ/);
+  await page.locator('#lesson-select').selectOption('20');
+  assert.equal(await page.locator('#lesson-select').inputValue(),'20');
+  assert.match(await page.locator('#lesson-intro').innerText(),/看不完也读不完/);
+  await page.locator('#lesson-select').selectOption('1');
+  await page.locator('#mode-nav [data-action="stage"][data-id="games"]').click();
+  assert.equal(await page.locator('#mode-subnav [data-action="mode"]').count(),7);
+  await page.locator('#mode-subnav [data-id="sentence"]').click();
+  await page.locator('#today-entry').click();
+  await page.locator('[data-action="today-continue"]').click();
+  assert.equal(await page.locator('#mode-subnav [data-id="sentence"].is-active').count(),1);
+    // The course now opens with the dictionary. Enter the story mode explicitly.
   await page.locator('#mode-nav [data-action="mode"][data-id="story"]').click({timeout:20000});
   try {
     await page.waitForSelector('#game-panel .quest-rp-start',{timeout:30000});

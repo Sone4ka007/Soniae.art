@@ -46,3 +46,19 @@ test('word substitution resumes independently, without losing vocabulary complet
   assert.equal(sessions.clear(progress,3,'substitute'),true);
   assert.equal(progress.questWords[3]['下载'],true);
 });
+
+test('four answer choices have distinct, visibly labeled listen and translation controls',()=>{
+  const html=read('chinese/index.html');
+  const css=read('chinese/css/substitution-cards.css');
+  const sw=read('chinese/sw.js');
+  assert.match(html,/ВАРИАНТЫ ОТВЕТА/);
+  assert.match(html,/quest-mission-pick/);
+  assert.match(html,/▶ Слушать/);
+  assert.match(html,/Перевод ↓/);
+  assert.match(html,/quest-mission-translate/);
+  assert.match(html,/missionChoiceReveals/);
+  assert.match(css,/quest-mission-tool/);
+  assert(css.includes('@media(max-width:640px)'))
+  assert(sw.includes('substitution-cards.css?v=20261112-1'))
+  assert.match(sw,/hsk4-chinese-lab-pwa-v32/);
+});

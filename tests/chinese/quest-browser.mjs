@@ -35,6 +35,17 @@ try {
   assert.equal(await page.locator('#mode-subnav [data-action="mode"]').count(),8);
   await page.locator('#mode-subnav [data-id="substitute"]').click();
   assert.match(await page.locator('#game-panel').innerText(),/ПОДСТАНОВКА СЛОВ/);
+  assert.equal(await page.locator('.quest-mission-pick').count(),4,'Exactly four options should be visible');
+  assert.equal(await page.locator('.quest-mission-tool[data-speak]').count(),4,'Every option must have a listen control');
+  assert.equal(await page.locator('.quest-mission-tool[data-action="quest-mission-translate"]').count(),4,'Every option must have a translate control');
+  assert.match(await page.locator('.quest-mission-answer-guide').innerText(),/ВАРИАНТЫ ОТВЕТА · 4/);
+  const before=await page.locator('.quest-mission-meter > div').getAttribute('style');
+  await page.locator('.quest-mission-tool[data-action="quest-mission-translate"]').first().click();
+  assert.equal(await page.locator('.quest-mission-choice-translation').count(),1);
+  assert.equal(await page.locator('.quest-mission-pick').count(),4,'Translation should not pick an answer');
+  assert.equal(await page.locator('.quest-mission-meter > div').getAttribute('style'),before);
+  await page.locator('.quest-mission-tool[data-action="quest-mission-translate"]').first().click();
+  assert.equal(await page.locator('.quest-mission-choice-translation').count(),0);
   await page.locator('#mode-subnav [data-id="sentence"]').click();
   assert.equal(await page.locator('#game-panel .quest-mission').count(),0,'The sentence exercise must not include word substitution');
   await page.locator('#today-entry').click();

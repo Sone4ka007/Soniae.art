@@ -18,7 +18,7 @@ try {
   page.on('pageerror',error=>errors.push(error.message));
   await page.goto(pathToFileURL(resolve('chinese/index.html')).href,{waitUntil:'domcontentloaded'});
   // Five-step navigation and the Today dashboard must work on mobile.
-  await page.locator('#lesson-select option').first().waitFor({timeout:20000});
+  await page.locator('#lesson-select').waitFor({state:'visible',timeout:20000});
   assert.equal(await page.locator('#lesson-select option').count(),20);
   assert.equal(await page.locator('#mode-nav .learning-step').count(),5);
   await page.locator('#today-entry').click();

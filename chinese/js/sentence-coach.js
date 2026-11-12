@@ -80,9 +80,9 @@
     const words=parts.map(pure),output=[];
     // A comma belongs to its phrase and cannot be moved without editing
     // punctuation. Do not produce invalid variants by carrying it elsewhere.
-    const safeMove=ids=>ids.every(i=>!/[,，。！？!?:；;]/u.test(parts[i]||''));
+    const safeMove=ids=>ids.every((original,newIndex)=>original===newIndex || !/[,，。！？!?:；;]/u.test(parts[original]||''));
     const push=indices=>{
-      if(indices.length!==parts.length||!safeMove(indices.slice(0,Math.max(0,parts.length-1))))return;
+      if(indices.length!==parts.length||!safeMove(indices))return;
       const next=indices.map(i=>parts[i]);
       if(sameBag(parts,next)&&normalize(parts)!==normalize(next))output.push(next);
     };

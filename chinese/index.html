@@ -646,7 +646,7 @@
 <link rel="stylesheet" href="./css/writing.css?v=20261111-8">
 <link rel="stylesheet" href="./css/scene-match.css?v=20261111-2">
 <link rel="stylesheet" href="./css/learning-path.css?v=20261112-1">
-<link rel="stylesheet" href="./css/sentence-coach.css?v=20261112-1">
+<link rel="stylesheet" href="./css/sentence-coach.css?v=20261112-2">
 </head>
 <body>
   <div class="site-frame">
@@ -706,7 +706,7 @@
 <script src="./js/scene-match.js?v=20261112-1"></script>
 <script src="./js/learning-path.js?v=20261112-1"></script>
 <script src="./js/hsk3-base.js?v=20261112-1"></script>
-<script src="./js/sentence-coach.js?v=20261112-1"></script>
+<script src="./js/sentence-coach.js?v=20261112-2"></script>
 <script>
 const sceneURL = name => window.__offlineScenes[name] || ("assets/"+name+".svg");
 const $ = (selector) => document.querySelector(selector);
@@ -1519,8 +1519,8 @@ function renderSentence(){
    '<div class="sentence-candidate"><p>Этот порядок не распознан среди проверенных вариантов. Возможно, он допустим.</p>'+
    '<button type="button" class="action-btn secondary" data-action="sentence-suggest" '+
    (g.suggestionSaved?'disabled':'')+'>'+
-   (g.suggestionSaved?'ВАРИАНТ СОХРАНЁН':'СОХРАНИТЬ МОЙ ВАРИАНТ ДЛЯ ПРОВЕРКИ')+'</button>'+
-   '<small>Сохраняется в твоём прогрессе, автоматически правильным не считается.</small></div>':'';
+   (g.suggestionSaved?'ВАРИАНТ СОХРАНЁН':'СОХРАНИТЬ СПОРНЫЙ ВАРИАНТ')+'</button>'+
+   '<small>Только в твоём прогрессе: автоматически никому не отправляется и не считается правильным.</small></div>':'';
  const solution=g.showSolution?'<div class="sentence-solution"><strong>Один естественный вариант:</strong>'+
    '<div class="sentence-correct" lang="zh-CN">'+tapText(q.zh)+' '+speakButton(q.zh,'Прослушать предложение')+
    '</div><p>Можно разобрать отдельные слова или нажать «Пропустить» — без штрафа.</p></div>':'';
@@ -1586,7 +1586,7 @@ function sentenceAction(action,id){
    const selected=g.selected.map(i=>g.bank.find(x=>x.id===i)?.zh||'');
    ChineseLabSentenceCoach.noteCandidate(state.progress,state.lessonId,q,selected);
    g.suggestionSaved=true;g.feedbackError=false;
-   g.notice='Твой вариант сохранён для проверки в прогрессе. Он пока не подтверждён; можно перейти к следующему заданию без штрафа.';
+   g.notice='Вариант сохранён только в твоём прогрессе. Он пока не подтверждён; можно пропустить задание без штрафа.';
    save();
  }
  renderSentence();

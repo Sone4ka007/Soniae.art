@@ -79,7 +79,77 @@ test('hints, answer reveal, skip and resume controls are wired in the web app',(
   assert.match(html,/ChineseLabSentenceCoach\.prepareQuestion/);
   assert.match(html,/ChineseLabSentenceCoach\.diagnose/);
   assert.match(html,/ChineseLabSessions\.clear\(state\.progress,state\.lessonId,'sentence'\)/);
-  assert.match(sw,/sentence-coach\.js\?v=20261112-1/);
+  assert.match(sw,/sentence-coach\.js\?v=20261112-2/);
   assert.match(sw,/hsk3-base\.js\?v=20261112-1/);
-  assert.match(sw,/hsk4-chinese-lab-pwa-v29/);
+  assert.match(sw,/hsk4-chinese-lab-pwa-v30/);
+});
+
+
+test('multi-word time expressions and nominal subjects support natural alternatives',()=>{
+  const make=parts=>({
+    zh:parts.join(''),ru:'Тестовая фраза',parts,
+    variants:[parts],targets:[],explain:''
+  });
+  const known=coach.allowedWords(base,lessons,20);
+  // Evaluate grammar expansion directly, independent of lexical filtering.
+  const acceptable=[
+    {
+      parts:['我们','明天','晚上','一起','聚餐。'],
+      variants:[['明天','晚上','我们','一起','聚餐。']]
+    },
+    {
+      parts:['明天','早上','我','打算','坐','地铁','出行，','这样','更','省','时间。'],
+      variants:[
+        ['我','明天','早上','打算','坐','地铁','出行，','这样','更','省','时间。'],
+        ['我','打算','明天','早上','坐','地铁','出行，','这样','更','省','时间。']
+      ]
+    },
+    {
+      parts:['这','条','街','晚上','很','热闹。'],
+      variants:[['晚上','这','条','街','很','热闹。']]
+    },
+    {
+      parts:['房东','今天','带','我','看','房。'],
+      variants:[['今天','房东','带','我','看','房。']]
+    },
+    {
+      parts:['他','昨天','已经','顺利','入住','新家','了。'],
+      variants:[['昨天','他','已经','顺利','入住','新家','了。']]
+    }
+  ];
+  for(const entry of acceptable) {
+    const pool=[entry.parts],seen=new Set([coach.normalize(entry.parts)]);
+    for(let i=0;i<pool.length&&pool.length<32;i++){
+      for(const variant of coach.generatedTimeVariants(pool[i])){
+        const k=coach.normalize(variant);
+        if(!seen.has(k)){seen.add(k);pool.push(variant);}
+      }
+    }
+    for(const v of entry.variants)
+      assert(seen.has(coach.normalize(v)),entry.parts.join('')+' should accept '+v.join(''));
+  }
+  assert(!coach.generatedTimeVariants(['我','昨天','已经','顺利','入住','新家','了。'])
+    .some(v=>coach.normalize(v)==='我已经昨天顺利入住新家了'));
+});
+
+test('unrecognized answer can be saved as an unverified suggestion without changing XP',()=>{
+  const progress={xp:100,correct:10,attempts:7};
+  const q={zh:'我们明天晚上一起聚餐。',ru:'Завтра вечером мы поужинаем вместе.'};
+  const choice=['我们','晚上','明天','一起','聚餐。'];
+  assert.equal(coach.noteCandidate(progress,5,q,choice),true);
+  assert.equal(coach.noteCandidate(progress,5,q,choice),false);
+  assert.equal(progress.sentenceSuggestions.length,1);
+  assert.equal(progress.sentenceSuggestions[0].status,'unverified');
+  assert.equal(progress.sentenceSuggestions[0].answer,'我们晚上明天一起聚餐');
+  assert.equal(progress.xp,100);
+  assert.equal(progress.attempts,7);
+  assert.equal(progress.correct,10);
+});
+
+test('new grammar variants do not discard unfinished sessions',()=>{
+  const html=read('chinese/index.html');
+  assert.match(html,/if\(changed\)\{state\.game\.questions=revised;saveActiveSession\(\);\}/);
+  assert.match(html,/data-action="sentence-suggest"/);
+  assert.match(html,/ChineseLabSentenceCoach\.noteCandidate/);
+  assert.doesNotMatch(html,/miss\(q\.zh\);[\s\S]*?if\(action==='sentence-suggest'/);
 });

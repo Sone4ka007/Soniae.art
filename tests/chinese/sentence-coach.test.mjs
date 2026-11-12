@@ -79,7 +79,34 @@ test('hints, answer reveal, skip and resume controls are wired in the web app',(
   assert.match(html,/ChineseLabSentenceCoach\.prepareQuestion/);
   assert.match(html,/ChineseLabSentenceCoach\.diagnose/);
   assert.match(html,/ChineseLabSessions\.clear\(state\.progress,state\.lessonId,'sentence'\)/);
-  assert.match(sw,/sentence-coach\.js\?v=20261112-1/);
+  assert.match(sw,/sentence-coach\.js\?v=20261112-2/);
   assert.match(sw,/hsk3-base\.js\?v=20261112-1/);
-  assert.match(sw,/hsk4-chinese-lab-pwa-v29/);
+  assert.match(sw,/hsk4-chinese-lab-pwa-v30/);
+});
+
+test('although online shopping is convenient: accept both placements of 虽然',()=>{
+  const source=lessons[2].sentences.find(q=>q.zh==='网购虽然方便，但也要注意安全。');
+  assert(source,'the reported exercise must exist in lesson 3');
+  const q=coach.prepareQuestion(source,coach.allowedWords(base,lessons,3),gloss);
+  assert(q,'the reported exercise must remain available at lesson 3');
+  const first=['网购','虽然','方便，','但','也','要','注意','安全。'];
+  const second=['虽然','网购','方便，','但','也','要','注意','安全。'];
+  assert(coach.accepted(q,first),'网购虽然方便 is correct');
+  assert(coach.accepted(q,second),'虽然网购方便 is also correct');
+  assert.match(coach.hint(q,[],1),/虽然/);
+  assert(!coach.accepted(q,['网购','方便，','虽然','但','也','要','注意','安全。']),
+    '虽然 after the predicate is not automatically accepted');
+  assert(!coach.accepted(q,['网购','虽然','方便，','但','要','也','注意','安全。']),
+    'the adverb cannot be freely moved');
+});
+
+test('concessive variants respect compound topics and clause boundary',()=>{
+  const yes=['坐','大巴','虽然','有点儿','累，','但是','可以','节省','钱。'];
+  const alternatives=coach.generatedConcessiveVariants(yes);
+  assert.equal(alternatives.length,1);
+  assert.equal(alternatives[0].join(''),'虽然坐大巴有点儿累，但是可以节省钱。');
+  const noContrast=['网购','虽然','方便，','大家','很','喜欢。'];
+  assert.equal(coach.generatedConcessiveVariants(noContrast).length,0);
+  const noSwap=['虽然','方便，','但','也','要','注意','安全。'];
+  assert.equal(coach.generatedConcessiveVariants(noSwap).length,0);
 });

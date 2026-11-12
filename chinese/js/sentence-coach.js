@@ -84,6 +84,25 @@
     }
     return output;
   }
+  // 这本书虽然贵，但是很好。 / 虽然这本书贵，但是很好。
+  // Move 虽然 across an entire clause topic; do not shuffle other words.
+  // Restrict the transformation to a first-clause topic before 虽然, with
+  // a contrasting second clause. This is not a general word permutation.
+  function generatedConcessiveVariants(parts) {
+    const clean=parts.map(pure);
+    const marker=clean.indexOf('虽然');
+    const secondClause=clean.findIndex((token,i)=>i>marker && /[，,；;]/.test(String(parts[i]??'')));
+    if(marker<0||secondClause<0)return [];
+    const contrast=clean.slice(secondClause+1).some(word=>word==='但'||word==='但是'||word==='可是');
+    if(!contrast)return [];
+    const moveToFront=marker>0&&marker<=3&&
+      parts.slice(0,marker).every(p=>/^[\u3400-\u9fff]+$/u.test(p));
+    const moveAfterSubject=marker===0&&SUBJECT.has(clean[1])&&
+      /^[\u3400-\u9fff]+$/u.test(parts[1]||'');
+    if(moveToFront) return [[parts[marker],...parts.slice(0,marker),...parts.slice(marker+1)]];
+    if(moveAfterSubject) return [[parts[1],parts[0],...parts.slice(2)]];
+    return [];
+  }
   function prepareQuestion(q,known,gloss) {
     if(!q?.ru||!q.zh)return null;
     const parts=segment(q.parts,known);
@@ -97,9 +116,12 @@
     };
     add(parts);
     for(const original of q.variants||[])add(segment(original,known));
-    // Generate only two tightly bounded, grammar-tested time patterns,
-    // never arbitrary permutations. Other alternatives must be curated.
-    for(const variant of [...variants])for(const alternative of generatedTimeVariants(variant))add(alternative);
+    // Only explicitly supported grammar transformations are generated.
+    // Never treat arbitrary tile permutations as valid Chinese.
+    for(const variant of [...variants]) {
+      for(const alternative of generatedTimeVariants(variant))add(alternative);
+      for(const alternative of generatedConcessiveVariants(variant))add(alternative);
+    }
     return {...q,parts,variants};
   }
   function accepted(q,selected) {
@@ -124,6 +146,9 @@
   function hint(q,selected,level) {
     const expected=q.parts.map(pure);
     const first=expected[0], second=expected[1];
+    if(level===1 && (q.variants||[]).some(v=>pure(v[0])==='虽然') &&
+      (q.variants||[]).some(v=>pure(v[1])==='虽然'))
+      return 'В конструкции 虽然…但… «虽然» может стоять перед темой или после неё. Оба порядка допустимы.';
     if(level===1)return 'Начни с «'+first+'». Затем «'+second+'». Не обязательно угадывать всё сразу.';
     if(level===2) {
       const n=Math.min(4,expected.length);
@@ -131,5 +156,5 @@
     }
     return 'Один правильный вариант: '+q.zh+' Можно прослушать его и перейти к следующему заданию.';
   }
-  global.ChineseLabSentenceCoach=Object.freeze({allowedWords,translations,segment,prepareQuestion,accepted,diagnose,hint,pure,normalize,generatedTimeVariants});
+  global.ChineseLabSentenceCoach=Object.freeze({allowedWords,translations,segment,prepareQuestion,accepted,diagnose,hint,pure,normalize,generatedTimeVariants,generatedConcessiveVariants});
 })(window);

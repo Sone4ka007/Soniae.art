@@ -38291,7 +38291,7 @@
       "reviewed_at": "2026-10-17",
       "availability": "unknown",
       "availability_checked_at": "",
-      "registration": false,
+      "registration": null,
       "price": null,
       "price_text": "",
       "price_type": "paid",
@@ -38317,7 +38317,7 @@
         "status": "approved",
         "telegram_include": false,
         "instagram_include": false,
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -41054,7 +41054,7 @@
       "address": "1-й Голутвинский переулок, 16, стр. 1",
       "price": 850,
       "price_text": "850 ₽; льготный — 650 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -41081,7 +41081,7 @@
       "time_evidence": "24 октября 2026 14:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
       "editor_overrides": {
-        "registration": false
+        "registration": null
       }
     },
     {
@@ -49427,7 +49427,7 @@
       "address": "Лаврушинский переулок, 12",
       "price": 650,
       "price_text": "650 ₽; онлайн — 700 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -49444,7 +49444,7 @@
         "telegram_include": false,
         "instagram_include": false,
         "status": "approved",
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -51674,14 +51674,16 @@
       "price": 0,
       "price_text": "",
       "registration": false,
-      "categories": [],
+      "categories": [
+        "выставка"
+      ],
       "description": "На метро Музей AZ находится между станциями метро «Маяковская» и «Белорусская» (кольцевая). Мы рекомендуем идти в Музей от станции «Маяковская». Вам нужен Выход №1 на 1-я Тверская-Ямская улица, 2-я Тверская-Ямская улица.",
       "url": "https://museum-az.com/event/territoriya-svobody-nonkonformisty-v-taruse/",
       "source": "Музей AZ — выставки и события",
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-10-20",
-      "price_type": "paid",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-10-25",
       "editor_overrides": {
@@ -52951,7 +52953,7 @@
       "title": "Коллективная выставка Арт-шаффл 43.0",
       "venue": "ЦСИ Винзавод",
       "address": "",
-      "price": 0,
+      "price": 1500,
       "price_text": "12000 ₽",
       "registration": null,
       "categories": [
@@ -52965,7 +52967,7 @@
       "discovered_at": "2026-11-03",
       "start_date": "2026-11-03",
       "end_date": "2026-11-15",
-      "price_type": "free",
+      "price_type": "paid",
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
@@ -55219,7 +55221,7 @@
       "address": "",
       "price_type": "free",
       "price_text": "бесплатно по регистрации",
-      "registration": false,
+      "registration": true,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -57133,7 +57135,7 @@
       "address": "",
       "price_type": "free",
       "price_text": "бесплатно по регистрации",
-      "registration": false,
+      "registration": true,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -60177,7 +60179,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-11-12-57971d9a68",
@@ -60243,7 +60247,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-12-2a5216b0ac",
@@ -60255,12 +60261,42 @@
       "title": "В «Фильмофонде» покажут уникальную версию фильма «Бедный, бедный Павел»",
       "venue": "",
       "address": "",
-      "price": 0,
+      "price": null,
       "price_text": "Бесплатно",
       "registration": null,
       "categories": [],
       "description": "К 75-летию Виктора Сухорукова в кинотеатре «Фильмофонд» на выходных можно посмотреть историческую драму Виталия Мельникова «Бедный, бедный Павел», о коротком и противоречивом царствовании российского императора Павла I. Три сеанса пройдут на 35-мм плёнке, что делает каждый показ уникальным.",
       "url": "https://spbcult.ru/news/anonsy/v-filmofonde-pokazhut-unikalnuyu-versiyu-filma-bednyy-bednyy-pavel/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-12",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
+    },
+    {
+      "id": "spb-2026-11-12-1fc998dfc7",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-12",
+      "time": "",
+      "title": "В Доме книги расскажут, «Как читать скульптуру»",
+      "venue": "",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [
+        "программа"
+      ],
+      "description": "14 ноября в 15:00 в Доме книги состоится торжественное открытие проекта «Читать и читать скульптуру», в рамках которого будет запущена выставка одного экспоната в зале Искусств Дома книги. Гостей ждёт погружение в мир оживших сюжетов и знакомство с пластическим языком скульптуры. Как понять, о чём молчит бронза?",
+      "url": "https://spbcult.ru/news/anonsy/v-dome-knigi-rasskazhut-kak-chitat-skulpturu/",
       "source": "Петербургский дневник культуры — анонсы",
       "checked_at": "",
       "review_reason": "",
@@ -60281,7 +60317,7 @@
       "title": "Выставка Петра Швецова «Бриколаж» стартует в Петербурге",
       "venue": "",
       "address": "",
-      "price": 0,
+      "price": null,
       "price_text": "Бесплатно",
       "registration": null,
       "categories": [
@@ -60298,7 +60334,9 @@
       "ticket_required": false,
       "availability": "unknown",
       "availability_checked_at": "",
-      "start_date": "2026-11-12"
+      "start_date": "2026-11-12",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-12-5995f84169",
@@ -60324,7 +60362,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-12-422be2d050",
@@ -60488,7 +60528,7 @@
       "price_text": "Бесплатно",
       "registration": null,
       "categories": [],
-      "description": "Медленное чтение на французском языке: «Кармен» Проспера Мериме 12+ 12 ноября 2026 (четверг) 19:00 Зал редкой книги Вход свободный 2026-11-12 19:00 2026-11-12 19:00 Europe/Moscow Медленное чтение на французском языке: «Кармен» Проспера Мериме Желательный минимальный уровень знания языка — А2 РГБМ, Зал редкой книги РГБМ info@rgub.ru Желательный минимальный уровень знания языка — А2 Знаменитая новелла французского писателя впервые была опубликована в 1845 году. История о страстной цыганке Кармен и солдате Хосе, чья любовь приводит к трагедии, стала одним из самых известных сюжетов мировой литературы и легла в основу оперы Жоржа Бизе. Мы продолжим читать и переводить «Кармен» в оригинале. Разберём новеллу, обсудим особенности авторского стиля, поработаем с лексикой и грамматическими конструкциями. Также поговорим о том, как образ Кармен менялся в переводах на русский язык и в музыкальной традиции. Ведущая: Татьяна Сосенская, преподаватель французского языка",
+      "description": "Медленное чтение на французском языке: «Кармен» Проспера Мериме 12+ 12 ноября 2026 (четверг) 19:00 Зал редкой книги Вход свободный Желательный минимальный уровень знания языка — А2 Знаменитая новелла французского писателя впервые была опубликована в 1845 году. История о страстной цыганке Кармен и солдате Хосе, чья любовь приводит к трагедии, стала одним из самых известных сюжетов мировой литературы и легла в основу оперы Жоржа Бизе. Мы продолжим читать и переводить «Кармен» в оригинале. Разберём новеллу, обсудим особенности авторского стиля, поработаем с лексикой и грамматическими конструкциями. Также поговорим о том, как образ Кармен менялся в переводах на русский язык и в музыкальной традиции. Ведущая: Татьяна Сосенская, преподаватель французского языка",
       "url": "https://rgub.ru/schedule/item.php?new_id=49779",
       "source": "Российская государственная библиотека для молодёжи — афиша",
       "checked_at": "",
@@ -60572,7 +60612,7 @@
       "title": "Петербург примет участие во всероссийском «Хороводе»",
       "venue": "",
       "address": "",
-      "price": 0,
+      "price": null,
       "price_text": "Бесплатно",
       "registration": null,
       "categories": [
@@ -60588,7 +60628,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-12-8a775018e6",
@@ -60655,7 +60697,9 @@
       "ticket_required": false,
       "availability": "unknown",
       "availability_checked_at": "",
-      "start_date": "2026-11-12"
+      "start_date": "2026-11-12",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-12-5bf68881ae",
@@ -60781,82 +60825,6 @@
       "availability_checked_at": "",
       "editor_note": "",
       "reviewed_at": ""
-    },
-    {
-      "id": "moscow-2026-10-25-c40e7952b7",
-      "status": "rejected",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-11-12",
-      "time": "10:00",
-      "title": "Воркшопы",
-      "venue": "ЦСИ Винзавод",
-      "address": "",
-      "price": 0,
-      "price_text": "Бесплатно",
-      "registration": false,
-      "categories": [
-        "лекция"
-      ],
-      "description": "",
-      "url": "https://www.winzavod.ru/calendar/workshops/",
-      "source": "ЦСИ Винзавод",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-10-25",
-      "price_type": "free",
-      "availability_evidence": "",
-      "ticket_required": true,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false,
-        "status": "rejected"
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": "2026-10-27"
-    },
-    {
-      "id": "moscow-2026-10-25-fefbfbd35d",
-      "status": "rejected",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-11-12",
-      "time": "10:00",
-      "title": "Курсы",
-      "venue": "ЦСИ Винзавод",
-      "address": "",
-      "price": 0,
-      "price_text": "Бесплатно",
-      "registration": false,
-      "categories": [
-        "лекция"
-      ],
-      "description": "",
-      "url": "https://www.winzavod.ru/calendar/course/",
-      "source": "ЦСИ Винзавод",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-10-25",
-      "price_type": "free",
-      "availability_evidence": "",
-      "ticket_required": true,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false,
-        "status": "rejected"
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": "2026-10-27"
     },
     {
       "id": "moscow-2026-11-12-b485ac3446",
@@ -61056,7 +61024,7 @@
       "discovered_at": "2026-11-10",
       "price_type": "paid",
       "availability_evidence": "",
-      "ticket_required": true,
+      "ticket_required": false,
       "availability": "unknown",
       "availability_checked_at": "",
       "editor_overrides": {
@@ -61495,8 +61463,8 @@
       "price_type": "unknown",
       "availability_evidence": "",
       "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": "",
+      "availability": "sold_out",
+      "availability_checked_at": "2026-11-12",
       "editor_overrides": {
         "telegram_include": false,
         "instagram_include": false
@@ -61801,7 +61769,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-13-e67cd97edb",
@@ -62014,6 +61984,82 @@
       "availability_checked_at": "",
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "moscow-2026-10-25-c40e7952b7",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-13",
+      "time": "10:00",
+      "title": "Воркшопы",
+      "venue": "ЦСИ Винзавод",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "",
+      "url": "https://www.winzavod.ru/calendar/workshops/",
+      "source": "ЦСИ Винзавод",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-25",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false,
+        "status": "rejected"
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": "2026-10-27"
+    },
+    {
+      "id": "moscow-2026-10-25-fefbfbd35d",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-13",
+      "time": "10:00",
+      "title": "Курсы",
+      "venue": "ЦСИ Винзавод",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "",
+      "url": "https://www.winzavod.ru/calendar/course/",
+      "source": "ЦСИ Винзавод",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-25",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false,
+        "status": "rejected"
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": "2026-10-27"
     },
     {
       "id": "moscow-2026-11-13-73b662c76a",
@@ -63591,6 +63637,34 @@
       "availability_checked_at": ""
     },
     {
+      "id": "moscow-2026-11-14-4c74a282ac",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-14",
+      "time": "17:00",
+      "title": "Лекция-экскурсия «В.Бубнова — русский художник в Японии»",
+      "venue": "Дом русского зарубежья им. А. Солженицына",
+      "address": "",
+      "price": 400,
+      "price_text": "400 ₽",
+      "registration": true,
+      "categories": [
+        "лекция"
+      ],
+      "description": "14 ноября 2026 года в 17 часов часов приглашаем на лекцию-экскурсию «В.Бубнова — русский художник в Японии». Варвара Бубнова (1886–1983) — яркая представительница русского художественного авангарда и человек удивительной судьбы. Участница выставок «Союза молодежи» и «Ослиного хвоста», она в начале 1920-х годов покинула Россию и на 36 лет связала свою жизнь с Японией.",
+      "url": "https://www.domrz.ru/event/70705_lektsiya_ekskursiya_v_bubnova_russkiy_khudozhnik_v_yaponii/",
+      "source": "Дом русского зарубежья — афиша",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-11-12",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "sold_out",
+      "availability_checked_at": "2026-11-12"
+    },
+    {
       "id": "spb-2026-11-14-e9cd9a7c0c",
       "status": "check",
       "kind": "event",
@@ -64175,7 +64249,7 @@
       "title": "ПОДПИШИТЕСЬ И ПОЛУЧАЙТЕ НОВОСТИ МУЗЕЯ ПЕРВЫМИ",
       "venue": "Еврейский музей и центр толерантности",
       "address": "",
-      "price": 2026600,
+      "price": 600,
       "price_text": "250 ₽",
       "registration": null,
       "categories": [
@@ -64355,6 +64429,34 @@
       "availability_checked_at": "",
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "moscow-2026-11-15-01f2330b90",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-15",
+      "time": "11:00",
+      "title": "Акция «Московская музейная неделя»",
+      "venue": "Дом русского зарубежья им. А. Солженицына",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": true,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "15 ноября 2026 года приглашаем посетить Музей русского зарубежья бесплатно в рамках акции «Московская музейная неделя». Для посещения Музея необходимо приобрести бесплатный билет на сайте mos.ru : - единый входной билет на постоянную экспозицию Музея русского зарубежья и временные выставки ( оформить билет );",
+      "url": "https://www.domrz.ru/event/71031_aktsiya_moskovskaya_muzeynaya_nedelya2623/",
+      "source": "Дом русского зарубежья — афиша",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-12",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "sold_out",
+      "availability_checked_at": "2026-11-12"
     },
     {
       "id": "spb-2026-11-15-fec57ea5fd",
@@ -64583,7 +64685,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-15-c689e645e9",
@@ -64770,7 +64874,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-15-23abff78ff",
@@ -65494,6 +65600,34 @@
       "reviewed_at": ""
     },
     {
+      "id": "spb-2026-11-16-94e60f43d6",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-16",
+      "time": "18:30",
+      "title": "Лекция «Среди коллекционеров»",
+      "venue": "Российская национальная библиотека",
+      "address": "Садовая ул., д. 18",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Лектор — историк культуры Е. И. Жерихина . Дата начала регистрации — 9 ноября",
+      "url": "https://nlr.ru/nlr_visit/event/3709",
+      "source": "Российская национальная библиотека — афиша",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-12",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-16-5f73160fd7",
       "status": "approved",
       "kind": "event",
@@ -66017,6 +66151,34 @@
       "reviewed_at": "2026-11-05"
     },
     {
+      "id": "moscow-2026-11-17-e7982b72fb",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-17",
+      "time": "14:00",
+      "title": "Лекция-экскурсия «После России… Марина Цветаева в эмиграции»",
+      "venue": "Дом русского зарубежья им. А. Солженицына",
+      "address": "",
+      "price": 300,
+      "price_text": "300 ₽",
+      "registration": true,
+      "categories": [
+        "лекция"
+      ],
+      "description": "17 ноября 2026 года в 14 часов приглашаем на лекцию-экскурсию «После России… Марина Цветаева в эмиграции». Мероприятие состоит из двух частей — лекции с показом презентации и экскурсии по постоянной экспозиции Музея русского зарубежья. Лекция-экскурсия знакомит посетителей с биографией и творчеством Марины Цветаевой на чужбине в 1922–1939 годах.",
+      "url": "https://www.domrz.ru/event/70706_lektsiya_ekskursiya_posle_rossii_marina_tsvetaeva_v_emigratsii/",
+      "source": "Дом русского зарубежья — афиша",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-11-12",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "sold_out",
+      "availability_checked_at": "2026-11-12"
+    },
+    {
       "id": "spb-2026-11-17-d70f2c6fd6",
       "status": "rejected",
       "kind": "event",
@@ -66108,6 +66270,35 @@
       "availability_checked_at": "",
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "moscow-2026-11-17-6de6981347",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-17",
+      "time": "18:30",
+      "title": "Контуры моды",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": true,
+      "categories": [
+        "медиаторский тур"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/fashion-contours",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-11-12",
+      "audience_text": "› Медиация › Туры Регистрация Билеты на индивидуальный медиаторский тур Дата: с 6 авг 2025 Регистрация Билеты на индивидуальный медиаторский тур Возраст: от 16 Тип: Медиаторский тур Место: Площадь Доступность  Возрастные ограничения 16+ Участники тура, созданного совместно с брендом LIMÉ , проследят взаимосвязь моды с повседневностью и искусством, используя ассоциативные карты, отсылающие к творчеству известных дизайнеров. Что такое «Индивидуальный медиаторский тур»?  {\"points\":[{\"id\":4,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":6,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.4,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":5,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} T Одежда — это больше чем ткань и крой. Подобно художественному произведению искусства, это зашифрованное послание, где каждый шов или принт рассказывает историю. Почему сегодня мы выбираем oversize , а завтра — обтягивающие силуэты? Как подиумные образы становятся частью нашего гардероба, а уличная мода проникает в музеи? Тур регулярно проходит с переводом на русский жестовый язык. Глухие и слабослышащие люди могут зарегистрироваться, написав на почту access@ges-2.org или номер +7 (963) 996 3687 (SMS, WhatsApp, Telegram)*. Слышащих посетителей просим воспользоваться кнопкой «Регистрация». Иллюстрация: Маша Титова На медиаторском туре мы обратимся к специально созданным ассоциативным картам, которые помогут увидеть неочевидные связи между искусством, модой и повседневностью. Мы рассмотрим культовые показы, расшифруем фирменные паттерны брендов и проследим, как социальные изменения обусловливают тренды. Объединив изучение моды, выставочных проектов и пространства Дома культуры « ГЭС-2 », мы попробуем взглянуть на знакомые вещи по-новому. Официальный партнер направления медиации Дома культуры « ГЭС-2 » Авторы Анастасия Горбунова, Даша Горячева, Ника Карпенко, Карина Чернышова Художник-иллюстратор Маша Титова * Сообщая нам свои личные данные, вы даете согласие на их обработку в соответствии с нашей Политикой в отношении обработки и защиты персональных данных. Дизайнер Мария Виноградова {\"grid\":{\"width\":963,\"column_width\":89,\"columns_n\":9,\"gutter\":20,\"margin\":0,\"line\":10},\"palette\":\"default\",\"responsive_mode\":true,\"responsive_min_width\":512,\"responsive_max_width\":1100,\"colorchanger_fullscreen",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "spb-2026-11-17-ddada24b12",
@@ -66953,6 +67144,62 @@
       "reviewed_at": ""
     },
     {
+      "id": "moscow-2026-11-19-09d911e77b",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-19",
+      "time": "",
+      "title": "Бумажный тигр / Paper Tiger",
+      "venue": "Центр Зотов",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "новинки проката"
+      ],
+      "description": "",
+      "url": "https://centrezotov.ru/events/bumazhnyj-tigr-paper-tiger/",
+      "source": "Центр Зотов",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-12",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "moscow-2026-11-19-6973f2a628",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-19",
+      "time": "",
+      "title": "Было не было",
+      "venue": "Центр Зотов",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "новинки проката"
+      ],
+      "description": "",
+      "url": "https://centrezotov.ru/events/bylo-ne-bylo/",
+      "source": "Центр Зотов",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-12",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-19-05c67d7f07",
       "status": "rejected",
       "kind": "event",
@@ -67056,6 +67303,34 @@
       "reviewed_at": "2026-11-03"
     },
     {
+      "id": "moscow-2026-11-19-501cdedb1c",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-19",
+      "time": "",
+      "title": "Рокки — это я / I play Rocky",
+      "venue": "Центр Зотов",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "новинки проката"
+      ],
+      "description": "",
+      "url": "https://centrezotov.ru/events/rokki-eto-ya-i-play-rocky/",
+      "source": "Центр Зотов",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-12",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-10-04-bb9ac87531",
       "status": "rejected",
       "kind": "event",
@@ -67094,6 +67369,34 @@
       "editor_overrides": {
         "time": ""
       }
+    },
+    {
+      "id": "moscow-2026-11-19-b67055cdf9",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-19",
+      "time": "",
+      "title": "Увидеть всё / You Can See Everything",
+      "venue": "Центр Зотов",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "новинки проката"
+      ],
+      "description": "",
+      "url": "https://centrezotov.ru/events/uvidet-vsyo-you-can-see-everything/",
+      "source": "Центр Зотов",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-12",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-19-705e2f9974",
@@ -67544,6 +67847,34 @@
       "telegram_include": false,
       "instagram_include": false,
       "reviewed_at": "2026-10-27"
+    },
+    {
+      "id": "moscow-2026-11-19-057848e413",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-19",
+      "time": "19:00",
+      "title": "Культурная анатомия. Визуально-соматический код: как читать послания, записанные на теле",
+      "venue": "Еврейский музей и центр толерантности",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Вторая встреча цикла «Культурная анатомия»: как люди тысячелетиями записывали на собственном теле статус, возраст и принадлежность и почему мы разучились это читать. Часть программы Недели толерантности 2026. Человеческое тело — это еще и один из главных объектов культуры.",
+      "url": "https://www.jewish-museum.ru/events/kulturnaya-anatomiya-vizualno-somaticheskiy-kod-kak-chitat-poslaniya-zapisannye-na-tele/",
+      "source": "Еврейский музей и центр толерантности",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-12",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "spb-2026-11-19-d37cec3b3f",
@@ -68114,7 +68445,9 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-20-91de6ea2a2",
@@ -68193,6 +68526,34 @@
       "reviewed_at": "2026-10-24",
       "time_verification": "unverified",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
+      "id": "moscow-2026-11-20-dcf2bb0953",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-20",
+      "time": "",
+      "title": "Путь архитектора: от университета до открытия бюро. Лекция в Школе дизайна",
+      "venue": "Школа дизайна НИУ ВШЭ",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "20 ноября 2026 Как не потеряться после получения диплома, найти свой уникальный почерк и решиться на запуск собственной практики? 20 ноября Архитектурный лекторий Школы дизайна приглашает на вторую встречу, посвященную реальному пути архитектора: от студенческой скамьи до открытия своего бюро.",
+      "url": "https://design.hse.ru/news/7408",
+      "source": "Школа дизайна НИУ ВШЭ — открытые лекции",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-12",
+      "editor_note": "",
+      "reviewed_at": "",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-20-f953cea0f9",
@@ -68632,6 +68993,35 @@
       "reviewed_at": ""
     },
     {
+      "id": "moscow-2026-11-20-834758f1e0",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-20",
+      "time": "18:30",
+      "title": "Седьмая позиция. Двигательная лаборатория для учителей",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лаборатория"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/seventh-position-a-movement-laboratory-for-teachers",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-12",
+      "audience_text": "› Школы › «ГЭС-2» для учителей Дата: 20 ноя 2026– 29 янв 2027 Регистрация начнется позже Возраст: от 18 Тип: Лаборатория Место: Малые своды Доступность  Возрастные ограничения 6+ Серия перформативных встреч для учителей и преподавателей. Встречи лаборатории будут проходить по пятницам с 18:30 до 20:30 в Малых сводах. Лаборатория будет двухчастной. Первая часть состоит из 8 занятий по открытой регистрации в ноябре, декабре и январе. Вторая часть предназначена для закрытой группы участников, сформированной в результате первой части. По ее итогам участники могут подготовить публичное перформативное выступление. Чтобы вам было комфортно, возьмите с собой удобную одежду и сменную обувь или нескользящие носки. В Малых сводах есть раздевалка с локерами и душ, где можно освежиться после практики. T Профессия учителя предполагает ежедневную роль медиатора. Каждый день педагоги удерживают внимание класса, объясняют, слушают, поддерживают, выбирают интонацию, делают паузы и сталкиваются с волнением и усталостью. Разум работает быстро, а тело часто остается без внимания. К концу рабочей недели в нем накапливаются напряжение и эмоции, которые не удалось проговорить. Отдавать и делиться становится энергозатратно. Простых движений недостаточно для того, чтобы восстановиться и вернуть восприимчивость. Чтобы попытаться разрешить эту проблему, приглашаем в лабораторию движения «Седьмая позиция». Фото: Анна Завозяева Моя задача — поделиться оптикой восприятия движения: у каждого элемента есть тело, которое движется в пространстве и времени и вступает в отношения с другими. Благодаря этому у вас появляется более широкий выбор заботы о себе и своей работе. Я показываю, что танец может быть не только на сцене. Он повсюду в повседневности. — Герман Строганов В классической хореографии выделяют 6 позиций — мы же предлагаем выйти за рамки правил и изобрести свою, седьмую позицию. Это серия встреч, где не нужно уметь двигаться согласно правилам. Достаточно прийти, дать себе время и поискать ответы на вопросы: как я сейчас, где моя опора, что происходит с моим вниманием. Седьмая позиция — это тотальное присутствие в настоящем — с тем, что есть на данный момент. Для этого ведущий создает безопасное пространство для восстановления, замедления и бережной перезагрузки. Ведущий предлагает следовать принципу танцевальной драматургии, где есть множество элементов и отношений между ними. В практиках есть место случайности и «неправильности»: ошибка становится материалом для наблюдения, ист",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "spb-2026-11-20-d6c3449b67",
       "status": "approved",
       "kind": "event",
@@ -68666,6 +69056,34 @@
         "status": "approved"
       },
       "reviewed_at": "2026-11-03"
+    },
+    {
+      "id": "moscow-2026-11-20-369dc757c1",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-20",
+      "time": "19:00",
+      "title": "Лекция «Юрий Константинович Королев»",
+      "venue": "Третьяковская галерея",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Лекция к абонементу №02 «Попечители и директора Третьяковской галереи» 2 октября 2026 – 20 ноября 2026 Лекция будет проходить в Лекционном зале Инженерного корпуса (Лаврушинский переулок, д. 12, вход с Малого Толмачёвского переулка) и в режиме реального времени на платформе МТС Линк в формате онлайн. Продолжительность лекции: 1 час 30 минут.",
+      "url": "https://www.tretyakovgallery.ru/events/o/lektsiya-yuriy-konstantinovich-korolev-11-2026/",
+      "source": "Третьяковская галерея — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-12",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-20-da81792ce4",
@@ -68704,6 +69122,95 @@
       "telegram_include": false,
       "instagram_include": false,
       "reviewed_at": "2026-11-09"
+    },
+    {
+      "id": "moscow-2026-11-20-05c450d73d",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-20",
+      "time": "19:00",
+      "title": "Увидеть все",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "кинопоказ"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/you-can-see-everything",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-12",
+      "audience_text": "Дата: с 20 ноя 2026 Билеты Возраст: от 18 Тип: Кинопоказ Место: Кинотеатр Доступность  Возрастные ограничения 18+ Самая горячая премьера сезона: мастер комедии дискомфорта Филдер проверяет на прочность скандальную мошенницу. You Can See Everything 2026, Нэйтан Филдер, Лэнс Оппенгейм | Nathan Fielder, Lance Oppenheim США 174 мин., англ. с рус. субт. В ролях: Нэйтан Филдер, Элизабет Холмс, Аманда Сайфред, Кристофер Эбботт T Помните ли вы Элизабет Холмс? В середине 2010-х молодая бойкая предпринимательница привлекла сотни миллионов долларов инвестиций в свой революционный проект мгновенных анализов крови Theranos — который оказался чистой мистификацией. Теперь Холмс отбывает 11-летний срок за мошенничество, но прежде чем тот начался, она успела на несколько месяцев впустить в свою жизнь документалиста-комика Нэйтана Филдера. Тот поселился дома у преступницы и ее эксцентричного жениха Билли Эванса и попытался разобраться в душе самой известной мошенницы Кремниевой долины. Кадр из фильма «Увидеть все», 2026 Головокружительное кино об истине, реальности и границах познания. — Манола Даргис, The New York Times Зрители, знакомые с предыдущими сверхпопулярными работами Филдера (сериалы «Нэйтан спешит на выручку», «Репетиция» и «Проклятие») могут догадаться: классической документалистики от него ждать не стоит. Тем лучше: большой специалист по комедии дискомфорта, не уступающий Бастеру Китону по экранной харизме, Филдер находит себе ровню. Холмс — вкрадчивая и обаятельная до неподдельной жути манипуляторка, владеющая великим талантом размывать грань между ложью и правдой. Ее взаимодействие с Филдером и его камерой рождает кино непредсказуемое и лукавое, многозначительное и пытливое, завораживающее от первого до последнего кадра. Ажиотаж вокруг «Увидеть все» не только понятен, но и абсолютно заслужен: такого изобретательного и оригинального документального фильма широкая публика не видела очень давно. {\"grid\":{\"width\":963,\"column_width\":89,\"columns_n\":9,\"gutter\":20,\"margin\":0,\"line\":10},\"palette\":\"default\",\"responsive_mode\":true,\"responsive_min_width\":512,\"responsive_max_width\":1100,\"colorchanger_fullscreen\":false,\"colorchanger_overflow\":true,\"page_cropping\":false,\"global_google_analytics_id\":\"\",\"global_yandex_metrika_id\":\"\",\"article_mode\":{\"mode\":\"page\",\"transition_type\":\"slide\",\"transition_direction\":\"horizontal\",\"transition_look\":\"belt\",\"slides_form\":{}},\"default_font\":{\"css\":\".editor {font-family: Diagramatika Text; font-size: 20px; font-weight: 400; line-height",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "spb-2026-11-20-6d61cf9b5a",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-20",
+      "time": "20:00",
+      "title": "Театральная программа «Игра в классики» 20 ноября 2026 — 14 февраля 2027",
+      "venue": "Манеж",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "встреча"
+      ],
+      "description": "Музейно-выставочный комплекс «Манеж» представляет театральный проект «Игра в классики» , созданный специально к выставке «Сцена действия». Проект задуман как продолжение экспозиции, позволяющее зрителям увидеть театральные постановки прямо в выставочном зале.",
+      "url": "https://manege.spb.ru/events/teatralnaya-programma-igra-v-klassiki/",
+      "source": "Манеж — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-12",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "moscow-2026-11-21-9234452fcd",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-21",
+      "time": "",
+      "title": "Ceramania Новогодняя",
+      "venue": "ЦСИ Винзавод",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "",
+      "url": "https://www.winzavod.ru/calendar/festivals/ceramania-novogodnyaya/",
+      "source": "ЦСИ Винзавод",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-09",
+      "start_date": "2026-11-21",
+      "end_date": "2026-11-22",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-11-21-58b55a0cdf",
@@ -68905,7 +69412,9 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-21-96618547ab",
@@ -68983,6 +69492,35 @@
       "editor_note": ""
     },
     {
+      "id": "moscow-2026-11-21-05c450d73d",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-21",
+      "time": "12:00",
+      "title": "Увидеть все",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "кинопоказ"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/you-can-see-everything",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-12",
+      "audience_text": "Дата: с 20 ноя 2026 Билеты Возраст: от 18 Тип: Кинопоказ Место: Кинотеатр Доступность  Возрастные ограничения 18+ Самая горячая премьера сезона: мастер комедии дискомфорта Филдер проверяет на прочность скандальную мошенницу. You Can See Everything 2026, Нэйтан Филдер, Лэнс Оппенгейм | Nathan Fielder, Lance Oppenheim США 174 мин., англ. с рус. субт. В ролях: Нэйтан Филдер, Элизабет Холмс, Аманда Сайфред, Кристофер Эбботт T Помните ли вы Элизабет Холмс? В середине 2010-х молодая бойкая предпринимательница привлекла сотни миллионов долларов инвестиций в свой революционный проект мгновенных анализов крови Theranos — который оказался чистой мистификацией. Теперь Холмс отбывает 11-летний срок за мошенничество, но прежде чем тот начался, она успела на несколько месяцев впустить в свою жизнь документалиста-комика Нэйтана Филдера. Тот поселился дома у преступницы и ее эксцентричного жениха Билли Эванса и попытался разобраться в душе самой известной мошенницы Кремниевой долины. Кадр из фильма «Увидеть все», 2026 Головокружительное кино об истине, реальности и границах познания. — Манола Даргис, The New York Times Зрители, знакомые с предыдущими сверхпопулярными работами Филдера (сериалы «Нэйтан спешит на выручку», «Репетиция» и «Проклятие») могут догадаться: классической документалистики от него ждать не стоит. Тем лучше: большой специалист по комедии дискомфорта, не уступающий Бастеру Китону по экранной харизме, Филдер находит себе ровню. Холмс — вкрадчивая и обаятельная до неподдельной жути манипуляторка, владеющая великим талантом размывать грань между ложью и правдой. Ее взаимодействие с Филдером и его камерой рождает кино непредсказуемое и лукавое, многозначительное и пытливое, завораживающее от первого до последнего кадра. Ажиотаж вокруг «Увидеть все» не только понятен, но и абсолютно заслужен: такого изобретательного и оригинального документального фильма широкая публика не видела очень давно. {\"grid\":{\"width\":963,\"column_width\":89,\"columns_n\":9,\"gutter\":20,\"margin\":0,\"line\":10},\"palette\":\"default\",\"responsive_mode\":true,\"responsive_min_width\":512,\"responsive_max_width\":1100,\"colorchanger_fullscreen\":false,\"colorchanger_overflow\":true,\"page_cropping\":false,\"global_google_analytics_id\":\"\",\"global_yandex_metrika_id\":\"\",\"article_mode\":{\"mode\":\"page\",\"transition_type\":\"slide\",\"transition_direction\":\"horizontal\",\"transition_look\":\"belt\",\"slides_form\":{}},\"default_font\":{\"css\":\".editor {font-family: Diagramatika Text; font-size: 20px; font-weight: 400; line-height",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "spb-2026-11-21-7b4598a7d1",
       "status": "check",
       "kind": "event",
@@ -69015,37 +69553,7 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
-    },
-    {
-      "id": "moscow-2026-11-21-9234452fcd",
-      "status": "new",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-11-21",
-      "time": "12:30",
-      "title": "Ceramania Новогодняя",
-      "venue": "ЦСИ Винзавод",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": null,
-      "categories": [
-        "лекция"
-      ],
-      "description": "",
-      "url": "https://www.winzavod.ru/calendar/festivals/ceramania-novogodnyaya/",
-      "source": "ЦСИ Винзавод",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-11-09",
-      "start_date": "2026-11-21",
-      "end_date": "2026-11-22",
-      "price_type": "paid",
-      "availability_evidence": "",
-      "ticket_required": true,
-      "availability": "unknown",
-      "availability_checked_at": "",
+      "instagram_include": false,
       "editor_note": "",
       "reviewed_at": ""
     },
@@ -69157,6 +69665,35 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": "2026-11-03"
+    },
+    {
+      "id": "moscow-2026-11-21-00c85a88e1",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-21",
+      "time": "15:00",
+      "title": "Кто ты будешь такой",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/who-you-re-going-to-be",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-12",
+      "audience_text": "› Медиация › Туры Регистрация Билеты на индивидуальный медиаторский тур Дата: с 5 апр 2026 Регистрация Билеты на индивидуальный медиаторский тур Возраст: от 8 Тип: Медиаторский тур Место: ГЭС-2 Возрастные ограничения 6+ Медиаторский тур для детей и подростков расскажет об устройстве Дома культуры « ГЭС-2 » и познакомит с профессиями в сфере искусства. Что такое «Индивидуальный медиаторский тур»?  {\"points\":[{\"id\":4,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":6,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.4,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":5,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} T Каждый день в « ГЭС-2 » проходят концерты и мастер-классы, кинопоказы и спектакли, лекции и выставки. Чтобы организовать все это, нужно, чтобы объединилось очень много людей самых разных профессий. Среди них — кураторы, звукорежиссеры, продюсеры, архитекторы, научные консультанты, технические специалисты. И это лишь часть большого списка! Фото: Аня Тодич А еще Дому культуры нужны профессионалы, благодаря которым сюда ежедневно могут приходить тысячи гостей, — это сотрудники по работе с посетителями, охранники, уборщики. Они делают пространство безопасным и удобным для всех. Во время тура мы обсудим, кто и как работает над нашими событиями, примерим на себя роли разных сотрудников « ГЭС-2 » и создадим собственный выставочный проект. Официальный партнер направления медиации Дома культуры « ГЭС-2 » Авторы тура Мария Колпакова, Алина Мирошник — медиаторы Дома культуры « ГЭС-2 ». {\"width\":963,\"column_width\":89,\"columns_n\":9,\"gutter\":20,\"margin\":0,\"line\":10} default true 512 1100 false true false {\"mode\":\"page\",\"transition_type\":\"slide\",\"transition_direction\":\"horizontal\",\"transition_look\":\"belt\",\"slides_form\":{}} {\"css\":\".editor {font-family: Diagramatika Text; font-size: 20px; font-weight: 400; line-height: 20px;}\"} ГЭС-2 Посещение [+] План здания Правила посещения Ателье Игровая Кинотеатр Концертный зал Библиотека Малые своды Магазин Ресторан и кафе Парковка Вокруг Доступность Как нас найти Календарь Программа Направления [+] Практики Медиация Дети и подростки Сообщества Школы Университеты Города Возможности [+] Своды Студии Резиденции Гранты Исследования Издательство  О нас [+] Дом культуры История и архитектура Посещение [+] Календарь Программа Направления [+",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-21-5f666299e9",
@@ -69370,6 +69907,35 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "moscow-2026-11-21-98f4534d25",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-21",
+      "time": "17:00",
+      "title": "Знакомство с Домом культуры «ГЭС-2»",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": true,
+      "categories": [
+        "диалог"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/mediation/tour/meet-ges-2-house-of-culture",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-12",
+      "audience_text": "› Медиация › Туры Регистрация Билеты на индивидуальный медиаторский тур Дата: с 7 мар 2022 Регистрация Билеты на индивидуальный медиаторский тур Возраст: от 12 Тип: Медиаторский тур Место: ГЭС-2 Возрастные ограничения 12+ Тур об устройстве культурной институции, текущих программах и о том, как здание городской электростанции на Болотной набережной превратилось в Дом культуры. Что такое «Индивидуальный медиаторский тур»?  {\"points\":[{\"id\":4,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":6,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.4,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":5,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} T Медиаторский тур «Знакомство с Домом культуры „ ГЭС-2 “» регулярно проводится с переводом на русский жестовый язык — на нем мы ждем слышащих, глухих и слабослышащих посетителей. Слышащие посетители могут зарегистрироваться через сайт. Глухие и слабослышащие посетители — оставить заявку на участие* по адресу access@ges-2.org или телефону +7 (963) 996 3687 (СМС, WhatsApp , Telegram ). * Сообщая нам свои личные данные, вы даете согласие на их обработку в соответствии с нашей Политикой в отношении обработки и защиты персональных данных . Фото: Иван Ерофеев Прогулка строится вокруг событий в истории ГЭС-2 , ее трансформации в культурную институцию и городское пространство, где в центре всех событий — творческое взаимодействие профессионалов и энтузиастов. Участники тура узнают об актуальных программах, миссии и ценностях Дома культуры, а также о проектах фонда V–A–C , предшествующих открытию « ГЭС-2 ». Мы обсудим архитектуру бывшей электростанции, принципы реконструкции, идейные сходства « ГЭС-2 » с народными домами и домами культуры 1920-х годов, а заодно — главные пространства Дома культуры и то, чем можно в них заняться людям разных возрастов и интересов. Прогулка охватывает все многообразие произвольных маршрутов: медиатор и участники выбирают точки и темы беседы в свободном и равном диалоге, делая акцент на тех или иных подробностях в зависимости от интересов группы. В турах с 5 по 25 октября на мостике между Галереями С7 и С6 мы также увидим и обсудим инсталляцию «Заоблачный дом 80/26» художницы Жени Эйснер. Это своего рода пульт управления, вдохновением для которого стали ретрофутуризм, дизайн космических аппаратов и эстетика торгов",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-21-530b6ef14b",
@@ -70145,6 +70711,35 @@
       "reviewed_at": "2026-11-03"
     },
     {
+      "id": "moscow-2026-11-22-6de6981347",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-22",
+      "time": "18:00",
+      "title": "Контуры моды",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": true,
+      "categories": [
+        "медиаторский тур"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/fashion-contours",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-11-12",
+      "audience_text": "› Медиация › Туры Регистрация Билеты на индивидуальный медиаторский тур Дата: с 6 авг 2025 Регистрация Билеты на индивидуальный медиаторский тур Возраст: от 16 Тип: Медиаторский тур Место: Площадь Доступность  Возрастные ограничения 16+ Участники тура, созданного совместно с брендом LIMÉ , проследят взаимосвязь моды с повседневностью и искусством, используя ассоциативные карты, отсылающие к творчеству известных дизайнеров. Что такое «Индивидуальный медиаторский тур»?  {\"points\":[{\"id\":4,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":6,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.4,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":5,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} T Одежда — это больше чем ткань и крой. Подобно художественному произведению искусства, это зашифрованное послание, где каждый шов или принт рассказывает историю. Почему сегодня мы выбираем oversize , а завтра — обтягивающие силуэты? Как подиумные образы становятся частью нашего гардероба, а уличная мода проникает в музеи? Тур регулярно проходит с переводом на русский жестовый язык. Глухие и слабослышащие люди могут зарегистрироваться, написав на почту access@ges-2.org или номер +7 (963) 996 3687 (SMS, WhatsApp, Telegram)*. Слышащих посетителей просим воспользоваться кнопкой «Регистрация». Иллюстрация: Маша Титова На медиаторском туре мы обратимся к специально созданным ассоциативным картам, которые помогут увидеть неочевидные связи между искусством, модой и повседневностью. Мы рассмотрим культовые показы, расшифруем фирменные паттерны брендов и проследим, как социальные изменения обусловливают тренды. Объединив изучение моды, выставочных проектов и пространства Дома культуры « ГЭС-2 », мы попробуем взглянуть на знакомые вещи по-новому. Официальный партнер направления медиации Дома культуры « ГЭС-2 » Авторы Анастасия Горбунова, Даша Горячева, Ника Карпенко, Карина Чернышова Художник-иллюстратор Маша Титова * Сообщая нам свои личные данные, вы даете согласие на их обработку в соответствии с нашей Политикой в отношении обработки и защиты персональных данных. Дизайнер Мария Виноградова {\"grid\":{\"width\":963,\"column_width\":89,\"columns_n\":9,\"gutter\":20,\"margin\":0,\"line\":10},\"palette\":\"default\",\"responsive_mode\":true,\"responsive_min_width\":512,\"responsive_max_width\":1100,\"colorchanger_fullscreen",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-22-d0f7487319",
       "status": "approved",
       "kind": "event",
@@ -70771,6 +71366,35 @@
       "instagram_include": false
     },
     {
+      "id": "moscow-2026-11-24-05c450d73d",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-24",
+      "time": "15:30",
+      "title": "Увидеть все",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "кинопоказ"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/you-can-see-everything",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-12",
+      "audience_text": "Дата: с 20 ноя 2026 Билеты Возраст: от 18 Тип: Кинопоказ Место: Кинотеатр Доступность  Возрастные ограничения 18+ Самая горячая премьера сезона: мастер комедии дискомфорта Филдер проверяет на прочность скандальную мошенницу. You Can See Everything 2026, Нэйтан Филдер, Лэнс Оппенгейм | Nathan Fielder, Lance Oppenheim США 174 мин., англ. с рус. субт. В ролях: Нэйтан Филдер, Элизабет Холмс, Аманда Сайфред, Кристофер Эбботт T Помните ли вы Элизабет Холмс? В середине 2010-х молодая бойкая предпринимательница привлекла сотни миллионов долларов инвестиций в свой революционный проект мгновенных анализов крови Theranos — который оказался чистой мистификацией. Теперь Холмс отбывает 11-летний срок за мошенничество, но прежде чем тот начался, она успела на несколько месяцев впустить в свою жизнь документалиста-комика Нэйтана Филдера. Тот поселился дома у преступницы и ее эксцентричного жениха Билли Эванса и попытался разобраться в душе самой известной мошенницы Кремниевой долины. Кадр из фильма «Увидеть все», 2026 Головокружительное кино об истине, реальности и границах познания. — Манола Даргис, The New York Times Зрители, знакомые с предыдущими сверхпопулярными работами Филдера (сериалы «Нэйтан спешит на выручку», «Репетиция» и «Проклятие») могут догадаться: классической документалистики от него ждать не стоит. Тем лучше: большой специалист по комедии дискомфорта, не уступающий Бастеру Китону по экранной харизме, Филдер находит себе ровню. Холмс — вкрадчивая и обаятельная до неподдельной жути манипуляторка, владеющая великим талантом размывать грань между ложью и правдой. Ее взаимодействие с Филдером и его камерой рождает кино непредсказуемое и лукавое, многозначительное и пытливое, завораживающее от первого до последнего кадра. Ажиотаж вокруг «Увидеть все» не только понятен, но и абсолютно заслужен: такого изобретательного и оригинального документального фильма широкая публика не видела очень давно. {\"grid\":{\"width\":963,\"column_width\":89,\"columns_n\":9,\"gutter\":20,\"margin\":0,\"line\":10},\"palette\":\"default\",\"responsive_mode\":true,\"responsive_min_width\":512,\"responsive_max_width\":1100,\"colorchanger_fullscreen\":false,\"colorchanger_overflow\":true,\"page_cropping\":false,\"global_google_analytics_id\":\"\",\"global_yandex_metrika_id\":\"\",\"article_mode\":{\"mode\":\"page\",\"transition_type\":\"slide\",\"transition_direction\":\"horizontal\",\"transition_look\":\"belt\",\"slides_form\":{}},\"default_font\":{\"css\":\".editor {font-family: Diagramatika Text; font-size: 20px; font-weight: 400; line-height",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-24-df4566acc2",
       "status": "approved",
       "kind": "event",
@@ -70840,6 +71464,35 @@
       },
       "telegram_include": false,
       "instagram_include": false
+    },
+    {
+      "id": "moscow-2026-11-24-834758f1e0",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-24",
+      "time": "18:30",
+      "title": "Седьмая позиция. Двигательная лаборатория для учителей",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лаборатория"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/seventh-position-a-movement-laboratory-for-teachers",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-12",
+      "audience_text": "› Школы › «ГЭС-2» для учителей Дата: 20 ноя 2026– 29 янв 2027 Регистрация начнется позже Возраст: от 18 Тип: Лаборатория Место: Малые своды Доступность  Возрастные ограничения 6+ Серия перформативных встреч для учителей и преподавателей. Встречи лаборатории будут проходить по пятницам с 18:30 до 20:30 в Малых сводах. Лаборатория будет двухчастной. Первая часть состоит из 8 занятий по открытой регистрации в ноябре, декабре и январе. Вторая часть предназначена для закрытой группы участников, сформированной в результате первой части. По ее итогам участники могут подготовить публичное перформативное выступление. Чтобы вам было комфортно, возьмите с собой удобную одежду и сменную обувь или нескользящие носки. В Малых сводах есть раздевалка с локерами и душ, где можно освежиться после практики. T Профессия учителя предполагает ежедневную роль медиатора. Каждый день педагоги удерживают внимание класса, объясняют, слушают, поддерживают, выбирают интонацию, делают паузы и сталкиваются с волнением и усталостью. Разум работает быстро, а тело часто остается без внимания. К концу рабочей недели в нем накапливаются напряжение и эмоции, которые не удалось проговорить. Отдавать и делиться становится энергозатратно. Простых движений недостаточно для того, чтобы восстановиться и вернуть восприимчивость. Чтобы попытаться разрешить эту проблему, приглашаем в лабораторию движения «Седьмая позиция». Фото: Анна Завозяева Моя задача — поделиться оптикой восприятия движения: у каждого элемента есть тело, которое движется в пространстве и времени и вступает в отношения с другими. Благодаря этому у вас появляется более широкий выбор заботы о себе и своей работе. Я показываю, что танец может быть не только на сцене. Он повсюду в повседневности. — Герман Строганов В классической хореографии выделяют 6 позиций — мы же предлагаем выйти за рамки правил и изобрести свою, седьмую позицию. Это серия встреч, где не нужно уметь двигаться согласно правилам. Достаточно прийти, дать себе время и поискать ответы на вопросы: как я сейчас, где моя опора, что происходит с моим вниманием. Седьмая позиция — это тотальное присутствие в настоящем — с тем, что есть на данный момент. Для этого ведущий создает безопасное пространство для восстановления, замедления и бережной перезагрузки. Ведущий предлагает следовать принципу танцевальной драматургии, где есть множество элементов и отношений между ними. В практиках есть место случайности и «неправильности»: ошибка становится материалом для наблюдения, ист",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-24-f717c4818a",
@@ -71120,6 +71773,62 @@
       "instagram_include": false,
       "reviewed_at": "2026-11-01",
       "editor_note": ""
+    },
+    {
+      "id": "spb-2026-11-25-3beea69cec",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-25",
+      "time": "08:11",
+      "title": "Лекция хранителя музея Ольги Сейфетдиновой «Проза поэта: Набережная неисцелимых»",
+      "venue": "Музей «Полторы комнаты» Иосифа Бродского",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Оставляя свои контакты, вы даёте согласие на обработку персональных данных",
+      "url": "https://brodsky.online/events/lektsiya-khranitelya-muzeya-olgi-seyfetdinovoy-proza-poeta-naberezhnaya-neistselimykh/",
+      "source": "Полторы комнаты — музей Иосифа Бродского",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-12",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "spb-2026-11-25-020d3b2f98",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-25",
+      "time": "08:11",
+      "title": "Мероприятия",
+      "venue": "Музей «Полторы комнаты» Иосифа Бродского",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Оставляя свои контакты, вы даёте согласие на обработку персональных данных",
+      "url": "https://brodsky.online/events/",
+      "source": "Полторы комнаты — музей Иосифа Бродского",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-12",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-25-d4ed4734f6",
@@ -71567,6 +72276,35 @@
       "availability_checked_at": ""
     },
     {
+      "id": "moscow-2026-11-26-b485ac3446",
+      "status": "check",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-26",
+      "time": "10:30",
+      "title": "Короткий рисунок",
+      "venue": "Простая школа",
+      "address": "Москва, ул. Пятницкая, 71/5, строение 2, офис 503",
+      "price": 750,
+      "price_text": "750 ₽",
+      "registration": null,
+      "categories": [
+        "наброски"
+      ],
+      "description": "Либо три разных позы по 40 минут, либо одна поза на все три часа с перерывами.",
+      "url": "https://prostaya.ru/praktiki",
+      "source": "Простая школа — открытые практики",
+      "checked_at": "",
+      "review_reason": "recurring_schedule_confirm_specific_date",
+      "discovered_at": "2026-11-12",
+      "editor_note": "По еженедельному расписанию школы; проверить отмены и анонс конкретной даты.",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-26-588b1b9599",
       "status": "rejected",
       "kind": "event",
@@ -71804,7 +72542,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-11-27-3655b3a3a6",
@@ -72770,7 +73510,35 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
+    },
+    {
+      "id": "spb-2026-11-29-0499bc7cb4",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-29",
+      "time": "13:00",
+      "title": "Артист-ток. Графический образ. Специфика и техника воплощения серии «Русский лес. Народная мудрость» .",
+      "venue": "Российская национальная библиотека",
+      "address": "Московский пр., д. 165, корп. 2",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "Лектор — Татьяна Кузнецова . Выпускница кафедры станковой и книжной графики СПГХПА им. А. Л. Штиглица.",
+      "url": "https://nlr.ru/nlr_visit/event/3762",
+      "source": "Российская национальная библиотека — афиша",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-12",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-29-550f9318dc",
@@ -72994,6 +73762,35 @@
       "reviewed_at": "2026-11-05"
     },
     {
+      "id": "international-2026-11-30-a4732bcd35",
+      "status": "check",
+      "kind": "open_call",
+      "city": "international",
+      "date": "2026-11-30",
+      "time": "",
+      "title": "Open Call: The Inner City — Exhibition in Shanghai, China, December, 2026 | Small formats",
+      "venue": "CuratorSpace",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "open-call"
+      ],
+      "description": "The Inner City explores the psychological experience of living in a contemporary metropolis. The pace of urban life, its constant demands, the abundance of information and the pressure to keep moving can shape our inner worlds in ways that often remain invisible. Overthinking, mental fatigue, loneliness, overstimulation and the search for a moment of calm are all part of this experience. Yet city life also creates unexpected encounters, moments of intimacy, personal discoveries and opportunities for renewal.",
+      "url": "https://www.curatorspace.com/opportunities/detail/open-call-the-inner-city--exhibition-in-shanghai-china-december---small-formats/11339",
+      "source": "CuratorSpace — opportunities",
+      "checked_at": "",
+      "review_reason": "primary_source_required",
+      "discovered_at": "2026-11-12",
+      "audience_text": "Opportunity details | Open Call: The Inner City — Exhibition in Shanghai, China, December, 2026 | Small formats | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register Open Call: The Inner City — Exhibition in Shanghai, China, December, 2026 | Small formats Deadline: 30/11/2026 City: Shanghai | Country: China | Zhen Yi Gallery Report this? Description Opportunity FAQs Make a submission Contact curator The Inner City explores the psychological experience of living in a contemporary metropolis. The pace of urban life, its constant demands, the abundance of information and the pressure to keep moving can shape our inner worlds in ways that often remain invisible. Overthinking, mental fatigue, loneliness, overstimulation and the search for a moment of calm are all part of this experience. Yet city life also creates unexpected encounters, moments of intimacy, personal discoveries and opportunities for renewal. For this open call, we are looking for artists whose work explores how contemporary urban life influences our thoughts, emotions and psychological well-being. We are interested in works that examine the relationship between external urban environments and our internal experiences, revealing feelings and states of mind that are not always immediately visible. The constant movement of a city can leave little room for stillness or reflection. The density of urban life can create a sense of connection, but also isolation. We invite artists to consider what it means to live in a contemporary city — how urban environments shape our emotional states, influence our perception of ourselves and others, and affect the ways in which we experience everyday life. We are interested in practices that explore: the psychological effects of contemporary urban life overthinking, anxiety and mental fatigue overstimulation and information overload loneliness, isolation and the need for connection the relationship between the individual and the urban environment the search for stillness, calm and personal space intimacy and solitude in densely populated environments moments of escape, reflection and renewal the ways in which external environments shape our inner worlds. The work does not need to address these ideas explicitly or theoretically. They may emerge through subject matter, composition, colour, material, gesture, atmosphere, spatial relationships or the emotional qualities of an artwork. We welcome different approaches to the theme and are particularly interested in works that offer personal interpretations of urban experience, make visible the less tangible aspects of everyday life or invite us to reconsider how the city shapes our inner worlds. About the exhibition The exhibition will take place in the second half of December 2026 at an intimate venue in the heart of Shanghai's former French Concession, a distinctive area of Shanghai known for its historic architecture, cultural venues and international atmosphere. The intimate setting is intended to encourage a close encounter between visitors and the artworks, bringing together artists, art enthusiasts and audiences interested in contemporary art and international cultural exchange, with expected footfall from both local art audiences and international visitors. The exhibition marks the first Shanghai presentation of Zhen Yi Gallery's international curatorial programme, creating an opportunity to connect its activities in Paris with a new artistic and cultural context in China. Media We welcome submissions of small-format works in the following media: painting, drawing and works on paper. Works should be suitable for presentation in an intimate exhibition setting and compact enough for international transportation. Who Can Apply We welcome international submissions from emerging and mid-career artists working in painting, drawing, sculpture and mixed media. About the Organisers Zhen Yi Gallery is a Paris-based nomadic contemporary art gallery and curatorial research platform, founded in 2025 by curator Evgeniya Makarshina. As a nomadic gallery, it works across different spaces in Paris, creating flexible contexts for exhibitions, collaborations and artistic exchange. The founder actively networks within the international art community, having over 500 professional connections on LinkedIn. During its first year, Zhen Yi Gallery featured 38 artists across 6 exhibitions. The gallery's programme has developed through a continuing interest in how experience is shaped through the body, perception, material and surrounding environments, as well as through memory and time. Its exhibitions have examined questions around boundaries, presence and absence, visibility, transformation, uncertainty and the ways in which we encounter and interpret the world around us. With The Inner City, the gallery turns its attention to the psychological experience of urban life and the ways contemporary cities shape our inner worlds. Previous Exhibitions Shaping the View (2026) — explored how photographic images shape our perception of reality, examining the relationship between what is seen and what is believed, and how framing, perspective, context and visual construction influence the way we interpret images.Suspended (2026) — explored suspension as a condition in which different temporalities, meanings and possibilities coexist. Transient States (2026) — examined uncertainty and experiences that resist resolution, inviting attention to moments in which meaning and perception remain open. The Body as a Threshold — Edition II (2026) — continued the investigation of the body as a threshold, focusing on identity, movement, constraint, symbolic dispersion and extension and the traces through which the body is encountered indirectly. The Body as a Threshold (2025) — approached the body as a site of passage where sensation and perception meet, exploring permeability, inner and outer experience, surveillance and the pressures of the surrounding world. Scentless Depths (2025) — explored water as rhythm, resonance and invisible presence, considering depth, permeability, transformation and what remains unseen. What We Offer Exhibition presentation in Shanghai Curatorial guidance and exhibition coordination Promotion on the gallery's social media platforms Individual Instagram publications introducing participating artists and their works Visibility through the gallery's international network Opportunities for networking and cross-cultural exchange Certificates of participation Visitor Attendance The exhibition opening is planned to attract approximately 40–60 visitors including artists, curators, collectors and members of the public. Visitor Profile The audience includes artists, curators, collectors, art enthusiasts and international visitors exploring Shanghai's former French Concession. Submission Terms Exhibition participation contribution (only if selected): £170 / €200. This contribution supports exhibition production, installation, and gallery space expenses. Delivery of artworks to Shanghai and return shipping from Shanghai are the responsibility of the artist, including all associated costs. The gallery will provide the delivery address and assist with coordinating the return of unsold works after the exhibition. Deadline: 30 November, 2026 @zhen_yi_gallery Make a submission Contact the curator Who is eligible for this opportunity? All international artists who can arrange their artwork delivery. When is the deadline? 30 November 2026. How many works can I submit? 2-3 When is the delivery date? Middle of December. When do I need to collect my work? Right after the exhibition. How much does it cost? 200 euros Are there payments to artists? No. Is there a private view / opening? Yes. What are the exhibition opening hours? 11am - 7 pm. What publicity will be provided as part of the opportunity? Posts on Instagram, we have 432 followers, LinkedIn. Do I need to be present? No, it is not obligatory for artists to be present. However, we always welcome artists to attend the exhibition and engage directly with the public. If you cannot be present, we will do our best to introduce and present your work to visitors in the best possible way. What happens if my proposal is chosen? If your work is selected, you will get an admission notice on the platform, the gallery will send you a collaboration agreement along with an invoice for the participation fee. Once confirmed, you will be responsible for the delivery of your artwork to Shanghai. The curatorial team will remain in contact to coordinate installation details and ensure smooth participation. What are the selection criteria? Artists will be selected based on the relevance of their work to the exhibition theme and their ability to explore and communicate the subject through their chosen medium. You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Other opportunities Craft Open and Market Are you a craft maker, artist or creative? Do you sew, knit, crochet, make jewellery, create... Exhibition Open Call - Hand Me Down No Limits Gallery invites visual artists to submit work for Hand Me Down, a two-month show... YOSN Art Series, Vol. 2: Type Design, Visual Poetry & Letterform Experiments This open call seeks artworks across four categories: type design, visual poetry, letterform... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "international-2026-11-30-fb1c93c537",
       "status": "check",
       "kind": "open_call",
@@ -73186,7 +73983,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-30-9f582f94c1",
@@ -73837,6 +74636,35 @@
       "reviewed_at": "2026-11-03"
     },
     {
+      "id": "moscow-2026-12-11-834758f1e0",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-12-11",
+      "time": "18:30",
+      "title": "Седьмая позиция. Двигательная лаборатория для учителей",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лаборатория"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/seventh-position-a-movement-laboratory-for-teachers",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-12",
+      "audience_text": "› Школы › «ГЭС-2» для учителей Дата: 20 ноя 2026– 29 янв 2027 Регистрация начнется позже Возраст: от 18 Тип: Лаборатория Место: Малые своды Доступность  Возрастные ограничения 6+ Серия перформативных встреч для учителей и преподавателей. Встречи лаборатории будут проходить по пятницам с 18:30 до 20:30 в Малых сводах. Лаборатория будет двухчастной. Первая часть состоит из 8 занятий по открытой регистрации в ноябре, декабре и январе. Вторая часть предназначена для закрытой группы участников, сформированной в результате первой части. По ее итогам участники могут подготовить публичное перформативное выступление. Чтобы вам было комфортно, возьмите с собой удобную одежду и сменную обувь или нескользящие носки. В Малых сводах есть раздевалка с локерами и душ, где можно освежиться после практики. T Профессия учителя предполагает ежедневную роль медиатора. Каждый день педагоги удерживают внимание класса, объясняют, слушают, поддерживают, выбирают интонацию, делают паузы и сталкиваются с волнением и усталостью. Разум работает быстро, а тело часто остается без внимания. К концу рабочей недели в нем накапливаются напряжение и эмоции, которые не удалось проговорить. Отдавать и делиться становится энергозатратно. Простых движений недостаточно для того, чтобы восстановиться и вернуть восприимчивость. Чтобы попытаться разрешить эту проблему, приглашаем в лабораторию движения «Седьмая позиция». Фото: Анна Завозяева Моя задача — поделиться оптикой восприятия движения: у каждого элемента есть тело, которое движется в пространстве и времени и вступает в отношения с другими. Благодаря этому у вас появляется более широкий выбор заботы о себе и своей работе. Я показываю, что танец может быть не только на сцене. Он повсюду в повседневности. — Герман Строганов В классической хореографии выделяют 6 позиций — мы же предлагаем выйти за рамки правил и изобрести свою, седьмую позицию. Это серия встреч, где не нужно уметь двигаться согласно правилам. Достаточно прийти, дать себе время и поискать ответы на вопросы: как я сейчас, где моя опора, что происходит с моим вниманием. Седьмая позиция — это тотальное присутствие в настоящем — с тем, что есть на данный момент. Для этого ведущий создает безопасное пространство для восстановления, замедления и бережной перезагрузки. Ведущий предлагает следовать принципу танцевальной драматургии, где есть множество элементов и отношений между ними. В практиках есть место случайности и «неправильности»: ошибка становится материалом для наблюдения, ист",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-12-12-8cb3f8d42f",
       "status": "new",
       "kind": "event",
@@ -73870,7 +74698,37 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
+    },
+    {
+      "id": "moscow-2026-12-12-e68794b01d",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-12-12",
+      "time": "13:12",
+      "title": "Мастер-класс «Театр в коробке»",
+      "venue": "Музей Транспорта Москвы",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "",
+      "url": "https://mtmuseum.ru/affiche/master-klass-teatr-v-korobke/",
+      "source": "Музей транспорта Москвы — афиша",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-12",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-12-12-0745347de9",
@@ -73905,7 +74763,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-12-13-ddbed2a01c",

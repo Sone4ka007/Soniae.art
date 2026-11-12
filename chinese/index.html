@@ -645,6 +645,7 @@
 <link rel="stylesheet" href="./css/review-session.css?v=20261110-1">
 <link rel="stylesheet" href="./css/writing.css?v=20261111-8">
 <link rel="stylesheet" href="./css/scene-match.css?v=20261111-2">
+<link rel="stylesheet" href="./css/learning-path.css?v=20261112-1">
 </head>
 <body>
   <div class="site-frame">
@@ -661,16 +662,18 @@
       <section class="hero hero-editorial" aria-labelledby="hero-heading">
         <div class="hero-headline"><h1 id="hero-heading">HSK 4</h1><span class="hero-marker" aria-hidden="true"></span></div>
         <p class="hero-subhead">Практика слов<br>по новому учебнику</p>
-        <div class="hero-book"><svg class="hero-book-icon" viewBox="0 0 88 72" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M44 15C31 8 17 6 5 11v51c13-6 27-3 39 4V15Zm0 0C57 8 71 6 83 11v51c-13-6-27-3-39 4V15Z" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linejoin="round"/><path d="M44 15v51" stroke="currentColor" stroke-width="3.4"/></svg><span class="hero-book-rule"></span><span class="hero-book-copy"><strong>新 HSK 教程 4 上</strong><span>Новый курс HSK · Уровень 4 · Том 1</span></span></div>
+        <div class="hero-book"><svg class="hero-book-icon" viewBox="0 0 88 72" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M44 15C31 8 17 6 5 11v51c13-6 27-3 39 4V15Zm0 0C57 8 71 6 83 11v51c-13-6-27-3-39 4V15Z" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linejoin="round"/><path d="M44 15v51" stroke="currentColor" stroke-width="3.4"/></svg><span class="hero-book-rule"></span><span class="hero-book-copy"><strong>新 HSK 教程 4 上 / 下</strong><span>Новый курс HSK · Уровень 4 · Тома 1–2</span></span></div>
         <div class="hero-explainer"><p>Я делаю этот тренажёр для себя — чтобы учить китайский так, как мне удобно. Возможно, он пригодится и вам.</p><p class="hero-disclaimer">Упражнения созданы с помощью ИИ и пока не прошли независимую языковую вычитку. В заданиях и ответах могут встречаться ошибки.</p></div>
         <div class="hero-bottom"><span id="hero-lessons">УРОКИ / HSK 4</span><a href="#workspace" class="hero-go">К УРОКАМ ↓</a></div>
       </section>
       <section class="workspace" id="workspace">
         <div class="section-cap"><span class="section-no">01</span><span>ВЫБЕРИ УРОК</span></div>
-        <div class="lesson-tabs" id="lesson-tabs" role="group" aria-label="Выбрать урок"></div>
+        <div class="lesson-select-wrap"><div><label for="lesson-select" class="lesson-select-label">ТЕКУЩИЙ УРОК</label><select id="lesson-select" class="lesson-select" aria-label="Выбрать урок"></select></div></div>
+        <details class="lesson-chooser" id="lesson-chooser"><summary>ПОКАЗАТЬ ВСЕ 20 УРОКОВ</summary><div class="lesson-tabs" id="lesson-tabs" role="group" aria-label="Выбрать урок"></div></details>
         <div class="lesson-intro" id="lesson-intro" aria-live="polite"></div>
-        <div class="section-cap modes-cap"><span class="section-no">02</span><span>ИГРОВЫЕ РЕЖИМЫ</span></div>
-        <nav class="mode-nav" id="mode-nav" aria-label="Игровые режимы"></nav>
+        <div class="section-cap modes-cap learning-path-head"><div class="section-cap" style="margin-bottom:0"><span class="section-no">02</span><span>МАРШРУТ ОБУЧЕНИЯ</span></div><button class="today-entry" type="button" id="today-entry" data-action="mode" data-id="today" aria-pressed="false">◴ СЕГОДНЯ</button></div>
+        <nav class="mode-nav" id="mode-nav" aria-label="Пять этапов обучения"></nav>
+        <div class="mode-subnav" id="mode-subnav" role="group" aria-label="Упражнения этапа" hidden></div>
         <section id="game-panel" class="game-panel" aria-live="polite"><div class="loading">ЗАГРУЖАЮ УРОКИ...</div></section>
       </section>
       <footer class="footer"><span>© 2026 SONYAE.ART · CHINESE LAB</span><span>НЕЗАВИСИМЫЙ ТРЕНАЖЁР · ПРОГРЕСС В БРАУЗЕРЕ</span><a href="https://sonyae.art" target="_blank" rel="noopener">МОЙ САЙТ ↗</a></footer>
@@ -700,10 +703,12 @@
 <script src="./js/writing-guide-ru.js?v=20261111-4"></script>
 <script src="./js/writing.js?v=20261111-5"></script>
 <script src="./js/scene-match.js?v=20261112-1"></script>
+<script src="./js/learning-path.js?v=20261112-1"></script>
 <script>
 const sceneURL = name => window.__offlineScenes[name] || ("assets/"+name+".svg");
 const $ = (selector) => document.querySelector(selector);
 const modeInfo = [
+  { id: 'today', icon: '◴', title: 'СЕГОДНЯ' },
   { id: 'words', icon: '◖', title: 'СЛОВАРЬ + ЗВУК' },
   { id: 'pairs', icon: '↔', title: 'ПАРЫ' },
   { id: 'sceneMatch', icon: '▤', title: 'НАЙДИ И СОЕДИНИ' },
@@ -718,9 +723,9 @@ const modeInfo = [
   { id: 'writing', icon: '✎', title: 'ПИСЬМО · ИЕРОГЛИФЫ' },
   { id: 'video', icon: '▷', title: 'ВИДЕО' },
 ];
-const progressDefaults = { xp: 0, correct: 0, attempts: 0, stories: {}, weak: {}, sound: true, rate: 0.9, saved: {}, srs: {}, ciDone: {}, questWords: {}, mnemonicSeen: {}, reviewDir: "hanzi", reviewScope: "all", lastLessonId: 1, lastMode: "words" };
+const progressDefaults = { xp: 0, correct: 0, attempts: 0, stories: {}, weak: {}, sound: true, rate: 0.9, saved: {}, srs: {}, ciDone: {}, questWords: {}, mnemonicSeen: {}, reviewDir: "hanzi", reviewScope: "all", lastLessonId: 1, lastMode: "today", lastStudyMode: "words", lastGameMode: "pairs", lastPracticeMode: "writing" };
 const stored = ChineseLabProgress.load(progressDefaults);
-const state = { lessons: [], manifest: null, cloudUserId:null, lessonId: Number(stored.lastLessonId) || 1, mode: 'words', game: null, interacted: false, progress: stored, pendingToast: 0, highlightedWords: new Set(), wordsSection:'lesson' };
+const state = { lessons: [], manifest: null, cloudUserId:null, lessonId: Number(stored.lastLessonId) || 1, mode: 'today', game: null, interacted: false, progress: stored, pendingToast: 0, highlightedWords: new Set(), wordsSection:'lesson' };
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const shuffle = source => {
  const a=[...source];
@@ -806,6 +811,7 @@ function activateLesson(id) {
   if (!state.lessons.some(x => x.id === id)) return;
   state.lessonId = id;
   state.progress.lastLessonId = id;
+  $('#lesson-chooser')?.removeAttribute('open');
   save();
   state.game = null;
   $('.lesson-tabs')?.setAttribute('data-current',String(id));
@@ -826,19 +832,33 @@ function activateMode(mode, reset = false) {
   if (mode === 'review') initReview();
   if (mode === 'writing') state.game = {};
   if (mode === 'input') initCI();
-  if (mode === 'words' || mode === 'video' || mode === 'progress') state.game = {};
+  if (mode === 'words' || mode === 'video' || mode === 'progress' || mode === 'today') state.game = {};
   if (!reset && ChineseLabSessions.modes.has(mode)) restoreActiveSession(mode);
-  if (state.progress.lastMode !== mode) { state.progress.lastMode = mode; save(); }
+  if (mode !== 'today' && mode !== 'progress') {
+    state.progress.lastStudyMode = mode;
+    if (ChineseLabLearningPath.stageForMode(mode) === 'games') state.progress.lastGameMode = mode;
+    if (ChineseLabLearningPath.stageForMode(mode) === 'practice') state.progress.lastPracticeMode = mode;
+  }
+  if (state.progress.lastMode !== mode || (mode !== 'today' && mode !== 'progress')) {
+    state.progress.lastMode = mode;
+    save();
+  }
   renderShell(); renderGame();
   if (state.interacted && mode==='translate') autoSpeech(state.game.questions[state.game.index]?.hanzi);
   if (state.interacted && mode==='story' && state.game.status==='intro') autoSpeech(lesson().quest.introZh);
 }
 function renderShell() {
   const l = lesson(); if (!l) return;
+  $('#lesson-select').innerHTML = state.lessons.map(item => '<option value="'+item.id+'"'+(item.id===l.id?' selected':'')+'>'+String(item.id).padStart(2,'0')+' · '+esc(item.topic)+'</option>').join('');
   $('#lesson-tabs').innerHTML = state.lessons.map(item => `<button class="lesson-tab ${item.id===l.id?'is-active':''}" type="button" data-action="lesson" data-id="${item.id}" aria-pressed="${item.id===l.id}"><span><span class="lesson-num">${String(item.id).padStart(2,'0')}</span><span class="lesson-name">${esc(item.topic)}</span></span><span class="lesson-count">${item.words.length} СЛОВ ↗</span></button>`).join('');
   const completed = Number(state.progress.stories[l.id] || 0);
   $('#lesson-intro').innerHTML = `<div><h2>${esc(l.topic)}</h2><p>${esc(l.subtitle)}</p></div><div class="stat-strip"><span class="stat-big">${completed}</span><span>ПРОЙДЕНО<br>СЮЖЕТОВ</span></div>`;
-  $('#mode-nav').innerHTML = modeInfo.map(m => `<button type="button" data-action="mode" data-id="${esc(m.id)}" class="mode-btn ${m.id===state.mode?'is-active':''}" aria-current="${m.id===state.mode?'page':'false'}"><span class="mode-icon">${m.icon}</span>${m.title}</button>`).join('');
+  const navigation = ChineseLabLearningPath.navigation(state.mode, state.progress, modeInfo, esc);
+  $('#mode-nav').innerHTML = navigation.stages;
+  $('#mode-subnav').innerHTML = navigation.modes;
+  $('#mode-subnav').hidden = !navigation.modes;
+  $('#today-entry').classList.toggle('is-active',state.mode==='today');
+  $('#today-entry').setAttribute('aria-pressed',String(state.mode==='today'));
   $('#header-xp').textContent = formatXP(state.progress.xp);
   updateStreakHeader();
   $('#audio-label').textContent = state.progress.sound ? 'ЗВУК ВКЛ.' : 'АВТОЗВУК ВЫКЛ.';
@@ -859,6 +879,7 @@ function renderGame() {
   if (kind === 'words') renderWords();
   if (kind === 'video') renderVideo();
   if (kind === 'progress') renderProgress();
+  if (kind === 'today') renderToday();
 }
 /* CHINESE LAB — QUEST ENGINE V8
    Data-driven episodic scenes, evidence, inventory, branching choices and dialogue.
@@ -1803,7 +1824,7 @@ function applyAccountProgress(progress) {
   if(state.lessons.length && !state.lessons.some(l=>l.id===state.lessonId))state.lessonId=state.lessons[0].id;
   state.game=null;
   save();
-  if(state.lessons.length) activateMode(state.progress.lastMode || 'words');
+  if(state.lessons.length) activateMode(state.progress.lastMode || 'today');
 }
 function onCloudIdentity(user) {
   state.cloudUserId=user?.id||null;
@@ -1812,7 +1833,7 @@ function onCloudIdentity(user) {
   if(state.lessons.length){
     if(!state.lessons.some(l=>l.id===state.lessonId))state.lessonId=state.lessons[0].id;
     state.game=null; // Prevent stale exercise state from the previous account.
-    activateMode(state.progress.lastMode || 'words');
+    activateMode(state.progress.lastMode || 'today');
   }
   renderAuthControls();
 }
@@ -1822,6 +1843,29 @@ function onCloudStatus() {
 }
 
 /* LOCAL-FIRST LEARNING PROFILE — Google sync when configured, offline backup always. */
+function renderToday() {
+  const l=lesson(),p=state.progress;
+  const target=ChineseLabLearningPath.resumeTarget(p,state.lessons);
+  const toResume=state.lessons.find(item=>item.id===target.lessonId)||l;
+  const mode=modeInfo.find(item=>item.id===target.mode);
+  const due=ChineseLabLearningPath.dueCount(p.srs);
+  const streak=ChineseLabStreak.summary(p);
+  const chapters=Object.keys(p.ciDone||{}).filter(key=>p.ciDone[key]).length;
+  const metrics=[
+    [due,'СЛОВ К ПОВТОРЕНИЮ'],
+    [streak.current,'ДНЕЙ ПОДРЯД'],
+    [chapters,'ПРОЙДЕНО ГЛАВ'],
+    [Number(p.xp||0),'ОПЫТ / XP']
+  ];
+  $('#game-panel').innerHTML=header('СЕГОДНЯ','Продолжи с места остановки или повтори слова. Все упражнения остаются в пяти этапах обучения.','HSK 4 / DAILY')+
+    '<div class="today-grid"><section class="today-focus"><div class="today-focus-kicker">ПРОДОЛЖИТЬ ОБУЧЕНИЕ · УРОК '+String(toResume.id).padStart(2,'0')+'</div>'+
+    '<h4>'+esc(toResume.topic)+'</h4><p>'+esc(mode?.title||'СЛОВАРЬ')+'. Незаконченные задания сохраняются автоматически и откроются с последнего шага.</p>'+
+    '<button type="button" class="action-btn" data-action="today-continue">ПРОДОЛЖИТЬ →</button></section>'+
+    '<div class="today-metrics">'+metrics.map(([n,name])=>'<div class="today-metric"><strong>'+esc(n)+'</strong><span>'+esc(name)+'</span></div>').join('')+'</div></div>'+
+    '<div class="today-actions"><button type="button" data-action="today-review">ПОВТОРИТЬ СЛОВА ↗</button>'+
+    '<button type="button" data-action="today-lesson">ОТКРЫТЬ СЛОВАРЬ ↗</button>'+
+    '<button type="button" data-action="today-progress">МОЙ ПРОГРЕСС ↗</button></div>';
+}
 function renderProgress() {
   const p = state.progress;
   const now = Date.now();
@@ -1927,6 +1971,13 @@ document.addEventListener('click', event => {
  case 'auth-choice':ChineseLabCloud.choose(btn.dataset.choice);break;
  case 'auth-backup':{const content=ChineseLabCloud.backupText(btn.dataset.source);if(content)downloadProgressPayload(content,btn.dataset.source+'-backup');break;}
  case 'mode':activateMode(btn.dataset.id);break;
+  case 'stage':{const next=ChineseLabLearningPath.modeForStage(btn.dataset.id,state.progress);if(next)activateMode(next);break;}
+  case 'today-continue':{const target=ChineseLabLearningPath.resumeTarget(state.progress,state.lessons);
+    if(target.lessonId!==state.lessonId){state.lessonId=target.lessonId;state.progress.lastLessonId=target.lessonId;state.game=null;save();}
+    activateMode(target.mode);break;}
+  case 'today-review':activateMode('review');break;
+  case 'today-lesson':activateMode('words');break;
+  case 'today-progress':activateMode('progress');break;
  case 'exercise-restart':
    if (ChineseLabSessions.modes.has(state.mode) &&
      window.confirm('Начать этот режим заново? Текущая серия заданий будет сброшена, но XP и общий прогресс сохранятся.'))
@@ -1958,6 +2009,7 @@ document.addEventListener('click', event => {
  }
  saveActiveSession();
 });
+document.addEventListener('change',event=>{if(event.target.id==='lesson-select')activateLesson(Number(event.target.value));});
 document.addEventListener('input', event => {if(event.target.id!=='words-search')return;const q=event.target.value.trim().toLowerCase();document.querySelectorAll('.word-card').forEach(card=>card.hidden=!card.dataset.search.includes(q));});
 $('#audio-toggle').addEventListener('click', ()=>{state.interacted=true;state.progress.sound=!state.progress.sound;save();renderShell();toast(state.progress.sound?'АВТОЗВУК ВКЛЮЧЁН':'АВТОЗВУК ВЫКЛЮЧЕН');});
 async function bootstrap(){try{
@@ -1972,7 +2024,7 @@ async function bootstrap(){try{
  const rContext=await window.chineseLabLessonFetch('./data/context-glossary.json');state.contextWords=rContext.ok?await rContext.json():[];
  if(!state.lessons.some(l=>l.id===state.lessonId))state.lessonId=state.lessons[0]?.id||1;
  $('#hero-lessons').textContent=`${state.lessons.map(l=>String(l.id).padStart(2,'0')).join('—')} / УРОКИ В ПРОГРАММЕ`;
- activateMode(state.progress.lastMode || 'words');
+ activateMode(state.progress.lastMode || 'today');
  await ChineseLabCloud.init({
   getProgress:()=>state.progress,
   getGuestProgress:()=>ChineseLabProgress.load(progressDefaults),

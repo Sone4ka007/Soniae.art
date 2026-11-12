@@ -647,6 +647,7 @@
 <link rel="stylesheet" href="./css/scene-match.css?v=20261111-2">
 <link rel="stylesheet" href="./css/learning-path.css?v=20261112-1">
 <link rel="stylesheet" href="./css/sentence-coach.css?v=20261112-2">
+<link rel="stylesheet" href="./css/substitution-cards.css?v=20261112-1">
 </head>
 <body>
   <div class="site-frame">
@@ -955,7 +956,7 @@ function questVocabDone(){
 function questMissionBox(){
  const g=state.game,groups=lesson().quest.vocabMissions||[],done=questVocabDone(),total=groups.reduce((n,x)=>n+x.tasks.length,0);
  g.missionStage=Number.isInteger(g.missionStage)&&g.missionStage>=0&&g.missionStage<groups.length?g.missionStage:0;
- g.missionOpen ??= true;g.revealed ||= [];g.mnemonicMode ||= 'hint';
+ g.missionOpen ??= true;g.revealed ||= [];g.missionChoiceReveals ||= [];g.mnemonicMode ||= 'hint';
  if(!groups.length)return '';
  const doneCount=groups.reduce((n,x)=>n+x.tasks.filter(t=>done[t.word]).length,0);
  const current=groups[g.missionStage]||groups[0];
@@ -976,21 +977,37 @@ function questMissionBox(){
  } else {
   const words=lesson().words;
   const correctIdx=words.findIndex(w=>w.hanzi===task.word);
-  const distractors=words.filter((w,i)=>w.hanzi!==task.word &&
-    (i+g.missionStage)%7!==correctIdx%7).sort((a,b)=>
-       (Math.abs(words.indexOf(a)-correctIdx)-Math.abs(words.indexOf(b)-correctIdx))).slice(0,3);
+  const distractors=words.filter(w=>w.hanzi!==task.word).sort((a,b)=>
+    Math.abs(words.indexOf(a)-correctIdx)-Math.abs(words.indexOf(b)-correctIdx)).slice(0,3);
   const variants=[task.word,...distractors.map(w=>w.hanzi)].sort((a,b)=>
      ((words.findIndex(w=>w.hanzi===a)+g.missionStage*3)%7)-((words.findIndex(w=>w.hanzi===b)+g.missionStage*3)%7));
   const isAudio=task.type==='listen';
   const isRussian=task.type==='recognize';
   const header=isAudio?'УСЛЫШЬ И ВЫБЕРИ ИЕРОГЛИФЫ':isRussian?'НАЙДИ СЛОВО ПО СМЫСЛУ':'ВОССТАНОВИ ПРОПУЩЕННОЕ СЛОВО';
   const sentenceWithGap=task.sentence.replace(task.word,'＿＿');
+  const choiceCards=variants.map((w,i)=>{
+    const detail=words.find(item=>item.hanzi===w);
+    const expanded=g.missionChoiceReveals.includes(w);
+    return `<div class="quest-mission-option">
+      <button type="button" class="quest-mission-pick" data-action="quest-mission-pick" data-word="${esc(w)}" aria-label="Выбрать вариант ${i+1}: ${esc(w)}">
+        <span class="quest-mission-option-id">ВАРИАНТ ${i+1}</span>
+        <span class="quest-mission-word" lang="zh-CN">${esc(w)}</span>
+        <span class="quest-mission-select-label">ВЫБРАТЬ ОТВЕТ</span>
+      </button>
+      <div class="quest-mission-tools">
+        <button type="button" class="quest-mission-tool" data-speak="${esc(w)}" aria-label="Слушать слово ${esc(w)}">▶ Слушать</button>
+        <button type="button" class="quest-mission-tool" data-action="quest-mission-translate" data-word="${esc(w)}" aria-expanded="${expanded}" aria-label="${expanded?'Скрыть перевод':'Показать перевод'} слова ${esc(w)}">${expanded?'Скрыть перевод ↑':'Перевод ↓'}</button>
+      </div>
+      ${expanded?`<div class="quest-mission-choice-translation"><span class="quest-mission-choice-pinyin">${esc(detail?.pinyin||'')}</span><span>${esc(detail?.ru||'Перевод в словаре не указан')}</span></div>`:''}
+    </div>`;
+  }).join('');
   content=`<div class="quest-mission-kicker">${esc(current.title)} · ЕЩЁ ${remaining.length} СЛОВ</div>
     <div class="quest-mission-label">${header}</div>
-    ${isAudio?`<button type="button" class="quest-mission-audio" data-speak="${esc(task.word)}">◖)) СЛУШАТЬ ЕЩЁ РАЗ</button>`:
+    ${isAudio?`<button type="button" class="quest-mission-audio" data-speak="${esc(task.word)}">▶ СЛУШАТЬ СЛОВО</button>`:
     isRussian?`<div class="quest-mission-prompt">${esc(lesson().words.find(w=>w.hanzi===task.word)?.ru||'Выбери подходящее выражение')}</div>`:
     `<div class="quest-mission-chinese" lang="zh-CN">${tapText(sentenceWithGap)}</div>`}
-    <div class="quest-mission-choices">${variants.map(w=>`<div class="quest-mission-option"><button type="button" data-action="quest-mission-pick" data-word="${esc(w)}" lang="zh-CN">${esc(w)}</button><button type="button" class="quest-mission-inspect" data-action="inspect" data-zh="${esc(w)}" aria-label="Послушать и разобрать ${esc(w)}">◖)) ?</button></div>`).join('')}</div>
+    <div class="quest-mission-answer-guide"><strong>ВАРИАНТЫ ОТВЕТА · ${variants.length}</strong><span>Нажми на слово, чтобы выбрать ответ. «Слушать» и «Перевод» — отдельные подсказки, они не выбирают ответ.</span></div>
+    <div class="quest-mission-choices">${choiceCards}</div>
     ${!isAudio?questGloss('mission-hint-'+g.missionStage+'-'+task.word,task.ru):''}
     ${g.missionNotice?`<div class="quest-mission-notice" role="status">${esc(g.missionNotice)}</div>`:''}
     <div class="quest-mission-small">${isAudio?'Сначала слушай, потом выбирай.':isRussian?'Это задача на перевод — значение дано как вопрос.':'Сначала попробуй прочитать предложение по-китайски.'} Нажми на правильный вариант.</div>`;
@@ -1003,9 +1020,17 @@ function questMissionAction(action,btn){
  if(action==='quest-mission-toggle'){g.missionOpen=!g.missionOpen;renderMissionParent();return;}
  if(action==='quest-mission-select'){
   const i=Number(btn.dataset.stage);if(!groups[i])return;
-  g.missionOpen=true;g.missionStage=i;g.missionResult=null;g.missionNotice='';renderMissionParent();return;
+  g.missionOpen=true;g.missionStage=i;g.missionResult=null;g.missionNotice='';g.missionChoiceReveals=[];renderMissionParent();return;
  }
- if(action==='quest-mission-next'){g.missionResult=null;g.missionNotice='';renderMissionParent();return;}
+ if(action==='quest-mission-next'){g.missionResult=null;g.missionNotice='';g.missionChoiceReveals=[];renderMissionParent();return;}
+ if(action==='quest-mission-translate'){
+   const word=btn.dataset.word;
+   if(!lesson().words.some(item=>item.hanzi===word))return;
+   g.missionChoiceReveals ||= [];
+   g.missionChoiceReveals=g.missionChoiceReveals.includes(word)
+     ?g.missionChoiceReveals.filter(item=>item!==word):[...g.missionChoiceReveals,word];
+   renderMissionParent();return;
+ }
  if(action==='quest-mission-pick'){
   if(g.missionResult)return;
   const next=groups[g.missionStage]?.tasks.find(t=>!done[t.word]);if(!next)return;
@@ -1479,7 +1504,7 @@ function initSubstitution(){
  state.progress.questWords ||= {};
  state.progress.questWords[lesson().id] ||= {};
  state.game={missionOpen:true,missionStage:0,missionResult:null,missionNotice:'',
-   revealed:[],mnemonicWord:null,mnemonicMode:'hint'};
+   missionChoiceReveals:[],revealed:[],mnemonicWord:null,mnemonicMode:'hint'};
 }
 function renderSubstitution(){
  const groups=lesson().quest?.vocabMissions||[];
@@ -2105,7 +2130,7 @@ document.addEventListener('click', event => {
      window.confirm('Начать этот режим заново? Текущая серия заданий будет сброшена, но XP и общий прогресс сохранятся.'))
      activateMode(state.mode, true);
    break;
- case 'quest-memory':case 'quest-memory-test':case 'quest-memory-answer':case 'quest-memory-back':case 'quest-roleplay-topic':case 'quest-roleplay-next':case 'quest-roleplay-hint':case 'quest-roleplay-example':case 'quest-roleplay-clear':case 'quest-roleplay-tile':case 'quest-roleplay-send':case 'quest-roleplay-translate':case 'quest-gloss':case 'quest-analyze':case 'quest-mission-toggle':case 'quest-mission-select':case 'quest-mission-pick':case 'quest-mission-next':case 'quest-spot':case 'quest-choice':case 'quest-token':case 'quest-token-remove':case 'quest-pick':case 'quest-check':case 'quest-clear':case 'quest-hint':case 'quest-skip':case 'quest-translation':case 'quest-zoom':case 'quest-start':case 'quest-next':case 'quest-restart':questAction(action,btn);break;
+ case 'quest-memory':case 'quest-memory-test':case 'quest-memory-answer':case 'quest-memory-back':case 'quest-roleplay-topic':case 'quest-roleplay-next':case 'quest-roleplay-hint':case 'quest-roleplay-example':case 'quest-roleplay-clear':case 'quest-roleplay-tile':case 'quest-roleplay-send':case 'quest-roleplay-translate':case 'quest-gloss':case 'quest-analyze':case 'quest-mission-toggle':case 'quest-mission-select':case 'quest-mission-pick':case 'quest-mission-next':case 'quest-mission-translate':case 'quest-spot':case 'quest-choice':case 'quest-token':case 'quest-token-remove':case 'quest-pick':case 'quest-check':case 'quest-clear':case 'quest-hint':case 'quest-skip':case 'quest-translation':case 'quest-zoom':case 'quest-start':case 'quest-next':case 'quest-restart':questAction(action,btn);break;
  case 'sentence-suggest':case 'sentence-add':case 'sentence-remove':case 'sentence-clear':case 'sentence-hint':case 'sentence-reveal':case 'sentence-skip':case 'sentence-check':case 'sentence-next':sentenceAction(action,btn.dataset.id);break;
  case 'scene-next':case 'scene-spot':case 'scene-word':case 'scene-hint':case 'scene-zoom':
    ChineseLabSceneMatch.action(action,btn,state.game,{award,miss,speech,render:renderSceneMatch,lesson:lesson()});break;

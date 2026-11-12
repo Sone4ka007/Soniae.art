@@ -58,7 +58,7 @@ test('four answer choices have distinct, visibly labeled listen and translation 
   assert.match(html,/quest-mission-translate/);
   assert.match(html,/missionChoiceReveals/);
   assert.match(css,/quest-mission-tool/);
-  assert.match(css,/@media\\(max-width:640px\\)/);
-  assert.match(sw,/substitution-cards\\.css\\?v=20261112-1/);
+  assert(css.includes('@media(max-width:640px)'))
+  assert(sw.includes('substitution-cards.css?v=20261112-1'))
   assert.match(sw,/hsk4-chinese-lab-pwa-v32/);
 });

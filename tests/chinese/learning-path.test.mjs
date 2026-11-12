@@ -28,7 +28,7 @@ test('five stages preserve every study mode and legacy progress access',()=>{
 test('navigation renders five stage buttons and only exercises in current stage',()=>{
   const state={lastGameMode:'sentence',lastPracticeMode:'video'};
   const nav=path.navigation('sentence',state,info,esc);
-  assert.equal((nav.stages.match(/class="learning-step/g)||[]).length,5);
+  assert.equal((nav.stages.match(/class="learning-step(?:"| is-active")/g)||[]).length,5);
   assert.match(nav.stages,/data-action="mode" data-id="story"/);
   assert.match(nav.stages,/data-action="stage" data-id="games"/);
   assert.match(nav.modes,/data-id="sceneMatch"/);

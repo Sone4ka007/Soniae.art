@@ -3,7 +3,7 @@
   'use strict';
   const STAGES = Object.freeze([
     Object.freeze({id:'words',mode:'words',title:'СЛОВАРЬ',icon:'字',modes:['words']}),
-    Object.freeze({id:'games',mode:'pairs',title:'ИГРЫ',icon:'↔',modes:['pairs','sceneMatch','translate','reverse','build','sentence','review']}),
+    Object.freeze({id:'games',mode:'pairs',title:'ИГРЫ',icon:'↔',modes:['pairs','sceneMatch','translate','reverse','build','sentence','substitute','review']}),
     Object.freeze({id:'input',mode:'input',title:'ИСТОРИЯ',icon:'文',modes:['input']}),
     Object.freeze({id:'story',mode:'story',title:'КВЕСТ',icon:'◎',modes:['story']}),
     Object.freeze({id:'practice',mode:'writing',title:'ПИСЬМО И ВИДЕО',icon:'✎',modes:['writing','video']})

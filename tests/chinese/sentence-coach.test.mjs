@@ -81,7 +81,7 @@ test('hints, answer reveal, skip and resume controls are wired in the web app',(
   assert.match(html,/ChineseLabSessions\.clear\(state\.progress,state\.lessonId,'sentence'\)/);
   assert.match(sw,/sentence-coach\.js\?v=20261112-2/);
   assert.match(sw,/hsk3-base\.js\?v=20261112-1/);
-  assert.match(sw,/hsk4-chinese-lab-pwa-v30/);
+  assert.match(sw,/hsk4-chinese-lab-pwa-v31/);
 });
 
 

@@ -32,8 +32,11 @@ try {
   assert((await page.locator('#lesson-intro h2').innerText()).length>0);
   await page.locator('#lesson-select').selectOption('1');
   await page.locator('#mode-nav [data-action="stage"][data-id="games"]').click();
-  assert.equal(await page.locator('#mode-subnav [data-action="mode"]').count(),7);
+  assert.equal(await page.locator('#mode-subnav [data-action="mode"]').count(),8);
+  await page.locator('#mode-subnav [data-id="substitute"]').click();
+  assert.match(await page.locator('#game-panel').innerText(),/ПОДСТАНОВКА СЛОВ/);
   await page.locator('#mode-subnav [data-id="sentence"]').click();
+  assert.equal(await page.locator('#game-panel .quest-mission').count(),0,'The sentence exercise must not include word substitution');
   await page.locator('#today-entry').click();
   await page.locator('[data-action="today-continue"]').click();
   assert.equal(await page.locator('#mode-subnav [data-id="sentence"].is-active').count(),1);

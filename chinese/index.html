@@ -689,7 +689,7 @@
 <script src="./js/google-auth.js"></script>
 <script src="./js/pinyin-chars.js"></script>
 <script src="./js/sentence-tiles.js"></script>
-<script src="./js/exercise-sessions.js?v=20261111-4"></script>
+<script src="./js/exercise-sessions.js?v=20261112-1"></script>
 <script src="./js/quest-mnemonics.js?v=20261109-2"></script>
 <script src="./js/quest-roleplay.js?v=20261110-4"></script>
 <script src="./js/quest-roleplay-extended.js?v=20261110-3"></script>
@@ -704,7 +704,7 @@
 <script src="./js/writing-guide-ru.js?v=20261111-4"></script>
 <script src="./js/writing.js?v=20261111-5"></script>
 <script src="./js/scene-match.js?v=20261112-1"></script>
-<script src="./js/learning-path.js?v=20261112-1"></script>
+<script src="./js/learning-path.js?v=20261112-2"></script>
 <script src="./js/hsk3-base.js?v=20261112-1"></script>
 <script src="./js/sentence-coach.js?v=20261112-2"></script>
 <script>
@@ -722,6 +722,7 @@ const modeInfo = [
   { id: 'input', icon: '文', title: 'ИСТОРИИ · ПО ГЛАВАМ' },
   { id: 'story', icon: '◎', title: 'СЮЖЕТ · КВЕСТ' },
   { id: 'sentence', icon: '句', title: 'СОБЕРИ ПРЕДЛОЖЕНИЕ' },
+  { id: 'substitute', icon: '填', title: 'ПОДСТАНОВКА СЛОВ' },
   { id: 'progress', icon: '◫', title: 'МОЙ ПРОГРЕСС' },
   { id: 'writing', icon: '✎', title: 'ПИСЬМО · ИЕРОГЛИФЫ' },
   { id: 'video', icon: '▷', title: 'ВИДЕО' },
@@ -832,6 +833,7 @@ function activateMode(mode, reset = false) {
   if (mode === 'translate' || mode === 'reverse') initQuiz();
   if (mode === 'build') initBuild();
   if (mode === 'sentence') initSentence();
+  if (mode === 'substitute') initSubstitution();
   if (mode === 'review') initReview();
   if (mode === 'writing') state.game = {};
   if (mode === 'input') initCI();
@@ -888,6 +890,7 @@ function renderGame() {
   if (kind === 'translate' || kind === 'reverse') renderQuiz();
   if (kind === 'build') renderBuild();
   if (kind === 'sentence') renderSentence();
+  if (kind === 'substitute') renderSubstitution();
   if (kind === 'review') renderReview();
   if (kind === 'writing') ChineseLabWriting.mount({state, save, award, speech, esc});
   if (kind === 'input') renderCI();
@@ -992,9 +995,9 @@ function questMissionBox(){
     ${g.missionNotice?`<div class="quest-mission-notice" role="status">${esc(g.missionNotice)}</div>`:''}
     <div class="quest-mission-small">${isAudio?'Сначала слушай, потом выбирай.':isRussian?'Это задача на перевод — значение дано как вопрос.':'Сначала попробуй прочитать предложение по-китайски.'} Нажми на правильный вариант.</div>`;
  }
- return `<section class="quest-mission" aria-label="Словарные миссии"><div class="quest-mission-top"><div><small>САЙД-КВЕСТ · СЛОВА В ПРЕДЛОЖЕНИЯХ</small><h4>СОБЕРИ ВСЮ ЛЕКСИКУ <em>${doneCount}/${total}</em></h4></div><button type="button" data-action="quest-mission-toggle" class="quest-reveal" aria-expanded="${g.missionOpen}">${g.missionOpen?'СВЕРНУТЬ ↑':'ОТКРЫТЬ ЗАДАНИЯ ↓'}</button></div><div class="quest-mission-meter"><div style="width:${Math.round(doneCount*100/total)}%"></div></div>${g.missionOpen?`<p class="quest-mission-small">${groups.length} групп заданий. В каждой — лексика урока в живых фразах. Их можно проходить в любом порядке, даже после финала.</p><div class="quest-mission-tabs">${tabs}</div>`:''}${content}</section>`;
+ return `<section class="quest-mission" aria-label="Словарные миссии"><div class="quest-mission-top"><div><small>ПРАКТИКА · СЛОВА В КОНТЕКСТЕ</small><h4>ЗАКРЕПИ ЛЕКСИКУ <em>${doneCount}/${total}</em></h4></div><button type="button" data-action="quest-mission-toggle" class="quest-reveal" aria-expanded="${g.missionOpen}">${g.missionOpen?'СВЕРНУТЬ ↑':'ОТКРЫТЬ ЗАДАНИЯ ↓'}</button></div><div class="quest-mission-meter"><div style="width:${Math.round(doneCount*100/total)}%"></div></div>${g.missionOpen?`<p class="quest-mission-small">${groups.length} групп заданий. В каждой — лексика урока в живых фразах. Их можно проходить в любом порядке, даже после финала.</p><div class="quest-mission-tabs">${tabs}</div>`:''}${content}</section>`;
 }
-function renderMissionParent(){if(state.mode==='sentence')renderSentence();else renderStory();}
+function renderMissionParent(){if(state.mode==='substitute')renderSubstitution();else renderStory();}
 function questMissionAction(action,btn){
  const g=state.game,groups=lesson().quest.vocabMissions||[],done=questVocabDone();
  if(action==='quest-mission-toggle'){g.missionOpen=!g.missionOpen;renderMissionParent();return;}
@@ -1247,7 +1250,7 @@ ${lesson().id===1?`<div class="quest-mnemonic-intro"><b>ПРОВЕРЬ, КАК �
  $('#game-panel').innerHTML=`${header('КВЕСТ / ИСТОРИЯ АННЫ','Выбирай действия, а затем составляй фразы на китайском. Последствия меняют следующую сцену.',`ЭТАП ${g.stage+1} / ${q.steps.length}`)}${questHud()}<section class="quest-scene"><div class="quest-scene-heading"><span>${esc(s.tag)}</span><h4>${esc(s.title)}</h4></div>${s.type==='compose'||s.type==='roleplay'?'':questNarrative(s)}${body}</section>${questInventory()}`;
 }
 function questAction(action,btn){
- const g=state.game;if(!g||(!g.isQuest&&state.mode!=='sentence'))return;
+ const g=state.game;if(!g||(!g.isQuest&&state.mode!=='substitute'))return;
  if(action==='quest-restart'){initQuest();renderMissionParent();return;}
  if(action==='quest-start'){if(g.status==='intro'){g.status='play';renderMissionParent();}return;}
  if(action==='quest-gloss'){
@@ -1469,9 +1472,22 @@ function sentenceQuestionPool(){
  return result;
 }
 function initSentence(){
- state.game={questions:shuffle(sentenceQuestionPool()),index:0,selected:[],correct:0,skipped:0,done:false,notice:'',tries:0,hint:false,hintLevel:0,showSolution:false,feedbackError:false,
-   missionOpen:true,missionStage:0,missionResult:null,missionNotice:'',revealed:[],mnemonicWord:null,mnemonicMode:'hint'};
+ state.game={questions:shuffle(sentenceQuestionPool()),index:0,selected:[],correct:0,skipped:0,done:false,notice:'',tries:0,hint:false,hintLevel:0,showSolution:false,feedbackError:false};
  prepareSentence();
+}
+function initSubstitution(){
+ state.progress.questWords ||= {};
+ state.progress.questWords[lesson().id] ||= {};
+ state.game={missionOpen:true,missionStage:0,missionResult:null,missionNotice:'',
+   revealed:[],mnemonicWord:null,mnemonicMode:'hint'};
+}
+function renderSubstitution(){
+ const groups=lesson().quest?.vocabMissions||[];
+ $('#game-panel').innerHTML=header('ПОДСТАНОВКА СЛОВ',
+   'Выбирай пропущенное слово, находи его по смыслу или на слух. Выполненные задания сохраняются отдельно от сборки предложений.',
+   'ЛЕКСИКА УРОКА')+
+   (groups.length?questMissionBox():
+    '<p class="audio-note">Для этого урока пока нет заданий на подстановку слов.</p><button type="button" class="action-btn" data-action="mode" data-id="words">ОТКРЫТЬ СЛОВАРЬ →</button>');
 }
 function prepareSentence(){
  const g=state.game;if(g.index>=g.questions.length)return;
@@ -1492,7 +1508,7 @@ function renderSentence(){
  }
  if(g.index>=g.questions.length){
   $('#game-panel').innerHTML=completedBlock('ПРЕДЛОЖЕНИЯ СОБРАНЫ',
-    'Верно: '+g.correct+' из '+g.questions.length+'. Пропущено: '+(g.skipped||0)+'.','sentence')+questMissionBox();
+    'Верно: '+g.correct+' из '+g.questions.length+'. Пропущено: '+(g.skipped||0)+'.','sentence');
   return;
  }
  const q=g.questions[g.index];
@@ -1541,7 +1557,7 @@ function renderSentence(){
    '<div class="sentence-bank">'+tiles+'</div>'+
    '<div class="sentence-tip">Каждая плитка — отдельное слово. Нажми «?» рядом с плиткой, чтобы увидеть перевод. Открытие подсказки не обнуляет прогресс.</div>'+
    controls+notice+candidate+solution+success+
-   '<p class="audio-note">После верного ответа предложение прозвучит по-китайски. Произношение также можно включить вручную.</p></div>'+questMissionBox();
+   '<p class="audio-note">После верного ответа предложение прозвучит по-китайски. Произношение также можно включить вручную.</p></div>';
 }
 function sentenceAction(action,id){
  const g=state.game,q=g.questions[g.index];

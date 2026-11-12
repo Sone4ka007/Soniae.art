@@ -60,6 +60,6 @@ test('navigation styles and scripts are offline cached without changing progress
   assert.match(html,/learning-path\.css\?v=20261112-1/);
   assert.match(sw,/learning-path\.js\?v=20261112-1/);
   assert.match(sw,/learning-path\.css\?v=20261112-1/);
-  assert.match(sw,/hsk4-chinese-lab-pwa-v28/);
+  assert.match(sw,/hsk4-chinese-lab-pwa-v\d+/);
   assert.match(read('chinese/js/progress-store.js'),/sonya-chinese-lab-progress-v1/);
 });

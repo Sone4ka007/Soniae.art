@@ -39,7 +39,7 @@ def main():
         if rid not in byid:
             # Editorially selected drafts inserted in the working Google Sheet
             # must be preserved in GitHub, not dropped at the next sync.
-            if not rid.startswith("manual-weekly-"):
+            if not rid.startswith("manual-"):
                 continue
             if (not str(row.get("title","")).strip()
                 or not str(row.get("url","")).startswith("https://")

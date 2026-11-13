@@ -1068,10 +1068,23 @@ def extract_telegram_channel_events(html, src):
             print("SONYA_GO_RAW_BEGIN", file=sys.stderr)
             print(raw[:12000], file=sys.stderr)
             print("SONYA_GO_RAW_END", file=sys.stderr)
-        if re.search(r"open\s*call|опен[- ]?колл|при[её]м заявок|дедлайн|deadline",low,re.I):
-            continue
-
-        dt=parse_date(raw,require_year=False,default_year=today.year)
+        is_open_call=bool(re.search(
+            r"open\s*call|опен[- ]?колл|при[её]м заявок|дедлайн|deadline",low,re.I
+        ))
+        # The date is a submission deadline for open calls; do not ignore
+        # these posts in Sonya's curated events channel.
+        if is_open_call:
+            marker=re.search(
+                r"(?:дедлайн|deadline|при[её]м заявок до|заявки до|подать до)"
+                r".{0,80}?(?:\d{1,2}[./]\d{1,2}(?:[./]20\d{2})?|"
+                r"\d{1,2}\s+[а-яё]{3,12}(?:\s+20\d{2})?)",
+                raw,re.I
+            )
+            dt=parse_date(marker.group(0),require_year=False,default_year=today.year) if marker else None
+            if not dt:
+                dt=parse_date(raw,require_year=False,default_year=today.year)
+        else:
+            dt=parse_date(raw,require_year=False,default_year=today.year)
         if not dt:
             continue
         if dt < today - timedelta(days=60):
@@ -1199,7 +1212,7 @@ def extract_telegram_channel_events(html, src):
             categories=[cat] if cat else [],
             status="check",reason="curated_telegram_source"
         )
-        ev["kind"]="event"
+        ev["kind"]="open_call" if is_open_call else "event"
         # Curated Telegram posts can cover both Moscow and St Petersburg.
         # Do not inherit Moscow blindly from the source configuration.
         city_blob=(raw+" "+venue).lower()

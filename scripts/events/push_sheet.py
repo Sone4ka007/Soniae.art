@@ -145,6 +145,10 @@ def main():
         }:
             return False
         source=str(e.get("source", "")).lower()
+        # Sonya curates her own Telegram channel. Every valid future item
+        # should appear in the review queue, even if its title is unusual.
+        if source == "соня go — события":
+            return True
         trusted=(
             "третьяковская", "русский музей", "росфото", "гараж", "центр зотов",
             "манеж", "гэс-2", "школа дизайна", "простая школа", "музей az",

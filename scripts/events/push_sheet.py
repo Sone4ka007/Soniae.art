@@ -136,6 +136,10 @@ def main():
         # their discovery date predates a scheduled collector run.
         if str(e.get("id","")).startswith("manual-weekly-"):
             return True
+        # This is a hand-curated source, not the old automated backlog.
+        # Keep its unreviewed upcoming posts even if originally found in October.
+        if str(e.get("source", "")).strip().lower() == "соня go — события":
+            return bool(str(e.get("title", "")).strip() and str(e.get("date", "")).strip())
         if str(e.get("discovered_at", "")) <= "2026-10-30":
             return False
         title=str(e.get("title", "")).strip().lower()
@@ -145,10 +149,6 @@ def main():
         }:
             return False
         source=str(e.get("source", "")).lower()
-        # Sonya curates her own Telegram channel. Every valid future item
-        # should appear in the review queue, even if its title is unusual.
-        if source == "соня go — события":
-            return True
         trusted=(
             "третьяковская", "русский музей", "росфото", "гараж", "центр зотов",
             "манеж", "гэс-2", "школа дизайна", "простая школа", "музей az",

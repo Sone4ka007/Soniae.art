@@ -60948,7 +60948,7 @@
       "address": "",
       "price": 0,
       "price_text": "Бесплатно",
-      "registration": null,
+      "registration": false,
       "categories": [
         "лекция"
       ],
@@ -60962,7 +60962,14 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "spb-2026-11-13-0c27d0c8d2",
@@ -61213,7 +61220,7 @@
       "address": "",
       "price": 600,
       "price_text": "600 ₽",
-      "registration": null,
+      "registration": false,
       "categories": [],
       "description": "Экспериментальное трио, которое представляет взаимодействие родственных инструментов из разных культур семейства цитры, собранные и препарированные с учетом современных задач и прогрессивных техник.",
       "url": "https://p-10.ru/events/dmitrij-tykvin-anna-mihajlova-maksim-pozin/",
@@ -61225,7 +61232,14 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "spb-2026-11-13-0fd8cb8e99",
@@ -61333,7 +61347,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [],
       "description": "В рамках лекции узнаем, в том числе как с помощью креативного подхода находить логические связи в сложных для восприятия текстах. Находить скрытые послания и… мастерством интерпретации творить настоящую магию!",
       "url": "https://p-10.ru/events/kak-ponimat-sovremennuju-poeziju/",
@@ -61345,7 +61359,14 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "spb-2026-11-13-148742e6ba",
@@ -61464,7 +61485,7 @@
       "address": "",
       "price": 300,
       "price_text": "300 ₽",
-      "registration": null,
+      "registration": false,
       "categories": [
         "воркшоп"
       ],
@@ -61478,7 +61499,14 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "spb-2026-11-13-be8fd13284",
@@ -61762,7 +61790,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "мастер-класс"
       ],
@@ -61776,7 +61804,14 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "spb-2026-11-13-aedcd3a9a3",
@@ -63453,7 +63488,7 @@
       "address": "",
       "price": 2000,
       "price_text": "2000 ₽",
-      "registration": null,
+      "registration": false,
       "categories": [
         "лекция"
       ],
@@ -63467,7 +63502,14 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-11-14-64ecc1a02b",
@@ -66511,7 +66553,7 @@
       "address": "",
       "price": 1100,
       "price_text": "1100 ₽",
-      "registration": null,
+      "registration": false,
       "categories": [
         "наброски"
       ],
@@ -66525,7 +66567,14 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "spb-2026-11-17-d840639c9f",
@@ -67006,7 +67055,13 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "sold_out",
-      "availability_checked_at": "2026-11-13"
+      "availability_checked_at": "2026-11-13",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-11-18-588b1b9599",
@@ -69828,7 +69883,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [],
       "description": "21 ноября в пространстве «ЦИКЛ» в рамках параллельной программы фестиваля экранных искусств смолшорт Школы дизайна НИУ ВШЭ состоится специальный показ фильма Night Walk корейского режиссёра Сон Ку-Ена. Картина представляет собой визуальное исследование ночного Сеула, где городская архитектура соседствует с природным ландшафтом, а повседневное пространство постепенно приобретает абстрактные очертания. Показ пройдёт с музыкальным сопровождением в живом исполнении Vova Polunin. 21 ноября 2026",
       "url": "https://design.hse.ru/news/7412",
@@ -69840,7 +69895,14 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-11-21-dc07f0121e",
@@ -70599,7 +70661,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "кинопоказ"
       ],
@@ -70614,7 +70676,14 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-11-21-530b6ef14b",
@@ -71285,7 +71354,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "лекция"
       ],
@@ -71299,7 +71368,14 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "spb-2026-11-22-6274d9b2ae",
@@ -73756,7 +73832,7 @@
       "address": "Москва, ул. Пятницкая, 71/5, строение 2, офис 503",
       "price": 750,
       "price_text": "750 ₽",
-      "registration": null,
+      "registration": false,
       "categories": [
         "наброски"
       ],
@@ -73771,7 +73847,14 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-11-28-0ed98de660",
@@ -75187,7 +75270,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "встреча"
       ],
@@ -75201,7 +75284,14 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "international-2026-12-05-647fe97094",

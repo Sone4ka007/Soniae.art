@@ -61822,7 +61822,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "презентация"
       ],
@@ -61836,7 +61836,14 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "spb-2026-11-14-3497c8964e",
@@ -67063,7 +67070,7 @@
       "address": "",
       "price": 2000,
       "price_text": "2000 ₽",
-      "registration": null,
+      "registration": false,
       "categories": [],
       "description": "Мероприятие соединит транспорт — главную тему музея — с актуальной деловой повесткой развития российской промышленности. В Форуме примут участие представители органов государственной власти и отраслевых ассоциаций, промышленных предприятий и профессионального дизайн-сообщества.",
       "url": "https://design-mate.ru/go/events/forum-promyshlennogo-dizayna-dizayn-den",
@@ -67075,7 +67082,14 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-11-14-65ab0155ea",
@@ -69668,7 +69682,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [],
       "description": "Продолжаем цикл мероприятий для иллюстраторов. Готовы поспорить: при слове «вампир» лысый дед, который за века так и не накопил на брекеты, приходит в голову не сразу? А как насчет гоблина ростом под два метра и с кубиками на прессе? За время существования фольклора внешность вымышленных видов менялась до неузнаваемости. Каждый автор может сочинить что-то свое и назвать это эльфом, троллем или дриадой. И чем больше образов придумано для одного названия, тем интереснее их иллюстрировать. На встрече мы посмотрим, какими разными могут быть фэнтези-иллюстрации, вспомним образы эльфов, гномов, гобл",
       "url": "https://vk.ru/away.php?to=https%3A%2F%2Fclck.ru%2F3WwJTU&amp;utf=1",
@@ -69680,7 +69694,14 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "spb-2026-11-21-d709f81e9f",
@@ -73287,7 +73308,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "лекция"
       ],
@@ -73301,7 +73322,14 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-11-28-8cb3f8d42f",
@@ -75739,7 +75767,7 @@
       "address": "",
       "price": 0,
       "price_text": "Бесплатно",
-      "registration": null,
+      "registration": false,
       "categories": [
         "выставка"
       ],
@@ -75754,7 +75782,14 @@
       "ticket_required": false,
       "availability": "unknown",
       "availability_checked_at": "",
-      "start_date": "2026-12-17"
+      "start_date": "2026-12-17",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "international-2026-12-18-9e69ff8f97",

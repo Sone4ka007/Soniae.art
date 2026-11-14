@@ -38291,7 +38291,7 @@
       "reviewed_at": "2026-10-17",
       "availability": "unknown",
       "availability_checked_at": "",
-      "registration": false,
+      "registration": null,
       "price": null,
       "price_text": "",
       "price_type": "paid",
@@ -38317,7 +38317,7 @@
         "status": "approved",
         "telegram_include": false,
         "instagram_include": false,
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -41054,7 +41054,7 @@
       "address": "1-й Голутвинский переулок, 16, стр. 1",
       "price": 850,
       "price_text": "850 ₽; льготный — 650 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -41081,7 +41081,7 @@
       "time_evidence": "24 октября 2026 14:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
       "editor_overrides": {
-        "registration": false
+        "registration": null
       }
     },
     {
@@ -49427,7 +49427,7 @@
       "address": "Лаврушинский переулок, 12",
       "price": 650,
       "price_text": "650 ₽; онлайн — 700 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -49444,7 +49444,7 @@
         "telegram_include": false,
         "instagram_include": false,
         "status": "approved",
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -51674,14 +51674,16 @@
       "price": 0,
       "price_text": "",
       "registration": false,
-      "categories": [],
+      "categories": [
+        "выставка"
+      ],
       "description": "На метро Музей AZ находится между станциями метро «Маяковская» и «Белорусская» (кольцевая). Мы рекомендуем идти в Музей от станции «Маяковская». Вам нужен Выход №1 на 1-я Тверская-Ямская улица, 2-я Тверская-Ямская улица.",
       "url": "https://museum-az.com/event/territoriya-svobody-nonkonformisty-v-taruse/",
       "source": "Музей AZ — выставки и события",
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-10-20",
-      "price_type": "paid",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-10-25",
       "editor_overrides": {
@@ -52951,7 +52953,7 @@
       "title": "Коллективная выставка Арт-шаффл 43.0",
       "venue": "ЦСИ Винзавод",
       "address": "",
-      "price": 1500,
+      "price": 0,
       "price_text": "12000 ₽",
       "registration": null,
       "categories": [
@@ -52965,7 +52967,7 @@
       "discovered_at": "2026-11-03",
       "start_date": "2026-11-03",
       "end_date": "2026-11-15",
-      "price_type": "paid",
+      "price_type": "free",
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
@@ -55219,7 +55221,7 @@
       "address": "",
       "price_type": "free",
       "price_text": "бесплатно по регистрации",
-      "registration": false,
+      "registration": true,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -57133,7 +57135,7 @@
       "address": "",
       "price_type": "free",
       "price_text": "бесплатно по регистрации",
-      "registration": false,
+      "registration": true,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -61597,7 +61599,7 @@
       "price_text": "",
       "registration": null,
       "categories": [],
-      "description": "Агора — 2026. Московский молодёжный турнир поэтов 16+ 14 ноября 2026 (суббота) 14:00 Особняк Носова Необходима регистрация 2026-11-14 14:00 2026-11-14 14:00 Europe/Moscow Агора — 2026. Московский молодёжный турнир поэтов Заявите о себе в литературном сообществе! РГБМ, Особняк Носова РГБМ info@rgub.ru Заявите о себе в литературном сообществе! Приглашаем к участию поэтов с авторским материалом в возрасте от 18 до 30 лет включительно, проживающих в Москве и Подмосковье (турнир очный). Турнирная комиссия состоит из признанных, активно выступающих поэтов, жюри также состоит из известных поэтов. Среди судей ожидаются Стефания Конькова-Данилова, Александр Антипов, Игорь Нагаев, Андрей Войнов и другие поэты, культурные деятели Москвы. Мы заинтересованы и в выступающих поэтах, и в новых именах. Ждём всех! Как принять участие: вышлите заявку в формате .doc или .rtf на agoraturnir@yandex.ru до 1 ноября 2026 года; в заголовке письма напишите «Турнир поэтов 2026, ФИО»; в заявке укажите ФИО, адрес электронной почты, контактный номер телефона и разместите три ваших лучших текста (объём — не более 150 строк с пробелами). Если вы работаете в малых формах, произведений может быть больше, но объём всё равно 150 строк. Кегль 12, шрифт Times New Roman. Стихи только на русском языке. Обсценную лексику не приветствуем. 8 ноября 2026 года мы сообщим, кто прошёл турнирную комиссию. Эти поэты сразятся на Турнире 14 ноября 2026 года. Комиссия отберёт лучших 25–30 поэтов, мероприятие займёт около 4 часов с музыкальными антрактами. Кроме того, будет зрительское голосование, которое по статусу равно голосованию жюри. Присылайте заявки, приглашайте друзей! Наступает новая поэтическая эпоха, и наша с вами Турнир проводят: Телеканал День ТВ; Историко-культурный комплекс «Особняк В.Д. Носова»; Продюсерский центр для поэтов нового времени «Всемпоэзии». Регистрируйтесь здесь , чтобы посетить турнир. Количество мест ограничено.",
+      "description": "Агора — 2026. Московский молодёжный турнир поэтов 16+ 14 ноября 2026 (суббота) 14:00 Особняк Носова Необходима регистрация Заявите о себе в литературном сообществе! Приглашаем к участию поэтов с авторским материалом в возрасте от 18 до 30 лет включительно, проживающих в Москве и Подмосковье (турнир очный). Турнирная комиссия состоит из признанных, активно выступающих поэтов, жюри также состоит из известных поэтов. Среди судей ожидаются Стефания Конькова-Данилова, Александр Антипов, Игорь Нагаев, Андрей Войнов и другие поэты, культурные деятели Москвы. Мы заинтересованы и в выступающих поэтах, и в новых именах. Ждём всех! Как принять участие: вышлите заявку в формате .doc или .rtf на agoraturnir@yandex.ru до 1 ноября 2026 года; в заголовке письма напишите «Турнир поэтов 2026, ФИО»; в заявке укажите ФИО, адрес электронной почты, контактный номер телефона и разместите три ваших лучших текста (объём — не более 150 строк с пробелами). Если вы работаете в малых формах, произведений может быть больше, но объём всё равно 150 строк. Кегль 12, шрифт Times New Roman. Стихи только на русском языке. Обсценную лексику не приветствуем. 8 ноября 2026 года мы сообщим, кто прошёл турнирную комиссию. Эти поэты сразятся на Турнире 14 ноября 2026 года. Комиссия отберёт лучших 25–30 поэтов, мероприятие займёт около 4 часов с музыкальными антрактами. Кроме того, будет зрительское голосование, которое по статусу равно голосованию жюри. Присылайте заявки, приглашайте друзей! Наступает новая поэтическая эпоха, и наша с вами Турнир проводят: Телеканал День ТВ; Историко-культурный комплекс «Особняк В.Д. Носова»; Продюсерский центр для поэтов нового времени «Всемпоэзии». Регистрируйтесь здесь , чтобы посетить турнир. Количество мест ограничено.",
       "url": "https://rgub.ru/schedule/item.php?new_id=49785",
       "source": "Российская государственная библиотека для молодёжи — афиша",
       "checked_at": "",
@@ -61627,7 +61629,7 @@
       "categories": [
         "мастер-класс"
       ],
-      "description": "Бионика: учимся у природы 6+ 14 ноября 2026 (суббота) 16:00 Кабинет художника Необходима регистрация 2026-11-14 16:00 2026-11-14 16:00 Europe/Moscow Бионика: учимся у природы Мастер-класс для детей от 6 до 14 лет при участии сотрудников экоцентра «Лосиный остров» РГБМ, Кабинет художника РГБМ info@rgub.ru Мастер-класс для детей от 6 до 14 лет при участии сотрудников экоцентра «Лосиный остров» Хотите узнать, как природа становится главным инженером и дизайнером для человечества? На экоуроке ребята познакомятся с бионикой — наукой, которая черпает идеи в живой природе и превращает их в технологии! Расскажем детям, как наблюдения за животными и растениями помогают создавать полезные изобретения и почему самые привычные вещи вокруг нас — на самом деле подсказки природы. В конце занятия ребята сделают поделку на память и поиграют в Детской комнате. Регистрируйтесь здесь . Количество мест ограничено.",
+      "description": "Бионика: учимся у природы 6+ 14 ноября 2026 (суббота) 16:00 Кабинет художника Необходима регистрация Мастер-класс для детей от 6 до 14 лет при участии сотрудников экоцентра «Лосиный остров» Хотите узнать, как природа становится главным инженером и дизайнером для человечества? На экоуроке ребята познакомятся с бионикой — наукой, которая черпает идеи в живой природе и превращает их в технологии! Расскажем детям, как наблюдения за животными и растениями помогают создавать полезные изобретения и почему самые привычные вещи вокруг нас — на самом деле подсказки природы. В конце занятия ребята сделают поделку на память и поиграют в Детской комнате. Регистрируйтесь здесь . Количество мест ограничено.",
       "url": "https://rgub.ru/schedule/item.php?new_id=49786",
       "source": "Российская государственная библиотека для молодёжи — афиша",
       "checked_at": "",
@@ -61665,7 +61667,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-14-422be2d050",
@@ -61706,6 +61710,34 @@
       "editor_overrides": {
         "time": ""
       }
+    },
+    {
+      "id": "spb-2026-11-14-c574513ca9",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-14",
+      "time": "",
+      "title": "Каждую субботу в 16:00 — обзорная экскурсия по «Пушкинской-10»",
+      "venue": "Пушкинская-10",
+      "address": "",
+      "price": 600,
+      "price_text": "600 ₽",
+      "registration": null,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "Каждую субботу ровно в 16:00 группа будет отправляться от ресепшена в путешествие по коридорам и галереям «Пушкинской-10». В сопровождении опытного экскурсовода гости не только разберутся в современном и актуальном искусстве, но и получат ответы на все интересующие вопросы и проникнутся духом петербургского андерграунда.",
+      "url": "https://p-10.ru/events/obzornaya-ekskursiya-po-pushkinskoj-10-2/",
+      "source": "Пушкинская-10 — события",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-11-14",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-14-8a0aafabae",
@@ -61779,6 +61811,34 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "spb-2026-11-14-511fc08181",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-14",
+      "time": "",
+      "title": "Презентация книги Рената Беккина «Дворник писателя Хармса» и встреча с автором.",
+      "venue": "Пушкинская-10",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "презентация"
+      ],
+      "description": "Впервые повесть была опубликована в журнале «Новая Юность». В 2026 году текст издан отдельной книгой в издательстве «Спартаковская редакция» и вошел в лонг-лист премии «Ясная Поляна». Эта повесть-мистификация написана в форме дневника Ибрагима Кильдеева — ленинградского дворника, работающего в доме Даниила Хармса.",
+      "url": "https://p-10.ru/events/prezentaciya-knigi-renata-bekkina-dvornik-pisatelya-harmsa-i-vstrecha-s-avtorom/",
+      "source": "Пушкинская-10 — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-14",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "spb-2026-11-14-3497c8964e",
@@ -62222,7 +62282,7 @@
       "discovered_at": "2026-11-09",
       "price_type": "paid",
       "availability_evidence": "",
-      "ticket_required": true,
+      "ticket_required": false,
       "availability": "unknown",
       "availability_checked_at": "",
       "editor_note": "",
@@ -66176,7 +66236,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-18-9641d9b16f",
@@ -66990,6 +67052,32 @@
       "telegram_include": false,
       "instagram_include": false,
       "reviewed_at": "2026-11-06"
+    },
+    {
+      "id": "moscow-2026-11-19-6d6db328aa",
+      "status": "check",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-19",
+      "time": "12:00",
+      "title": "Форум промышленного дизайна «Дизайн День»",
+      "venue": "Новорязанская улица, дом 27",
+      "address": "",
+      "price": 2000,
+      "price_text": "2000 ₽",
+      "registration": null,
+      "categories": [],
+      "description": "Мероприятие соединит транспорт — главную тему музея — с актуальной деловой повесткой развития российской промышленности. В Форуме примут участие представители органов государственной власти и отраслевых ассоциаций, промышленных предприятий и профессионального дизайн-сообщества.",
+      "url": "https://design-mate.ru/go/events/forum-promyshlennogo-dizayna-dizayn-den",
+      "source": "Design Mate — календарь",
+      "checked_at": "",
+      "review_reason": "discovery_source_needs_primary_verification",
+      "discovered_at": "2026-11-14",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-14-65ab0155ea",
@@ -69571,6 +69659,32 @@
       "reviewed_at": "2026-11-13"
     },
     {
+      "id": "spb-2026-11-21-fa1e85f448",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-21",
+      "time": "16:30",
+      "title": "Клуб иллюстраторов: Как художники интерпретируют одни и те же фэнтези-расы",
+      "venue": "Библиотека комиксов",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "Продолжаем цикл мероприятий для иллюстраторов. Готовы поспорить: при слове «вампир» лысый дед, который за века так и не накопил на брекеты, приходит в голову не сразу? А как насчет гоблина ростом под два метра и с кубиками на прессе? За время существования фольклора внешность вымышленных видов менялась до неузнаваемости. Каждый автор может сочинить что-то свое и назвать это эльфом, троллем или дриадой. И чем больше образов придумано для одного названия, тем интереснее их иллюстрировать. На встрече мы посмотрим, какими разными могут быть фэнтези-иллюстрации, вспомним образы эльфов, гномов, гобл",
+      "url": "https://vk.ru/away.php?to=https%3A%2F%2Fclck.ru%2F3WwJTU&amp;utf=1",
+      "source": "Библиотека комиксов — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-11-14",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "spb-2026-11-21-d709f81e9f",
       "status": "new",
       "kind": "event",
@@ -70697,7 +70811,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-23-3c94697fb2",
@@ -73162,6 +73278,34 @@
       "reviewed_at": ""
     },
     {
+      "id": "moscow-2026-11-28-1f97efa686",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-28",
+      "time": "12:00",
+      "title": "Лекция «Искусство рубежа ХIХ–XX веков»",
+      "venue": "Третьяковская галерея",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Лекция к абонементу №03 «Тысяча лет русского искусства». 3 октября 2026 – 26 декабря 2026 Лекция будет проходить в Лекционном зале Инженерного корпуса (Лаврушинский переулок, д. 12, вход с Малого Толмачёвского переулка). Продолжительность лекции: 1 час 30 минут.",
+      "url": "https://www.tretyakovgallery.ru/events/o/lektsiya-iskusstvo-rubezha-khikh-xx-vekov-11-2026/",
+      "source": "Третьяковская галерея — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-14",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-28-8cb3f8d42f",
       "status": "new",
       "kind": "event",
@@ -74023,6 +74167,32 @@
       "availability_checked_at": "",
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "moscow-2026-11-30-95ad3dd965",
+      "status": "check",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-30",
+      "time": "10:00",
+      "title": "Форум лидеров фуд-индустрии «Новый дивный мир»",
+      "venue": "конгресс-центр Connect, 5-й Донской проезд, 17",
+      "address": "",
+      "price": 2000,
+      "price_text": "2000 ₽",
+      "registration": null,
+      "categories": [],
+      "description": "30 ноября в Москве пройдет девятый Форум лидеров фуд-индустрии. Главная тема этого года - «Новый дивный мир» : организаторы предлагают обсудить, как ресторанный бизнес меняется под влиянием ИИ, новых моделей потребления, смены поколений и трансформации гастрономических привычек.",
+      "url": "https://design-mate.ru/go/events/forum-liderov-fud-industrii-novyy-divnyy-mir",
+      "source": "Design Mate — календарь",
+      "checked_at": "",
+      "review_reason": "discovery_source_needs_primary_verification",
+      "discovered_at": "2026-11-14",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-30-eebb063dbc",
@@ -75516,7 +75686,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-12-15-5242c7f93a",
@@ -75556,6 +75728,35 @@
       "editor_overrides": {
         "registration": false
       }
+    },
+    {
+      "id": "moscow-2026-12-17-c0f0f9a5b5",
+      "status": "check",
+      "kind": "exhibition",
+      "city": "moscow",
+      "date": "2026-12-17",
+      "time": "",
+      "title": "Евгения Буравлева (у которой сейчас идет крутая выставка по соседству в галерее Futura).",
+      "venue": "",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [
+        "выставка"
+      ],
+      "description": "Спикерами выступят художники, использующие синий цвет в своем творчестве: • Даниил Параничев — искусствовед галереи pop/off/art, автор статей Участники поговорят о том, как синий работает в их произведениях: какие возможности открывает цвет, как взаимодействует с пространством, формой и материалом и какие смыслы приобретает в индивидуальной художественной практике.",
+      "url": "https://galereya-popoffart.timepad.ru/event/4302070/",
+      "source": "Соня Go — события",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-11-14",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "start_date": "2026-12-17"
     },
     {
       "id": "international-2026-12-18-9e69ff8f97",
@@ -76021,7 +76222,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2027-01-22-c246c0b662",

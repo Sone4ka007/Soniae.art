@@ -38291,7 +38291,7 @@
       "reviewed_at": "2026-10-17",
       "availability": "unknown",
       "availability_checked_at": "",
-      "registration": false,
+      "registration": null,
       "price": null,
       "price_text": "",
       "price_type": "paid",
@@ -38317,7 +38317,7 @@
         "status": "approved",
         "telegram_include": false,
         "instagram_include": false,
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -41054,7 +41054,7 @@
       "address": "1-й Голутвинский переулок, 16, стр. 1",
       "price": 850,
       "price_text": "850 ₽; льготный — 650 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -41081,7 +41081,7 @@
       "time_evidence": "24 октября 2026 14:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
       "editor_overrides": {
-        "registration": false
+        "registration": null
       }
     },
     {
@@ -49427,7 +49427,7 @@
       "address": "Лаврушинский переулок, 12",
       "price": 650,
       "price_text": "650 ₽; онлайн — 700 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -49444,7 +49444,7 @@
         "telegram_include": false,
         "instagram_include": false,
         "status": "approved",
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -51674,14 +51674,16 @@
       "price": 0,
       "price_text": "",
       "registration": false,
-      "categories": [],
+      "categories": [
+        "выставка"
+      ],
       "description": "На метро Музей AZ находится между станциями метро «Маяковская» и «Белорусская» (кольцевая). Мы рекомендуем идти в Музей от станции «Маяковская». Вам нужен Выход №1 на 1-я Тверская-Ямская улица, 2-я Тверская-Ямская улица.",
       "url": "https://museum-az.com/event/territoriya-svobody-nonkonformisty-v-taruse/",
       "source": "Музей AZ — выставки и события",
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-10-20",
-      "price_type": "paid",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-10-25",
       "editor_overrides": {
@@ -55219,7 +55221,7 @@
       "address": "",
       "price_type": "free",
       "price_text": "бесплатно по регистрации",
-      "registration": false,
+      "registration": true,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -57133,7 +57135,7 @@
       "address": "",
       "price_type": "free",
       "price_text": "бесплатно по регистрации",
-      "registration": false,
+      "registration": true,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -62448,7 +62450,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "russia-2026-11-15-b8c2e3d9a6",
@@ -63391,7 +63395,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-15-6274d9b2ae",
@@ -66271,7 +66277,9 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "sold_out",
-      "availability_checked_at": "2026-11-15"
+      "availability_checked_at": "2026-11-15",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-19-501cdedb1c",
@@ -67053,7 +67061,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-19-d74b62747b",
@@ -69208,7 +69218,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-21-292db8036a",
@@ -69532,7 +69544,9 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-11-22-74e7820a46",
@@ -70039,6 +70053,34 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
+      "id": "spb-2026-11-22-3497c8964e",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-22",
+      "time": "",
+      "title": "События и выставки",
+      "venue": "РОСФОТО",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "Нажимая \"Отправить\", я подтверждаю свое согласие на обработку моих персональных данных, указанных в форме This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply. Правила использования материалов и изображений, размещённых на сайте РОСФОТО Тел: (812) 670 7691 Магазин: (812) 670 7691 Факс: (812) 314 6184 e-mail: office@rosphoto.org",
+      "url": "https://rosphoto.org/en/events/",
+      "source": "РОСФОТО",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-11-15",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-22-4a0fbff4de",
       "status": "rejected",
       "kind": "event",
@@ -70099,7 +70141,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-22-cff89fb1fc",
@@ -71156,6 +71200,34 @@
       "reviewed_at": "2026-11-13"
     },
     {
+      "id": "spb-2026-11-24-378b993b6a",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-24",
+      "time": "18:30",
+      "title": "ÐÑÐ¾Ð²ÐµÑÐºÐ° Ð±ÑÐ°ÑÐ·ÐµÑÐ° Ð¿ÐµÑÐµÐ´ Ð¿ÐµÑÐµÑ Ð¾Ð´Ð¾Ð¼ Ð½Ð° otkrytaya-gostinaya.timepad.ru",
+      "venue": "Открытая гостиная",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Большинство современных людей хотя бы раз в жизни слышало такие понятия как «гештальт», «психоанализ», «кпт-подход», но далеко не каждый человек понимает смысл и значение этих слов. Наша ноябрьская лекция будет посвящена разбору основных теоретических подходов в психологии. - разберем основные теоретические направления в психологии; - поговорим об истоках, основателях, преимуществах и различиях самых распространённых подходов; - узнаем психологический смысл фразы «закрыть гештальт»; - рассмотрим некоторые прикладные направления.",
+      "url": "https://otkrytaya-gostinaya.timepad.ru/event/4307612/",
+      "source": "Открытая гостиная — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-11-15",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-24-834758f1e0",
       "status": "rejected",
       "kind": "event",
@@ -71714,6 +71786,34 @@
       "availability_checked_at": "",
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "spb-2026-11-25-819370cd1f",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-25",
+      "time": "18:00",
+      "title": "лекция «ДОЛОЙ ТОСКУ!»",
+      "venue": "Открытая гостиная",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "в «Открытой гостиной» пройдёт : к 100-летию А. К. Жобима. Как Бразилия изменила музыку XX века. Мелодию «Девушки из Ипанемы» знают все, а её автора почти никто. Между тем Жобим создал босса-нову: жанр, вставший в один ряд с джазом и роком и определивший звучание XX века. Композитор-самоучка, он соперничал с «Битлз» в чартах, а Синатра на их совместных записях намеренно пел полушёпотом. При всём этом для широкой публики Жобим так и остался фигурой загадочной и почти неизвестной. • «Святая троица» босса-новы: как трио музыкантов перевернуло мировую сцену",
+      "url": "https://otkrytaya-gostinaya.timepad.ru/event/4303397/",
+      "source": "Открытая гостиная — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-11-15",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-25-93c9532bcf",
@@ -72992,7 +73092,8 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-28-1f97efa686",
@@ -73169,7 +73270,8 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-28-79d519d4e3",
@@ -73307,6 +73409,34 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": "2026-11-05"
+    },
+    {
+      "id": "moscow-2026-11-29-1d29a7d17b",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-29",
+      "time": "",
+      "title": "«Мастерская спектакля»: театрализованная программа по выставке Льва Бакста",
+      "venue": "Третьяковская галерея",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "программа"
+      ],
+      "description": "Занятия для детей 8–10 лет с родителями в рамках выставки «Лев Бакст». Продолжительность – 1 час 20 минут. Место проведения – пространство выставки (Лаврушинский пер., д. 12). Билет даёт право бесплатного посещения выставки в день мероприятия. Организованная группа с двумя сопровождающими взрослыми – 23 250 руб. Группа – 17 человек. Для бронирования билетов необходимо отправить заявку на электронную почту.",
+      "url": "https://www.tretyakovgallery.ru/events/o/masterskaya-spektaklya-teatralizovannaya-programma-po-vystavke-lva-baksta/",
+      "source": "Третьяковская галерея — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-15",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-29-0b6f0e020e",
@@ -73534,6 +73664,34 @@
       "availability_checked_at": "",
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "moscow-2026-11-29-8db60b101a",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-29",
+      "time": "13:00",
+      "title": "Лекция «Анна Остроумова-Лебедева»",
+      "venue": "Третьяковская галерея",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Лекция к абонементу №31 «Язык графики. Материалы и техники». 4 октября 2026 – 13 октября 2026 Лекция будет проходить в Лекционном зале Инженерного корпуса (Лаврушинский переулок, д. 12, вход с Малого Толмачёвского переулка) и в режиме реального времени на платформе МТС Линк в формате онлайн. Продолжительность лекции: 1 час 30 минут.",
+      "url": "https://www.tretyakovgallery.ru/events/o/lektsiya-anna-ostroumova-lebedeva-2026/",
+      "source": "Третьяковская галерея — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-15",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-29-550f9318dc",

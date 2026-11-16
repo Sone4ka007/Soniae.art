@@ -38291,7 +38291,7 @@
       "reviewed_at": "2026-10-17",
       "availability": "unknown",
       "availability_checked_at": "",
-      "registration": null,
+      "registration": false,
       "price": null,
       "price_text": "",
       "price_type": "paid",
@@ -38317,7 +38317,7 @@
         "status": "approved",
         "telegram_include": false,
         "instagram_include": false,
-        "registration": null
+        "registration": false
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -41054,7 +41054,7 @@
       "address": "1-й Голутвинский переулок, 16, стр. 1",
       "price": 850,
       "price_text": "850 ₽; льготный — 650 ₽",
-      "registration": null,
+      "registration": false,
       "categories": [
         "лекция"
       ],
@@ -41081,7 +41081,7 @@
       "time_evidence": "24 октября 2026 14:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
       "editor_overrides": {
-        "registration": null
+        "registration": false
       }
     },
     {
@@ -49427,7 +49427,7 @@
       "address": "Лаврушинский переулок, 12",
       "price": 650,
       "price_text": "650 ₽; онлайн — 700 ₽",
-      "registration": null,
+      "registration": false,
       "categories": [
         "лекция"
       ],
@@ -49444,7 +49444,7 @@
         "telegram_include": false,
         "instagram_include": false,
         "status": "approved",
-        "registration": null
+        "registration": false
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -51674,16 +51674,14 @@
       "price": 0,
       "price_text": "",
       "registration": false,
-      "categories": [
-        "выставка"
-      ],
+      "categories": [],
       "description": "На метро Музей AZ находится между станциями метро «Маяковская» и «Белорусская» (кольцевая). Мы рекомендуем идти в Музей от станции «Маяковская». Вам нужен Выход №1 на 1-я Тверская-Ямская улица, 2-я Тверская-Ямская улица.",
       "url": "https://museum-az.com/event/territoriya-svobody-nonkonformisty-v-taruse/",
       "source": "Музей AZ — выставки и события",
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-10-20",
-      "price_type": "free",
+      "price_type": "paid",
       "availability": "unknown",
       "availability_checked_at": "2026-10-25",
       "editor_overrides": {
@@ -55189,7 +55187,7 @@
       "address": "",
       "price_type": "free",
       "price_text": "бесплатно по регистрации",
-      "registration": true,
+      "registration": false,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -57103,7 +57101,7 @@
       "address": "",
       "price_type": "free",
       "price_text": "бесплатно по регистрации",
-      "registration": true,
+      "registration": false,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -64865,7 +64863,7 @@
     },
     {
       "id": "moscow-2026-11-17-8c96310888",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-17",
@@ -64893,12 +64891,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "rejected"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-11-16"
     },
     {
       "id": "moscow-2026-11-18-ad5480ce53",
@@ -66322,7 +66321,7 @@
     },
     {
       "id": "moscow-2026-11-19-6d6db328aa",
-      "status": "check",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-19",
@@ -66350,8 +66349,10 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
-      }
+        "instagram_include": false,
+        "status": "rejected"
+      },
+      "reviewed_at": "2026-11-16"
     },
     {
       "id": "moscow-2026-11-14-65ab0155ea",
@@ -69008,7 +69009,7 @@
     },
     {
       "id": "moscow-2026-11-21-d40a7c6dd8",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-21",
@@ -69036,12 +69037,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "rejected"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-11-16"
     },
     {
       "id": "spb-2026-11-21-292db8036a",
@@ -69118,7 +69120,7 @@
     },
     {
       "id": "spb-2026-11-21-fa1e85f448",
-      "status": "check",
+      "status": "approved",
       "kind": "event",
       "city": "spb",
       "date": "2026-11-21",
@@ -69144,12 +69146,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-11-16"
     },
     {
       "id": "spb-2026-11-21-d709f81e9f",
@@ -69266,7 +69269,7 @@
     },
     {
       "id": "moscow-2026-11-21-1128441ef2",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-21",
@@ -69295,12 +69298,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "rejected"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-11-16"
     },
     {
       "id": "moscow-2026-11-21-530b6ef14b",
@@ -71788,7 +71792,7 @@
     },
     {
       "id": "spb-2026-11-25-819370cd1f",
-      "status": "check",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-11-25",
@@ -71816,12 +71820,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "rejected"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-11-16"
     },
     {
       "id": "moscow-2026-11-25-93c9532bcf",
@@ -73161,7 +73166,7 @@
     },
     {
       "id": "moscow-2026-11-28-1f97efa686",
-      "status": "new",
+      "status": "approved",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-28",
@@ -73189,12 +73194,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "approved"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-11-16"
     },
     {
       "id": "moscow-2026-11-28-8cb3f8d42f",
@@ -73476,7 +73482,7 @@
     },
     {
       "id": "moscow-2026-11-29-1d29a7d17b",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-29",
@@ -73504,12 +73510,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "rejected"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-11-16"
     },
     {
       "id": "moscow-2026-11-29-0b6f0e020e",
@@ -73766,7 +73773,7 @@
     },
     {
       "id": "moscow-2026-11-29-8db60b101a",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-29",
@@ -73794,12 +73801,13 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "status": "rejected"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-11-16"
     },
     {
       "id": "moscow-2026-11-29-550f9318dc",
@@ -75778,12 +75786,12 @@
     },
     {
       "id": "moscow-2026-12-17-c0f0f9a5b5",
-      "status": "check",
+      "status": "approved",
       "kind": "exhibition",
       "city": "moscow",
       "date": "2026-12-17",
       "time": "",
-      "title": "Евгения Буравлева (у которой сейчас идет крутая выставка по соседству в галерее Futura).",
+      "title": "Дискуссия «Почему синий?»",
       "venue": "",
       "address": "",
       "price": 0,
@@ -75807,12 +75815,14 @@
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
-        "instagram_include": false
+        "instagram_include": false,
+        "title": "Дискуссия «Почему синий?»",
+        "status": "approved"
       },
       "telegram_include": false,
       "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-11-16"
     },
     {
       "id": "international-2026-12-18-9e69ff8f97",

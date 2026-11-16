@@ -64067,7 +64067,7 @@
       "address": "",
       "price": 500,
       "price_text": "500 ₽",
-      "registration": null,
+      "registration": false,
       "categories": [
         "кинопоказ"
       ],
@@ -64081,7 +64081,14 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "international-2026-11-17-bfeafeaa9c",
@@ -64977,7 +64984,7 @@
       "address": "",
       "price": 500,
       "price_text": "500 ₽",
-      "registration": null,
+      "registration": false,
       "categories": [
         "программа"
       ],
@@ -64991,7 +64998,14 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "spb-2026-11-18-d986540b12",
@@ -66937,7 +66951,13 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "international-2026-11-20-6973f5f8bc",
@@ -70048,7 +70068,7 @@
       "address": "",
       "price": 300,
       "price_text": "300 ₽",
-      "registration": null,
+      "registration": false,
       "categories": [],
       "description": "Разговорный клуб на английском языке с носителем языка — Синтией Карсон из Новой Зеландии. Синтия занимается созданием и развитием собственного бизнеса, и последние 10 лет она помогает российским профессионалам в развитии навыков английского языка. Синтия Карсон — совладелец и креативный директор брендов Delonatelo и Freelabel .",
       "url": "https://www.newhollandsp.ru/events/education/english-speaking-club/",
@@ -70060,7 +70080,14 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-11-22-bcdd1dc362",
@@ -70246,7 +70273,13 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-11-22-5da4476da2",
@@ -70288,7 +70321,7 @@
       "address": "",
       "price": 300,
       "price_text": "300 ₽",
-      "registration": null,
+      "registration": false,
       "categories": [],
       "description": "В «Сообществе» начинаются регулярные встречи разговорного клуба на русском жестовом языке. На них участники будут оттачивать навык общения на РЖЯ, ближе знакомиться с культурой глухих и, конечно, узнавать новые жесты. Общение проходит в полной тишине — единственным звуком будет только ваш смех во время игр!",
       "url": "https://www.newhollandsp.ru/events/education/rsl-speaking-club/",
@@ -70300,7 +70333,14 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-11-22-14baf63950",
@@ -72352,7 +72392,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "лекция"
       ],
@@ -72366,7 +72406,14 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-11-26-d74b62747b",
@@ -72934,7 +72981,13 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-11-28-0ed98de660",
@@ -73588,7 +73641,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [],
       "description": "",
       "url": "https://www.newhollandsp.ru/events/cinema-and-theatre/",
@@ -73600,7 +73653,14 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-11-29-ec2aa4b7b4",
@@ -75770,7 +75830,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [],
       "description": "",
       "url": "https://www.rusimp.su/events/lekciya-arhitektura-benua-petergof-i-ne-tolko",
@@ -75782,7 +75842,14 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "sold_out",
-      "availability_checked_at": "2026-11-16"
+      "availability_checked_at": "2026-11-16",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-12-17-c0f0f9a5b5",

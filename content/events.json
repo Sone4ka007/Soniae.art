@@ -38291,7 +38291,7 @@
       "reviewed_at": "2026-10-17",
       "availability": "unknown",
       "availability_checked_at": "",
-      "registration": false,
+      "registration": null,
       "price": null,
       "price_text": "",
       "price_type": "paid",
@@ -38317,7 +38317,7 @@
         "status": "approved",
         "telegram_include": false,
         "instagram_include": false,
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -41054,7 +41054,7 @@
       "address": "1-й Голутвинский переулок, 16, стр. 1",
       "price": 850,
       "price_text": "850 ₽; льготный — 650 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -41081,7 +41081,7 @@
       "time_evidence": "24 октября 2026 14:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
       "editor_overrides": {
-        "registration": false
+        "registration": null
       }
     },
     {
@@ -49427,7 +49427,7 @@
       "address": "Лаврушинский переулок, 12",
       "price": 650,
       "price_text": "650 ₽; онлайн — 700 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -49444,7 +49444,7 @@
         "telegram_include": false,
         "instagram_include": false,
         "status": "approved",
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -51674,14 +51674,16 @@
       "price": 0,
       "price_text": "",
       "registration": false,
-      "categories": [],
+      "categories": [
+        "выставка"
+      ],
       "description": "На метро Музей AZ находится между станциями метро «Маяковская» и «Белорусская» (кольцевая). Мы рекомендуем идти в Музей от станции «Маяковская». Вам нужен Выход №1 на 1-я Тверская-Ямская улица, 2-я Тверская-Ямская улица.",
       "url": "https://museum-az.com/event/territoriya-svobody-nonkonformisty-v-taruse/",
       "source": "Музей AZ — выставки и события",
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-10-20",
-      "price_type": "paid",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-10-25",
       "editor_overrides": {
@@ -55187,7 +55189,7 @@
       "address": "",
       "price_type": "free",
       "price_text": "бесплатно по регистрации",
-      "registration": false,
+      "registration": true,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -57101,7 +57103,7 @@
       "address": "",
       "price_type": "free",
       "price_text": "бесплатно по регистрации",
-      "registration": false,
+      "registration": true,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -63103,35 +63105,6 @@
       "availability_checked_at": ""
     },
     {
-      "id": "spb-2026-11-16-8a8a005eda",
-      "status": "new",
-      "kind": "exhibition",
-      "city": "spb",
-      "date": "2026-11-16",
-      "time": "",
-      "title": "«Русский кокошник» - одна из главных выставок года в Этнографическом музее",
-      "venue": "",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": null,
-      "categories": [
-        "выставка"
-      ],
-      "description": "27 ноября в Российском этнографическом музее откроется одна из главных выставок этого года, посвященная важнейшему символу русской культуры – «Русский кокошник». Новый выставочный проект представит более 200 головных уборов из разных регионов страны и расскажет историю происхождения одного из самых узнаваемых предметов русского традиционного костюма.",
-      "url": "https://spbcult.ru/news/anonsy/russkiy-kokoshnik-odna-iz-glavnykh-vystavok-goda-v-etnograficheskom-muzee/",
-      "source": "Петербургский дневник культуры — анонсы",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-11-16",
-      "price_type": "unknown",
-      "availability_evidence": "",
-      "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "start_date": "2026-11-16"
-    },
-    {
       "id": "moscow-2026-11-16-c3cb427dd4",
       "status": "rejected",
       "kind": "event",
@@ -63156,68 +63129,6 @@
       "ticket_required": true,
       "availability": "unknown",
       "availability_checked_at": "",
-      "editor_note": "",
-      "reviewed_at": ""
-    },
-    {
-      "id": "spb-2026-11-16-8be7817bd9",
-      "status": "new",
-      "kind": "exhibition",
-      "city": "spb",
-      "date": "2026-11-16",
-      "time": "",
-      "title": "В «Доме ангелов» ищут счастье и радость",
-      "venue": "",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": true,
-      "categories": [
-        "выставка"
-      ],
-      "description": "Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами! Также вы можете отправить статью в социальной сети или мессенджере Если у вас есть чем поделиться с нашими читателями, вы можете предложить свою статью.",
-      "url": "https://spbcult.ru/news/anonsy/v-dome-angelov-ishchut-schaste-i-radost/",
-      "source": "Петербургский дневник культуры — анонсы",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-11-16",
-      "price_type": "unknown",
-      "availability_evidence": "",
-      "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "start_date": "2026-11-16",
-      "editor_note": "",
-      "reviewed_at": ""
-    },
-    {
-      "id": "spb-2026-11-16-dfcb3ce48c",
-      "status": "new",
-      "kind": "exhibition",
-      "city": "spb",
-      "date": "2026-11-16",
-      "time": "",
-      "title": "В Герценовском университете открылась выставка Центра Михаила Шемякина «Лестница в искусстве»",
-      "venue": "",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": null,
-      "categories": [
-        "выставка"
-      ],
-      "description": "Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами! Также вы можете отправить статью в социальной сети или мессенджере Если у вас есть чем поделиться с нашими читателями, вы можете предложить свою статью.",
-      "url": "https://spbcult.ru/news/anonsy/v-rgpu-im-a-i-gertsena-otkrylas-vystavka-tsentra-mikhaila-shemyakina-lestnitsa-v-iskusstve/",
-      "source": "Петербургский дневник культуры — анонсы",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-11-16",
-      "price_type": "unknown",
-      "availability_evidence": "",
-      "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "start_date": "2026-11-16",
       "editor_note": "",
       "reviewed_at": ""
     },
@@ -63309,35 +63220,6 @@
       "instagram_include": false,
       "telegram_include": false,
       "sheet_synced_description": "Музей современного искусства «Гараж» набирает рукописи для своей книжной серии: история и теория искусства XX–XXI веков, новые медиа, социология культуры, антропология. Победители получают гонорар и выпуск книги."
-    },
-    {
-      "id": "spb-2026-11-16-4ed30e2fb4",
-      "status": "new",
-      "kind": "exhibition",
-      "city": "spb",
-      "date": "2026-11-16",
-      "time": "",
-      "title": "Историю одержимости, поиска и нового искусства расскажут в Театре на Садовой",
-      "venue": "",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": null,
-      "categories": [
-        "выставка"
-      ],
-      "description": "Авангардный рок, написанный композитором Даниилом Ячиным, задает ритм переломной эпохи. Музыка спектакля рождается на пересечении традиций XX века и живой природы: вдохновляясь Оливье Мессианом, записывавшим пение птиц нотами, композитор нашел звучание для арии Шагала в трелях чёрного дрозда из Витебской области.",
-      "url": "https://spbcult.ru/news/anonsy/istoriyu-oderzhimosti-poiska-i-novogo-iskusstva-rasskazhut-v-teatre-na-sadovoy/",
-      "source": "Петербургский дневник культуры — анонсы",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-11-16",
-      "price_type": "unknown",
-      "availability_evidence": "",
-      "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "start_date": "2026-11-16"
     },
     {
       "id": "moscow-2026-11-16-1a11d050bf",
@@ -63737,37 +63619,6 @@
       "ticket_required": false,
       "availability": "unknown",
       "availability_checked_at": ""
-    },
-    {
-      "id": "moscow-2026-11-16-1d732645b7",
-      "status": "new",
-      "kind": "exhibition",
-      "city": "moscow",
-      "date": "2026-11-16",
-      "time": "",
-      "title": "Традиции объединяют: открытие выставки «Контекст. Культурный код»",
-      "venue": "Еврейский музей и центр толерантности",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": null,
-      "categories": [
-        "выставка"
-      ],
-      "description": "Новое прочтение традиционного костюма в современном дизайне: 16 авторских костюмов, созданных студентами Британской высшей школы дизайна. Часть программы Недели толерантности 2026. Традицию легко свести к набору узнаваемых орнаментов и перенести их на современную одежду.",
-      "url": "https://www.jewish-museum.ru/events/traditsii-obedinyayut-otkrytie-vystavki-kontekst-kulturnyy-kod/",
-      "source": "Еврейский музей и центр толерантности",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-11-09",
-      "price_type": "unknown",
-      "availability_evidence": "",
-      "ticket_required": true,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "start_date": "2026-11-16",
-      "editor_note": "",
-      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-16-c0d697af36",
@@ -64290,6 +64141,88 @@
       }
     },
     {
+      "id": "spb-2026-11-17-7f9194ee71",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-17",
+      "time": "",
+      "title": "TODES покажет в Петербурге «Превью»",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "программа"
+      ],
+      "description": "21 и 22 ноября на сцене БКЗ «Октябрьский» с программой «Превью» выступит театр Аллы Духовой TODES. Петербургская публика впервые увидит на одной сцене сразу 80 артистов балета — это станет крупнейшим составом коллектива, представленным в городе за всю историю его выступлений. 21 и 22 ноября на сцене БКЗ «Октябрьский» с программой «Превью» выступит театр Аллы Духовой TODES.",
+      "url": "https://spbcult.ru/news/anonsy/todes-pokazhet-v-peterburge-prevyu/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-17",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "spb-2026-11-17-9fdeba4534",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-17",
+      "time": "",
+      "title": "«Живёт такой парень» - премьера в Театре имени Ленсовета",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "4, 5, 6, 20 и 27 декабря Академический театр имени Ленсовета представит премьерные показы спектакля « Живёт такой парень». Постановка представляет собой инсценировку одноимённой киноповести Василия Макаровича Шукшина и его же рассказа «Миль пардон, мадам!», написанного в 1968 году. Жил-был человек, который знал, как сделать счастливым кого угодно.",
+      "url": "https://spbcult.ru/news/anonsy/zhivyet-takoy-paren-premera-v-teatre-imeni-lensoveta/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-17",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "spb-2026-11-17-7ab174e758",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-17",
+      "time": "",
+      "title": "В Герценовском университете пройдут по сказочному маршруту",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "встреча"
+      ],
+      "description": "с 20 декабря по 10 января Герценовский университет проведёт праздничную программу для детей «Новогодняя сказка во Дворце педагогики». В программу войдут игры с участием сказочных персонажей, детский спектакль «Морозко» и специальный сувенир.",
+      "url": "https://spbcult.ru/news/anonsy/v-gertsenovskom-universitete-proydut-po-skazochnomu-marshrutu/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-17",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-17-6501f99a5e",
       "status": "new",
       "kind": "event",
@@ -64318,6 +64251,60 @@
       "availability_checked_at": "",
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "spb-2026-11-17-5995f84169",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-17",
+      "time": "",
+      "title": "Государственный Эрмитаж",
+      "venue": "Государственный Эрмитаж",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "",
+      "url": "https://hermitagemuseum.org/what-s-on/afisha_mincult/?lng=ru",
+      "source": "Государственный Эрмитаж — выставки и события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-17",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "spb-2026-11-17-c130efd314",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-17",
+      "time": "",
+      "title": "К 250-летию Большого театра России состоится презентация альбома об императорском балете",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "презентация"
+      ],
+      "description": "Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами! Также вы можете отправить статью в социальной сети или мессенджере Если у вас есть чем поделиться с нашими читателями, вы можете предложить свою статью.",
+      "url": "https://spbcult.ru/news/anonsy/k-250-letiyu-bolshogo-teatra-rossii-sostoitsya-prezentatsiya-alboma-ob-imperatorskom-balete/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-17",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-17-00d39b1a63",
@@ -64491,6 +64478,34 @@
       "availability_checked_at": "",
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "spb-2026-11-17-f2950c5b0c",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-17",
+      "time": "",
+      "title": "Центр искусств и технологий Русского музея приглашает на мастер-класс «Стилизованный пейзаж масляной пастелью» в рамках выставки «Айвазовский»",
+      "venue": "Лекторий Русского музея",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "",
+      "url": "https://rusmuseum.ru/news/",
+      "source": "Русский музей — лекторий",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-17",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-17-b80f732c02",
@@ -64903,6 +64918,34 @@
       "availability_checked_at": "",
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "spb-2026-11-17-7e898a0e26",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-17",
+      "time": "18:00",
+      "title": "На «Ленфильме» расскажут о Мравинском и оркестре Ленинградской филармонии",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами! Также вы можете отправить статью в социальной сети или мессенджере",
+      "url": "https://spbcult.ru/news/anonsy/na-lenfilme-rasskazhut-o-mravinskom-i-orkestre-leningradskoy-filarmonii/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-17",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-17-6de6981347",
@@ -65804,7 +65847,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-18-9e5ab92fbf",
@@ -66176,7 +66221,7 @@
       "title": "Виктория Бурлакова Свое место",
       "venue": "ЦСИ Винзавод",
       "address": "",
-      "price": 12000,
+      "price": 0,
       "price_text": "12000 ₽",
       "registration": null,
       "categories": [
@@ -66190,11 +66235,13 @@
       "discovered_at": "2026-11-16",
       "start_date": "2026-11-19",
       "end_date": "2026-11-22",
-      "price_type": "paid",
+      "price_type": "free",
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-19-8f96cac0d4",
@@ -66661,7 +66708,7 @@
       "source": "Design Mate — календарь",
       "checked_at": "",
       "review_reason": "discovery_source_needs_primary_verification",
-      "discovered_at": "2026-11-16",
+      "discovered_at": "2026-11-17",
       "price_type": "free",
       "availability_evidence": "",
       "ticket_required": false,
@@ -68063,6 +68110,35 @@
       "reviewed_at": ""
     },
     {
+      "id": "moscow-2026-11-20-91c3c05e64",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-20",
+      "time": "11:30",
+      "title": "А. А. Г. А. В. О. О. Ю. П. С. Е. А.",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "игра"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/a-a-g-a-v-o-o-y-p-s-e-a",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-17",
+      "audience_text": "› Резиденции Дата: 20 ноя– 20 дек 2026 Регистрация Возраст: от 12 Тип: Аудиоспектакль Место: ГЭС-2 Доступность  Возрастные ограничения 12+ Аудиоспектакль-променад об утраченных вещах и приобретенном опыте. Проект создан в рамках программы художественных резиденций Дома культуры « ГЭС-2 ». T Проект междисциплинарных художников из Казани Ангелины Миграновой и Родиона Сабирова стал результатом долгого и глубокого исследования пространства « ГЭС-2 ». В его основу легли личные размышления сотрудников Дома культуры об утраченных предметах — двенадцать историй о прошлом, переживаний в настоящем и фантазий о будущем. Иллюстрация: Полина Калашникова Прошлое возникает, когда к нему прикасается настоящее. Настоящее — это вы, вы — это присутствие. Без вашего присутствия нет будущего, без вашего присутствия нет прошлого, без вашего присутствия нет настоящего. — Ангелина Мигранова, Родион Сабиров Это многоголосие отражено в названии спектакля, сложенном из инициалов рассказчиков. Авторы проекта создают пространство, где каждый может почувствовать себя частью единого целого или найти личную точку тишины и покоя для саморефлексии. Короткие 8—12-минутные монологи можно слушать подряд или по одному, включая аудиоплеер в разных локациях « ГЭС-2 ». Вместе они создают очень личный портрет культурной институции. Прогулка по Дому культуры превращается в путешествие по воспоминаниям людей, благодаря которым архитектура бывшей электростанции обретает новые смыслы и человеческое измерение. Чтобы прослушать спектакль, зарегистрируйтесь. В день спектакля возьмите на стойке информации аудиоплеер с наушниками и иллюстрированную брошюру. Истории можно слушать в любом месте и в любом порядке. Общая продолжительность спектакля — около 2.5 часов. Аудиоспектакль дополняет иллюстрированная брошюра, которую можно взять на стойке информации вместе с аудиогидом. Действующие лица Анастасия Шихирева — специалист по работе с посетителями. Алиса Прудникова — программный директор. Григорий Чередов — директор издательских программ. Анастасия Щеголькова — специалист по работе с посетителями. Влад Колесников — куратор программ доступности для сообщества глухих. Оксана Осадчая — куратор программ доступности по работе с незрячими посетителями. Ольга Кавалай-Аксенова — библиотекарь. Юрий Ирхин — гардеробщик. Полина Зотова — куратор проектов для детской и семейной аудитории. Сергей Елькин — гардеробщик. Екатерина Ванцева — директор по развитию бренда и коммуникации. Артем Бондаревский — генеральный директ",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-20-aa8503e63c",
       "status": "new",
       "kind": "event",
@@ -68835,6 +68911,34 @@
       "reviewed_at": "2026-11-14"
     },
     {
+      "id": "spb-2026-11-21-94108f9818",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-21",
+      "time": "",
+      "title": "Обзорная экскурсия по РОСФОТО",
+      "venue": "РОСФОТО",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "Экскурсия включает знакомство со зданием, в котором находится РОСФОТО, и постоянной экспозицией «Внутри старинного фотоаппарата». Здание, в котором расположен музей, представляет собой яркий образец архитектуры северного модерна. В оформлении использованы майоликовые композиции по рисункам Николая Рериха.",
+      "url": "https://rosphoto.org/events/obzornaya-ekskursiya-po-rosfoto/",
+      "source": "РОСФОТО",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-11-17",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-21-dc07f0121e",
       "status": "rejected",
       "kind": "event",
@@ -68900,7 +69004,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-21-734741274c",
@@ -69060,7 +69166,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-21-96618547ab",
@@ -69316,6 +69424,32 @@
       "reviewed_at": "2026-11-03"
     },
     {
+      "id": "spb-2026-11-21-05d7e73d3f",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-21",
+      "time": "14:00",
+      "title": "Язык и мышление: мыслят ли иностранцы иначе? Часть 2",
+      "venue": "Библиотека Маяковского",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [],
+      "description": "Мы все слышали: у эскимосов 50 слов для снега, поэтому они видят его иначе. Но, может быть, это всего лишь миф? На лекции мы увидим, что, даже если в языке одно слово для зелёного и синего цвета, глаз различает оттенки идеально. Язык мешает нам только в одном — когда нас просят назвать, а не увидеть. Взаимодействие языка и восприятия не подлежит сомнению, но язык не определяет возможностей познания объективной реальности. Лектор — Андрей Яковлев, руководитель направления «Лингвистика» РАНХиГС Санкт-Петербург.",
+      "url": "https://t.me/mayakovka/2152",
+      "source": "Библиотека Маяковского — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-11-17",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-21-00c85a88e1",
       "status": "rejected",
       "kind": "event",
@@ -69555,7 +69689,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-21-1a94afaed1",
@@ -69667,6 +69803,34 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "spb-2026-11-21-00395cbe33",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-21",
+      "time": "17:00",
+      "title": "Встреча пройдёт в рамках фестиваля «Культура России»",
+      "venue": "Библиотека Маяковского",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "встреча"
+      ],
+      "description": "Поэтический вечер в честь Михаила Дудина Приглашаем на поэтический вечер, посвящённый 110-летию со дня рождения Михаила Дудина — выдающегося советского поэта. Поговорим о его жизни и творчестве, познакомимся с особенностями его поэтики, будем читать и обсуждать стихи. Вспомним литературное наследие Дудина и послушаем произведения современных авторов — продолжателей долгой и сложной поэтической традиции. В вечере примут участие представители петербургского поэтического объединения «Бюро поетри»: Никита Мотрий — основатель и лидер «Бюро поетри», резидент петербургской «Литературной гостиной», пр",
+      "url": "https://tsentralnaya-events.timepad.ru/event/4309830/",
+      "source": "Библиотека Маяковского — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-11-17",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-21-98f4534d25",
@@ -69849,6 +70013,62 @@
       "availability_checked_at": "",
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "moscow-2026-11-21-675d262640",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-21",
+      "time": "22:11",
+      "title": "История Московского метрополитена",
+      "venue": "Музей Транспорта Москвы",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "",
+      "url": "https://mtmuseum.ru/affiche/istoriya-moskovskogo-metropolitena/",
+      "source": "Музей транспорта Москвы — афиша",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-11-17",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "moscow-2026-11-21-f044d8e0b5",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-21",
+      "time": "22:11",
+      "title": "История наземного городского транспорта",
+      "venue": "Музей Транспорта Москвы",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "",
+      "url": "https://mtmuseum.ru/affiche/istoriya-nazemnogo-gorodskogo-transporta/",
+      "source": "Музей транспорта Москвы — афиша",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-11-17",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "international-2026-11-22-74e7820a46",
@@ -70413,6 +70633,68 @@
       "availability_checked_at": ""
     },
     {
+      "id": "moscow-2026-11-22-5120dd5b06",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-22",
+      "time": "11:00",
+      "title": "МЕТРО. НАЧАЛО ЭПОХИ",
+      "venue": "Музей Транспорта Москвы",
+      "address": "",
+      "price": 800,
+      "price_text": "800 ₽",
+      "registration": true,
+      "categories": [],
+      "description": "",
+      "url": "https://mtmuseum.ru/affiche/metro-nachalo-epokhi/",
+      "source": "Музей транспорта Москвы — афиша",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-17",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "moscow-2026-11-22-b243361041",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-22",
+      "time": "11:00",
+      "title": "НОВАЯ ЭРА МОСКОВСКОГО МЕТРО",
+      "venue": "Музей Транспорта Москвы",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": true,
+      "categories": [],
+      "description": "",
+      "url": "https://mtmuseum.ru/affiche/novaya-era-moskovskogo-metro/",
+      "source": "Музей транспорта Москвы — афиша",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-09-28",
+      "price_type": "paid",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-14",
+      "social_title": "",
+      "telegram_include": false,
+      "instagram_image": "",
+      "social_description": "",
+      "instagram_include": false,
+      "social_priority": null,
+      "editor_note": "",
+      "reviewed_at": "2026-09-29",
+      "sheet_synced_description": "",
+      "time_verification": "verified",
+      "time_evidence": "14.10.2026 | 20:00",
+      "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
       "id": "moscow-2026-11-22-91c3c05e64",
       "status": "new",
       "kind": "event",
@@ -70446,7 +70728,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-22-4a0fbff4de",
@@ -71246,7 +71530,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-23-eebb063dbc",
@@ -71633,6 +71919,35 @@
       "reviewed_at": ""
     },
     {
+      "id": "moscow-2026-11-24-91c3c05e64",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-24",
+      "time": "11:30",
+      "title": "А. А. Г. А. В. О. О. Ю. П. С. Е. А.",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "игра"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/a-a-g-a-v-o-o-y-p-s-e-a",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-17",
+      "audience_text": "› Резиденции Дата: 20 ноя– 20 дек 2026 Регистрация Возраст: от 12 Тип: Аудиоспектакль Место: ГЭС-2 Доступность  Возрастные ограничения 12+ Аудиоспектакль-променад об утраченных вещах и приобретенном опыте. Проект создан в рамках программы художественных резиденций Дома культуры « ГЭС-2 ». T Проект междисциплинарных художников из Казани Ангелины Миграновой и Родиона Сабирова стал результатом долгого и глубокого исследования пространства « ГЭС-2 ». В его основу легли личные размышления сотрудников Дома культуры об утраченных предметах — двенадцать историй о прошлом, переживаний в настоящем и фантазий о будущем. Иллюстрация: Полина Калашникова Прошлое возникает, когда к нему прикасается настоящее. Настоящее — это вы, вы — это присутствие. Без вашего присутствия нет будущего, без вашего присутствия нет прошлого, без вашего присутствия нет настоящего. — Ангелина Мигранова, Родион Сабиров Это многоголосие отражено в названии спектакля, сложенном из инициалов рассказчиков. Авторы проекта создают пространство, где каждый может почувствовать себя частью единого целого или найти личную точку тишины и покоя для саморефлексии. Короткие 8—12-минутные монологи можно слушать подряд или по одному, включая аудиоплеер в разных локациях « ГЭС-2 ». Вместе они создают очень личный портрет культурной институции. Прогулка по Дому культуры превращается в путешествие по воспоминаниям людей, благодаря которым архитектура бывшей электростанции обретает новые смыслы и человеческое измерение. Чтобы прослушать спектакль, зарегистрируйтесь. В день спектакля возьмите на стойке информации аудиоплеер с наушниками и иллюстрированную брошюру. Истории можно слушать в любом месте и в любом порядке. Общая продолжительность спектакля — около 2.5 часов. Аудиоспектакль дополняет иллюстрированная брошюра, которую можно взять на стойке информации вместе с аудиогидом. Действующие лица Анастасия Шихирева — специалист по работе с посетителями. Алиса Прудникова — программный директор. Григорий Чередов — директор издательских программ. Анастасия Щеголькова — специалист по работе с посетителями. Влад Колесников — куратор программ доступности для сообщества глухих. Оксана Осадчая — куратор программ доступности по работе с незрячими посетителями. Ольга Кавалай-Аксенова — библиотекарь. Юрий Ирхин — гардеробщик. Полина Зотова — куратор проектов для детской и семейной аудитории. Сергей Елькин — гардеробщик. Екатерина Ванцева — директор по развитию бренда и коммуникации. Артем Бондаревский — генеральный директ",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "spb-2026-11-24-d9a9074d9b",
       "status": "rejected",
       "kind": "event",
@@ -71700,6 +72015,34 @@
       "availability_checked_at": "",
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "spb-2026-11-24-0ad7a81bf0",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-24",
+      "time": "15:30",
+      "title": "Этот мастер-класс идеально подходит как для начинающих, так и для опытных художников, ведь каждый участник сможет попрактиковать навыки рисунка в своем собственном темпе.",
+      "venue": "Библиотека комиксов",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "Клуб иллюстраторов: Акварельный портрет В Библиотеке Комиксов (7-я Красноармейская, д.30) продолжается новый цикл мероприятий для иллюстраторов. Приглашаем вас открыть для себя мир акварели под руководством французского художника Сирила Эркенса, живущего в Санкт-Петербурге. В непринужденной и вдохновляющей атмосфере вы освоите базовые техники автопортрета по фотографии. Приходите за вдохновением, новыми знакомствами и атмосферой творчества. Спикер: Сирил Эркенс, французский художник.",
+      "url": "https://m.vk.ru/away.php?to=https%3A%2F%2Fclck.ru%2F3WuJF9&amp;utf=1",
+      "source": "Библиотека комиксов — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-11-17",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-24-df4566acc2",
@@ -71782,7 +72125,7 @@
       "city": "spb",
       "date": "2026-11-24",
       "time": "18:30",
-      "title": "ÐÑÐ¾Ð²ÐµÑÐºÐ° Ð±ÑÐ°ÑÐ·ÐµÑÐ° Ð¿ÐµÑÐµÐ´ Ð¿ÐµÑÐµÑ Ð¾Ð´Ð¾Ð¼ Ð½Ð° otkrytaya-gostinaya.timepad.ru",
+      "title": "Лекция «Теоретические подходы и прикладные направления в психологии» / События на TimePad.ru",
       "venue": "Открытая гостиная",
       "address": "",
       "price": null,
@@ -72346,6 +72689,35 @@
       "reviewed_at": ""
     },
     {
+      "id": "moscow-2026-11-25-91c3c05e64",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-25",
+      "time": "11:30",
+      "title": "А. А. Г. А. В. О. О. Ю. П. С. Е. А.",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "игра"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/a-a-g-a-v-o-o-y-p-s-e-a",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-17",
+      "audience_text": "› Резиденции Дата: 20 ноя– 20 дек 2026 Регистрация Возраст: от 12 Тип: Аудиоспектакль Место: ГЭС-2 Доступность  Возрастные ограничения 12+ Аудиоспектакль-променад об утраченных вещах и приобретенном опыте. Проект создан в рамках программы художественных резиденций Дома культуры « ГЭС-2 ». T Проект междисциплинарных художников из Казани Ангелины Миграновой и Родиона Сабирова стал результатом долгого и глубокого исследования пространства « ГЭС-2 ». В его основу легли личные размышления сотрудников Дома культуры об утраченных предметах — двенадцать историй о прошлом, переживаний в настоящем и фантазий о будущем. Иллюстрация: Полина Калашникова Прошлое возникает, когда к нему прикасается настоящее. Настоящее — это вы, вы — это присутствие. Без вашего присутствия нет будущего, без вашего присутствия нет прошлого, без вашего присутствия нет настоящего. — Ангелина Мигранова, Родион Сабиров Это многоголосие отражено в названии спектакля, сложенном из инициалов рассказчиков. Авторы проекта создают пространство, где каждый может почувствовать себя частью единого целого или найти личную точку тишины и покоя для саморефлексии. Короткие 8—12-минутные монологи можно слушать подряд или по одному, включая аудиоплеер в разных локациях « ГЭС-2 ». Вместе они создают очень личный портрет культурной институции. Прогулка по Дому культуры превращается в путешествие по воспоминаниям людей, благодаря которым архитектура бывшей электростанции обретает новые смыслы и человеческое измерение. Чтобы прослушать спектакль, зарегистрируйтесь. В день спектакля возьмите на стойке информации аудиоплеер с наушниками и иллюстрированную брошюру. Истории можно слушать в любом месте и в любом порядке. Общая продолжительность спектакля — около 2.5 часов. Аудиоспектакль дополняет иллюстрированная брошюра, которую можно взять на стойке информации вместе с аудиогидом. Действующие лица Анастасия Шихирева — специалист по работе с посетителями. Алиса Прудникова — программный директор. Григорий Чередов — директор издательских программ. Анастасия Щеголькова — специалист по работе с посетителями. Влад Колесников — куратор программ доступности для сообщества глухих. Оксана Осадчая — куратор программ доступности по работе с незрячими посетителями. Ольга Кавалай-Аксенова — библиотекарь. Юрий Ирхин — гардеробщик. Полина Зотова — куратор проектов для детской и семейной аудитории. Сергей Елькин — гардеробщик. Екатерина Ванцева — директор по развитию бренда и коммуникации. Артем Бондаревский — генеральный директ",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-25-588b1b9599",
       "status": "rejected",
       "kind": "event",
@@ -72857,6 +73229,35 @@
       "reviewed_at": "2026-11-13"
     },
     {
+      "id": "moscow-2026-11-26-91c3c05e64",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-26",
+      "time": "11:30",
+      "title": "А. А. Г. А. В. О. О. Ю. П. С. Е. А.",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "игра"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/a-a-g-a-v-o-o-y-p-s-e-a",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-17",
+      "audience_text": "› Резиденции Дата: 20 ноя– 20 дек 2026 Регистрация Возраст: от 12 Тип: Аудиоспектакль Место: ГЭС-2 Доступность  Возрастные ограничения 12+ Аудиоспектакль-променад об утраченных вещах и приобретенном опыте. Проект создан в рамках программы художественных резиденций Дома культуры « ГЭС-2 ». T Проект междисциплинарных художников из Казани Ангелины Миграновой и Родиона Сабирова стал результатом долгого и глубокого исследования пространства « ГЭС-2 ». В его основу легли личные размышления сотрудников Дома культуры об утраченных предметах — двенадцать историй о прошлом, переживаний в настоящем и фантазий о будущем. Иллюстрация: Полина Калашникова Прошлое возникает, когда к нему прикасается настоящее. Настоящее — это вы, вы — это присутствие. Без вашего присутствия нет будущего, без вашего присутствия нет прошлого, без вашего присутствия нет настоящего. — Ангелина Мигранова, Родион Сабиров Это многоголосие отражено в названии спектакля, сложенном из инициалов рассказчиков. Авторы проекта создают пространство, где каждый может почувствовать себя частью единого целого или найти личную точку тишины и покоя для саморефлексии. Короткие 8—12-минутные монологи можно слушать подряд или по одному, включая аудиоплеер в разных локациях « ГЭС-2 ». Вместе они создают очень личный портрет культурной институции. Прогулка по Дому культуры превращается в путешествие по воспоминаниям людей, благодаря которым архитектура бывшей электростанции обретает новые смыслы и человеческое измерение. Чтобы прослушать спектакль, зарегистрируйтесь. В день спектакля возьмите на стойке информации аудиоплеер с наушниками и иллюстрированную брошюру. Истории можно слушать в любом месте и в любом порядке. Общая продолжительность спектакля — около 2.5 часов. Аудиоспектакль дополняет иллюстрированная брошюра, которую можно взять на стойке информации вместе с аудиогидом. Действующие лица Анастасия Шихирева — специалист по работе с посетителями. Алиса Прудникова — программный директор. Григорий Чередов — директор издательских программ. Анастасия Щеголькова — специалист по работе с посетителями. Влад Колесников — куратор программ доступности для сообщества глухих. Оксана Осадчая — куратор программ доступности по работе с незрячими посетителями. Ольга Кавалай-Аксенова — библиотекарь. Юрий Ирхин — гардеробщик. Полина Зотова — куратор проектов для детской и семейной аудитории. Сергей Елькин — гардеробщик. Екатерина Ванцева — директор по развитию бренда и коммуникации. Артем Бондаревский — генеральный директ",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-26-588b1b9599",
       "status": "rejected",
       "kind": "event",
@@ -73126,7 +73527,7 @@
       "checked_at": "",
       "review_reason": "primary_source_required",
       "discovered_at": "2026-11-12",
-      "audience_text": "Opportunity details | Thrive Residencies: A Good Enough Net | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register Thrive Residencies: A Good Enough Net Deadline: 27/11/2026 City: Glastonbury | Country: United Kingdom | Jess Wright Paid opportunity Report this? Description Opportunity FAQs Make a submission Contact curator A residency programme and a year's anthology of relational practices, curated and held by artist Tessa Wills, director of Thrive. Thrive would like to invite artists for a paid residency looking at kin-making practices in a hyper-local way. We will offer space and time for refuge and reflection here on the Somerset Levels, to develop creative practices which help shore up the kinds of relationships we need right now as systems fail around us. Thrive is an organisation operating from a specific piece of land near Glastonbury in the Somerset Levels. Thrive works through art and psychotherapy to trouble and practice the phenomenon of belonging. A Good Enough Net Thrive is offering 6 individual paid residencies on the land, each lasting 5 to 7 days. Each selected artist will receive a flat fee of £750. You can select which week and number of days from the following time periods between January and August 2027: 11/1/27 – 5/2/27 22/2/27 – 21/3/27 12/4/27 – 7/5/27 17/5/27 – 21/5/27 7/6/27 – 16/7/27 16/8/27 – 27/8/27 In addition to the £750 fee you receive, we also cover the following expenses. You can choose from one of the following options: Option 1: Onsite accommodation Accommodation: Free for the artist for up to 6 nights Food: Breakfast (toast/cereal/hot drink) and communal dinner/hot meal provided each day for free Travel support: £100 for all residency travel Option 2: Offsite accommodation Accommodation: £400 for residency period Food: £100 for residency period Travel support: £100 for all residency travel Also included will be some peer mentorship, space and time to think, access to the land and the nature reserve, a bike to borrow during your stay and a small budget towards materials if required. Curatorial statement and invitation At this point, we humans operate in systems of care where a tiny number of people do an enormous amount of love and labour necessary for survival, bridging the gaps where systems fail. The nuclear family can’t hold everything we ask of it, and the broader social, environmental, educational, political systems we were told would catch us are collapsing, being dismantled, or never held us in the first place. The children still need feeding. The rivers are changing. We’re still working out how to love one another. So: a net that’s good enough. Full of holes, always needing mending, something you can climb into or out of. I want to practise making it with you, and living with its gaps, and with the fear that nothing might catch us. The invitation is to choose a relationship you want to begin, deepen, change or experiment with. Thrive can help with introductions. A week can start something, but maybe not finish it. Maybe you take it away. Maybe you leave it with the other party. I’m interested in art that does something to a relationship, not just depicts it. That may mean refusal, awkwardness or failure alongside pleasure and surprise. Maybe the main thing we need is the capacity to sit with the disappointment of relationships and love life anyway. I’d rather stay with that trouble than tidy it away. Play is welcome, and I’d love it if someone laughed. This is a shopping list of ideas to inspire, a flurry, a murmur, which I offer as a starting place. Take what you like, cross out what you don't, add your own. time (how long to build relationships you want? how long to break it?) feeling safe where you have a right to be somewhere friendly somewhere hostile, or both the gap between one set of systems failing and the next growing (sitting in it, not rushing to fill it) what children know about trust and play (ask them) digging, planting, tending (useful art) a village our village, playing together: a fete, a feud, a football match, a bake-off that goes too far the relationship you've wanted and never known how to begin goats, foxes, swans, starlings, rats, faeries, water, and how they play words (the tricky ones): family, collective, structures, crumbling something sensible, something ridiculous anything we've forgotten: The collective artwork — an anthology of relational practices Each artist will be invited to contribute a trace of their residency to a collective zine. This might take the form of images, writing, instructions, reflections or something else entirely. We're interested in what you tried, what you discovered and what remains unresolved. Bringing together contributions from artists who may never meet, the zine will become a collective artwork: a field guide to kin making, offering ideas and practices that others might try, adapt or make their own. The zine will be shared locally and may travel further through talks, exhibitions and events. Reflection and evaluation As part of the programme, we're interested in learning about what happens when artists are given time and space to experiment with relationships, belonging and place. We'll invite artists to complete short questionnaires before and after their residency, exploring their experiences of belonging, wellbeing, nature connection and artistic development. We'll also invite you to keep a simple photographic diary and take part in a short reflective conversation about your experience. This isn't about measuring artistic success or expecting particular outcomes. We're just as interested in the unexpected, unfinished or challenging aspects of the work as we are in what flourishes. Your reflections will help us learn from the programme and shape how Thrive supports artists in the future. Any Questions before you apply? For queries regarding the residency, timeframes and general enquiries please econtact Jess; Creative Producer. To have a longer chat about concepts, you can book in a chat with Tessa. Please contact either through the 'Contact curator' tab. Make a submission Contact the curator When is the deadline? Midday 27th November 2026. How much does it cost? There is no cost to apply. Are there payments to artists? Each resident artist will receive a flat fee of £750. Does the location have disabled access? The location is remote and rural with limited public transport, where possible we will support participants with access needs. How do you decide on proposals? Shortlisted applicants will be interviewed w/c 7th December 2026. You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Advertisement Other opportunities Craft Open and Market Are you a craft maker, artist or creative? Do you sew, knit, crochet, make jewellery, create... ARTISTS WANTED for Exhibition at 35aSpace — LONDON *FREE Exhibition Space* I’m looking for artists interested in showing their work in a small, lived-in studio/home in... Exhibit in Brazil - Timeless Exhibition A unique opportunity for artists to show their work in a different country without having to be... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
+      "audience_text": "Opportunity details | Thrive Residencies: A Good Enough Net | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register Thrive Residencies: A Good Enough Net Deadline: 27/11/2026 City: Glastonbury | Country: United Kingdom | Jess Wright Paid opportunity Report this? Description Opportunity FAQs Make a submission Contact curator A residency programme and a year's anthology of relational practices, curated and held by artist Tessa Wills, director of Thrive. Thrive would like to invite artists for a paid residency looking at kin-making practices in a hyper-local way. We will offer space and time for refuge and reflection here on the Somerset Levels, to develop creative practices which help shore up the kinds of relationships we need right now as systems fail around us. Thrive is an organisation operating from a specific piece of land near Glastonbury in the Somerset Levels. Thrive works through art and psychotherapy to trouble and practice the phenomenon of belonging. A Good Enough Net Thrive is offering 6 individual paid residencies on the land, each lasting 5 to 7 days. Each selected artist will receive a flat fee of £750. You can select which week and number of days from the following time periods between January and August 2027: 11/1/27 – 5/2/27 22/2/27 – 21/3/27 12/4/27 – 7/5/27 17/5/27 – 21/5/27 7/6/27 – 16/7/27 16/8/27 – 27/8/27 In addition to the £750 fee you receive, we also cover the following expenses. You can choose from one of the following options: Option 1: Onsite accommodation Accommodation: Free for the artist for up to 6 nights Food: Breakfast (toast/cereal/hot drink) and communal dinner/hot meal provided each day for free Travel support: £100 for all residency travel Option 2: Offsite accommodation Accommodation: £400 for residency period Food: £100 for residency period Travel support: £100 for all residency travel Also included will be some peer mentorship, space and time to think, access to the land and the nature reserve, a bike to borrow during your stay and a small budget towards materials if required. Curatorial statement and invitation At this point, we humans operate in systems of care where a tiny number of people do an enormous amount of love and labour necessary for survival, bridging the gaps where systems fail. The nuclear family can’t hold everything we ask of it, and the broader social, environmental, educational, political systems we were told would catch us are collapsing, being dismantled, or never held us in the first place. The children still need feeding. The rivers are changing. We’re still working out how to love one another. So: a net that’s good enough. Full of holes, always needing mending, something you can climb into or out of. I want to practise making it with you, and living with its gaps, and with the fear that nothing might catch us. The invitation is to choose a relationship you want to begin, deepen, change or experiment with. Thrive can help with introductions. A week can start something, but maybe not finish it. Maybe you take it away. Maybe you leave it with the other party. I’m interested in art that does something to a relationship, not just depicts it. That may mean refusal, awkwardness or failure alongside pleasure and surprise. Maybe the main thing we need is the capacity to sit with the disappointment of relationships and love life anyway. I’d rather stay with that trouble than tidy it away. Play is welcome, and I’d love it if someone laughed. This is a shopping list of ideas to inspire, a flurry, a murmur, which I offer as a starting place. Take what you like, cross out what you don't, add your own. time (how long to build relationships you want? how long to break it?) feeling safe where you have a right to be somewhere friendly somewhere hostile, or both the gap between one set of systems failing and the next growing (sitting in it, not rushing to fill it) what children know about trust and play (ask them) digging, planting, tending (useful art) a village our village, playing together: a fete, a feud, a football match, a bake-off that goes too far the relationship you've wanted and never known how to begin goats, foxes, swans, starlings, rats, faeries, water, and how they play words (the tricky ones): family, collective, structures, crumbling something sensible, something ridiculous anything we've forgotten: The collective artwork — an anthology of relational practices Each artist will be invited to contribute a trace of their residency to a collective zine. This might take the form of images, writing, instructions, reflections or something else entirely. We're interested in what you tried, what you discovered and what remains unresolved. Bringing together contributions from artists who may never meet, the zine will become a collective artwork: a field guide to kin making, offering ideas and practices that others might try, adapt or make their own. The zine will be shared locally and may travel further through talks, exhibitions and events. Reflection and evaluation As part of the programme, we're interested in learning about what happens when artists are given time and space to experiment with relationships, belonging and place. We'll invite artists to complete short questionnaires before and after their residency, exploring their experiences of belonging, wellbeing, nature connection and artistic development. We'll also invite you to keep a simple photographic diary and take part in a short reflective conversation about your experience. This isn't about measuring artistic success or expecting particular outcomes. We're just as interested in the unexpected, unfinished or challenging aspects of the work as we are in what flourishes. Your reflections will help us learn from the programme and shape how Thrive supports artists in the future. Any Questions before you apply? For queries regarding the residency, timeframes and general enquiries please econtact Jess; Creative Producer. To have a longer chat about concepts, you can book in a chat with Tessa. Please contact either through the 'Contact curator' tab. Make a submission Contact the curator When is the deadline? Midday 27th November 2026. How much does it cost? There is no cost to apply. Are there payments to artists? Each resident artist will receive a flat fee of £750. Does the location have disabled access? The location is remote and rural with limited public transport, where possible we will support participants with access needs. How do you decide on proposals? Shortlisted applicants will be interviewed w/c 7th December 2026. You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Advertisement Other opportunities ARTISTS WANTED for Exhibition at 35aSpace — LONDON *FREE Exhibition Space* I’m looking for artists interested in showing their work in a small, lived-in studio/home in... Exhibit in Brazil - Timeless Exhibition A unique opportunity for artists to show their work in a different country without having to be... We are all Wonder Women “We Are All Wonder Women” is an international virtual exhibition organised by DiversaMente... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
       "price_type": "unknown",
       "availability_evidence": "",
       "ticket_required": false,
@@ -73413,7 +73814,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-27-aa8503e63c",
@@ -73863,7 +74266,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-28-1f97efa686",
@@ -73974,7 +74379,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-28-bf2f348c3e",
@@ -74115,6 +74522,34 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": "2026-11-03"
+    },
+    {
+      "id": "moscow-2026-11-28-9a03ab11cd",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-28",
+      "time": "17:00",
+      "title": "Спектакль «Карлсон, который живёт на крыше»",
+      "venue": "Музей Транспорта Москвы",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "игра"
+      ],
+      "description": "",
+      "url": "https://mtmuseum.ru/affiche/spektakl-karlson-kotoryy-zhivyet-na-kryshe/",
+      "source": "Музей транспорта Москвы — афиша",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-17",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "international-2026-11-29-e272fef6c8",
@@ -74485,7 +74920,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-29-e126f26ac4",
@@ -74972,7 +75409,9 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "sold_out",
-      "availability_checked_at": "2026-11-17"
+      "availability_checked_at": "2026-11-17",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-30-62f0c036fa",
@@ -75023,7 +75462,7 @@
       "source": "Design Mate — календарь",
       "checked_at": "",
       "review_reason": "discovery_source_needs_primary_verification",
-      "discovered_at": "2026-11-16",
+      "discovered_at": "2026-11-17",
       "price_type": "free",
       "availability_evidence": "",
       "ticket_required": false,
@@ -75064,7 +75503,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-30-eebb063dbc",
@@ -75139,7 +75580,8 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-30-5bd3d8d4c8",
@@ -75709,6 +76151,34 @@
       "reviewed_at": "2026-11-05"
     },
     {
+      "id": "moscow-2026-12-05-9d15e171a6",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-12-05",
+      "time": "16:00",
+      "title": "Керамические подсвечники",
+      "venue": "Центр Зотов",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": true,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "",
+      "url": "https://centrezotov.ru/events/keramicheskie-podsvechniki/",
+      "source": "Центр Зотов — отдельные события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-17",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-12-05-84c379d167",
       "status": "rejected",
       "kind": "event",
@@ -75771,7 +76241,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-12-06-9baa5f2467",
@@ -75937,7 +76409,7 @@
       "checked_at": "",
       "review_reason": "primary_source_required",
       "discovered_at": "2026-11-13",
-      "audience_text": "Opportunity details | A Matter of Scale | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register A Matter of Scale Deadline: 10/12/2026 Region: London | Country: United Kingdom | Cista Arts Report this? Description Opportunity FAQs Make a submission Contact curator CISTA ARTS invites artists worldwide to submit work for A Matter of Scale, an international online group exhibition taking place in January 2027. Exploring how scale, proportion and perspective influence the ways we see and understand the world, the exhibition welcomes diverse artistic interpretations, from personal experiences and everyday objects to social relationships, landscapes, abstraction and material experimentation. Artists working across contemporary art forms are encouraged to apply. Scale does not refer only to physical size, and existing artworks are welcome. A Matter of Scale Exhibition Theme: What makes something significant: its size, its presence, or the way we choose to see it? Scale shapes how we understand the world. A small object can carry enormous personal or cultural significance, while something monumental may become almost invisible through familiarity. What we notice, overlook or consider important often depends on our perspective. CISTA ARTS invites artists worldwide to submit work for A Matter of Scale, an international online group exhibition exploring how scale, proportion and perspective influence our understanding of the world. Moving beyond physical dimensions, the exhibition considers relationships between the individual and the collective, the intimate and the monumental, the visible and the overlooked. We welcome diverse artistic interpretations of the theme, including works that explore: Perspective, proportion and changes in visual perception The relationship between small details and larger structures The human body, architecture, landscape and the natural world Everyday objects and their personal, social or cultural significance Environmental change and our relationship with nature Repetition, patterns, abstraction and material experimentation Digital environments, spatial relationships and shifting perceptions of reality These are suggested directions rather than fixed categories. We are interested in how artists explore the idea of scale through their subjects, materials, compositions and individual perspectives. An artwork does not need to be particularly large or small to participate. Scale is considered here as a way of exploring relationships, meaning and perception, rather than simply physical size. Both existing and newly created artworks are welcome, provided they engage meaningfully with the exhibition theme. Dates: Submission Deadline: 10 December 2026 Exhibition Dates: 4- 30 January 2027 Submission Guidelines: We are keen to learn about you! Please submit the following: Contact information (full name, email, mobile) Details of the artworks (title, size, medium, year, price) Artist statement (max 100 words on how your work relates to the theme) Short biography (max 100 words, third-person) Up to 4 sample images of your work Please note: Only two artworks per artist will be selected for exhibition. Selected Participants Will Receive: Exhibition of your work on the CISTA ARTS online platform (4-30 January 2027) Inclusion in a limited edition, professionally produced paperback catalogue (UK-based) + complimentary PDF copy No commission taken on sales Daily social media features in our Meet the Artist series Exhibition placement on our homepage + archived access after close Direct links to your website or social media in all features Certificate of participation Participation Fee: £30 for one accepted artwork | £50 for two accepted artworks Applying to this exhibition opportunity is free. Participation Fee Benefits: Selected artists will have their work exhibited online for the full month on our homepage, included in a professionally produced printed and digital exhibition catalogue, featured in daily social media promotion under our ‘Meet the Artist’ series, and receive a certificate of participation. CISTA ARTS takes no commission on sales. Digital Exposure and Reach: We currently have over 12.2K followers on Instagram, in addition to a Facebook audience and a mailing list of over 2K subscribers. Our online exhibitions attract between 1,200–1,800 unique visitors, and our website receives more than 4,000 visits per month. Each participating artist will be permanently featured on our Past Exhibitions page, with direct links to their own website or social media for continued exposure. Exhibition Access: The exhibition is fully accessible to the public via our official website, with no login or fee required. Exhibition History: Since our founding in 2018, CISTA ARTS has organised over 60 solo and group exhibitions, both online and in hybrid formats. Our platform is designed to support emerging and mid-career artists across borders, particularly those facing visa and mobility restrictions. Artist Feedback: We have received consistently positive reviews from artists who have worked with us, with many praising our professionalism, communication, and the quality of our exhibitions. These testimonials can be viewed on our Google Reviews page. About Us: Based in London, CISTA ARTS is an independent, artist-led curatorial platform dedicated to inclusive programming, cross-cultural dialogue, and supporting underrepresented voices in contemporary visual art. Make a submission Contact the curator Who is eligible for this opportunity? Artists of all mediums and from all countries are welcome to apply, including painters, sculptors, photographers, designers, and video artists. When is the deadline? 10 December 2026. How many works can I submit? The sample of your work should be up to 4 images. Please note only two artworks from each artist will be exhibited. When is the delivery date? This is an online exhibition, there is no delivery date. How much does it cost? Applying to this exhibition opportunity is free; if your work is accepted, there will be a £30 fee for one accepted artwork and a £50 fee for two accepted artworks. You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Advertisement Other opportunities Craft Open and Market Are you a craft maker, artist or creative? Do you sew, knit, crochet, make jewellery, create... ARTISTS WANTED for Exhibition at 35aSpace — LONDON *FREE Exhibition Space* I’m looking for artists interested in showing their work in a small, lived-in studio/home in... Exhibit in Brazil - Timeless Exhibition A unique opportunity for artists to show their work in a different country without having to be... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
+      "audience_text": "Opportunity details | A Matter of Scale | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register A Matter of Scale Deadline: 10/12/2026 Region: London | Country: United Kingdom | Cista Arts Report this? Description Opportunity FAQs Make a submission Contact curator CISTA ARTS invites artists worldwide to submit work for A Matter of Scale, an international online group exhibition taking place in January 2027. Exploring how scale, proportion and perspective influence the ways we see and understand the world, the exhibition welcomes diverse artistic interpretations, from personal experiences and everyday objects to social relationships, landscapes, abstraction and material experimentation. Artists working across contemporary art forms are encouraged to apply. Scale does not refer only to physical size, and existing artworks are welcome. A Matter of Scale Exhibition Theme: What makes something significant: its size, its presence, or the way we choose to see it? Scale shapes how we understand the world. A small object can carry enormous personal or cultural significance, while something monumental may become almost invisible through familiarity. What we notice, overlook or consider important often depends on our perspective. CISTA ARTS invites artists worldwide to submit work for A Matter of Scale, an international online group exhibition exploring how scale, proportion and perspective influence our understanding of the world. Moving beyond physical dimensions, the exhibition considers relationships between the individual and the collective, the intimate and the monumental, the visible and the overlooked. We welcome diverse artistic interpretations of the theme, including works that explore: Perspective, proportion and changes in visual perception The relationship between small details and larger structures The human body, architecture, landscape and the natural world Everyday objects and their personal, social or cultural significance Environmental change and our relationship with nature Repetition, patterns, abstraction and material experimentation Digital environments, spatial relationships and shifting perceptions of reality These are suggested directions rather than fixed categories. We are interested in how artists explore the idea of scale through their subjects, materials, compositions and individual perspectives. An artwork does not need to be particularly large or small to participate. Scale is considered here as a way of exploring relationships, meaning and perception, rather than simply physical size. Both existing and newly created artworks are welcome, provided they engage meaningfully with the exhibition theme. Dates: Submission Deadline: 10 December 2026 Exhibition Dates: 4- 30 January 2027 Submission Guidelines: We are keen to learn about you! Please submit the following: Contact information (full name, email, mobile) Details of the artworks (title, size, medium, year, price) Artist statement (max 100 words on how your work relates to the theme) Short biography (max 100 words, third-person) Up to 4 sample images of your work Please note: Only two artworks per artist will be selected for exhibition. Selected Participants Will Receive: Exhibition of your work on the CISTA ARTS online platform (4-30 January 2027) Inclusion in a limited edition, professionally produced paperback catalogue (UK-based) + complimentary PDF copy No commission taken on sales Daily social media features in our Meet the Artist series Exhibition placement on our homepage + archived access after close Direct links to your website or social media in all features Certificate of participation Participation Fee: £30 for one accepted artwork | £50 for two accepted artworks Applying to this exhibition opportunity is free. Participation Fee Benefits: Selected artists will have their work exhibited online for the full month on our homepage, included in a professionally produced printed and digital exhibition catalogue, featured in daily social media promotion under our ‘Meet the Artist’ series, and receive a certificate of participation. CISTA ARTS takes no commission on sales. Digital Exposure and Reach: We currently have over 12.2K followers on Instagram, in addition to a Facebook audience and a mailing list of over 2K subscribers. Our online exhibitions attract between 1,200–1,800 unique visitors, and our website receives more than 4,000 visits per month. Each participating artist will be permanently featured on our Past Exhibitions page, with direct links to their own website or social media for continued exposure. Exhibition Access: The exhibition is fully accessible to the public via our official website, with no login or fee required. Exhibition History: Since our founding in 2018, CISTA ARTS has organised over 60 solo and group exhibitions, both online and in hybrid formats. Our platform is designed to support emerging and mid-career artists across borders, particularly those facing visa and mobility restrictions. Artist Feedback: We have received consistently positive reviews from artists who have worked with us, with many praising our professionalism, communication, and the quality of our exhibitions. These testimonials can be viewed on our Google Reviews page. About Us: Based in London, CISTA ARTS is an independent, artist-led curatorial platform dedicated to inclusive programming, cross-cultural dialogue, and supporting underrepresented voices in contemporary visual art. Make a submission Contact the curator Who is eligible for this opportunity? Artists of all mediums and from all countries are welcome to apply, including painters, sculptors, photographers, designers, and video artists. When is the deadline? 10 December 2026. How many works can I submit? The sample of your work should be up to 4 images. Please note only two artworks from each artist will be exhibited. When is the delivery date? This is an online exhibition, there is no delivery date. How much does it cost? Applying to this exhibition opportunity is free; if your work is accepted, there will be a £30 fee for one accepted artwork and a £50 fee for two accepted artworks. You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Advertisement Other opportunities ARTISTS WANTED for Exhibition at 35aSpace — LONDON *FREE Exhibition Space* I’m looking for artists interested in showing their work in a small, lived-in studio/home in... Exhibit in Brazil - Timeless Exhibition A unique opportunity for artists to show their work in a different country without having to be... We are all Wonder Women “We Are All Wonder Women” is an international virtual exhibition organised by DiversaMente... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
       "price_type": "unknown",
       "availability_evidence": "",
       "ticket_required": false,
@@ -75980,7 +76452,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-12-10-ceca5c9467",
@@ -76133,7 +76607,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-12-11-fce2d05097",
@@ -76244,7 +76720,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-12-12-8cb3f8d42f",
@@ -76505,7 +76983,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-12-13-550f9318dc",
@@ -76696,7 +77176,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-12-14-faaa268ecb",
@@ -76879,7 +77361,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-12-16-94f9102225",
@@ -76950,7 +77434,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-12-17-c0f0f9a5b5",
@@ -76991,6 +77477,35 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "moscow-2026-12-17-91c3c05e64",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-12-17",
+      "time": "11:30",
+      "title": "А. А. Г. А. В. О. О. Ю. П. С. Е. А.",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "игра"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/a-a-g-a-v-o-o-y-p-s-e-a",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-17",
+      "audience_text": "› Резиденции Дата: 20 ноя– 20 дек 2026 Регистрация Возраст: от 12 Тип: Аудиоспектакль Место: ГЭС-2 Доступность  Возрастные ограничения 12+ Аудиоспектакль-променад об утраченных вещах и приобретенном опыте. Проект создан в рамках программы художественных резиденций Дома культуры « ГЭС-2 ». T Проект междисциплинарных художников из Казани Ангелины Миграновой и Родиона Сабирова стал результатом долгого и глубокого исследования пространства « ГЭС-2 ». В его основу легли личные размышления сотрудников Дома культуры об утраченных предметах — двенадцать историй о прошлом, переживаний в настоящем и фантазий о будущем. Иллюстрация: Полина Калашникова Прошлое возникает, когда к нему прикасается настоящее. Настоящее — это вы, вы — это присутствие. Без вашего присутствия нет будущего, без вашего присутствия нет прошлого, без вашего присутствия нет настоящего. — Ангелина Мигранова, Родион Сабиров Это многоголосие отражено в названии спектакля, сложенном из инициалов рассказчиков. Авторы проекта создают пространство, где каждый может почувствовать себя частью единого целого или найти личную точку тишины и покоя для саморефлексии. Короткие 8—12-минутные монологи можно слушать подряд или по одному, включая аудиоплеер в разных локациях « ГЭС-2 ». Вместе они создают очень личный портрет культурной институции. Прогулка по Дому культуры превращается в путешествие по воспоминаниям людей, благодаря которым архитектура бывшей электростанции обретает новые смыслы и человеческое измерение. Чтобы прослушать спектакль, зарегистрируйтесь. В день спектакля возьмите на стойке информации аудиоплеер с наушниками и иллюстрированную брошюру. Истории можно слушать в любом месте и в любом порядке. Общая продолжительность спектакля — около 2.5 часов. Аудиоспектакль дополняет иллюстрированная брошюра, которую можно взять на стойке информации вместе с аудиогидом. Действующие лица Анастасия Шихирева — специалист по работе с посетителями. Алиса Прудникова — программный директор. Григорий Чередов — директор издательских программ. Анастасия Щеголькова — специалист по работе с посетителями. Влад Колесников — куратор программ доступности для сообщества глухих. Оксана Осадчая — куратор программ доступности по работе с незрячими посетителями. Ольга Кавалай-Аксенова — библиотекарь. Юрий Ирхин — гардеробщик. Полина Зотова — куратор проектов для детской и семейной аудитории. Сергей Елькин — гардеробщик. Екатерина Ванцева — директор по развитию бренда и коммуникации. Артем Бондаревский — генеральный директ",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "international-2026-12-18-9e69ff8f97",
@@ -77591,12 +78106,14 @@
       "checked_at": "",
       "review_reason": "primary_source_required",
       "discovered_at": "2026-11-16",
-      "audience_text": "Opportunity details | The GREAT Leeds Fungi Exhibition 2027 - Exhibitor Applications | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register The GREAT Leeds Fungi Exhibition 2027 - Exhibitor Applications Deadline: 31/01/2027 City: Leeds | Country: United Kingdom | Studio Greenly Report this? Description Opportunity FAQs Make a submission Contact curator Calling all mushroom/fungi/mycelium inspired artists - apply to exhibit your work at The GREAT Leeds Fungi Exhibition 2027! Following the success of the past 3 years of the exhibition, we're excited to announce GLFE 2027! It will follow a similar format to last year - live music and performances on the open evening, and open for daytime viewing the following day, along with creative workshops. The GREAT Leeds Fungi Exhibition 2027 will take place from Friday 2nd April to Saturday 3rd April 2027 at Headrow House , 19a The Headrow, Leeds LS1 6PU. The evening opening event will take place on Friday 2nd April, 7:00-9:00 pm, with the bar open for drinks. The exhibition will be open for the daytime opening on Saturday 3rd April from 12:00 - 5:00 pm, featuring creative workshops. Key Information Apply to exhibit your work at this exciting exhibition showcasing the work of artists working with themes of mushrooms, fungi and the mycelial world! Most mediums accepted within the limits of the venue. We will have hanging boards for wall-mounted work and tables for sculptural/tabletop easels. Floor-standing space and a screen are also available. Applicants can also provide their own displays if the venue/collective cannot provide e.g. if you have an audio submission, you would need to supply headphones and a way to play the file(s). Free to participate. Your application can be for existing or new work that will be made. There will also be the opportunity to sell your exhibited pieces as well as smaller work in our shop. Please note that if you have exhibited in previous years, your application is more likely to be accepted if you submit different work. Set up on Friday 2nd April will begin from 11 am, when you must arrange to drop off your work (or someone else on your behalf) at the venue before 2 pm and work with Studio Greenly to best showcase your piece(s). You must be able to collect your work after exhibiting the following day from 5 pm on Saturday 3rd April or via an alternative arrangement with the organisers - please tick the relevant box if you wish to post your work to us instead! If posting either or both ways, we are unable to fund posting fees; you will need to pay for these yourself, so please take this into account. You will need to pack and protect your work really well to prevent damage in transit. Selling Work in The Shop There will be a dedicated shop for selling smaller pieces on the weekend from artists, so if this interests you, please fill out the section in this form. Exhibitors can sell up to 30 individual items in the shop. Any work that is sold on the night will have a 20% commission fee, and you will be paid in the week following the exhibition if you make any sales via bank transfer. Any unsold shop pieces can be collected from 5 pm on Saturday 3rd April along with your exhibited pieces or via an alternative arrangement with the organisers - please tick the relevant box if you wish to post your work to us instead! If posting either or both ways, we are unable to fund posting fees; you will need to pay for these yourself, so please take this into account. Any exhibited pieces that are sold can be collected from 5 pm on Saturday 3rd April, mailed by post to the buyer (we will pay for postage) or via an alternative arrangement with the organisers. This year, we are offering to reduce the 20% commission fees to 10% for exhibitors who are able to help out for 2 hours on either day of the exhibition . This will involve being stationed at either the door for checking/selling tickets or in the shop to track sales and take payments. We'll have 2 people for each timeslot helping out, but we will need 3 people in the shop for the opening as things can get very busy. Please let us know if you are available and what timeslots you can do. Thank you in advance for this - you are really helping us out! AI Policy We have a strict no AI policy. If we find that you have applied with AI art or are selling AI art, your application will be declined or you will be asked to remove your work immediately, and you will not be offered future opportunities with us. Accessibility The venue has a lift and two accessible toilets. Please let us know your access needs. Deadline Applications close on Sunday 31st January 2027 at midnight! You will hear back from us after Monday 1st February 2027 via CuratorSpace if you have been successful. Thank you for applying and good luck! Event artwork by the wonderful Izzie Hinton Smith. Make a submission Contact the curator Who is eligible for this opportunity? Any artists or collectives working within the themes of the exhibition who can commute to Headrow House, Leeds, on the dates of the exhibition. Please ensure you are available for both dates/times for drop off and pick up of work. When is the deadline? Applications close on Sunday 31st January 2027 at midnight. You will hear back from us after Monday 1st February 2027 via CuratorSpace if your application has been successful. How many works can I submit? Maximum of 1 exhibited piece (or collection of pieces) per entrant. When is the delivery date? Please ensure you or someone on your behalf are available to drop off work from 11 am to 2 pm on Friday 2nd April 2027 at Headrow House. You can also post work to our studio in advance of the exhibition. If posting either or both ways, we are unable to fund posting fees, you will need to pay for these yourself so please take this into account. When do I need to collect my work? Please ensure you or someone on your behalf are available to pick up your work from 5pm on Saturday 3rd April 2027 at Headrow House. If we are returning to you via post, we will arrange this with you in the week following the exhibition. Is there a private view / opening? The evening opening event will take place on Friday 2nd April, 7:00-9:00 pm, with the bar open for drinks. Unfortunately this year due to budget constraints, we cannot offer free tickets to exhibitors. We may be able to offer a discount code so stay tuned. What are the exhibition opening hours? The evening opening event will take place on Friday 2nd April 7:00 - 9:00pm with the bar open for drinks (18+ only). The exhibition will be open for the day opening on Saturday 3rd April from 12:00 - 5:00pm (all ages). Does the location have disabled access? Yes Headrow House has a lift and two accessible toilets. What publicity will be provided as part of the opportunity? Flyers will be distributed at the venue and around the local area and we will be posting lots on social media plus our website. Do I need to be present? You do not need to be present for the exhibition but it would be great to have you come along and bring friends/family/loved ones on one of the days. Please ensure you are available for both dates/times for drop off and pick up of work (or let us know if you're posting instead). How do you decide on proposals? We're looking for exciting artwork that relates to the themes of mushrooms, fungi and the mycelial world. Most mediums accepted within the limits of the venue. What happens if my proposal is chosen? You will be contacted via CuratorSpace if your application is successful. You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Advertisement Other opportunities Craft Open and Market Are you a craft maker, artist or creative? Do you sew, knit, crochet, make jewellery, create... ARTISTS WANTED for Exhibition at 35aSpace — LONDON *FREE Exhibition Space* I’m looking for artists interested in showing their work in a small, lived-in studio/home in... Exhibit in Brazil - Timeless Exhibition A unique opportunity for artists to show their work in a different country without having to be... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
+      "audience_text": "Opportunity details | The GREAT Leeds Fungi Exhibition 2027 - Exhibitor Applications | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register The GREAT Leeds Fungi Exhibition 2027 - Exhibitor Applications Deadline: 31/01/2027 City: Leeds | Country: United Kingdom | Studio Greenly Report this? Description Opportunity FAQs Make a submission Contact curator Calling all mushroom/fungi/mycelium inspired artists - apply to exhibit your work at The GREAT Leeds Fungi Exhibition 2027! Following the success of the past 3 years of the exhibition, we're excited to announce GLFE 2027! It will follow a similar format to last year - live music and performances on the open evening, and open for daytime viewing the following day, along with creative workshops. The GREAT Leeds Fungi Exhibition 2027 will take place from Friday 2nd April to Saturday 3rd April 2027 at Headrow House , 19a The Headrow, Leeds LS1 6PU. The evening opening event will take place on Friday 2nd April, 7:00-9:00 pm, with the bar open for drinks. The exhibition will be open for the daytime opening on Saturday 3rd April from 12:00 - 5:00 pm, featuring creative workshops. Key Information Apply to exhibit your work at this exciting exhibition showcasing the work of artists working with themes of mushrooms, fungi and the mycelial world! Most mediums accepted within the limits of the venue. We will have hanging boards for wall-mounted work and tables for sculptural/tabletop easels. Floor-standing space and a screen are also available. Applicants can also provide their own displays if the venue/collective cannot provide e.g. if you have an audio submission, you would need to supply headphones and a way to play the file(s). Free to participate. Your application can be for existing or new work that will be made. There will also be the opportunity to sell your exhibited pieces as well as smaller work in our shop. Please note that if you have exhibited in previous years, your application is more likely to be accepted if you submit different work. Set up on Friday 2nd April will begin from 11 am, when you must arrange to drop off your work (or someone else on your behalf) at the venue before 2 pm and work with Studio Greenly to best showcase your piece(s). You must be able to collect your work after exhibiting the following day from 5 pm on Saturday 3rd April or via an alternative arrangement with the organisers - please tick the relevant box if you wish to post your work to us instead! If posting either or both ways, we are unable to fund posting fees; you will need to pay for these yourself, so please take this into account. You will need to pack and protect your work really well to prevent damage in transit. Selling Work in The Shop There will be a dedicated shop for selling smaller pieces on the weekend from artists, so if this interests you, please fill out the section in this form. Exhibitors can sell up to 30 individual items in the shop. Any work that is sold on the night will have a 20% commission fee, and you will be paid in the week following the exhibition if you make any sales via bank transfer. Any unsold shop pieces can be collected from 5 pm on Saturday 3rd April along with your exhibited pieces or via an alternative arrangement with the organisers - please tick the relevant box if you wish to post your work to us instead! If posting either or both ways, we are unable to fund posting fees; you will need to pay for these yourself, so please take this into account. Any exhibited pieces that are sold can be collected from 5 pm on Saturday 3rd April, mailed by post to the buyer (we will pay for postage) or via an alternative arrangement with the organisers. This year, we are offering to reduce the 20% commission fees to 10% for exhibitors who are able to help out for 2 hours on either day of the exhibition . This will involve being stationed at either the door for checking/selling tickets or in the shop to track sales and take payments. We'll have 2 people for each timeslot helping out, but we will need 3 people in the shop for the opening as things can get very busy. Please let us know if you are available and what timeslots you can do. Thank you in advance for this - you are really helping us out! AI Policy We have a strict no AI policy. If we find that you have applied with AI art or are selling AI art, your application will be declined or you will be asked to remove your work immediately, and you will not be offered future opportunities with us. Accessibility The venue has a lift and two accessible toilets. Please let us know your access needs. Deadline Applications close on Sunday 31st January 2027 at midnight! You will hear back from us after Monday 1st February 2027 via CuratorSpace if you have been successful. Thank you for applying and good luck! Event artwork by the wonderful Izzie Hinton Smith. Make a submission Contact the curator Who is eligible for this opportunity? Any artists or collectives working within the themes of the exhibition who can commute to Headrow House, Leeds, on the dates of the exhibition. Please ensure you are available for both dates/times for drop off and pick up of work. When is the deadline? Applications close on Sunday 31st January 2027 at midnight. You will hear back from us after Monday 1st February 2027 via CuratorSpace if your application has been successful. How many works can I submit? Maximum of 1 exhibited piece (or collection of pieces) per entrant. When is the delivery date? Please ensure you or someone on your behalf are available to drop off work from 11 am to 2 pm on Friday 2nd April 2027 at Headrow House. You can also post work to our studio in advance of the exhibition. If posting either or both ways, we are unable to fund posting fees, you will need to pay for these yourself so please take this into account. When do I need to collect my work? Please ensure you or someone on your behalf are available to pick up your work from 5pm on Saturday 3rd April 2027 at Headrow House. If we are returning to you via post, we will arrange this with you in the week following the exhibition. Is there a private view / opening? The evening opening event will take place on Friday 2nd April, 7:00-9:00 pm, with the bar open for drinks. Unfortunately this year due to budget constraints, we cannot offer free tickets to exhibitors. We may be able to offer a discount code so stay tuned. What are the exhibition opening hours? The evening opening event will take place on Friday 2nd April 7:00 - 9:00pm with the bar open for drinks (18+ only). The exhibition will be open for the day opening on Saturday 3rd April from 12:00 - 5:00pm (all ages). Does the location have disabled access? Yes Headrow House has a lift and two accessible toilets. What publicity will be provided as part of the opportunity? Flyers will be distributed at the venue and around the local area and we will be posting lots on social media plus our website. Do I need to be present? You do not need to be present for the exhibition but it would be great to have you come along and bring friends/family/loved ones on one of the days. Please ensure you are available for both dates/times for drop off and pick up of work (or let us know if you're posting instead). How do you decide on proposals? We're looking for exciting artwork that relates to the themes of mushrooms, fungi and the mycelial world. Most mediums accepted within the limits of the venue. What happens if my proposal is chosen? You will be contacted via CuratorSpace if your application is successful. You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Advertisement Other opportunities ARTISTS WANTED for Exhibition at 35aSpace — LONDON *FREE Exhibition Space* I’m looking for artists interested in showing their work in a small, lived-in studio/home in... Exhibit in Brazil - Timeless Exhibition A unique opportunity for artists to show their work in a different country without having to be... We are all Wonder Women “We Are All Wonder Women” is an international virtual exhibition organised by DiversaMente... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
       "price_type": "unknown",
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "russia-2027-01-31-a35dbe3875",

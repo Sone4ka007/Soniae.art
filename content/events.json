@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-16",
+  "updated_at": "2026-11-17",
   "events": [
     {
       "id": "moscow-2025-09-03-6b54dbdbf3",
@@ -38291,7 +38291,7 @@
       "reviewed_at": "2026-10-17",
       "availability": "unknown",
       "availability_checked_at": "",
-      "registration": false,
+      "registration": null,
       "price": null,
       "price_text": "",
       "price_type": "paid",
@@ -38317,7 +38317,7 @@
         "status": "approved",
         "telegram_include": false,
         "instagram_include": false,
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -41054,7 +41054,7 @@
       "address": "1-й Голутвинский переулок, 16, стр. 1",
       "price": 850,
       "price_text": "850 ₽; льготный — 650 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -41081,7 +41081,7 @@
       "time_evidence": "24 октября 2026 14:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
       "editor_overrides": {
-        "registration": false
+        "registration": null
       }
     },
     {
@@ -49427,7 +49427,7 @@
       "address": "Лаврушинский переулок, 12",
       "price": 650,
       "price_text": "650 ₽; онлайн — 700 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -49444,7 +49444,7 @@
         "telegram_include": false,
         "instagram_include": false,
         "status": "approved",
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -51674,14 +51674,16 @@
       "price": 0,
       "price_text": "",
       "registration": false,
-      "categories": [],
+      "categories": [
+        "выставка"
+      ],
       "description": "На метро Музей AZ находится между станциями метро «Маяковская» и «Белорусская» (кольцевая). Мы рекомендуем идти в Музей от станции «Маяковская». Вам нужен Выход №1 на 1-я Тверская-Ямская улица, 2-я Тверская-Ямская улица.",
       "url": "https://museum-az.com/event/territoriya-svobody-nonkonformisty-v-taruse/",
       "source": "Музей AZ — выставки и события",
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-10-20",
-      "price_type": "paid",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-10-25",
       "editor_overrides": {
@@ -55187,7 +55189,7 @@
       "address": "",
       "price_type": "free",
       "price_text": "бесплатно по регистрации",
-      "registration": false,
+      "registration": true,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -57101,7 +57103,7 @@
       "address": "",
       "price_type": "free",
       "price_text": "бесплатно по регистрации",
-      "registration": false,
+      "registration": true,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -63047,8 +63049,93 @@
       "instagram_include": false
     },
     {
-      "id": "moscow-2026-11-16-c3cb427dd4",
+      "id": "spb-2026-11-16-4f8b427389",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-16",
+      "time": "",
+      "title": "«Джаз-Рассказ» представит новый формат спектаклей",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "встреча"
+      ],
+      "description": "Молодой авторский театрально-музыкальный проект «Джаз-Рассказ» в ноябре покажет две постановки - 20 ноября в Особняке Брюллова - спектакль по мотивам рассказов Зощенко, а 26 ноября в доме еврейской культуры «ЕСОД» - историю о жизни Леонида Утёсова.",
+      "url": "https://spbcult.ru/news/anonsy/dzhaz-rasskaz-predstavit-novyy-format-spektakley-/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "past_event",
+      "discovered_at": "2026-11-16",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "spb-2026-11-16-375ef2761e",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-16",
+      "time": "",
+      "title": "«Марафон Дали» раскроет тайны символизма",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "21 ноября в музее дизайна «Основа» пройдёт «Марафон Дали» — тематический день, посвящённый Сальвадору Дали. Участники мероприятия смогут взглянуть на его наследие с разных сторон — от маркетинга и рекламных компаний до мистических образов и символизма. В программе лекции, показ фильма «Андалузский пёс» с обсуждением и экскурсия по выставке «Полный сюр!",
+      "url": "https://spbcult.ru/news/anonsy/marafon-dali-raskroet-tayny-simvolizma/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "past_event",
+      "discovered_at": "2026-11-16",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "spb-2026-11-16-8a8a005eda",
       "status": "new",
+      "kind": "exhibition",
+      "city": "spb",
+      "date": "2026-11-16",
+      "time": "",
+      "title": "«Русский кокошник» - одна из главных выставок года в Этнографическом музее",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "выставка"
+      ],
+      "description": "27 ноября в Российском этнографическом музее откроется одна из главных выставок этого года, посвященная важнейшему символу русской культуры – «Русский кокошник». Новый выставочный проект представит более 200 головных уборов из разных регионов страны и расскажет историю происхождения одного из самых узнаваемых предметов русского традиционного костюма.",
+      "url": "https://spbcult.ru/news/anonsy/russkiy-kokoshnik-odna-iz-glavnykh-vystavok-goda-v-etnograficheskom-muzee/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-16",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "start_date": "2026-11-16"
+    },
+    {
+      "id": "moscow-2026-11-16-c3cb427dd4",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-16",
@@ -63064,7 +63151,7 @@
       "url": "https://www.jewish-museum.ru/events/art-territoriya-kontur-/",
       "source": "Еврейский музей и центр толерантности",
       "checked_at": "",
-      "review_reason": "",
+      "review_reason": "past_event",
       "discovered_at": "2026-11-09",
       "price_type": "paid",
       "availability_evidence": "",
@@ -63101,7 +63188,9 @@
       "ticket_required": false,
       "availability": "unknown",
       "availability_checked_at": "",
-      "start_date": "2026-11-16"
+      "start_date": "2026-11-16",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-16-dfcb3ce48c",
@@ -63130,11 +63219,39 @@
       "ticket_required": false,
       "availability": "unknown",
       "availability_checked_at": "",
-      "start_date": "2026-11-16"
+      "start_date": "2026-11-16",
+      "editor_note": "",
+      "reviewed_at": ""
+    },
+    {
+      "id": "spb-2026-11-16-7ab1b9ce13",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-16",
+      "time": "",
+      "title": "В Петропавловском соборе проведут церемонию, посвящённую 230-летию со дня восшествия на престол Павла I",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "17 ноября в Петропавловском соборе состоится памятная церемония, посвящённая 230-летию со дня восшествия на престол императора Павла I: будет отслужена панихида по Павлу I и состоится церемония возложения цветов к могиле императора . В этот день на историческое место у захоронения Павла I будет установлена мерная икона императора в резном золоченом киоте.",
+      "url": "https://spbcult.ru/news/anonsy/v-petropavlovskom-sobore-provedut-tseremoniyu-posvyashchyennuyu-230-letiyu-so-dnya-vosshestviya-na-p/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "past_event",
+      "discovered_at": "2026-11-16",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "spb-2026-11-16-5995f84169",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-11-16",
@@ -63150,13 +63267,15 @@
       "url": "https://hermitagemuseum.org/what-s-on/afisha_mincult/?lng=ru",
       "source": "Государственный Эрмитаж — выставки и события",
       "checked_at": "",
-      "review_reason": "",
+      "review_reason": "past_event",
       "discovered_at": "2026-11-16",
       "price_type": "unknown",
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "russia-2026-11-16-b6f0d00beb",
@@ -63194,8 +63313,37 @@
       "sheet_synced_description": "Музей современного искусства «Гараж» набирает рукописи для своей книжной серии: история и теория искусства XX–XXI веков, новые медиа, социология культуры, антропология. Победители получают гонорар и выпуск книги."
     },
     {
-      "id": "moscow-2026-11-16-1a11d050bf",
+      "id": "spb-2026-11-16-4ed30e2fb4",
       "status": "new",
+      "kind": "exhibition",
+      "city": "spb",
+      "date": "2026-11-16",
+      "time": "",
+      "title": "Историю одержимости, поиска и нового искусства расскажут в Театре на Садовой",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "выставка"
+      ],
+      "description": "Авангардный рок, написанный композитором Даниилом Ячиным, задает ритм переломной эпохи. Музыка спектакля рождается на пересечении традиций XX века и живой природы: вдохновляясь Оливье Мессианом, записывавшим пение птиц нотами, композитор нашел звучание для арии Шагала в трелях чёрного дрозда из Витебской области.",
+      "url": "https://spbcult.ru/news/anonsy/istoriyu-oderzhimosti-poiska-i-novogo-iskusstva-rasskazhut-v-teatre-na-sadovoy/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-16",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "start_date": "2026-11-16"
+    },
+    {
+      "id": "moscow-2026-11-16-1a11d050bf",
+      "status": "rejected",
       "kind": "open_call",
       "city": "moscow",
       "date": "2026-11-16",
@@ -63213,7 +63361,7 @@
       "url": "https://www.jewish-museum.ru/events/konkurs-na-finansirovanie-nauchno-issledovatelskoy-deyatelnosti-v-sfere-istorii-i-kultury-evreev-ros/",
       "source": "Еврейский музей и центр толерантности",
       "checked_at": "",
-      "review_reason": "",
+      "review_reason": "past_event",
       "discovered_at": "2026-11-16",
       "price_type": "unknown",
       "availability_evidence": "",
@@ -63261,7 +63409,7 @@
     },
     {
       "id": "moscow-2026-11-16-57bc10a4d7",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-16",
@@ -63273,11 +63421,11 @@
       "price_text": "Бесплатно",
       "registration": null,
       "categories": [],
-      "description": "Медленное чтение на немецком: Arthur Schnitzler «Fräulein Else» (neu erzählt von Urs Luger) 12+ 16 ноября 2026 (понедельник) 19:00 Зал редкой книги Вход свободный 2026-11-16 19:00 2026-11-16 19:00 Europe/Moscow Медленное чтение на немецком: Arthur Schnitzler «Fräulein Else» (neu erzählt von Urs Luger) Желательный уровень знания языка — A2 РГБМ, Зал редкой книги РГБМ info@rgub.ru Желательный уровень знания языка — A2 Прочитаем фрагменты текста «Фройляйн Эльза» Артура Шницлера в пересказе Урса Люгера. Вместе с преподавателем Ириной Молчановой разберём незнакомую лексику и грамматику, обсудим сюжет. Новелла «Fräulein Else рассказывает о 19-летней Эльзе. Она отдыхает в шикарном отеле, но её беззаботная жизнь заканчивается, когда семья оказывается на грани разорения. Девушке приходится обратиться за помощью к старому знакомому отца. Это учебное пособие на немецком языке, которое представляет собой адаптированную новеллу. Книга поможет улучшить навыки чтения и расширить словарный запас. Занятие пройдёт в формате «Leseheft», буквально «тетрадь для чтения», с дополнительными материалами для занятий по немецкому языку как иностранному «Deutsch als Fremdsprache». Ведущая: Ирина Молчанова, преподаватель немецкого языка",
+      "description": "Медленное чтение на немецком: Arthur Schnitzler «Fräulein Else» (neu erzählt von Urs Luger) 12+ 16 ноября 2026 (понедельник) 19:00 Зал редкой книги Вход свободный Желательный уровень знания языка — A2 Прочитаем фрагменты текста «Фройляйн Эльза» Артура Шницлера в пересказе Урса Люгера. Вместе с преподавателем Ириной Молчановой разберём незнакомую лексику и грамматику, обсудим сюжет. Новелла «Fräulein Else рассказывает о 19-летней Эльзе. Она отдыхает в шикарном отеле, но её беззаботная жизнь заканчивается, когда семья оказывается на грани разорения. Девушке приходится обратиться за помощью к старому знакомому отца. Это учебное пособие на немецком языке, которое представляет собой адаптированную новеллу. Книга поможет улучшить навыки чтения и расширить словарный запас. Занятие пройдёт в формате «Leseheft», буквально «тетрадь для чтения», с дополнительными материалами для занятий по немецкому языку как иностранному «Deutsch als Fremdsprache». Ведущая: Ирина Молчанова, преподаватель немецкого языка",
       "url": "https://rgub.ru/schedule/item.php?new_id=49791",
       "source": "Российская государственная библиотека для молодёжи — афиша",
       "checked_at": "",
-      "review_reason": "",
+      "review_reason": "past_event",
       "discovered_at": "2026-11-01",
       "price_type": "free",
       "availability_evidence": "",
@@ -63289,7 +63437,7 @@
     },
     {
       "id": "spb-2026-11-16-c67fa63a42",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-11-16",
@@ -63305,9 +63453,39 @@
       "url": "https://spbcult.ru/news/anonsy/molodezhnyy-teatr-na-fontanke-pokazhet-spektakl-pozdnyaya-lyubov-s-tiflokommentirovaniem/",
       "source": "Петербургский дневник культуры — анонсы",
       "checked_at": "",
-      "review_reason": "",
+      "review_reason": "past_event",
       "discovered_at": "2026-11-16",
       "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
+    },
+    {
+      "id": "spb-2026-11-16-b7b0559350",
+      "status": "rejected",
+      "kind": "open_call",
+      "city": "spb",
+      "date": "2026-11-16",
+      "time": "",
+      "title": "Музей «Невская застава» проводит новогодний конкурс с подарками",
+      "venue": "",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [
+        "open-call"
+      ],
+      "description": "Музей «Невская застава» приглашает взрослых участников к новогоднему конкурсу «Украшая Заставу 2.0». В этом году он впервые проводится для тех, кому уже исполнилось 18 лет. Участникам предлагается создать украшения в духе советского Нового года: игрушки из ваты, ажурные бумажные снежинки, фигурки из ниток и другие поделки, которые напоминают о традициях семейного рукоделия.",
+      "url": "https://spbcult.ru/news/anonsy/muzey-nevskaya-zastava-provodit-novogodniy-konkurs-s-podarkami-/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "past_event",
+      "discovered_at": "2026-11-16",
+      "price_type": "free",
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
@@ -63387,7 +63565,7 @@
     },
     {
       "id": "moscow-2026-11-16-9f703f36f1",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-16",
@@ -63405,7 +63583,7 @@
       "url": "https://www.jewish-museum.ru/events/",
       "source": "Еврейский музей и центр толерантности",
       "checked_at": "",
-      "review_reason": "",
+      "review_reason": "past_event",
       "discovered_at": "2026-11-02",
       "price_type": "paid",
       "availability_evidence": "",
@@ -63417,7 +63595,7 @@
     },
     {
       "id": "spb-2026-11-16-b2a14430ca",
-      "status": "new",
+      "status": "rejected",
       "kind": "open_call",
       "city": "spb",
       "date": "2026-11-16",
@@ -63436,17 +63614,47 @@
       "url": "https://spbcult.ru/news/anonsy/obyavil-o-pobede-v-konkurse/",
       "source": "Петербургский дневник культуры — анонсы",
       "checked_at": "",
-      "review_reason": "",
+      "review_reason": "past_event",
       "discovered_at": "2026-11-16",
       "price_type": "unknown",
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
+    },
+    {
+      "id": "spb-2026-11-16-db26bc5b70",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-16",
+      "time": "",
+      "title": "Русский музей запустил аудиоспектакль по выставке «Айвазовский»",
+      "venue": "Лекторий Русского музея",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "В рамках международного проекта «Русские сезоны», который проходит в Королевстве Таиланд в течение всего года, Русский музей представил планшетную выставку «Русские сезоны».",
+      "url": "https://rusmuseum.ru/news/",
+      "source": "Русский музей — лекторий",
+      "checked_at": "",
+      "review_reason": "past_event",
+      "discovered_at": "2026-11-16",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
       "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-16-62f0c036fa",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-16",
@@ -63460,11 +63668,11 @@
       "categories": [
         "диалог"
       ],
-      "description": "Твоя Корея 12+ 16 ноября 2026 (понедельник) 19:00 Зал визуальных искусств Вход свободный 2026-11-16 19:00 2026-11-16 19:00 Europe/Moscow Твоя Корея Урок корейского языка для начинающих РГБМ, Зал визуальных искусств РГБМ info@rgub.ru Урок корейского языка для начинающих Всё больше людей интересуются необычной культурой Кореи, многие хотят познакомиться с её традициями и историей. А благодаря k-pop и корейскому кинематографу сейчас набирает популярность и корейский язык. В РГБМ вы изучите основы корейского под руководством опытного преподавателя и носителя языка. Главное преимущество курса — акцент на практике. На занятиях вы будете выполнять интерактивные упражнения, вести простые диалоги и разбирать фонетику. Также научитесь правильно произносить слова, познакомитесь с особенностями общения и погрузитесь в культуру страны. В конце курса каждый сможет освоить базовые выражения на корейском языке, будет понимать простые фразы и составлять элементарные предложения. Изучение корейского — это увлекательно и познавательно! Ведущий: Чжон Ынхе, преподаватель корейского языка",
+      "description": "Твоя Корея 12+ 16 ноября 2026 (понедельник) 19:00 Зал визуальных искусств Вход свободный Урок корейского языка для начинающих Всё больше людей интересуются необычной культурой Кореи, многие хотят познакомиться с её традициями и историей. А благодаря k-pop и корейскому кинематографу сейчас набирает популярность и корейский язык. В РГБМ вы изучите основы корейского под руководством опытного преподавателя и носителя языка. Главное преимущество курса — акцент на практике. На занятиях вы будете выполнять интерактивные упражнения, вести простые диалоги и разбирать фонетику. Также научитесь правильно произносить слова, познакомитесь с особенностями общения и погрузитесь в культуру страны. В конце курса каждый сможет освоить базовые выражения на корейском языке, будет понимать простые фразы и составлять элементарные предложения. Изучение корейского — это увлекательно и познавательно! Ведущий: Чжон Ынхе, преподаватель корейского языка",
       "url": "https://rgub.ru/schedule/item.php?new_id=49790",
       "source": "Российская государственная библиотека для молодёжи — афиша",
       "checked_at": "",
-      "review_reason": "",
+      "review_reason": "past_event",
       "discovered_at": "2026-11-01",
       "price_type": "free",
       "availability_evidence": "",
@@ -63476,7 +63684,7 @@
     },
     {
       "id": "moscow-2026-11-16-0e985d0e38",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-16",
@@ -63490,11 +63698,11 @@
       "categories": [
         "игра"
       ],
-      "description": "Театр моей жизни 16+ 16 ноября 2026 (понедельник) 19:30 Особняк Носова Необходима регистрация 2026-11-16 19:30 2026-11-16 19:30 Europe/Moscow Театр моей жизни Моноспектакль с участием ведущей солистки Московского театра оперетты Екатерины Кузнецовой РГБМ, Особняк Носова РГБМ info@rgub.ru Моноспектакль с участием ведущей солистки Московского театра оперетты Екатерины Кузнецовой В спектакле «Если бы вы знали» Екатерина расскажет о своей любви к драматическому театру, о непростой актёрской судьбе, об умении ждать, терпеть, знать и верить. За отправную точку сюжета взяты отдельные сцены из пьесы «Бульвар Сан-Сет», а также высказывания великих драматических актрис. «Этой постановкой мы отдаём дань уважения всем великим деятелям театрального искусства, обладающим своим неповторимым актёрским стилем — стилем, определившим судьбу» , — говорят организаторы. Об актрисе: Екатерина Кузнецова, исполняет главные партии в спектаклях «Летучая мышь», «Фиалка Монмартра», «Доходное место», «Князь Серебряный» в Московском театре оперетты, играет главную драматическую роль в спектакле «Гусарская баллада» в Центральном академическом театре Российской армии. Является лауреатом международных конкурсов чтецов Либретто, постановка и музыкальное оформление: Ксения Маршанская Регистрируйтесь здесь . Количество мест ограничено.",
+      "description": "Театр моей жизни 16+ 16 ноября 2026 (понедельник) 19:30 Особняк Носова Необходима регистрация Моноспектакль с участием ведущей солистки Московского театра оперетты Екатерины Кузнецовой В спектакле «Если бы вы знали» Екатерина расскажет о своей любви к драматическому театру, о непростой актёрской судьбе, об умении ждать, терпеть, знать и верить. За отправную точку сюжета взяты отдельные сцены из пьесы «Бульвар Сан-Сет», а также высказывания великих драматических актрис. «Этой постановкой мы отдаём дань уважения всем великим деятелям театрального искусства, обладающим своим неповторимым актёрским стилем — стилем, определившим судьбу» , — говорят организаторы. Об актрисе: Екатерина Кузнецова, исполняет главные партии в спектаклях «Летучая мышь», «Фиалка Монмартра», «Доходное место», «Князь Серебряный» в Московском театре оперетты, играет главную драматическую роль в спектакле «Гусарская баллада» в Центральном академическом театре Российской армии. Является лауреатом международных конкурсов чтецов Либретто, постановка и музыкальное оформление: Ксения Маршанская Регистрируйтесь здесь . Количество мест ограничено.",
       "url": "https://rgub.ru/schedule/item.php?new_id=49792",
       "source": "Российская государственная библиотека для молодёжи — афиша",
       "checked_at": "",
-      "review_reason": "",
+      "review_reason": "past_event",
       "discovered_at": "2026-11-01",
       "price_type": "unknown",
       "availability_evidence": "",
@@ -63503,6 +63711,34 @@
       "availability_checked_at": "",
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "spb-2026-11-16-60cc2a088f",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-16",
+      "time": "",
+      "title": "Театральный фестиваль «Рождественский парад» пройдёт в Северной столице",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "фестиваль"
+      ],
+      "description": "Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами! Также вы можете отправить статью в социальной сети или мессенджере Если у вас есть чем поделиться с нашими читателями, вы можете предложить свою статью.",
+      "url": "https://spbcult.ru/news/anonsy/teatralnyy-festival-rozhdestvenskiy-parad-proydyet-v-severnoy-stolitse/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "past_event",
+      "discovered_at": "2026-11-16",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-16-1d732645b7",
@@ -63537,7 +63773,7 @@
     },
     {
       "id": "spb-2026-11-16-c0d697af36",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-11-16",
@@ -63555,93 +63791,19 @@
       "url": "https://spbcult.ru/news/anonsy/festival-evreyskikh-znaniy-pokazyvaet-spektakli-o-pamyati-i-chelovecheskikh-sudbakh/",
       "source": "Петербургский дневник культуры — анонсы",
       "checked_at": "",
-      "review_reason": "",
+      "review_reason": "past_event",
       "discovered_at": "2026-11-16",
       "price_type": "unknown",
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
-    },
-    {
-      "id": "moscow-2026-10-25-c40e7952b7",
-      "status": "rejected",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-11-16",
-      "time": "10:00",
-      "title": "Воркшопы",
-      "venue": "ЦСИ Винзавод",
-      "address": "",
-      "price": 0,
-      "price_text": "Бесплатно",
-      "registration": false,
-      "categories": [
-        "лекция"
-      ],
-      "description": "",
-      "url": "https://www.winzavod.ru/calendar/workshops/",
-      "source": "ЦСИ Винзавод",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-10-25",
-      "price_type": "free",
-      "availability_evidence": "",
-      "ticket_required": true,
-      "availability": "unknown",
       "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false,
-        "status": "rejected"
-      },
-      "telegram_include": false,
-      "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": "2026-10-27"
-    },
-    {
-      "id": "moscow-2026-10-25-fefbfbd35d",
-      "status": "rejected",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-11-16",
-      "time": "10:00",
-      "title": "Курсы",
-      "venue": "ЦСИ Винзавод",
-      "address": "",
-      "price": 0,
-      "price_text": "Бесплатно",
-      "registration": false,
-      "categories": [
-        "лекция"
-      ],
-      "description": "",
-      "url": "https://www.winzavod.ru/calendar/course/",
-      "source": "ЦСИ Винзавод",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-10-25",
-      "price_type": "free",
-      "availability_evidence": "",
-      "ticket_required": true,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false,
-        "status": "rejected"
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": "2026-10-27"
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-16-eebb063dbc",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-16",
@@ -63659,7 +63821,7 @@
       "url": "https://ges-2.org/vaults-masterclass-in-manual-optical-black-and-white-photo-printing",
       "source": "Дом культуры «ГЭС-2»",
       "checked_at": "",
-      "review_reason": "",
+      "review_reason": "past_event",
       "discovered_at": "2026-10-28",
       "audience_text": "› Своды › Мастер-классы Дата: с 24 ноя 2025 Билеты Возраст: от 18 Тип: Мастер-класс в «Сводах» Место: Своды Возрастные ограничения 6+ Центр художественного производства «Своды» приглашает познакомиться с мастерскими, освоить новые навыки и поработать на профессиональном оборудовании. К участию в мастер-классах мы приглашаем людей, достигших 18 лет. Продолжительность: 4 часа Стоимость: 4000 руб. * Сложность: 1/10 Количество участников: 2 * За одного участника. В стоимость мастер-класса включены фотобумага и необходимые реактивы. T Заведующий фотолабораторией Андрей Шагин расскажет об основных принципах и приемах классической аналоговой печати и поможет самостоятельно напечатать снимок (размер готового фото не более 24×30,5 см). Вы можете выбрать один из наших негативов с видами « ГЭС-2 » и «Сводов» или принести собственный. Принимая решение об участии, пожалуйста, учтите, что вам придется четыре часа находиться в темном помещении с красным неоновым освещением. {\"points\":[{\"id\":1,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":3,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.6,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":2,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} Официальный партнер Центра художественного производства «Своды» Все фото: Аня Тодич {\"width\":963,\"column_width\":89,\"columns_n\":9,\"gutter\":20,\"margin\":0,\"line\":10} default true 512 1100 false true true {\"mode\":\"page\",\"transition_type\":\"slide\",\"transition_direction\":\"horizontal\",\"transition_look\":\"belt\",\"slides_form\":{}} {\"css\":\".editor {font-family: Diagramatika Text; font-size: 20px; font-weight: 400; line-height: 20px;}\"} ГЭС-2 Посещение [+] План здания Правила посещения Ателье Игровая Кинотеатр Концертный зал Библиотека Малые своды Магазин Ресторан и кафе Парковка Вокруг Доступность Как нас найти Календарь Программа Направления [+] Практики Медиация Дети и подростки Сообщества Школы Университеты Города Возможности [+] Своды Студии Резиденции Гранты Исследования Издательство  О нас [+] Дом культуры История и архитектура ru / en Посещение [+] Календарь Программа Направления [+] Возможности [+] Исследования Издательство О нас [+] Болотная набережная, 15 , Москва Болотная набережная, 15 Москва +7 (495) 990 0000 v - a-c@v - a-c.org  V–A–C Доступность Пресс-офис Вакансии Контакты VK Telegram Youtube ",
       "price_type": "paid",
@@ -63679,7 +63841,7 @@
     },
     {
       "id": "moscow-2026-11-16-6c388b096a",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-16",
@@ -63697,7 +63859,7 @@
       "url": "https://www.jewish-museum.ru/events/nedelya-tolerantnosti-2026-kultura-obedinyaet/",
       "source": "Еврейский музей и центр толерантности",
       "checked_at": "",
-      "review_reason": "",
+      "review_reason": "past_event",
       "discovered_at": "2026-10-28",
       "price_type": "unknown",
       "availability_evidence": "",
@@ -63753,7 +63915,7 @@
     },
     {
       "id": "spb-2026-11-16-29b1659379",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-11-16",
@@ -63769,7 +63931,7 @@
       "url": "https://nlr.ru/nlr_visit/event/3736",
       "source": "Российская национальная библиотека — афиша",
       "checked_at": "",
-      "review_reason": "",
+      "review_reason": "past_event",
       "discovered_at": "2026-10-30",
       "price_type": "free",
       "availability_evidence": "",
@@ -63781,7 +63943,7 @@
     },
     {
       "id": "spb-2026-11-16-378b993b6a",
-      "status": "check",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-11-16",
@@ -63799,7 +63961,7 @@
       "url": "https://otkrytaya-gostinaya.timepad.ru/event/4286105/",
       "source": "Открытая гостиная — официальный Telegram",
       "checked_at": "",
-      "review_reason": "curated_telegram_source",
+      "review_reason": "past_event",
       "discovered_at": "2026-11-06",
       "price_type": "unknown",
       "availability_evidence": "",
@@ -63848,7 +64010,7 @@
     },
     {
       "id": "spb-2026-11-16-0c8db9797d",
-      "status": "check",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-11-16",
@@ -63864,7 +64026,7 @@
       "url": "https://vk.ru/away.php?to=https%3A%2F%2Fcomix-library.timepad.ru%2Fevent%2F4271303%2F&amp;utf=1",
       "source": "Библиотека комиксов — официальный Telegram",
       "checked_at": "",
-      "review_reason": "curated_telegram_source",
+      "review_reason": "past_event",
       "discovered_at": "2026-11-13",
       "price_type": "unknown",
       "availability_evidence": "",
@@ -63876,7 +64038,7 @@
     },
     {
       "id": "spb-2026-11-16-6e7ac94eb1",
-      "status": "check",
+      "status": "rejected",
       "kind": "event",
       "city": "spb",
       "date": "2026-11-16",
@@ -63894,7 +64056,7 @@
       "url": "https://tsentralnaya-events.timepad.ru/event/4192557/",
       "source": "Библиотека Маяковского — официальный Telegram",
       "checked_at": "",
-      "review_reason": "curated_telegram_source",
+      "review_reason": "past_event",
       "discovered_at": "2026-11-13",
       "price_type": "unknown",
       "availability_evidence": "",
@@ -63967,8 +64129,8 @@
       "price_type": "unknown",
       "availability_evidence": "",
       "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": "",
+      "availability": "sold_out",
+      "availability_checked_at": "2026-11-17",
       "editor_overrides": {
         "telegram_include": false,
         "instagram_include": false,
@@ -64057,7 +64219,7 @@
     },
     {
       "id": "moscow-2026-11-16-7a2bcdb202",
-      "status": "new",
+      "status": "rejected",
       "kind": "event",
       "city": "moscow",
       "date": "2026-11-16",
@@ -64075,7 +64237,7 @@
       "url": "https://garagemca.org/event/special-screening-and-discussion-malika",
       "source": "Музей современного искусства «Гараж»",
       "checked_at": "",
-      "review_reason": "",
+      "review_reason": "past_event",
       "discovered_at": "2026-11-16",
       "price_type": "paid",
       "availability_evidence": "",
@@ -64181,7 +64343,7 @@
       "discovered_at": "2026-10-18",
       "price_type": "paid",
       "availability": "sold_out",
-      "availability_checked_at": "2026-11-16",
+      "availability_checked_at": "2026-11-17",
       "editor_overrides": {
         "telegram_include": false,
         "instagram_include": false,
@@ -64426,6 +64588,82 @@
       "reviewed_at": "2026-11-06"
     },
     {
+      "id": "moscow-2026-10-25-c40e7952b7",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-17",
+      "time": "10:00",
+      "title": "Воркшопы",
+      "venue": "ЦСИ Винзавод",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "",
+      "url": "https://www.winzavod.ru/calendar/workshops/",
+      "source": "ЦСИ Винзавод",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-25",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false,
+        "status": "rejected"
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": "2026-10-27"
+    },
+    {
+      "id": "moscow-2026-10-25-fefbfbd35d",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-17",
+      "time": "10:00",
+      "title": "Курсы",
+      "venue": "ЦСИ Винзавод",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "",
+      "url": "https://www.winzavod.ru/calendar/course/",
+      "source": "ЦСИ Винзавод",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-25",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false,
+        "status": "rejected"
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": "2026-10-27"
+    },
+    {
       "id": "moscow-2026-11-17-b9a5fe1f3d",
       "status": "approved",
       "kind": "event",
@@ -64464,6 +64702,34 @@
       "reviewed_at": "2026-11-05"
     },
     {
+      "id": "moscow-2026-11-17-b2f389d79e",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-17",
+      "time": "11:00",
+      "title": "Маршрут по истории наземного и подземного транспорта",
+      "venue": "Музей Транспорта Москвы",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "",
+      "url": "https://mtmuseum.ru/affiche/ekskursii/",
+      "source": "Музей транспорта Москвы — афиша",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-11-16",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-17-e7982b72fb",
       "status": "rejected",
       "kind": "event",
@@ -64489,7 +64755,7 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "sold_out",
-      "availability_checked_at": "2026-11-16"
+      "availability_checked_at": "2026-11-17"
     },
     {
       "id": "spb-2026-11-17-d70f2c6fd6",
@@ -64610,7 +64876,7 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "sold_out",
-      "availability_checked_at": "2026-11-16"
+      "availability_checked_at": "2026-11-17"
     },
     {
       "id": "spb-2026-11-17-e6006b3921",
@@ -64695,7 +64961,7 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "sold_out",
-      "availability_checked_at": "2026-11-16",
+      "availability_checked_at": "2026-11-17",
       "editor_note": "",
       "reviewed_at": ""
     },
@@ -64866,7 +65132,9 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-17-8c96310888",
@@ -65005,7 +65273,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-18-d986540b12",
@@ -65310,7 +65580,7 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "sold_out",
-      "availability_checked_at": "2026-11-16",
+      "availability_checked_at": "2026-11-17",
       "editor_overrides": {
         "telegram_include": false,
         "instagram_include": false,
@@ -65502,6 +65772,34 @@
       "instagram_include": false,
       "reviewed_at": "2026-11-13",
       "editor_note": ""
+    },
+    {
+      "id": "moscow-2026-11-18-821c29ad48",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-18",
+      "time": "19:00",
+      "title": "Кухня объединяет: мастер-класс в кафе «Разные зерна»",
+      "venue": "Еврейский музей и центр толерантности",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "Готовим, пробуем и обсуждаем, как еда связывает людей и культуры. Часть программы Недели толерантности 2026. Еда — это не только вкус, но и память.",
+      "url": "https://www.jewish-museum.ru/events/kukhnya-obedinyaet-master-klass-v-kafe-raznye-zyerna/",
+      "source": "Еврейский музей и центр толерантности",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-16",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "spb-2026-11-18-9e5ab92fbf",
@@ -65864,6 +66162,36 @@
       "reviewed_at": "2026-11-13"
     },
     {
+      "id": "moscow-2026-11-19-43cd925f85",
+      "status": "new",
+      "kind": "exhibition",
+      "city": "moscow",
+      "date": "2026-11-19",
+      "time": "",
+      "title": "Виктория Бурлакова Свое место",
+      "venue": "ЦСИ Винзавод",
+      "address": "",
+      "price": 12000,
+      "price_text": "12000 ₽",
+      "registration": null,
+      "categories": [
+        "выставка"
+      ],
+      "description": "",
+      "url": "https://www.winzavod.ru/calendar/exhibitions/svoe-mesto/",
+      "source": "ЦСИ Винзавод",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-16",
+      "start_date": "2026-11-19",
+      "end_date": "2026-11-22",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "spb-2026-11-19-8f96cac0d4",
       "status": "new",
       "kind": "event",
@@ -65889,7 +66217,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-19-05c67d7f07",
@@ -66020,7 +66350,7 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "sold_out",
-      "availability_checked_at": "2026-11-16",
+      "availability_checked_at": "2026-11-17",
       "editor_note": "",
       "reviewed_at": ""
     },
@@ -66534,7 +66864,7 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "sold_out",
-      "availability_checked_at": "2026-11-16"
+      "availability_checked_at": "2026-11-17"
     },
     {
       "id": "spb-2026-11-19-6274d9b2ae",
@@ -66666,7 +66996,7 @@
       "discovered_at": "2026-09-25",
       "price_type": "paid",
       "availability": "sold_out",
-      "availability_checked_at": "2026-11-16",
+      "availability_checked_at": "2026-11-17",
       "instagram_include": false,
       "telegram_include": false,
       "social_priority": null,
@@ -66957,7 +67287,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-11-20-6973f5f8bc",
@@ -68213,6 +68545,36 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
+    },
+    {
+      "id": "moscow-2026-11-20-ddfda9fab6",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-20",
+      "time": "19:30",
+      "title": "Показ фильмов «Катацумори» и «След» и медиация",
+      "venue": "Музей «Гараж»",
+      "address": "",
+      "price": 500,
+      "price_text": "500 ₽",
+      "registration": null,
+      "categories": [
+        "кинопоказ"
+      ],
+      "description": "Личная документалистика Наоми Кавасэ об отношениях с приемной матерью. Наоми Кавасэ — одна из самых известных постановщиц японского кино. Ее игровые картины «Судзаку» (1997) и «Траурный лес» (2007) были отмечены наградами Каннского кинофестиваля.",
+      "url": "https://garagemca.org/event/film-screening-and-mediation-katatsumori-and-chiri",
+      "source": "Музей современного искусства «Гараж»",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-11-16",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
       "availability_checked_at": ""
     },
     {
@@ -68508,6 +68870,34 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
+      "id": "moscow-2026-11-21-8b91f2133e",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-21",
+      "time": "",
+      "title": "Презентация литературного сборника «Музыка слова»",
+      "venue": "РГБМ",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "Презентация литературного сборника «Музыка слова» 12+ 21 ноября 2026 (суббота) 15:00 Зал визуальных искусств Вход свободный 2026-11-21 15:00 2026-11-21 15:00 Europe/Moscow Презентация литературного сборника «Музыка слова» Встреча с молодыми авторами, которые пишут на родных языках РГБМ, Зал визуальных искусств РГБМ info@rgub.ru Встреча с молодыми авторами, которые пишут на родных языках Сборник «Музыка слова» вышел по итогам Всероссийского социально значимого проекта «Языковая арт-резиденция. Музыка слова». В книге — авторские стихи и прозаические отрывки на восьми языках народов России. Отдельным разделом представлены сказки, написанные молодыми авторами после мастер-класса в рамках выездной программы резиденции. Над сборником работали 13 молодых писателей и проектная команда, а иллюстрации создали студенты Алтайского государственного университета. Как тексты молодых авторов становятся клипами? Об этом расскажет руководитель проекта Анжелика Засядько: речь пойдёт о важности поддержки тех, кто сохраняет родной язык не только в семье, но и в общественном пространстве. А режиссёр-постановщик проекта Евгения Такаракова поделится секретами, как снять яркий клип на своё произведение, имея в распоряжении только природу — без большого бюджета. В презентации примут участие и сами авторы: мокшанская поэтесса и языковая активистка Оксана Белкина, удмуртский автор и журналист Никита Ильин, поэтесса из Новосибирска Кристина Гладкевич. Гостям также покажут клипы, снятые на произведения финалистов проекта на Алтае. Проект «Языковая арт-резиденция. Музыка слова» реализуется АНО «Ресурсный центр в сфере национальных отношений» при поддержке Президентского фонда культурных инициатив и в партнёрстве с Сообществом языковых активистов новых медиа, Комиссией Общественной палаты РФ по межнациональным, межрелигиозным отношениям и миграции, Союзом писателей России и рядом других организаций. Информационные партнёры — Первый Российский Национальный канал, Комиссия по вопросам информационного обеспечения и международного сотрудничества при Президенте РФ по межнациональным отношениям и канал «Культурная карта». Подробности — на сайте Ресурсного центра и в соцсетях под хэштегом #ЯзыковаяАртРезиденция.",
+      "url": "https://rgub.ru/schedule/item.php?new_id=50157",
+      "source": "Российская государственная библиотека для молодёжи — афиша",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-16",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-21-734741274c",
       "status": "rejected",
       "kind": "event",
@@ -68630,6 +69020,35 @@
       "instagram_include": false,
       "reviewed_at": "2026-11-13",
       "editor_note": ""
+    },
+    {
+      "id": "moscow-2026-11-21-91c3c05e64",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-21",
+      "time": "11:30",
+      "title": "А. А. Г. А. В. О. О. Ю. П. С. Е. А.",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "игра"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/a-a-g-a-v-o-o-y-p-s-e-a",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-16",
+      "audience_text": "› Резиденции Дата: 20 ноя– 20 дек 2026 Регистрация Возраст: от 12 Тип: Аудиоспектакль Место: ГЭС-2 Доступность  Возрастные ограничения 12+ Аудиоспектакль-променад об утраченных вещах и приобретенном опыте. Проект создан в рамках программы художественных резиденций Дома культуры « ГЭС-2 ». T Проект междисциплинарных художников из Казани Ангелины Миграновой и Родиона Сабирова стал результатом долгого и глубокого исследования пространства « ГЭС-2 ». В его основу легли личные размышления сотрудников Дома культуры об утраченных предметах — двенадцать историй о прошлом, переживаний в настоящем и фантазий о будущем. Иллюстрация: Полина Калашникова Прошлое возникает, когда к нему прикасается настоящее. Настоящее — это вы, вы — это присутствие. Без вашего присутствия нет будущего, без вашего присутствия нет прошлого, без вашего присутствия нет настоящего. — Ангелина Мигранова, Родион Сабиров Это многоголосие отражено в названии спектакля, сложенном из инициалов рассказчиков. Авторы проекта создают пространство, где каждый может почувствовать себя частью единого целого или найти личную точку тишины и покоя для саморефлексии. Короткие 8—12-минутные монологи можно слушать подряд или по одному, включая аудиоплеер в разных локациях « ГЭС-2 ». Вместе они создают очень личный портрет культурной институции. Прогулка по Дому культуры превращается в путешествие по воспоминаниям людей, благодаря которым архитектура бывшей электростанции обретает новые смыслы и человеческое измерение. Чтобы прослушать спектакль, зарегистрируйтесь. В день спектакля возьмите на стойке информации аудиоплеер с наушниками и иллюстрированную брошюру. Истории можно слушать в любом месте и в любом порядке. Общая продолжительность спектакля — около 2.5 часов. Аудиоспектакль дополняет иллюстрированная брошюра, которую можно взять на стойке информации вместе с аудиогидом. Действующие лица Анастасия Шихирева — специалист по работе с посетителями. Алиса Прудникова — программный директор. Григорий Чередов — директор издательских программ. Анастасия Щеголькова — специалист по работе с посетителями. Влад Колесников — куратор программ доступности для сообщества глухих. Оксана Осадчая — куратор программ доступности по работе с незрячими посетителями. Ольга Кавалай-Аксенова — библиотекарь. Юрий Ирхин — гардеробщик. Полина Зотова — куратор проектов для детской и семейной аудитории. Сергей Елькин — гардеробщик. Екатерина Ванцева — директор по развитию бренда и коммуникации. Артем Бондаревский — генеральный директ",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-21-96618547ab",
@@ -69099,6 +69518,32 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": "2026-10-27"
+    },
+    {
+      "id": "spb-2026-11-21-975c560aaa",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-21",
+      "time": "16:00",
+      "title": "Новый Париж. Из века девятнадцатого в век двадцатый",
+      "venue": "Библиотека Маяковского",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [],
+      "description": "В XIX веке Париж пережил стремительную трансформацию: из тесного средневекового лабиринта он превратился в блистательный мегаполис, полный света и воздуха. На встрече мы проследим историю этой масштабной градостроительной революции. Поговорим о том, как реформы Наполеона III и барона Османа изменили облик столицы, сформировав неповторимый архитектурный стиль Парижа; как создавалась современная городская инфраструктура, прокладывались широкие авеню и бульвары, а технический прогресс приносил городу новые символы — Эйфелеву башню и первые линии метро.",
+      "url": "https://t.me/mayakovka/2150",
+      "source": "Библиотека Маяковского — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-11-16",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "spb-2026-11-21-1a94afaed1",
@@ -69809,7 +70254,9 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-22-93b08d7246",
@@ -69833,7 +70280,7 @@
       "discovered_at": "2026-10-23",
       "price_type": "paid",
       "availability": "sold_out",
-      "availability_checked_at": "2026-11-16",
+      "availability_checked_at": "2026-11-17",
       "editor_overrides": {
         "telegram_include": false,
         "instagram_include": false,
@@ -69947,6 +70394,35 @@
       "checked_at": "",
       "review_reason": "excluded_tour_mediation",
       "discovered_at": "2026-11-15",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "moscow-2026-11-22-91c3c05e64",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-22",
+      "time": "11:30",
+      "title": "А. А. Г. А. В. О. О. Ю. П. С. Е. А.",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "игра"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/a-a-g-a-v-o-o-y-p-s-e-a",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-16",
+      "audience_text": "› Резиденции Дата: 20 ноя– 20 дек 2026 Регистрация Возраст: от 12 Тип: Аудиоспектакль Место: ГЭС-2 Доступность  Возрастные ограничения 12+ Аудиоспектакль-променад об утраченных вещах и приобретенном опыте. Проект создан в рамках программы художественных резиденций Дома культуры « ГЭС-2 ». T Проект междисциплинарных художников из Казани Ангелины Миграновой и Родиона Сабирова стал результатом долгого и глубокого исследования пространства « ГЭС-2 ». В его основу легли личные размышления сотрудников Дома культуры об утраченных предметах — двенадцать историй о прошлом, переживаний в настоящем и фантазий о будущем. Иллюстрация: Полина Калашникова Прошлое возникает, когда к нему прикасается настоящее. Настоящее — это вы, вы — это присутствие. Без вашего присутствия нет будущего, без вашего присутствия нет прошлого, без вашего присутствия нет настоящего. — Ангелина Мигранова, Родион Сабиров Это многоголосие отражено в названии спектакля, сложенном из инициалов рассказчиков. Авторы проекта создают пространство, где каждый может почувствовать себя частью единого целого или найти личную точку тишины и покоя для саморефлексии. Короткие 8—12-минутные монологи можно слушать подряд или по одному, включая аудиоплеер в разных локациях « ГЭС-2 ». Вместе они создают очень личный портрет культурной институции. Прогулка по Дому культуры превращается в путешествие по воспоминаниям людей, благодаря которым архитектура бывшей электростанции обретает новые смыслы и человеческое измерение. Чтобы прослушать спектакль, зарегистрируйтесь. В день спектакля возьмите на стойке информации аудиоплеер с наушниками и иллюстрированную брошюру. Истории можно слушать в любом месте и в любом порядке. Общая продолжительность спектакля — около 2.5 часов. Аудиоспектакль дополняет иллюстрированная брошюра, которую можно взять на стойке информации вместе с аудиогидом. Действующие лица Анастасия Шихирева — специалист по работе с посетителями. Алиса Прудникова — программный директор. Григорий Чередов — директор издательских программ. Анастасия Щеголькова — специалист по работе с посетителями. Влад Колесников — куратор программ доступности для сообщества глухих. Оксана Осадчая — куратор программ доступности по работе с незрячими посетителями. Ольга Кавалай-Аксенова — библиотекарь. Юрий Ирхин — гардеробщик. Полина Зотова — куратор проектов для детской и семейной аудитории. Сергей Елькин — гардеробщик. Екатерина Ванцева — директор по развитию бренда и коммуникации. Артем Бондаревский — генеральный директ",
       "price_type": "unknown",
       "availability_evidence": "",
       "ticket_required": false,
@@ -70087,7 +70563,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-22-bcdd1dc362",
@@ -70340,7 +70818,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-22-14baf63950",
@@ -70712,6 +71192,35 @@
       "availability_checked_at": "",
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "moscow-2026-11-23-91c3c05e64",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-23",
+      "time": "11:30",
+      "title": "А. А. Г. А. В. О. О. Ю. П. С. Е. А.",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "игра"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/a-a-g-a-v-o-o-y-p-s-e-a",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-16",
+      "audience_text": "› Резиденции Дата: 20 ноя– 20 дек 2026 Регистрация Возраст: от 12 Тип: Аудиоспектакль Место: ГЭС-2 Доступность  Возрастные ограничения 12+ Аудиоспектакль-променад об утраченных вещах и приобретенном опыте. Проект создан в рамках программы художественных резиденций Дома культуры « ГЭС-2 ». T Проект междисциплинарных художников из Казани Ангелины Миграновой и Родиона Сабирова стал результатом долгого и глубокого исследования пространства « ГЭС-2 ». В его основу легли личные размышления сотрудников Дома культуры об утраченных предметах — двенадцать историй о прошлом, переживаний в настоящем и фантазий о будущем. Иллюстрация: Полина Калашникова Прошлое возникает, когда к нему прикасается настоящее. Настоящее — это вы, вы — это присутствие. Без вашего присутствия нет будущего, без вашего присутствия нет прошлого, без вашего присутствия нет настоящего. — Ангелина Мигранова, Родион Сабиров Это многоголосие отражено в названии спектакля, сложенном из инициалов рассказчиков. Авторы проекта создают пространство, где каждый может почувствовать себя частью единого целого или найти личную точку тишины и покоя для саморефлексии. Короткие 8—12-минутные монологи можно слушать подряд или по одному, включая аудиоплеер в разных локациях « ГЭС-2 ». Вместе они создают очень личный портрет культурной институции. Прогулка по Дому культуры превращается в путешествие по воспоминаниям людей, благодаря которым архитектура бывшей электростанции обретает новые смыслы и человеческое измерение. Чтобы прослушать спектакль, зарегистрируйтесь. В день спектакля возьмите на стойке информации аудиоплеер с наушниками и иллюстрированную брошюру. Истории можно слушать в любом месте и в любом порядке. Общая продолжительность спектакля — около 2.5 часов. Аудиоспектакль дополняет иллюстрированная брошюра, которую можно взять на стойке информации вместе с аудиогидом. Действующие лица Анастасия Шихирева — специалист по работе с посетителями. Алиса Прудникова — программный директор. Григорий Чередов — директор издательских программ. Анастасия Щеголькова — специалист по работе с посетителями. Влад Колесников — куратор программ доступности для сообщества глухих. Оксана Осадчая — куратор программ доступности по работе с незрячими посетителями. Ольга Кавалай-Аксенова — библиотекарь. Юрий Ирхин — гардеробщик. Полина Зотова — куратор проектов для детской и семейной аудитории. Сергей Елькин — гардеробщик. Екатерина Ванцева — директор по развитию бренда и коммуникации. Артем Бондаревский — генеральный директ",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-23-eebb063dbc",
@@ -71310,6 +71819,43 @@
       "reviewed_at": "2026-11-13"
     },
     {
+      "id": "spb-2026-11-24-cc05471254",
+      "status": "approved",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-24",
+      "time": "18:30",
+      "title": "Совместная публичная программа Hovard Club и Манежа «От кураторского замысла к диалогу»",
+      "venue": "Манеж",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Hovard Club и Манеж запускауют совместную публичную программу «От кураторского замысла к диалогу»! Цикл встреч посвящён разным этапам встречи с искусством: от создания выставки до самостоятельного знакомства с произведениями.",
+      "url": "https://manege.spb.ru/events/sovmestnaya-publichnaya-programma-hovard-club-i-manezha-ot-kuratorskogo-zamysla-k-dialogu/",
+      "source": "Манеж — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-26",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false,
+        "status": "approved"
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "reviewed_at": "2026-10-27"
+    },
+    {
       "id": "moscow-2026-11-24-f717c4818a",
       "status": "approved",
       "kind": "event",
@@ -71474,7 +72020,7 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "sold_out",
-      "availability_checked_at": "2026-11-16",
+      "availability_checked_at": "2026-11-17",
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
@@ -72413,7 +72959,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-26-d74b62747b",
@@ -72806,6 +73354,35 @@
       "reviewed_at": ""
     },
     {
+      "id": "moscow-2026-11-27-91c3c05e64",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-27",
+      "time": "11:30",
+      "title": "А. А. Г. А. В. О. О. Ю. П. С. Е. А.",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "игра"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/a-a-g-a-v-o-o-y-p-s-e-a",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-16",
+      "audience_text": "› Резиденции Дата: 20 ноя– 20 дек 2026 Регистрация Возраст: от 12 Тип: Аудиоспектакль Место: ГЭС-2 Доступность  Возрастные ограничения 12+ Аудиоспектакль-променад об утраченных вещах и приобретенном опыте. Проект создан в рамках программы художественных резиденций Дома культуры « ГЭС-2 ». T Проект междисциплинарных художников из Казани Ангелины Миграновой и Родиона Сабирова стал результатом долгого и глубокого исследования пространства « ГЭС-2 ». В его основу легли личные размышления сотрудников Дома культуры об утраченных предметах — двенадцать историй о прошлом, переживаний в настоящем и фантазий о будущем. Иллюстрация: Полина Калашникова Прошлое возникает, когда к нему прикасается настоящее. Настоящее — это вы, вы — это присутствие. Без вашего присутствия нет будущего, без вашего присутствия нет прошлого, без вашего присутствия нет настоящего. — Ангелина Мигранова, Родион Сабиров Это многоголосие отражено в названии спектакля, сложенном из инициалов рассказчиков. Авторы проекта создают пространство, где каждый может почувствовать себя частью единого целого или найти личную точку тишины и покоя для саморефлексии. Короткие 8—12-минутные монологи можно слушать подряд или по одному, включая аудиоплеер в разных локациях « ГЭС-2 ». Вместе они создают очень личный портрет культурной институции. Прогулка по Дому культуры превращается в путешествие по воспоминаниям людей, благодаря которым архитектура бывшей электростанции обретает новые смыслы и человеческое измерение. Чтобы прослушать спектакль, зарегистрируйтесь. В день спектакля возьмите на стойке информации аудиоплеер с наушниками и иллюстрированную брошюру. Истории можно слушать в любом месте и в любом порядке. Общая продолжительность спектакля — около 2.5 часов. Аудиоспектакль дополняет иллюстрированная брошюра, которую можно взять на стойке информации вместе с аудиогидом. Действующие лица Анастасия Шихирева — специалист по работе с посетителями. Алиса Прудникова — программный директор. Григорий Чередов — директор издательских программ. Анастасия Щеголькова — специалист по работе с посетителями. Влад Колесников — куратор программ доступности для сообщества глухих. Оксана Осадчая — куратор программ доступности по работе с незрячими посетителями. Ольга Кавалай-Аксенова — библиотекарь. Юрий Ирхин — гардеробщик. Полина Зотова — куратор проектов для детской и семейной аудитории. Сергей Елькин — гардеробщик. Екатерина Ванцева — директор по развитию бренда и коммуникации. Артем Бондаревский — генеральный директ",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-27-aa8503e63c",
       "status": "new",
       "kind": "event",
@@ -72987,7 +73564,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-28-0ed98de660",
@@ -73218,6 +73797,35 @@
       "reviewed_at": ""
     },
     {
+      "id": "moscow-2026-11-28-91c3c05e64",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-28",
+      "time": "11:30",
+      "title": "А. А. Г. А. В. О. О. Ю. П. С. Е. А.",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "игра"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/a-a-g-a-v-o-o-y-p-s-e-a",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-16",
+      "audience_text": "› Резиденции Дата: 20 ноя– 20 дек 2026 Регистрация Возраст: от 12 Тип: Аудиоспектакль Место: ГЭС-2 Доступность  Возрастные ограничения 12+ Аудиоспектакль-променад об утраченных вещах и приобретенном опыте. Проект создан в рамках программы художественных резиденций Дома культуры « ГЭС-2 ». T Проект междисциплинарных художников из Казани Ангелины Миграновой и Родиона Сабирова стал результатом долгого и глубокого исследования пространства « ГЭС-2 ». В его основу легли личные размышления сотрудников Дома культуры об утраченных предметах — двенадцать историй о прошлом, переживаний в настоящем и фантазий о будущем. Иллюстрация: Полина Калашникова Прошлое возникает, когда к нему прикасается настоящее. Настоящее — это вы, вы — это присутствие. Без вашего присутствия нет будущего, без вашего присутствия нет прошлого, без вашего присутствия нет настоящего. — Ангелина Мигранова, Родион Сабиров Это многоголосие отражено в названии спектакля, сложенном из инициалов рассказчиков. Авторы проекта создают пространство, где каждый может почувствовать себя частью единого целого или найти личную точку тишины и покоя для саморефлексии. Короткие 8—12-минутные монологи можно слушать подряд или по одному, включая аудиоплеер в разных локациях « ГЭС-2 ». Вместе они создают очень личный портрет культурной институции. Прогулка по Дому культуры превращается в путешествие по воспоминаниям людей, благодаря которым архитектура бывшей электростанции обретает новые смыслы и человеческое измерение. Чтобы прослушать спектакль, зарегистрируйтесь. В день спектакля возьмите на стойке информации аудиоплеер с наушниками и иллюстрированную брошюру. Истории можно слушать в любом месте и в любом порядке. Общая продолжительность спектакля — около 2.5 часов. Аудиоспектакль дополняет иллюстрированная брошюра, которую можно взять на стойке информации вместе с аудиогидом. Действующие лица Анастасия Шихирева — специалист по работе с посетителями. Алиса Прудникова — программный директор. Григорий Чередов — директор издательских программ. Анастасия Щеголькова — специалист по работе с посетителями. Влад Колесников — куратор программ доступности для сообщества глухих. Оксана Осадчая — куратор программ доступности по работе с незрячими посетителями. Ольга Кавалай-Аксенова — библиотекарь. Юрий Ирхин — гардеробщик. Полина Зотова — куратор проектов для детской и семейной аудитории. Сергей Елькин — гардеробщик. Екатерина Ванцева — директор по развитию бренда и коммуникации. Артем Бондаревский — генеральный директ",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-28-1f97efa686",
       "status": "approved",
       "kind": "event",
@@ -73292,6 +73900,35 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "moscow-2026-11-28-8c1680b942",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-28",
+      "time": "12:00",
+      "title": "Субботние игры на Платформах",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": true,
+      "categories": [
+        "игра"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/saturday-games",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-16",
+      "audience_text": "› Дети и подростки Проект : Давай играть! Дата: 5 сен– 28 ноя 2026 Возраст: от 7 Тип: Игра Место: Правая платформа , Верхняя платформа Возрастные ограничения 6+ Территория свободного общения, творчества, веселья и отдыха для детей и их родителей. Расписание  {\"points\":[{\"id\":4,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":6,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.4,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":5,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} T Игры бывают разные — настольные, словесные, активные, логические... Иногда хочется попробовать все и сразу, но вот незадача — то компании нет, то места. Теперь есть и то, и другое. По субботам Проспект « ГЭС-2 » объявляется пространством игры. Утром вспоминаем игры, для которых нужна большая компания, затем всей семьей сражаемся в настолки и решаем головоломки, а вечером осваиваем игрушки, развивающие ловкость и мелкую моторику. Ближайшие игры 5, 12, 19 и 26 сен, 3, 10, 24 и 31 окт, 7, 14, 21 и 28 ноя Обратите внимание , что игры 21 и 28 ноября пройдут на Правой платформе. Настольные игры 12 и 26 сентября, 10 и 24 октября, 7 и 21 ноября будут адаптированы для незрячих и слабовидящих посетителей. Чтобы зарегистрироваться на них, напишите нам по телефону +7 (963) 996 3687 ( SMS , Telegram ). Чтобы зарегистрироваться на встречу с переводом на РЖЯ , напишите* в Telegram на @ges2access не позднее чем за три дня до выбранного события. Иллюстрация: Лида Павлюченкова На каждой станции вас ждут ведущие. Они не придумывают программу заранее, а предоставляют посетителям выбор, поэтому каждая сессия становится уникальной — такой, какую хотите именно вы! Родители могут активно включиться в процесс или немного отдохнуть и понаблюдать за игрой детей со стороны. Главное, чтобы все участники отлично провели время и нашли новых друзей. * Пожалуйста, обратите внимание, что, сообщая нам свои личные данные, вы даете согласие на их обработку в соответствии с нашей Политикой в отношении обработки и защиты персональных данных . Фото: Анна Завозяева, Вадим Штэйн Расписание Совместные игры для детей 7–12 лет Пришло время поиграть большой компанией! Все вместе тренируем внимание, реакцию, умение работать в команде и сообразительность. Приводите друзей или приходите в одиночку — у нас точно найдутся напарники. Регистрация {\"",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "spb-2026-11-28-bf2f348c3e",
@@ -73660,7 +74297,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-29-ec2aa4b7b4",
@@ -73765,6 +74404,35 @@
       "availability_checked_at": "",
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "moscow-2026-11-29-91c3c05e64",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-29",
+      "time": "11:30",
+      "title": "А. А. Г. А. В. О. О. Ю. П. С. Е. А.",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "игра"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/a-a-g-a-v-o-o-y-p-s-e-a",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-16",
+      "audience_text": "› Резиденции Дата: 20 ноя– 20 дек 2026 Регистрация Возраст: от 12 Тип: Аудиоспектакль Место: ГЭС-2 Доступность  Возрастные ограничения 12+ Аудиоспектакль-променад об утраченных вещах и приобретенном опыте. Проект создан в рамках программы художественных резиденций Дома культуры « ГЭС-2 ». T Проект междисциплинарных художников из Казани Ангелины Миграновой и Родиона Сабирова стал результатом долгого и глубокого исследования пространства « ГЭС-2 ». В его основу легли личные размышления сотрудников Дома культуры об утраченных предметах — двенадцать историй о прошлом, переживаний в настоящем и фантазий о будущем. Иллюстрация: Полина Калашникова Прошлое возникает, когда к нему прикасается настоящее. Настоящее — это вы, вы — это присутствие. Без вашего присутствия нет будущего, без вашего присутствия нет прошлого, без вашего присутствия нет настоящего. — Ангелина Мигранова, Родион Сабиров Это многоголосие отражено в названии спектакля, сложенном из инициалов рассказчиков. Авторы проекта создают пространство, где каждый может почувствовать себя частью единого целого или найти личную точку тишины и покоя для саморефлексии. Короткие 8—12-минутные монологи можно слушать подряд или по одному, включая аудиоплеер в разных локациях « ГЭС-2 ». Вместе они создают очень личный портрет культурной институции. Прогулка по Дому культуры превращается в путешествие по воспоминаниям людей, благодаря которым архитектура бывшей электростанции обретает новые смыслы и человеческое измерение. Чтобы прослушать спектакль, зарегистрируйтесь. В день спектакля возьмите на стойке информации аудиоплеер с наушниками и иллюстрированную брошюру. Истории можно слушать в любом месте и в любом порядке. Общая продолжительность спектакля — около 2.5 часов. Аудиоспектакль дополняет иллюстрированная брошюра, которую можно взять на стойке информации вместе с аудиогидом. Действующие лица Анастасия Шихирева — специалист по работе с посетителями. Алиса Прудникова — программный директор. Григорий Чередов — директор издательских программ. Анастасия Щеголькова — специалист по работе с посетителями. Влад Колесников — куратор программ доступности для сообщества глухих. Оксана Осадчая — куратор программ доступности по работе с незрячими посетителями. Ольга Кавалай-Аксенова — библиотекарь. Юрий Ирхин — гардеробщик. Полина Зотова — куратор проектов для детской и семейной аудитории. Сергей Елькин — гардеробщик. Екатерина Ванцева — директор по развитию бренда и коммуникации. Артем Бондаревский — генеральный директ",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-29-e126f26ac4",
@@ -74228,6 +74896,32 @@
       "reviewed_at": ""
     },
     {
+      "id": "moscow-2026-11-30-cfa5beca51",
+      "status": "check",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-30",
+      "time": "",
+      "title": "Музыкальное путешествие в Музее русского импрессионизма 4+",
+      "venue": "Музей русского импрессионизма",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "",
+      "url": "https://www.rusimp.su/events/muzykalnoe-puteshestvie-v-muzee-russkogo-impressionizma-4",
+      "source": "Музей русского импрессионизма",
+      "checked_at": "",
+      "review_reason": "year_not_explicit_on_primary_listing",
+      "discovered_at": "2026-11-16",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "sold_out",
+      "availability_checked_at": "2026-11-17"
+    },
+    {
       "id": "moscow-2026-11-30-62f0c036fa",
       "status": "new",
       "kind": "event",
@@ -74284,6 +74978,35 @@
       "availability_checked_at": ""
     },
     {
+      "id": "moscow-2026-11-30-91c3c05e64",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-30",
+      "time": "11:30",
+      "title": "А. А. Г. А. В. О. О. Ю. П. С. Е. А.",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "игра"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/a-a-g-a-v-o-o-y-p-s-e-a",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-16",
+      "audience_text": "› Резиденции Дата: 20 ноя– 20 дек 2026 Регистрация Возраст: от 12 Тип: Аудиоспектакль Место: ГЭС-2 Доступность  Возрастные ограничения 12+ Аудиоспектакль-променад об утраченных вещах и приобретенном опыте. Проект создан в рамках программы художественных резиденций Дома культуры « ГЭС-2 ». T Проект междисциплинарных художников из Казани Ангелины Миграновой и Родиона Сабирова стал результатом долгого и глубокого исследования пространства « ГЭС-2 ». В его основу легли личные размышления сотрудников Дома культуры об утраченных предметах — двенадцать историй о прошлом, переживаний в настоящем и фантазий о будущем. Иллюстрация: Полина Калашникова Прошлое возникает, когда к нему прикасается настоящее. Настоящее — это вы, вы — это присутствие. Без вашего присутствия нет будущего, без вашего присутствия нет прошлого, без вашего присутствия нет настоящего. — Ангелина Мигранова, Родион Сабиров Это многоголосие отражено в названии спектакля, сложенном из инициалов рассказчиков. Авторы проекта создают пространство, где каждый может почувствовать себя частью единого целого или найти личную точку тишины и покоя для саморефлексии. Короткие 8—12-минутные монологи можно слушать подряд или по одному, включая аудиоплеер в разных локациях « ГЭС-2 ». Вместе они создают очень личный портрет культурной институции. Прогулка по Дому культуры превращается в путешествие по воспоминаниям людей, благодаря которым архитектура бывшей электростанции обретает новые смыслы и человеческое измерение. Чтобы прослушать спектакль, зарегистрируйтесь. В день спектакля возьмите на стойке информации аудиоплеер с наушниками и иллюстрированную брошюру. Истории можно слушать в любом месте и в любом порядке. Общая продолжительность спектакля — около 2.5 часов. Аудиоспектакль дополняет иллюстрированная брошюра, которую можно взять на стойке информации вместе с аудиогидом. Действующие лица Анастасия Шихирева — специалист по работе с посетителями. Алиса Прудникова — программный директор. Григорий Чередов — директор издательских программ. Анастасия Щеголькова — специалист по работе с посетителями. Влад Колесников — куратор программ доступности для сообщества глухих. Оксана Осадчая — куратор программ доступности по работе с незрячими посетителями. Ольга Кавалай-Аксенова — библиотекарь. Юрий Ирхин — гардеробщик. Полина Зотова — куратор проектов для детской и семейной аудитории. Сергей Елькин — гардеробщик. Екатерина Ванцева — директор по развитию бренда и коммуникации. Артем Бондаревский — генеральный директ",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-30-eebb063dbc",
       "status": "rejected",
       "kind": "event",
@@ -74321,6 +75044,35 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": "2026-11-01"
+    },
+    {
+      "id": "moscow-2026-11-30-5f73160fd7",
+      "status": "check",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-30",
+      "time": "19:00",
+      "title": "Вечерние наброски",
+      "venue": "Простая школа",
+      "address": "Москва, ул. Пятницкая, 71/5, строение 2, офис 503",
+      "price": 800,
+      "price_text": "800 ₽",
+      "registration": null,
+      "categories": [
+        "наброски"
+      ],
+      "description": "Рисуем обнаженную модель. Три сеанса по 45 минут. Позы от 20 минут до минуты.",
+      "url": "https://prostaya.ru/praktiki",
+      "source": "Простая школа — открытые практики",
+      "checked_at": "",
+      "review_reason": "recurring_schedule_confirm_specific_date",
+      "discovered_at": "2026-11-16",
+      "editor_note": "По еженедельному расписанию школы; проверить отмены и анонс конкретной даты.",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "spb-2026-11-30-5bd3d8d4c8",
@@ -74737,7 +75489,7 @@
       "audience_text": "Opportunity details | Open Call for JustArt Newspaper Club Issue 9 | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register Open Call for JustArt Newspaper Club Issue 9 Deadline: 05/12/2026 Jenny Ping Lam Lin Report this? Description Make a submission Contact curator Open Call - Issue 9 Digital Residues In an era of technological hyper-acceleration, we leave behind an expanding landscape of digital detritus: obsolete formats, corrupted data, forgotten archives and emotional traces embedded within our screens. For Issue 9, Digital Residues, JustArt invites artists, curators and writers to examine the blind spots of the virtual world and explore what remains when digital promises of seamless connectivity and permanence begin to fracture. We are particularly interested in the shifting relationship between human creativity and artificial intelligence. As generative technologies reshape artistic practice, how do we negotiate authorship, agency, and creative freedom? Should we defend the boundaries of human craftsmanship, or embrace collaboration with intelligent systems to expand the possibilities of expression? We welcome submissions that investigate the material, cultural, and psychological tensions between human expression and machine learning. From digital decay and forgotten archives to algorithmic aesthetics, technological memory and acts of creative resistance, we invite you to reconsider the remnants of our increasingly automated world. What does it mean to create, remember, and resist in a world shaped by machines? What We’re Looking For: Artists: Submit 5-8 images of your artwork, along with a description of your work, your bio, and an artist statement. Curators: Share your past projects, project concepts, and your bio, along with 5-8 accompanying images Participation Fee: £38 (Required for selected participants) - Includes a digital copy Social Media Exposure: Your work will be highlighted on our platforms - JustArt Collective Instagram and website. 5K+ Followers on Instagram, and we are growing! Monthly reviewers on Instagram: 50K+ Distribution: The newspaper will be distributed at various art exhibitions and bookshops across the UK. Bookshops: NewBridge Books (Newcastle Upon Tyne) Kafka Bookshop (London) Good Press (Glasgow) Books From Below (Newcastle Upon Tyne) The JustArt newspaper club (Print) ISSN 2979-5494 The JustArt newspaper club (Online) ISSN 2979-5508 We will feature participants on JustArt Collective social media. As a member of the JustArt community, we will select 1-2 participants for free exhibitions with JustArt. Past selected artists for free exhibitions: Jingyun Guan (Issue1): The Hechyeomoyeo 17 Exhibition in Dublin Aitor Moncho Tudanca (Collective Voices 1st Edition) and Anthony Hodgson(Collective Voices 1st Edition): HCMY Mexicali 2026 in Mexico Jingyun Guan (Issue 1) and Bahar Talebi Najafabadi (Issue 3): Human Voyage: The Day We Leave the Shore Exhibition in London Jenny Ping Lam Lin (Issue 4) and Esther Xiang (Issue 3): The Hechyeomoyeo 13 Exhibition in Thailand Sarah Muwanga (Issue 2) and Chaeyeon Kang (Issue 3): The Shape of Anxiety Exhibition in London Sean BW Parker and Sarah Muwanga (Issue 2): Borderlines Exhibition in London About US: Additional Opportunity Artists participating in this program will be prioritised for invitations to participate in JustArt Collective’s future art exhibitions. About JustArt Collective: JustArt Collective is a dynamic group of artists and curators united by a shared passion for the arts. Originally founded in Hong Kong, the collective is now actively engaged in the UK. Throughout our creative journey, we have recognised the vital role of community within the art world. Our mission is to bring together everyone involved in JustArt projects to form a vibrant new community. We encourage open dialogue and the exchange of ideas on a wide range of art-related topics. This includes not only discussions about artistic practices but also the exploration of how to make art more accessible and visible to a broader audience. By fostering these conversations, we aim to inspire fresh perspectives and a deeper appreciation for art among our community and the wider public. Through collaboration and sharing, we hope to cultivate an environment where creativity thrives and everyone's voice is heard. Join us as we work to redefine the art community and enrich our collective experience. For our newspaper, the first print run will be 50 copies. After we sell out the first round (normally sold out during preorder). We will do 30-50 copies for the second round (distributed at bookshops and exhibitions). More information about JustArt Collective can be found on our official website and Instagram account: @Justart_Collective Make a submission Contact the curator You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Advertisement Other opportunities The 17th Annual Pound Arts Open Exhibition Thank you for submitting your work to the 17th annual Pound Arts Open Exhibition. Please read... Revolution: Open Call for artists in any medium REVOLUTION What is REVOLUTION? Your ideas may be framed in terms of change, transformation, ... Life models wanted in Durham and Hartlepool Looking for life models for regular monthly in-person sessions in Durham, North East England.... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
       "price_type": "unknown",
       "availability": "sold_out",
-      "availability_checked_at": "2026-11-16",
+      "availability_checked_at": "2026-11-17",
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
@@ -74773,7 +75525,7 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "sold_out",
-      "availability_checked_at": "2026-11-16",
+      "availability_checked_at": "2026-11-17",
       "editor_overrides": {
         "status": "approved",
         "registration": false,
@@ -74927,6 +75679,34 @@
       "reviewed_at": "2026-11-06"
     },
     {
+      "id": "spb-2026-12-06-42e262a1a0",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-12-06",
+      "time": "",
+      "title": "ОПЕН КОФЕ ФЕСТ",
+      "venue": "Брусницын",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [
+        "фестиваль"
+      ],
+      "description": "",
+      "url": "https://brusnitsyn.spb.ru/opencoffeefest2026",
+      "source": "Брусницын — культурный квартал",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-16",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-12-06-9baa5f2467",
       "status": "check",
       "kind": "event",
@@ -74950,7 +75730,7 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "sold_out",
-      "availability_checked_at": "2026-11-16",
+      "availability_checked_at": "2026-11-17",
       "editor_note": "",
       "reviewed_at": ""
     },
@@ -75056,7 +75836,7 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "sold_out",
-      "availability_checked_at": "2026-11-16",
+      "availability_checked_at": "2026-11-17",
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
@@ -75098,6 +75878,35 @@
       "availability_checked_at": "",
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "moscow-2026-12-10-91c3c05e64",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-12-10",
+      "time": "11:30",
+      "title": "А. А. Г. А. В. О. О. Ю. П. С. Е. А.",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "игра"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/a-a-g-a-v-o-o-y-p-s-e-a",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-16",
+      "audience_text": "› Резиденции Дата: 20 ноя– 20 дек 2026 Регистрация Возраст: от 12 Тип: Аудиоспектакль Место: ГЭС-2 Доступность  Возрастные ограничения 12+ Аудиоспектакль-променад об утраченных вещах и приобретенном опыте. Проект создан в рамках программы художественных резиденций Дома культуры « ГЭС-2 ». T Проект междисциплинарных художников из Казани Ангелины Миграновой и Родиона Сабирова стал результатом долгого и глубокого исследования пространства « ГЭС-2 ». В его основу легли личные размышления сотрудников Дома культуры об утраченных предметах — двенадцать историй о прошлом, переживаний в настоящем и фантазий о будущем. Иллюстрация: Полина Калашникова Прошлое возникает, когда к нему прикасается настоящее. Настоящее — это вы, вы — это присутствие. Без вашего присутствия нет будущего, без вашего присутствия нет прошлого, без вашего присутствия нет настоящего. — Ангелина Мигранова, Родион Сабиров Это многоголосие отражено в названии спектакля, сложенном из инициалов рассказчиков. Авторы проекта создают пространство, где каждый может почувствовать себя частью единого целого или найти личную точку тишины и покоя для саморефлексии. Короткие 8—12-минутные монологи можно слушать подряд или по одному, включая аудиоплеер в разных локациях « ГЭС-2 ». Вместе они создают очень личный портрет культурной институции. Прогулка по Дому культуры превращается в путешествие по воспоминаниям людей, благодаря которым архитектура бывшей электростанции обретает новые смыслы и человеческое измерение. Чтобы прослушать спектакль, зарегистрируйтесь. В день спектакля возьмите на стойке информации аудиоплеер с наушниками и иллюстрированную брошюру. Истории можно слушать в любом месте и в любом порядке. Общая продолжительность спектакля — около 2.5 часов. Аудиоспектакль дополняет иллюстрированная брошюра, которую можно взять на стойке информации вместе с аудиогидом. Действующие лица Анастасия Шихирева — специалист по работе с посетителями. Алиса Прудникова — программный директор. Григорий Чередов — директор издательских программ. Анастасия Щеголькова — специалист по работе с посетителями. Влад Колесников — куратор программ доступности для сообщества глухих. Оксана Осадчая — куратор программ доступности по работе с незрячими посетителями. Ольга Кавалай-Аксенова — библиотекарь. Юрий Ирхин — гардеробщик. Полина Зотова — куратор проектов для детской и семейной аудитории. Сергей Елькин — гардеробщик. Екатерина Ванцева — директор по развитию бренда и коммуникации. Артем Бондаревский — генеральный директ",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-12-10-ceca5c9467",
@@ -75217,6 +76026,35 @@
       "reviewed_at": "2026-11-03"
     },
     {
+      "id": "moscow-2026-12-11-91c3c05e64",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-12-11",
+      "time": "11:30",
+      "title": "А. А. Г. А. В. О. О. Ю. П. С. Е. А.",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "игра"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/a-a-g-a-v-o-o-y-p-s-e-a",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-16",
+      "audience_text": "› Резиденции Дата: 20 ноя– 20 дек 2026 Регистрация Возраст: от 12 Тип: Аудиоспектакль Место: ГЭС-2 Доступность  Возрастные ограничения 12+ Аудиоспектакль-променад об утраченных вещах и приобретенном опыте. Проект создан в рамках программы художественных резиденций Дома культуры « ГЭС-2 ». T Проект междисциплинарных художников из Казани Ангелины Миграновой и Родиона Сабирова стал результатом долгого и глубокого исследования пространства « ГЭС-2 ». В его основу легли личные размышления сотрудников Дома культуры об утраченных предметах — двенадцать историй о прошлом, переживаний в настоящем и фантазий о будущем. Иллюстрация: Полина Калашникова Прошлое возникает, когда к нему прикасается настоящее. Настоящее — это вы, вы — это присутствие. Без вашего присутствия нет будущего, без вашего присутствия нет прошлого, без вашего присутствия нет настоящего. — Ангелина Мигранова, Родион Сабиров Это многоголосие отражено в названии спектакля, сложенном из инициалов рассказчиков. Авторы проекта создают пространство, где каждый может почувствовать себя частью единого целого или найти личную точку тишины и покоя для саморефлексии. Короткие 8—12-минутные монологи можно слушать подряд или по одному, включая аудиоплеер в разных локациях « ГЭС-2 ». Вместе они создают очень личный портрет культурной институции. Прогулка по Дому культуры превращается в путешествие по воспоминаниям людей, благодаря которым архитектура бывшей электростанции обретает новые смыслы и человеческое измерение. Чтобы прослушать спектакль, зарегистрируйтесь. В день спектакля возьмите на стойке информации аудиоплеер с наушниками и иллюстрированную брошюру. Истории можно слушать в любом месте и в любом порядке. Общая продолжительность спектакля — около 2.5 часов. Аудиоспектакль дополняет иллюстрированная брошюра, которую можно взять на стойке информации вместе с аудиогидом. Действующие лица Анастасия Шихирева — специалист по работе с посетителями. Алиса Прудникова — программный директор. Григорий Чередов — директор издательских программ. Анастасия Щеголькова — специалист по работе с посетителями. Влад Колесников — куратор программ доступности для сообщества глухих. Оксана Осадчая — куратор программ доступности по работе с незрячими посетителями. Ольга Кавалай-Аксенова — библиотекарь. Юрий Ирхин — гардеробщик. Полина Зотова — куратор проектов для детской и семейной аудитории. Сергей Елькин — гардеробщик. Екатерина Ванцева — директор по развитию бренда и коммуникации. Артем Бондаревский — генеральный директ",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "spb-2026-12-11-fce2d05097",
       "status": "rejected",
       "kind": "event",
@@ -75290,6 +76128,35 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": "2026-11-13"
+    },
+    {
+      "id": "moscow-2026-12-12-91c3c05e64",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-12-12",
+      "time": "11:30",
+      "title": "А. А. Г. А. В. О. О. Ю. П. С. Е. А.",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "игра"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/a-a-g-a-v-o-o-y-p-s-e-a",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-16",
+      "audience_text": "› Резиденции Дата: 20 ноя– 20 дек 2026 Регистрация Возраст: от 12 Тип: Аудиоспектакль Место: ГЭС-2 Доступность  Возрастные ограничения 12+ Аудиоспектакль-променад об утраченных вещах и приобретенном опыте. Проект создан в рамках программы художественных резиденций Дома культуры « ГЭС-2 ». T Проект междисциплинарных художников из Казани Ангелины Миграновой и Родиона Сабирова стал результатом долгого и глубокого исследования пространства « ГЭС-2 ». В его основу легли личные размышления сотрудников Дома культуры об утраченных предметах — двенадцать историй о прошлом, переживаний в настоящем и фантазий о будущем. Иллюстрация: Полина Калашникова Прошлое возникает, когда к нему прикасается настоящее. Настоящее — это вы, вы — это присутствие. Без вашего присутствия нет будущего, без вашего присутствия нет прошлого, без вашего присутствия нет настоящего. — Ангелина Мигранова, Родион Сабиров Это многоголосие отражено в названии спектакля, сложенном из инициалов рассказчиков. Авторы проекта создают пространство, где каждый может почувствовать себя частью единого целого или найти личную точку тишины и покоя для саморефлексии. Короткие 8—12-минутные монологи можно слушать подряд или по одному, включая аудиоплеер в разных локациях « ГЭС-2 ». Вместе они создают очень личный портрет культурной институции. Прогулка по Дому культуры превращается в путешествие по воспоминаниям людей, благодаря которым архитектура бывшей электростанции обретает новые смыслы и человеческое измерение. Чтобы прослушать спектакль, зарегистрируйтесь. В день спектакля возьмите на стойке информации аудиоплеер с наушниками и иллюстрированную брошюру. Истории можно слушать в любом месте и в любом порядке. Общая продолжительность спектакля — около 2.5 часов. Аудиоспектакль дополняет иллюстрированная брошюра, которую можно взять на стойке информации вместе с аудиогидом. Действующие лица Анастасия Шихирева — специалист по работе с посетителями. Алиса Прудникова — программный директор. Григорий Чередов — директор издательских программ. Анастасия Щеголькова — специалист по работе с посетителями. Влад Колесников — куратор программ доступности для сообщества глухих. Оксана Осадчая — куратор программ доступности по работе с незрячими посетителями. Ольга Кавалай-Аксенова — библиотекарь. Юрий Ирхин — гардеробщик. Полина Зотова — куратор проектов для детской и семейной аудитории. Сергей Елькин — гардеробщик. Екатерина Ванцева — директор по развитию бренда и коммуникации. Артем Бондаревский — генеральный директ",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-12-12-8cb3f8d42f",
@@ -75504,7 +76371,7 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "sold_out",
-      "availability_checked_at": "2026-11-16",
+      "availability_checked_at": "2026-11-17",
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
@@ -75515,6 +76382,35 @@
       "instagram_include": false,
       "reviewed_at": "2026-11-13",
       "editor_note": ""
+    },
+    {
+      "id": "moscow-2026-12-13-91c3c05e64",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-12-13",
+      "time": "11:30",
+      "title": "А. А. Г. А. В. О. О. Ю. П. С. Е. А.",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "игра"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/a-a-g-a-v-o-o-y-p-s-e-a",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-16",
+      "audience_text": "› Резиденции Дата: 20 ноя– 20 дек 2026 Регистрация Возраст: от 12 Тип: Аудиоспектакль Место: ГЭС-2 Доступность  Возрастные ограничения 12+ Аудиоспектакль-променад об утраченных вещах и приобретенном опыте. Проект создан в рамках программы художественных резиденций Дома культуры « ГЭС-2 ». T Проект междисциплинарных художников из Казани Ангелины Миграновой и Родиона Сабирова стал результатом долгого и глубокого исследования пространства « ГЭС-2 ». В его основу легли личные размышления сотрудников Дома культуры об утраченных предметах — двенадцать историй о прошлом, переживаний в настоящем и фантазий о будущем. Иллюстрация: Полина Калашникова Прошлое возникает, когда к нему прикасается настоящее. Настоящее — это вы, вы — это присутствие. Без вашего присутствия нет будущего, без вашего присутствия нет прошлого, без вашего присутствия нет настоящего. — Ангелина Мигранова, Родион Сабиров Это многоголосие отражено в названии спектакля, сложенном из инициалов рассказчиков. Авторы проекта создают пространство, где каждый может почувствовать себя частью единого целого или найти личную точку тишины и покоя для саморефлексии. Короткие 8—12-минутные монологи можно слушать подряд или по одному, включая аудиоплеер в разных локациях « ГЭС-2 ». Вместе они создают очень личный портрет культурной институции. Прогулка по Дому культуры превращается в путешествие по воспоминаниям людей, благодаря которым архитектура бывшей электростанции обретает новые смыслы и человеческое измерение. Чтобы прослушать спектакль, зарегистрируйтесь. В день спектакля возьмите на стойке информации аудиоплеер с наушниками и иллюстрированную брошюру. Истории можно слушать в любом месте и в любом порядке. Общая продолжительность спектакля — около 2.5 часов. Аудиоспектакль дополняет иллюстрированная брошюра, которую можно взять на стойке информации вместе с аудиогидом. Действующие лица Анастасия Шихирева — специалист по работе с посетителями. Алиса Прудникова — программный директор. Григорий Чередов — директор издательских программ. Анастасия Щеголькова — специалист по работе с посетителями. Влад Колесников — куратор программ доступности для сообщества глухих. Оксана Осадчая — куратор программ доступности по работе с незрячими посетителями. Ольга Кавалай-Аксенова — библиотекарь. Юрий Ирхин — гардеробщик. Полина Зотова — куратор проектов для детской и семейной аудитории. Сергей Елькин — гардеробщик. Екатерина Ванцева — директор по развитию бренда и коммуникации. Артем Бондаревский — генеральный директ",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-12-13-550f9318dc",
@@ -75672,6 +76568,35 @@
       "reviewed_at": "2026-11-05"
     },
     {
+      "id": "moscow-2026-12-14-91c3c05e64",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-12-14",
+      "time": "11:30",
+      "title": "А. А. Г. А. В. О. О. Ю. П. С. Е. А.",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "игра"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/a-a-g-a-v-o-o-y-p-s-e-a",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-16",
+      "audience_text": "› Резиденции Дата: 20 ноя– 20 дек 2026 Регистрация Возраст: от 12 Тип: Аудиоспектакль Место: ГЭС-2 Доступность  Возрастные ограничения 12+ Аудиоспектакль-променад об утраченных вещах и приобретенном опыте. Проект создан в рамках программы художественных резиденций Дома культуры « ГЭС-2 ». T Проект междисциплинарных художников из Казани Ангелины Миграновой и Родиона Сабирова стал результатом долгого и глубокого исследования пространства « ГЭС-2 ». В его основу легли личные размышления сотрудников Дома культуры об утраченных предметах — двенадцать историй о прошлом, переживаний в настоящем и фантазий о будущем. Иллюстрация: Полина Калашникова Прошлое возникает, когда к нему прикасается настоящее. Настоящее — это вы, вы — это присутствие. Без вашего присутствия нет будущего, без вашего присутствия нет прошлого, без вашего присутствия нет настоящего. — Ангелина Мигранова, Родион Сабиров Это многоголосие отражено в названии спектакля, сложенном из инициалов рассказчиков. Авторы проекта создают пространство, где каждый может почувствовать себя частью единого целого или найти личную точку тишины и покоя для саморефлексии. Короткие 8—12-минутные монологи можно слушать подряд или по одному, включая аудиоплеер в разных локациях « ГЭС-2 ». Вместе они создают очень личный портрет культурной институции. Прогулка по Дому культуры превращается в путешествие по воспоминаниям людей, благодаря которым архитектура бывшей электростанции обретает новые смыслы и человеческое измерение. Чтобы прослушать спектакль, зарегистрируйтесь. В день спектакля возьмите на стойке информации аудиоплеер с наушниками и иллюстрированную брошюру. Истории можно слушать в любом месте и в любом порядке. Общая продолжительность спектакля — около 2.5 часов. Аудиоспектакль дополняет иллюстрированная брошюра, которую можно взять на стойке информации вместе с аудиогидом. Действующие лица Анастасия Шихирева — специалист по работе с посетителями. Алиса Прудникова — программный директор. Григорий Чередов — директор издательских программ. Анастасия Щеголькова — специалист по работе с посетителями. Влад Колесников — куратор программ доступности для сообщества глухих. Оксана Осадчая — куратор программ доступности по работе с незрячими посетителями. Ольга Кавалай-Аксенова — библиотекарь. Юрий Ирхин — гардеробщик. Полина Зотова — куратор проектов для детской и семейной аудитории. Сергей Елькин — гардеробщик. Екатерина Ванцева — директор по развитию бренда и коммуникации. Артем Бондаревский — генеральный директ",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-12-14-faaa268ecb",
       "status": "rejected",
       "kind": "event",
@@ -75819,6 +76744,35 @@
       }
     },
     {
+      "id": "moscow-2026-12-15-91c3c05e64",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-12-15",
+      "time": "11:30",
+      "title": "А. А. Г. А. В. О. О. Ю. П. С. Е. А.",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "игра"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/a-a-g-a-v-o-o-y-p-s-e-a",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-16",
+      "audience_text": "› Резиденции Дата: 20 ноя– 20 дек 2026 Регистрация Возраст: от 12 Тип: Аудиоспектакль Место: ГЭС-2 Доступность  Возрастные ограничения 12+ Аудиоспектакль-променад об утраченных вещах и приобретенном опыте. Проект создан в рамках программы художественных резиденций Дома культуры « ГЭС-2 ». T Проект междисциплинарных художников из Казани Ангелины Миграновой и Родиона Сабирова стал результатом долгого и глубокого исследования пространства « ГЭС-2 ». В его основу легли личные размышления сотрудников Дома культуры об утраченных предметах — двенадцать историй о прошлом, переживаний в настоящем и фантазий о будущем. Иллюстрация: Полина Калашникова Прошлое возникает, когда к нему прикасается настоящее. Настоящее — это вы, вы — это присутствие. Без вашего присутствия нет будущего, без вашего присутствия нет прошлого, без вашего присутствия нет настоящего. — Ангелина Мигранова, Родион Сабиров Это многоголосие отражено в названии спектакля, сложенном из инициалов рассказчиков. Авторы проекта создают пространство, где каждый может почувствовать себя частью единого целого или найти личную точку тишины и покоя для саморефлексии. Короткие 8—12-минутные монологи можно слушать подряд или по одному, включая аудиоплеер в разных локациях « ГЭС-2 ». Вместе они создают очень личный портрет культурной институции. Прогулка по Дому культуры превращается в путешествие по воспоминаниям людей, благодаря которым архитектура бывшей электростанции обретает новые смыслы и человеческое измерение. Чтобы прослушать спектакль, зарегистрируйтесь. В день спектакля возьмите на стойке информации аудиоплеер с наушниками и иллюстрированную брошюру. Истории можно слушать в любом месте и в любом порядке. Общая продолжительность спектакля — около 2.5 часов. Аудиоспектакль дополняет иллюстрированная брошюра, которую можно взять на стойке информации вместе с аудиогидом. Действующие лица Анастасия Шихирева — специалист по работе с посетителями. Алиса Прудникова — программный директор. Григорий Чередов — директор издательских программ. Анастасия Щеголькова — специалист по работе с посетителями. Влад Колесников — куратор программ доступности для сообщества глухих. Оксана Осадчая — куратор программ доступности по работе с незрячими посетителями. Ольга Кавалай-Аксенова — библиотекарь. Юрий Ирхин — гардеробщик. Полина Зотова — куратор проектов для детской и семейной аудитории. Сергей Елькин — гардеробщик. Екатерина Ванцева — директор по развитию бренда и коммуникации. Артем Бондаревский — генеральный директ",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-12-16-94f9102225",
       "status": "check",
       "kind": "event",
@@ -75842,14 +76796,45 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "sold_out",
-      "availability_checked_at": "2026-11-16",
+      "availability_checked_at": "2026-11-17",
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
+    },
+    {
+      "id": "moscow-2026-12-16-91c3c05e64",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-12-16",
+      "time": "11:30",
+      "title": "А. А. Г. А. В. О. О. Ю. П. С. Е. А.",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "игра"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/a-a-g-a-v-o-o-y-p-s-e-a",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-16",
+      "audience_text": "› Резиденции Дата: 20 ноя– 20 дек 2026 Регистрация Возраст: от 12 Тип: Аудиоспектакль Место: ГЭС-2 Доступность  Возрастные ограничения 12+ Аудиоспектакль-променад об утраченных вещах и приобретенном опыте. Проект создан в рамках программы художественных резиденций Дома культуры « ГЭС-2 ». T Проект междисциплинарных художников из Казани Ангелины Миграновой и Родиона Сабирова стал результатом долгого и глубокого исследования пространства « ГЭС-2 ». В его основу легли личные размышления сотрудников Дома культуры об утраченных предметах — двенадцать историй о прошлом, переживаний в настоящем и фантазий о будущем. Иллюстрация: Полина Калашникова Прошлое возникает, когда к нему прикасается настоящее. Настоящее — это вы, вы — это присутствие. Без вашего присутствия нет будущего, без вашего присутствия нет прошлого, без вашего присутствия нет настоящего. — Ангелина Мигранова, Родион Сабиров Это многоголосие отражено в названии спектакля, сложенном из инициалов рассказчиков. Авторы проекта создают пространство, где каждый может почувствовать себя частью единого целого или найти личную точку тишины и покоя для саморефлексии. Короткие 8—12-минутные монологи можно слушать подряд или по одному, включая аудиоплеер в разных локациях « ГЭС-2 ». Вместе они создают очень личный портрет культурной институции. Прогулка по Дому культуры превращается в путешествие по воспоминаниям людей, благодаря которым архитектура бывшей электростанции обретает новые смыслы и человеческое измерение. Чтобы прослушать спектакль, зарегистрируйтесь. В день спектакля возьмите на стойке информации аудиоплеер с наушниками и иллюстрированную брошюру. Истории можно слушать в любом месте и в любом порядке. Общая продолжительность спектакля — около 2.5 часов. Аудиоспектакль дополняет иллюстрированная брошюра, которую можно взять на стойке информации вместе с аудиогидом. Действующие лица Анастасия Шихирева — специалист по работе с посетителями. Алиса Прудникова — программный директор. Григорий Чередов — директор издательских программ. Анастасия Щеголькова — специалист по работе с посетителями. Влад Колесников — куратор программ доступности для сообщества глухих. Оксана Осадчая — куратор программ доступности по работе с незрячими посетителями. Ольга Кавалай-Аксенова — библиотекарь. Юрий Ирхин — гардеробщик. Полина Зотова — куратор проектов для детской и семейной аудитории. Сергей Елькин — гардеробщик. Екатерина Ванцева — директор по развитию бренда и коммуникации. Артем Бондаревский — генеральный директ",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-12-17-c0f0f9a5b5",
@@ -76467,6 +77452,35 @@
       "availability_checked_at": "",
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "international-2027-01-31-4cd8621b08",
+      "status": "check",
+      "kind": "open_call",
+      "city": "international",
+      "date": "2027-01-31",
+      "time": "",
+      "title": "The GREAT Leeds Fungi Exhibition 2027 - Exhibitor Applications",
+      "venue": "CuratorSpace",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "open-call"
+      ],
+      "description": "Calling all mushroom/fungi/mycelium inspired artists - apply to exhibit your work at The GREAT Leeds Fungi Exhibition 2027!",
+      "url": "https://www.curatorspace.com/opportunities/detail/the-great-leeds-fungi-exhibition---exhibitor-applications/11323",
+      "source": "CuratorSpace — opportunities",
+      "checked_at": "",
+      "review_reason": "primary_source_required",
+      "discovered_at": "2026-11-16",
+      "audience_text": "Opportunity details | The GREAT Leeds Fungi Exhibition 2027 - Exhibitor Applications | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register The GREAT Leeds Fungi Exhibition 2027 - Exhibitor Applications Deadline: 31/01/2027 City: Leeds | Country: United Kingdom | Studio Greenly Report this? Description Opportunity FAQs Make a submission Contact curator Calling all mushroom/fungi/mycelium inspired artists - apply to exhibit your work at The GREAT Leeds Fungi Exhibition 2027! Following the success of the past 3 years of the exhibition, we're excited to announce GLFE 2027! It will follow a similar format to last year - live music and performances on the open evening, and open for daytime viewing the following day, along with creative workshops. The GREAT Leeds Fungi Exhibition 2027 will take place from Friday 2nd April to Saturday 3rd April 2027 at Headrow House , 19a The Headrow, Leeds LS1 6PU. The evening opening event will take place on Friday 2nd April, 7:00-9:00 pm, with the bar open for drinks. The exhibition will be open for the daytime opening on Saturday 3rd April from 12:00 - 5:00 pm, featuring creative workshops. Key Information Apply to exhibit your work at this exciting exhibition showcasing the work of artists working with themes of mushrooms, fungi and the mycelial world! Most mediums accepted within the limits of the venue. We will have hanging boards for wall-mounted work and tables for sculptural/tabletop easels. Floor-standing space and a screen are also available. Applicants can also provide their own displays if the venue/collective cannot provide e.g. if you have an audio submission, you would need to supply headphones and a way to play the file(s). Free to participate. Your application can be for existing or new work that will be made. There will also be the opportunity to sell your exhibited pieces as well as smaller work in our shop. Please note that if you have exhibited in previous years, your application is more likely to be accepted if you submit different work. Set up on Friday 2nd April will begin from 11 am, when you must arrange to drop off your work (or someone else on your behalf) at the venue before 2 pm and work with Studio Greenly to best showcase your piece(s). You must be able to collect your work after exhibiting the following day from 5 pm on Saturday 3rd April or via an alternative arrangement with the organisers - please tick the relevant box if you wish to post your work to us instead! If posting either or both ways, we are unable to fund posting fees; you will need to pay for these yourself, so please take this into account. You will need to pack and protect your work really well to prevent damage in transit. Selling Work in The Shop There will be a dedicated shop for selling smaller pieces on the weekend from artists, so if this interests you, please fill out the section in this form. Exhibitors can sell up to 30 individual items in the shop. Any work that is sold on the night will have a 20% commission fee, and you will be paid in the week following the exhibition if you make any sales via bank transfer. Any unsold shop pieces can be collected from 5 pm on Saturday 3rd April along with your exhibited pieces or via an alternative arrangement with the organisers - please tick the relevant box if you wish to post your work to us instead! If posting either or both ways, we are unable to fund posting fees; you will need to pay for these yourself, so please take this into account. Any exhibited pieces that are sold can be collected from 5 pm on Saturday 3rd April, mailed by post to the buyer (we will pay for postage) or via an alternative arrangement with the organisers. This year, we are offering to reduce the 20% commission fees to 10% for exhibitors who are able to help out for 2 hours on either day of the exhibition . This will involve being stationed at either the door for checking/selling tickets or in the shop to track sales and take payments. We'll have 2 people for each timeslot helping out, but we will need 3 people in the shop for the opening as things can get very busy. Please let us know if you are available and what timeslots you can do. Thank you in advance for this - you are really helping us out! AI Policy We have a strict no AI policy. If we find that you have applied with AI art or are selling AI art, your application will be declined or you will be asked to remove your work immediately, and you will not be offered future opportunities with us. Accessibility The venue has a lift and two accessible toilets. Please let us know your access needs. Deadline Applications close on Sunday 31st January 2027 at midnight! You will hear back from us after Monday 1st February 2027 via CuratorSpace if you have been successful. Thank you for applying and good luck! Event artwork by the wonderful Izzie Hinton Smith. Make a submission Contact the curator Who is eligible for this opportunity? Any artists or collectives working within the themes of the exhibition who can commute to Headrow House, Leeds, on the dates of the exhibition. Please ensure you are available for both dates/times for drop off and pick up of work. When is the deadline? Applications close on Sunday 31st January 2027 at midnight. You will hear back from us after Monday 1st February 2027 via CuratorSpace if your application has been successful. How many works can I submit? Maximum of 1 exhibited piece (or collection of pieces) per entrant. When is the delivery date? Please ensure you or someone on your behalf are available to drop off work from 11 am to 2 pm on Friday 2nd April 2027 at Headrow House. You can also post work to our studio in advance of the exhibition. If posting either or both ways, we are unable to fund posting fees, you will need to pay for these yourself so please take this into account. When do I need to collect my work? Please ensure you or someone on your behalf are available to pick up your work from 5pm on Saturday 3rd April 2027 at Headrow House. If we are returning to you via post, we will arrange this with you in the week following the exhibition. Is there a private view / opening? The evening opening event will take place on Friday 2nd April, 7:00-9:00 pm, with the bar open for drinks. Unfortunately this year due to budget constraints, we cannot offer free tickets to exhibitors. We may be able to offer a discount code so stay tuned. What are the exhibition opening hours? The evening opening event will take place on Friday 2nd April 7:00 - 9:00pm with the bar open for drinks (18+ only). The exhibition will be open for the day opening on Saturday 3rd April from 12:00 - 5:00pm (all ages). Does the location have disabled access? Yes Headrow House has a lift and two accessible toilets. What publicity will be provided as part of the opportunity? Flyers will be distributed at the venue and around the local area and we will be posting lots on social media plus our website. Do I need to be present? You do not need to be present for the exhibition but it would be great to have you come along and bring friends/family/loved ones on one of the days. Please ensure you are available for both dates/times for drop off and pick up of work (or let us know if you're posting instead). How do you decide on proposals? We're looking for exciting artwork that relates to the themes of mushrooms, fungi and the mycelial world. Most mediums accepted within the limits of the venue. What happens if my proposal is chosen? You will be contacted via CuratorSpace if your application is successful. You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Advertisement Other opportunities Craft Open and Market Are you a craft maker, artist or creative? Do you sew, knit, crochet, make jewellery, create... ARTISTS WANTED for Exhibition at 35aSpace — LONDON *FREE Exhibition Space* I’m looking for artists interested in showing their work in a small, lived-in studio/home in... Exhibit in Brazil - Timeless Exhibition A unique opportunity for artists to show their work in a different country without having to be... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "russia-2027-01-31-a35dbe3875",

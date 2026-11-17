@@ -38291,7 +38291,7 @@
       "reviewed_at": "2026-10-17",
       "availability": "unknown",
       "availability_checked_at": "",
-      "registration": false,
+      "registration": null,
       "price": null,
       "price_text": "",
       "price_type": "paid",
@@ -38317,7 +38317,7 @@
         "status": "approved",
         "telegram_include": false,
         "instagram_include": false,
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -41054,7 +41054,7 @@
       "address": "1-й Голутвинский переулок, 16, стр. 1",
       "price": 850,
       "price_text": "850 ₽; льготный — 650 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -41081,7 +41081,7 @@
       "time_evidence": "24 октября 2026 14:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
       "editor_overrides": {
-        "registration": false
+        "registration": null
       }
     },
     {
@@ -49427,7 +49427,7 @@
       "address": "Лаврушинский переулок, 12",
       "price": 650,
       "price_text": "650 ₽; онлайн — 700 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -49444,7 +49444,7 @@
         "telegram_include": false,
         "instagram_include": false,
         "status": "approved",
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -51674,14 +51674,16 @@
       "price": 0,
       "price_text": "",
       "registration": false,
-      "categories": [],
+      "categories": [
+        "выставка"
+      ],
       "description": "На метро Музей AZ находится между станциями метро «Маяковская» и «Белорусская» (кольцевая). Мы рекомендуем идти в Музей от станции «Маяковская». Вам нужен Выход №1 на 1-я Тверская-Ямская улица, 2-я Тверская-Ямская улица.",
       "url": "https://museum-az.com/event/territoriya-svobody-nonkonformisty-v-taruse/",
       "source": "Музей AZ — выставки и события",
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-10-20",
-      "price_type": "paid",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-10-25",
       "editor_overrides": {
@@ -55187,7 +55189,7 @@
       "address": "",
       "price_type": "free",
       "price_text": "бесплатно по регистрации",
-      "registration": false,
+      "registration": true,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -57101,7 +57103,7 @@
       "address": "",
       "price_type": "free",
       "price_text": "бесплатно по регистрации",
-      "registration": false,
+      "registration": true,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -64221,6 +64223,43 @@
       "availability_checked_at": ""
     },
     {
+      "id": "spb-2026-11-17-f2950c5b0c",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-17",
+      "time": "",
+      "title": "В Строгановском дворце Русского музея пройдёт «Географический диктант»",
+      "venue": "Лекторий Русского музея",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "",
+      "url": "https://rusmuseum.ru/news/",
+      "source": "Русский музей — лекторий",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-17",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
+    },
+    {
       "id": "moscow-2026-11-17-6501f99a5e",
       "status": "new",
       "kind": "event",
@@ -64236,7 +64275,7 @@
       "categories": [
         "встреча"
       ],
-      "description": "Встреча книжного клуба разработчиков видеоигр 16+ 17 ноября 2026 (вторник) 18:30 101 точка чтения Вход свободный 2026-11-17 18:30 2026-11-17 18:30 Europe/Moscow Встреча книжного клуба разработчиков видеоигр Говорим о книгах, видеоиграх и общаемся РГБМ, 101 точка чтения РГБМ info@rgub.ru Говорим о книгах, видеоиграх и общаемся На ежемесячной встрече мы читаем и обсуждаем произведения участников, свежие новости и вопросы из игровой индустрии. Также учимся презентовать себя и практикуемся в публичном выступлении, получаем отзывы о своём творчестве и даём обратную связь коллегам. Ведущий: Евгений Медведев, Team Lead QA Lipsar studio, преподаватель и член индустриального совета ITHub",
+      "description": "Встреча книжного клуба разработчиков видеоигр 16+ 17 ноября 2026 (вторник) 18:30 101 точка чтения Вход свободный Говорим о книгах, видеоиграх и общаемся На ежемесячной встрече мы читаем и обсуждаем произведения участников, свежие новости и вопросы из игровой индустрии. Также учимся презентовать себя и практикуемся в публичном выступлении, получаем отзывы о своём творчестве и даём обратную связь коллегам. Ведущий: Евгений Медведев, Team Lead QA Lipsar studio, преподаватель и член индустриального совета ITHub",
       "url": "https://rgub.ru/schedule/item.php?new_id=49797",
       "source": "Российская государственная библиотека для молодёжи — афиша",
       "checked_at": "",
@@ -64274,7 +64313,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-17-c130efd314",
@@ -64478,41 +64519,6 @@
       "reviewed_at": ""
     },
     {
-      "id": "spb-2026-11-17-f2950c5b0c",
-      "status": "new",
-      "kind": "event",
-      "city": "spb",
-      "date": "2026-11-17",
-      "time": "",
-      "title": "Центр искусств и технологий Русского музея приглашает на мастер-класс «Стилизованный пейзаж масляной пастелью» в рамках выставки «Айвазовский»",
-      "venue": "Лекторий Русского музея",
-      "address": "",
-      "price": 0,
-      "price_text": "Бесплатно",
-      "registration": false,
-      "categories": [
-        "лекция"
-      ],
-      "description": "",
-      "url": "https://rusmuseum.ru/news/",
-      "source": "Русский музей — лекторий",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-11-17",
-      "price_type": "free",
-      "availability_evidence": "",
-      "ticket_required": true,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false
-      },
-      "telegram_include": false,
-      "instagram_include": false
-    },
-    {
       "id": "moscow-2026-11-17-b80f732c02",
       "status": "new",
       "kind": "event",
@@ -64604,82 +64610,6 @@
       "telegram_include": false,
       "instagram_include": false,
       "reviewed_at": "2026-11-06"
-    },
-    {
-      "id": "moscow-2026-10-25-c40e7952b7",
-      "status": "rejected",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-11-17",
-      "time": "10:00",
-      "title": "Воркшопы",
-      "venue": "ЦСИ Винзавод",
-      "address": "",
-      "price": 0,
-      "price_text": "Бесплатно",
-      "registration": false,
-      "categories": [
-        "лекция"
-      ],
-      "description": "",
-      "url": "https://www.winzavod.ru/calendar/workshops/",
-      "source": "ЦСИ Винзавод",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-10-25",
-      "price_type": "free",
-      "availability_evidence": "",
-      "ticket_required": true,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false,
-        "status": "rejected"
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": "2026-10-27"
-    },
-    {
-      "id": "moscow-2026-10-25-fefbfbd35d",
-      "status": "rejected",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-11-17",
-      "time": "10:00",
-      "title": "Курсы",
-      "venue": "ЦСИ Винзавод",
-      "address": "",
-      "price": 0,
-      "price_text": "Бесплатно",
-      "registration": false,
-      "categories": [
-        "лекция"
-      ],
-      "description": "",
-      "url": "https://www.winzavod.ru/calendar/course/",
-      "source": "ЦСИ Винзавод",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-10-25",
-      "price_type": "free",
-      "availability_evidence": "",
-      "ticket_required": true,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false,
-        "status": "rejected"
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": "2026-10-27"
     },
     {
       "id": "moscow-2026-11-17-b9a5fe1f3d",
@@ -65488,6 +65418,82 @@
       "reviewed_at": ""
     },
     {
+      "id": "moscow-2026-10-25-c40e7952b7",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-18",
+      "time": "10:00",
+      "title": "Воркшопы",
+      "venue": "ЦСИ Винзавод",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "",
+      "url": "https://www.winzavod.ru/calendar/workshops/",
+      "source": "ЦСИ Винзавод",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-25",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false,
+        "status": "rejected"
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": "2026-10-27"
+    },
+    {
+      "id": "moscow-2026-10-25-fefbfbd35d",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-18",
+      "time": "10:00",
+      "title": "Курсы",
+      "venue": "ЦСИ Винзавод",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "",
+      "url": "https://www.winzavod.ru/calendar/course/",
+      "source": "ЦСИ Винзавод",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-25",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false,
+        "status": "rejected"
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": "2026-10-27"
+    },
+    {
       "id": "moscow-2026-11-18-d4ed4734f6",
       "status": "approved",
       "kind": "event",
@@ -66226,7 +66232,7 @@
       "title": "Виктория Бурлакова Свое место",
       "venue": "ЦСИ Винзавод",
       "address": "",
-      "price": 0,
+      "price": 12000,
       "price_text": "12000 ₽",
       "registration": null,
       "categories": [
@@ -66240,7 +66246,7 @@
       "discovered_at": "2026-11-16",
       "start_date": "2026-11-19",
       "end_date": "2026-11-22",
-      "price_type": "free",
+      "price_type": "paid",
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
@@ -66988,6 +66994,32 @@
       "availability_checked_at": ""
     },
     {
+      "id": "spb-2026-11-19-048e032c7a",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-19",
+      "time": "16:00",
+      "title": "Что ждет гостей акции? Никто не знает. Но ведь если долго вглядываться в бездну...",
+      "venue": "Пушкинская-10",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "Серия выставок «Двенадцать комнат» — это проект об исследовании пространства художника и субъективных состояний в современной арт-практике. Проект представляет собой сложную структуру site-specific интервенций, направленных на деконструкцию и реконструкцию феномена художественного пространства как психического и материального объекта. «Пространство не есть пустая форма, а живой опыт, в котором мы погружены и от которого не можем абстрагироваться. Оно неотделимо от нашего собственного тела и существования в мире» (Merleau-Ponty, 1962, с. 235).",
+      "url": "https://t.me/pushkinskaya10/1606",
+      "source": "Пушкинская-10 — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-11-17",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-19-d4171e2818",
       "status": "rejected",
       "kind": "event",
@@ -67233,6 +67265,34 @@
       "availability_checked_at": "",
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "moscow-2026-11-19-5354f5936f",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-19",
+      "time": "19:15",
+      "title": "Показ легендарной драмы Я.Протазанова «Человек из ресторана»: немое кино, которое стоит увидеть на большом экране",
+      "venue": "Дом русского зарубежья им. А. Солженицына",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": true,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "19 ноября 2026 года в 19 часов 15 минут приглашаем на показ легендарной немой черно-белой драмы Якова Протазанова «Человек из ресторана» (1927), экранизации одноименной повести Ивана Шмелева. Главную роль — официанта Скороходова — исполняет Михаил Чехов , выдающийся актер, театральный педагог, режиссер, заслуженный артист РСФСР и номинант на «Оскар».",
+      "url": "https://www.domrz.ru/event/pokaz_legendarnoy_dramy_ya_protazanova_chelovek_iz_restorana_nemoe_kino_kotoroe_stoit_uvidet_na_bolsh/",
+      "source": "Дом русского зарубежья — афиша",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-17",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "sold_out",
+      "availability_checked_at": "2026-11-17"
     },
     {
       "id": "moscow-2026-11-19-d74b62747b",
@@ -68148,7 +68208,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-20-aa8503e63c",
@@ -68222,6 +68284,62 @@
       },
       "telegram_include": false,
       "instagram_include": false
+    },
+    {
+      "id": "moscow-2026-11-20-0878ba892d",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-20",
+      "time": "16:00",
+      "title": "Тематическая экскурсия «Реликвии русской Гвардии»",
+      "venue": "Дом русского зарубежья им. А. Солженицына",
+      "address": "",
+      "price": 300,
+      "price_text": "300 ₽",
+      "registration": true,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "20 ноября 2026 года в 16 час приглашаем на тематическую экскурсию «Реликвии русской Гвардии». Гвардия в Российской империи всегда была на особом положении — близость к императорскому престолу не только давала определенные привилегии, но и налагала большие обязательства.",
+      "url": "https://www.domrz.ru/event/70711_tematicheskaya_ekskursiya_relikvii_russkoy_gvardii/",
+      "source": "Дом русского зарубежья — афиша",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-11-17",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "sold_out",
+      "availability_checked_at": "2026-11-17"
+    },
+    {
+      "id": "moscow-2026-11-20-5e8480b407",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-20",
+      "time": "17:00",
+      "title": "Лекция-экскурсия «От “Мира искусства” к миру кино: творческий путь А.М.Арнштама»",
+      "venue": "Дом русского зарубежья им. А. Солженицына",
+      "address": "",
+      "price": 300,
+      "price_text": "300 ₽",
+      "registration": true,
+      "categories": [
+        "лекция"
+      ],
+      "description": "20 ноября 2026 года в 17 часов приглашаем на лекцию-экскурсию «От “Мира искусства” к миру кино. Творческий путь А.М.Арнштама». Александр Мартынович Арнштам (1880–1969) — талантливый художник, книжный график и мастер эстампа.",
+      "url": "https://www.domrz.ru/event/70676_lektsiya_ekskursiya_ot_mira_iskusstva_k_miru_kino_tvorcheskiy_put_a_m_arnshtama6906/",
+      "source": "Дом русского зарубежья — афиша",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-11-17",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "sold_out",
+      "availability_checked_at": "2026-11-17"
     },
     {
       "id": "moscow-2026-11-20-cf673211bf",
@@ -69364,6 +69482,34 @@
       "reviewed_at": "2026-11-03"
     },
     {
+      "id": "moscow-2026-11-21-472020871f",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-21",
+      "time": "13:00",
+      "title": "Интерактивная программа с мастер-классом «Не только отец: Леонид Пастернак — московский художник-импрессионист»",
+      "venue": "Дом русского зарубежья им. А. Солженицына",
+      "address": "",
+      "price": 700,
+      "price_text": "700 ₽",
+      "registration": true,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "21 ноября 2026 года в 13 часов приглашаем на интерактивную программу с мастер-классом «Не только отец: Леонид Пастернак — московский художник-импрессионист». Леонид Пастернак — известный московский художник, профессор Училища живописи, ваяния и зодчества.",
+      "url": "https://www.domrz.ru/event/70712_interaktivnaya_programma_s_master_klassom_ne_tolko_otets_leonid_pasternak_moskovskiy_khudozhnik_impr/",
+      "source": "Дом русского зарубежья — афиша",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-17",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "sold_out",
+      "availability_checked_at": "2026-11-17"
+    },
+    {
       "id": "spb-2026-11-21-6274d9b2ae",
       "status": "rejected",
       "kind": "event",
@@ -69459,7 +69605,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-21-00c85a88e1",
@@ -69842,7 +69990,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-21-98f4534d25",
@@ -70668,7 +70818,9 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-22-b243361041",
@@ -70743,6 +70895,34 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "moscow-2026-11-22-e61c5e5cf7",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-22",
+      "time": "12:00",
+      "title": "Мастер-класс по фасадным панелям: «Лицо фасада»",
+      "venue": "Музей Транспорта Москвы",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "",
+      "url": "https://mtmuseum.ru/affiche/master-klass-po-fasadnym-panelyam-litso-fasada-/",
+      "source": "Музей транспорта Москвы — афиша",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-17",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-22-4a0fbff4de",
@@ -71893,6 +72073,34 @@
       "reviewed_at": "2026-11-13"
     },
     {
+      "id": "moscow-2026-11-24-9bea769fd1",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-24",
+      "time": "11:00",
+      "title": "IX международная конференция «Еврейское поле: новые открытия, опыт и концептуализация»",
+      "venue": "Еврейский музей и центр толерантности",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": true,
+      "categories": [
+        "конференция"
+      ],
+      "description": "На девятой ежегодной конференции мы уже по традиции обсудим новые исследования в области еврейской антропологии, фольклористики, лингвистики, социологии, эпиграфики и археологии, а также истории и культуры евреев в России и СССР, еврейских коллекций и архивов, и смежных тем.",
+      "url": "https://www.jewish-museum.ru/events/ix-mezhdunarodnaya-konferentsiya-evreyskoe-pole-novye-otkrytiya-opyt-i-kontseptualizatsiya/",
+      "source": "Еврейский музей и центр толерантности",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-17",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-24-e729e1a012",
       "status": "new",
       "kind": "event",
@@ -71964,7 +72172,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-24-d9a9074d9b",
@@ -72068,7 +72278,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-24-df4566acc2",
@@ -72151,7 +72363,7 @@
       "city": "spb",
       "date": "2026-11-24",
       "time": "18:30",
-      "title": "Лекция «Теоретические подходы и прикладные направления в психологии» / События на TimePad.ru",
+      "title": "ÐÑÐ¾Ð²ÐµÑÐºÐ° Ð±ÑÐ°ÑÐ·ÐµÑÐ° Ð¿ÐµÑÐµÐ´ Ð¿ÐµÑÐµÑ Ð¾Ð´Ð¾Ð¼ Ð½Ð° otkrytaya-gostinaya.timepad.ru",
       "venue": "Открытая гостиная",
       "address": "",
       "price": null,
@@ -72295,6 +72507,46 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": "2026-11-13"
+    },
+    {
+      "id": "moscow-2026-11-24-7530145d8d",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-24",
+      "time": "19:30",
+      "title": "Специальный показ. Лето в Бадене",
+      "venue": "Центр Зотов",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "спецпоказ"
+      ],
+      "description": "",
+      "url": "https://centrezotov.ru/events/speczialnyj-pokaz-leto-v-badene/",
+      "source": "Центр Зотов",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-25",
+      "price_type": "paid",
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false,
+        "status": "rejected"
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": "2026-10-27",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "time_verification": "verified",
+      "time_evidence": "31.10.26 16:30",
+      "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
       "id": "international-2026-11-25-ef39cd57a5",
@@ -72755,7 +73007,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-25-588b1b9599",
@@ -73302,7 +73556,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-26-588b1b9599",
@@ -73925,7 +74181,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-10-28",
-      "audience_text": "› Практики › инклюзивные Дата: с 25 апр 2026 Возраст: от 16 Тип: Публичная программа Место: Классы , Галереи 2 этажа Доступность  Возрастные ограничения 16+ Регулярные встречи для незрячих и слабовидящих посетителей, приуроченные к текущим выставкам Дома культуры и направленные на формирование целостного опыта их восприятия. Расписание 23 окт, 13, 20 и 27 ноя, 18 дек с 17:00 до 19:00 Встречи проходят в Классах Дома культуры. Чтобы зарегистрироваться, напишите* нам в Телеграм, WhatsApp , СМС-сообщения на +7 (963) 996 3687 . T Программа предполагает последовательное знакомство с тематикой выставки и ее художественным контекстом через различные медиумы — тактильные, звуковые, ольфакторные. Встречи включают совместный анализ ключевых идей и решений, а также последующее исследование экспозиции с тифлокомментированием. В программе примут участие медиаторы Дома культуры, кураторы выставок и другие приглашенные специалисты. Каждой выставке посвящается цикл из нескольких встреч, выстроенных как последовательное погружение в ее концепцию и структуру. Мы рекомендуем участникам по возможности посещать весь цикл встреч, чтобы сохранить целостность опыта и динамику групповой работы. Программа ориентирована на формирование устойчивой группы, которая проходит путь исследования выставки вместе. В программе будут использоваться тактильные материалы и модели, сделанные в Центре художественного производства « Своды ». Автор программы Тимофей Горшков — медиатор и консультант по вопросам доступности музеев и культурных институций. Читает лекции о музыке и учится в магистратуре на философском факультете в МГУ имени М. В. Ломоносова. Медиаторы « ГЭС-2 » Маша Галочкина, Катерина Ляйнен, Алина Мирошник, Настя Стреблянская, Тая Фролова, Виктор Циряниди Ассистенты Полина Губай, Лена Паневина, Элина Штанько Специалист по работе со станками ЧПУ и 3D-печатью Центра художественного производства «Своды» Сергей Калинин * Пожалуйста, обратите внимание, что, сообщая нам свои личные данные, вы даете согласие на их обработку в соответствии с нашей Политикой в отношении обработки и защиты персональных данных . Куратор Александра Харченко {\"grid\":{\"width\":963,\"column_width\":89,\"columns_n\":9,\"gutter\":20,\"margin\":0,\"line\":10},\"palette\":\"default\",\"responsive_mode\":true,\"responsive_min_width\":512,\"responsive_max_width\":1100,\"colorchanger_fullscreen\":false,\"colorchanger_overflow\":true,\"page_cropping\":false,\"global_google_analytics_id\":\"\",\"global_yandex_metrika_id\":\"\",\"article_mode\":{\"mode\":\"page\",\"t",
+      "audience_text": "› Практики › инклюзивные Дата: с 25 апр 2026 Возраст: от 16 Тип: Публичная программа Место: Классы , Галереи 2 этажа Доступность  Возрастные ограничения 16+ Регулярные встречи для незрячих и слабовидящих посетителей, приуроченные к текущим выставкам Дома культуры и направленные на формирование целостного опыта их восприятия. Расписание 23 окт, 27 ноя, 18 дек 2026, 29 января, 5 и 12 февраля 2027, с 17:00 до 19:00 Встречи проходят в Классах и Галереях Дома культуры. Чтобы зарегистрироваться, напишите* нам в Телеграм, WhatsApp , СМС-сообщения на +7 (963) 996 3687 . T Программа предполагает последовательное знакомство с тематикой выставки и ее художественным контекстом через различные медиумы — тактильные, звуковые, ольфакторные. Встречи включают совместный анализ ключевых идей и решений, а также последующее исследование экспозиции с тифлокомментированием. В программе примут участие медиаторы Дома культуры, кураторы выставок и другие приглашенные специалисты. Каждой выставке посвящается цикл из нескольких встреч, выстроенных как последовательное погружение в ее концепцию и структуру. Мы рекомендуем участникам по возможности посещать весь цикл встреч, чтобы сохранить целостность опыта и динамику групповой работы. Программа ориентирована на формирование устойчивой группы, которая проходит путь исследования выставки вместе. В программе будут использоваться тактильные материалы и модели, сделанные в Центре художественного производства « Своды ». Автор программы Тимофей Горшков — медиатор и консультант по вопросам доступности музеев и культурных институций. Читает лекции о музыке и учится в магистратуре на философском факультете в МГУ имени М. В. Ломоносова. Медиаторы « ГЭС-2 » Маша Галочкина, Катерина Ляйнен, Алина Мирошник, Настя Стреблянская, Тая Фролова, Виктор Циряниди Ассистенты Полина Губай, Лена Паневина, Элина Штанько Специалист по работе со станками ЧПУ и 3D-печатью Центра художественного производства «Своды» Сергей Калинин * Пожалуйста, обратите внимание, что, сообщая нам свои личные данные, вы даете согласие на их обработку в соответствии с нашей Политикой в отношении обработки и защиты персональных данных . Куратор Александра Харченко {\"grid\":{\"width\":963,\"column_width\":89,\"columns_n\":9,\"gutter\":20,\"margin\":0,\"line\":10},\"palette\":\"default\",\"responsive_mode\":true,\"responsive_min_width\":512,\"responsive_max_width\":1100,\"colorchanger_fullscreen\":false,\"colorchanger_overflow\":true,\"page_cropping\":false,\"global_google_analytics_id\":\"\",\"global_yandex_metrika",
       "price_type": "unknown",
       "availability_evidence": "",
       "ticket_required": false,
@@ -74596,7 +74852,9 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-11-29-e272fef6c8",
@@ -75846,6 +76104,35 @@
       "reviewed_at": ""
     },
     {
+      "id": "moscow-2026-12-01-b9a5fe1f3d",
+      "status": "check",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-12-01",
+      "time": "10:30",
+      "title": "Тематические наброски",
+      "venue": "Простая школа",
+      "address": "Москва, ул. Пятницкая, 71/5, строение 2, офис 503",
+      "price": 750,
+      "price_text": "750 ₽",
+      "registration": null,
+      "categories": [
+        "наброски"
+      ],
+      "description": "Те же наброски, но с темой, которую задает ведущий.Ищем новые выразительные средства и пластические решения. Тема не обязательство — рисуем, что интересно.",
+      "url": "https://prostaya.ru/praktiki",
+      "source": "Простая школа — открытые практики",
+      "checked_at": "",
+      "review_reason": "recurring_schedule_confirm_specific_date",
+      "discovered_at": "2026-11-17",
+      "editor_note": "По еженедельному расписанию школы; проверить отмены и анонс конкретной даты.",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "international-2026-12-02-0a38d7b06c",
       "status": "rejected",
       "kind": "open_call",
@@ -75910,6 +76197,41 @@
       "ticket_required": false,
       "availability": "unknown",
       "availability_checked_at": ""
+    },
+    {
+      "id": "moscow-2026-12-02-df59eca924",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-12-02",
+      "time": "18:30",
+      "title": "Инклюзия в жилом интерьере. Как дизайнеру делать пространство комфортным для каждого? 03 декабря, Чт Начало в 19:00",
+      "venue": "Британская высшая школа дизайна",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": true,
+      "categories": [],
+      "description": "Еврейский музей и центр толерантности, пространство «Мансарда», ул. 1А 3 декабря Британка, Лемана ПРО и Циан приглашают на встречу, посвящённую инклюзивному дизайну. Эксперты в области дизайна интерьера, инклюзии и коммуникаций обсудят, как учитывать потребности будущих жителей на разных этапах работы над проектом.",
+      "url": "https://britishdesign.ru/about/events/402622/",
+      "source": "Британская высшая школа дизайна — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-13",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false,
+        "status": "rejected"
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "reviewed_at": "2026-11-13",
+      "editor_note": ""
     },
     {
       "id": "moscow-2026-12-03-f7e466876f",
@@ -76229,7 +76551,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-12-05-84c379d167",
@@ -77565,7 +77889,37 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
+    },
+    {
+      "id": "moscow-2026-12-17-bf0efaa3c3",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-12-17",
+      "time": "19:30",
+      "title": "Лекция 1. Разбираем конструктивизм: графический дизайн",
+      "venue": "Центр Зотов",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "",
+      "url": "https://centrezotov.ru/events/kurs-razbiraem-konstruktivizm/lekcziya-1-razbiraem-konstruktivizm-graficheskij-dizajn/",
+      "source": "Центр Зотов — отдельные события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-17",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "international-2026-12-18-9e69ff8f97",
@@ -78143,6 +78497,35 @@
       "availability_checked_at": "",
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "international-2027-01-31-770eb78cdb",
+      "status": "check",
+      "kind": "open_call",
+      "city": "international",
+      "date": "2027-01-31",
+      "time": "",
+      "title": "International Photography Open Call: Greens",
+      "venue": "CuratorSpace",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "open-call"
+      ],
+      "description": "Call for entries! 13b is looking for photography submissions for their international exhibition ‘Greens’. This is a great opportunity to expand your network and get greater exposure by exhibiting your work in front of an international audience.",
+      "url": "https://www.curatorspace.com/opportunities/detail/international-photography-open-call-greens/11358",
+      "source": "CuratorSpace — opportunities",
+      "checked_at": "",
+      "review_reason": "primary_source_required",
+      "discovered_at": "2026-11-17",
+      "audience_text": "Opportunity details | International Photography Open Call: Greens | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register International Photography Open Call: Greens Deadline: 31/01/2027 City: Kamnik | Country: Slovenia | 13 b Report this? Description Opportunity FAQs Make a submission Contact curator Call for entries! 13b is looking for photography submissions for their international exhibition ‘Greens’. This is a great opportunity to expand your network and get greater exposure by exhibiting your work in front of an international audience. 13b is proud to present ‘Greens,’ an open call exhibition celebrating the vibrant, complex, and ever-shifting spectrum of green through the lens of photography. Across millennia, green has existed as a colour of profound duality. Tied intimately to the natural world, it has long symbolised renewal, fertility, and life—yet its history is equally steeped in alchemy, envy, and danger. For centuries, artists struggled to capture a stable green pigment, relying on volatile copper-based compounds like verdigris that darkened over time, or the notorious 19th-century Scheele’s Green—a brilliant, sought-after hue laced with lethal arsenic. In contemporary art, green has shed its toxic past to become a powerful visual anchor for modern anxieties and ideals. Today, artists use it to interrogate ecological fragility, hyper-digital aesthetics, and the tension between organic landscapes and synthetic environments—from lush, untamed wilderness to the uncanny glow of a green screen. This theme is quite open and all genres of photography are welcome, all that is required is the colour GREEN! Submission Details: Artists can submit up to 3 images from which ONE will be selected for the show. Successful artists will be asked to email us a high-resolution image of the chosen work. Selected artists will have their work displayed in a 4 week-long exhibition in our gallery, with their work also appearing online on our social media pages with a link to their websites/social medias. We will print all images A4 size and each photograph will also be individually mounted and framed, so no need to post anything. Every contribution must be an original artwork. Submissions are FREE. If your work is selected, there will be a participation fee of 22 euros (or 18 GBP) via PayPal to help us cover the cost of printing/installation materials and admin/marketing, including flyers and the public PV. Benefits: Professionally curated exhibition A chance to exhibit your work internationally and expand your network of artists and curators Zero commission- visitors can contact you directly, so you keep 100% of any sales Promotion on our social media sites, such as Instagram, where we have an average of 30,000 views a week and more than 5,000 followers so far. 4 week exhibition at our physical gallery 13b which receives around 300 visitors per exhibition. Key Dates: Submission deadline: January 31st, 2027 Successful artists contacted: February 2nd, 2027 Successful artists will be asked to confirm participation by paying the fee of 22 euros within 5 days of acceptance PV February 19th, 6- 9 pm Exhibition Dates: February 19/02/27- March 21/03/27 Please contact us if you have any questions, and good luck! Follow us on Instagram to find out more about our current and previous projects: @13b_ljw Make a submission Contact the curator Who is eligible for this opportunity? All artists from around the world. When is the deadline? January 31st, 2027. How many works can I submit? Up to x3, one will be selected. How much does it cost? 22 Euros (18 GBP) for selected artists. Free to submit. Is there a private view / opening? Yes, there will be a private view. What are the exhibition opening hours? Thursday, Friday, Saturday, Sunday 10- 5 pm. What publicity will be provided as part of the opportunity? Yes, publicity through our primary channel on Instagram, Facebook. The show will also be shared and promoted via ZDSLU (The Slovenian Association of Fine Arts). Do I need to be present? No, but all visitors and artists welcome! Where will my venue be listed? ZDSLU (The Slovenian Association of Fine Arts) Events & Exhibitions Listings. What kind of proposals are you looking for? The theme is very open; all that is required is that the photographs feature the colour green. You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Advertisement Other opportunities ARTISTS WANTED for Exhibition at 35aSpace — LONDON *FREE Exhibition Space* I’m looking for artists interested in showing their work in a small, lived-in studio/home in... Exhibit in Brazil - Timeless Exhibition A unique opportunity for artists to show their work in a different country without having to be... We are all Wonder Women “We Are All Wonder Women” is an international virtual exhibition organised by DiversaMente... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "international-2027-01-31-4cd8621b08",

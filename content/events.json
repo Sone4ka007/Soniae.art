@@ -38291,7 +38291,7 @@
       "reviewed_at": "2026-10-17",
       "availability": "unknown",
       "availability_checked_at": "",
-      "registration": false,
+      "registration": null,
       "price": null,
       "price_text": "",
       "price_type": "paid",
@@ -38317,7 +38317,7 @@
         "status": "approved",
         "telegram_include": false,
         "instagram_include": false,
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -41054,7 +41054,7 @@
       "address": "1-й Голутвинский переулок, 16, стр. 1",
       "price": 850,
       "price_text": "850 ₽; льготный — 650 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -41081,7 +41081,7 @@
       "time_evidence": "24 октября 2026 14:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
       "editor_overrides": {
-        "registration": false
+        "registration": null
       }
     },
     {
@@ -49427,7 +49427,7 @@
       "address": "Лаврушинский переулок, 12",
       "price": 650,
       "price_text": "650 ₽; онлайн — 700 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -49444,7 +49444,7 @@
         "telegram_include": false,
         "instagram_include": false,
         "status": "approved",
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -51674,14 +51674,16 @@
       "price": 0,
       "price_text": "",
       "registration": false,
-      "categories": [],
+      "categories": [
+        "выставка"
+      ],
       "description": "На метро Музей AZ находится между станциями метро «Маяковская» и «Белорусская» (кольцевая). Мы рекомендуем идти в Музей от станции «Маяковская». Вам нужен Выход №1 на 1-я Тверская-Ямская улица, 2-я Тверская-Ямская улица.",
       "url": "https://museum-az.com/event/territoriya-svobody-nonkonformisty-v-taruse/",
       "source": "Музей AZ — выставки и события",
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-10-20",
-      "price_type": "paid",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-10-25",
       "editor_overrides": {
@@ -55187,7 +55189,7 @@
       "address": "",
       "price_type": "free",
       "price_text": "бесплатно по регистрации",
-      "registration": false,
+      "registration": true,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -57101,7 +57103,7 @@
       "address": "",
       "price_type": "free",
       "price_text": "бесплатно по регистрации",
-      "registration": false,
+      "registration": true,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -64682,16 +64684,72 @@
       "reviewed_at": "2026-11-16"
     },
     {
+      "id": "spb-2026-11-18-93bb60edf3",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-18",
+      "time": "",
+      "title": "Anna Nova покажет «Озимандию» Александры Гарт",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "фестиваль"
+      ],
+      "description": "27 ноября галерея Anna Nova представляет персональный выставочный проект Александры Гарт «Озимандия». В экспозицию войдут новые графические работы, скульптурные объекты и инсталляция. Точкой сборки экспозиции становится масштабный объект, соединяющий первый и второй этажи пространства.",
+      "url": "https://spbcult.ru/news/anonsy/anna-nova-pokazhet-ozimandiyu-aleksandry-gart-/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-18",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "spb-2026-11-18-176e84f35e",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-18",
+      "time": "",
+      "title": "«Всякому жениху – своя невеста» - новая программа Этнографического музея",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "программа"
+      ],
+      "description": "24 ноября в Российском этнографическом музее пройдёт программа «Всякому жениху – своя невеста», посвящённая свадебным традициям народов России. В этот день состоится подведение итогов конкурса «Этника от кутюр-2026.",
+      "url": "https://spbcult.ru/news/anonsy/vsyakomu-zhenikhu-svoya-nevesta-novaya-programma-etnograficheskogo-muzeya/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-18",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "spb-2026-11-18-45102189f5",
       "status": "new",
       "kind": "event",
       "city": "spb",
       "date": "2026-11-18",
       "time": "",
-      "title": "В Музее академии художеств представят экспозицию «Взыскуя града небеснаго»",
+      "title": "В Музее Академии художеств представят экспозицию «Взыскуя града небеснаго»",
       "venue": "",
       "address": "",
-      "price": 0,
+      "price": null,
       "price_text": "Бесплатно",
       "registration": null,
       "categories": [
@@ -64707,6 +64765,36 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
+    },
+    {
+      "id": "spb-2026-11-18-ab0b9a2fe1",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-18",
+      "time": "",
+      "title": "В Петербурге покажут будущее джаза",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "фестиваль"
+      ],
+      "description": "XIV международный фестиваль «Будущее джаза» пройдёт 28 ноября на сцене Джаз-клуба Игоря Бутмана. Выступят самые перспективные представители российской молодежной джазовой сцены, никогда прежде не игравшие вместе. XIV международный фестиваль «Будущее джаза» пройдёт 28 ноября на сцене Джаз-клуба Игоря Бутмана.",
+      "url": "https://spbcult.ru/news/anonsy/v-peterburge-predstavyat-budushchee-dzhaza/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-18",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
       "availability_checked_at": ""
     },
     {
@@ -64719,7 +64807,7 @@
       "title": "В Шереметевском дворце отметят 150-летие Мануэля де Фальи",
       "venue": "",
       "address": "",
-      "price": 0,
+      "price": null,
       "price_text": "Бесплатно",
       "registration": null,
       "categories": [
@@ -64735,7 +64823,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-18-4ce49fc035",
@@ -64760,6 +64850,36 @@
       "review_reason": "",
       "discovered_at": "2026-11-18",
       "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
+    },
+    {
+      "id": "spb-2026-11-18-2756e4aeb8",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-18",
+      "time": "",
+      "title": "В училище Рериха выставят дипломные работы студентов СПбГУ",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "фестиваль"
+      ],
+      "description": "Выставка дипломных работ СПбГУ общей образовательной программы «Станковая живопись» откроется 20 ноября в выставочном пространстве Художественного училища имени Рериха. Выставка дипломных работ СПбГУ общей образовательной программы «Станковая живопись» откроется 20 ноября в выставочном пространстве Художественного училища имени Рериха.",
+      "url": "https://spbcult.ru/news/anonsy/v-uchilishche-rerikha-pokazhut-diplomnye-raboty-studentov-spbgu/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-18",
+      "price_type": "unknown",
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
@@ -64789,7 +64909,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-18-ad5480ce53",
@@ -64918,7 +65040,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-18-d986540b12",
@@ -64959,6 +65083,32 @@
       "reviewed_at": "2026-11-13"
     },
     {
+      "id": "spb-2026-11-18-4a3f7606ce",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-18",
+      "time": "",
+      "title": "На Новой сцене Александринки изобретут велосипед",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "23 ноября на Новой сцене Александринского театра состоится премьерный показ поп-танц-оперы «Как изобрели велосипед» труппы «Нетруппа» Рустама Нерустама, совмещенный с перфолекцией о том, как смотреть танцевальные работы.",
+      "url": "https://spbcult.ru/news/anonsy/na-novoy-stsene-aleksandrinki-izobretut-velosiped-/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-18",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "spb-2026-11-18-39e247098d",
       "status": "new",
       "kind": "event",
@@ -64984,7 +65134,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-18-63fe896aa8",
@@ -65000,7 +65152,7 @@
       "price_text": "Бесплатно",
       "registration": null,
       "categories": [],
-      "description": "Пиши глубоко! Как писать посты-эссе 16+ 18 ноября 2026 (среда) 19:00 Зал визуальных искусств Вход свободный 2026-11-18 19:00 2026-11-18 19:00 Europe/Moscow Пиши глубоко! Как писать посты-эссе Вторая часть практикума для тех, кто хочет, чтобы мысль не утонула в болоте из слов РГБМ, Зал визуальных искусств РГБМ info@rgub.ru Вторая часть практикума для тех, кто хочет, чтобы мысль не утонула в болоте из слов Эссе — это современный инструмент для выражения своей индивидуальности. Но как им пользоваться? И зачем писать самостоятельно, если есть ChatGPT? Мы немного поговорим об этом и узнаем, как: вытаскивать главную мысль; раскрывать тему через живые примеры, а не абстракции, искать суть; писать текст так, чтобы читатель сказал: «Это интересно!»; побеждать страх «чистого листа». Во второй части занятия мы углубимся в теорию и практику. Ведущая: Анастасия Иванова, преподаватель школы философии «Новый Акрополь», руководитель добровольческих проектов",
+      "description": "Пиши глубоко! Как писать посты-эссе 16+ 18 ноября 2026 (среда) 19:00 Зал визуальных искусств Вход свободный Вторая часть практикума для тех, кто хочет, чтобы мысль не утонула в болоте из слов Эссе — это современный инструмент для выражения своей индивидуальности. Но как им пользоваться? И зачем писать самостоятельно, если есть ChatGPT? Мы немного поговорим об этом и узнаем, как: вытаскивать главную мысль; раскрывать тему через живые примеры, а не абстракции, искать суть; писать текст так, чтобы читатель сказал: «Это интересно!»; побеждать страх «чистого листа». Во второй части занятия мы углубимся в теорию и практику. Ведущая: Анастасия Иванова, преподаватель школы философии «Новый Акрополь», руководитель добровольческих проектов",
       "url": "https://rgub.ru/schedule/item.php?new_id=49847",
       "source": "Российская государственная библиотека для молодёжи — афиша",
       "checked_at": "",
@@ -65013,6 +65165,34 @@
       "availability_checked_at": "",
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "spb-2026-11-18-d1fc3e4641",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-18",
+      "time": "",
+      "title": "Русский музей продлил ретроспективу Пелагеи Шуриги",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "фестиваль"
+      ],
+      "description": "В Михайловском замке до 30 ноября продлили работу выставки произведений самобытной ленинградской художницы Пелагеи Шуриги. В экспозицию вошли около 130 произведений скульптуры, графики и декоративно-прикладного искусства яркой и самобытной ленинградской художницы. Предыдущая выставка Шуриги в Русском музее проходила в 1996 году.",
+      "url": "https://spbcult.ru/news/anonsy/russkiy-muzey-pokazhet-retrospektivu-pelagei-shurigi-/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-18",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "spb-2026-11-18-3497c8964e",
@@ -65068,7 +65248,7 @@
       "categories": [
         "встреча"
       ],
-      "description": "Что я готов(а) о себе признать? 18+ 18 ноября 2026 (среда) 19:30 Малый зал (Вход № 2) Вход свободный 2026-11-18 19:30 2026-11-18 19:30 Europe/Moscow Что я готов(а) о себе признать? Встреча клуба #ВгостяхУдядюшкиЮнга РГБМ, Малый зал (Вход № 2) РГБМ info@rgub.ru Встреча клуба #ВгостяхУдядюшкиЮнга О себе мы знаем гораздо больше, чем обычно формулируем вслух. Но знать что-то о себе и признать это — не одно и то же. Иногда для признания нужно пересмотреть привычное представление о себе. «Я всегда справляюсь» может встретиться с «я больше не хочу всё выдерживать». «Мне это неважно» — с пониманием, что на самом деле очень важно. А привычное «меня всё устраивает» — с желанием что-то изменить. Поэтому некоторые вещи мы можем долго объяснять, откладывать и обесценивать. На встрече будем исследовать: что о себе нам легко признавать, а что хочется оставить за пределами внимания; почему некоторые собственные желания, чувства и потребности трудно воспринимать всерьёз; какие представления о себе мы стараемся сохранять, даже когда уже изменились; что происходит, когда реальное отношение к ситуации расходится с тем, что мы привыкли себе говорить; что меняется, когда мы разрешаем себе признать очевидное — без необходимости немедленно что-то с этим делать. Выполним психологические упражнения, попробуем внимательнее посмотреть на то, что мы уже знаем о себе, и ответим на вопрос: что я давно понимаю, но пока не решаюсь признать всерьёз? Ведущая: Мария Ефимова, психолог РГБМ, основатель психологического клуба #ВгостяхУдядюшкиЮнга",
+      "description": "Что я готов(а) о себе признать? 18+ 18 ноября 2026 (среда) 19:30 Малый зал (Вход № 2) Вход свободный Встреча клуба #ВгостяхУдядюшкиЮнга О себе мы знаем гораздо больше, чем обычно формулируем вслух. Но знать что-то о себе и признать это — не одно и то же. Иногда для признания нужно пересмотреть привычное представление о себе. «Я всегда справляюсь» может встретиться с «я больше не хочу всё выдерживать». «Мне это неважно» — с пониманием, что на самом деле очень важно. А привычное «меня всё устраивает» — с желанием что-то изменить. Поэтому некоторые вещи мы можем долго объяснять, откладывать и обесценивать. На встрече будем исследовать: что о себе нам легко признавать, а что хочется оставить за пределами внимания; почему некоторые собственные желания, чувства и потребности трудно воспринимать всерьёз; какие представления о себе мы стараемся сохранять, даже когда уже изменились; что происходит, когда реальное отношение к ситуации расходится с тем, что мы привыкли себе говорить; что меняется, когда мы разрешаем себе признать очевидное — без необходимости немедленно что-то с этим делать. Выполним психологические упражнения, попробуем внимательнее посмотреть на то, что мы уже знаем о себе, и ответим на вопрос: что я давно понимаю, но пока не решаюсь признать всерьёз? Ведущая: Мария Ефимова, психолог РГБМ, основатель психологического клуба #ВгостяхУдядюшкиЮнга",
       "url": "https://rgub.ru/schedule/item.php?new_id=49801",
       "source": "Российская государственная библиотека для молодёжи — афиша",
       "checked_at": "",
@@ -65115,7 +65295,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-18-bc671b4810",
@@ -65146,82 +65328,6 @@
       "availability_checked_at": "",
       "editor_note": "",
       "reviewed_at": ""
-    },
-    {
-      "id": "moscow-2026-10-25-c40e7952b7",
-      "status": "rejected",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-11-18",
-      "time": "10:00",
-      "title": "Воркшопы",
-      "venue": "ЦСИ Винзавод",
-      "address": "",
-      "price": 0,
-      "price_text": "Бесплатно",
-      "registration": false,
-      "categories": [
-        "лекция"
-      ],
-      "description": "",
-      "url": "https://www.winzavod.ru/calendar/workshops/",
-      "source": "ЦСИ Винзавод",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-10-25",
-      "price_type": "free",
-      "availability_evidence": "",
-      "ticket_required": true,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false,
-        "status": "rejected"
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": "2026-10-27"
-    },
-    {
-      "id": "moscow-2026-10-25-fefbfbd35d",
-      "status": "rejected",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-11-18",
-      "time": "10:00",
-      "title": "Курсы",
-      "venue": "ЦСИ Винзавод",
-      "address": "",
-      "price": 0,
-      "price_text": "Бесплатно",
-      "registration": false,
-      "categories": [
-        "лекция"
-      ],
-      "description": "",
-      "url": "https://www.winzavod.ru/calendar/course/",
-      "source": "ЦСИ Винзавод",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-10-25",
-      "price_type": "free",
-      "availability_evidence": "",
-      "ticket_required": true,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false,
-        "status": "rejected"
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": "2026-10-27"
     },
     {
       "id": "moscow-2026-11-18-d4ed4734f6",
@@ -66391,6 +66497,82 @@
       "instagram_include": false,
       "reviewed_at": "2026-11-10",
       "editor_note": ""
+    },
+    {
+      "id": "moscow-2026-10-25-c40e7952b7",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-19",
+      "time": "10:00",
+      "title": "Воркшопы",
+      "venue": "ЦСИ Винзавод",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "",
+      "url": "https://www.winzavod.ru/calendar/workshops/",
+      "source": "ЦСИ Винзавод",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-25",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false,
+        "status": "rejected"
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": "2026-10-27"
+    },
+    {
+      "id": "moscow-2026-10-25-fefbfbd35d",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-19",
+      "time": "10:00",
+      "title": "Курсы",
+      "venue": "ЦСИ Винзавод",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "",
+      "url": "https://www.winzavod.ru/calendar/course/",
+      "source": "ЦСИ Винзавод",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-25",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false,
+        "status": "rejected"
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": "2026-10-27"
     },
     {
       "id": "moscow-2026-11-19-b485ac3446",
@@ -69109,7 +69291,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-21-96618547ab",
@@ -69671,6 +69855,34 @@
       "availability_checked_at": "",
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "moscow-2026-11-21-bf2c664c02",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-21",
+      "time": "16:00",
+      "title": "Премьера фильма Игоря Калядина «Николай Раевский. Артиллерист. Биолог. Писатель»",
+      "venue": "Дом русского зарубежья им. А. Солженицына",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": true,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "21 ноября 2026 года в 16 часов приглашаем на премьеру фильма Игоря Калядина «Николай Раевский. Писатель», снятого на киностудии «Русский путь». Николай Алексеевич Раевский (1894–1988) стал одним из символов русской культуры ХХ века.",
+      "url": "https://www.domrz.ru/event/71294_premera_filma_igorya_kalyadina_nikolay_raevskiy_artillerist_biolog_pisatel/",
+      "source": "Дом русского зарубежья — афиша",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-18",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "sold_out",
+      "availability_checked_at": "2026-11-18"
     },
     {
       "id": "spb-2026-11-21-1a94afaed1",
@@ -72967,6 +73179,32 @@
       "reviewed_at": "2026-11-16"
     },
     {
+      "id": "spb-2026-11-25-9662413875",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-25",
+      "time": "18:30",
+      "title": "Экранизировано: «Маска»",
+      "venue": "Библиотека комиксов",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "Продолжаем наш кинолекторий, посвящённый экранизациям и адаптациям комиксов! После мрачных вампиров и летучих мышей предлагаем сменить готическую атмосферу на безумный неоновый карнавал и поговорить о фильме, который в 1994 году взорвал прокат и превратил малоизвестного комика в суперзвезду. В этот раз познакомимся с фильмом «Маска» (1994) с неподражаемым Джимом Керри. На первый взгляд, это яркая и беззаботная комедия о скромном банковском служащем Стэнли Ипкисе, который, примерив древнюю маску, обретает невероятные способности и превращается в зелёнолицего эксцентрика. Но мало кто знает, что",
+      "url": "https://comix-library.timepad.ru/event/4292502/",
+      "source": "Библиотека комиксов — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-11-18",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-25-93c9532bcf",
       "status": "rejected",
       "kind": "event",
@@ -73083,6 +73321,32 @@
       "reviewed_at": "2026-11-14"
     },
     {
+      "id": "moscow-2026-11-25-eb62a7b319",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-25",
+      "time": "19:00",
+      "title": "Мир человеческий изменчив. Дискуссия о творчестве Владимира Уфлянда",
+      "venue": "Еврейский музей и центр толерантности",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [],
+      "description": "",
+      "url": "https://www.jewish-museum.ru/events/mir-chelovecheskiy-izmenchiv-diskussiya-o-tvorchestve-vladimira-uflyanda-/",
+      "source": "Еврейский музей и центр толерантности",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-18",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "spb-2026-11-25-1b1c7cbc42",
       "status": "rejected",
       "kind": "event",
@@ -73156,6 +73420,34 @@
         "instagram_include": false,
         "status": "approved"
       }
+    },
+    {
+      "id": "moscow-2026-11-25-209a28e226",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-25",
+      "time": "19:30",
+      "title": "Черная роза — эмблема печали, красная роза — эмблема любви",
+      "venue": "Центр Зотов",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "спецпоказ"
+      ],
+      "description": "",
+      "url": "https://centrezotov.ru/events/zastolya/chernaya-roza-%e2%80%94-emblema-pechali-krasnaya-roza-%e2%80%94-emblema-lyubvi/",
+      "source": "Центр Зотов",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-18",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "spb-2026-11-26-47abe402ac",
@@ -74400,6 +74692,34 @@
       "reviewed_at": ""
     },
     {
+      "id": "spb-2026-11-28-32cfbb7351",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-28",
+      "time": "",
+      "title": "встреча книжного клуба с писательницей Полиной Максимовой.",
+      "venue": "Открытая гостиная",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "встреча"
+      ],
+      "description": "в Открытой гостиной состоится В ноябре предлагаем замедлиться и прочитать что-то из литературы о природе — жанра, который еще называют nature writing, или природное письмо. На ближайшей встрече обсудим роман «Выгон» британской писательницы Эми Липтрот. Это книга про бережное отношение к себе, своей земле, корням, про избавление от зависимости через уединенное наблюдение за природой. По сюжету, героиня после тяжелого периода жизни в Лондоне возвращается на родные Оркнейские острова в Шотландии. В России книгу выпустили Ad Marginem. Издание содержит подборку атмосферных фотографий природы Оркней",
+      "url": "https://otkrytaya-gostinaya.timepad.ru/event/4302386/",
+      "source": "Открытая гостиная — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-11-18",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-28-73b662c76a",
       "status": "check",
       "kind": "event",
@@ -75286,7 +75606,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-10-30",
-      "audience_text": "› Программа Дата: 29 ноя– 2 дек 2026 Билеты Возраст: от 16 Тип: Спектакль Место: Актовый зал Доступность  Возрастные ограничения 16+ История о взаимоотношениях современного человека с окружающей средой, о поиске своих корней и нового дома. T Спектакль Екатерины Августеняк поставлен по пьесе Ксении Савельевой и Настасьи Федоровой, написанной на основе интервью с жительницами нескольких вепсских деревень в Ленинградской области. Вепсы — коренной малочисленный народ, живущий в основном в Карелии и соседних районах. Его представителей осталось лишь несколько тысяч, а тех, кто знает язык, еще меньше. Беседуя с носителями исчезающей культуры, драматурги находили ответы на тревоги современных городских жителей, которых пессимизм приводит к мысли о возвращении на малую родину, погружению в родной язык и историю своей семьи. После спектакля 29 ноября состоится обсуждение с создателями. Спектакли 29 и 30 ноября будут адаптированы для глухих и слабослышащих зрителей, а 1 и 2 декабря — для англоязычной аудитории. Фото: Илья Пичурин Полное название пьесы — «Вепсские женщины в заговоре на жизнь», и идея заговора становится ключом к постановке. Документальный материал сочетается с приемами музыкального театра, где текст не проговаривается, а пропевается. Воспоминания героинь разворачиваются как путешествие во времени. Фольклор и обычаи деревенской жизни переплетаются в тексте со свидетельствами быта и устной историей. Через монологи, звучащие со сцены, зритель попадает в пространство, где повседневное срастается с сакральным, а ирония соседствует с ужасом. Спектакль открывает мир, в котором природа не всегда милосердна к людям, но связь с ней возможна только через доверие. Режиссер Екатерина Августеняк — режиссер, художница, драматург. Соосновательница арт-группы «м_у_т_а_ц_и_я». Автор экспериментальных пьес, инсценировок, перформансов, инсталляций и объектов, в которых соединяются локальные исследования, языки новых медиа, методы современного искусства и театра. Работы отмечены на фестивалях («Любимовка», «Первая читка» и др.) и конкурсах («Ремарка», Nova Art , The Blueprint 100 и др.), награждены премией Сергея Курёхина, «Московской Арт Премией» и др. Тьютор проекта THEATRUM (Нижний Новгород), участница лабораторий «Практика постдраматурга», «Ко OPERA ция», «Re:генерация» (Санкт-Петербург), резиденций «Переделкино» и «Театр одиночества» (Нижний Новгород), а также «Своими словами» в Доме культуры « ГЭС-2 ». Драматурги Ксения Савельева, Настасья Федорова Авторы музыкаль",
+      "audience_text": "› Программа Дата: 29 ноя– 2 дек 2026 Билеты Возраст: от 16 Тип: Спектакль Место: Актовый зал Доступность  Возрастные ограничения 16+ История о взаимоотношениях современного человека с окружающей средой, о поиске своих корней и нового дома. T Спектакль Екатерины Августеняк поставлен по пьесе Ксении Савельевой и Настасьи Федоровой, написанной на основе интервью с жительницами нескольких вепсских деревень в Ленинградской области. Вепсы — коренной малочисленный народ, живущий в основном в Карелии и соседних районах. Его представителей осталось лишь несколько тысяч, а тех, кто знает язык, еще меньше. Беседуя с носителями исчезающей культуры, драматурги находили ответы на тревоги современных городских жителей, которых пессимизм приводит к мысли о возвращении на малую родину, погружению в родной язык и историю своей семьи. После спектакля 29 ноября состоится обсуждение с создателями и зрителями, которое проведут медиаторы Катерина Ляйнен и Василий Еленкин. Спектакли 29 и 30 ноября будут адаптированы для глухих и слабослышащих зрителей, а 1 и 2 декабря — для англоязычной аудитории. Фото: Илья Пичурин Полное название пьесы — «Вепсские женщины в заговоре на жизнь», и идея заговора становится ключом к постановке. Документальный материал сочетается с приемами музыкального театра, где текст не проговаривается, а пропевается. Воспоминания героинь разворачиваются как путешествие во времени. Фольклор и обычаи деревенской жизни переплетаются в тексте со свидетельствами быта и устной историей. Через монологи, звучащие со сцены, зритель попадает в пространство, где повседневное срастается с сакральным, а ирония соседствует с ужасом. Спектакль открывает мир, в котором природа не всегда милосердна к людям, но связь с ней возможна только через доверие. Режиссер Екатерина Августеняк — режиссер, художница, драматург. Соосновательница арт-группы «м_у_т_а_ц_и_я». Автор экспериментальных пьес, инсценировок, перформансов, инсталляций и объектов, в которых соединяются локальные исследования, языки новых медиа, методы современного искусства и театра. Работы отмечены на фестивалях («Любимовка», «Первая читка» и др.) и конкурсах («Ремарка», Nova Art , The Blueprint 100 и др.), награждены премией Сергея Курёхина, «Московской Арт Премией» и др. Тьютор проекта THEATRUM (Нижний Новгород), участница лабораторий «Практика постдраматурга», «Ко OPERA ция», «Re:генерация» (Санкт-Петербург), резиденций «Переделкино» и «Театр одиночества» (Нижний Новгород), а также «Своими словами» в Доме культуры",
       "price_type": "paid",
       "availability_evidence": "",
       "ticket_required": false,
@@ -76028,7 +76348,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-12-01-b9a5fe1f3d",
@@ -76128,6 +76450,35 @@
       "review_reason": "",
       "discovered_at": "2026-11-02",
       "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "moscow-2026-12-02-d4ed4734f6",
+      "status": "check",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-12-02",
+      "time": "10:30",
+      "title": "Медленные наброски",
+      "venue": "Простая школа",
+      "address": "Москва, ул. Пятницкая, 71/5, строение 2, офис 503",
+      "price": 750,
+      "price_text": "750 ₽",
+      "registration": null,
+      "categories": [
+        "наброски"
+      ],
+      "description": "Рисуем обнаженную модель. Три сеанса по 45 минут. Позы по 20 - 45 минут.",
+      "url": "https://prostaya.ru/praktiki",
+      "source": "Простая школа — открытые практики",
+      "checked_at": "",
+      "review_reason": "recurring_schedule_confirm_specific_date",
+      "discovered_at": "2026-11-18",
+      "editor_note": "По еженедельному расписанию школы; проверить отмены и анонс конкретной даты.",
+      "price_type": "paid",
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
@@ -76650,6 +77001,34 @@
       "telegram_include": false,
       "instagram_include": false,
       "reviewed_at": "2026-11-14"
+    },
+    {
+      "id": "spb-2026-12-07-1a343f8ae1",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-12-07",
+      "time": "15:00",
+      "title": "IX Международный фестиваль «Эстафета доброты — 2026» 1 декабря 2026 — 7 декабря 2026",
+      "venue": "Манеж",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "С 1 по 7 декабря в Санкт-Петербурге пройдёт IX Международный фестиваль «Эстафета доброты — 2026» Это ежегодное событие приурочено к Международному дню инвалидов (3 декабря) и объединяет культурные учреждения Петербурга и других регионов России. Главная цель фестиваля — сделать культурную жизнь доступнее и вовлечь людей с инвалидностью в разнообразные творческие события.",
+      "url": "https://manege.spb.ru/events/ix-mezhdunarodnyj-festival-estafeta-dobroty-2026/",
+      "source": "Манеж — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-18",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-12-08-70ce184b3e",
@@ -77290,6 +77669,32 @@
       "editor_note": ""
     },
     {
+      "id": "spb-2026-12-13-beb38aceb4",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-12-13",
+      "time": "",
+      "title": "Считаем дни до петербургской",
+      "venue": "Дом Радио",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "киноверсии «Орфея и Эвридики» в постановке Роберта Уилсона. Совсем недавно в Доме Радио состоялась российская премьера документальной ленты «Роберт Уилсон: Красота — в загадке», где Марина Абрамович, Уиллем Дефо и Том Уэйтс делились впечатлениями от сотрудничества с этим театральным новатором. Перед показом театровед и эксперт «Золотой маски» Кристина Матвиенко прочитает лекцию об авторском методе режиссера, а после проведет обсуждение спектакля со зрителями.",
+      "url": "https://widget.afisha.yandex.ru/w/sessions/ticketsteam-3775@80464748?clientKey=845c7e3f-7061-4f5f-9a71-a10acf702212&amp;regionId=2",
+      "source": "Дом Радио — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-11-18",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-12-13-91c3c05e64",
       "status": "new",
       "kind": "event",
@@ -77810,7 +78215,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-12-17-c0f0f9a5b5",
@@ -78073,7 +78480,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-12-18-91c3c05e64",
@@ -78109,7 +78518,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-12-18-cf673211bf",
@@ -78144,7 +78555,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-12-18-834758f1e0",
@@ -78180,7 +78593,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-12-18-9f9366aa84",
@@ -78216,7 +78631,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-12-20-7d49348433",

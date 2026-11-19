@@ -38291,7 +38291,7 @@
       "reviewed_at": "2026-10-17",
       "availability": "unknown",
       "availability_checked_at": "",
-      "registration": false,
+      "registration": null,
       "price": null,
       "price_text": "",
       "price_type": "paid",
@@ -38317,7 +38317,7 @@
         "status": "approved",
         "telegram_include": false,
         "instagram_include": false,
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -41054,7 +41054,7 @@
       "address": "1-й Голутвинский переулок, 16, стр. 1",
       "price": 850,
       "price_text": "850 ₽; льготный — 650 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -41081,7 +41081,7 @@
       "time_evidence": "24 октября 2026 14:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
       "editor_overrides": {
-        "registration": false
+        "registration": null
       }
     },
     {
@@ -49427,7 +49427,7 @@
       "address": "Лаврушинский переулок, 12",
       "price": 650,
       "price_text": "650 ₽; онлайн — 700 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -49444,7 +49444,7 @@
         "telegram_include": false,
         "instagram_include": false,
         "status": "approved",
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -51674,14 +51674,16 @@
       "price": 0,
       "price_text": "",
       "registration": false,
-      "categories": [],
+      "categories": [
+        "выставка"
+      ],
       "description": "На метро Музей AZ находится между станциями метро «Маяковская» и «Белорусская» (кольцевая). Мы рекомендуем идти в Музей от станции «Маяковская». Вам нужен Выход №1 на 1-я Тверская-Ямская улица, 2-я Тверская-Ямская улица.",
       "url": "https://museum-az.com/event/territoriya-svobody-nonkonformisty-v-taruse/",
       "source": "Музей AZ — выставки и события",
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-10-20",
-      "price_type": "paid",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-10-25",
       "editor_overrides": {
@@ -55187,7 +55189,7 @@
       "address": "",
       "price_type": "free",
       "price_text": "бесплатно по регистрации",
-      "registration": false,
+      "registration": true,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -57101,7 +57103,7 @@
       "address": "",
       "price_type": "free",
       "price_text": "бесплатно по регистрации",
-      "registration": false,
+      "registration": true,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -65304,7 +65306,7 @@
       "title": "AZ Online",
       "venue": "Музей AZ",
       "address": "",
-      "price": 0,
+      "price": null,
       "price_text": "Бесплатно",
       "registration": null,
       "categories": [
@@ -65400,6 +65402,58 @@
       "reviewed_at": ""
     },
     {
+      "id": "spb-2026-11-19-6e77811f44",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-19",
+      "time": "",
+      "title": "«Почему нет?» ответят в Доме Радио",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "21 и 22 ноября в Доме Радио пройдут премьерные показы спектакля «Почему нет?» режиссёра Анны Гусевой. Постановка создана артистами труппы musicAeterna Dance и приглашенными актёрами театра и кино. Она обращается к темам любви и расставания, памяти и одиночества.",
+      "url": "https://spbcult.ru/news/anonsy/pochemu-net-otvetyat-v-dome-radio/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-19",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "spb-2026-11-19-dc4ff4079b",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-19",
+      "time": "",
+      "title": "«Щелкунчик» расскажет о любви к балету",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "Источник: saint-petersburg.theatrehd.com. Правообладатель: Гамбургский балет / Киран Вест. Спасибо, что оставляете обратную связь!",
+      "url": "https://spbcult.ru/news/anonsy/v-kino-vyydet-skazka-o-balete-shchelkunchik-/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-19",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-19-09d911e77b",
       "status": "rejected",
       "kind": "event",
@@ -65476,6 +65530,64 @@
       "reviewed_at": "2026-11-13"
     },
     {
+      "id": "spb-2026-11-19-468483f133",
+      "status": "new",
+      "kind": "exhibition",
+      "city": "spb",
+      "date": "2026-11-19",
+      "time": "",
+      "title": "В Музее истории религии покажут комиксы на божественные темы",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "выставка"
+      ],
+      "description": "Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами! Также вы можете отправить статью в социальной сети или мессенджере Если у вас есть чем поделиться с нашими читателями, вы можете предложить свою статью.",
+      "url": "https://spbcult.ru/news/anonsy/v-muzee-istorii-religii-pokazhut-komiksy-na-bozhestvennye-temy/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-19",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "start_date": "2026-11-19"
+    },
+    {
+      "id": "spb-2026-11-19-c01a0f5ac0",
+      "status": "new",
+      "kind": "exhibition",
+      "city": "spb",
+      "date": "2026-11-19",
+      "time": "",
+      "title": "В Музее-квартире Блока продемонстрируют сокровища из коллекции Орлова",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "выставка"
+      ],
+      "description": "24 ноября в Музее-квартире Блока открывается выставка «Блок и художники. Сокровища из коллекции Орлова».",
+      "url": "https://spbcult.ru/news/anonsy/v-muzee-kvartire-bloka-prodemonstriruyut-sokrovishcha-iz-kollektsii-orlova/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-19",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "start_date": "2026-11-19"
+    },
+    {
       "id": "moscow-2026-11-19-43cd925f85",
       "status": "new",
       "kind": "exhibition",
@@ -65485,7 +65597,7 @@
       "title": "Виктория Бурлакова Свое место",
       "venue": "ЦСИ Винзавод",
       "address": "",
-      "price": 0,
+      "price": 12000,
       "price_text": "12000 ₽",
       "registration": null,
       "categories": [
@@ -65499,13 +65611,43 @@
       "discovered_at": "2026-11-16",
       "start_date": "2026-11-19",
       "end_date": "2026-11-22",
-      "price_type": "free",
+      "price_type": "paid",
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
       "availability_checked_at": "",
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "spb-2026-11-19-bcded01824",
+      "status": "new",
+      "kind": "exhibition",
+      "city": "spb",
+      "date": "2026-11-19",
+      "time": "",
+      "title": "Выставка «Маленькие Романовы» откроется в Петропавловской крепости",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "игра",
+        "выставка"
+      ],
+      "description": "26 ноября в Инженерном доме Петропавловской крепости открывается выставка, посвящённая детям последнего российского императора Николая II и императрицы Александры Фёдоровны. Она рассказывает об уютном детском мире «маленьких Романовых», который оказался столь хрупок и был разрушен в один миг.",
+      "url": "https://spbcult.ru/news/anonsy/vystavka-malenkie-romanovy-otkroetsya-v-petropavlovskoy-kreposti/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-19",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "start_date": "2026-11-19"
     },
     {
       "id": "spb-2026-11-19-5995f84169",
@@ -65531,7 +65673,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-19-8f96cac0d4",
@@ -65614,7 +65758,7 @@
       "price_text": "200 ₽",
       "registration": null,
       "categories": [],
-      "description": "Консорт виол да гамба «Gambrinus» 16+ 19 ноября 2026 (четверг) 19:00 Особняк Носова Стоимость: 200 руб. 2026-11-19 19:00 2026-11-19 19:00 Europe/Moscow Консорт виол да гамба «Gambrinus» Духовная и светская музыка XV–XVII веков РГБМ, Особняк Носова РГБМ info@rgub.ru Духовная и светская музыка XV–XVII веков Вы услышите сочинения испанских и английских композиторов: Альфонсо Феррабоско старшего, Альфонсо Феррабоско второго, Жоскена де Пре, Антонио де Кабезона и Хернандо де Кабезона, а также песни Франциско Герреро и Хуана Васкеса. Музыку исполнят: Ольга Жукова (сопрановая виола); Юлия Граб (сопрановая виола); Наталья Ацаркина (теноровая виола); Александра Дроздова (теноровая виола); Владимир Дроздов (басовая виола). Солистка — Жанна Бадалян (сопрано) Стоимость — 200 рублей. Билеты проданы",
+      "description": "Консорт виол да гамба «Gambrinus» 16+ 19 ноября 2026 (четверг) 19:00 Особняк Носова Стоимость: 200 руб. Духовная и светская музыка XV–XVII веков Вы услышите сочинения испанских и английских композиторов: Альфонсо Феррабоско старшего, Альфонсо Феррабоско второго, Жоскена де Пре, Антонио де Кабезона и Хернандо де Кабезона, а также песни Франциско Герреро и Хуана Васкеса. Музыку исполнят: Ольга Жукова (сопрановая виола); Юлия Граб (сопрановая виола); Наталья Ацаркина (теноровая виола); Александра Дроздова (теноровая виола); Владимир Дроздов (басовая виола). Солистка — Жанна Бадалян (сопрано) Стоимость — 200 рублей. Билеты проданы",
       "url": "https://rgub.ru/schedule/item.php?new_id=49804",
       "source": "Российская государственная библиотека для молодёжи — афиша",
       "checked_at": "",
@@ -65697,6 +65841,86 @@
       "reviewed_at": ""
     },
     {
+      "id": "spb-2026-11-19-81468c7d53",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-19",
+      "time": "",
+      "title": "Николай Цискаридзе подарил Герценовскому университету уникальное издание",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "19 ноября ректор Академии русского балета имени Вагановой Николай Цискаридзе передал в дар РГПУ имени Герцена уникальный юбилейный альбом «Балет в дни коронации Николая I», подготовленный и изданный по его инициативе. Вручение состоялось в Президентской библиотеке. Альбом издан ограниченным тиражом, поэтому уже в наши дни может называться библиографической редкостью.",
+      "url": "https://spbcult.ru/news/anonsy/nikolay-tsiskaridze-podaril-gertsenovskomu-universitetu-unikalnoe-izdanie/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-19",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "spb-2026-11-19-7d20a15561",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-19",
+      "time": "",
+      "title": "Перформанс «бездна»",
+      "venue": "Пушкинская-10",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [
+        "перформанс"
+      ],
+      "description": "19 ноября с 16:00 до 21:00 художник Дмитрий Жеравов откроет «бездну» – седьмую комнату из проекта «12 комнат» Что ждет гостей акции? Но ведь если долго вглядываться в бездну… Серия выставок «Двенадцать комнат» — это проект об исследовании пространства художника и субъективных состояний в современной арт-практике.",
+      "url": "https://p-10.ru/events/performans-bezdna/",
+      "source": "Пушкинская-10 — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-19",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "spb-2026-11-19-294a2b584f",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-19",
+      "time": "",
+      "title": "Проект «Многомерность культуры» объединил 900 участников и 50 организаций-партнёров",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами! Также вы можете отправить статью в социальной сети или мессенджере Если у вас есть чем поделиться с нашими читателями, вы можете предложить свою статью.",
+      "url": "https://spbcult.ru/news/anonsy/za-pyat-let-raboty-proekt-mnogomernost-kultury-obedinil-900-uchastnikov-i-50-organizatsiy-partnyerov/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-19",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-19-501cdedb1c",
       "status": "rejected",
       "kind": "event",
@@ -65767,7 +65991,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-10-04-bb9ac87531",
@@ -65835,7 +66061,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-19-b67055cdf9",
@@ -65874,6 +66102,34 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": "2026-11-13"
+    },
+    {
+      "id": "spb-2026-11-19-28fa8b9170",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-19",
+      "time": "",
+      "title": "Фестиваль «ТЕАТРБЕЗГРАНИЦ» объединил около 500 зрителей с особенностями здоровья.",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "диалог"
+      ],
+      "description": "Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами! Также вы можете отправить статью в социальной сети или мессенджере Если у вас есть чем поделиться с нашими читателями, вы можете предложить свою статью.",
+      "url": "https://spbcult.ru/news/anonsy/festival-teatrbezgranits-obedinil-okolo-500-zriteley-s-osobennostyami-zdorovya/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-19",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-01-732e936867",
@@ -65964,7 +66220,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-19-3e0efe83c5",
@@ -66003,82 +66261,6 @@
       "instagram_include": false,
       "reviewed_at": "2026-11-10",
       "editor_note": ""
-    },
-    {
-      "id": "moscow-2026-10-25-c40e7952b7",
-      "status": "rejected",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-11-19",
-      "time": "10:00",
-      "title": "Воркшопы",
-      "venue": "ЦСИ Винзавод",
-      "address": "",
-      "price": 0,
-      "price_text": "Бесплатно",
-      "registration": false,
-      "categories": [
-        "лекция"
-      ],
-      "description": "",
-      "url": "https://www.winzavod.ru/calendar/workshops/",
-      "source": "ЦСИ Винзавод",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-10-25",
-      "price_type": "free",
-      "availability_evidence": "",
-      "ticket_required": true,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false,
-        "status": "rejected"
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": "2026-10-27"
-    },
-    {
-      "id": "moscow-2026-10-25-fefbfbd35d",
-      "status": "rejected",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-11-19",
-      "time": "10:00",
-      "title": "Курсы",
-      "venue": "ЦСИ Винзавод",
-      "address": "",
-      "price": 0,
-      "price_text": "Бесплатно",
-      "registration": false,
-      "categories": [
-        "лекция"
-      ],
-      "description": "",
-      "url": "https://www.winzavod.ru/calendar/course/",
-      "source": "ЦСИ Винзавод",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-10-25",
-      "price_type": "free",
-      "availability_evidence": "",
-      "ticket_required": true,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false,
-        "status": "rejected"
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": "2026-10-27"
     },
     {
       "id": "moscow-2026-11-19-b485ac3446",
@@ -66623,6 +66805,34 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": "2026-11-05"
+    },
+    {
+      "id": "spb-2026-11-19-096b0f02d5",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-19",
+      "time": "19:00",
+      "title": "Полную версию сказки «Щелкунчик» представят в Петербурге",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "фестиваль"
+      ],
+      "description": "4 декабря в МТС Live Холл Государственная филармония Санкт-Петербурга для детей и молодежи представит мюзикл « Щелкунчик и Мышиный Король». Постановка создана по либретто Жанны Жердер при участии Александра Журбина по одноимённому произведению Эрнста Теодора Амадея Гофмана.",
+      "url": "https://spbcult.ru/news/anonsy/polnuyu-versiyu-skazki-shchelkunchik-predstavyat-v-peterburge/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-19",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-19-ec5ff63d75",
@@ -67533,6 +67743,82 @@
       "reviewed_at": ""
     },
     {
+      "id": "moscow-2026-10-25-c40e7952b7",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-20",
+      "time": "10:00",
+      "title": "Воркшопы",
+      "venue": "ЦСИ Винзавод",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "",
+      "url": "https://www.winzavod.ru/calendar/workshops/",
+      "source": "ЦСИ Винзавод",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-25",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false,
+        "status": "rejected"
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": "2026-10-27"
+    },
+    {
+      "id": "moscow-2026-10-25-fefbfbd35d",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-20",
+      "time": "10:00",
+      "title": "Курсы",
+      "venue": "ЦСИ Винзавод",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "",
+      "url": "https://www.winzavod.ru/calendar/course/",
+      "source": "ЦСИ Винзавод",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-25",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false,
+        "status": "rejected"
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": "2026-10-27"
+    },
+    {
       "id": "moscow-2026-11-20-73b662c76a",
       "status": "check",
       "kind": "event",
@@ -68160,6 +68446,34 @@
       "reviewed_at": ""
     },
     {
+      "id": "spb-2026-11-20-4b97a1601f",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-20",
+      "time": "19:00",
+      "title": "Экскурсия по выставке «Художник Ленинграда. Владимир Гринберг» в рамках проекта «Ракурс» с архитектором-реставратором Александром Горшковым",
+      "venue": "Музей искусства Санкт-Петербурга XX–XXI веков",
+      "address": "",
+      "price": 600,
+      "price_text": "600 ₽",
+      "registration": null,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "",
+      "url": "https://mispxx-xxi.ru/about/afisha/22678/",
+      "source": "Музей искусства Санкт-Петербурга XX–XXI веков — события",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-11-19",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "spb-2026-11-20-19a890a9d6",
       "status": "check",
       "kind": "event",
@@ -68430,6 +68744,45 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "moscow-2026-11-21-1fad6a7ca6",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-21",
+      "time": "",
+      "title": "Лекция-экскурсия «Валерия Даувальдер — русская сказочница из Швейцарии»",
+      "venue": "Дом русского зарубежья им. А. Солженицына",
+      "address": "",
+      "price": 300,
+      "price_text": "300 ₽",
+      "registration": true,
+      "categories": [
+        "лекция"
+      ],
+      "description": "10 октября 2026 года в 17 часовприглашаем на лекцию-экскурсию «Валерия Даувальдер — русская сказочница из Швейцарии». Лекция-экскурсия посвящена творчеству Валерии Флориановны Даувальдер (1918–2012), русской поэтессы, художницы, сказочницы, философа и богослова, прожившей большую часть своей жизни в Швейцарии. Масштаб ее интересов и дарований поистине поразителен.",
+      "url": "https://www.domrz.ru/event/70301_lektsiya_ekskursiya_valeriya_dauvalder_russkaya_skazochnitsa_iz_shveytsarii49398896/",
+      "source": "Дом русского зарубежья — афиша",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-08",
+      "price_type": "paid",
+      "availability": "sold_out",
+      "availability_checked_at": "2026-11-19",
+      "sheet_synced_description": "10 октября 2026 года в 17 часовприглашаем на лекцию-экскурсию «Валерия Даувальдер — русская сказочница из Швейцарии». Лекция-экскурсия посвящена творчеству Валерии Флориановны Даувальдер (1918–2012), русской поэтессы, художницы, сказочницы, философа и богослова, прожившей большую часть своей жизни в Швейцарии. Масштаб ее интересов и дарований поистине поразителен.",
+      "social_description": "",
+      "instagram_include": false,
+      "instagram_image": "",
+      "social_title": "",
+      "social_priority": null,
+      "telegram_include": false,
+      "editor_note": "",
+      "time_verification": "unverified",
+      "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
+      "editor_overrides": {
+        "time": ""
+      }
     },
     {
       "id": "moscow-2026-11-21-b2d0533b00",
@@ -69710,7 +70063,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-21-c57f20744a",
@@ -70182,6 +70537,45 @@
       "availability": "unknown",
       "availability_checked_at": "2026-10-10",
       "sheet_synced_description": "",
+      "time_verification": "unverified",
+      "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
+      "editor_overrides": {
+        "time": ""
+      }
+    },
+    {
+      "id": "moscow-2026-11-22-b563f09e02",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-22",
+      "time": "",
+      "title": "Лекция-экскурсия «Два Ивана. И.А.Бунин и И.С.Шмелев: судеб скрещенья»",
+      "venue": "Дом русского зарубежья им. А. Солженицына",
+      "address": "",
+      "price": 300,
+      "price_text": "300 ₽",
+      "registration": true,
+      "categories": [
+        "лекция"
+      ],
+      "description": "22 октября 2026 года в 17 часов приглашаем на лекцию-экскурсию «Два Ивана. И.А.Бунин и И.С.Шмелев: судеб скрещенья». Имена Ивана Алексеевича Бунина и Ивана Сергеевича Шмелева связаны не только их принадлежностью к литературе русского зарубежья.",
+      "url": "https://www.domrz.ru/event/70300_lektsiya_ekskursiya_dva_ivana_i_a_bunin_i_i_s_shmelev_sudeb_skreshchenya/",
+      "source": "Дом русского зарубежья — афиша",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-17",
+      "price_type": "paid",
+      "availability": "sold_out",
+      "availability_checked_at": "2026-11-19",
+      "sheet_synced_description": "22 октября 2026 года в 17 часов приглашаем на лекцию-экскурсию «Два Ивана. И.А.Бунин и И.С.Шмелев: судеб скрещенья». Имена Ивана Алексеевича Бунина и Ивана Сергеевича Шмелева связаны не только их принадлежностью к литературе русского зарубежья.",
+      "social_title": "",
+      "instagram_include": false,
+      "editor_note": "",
+      "telegram_include": false,
+      "instagram_image": "",
+      "social_priority": null,
+      "social_description": "",
       "time_verification": "unverified",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
       "editor_overrides": {
@@ -71404,6 +71798,34 @@
       "reviewed_at": ""
     },
     {
+      "id": "moscow-2026-11-23-8a918d88ba",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-23",
+      "time": "18:30",
+      "title": "Тематический вечер «Под сенью Андреевского флага»",
+      "venue": "Дом русского зарубежья им. А. Солженицына",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": true,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "Проведение вечера традиционно приурочено ко дню святого Павла Исповедника (6 (19) ноября), празднику Морского корпуса, отмечавшегося флотскими офицерами, как в России, так и в эмиграции.",
+      "url": "https://www.domrz.ru/event/71320_tematicheskiy_vecher_pod_senyu_andreevskogo_flaga/",
+      "source": "Дом русского зарубежья — афиша",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-19",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "sold_out",
+      "availability_checked_at": "2026-11-19"
+    },
+    {
       "id": "moscow-2026-11-23-5f73160fd7",
       "status": "approved",
       "kind": "event",
@@ -71440,6 +71862,32 @@
       "telegram_include": false,
       "instagram_include": false,
       "reviewed_at": "2026-11-10"
+    },
+    {
+      "id": "spb-2026-11-23-71f95b4b86",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-23",
+      "time": "19:30",
+      "title": "Музыкальный лекторий. Пётр Айду. Что такое шум?",
+      "venue": "Новая Голландия",
+      "address": "",
+      "price": 300,
+      "price_text": "300 ₽",
+      "registration": null,
+      "categories": [],
+      "description": "Где проходит граница между музыкой и шумом? Когда и зачем композиторы приручили казавшийся прежде неблагозвучный шум и сделали его частью музыкального языка? Может ли любой звук стать выразительным средством?",
+      "url": "https://www.newhollandsp.ru/events/education/music-lecture-2/",
+      "source": "Новая Голландия — Сообщество и образование",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-19",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-24-fbd139fcfa",
@@ -71585,6 +72033,32 @@
         "status": "approved"
       },
       "reviewed_at": "2026-10-27"
+    },
+    {
+      "id": "moscow-2026-11-24-2a8bfee591",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-24",
+      "time": "",
+      "title": "Обзорные экскурсии по выставке «Елена Киселева: Балканская история»",
+      "venue": "Дом русского зарубежья им. А. Солженицына",
+      "address": "",
+      "price": 1000,
+      "price_text": "1000 ₽",
+      "registration": true,
+      "categories": [],
+      "description": "Елену Киселеву современники знали как одну из самых ярких портретисток Серебряного века и любимую ученицу Ильи Репина, отмечавшего ее «мужской» рисунок. Она стала первой женщиной, удостоенной заграничного пенсионерства Императорской Академии художеств, работала в Париже и в своем творчестве смогла соединить достижения отечественной и европейской живописи.",
+      "url": "https://www.domrz.ru/event/71145_obzornye_ekskursii_po_vystavke_elena_kiseleva_balkanskaya_istoriya/",
+      "source": "Дом русского зарубежья — афиша",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-11-19",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "sold_out",
+      "availability_checked_at": "2026-11-19"
     },
     {
       "id": "moscow-2026-11-24-b4f4229159",
@@ -71789,6 +72263,35 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": "2026-11-19"
+    },
+    {
+      "id": "moscow-2026-11-24-98f4534d25",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-24",
+      "time": "12:00",
+      "title": "Знакомство с Домом культуры «ГЭС-2»",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": true,
+      "categories": [
+        "диалог"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/mediation/tour/meet-ges-2-house-of-culture",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-19",
+      "audience_text": "› Медиация › Туры Регистрация Билеты на индивидуальный медиаторский тур Дата: с 7 мар 2022 Регистрация Билеты на индивидуальный медиаторский тур Возраст: от 12 Тип: Медиаторский тур Место: ГЭС-2 Возрастные ограничения 12+ Тур об устройстве культурной институции, текущих программах и о том, как здание городской электростанции на Болотной набережной превратилось в Дом культуры. Что такое «Индивидуальный медиаторский тур»?  {\"points\":[{\"id\":4,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":6,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.4,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":5,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} T Медиаторский тур «Знакомство с Домом культуры „ ГЭС-2 “» регулярно проводится с переводом на русский жестовый язык — на нем мы ждем слышащих, глухих и слабослышащих посетителей. Слышащие посетители могут зарегистрироваться через сайт. Глухие и слабослышащие посетители — оставить заявку на участие* по адресу access@ges-2.org или телефону +7 (963) 996 3687 (СМС, WhatsApp , Telegram ). * Сообщая нам свои личные данные, вы даете согласие на их обработку в соответствии с нашей Политикой в отношении обработки и защиты персональных данных . Фото: Иван Ерофеев Прогулка строится вокруг событий в истории ГЭС-2 , ее трансформации в культурную институцию и городское пространство, где в центре всех событий — творческое взаимодействие профессионалов и энтузиастов. Участники тура узнают об актуальных программах, миссии и ценностях Дома культуры, а также о проектах фонда V–A–C , предшествующих открытию « ГЭС-2 ». Мы обсудим архитектуру бывшей электростанции, принципы реконструкции, идейные сходства « ГЭС-2 » с народными домами и домами культуры 1920-х годов, а заодно — главные пространства Дома культуры и то, чем можно в них заняться людям разных возрастов и интересов. Прогулка охватывает все многообразие произвольных маршрутов: медиатор и участники выбирают точки и темы беседы в свободном и равном диалоге, делая акцент на тех или иных подробностях в зависимости от интересов группы. В турах с 5 по 25 октября на мостике между Галереями С7 и С6 мы также увидим и обсудим инсталляцию «Заоблачный дом 80/26» художницы Жени Эйснер. Это своего рода пульт управления, вдохновением для которого стали ретрофутуризм, дизайн космических аппаратов и эстетика торгов",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "spb-2026-11-24-d9a9074d9b",
@@ -72009,6 +72512,35 @@
       "instagram_include": false
     },
     {
+      "id": "moscow-2026-11-24-6de6981347",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-24",
+      "time": "18:30",
+      "title": "Контуры моды",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": true,
+      "categories": [
+        "медиаторский тур"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/fashion-contours",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-11-19",
+      "audience_text": "› Медиация › Туры Регистрация Билеты на индивидуальный медиаторский тур Дата: с 6 авг 2025 Регистрация Билеты на индивидуальный медиаторский тур Возраст: от 16 Тип: Медиаторский тур Место: Площадь Доступность  Возрастные ограничения 16+ Участники тура, созданного совместно с брендом LIMÉ , проследят взаимосвязь моды с повседневностью и искусством, используя ассоциативные карты, отсылающие к творчеству известных дизайнеров. Что такое «Индивидуальный медиаторский тур»?  {\"points\":[{\"id\":4,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":6,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.4,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":5,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} T Одежда — это больше чем ткань и крой. Подобно художественному произведению искусства, это зашифрованное послание, где каждый шов или принт рассказывает историю. Почему сегодня мы выбираем oversize , а завтра — обтягивающие силуэты? Как подиумные образы становятся частью нашего гардероба, а уличная мода проникает в музеи? Тур регулярно проходит с переводом на русский жестовый язык. Глухие и слабослышащие люди могут зарегистрироваться, написав на почту access@ges-2.org или номер +7 (963) 996 3687 (SMS, WhatsApp, Telegram)*. Слышащих посетителей просим воспользоваться кнопкой «Регистрация». Иллюстрация: Маша Титова На медиаторском туре мы обратимся к специально созданным ассоциативным картам, которые помогут увидеть неочевидные связи между искусством, модой и повседневностью. Мы рассмотрим культовые показы, расшифруем фирменные паттерны брендов и проследим, как социальные изменения обусловливают тренды. Объединив изучение моды, выставочных проектов и пространства Дома культуры « ГЭС-2 », мы попробуем взглянуть на знакомые вещи по-новому. Официальный партнер направления медиации Дома культуры « ГЭС-2 » Авторы Анастасия Горбунова, Даша Горячева, Ника Карпенко, Карина Чернышова Художник-иллюстратор Маша Титова * Сообщая нам свои личные данные, вы даете согласие на их обработку в соответствии с нашей Политикой в отношении обработки и защиты персональных данных. Дизайнер Мария Виноградова {\"grid\":{\"width\":963,\"column_width\":89,\"columns_n\":9,\"gutter\":20,\"margin\":0,\"line\":10},\"palette\":\"default\",\"responsive_mode\":true,\"responsive_min_width\":512,\"responsive_max_width\":1100,\"colorchanger_fullscreen",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-24-834758f1e0",
       "status": "rejected",
       "kind": "event",
@@ -72083,6 +72615,34 @@
       "telegram_include": false,
       "instagram_include": false,
       "reviewed_at": "2026-10-27"
+    },
+    {
+      "id": "moscow-2026-11-24-4d10a2d654-1900",
+      "status": "check",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-24",
+      "time": "19:00",
+      "title": "Наброски — Наброски на Покровке",
+      "venue": "Наброски на Покровке",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "наброски"
+      ],
+      "description": "Всем привет, В следующий вторник 24 ноября в 19:00 наброски проведу я, Полина Калашникова. Тема: Цвет и Твистер на необычном формате. Будем раскрашивать свой ноябрь яркими красками. Можно прийти в нарядах, которые давно хотели увидеть свет! У нас это приветствуется. С собой возьмите бумагу типа ватман А3 и А4. *Можно заранее подготовить вытянутый формат, ромб, круг и любой формат, который не будет напоминать производные от привычного стандарта. И любимые материалы для графики. Для записи пишите мне в личные сообщения или оставляйте комментарий под этим постом! До встречи 🍋",
+      "url": "https://t.me/nabroski_pokrovka/794",
+      "source": "Наброски на Покровке",
+      "checked_at": "",
+      "review_reason": "sketch_post_verify_date_time",
+      "discovered_at": "2026-11-19",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-24-f717c4818a",
@@ -72628,6 +73188,35 @@
       "reviewed_at": "2026-11-19"
     },
     {
+      "id": "moscow-2026-11-25-98f4534d25",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-25",
+      "time": "12:00",
+      "title": "Знакомство с Домом культуры «ГЭС-2»",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": true,
+      "categories": [
+        "диалог"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/mediation/tour/meet-ges-2-house-of-culture",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-19",
+      "audience_text": "› Медиация › Туры Регистрация Билеты на индивидуальный медиаторский тур Дата: с 7 мар 2022 Регистрация Билеты на индивидуальный медиаторский тур Возраст: от 12 Тип: Медиаторский тур Место: ГЭС-2 Возрастные ограничения 12+ Тур об устройстве культурной институции, текущих программах и о том, как здание городской электростанции на Болотной набережной превратилось в Дом культуры. Что такое «Индивидуальный медиаторский тур»?  {\"points\":[{\"id\":4,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":6,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.4,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":5,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} T Медиаторский тур «Знакомство с Домом культуры „ ГЭС-2 “» регулярно проводится с переводом на русский жестовый язык — на нем мы ждем слышащих, глухих и слабослышащих посетителей. Слышащие посетители могут зарегистрироваться через сайт. Глухие и слабослышащие посетители — оставить заявку на участие* по адресу access@ges-2.org или телефону +7 (963) 996 3687 (СМС, WhatsApp , Telegram ). * Сообщая нам свои личные данные, вы даете согласие на их обработку в соответствии с нашей Политикой в отношении обработки и защиты персональных данных . Фото: Иван Ерофеев Прогулка строится вокруг событий в истории ГЭС-2 , ее трансформации в культурную институцию и городское пространство, где в центре всех событий — творческое взаимодействие профессионалов и энтузиастов. Участники тура узнают об актуальных программах, миссии и ценностях Дома культуры, а также о проектах фонда V–A–C , предшествующих открытию « ГЭС-2 ». Мы обсудим архитектуру бывшей электростанции, принципы реконструкции, идейные сходства « ГЭС-2 » с народными домами и домами культуры 1920-х годов, а заодно — главные пространства Дома культуры и то, чем можно в них заняться людям разных возрастов и интересов. Прогулка охватывает все многообразие произвольных маршрутов: медиатор и участники выбирают точки и темы беседы в свободном и равном диалоге, делая акцент на тех или иных подробностях в зависимости от интересов группы. В турах с 5 по 25 октября на мостике между Галереями С7 и С6 мы также увидим и обсудим инсталляцию «Заоблачный дом 80/26» художницы Жени Эйснер. Это своего рода пульт управления, вдохновением для которого стали ретрофутуризм, дизайн космических аппаратов и эстетика торгов",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-25-588b1b9599",
       "status": "rejected",
       "kind": "event",
@@ -73108,6 +73697,34 @@
       "reviewed_at": "2026-11-05"
     },
     {
+      "id": "moscow-2026-11-26-741eceef63",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-26",
+      "time": "",
+      "title": "Голодные игры: Рассвет жатвы / The hunger games: sunrise on the reaping",
+      "venue": "Центр Зотов",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "новинки проката"
+      ],
+      "description": "",
+      "url": "https://centrezotov.ru/events/golodnye-igry-rassvet-zhatvy-the-hunger-games-sunrise-on-the-reaping/",
+      "source": "Центр Зотов",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-19",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-26-19606f2101",
       "status": "new",
       "kind": "event",
@@ -73368,7 +73985,38 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
+    },
+    {
+      "id": "moscow-2026-11-26-6de6981347",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-26",
+      "time": "19:00",
+      "title": "Контуры моды",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": true,
+      "categories": [
+        "медиаторский тур"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/fashion-contours",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-11-19",
+      "audience_text": "› Медиация › Туры Регистрация Билеты на индивидуальный медиаторский тур Дата: с 6 авг 2025 Регистрация Билеты на индивидуальный медиаторский тур Возраст: от 16 Тип: Медиаторский тур Место: Площадь Доступность  Возрастные ограничения 16+ Участники тура, созданного совместно с брендом LIMÉ , проследят взаимосвязь моды с повседневностью и искусством, используя ассоциативные карты, отсылающие к творчеству известных дизайнеров. Что такое «Индивидуальный медиаторский тур»?  {\"points\":[{\"id\":4,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":6,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.4,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":5,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} T Одежда — это больше чем ткань и крой. Подобно художественному произведению искусства, это зашифрованное послание, где каждый шов или принт рассказывает историю. Почему сегодня мы выбираем oversize , а завтра — обтягивающие силуэты? Как подиумные образы становятся частью нашего гардероба, а уличная мода проникает в музеи? Тур регулярно проходит с переводом на русский жестовый язык. Глухие и слабослышащие люди могут зарегистрироваться, написав на почту access@ges-2.org или номер +7 (963) 996 3687 (SMS, WhatsApp, Telegram)*. Слышащих посетителей просим воспользоваться кнопкой «Регистрация». Иллюстрация: Маша Титова На медиаторском туре мы обратимся к специально созданным ассоциативным картам, которые помогут увидеть неочевидные связи между искусством, модой и повседневностью. Мы рассмотрим культовые показы, расшифруем фирменные паттерны брендов и проследим, как социальные изменения обусловливают тренды. Объединив изучение моды, выставочных проектов и пространства Дома культуры « ГЭС-2 », мы попробуем взглянуть на знакомые вещи по-новому. Официальный партнер направления медиации Дома культуры « ГЭС-2 » Авторы Анастасия Горбунова, Даша Горячева, Ника Карпенко, Карина Чернышова Художник-иллюстратор Маша Титова * Сообщая нам свои личные данные, вы даете согласие на их обработку в соответствии с нашей Политикой в отношении обработки и защиты персональных данных. Дизайнер Мария Виноградова {\"grid\":{\"width\":963,\"column_width\":89,\"columns_n\":9,\"gutter\":20,\"margin\":0,\"line\":10},\"palette\":\"default\",\"responsive_mode\":true,\"responsive_min_width\":512,\"responsive_max_width\":1100,\"colorchanger_fullscreen",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "spb-2026-11-26-60559df863",
@@ -73399,6 +74047,34 @@
       "availability_checked_at": "",
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "spb-2026-11-26-f41677b4f1",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-26",
+      "time": "19:00",
+      "title": "Цикл лекций «Интермедиальное искусство Санкт-Петербурга». Екатерина Андреева «Театр и мода „Строгого юноши“»",
+      "venue": "Новая Голландия",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Основатель Галереи моды «Строгий юноша» (1989) и стилист группы «Кино» Константин Гончаров (1969–1998) рано прославился: уже в 1990 году костюмы 20-летнего модельера и он сам появились на страницах альбома On the Edge: Photographs from 100 years of Vogue.",
+      "url": "https://www.newhollandsp.ru/events/education/intermedia-art-6/",
+      "source": "Новая Голландия — Сообщество и образование",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-19",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-26-05c67d7f07",
@@ -73758,7 +74434,9 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-27-f08815a18e",
@@ -73933,6 +74611,35 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": "2026-11-19"
+    },
+    {
+      "id": "moscow-2026-11-27-98f4534d25",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-27",
+      "time": "13:00",
+      "title": "Знакомство с Домом культуры «ГЭС-2»",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": true,
+      "categories": [
+        "диалог"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/mediation/tour/meet-ges-2-house-of-culture",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-19",
+      "audience_text": "› Медиация › Туры Регистрация Билеты на индивидуальный медиаторский тур Дата: с 7 мар 2022 Регистрация Билеты на индивидуальный медиаторский тур Возраст: от 12 Тип: Медиаторский тур Место: ГЭС-2 Возрастные ограничения 12+ Тур об устройстве культурной институции, текущих программах и о том, как здание городской электростанции на Болотной набережной превратилось в Дом культуры. Что такое «Индивидуальный медиаторский тур»?  {\"points\":[{\"id\":4,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":6,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.4,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":5,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} T Медиаторский тур «Знакомство с Домом культуры „ ГЭС-2 “» регулярно проводится с переводом на русский жестовый язык — на нем мы ждем слышащих, глухих и слабослышащих посетителей. Слышащие посетители могут зарегистрироваться через сайт. Глухие и слабослышащие посетители — оставить заявку на участие* по адресу access@ges-2.org или телефону +7 (963) 996 3687 (СМС, WhatsApp , Telegram ). * Сообщая нам свои личные данные, вы даете согласие на их обработку в соответствии с нашей Политикой в отношении обработки и защиты персональных данных . Фото: Иван Ерофеев Прогулка строится вокруг событий в истории ГЭС-2 , ее трансформации в культурную институцию и городское пространство, где в центре всех событий — творческое взаимодействие профессионалов и энтузиастов. Участники тура узнают об актуальных программах, миссии и ценностях Дома культуры, а также о проектах фонда V–A–C , предшествующих открытию « ГЭС-2 ». Мы обсудим архитектуру бывшей электростанции, принципы реконструкции, идейные сходства « ГЭС-2 » с народными домами и домами культуры 1920-х годов, а заодно — главные пространства Дома культуры и то, чем можно в них заняться людям разных возрастов и интересов. Прогулка охватывает все многообразие произвольных маршрутов: медиатор и участники выбирают точки и темы беседы в свободном и равном диалоге, делая акцент на тех или иных подробностях в зависимости от интересов группы. В турах с 5 по 25 октября на мостике между Галереями С7 и С6 мы также увидим и обсудим инсталляцию «Заоблачный дом 80/26» художницы Жени Эйснер. Это своего рода пульт управления, вдохновением для которого стали ретрофутуризм, дизайн космических аппаратов и эстетика торгов",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-27-aa8503e63c",
@@ -74601,7 +75308,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-28-60f91b51a1",
@@ -74639,6 +75348,35 @@
       "telegram_include": false,
       "instagram_include": false,
       "reviewed_at": "2026-11-03"
+    },
+    {
+      "id": "moscow-2026-11-28-00c85a88e1",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-28",
+      "time": "15:00",
+      "title": "Кто ты будешь такой",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/who-you-re-going-to-be",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-19",
+      "audience_text": "› Медиация › Туры Регистрация Билеты на индивидуальный медиаторский тур Дата: с 5 апр 2026 Регистрация Билеты на индивидуальный медиаторский тур Возраст: от 8 Тип: Медиаторский тур Место: ГЭС-2 Возрастные ограничения 6+ Медиаторский тур для детей и подростков расскажет об устройстве Дома культуры « ГЭС-2 » и познакомит с профессиями в сфере искусства. Что такое «Индивидуальный медиаторский тур»?  {\"points\":[{\"id\":4,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":6,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.4,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":5,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} T Каждый день в « ГЭС-2 » проходят концерты и мастер-классы, кинопоказы и спектакли, лекции и выставки. Чтобы организовать все это, нужно, чтобы объединилось очень много людей самых разных профессий. Среди них — кураторы, звукорежиссеры, продюсеры, архитекторы, научные консультанты, технические специалисты. И это лишь часть большого списка! Фото: Аня Тодич А еще Дому культуры нужны профессионалы, благодаря которым сюда ежедневно могут приходить тысячи гостей, — это сотрудники по работе с посетителями, охранники, уборщики. Они делают пространство безопасным и удобным для всех. Во время тура мы обсудим, кто и как работает над нашими событиями, примерим на себя роли разных сотрудников « ГЭС-2 » и создадим собственный выставочный проект. Официальный партнер направления медиации Дома культуры « ГЭС-2 » Авторы тура Мария Колпакова, Алина Мирошник — медиаторы Дома культуры « ГЭС-2 ». {\"width\":963,\"column_width\":89,\"columns_n\":9,\"gutter\":20,\"margin\":0,\"line\":10} default true 512 1100 false true false {\"mode\":\"page\",\"transition_type\":\"slide\",\"transition_direction\":\"horizontal\",\"transition_look\":\"belt\",\"slides_form\":{}} {\"css\":\".editor {font-family: Diagramatika Text; font-size: 20px; font-weight: 400; line-height: 20px;}\"} ГЭС-2 Посещение [+] План здания Правила посещения Ателье Игровая Кинотеатр Концертный зал Библиотека Малые своды Магазин Ресторан и кафе Парковка Вокруг Доступность Как нас найти Календарь Программа Направления [+] Практики Медиация Дети и подростки Сообщества Школы Университеты Города Возможности [+] Своды Студии Резиденции Гранты Исследования Издательство  О нас [+] Дом культуры История и архитектура Посещение [+] Календарь Программа Направления [+",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-28-64ecc1a02b",
@@ -74706,6 +75444,35 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": "2026-11-03"
+    },
+    {
+      "id": "moscow-2026-11-28-98f4534d25",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-28",
+      "time": "17:00",
+      "title": "Знакомство с Домом культуры «ГЭС-2»",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": true,
+      "categories": [
+        "диалог"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/mediation/tour/meet-ges-2-house-of-culture",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-19",
+      "audience_text": "› Медиация › Туры Регистрация Билеты на индивидуальный медиаторский тур Дата: с 7 мар 2022 Регистрация Билеты на индивидуальный медиаторский тур Возраст: от 12 Тип: Медиаторский тур Место: ГЭС-2 Возрастные ограничения 12+ Тур об устройстве культурной институции, текущих программах и о том, как здание городской электростанции на Болотной набережной превратилось в Дом культуры. Что такое «Индивидуальный медиаторский тур»?  {\"points\":[{\"id\":4,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":6,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.4,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":5,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} T Медиаторский тур «Знакомство с Домом культуры „ ГЭС-2 “» регулярно проводится с переводом на русский жестовый язык — на нем мы ждем слышащих, глухих и слабослышащих посетителей. Слышащие посетители могут зарегистрироваться через сайт. Глухие и слабослышащие посетители — оставить заявку на участие* по адресу access@ges-2.org или телефону +7 (963) 996 3687 (СМС, WhatsApp , Telegram ). * Сообщая нам свои личные данные, вы даете согласие на их обработку в соответствии с нашей Политикой в отношении обработки и защиты персональных данных . Фото: Иван Ерофеев Прогулка строится вокруг событий в истории ГЭС-2 , ее трансформации в культурную институцию и городское пространство, где в центре всех событий — творческое взаимодействие профессионалов и энтузиастов. Участники тура узнают об актуальных программах, миссии и ценностях Дома культуры, а также о проектах фонда V–A–C , предшествующих открытию « ГЭС-2 ». Мы обсудим архитектуру бывшей электростанции, принципы реконструкции, идейные сходства « ГЭС-2 » с народными домами и домами культуры 1920-х годов, а заодно — главные пространства Дома культуры и то, чем можно в них заняться людям разных возрастов и интересов. Прогулка охватывает все многообразие произвольных маршрутов: медиатор и участники выбирают точки и темы беседы в свободном и равном диалоге, делая акцент на тех или иных подробностях в зависимости от интересов группы. В турах с 5 по 25 октября на мостике между Галереями С7 и С6 мы также увидим и обсудим инсталляцию «Заоблачный дом 80/26» художницы Жени Эйснер. Это своего рода пульт управления, вдохновением для которого стали ретрофутуризм, дизайн космических аппаратов и эстетика торгов",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-28-9a03ab11cd",
@@ -75325,6 +76092,35 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "moscow-2026-11-29-6de6981347",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-29",
+      "time": "18:00",
+      "title": "Контуры моды",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": true,
+      "categories": [
+        "медиаторский тур"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/fashion-contours",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-11-19",
+      "audience_text": "› Медиация › Туры Регистрация Билеты на индивидуальный медиаторский тур Дата: с 6 авг 2025 Регистрация Билеты на индивидуальный медиаторский тур Возраст: от 16 Тип: Медиаторский тур Место: Площадь Доступность  Возрастные ограничения 16+ Участники тура, созданного совместно с брендом LIMÉ , проследят взаимосвязь моды с повседневностью и искусством, используя ассоциативные карты, отсылающие к творчеству известных дизайнеров. Что такое «Индивидуальный медиаторский тур»?  {\"points\":[{\"id\":4,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":6,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.4,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":5,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} T Одежда — это больше чем ткань и крой. Подобно художественному произведению искусства, это зашифрованное послание, где каждый шов или принт рассказывает историю. Почему сегодня мы выбираем oversize , а завтра — обтягивающие силуэты? Как подиумные образы становятся частью нашего гардероба, а уличная мода проникает в музеи? Тур регулярно проходит с переводом на русский жестовый язык. Глухие и слабослышащие люди могут зарегистрироваться, написав на почту access@ges-2.org или номер +7 (963) 996 3687 (SMS, WhatsApp, Telegram)*. Слышащих посетителей просим воспользоваться кнопкой «Регистрация». Иллюстрация: Маша Титова На медиаторском туре мы обратимся к специально созданным ассоциативным картам, которые помогут увидеть неочевидные связи между искусством, модой и повседневностью. Мы рассмотрим культовые показы, расшифруем фирменные паттерны брендов и проследим, как социальные изменения обусловливают тренды. Объединив изучение моды, выставочных проектов и пространства Дома культуры « ГЭС-2 », мы попробуем взглянуть на знакомые вещи по-новому. Официальный партнер направления медиации Дома культуры « ГЭС-2 » Авторы Анастасия Горбунова, Даша Горячева, Ника Карпенко, Карина Чернышова Художник-иллюстратор Маша Титова * Сообщая нам свои личные данные, вы даете согласие на их обработку в соответствии с нашей Политикой в отношении обработки и защиты персональных данных. Дизайнер Мария Виноградова {\"grid\":{\"width\":963,\"column_width\":89,\"columns_n\":9,\"gutter\":20,\"margin\":0,\"line\":10},\"palette\":\"default\",\"responsive_mode\":true,\"responsive_min_width\":512,\"responsive_max_width\":1100,\"colorchanger_fullscreen",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-29-cf42880c4d",
@@ -76265,6 +77061,35 @@
       "availability_checked_at": ""
     },
     {
+      "id": "moscow-2026-12-03-b485ac3446",
+      "status": "check",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-12-03",
+      "time": "10:30",
+      "title": "Короткий рисунок",
+      "venue": "Простая школа",
+      "address": "Москва, ул. Пятницкая, 71/5, строение 2, офис 503",
+      "price": 750,
+      "price_text": "750 ₽",
+      "registration": null,
+      "categories": [
+        "наброски"
+      ],
+      "description": "Либо три разных позы по 40 минут, либо одна поза на все три часа с перерывами.",
+      "url": "https://prostaya.ru/praktiki",
+      "source": "Простая школа — открытые практики",
+      "checked_at": "",
+      "review_reason": "recurring_schedule_confirm_specific_date",
+      "discovered_at": "2026-11-19",
+      "editor_note": "По еженедельному расписанию школы; проверить отмены и анонс конкретной даты.",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-12-03-f7e466876f",
       "status": "rejected",
       "kind": "event",
@@ -76298,6 +77123,35 @@
       "instagram_include": false,
       "reviewed_at": "2026-11-13",
       "editor_note": ""
+    },
+    {
+      "id": "international-2026-12-04-05b9b2ab9c",
+      "status": "check",
+      "kind": "open_call",
+      "city": "international",
+      "date": "2026-12-04",
+      "time": "",
+      "title": "Call for Work: 'Asemic: Text As Art'",
+      "venue": "CuratorSpace",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "open-call"
+      ],
+      "description": "City: Hartlepool | Region: Durham | Country: United Kingdom | Jennifer Batchelor",
+      "url": "https://www.curatorspace.com/opportunities/detail/call-for-work-asemic-text-as-art/11367",
+      "source": "CuratorSpace — opportunities",
+      "checked_at": "",
+      "review_reason": "primary_source_required",
+      "discovered_at": "2026-11-19",
+      "audience_text": "Opportunity details | Call for Work: 'Asemic: Text As Art' | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register Call for Work: 'Asemic: Text As Art' Deadline: 04/12/2026 City: Hartlepool | Region: Durham | Country: United Kingdom | Jennifer Batchelor Report this? Description Opportunity FAQs Make a submission Contact curator This is a call for artists to submit artwork or essays/articles to be published in a special edition of the Journal 'PAD: Perspectives in Art and Design' [ISSN: 2632-3877]. We are looking for artwork or articles that contain depictions or discussions of Asemic writing or the broader theme of text being used as visual art. About PAD ( https://www.northernperspectives.co.uk/ ): PAD: Perspectives in Art & Design is The Northern School of Art’s scholarly activity and research journal; a place for the publication of staff and student* academic investigation. Covering issues as diverse as written and practice based research, PAD aims to bring to the fore new ideas, new approaches to existing debates, interpretations on written and visual practice, debates in art and design history, and issues of creative pedagogy. Our goal is to allow scholarly activity to be delivered through equality, where there is no hierarchy between the academic and the student, those with a record of publication, and those who will be shown here for the first time. *Please note: You do not need to be affiliated with The Northern School of Art to submit for this opportunity! This edition: This special edition of PAD, to be published Dec/2026, is being chaired by MA Curation student Jennifer Batchelor as part of her research into how text and the semiotics of text are used in visual art. The journal edition will include examples of artwork as well as articles and an introductory essay by the curator. The journal exists online (linked above) and is freely accessible. The theme of the edition is asemic writing - the artistic practice of creating artwork that contains visuals that appear to resemble language without having any semantic meaning to them. (You might call it \"fake writing\".) Who we are looking for: Artists working with asemic writing. Writers and essayists who have written on the topic of asemic writing or text-based visual art. Graffiti artists (to provide photographs of their work). Calligraphers, letterers and collagists. Artists who have used Automatic Writing as a creative or spiritual output to provide examples. Artists in any medium who consider themselves to use text in their visual art! What we are asking for: We are asking for digital submissions of 2D artwork using asemic writing or text as visual art. This can be illustration, collages, photography or any 2D medium. We will also gladly accept photographs of 3D art and live installations that cannot be sent digitally, i.e graffiti or sculptures. Along with this we are also asking for a brief description of the artwork and a short explanation of why you feel it meets the brief, to be published alongside it. Please no submissions containing generative AI! Thank you. Make a submission Contact the curator Who is eligible for this opportunity? Open to all artists and writers regardless of experience or publication history. All we ask is that no generative AI is used in the submitted work. When is the deadline? 4/12/2026 How many works can I submit? Up to 4 individual artworks or one essay. When is the delivery date? Exact publication date TBA but it will come out Dec 2026. How much does it cost? Free to submit. Are there payments to artists? No. Do I need to be present? No, this is an entirely digital opportunity/publication. What kind of proposals are you looking for? Any visual art medium in .JPG or .PDF format. Any written articles in .PDF or .DOCX format. You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Advertisement Other opportunities Exhibit in Brazil - Timeless Exhibition A unique opportunity for artists to show their work in a different country without having to be... We are all Wonder Women “We Are All Wonder Women” is an international virtual exhibition organised by DiversaMente... Monochrome 2027, International Photography Exhibition Call for entries for an International Photography Exhibition. This month-long exhibition will be... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "spb-2026-12-04-cf08c176b2",
@@ -76364,7 +77218,9 @@
       "ticket_required": false,
       "availability": "unknown",
       "availability_checked_at": "",
-      "start_date": "2026-12-04"
+      "start_date": "2026-12-04",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-12-04-fb95a2d56e",
@@ -76652,6 +77508,32 @@
       "telegram_include": false,
       "instagram_include": false,
       "reviewed_at": "2026-11-06"
+    },
+    {
+      "id": "spb-2026-12-06-48abbe0a76",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-12-06",
+      "time": "",
+      "title": "Дом Радио открыл",
+      "venue": "Дом Радио",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "на программу «БИКАПО небесного леса». С чего началась история БИКАПО? Ведущая программы Лада Раскольникова: «Однажды идя по Хохловскому переулку, Герман случайно задел ногой железную трубочку и застыл, зачарованный сложным звуком, спрятанном в таком простом предмете. Из нее же он сделал первый инструмент. Сначала он проводил бикапонии в арт-группе “Детский сад”, потом в “Заповеднике искусств на Петровском бульваре” и “Школе драматического искусства” Анатолия Васильева. Параллельно он конструировал инсталляцию из металла у себя дома. С 1980-х годов каждое воскресенье в шесть часов вечера он уст",
+      "url": "https://domradio.timepad.ru/event/4316324/",
+      "source": "Дом Радио — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-11-19",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "spb-2026-12-06-42e262a1a0",
@@ -77316,6 +78198,35 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": "2026-11-13"
+    },
+    {
+      "id": "international-2026-12-13-9159523e94",
+      "status": "check",
+      "kind": "open_call",
+      "city": "international",
+      "date": "2026-12-13",
+      "time": "",
+      "title": "Open Call for Artists - 33rd Community Art Exhibitio",
+      "venue": "CuratorSpace",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "open-call"
+      ],
+      "description": "Exhibit your artwork at Circular ArtSpace – East Bristol's vibrant gallery supporting emerging and under-represented artists",
+      "url": "https://www.curatorspace.com/opportunities/detail/open-call-for-artists--rd-community-art-exhibition/11366",
+      "source": "CuratorSpace — opportunities",
+      "checked_at": "",
+      "review_reason": "primary_source_required",
+      "discovered_at": "2026-11-19",
+      "audience_text": "Opportunity details | Open Call for Artists - 33rd Community Art Exhibition | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register Open Call for Artists - 33rd Community Art Exhibition Deadline: 13/12/2026 City: Bristol | Region: Somerset | Country: United Kingdom | Circular ArtSpace Report this? Description Opportunity FAQs Make a submission Contact curator Exhibit your artwork at Circular ArtSpace – East Bristol's vibrant gallery supporting emerging and under-represented artists Are you an artist eager to exhibit your work? Applications are now open for our 33rd Community Art Exhibition , 9 - 30 January 2027 , at Circular ArtSpace Gallery – East Bristol’s first permanent art gallery, proudly housed in a converted double-decker bus! This will be our 33rd group exhibition, forming part of a wider programme of 46 curated shows, including solo exhibitions and members’ collectives. We welcome all mediums: paintings, photography, sculptures, installations, illustrations, digital art, ceramics, videos and more. Submission is FREE Each selected artist exhibits one work only: up to 110Wx110Hcm for paintings, illustrations, drawings, photography and videos; up to 35Wx80Hx35Dcm for sculptures, installations and ceramics. You may submit images of multiple works, but only one will be selected 2D works must be framed and corded We only accept original artworks (handmade prints, photography, and video are exceptions) We do not accept AI generated work in any form Please include a few images of your work or a link to your website/social media Fees if selected: £35 per artist No commission on sales — artists keep 100%! Important dates: Application deadline: 13 December 2026, 23:59 GMT Artwork delivery: 6 January 2027, 12 pm–3 pm (alternatively, works may be posted to arrive by 5th January 2027) Meet the Artists event: Saturday, 9 January 2027, 2-4 pm Collection: Sunday, 30 January 2027, 12 pm–3 pm About Circular ArtSpace : Circular ArtSpace is a not-for-profit gallery based in Bristol, UK, established in March 2022, supporting creativity in East Bristol. We curate both physical and virtual exhibitions, as well as artist fairs, with a focus on supporting emerging and underrepresented artists. Our gallery space in Fishponds welcomes approximately 300 visitors each month. To date, we have provided exhibition opportunities to over 1000 artists in our physical gallery. Why exhibit with us? We handle all curation, placement and installation of your piece Showcase your work in a vibrant and supportive creative community Reach new audiences in a busy, accessible East Bristol location Benefit from promotional support via our website, mailing list, and social media channels Featured listings on CuratorSpace, VASW (Visual Arts South West), Bristol Creatives, and Visit Bristol Be part of a professionally curated group exhibition Meet fellow artists and expand your creative network Keep 100% of your sales — we take no commission! Excited? Apply now — and if you know an artist who might love this opportunity, please share! Full details For Terms and Conditions and information on delivery, sending work by post, returns, artists living outside the UK, the waiting list, sales and the catalogue, please read our full details page of Information and Terms and Conditions Make a submission Contact the curator When is the deadline? 13 December, 23:59. How many works can I submit? A maximum of three. We will select only one. Please send us a few images of your work, or a link to your website, or social media account. When is the delivery date? Wednesday 6 January, 12 am - 3 pm. When do I need to collect my work? Sunday 31 January,, 12 am - 3 pm. How much does it cost? £35. Is there a private view / opening? There will be a special Meet the Artists event on Saturday 9 January, 2-4 pm. What are the exhibition opening hours? Wednesday to Friday, 12 am - 4 pm. Saturday and Sunday 11 am - 4 pm. What publicity will be provided as part of the opportunity? The event will be promoted on the CuratorSpace platform, VASW platform, Bristol Creatives platform, Visit Bristol touristic portal, newsletter, social media, website. Do I need to be present? We will be glad if you can join us at the \"Meet the Artists\" event on the 9th of January and bring with you your friends and family. What happens if my proposal is chosen? Once selected we will send you a confirmation email with the details for the payment and the instructions for the consignment. What are the selection criteria? We are as open as possible to offer any artists the opportunity to show their creativity. Can I send you my work if I can't be there for the setup day? Yes, you can send us your work. We will do the setup on your behalf at no extra cost. Please be sure we can receive the parcel before 6 January 2027. We will send you all the instructions. Please prepare your parcel with the return address and include a return envelope in case your work is unsold. If you are sending/returning your work from abroad, please consider the Customs & Borders costs and rules. What if my work is not chosen? We try to include all the applicant artists and we already have a waiting list. If we can't accept your work please apply again for the next one. Can I display prints? We are an art gallery and we are not a commerical shop. We will display original artworks only. We can display prints if your work is \"handmade-print\", photography, or digital. There is a small corner with a browser where we can alllow to leave some print. Do you accept artwork generated with Artificial Intelligence? NO! Does Circular ArtSpace take commissions? NO! You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Advertisement Other opportunities Exhibit in Brazil - Timeless Exhibition A unique opportunity for artists to show their work in a different country without having to be... We are all Wonder Women “We Are All Wonder Women” is an international virtual exhibition organised by DiversaMente... Monochrome 2027, International Photography Exhibition Call for entries for an International Photography Exhibition. This month-long exhibition will be... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "international-2026-12-13-ddbed2a01c",
@@ -78440,7 +79351,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-12-19-91c3c05e64",
@@ -78476,7 +79389,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-12-19-8cb3f8d42f",
@@ -78512,7 +79427,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-12-19-66d5d81d70",
@@ -78540,7 +79457,9 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-12-20-7d49348433",
@@ -78814,7 +79733,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2027-01-11-b3606147e2",

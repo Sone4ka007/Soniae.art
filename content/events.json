@@ -75155,7 +75155,7 @@
       "address": "",
       "price": 1000,
       "price_text": "1000 ₽",
-      "registration": null,
+      "registration": false,
       "categories": [
         "лекция"
       ],
@@ -75169,7 +75169,14 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-11-28-79d519d4e3",
@@ -77648,7 +77655,7 @@
       "address": "",
       "price": 1000,
       "price_text": "1000 ₽",
-      "registration": null,
+      "registration": false,
       "categories": [
         "лекция"
       ],
@@ -77662,7 +77669,14 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "spb-2026-12-11-d7eb167bdb",
@@ -79384,7 +79398,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "игра"
       ],
@@ -79399,7 +79413,14 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-12-20-6a2d52a9bd",

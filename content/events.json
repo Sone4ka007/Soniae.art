@@ -75207,7 +75207,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "лекция"
       ],
@@ -75221,7 +75221,14 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "international-2026-11-29-e272fef6c8",

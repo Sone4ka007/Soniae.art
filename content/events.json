@@ -38291,7 +38291,7 @@
       "reviewed_at": "2026-10-17",
       "availability": "unknown",
       "availability_checked_at": "",
-      "registration": false,
+      "registration": null,
       "price": null,
       "price_text": "",
       "price_type": "paid",
@@ -38317,7 +38317,7 @@
         "status": "approved",
         "telegram_include": false,
         "instagram_include": false,
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -41054,7 +41054,7 @@
       "address": "1-й Голутвинский переулок, 16, стр. 1",
       "price": 850,
       "price_text": "850 ₽; льготный — 650 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -41081,7 +41081,7 @@
       "time_evidence": "24 октября 2026 14:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
       "editor_overrides": {
-        "registration": false
+        "registration": null
       }
     },
     {
@@ -49427,7 +49427,7 @@
       "address": "Лаврушинский переулок, 12",
       "price": 650,
       "price_text": "650 ₽; онлайн — 700 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -49444,7 +49444,7 @@
         "telegram_include": false,
         "instagram_include": false,
         "status": "approved",
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -51674,14 +51674,16 @@
       "price": 0,
       "price_text": "",
       "registration": false,
-      "categories": [],
+      "categories": [
+        "выставка"
+      ],
       "description": "На метро Музей AZ находится между станциями метро «Маяковская» и «Белорусская» (кольцевая). Мы рекомендуем идти в Музей от станции «Маяковская». Вам нужен Выход №1 на 1-я Тверская-Ямская улица, 2-я Тверская-Ямская улица.",
       "url": "https://museum-az.com/event/territoriya-svobody-nonkonformisty-v-taruse/",
       "source": "Музей AZ — выставки и события",
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-10-20",
-      "price_type": "paid",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-10-25",
       "editor_overrides": {
@@ -55187,7 +55189,7 @@
       "address": "",
       "price_type": "free",
       "price_text": "бесплатно по регистрации",
-      "registration": false,
+      "registration": true,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -57101,7 +57103,7 @@
       "address": "",
       "price_type": "free",
       "price_text": "бесплатно по регистрации",
-      "registration": false,
+      "registration": true,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -65417,7 +65419,7 @@
       "title": "Виктория Бурлакова Свое место",
       "venue": "ЦСИ Винзавод",
       "address": "",
-      "price": 0,
+      "price": null,
       "price_text": "12000 ₽",
       "registration": null,
       "categories": [
@@ -68709,6 +68711,32 @@
       "reviewed_at": ""
     },
     {
+      "id": "spb-2026-11-22-97a1202868",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-22",
+      "time": "",
+      "title": "«Полное юридическое сопровождение» по мотивам пьесы М. Хейфеца",
+      "venue": "Пушкинская-10",
+      "address": "",
+      "price": 1200,
+      "price_text": "1200 ₽",
+      "registration": null,
+      "categories": [],
+      "description": "Социальная комедия с эротическим оттенком по мотивам пьесы М. Хейфеца «Не забудьте расписаться». На свете есть две вечные темы — это любовь и….",
+      "url": "https://p-10.ru/events/polnoe-juridicheskoe-soprovozhdenie-po-motivam-pesy-m-hejfeca-11/",
+      "source": "Пушкинская-10 — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-22",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-22-605fcecce6",
       "status": "new",
       "kind": "event",
@@ -68835,7 +68863,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-22-9fbcc3c31e",
@@ -69255,82 +69285,6 @@
       "ticket_required": false,
       "availability": "unknown",
       "availability_checked_at": ""
-    },
-    {
-      "id": "moscow-2026-10-25-c40e7952b7",
-      "status": "rejected",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-11-22",
-      "time": "10:00",
-      "title": "Воркшопы",
-      "venue": "ЦСИ Винзавод",
-      "address": "",
-      "price": 0,
-      "price_text": "Бесплатно",
-      "registration": false,
-      "categories": [
-        "лекция"
-      ],
-      "description": "",
-      "url": "https://www.winzavod.ru/calendar/workshops/",
-      "source": "ЦСИ Винзавод",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-10-25",
-      "price_type": "free",
-      "availability_evidence": "",
-      "ticket_required": true,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false,
-        "status": "rejected"
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": "2026-10-27"
-    },
-    {
-      "id": "moscow-2026-10-25-fefbfbd35d",
-      "status": "rejected",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-11-22",
-      "time": "10:00",
-      "title": "Курсы",
-      "venue": "ЦСИ Винзавод",
-      "address": "",
-      "price": 0,
-      "price_text": "Бесплатно",
-      "registration": false,
-      "categories": [
-        "лекция"
-      ],
-      "description": "",
-      "url": "https://www.winzavod.ru/calendar/course/",
-      "source": "ЦСИ Винзавод",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-10-25",
-      "price_type": "free",
-      "availability_evidence": "",
-      "ticket_required": true,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false,
-        "status": "rejected"
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": "2026-10-27"
     },
     {
       "id": "moscow-2026-11-22-5120dd5b06",
@@ -70397,6 +70351,82 @@
       "availability_checked_at": "",
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "moscow-2026-10-25-c40e7952b7",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-23",
+      "time": "10:00",
+      "title": "Воркшопы",
+      "venue": "ЦСИ Винзавод",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "",
+      "url": "https://www.winzavod.ru/calendar/workshops/",
+      "source": "ЦСИ Винзавод",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-25",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false,
+        "status": "rejected"
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": "2026-10-27"
+    },
+    {
+      "id": "moscow-2026-10-25-fefbfbd35d",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-23",
+      "time": "10:00",
+      "title": "Курсы",
+      "venue": "ЦСИ Винзавод",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "",
+      "url": "https://www.winzavod.ru/calendar/course/",
+      "source": "ЦСИ Винзавод",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-25",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false,
+        "status": "rejected"
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": "2026-10-27"
     },
     {
       "id": "moscow-2026-11-23-91c3c05e64",
@@ -72777,6 +72807,34 @@
       "editor_note": ""
     },
     {
+      "id": "moscow-2026-11-25-bd0ba3d866",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-25",
+      "time": "19:30",
+      "title": "Дискуссия «Зин как пространство для эксперимента: от самиздата до архива»",
+      "venue": "Музей «Гараж»",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": true,
+      "categories": [
+        "публичная программа"
+      ],
+      "description": "На встрече в рамках публичной программы проекта «Пространство печати» художницы, иллюстраторы, кураторы и издательницы обсудят зин как самостоятельную форму авторского высказывания и экспериментальную практику на пересечении искусства, литературы и дизайна.",
+      "url": "https://garagemca.org/event/discussion-the-zine-as-a-space-for-experimentation-from-samizdat-to-archive",
+      "source": "Музей современного искусства «Гараж»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-22",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-25-a62e84d83a",
       "status": "approved",
       "kind": "event",
@@ -72989,6 +73047,46 @@
       "reviewed_at": ""
     },
     {
+      "id": "moscow-2026-11-26-7161905f1d",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-26",
+      "time": "",
+      "title": "Дом, полный книг: экскурсия по Библиотеке музея",
+      "venue": "Еврейский музей и центр толерантности",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Библиотека музея возвращается с еженедельными экскурсиями по книжным фондам! Программа 08 октября 2026 (18:00) 15 октября 2026 (18:00) 22 октября 2026 (18:00) 25 октября 2026 (14:00) 29 октября 2026 (18:00)",
+      "url": "https://www.jewish-museum.ru/events/dom-polnyy-knig-ekskursiya-po-biblioteke-muzeya1/",
+      "source": "Еврейский музей и центр толерантности",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-01",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-08",
+      "editor_note": "",
+      "social_priority": null,
+      "telegram_include": false,
+      "instagram_image": "",
+      "instagram_include": false,
+      "social_description": "",
+      "social_title": "",
+      "reviewed_at": "",
+      "sheet_synced_description": "Библиотека музея возвращается с еженедельными экскурсиями по книжным фондам! Программа 08 октября 2026 (18:00) 15 октября 2026 (18:00) 22 октября 2026 (18:00) 25 октября 2026 (14:00) 29 октября 2026 (18:00)",
+      "time_verification": "unverified",
+      "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
+      "editor_overrides": {
+        "time": ""
+      }
+    },
+    {
       "id": "moscow-2026-11-26-19606f2101",
       "status": "new",
       "kind": "event",
@@ -73182,6 +73280,34 @@
       "reviewed_at": "2026-11-19"
     },
     {
+      "id": "moscow-2026-11-26-fa1a2e09a8",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-26",
+      "time": "14:00",
+      "title": "Бесплатная лекция-экскурсия «Б.Ю.Поплавский: “Дионис” русского зарубежья»",
+      "venue": "Дом русского зарубежья им. А. Солженицына",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": true,
+      "categories": [
+        "лекция"
+      ],
+      "description": "26 ноября 2026 года в 14 часов приглашаем на бесплатную лекцию-экскурсию «Б.Ю.Поплавский: “Дионис” русского зарубежья». Лекция-экскурсия посвящена жизни и творчеству одного из самых талантливых поэтов российской эмиграции.",
+      "url": "https://www.domrz.ru/event/70663_lektsiya_ekskursiya_b_yu_poplavskiy_dionis_russkogo_zarubezhya/",
+      "source": "Дом русского зарубежья — афиша",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-11-22",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "sold_out",
+      "availability_checked_at": "2026-11-22"
+    },
+    {
       "id": "moscow-2026-11-26-422be2d050",
       "status": "rejected",
       "kind": "event",
@@ -73274,6 +73400,32 @@
       "telegram_include": false,
       "instagram_include": false,
       "reviewed_at": "2026-11-19"
+    },
+    {
+      "id": "moscow-2026-11-26-925562b118",
+      "status": "check",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-26",
+      "time": "18:30",
+      "title": "Как согласовать авторскую архитектуру в Москве: квартирник об АГК, АГР и цифровых стандартах",
+      "venue": "3-я Рыбинская улица, 18с22",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [],
+      "description": "Архитектура Москвы всегда развивалась в тесной связи с городской политикой. Менялись приоритеты, регламенты и подходы к застройке, а вместе с ними менялись облик города и задачи архитекторов. Сегодня к качеству решений предъявляют всё больше требований. Бюро нужно искать выразительный образ и при этом понимать процедуры согласования и цифровые стандарты. На встрече участники обсудят, как это взаимодействие устроено на практике. Разговор пойдет о согласовании АГК и АГР, подготовке проектных материалов и роли цифровых моделей. Темы варьируются от контроля технико-экономических показателей до наглядного представления архитектуры и включения в Ци",
+      "url": "https://design-mate.ru/go/events/kak-soglasovat-avtorskuyu-arhitekturu-v-moskve-kvartirnik-ob-agk-agr-i-cifrovyh-standartah",
+      "source": "Design Mate — календарь",
+      "checked_at": "",
+      "review_reason": "discovery_source_needs_primary_verification",
+      "discovered_at": "2026-11-22",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "spb-2026-11-26-39239049a2",
@@ -73398,6 +73550,34 @@
       "availability_checked_at": "",
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "moscow-2026-11-26-4df1aca3b7",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-26",
+      "time": "19:00",
+      "title": "Лекция Екатерины Андреевой «Театр и мода „Строгого юноши“»",
+      "venue": "Музей «Гараж»",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": true,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Основатель Галереи моды «Строгий юноша» (1989) и стилист группы «Кино» Константин Гончаров (1969–1998) рано прославился: уже в 1990 году костюмы 20-летнего модельера и он сам появились на страницах альбома On the Edge: Photographs from 100 years of Vogue.",
+      "url": "https://garagemca.org/event/ekaterina-andreeva-lecture-theater-and-fashion-of-the-strict-young-man",
+      "source": "Музей современного искусства «Гараж»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-22",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "spb-2026-11-26-f41677b4f1",
@@ -75020,7 +75200,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-28-79d519d4e3",
@@ -75698,6 +75880,47 @@
       "reviewed_at": "2026-11-16"
     },
     {
+      "id": "moscow-2026-11-29-a4e875c14e",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-29",
+      "time": "13:30",
+      "title": "Кураторская экскурсия по выставке «Хлеб»",
+      "venue": "Центр Зотов",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "",
+      "url": "https://centrezotov.ru/events/hleb/hlebnyj-uikend/kuratorskaya-ekskursiya-po-vystavke-hleb/",
+      "source": "Центр Зотов",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-15",
+      "price_type": "paid",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-25",
+      "sheet_synced_description": "",
+      "social_description": "",
+      "social_title": "",
+      "telegram_include": false,
+      "social_priority": null,
+      "instagram_image": "",
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": "2026-10-17",
+      "time_verification": "verified",
+      "time_evidence": "30.10.26 19:30",
+      "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
+      "editor_overrides": {
+        "status": "rejected"
+      }
+    },
+    {
       "id": "moscow-2026-11-29-422be2d050",
       "status": "rejected",
       "kind": "event",
@@ -75805,6 +76028,41 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
+      "id": "moscow-2026-11-29-0175f414b9",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-29",
+      "time": "18:00",
+      "title": "Век Шагала",
+      "venue": "Еврейский музей и центр толерантности",
+      "address": "",
+      "price": 600,
+      "price_text": "600 ₽",
+      "registration": false,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "Россия, Белоруссия и Франция считают Марка Шагала своим национальным художником. Но как же так получилось и кому на самом деле принадлежало сердце Шагала? Рассказываем на тематической экскурсии.",
+      "url": "https://www.jewish-museum.ru/events/vek-shagala/",
+      "source": "Еврейский музей и центр толерантности",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-26",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
+    },
+    {
       "id": "moscow-2026-11-29-9f582f94c1",
       "status": "new",
       "kind": "event",
@@ -75868,6 +76126,34 @@
       "price_type": "paid",
       "availability_evidence": "",
       "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "moscow-2026-11-29-a1cf4eaf9c",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-29",
+      "time": "18:30",
+      "title": "«Тот, кто не умеет петь, не может быть хасидом»: особенности хасидской музыки",
+      "venue": "Еврейский музей и центр толерантности",
+      "address": "",
+      "price": 500,
+      "price_text": "500 ₽",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "",
+      "url": "https://www.jewish-museum.ru/events/tot-kto-ne-umeet-pet-ne-mozhet-byt-khasidom-osobennosti-khasidskoy-muzyki/",
+      "source": "Еврейский музей и центр толерантности",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-22",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
       "availability": "unknown",
       "availability_checked_at": ""
     },
@@ -77913,6 +78199,34 @@
       "reviewed_at": ""
     },
     {
+      "id": "moscow-2026-12-09-1daada1300",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-12-09",
+      "time": "19:00",
+      "title": "Лекция «Церковный раскол»",
+      "venue": "Третьяковская галерея",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Лекция к абонементу №12 «Русская история в шедеврах Третьяковской галереи». 11 ноября 2026 – 28 апреля 2027 Лекция будет проходить в Лекционном зале Инженерного корпуса (Лаврушинский переулок, д. 12, вход с Малого Толмачёвского переулка) и в режиме реального времени на платформе МТС Линк в формате онлайн. Продолжительность лекции: 1 час 30 минут.",
+      "url": "https://www.tretyakovgallery.ru/events/o/lektsiya-tserkovnyy-raskol-12-2026/",
+      "source": "Третьяковская галерея — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-22",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "international-2026-12-10-5c6df8b2b1",
       "status": "check",
       "kind": "open_call",
@@ -79858,6 +80172,34 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": "2026-11-19"
+    },
+    {
+      "id": "moscow-2026-12-19-d263f2499f",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-12-19",
+      "time": "",
+      "title": "Диалог поколений: медленный разговор о современном искусстве",
+      "venue": "Музей «Гараж»",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": true,
+      "categories": [
+        "диалог"
+      ],
+      "description": "Музей «Гараж» запускает цикл встреч для представителей старшего поколения и их младших родственников, посвященный обсуждению работ художников в открытом хранении Музея «Гараж». 1962, Москва) — медиатор Музея современного искусства «Гараж», сотрудничает с Музеем русского импрессионизма, Домом культуры «ГЭС-2». Спикер междисциплинарных форумов: «Как работать вместе?",
+      "url": "https://garagemca.org/event/dialogue-between-generations-a-slow-conversation-about-contemporary-art",
+      "source": "Музей современного искусства «Гараж»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-22",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-12-19-de1962a6f5",

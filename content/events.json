@@ -38321,7 +38321,7 @@
       "reviewed_at": "2026-10-17",
       "availability": "unknown",
       "availability_checked_at": "",
-      "registration": null,
+      "registration": false,
       "price": null,
       "price_text": "",
       "price_type": "paid",
@@ -38347,7 +38347,7 @@
         "status": "approved",
         "telegram_include": false,
         "instagram_include": false,
-        "registration": null
+        "registration": false
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -41084,7 +41084,7 @@
       "address": "1-й Голутвинский переулок, 16, стр. 1",
       "price": 850,
       "price_text": "850 ₽; льготный — 650 ₽",
-      "registration": null,
+      "registration": false,
       "categories": [
         "лекция"
       ],
@@ -41111,7 +41111,7 @@
       "time_evidence": "24 октября 2026 14:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
       "editor_overrides": {
-        "registration": null
+        "registration": false
       }
     },
     {
@@ -49457,7 +49457,7 @@
       "address": "Лаврушинский переулок, 12",
       "price": 650,
       "price_text": "650 ₽; онлайн — 700 ₽",
-      "registration": null,
+      "registration": false,
       "categories": [
         "лекция"
       ],
@@ -49474,7 +49474,7 @@
         "telegram_include": false,
         "instagram_include": false,
         "status": "approved",
-        "registration": null
+        "registration": false
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -74204,7 +74204,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "лекция"
       ],
@@ -74218,7 +74218,14 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-11-27-da81792ce4",
@@ -77824,7 +77831,13 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-12-03-b485ac3446",
@@ -78046,7 +78059,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "выставка"
       ],
@@ -78061,7 +78074,14 @@
       "ticket_required": false,
       "availability": "unknown",
       "availability_checked_at": "",
-      "start_date": "2026-12-04"
+      "start_date": "2026-12-04",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-12-04-9c31e3b3c8",
@@ -78712,7 +78732,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "мастер-класс"
       ],
@@ -78726,7 +78746,14 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "international-2026-12-07-ca9d4e54f7",
@@ -79319,7 +79346,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [],
       "description": "Как найти идею, которая определит звучание целого проекта? Как озвучить то, чего никто никогда не слышал? И как удерживать музыкальное напряжение, заставляя слушателя ждать развязки? 11 декабря на лекции музыканта и композитора Michael Dop поговорим о том, как Бьорк соединяет природные процессы и музыкальные эксперименты в Biophilia, а Нильс Фрам использует акустику берлинского Funkhaus и колодца на Майорке в All Melody. На примере фильма «Аннигиляция» обсудим звучание неизвестного, а на сцене из «Одиссеи» — работу с нарастанием напряжения и долгим ожиданием развязки. 11 декабря 2026",
       "url": "https://design.hse.ru/news/7442",
@@ -79331,7 +79358,14 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "spb-2026-12-11-556173ab41",
@@ -80639,7 +80673,7 @@
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": null,
+      "registration": false,
       "categories": [
         "мастер-класс"
       ],
@@ -80653,7 +80687,14 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
     },
     {
       "id": "moscow-2026-12-17-91c3c05e64",

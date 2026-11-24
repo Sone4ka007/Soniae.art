@@ -671,7 +671,7 @@
       <section class="workspace" id="workspace">
         <div class="section-cap"><span class="section-no">01</span><span>ВЫБЕРИ УРОК</span></div>
         <div class="lesson-select-wrap"><div><label for="lesson-select" class="lesson-select-label">ТЕКУЩИЙ УРОК</label><select id="lesson-select" class="lesson-select" aria-label="Выбрать урок"></select></div></div>
-        <details class="lesson-chooser" id="lesson-chooser"><summary>ПОКАЗАТЬ ВСЕ 20 УРОКОВ</summary><div class="lesson-tabs" id="lesson-tabs" role="group" aria-label="Выбрать урок"></div></details>
+        <details class="lesson-chooser" id="lesson-chooser"><summary>ПОКАЗАТЬ 20 УРОКОВ И ПОВТОРЕНИЕ</summary><div class="lesson-tabs" id="lesson-tabs" role="group" aria-label="Выбрать урок"></div></details>
         <div class="lesson-intro" id="lesson-intro" aria-live="polite"></div>
         <div class="section-cap modes-cap learning-path-head"><div class="section-cap" style="margin-bottom:0"><span class="section-no">02</span><span>МАРШРУТ ОБУЧЕНИЯ</span></div><button class="today-entry" type="button" id="today-entry" data-action="mode" data-id="today" aria-pressed="false">◴ СЕГОДНЯ</button></div>
         <nav class="mode-nav" id="mode-nav" aria-label="Пять этапов обучения"></nav>
@@ -743,6 +743,10 @@ const shuffledIndices = length => {
  return a;
 };
 const sample = (items, n) => shuffle(items).slice(0, Math.min(items.length, n));
+const REVIEW_ID=104;
+const isReviewLesson=()=>state.lessonId===REVIEW_ID;
+const reviewModes=new Set(['today','words','pairs','translate','reverse','build','sentence','review','input','progress']);
+const lessonNumber=l=>l.id===REVIEW_ID?'1–4':String(l.id).padStart(2,'0');
 const lesson = () => state.lessons.find(x => x.id === state.lessonId);
 const word = zh => lesson().words.find(w => w.hanzi === zh);
 const formatXP = value => String(value).padStart(3, '0');
@@ -815,6 +819,7 @@ function activateLesson(id) {
   saveActiveSession();
   if (!state.lessons.some(x => x.id === id)) return;
   state.lessonId = id;
+  if(isReviewLesson())state.wordsSection='lesson';
   state.progress.lastLessonId = id;
   $('#lesson-chooser')?.removeAttribute('open');
   save();
@@ -825,6 +830,7 @@ function activateLesson(id) {
 function activateMode(mode, reset = false) {
   stopReader();
   if (!modeInfo.some(x => x.id === mode)) return;
+  if(isReviewLesson()&&!reviewModes.has(mode))mode='pairs';
   saveActiveSession();
   state.mode = mode;
   if (reset && ChineseLabSessions.clear(state.progress, state.lessonId, mode)) save();
@@ -835,7 +841,7 @@ function activateMode(mode, reset = false) {
   if (mode === 'build') initBuild();
   if (mode === 'sentence') initSentence();
   if (mode === 'substitute') initSubstitution();
-  if (mode === 'review') initReview();
+  if (mode === 'review') {if(isReviewLesson()){state.progress.reviewSelect={kind:'lessons',lessonIds:[1,2,3,4]};state.progress.reviewScope='custom';}initReview();}
   if (mode === 'writing') state.game = {};
   if (mode === 'input') initCI();
   if (mode === 'words' || mode === 'video' || mode === 'progress' || mode === 'today') state.game = {};
@@ -867,11 +873,12 @@ function activateMode(mode, reset = false) {
 }
 function renderShell() {
   const l = lesson(); if (!l) return;
-  $('#lesson-select').innerHTML = state.lessons.map(item => '<option value="'+item.id+'"'+(item.id===l.id?' selected':'')+'>'+String(item.id).padStart(2,'0')+' · '+esc(item.topic)+'</option>').join('');
-  $('#lesson-tabs').innerHTML = state.lessons.map(item => `<button class="lesson-tab ${item.id===l.id?'is-active':''}" type="button" data-action="lesson" data-id="${item.id}" aria-pressed="${item.id===l.id}"><span><span class="lesson-num">${String(item.id).padStart(2,'0')}</span><span class="lesson-name">${esc(item.topic)}</span></span><span class="lesson-count">${item.words.length} СЛОВ ↗</span></button>`).join('');
+  $('#lesson-select').innerHTML = state.lessons.map(item => '<option value="'+item.id+'"'+(item.id===l.id?' selected':'')+'>'+lessonNumber(item)+' · '+esc(item.topic)+'</option>').join('');
+  $('#lesson-tabs').innerHTML = state.lessons.map(item => `<button class="lesson-tab ${item.id===l.id?'is-active':''}" type="button" data-action="lesson" data-id="${item.id}" aria-pressed="${item.id===l.id}"><span><span class="lesson-num">${lessonNumber(item)}</span><span class="lesson-name">${esc(item.topic)}</span></span><span class="lesson-count">${item.words.length} СЛОВ ↗</span></button>`).join('');
   const completed = Number(state.progress.stories[l.id] || 0);
   $('#lesson-intro').innerHTML = `<div><h2>${esc(l.topic)}</h2><p>${esc(l.subtitle)}</p></div><div class="stat-strip"><span class="stat-big">${completed}</span><span>ПРОЙДЕНО<br>СЮЖЕТОВ</span></div>`;
-  const navigation = ChineseLabLearningPath.navigation(state.mode, state.progress, modeInfo, esc);
+  const reviewGames=['pairs','translate','reverse','build','sentence','review'];
+  const navigation = isReviewLesson()?{stages:[['words','СЛОВАРЬ','字'],['pairs','ПРАКТИКА','↔'],['input','ИСТОРИЯ','文']].map(([id,title,icon],i)=>`<button type="button" class="learning-step${(id==='pairs'&&reviewGames.includes(state.mode)||id===state.mode)?' is-active':''}" data-action="mode" data-id="${id}"><span class="learning-step-number">0${i+1}</span><span class="learning-step-icon">${icon}</span><span class="learning-step-label">${title}</span></button>`).join(''),modes:reviewGames.includes(state.mode)?modeInfo.filter(m=>reviewGames.includes(m.id)).map(m=>`<button type="button" class="mode-btn${state.mode===m.id?' is-active':''}" data-action="mode" data-id="${m.id}">${esc(m.icon)} ${esc(m.title)}</button>`).join(''):''}:ChineseLabLearningPath.navigation(state.mode, state.progress, modeInfo, esc);
   $('#mode-nav').innerHTML = navigation.stages;
   $('#mode-subnav').innerHTML = navigation.modes;
   $('#mode-subnav').hidden = !navigation.modes;
@@ -1424,7 +1431,8 @@ function renderSceneMatch(){
   }
   ChineseLabSceneMatch.paint(state.game);
 }
-function initPairs(){const pairs=sample(lesson().words,6);state.game={pairs,left:shuffle(pairs),right:shuffle(pairs),chosenLeft:null,chosenRight:null,matched:[],notice:''};}
+function initPairs(){const queue=shuffle(lesson().words),pairs=queue.slice(0,6);state.game={pairs,left:shuffle(pairs),right:shuffle(pairs),chosenLeft:null,chosenRight:null,matched:[],notice:'',...(isReviewLesson()?{remaining:queue.slice(6),covered:0,total:queue.length}:{})};}
+function nextReviewPairs(){const g=state.game;if(!isReviewLesson()||g.matched.length!==g.pairs.length||!g.remaining?.length)return;g.covered+=g.pairs.length;g.pairs=g.remaining.splice(0,6);g.left=shuffle(g.pairs);g.right=shuffle(g.pairs);g.matched=[];g.chosenLeft=null;g.chosenRight=null;g.notice='';renderPairs();}
 function pairPick(side,wordHanzi){
   const g=state.game;if(g.matched.includes(wordHanzi))return;
   if(side==='left'){g.chosenLeft=wordHanzi;speech(wordHanzi);}else g.chosenRight=wordHanzi;
@@ -1437,11 +1445,11 @@ function pairPick(side,wordHanzi){
 }
 function renderPairs(){
   const g=state.game;
-  if(g.matched.length===g.pairs.length){$('#game-panel').innerHTML=completedBlock('ВСЕ ПАРЫ НАЙДЕНЫ','Выучено шесть соответствий. Попробуй новый набор.','pairs');return;}
+  if(g.matched.length===g.pairs.length){if(isReviewLesson()&&g.remaining?.length){$('#game-panel').innerHTML=header('ВСЕ ПАРЫ НАЙДЕНЫ','Переходи к следующей группе без повторов.',`${g.covered+g.pairs.length}/${g.total} СЛОВ`)+`<div class="complete"><h4>ГРУППА ГОТОВА</h4><p>Пройдено ${g.covered+g.pairs.length} из ${g.total} слов.</p><button type="button" class="action-btn" data-action="review-pair-next">СЛЕДУЮЩИЕ ПАРЫ →</button></div>`;return;}$('#game-panel').innerHTML=completedBlock('ВСЕ ПАРЫ НАЙДЕНЫ',isReviewLesson()?`Пройдены все ${g.total} слов.`:'Выучено шесть соответствий. Попробуй новый набор.','pairs');return;}
   const column=(items,side)=>items.map(w=>`<button type="button" class="pair-btn ${side==='left'?'is-zh':''} ${g.matched.includes(w.hanzi)?'is-matched':''} ${(side==='left'?g.chosenLeft:g.chosenRight)===w.hanzi?'is-selected':''}" data-action="pair" data-side="${side}" data-id="${esc(w.hanzi)}" ${g.matched.includes(w.hanzi)?'disabled':''}>${esc(side==='left'?w.hanzi:w.ru)}</button>`).join('');
-  $('#game-panel').innerHTML=`${header('СОЕДИНИ ПАРЫ','Слева иероглифы, справа переводы. Нажми на один и на соответствующий ему перевод.',`НАЙДЕНО ${g.matched.length}/${g.pairs.length}`)}<div class="progress-track"><div style="width:${100*g.matched.length/g.pairs.length}%"></div></div><div class="pairs-grid"><div class="pairs-column">${column(g.left,'left')}</div><div class="pairs-column">${column(g.right,'right')}</div></div><p class="progress-foot">Клик по иероглифу воспроизводит произношение. ${esc(g.notice)}</p>`;
+  $('#game-panel').innerHTML=`${header('СОЕДИНИ ПАРЫ','Слева иероглифы, справа переводы. Нажми на один и на соответствующий ему перевод.',isReviewLesson()?`НАЙДЕНО ${g.covered+g.matched.length}/${g.total}`:`НАЙДЕНО ${g.matched.length}/${g.pairs.length}`)}<div class="progress-track"><div style="width:${100*g.matched.length/g.pairs.length}%"></div></div><div class="pairs-grid"><div class="pairs-column">${column(g.left,'left')}</div><div class="pairs-column">${column(g.right,'right')}</div></div><p class="progress-foot">Клик по иероглифу воспроизводит произношение. ${esc(g.notice)}</p>`;
 }
-function initQuiz(){const questions=sample(lesson().words,10);state.game={questions,index:0,answered:false,correct:0,selected:-1,choices:[],analysisIndex:-1};prepareChoices();}
+function initQuiz(){const questions=isReviewLesson()?shuffle(lesson().words):sample(lesson().words,10);state.game={questions,index:0,answered:false,correct:0,selected:-1,choices:[],analysisIndex:-1};prepareChoices();}
 function prepareChoices(){const g=state.game;if(g.index>=g.questions.length)return;const answer=g.questions[g.index];g.choices=shuffle([answer,...sample(lesson().words.filter(x=>x.hanzi!==answer.hanzi && x.ru!==answer.ru),3)]);}
 function renderQuiz(){
   const g=state.game;if(g.index>=g.questions.length){$('#game-panel').innerHTML=completedBlock('РАУНД ЗАВЕРШЁН',`Правильных ответов: ${g.correct} из ${g.questions.length}.` ,state.mode);return;}
@@ -1455,7 +1463,7 @@ function quizPick(i){const g=state.game;if(g.answered)return;g.answered=true;g.s
   speech(w.hanzi);renderQuiz();
 }
 function quizNext(){const g=state.game;if(!g.answered)return;g.index++;g.selected=-1;g.answered=false;g.analysisIndex=-1;prepareChoices();renderQuiz();if(g.index<g.questions.length)autoSpeech(g.questions[g.index].hanzi);}
-function initBuild(){const all=lesson().words.filter(w=>Array.from(w.hanzi).length>=2&&Array.from(w.hanzi).length<=4);state.game={questions:sample(all,9),index:0,selected:[],correct:0,verified:false,notice:''};prepareTiles();}
+function initBuild(){const all=lesson().words.filter(w=>Array.from(w.hanzi).length>=2&&Array.from(w.hanzi).length<=4);state.game={questions:isReviewLesson()?shuffle(all):sample(all,9),index:0,selected:[],correct:0,verified:false,notice:''};prepareTiles();}
 function prepareTiles(){const g=state.game;if(g.index>=g.questions.length)return;const w=g.questions[g.index];const letters=[...w.hanzi];const other=[...new Set(lesson().words.flatMap(x=>[...x.hanzi]).filter(x=>!letters.includes(x)))];const n=letters.length<=2?2:1;g.tiles=shuffle([...letters.map((value,i)=>({id:`a${i}`,value})),...sample(other,n).map((value,i)=>({id:`x${i}`,value}))]);g.selected=[];g.verified=false;g.notice='';}
 function renderBuild(){const g=state.game;if(g.index>=g.questions.length){$('#game-panel').innerHTML=completedBlock('СЛОВА СОБРАНЫ',`Правильно собрано: ${g.correct} из ${g.questions.length}.`,'build');return;}
  const w=g.questions[g.index];const selected=g.selected.map(id=>g.tiles.find(t=>t.id===id));const maxLength=[...w.hanzi].length;
@@ -1474,7 +1482,7 @@ function tileAction(action,id){const g=state.game,w=g.questions[g.index];if(!w||
  renderBuild();
 }
 function sentenceAllowedWords() {
-  return ChineseLabSentenceCoach.allowedWords(window.ChineseLabHSK3Base,state.lessons,state.lessonId);
+  return ChineseLabSentenceCoach.allowedWords(window.ChineseLabHSK3Base,state.lessons,isReviewLesson()?4:state.lessonId);
 }
 function sentenceGlossary() {
   return ChineseLabSentenceCoach.translations(state.lessons,state.extraWords,state.contextWords);
@@ -1639,7 +1647,7 @@ function renderWords(){
  const common=[...source.values()].filter(w=>!l.words.some(x=>x.hanzi===w.hanzi));
  const all=state.wordsSection==='lesson'?lessonCards:state.wordsSection==='all'?[...lessonCards,...common]:Object.values(state.progress.saved||{}).map(w=>{const base=source.get(w.hanzi)||{};return {...base,...w,pinyin:String(w.pinyin||'').trim()||base.pinyin||guessPinyin(w.hanzi)};});
  const cards=all.map(w=>`<div class="word-card" data-search="${esc(`${w.hanzi} ${w.pinyin||''} ${w.ru||''}`.toLowerCase())}"><button class="word-open" type="button" data-action="inspect" data-zh="${esc(w.hanzi)}"><span class="speaker-symbol" aria-hidden="true">◖))</span><span class="hanzi">${esc(w.hanzi)}</span><span class="pinyin">${esc(w.pinyin||'◖)) СЛУШАТЬ')}</span><span class="translation" hidden>${esc(w.ru||'Значение пока не проверено')}</span></button><button class="quest-reveal word-reveal" data-action="word-reveal" type="button">ПЕРЕВОД ↓</button><button class="word-add" data-action="save-quick" data-zh="${esc(w.hanzi)}" type="button" aria-label="Добавить ${esc(w.hanzi)} в повторение">${state.progress.saved?.[w.hanzi]?'✓ В КОЛОДЕ':'+ В КОЛОДУ'}</button></div>`).join('');
- const tabs=[['lesson',`УРОК ${l.id} · ${lessonCards.length}`],['all',`ВЕСЬ СЛОВАРЬ · ${source.size}`],['saved',`МОЯ КОЛОДА · ${Object.keys(state.progress.saved||{}).length}`]].map(([id,label])=>`<button class="dictionary-tab ${state.wordsSection===id?'active':''}" type="button" data-action="dictionary-tab" data-id="${id}">${label}</button>`).join('');
+ const tabs=[['lesson',`${isReviewLesson()?'УРОКИ 1–4':'УРОК '+l.id} · ${lessonCards.length}`],['all',`ВЕСЬ СЛОВАРЬ · ${source.size}`],['saved',`МОЯ КОЛОДА · ${Object.keys(state.progress.saved||{}).length}`]].map(([id,label])=>`<button class="dictionary-tab ${state.wordsSection===id?'active':''}" type="button" data-action="dictionary-tab" data-id="${id}">${label}</button>`).join('');
  $('#game-panel').innerHTML=`${header('СЛОВАРЬ СО ЗВУКОМ','Все использованные слова и выражения доступны во вкладке «Весь словарь». Значения скрыты до нажатия.', 'СЛОВА / КВЕСТЫ / ИСТОРИИ')}<div class="dictionary-tabs">${tabs}</div><div class="words-tools"><label for="words-search" class="sr-only">Найти слово</label><input class="words-search" id="words-search" placeholder="Поиск по иероглифам, пиньинь, переводу…" autocomplete="off"><div class="speed-row"><span>СКОРОСТЬ:</span>${[.7,.9,1].map(v=>`<button data-action="rate" data-rate="${v}" class="${Number(state.progress.rate)===v?'is-active':''}">${v===.7?'МЕДЛЕННО':v===.9?'0.9×':'1×'}</button>`).join('')}</div></div><div class="word-grid" id="word-grid">${cards}</div><p class="audio-note">Слова из контекста не попадают автоматически в интервальные повторы. Добавляй только те, которые хочешь учить. Произношение воспроизводит китайский голос устройства.</p>`;
 }
 function videoUrl(v){
@@ -1682,7 +1690,7 @@ function guessPinyin(zh) {
 }
 function allVocabulary() {
   const map = new Map();
-  for (const l of state.lessons) for (const w of l.words) map.set(w.hanzi, {...w, origin: l.topic, lessonId:l.id});
+  for (const l of state.lessons.filter(l=>l.id!==REVIEW_ID)) for (const w of l.words) map.set(w.hanzi, {...w, origin: l.topic, lessonId:l.id});
   for (const w of (state.extraWords || [])) if (!map.has(w.hanzi)) map.set(w.hanzi,{...w,origin:'Поясняющая лексика'});
   for (const w of (state.contextWords || [])) if (!map.has(w.hanzi)) map.set(w.hanzi,{...w,origin:'Слова из квестов и историй'});
   for (const [hanzi,w] of Object.entries(state.progress.saved || {})) {
@@ -1696,7 +1704,7 @@ function allVocabulary() {
 }
 function coreVocabulary() {
   const map = new Map();
-  for (const l of state.lessons) for (const w of l.words) map.set(w.hanzi,{...w,lessonId:l.id});
+  for (const l of state.lessons.filter(l=>l.id!==REVIEW_ID)) for (const w of l.words) map.set(w.hanzi,{...w,lessonId:l.id});
   for (const [h,w] of Object.entries(state.progress.saved || {})) {
     const base=map.get(h)||{};
     map.set(h,{...base,...w,hanzi:h,pinyin:String(w.pinyin||'').trim()||base.pinyin||guessPinyin(h)});
@@ -1807,7 +1815,7 @@ function ciQuestionOrder(chapter, question, questionIndex){
 }
 function renderCI(){
  const g=state.game,works=g.works;if(!works.length){$('#game-panel').textContent='Тексты пока недоступны.';return;}
- const r=works[g.idx],chapterNumber=(state.lessonId-1)*3+g.idx+1;
+ const r=works[g.idx],chapterNumber=isReviewLesson()?'R1–4':(state.lessonId-1)*3+g.idx+1;
  const lessonSwitch=works.map((t,i)=>ciChapterCard(t,i,g)).join('');
  const paragraphs=[];
  for(let start=0;start<r.lines.length;start+=4){
@@ -1819,10 +1827,10 @@ function renderCI(){
  const choice=r.decision;
  const opts=choice.options.map((o,i)=>`<div class="ci-decision-card"><button class="ci-decision-btn ${g.decision===i?'is-selected':''}" type="button" data-action="ci-decision" data-choice="${i}" ${!finished||g.decision!==-1?'disabled':''}><span lang="zh-CN">${esc(o.zh)}</span><small>ВЫБРАТЬ ЭТО ДЕЙСТВИЕ</small></button><div class="ci-choice-tools"><button type="button" data-action="ci-analyze" data-key="decision-${i}">${g.ciAnalysisKey===`decision-${i}`?'СКРЫТЬ РАЗБОР ↑':'РАЗОБРАТЬ СЛОВА'}</button><button type="button" data-action="ci-reveal-option" data-key="decision-${i}">${g.ciReveals.includes(`decision-${i}`)?'СКРЫТЬ ПЕРЕВОД ↑':'ПЕРЕВОД ↓'}</button></div>${g.ciAnalysisKey===`decision-${i}`?`<div class="ci-card-detail" lang="zh-CN">${tapText(o.zh)} ${speakButton(o.zh)}</div>`:''}${g.ciReveals.includes(`decision-${i}`)?`<p class="ci-option-ru">${esc(o.ru)}</p>`:''}</div>`).join('');
  const outcome=g.decision>=0?`<div class="ci-outcome"><div class="eyebrow">ТВОЁ РЕШЕНИЕ · 你的选择</div><div class="quest-zh" lang="zh-CN">${tapText(choice.options[g.decision].resultZh)} ${speakButton(choice.options[g.decision].resultZh)}</div><p>${esc(choice.options[g.decision].resultRu)}</p></div>`:'';
- const nextLabel=g.idx<works.length-1?'ПЕРЕЙТИ К СЛЕДУЮЩЕЙ ГЛАВЕ →':state.lessonId<state.lessons.length?'СЛЕДУЮЩИЙ УРОК →':'ИСТОРИЯ ЗАВЕРШЕНА · ПОВТОРИТЬ СЛОВА →';
+ const nextLabel=g.idx<works.length-1?'ПЕРЕЙТИ К СЛЕДУЮЩЕЙ ГЛАВЕ →':state.lessons.findIndex(l=>l.id===state.lessonId)<state.lessons.length-1?'СЛЕДУЮЩИЙ УРОК →':'ИСТОРИЯ ЗАВЕРШЕНА · ПОВТОРИТЬ СЛОВА →';
  const next=`<div class="ci-next"><span>${g.decision>=0?'Глава пройдена · решение записано':`Ответь на ${r.questions.length} вопроса и выбери действие, чтобы завершить главу`}</span><button class="action-btn" type="button" data-action="ci-next" ${g.decision===-1?'disabled':''}>${nextLabel}</button></div>`;
  const chapterComplete=works.filter(x=>state.progress.ciDone?.[x.id]).length;
- $('#game-panel').innerHTML=`${header('ИСТОРИИ И ДИАЛОГИ','Истории о жизни Анны в Китае: читай по главам, слушай, принимай решения и проверяй понимание.','SERIAL STORY / HSK 4')}<div class="ci-story-progress"><div><b>ГЛАВА ${String(chapterNumber).padStart(2,'0')}/${String(state.lessons.length*3).padStart(2,'0')}</b><span>ПРОЙДЕНО В УРОКЕ ${chapterComplete}/${works.length}</span></div><div class="story-track">${works.map((x,i)=>`<span class="${state.progress.ciDone?.[x.id]?'done':i===g.idx?'here':''}"></span>`).join('')}</div></div><div class="ci-switches">${lessonSwitch}</div><div class="ci-chapter-hero"><span class="ci-chapter-serial">CHAPTER ${String(chapterNumber).padStart(2,'0')}</span><h4>${esc(r.name.replace(/^\d+ \/ /,''))}</h4><p>${esc(r.teaser||'')}</p><div><span>${r.lines.length} ФРАЗ · ${r.questions.length} ВОПРОСА</span><span>ANNA / 小林 / CHINESE IN ACTION</span></div></div><div class="ci-toolbar"><button type="button" class="action-btn secondary" data-action="ci-translations">${g.showTranslations?'СКРЫТЬ ПЕРЕВОД':'ПОКАЗАТЬ ПЕРЕВОД'}</button><button type="button" class="action-btn secondary" data-action="mode" data-id="story">ИГРАТЬ СЮЖЕТ ↗</button></div><section class="ci-player" aria-label="Управление аудиочтением"><div class="ci-player-heading"><span class="ci-player-label">◖)) АУДИОЧТЕНИЕ</span><span id="ci-audio-position" role="status">ФРАЗА 01 / ${r.lines.length}</span></div><div class="ci-player-controls"><button type="button" class="ci-main-play" data-action="ci-toggle" id="ci-toggle">▶ СЛУШАТЬ</button><button type="button" class="ci-skip" data-action="ci-prev" aria-label="Предыдущая фраза">← НАЗАД</button><button type="button" class="ci-skip" data-action="ci-next-line" aria-label="Следующая фраза">ВПЕРЁД →</button><button type="button" class="ci-stop" data-action="ci-stop">■ СТОП</button></div><div class="ci-playback-track" role="progressbar" aria-label="Прогресс аудиочтения" aria-valuemin="0" aria-valuemax="${r.lines.length}" aria-valuenow="0" id="ci-playback-track"><div id="ci-playback-fill"></div></div><div class="ci-player-note" id="ci-player-note">Во время чтения текущая фраза подсвечивается и прокручивается к центру экрана. «Продолжить» повторяет фразу с начала.</div></section><div class="ci-hint">Нажми на незнакомое слово или иероглиф, чтобы послушать, узнать значение и сохранить в свою колоду. Кнопки рядом со строками озвучивают полные предложения.</div><article class="ci-novel" lang="zh-CN">${paragraphs.join('')}</article><div class="ci-checks"><h4>ТЫ ПОНЯЛА, ЧТО ПРОИЗОШЛО?</h4>${checks}</div><div class="ci-decision ${finished?'is-unlocked':'is-locked'}"><div class="eyebrow">РЕШЕНИЕ ГЛАВЫ / 你来决定</div><h4>${esc(choice.prompt)}</h4><p>${finished?'Оба действия возможны. Выбери одно и послушай, что произошло дальше.':'Ответь на вопросы выше, чтобы открыть следующий ход.'}</p><div class="ci-decision-grid">${opts}</div>${outcome}</div>${next}<div class="ci-reader"><h4>СВОЙ КИТАЙСКИЙ ТЕКСТ</h4><p>Вставь любую реплику или предложение: разбей его на кликабельные слова. Незнакомые символы можно озвучить и сохранить с собственным переводом.</p><textarea id="reader-input" rows="3" placeholder="在这里输入中文句子…">${esc(state.readerText||'')}</textarea><button class="action-btn secondary" type="button" data-action="reader-parse">РАЗОБРАТЬ ТЕКСТ ↗</button><div id="reader-output" class="reader-output">${tapText(state.readerText||'')}</div><div class="reader-custom"><label for="reader-unknown">Слово или выражение, которого нет в разборе:</label><input type="text" id="reader-unknown" lang="zh-CN" placeholder="Например: 飞机"><button class="action-btn secondary" type="button" data-action="reader-unknown">ПОСЛУШАТЬ И ДОБАВИТЬ +</button></div></div>`;
+ $('#game-panel').innerHTML=`${header('ИСТОРИИ И ДИАЛОГИ','Истории о жизни Анны в Китае: читай по главам, слушай, принимай решения и проверяй понимание.','SERIAL STORY / HSK 4')}<div class="ci-story-progress"><div><b>ГЛАВА ${String(chapterNumber).padStart(2,'0')}/${isReviewLesson()?'ПОВТОРЕНИЕ':String(state.lessons.filter(l=>l.id!==REVIEW_ID).length*3).padStart(2,'0')}</b><span>ПРОЙДЕНО В УРОКЕ ${chapterComplete}/${works.length}</span></div><div class="story-track">${works.map((x,i)=>`<span class="${state.progress.ciDone?.[x.id]?'done':i===g.idx?'here':''}"></span>`).join('')}</div></div><div class="ci-switches">${lessonSwitch}</div><div class="ci-chapter-hero"><span class="ci-chapter-serial">CHAPTER ${String(chapterNumber).padStart(2,'0')}</span><h4>${esc(r.name.replace(/^\d+ \/ /,''))}</h4><p>${esc(r.teaser||'')}</p><div><span>${r.lines.length} ФРАЗ · ${r.questions.length} ВОПРОСА</span><span>ANNA / 小林 / CHINESE IN ACTION</span></div></div><div class="ci-toolbar"><button type="button" class="action-btn secondary" data-action="ci-translations">${g.showTranslations?'СКРЫТЬ ПЕРЕВОД':'ПОКАЗАТЬ ПЕРЕВОД'}</button><button type="button" class="action-btn secondary" data-action="mode" data-id="${isReviewLesson()?'pairs':'story'}">${isReviewLesson()?'ПОВТОРИТЬ СЛОВА ↗':'ИГРАТЬ СЮЖЕТ ↗'}</button></div><section class="ci-player" aria-label="Управление аудиочтением"><div class="ci-player-heading"><span class="ci-player-label">◖)) АУДИОЧТЕНИЕ</span><span id="ci-audio-position" role="status">ФРАЗА 01 / ${r.lines.length}</span></div><div class="ci-player-controls"><button type="button" class="ci-main-play" data-action="ci-toggle" id="ci-toggle">▶ СЛУШАТЬ</button><button type="button" class="ci-skip" data-action="ci-prev" aria-label="Предыдущая фраза">← НАЗАД</button><button type="button" class="ci-skip" data-action="ci-next-line" aria-label="Следующая фраза">ВПЕРЁД →</button><button type="button" class="ci-stop" data-action="ci-stop">■ СТОП</button></div><div class="ci-playback-track" role="progressbar" aria-label="Прогресс аудиочтения" aria-valuemin="0" aria-valuemax="${r.lines.length}" aria-valuenow="0" id="ci-playback-track"><div id="ci-playback-fill"></div></div><div class="ci-player-note" id="ci-player-note">Во время чтения текущая фраза подсвечивается и прокручивается к центру экрана. «Продолжить» повторяет фразу с начала.</div></section><div class="ci-hint">Нажми на незнакомое слово или иероглиф, чтобы послушать, узнать значение и сохранить в свою колоду. Кнопки рядом со строками озвучивают полные предложения.</div><article class="ci-novel" lang="zh-CN">${paragraphs.join('')}</article><div class="ci-checks"><h4>ТЫ ПОНЯЛА, ЧТО ПРОИЗОШЛО?</h4>${checks}</div><div class="ci-decision ${finished?'is-unlocked':'is-locked'}"><div class="eyebrow">РЕШЕНИЕ ГЛАВЫ / 你来决定</div><h4>${esc(choice.prompt)}</h4><p>${finished?'Оба действия возможны. Выбери одно и послушай, что произошло дальше.':'Ответь на вопросы выше, чтобы открыть следующий ход.'}</p><div class="ci-decision-grid">${opts}</div>${outcome}</div>${next}<div class="ci-reader"><h4>СВОЙ КИТАЙСКИЙ ТЕКСТ</h4><p>Вставь любую реплику или предложение: разбей его на кликабельные слова. Незнакомые символы можно озвучить и сохранить с собственным переводом.</p><textarea id="reader-input" rows="3" placeholder="在这里输入中文句子…">${esc(state.readerText||'')}</textarea><button class="action-btn secondary" type="button" data-action="reader-parse">РАЗОБРАТЬ ТЕКСТ ↗</button><div id="reader-output" class="reader-output">${tapText(state.readerText||'')}</div><div class="reader-custom"><label for="reader-unknown">Слово или выражение, которого нет в разборе:</label><input type="text" id="reader-unknown" lang="zh-CN" placeholder="Например: 飞机"><button class="action-btn secondary" type="button" data-action="reader-unknown">ПОСЛУШАТЬ И ДОБАВИТЬ +</button></div></div>`;
  syncReaderUI(false);
 }
 function tapAnswer(text){return esc(text);}
@@ -1905,7 +1913,7 @@ function ciAction(action,btn){const g=state.game;const r=g.works[g.idx];
    if(g.decision<0)return;
    stopReader();
    if(g.idx<g.works.length-1){g.idx++;g.showTranslations=false;restoreCIProgress();renderCI();$('#workspace').scrollIntoView({behavior:'smooth'});return;}
-   if(state.lessonId<state.lessons.length){activateLesson(state.lessonId+1);activateMode('input');$('#workspace').scrollIntoView({behavior:'smooth'});return;}
+   const following=state.lessons[state.lessons.findIndex(l=>l.id===state.lessonId)+1];if(following){activateLesson(following.id);activateMode('input');$('#workspace').scrollIntoView({behavior:'smooth'});return;}
    activateMode('review');return;
  }
  if(action==='reader-unknown'){const zh=$('#reader-unknown').value.trim();if(zh)inspectWord(zh);return;}
@@ -2005,7 +2013,7 @@ function renderToday() {
     [Number(p.xp||0),'ОПЫТ / XP']
   ];
   $('#game-panel').innerHTML=header('СЕГОДНЯ','Продолжи с места остановки или повтори слова. Все упражнения остаются в пяти этапах обучения.','HSK 4 / DAILY')+
-    '<div class="today-grid"><section class="today-focus"><div class="today-focus-kicker">ПРОДОЛЖИТЬ ОБУЧЕНИЕ · УРОК '+String(toResume.id).padStart(2,'0')+'</div>'+
+    '<div class="today-grid"><section class="today-focus"><div class="today-focus-kicker">ПРОДОЛЖИТЬ ОБУЧЕНИЕ · УРОК '+lessonNumber(toResume)+'</div>'+
     '<h4>'+esc(toResume.topic)+'</h4><p>'+esc(mode?.title||'СЛОВАРЬ')+'. Незаконченные задания сохраняются автоматически и откроются с последнего шага.</p>'+
     '<button type="button" class="action-btn" data-action="today-continue">ПРОДОЛЖИТЬ →</button></section>'+
     '<div class="today-metrics">'+metrics.map(([n,name])=>'<div class="today-metric"><strong>'+esc(n)+'</strong><span>'+esc(name)+'</span></div>').join('')+'</div></div>'+
@@ -2135,6 +2143,7 @@ document.addEventListener('click', event => {
  case 'scene-next':case 'scene-spot':case 'scene-word':case 'scene-hint':case 'scene-zoom':
    ChineseLabSceneMatch.action(action,btn,state.game,{award,miss,speech,render:renderSceneMatch,lesson:lesson()});break;
  case 'pair':pairPick(btn.dataset.side,btn.dataset.id);break;
+ case 'review-pair-next':nextReviewPairs();break;
  case 'quiz-pick':quizPick(Number(btn.dataset.index));break;
  case 'quiz-analyze':{const g=state.game;const i=Number(btn.dataset.index);g.analysisIndex=g.analysisIndex===i?-1:i;renderQuiz();break;}
  case 'quiz-next':quizNext();break;
@@ -2168,9 +2177,11 @@ async function bootstrap(){try{
  state.extraWords=rExtras.ok?await rExtras.json():[];state.readings=rReadings.ok?await rReadings.json():{};
  if(!window.ChineseLabQuestBranches)throw new Error('Модуль сюжетных квестов не загрузился');
  state.lessons.forEach(l=>{l.quest=window.ChineseLabQuestBranches.build(l,state.readings[String(l.id)]);});
+ const firstFour=state.lessons.filter(l=>l.id>=1&&l.id<=4);
+ if(firstFour.length===4){const reviewWords=[...new Map(firstFour.flatMap(l=>l.words).map(w=>[w.hanzi,w])).values()];state.lessons.splice(state.lessons.findIndex(l=>l.id===4)+1,0,{id:REVIEW_ID,label:'Повторение 1–4',topic:'复习 · Повторение уроков 1–4',subtitle:'Все '+reviewWords.length+' слов из первых четырёх уроков. Пары, переводы, сборка слов и предложений, интервальные карточки и дополнительная история.',words:reviewWords,sentences:firstFour.flatMap(l=>l.sentences||[]),quest:{steps:[]}});state.readings[String(REVIEW_ID)]=[{"id":"review-1-4-moving-day","name":"Дополнительная история / Новый дом Анны","level":"Повторение 1–4 · HSK 3–4","teaser":"Анна получает стипендию, ищет жильё, сталкивается с проблемой оплаты и помогает прохожей.","lines":[["安娜入学以后，慢慢适应了这里的生活。","После поступления Анна постепенно привыкла к здешней жизни."],["她获得了奖学金，经济压力减轻了不少。","Она получила стипендию, и финансовая нагрузка значительно уменьшилась."],["不过，她住的地方离学校很远，出行不太方便。","Однако она живёт далеко от университета, и добираться не очень удобно."],["小林建议她上网查找房子的信息。","Сяолинь советует ей поискать информацию о жилье в интернете."],["她找到了一座房子，位置很好，房租也不贵。","Она нашла дом в хорошем месте, с недорогой арендой."],["房东说：“客厅很亮，厨房也很大，今天就可以入住。”","Хозяин говорит: «Гостиная светлая, кухня большая, можно заселиться уже сегодня»."],["安娜查看了整个房子，觉得很理想。","Анна осмотрела весь дом и решила, что он ей подходит."],["她问：“房租可以用支付宝支付吗？”","Она спрашивает: «Можно оплатить аренду через Alipay?»"],["房东说：“可以，不过你先看一下我的身份证。”","Хозяин отвечает: «Можно, но сначала посмотрите моё удостоверение личности»."],["安娜说：“谢谢！个人信息要保护好，不能随便给别人。”","Анна говорит: «Спасибо! Личные данные нужно защищать, нельзя просто так передавать их другим»."],["她交了房租，接着回学校收拾东西。","Она оплатила аренду, а потом вернулась в университет собирать вещи."],["第二天，她在网上订了一台电脑，还购买了一些食物。","На следующий день она заказала компьютер и купила немного еды через интернет."],["快递到了，可是她的手机突然没有信号了。","Доставка приехала, но на телефоне внезапно пропала связь."],["她想起自己忘了交电话费。","Она вспомнила, что забыла оплатить телефон."],["她没有现金，只好去找小林。","У неё не было наличных, и пришлось пойти искать Сяолинь."],["在十字路口，她正好看见了小林。","На перекрёстке она как раз увидела Сяолинь."],["小林说：“别客气，我可以帮你支付电话费。”","Сяолинь говорит: «Не стесняйся, я могу помочь оплатить телефон»."],["安娜非常感谢她，把钱还给了她。","Анна очень благодарна ей и возвращает деньги."],["两个人一起走到学校门口。","Они вместе идут к входу в университет."],["一位阿姨提着一个很重的袋子，走得很慢。","Одна женщина несёт тяжёлую сумку и идёт очень медленно."],["安娜说：“我帮您提吧，我也要去那边。”","Анна говорит: «Давайте помогу вам донести, мне тоже в ту сторону»."],["阿姨说：“辛苦了！我家离这里不远。”","Женщина говорит: «Спасибо за помощь! Мой дом недалеко»."],["安娜说：“没关系，我们应该互相帮助。”","Анна отвечает: «Ничего страшного, мы должны помогать друг другу»."],["晚上，安娜写日记：“今天虽然很忙，可是心情很愉快。”","Вечером Анна пишет в дневнике: «Сегодня было много дел, но настроение прекрасное»."]],"questions":[{"q":"Почему Анна решила искать новое жильё?","options":["住的地方离学校很远","她没有获得奖学金","房东不让她入住"],"correct":0,"explain":"До университета было далеко добираться."},{"q":"Что помогло уменьшить финансовую нагрузку?","options":["奖学金","快递","电话费"],"correct":0,"explain":"Она получила стипендию."},{"q":"Как она оплатила аренду?","options":["用支付宝支付","用现金支付","请老师支付"],"correct":0,"explain":"Она воспользовалась Alipay."},{"q":"Почему телефон перестал работать?","options":["忘了交电话费","手机太重","没有身份证"],"correct":0,"explain":"Она забыла оплатить связь."},{"q":"Как Анна помогла женщине?","options":["帮她提袋子","帮她购买电脑","帮她找房东"],"correct":0,"explain":"Помогла донести тяжёлую сумку."}],"decision":{"prompt":"Что Анна сделает на следующий день?","options":[{"zh":"请小林吃早餐，感谢她的帮助。","ru":"Пригласить Сяолинь на завтрак в благодарность за помощь.","resultZh":"她们一起吃早餐，心情很愉快。","resultRu":"Они завтракают вместе в хорошем настроении."},{"zh":"去看看房子周围的商店。","ru":"Посмотреть магазины рядом с домом.","resultZh":"房东告诉她，周围有很多商店。","resultRu":"Хозяин рассказывает, что рядом много магазинов."}]}}];}
  const rContext=await window.chineseLabLessonFetch('./data/context-glossary.json');state.contextWords=rContext.ok?await rContext.json():[];
  if(!state.lessons.some(l=>l.id===state.lessonId))state.lessonId=state.lessons[0]?.id||1;
- $('#hero-lessons').textContent=`${state.lessons.map(l=>String(l.id).padStart(2,'0')).join('—')} / УРОКИ В ПРОГРАММЕ`;
+ $('#hero-lessons').textContent=`${state.lessons.filter(l=>l.id!==REVIEW_ID).map(l=>String(l.id).padStart(2,'0')).join('—')} / УРОКИ В ПРОГРАММЕ`;
  activateMode(state.progress.lastMode || 'today');
  await ChineseLabCloud.init({
   getProgress:()=>state.progress,

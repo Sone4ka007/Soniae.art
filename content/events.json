@@ -119,6 +119,36 @@
       }
     },
     {
+      "id": "moscow-2025-12-04-7daa2bd5e7",
+      "status": "check",
+      "kind": "exhibition",
+      "city": "moscow",
+      "date": "2025-12-04",
+      "time": "",
+      "title": "Мария Курбатова. Снегурочка",
+      "venue": "ММОМА",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "выставка"
+      ],
+      "description": "Московский музей современного искусства представляет выставку «Снегурочка» Марии Курбатовой — авторскую интерпретацию сюжета народной сказки о девочке из снега, которая является людям. Экспозиция объединяет более 50 графических произведений, над которыми художница работала с 2009 года.",
+      "url": "https://mmoma.ru/visit/gallery/snow-maiden",
+      "source": "ММОМА — выставки",
+      "checked_at": "",
+      "review_reason": "wrong_year",
+      "discovered_at": "2026-11-24",
+      "start_date": "2025-12-04",
+      "end_date": "2027-01-24",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "status": "approved",
       "editor_note": "Добавлено по подборке пользователя; первоисточник проверен",
       "checked_at": "2026-09-21",
@@ -38291,7 +38321,7 @@
       "reviewed_at": "2026-10-17",
       "availability": "unknown",
       "availability_checked_at": "",
-      "registration": false,
+      "registration": null,
       "price": null,
       "price_text": "",
       "price_type": "paid",
@@ -38317,7 +38347,7 @@
         "status": "approved",
         "telegram_include": false,
         "instagram_include": false,
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -41054,7 +41084,7 @@
       "address": "1-й Голутвинский переулок, 16, стр. 1",
       "price": 850,
       "price_text": "850 ₽; льготный — 650 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -41081,7 +41111,7 @@
       "time_evidence": "24 октября 2026 14:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
       "editor_overrides": {
-        "registration": false
+        "registration": null
       }
     },
     {
@@ -49427,7 +49457,7 @@
       "address": "Лаврушинский переулок, 12",
       "price": 650,
       "price_text": "650 ₽; онлайн — 700 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -49444,7 +49474,7 @@
         "telegram_include": false,
         "instagram_include": false,
         "status": "approved",
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -51674,14 +51704,16 @@
       "price": 0,
       "price_text": "",
       "registration": false,
-      "categories": [],
+      "categories": [
+        "выставка"
+      ],
       "description": "На метро Музей AZ находится между станциями метро «Маяковская» и «Белорусская» (кольцевая). Мы рекомендуем идти в Музей от станции «Маяковская». Вам нужен Выход №1 на 1-я Тверская-Ямская улица, 2-я Тверская-Ямская улица.",
       "url": "https://museum-az.com/event/territoriya-svobody-nonkonformisty-v-taruse/",
       "source": "Музей AZ — выставки и события",
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-10-20",
-      "price_type": "paid",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-10-25",
       "editor_overrides": {
@@ -55187,7 +55219,7 @@
       "address": "",
       "price_type": "free",
       "price_text": "бесплатно по регистрации",
-      "registration": false,
+      "registration": true,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -57101,7 +57133,7 @@
       "address": "",
       "price_type": "free",
       "price_text": "бесплатно по регистрации",
-      "registration": false,
+      "registration": true,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -69950,42 +69982,170 @@
       "reviewed_at": "2026-11-23"
     },
     {
-      "id": "moscow-2026-11-24-fbd139fcfa",
-      "status": "approved",
+      "id": "spb-2026-11-24-3d14cda3d4",
+      "status": "new",
       "kind": "event",
-      "city": "moscow",
+      "city": "spb",
       "date": "2026-11-24",
       "time": "",
-      "title": "Бумажный андерграунд: зачем библиотеке зины?",
-      "venue": "РГБМ",
+      "title": "«Открытка маме» напомнит о важности момента",
+      "venue": "",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [],
+      "description": "29 ноября в Санкт-Петербурге состоится общегородская акция «Открытка маме», приуроченная к празднованию Дня матери . Мероприятие предоставит каждому жителю и гостю города возможность бесплатно отправить своей маме поздравительную открытку. Правообладатель: центр дизайна и печати «Нейрон».",
+      "url": "https://spbcult.ru/news/anonsy/otkrytka-mame-napomnit-o-vazhnosti-momenta-/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-24",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "spb-2026-11-24-ddf06b3e84",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-24",
+      "time": "",
+      "title": "«Пути и имена» - в Северной столице пройдёт топонимический семинар",
+      "venue": "",
       "address": "",
       "price": null,
       "price_text": "",
-      "registration": false,
+      "registration": null,
       "categories": [
-        "лекция"
+        "семинар"
       ],
-      "description": "24 ноября 2026 11:30 Мероприятие пройдёт онлайн 2026-11-24 11:30 2026-11-24 11:30 Europe/Moscow Бумажный андерграунд: зачем библиотеке зины? Методический семинар из цикла «Неформальные молодёжные сообщества в пространстве библиотеки» РГБМ, Мероприятие пройдёт онлайн РГБМ info@rgub.ru Ксерокс, ножницы, скрепки — и вот уже готово издание, у которого нет ни ISBN, ни редактора, ни тиража больше сотни экземпляров. Зины десятилетиями оставались оплотом молодёжных фанатских сообществ, голосом локальной сцены и визитной карточкой культурного андерграунда. Сегодня мастерские по созданию зинов — ключ к сердцам творческой аудитории. На ноябрьском вебинаре обсудим: что такое зины, когда они появились и как менялись с течением времени; как РГБМ и коллеги работают с коллекциями зинов; почему зин-мастерская — эффективный и лёгкий в освоении формат для культурной афиши библиотеки. Ведущая: Анастасия Несмеянова, специалист по межкультурной коммуникации Центра гуманитарных проектов и исследований РГБМ",
-      "url": "https://rgub.ru/schedule/item.php?new_id=49848",
-      "source": "Российская государственная библиотека для молодёжи — афиша",
+      "description": "Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами! Также вы можете отправить статью в социальной сети или мессенджере Если у вас есть чем поделиться с нашими читателями, вы можете предложить свою статью.",
+      "url": "https://spbcult.ru/news/anonsy/puti-i-imena-v-severnoy-stolitse-proydyet-toponimicheskiy-seminar/",
+      "source": "Петербургский дневник культуры — анонсы",
       "checked_at": "",
       "review_reason": "",
-      "discovered_at": "2026-11-01",
+      "discovered_at": "2026-11-24",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "spb-2026-11-24-ad79795c07",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-24",
+      "time": "",
+      "title": "Афиша на декабрь 2026: «Многомерность культуры» приглашает молодёжь с инвалидностью на мероприятия",
+      "venue": "",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": true,
+      "categories": [],
+      "description": "Как записаться на мероприятия проекта «Многомерность культуры»? Напоминаем, что для участия в проекте необходимо зарегистрироваться в качестве участника. Это займёт всего пару минут.",
+      "url": "https://spbcult.ru/news/anonsy/afisha-na-dekabr-2026-mnogomernost-kultury-priglashaet-molodyezh-s-invalidnostyu-na-meropriyatiya/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-24",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "spb-2026-11-24-30bbb81f12",
+      "status": "new",
+      "kind": "exhibition",
+      "city": "spb",
+      "date": "2026-11-24",
+      "time": "",
+      "title": "В Музее-усадьбе Державина впервые покажут «Корабль дураков»",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "выставка"
+      ],
+      "description": "26 ноября в Музее-усадьбе Державина откроется выставка «Анатомия книги». В экспозицию войдут более пятидесяти изданий из отдела редкой книги Всероссийского музея Пушкина. Они познакомят посетителей с традициями издательского дела и переплётного мастерства России и Западной Европы XVIII–XX веков.",
+      "url": "https://spbcult.ru/news/anonsy/v-muzee-usadbe-derzhavina-vpervye-pokazhut-korabl-durakov/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-24",
       "price_type": "unknown",
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
       "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false,
-        "status": "approved"
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "reviewed_at": "2026-11-01",
-      "editor_note": ""
+      "start_date": "2026-11-24"
+    },
+    {
+      "id": "spb-2026-11-24-11979fc91b",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-24",
+      "time": "",
+      "title": "В Президентской библиотеке обсудят наследие Николая Вавилова",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "25 ноября в Президентской библиотеке откроется пленарное заседание Всероссийской научной конференции «100 лет Вавиловской теории Центров происхождения культурных растений». Мероприятие состоится в день 139-летия со дня рождения биолога, генетика, географа, общественного деятеля, академика Николая Ивановича Вавилова.",
+      "url": "https://spbcult.ru/news/anonsy/v-prezidentskoy-biblioteke-obsudyat-nasledie-nikolaya-vavilova-/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-24",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "spb-2026-11-24-f5e78a71d6",
+      "status": "new",
+      "kind": "exhibition",
+      "city": "spb",
+      "date": "2026-11-24",
+      "time": "",
+      "title": "Выставка «Свет внутри» продемонстрирует творческий путь студии «Вижу руками» за полвека",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "выставка"
+      ],
+      "description": "Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами! Также вы можете отправить статью в социальной сети или мессенджере Если у вас есть чем поделиться с нашими читателями, вы можете предложить свою статью.",
+      "url": "https://spbcult.ru/news/anonsy/vystavka-svet-vnutri-prodemonstriruet-tvorcheskiy-put-studii-vizhu-rukami-za-polveka/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-24",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "start_date": "2026-11-24"
     },
     {
       "id": "moscow-2026-11-24-9e2e798c17",
@@ -70034,6 +70194,37 @@
       "description": "",
       "url": "https://hermitagemuseum.org/what-s-on/afisha_mincult/?lng=ru",
       "source": "Государственный Эрмитаж — выставки и события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-24",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
+    },
+    {
+      "id": "spb-2026-11-24-bd60d9e685",
+      "status": "new",
+      "kind": "open_call",
+      "city": "spb",
+      "date": "2026-11-24",
+      "time": "",
+      "title": "Конкурс «Все краски Севера» приглашает петербуржцев",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "выставка",
+        "open-call"
+      ],
+      "description": "Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами! Также вы можете отправить статью в социальной сети или мессенджере Если у вас есть чем поделиться с нашими читателями, вы можете предложить свою статью.",
+      "url": "https://spbcult.ru/news/anonsy/konkurs-vse-kraski-severa-priglashaet-peterburzhtsev/",
+      "source": "Петербургский дневник культуры — анонсы",
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-11-24",
@@ -70114,7 +70305,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-24-058b1d17f2",
@@ -70154,6 +70347,62 @@
         "status": "approved"
       },
       "reviewed_at": "2026-10-27"
+    },
+    {
+      "id": "spb-2026-11-24-213fdabc0a",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-24",
+      "time": "",
+      "title": "Музей Анны Ахматовой получит в дар скульптуру Иосифа Бродского",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "2 7 ноября в Музее Анны Ахматовой в Фонтанном Доме пройдёт вечер, посвящённый передаче в дар музею скульптуры Иосифа Бродского. Автор работы – скульптор Юрий Фирсов. Даритель – Александр Жуков.",
+      "url": "https://spbcult.ru/news/anonsy/muzey-anny-akhmatovoy-poluchit-v-dar-skulpturu-iosifa-brodskogo/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-24",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "spb-2026-11-24-1de55f1f07",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-24",
+      "time": "",
+      "title": "Музей железных дорог анонсировал новогодние программы",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами! Также вы можете отправить статью в социальной сети или мессенджере Если у вас есть чем поделиться с нашими читателями, вы можете предложить свою статью.",
+      "url": "https://spbcult.ru/news/anonsy/muzey-zheleznykh-dorog-rossii-anonsiroval-novogodnie-programmy-dlya-detey/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-24",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-24-2a8bfee591",
@@ -70516,6 +70765,44 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": "2026-11-19"
+    },
+    {
+      "id": "moscow-2026-11-24-fbd139fcfa",
+      "status": "approved",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-24",
+      "time": "11:30",
+      "title": "Бумажный андерграунд: зачем библиотеке зины?",
+      "venue": "РГБМ",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "24 ноября 2026 11:30 Мероприятие пройдёт онлайн 2026-11-24 11:30 2026-11-24 11:30 Europe/Moscow Бумажный андерграунд: зачем библиотеке зины? Методический семинар из цикла «Неформальные молодёжные сообщества в пространстве библиотеки» РГБМ, Мероприятие пройдёт онлайн РГБМ info@rgub.ru Ксерокс, ножницы, скрепки — и вот уже готово издание, у которого нет ни ISBN, ни редактора, ни тиража больше сотни экземпляров. Зины десятилетиями оставались оплотом молодёжных фанатских сообществ, голосом локальной сцены и визитной карточкой культурного андерграунда. Сегодня мастерские по созданию зинов — ключ к сердцам творческой аудитории. На ноябрьском вебинаре обсудим: что такое зины, когда они появились и как менялись с течением времени; как РГБМ и коллеги работают с коллекциями зинов; почему зин-мастерская — эффективный и лёгкий в освоении формат для культурной афиши библиотеки. Ведущая: Анастасия Несмеянова, специалист по межкультурной коммуникации Центра гуманитарных проектов и исследований РГБМ",
+      "url": "https://rgub.ru/schedule/item.php?new_id=49848",
+      "source": "Российская государственная библиотека для молодёжи — афиша",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-01",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false,
+        "status": "approved"
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "reviewed_at": "2026-11-01",
+      "editor_note": ""
     },
     {
       "id": "moscow-2026-11-24-98f4534d25",
@@ -72938,6 +73225,32 @@
       "availability_checked_at": ""
     },
     {
+      "id": "spb-2026-11-26-5fe2ff19b8",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-26",
+      "time": "19:00",
+      "title": "Военная медицина Советского Союза в войне с Финляндией 1939–1940 годов",
+      "venue": "Библиотека Маяковского",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "Как была организована медицинская помощь советским военнослужащим во время Советско-финляндской войны 1939–1940 годов? С какими трудностями сталкивались врачи, медсёстры и санитары на передовой и во время эвакуации раненых? Этим вопросам посвящена новая книга «Военная медицина Советского Союза в Советско-финляндской войне 1939–1940 годов», подготовленная Военно-медицинским музеем совместно с Научно-исследовательским отделом военной истории Военной академии Генерального штаба ВС РФ. На лекции представят издание и расскажут о работе советской военно-медицинской службы в годы войны: организации п",
+      "url": "https://tsentralnaya-events.timepad.ru/event/4261379/",
+      "source": "Библиотека Маяковского — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-11-24",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-26-6de6981347",
       "status": "rejected",
       "kind": "event",
@@ -73059,7 +73372,9 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "sold_out",
-      "availability_checked_at": "2026-11-24"
+      "availability_checked_at": "2026-11-24",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-26-f41677b4f1",
@@ -73880,6 +74195,34 @@
       "reviewed_at": "2026-11-23"
     },
     {
+      "id": "moscow-2026-11-27-3e3d94ac10",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-27",
+      "time": "19:00",
+      "title": "Лекция «Петр и Павел – прадед и правнук»",
+      "venue": "Третьяковская галерея",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Лекция к абонементу №16 «Какой он, XVIII век: от философии до моды». 27 ноября 2026 – 25 декабря 2026 Лекция будет проходить в Лекционном зале Инженерного корпуса (Лаврушинский переулок, д. 12, вход с Малого Толмачёвского переулка) и в режиме реального времени на платформе МТС Линк в формате онлайн. Продолжительность лекции: 1 час 30 минут.",
+      "url": "https://www.tretyakovgallery.ru/events/o/lektsiya-petr-i-pavel-praded-i-pravnuk/",
+      "source": "Третьяковская галерея — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-24",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-27-da81792ce4",
       "status": "approved",
       "kind": "event",
@@ -74249,6 +74592,34 @@
       "availability_checked_at": "",
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "moscow-2026-11-28-84b65b4d8b",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-28",
+      "time": "",
+      "title": "Скоро в Artplay",
+      "venue": "ARTPLAY",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": true,
+      "categories": [
+        "встреча"
+      ],
+      "description": "Продолжая использовать этот сайт, вы соглашаетесь с политикой в области обработки и защиты персональных данных",
+      "url": "https://artplay.ru/events/market",
+      "source": "ARTPLAY — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-24",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-28-d9eec6e9e5",
@@ -74633,7 +75004,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-28-c1f440c41d",
@@ -74730,6 +75103,34 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": "2026-11-23"
+    },
+    {
+      "id": "spb-2026-11-28-8a93bdc89d",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-28",
+      "time": "14:00",
+      "title": "Вернисаж выставки, презентация лекционной программы, медиация, открытие нового культурного проекта и променад по лестницам...обычная суббота для нашего арт-центра? Не совсем так!",
+      "venue": "Пушкинская-10",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "презентация"
+      ],
+      "description": "Субботний переполох на «Пушкинской-10» В эту субботу помимо прогулки по выставками, вы сможете посетить самые интересные события и встречи по единому билету арт-центра. Выбрать то, что вам по душе, или провести с нами весь день — в этот день можно всё! А специально для подписчиков нашего канала — при покупке электронного билета Подробная программа событий: Открытие выставки в Большом зале МНИ Мастер-класс по созданию интерьерных украшений от ДК ПТХ (Женя Исаева, Маша Небесная) Открытие выставки художницы Ольги Михайловой «Между створками» в галерее Песочница",
+      "url": "https://p-10.timepad.ru/event/3187852/",
+      "source": "Пушкинская-10 — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-11-24",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "spb-2026-11-28-60f91b51a1",
@@ -75517,6 +75918,32 @@
       "availability_checked_at": ""
     },
     {
+      "id": "spb-2026-11-29-7210390be6",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-29",
+      "time": "",
+      "title": "показываем культовый ромком ‘Дневник Бриджит Джонс’",
+      "venue": "Лекторий’порт",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "После показа обсудим фильм с культурологом и искусствоведом Катей Пантелеевой. Смотрим на языке оригинала с субтитрами!",
+      "url": "https://bridgetjones-lectoriumport.ticketscloud.org/",
+      "source": "Лекторий’порт — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-11-24",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-29-91c3c05e64",
       "status": "rejected",
       "kind": "event",
@@ -75864,7 +76291,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-29-d49178cd77",
@@ -76099,7 +76528,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-29-cf42880c4d",
@@ -76413,7 +76844,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-30-cfa5beca51",
@@ -76813,7 +77246,9 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-30-9f582f94c1",
@@ -77275,6 +77710,34 @@
       "reviewed_at": "2026-11-19"
     },
     {
+      "id": "spb-2026-12-02-626c4d207a",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-12-02",
+      "time": "12:00",
+      "title": "Гостей ждёт экскурсия по библиотеке и практика в оставшееся время.",
+      "venue": "Открытая гостиная",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "Клуб рисующих библиотекарей (КрБ) — это продолжение проекта «Вебтюнь» МЦБС им. М. Ю. Лермонтова в формате нетворкинг-сообщества. Мы собираемся два раза в месяц по средам в библиотеках города, чтобы вместе творить и общаться. Одна встреча в месяц будет проходить на базе Открытой гостиной, вторая в библиотеке одной из участниц клуба. • Подробности о работе клуба и глобальных планах на остаток года читайте в закрепах нашего чата: • По любым другим вопросам о работе клуба пишите в чат; • По вопросам официальных писем-вызовов и прочих документов — в сообщения нашей группы.",
+      "url": "https://otkrytaya-gostinaya.timepad.ru/event/4324474/",
+      "source": "Открытая гостиная — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-11-24",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-12-02-df59eca924",
       "status": "rejected",
       "kind": "event",
@@ -77338,6 +77801,34 @@
       "availability_checked_at": ""
     },
     {
+      "id": "moscow-2026-12-02-13b9964d2a",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-12-02",
+      "time": "19:00",
+      "title": "Ольга Алексеенко. «Внимание»",
+      "venue": "Центр Зотов",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": true,
+      "categories": [
+        "лекция"
+      ],
+      "description": "",
+      "url": "https://centrezotov.ru/events/ostranenie-laboratoriya-osoznannoj-fotografii-yuriya-palmina-i-olgi-alekseenko/olga-alekseenko-vnimanie/",
+      "source": "Центр Зотов — отдельные события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-24",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-12-03-b485ac3446",
       "status": "approved",
       "kind": "event",
@@ -77374,6 +77865,34 @@
       "telegram_include": false,
       "instagram_include": false,
       "reviewed_at": "2026-11-23"
+    },
+    {
+      "id": "spb-2026-12-03-3b879b81c6",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-12-03",
+      "time": "18:00",
+      "title": "Если у вас есть желание погулять по Петербургу, посетить выставку или сходить в кафе, то это отличная возможность найти компанию",
+      "venue": "Открытая гостиная",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "событие"
+      ],
+      "description": "При регистрации вы заполняете анкету в специальном телеграм-боте; За день до события вам придет рассылка с анкетами других участников; У вас будет от 3 до 8 бесед с самыми разными людьми, которые тоже ищут друзей. Не откладывайте регистрацию на потом: чтобы всем было комфортно, количество мест ограничено. — Серафима Николаева, организатор знакомств для дружбы и любви в Санкт-Петербурге «ФСД Тёплые знакомства Friendly Speed Dating»",
+      "url": "https://t.me/open_living/3237",
+      "source": "Открытая гостиная — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-11-24",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-12-03-f7e466876f",
@@ -77516,6 +78035,35 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": "2026-11-14"
+    },
+    {
+      "id": "spb-2026-12-04-43b3e02166",
+      "status": "new",
+      "kind": "exhibition",
+      "city": "spb",
+      "date": "2026-12-04",
+      "time": "",
+      "title": "В поисках утраченной красоты",
+      "venue": "РОСФОТО",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "выставка"
+      ],
+      "description": "Выставочный проект «В поисках утраченной красоты» знакомит зрителя с произведениями зарубежных и русских мастеров художественной фотографии и является результатом многолетней исследовательской работы РОСФОТО. pictorial — «изобразительный», «художественный»), ярко утвердившийся в мире на рубеже XIX–XX веков, в разных странах прошел свой путь развития.",
+      "url": "https://rosphoto.org/events/v-poiskah-utrachennoj-krasoty/",
+      "source": "РОСФОТО",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-24",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "start_date": "2026-12-04"
     },
     {
       "id": "moscow-2026-12-04-9c31e3b3c8",
@@ -78155,6 +78703,34 @@
       "availability_checked_at": ""
     },
     {
+      "id": "moscow-2026-12-06-e89b5cc35b",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-12-06",
+      "time": "14:00",
+      "title": "Мастер-класс по изготовлению клейстерной декоративной бумаги",
+      "venue": "Музей Транспорта Москвы",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "",
+      "url": "https://mtmuseum.ru/affiche/master-klass-po-izgotovleniyu-kleysternoy-dekorativnoy-bumagi-/",
+      "source": "Музей транспорта Москвы — афиша",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-24",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "international-2026-12-07-ca9d4e54f7",
       "status": "rejected",
       "kind": "open_call",
@@ -78307,6 +78883,35 @@
       "reviewed_at": "2026-11-23"
     },
     {
+      "id": "international-2026-12-09-a840a58295",
+      "status": "check",
+      "kind": "open_call",
+      "city": "international",
+      "date": "2026-12-09",
+      "time": "",
+      "title": "All Woman | International Group Exhibition 2026",
+      "venue": "CuratorSpace",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "open-call"
+      ],
+      "description": "No. 35 Gallery invites women artists worldwide to submit work for All Woman—International Online Group Exhibition 2026. This exhibition brings together women artists from different cultural backgrounds, generations, and artistic disciplines, recognizing the diversity of their practices and the importance of women's voices in contemporary visual culture.",
+      "url": "https://www.curatorspace.com/opportunities/detail/all-woman--international-group-exhibition/11375",
+      "source": "CuratorSpace — opportunities",
+      "checked_at": "",
+      "review_reason": "primary_source_required",
+      "discovered_at": "2026-11-24",
+      "audience_text": "Opportunity details | All Woman | International Group Exhibition 2026 | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register All Woman | International Group Exhibition 2026 Deadline: 09/12/2026 City: london | Country: United Kingdom | No 35 Gallery Report this? Description Opportunity FAQs Make a submission Contact curator No. 35 Gallery invites women artists worldwide to submit work for All Woman—International Online Group Exhibition 2026. This exhibition brings together women artists from different cultural backgrounds, generations, and artistic disciplines, recognizing the diversity of their practices and the importance of women's voices in contemporary visual culture. Selected artists will present their work in a curated international online group exhibition hosted on the No. 35 Gallery website, supported by curatorial presentation and promotion through the gallery's platforms. Artists are invited to submit works inspired by, responding to, or engaging with women's experiences and perspectives, including identity, femininity, the body, personal freedom, relationships, motherhood, cultural heritage, memory, emotional experiences, social expectations, representation, and the relationship between women and society. Submissions may explore gender, belonging, empowerment, vulnerability, resilience, independence, social change, and the ways personal and collective experiences influence artistic expression. The exhibition is not limited to artworks depicting women or addressing gender-related subjects. We welcome all forms of artistic expression created by women, regardless of subject matter. Landscapes, portraits, still life, abstraction, conceptual work, experimental practices, and other artistic approaches are equally encouraged. The theme is intentionally broad, allowing participating artists to present their individual artistic practices without being restricted to conventional representations of womanhood. What Artworks and Subjects Are Included? Womanhood, Identity & Personal Narratives Artworks exploring femininity, self-identity, personal experiences, cultural heritage, family histories, motherhood, relationships, memory, belonging, independence, and the complexities of women's lives across different societies and generations. Submissions may examine the relationship between personal identity and cultural expectations, individual experiences of womanhood, and the ways women represent themselves through art. The Female Body & Representation Portraits, self-portraits, figurative compositions, anatomical studies, representations of the female body, movement, gestures, beauty, ageing, physical identity, body image, and the relationship between the body and personal or social identity. Works may approach the female figure through realism, expressionism, abstraction, symbolism, distortion, fragmentation, or experimental interpretations. Freedom, Society & Cultural Perspectives Artworks addressing women's rights, freedom, equality, social expectations, cultural traditions, representation, resistance, resilience, and the changing roles of women in contemporary society. Submissions may explore personal and collective histories, political and social experiences, migration, cultural identity, empowerment, and the relationship between individual freedom and wider social structures. Individual Artistic Expression & Contemporary Practices The exhibition equally welcomes artworks that do not directly address womanhood or gender. Landscapes, cityscapes, still life, nature, animals, architecture, abstraction, surrealism, minimalism, experimental photography, conceptual art, and other subjects are welcome. We are interested in the diversity of artistic languages developed by women artists, including investigations of colour, form, material, texture, composition, perception, and contemporary visual experiences. All Woman is an exhibition of art by women, not only art about women. We welcome submissions from emerging and established women artists working across all visual art mediums, including painting, photography, sculpture, mixed media, digital art, textile art, printmaking, drawing, collage, installation documentation, and other contemporary practices. Through this exhibition, No. 35 Gallery aims to create a space for women artists from around the world to present their work, exchange perspectives, and contribute to a wider conversation about women's presence and influence in contemporary art. Eligibility This open call is open to women artists worldwide, including trans women, working in any visual art medium or discipline. Both emerging and established artists are welcome to apply. Applicants must be aged 18 or over. Fees Submission is free. Only selected artists will be invited to participate in the exhibition. A £15.50 participation fee per selected artwork applies only after selection. There is no fee to submit an application. What Selected Artists Receive Selected artists will receive: Participation in a curated international online group exhibition hosted on the No. 35 Gallery website A dedicated online exhibition presentation featuring selected artworks Curatorial selection and structuring of the exhibition Inclusion of the artist's name, artwork details, and relevant professional links Social media promotion through the gallery's platforms Continued visibility through the gallery's online exhibition archive Inclusion in a professionally curated, high-quality digital exhibition catalogue featuring the artwork image, artist biography, artist statement, artwork details, and sales information where applicable A digital Certificate of Participation confirming inclusion in the exhibition Promotion & Reach The exhibition and selected artists will be promoted through No. 35 Gallery's platforms: Exposure We have 30,000 Instagram followers and growing Approximately 25,000 monthly website visitors, with projected growth to 100,000 monthly visitors through ongoing promotion and audience development. Additional promotion may include newsletters, social media features, artist highlights, and exhibition announcements across the gallery's platforms. Curatorial Support Selection and structuring of artworks Design and development of the online exhibition layout Consideration of visual and conceptual relationships between selected works Guidance on artwork presentation where required Development of a cohesive and professionally presented exhibition experience Exhibition Details The exhibition will be presented online through the No. 35 Gallery website. Important: Artists may submit one artwork per application . Artists wishing to submit additional artworks must complete a separate application form for each additional artwork. Selected works will be curated into a dedicated digital exhibition accessible to an international audience. Following the exhibition period, the exhibition will remain archived on the gallery website for one year, allowing continued visibility for participating artists and their work. Sales & Commission Artists may choose to make their artworks available for sale through the exhibition. No. 35 Gallery takes a 30% commission on any sales made through the exhibition. About No. 35 Gallery No. 35 Gallery is an independent online contemporary art platform supporting emerging and established artists through curated exhibitions, solo presentations, artist interviews, and international open calls. The gallery provides artists with opportunities for visibility, professional presentation, and connection with international audiences. Founded in 2025 by Anisa M. Nia. Based in London, UK. How to Apply and Important Information Applications can be submitted through the application form on CuratorSpace. Artists may submit one artwork per application. Artists wishing to submit additional artworks must complete a separate application form for each additional artwork. Please ensure that all submitted images are clear, high-quality, and accurately represent the artwork. Submission is free. There is no application fee. A non-refundable participation fee of £15.50 GBP per selected artwork applies only to artists whose work has been selected for the exhibition. Artists who are not selected will not be charged any fee. For questions regarding the opportunity or participation process, please contact the curator. For technical questions regarding the application platform, please contact CuratorSpace support. Make a submission Contact the curator When is the deadline? 09/ December / 2026. How many works can I submit? Artists may submit one artwork per application. Artists wishing to submit additional artworks must complete a separate application form for each additional artwork. When is the delivery date? As it is an online exhibition, there is no need to deliver your works. When do I need to collect my work? As it is an online exhibition, there is no need to collect your works Is there a private view / opening? As it is an online exhibition, there is no private view. What are the exhibition opening hours? As it is an online exhibition, it's open 24 hours, 7 days of the week. What publicity will be provided as part of the opportunity? The exhibition and selected artists will be promoted through No. 35 Gallery’s platforms: Instagram: 30,000 followers and growing Website: approximately 30,000 monthly visitors, with projected growth to 100,000 monthly visitors through ongoing promotion and audience development. Additional promotion may include newsletters, social media features, artist highlights, and exhibition announcements across the gallery’s platforms. Do I need to be present? As it is an online exhibition, there is no need to be present at venue. What are the selection criteria? Artistic Quality — The overall strength, execution, and visual impact of the submitted work. Relevance to the Theme — How effectively the work engages with abstraction, whether through form, colour, material, gesture, concept, process, or experimentation. Originality and Individual Voice — Evidence of a distinctive artistic perspective, approach, or visual language. Conceptual and Visual Strength — The ability of the work to communicate a compelling visual, emotional, material, or conceptual experience. Curatorial Compatibility — How the work contributes to the overall dialogue, diversity, balance, and cohesion of the exhibition. Quality of Presentation — The clarity and professional quality of the submitted artwork image and supporting information. You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Advertisement Other opportunities Madrid Artist Showcase Open Call – Arrival Gallery Arrival Gallery invites artists in any medium to apply for the Madrid Artist Showcase, a group... ARTISTS OF THE SEASON OPEN CALL - WINTER 2026 ARTISTS OF THE SEASON OPEN CALL - WINTER 2026 Solo Exhibition Open Call CALL FOR ARTISTS SOLO EXHIBITION CURRENTLY ACCEPTING APPLICATIONS Take your art career to the... More opportunities © 2026 by CuratorSpace Terms ",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-12-09-e0b925668b",
       "status": "new",
       "kind": "event",
@@ -78337,7 +78942,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-12-09-dcb6e4c97a",
@@ -78701,6 +79308,32 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": "2026-11-03"
+    },
+    {
+      "id": "moscow-2026-12-11-4fd567bbb4",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-12-11",
+      "time": "",
+      "title": "Как найти свой звук? От идеи к музыкальному языку. Авторская лекция Michael Dop (Михаила Комиссарова)",
+      "venue": "Школа дизайна НИУ ВШЭ",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "Как найти идею, которая определит звучание целого проекта? Как озвучить то, чего никто никогда не слышал? И как удерживать музыкальное напряжение, заставляя слушателя ждать развязки? 11 декабря на лекции музыканта и композитора Michael Dop поговорим о том, как Бьорк соединяет природные процессы и музыкальные эксперименты в Biophilia, а Нильс Фрам использует акустику берлинского Funkhaus и колодца на Майорке в All Melody. На примере фильма «Аннигиляция» обсудим звучание неизвестного, а на сцене из «Одиссеи» — работу с нарастанием напряжения и долгим ожиданием развязки. 11 декабря 2026",
+      "url": "https://design.hse.ru/news/7442",
+      "source": "Школа дизайна НИУ ВШЭ",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-24",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "spb-2026-12-11-556173ab41",
@@ -79997,6 +80630,34 @@
       "reviewed_at": "2026-11-16"
     },
     {
+      "id": "spb-2026-12-17-8c517adada",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-12-17",
+      "time": "11:00",
+      "title": "В преддверии Нового года приглашаем вас на мастер-класс",
+      "venue": "Международная школа дизайна — Петербург",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "А что, если в этом году главным украшением новогоднего вечера станет ваш стол? Многослойный текстиль, изящная посуда, мерцание свечей, флористика и неожиданные цветовые сочетания — искусство сервировки позволяет создавать настроение не менее выразительно, чем сам интерьер «Секреты эффектной сервировки стола» с Анной Крутолевич — практикующим декоратором, интерьерным стилистом и преподавателем Международной Школы Дизайна (СПб). познакомимся с принципами стильной сервировки; научимся сочетать текстиль, посуду, аксессуары и флористику;",
+      "url": "https://t.me/spbdesignschool/7087",
+      "source": "Международная школа дизайна — Петербург — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-11-24",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-12-17-91c3c05e64",
       "status": "rejected",
       "kind": "event",
@@ -80537,7 +81198,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-12-19-91c3c05e64",
@@ -80616,6 +81279,44 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": "2026-11-23"
+    },
+    {
+      "id": "moscow-2026-12-19-0745347de9",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-12-19",
+      "time": "13:30",
+      "title": "Мастер-класс «Светящийся город»",
+      "venue": "Музей Транспорта Москвы",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "",
+      "url": "https://mtmuseum.ru/affiche/master-klass-svetyashchiysya-gorod-/",
+      "source": "Музей транспорта Москвы — афиша",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-12",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false,
+        "status": "rejected"
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": "2026-11-13"
     },
     {
       "id": "moscow-2026-12-19-422be2d050",
@@ -80776,7 +81477,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-12-20-954de7ce2c",
@@ -81000,6 +81703,35 @@
       "availability_checked_at": ""
     },
     {
+      "id": "international-2026-12-23-769b7cc74c",
+      "status": "check",
+      "kind": "open_call",
+      "city": "international",
+      "date": "2026-12-23",
+      "time": "",
+      "title": "Emerging Weaver – Paid Creative Development Opportunity",
+      "venue": "CuratorSpace",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "open-call"
+      ],
+      "description": "Farfield Mill is offering a 15-week paid placement for a recent graduate or early-career artist or maker. Based in the Yorkshire Dales, the opportunity includes specialist weaving tuition, mentoring, workspace and equipment to help develop creative skills and professional practice. 30 hours per week | Paid at National Minimum Wage",
+      "url": "https://www.curatorspace.com/opportunities/detail/lasting-threads-farfield-mill-textile-competition/11379",
+      "source": "CuratorSpace — opportunities",
+      "checked_at": "",
+      "review_reason": "primary_source_required",
+      "discovered_at": "2026-11-24",
+      "audience_text": "Opportunity details | Emerging Weaver – Paid Creative Development Opportunity | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register Emerging Weaver – Paid Creative Development Opportunity Deadline: 23/12/2026 City: Sedbergh | Country: United Kingdom | Clare Huggonson Paid opportunity Report this? Description Opportunity FAQs Make a submission Contact curator Farfield Mill is offering a 15-week paid placement for a recent graduate or early-career artist or maker. Based in the Yorkshire Dales, the opportunity includes specialist weaving tuition, mentoring, workspace and equipment to help develop creative skills and professional practice. 30 hours per week | Paid at National Minimum Wage Are you a recent graduate or early-career artist or maker looking to develop your creative practice? Farfield Mill is offering an exciting 15-week paid placement as part of our Weaving Futures Programme. Based in our historic Victorian woollen mill in the Yorkshire Dales, you’ll have the opportunity to explore traditional and contemporary weaving, experiment with new ideas and develop your own work. With specialist tuition, mentoring, dedicated workspace and access to weaving equipment, this is a fantastic opportunity to build your skills, grow your portfolio and take the next step in your creative career. 30 hours per week | 15 weeks | Paid at National Minimum Wage Interested? We’d love to hear from you. Please get in touch to find out more. Make a submission Contact the curator Who is eligible for this opportunity? An emerging or early career weaver. When is the deadline? 23 December 2027 Are there payments to artists? Yes national minimum wage. Does the location have disabled access? Yes You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Advertisement Other opportunities Madrid Artist Showcase Open Call – Arrival Gallery Arrival Gallery invites artists in any medium to apply for the Madrid Artist Showcase, a group... ARTISTS OF THE SEASON OPEN CALL - WINTER 2026 ARTISTS OF THE SEASON OPEN CALL - WINTER 2026 Solo Exhibition Open Call CALL FOR ARTISTS SOLO EXHIBITION CURRENTLY ACCEPTING APPLICATIONS Take your art career to the... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-12-23-422be2d050",
       "status": "rejected",
       "kind": "event",
@@ -81052,7 +81784,9 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "sold_out",
-      "availability_checked_at": "2026-11-24"
+      "availability_checked_at": "2026-11-24",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-12-24-422be2d050",
@@ -81153,7 +81887,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-12-31-8500f81093",

@@ -1431,23 +1431,51 @@ function renderSceneMatch(){
   }
   ChineseLabSceneMatch.paint(state.game);
 }
-function initPairs(){const queue=shuffle(lesson().words),pairs=queue.slice(0,6);state.game={pairs,left:shuffle(pairs),right:shuffle(pairs),chosenLeft:null,chosenRight:null,matched:[],notice:'',...(isReviewLesson()?{remaining:queue.slice(6),covered:0,total:queue.length}:{})};}
-function nextReviewPairs(){const g=state.game;if(!isReviewLesson()||g.matched.length!==g.pairs.length||!g.remaining?.length)return;g.covered+=g.pairs.length;g.pairs=g.remaining.splice(0,6);g.left=shuffle(g.pairs);g.right=shuffle(g.pairs);g.matched=[];g.chosenLeft=null;g.chosenRight=null;g.notice='';renderPairs();}
+function pairVocabulary(){return [...new Map(lesson().words.map(w=>[w.hanzi,w])).values()];}
+function initPairs(){
+  const queue=shuffle(pairVocabulary()),pairs=queue.splice(0,6);
+  state.game={pairs,left:shuffle(pairs),right:shuffle(pairs),chosenLeft:null,chosenRight:null,matched:[],notice:'',remaining:queue,covered:0,total:pairs.length+queue.length};
+}
+function normalizePairsSession(){
+  const g=state.game,all=pairVocabulary(),keys=new Set(all.map(w=>w.hanzi));
+  if(!g||!Array.isArray(g.pairs)||!g.pairs.every(w=>keys.has(w.hanzi))){initPairs();return;}
+  // Keep a valid existing full-lesson or review session. Upgrade old six-word sessions.
+  if(!Array.isArray(g.remaining)||!Number.isInteger(g.covered)||g.total!==all.length||
+    g.covered+g.pairs.length+g.remaining.length!==all.length||
+    !g.remaining.every(w=>keys.has(w.hanzi))||
+    new Set([...g.pairs,...g.remaining].map(w=>w.hanzi)).size!==g.pairs.length+g.remaining.length){
+    const current=new Set(g.pairs.map(w=>w.hanzi));
+    g.remaining=shuffle(all.filter(w=>!current.has(w.hanzi)));g.covered=0;g.total=all.length;
+  }
+}
+function advancePairs(){
+  const g=state.game;
+  if(g.matched.length!==g.pairs.length||!g.remaining.length)return false;
+  g.covered+=g.pairs.length;g.pairs=g.remaining.splice(0,6);
+  g.left=shuffle(g.pairs);g.right=shuffle(g.pairs);
+  g.matched=[];g.chosenLeft=null;g.chosenRight=null;
+  g.notice='Следующая группа. Продолжай!';
+  return true;
+}
 function pairPick(side,wordHanzi){
-  const g=state.game;if(g.matched.includes(wordHanzi))return;
+  const g=state.game;if(!g.pairs.some(w=>w.hanzi===wordHanzi)||g.matched.includes(wordHanzi))return;
   if(side==='left'){g.chosenLeft=wordHanzi;speech(wordHanzi);}else g.chosenRight=wordHanzi;
   if(g.chosenLeft && g.chosenRight){
-    if(g.chosenLeft===g.chosenRight){g.matched.push(g.chosenLeft);g.notice=`Совпадение: ${g.chosenLeft}`;award(10,'ПАРА');}
+    if(g.chosenLeft===g.chosenRight){g.matched.push(g.chosenLeft);g.notice='Совпадение: '+g.chosenLeft;award(10,'ПАРА');}
     else {g.notice='Пока не совпало. Сравни слово и перевод.';miss(g.chosenLeft);}
     g.chosenLeft=null;g.chosenRight=null;
   }
   renderPairs();
 }
 function renderPairs(){
+  normalizePairsSession();
   const g=state.game;
-  if(g.matched.length===g.pairs.length){if(isReviewLesson()&&g.remaining?.length){$('#game-panel').innerHTML=header('ВСЕ ПАРЫ НАЙДЕНЫ','Переходи к следующей группе без повторов.',`${g.covered+g.pairs.length}/${g.total} СЛОВ`)+`<div class="complete"><h4>ГРУППА ГОТОВА</h4><p>Пройдено ${g.covered+g.pairs.length} из ${g.total} слов.</p><button type="button" class="action-btn" data-action="review-pair-next">СЛЕДУЮЩИЕ ПАРЫ →</button></div>`;return;}$('#game-panel').innerHTML=completedBlock('ВСЕ ПАРЫ НАЙДЕНЫ',isReviewLesson()?`Пройдены все ${g.total} слов.`:'Выучено шесть соответствий. Попробуй новый набор.','pairs');return;}
+  // Automatically move to the next group; no extra click or intermediate results screen.
+  advancePairs();
+  const done=g.covered+g.matched.length;
+  if(done>=g.total){$('#game-panel').innerHTML=completedBlock('ВСЕ ПАРЫ НАЙДЕНЫ','Пройдены все '+g.total+' слов.','pairs');return;}
   const column=(items,side)=>items.map(w=>`<button type="button" class="pair-btn ${side==='left'?'is-zh':''} ${g.matched.includes(w.hanzi)?'is-matched':''} ${(side==='left'?g.chosenLeft:g.chosenRight)===w.hanzi?'is-selected':''}" data-action="pair" data-side="${side}" data-id="${esc(w.hanzi)}" ${g.matched.includes(w.hanzi)?'disabled':''}>${esc(side==='left'?w.hanzi:w.ru)}</button>`).join('');
-  $('#game-panel').innerHTML=`${header('СОЕДИНИ ПАРЫ','Слева иероглифы, справа переводы. Нажми на один и на соответствующий ему перевод.',isReviewLesson()?`НАЙДЕНО ${g.covered+g.matched.length}/${g.total}`:`НАЙДЕНО ${g.matched.length}/${g.pairs.length}`)}<div class="progress-track"><div style="width:${100*g.matched.length/g.pairs.length}%"></div></div><div class="pairs-grid"><div class="pairs-column">${column(g.left,'left')}</div><div class="pairs-column">${column(g.right,'right')}</div></div><p class="progress-foot">Клик по иероглифу воспроизводит произношение. ${esc(g.notice)}</p>`;
+  $('#game-panel').innerHTML=`${header('СОЕДИНИ ПАРЫ','Соединяй пары, пока не пройдёшь все слова урока. Следующая группа появится автоматически.',`НАЙДЕНО ${done}/${g.total}`)}<div class="progress-track" role="progressbar" aria-label="Пройдено слов" aria-valuemin="0" aria-valuemax="${g.total}" aria-valuenow="${done}"><div style="width:${100*done/g.total}%"></div></div><div class="pairs-grid"><div class="pairs-column">${column(g.left,'left')}</div><div class="pairs-column">${column(g.right,'right')}</div></div><p class="progress-foot">Осталось слов: ${g.total-done}. Клик по иероглифу воспроизводит произношение. ${esc(g.notice)}</p>`;
 }
 function initQuiz(){const questions=isReviewLesson()?shuffle(lesson().words):sample(lesson().words,10);state.game={questions,index:0,answered:false,correct:0,selected:-1,choices:[],analysisIndex:-1};prepareChoices();}
 function prepareChoices(){const g=state.game;if(g.index>=g.questions.length)return;const answer=g.questions[g.index];g.choices=shuffle([answer,...sample(lesson().words.filter(x=>x.hanzi!==answer.hanzi && x.ru!==answer.ru),3)]);}
@@ -2143,7 +2171,6 @@ document.addEventListener('click', event => {
  case 'scene-next':case 'scene-spot':case 'scene-word':case 'scene-hint':case 'scene-zoom':
    ChineseLabSceneMatch.action(action,btn,state.game,{award,miss,speech,render:renderSceneMatch,lesson:lesson()});break;
  case 'pair':pairPick(btn.dataset.side,btn.dataset.id);break;
- case 'review-pair-next':nextReviewPairs();break;
  case 'quiz-pick':quizPick(Number(btn.dataset.index));break;
  case 'quiz-analyze':{const g=state.game;const i=Number(btn.dataset.index);g.analysisIndex=g.analysisIndex===i?-1:i;renderQuiz();break;}
  case 'quiz-next':quizNext();break;

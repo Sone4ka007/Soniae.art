@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-24",
+  "updated_at": "2026-11-25",
   "events": [
     {
       "id": "moscow-2025-09-03-6b54dbdbf3",
@@ -117,36 +117,6 @@
       "editor_overrides": {
         "registration": false
       }
-    },
-    {
-      "id": "moscow-2025-12-04-7daa2bd5e7",
-      "status": "check",
-      "kind": "exhibition",
-      "city": "moscow",
-      "date": "2025-12-04",
-      "time": "",
-      "title": "Мария Курбатова. Снегурочка",
-      "venue": "ММОМА",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": null,
-      "categories": [
-        "выставка"
-      ],
-      "description": "Московский музей современного искусства представляет выставку «Снегурочка» Марии Курбатовой — авторскую интерпретацию сюжета народной сказки о девочке из снега, которая является людям. Экспозиция объединяет более 50 графических произведений, над которыми художница работала с 2009 года.",
-      "url": "https://mmoma.ru/visit/gallery/snow-maiden",
-      "source": "ММОМА — выставки",
-      "checked_at": "",
-      "review_reason": "wrong_year",
-      "discovered_at": "2026-11-24",
-      "start_date": "2025-12-04",
-      "end_date": "2027-01-24",
-      "price_type": "unknown",
-      "availability_evidence": "",
-      "ticket_required": true,
-      "availability": "unknown",
-      "availability_checked_at": ""
     },
     {
       "status": "approved",
@@ -38321,7 +38291,7 @@
       "reviewed_at": "2026-10-17",
       "availability": "unknown",
       "availability_checked_at": "",
-      "registration": false,
+      "registration": null,
       "price": null,
       "price_text": "",
       "price_type": "paid",
@@ -38347,7 +38317,7 @@
         "status": "approved",
         "telegram_include": false,
         "instagram_include": false,
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -41084,7 +41054,7 @@
       "address": "1-й Голутвинский переулок, 16, стр. 1",
       "price": 850,
       "price_text": "850 ₽; льготный — 650 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -41111,7 +41081,7 @@
       "time_evidence": "24 октября 2026 14:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
       "editor_overrides": {
-        "registration": false
+        "registration": null
       }
     },
     {
@@ -49457,7 +49427,7 @@
       "address": "Лаврушинский переулок, 12",
       "price": 650,
       "price_text": "650 ₽; онлайн — 700 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -49474,7 +49444,7 @@
         "telegram_include": false,
         "instagram_include": false,
         "status": "approved",
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -51704,14 +51674,16 @@
       "price": 0,
       "price_text": "",
       "registration": false,
-      "categories": [],
+      "categories": [
+        "выставка"
+      ],
       "description": "На метро Музей AZ находится между станциями метро «Маяковская» и «Белорусская» (кольцевая). Мы рекомендуем идти в Музей от станции «Маяковская». Вам нужен Выход №1 на 1-я Тверская-Ямская улица, 2-я Тверская-Ямская улица.",
       "url": "https://museum-az.com/event/territoriya-svobody-nonkonformisty-v-taruse/",
       "source": "Музей AZ — выставки и события",
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-10-20",
-      "price_type": "paid",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-10-25",
       "editor_overrides": {
@@ -55217,7 +55189,7 @@
       "address": "",
       "price_type": "free",
       "price_text": "бесплатно по регистрации",
-      "registration": false,
+      "registration": true,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -57131,7 +57103,7 @@
       "address": "",
       "price_type": "free",
       "price_text": "бесплатно по регистрации",
-      "registration": false,
+      "registration": true,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -69980,259 +69952,6 @@
       "reviewed_at": "2026-11-23"
     },
     {
-      "id": "spb-2026-11-24-3d14cda3d4",
-      "status": "new",
-      "kind": "event",
-      "city": "spb",
-      "date": "2026-11-24",
-      "time": "",
-      "title": "«Открытка маме» напомнит о важности момента",
-      "venue": "",
-      "address": "",
-      "price": 0,
-      "price_text": "Бесплатно",
-      "registration": null,
-      "categories": [],
-      "description": "29 ноября в Санкт-Петербурге состоится общегородская акция «Открытка маме», приуроченная к празднованию Дня матери . Мероприятие предоставит каждому жителю и гостю города возможность бесплатно отправить своей маме поздравительную открытку. Правообладатель: центр дизайна и печати «Нейрон».",
-      "url": "https://spbcult.ru/news/anonsy/otkrytka-mame-napomnit-o-vazhnosti-momenta-/",
-      "source": "Петербургский дневник культуры — анонсы",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-11-24",
-      "price_type": "free",
-      "availability_evidence": "",
-      "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": ""
-    },
-    {
-      "id": "spb-2026-11-24-ddf06b3e84",
-      "status": "new",
-      "kind": "event",
-      "city": "spb",
-      "date": "2026-11-24",
-      "time": "",
-      "title": "«Пути и имена» - в Северной столице пройдёт топонимический семинар",
-      "venue": "",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": null,
-      "categories": [
-        "семинар"
-      ],
-      "description": "Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами! Также вы можете отправить статью в социальной сети или мессенджере Если у вас есть чем поделиться с нашими читателями, вы можете предложить свою статью.",
-      "url": "https://spbcult.ru/news/anonsy/puti-i-imena-v-severnoy-stolitse-proydyet-toponimicheskiy-seminar/",
-      "source": "Петербургский дневник культуры — анонсы",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-11-24",
-      "price_type": "unknown",
-      "availability_evidence": "",
-      "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": ""
-    },
-    {
-      "id": "spb-2026-11-24-ad79795c07",
-      "status": "new",
-      "kind": "event",
-      "city": "spb",
-      "date": "2026-11-24",
-      "time": "",
-      "title": "Афиша на декабрь 2026: «Многомерность культуры» приглашает молодёжь с инвалидностью на мероприятия",
-      "venue": "",
-      "address": "",
-      "price": 0,
-      "price_text": "Бесплатно",
-      "registration": true,
-      "categories": [],
-      "description": "Как записаться на мероприятия проекта «Многомерность культуры»? Напоминаем, что для участия в проекте необходимо зарегистрироваться в качестве участника. Это займёт всего пару минут.",
-      "url": "https://spbcult.ru/news/anonsy/afisha-na-dekabr-2026-mnogomernost-kultury-priglashaet-molodyezh-s-invalidnostyu-na-meropriyatiya/",
-      "source": "Петербургский дневник культуры — анонсы",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-11-24",
-      "price_type": "free",
-      "availability_evidence": "",
-      "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": ""
-    },
-    {
-      "id": "spb-2026-11-24-30bbb81f12",
-      "status": "new",
-      "kind": "exhibition",
-      "city": "spb",
-      "date": "2026-11-24",
-      "time": "",
-      "title": "В Музее-усадьбе Державина впервые покажут «Корабль дураков»",
-      "venue": "",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": null,
-      "categories": [
-        "выставка"
-      ],
-      "description": "26 ноября в Музее-усадьбе Державина откроется выставка «Анатомия книги». В экспозицию войдут более пятидесяти изданий из отдела редкой книги Всероссийского музея Пушкина. Они познакомят посетителей с традициями издательского дела и переплётного мастерства России и Западной Европы XVIII–XX веков.",
-      "url": "https://spbcult.ru/news/anonsy/v-muzee-usadbe-derzhavina-vpervye-pokazhut-korabl-durakov/",
-      "source": "Петербургский дневник культуры — анонсы",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-11-24",
-      "price_type": "unknown",
-      "availability_evidence": "",
-      "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "start_date": "2026-11-24"
-    },
-    {
-      "id": "spb-2026-11-24-11979fc91b",
-      "status": "new",
-      "kind": "event",
-      "city": "spb",
-      "date": "2026-11-24",
-      "time": "",
-      "title": "В Президентской библиотеке обсудят наследие Николая Вавилова",
-      "venue": "",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": null,
-      "categories": [
-        "лекция"
-      ],
-      "description": "25 ноября в Президентской библиотеке откроется пленарное заседание Всероссийской научной конференции «100 лет Вавиловской теории Центров происхождения культурных растений». Мероприятие состоится в день 139-летия со дня рождения биолога, генетика, географа, общественного деятеля, академика Николая Ивановича Вавилова.",
-      "url": "https://spbcult.ru/news/anonsy/v-prezidentskoy-biblioteke-obsudyat-nasledie-nikolaya-vavilova-/",
-      "source": "Петербургский дневник культуры — анонсы",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-11-24",
-      "price_type": "unknown",
-      "availability_evidence": "",
-      "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": ""
-    },
-    {
-      "id": "spb-2026-11-24-f5e78a71d6",
-      "status": "new",
-      "kind": "exhibition",
-      "city": "spb",
-      "date": "2026-11-24",
-      "time": "",
-      "title": "Выставка «Свет внутри» продемонстрирует творческий путь студии «Вижу руками» за полвека",
-      "venue": "",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": null,
-      "categories": [
-        "выставка"
-      ],
-      "description": "Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами! Также вы можете отправить статью в социальной сети или мессенджере Если у вас есть чем поделиться с нашими читателями, вы можете предложить свою статью.",
-      "url": "https://spbcult.ru/news/anonsy/vystavka-svet-vnutri-prodemonstriruet-tvorcheskiy-put-studii-vizhu-rukami-za-polveka/",
-      "source": "Петербургский дневник культуры — анонсы",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-11-24",
-      "price_type": "unknown",
-      "availability_evidence": "",
-      "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "start_date": "2026-11-24"
-    },
-    {
-      "id": "moscow-2026-11-24-9e2e798c17",
-      "status": "new",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-11-24",
-      "time": "",
-      "title": "Гик-зона. Вечер игротек в РГБМ",
-      "venue": "РГБМ",
-      "address": "",
-      "price": 0,
-      "price_text": "Бесплатно",
-      "registration": null,
-      "categories": [
-        "игра"
-      ],
-      "description": "Гик-зона. Вечер игротек в РГБМ 12+ 24 ноября 2026 (вторник) 18:30 Малый зал (Вход № 2) Вход свободный 2026-11-24 18:30 2026-11-24 18:30 Europe/Moscow Гик-зона. Вечер игротек в РГБМ Разберём сложные правила настолок с экспертом и сыграем в популярные игры из фонда библиотеки РГБМ, Малый зал (Вход № 2) РГБМ info@rgub.ru Разберём сложные правила настолок с экспертом и сыграем в популярные игры из фонда библиотеки Также мы играем в новые настольные игры из личных коллекций и делимся впечатлениями. А ещё нашу игротеку иногда посещают авторы изданных игр. Будем знакомиться и общаться с ними! Ведущий: Юрий Егоров, разработчик и обладатель большой коллекции настольных игр, игрок с многолетним опытом",
-      "url": "https://rgub.ru/schedule/item.php?new_id=49825",
-      "source": "Российская государственная библиотека для молодёжи — афиша",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-11-01",
-      "price_type": "free",
-      "availability_evidence": "",
-      "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_note": "",
-      "reviewed_at": ""
-    },
-    {
-      "id": "spb-2026-11-24-5995f84169",
-      "status": "new",
-      "kind": "event",
-      "city": "spb",
-      "date": "2026-11-24",
-      "time": "",
-      "title": "Государственный Эрмитаж",
-      "venue": "Государственный Эрмитаж",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": null,
-      "categories": [],
-      "description": "",
-      "url": "https://hermitagemuseum.org/what-s-on/afisha_mincult/?lng=ru",
-      "source": "Государственный Эрмитаж — выставки и события",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-11-24",
-      "price_type": "unknown",
-      "availability_evidence": "",
-      "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_note": "",
-      "reviewed_at": ""
-    },
-    {
-      "id": "spb-2026-11-24-bd60d9e685",
-      "status": "new",
-      "kind": "open_call",
-      "city": "spb",
-      "date": "2026-11-24",
-      "time": "",
-      "title": "Конкурс «Все краски Севера» приглашает петербуржцев",
-      "venue": "",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": null,
-      "categories": [
-        "выставка",
-        "open-call"
-      ],
-      "description": "Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами! Также вы можете отправить статью в социальной сети или мессенджере Если у вас есть чем поделиться с нашими читателями, вы можете предложить свою статью.",
-      "url": "https://spbcult.ru/news/anonsy/konkurs-vse-kraski-severa-priglashaet-peterburzhtsev/",
-      "source": "Петербургский дневник культуры — анонсы",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-11-24",
-      "price_type": "unknown",
-      "availability_evidence": "",
-      "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": ""
-    },
-    {
       "id": "moscow-2026-11-24-a81010b7e9",
       "status": "approved",
       "kind": "event",
@@ -70269,43 +69988,6 @@
       "instagram_include": false,
       "reviewed_at": "2026-11-01",
       "editor_note": ""
-    },
-    {
-      "id": "spb-2026-11-24-29fdb78afc",
-      "status": "check",
-      "kind": "event",
-      "city": "spb",
-      "date": "2026-11-24",
-      "time": "",
-      "title": "Лекция Юлии Векслер «Штраус и Шёнберг: на пороге ХХ столетия»",
-      "venue": "Дом Радио",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [
-        "лекция"
-      ],
-      "description": "Чем заняться в Доме Радио на этой неделе? Творческая встреча с Фёдором Безносиковым Показ фильма «Малика» и обсуждение с режиссером Натальей Уваровой Концерт-лекция Дмитрия Шубина «Между звуком и шумом. Рояль как звуковой объект: от механики к live electronics» «Распев»: хоровые встречи Мастер-класс Сергея Суховика «Электроника: дроун синтезатор» Концерт-перформанс артистов Академии имени Антона Рубинштейна «Возможно мы» Мастер-класс Сергея Суховика «Электроника: Circuit bent эхо-процессор»",
-      "url": "https://dom.radio/events/kontsert-lektsiya-dmitriya-shubina-mezhdu-zvukom-i-shumom-2026-11-27/",
-      "source": "Дом Радио — официальный Telegram",
-      "checked_at": "",
-      "review_reason": "curated_telegram_source",
-      "discovered_at": "2026-11-24",
-      "price_type": "unknown",
-      "availability_evidence": "",
-      "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-24-058b1d17f2",
@@ -70345,62 +70027,6 @@
         "status": "approved"
       },
       "reviewed_at": "2026-10-27"
-    },
-    {
-      "id": "spb-2026-11-24-213fdabc0a",
-      "status": "new",
-      "kind": "event",
-      "city": "spb",
-      "date": "2026-11-24",
-      "time": "",
-      "title": "Музей Анны Ахматовой получит в дар скульптуру Иосифа Бродского",
-      "venue": "",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": null,
-      "categories": [
-        "лекция"
-      ],
-      "description": "2 7 ноября в Музее Анны Ахматовой в Фонтанном Доме пройдёт вечер, посвящённый передаче в дар музею скульптуры Иосифа Бродского. Автор работы – скульптор Юрий Фирсов. Даритель – Александр Жуков.",
-      "url": "https://spbcult.ru/news/anonsy/muzey-anny-akhmatovoy-poluchit-v-dar-skulpturu-iosifa-brodskogo/",
-      "source": "Петербургский дневник культуры — анонсы",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-11-24",
-      "price_type": "unknown",
-      "availability_evidence": "",
-      "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": ""
-    },
-    {
-      "id": "spb-2026-11-24-1de55f1f07",
-      "status": "new",
-      "kind": "event",
-      "city": "spb",
-      "date": "2026-11-24",
-      "time": "",
-      "title": "Музей железных дорог анонсировал новогодние программы",
-      "venue": "",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": null,
-      "categories": [
-        "мастер-класс"
-      ],
-      "description": "Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами! Также вы можете отправить статью в социальной сети или мессенджере Если у вас есть чем поделиться с нашими читателями, вы можете предложить свою статью.",
-      "url": "https://spbcult.ru/news/anonsy/muzey-zheleznykh-dorog-rossii-anonsiroval-novogodnie-programmy-dlya-detey/",
-      "source": "Петербургский дневник культуры — анонсы",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-11-24",
-      "price_type": "unknown",
-      "availability_evidence": "",
-      "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-24-2a8bfee591",
@@ -70457,141 +70083,6 @@
       "availability_checked_at": ""
     },
     {
-      "id": "moscow-2026-11-24-1405247759",
-      "status": "new",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-11-24",
-      "time": "",
-      "title": "Студия «Шерлоковедение»",
-      "venue": "Еврейский музей и центр толерантности",
-      "address": "",
-      "price": 1100,
-      "price_text": "1100 ₽",
-      "registration": null,
-      "categories": [],
-      "description": "1 декабря | Полет диска: изобретаем шпионскую фрисби-тарелку и сканируем пространство Как бесшумно перебросить важное послание через охраняемый периметр или запустить передатчик на дальнее расстояние? Изучим секреты парения в воздухе и сконструируем настоящую аэродинамическую фрисби-тарелку для дальних бросков!",
-      "url": "https://www.jewish-museum.ru/events/studiya-sherlokovedenie/",
-      "source": "Еврейский музей и центр толерантности",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-11-20",
-      "price_type": "paid",
-      "availability_evidence": "",
-      "ticket_required": true,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_note": "",
-      "reviewed_at": ""
-    },
-    {
-      "id": "moscow-2026-11-24-e7aa33c8ae",
-      "status": "new",
-      "kind": "exhibition",
-      "city": "moscow",
-      "date": "2026-11-24",
-      "time": "",
-      "title": "Фактура фактора",
-      "venue": "РГБМ",
-      "address": "",
-      "price": 0,
-      "price_text": "Бесплатно",
-      "registration": null,
-      "categories": [
-        "выставка"
-      ],
-      "description": "Фактура фактора 16+ 24 ноября 2026 (вторник) 19:00 Малый зал (Вход № 2) Вход свободный 2026-11-24 19:00 2026-11-24 19:00 Europe/Moscow Фактура фактора Открытие выставки современных художниц РГБМ, Малый зал (Вход № 2) РГБМ info@rgub.ru Открытие выставки современных художниц Всякая идея, становясь причиной действия, обретает материальную субъектность.",
-      "url": "https://rgub.ru/schedule/item.php?new_id=49826",
-      "source": "Российская государственная библиотека для молодёжи — афиша",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-11-01",
-      "price_type": "free",
-      "availability_evidence": "",
-      "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "start_date": "2026-11-24",
-      "editor_note": "",
-      "reviewed_at": ""
-    },
-    {
-      "id": "moscow-2026-10-25-c40e7952b7",
-      "status": "rejected",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-11-24",
-      "time": "10:00",
-      "title": "Воркшопы",
-      "venue": "ЦСИ Винзавод",
-      "address": "",
-      "price": 0,
-      "price_text": "Бесплатно",
-      "registration": false,
-      "categories": [
-        "лекция"
-      ],
-      "description": "",
-      "url": "https://www.winzavod.ru/calendar/workshops/",
-      "source": "ЦСИ Винзавод",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-10-25",
-      "price_type": "free",
-      "availability_evidence": "",
-      "ticket_required": true,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false,
-        "status": "rejected"
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": "2026-10-27"
-    },
-    {
-      "id": "moscow-2026-10-25-fefbfbd35d",
-      "status": "rejected",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-11-24",
-      "time": "10:00",
-      "title": "Курсы",
-      "venue": "ЦСИ Винзавод",
-      "address": "",
-      "price": 0,
-      "price_text": "Бесплатно",
-      "registration": false,
-      "categories": [
-        "лекция"
-      ],
-      "description": "",
-      "url": "https://www.winzavod.ru/calendar/course/",
-      "source": "ЦСИ Винзавод",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-10-25",
-      "price_type": "free",
-      "availability_evidence": "",
-      "ticket_required": true,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false,
-        "status": "rejected"
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": "2026-10-27"
-    },
-    {
       "id": "moscow-2026-11-24-b9a5fe1f3d",
       "status": "approved",
       "kind": "event",
@@ -70630,36 +70121,6 @@
       "reviewed_at": "2026-11-13"
     },
     {
-      "id": "moscow-2026-11-24-9bea769fd1",
-      "status": "new",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-11-24",
-      "time": "11:00",
-      "title": "IX международная конференция «Еврейское поле: новые открытия, опыт и концептуализация»",
-      "venue": "Еврейский музей и центр толерантности",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": true,
-      "categories": [
-        "конференция"
-      ],
-      "description": "На девятой ежегодной конференции мы уже по традиции обсудим новые исследования в области еврейской антропологии, фольклористики, лингвистики, социологии, эпиграфики и археологии, а также истории и культуры евреев в России и СССР, еврейских коллекций и архивов, и смежных тем.",
-      "url": "https://www.jewish-museum.ru/events/ix-mezhdunarodnaya-konferentsiya-evreyskoe-pole-novye-otkrytiya-opyt-i-kontseptualizatsiya/",
-      "source": "Еврейский музей и центр толерантности",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-11-17",
-      "price_type": "unknown",
-      "availability_evidence": "",
-      "ticket_required": true,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_note": "",
-      "reviewed_at": ""
-    },
-    {
       "id": "moscow-2026-11-24-b2f389d79e",
       "status": "rejected",
       "kind": "event",
@@ -70686,44 +70147,6 @@
       "ticket_required": true,
       "availability": "unknown",
       "availability_checked_at": ""
-    },
-    {
-      "id": "moscow-2026-11-24-e729e1a012",
-      "status": "new",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-11-24",
-      "time": "11:00",
-      "title": "Сезонный мастер-класс по пошиву панамы из экомеха",
-      "venue": "ГЭС-2",
-      "address": "",
-      "price": 5000,
-      "price_text": "5000 ₽",
-      "registration": false,
-      "categories": [
-        "мастер-класс"
-      ],
-      "description": "",
-      "url": "https://ges-2.org/seasonal-master-class-in-sewing-an-eco-fir-panama-hat",
-      "source": "Дом культуры «ГЭС-2»",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-10-28",
-      "audience_text": "› Своды › Мастер-классы Дата: с дек 2025 Билеты Возраст: от 18 Тип: Мастер-класс в «Сводах» Место: Своды Возрастные ограничения 6+ К участию в мастер-классах мы приглашаем людей, достигших 18 лет. Продолжительность: 4 часа Стоимость: 5000 руб. * Сложность: 6/10 Количество участников: 2 * За одного участника. Расходные материалы включены в стоимость. Центр художественного производства «Своды» приглашает познакомиться с мастерскими, освоить новые навыки и поработать на профессиональном оборудовании. T Панама из экомеха нейтральных пастельных тонов отлично смотрится в сочетании с любой зимней верхней одеждой. Мастер «Сводов» поможет вам раскроить и сшить ее. В процессе вы научитесь пользоваться раскройным оборудованием и прямострочной швейной машиной, а также познакомитесь с особенностями создания изделий из экомеха. {\"points\":[{\"id\":1,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":3,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.6,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":2,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} Официальный партнер Центра художественного производства «Своды» Все фото: Анна Завозяева {\"width\":963,\"column_width\":89,\"columns_n\":9,\"gutter\":20,\"margin\":0,\"line\":10} default true 512 1100 false true false {\"mode\":\"page\",\"transition_type\":\"slide\",\"transition_direction\":\"horizontal\",\"transition_look\":\"belt\",\"slides_form\":{}} {\"css\":\".editor {font-family: Diagramatika Text; font-size: 20px; font-weight: 400; line-height: 20px;}\"} ГЭС-2 Посещение [+] План здания Правила посещения Ателье Игровая Кинотеатр Концертный зал Библиотека Малые своды Магазин Ресторан и кафе Парковка Вокруг Доступность Как нас найти Календарь Программа Направления [+] Практики Медиация Дети и подростки Сообщества Школы Университеты Города Возможности [+] Своды Студии Резиденции Гранты Исследования Издательство  О нас [+] Дом культуры История и архитектура Посещение [+] Календарь Программа Направления [+] Возможности [+] Исследования Издательство О нас [+] Болотная набережная, 15 , Москва Болотная набережная, 15 Москва +7 (495) 990 0000 v - a-c@v - a-c.org  V–A–C Доступность Пресс-офис Вакансии Контакты VK Telegram Youtube  V–A–C Доступность Пресс-офис Вакансии Контакты VK Telegram Youtube Пользовательское соглашение Политика обработки персональных данных Правила посещен",
-      "price_type": "paid",
-      "availability_evidence": "",
-      "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-24-91c3c05e64",
@@ -70908,37 +70331,6 @@
       "reviewed_at": "2026-11-13"
     },
     {
-      "id": "moscow-2026-11-24-05c450d73d",
-      "status": "new",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-11-24",
-      "time": "15:30",
-      "title": "Увидеть все",
-      "venue": "ГЭС-2",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": null,
-      "categories": [
-        "кинопоказ"
-      ],
-      "description": "",
-      "url": "https://ges-2.org/you-can-see-everything",
-      "source": "Дом культуры «ГЭС-2»",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-11-12",
-      "audience_text": "Дата: с 20 ноя 2026 Билеты Возраст: от 18 Тип: Кинопоказ Место: Кинотеатр Доступность  Возрастные ограничения 18+ Самая горячая премьера сезона: мастер комедии дискомфорта Филдер проверяет на прочность скандальную мошенницу. You Can See Everything 2026, Нэйтан Филдер, Лэнс Оппенгейм | Nathan Fielder, Lance Oppenheim США 174 мин., англ. с рус. субт. В ролях: Нэйтан Филдер, Элизабет Холмс, Аманда Сайфред, Кристофер Эбботт T Помните ли вы Элизабет Холмс? В середине 2010-х молодая бойкая предпринимательница привлекла сотни миллионов долларов инвестиций в свой революционный проект мгновенных анализов крови Theranos — который оказался чистой мистификацией. Теперь Холмс отбывает 11-летний срок за мошенничество, но прежде чем тот начался, она успела на несколько месяцев впустить в свою жизнь документалиста-комика Нэйтана Филдера. Тот поселился дома у преступницы и ее эксцентричного жениха Билли Эванса и попытался разобраться в душе самой известной мошенницы Кремниевой долины. Кадр из фильма «Увидеть все», 2026 Головокружительное кино об истине, реальности и границах познания. — Манола Даргис, The New York Times Зрители, знакомые с предыдущими сверхпопулярными работами Филдера (сериалы «Нэйтан спешит на выручку», «Репетиция» и «Проклятие») могут догадаться: классической документалистики от него ждать не стоит. Тем лучше: большой специалист по комедии дискомфорта, не уступающий Бастеру Китону по экранной харизме, Филдер находит себе ровню. Холмс — вкрадчивая и обаятельная до неподдельной жути манипуляторка, владеющая великим талантом размывать грань между ложью и правдой. Ее взаимодействие с Филдером и его камерой рождает кино непредсказуемое и лукавое, многозначительное и пытливое, завораживающее от первого до последнего кадра. Ажиотаж вокруг «Увидеть все» не только понятен, но и абсолютно заслужен: такого изобретательного и оригинального документального фильма широкая публика не видела очень давно. {\"grid\":{\"width\":963,\"column_width\":89,\"columns_n\":9,\"gutter\":20,\"margin\":0,\"line\":10},\"palette\":\"default\",\"responsive_mode\":true,\"responsive_min_width\":512,\"responsive_max_width\":1100,\"colorchanger_fullscreen\":false,\"colorchanger_overflow\":true,\"page_cropping\":false,\"global_google_analytics_id\":\"\",\"global_yandex_metrika_id\":\"\",\"article_mode\":{\"mode\":\"page\",\"transition_type\":\"slide\",\"transition_direction\":\"horizontal\",\"transition_look\":\"belt\",\"slides_form\":{}},\"default_font\":{\"css\":\".editor {font-family: Diagramatika Text; font-size: 20px; font-weight: 400; line-height",
-      "price_type": "paid",
-      "availability_evidence": "",
-      "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_note": "",
-      "reviewed_at": ""
-    },
-    {
       "id": "spb-2026-11-24-0ad7a81bf0",
       "status": "approved",
       "kind": "event",
@@ -71049,36 +70441,6 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": "2026-11-13"
-    },
-    {
-      "id": "moscow-2026-11-24-5d827c0915",
-      "status": "new",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-11-24",
-      "time": "18:30",
-      "title": "Заседание Комиссии географии полярных стран Московского городского отделения РГО",
-      "venue": "Дом русского зарубежья им. А. Солженицына",
-      "address": "",
-      "price": 0,
-      "price_text": "Бесплатно",
-      "registration": true,
-      "categories": [
-        "мастер-класс"
-      ],
-      "description": "24 ноября 2026 года в 18 часов 30 минут приглашаем на заседание Комиссии географии полярных стран Московского городского отделения Русского географического общества. Мероприятие посвящено 35-летию антарктического дрейфа научно-экспедиционного судна «Михаил Сомов» в 1991 году.",
-      "url": "https://www.domrz.ru/event/71319_zasedanie_komissii_geografii_polyarnykh_stran_moskovskogo_gorodskogo_otdeleniya_rgo/",
-      "source": "Дом русского зарубежья — афиша",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-11-20",
-      "price_type": "free",
-      "availability_evidence": "",
-      "ticket_required": true,
-      "availability": "sold_out",
-      "availability_checked_at": "2026-11-24",
-      "editor_note": "",
-      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-24-6de6981347",
@@ -71260,36 +70622,6 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": "2026-11-23"
-    },
-    {
-      "id": "moscow-2026-11-24-10df5ae332",
-      "status": "new",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-11-24",
-      "time": "19:00",
-      "title": "Показы документальных фильмов «Любовь-морковь. История Башарат и Якуба» и «Этника»",
-      "venue": "Дом русского зарубежья им. А. Солженицына",
-      "address": "",
-      "price": 0,
-      "price_text": "Бесплатно",
-      "registration": true,
-      "categories": [
-        "кинопоказ"
-      ],
-      "description": "24 ноября 2026 года в 19 часов совместно с киностудией «Русский путь», киноклубом «Русский путь», при поддержке Министерства культуры России, Союза кинематографистов России, Союза писателей России, в рамках Российской национальной премии в области неигрового кино «Золотая свеча» приглашаем на показы документальных фильмов «Любовь-морковь. История Башарат и Якуба» и «Этника».",
-      "url": "https://www.domrz.ru/event/pokazy_dokumentalnykh_filmov_lyubov_morkov_istoriya_basharat_i_yakuba_i_etnika/",
-      "source": "Дом русского зарубежья — афиша",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-11-21",
-      "price_type": "free",
-      "availability_evidence": "",
-      "ticket_required": true,
-      "availability": "sold_out",
-      "availability_checked_at": "2026-11-24",
-      "editor_note": "",
-      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-24-d840639c9f",
@@ -71522,6 +70854,32 @@
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
+      "id": "spb-2026-11-25-5995f84169",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-25",
+      "time": "",
+      "title": "Государственный Эрмитаж",
+      "venue": "Государственный Эрмитаж",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "",
+      "url": "https://hermitagemuseum.org/what-s-on/afisha_mincult/?lng=ru",
+      "source": "Государственный Эрмитаж — выставки и события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-25",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-25-ad5480ce53",
       "status": "rejected",
       "kind": "event",
@@ -71601,7 +70959,7 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "sold_out",
-      "availability_checked_at": "2026-11-24",
+      "availability_checked_at": "2026-11-25",
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
@@ -71749,34 +71107,80 @@
       "editor_note": ""
     },
     {
-      "id": "spb-2026-11-25-020d3b2f98",
-      "status": "new",
+      "id": "moscow-2026-10-25-c40e7952b7",
+      "status": "rejected",
       "kind": "event",
-      "city": "spb",
+      "city": "moscow",
       "date": "2026-11-25",
-      "time": "08:11",
-      "title": "Мероприятия",
-      "venue": "Музей «Полторы комнаты» Иосифа Бродского",
+      "time": "10:00",
+      "title": "Воркшопы",
+      "venue": "ЦСИ Винзавод",
       "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": null,
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": false,
       "categories": [
         "лекция"
       ],
-      "description": "Оставляя свои контакты, вы даёте согласие на обработку персональных данных",
-      "url": "https://brodsky.online/events/",
-      "source": "Полторы комнаты — музей Иосифа Бродского",
+      "description": "",
+      "url": "https://www.winzavod.ru/calendar/workshops/",
+      "source": "ЦСИ Винзавод",
       "checked_at": "",
       "review_reason": "",
-      "discovered_at": "2026-11-12",
-      "price_type": "unknown",
+      "discovered_at": "2026-10-25",
+      "price_type": "free",
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
       "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false,
+        "status": "rejected"
+      },
+      "telegram_include": false,
+      "instagram_include": false,
       "editor_note": "",
-      "reviewed_at": ""
+      "reviewed_at": "2026-10-27"
+    },
+    {
+      "id": "moscow-2026-10-25-fefbfbd35d",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-25",
+      "time": "10:00",
+      "title": "Курсы",
+      "venue": "ЦСИ Винзавод",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "",
+      "url": "https://www.winzavod.ru/calendar/course/",
+      "source": "ЦСИ Винзавод",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-25",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false,
+        "status": "rejected"
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": "2026-10-27"
     },
     {
       "id": "moscow-2026-11-25-d4ed4734f6",
@@ -71970,44 +71374,6 @@
       "reviewed_at": "2026-11-23"
     },
     {
-      "id": "spb-2026-11-25-3beea69cec",
-      "status": "rejected",
-      "kind": "event",
-      "city": "spb",
-      "date": "2026-11-25",
-      "time": "12:11",
-      "title": "Лекция хранителя музея Ольги Сейфетдиновой «Проза поэта: Набережная неисцелимых»",
-      "venue": "Музей «Полторы комнаты» Иосифа Бродского",
-      "address": "",
-      "price": null,
-      "price_text": "",
-      "registration": false,
-      "categories": [
-        "лекция"
-      ],
-      "description": "Оставляя свои контакты, вы даёте согласие на обработку персональных данных",
-      "url": "https://brodsky.online/events/lektsiya-khranitelya-muzeya-olgi-seyfetdinovoy-proza-poeta-naberezhnaya-neistselimykh/",
-      "source": "Полторы комнаты — музей Иосифа Бродского",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-11-12",
-      "price_type": "unknown",
-      "availability_evidence": "",
-      "ticket_required": true,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false,
-        "status": "rejected"
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": "2026-11-13"
-    },
-    {
       "id": "moscow-2026-11-25-f60ba16dd3",
       "status": "rejected",
       "kind": "event",
@@ -72033,7 +71399,7 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "sold_out",
-      "availability_checked_at": "2026-11-24"
+      "availability_checked_at": "2026-11-25"
     },
     {
       "id": "moscow-2026-11-25-422be2d050",
@@ -72119,7 +71485,7 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "sold_out",
-      "availability_checked_at": "2026-11-24"
+      "availability_checked_at": "2026-11-25"
     },
     {
       "id": "spb-2026-11-25-5920084eb3",
@@ -72569,6 +71935,74 @@
       "reviewed_at": "2026-11-19"
     },
     {
+      "id": "spb-2026-11-25-3beea69cec",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-25",
+      "time": "20:12",
+      "title": "Лекция хранителя музея Ольги Сейфетдиновой «Проза поэта: Набережная неисцелимых»",
+      "venue": "Музей «Полторы комнаты» Иосифа Бродского",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Оставляя свои контакты, вы даёте согласие на обработку персональных данных",
+      "url": "https://brodsky.online/events/lektsiya-khranitelya-muzeya-olgi-seyfetdinovoy-proza-poeta-naberezhnaya-neistselimykh/",
+      "source": "Полторы комнаты — музей Иосифа Бродского",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-12",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false,
+        "status": "rejected"
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": "2026-11-13"
+    },
+    {
+      "id": "spb-2026-11-25-020d3b2f98",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-25",
+      "time": "20:12",
+      "title": "Мероприятия",
+      "venue": "Музей «Полторы комнаты» Иосифа Бродского",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Оставляя свои контакты, вы даёте согласие на обработку персональных данных",
+      "url": "https://brodsky.online/events/",
+      "source": "Полторы комнаты — музей Иосифа Бродского",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-12",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
+    },
+    {
       "id": "spb-2026-11-26-47abe402ac",
       "status": "check",
       "kind": "event",
@@ -73006,7 +72440,7 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "sold_out",
-      "availability_checked_at": "2026-11-24"
+      "availability_checked_at": "2026-11-25"
     },
     {
       "id": "moscow-2026-11-26-422be2d050",
@@ -73092,7 +72526,7 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "sold_out",
-      "availability_checked_at": "2026-11-24"
+      "availability_checked_at": "2026-11-25"
     },
     {
       "id": "spb-2026-11-26-7f346ab730",
@@ -73149,7 +72583,7 @@
       "source": "Design Mate — календарь",
       "checked_at": "",
       "review_reason": "discovery_source_needs_primary_verification",
-      "discovered_at": "2026-11-24",
+      "discovered_at": "2026-11-25",
       "price_type": "free",
       "availability_evidence": "",
       "ticket_required": false,
@@ -73246,7 +72680,37 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
+    },
+    {
+      "id": "moscow-2026-11-26-b27342c5d8",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-26",
+      "time": "19:00",
+      "title": "Книжный клуб, посвященный обсуждению литературы русской эмиграции. Максим Горький «Несвоевременные мысли»",
+      "venue": "Дом русского зарубежья им. А. Солженицына",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": true,
+      "categories": [
+        "встреча"
+      ],
+      "description": "26 ноября 2026 года в 19 часов приглашаем на очередную встречу книжного клуба, посвященного обсуждению литературы русской эмиграции. Что такое русское зарубежье? Казалось бы, это парадоксальное словосочетание изучено вдоль и поперек: миллионы лекций и семинаров, тысячи конференций, сотни статей, десятки диссертаций.",
+      "url": "https://www.domrz.ru/event/70021_knizhnyy_klub_posvyashchennyy_obsuzhdeniyu_literatury_russkoy_emigratsii_maksim_gorkiy_nesvoevremenn/",
+      "source": "Дом русского зарубежья — афиша",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-25",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "sold_out",
+      "availability_checked_at": "2026-11-25"
     },
     {
       "id": "moscow-2026-11-26-6de6981347",
@@ -73370,7 +72834,7 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "sold_out",
-      "availability_checked_at": "2026-11-24",
+      "availability_checked_at": "2026-11-25",
       "editor_note": "",
       "reviewed_at": ""
     },
@@ -74016,6 +73480,34 @@
       "availability_checked_at": ""
     },
     {
+      "id": "moscow-2026-11-27-d18ae948f2",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-27",
+      "time": "14:00",
+      "title": "Лекция-экскурсия «Под покровительством дома Карагеоргиевичей. Русские эмигранты в Югославии в 1920–1930-е годы»",
+      "venue": "Дом русского зарубежья им. А. Солженицына",
+      "address": "",
+      "price": 300,
+      "price_text": "300 ₽",
+      "registration": true,
+      "categories": [
+        "лекция"
+      ],
+      "description": "27 ноября 2026 года в 14 часов приглашаем на лекцию-экскурсию «Под покровительством дома Карагеоргиевичей. Русские эмигранты в Югославии в 1920–1930-е годы». На протяжении долгих столетий Россия принимала деятельное участие в судьбе балканских народов.",
+      "url": "https://www.domrz.ru/event/70715_lektsiya_ekskursiya_pod_pokrovitelstvom_doma_karageorgievichey_russkie_emigranty_v_yugoslavii/",
+      "source": "Дом русского зарубежья — афиша",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-11-25",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "sold_out",
+      "availability_checked_at": "2026-11-25"
+    },
+    {
       "id": "moscow-2026-11-27-aa8503e63c",
       "status": "new",
       "kind": "event",
@@ -74225,7 +73717,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-27-da81792ce4",
@@ -74329,6 +73823,34 @@
       "availability_checked_at": "",
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "moscow-2026-11-27-ade1e9b763",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-27",
+      "time": "19:30",
+      "title": "Показ фильмов «море, море, море, море», «Дзимтеней: сад сорных трав» и «14 заметок о памятниках» и обсуждение",
+      "venue": "Музей «Гараж»",
+      "address": "",
+      "price": 500,
+      "price_text": "500 ₽",
+      "registration": null,
+      "categories": [
+        "кинопоказ"
+      ],
+      "description": "Фильмы Даши Лихой и Саши Деяш обращаются к памяти — личной и коллективной — и исследуют, как ее нелинейность и фрагментарность могут проявляться в форме кино.",
+      "url": "https://garagemca.org/event/film-screening-and-discussion-a-see-a-see-a-see-a-see-dzhimteney-garden-of-weeds-14-notes-on-monuments",
+      "source": "Музей современного искусства «Гараж»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-24",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-28-0ed98de660",
@@ -74624,7 +74146,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-28-d9eec6e9e5",
@@ -75138,43 +74662,6 @@
       "availability_checked_at": ""
     },
     {
-      "id": "spb-2026-11-28-60f91b51a1",
-      "status": "approved",
-      "kind": "event",
-      "city": "spb",
-      "date": "2026-11-28",
-      "time": "14:00",
-      "title": "Диалоги об искусстве на английском языке в «Сообществе». Обоняние",
-      "venue": "Новая Голландия",
-      "address": "",
-      "price": 300,
-      "price_text": "300 ₽",
-      "registration": false,
-      "categories": [
-        "диалог"
-      ],
-      "description": "Новый цикл семинаров на английском языке посвящен шести чувствам и их связи с мировой культурой. Вместе обсудим разные способы чувствовать мир и познавать прекрасное, через литературу, музыку и кино. Ведущие: преподаватель литературы Том Бетелл и филолог Дарья Ларина.",
-      "url": "https://www.newhollandsp.ru/events/education/dialogues-smell/",
-      "source": "Новая Голландия — Сообщество и образование",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-11-03",
-      "price_type": "paid",
-      "availability_evidence": "",
-      "ticket_required": false,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false,
-        "status": "approved"
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "reviewed_at": "2026-11-03"
-    },
-    {
       "id": "moscow-2026-11-28-422be2d050",
       "status": "rejected",
       "kind": "event",
@@ -75347,6 +74834,43 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": "2026-11-23"
+    },
+    {
+      "id": "spb-2026-11-28-60f91b51a1",
+      "status": "approved",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-28",
+      "time": "15:30",
+      "title": "Диалоги об искусстве на английском языке в «Сообществе». Обоняние",
+      "venue": "Новая Голландия",
+      "address": "",
+      "price": 300,
+      "price_text": "300 ₽",
+      "registration": false,
+      "categories": [
+        "диалог"
+      ],
+      "description": "Новый цикл семинаров на английском языке посвящен шести чувствам и их связи с мировой культурой. Вместе обсудим разные способы чувствовать мир и познавать прекрасное, через литературу, музыку и кино. Ведущие: преподаватель литературы Том Бетелл и филолог Дарья Ларина.",
+      "url": "https://www.newhollandsp.ru/events/education/dialogues-smell/",
+      "source": "Новая Голландия — Сообщество и образование",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-03",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false,
+        "status": "approved"
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "reviewed_at": "2026-11-03"
     },
     {
       "id": "moscow-2026-11-28-2bdece6ea4",
@@ -75946,7 +75470,9 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-29-91c3c05e64",
@@ -76877,7 +76403,7 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "sold_out",
-      "availability_checked_at": "2026-11-24",
+      "availability_checked_at": "2026-11-25",
       "editor_note": "",
       "reviewed_at": ""
     },
@@ -76968,7 +76494,7 @@
       "source": "Design Mate — календарь",
       "checked_at": "",
       "review_reason": "discovery_source_needs_primary_verification",
-      "discovered_at": "2026-11-24",
+      "discovered_at": "2026-11-25",
       "price_type": "free",
       "availability_evidence": "",
       "ticket_required": false,
@@ -77411,6 +76937,34 @@
       "reviewed_at": "2026-11-05"
     },
     {
+      "id": "moscow-2026-12-01-16c845392b",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-12-01",
+      "time": "",
+      "title": "«Бывают странные сближенья»: диалог культур народов России. Всеобщая история жемчуга",
+      "venue": "Еврейский музей и центр толерантности",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "диалог"
+      ],
+      "description": "«Бывают странные сближенья» — эта пушкинская фраза лучше всего описывает идею просветительской программы Центра толерантности в Еврейском музее. Традиционная культура каждого народа неисчерпаема, в нее хочется погружаться как в отдельный мир. Но тем интереснее находить неочевидные нити, связывающие наследие народов, веками живших в соседстве.",
+      "url": "https://www.jewish-museum.ru/events/byvayut-strannye-sblizhenya-vseobshchaya-istoriya-zhemchuga-ot-severnykh-rek-do-persidskikh-bazarov/",
+      "source": "Еврейский музей и центр толерантности",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-25",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "spb-2026-12-01-3eb09fab54",
       "status": "new",
       "kind": "event",
@@ -77581,6 +77135,34 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": "2026-11-23"
+    },
+    {
+      "id": "moscow-2026-12-01-e52929b872",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-12-01",
+      "time": "19:00",
+      "title": "Опора в сложные времена: психологическая практика в музее",
+      "venue": "Еврейский музей и центр толерантности",
+      "address": "",
+      "price": 1500,
+      "price_text": "1500 ₽",
+      "registration": null,
+      "categories": [
+        "встреча"
+      ],
+      "description": "Встреча с психологом Анастасией Белолуцкой в экспозиции Еврейского музея о том, на что опираться, когда от нас мало что зависит. Привычный мир сегодня может измениться за один день. Решения принимаются без нашего участия, правила меняются на ходу, и даже планы на месяц вперед начинают выглядеть самонадеянно.",
+      "url": "https://www.jewish-museum.ru/events/opora-v-slozhnye-vremena-psikhologicheskaya-praktika-v-muzee/",
+      "source": "Еврейский музей и центр толерантности",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-25",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "international-2026-12-02-0a38d7b06c",
@@ -77837,7 +77419,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-12-03-b485ac3446",
@@ -77903,7 +77487,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-12-03-f7e466876f",
@@ -78000,7 +77586,7 @@
       "checked_at": "",
       "review_reason": "primary_source_required",
       "discovered_at": "2026-11-19",
-      "audience_text": "Opportunity details | Call for Work: 'Asemic: Text As Art' | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register Call for Work: 'Asemic: Text As Art' Deadline: 04/12/2026 City: Hartlepool | Region: Durham | Country: United Kingdom | Jennifer Batchelor Report this? Description Opportunity FAQs Make a submission Contact curator This is a call for artists to submit artwork or essays/articles to be published in a special edition of the Journal 'PAD: Perspectives in Art and Design' [ISSN: 2632-3877]. We are looking for artwork or articles that contain depictions or discussions of Asemic writing or the broader theme of text being used as visual art. About PAD ( https://www.northernperspectives.co.uk/ ): PAD: Perspectives in Art & Design is The Northern School of Art’s scholarly activity and research journal; a place for the publication of staff and student* academic investigation. Covering issues as diverse as written and practice based research, PAD aims to bring to the fore new ideas, new approaches to existing debates, interpretations on written and visual practice, debates in art and design history, and issues of creative pedagogy. Our goal is to allow scholarly activity to be delivered through equality, where there is no hierarchy between the academic and the student, those with a record of publication, and those who will be shown here for the first time. *Please note: You do not need to be affiliated with The Northern School of Art to submit for this opportunity! This edition: This special edition of PAD, to be published Dec/2026, is being chaired by MA Curation student Jennifer Batchelor as part of her research into how text and the semiotics of text are used in visual art. The journal edition will include examples of artwork as well as articles and an introductory essay by the curator. The journal exists online (linked above) and is freely accessible. The theme of the edition is asemic writing - the artistic practice of creating artwork that contains visuals that appear to resemble language without having any semantic meaning to them. (You might call it \"fake writing\".) Who we are looking for: Artists working with asemic writing. Writers and essayists who have written on the topic of asemic writing or text-based visual art. Graffiti artists (to provide photographs of their work). Calligraphers, letterers and collagists. Artists who have used Automatic Writing as a creative or spiritual output to provide examples. Artists in any medium who consider themselves to use text in their visual art! What we are asking for: We are asking for digital submissions of 2D artwork using asemic writing or text as visual art. This can be illustration, collages, photography or any 2D medium. We will also gladly accept photographs of 3D art and live installations that cannot be sent digitally, i.e graffiti or sculptures. Along with this we are also asking for a brief description of the artwork and a short explanation of why you feel it meets the brief, to be published alongside it. Please no submissions containing generative AI! Thank you. Make a submission Contact the curator Who is eligible for this opportunity? Open to all artists and writers regardless of experience or publication history. All we ask is that no generative AI is used in the submitted work. When is the deadline? 4/12/2026 How many works can I submit? Up to 4 individual artworks or one essay. When is the delivery date? Exact publication date TBA but it will come out Dec 2026. How much does it cost? Free to submit. Are there payments to artists? No. Do I need to be present? No, this is an entirely digital opportunity/publication. What kind of proposals are you looking for? Any visual art medium in .JPG or .PDF format. Any written articles in .PDF or .DOCX format. You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Advertisement Other opportunities Madrid Artist Showcase Open Call – Arrival Gallery Arrival Gallery invites artists in any medium to apply for the Madrid Artist Showcase, a group... ARTISTS OF THE SEASON OPEN CALL - WINTER 2026 ARTISTS OF THE SEASON OPEN CALL - WINTER 2026 Solo Exhibition Open Call CALL FOR ARTISTS SOLO EXHIBITION CURRENTLY ACCEPTING APPLICATIONS Take your art career to the... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
+      "audience_text": "Opportunity details | Call for Work: 'Asemic: Text As Art' | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register Call for Work: 'Asemic: Text As Art' Deadline: 04/12/2026 City: Hartlepool | Region: Durham | Country: United Kingdom | Jennifer Batchelor Report this? Description Opportunity FAQs Make a submission Contact curator This is a call for artists to submit artwork or essays/articles to be published in a special edition of the Journal 'PAD: Perspectives in Art and Design' [ISSN: 2632-3877]. We are looking for artwork or articles that contain depictions or discussions of Asemic writing or the broader theme of text being used as visual art. About PAD ( https://www.northernperspectives.co.uk/ ): PAD: Perspectives in Art & Design is The Northern School of Art’s scholarly activity and research journal; a place for the publication of staff and student* academic investigation. Covering issues as diverse as written and practice based research, PAD aims to bring to the fore new ideas, new approaches to existing debates, interpretations on written and visual practice, debates in art and design history, and issues of creative pedagogy. Our goal is to allow scholarly activity to be delivered through equality, where there is no hierarchy between the academic and the student, those with a record of publication, and those who will be shown here for the first time. *Please note: You do not need to be affiliated with The Northern School of Art to submit for this opportunity! This edition: This special edition of PAD, to be published Dec/2026, is being chaired by MA Curation student Jennifer Batchelor as part of her research into how text and the semiotics of text are used in visual art. The journal edition will include examples of artwork as well as articles and an introductory essay by the curator. The journal exists online (linked above) and is freely accessible. The theme of the edition is asemic writing - the artistic practice of creating artwork that contains visuals that appear to resemble language without having any semantic meaning to them. (You might call it \"fake writing\".) Who we are looking for: Artists working with asemic writing. Writers and essayists who have written on the topic of asemic writing or text-based visual art. Graffiti artists (to provide photographs of their work). Calligraphers, letterers and collagists. Artists who have used Automatic Writing as a creative or spiritual output to provide examples. Artists in any medium who consider themselves to use text in their visual art! What we are asking for: We are asking for digital submissions of 2D artwork using asemic writing or text as visual art. This can be illustration, collages, photography or any 2D medium. We will also gladly accept photographs of 3D art and live installations that cannot be sent digitally, i.e graffiti or sculptures. Along with this we are also asking for a brief description of the artwork and a short explanation of why you feel it meets the brief, to be published alongside it. Please no submissions containing generative AI! Thank you. Make a submission Contact the curator Who is eligible for this opportunity? Open to all artists and writers regardless of experience or publication history. All we ask is that no generative AI is used in the submitted work. When is the deadline? 4/12/2026 How many works can I submit? Up to 4 individual artworks or one essay. When is the delivery date? Exact publication date TBA but it will come out Dec 2026. How much does it cost? Free to submit. Are there payments to artists? No. Do I need to be present? No, this is an entirely digital opportunity/publication. What kind of proposals are you looking for? Any visual art medium in .JPG or .PDF format. Any written articles in .PDF or .DOCX format. You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Advertisement Other opportunities ARTISTS OF THE SEASON OPEN CALL - WINTER 2026 ARTISTS OF THE SEASON OPEN CALL - WINTER 2026 Solo Exhibition Open Call CALL FOR ARTISTS SOLO EXHIBITION CURRENTLY ACCEPTING APPLICATIONS Take your art career to the... Nostalgia Dot Gallery are looking for artworks that evoke ‘Nostalgia’; how you interpret this theme is... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
       "price_type": "unknown",
       "availability_evidence": "",
       "ticket_required": false,
@@ -78081,7 +77667,41 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
+    },
+    {
+      "id": "moscow-2025-12-04-7daa2bd5e7",
+      "status": "new",
+      "kind": "exhibition",
+      "city": "moscow",
+      "date": "2026-12-04",
+      "time": "",
+      "title": "Мария Курбатова. Снегурочка",
+      "venue": "ММОМА",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "выставка"
+      ],
+      "description": "Московский музей современного искусства представляет выставку «Снегурочка» Марии Курбатовой — авторскую интерпретацию сюжета народной сказки о девочке из снега, которая является людям. Экспозиция объединяет более 50 графических произведений, над которыми художница работала с 2009 года.",
+      "url": "https://mmoma.ru/visit/gallery/snow-maiden",
+      "source": "ММОМА — выставки",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-24",
+      "start_date": "2026-12-04",
+      "end_date": "2027-01-24",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-12-04-9c31e3b3c8",
@@ -78243,7 +77863,7 @@
       "audience_text": "Opportunity details | Open Call for JustArt Newspaper Club Issue 9 | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register Open Call for JustArt Newspaper Club Issue 9 Deadline: 05/12/2026 Jenny Ping Lam Lin Report this? Description Make a submission Contact curator Open Call - Issue 9 Digital Residues In an era of technological hyper-acceleration, we leave behind an expanding landscape of digital detritus: obsolete formats, corrupted data, forgotten archives and emotional traces embedded within our screens. For Issue 9, Digital Residues, JustArt invites artists, curators and writers to examine the blind spots of the virtual world and explore what remains when digital promises of seamless connectivity and permanence begin to fracture. We are particularly interested in the shifting relationship between human creativity and artificial intelligence. As generative technologies reshape artistic practice, how do we negotiate authorship, agency, and creative freedom? Should we defend the boundaries of human craftsmanship, or embrace collaboration with intelligent systems to expand the possibilities of expression? We welcome submissions that investigate the material, cultural, and psychological tensions between human expression and machine learning. From digital decay and forgotten archives to algorithmic aesthetics, technological memory and acts of creative resistance, we invite you to reconsider the remnants of our increasingly automated world. What does it mean to create, remember, and resist in a world shaped by machines? What We’re Looking For: Artists: Submit 5-8 images of your artwork, along with a description of your work, your bio, and an artist statement. Curators: Share your past projects, project concepts, and your bio, along with 5-8 accompanying images Participation Fee: £38 (Required for selected participants) - Includes a digital copy Social Media Exposure: Your work will be highlighted on our platforms - JustArt Collective Instagram and website. 5K+ Followers on Instagram, and we are growing! Monthly reviewers on Instagram: 50K+ Distribution: The newspaper will be distributed at various art exhibitions and bookshops across the UK. Bookshops: NewBridge Books (Newcastle Upon Tyne) Kafka Bookshop (London) Good Press (Glasgow) Books From Below (Newcastle Upon Tyne) The JustArt newspaper club (Print) ISSN 2979-5494 The JustArt newspaper club (Online) ISSN 2979-5508 We will feature participants on JustArt Collective social media. As a member of the JustArt community, we will select 1-2 participants for free exhibitions with JustArt. Past selected artists for free exhibitions: Jingyun Guan (Issue1): The Hechyeomoyeo 17 Exhibition in Dublin Aitor Moncho Tudanca (Collective Voices 1st Edition) and Anthony Hodgson(Collective Voices 1st Edition): HCMY Mexicali 2026 in Mexico Jingyun Guan (Issue 1) and Bahar Talebi Najafabadi (Issue 3): Human Voyage: The Day We Leave the Shore Exhibition in London Jenny Ping Lam Lin (Issue 4) and Esther Xiang (Issue 3): The Hechyeomoyeo 13 Exhibition in Thailand Sarah Muwanga (Issue 2) and Chaeyeon Kang (Issue 3): The Shape of Anxiety Exhibition in London Sean BW Parker and Sarah Muwanga (Issue 2): Borderlines Exhibition in London About US: Additional Opportunity Artists participating in this program will be prioritised for invitations to participate in JustArt Collective’s future art exhibitions. About JustArt Collective: JustArt Collective is a dynamic group of artists and curators united by a shared passion for the arts. Originally founded in Hong Kong, the collective is now actively engaged in the UK. Throughout our creative journey, we have recognised the vital role of community within the art world. Our mission is to bring together everyone involved in JustArt projects to form a vibrant new community. We encourage open dialogue and the exchange of ideas on a wide range of art-related topics. This includes not only discussions about artistic practices but also the exploration of how to make art more accessible and visible to a broader audience. By fostering these conversations, we aim to inspire fresh perspectives and a deeper appreciation for art among our community and the wider public. Through collaboration and sharing, we hope to cultivate an environment where creativity thrives and everyone's voice is heard. Join us as we work to redefine the art community and enrich our collective experience. For our newspaper, the first print run will be 50 copies. After we sell out the first round (normally sold out during preorder). We will do 30-50 copies for the second round (distributed at bookshops and exhibitions). More information about JustArt Collective can be found on our official website and Instagram account: @Justart_Collective Make a submission Contact the curator You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Advertisement Other opportunities The 17th Annual Pound Arts Open Exhibition Thank you for submitting your work to the 17th annual Pound Arts Open Exhibition. Please read... Revolution: Open Call for artists in any medium REVOLUTION What is REVOLUTION? Your ideas may be framed in terms of change, transformation, ... Life models wanted in Durham and Hartlepool Looking for life models for regular monthly in-person sessions in Durham, North East England.... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
       "price_type": "unknown",
       "availability": "sold_out",
-      "availability_checked_at": "2026-11-24",
+      "availability_checked_at": "2026-11-25",
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
@@ -78279,7 +77899,7 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "sold_out",
-      "availability_checked_at": "2026-11-24",
+      "availability_checked_at": "2026-11-25",
       "editor_overrides": {
         "status": "approved",
         "registration": false,
@@ -78650,7 +78270,7 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "sold_out",
-      "availability_checked_at": "2026-11-24",
+      "availability_checked_at": "2026-11-25",
       "editor_note": "",
       "reviewed_at": ""
     },
@@ -78753,7 +78373,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-12-07-ca9d4e54f7",
@@ -78829,6 +78451,43 @@
       "telegram_include": false,
       "instagram_include": false,
       "reviewed_at": "2026-11-19"
+    },
+    {
+      "id": "spb-2026-12-07-a742e5228b",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-12-07",
+      "time": "21:12",
+      "title": "Путешествия Иосифа Бродского. Экскурсия в музее; обед — в Шалмане",
+      "venue": "Музей «Полторы комнаты» Иосифа Бродского",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "Иосиф Бродский — автор, путешествующий по Советскому Союзу и за его пределами. До эмиграции его путешествия были во многом обусловлены желанием посмотреть хотя бы свою страну. Опыт, приобретенный в геологических экспедициях, командировках от журнала «Костер» и личных поездках на юг и Балтийское побережье, был отражен в стихах шестидесятых годов.",
+      "url": "https://brodsky.online/events/puteshestviya-iosifa-brodskogo-ekskursiya-v-muzee-obed-v-piteynom-zavedenii-shalman/",
+      "source": "Полторы комнаты — музей Иосифа Бродского",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-10",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-25",
+      "sheet_synced_description": "Иосиф Бродский — автор, путешествующий по Советскому Союзу и за его пределами. До эмиграции его путешествия были во многом обусловлены желанием посмотреть хотя бы свою страну. Опыт, приобретенный в геологических экспедициях, командировках от журнала «Костер» и личных поездках на юг и Балтийское побережье, был отражен в стихах шестидесятых годов.",
+      "social_title": "",
+      "social_description": "",
+      "telegram_include": false,
+      "social_priority": null,
+      "editor_note": "",
+      "instagram_include": false,
+      "instagram_image": "",
+      "time_verification": "verified",
+      "time_evidence": "26.10, 09.11",
+      "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
       "id": "moscow-2026-12-08-70ce184b3e",
@@ -78929,12 +78588,14 @@
       "checked_at": "",
       "review_reason": "primary_source_required",
       "discovered_at": "2026-11-24",
-      "audience_text": "Opportunity details | All Woman | International Group Exhibition 2026 | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register All Woman | International Group Exhibition 2026 Deadline: 09/12/2026 City: london | Country: United Kingdom | No 35 Gallery Report this? Description Opportunity FAQs Make a submission Contact curator No. 35 Gallery invites women artists worldwide to submit work for All Woman—International Online Group Exhibition 2026. This exhibition brings together women artists from different cultural backgrounds, generations, and artistic disciplines, recognizing the diversity of their practices and the importance of women's voices in contemporary visual culture. Selected artists will present their work in a curated international online group exhibition hosted on the No. 35 Gallery website, supported by curatorial presentation and promotion through the gallery's platforms. Artists are invited to submit works inspired by, responding to, or engaging with women's experiences and perspectives, including identity, femininity, the body, personal freedom, relationships, motherhood, cultural heritage, memory, emotional experiences, social expectations, representation, and the relationship between women and society. Submissions may explore gender, belonging, empowerment, vulnerability, resilience, independence, social change, and the ways personal and collective experiences influence artistic expression. The exhibition is not limited to artworks depicting women or addressing gender-related subjects. We welcome all forms of artistic expression created by women, regardless of subject matter. Landscapes, portraits, still life, abstraction, conceptual work, experimental practices, and other artistic approaches are equally encouraged. The theme is intentionally broad, allowing participating artists to present their individual artistic practices without being restricted to conventional representations of womanhood. What Artworks and Subjects Are Included? Womanhood, Identity & Personal Narratives Artworks exploring femininity, self-identity, personal experiences, cultural heritage, family histories, motherhood, relationships, memory, belonging, independence, and the complexities of women's lives across different societies and generations. Submissions may examine the relationship between personal identity and cultural expectations, individual experiences of womanhood, and the ways women represent themselves through art. The Female Body & Representation Portraits, self-portraits, figurative compositions, anatomical studies, representations of the female body, movement, gestures, beauty, ageing, physical identity, body image, and the relationship between the body and personal or social identity. Works may approach the female figure through realism, expressionism, abstraction, symbolism, distortion, fragmentation, or experimental interpretations. Freedom, Society & Cultural Perspectives Artworks addressing women's rights, freedom, equality, social expectations, cultural traditions, representation, resistance, resilience, and the changing roles of women in contemporary society. Submissions may explore personal and collective histories, political and social experiences, migration, cultural identity, empowerment, and the relationship between individual freedom and wider social structures. Individual Artistic Expression & Contemporary Practices The exhibition equally welcomes artworks that do not directly address womanhood or gender. Landscapes, cityscapes, still life, nature, animals, architecture, abstraction, surrealism, minimalism, experimental photography, conceptual art, and other subjects are welcome. We are interested in the diversity of artistic languages developed by women artists, including investigations of colour, form, material, texture, composition, perception, and contemporary visual experiences. All Woman is an exhibition of art by women, not only art about women. We welcome submissions from emerging and established women artists working across all visual art mediums, including painting, photography, sculpture, mixed media, digital art, textile art, printmaking, drawing, collage, installation documentation, and other contemporary practices. Through this exhibition, No. 35 Gallery aims to create a space for women artists from around the world to present their work, exchange perspectives, and contribute to a wider conversation about women's presence and influence in contemporary art. Eligibility This open call is open to women artists worldwide, including trans women, working in any visual art medium or discipline. Both emerging and established artists are welcome to apply. Applicants must be aged 18 or over. Fees Submission is free. Only selected artists will be invited to participate in the exhibition. A £15.50 participation fee per selected artwork applies only after selection. There is no fee to submit an application. What Selected Artists Receive Selected artists will receive: Participation in a curated international online group exhibition hosted on the No. 35 Gallery website A dedicated online exhibition presentation featuring selected artworks Curatorial selection and structuring of the exhibition Inclusion of the artist's name, artwork details, and relevant professional links Social media promotion through the gallery's platforms Continued visibility through the gallery's online exhibition archive Inclusion in a professionally curated, high-quality digital exhibition catalogue featuring the artwork image, artist biography, artist statement, artwork details, and sales information where applicable A digital Certificate of Participation confirming inclusion in the exhibition Promotion & Reach The exhibition and selected artists will be promoted through No. 35 Gallery's platforms: Exposure We have 30,000 Instagram followers and growing Approximately 25,000 monthly website visitors, with projected growth to 100,000 monthly visitors through ongoing promotion and audience development. Additional promotion may include newsletters, social media features, artist highlights, and exhibition announcements across the gallery's platforms. Curatorial Support Selection and structuring of artworks Design and development of the online exhibition layout Consideration of visual and conceptual relationships between selected works Guidance on artwork presentation where required Development of a cohesive and professionally presented exhibition experience Exhibition Details The exhibition will be presented online through the No. 35 Gallery website. Important: Artists may submit one artwork per application . Artists wishing to submit additional artworks must complete a separate application form for each additional artwork. Selected works will be curated into a dedicated digital exhibition accessible to an international audience. Following the exhibition period, the exhibition will remain archived on the gallery website for one year, allowing continued visibility for participating artists and their work. Sales & Commission Artists may choose to make their artworks available for sale through the exhibition. No. 35 Gallery takes a 30% commission on any sales made through the exhibition. About No. 35 Gallery No. 35 Gallery is an independent online contemporary art platform supporting emerging and established artists through curated exhibitions, solo presentations, artist interviews, and international open calls. The gallery provides artists with opportunities for visibility, professional presentation, and connection with international audiences. Founded in 2025 by Anisa M. Nia. Based in London, UK. How to Apply and Important Information Applications can be submitted through the application form on CuratorSpace. Artists may submit one artwork per application. Artists wishing to submit additional artworks must complete a separate application form for each additional artwork. Please ensure that all submitted images are clear, high-quality, and accurately represent the artwork. Submission is free. There is no application fee. A non-refundable participation fee of £15.50 GBP per selected artwork applies only to artists whose work has been selected for the exhibition. Artists who are not selected will not be charged any fee. For questions regarding the opportunity or participation process, please contact the curator. For technical questions regarding the application platform, please contact CuratorSpace support. Make a submission Contact the curator When is the deadline? 09/ December / 2026. How many works can I submit? Artists may submit one artwork per application. Artists wishing to submit additional artworks must complete a separate application form for each additional artwork. When is the delivery date? As it is an online exhibition, there is no need to deliver your works. When do I need to collect my work? As it is an online exhibition, there is no need to collect your works Is there a private view / opening? As it is an online exhibition, there is no private view. What are the exhibition opening hours? As it is an online exhibition, it's open 24 hours, 7 days of the week. What publicity will be provided as part of the opportunity? The exhibition and selected artists will be promoted through No. 35 Gallery’s platforms: Instagram: 30,000 followers and growing Website: approximately 30,000 monthly visitors, with projected growth to 100,000 monthly visitors through ongoing promotion and audience development. Additional promotion may include newsletters, social media features, artist highlights, and exhibition announcements across the gallery’s platforms. Do I need to be present? As it is an online exhibition, there is no need to be present at venue. What are the selection criteria? Artistic Quality — The overall strength, execution, and visual impact of the submitted work. Relevance to the Theme — How effectively the work engages with abstraction, whether through form, colour, material, gesture, concept, process, or experimentation. Originality and Individual Voice — Evidence of a distinctive artistic perspective, approach, or visual language. Conceptual and Visual Strength — The ability of the work to communicate a compelling visual, emotional, material, or conceptual experience. Curatorial Compatibility — How the work contributes to the overall dialogue, diversity, balance, and cohesion of the exhibition. Quality of Presentation — The clarity and professional quality of the submitted artwork image and supporting information. You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Advertisement Other opportunities Madrid Artist Showcase Open Call – Arrival Gallery Arrival Gallery invites artists in any medium to apply for the Madrid Artist Showcase, a group... ARTISTS OF THE SEASON OPEN CALL - WINTER 2026 ARTISTS OF THE SEASON OPEN CALL - WINTER 2026 Solo Exhibition Open Call CALL FOR ARTISTS SOLO EXHIBITION CURRENTLY ACCEPTING APPLICATIONS Take your art career to the... More opportunities © 2026 by CuratorSpace Terms ",
+      "audience_text": "Opportunity details | All Woman | International Group Exhibition 2026 | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register All Woman | International Group Exhibition 2026 Deadline: 09/12/2026 City: london | Country: United Kingdom | No 35 Gallery Report this? Description Opportunity FAQs Make a submission Contact curator No. 35 Gallery invites women artists worldwide to submit work for All Woman—International Online Group Exhibition 2026. This exhibition brings together women artists from different cultural backgrounds, generations, and artistic disciplines, recognizing the diversity of their practices and the importance of women's voices in contemporary visual culture. Selected artists will present their work in a curated international online group exhibition hosted on the No. 35 Gallery website, supported by curatorial presentation and promotion through the gallery's platforms. Artists are invited to submit works inspired by, responding to, or engaging with women's experiences and perspectives, including identity, femininity, the body, personal freedom, relationships, motherhood, cultural heritage, memory, emotional experiences, social expectations, representation, and the relationship between women and society. Submissions may explore gender, belonging, empowerment, vulnerability, resilience, independence, social change, and the ways personal and collective experiences influence artistic expression. The exhibition is not limited to artworks depicting women or addressing gender-related subjects. We welcome all forms of artistic expression created by women, regardless of subject matter. Landscapes, portraits, still life, abstraction, conceptual work, experimental practices, and other artistic approaches are equally encouraged. The theme is intentionally broad, allowing participating artists to present their individual artistic practices without being restricted to conventional representations of womanhood. What Artworks and Subjects Are Included? Womanhood, Identity & Personal Narratives Artworks exploring femininity, self-identity, personal experiences, cultural heritage, family histories, motherhood, relationships, memory, belonging, independence, and the complexities of women's lives across different societies and generations. Submissions may examine the relationship between personal identity and cultural expectations, individual experiences of womanhood, and the ways women represent themselves through art. The Female Body & Representation Portraits, self-portraits, figurative compositions, anatomical studies, representations of the female body, movement, gestures, beauty, ageing, physical identity, body image, and the relationship between the body and personal or social identity. Works may approach the female figure through realism, expressionism, abstraction, symbolism, distortion, fragmentation, or experimental interpretations. Freedom, Society & Cultural Perspectives Artworks addressing women's rights, freedom, equality, social expectations, cultural traditions, representation, resistance, resilience, and the changing roles of women in contemporary society. Submissions may explore personal and collective histories, political and social experiences, migration, cultural identity, empowerment, and the relationship between individual freedom and wider social structures. Individual Artistic Expression & Contemporary Practices The exhibition equally welcomes artworks that do not directly address womanhood or gender. Landscapes, cityscapes, still life, nature, animals, architecture, abstraction, surrealism, minimalism, experimental photography, conceptual art, and other subjects are welcome. We are interested in the diversity of artistic languages developed by women artists, including investigations of colour, form, material, texture, composition, perception, and contemporary visual experiences. All Woman is an exhibition of art by women, not only art about women. We welcome submissions from emerging and established women artists working across all visual art mediums, including painting, photography, sculpture, mixed media, digital art, textile art, printmaking, drawing, collage, installation documentation, and other contemporary practices. Through this exhibition, No. 35 Gallery aims to create a space for women artists from around the world to present their work, exchange perspectives, and contribute to a wider conversation about women's presence and influence in contemporary art. Eligibility This open call is open to women artists worldwide, including trans women, working in any visual art medium or discipline. Both emerging and established artists are welcome to apply. Applicants must be aged 18 or over. Fees Submission is free. Only selected artists will be invited to participate in the exhibition. A £15.50 participation fee per selected artwork applies only after selection. There is no fee to submit an application. What Selected Artists Receive Selected artists will receive: Participation in a curated international online group exhibition hosted on the No. 35 Gallery website A dedicated online exhibition presentation featuring selected artworks Curatorial selection and structuring of the exhibition Inclusion of the artist's name, artwork details, and relevant professional links Social media promotion through the gallery's platforms Continued visibility through the gallery's online exhibition archive Inclusion in a professionally curated, high-quality digital exhibition catalogue featuring the artwork image, artist biography, artist statement, artwork details, and sales information where applicable A digital Certificate of Participation confirming inclusion in the exhibition Promotion & Reach The exhibition and selected artists will be promoted through No. 35 Gallery's platforms: Exposure We have 30,000 Instagram followers and growing Approximately 25,000 monthly website visitors, with projected growth to 100,000 monthly visitors through ongoing promotion and audience development. Additional promotion may include newsletters, social media features, artist highlights, and exhibition announcements across the gallery's platforms. Curatorial Support Selection and structuring of artworks Design and development of the online exhibition layout Consideration of visual and conceptual relationships between selected works Guidance on artwork presentation where required Development of a cohesive and professionally presented exhibition experience Exhibition Details The exhibition will be presented online through the No. 35 Gallery website. Important: Artists may submit one artwork per application . Artists wishing to submit additional artworks must complete a separate application form for each additional artwork. Selected works will be curated into a dedicated digital exhibition accessible to an international audience. Following the exhibition period, the exhibition will remain archived on the gallery website for one year, allowing continued visibility for participating artists and their work. Sales & Commission Artists may choose to make their artworks available for sale through the exhibition. No. 35 Gallery takes a 30% commission on any sales made through the exhibition. About No. 35 Gallery No. 35 Gallery is an independent online contemporary art platform supporting emerging and established artists through curated exhibitions, solo presentations, artist interviews, and international open calls. The gallery provides artists with opportunities for visibility, professional presentation, and connection with international audiences. Founded in 2025 by Anisa M. Nia. Based in London, UK. How to Apply and Important Information Applications can be submitted through the application form on CuratorSpace. Artists may submit one artwork per application. Artists wishing to submit additional artworks must complete a separate application form for each additional artwork. Please ensure that all submitted images are clear, high-quality, and accurately represent the artwork. Submission is free. There is no application fee. A non-refundable participation fee of £15.50 GBP per selected artwork applies only to artists whose work has been selected for the exhibition. Artists who are not selected will not be charged any fee. For questions regarding the opportunity or participation process, please contact the curator. For technical questions regarding the application platform, please contact CuratorSpace support. Make a submission Contact the curator When is the deadline? 09/ December / 2026. How many works can I submit? Artists may submit one artwork per application. Artists wishing to submit additional artworks must complete a separate application form for each additional artwork. When is the delivery date? As it is an online exhibition, there is no need to deliver your works. When do I need to collect my work? As it is an online exhibition, there is no need to collect your works Is there a private view / opening? As it is an online exhibition, there is no private view. What are the exhibition opening hours? As it is an online exhibition, it's open 24 hours, 7 days of the week. What publicity will be provided as part of the opportunity? The exhibition and selected artists will be promoted through No. 35 Gallery’s platforms: Instagram: 30,000 followers and growing Website: approximately 30,000 monthly visitors, with projected growth to 100,000 monthly visitors through ongoing promotion and audience development. Additional promotion may include newsletters, social media features, artist highlights, and exhibition announcements across the gallery’s platforms. Do I need to be present? As it is an online exhibition, there is no need to be present at venue. What are the selection criteria? Artistic Quality — The overall strength, execution, and visual impact of the submitted work. Relevance to the Theme — How effectively the work engages with abstraction, whether through form, colour, material, gesture, concept, process, or experimentation. Originality and Individual Voice — Evidence of a distinctive artistic perspective, approach, or visual language. Conceptual and Visual Strength — The ability of the work to communicate a compelling visual, emotional, material, or conceptual experience. Curatorial Compatibility — How the work contributes to the overall dialogue, diversity, balance, and cohesion of the exhibition. Quality of Presentation — The clarity and professional quality of the submitted artwork image and supporting information. You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Advertisement Other opportunities ARTISTS OF THE SEASON OPEN CALL - WINTER 2026 ARTISTS OF THE SEASON OPEN CALL - WINTER 2026 Solo Exhibition Open Call CALL FOR ARTISTS SOLO EXHIBITION CURRENTLY ACCEPTING APPLICATIONS Take your art career to the... Nostalgia Dot Gallery are looking for artworks that evoke ‘Nostalgia’; how you interpret this theme is... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
       "price_type": "unknown",
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-12-09-e0b925668b",
@@ -78995,7 +78656,7 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "sold_out",
-      "availability_checked_at": "2026-11-24",
+      "availability_checked_at": "2026-11-25",
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
@@ -79365,7 +79026,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-12-11-556173ab41",
@@ -79694,6 +79357,34 @@
       "availability_checked_at": ""
     },
     {
+      "id": "spb-2026-12-12-1fead9e647",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-12-12",
+      "time": "14:00",
+      "title": "Диалоги об искусстве на английском языке в «Сообществе». Интуиция",
+      "venue": "Новая Голландия",
+      "address": "",
+      "price": 300,
+      "price_text": "300 ₽",
+      "registration": null,
+      "categories": [
+        "диалог"
+      ],
+      "description": "Новый цикл семинаров на английском языке посвящен шести чувствам и их связи с мировой культурой. Вместе обсудим разные способы чувствовать мир и познавать прекрасное, через литературу, музыку и кино. Ведущие: преподаватель литературы Том Бетелл и филолог Дарья Ларина.",
+      "url": "https://www.newhollandsp.ru/events/education/dialogues-intuition/",
+      "source": "Новая Голландия — Сообщество и образование",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-25",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-12-12-422be2d050",
       "status": "rejected",
       "kind": "event",
@@ -79934,7 +79625,7 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "sold_out",
-      "availability_checked_at": "2026-11-24",
+      "availability_checked_at": "2026-11-25",
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
@@ -80504,7 +80195,7 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "sold_out",
-      "availability_checked_at": "2026-11-24",
+      "availability_checked_at": "2026-11-25",
       "editor_overrides": {
         "registration": false,
         "telegram_include": false,
@@ -80694,7 +80385,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-12-17-91c3c05e64",
@@ -81281,6 +80974,34 @@
       "reviewed_at": "2026-11-23"
     },
     {
+      "id": "moscow-2026-12-19-0703baf9d1",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-12-19",
+      "time": "12:00",
+      "title": "Мастер-класс «Чеканка. Серебряный силуэт зимнего города»",
+      "venue": "Музей Транспорта Москвы",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "",
+      "url": "https://mtmuseum.ru/affiche/master-klass-chekanka-serebryanyy-siluet-zimnego-goroda1/",
+      "source": "Музей транспорта Москвы — афиша",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-25",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-12-19-8cb3f8d42f",
       "status": "rejected",
       "kind": "event",
@@ -81763,12 +81484,14 @@
       "checked_at": "",
       "review_reason": "primary_source_required",
       "discovered_at": "2026-11-24",
-      "audience_text": "Opportunity details | Emerging Weaver – Paid Creative Development Opportunity | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register Emerging Weaver – Paid Creative Development Opportunity Deadline: 23/12/2026 City: Sedbergh | Country: United Kingdom | Clare Huggonson Paid opportunity Report this? Description Opportunity FAQs Make a submission Contact curator Farfield Mill is offering a 15-week paid placement for a recent graduate or early-career artist or maker. Based in the Yorkshire Dales, the opportunity includes specialist weaving tuition, mentoring, workspace and equipment to help develop creative skills and professional practice. 30 hours per week | Paid at National Minimum Wage Are you a recent graduate or early-career artist or maker looking to develop your creative practice? Farfield Mill is offering an exciting 15-week paid placement as part of our Weaving Futures Programme. Based in our historic Victorian woollen mill in the Yorkshire Dales, you’ll have the opportunity to explore traditional and contemporary weaving, experiment with new ideas and develop your own work. With specialist tuition, mentoring, dedicated workspace and access to weaving equipment, this is a fantastic opportunity to build your skills, grow your portfolio and take the next step in your creative career. 30 hours per week | 15 weeks | Paid at National Minimum Wage Interested? We’d love to hear from you. Please get in touch to find out more. Make a submission Contact the curator Who is eligible for this opportunity? An emerging or early career weaver. When is the deadline? 23 December 2027 Are there payments to artists? Yes national minimum wage. Does the location have disabled access? Yes You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Advertisement Other opportunities Madrid Artist Showcase Open Call – Arrival Gallery Arrival Gallery invites artists in any medium to apply for the Madrid Artist Showcase, a group... ARTISTS OF THE SEASON OPEN CALL - WINTER 2026 ARTISTS OF THE SEASON OPEN CALL - WINTER 2026 Solo Exhibition Open Call CALL FOR ARTISTS SOLO EXHIBITION CURRENTLY ACCEPTING APPLICATIONS Take your art career to the... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
+      "audience_text": "Opportunity details | Emerging Weaver – Paid Creative Development Opportunity | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register Emerging Weaver – Paid Creative Development Opportunity Deadline: 23/12/2026 City: Sedbergh | Country: United Kingdom | Clare Huggonson Paid opportunity Report this? Description Opportunity FAQs Make a submission Contact curator Farfield Mill is offering a 15-week paid placement for a recent graduate or early-career artist or maker. Based in the Yorkshire Dales, the opportunity includes specialist weaving tuition, mentoring, workspace and equipment to help develop creative skills and professional practice. 30 hours per week | Paid at National Minimum Wage Are you a recent graduate or early-career artist or maker looking to develop your creative practice? Farfield Mill is offering an exciting 15-week paid placement as part of our Weaving Futures Programme. Based in our historic Victorian woollen mill in the Yorkshire Dales, you’ll have the opportunity to explore traditional and contemporary weaving, experiment with new ideas and develop your own work. With specialist tuition, mentoring, dedicated workspace and access to weaving equipment, this is a fantastic opportunity to build your skills, grow your portfolio and take the next step in your creative career. 30 hours per week | 15 weeks | Paid at National Minimum Wage Interested? We’d love to hear from you. Please get in touch to find out more. Make a submission Contact the curator Who is eligible for this opportunity? An emerging or early career weaver. When is the deadline? 23 December 2027 Are there payments to artists? Yes national minimum wage. Does the location have disabled access? Yes You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Advertisement Other opportunities ARTISTS OF THE SEASON OPEN CALL - WINTER 2026 ARTISTS OF THE SEASON OPEN CALL - WINTER 2026 Solo Exhibition Open Call CALL FOR ARTISTS SOLO EXHIBITION CURRENTLY ACCEPTING APPLICATIONS Take your art career to the... Nostalgia Dot Gallery are looking for artworks that evoke ‘Nostalgia’; how you interpret this theme is... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
       "price_type": "unknown",
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-12-23-422be2d050",
@@ -81823,7 +81546,7 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "sold_out",
-      "availability_checked_at": "2026-11-24",
+      "availability_checked_at": "2026-11-25",
       "editor_note": "",
       "reviewed_at": ""
     },
@@ -81892,6 +81615,34 @@
       "sheet_synced_description": "Дорогие друзья, представляем вам программу «Просветительская среда» — специальный цикл лекций, подготовленный к выставке «Все Бенуа — Всё Бенуа» . По средам вечером встречаемся с вами в аванзале Манежа и погружаемся в многогранное творчество династии Бенуа. Вместе с известными культурологами, историками и искусствоведами, исследуем различные грани наследия великой семьи.",
       "time_verification": "unverified",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
+    },
+    {
+      "id": "spb-2026-12-24-26b2709e7b",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-12-24",
+      "time": "19:00",
+      "title": "Лекторий Эрмитажа в Новой Голландии. Блеск серебра и звон бокалов: предметы декоративно-прикладного искусства в живописи Нидерландов",
+      "venue": "Новая Голландия",
+      "address": "",
+      "price": 300,
+      "price_text": "300 ₽",
+      "registration": null,
+      "categories": [
+        "игра"
+      ],
+      "description": "Новая Голландия и Государственный Эрмитаж продолжают долгосрочный образовательный проект — Лекторий Эрмитажа в «Сообществе». Жанровые сцены фламандских и голландских художников XVI-XVII веков, изысканные натюрморты и даже религиозные картины являются неоценимым источником для изучения материальной культуры эпохи барокко. Что такое кубок-наутилус?",
+      "url": "https://www.newhollandsp.ru/events/education/hermitage-netherlands-3/",
+      "source": "Новая Голландия — Сообщество и образование",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-25",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-12-24-517ed8da28",
@@ -82082,7 +81833,7 @@
       "checked_at": "",
       "review_reason": "primary_source_required",
       "discovered_at": "2026-11-20",
-      "audience_text": "Opportunity details | Paint Lab 2027 - A weekend of live painting inspired by science. | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register Paint Lab 2027 - A weekend of live painting inspired by science. Deadline: 05/01/2027 City: London | Country: United Kingdom | Jo Peel Paid opportunity Report this? Description Opportunity FAQs Make a submission Contact curator Take part in Paint Lab – a weekend of live painting celebrating art and science. We’re inviting 10 London-based artists to each collaborate with a researcher from Imperial College London to create an artwork inspired by science - live over the weekend of the annual Great Exhibition Road Festival (19-20 June 2027) on Exhibition Road, South Kensington. Paint Lab brings cutting-edge science to life through live mural painting right in the middle of London’s iconic Exhibition Road. This is your chance to collaborate directly with pioneering scientists, transforming their discoveries into vibrant public art. You'll be part of a spectacular weekend celebration of art and science that last year drew over 55,000 visitors! The Process If successful in your application - you will be introduced to a scientific researcher in mid February and will then have until April to complete your proposed design. You will then paint it live during the festival on Exhibition Road, London - over the festival weekend 19-20 June 2027. This process will involve whatever support you require in the way of brainstorms and research material. The Canvas We will provide you with an approximately 8’ x 8’ wood surface, which will be mounted on a large easel for you to get creative with. Your Payment We will offer a fixed fee of £1200 (incl VAT) that will include materials, preparation and two days of live painting on 19 and 20 June 2027 at The Great Exhibition Road Festival. Applications closed at 11:59pm on Monday 4 January 2027. Successful and unsuccessful applicants will be contacted by the end of January 2027. If you have any access needs that affect how you’d prefer to submit an application, please contact Sevinc Kisacik through the contact curator tab to discuss this further. You can see the works from previous years here: Paint Lab 2023 Paint Lab 2024 Paint Lab 2025 Paint Lab 2026 Make a submission Contact the curator Who is eligible for this opportunity? We are seeking artists who are comfortable working in a public setting and able to create a large-scale artwork within a two-day timeframe. This opportunity is ideal for artists experienced in live or on-site painting and interested in engaging with the public during the creative process. When is the deadline? 11:59pm 4th January 2027 How many works can I submit? Please submit 5 examples of your artwork that showcase your skills and represent the style of work you’d like to create for this project. When is the delivery date? The festival runs over the weekend of 19–20 June 2027 as part of the Great Exhibition Road Festival. Artists will be expected to paint on site across both days. In advance of the festival, each artist will be paired with a scientific researcher from Imperial College, working together to develop the concept for the artwork created live during the event. Are there payments to artists? Yes. We will offer a fixed fee of £1200 (incl VAT) that includes the cost of any materials, preparation and two days of live painting on 19 and 20 June 2027 at The Great Exhibition Road Festival. Does the location have disabled access? If you have any access or disability requirements, please let us know in your application, and we will make arrangements to support you during the event. How do you decide on proposals? Proposals will be assessed based on the quality of the artwork, suitability for display in a public setting, and how effectively the proposal complements the work of the other selected artists and associated scientific research projects. You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Advertisement Other opportunities Madrid Artist Showcase Open Call – Arrival Gallery Arrival Gallery invites artists in any medium to apply for the Madrid Artist Showcase, a group... ARTISTS OF THE SEASON OPEN CALL - WINTER 2026 ARTISTS OF THE SEASON OPEN CALL - WINTER 2026 Solo Exhibition Open Call CALL FOR ARTISTS SOLO EXHIBITION CURRENTLY ACCEPTING APPLICATIONS Take your art career to the... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
+      "audience_text": "Opportunity details | Paint Lab 2027 - A weekend of live painting inspired by science. | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register Paint Lab 2027 - A weekend of live painting inspired by science. Deadline: 05/01/2027 City: London | Country: United Kingdom | Jo Peel Paid opportunity Report this? Description Opportunity FAQs Make a submission Contact curator Take part in Paint Lab – a weekend of live painting celebrating art and science. We’re inviting 10 London-based artists to each collaborate with a researcher from Imperial College London to create an artwork inspired by science - live over the weekend of the annual Great Exhibition Road Festival (19-20 June 2027) on Exhibition Road, South Kensington. Paint Lab brings cutting-edge science to life through live mural painting right in the middle of London’s iconic Exhibition Road. This is your chance to collaborate directly with pioneering scientists, transforming their discoveries into vibrant public art. You'll be part of a spectacular weekend celebration of art and science that last year drew over 55,000 visitors! The Process If successful in your application - you will be introduced to a scientific researcher in mid February and will then have until April to complete your proposed design. You will then paint it live during the festival on Exhibition Road, London - over the festival weekend 19-20 June 2027. This process will involve whatever support you require in the way of brainstorms and research material. The Canvas We will provide you with an approximately 8’ x 8’ wood surface, which will be mounted on a large easel for you to get creative with. Your Payment We will offer a fixed fee of £1200 (incl VAT) that will include materials, preparation and two days of live painting on 19 and 20 June 2027 at The Great Exhibition Road Festival. Applications closed at 11:59pm on Monday 4 January 2027. Successful and unsuccessful applicants will be contacted by the end of January 2027. If you have any access needs that affect how you’d prefer to submit an application, please contact Sevinc Kisacik through the contact curator tab to discuss this further. You can see the works from previous years here: Paint Lab 2023 Paint Lab 2024 Paint Lab 2025 Paint Lab 2026 Make a submission Contact the curator Who is eligible for this opportunity? We are seeking artists who are comfortable working in a public setting and able to create a large-scale artwork within a two-day timeframe. This opportunity is ideal for artists experienced in live or on-site painting and interested in engaging with the public during the creative process. When is the deadline? 11:59pm 4th January 2027 How many works can I submit? Please submit 5 examples of your artwork that showcase your skills and represent the style of work you’d like to create for this project. When is the delivery date? The festival runs over the weekend of 19–20 June 2027 as part of the Great Exhibition Road Festival. Artists will be expected to paint on site across both days. In advance of the festival, each artist will be paired with a scientific researcher from Imperial College, working together to develop the concept for the artwork created live during the event. Are there payments to artists? Yes. We will offer a fixed fee of £1200 (incl VAT) that includes the cost of any materials, preparation and two days of live painting on 19 and 20 June 2027 at The Great Exhibition Road Festival. Does the location have disabled access? If you have any access or disability requirements, please let us know in your application, and we will make arrangements to support you during the event. How do you decide on proposals? Proposals will be assessed based on the quality of the artwork, suitability for display in a public setting, and how effectively the proposal complements the work of the other selected artists and associated scientific research projects. You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Advertisement Other opportunities ARTISTS OF THE SEASON OPEN CALL - WINTER 2026 ARTISTS OF THE SEASON OPEN CALL - WINTER 2026 Solo Exhibition Open Call CALL FOR ARTISTS SOLO EXHIBITION CURRENTLY ACCEPTING APPLICATIONS Take your art career to the... Nostalgia Dot Gallery are looking for artworks that evoke ‘Nostalgia’; how you interpret this theme is... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
       "price_type": "unknown",
       "availability_evidence": "",
       "ticket_required": false,
@@ -82121,6 +81872,35 @@
       "availability_checked_at": "",
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "international-2027-01-09-4ea7284299",
+      "status": "check",
+      "kind": "open_call",
+      "city": "international",
+      "date": "2027-01-09",
+      "time": "",
+      "title": "Meet the Locals 2027 exhibition - open call",
+      "venue": "CuratorSpace",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "open-call"
+      ],
+      "description": "City: Sheffield | Region: South Yorkshire | Country: United Kingdom | Fronteer Art",
+      "url": "https://www.curatorspace.com/opportunities/detail/meet-the-locals--exhibition--open-call/11381",
+      "source": "CuratorSpace — opportunities",
+      "checked_at": "",
+      "review_reason": "primary_source_required",
+      "discovered_at": "2026-11-25",
+      "audience_text": "Opportunity details | Meet the Locals 2027 exhibition - open call | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register Meet the Locals 2027 exhibition - open call Deadline: 09/01/2027 City: Sheffield | Region: South Yorkshire | Country: United Kingdom | Fronteer Art Report this? Description Opportunity FAQs Make a submission Contact curator Fronteer Gallery are looking for artwork for our annual exhibition of local artists called “Meet the Locals” Fronteer are looking for artwork by artists local to South Yorkshire and the surrounding counties, to be part of our Meet the Locals exhibition. We host this exhibition each year and it is our only exhibition exclusively for local artists. Artists from anywhere local to South Yorkshire are welcome to submit work. This could be someone based in Derbyshire, Lincolnshire, Nottinghamshire, Yorkshire, or anywhere else that you might consider as local. Work can be in any medium, except audio or video works. Wall mounted work can be any size or shape, but should take up no more than 70x70cm of wall space. Sculptural work should fit on a 30x30cm plinth, and should not exceed 50cm height x 30cm x 30cm. Artists are invited to submit 1 piece of work for the exhibition. You may provide a short description of no more than 100 words which will be displayed alongside the work. Please note that the gallery is upstairs, and there is no disabled access. DATES The exhibition will run from 2nd - 11th February 2027. There will be a private view event on Saturday 30th January, 4- 6 pm. Artists from all backgrounds are invited to submit one piece of work each. It is free to apply, with only successful artists paying a fee of £35. In return for your fee, you will get an event evening with free drinks, which you are welcome to bring friends and family along to, invigilation throughout, and promotion of the exhibition online through social media posts. The submission deadline is 9th January 2027. Successful artists will be contacted after the submission deadline, by 11th January 2027. Successful artists are welcome to send their work by post. Work sent by post should reach us by 21st January 2027 at the latest. Artists are also welcome to deliver work in person to the gallery during gallery opening hours between 12th-21st January. If you have any issues with these dates, please contact us before applying, and we may be able to help. Successful artists should pay their fee by 21st January 2027 at the latest. Work can be offered for sale during the exhibition, and there is a commission charge of 10%. Please contact us if you have any questions. HOW TO SUBMIT Wall Mounted work Artists are invited to submit one piece of work each. Work can be any size or shape but should take up no more than 70x70cm of wall space. Please give us the completed size of your work including any frames or mounts. All work should be ready to hang and can be framed or unframed, with suitable hanging attachments in place. You may submit up to 3 images of your piece of work. One image to show the whole piece and a further two images to show details if required. Please be clear about how your work hangs. Please note, although there is an upper limit size restriction, we only have a limited capacity to accept larger works, and smaller works are much more likely to be successful. Sculpture and 3-D 3-D and sculptural work that does not hang on the wall should be no bigger than 50cm Height x 30cm width x 30cm depth. All work should arrive ready to display. Please be clear about how your work stands or is displayed. COLLECTING WORK Work can be collected from the gallery between 23rd February - 11th March during gallery opening hours. If you would like your work returned to you by post, please be aware that we charge a fee which includes a £4 handling fee and the cost of Tracked 48 (no signature required) postage. Larger parcels can be returned through Parcelforce and will be sent Express 48. Couriers cannot collect your work from the gallery and we do not print postage labels. All work must be complete at the time of submission. Any work which varies from the original piece or size submitted may be rejected. We will not accept a canvas print as a substitute for an original artwork. If you wish to submit any form of print, it will be your responsibility to print it off and prepare it for exhibition before delivering it to us. Please note, we do not provide letters of recommendation or participation for artists exhibiting with us. Thank you and good luck! The Fronteer Team ABOUT FRONTEER Fronteer are a husband and wife artist led initiative who create exhibition opportunities for artists. In 2020 we opened our gallery, moving in 2022 to our current location in Orchard Square, Sheffield city centre. The gallery has 2 exhibition spaces. We receive hundreds of visitors during an exhibition and would typically expect over 300 visitors during a 3 week exhibition. Our private view events can attract up to 100+ visitors. We have 2 Instagram accounts to share images of artists' work and news about the gallery. @fronteer_art has around 5000 followers and @fronteer gallery has over 6000 followers. Instagram is our main social media platform, but we also share posts on Facebook, YouTube and Threads. Make a submission Contact the curator When is the deadline? 9/1/27 How many works can I submit? 1 When is the delivery date? 21st January 2027 Is there a private view / opening? 30/1/27 4-6 pm. Does the location have disabled access? No You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Advertisement Other opportunities ARTISTS OF THE SEASON OPEN CALL - WINTER 2026 ARTISTS OF THE SEASON OPEN CALL - WINTER 2026 Solo Exhibition Open Call CALL FOR ARTISTS SOLO EXHIBITION CURRENTLY ACCEPTING APPLICATIONS Take your art career to the... Nostalgia Dot Gallery are looking for artworks that evoke ‘Nostalgia’; how you interpret this theme is... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "international-2027-01-10-42819ba9a4",
@@ -82245,7 +82025,7 @@
       "checked_at": "",
       "review_reason": "primary_source_required",
       "discovered_at": "2026-11-19",
-      "audience_text": "Opportunity details | Dovecote Gallery: MID-SUMMER CERAMICS FAIR 2027 | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register Dovecote Gallery: MID-SUMMER CERAMICS FAIR 2027 Deadline: 11/01/2027 City: Styrrup , Doncaster | Region: Nottinghamshire | Country: United Kingdom | hilary cartmel Report this? Description Opportunity FAQs Make a submission Contact curator Dovecot Gallery Mid-Summer Ceramics 2027. June 12th and 13th We are hosting our 5th ceramics fair in the beautiful setting of the Dovecot's garden and yard. We have space for 27 stands for ceramic artists to showcase their work in the garden, yard and gallery . We are looking for potters at all stages of their careers with strong work and outgoing personalities to engage with the public. Application to this event is free. Dovecot Gallery Mid-Summer Ceramics 2027 takes place on the weekend of 12 and 13 June The event, which takes place over a weekend in June, will also host demonstrations and a 'Have-a-Go-throw' experience on the potters' wheel for the visiting public. Exhibiting potters are welcome to sign up to help out. We have been raising funds for the Doncaster Ukrainian Centre since 2022 and on site will be a fabulous cafe serving home-made cake, tea and coffee, organised by volunteers from the Doncaster Ukrainian Centre. There will be seating both inside and outside amongst the stalls for visitors to relax and enjoy their visit. Exhibitors are invited to stay on site on Saturday evening for our potter's party, featuring Anne's famous paella. The cost of exhibiting is: Option A - A full 3m x 3m gazebo, which is approximately two 6ft x 2.6ft tables £120 Option B - A shared 3m x 3m gazebo, which is approximately one 6ft x 2ft table £70 Your application MUST be accompanied by good quality photos of your work, on an uncluttered background. Please leave plenty of space around the work for the addition of text. We shall use these to make our selection decision as well as for successful applicants' publicity purposes for the event on social media, website and print. Ceramic Fair Terms and Conditions Do read and accept the terms and conditions before booking. By completing the application, you are agreeing to the terms and conditions below: 1. Bookings are not confirmed until they are paid for in full, and payment in full is due upon notification of being offered a space 2. Any stall booking payment refunds are done so at the organiser’s discretion, and associated costs incurred and admin fees may be deducted from a refund depending on printing, paid promotion etc. 3. MSC bears no liability for loss, damage or theft of items during the event 4. MSC is not responsible for vehicles or parking 5. You are responsible for your own property and wellbeing at this event 6. All stall holders must also have their own public liability insurance. Please provide evidence with your application N.B. Exhibitors will not be allowed to set up without proof of public liability insurance. In an age of litigation, any accident could result in a major claim against a potter. 7. All artwork must be made by you, the named person applying. You must be present during the event 8. Your stands are not to be packed up or prepared to leave before the event's official closing time of 4pm 9. Spaces must be left as found, any rubbish should be placed in the bins provided 10. Traders should be careful not to damage the venue whilst unloading, loading and setting up. This includes sticking anything to the walls etc. Any damage caused to the venue will be billed to you 11. MSC are not liable for delay or failure to provide services as a result of any act or circumstances beyond their control including but not limited to Act of God, legislation, injury, terrorism, war, fire, failure of power supply to the venue, weather conditions, lock out or strike 12. MSC maintain the rights to amend the terms and conditions at any time without notice if needs be Time Frames January 11th 2027 Deadline for applications January 19th, 2027 MSC committee will select from the applications January 29th, 2027 Exhibitors notified on successful application January 31st 2027 Payment due and all confirmations completed June 11 set up day June 12 and 13 Dovecot Midsummer Ceramics weekend Make a submission Contact the curator Who is eligible for this opportunity? Potters at all stages of their careers. When is the deadline? Deadline for applications is midday on Monday 11 January 2027. When is the delivery date? Set up for the event is Friday 11 June 2027. You will be given a time-slot for arrival and set up. How much does it cost? Option A: You will be allocated an area of 3 x 3 meters and it will cost £120 for a single potter. Option B: sharing with one other potter then it will cost £70 per potter. You will need your own gazebo and tables, although there are some gazebos here which we can allocate on a 1st come basis What are the exhibition opening hours? 10 am to 4 pm each day of the event. Does the location have disabled access? There is ramped access to the site and to the main yard and gardens and the cafe area. Most areas are accessible but some paths in the garden are narrow. What publicity will be provided as part of the opportunity? Social media content for Facebook and Instagram Notices will be in MADE magazine and in the local Today magazines and on Northern Potters Website and in their magazine Printed flyers which you will be given to distribute. these will also be placed in local venues, libraries, museums etc. Exhibitors are expected to publicise the event on their own social media and through their own mailing lists. Do I need to be present? Yes, you and/or your 'team' must be present at all times during the event to sell your work What happens if my proposal is chosen? You will be notified of the outcome of your application by Friday 29 January and if you are successful you will be asked to pay your stall fee of £120 by Sunday 31 January You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Advertisement Other opportunities Madrid Artist Showcase Open Call – Arrival Gallery Arrival Gallery invites artists in any medium to apply for the Madrid Artist Showcase, a group... ARTISTS OF THE SEASON OPEN CALL - WINTER 2026 ARTISTS OF THE SEASON OPEN CALL - WINTER 2026 Solo Exhibition Open Call CALL FOR ARTISTS SOLO EXHIBITION CURRENTLY ACCEPTING APPLICATIONS Take your art career to the... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
+      "audience_text": "Opportunity details | Dovecote Gallery: MID-SUMMER CERAMICS FAIR 2027 | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register Dovecote Gallery: MID-SUMMER CERAMICS FAIR 2027 Deadline: 11/01/2027 City: Styrrup , Doncaster | Region: Nottinghamshire | Country: United Kingdom | hilary cartmel Report this? Description Opportunity FAQs Make a submission Contact curator Dovecot Gallery Mid-Summer Ceramics 2027. June 12th and 13th We are hosting our 5th ceramics fair in the beautiful setting of the Dovecot's garden and yard. We have space for 27 stands for ceramic artists to showcase their work in the garden, yard and gallery . We are looking for potters at all stages of their careers with strong work and outgoing personalities to engage with the public. Application to this event is free. Dovecot Gallery Mid-Summer Ceramics 2027 takes place on the weekend of 12 and 13 June The event, which takes place over a weekend in June, will also host demonstrations and a 'Have-a-Go-throw' experience on the potters' wheel for the visiting public. Exhibiting potters are welcome to sign up to help out. We have been raising funds for the Doncaster Ukrainian Centre since 2022 and on site will be a fabulous cafe serving home-made cake, tea and coffee, organised by volunteers from the Doncaster Ukrainian Centre. There will be seating both inside and outside amongst the stalls for visitors to relax and enjoy their visit. Exhibitors are invited to stay on site on Saturday evening for our potter's party, featuring Anne's famous paella. The cost of exhibiting is: Option A - A full 3m x 3m gazebo, which is approximately two 6ft x 2.6ft tables £120 Option B - A shared 3m x 3m gazebo, which is approximately one 6ft x 2ft table £70 Your application MUST be accompanied by good quality photos of your work, on an uncluttered background. Please leave plenty of space around the work for the addition of text. We shall use these to make our selection decision as well as for successful applicants' publicity purposes for the event on social media, website and print. Ceramic Fair Terms and Conditions Do read and accept the terms and conditions before booking. By completing the application, you are agreeing to the terms and conditions below: 1. Bookings are not confirmed until they are paid for in full, and payment in full is due upon notification of being offered a space 2. Any stall booking payment refunds are done so at the organiser’s discretion, and associated costs incurred and admin fees may be deducted from a refund depending on printing, paid promotion etc. 3. MSC bears no liability for loss, damage or theft of items during the event 4. MSC is not responsible for vehicles or parking 5. You are responsible for your own property and wellbeing at this event 6. All stall holders must also have their own public liability insurance. Please provide evidence with your application N.B. Exhibitors will not be allowed to set up without proof of public liability insurance. In an age of litigation, any accident could result in a major claim against a potter. 7. All artwork must be made by you, the named person applying. You must be present during the event 8. Your stands are not to be packed up or prepared to leave before the event's official closing time of 4pm 9. Spaces must be left as found, any rubbish should be placed in the bins provided 10. Traders should be careful not to damage the venue whilst unloading, loading and setting up. This includes sticking anything to the walls etc. Any damage caused to the venue will be billed to you 11. MSC are not liable for delay or failure to provide services as a result of any act or circumstances beyond their control including but not limited to Act of God, legislation, injury, terrorism, war, fire, failure of power supply to the venue, weather conditions, lock out or strike 12. MSC maintain the rights to amend the terms and conditions at any time without notice if needs be Time Frames January 11th 2027 Deadline for applications January 19th, 2027 MSC committee will select from the applications January 29th, 2027 Exhibitors notified on successful application January 31st 2027 Payment due and all confirmations completed June 11 set up day June 12 and 13 Dovecot Midsummer Ceramics weekend Make a submission Contact the curator Who is eligible for this opportunity? Potters at all stages of their careers. When is the deadline? Deadline for applications is midday on Monday 11 January 2027. When is the delivery date? Set up for the event is Friday 11 June 2027. You will be given a time-slot for arrival and set up. How much does it cost? Option A: You will be allocated an area of 3 x 3 meters and it will cost £120 for a single potter. Option B: sharing with one other potter then it will cost £70 per potter. You will need your own gazebo and tables, although there are some gazebos here which we can allocate on a 1st come basis What are the exhibition opening hours? 10 am to 4 pm each day of the event. Does the location have disabled access? There is ramped access to the site and to the main yard and gardens and the cafe area. Most areas are accessible but some paths in the garden are narrow. What publicity will be provided as part of the opportunity? Social media content for Facebook and Instagram Notices will be in MADE magazine and in the local Today magazines and on Northern Potters Website and in their magazine Printed flyers which you will be given to distribute. these will also be placed in local venues, libraries, museums etc. Exhibitors are expected to publicise the event on their own social media and through their own mailing lists. Do I need to be present? Yes, you and/or your 'team' must be present at all times during the event to sell your work What happens if my proposal is chosen? You will be notified of the outcome of your application by Friday 29 January and if you are successful you will be asked to pay your stall fee of £120 by Sunday 31 January You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Advertisement Other opportunities ARTISTS OF THE SEASON OPEN CALL - WINTER 2026 ARTISTS OF THE SEASON OPEN CALL - WINTER 2026 Solo Exhibition Open Call CALL FOR ARTISTS SOLO EXHIBITION CURRENTLY ACCEPTING APPLICATIONS Take your art career to the... Nostalgia Dot Gallery are looking for artworks that evoke ‘Nostalgia’; how you interpret this theme is... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
       "price_type": "unknown",
       "availability_evidence": "",
       "ticket_required": false,

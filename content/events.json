@@ -38291,7 +38291,7 @@
       "reviewed_at": "2026-10-17",
       "availability": "unknown",
       "availability_checked_at": "",
-      "registration": false,
+      "registration": null,
       "price": null,
       "price_text": "",
       "price_type": "paid",
@@ -38317,7 +38317,7 @@
         "status": "approved",
         "telegram_include": false,
         "instagram_include": false,
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -41054,7 +41054,7 @@
       "address": "1-й Голутвинский переулок, 16, стр. 1",
       "price": 850,
       "price_text": "850 ₽; льготный — 650 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -41081,7 +41081,7 @@
       "time_evidence": "24 октября 2026 14:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
       "editor_overrides": {
-        "registration": false
+        "registration": null
       }
     },
     {
@@ -49427,7 +49427,7 @@
       "address": "Лаврушинский переулок, 12",
       "price": 650,
       "price_text": "650 ₽; онлайн — 700 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -49444,7 +49444,7 @@
         "telegram_include": false,
         "instagram_include": false,
         "status": "approved",
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -51674,14 +51674,16 @@
       "price": 0,
       "price_text": "",
       "registration": false,
-      "categories": [],
+      "categories": [
+        "выставка"
+      ],
       "description": "На метро Музей AZ находится между станциями метро «Маяковская» и «Белорусская» (кольцевая). Мы рекомендуем идти в Музей от станции «Маяковская». Вам нужен Выход №1 на 1-я Тверская-Ямская улица, 2-я Тверская-Ямская улица.",
       "url": "https://museum-az.com/event/territoriya-svobody-nonkonformisty-v-taruse/",
       "source": "Музей AZ — выставки и события",
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-10-20",
-      "price_type": "paid",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-10-25",
       "editor_overrides": {
@@ -55187,7 +55189,7 @@
       "address": "",
       "price_type": "free",
       "price_text": "бесплатно по регистрации",
-      "registration": false,
+      "registration": true,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -57101,7 +57103,7 @@
       "address": "",
       "price_type": "free",
       "price_text": "бесплатно по регистрации",
-      "registration": false,
+      "registration": true,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -72456,6 +72458,32 @@
       "reviewed_at": ""
     },
     {
+      "id": "spb-2026-11-27-0ebad40ec2",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-27",
+      "time": "",
+      "title": "VK исследует «мамин» язык заботы",
+      "venue": "",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [],
+      "description": "Ко Дню матери VK подготовила серию инициатив, объединённых темой заботы — о близких, о себе и о семейных связях, которые поддерживают нас каждый день.",
+      "url": "https://spbcult.ru/news/anonsy/vk-issleduet-mamin-yazyk-zaboty-/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-27",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "international-2026-11-27-3655b3a3a6",
       "status": "check",
       "kind": "open_call",
@@ -72485,6 +72513,88 @@
       "availability_checked_at": "",
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "spb-2026-11-27-6e3267f23d",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-27",
+      "time": "",
+      "title": "В «Балтийском доме» переосмыслят «Курьера»",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "10, 11 и 12 декабря на малой сцене театра-фестиваля «Балтийский дом» состоится премьера спектакля «Курьер» по мотивам одноименной повести и киносценария Карена Шахназарова в постановке Екатерины Шиховой - она делает истории «от молодых для молодых».",
+      "url": "https://spbcult.ru/news/anonsy/v-baltiyskom-dome-pereosmyslyat-kurera/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-27",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "spb-2026-11-27-2df8d0dc8b",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-27",
+      "time": "",
+      "title": "В Герцена представили культурное наследие Вьетнама XVI века",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "27 ноября в Российско-Вьетнамском культурном центре Герценовского университета состоялась лекция «Искусство изображения Вьетнама в XVI веке». Участников познакомили с традиционными народными картинами Донгхо, их историей и техникой создания, а также предложили сыграть во вьетнамские народные игры.",
+      "url": "https://spbcult.ru/news/anonsy/v-gertsena-predstavili-kulturnoe-nasledie-vetnama-xvi-veka-/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-27",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "spb-2026-11-27-5425bce755",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-27",
+      "time": "",
+      "title": "В Петропавловской крепости можно узнать о «Поэзии садов академика Лихачёва»",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "фестиваль"
+      ],
+      "description": "Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами! Также вы можете отправить статью в социальной сети или мессенджере Если у вас есть чем поделиться с нашими читателями, вы можете предложить свою статью.",
+      "url": "https://spbcult.ru/news/anonsy/v-petropavlovskoy-kreposti-sostoyatsya-zaklyuchitelnye-meropriyatiya-posvyashchennye-120-letiyu-akad/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-27",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "spb-2026-11-27-2810533d6e",
@@ -72524,6 +72634,112 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": "2026-11-03"
+    },
+    {
+      "id": "spb-2026-11-27-5995f84169",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-27",
+      "time": "",
+      "title": "Государственный Эрмитаж",
+      "venue": "Государственный Эрмитаж",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "",
+      "url": "https://hermitagemuseum.org/what-s-on/afisha_mincult/?lng=ru",
+      "source": "Государственный Эрмитаж — выставки и события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-27",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "spb-2026-11-27-15aa22d1c4",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-27",
+      "time": "",
+      "title": "Исполняется 310 лет со дня рождения Этьена Фальконе",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами! Также вы можете отправить статью в социальной сети или мессенджере Если у вас есть чем поделиться с нашими читателями, вы можете предложить свою статью.",
+      "url": "https://spbcult.ru/news/anonsy/v-prezidentskoy-biblioteke-predstavili-perepisku-ekateriny-velikoy-i-etena-falkone-/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-27",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "spb-2026-11-27-0aa998d8da",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-27",
+      "time": "",
+      "title": "Культурные мероприятия, доступные для людей с инвалидностью в Петербурге: декабрь 2026",
+      "venue": "",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": true,
+      "categories": [],
+      "description": "Библиотека для слепых и слабовидящих. у главного входа со стороны ул. Стрельнинской напротив поста охраны установлена тактильно-звуковая мнемосхема; у входа размещены объявления с телефонами сопровождения: +7 (812) 417-56-85, +7 (812) 417-52-11;",
+      "url": "https://spbcult.ru/news/anonsy/kulturnye-meropriyatiya-dostupnye-dlya-lyudey-s-invalidnostyu-v-peterburge-dekabr-2026/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-27",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "spb-2026-11-27-21e590c642",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-27",
+      "time": "",
+      "title": "Литературный музей «ХХ век» посвятит программу «бабушке Арине»",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "встреча"
+      ],
+      "description": "Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами! Также вы можете отправить статью в социальной сети или мессенджере Если у вас есть чем поделиться с нашими читателями, вы можете предложить свою статью.",
+      "url": "https://spbcult.ru/news/anonsy/literaturnyy-muzey-khkh-vek-posvyatit-programmu-babushke-arine/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-27",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "spb-2026-11-27-d872c160b2",
@@ -72625,6 +72841,60 @@
       "availability_checked_at": "",
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "spb-2026-11-27-b2ee7f2ae6",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-27",
+      "time": "",
+      "title": "Проект «Многомерность культуры» празднует пятилетие",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами! Также вы можете отправить статью в социальной сети или мессенджере Если у вас есть чем поделиться с нашими читателями, вы можете предложить свою статью.",
+      "url": "https://spbcult.ru/news/anonsy/za-pyat-let-raboty-proekt-mnogomernost-kultury-obedinil-900-uchastnikov-i-50-organizatsiy-partnyerov/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-27",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "spb-2026-11-27-9af7da9071",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-27",
+      "time": "",
+      "title": "Фестиваль «Эстафета доброты» объединит 54 региона России и три страны",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "Спасибо, что оставляете обратную связь! После проверки мы опубликуем ваш комментарий Спасибо, что делитесь нашими материалами! Также вы можете отправить статью в социальной сети или мессенджере Если у вас есть чем поделиться с нашими читателями, вы можете предложить свою статью.",
+      "url": "https://spbcult.ru/news/anonsy/festival-estafeta-dobroty-obedinit-54-regiona-rossii-i-tri-strany/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-27",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-10-25-c40e7952b7",
@@ -74573,6 +74843,32 @@
       "reviewed_at": "2026-11-23"
     },
     {
+      "id": "spb-2026-11-28-f1757e11f3",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-28",
+      "time": "16:00",
+      "title": "Арт-центр «Пушкинская-10» запускает авторский историко-практический курс Георгия Соколова «Основы ленинградского нонконформизма. Лекции в присутствии картин»",
+      "venue": "Пушкинская-10",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [],
+      "description": "Курс задуман как взаимодействие между лектором и зрителями, но также и между зрителями и произведениями искусства, которые будут присутствовать вживую. В рамках курса мы соберём работы выдающихся нонконформистов из частных петербургских коллекций – так что у зрителей будет возможность увидеть то, что обычно скрыто от посторонних глаз. Мы поговорим о том, как нонконформисты понимали искусство, какими видели свои задачи, как находили своё место в ландшафте искусства ХХ века, какие пластические и концептуальные проблемы решали в своих произведениях.",
+      "url": "https://p-10.ru/news/art-centr-zapuskaet-istoriko-prakticheskij-kurs-osnovy-leningradskogo-nonkonformizma/",
+      "source": "Пушкинская-10 — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-11-27",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "spb-2026-11-28-b27fbe75bc",
       "status": "check",
       "kind": "event",
@@ -74706,7 +75002,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-28-9a03ab11cd",
@@ -75405,6 +75703,34 @@
       "reviewed_at": "2026-11-16"
     },
     {
+      "id": "spb-2026-11-29-72cabe062c",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-29",
+      "time": "13:00",
+      "title": "Название требует проверки",
+      "venue": "Библиотека Маяковского",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [
+        "игра"
+      ],
+      "description": "На лекции поговорим о монетах, связанных со священными книгами человечества: шекеле (сикле), статере, тетрадрахме, драхме, лепте, пруте и других. У каждой из них своя история, география и связь с событиями прошлого. Лектор — Виктор Шур, исследователь библейской нумизматики, член Общества коллекционеров Санкт-Петербурга, автор статей и лекций. Он прожил в Израиле 30 лет, 25 из которых работал в Департаменте культуры и образования муниципалитета Хайфы. Сейчас живёт и работает в Петербурге. Виктор Шур покажет несколько интересных экземпляров из собственной коллекции. Монеты можно будет подержать",
+      "url": "https://t.me/mayakovka/2175",
+      "source": "Библиотека Маяковского — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source, invalid_title_from_description",
+      "discovered_at": "2026-11-27",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-29-c1f440c41d",
       "status": "rejected",
       "kind": "event",
@@ -75566,7 +75892,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-29-f19730a3e1",
@@ -75628,6 +75956,34 @@
       "checked_at": "",
       "review_reason": "excluded_tour_mediation",
       "discovered_at": "2026-11-23",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "moscow-2026-11-29-70cf19ed82",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-29",
+      "time": "16:00",
+      "title": "Без права выезда на материк",
+      "venue": "Еврейский музей и центр толерантности",
+      "address": "",
+      "price": 600,
+      "price_text": "600 ₽",
+      "registration": null,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "В ходе экскурсии мы пройдем по залам музея, представляющим советскую эпоху, и поговорим о преследованиях со стороны государства, реабилитации и сохранении памяти Входной билет на основную экспозицию приобретается отдельно В ходе экскурсии мы пройдем по залам музея, представляющим советскую эпоху, и поговорим о преследованиях со стороны государства, реабилитации и сохранении памяти Входной билет на основную экспозицию приобретается отдельно",
+      "url": "https://www.jewish-museum.ru/events/bez-prava-vyezda-na-materik-/",
+      "source": "Еврейский музей и центр толерантности",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-11-27",
       "price_type": "paid",
       "availability_evidence": "",
       "ticket_required": true,
@@ -76498,7 +76854,9 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "sold_out",
-      "availability_checked_at": "2026-11-27"
+      "availability_checked_at": "2026-11-27",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-30-438885e9b3",
@@ -77567,7 +77925,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-12-03-2d4558a337",
@@ -77595,7 +77955,9 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-12-03-35786e4ac8",
@@ -77630,7 +77992,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-12-03-54107ce919",
@@ -77665,7 +78029,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-12-03-84b65b4d8b",
@@ -77940,7 +78306,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-12-04-05b9b2ab9c",
@@ -78051,6 +78419,36 @@
       "reviewed_at": "2026-11-26"
     },
     {
+      "id": "moscow-2026-12-04-dd9933ed81",
+      "status": "new",
+      "kind": "exhibition",
+      "city": "moscow",
+      "date": "2026-12-04",
+      "time": "",
+      "title": "Глобальный город. Пределы",
+      "venue": "ММОМА",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "выставка"
+      ],
+      "description": "Московский музей современного искусства совместно со Школой дизайна НИУ ВШЭ представляет выставку «Глобальный город. Это третий совместный выставочный проект институций: в 2023 году в ММОМА на Петровке проходила большая выставка Школы дизайна «Telling Stories.",
+      "url": "https://mmoma.ru/visit/gallery/design-hse-2026",
+      "source": "ММОМА — выставки",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-27",
+      "start_date": "2026-12-04",
+      "end_date": "2027-02-21",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2025-12-04-7daa2bd5e7",
       "status": "new",
       "kind": "exhibition",
@@ -78112,6 +78510,34 @@
       "start_date": "2026-12-04",
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "spb-2026-12-04-3497c8964e",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-12-04",
+      "time": "",
+      "title": "События и выставки",
+      "venue": "РОСФОТО",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "Выставка начнет работу в пятницу, 04.12.2026 Публичная программа Нажимая \"Отправить\", я подтверждаю свое согласие на обработку моих персональных данных, указанных в форме This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply. Правила использования материалов и изображений, размещённых на сайте РОСФОТО",
+      "url": "https://rosphoto.org/posetitelyam/events/7/",
+      "source": "РОСФОТО",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-27",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-12-04-73b662c76a",
@@ -78968,6 +79394,36 @@
       "reviewed_at": "2026-11-09"
     },
     {
+      "id": "spb-2026-12-08-378b993b6a",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-12-08",
+      "time": "18:30",
+      "title": "ÐÑÐ¾Ð²ÐµÑÐºÐ° Ð±ÑÐ°ÑÐ·ÐµÑÐ° Ð¿ÐµÑÐµÐ´ Ð¿ÐµÑÐµÑ Ð¾Ð´Ð¾Ð¼ Ð½Ð° otkrytaya-gostinaya.timepad.ru",
+      "venue": "Открытая гостиная",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "встреча"
+      ],
+      "description": "в 18:30 в Открытой Гостиной состоится круг поддержки с психотерапевткой Асей Гавань в формате Death Cafe Death Cafe — международная инициатива. Люди, которые так или иначе касались темы смерти, встречаются с другими людьми, чтобы поговорить об этом. Ведь все мы смертны, и мысли о конечности физического существования посещает нас многократно в течении всей жизни. Цикл встреч о смерти пройдёт в рамках нашего ежемесячного круга поддержки. Что такое круг поддержки? Важно понимать, что это не тренинг и не групповая психотерапия. Задача круга — увидеть себя в какой-либо ситуации, поговорить о ней и",
+      "url": "https://otkrytaya-gostinaya.timepad.ru/event/4286105/",
+      "source": "Открытая гостиная — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "past_event",
+      "discovered_at": "2026-11-06",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
+    },
+    {
       "id": "moscow-2026-12-08-ea789b4ba4",
       "status": "rejected",
       "kind": "event",
@@ -79099,7 +79555,9 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-12-09-e0b925668b",
@@ -79172,6 +79630,34 @@
       "instagram_include": false,
       "reviewed_at": "2026-11-09",
       "editor_note": ""
+    },
+    {
+      "id": "moscow-2026-12-09-f4246117e6",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-12-09",
+      "time": "12:00",
+      "title": "Мастер-класс «Олень-собачка. Новогодний трансформер»",
+      "venue": "Музей Транспорта Москвы",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "",
+      "url": "https://mtmuseum.ru/affiche/master-klass-olen-sobachka-novogodniy-transformer/",
+      "source": "Музей транспорта Москвы — афиша",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-27",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-12-09-9fa9cdc46c",
@@ -79527,6 +80013,35 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": "2026-11-03"
+    },
+    {
+      "id": "spb-2026-12-11-a99d6d0595",
+      "status": "new",
+      "kind": "exhibition",
+      "city": "spb",
+      "date": "2026-12-11",
+      "time": "",
+      "title": "Двери неба. Михаил Шварцман. К 100-летию художника",
+      "venue": "Русский музей",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": null,
+      "categories": [
+        "выставка"
+      ],
+      "description": "",
+      "url": "https://rusmuseum.ru/exhibitions/coming/dveri-neba-mikhail-shvartsman-k-100-letiyu-khudozhnika/",
+      "source": "Русский музей — выставки",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-27",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "start_date": "2026-12-11"
     },
     {
       "id": "moscow-2026-12-11-4fd567bbb4",
@@ -81603,6 +82118,35 @@
       "reviewed_at": "2026-11-19"
     },
     {
+      "id": "international-2026-12-19-b701c2a090",
+      "status": "check",
+      "kind": "open_call",
+      "city": "international",
+      "date": "2026-12-19",
+      "time": "",
+      "title": "Festive Season 2026 - 2027",
+      "venue": "CuratorSpace",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "open-call"
+      ],
+      "description": "FESTIVE SEASON is DiversaMente Arte’s international open call for a virtual group exhibition with an open theme and publication awards for the top seven artists. Applications are open until 19 December 2026. Participation fee €35.",
+      "url": "https://www.curatorspace.com/opportunities/detail/festive-season/11393",
+      "source": "CuratorSpace — opportunities",
+      "checked_at": "",
+      "review_reason": "primary_source_required",
+      "discovered_at": "2026-11-27",
+      "audience_text": "Opportunity details | Festive Season 2026 - 2027 | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register Festive Season 2026 - 2027 Deadline: 19/12/2026 Simona Rossi Report this? Description Opportunity FAQs Make a submission Contact curator FESTIVE SEASON is DiversaMente Arte’s international open call for a virtual group exhibition with an open theme and publication awards for the top seven artists. Applications are open until 19 December 2026. Participation fee €35. DiversaMente Arte invites artists to submit their work to FESTIVE SEASON, a virtual group exhibition running from 23 December 2026 to 10 January 2027. The theme is open, and any artwork that can be displayed in a virtual gallery is eligible. Applications are free and must be submitted through the CuratorSpace form by 19 December 2026. The €35 participation fee is payable only by selected artists after they have been notified of their acceptance. The winners will be announced on 20 December 2026. The top seven artists will be featured in the December 2026 issue of Diversa Mente Art Curator Magazine, a bimonthly publication with an ISSN, published by DiversaMente Arte. Distributed through international publishing platforms, the magazine reaches more than 300,000 readers per issue and offers translation into up to 60 languages. The first-place artist will receive a two-page Artist Focus spread. Each artist placing second through seventh will receive a full page in the same issue, identical to their page in the exhibition catalogue. The virtual group exhibition will open on Kunstmatrix on 23 December 2026, and the exhibition video will be released on YouTube that day. The bilingual digital catalogue will be published later and made available online to keep the participation fee affordable. Anyone who would like a printed copy can request a high-resolution PDF to print independently or pre-order a printed copy by email. Selected artists who pay the participation fee will be added to DiversaMente Arte’s 2027 Artist List. They will receive personal notifications about new opportunities and have access to reduced rates throughout 2027. Make a submission Contact the curator Who is eligible for this opportunity? The call is open to artists worldwide. The theme is open, and works suitable for display in a virtual gallery are eligible. When is the deadline? Applications must be submitted through CuratorSpace by 19 December 2026. How many works can I submit? Each artist may submit one artwork. When is the delivery date? The exhibition takes place online. Please upload an image of your artwork through the CuratorSpace application form by the submission deadline. When do I need to collect my work? No collection is required. The exhibition takes place entirely online. How much does it cost? Applications are free. Only selected artists pay the €35 participation fee after receiving confirmation of their acceptance. Are there payments to artists? There are no cash payments. The top seven artists receive publication awards in the December 2026 issue of Diversa Mente Art Curator Magazine. Is there a private view / opening? The exhibition opens to the public online on Kunstmatrix on 23 December 2026. The exhibition video will be released on YouTube the same day. What are the exhibition opening hours? The exhibition will be open online around the clock from 23 December 2026 to 10 January 2027. What publicity will be provided as part of the opportunity? Elaborato per 12s DiversaMente Arte will promote FESTIVE SEASON across its social media channels, which have more than 15,000 followers combined and recorded over 80,000 views in the past month. Its YouTube channel has more than 450 subscribers, and its exhibition videos have received over 12,000 views in total. Participating artists’ work will be featured in the virtual group exhibition on Kunstmatrix, the exhibition video on YouTube and the bilingual digital catalogue. The top seven artists will also be featured in the December 2026 issue of Diversa Mente Art Curator Magazine, which reaches more than 300,000 readers worldwide per issue and offers translation into up to 60 languages. Do I need to be present? No. Artists take part remotely. Where will my venue be listed? FESTIVE SEASON will be hosted online on Kunstmatrix. How do you decide on proposals? DiversaMente Arte reviews the artwork and supporting information submitted through CuratorSpace and selects works for the virtual group exhibition. What happens if my proposal is chosen? DiversaMente Arte will notify you through CuratorSpace and send instructions for paying the €35 participation fee. Once your participation is confirmed, your work will be included in the virtual exhibition on Kunstmatrix, the exhibition video on YouTube and the bilingual digital catalogue. You will also be added to DiversaMente Arte’s 2027 Artist List, with personal notifications about new opportunities and access to reduced rates throughout 2027. What kind of proposals are you looking for? We welcome submissions from artists worldwide, working in any of the media listed in the call. The theme is open. What are the selection criteria? DiversaMente Arte reviews the submitted artwork and the information provided in the application. To be eligible for selection, the work must be suitable for display in the virtual group exhibition. You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Advertisement Other opportunities Wilderness Collect Art invites artists worldwide to submit their work for the upcoming online exhibition... Thrive Residencies: A Good Enough Net A residency programme and a year's anthology of relational practices, curated and held by artist... Darkness For this special edition, Collect Art invites artists to explore darkness in its many... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-12-19-d263f2499f",
       "status": "approved",
       "kind": "event",
@@ -82148,6 +82692,34 @@
       "reviewed_at": ""
     },
     {
+      "id": "moscow-2026-12-20-b791912372",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-12-20",
+      "time": "19:00",
+      "title": "Кинопоказ «Вертов и Термен: авангард звучит»",
+      "venue": "Музей Транспорта Москвы",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "кинопоказ"
+      ],
+      "description": "",
+      "url": "https://mtmuseum.ru/affiche/kinopokaz-vertov-i-termen-avangard-zvuchit/",
+      "source": "Музей транспорта Москвы — афиша",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-27",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "international-2026-12-21-97062fdc2c",
       "status": "rejected",
       "kind": "open_call",
@@ -82406,7 +82978,9 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-12-24-22d18ff2b6",
@@ -82435,6 +83009,34 @@
       "availability_checked_at": "2026-11-27",
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "spb-2026-12-24-e2e26399d9",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-12-24",
+      "time": "",
+      "title": "Собрали ближайшие мастер-классы Международной Школы Дизайна (СПб):",
+      "venue": "Международная школа дизайна — Петербург",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "Не откладывайте профессиональное развитие на следующий год! Декабрь — прекрасное время, чтобы освоить новые инструменты, расширить свои компетенции и войти в 2027 год с новыми знаниями и идеями Нейросети в дизайне интерьеров и экстерьеров. Практический курс Колористика без ошибок: секреты гармоничных интерьерных сочетаний Перепланировки и переустройства: согласование, риски выполнения дизайн-проекта, ответственность Праздничный интерьер 2027: главные тренды, идеи и вдохновение Акриловая живопись: создайте стильные интерьерные картины своими руками",
+      "url": "https://spb.designschool.ru/courses/kursy-risunka-i-zhivopisi/akrilovaya-zhivopis-dlya-interera/",
+      "source": "Международная школа дизайна — Петербург — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-11-27",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-12-24-422be2d050",
@@ -82681,6 +83283,34 @@
       "reviewed_at": ""
     },
     {
+      "id": "moscow-2026-12-26-0745347de9",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-12-26",
+      "time": "13:00",
+      "title": "Мастер-класс «Светящийся город»",
+      "venue": "Музей Транспорта Москвы",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "",
+      "url": "https://mtmuseum.ru/affiche/master-klass-svetyashchiysya-gorod/",
+      "source": "Музей транспорта Москвы — афиша",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-27",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-12-26-422be2d050",
       "status": "rejected",
       "kind": "event",
@@ -82772,6 +83402,64 @@
       "availability_checked_at": "",
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "moscow-2026-12-27-422be2d050",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-12-27",
+      "time": "14:00",
+      "title": "Индивидуальный медиаторский тур",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "встреча"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/mediation/tour/mediated-tours-for-organised-groups",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-11-27",
+      "audience_text": "Индивидуальный медиаторский тур предназначен для организованной группы. Вы можете принять в нем участие вместе со своими знакомыми, друзьями и коллегами. Для участия необходимо приобрести билет. T Почему появился формат платной медиации? Введение платных туров становится закономерным этапом в развитии медиации и ответным предложением на регулярные запросы о посещении туров организованными группами. Наш приоритет — обеспечить доступность современной культуры для каждого, сохранив ресурс команды и уровень качества без ущерба для широкой аудитории. Как попасть на индивидуальный тур? Чтобы приобрести билет, нажмите на кнопку «Билеты». Выберите в строке подходящую дату. В следующей строке выберите нужное количество регистраций на вход в Дом культуры « ГЭС-2 » по количеству участников. Затем выберите один билет на любой интересующий вас тур и оформите заказ. После оформления и оплаты заказа вам на почту придет: — Билет на индивидуальный тур. — Указанное в заказе количество регистраций на вход в Дом культуры « ГЭС-2 » для каждого участника вашей организованной группы. Индивидуальные медиаторские туры начинаются в 18:00. По запросу мы также можем начать в другое время — для этого обращайтесь на почту hospitality@v-a-c.org . Встреча с медиатором — напротив левой информационной стойки (со стороны Ресторана). Билеты {\"points\":[{\"id\":1,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":3,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.4,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":2,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} Медиаторы могут провести тур по зданию и текущим выставкам на английском языке. Пожалуйста, укажите язык тура в анкете при покупке билета. Официальный партнер направления медиации Дома культуры « ГЭС-2 » Если вы придете раньше, пожалуйста, сообщите об этом сотрудникам отдела по работе с посетителями и покажите им свой билет. Туры длятся от одного до двух часов. Если в процессе оформления билета на индивидуальный медиаторский тур у вас возникнут вопросы, пожалуйста, обратитесь на почту hospitality@v-a-c.org . Фото: Аня Тодич {\"grid\":{\"width\":963,\"column_width\":89,\"columns_n\":9,\"gutter\":20,\"margin\":0,\"line\":10},\"palette\":\"default\",\"responsive_mode\":true,\"responsive_min_width\":512,\"responsive_max_width\":1100,\"colorchanger_fullscreen\":false,\"colorchanger_ov",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "moscow-2026-12-27-550f9318dc",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-12-27",
+      "time": "14:00",
+      "title": "Клуб настольных игр «ГЭС-2»",
+      "venue": "ГЭС-2",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "встреча"
+      ],
+      "description": "",
+      "url": "https://ges-2.org/projects/ges-2-board-games-club",
+      "source": "Дом культуры «ГЭС-2»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-27",
+      "audience_text": "› Практики › игровые Дата: 6 сен– 27 дек 2026 Регистрация Возраст: от 16 Тип: Кружок Место: Классы Возрастные ограничения 16+ Регулярные встречи любителей современных настольных игр с участием опытного инструктора. T Уже несколько лет на Платформах « ГЭС-2 » можно познакомиться с сообществами любителей разных настольных игр и просто поиграть в шахматы и настолки . Задача Клуба — сформировать постоянное сообщество в Доме культуры, популяризовать лучшие произведения игростроения и усилить влияние Дома культуры как институции, дружественной большой городской аудитории энтузиастов настольных игр. Расписание 6, 20 сен, 3, 18 окт, 1, 15, 29 ноя, 13, 27 дек Встречи проходят с 14:00 до 21:00. Фото: Аня Тодич Отличительной особенностью Клуба станет новая разветвленная система определения лучшего игрока сезона и чемпионов в отдельных дисциплинах. Результаты всех матчей будут фиксироваться на специальных бланках, заверяться инструктором и передаваться в счетную комиссию для создания клубного рейтинга игроков и выявления победителей в разных номинациях. Система начисления очков разработана с учетом количества участников, среднего времени одной партии и сложности игры. Ведущим Клуба станет Александр Марк, известный по прошлогоднему проекту « Книжный куб ». Он выбрал игры, которые будут доступны на встречах. Присоединиться можно в любой момент. Новички смогут пройти обучение по выбранной игре. Лучшие игроки по итогам сезона будут награждены на специальной церемонии в конце года. Система начисления очков в Клубе настольных игр \" ГЭС-2  {\"points\":[{\"id\":1,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":1,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},{\"id\":3,\"properties\":{\"x\":0,\"y\":0,\"z\":0,\"opacity\":0.4,\"scaleX\":1,\"scaleY\":1,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}}],\"steps\":[{\"id\":2,\"properties\":{\"duration\":0.2,\"delay\":0,\"bezier\":[],\"ease\":\"Power0.easeNone\",\"automatic_duration\":true}}],\"transform_origin\":{\"x\":0.5,\"y\":0.5}} Номинации 1. Абсолютный чемпион клуба — игрок, набравший наибольшее количество очков по результатам всех клубов. 2. Абсолютный тяжеловес — больше всего побед в сложных играх. 3. Абсолютный легковес — больше всего побед в легких играх. 4. FFA (сам за себя) — больше всего побед в партиях с пятью участниками и больше. 6. Душа клуба — посетивший больше всего встреч сезона. 7. Современный шумер — больше всего очков, набранных в самой древней игре, царской игре Ура. Ведущий Александр Марк — основатель и ведущий сообщества современных настольн",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-12-27-54161e6224",

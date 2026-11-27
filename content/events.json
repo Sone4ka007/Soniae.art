@@ -38291,7 +38291,7 @@
       "reviewed_at": "2026-10-17",
       "availability": "unknown",
       "availability_checked_at": "",
-      "registration": false,
+      "registration": null,
       "price": null,
       "price_text": "",
       "price_type": "paid",
@@ -38317,7 +38317,7 @@
         "status": "approved",
         "telegram_include": false,
         "instagram_include": false,
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -41054,7 +41054,7 @@
       "address": "1-й Голутвинский переулок, 16, стр. 1",
       "price": 850,
       "price_text": "850 ₽; льготный — 650 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -41081,7 +41081,7 @@
       "time_evidence": "24 октября 2026 14:00",
       "time_verified_at": "2026-10-25T08:31:42.482554+00:00",
       "editor_overrides": {
-        "registration": false
+        "registration": null
       }
     },
     {
@@ -49427,7 +49427,7 @@
       "address": "Лаврушинский переулок, 12",
       "price": 650,
       "price_text": "650 ₽; онлайн — 700 ₽",
-      "registration": false,
+      "registration": null,
       "categories": [
         "лекция"
       ],
@@ -49444,7 +49444,7 @@
         "telegram_include": false,
         "instagram_include": false,
         "status": "approved",
-        "registration": false
+        "registration": null
       },
       "telegram_include": false,
       "instagram_include": false,
@@ -51674,14 +51674,16 @@
       "price": 0,
       "price_text": "",
       "registration": false,
-      "categories": [],
+      "categories": [
+        "выставка"
+      ],
       "description": "На метро Музей AZ находится между станциями метро «Маяковская» и «Белорусская» (кольцевая). Мы рекомендуем идти в Музей от станции «Маяковская». Вам нужен Выход №1 на 1-я Тверская-Ямская улица, 2-я Тверская-Ямская улица.",
       "url": "https://museum-az.com/event/territoriya-svobody-nonkonformisty-v-taruse/",
       "source": "Музей AZ — выставки и события",
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-10-20",
-      "price_type": "paid",
+      "price_type": "free",
       "availability": "unknown",
       "availability_checked_at": "2026-10-25",
       "editor_overrides": {
@@ -55187,7 +55189,7 @@
       "address": "",
       "price_type": "free",
       "price_text": "бесплатно по регистрации",
-      "registration": false,
+      "registration": true,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -57101,7 +57103,7 @@
       "address": "",
       "price_type": "free",
       "price_text": "бесплатно по регистрации",
-      "registration": false,
+      "registration": true,
       "availability": "unknown",
       "availability_checked_at": "",
       "review_reason": "",
@@ -72386,6 +72388,32 @@
       "reviewed_at": "2026-10-24"
     },
     {
+      "id": "spb-2026-11-27-2734e5efd5",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-27",
+      "time": "",
+      "title": "Hejira 50!",
+      "venue": "Пушкинская-10",
+      "address": "",
+      "price": 1500,
+      "price_text": "1500 ₽",
+      "registration": null,
+      "categories": [],
+      "description": "Оригинальный студийный альбом « Hejira » ДжониМитчелл вышел 21 ноября 1976 года. Название отсылает к «хиджре» — переселению Мухаммеда из Мекки в Медину, что метафорически означало для Митчелл бегство от чужих правил и ожиданий к себе. Альбом стал для нее переломным с точки зрения музыкального языка, а также проявил новую, очередную глубину лирики.",
+      "url": "https://p-10.ru/events/hejira-50/",
+      "source": "Пушкинская-10 — события",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-27",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "international-2026-11-27-09aed3613d",
       "status": "approved",
       "kind": "open_call",
@@ -72465,7 +72493,7 @@
       "title": "VK исследует «мамин» язык заботы",
       "venue": "",
       "address": "",
-      "price": 0,
+      "price": null,
       "price_text": "Бесплатно",
       "registration": null,
       "categories": [],
@@ -72479,7 +72507,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-11-27-3655b3a3a6",
@@ -72536,7 +72566,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-27-2df8d0dc8b",
@@ -72564,7 +72596,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-27-5425bce755",
@@ -72592,7 +72626,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-27-2810533d6e",
@@ -72657,7 +72693,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-27-15aa22d1c4",
@@ -72683,7 +72721,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-27-0aa998d8da",
@@ -72709,7 +72749,9 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-27-21e590c642",
@@ -72737,7 +72779,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-27-d872c160b2",
@@ -72777,6 +72821,62 @@
       "instagram_include": false,
       "editor_note": "",
       "reviewed_at": "2026-11-03"
+    },
+    {
+      "id": "spb-2026-11-27-39e247098d",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-27",
+      "time": "",
+      "title": "Наши события",
+      "venue": "Международная школа дизайна — Петербург",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "17 ноября в Международной Школе Дизайна (СПб) прошел День открытых уроков. Участники собрались в аудиториях школы, чтобы прикоснуться к профессии дизайнера и создать свои первые работы под руководством опытных наставников.",
+      "url": "https://spb.designschool.ru/category/lifeschool/",
+      "source": "Международная школа дизайна — Петербург",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-27",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "spb-2026-11-27-acc594ab08",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-27",
+      "time": "",
+      "title": "Один вечер в профессии: как прошел День открытых уроков в МШД",
+      "venue": "Международная школа дизайна — Петербург",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "мастер-класс"
+      ],
+      "description": "17 ноября в Международной Школе Дизайна (СПб) прошел День открытых уроков. Участники собрались в аудиториях школы, чтобы прикоснуться к профессии дизайнера и создать свои первые работы под руководством опытных наставников.",
+      "url": "https://spb.designschool.ru/2026/11/27/odin-vecher-v-professii-kak-proshel-den-otkrytyx-urokov-v-mshd/",
+      "source": "Международная школа дизайна — Петербург",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-27",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "moscow-2026-11-27-064491e449",
@@ -72826,7 +72926,7 @@
       "categories": [
         "встреча"
       ],
-      "description": "Призрак дома на Электрозаводской — 2 16+ 27 ноября 2026 (пятница) 19:00 Особняк Носова Стоимость: 1500 руб. 2026-11-27 19:00 2026-11-27 19:00 Europe/Moscow Призрак дома на Электрозаводской — 2 С наступлением сумерек вы прогуляетесь по тёмным комнатам дореволюционного особняка и услышите истории, о которых принято говорить шёпотом РГБМ, Особняк Носова РГБМ info@rgub.ru С наступлением сумерек вы прогуляетесь по тёмным комнатам дореволюционного особняка и услышите истории, о которых принято говорить шёпотом «Познакомимся с образом призрака начала ХХ века, с сенсационными статьями бульварной прессы и сообщениями уважаемых „учёных“, — говорят организаторы. — Также поговорим о различных народных суевериях, вплетённых в городской фольклор, и выясним, откуда пошли „всем известные“ способы общения с потусторонним». Вы сможете раскрыть тайны доски Уиджи, воспользоваться методичкой для спиритов конца XIX века, выбрать комнату для медиума и узнать, откуда в старинном доме появился призрак Марфы. Встреча станет частью проекта «Магия_К». Стоимость — 1500 рублей. Билеты проданы",
+      "description": "Призрак дома на Электрозаводской — 2 16+ 27 ноября 2026 (пятница) 19:00 Особняк Носова Стоимость: 1500 руб. С наступлением сумерек вы прогуляетесь по тёмным комнатам дореволюционного особняка и услышите истории, о которых принято говорить шёпотом «Познакомимся с образом призрака начала ХХ века, с сенсационными статьями бульварной прессы и сообщениями уважаемых „учёных“, — говорят организаторы. — Также поговорим о различных народных суевериях, вплетённых в городской фольклор, и выясним, откуда пошли „всем известные“ способы общения с потусторонним». Вы сможете раскрыть тайны доски Уиджи, воспользоваться методичкой для спиритов конца XIX века, выбрать комнату для медиума и узнать, откуда в старинном доме появился призрак Марфы. Встреча станет частью проекта «Магия_К». Стоимость — 1500 рублей. Билеты проданы",
       "url": "https://rgub.ru/schedule/item.php?new_id=50122",
       "source": "Российская государственная библиотека для молодёжи — афиша",
       "checked_at": "",
@@ -72864,7 +72964,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "spb-2026-11-27-9af7da9071",
@@ -72892,83 +72994,37 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
+    },
+    {
+      "id": "spb-2026-11-27-a67c4668e9",
+      "status": "new",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-27",
+      "time": "",
+      "title": "Эрмитаж покажет витраж «Пир Ирода»",
+      "venue": "",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лаборатория"
+      ],
+      "description": "3 декабря в Реставрационно-хранительском центре «Старая деревня» начнёт работу выставка «Витраж «Пир Ирода». К завершению реставрации». Представление уникального памятника XVI века завершает череду юбилейных «витражных» событий этого года, приуроченных к 50-летию создания в Эрмитаже Сектора реставрации витражей.",
+      "url": "https://spbcult.ru/news/anonsy/ermitazh-pokazhet-vitrazh-pir-iroda/",
+      "source": "Петербургский дневник культуры — анонсы",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-27",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
       "availability_checked_at": ""
-    },
-    {
-      "id": "moscow-2026-10-25-c40e7952b7",
-      "status": "rejected",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-11-27",
-      "time": "10:00",
-      "title": "Воркшопы",
-      "venue": "ЦСИ Винзавод",
-      "address": "",
-      "price": 0,
-      "price_text": "Бесплатно",
-      "registration": false,
-      "categories": [
-        "лекция"
-      ],
-      "description": "",
-      "url": "https://www.winzavod.ru/calendar/workshops/",
-      "source": "ЦСИ Винзавод",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-10-25",
-      "price_type": "free",
-      "availability_evidence": "",
-      "ticket_required": true,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false,
-        "status": "rejected"
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": "2026-10-27"
-    },
-    {
-      "id": "moscow-2026-10-25-fefbfbd35d",
-      "status": "rejected",
-      "kind": "event",
-      "city": "moscow",
-      "date": "2026-11-27",
-      "time": "10:00",
-      "title": "Курсы",
-      "venue": "ЦСИ Винзавод",
-      "address": "",
-      "price": 0,
-      "price_text": "Бесплатно",
-      "registration": false,
-      "categories": [
-        "лекция"
-      ],
-      "description": "",
-      "url": "https://www.winzavod.ru/calendar/course/",
-      "source": "ЦСИ Винзавод",
-      "checked_at": "",
-      "review_reason": "",
-      "discovered_at": "2026-10-25",
-      "price_type": "free",
-      "availability_evidence": "",
-      "ticket_required": true,
-      "availability": "unknown",
-      "availability_checked_at": "",
-      "editor_overrides": {
-        "registration": false,
-        "telegram_include": false,
-        "instagram_include": false,
-        "status": "rejected"
-      },
-      "telegram_include": false,
-      "instagram_include": false,
-      "editor_note": "",
-      "reviewed_at": "2026-10-27"
     },
     {
       "id": "moscow-2026-11-27-73b662c76a",
@@ -73060,7 +73116,7 @@
       "checked_at": "",
       "review_reason": "",
       "discovered_at": "2026-10-28",
-      "audience_text": "› Дети и подростки Проект : По правилам и без Дата: 4 сен– 27 ноя 2026 Регистрация Возраст: 0-3 Тип: Игра Место: Платформы , Классы Возрастные ограничения 0+ Тринадцать игровых встреч для малышей и их родителей. Ждем родителей и детей от 0 до 3,5 года. Занятия проходят каждую пятницу с 4 сентября по 27 ноября, с 11:15 до 12:15. Обратите внимание: 2 октября занятия не будет. Количество мест ограничено. Каждому ребенку нужна регистрация. Сопровождающему взрослому достаточно регистрации на вход в Дом культуры. T Малыши играют с самого рождения! Через игру ребенок познает мир, выстраивает связь с близким взрослым, учится чувствовать и исследовать. В игре развиваются движения, речь и множество первичных навыков, таких значимых в начале жизни. Иллюстрация: Поля Плавинская Программа следует концепции «Бейби Сенсори» — международной методике гармоничного развития. На встречах мы обсуждаем, как взрослому мягко вести игру, какие форматы подходят детям разного возраста и какие умения формируются в процессе. Мы поговорим о том, как игры помогают ребенку лучше подготовиться к детскому саду, к учебе и новым открытиям. Узнаем, почему мамино пение поддерживает речевое и музыкальное развитие, как прыжки, ползание и прогулки по сенсорным дорожкам укрепляют уверенность и почему так важна совместная игра. Встречи помогут родителям качественно провести время с малышом. Незаметно и легко дети будут развивать ключевые навыки, а взрослые пополнят арсенал идей для игр дома. К каждому занятию мы подготовим карточку-памятку с активностями и их значением. Все фото: Вадим Штэйн Ведущие Аня Великанова — нейропсихолог. В настоящее время учится на клинического психолога в Сеченовском университете и ведет частную психологическую практику. Класс-лидер в АНО «Первые годы». Более 5 лет работает с детьми и подростками. Соня Маркова — психолог-педагог, детский психолог, ABA-специалист. Окончила МПГУ по направлению «психолог-педагог», получила повышение квалификации на обучении по детской психологии, обучение по 1-й ступени ABA-терапии. Педагог в благотворительном фонде для подростков с РАС. Проходила практику в школе приемных родителей в Институте развития семейного устройства. Класс-лидер в АНО «Первые годы». Ассистент Мария Меркулова {\"grid\":{\"width\":963,\"column_width\":89,\"columns_n\":9,\"gutter\":20,\"margin\":0,\"line\":10},\"palette\":\"default\",\"responsive_mode\":true,\"responsive_min_width\":512,\"responsive_max_width\":1100,\"colorchanger_fullscreen\":false,\"colorchanger_overflow\":true,\"page_cropping\":",
+      "audience_text": "› Дети и подростки Проект : По правилам и без Дата: 4 сен– 27 ноя 2026 Возраст: 0-3 Тип: Игра Место: Платформы , Классы Возрастные ограничения 0+ Тринадцать игровых встреч для малышей и их родителей. Ждем родителей и детей от 0 до 3,5 года. Занятия проходят каждую пятницу с 4 сентября по 27 ноября, с 11:15 до 12:15. Обратите внимание: 2 октября занятия не будет. Количество мест ограничено. Каждому ребенку нужна регистрация. Сопровождающему взрослому достаточно регистрации на вход в Дом культуры. T Малыши играют с самого рождения! Через игру ребенок познает мир, выстраивает связь с близким взрослым, учится чувствовать и исследовать. В игре развиваются движения, речь и множество первичных навыков, таких значимых в начале жизни. Иллюстрация: Поля Плавинская Программа следует концепции «Бейби Сенсори» — международной методике гармоничного развития. На встречах мы обсуждаем, как взрослому мягко вести игру, какие форматы подходят детям разного возраста и какие умения формируются в процессе. Мы поговорим о том, как игры помогают ребенку лучше подготовиться к детскому саду, к учебе и новым открытиям. Узнаем, почему мамино пение поддерживает речевое и музыкальное развитие, как прыжки, ползание и прогулки по сенсорным дорожкам укрепляют уверенность и почему так важна совместная игра. Встречи помогут родителям качественно провести время с малышом. Незаметно и легко дети будут развивать ключевые навыки, а взрослые пополнят арсенал идей для игр дома. К каждому занятию мы подготовим карточку-памятку с активностями и их значением. Все фото: Вадим Штэйн Ведущие Аня Великанова — нейропсихолог. В настоящее время учится на клинического психолога в Сеченовском университете и ведет частную психологическую практику. Класс-лидер в АНО «Первые годы». Более 5 лет работает с детьми и подростками. Соня Маркова — психолог-педагог, детский психолог, ABA-специалист. Окончила МПГУ по направлению «психолог-педагог», получила повышение квалификации на обучении по детской психологии, обучение по 1-й ступени ABA-терапии. Педагог в благотворительном фонде для подростков с РАС. Проходила практику в школе приемных родителей в Институте развития семейного устройства. Класс-лидер в АНО «Первые годы». Ассистент Мария Меркулова {\"grid\":{\"width\":963,\"column_width\":89,\"columns_n\":9,\"gutter\":20,\"margin\":0,\"line\":10},\"palette\":\"default\",\"responsive_mode\":true,\"responsive_min_width\":512,\"responsive_max_width\":1100,\"colorchanger_fullscreen\":false,\"colorchanger_overflow\":true,\"page_cropping\":false,\"globa",
       "price_type": "unknown",
       "availability_evidence": "",
       "ticket_required": false,
@@ -73938,6 +73994,34 @@
       "reviewed_at": ""
     },
     {
+      "id": "spb-2026-11-28-94108f9818",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-11-28",
+      "time": "",
+      "title": "Обзорная экскурсия по РОСФОТО",
+      "venue": "РОСФОТО",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "Экскурсия включает знакомство со зданием, в котором находится РОСФОТО, и постоянной экспозицией «Внутри старинного фотоаппарата». Здание, в котором расположен музей, представляет собой яркий образец архитектуры северного модерна. В оформлении использованы майоликовые композиции по рисункам Николая Рериха.",
+      "url": "https://rosphoto.org/events/obzornaya-ekskursiya-po-rosfoto/",
+      "source": "РОСФОТО",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-11-27",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "moscow-2026-11-28-84b65b4d8b",
       "status": "new",
       "kind": "event",
@@ -74024,6 +74108,82 @@
       "availability_checked_at": "",
       "editor_note": "",
       "reviewed_at": ""
+    },
+    {
+      "id": "moscow-2026-10-25-c40e7952b7",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-28",
+      "time": "10:00",
+      "title": "Воркшопы",
+      "venue": "ЦСИ Винзавод",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "",
+      "url": "https://www.winzavod.ru/calendar/workshops/",
+      "source": "ЦСИ Винзавод",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-25",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false,
+        "status": "rejected"
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": "2026-10-27"
+    },
+    {
+      "id": "moscow-2026-10-25-fefbfbd35d",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-28",
+      "time": "10:00",
+      "title": "Курсы",
+      "venue": "ЦСИ Винзавод",
+      "address": "",
+      "price": 0,
+      "price_text": "Бесплатно",
+      "registration": false,
+      "categories": [
+        "лекция"
+      ],
+      "description": "",
+      "url": "https://www.winzavod.ru/calendar/course/",
+      "source": "ЦСИ Винзавод",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-10-25",
+      "price_type": "free",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": "",
+      "editor_overrides": {
+        "registration": false,
+        "telegram_include": false,
+        "instagram_include": false,
+        "status": "rejected"
+      },
+      "telegram_include": false,
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": "2026-10-27"
     },
     {
       "id": "moscow-2026-11-28-675d262640",
@@ -74871,7 +75031,37 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
+    },
+    {
+      "id": "moscow-2026-11-28-00f71aed57",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-28",
+      "time": "16:00",
+      "title": "Кинопоказ «Поезд в Пусан»",
+      "venue": "Музей «Гараж»",
+      "address": "",
+      "price": 500,
+      "price_text": "500 ₽",
+      "registration": null,
+      "categories": [
+        "кинопоказ"
+      ],
+      "description": "Культовый блокбастер режиссера Ён Сан Хо об отце и дочери, попавших в ловушку в скоростном поезде во время зомби-апокалипсиса. Картина стала самым кассовым южнокорейским фильмом всех времен. Сок Ву (Кон Ю), успешный фондовый менеджер, воспитывает дочь Су Ан (Ким Су-Ан), оставшуюся с ним после развода.",
+      "url": "https://garagemca.org/event/film-screening-train-to-busan",
+      "source": "Музей современного искусства «Гараж»",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-27",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "spb-2026-11-28-b27fbe75bc",
@@ -75733,7 +75923,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-11-29-c1f440c41d",
@@ -76939,6 +77131,34 @@
       "reviewed_at": "2026-11-19"
     },
     {
+      "id": "moscow-2026-11-30-f879164983",
+      "status": "new",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-11-30",
+      "time": "19:00",
+      "title": "Лекция М.М.Горинова «Московские адреса композитора и публициста Леонида Сабанеева»",
+      "venue": "Дом русского зарубежья им. А. Солженицына",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": true,
+      "categories": [
+        "лекция"
+      ],
+      "description": "30 ноября 2026 года в 19 часов приглашаем на лекцию М.М.Горинова «Московские адреса композитора и публициста Леонида Сабанеева» из авторского цикла лекций « Московские адреса русских эмигрантов ». Композитор, музыковед, музыкальный критик Леонид Леонидович Сабанеев (1881–1968) родился, учился, работал в Москве и пронес через всю жизнь любовь к родному городу.",
+      "url": "https://www.domrz.ru/event/71318_lektsiya_m_m_gorinova_moskovskie_adresa_kompozitora_i_publitsista_leonida_sabaneeva_iz_tsikla_lektsi/",
+      "source": "Дом русского зарубежья — афиша",
+      "checked_at": "",
+      "review_reason": "",
+      "discovered_at": "2026-11-27",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "sold_out",
+      "availability_checked_at": "2026-11-27"
+    },
+    {
       "id": "moscow-2026-11-30-856fb9759b",
       "status": "rejected",
       "kind": "event",
@@ -77530,6 +77750,94 @@
       "ticket_required": false,
       "availability": "unknown",
       "availability_checked_at": ""
+    },
+    {
+      "id": "moscow-2026-12-02-5566a35795",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-12-02",
+      "time": "",
+      "title": "Обзорная экскурсия по выставке «Русский Париж. 1814–1914»",
+      "venue": "Дом русского зарубежья им. А. Солженицына",
+      "address": "",
+      "price": 500,
+      "price_text": "500 ₽",
+      "registration": true,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "С 3 по 28 ноября 2026 года приглашаем на обзорные экскурсии по выставке «Русский Париж. 1814–1914» , посвященной традициям русско-французских культурных связей XIX – начала ХХ века, взаимным творческим влияниям и образу Парижа, вдохновлявшего лучших русских мастеров на протяжении целого столетия.",
+      "url": "https://www.domrz.ru/event/69868_obzornaya_ekskursiya_po_vystavke_russkiy_parizh_1814_1914/",
+      "source": "Дом русского зарубежья — афиша",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-10-30",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "sold_out",
+      "availability_checked_at": "2026-11-27",
+      "editor_overrides": {
+        "telegram_include": false,
+        "instagram_include": false
+      },
+      "telegram_include": false,
+      "instagram_include": false
+    },
+    {
+      "id": "moscow-2026-12-02-5d95849603",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-12-02",
+      "time": "",
+      "title": "Обзорные экскурсии по Музею русского зарубежья",
+      "venue": "Дом русского зарубежья им. А. Солженицына",
+      "address": "",
+      "price": 500,
+      "price_text": "500 ₽",
+      "registration": true,
+      "categories": [
+        "экскурсия"
+      ],
+      "description": "Стоимость: экскурсионное обслуживание (500 руб.) + входной билет Русское зарубежье — это уникальное явление в мировой истории и культуре.",
+      "url": "https://www.domrz.ru/event/71470_obzornye_ekskursii_po_muzeyu_russkogo_zarubezhya/",
+      "source": "Дом русского зарубежья — афиша",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-11-27",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "sold_out",
+      "availability_checked_at": "2026-11-27"
+    },
+    {
+      "id": "moscow-2026-12-02-2a8bfee591",
+      "status": "rejected",
+      "kind": "event",
+      "city": "moscow",
+      "date": "2026-12-02",
+      "time": "",
+      "title": "Обзорные экскурсии по выставке «Елена Киселева: Балканская история»",
+      "venue": "Дом русского зарубежья им. А. Солженицына",
+      "address": "",
+      "price": 1000,
+      "price_text": "1000 ₽",
+      "registration": true,
+      "categories": [],
+      "description": "Елену Киселеву современники знали как одну из самых ярких портретисток Серебряного века и любимую ученицу Ильи Репина, отмечавшего ее «мужской» рисунок. Она стала первой женщиной, удостоенной заграничного пенсионерства Императорской Академии художеств, работала в Париже и в своем творчестве смогла соединить достижения отечественной и европейской живописи.",
+      "url": "https://www.domrz.ru/event/71145_obzornye_ekskursii_po_vystavke_elena_kiseleva_balkanskaya_istoriya/",
+      "source": "Дом русского зарубежья — афиша",
+      "checked_at": "",
+      "review_reason": "excluded_tour_mediation",
+      "discovered_at": "2026-11-19",
+      "price_type": "paid",
+      "availability_evidence": "",
+      "ticket_required": true,
+      "availability": "sold_out",
+      "availability_checked_at": "2026-11-27"
     },
     {
       "id": "spb-2026-12-02-6285ae19a0",
@@ -78451,7 +78759,9 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2025-12-04-7daa2bd5e7",
@@ -78549,7 +78859,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-12-04-73b662c76a",
@@ -78684,6 +78996,34 @@
       "telegram_include": false,
       "instagram_include": false,
       "reviewed_at": "2026-11-23"
+    },
+    {
+      "id": "spb-2026-12-04-c234e95cd4",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-12-04",
+      "time": "19:30",
+      "title": "Лекция Евгении Кузнецовой, театроведа, преподавателя кафедры продюсерства и менеджмента исполнительских искусств ГИТИСа, многолетнего завлита «Современника», автора книги «Безумство Храбрых. Как рождался легендарный театр \"Современник\"» и почему он навсегда изменил отечественную сцену» (спецприз в номинации Humanitas на премии «Книга года») в рамках",
+      "venue": "Библиотека Маяковского",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "лекция"
+      ],
+      "description": "Олег Ефремов в «Современнике». Как создатель попрощался со своим детищем В 1956 году Олег Ефремов вместе с единомышленниками создал театр «Современник» и стал его первым художественным руководителем. Но спустя 14 лет покинул собственное детище. Что происходило в театре за эти годы и почему его основатель решил уйти? семинара «Оттепель и \"Современник\"». • Наб. реки Фонтанки, 44, 1 этаж, Медиахолл",
+      "url": "https://tsentralnaya-events.timepad.ru/event/4213580/",
+      "source": "Библиотека Маяковского — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-11-27",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
     },
     {
       "id": "international-2026-12-05-647fe97094",
@@ -78958,6 +79298,45 @@
       "telegram_include": false,
       "instagram_include": false,
       "reviewed_at": "2026-11-05"
+    },
+    {
+      "id": "spb-2026-12-05-f68e69526f",
+      "status": "rejected",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-12-05",
+      "time": "14:00",
+      "title": "в Открытой гостиной состоится",
+      "venue": "Открытая гостиная",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": false,
+      "categories": [],
+      "description": "вторая часть лекции «Роберт Шекли. Поздний период творчества». Продолжаем разговор об одном из самых ярких и остроумных фантастов XX века. В центре внимания: поздние десятилетия творчества, время, когда зрелый Шекли продолжал удивлять читателей и создавал свои самые глубокие и неожиданные иронические рассказы. Речь пойдёт не только о знаменитых рассказах, но и о романах и повестях, написанных в тот поздний период научной фантастики. Присоединяйтесь, чтобы узнать, каким был Шекли на позднем этапе своего пути.",
+      "url": "https://otkrytaya-gostinaya.timepad.ru/event/4203623/",
+      "source": "Открытая гостиная — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-10-02",
+      "price_type": "unknown",
+      "availability": "unknown",
+      "availability_checked_at": "2026-10-03",
+      "social_description": "",
+      "social_title": "",
+      "instagram_include": false,
+      "social_priority": null,
+      "editor_note": "",
+      "instagram_image": "",
+      "telegram_include": false,
+      "reviewed_at": "2026-10-03",
+      "sheet_synced_description": "вторая часть лекции «Роберт Шекли. Поздний период творчества». Продолжаем разговор об одном из самых ярких и остроумных фантастов XX века. В центре внимания: поздние десятилетия творчества, время, когда зрелый Шекли продолжал удивлять читателей и создавал свои самые глубокие и неожиданные иронические рассказы. Речь пойдёт не только о знаменитых рассказах, но и о романах и повестях, написанных в тот поздний период научной фантастики. Присоединяйтесь, чтобы узнать, каким был Шекли на позднем этапе своего пути.",
+      "editor_overrides": {
+        "registration": false
+      },
+      "time_verification": "verified",
+      "time_evidence": "3 октября в 14:00",
+      "time_verified_at": "2026-10-25T08:31:42.482554+00:00"
     },
     {
       "id": "moscow-2026-12-05-64ecc1a02b",
@@ -79329,6 +79708,34 @@
       "reviewed_at": "2026-11-19"
     },
     {
+      "id": "spb-2026-12-07-9923c933d6",
+      "status": "check",
+      "kind": "event",
+      "city": "spb",
+      "date": "2026-12-07",
+      "time": "18:00",
+      "title": "седьмая встреча литературного клуба «Востоковедьмы»",
+      "venue": "Открытая гостиная",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "встреча"
+      ],
+      "description": "в Открытой гостиной состоится . Декабрь — время снега и праздничного настроения. Хан Чханхун «Ночной снег» (Южная Корея) Премчанд «Праздничная ярмарка» (Британская Индия) Лекторы — независимые исследовательницы: Татьяна Воронина, востоковед, Евгения Тихонова, искусствовед.",
+      "url": "https://otkrytaya-gostinaya.timepad.ru/event/4330106/",
+      "source": "Открытая гостиная — официальный Telegram",
+      "checked_at": "",
+      "review_reason": "curated_telegram_source",
+      "discovered_at": "2026-11-27",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
       "id": "spb-2026-12-07-a742e5228b",
       "status": "rejected",
       "kind": "event",
@@ -79676,7 +80083,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-12-09-9fa9cdc46c",
@@ -80067,7 +80476,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-12-11-4fd567bbb4",
@@ -82170,7 +82581,9 @@
       "availability_evidence": "",
       "ticket_required": false,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-12-19-d263f2499f",
@@ -82743,7 +83156,9 @@
       "availability_evidence": "",
       "ticket_required": true,
       "availability": "unknown",
-      "availability_checked_at": ""
+      "availability_checked_at": "",
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "international-2026-12-21-97062fdc2c",
@@ -82877,6 +83292,35 @@
       "price_type": "paid",
       "availability_evidence": "",
       "ticket_required": true,
+      "availability": "unknown",
+      "availability_checked_at": ""
+    },
+    {
+      "id": "international-2026-12-23-5ac9744ef4",
+      "status": "check",
+      "kind": "open_call",
+      "city": "international",
+      "date": "2026-12-23",
+      "time": "",
+      "title": "Christmas & Celebratio",
+      "venue": "CuratorSpace",
+      "address": "",
+      "price": null,
+      "price_text": "",
+      "registration": null,
+      "categories": [
+        "open-call"
+      ],
+      "description": "Christmas and celebrations bring people together through shared traditions, meaningful moments, and the joy of connection. This open call invites artists to explore the spirit of the festive season through their own creative perspectives, capturing its colours, symbols, emotions, and rituals. From intimate winter scenes and joyful gatherings to cultural traditions, personal memories, and imaginative interpretations, we welcome artworks that reflect the many ways people celebrate, connect, and find beauty in moments",
+      "url": "https://www.curatorspace.com/opportunities/detail/christmas--celebration/11395",
+      "source": "CuratorSpace — opportunities",
+      "checked_at": "",
+      "review_reason": "primary_source_required",
+      "discovered_at": "2026-11-27",
+      "audience_text": "Opportunity details | Christmas & Celebration | CuratorSpace Toggle navigation Home About us Subscribe Opportunities Events Curators Artists Need help? Log in Register Christmas & Celebration Deadline: 23/12/2026 City: Tbilisi | Country: Georgia | Collect Art Report this? Description Opportunity FAQs Make a submission Contact curator For this special edition, Collect Art invites artists to explore the theme of 'Christmas & Celebration' Christmas and celebrations bring people together through shared traditions, meaningful moments, and the joy of connection. This open call invites artists to explore the spirit of the festive season through their own creative perspectives, capturing its colours, symbols, emotions, and rituals. From intimate winter scenes and joyful gatherings to cultural traditions, personal memories, and imaginative interpretations, we welcome artworks that reflect the many ways people celebrate, connect, and find beauty in moments of togetherness. Open to visual artists worldwide, aged 18 and above, working in various media, including painting, drawing, collage, installation, illustration, photography, sculpture, ceramics, textiles, assemblage, fiber art, paper art, printmaking, 3D digital art, glass art, metalwork, and more. ​ Each selected artist will receive a 2-6 page spread in print and digital magazines including a biography, statement, interview, website, and 2-10 featured artworks. All published artists will receive a complimentary digital issue of the magazine, which will be promoted on our website/social media. In addition, you will receive the link for ordering the printed magazine Moreover, the curatorial team will select a few exceptional artists for inclusion in their upcoming book edition titled '101 Contemporary Artists and More...' Requirements for the submission: Up to 12 photos, details of the work (title, medium, size, year), brief biography, artist statement (min 100 words each), website, and social media links. Deadline: December 23, 2026 Application Fee: No Fee The participation fee is 25 EUR (in case of acceptance) Promotional Coverage: 1 dedicated post on the ‘NEWS’ page of our website 2 to 5 individual posts on Facebook and Instagram An announcement post featuring the magazine cover and the names of all published artists 3 group posts on Facebook and Instagram, each including one artwork from every featured artist Email outreach to our network of artists, gallerists, collectors, readers, and art professionals. Our Reach and Exposure: More than 1.2 million readers on Yump Over 682,274 readers on Scribd More than 150 printed copies sold per edition Each edition is now showcased at our newly opened Art Gallery in Tbilisi, Georgia, and is also featured in exhibitions and art events. To date, we have published 136 Seasonal and Special Editions of our magazine, featuring over 2,524 artists from around the world. Further Opportunities: Our curatorial team will also select several outstanding artists for inclusion in the upcoming book edition titled “101 Contemporary Artists and More…”. Selection is based on the overall vision for the book and available space. However, we aim to feature as many artists as possible from our previous magazine editions. Additionally, with each edition, our curators highlight a select group of artists for future exhibitions at our new 170 sq. m professionally curated art gallery in the prestigious centre of Tbilisi, Georgia. The gallery is dedicated to modern and contemporary art, providing a powerful platform for international exposure, including painting, drawing, photography, sculpture, ceramics, textile, installation, New media, mixed media works, etc. About the curator: Founded in January 2020 in Tbilisi, Georgia, ‘Collect Art’ is a cultural organisation dedicated to supporting, promoting, and connecting emerging and contemporary artists worldwide. What began as a platform for Georgian artists has evolved into an international organisation offering private artistic management, curated exhibitions, seasonal and special art magazine editions, and art books. In 2024, Collect Art expanded its activities with the opening of ‘Collect Art Gallery’, a creative space in Tbilisi bringing together Georgian and international artists. Through a diverse program of solo and group exhibitions, collaborative projects, and special events, the gallery showcases a wide range of artistic practices, including painting, sculpture, photography, installation, mixed media, and digital art. Rooted in the belief that art transcends borders, Collect Art aims to foster cross-cultural dialogue, encourage creative exchange, and strengthen connections between artists, collectors, and art enthusiasts. By providing opportunities for artistic exploration and international visibility, the organisation contributes to the development of contemporary art and Tbilisi’s growing cultural landscape. Make a submission Contact the curator Who is eligible for this opportunity? Open to visual artists worldwide, aged 18 and above, working in various media, including painting, drawing, collage, installation, illustration, photography, sculpture, ceramics, textiles, assemblage, fiber art, paper art, printmaking, 3D digital art, glass art, metalwork, and more. When is the deadline? December 23, 2026 How many works can I submit? Up to 12 artworks. How much does it cost? Application Fee: No Fee The participation fee is 25 EUR (in case of acceptance) You must have an account to make a submission using CuratorSpace. It's free and only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You'll need to log in to make a submission to this opportunity. Login You must have an account to send a message to the curator of this opportunity. Registering only takes a few moments. Once registered you'll be able to keep track of all of your submissions and get updates on upcoming opportunities. Register Already have an account? You must log in to send this curator a message. Login Subscribe to our newsletter Get the latest CuratorSpace news, updates about new opportunities, upcoming deadlines, and art-related promotions. Name * Email * Check this box to indicate you have read and agree to our terms and conditions and privacy policy and are happy for us to send you our newsletter Please click in the box below * Advertisement Other opportunities Wilderness Collect Art invites artists worldwide to submit their work for the upcoming online exhibition... Thrive Residencies: A Good Enough Net A residency programme and a year's anthology of relational practices, curated and held by artist... Darkness For this special edition, Collect Art invites artists to explore darkness in its many... More opportunities © 2026 by CuratorSpace Terms and conditions | Privacy policy",
+      "price_type": "unknown",
+      "availability_evidence": "",
+      "ticket_required": false,
       "availability": "unknown",
       "availability_checked_at": ""
     },
@@ -83069,7 +83513,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-12-24-422be2d050",
@@ -83348,7 +83794,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-12-26-422be2d050",
@@ -83506,7 +83954,9 @@
         "instagram_include": false
       },
       "telegram_include": false,
-      "instagram_include": false
+      "instagram_include": false,
+      "editor_note": "",
+      "reviewed_at": ""
     },
     {
       "id": "moscow-2026-12-27-54161e6224",
